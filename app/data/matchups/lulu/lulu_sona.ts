@@ -1,0 +1,10 @@
+// app/data/matchups/lulu/lulu_sona.ts
+import type { MatchupSummary } from "../_types";
+
+export const lulu_sona: MatchupSummary = {
+  champs: ["lulu", "sona"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

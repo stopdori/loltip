@@ -1,0 +1,10 @@
+// app/data/matchups/anivia/anivia_lucian.ts
+import type { MatchupSummary } from "../_types";
+
+export const anivia_lucian: MatchupSummary = {
+  champs: ["anivia", "lucian"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

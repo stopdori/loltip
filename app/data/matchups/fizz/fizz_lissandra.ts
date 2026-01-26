@@ -1,0 +1,10 @@
+// app/data/matchups/fizz/fizz_lissandra.ts
+import type { MatchupSummary } from "../_types";
+
+export const fizz_lissandra: MatchupSummary = {
+  champs: ["fizz", "lissandra"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

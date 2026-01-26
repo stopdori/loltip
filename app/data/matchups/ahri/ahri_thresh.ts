@@ -1,0 +1,10 @@
+// app/data/matchups/ahri/ahri_thresh.ts
+import type { MatchupSummary } from "../_types";
+
+export const ahri_thresh: MatchupSummary = {
+  champs: ["ahri", "thresh"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

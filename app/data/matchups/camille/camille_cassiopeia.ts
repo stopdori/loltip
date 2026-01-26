@@ -1,0 +1,10 @@
+// app/data/matchups/camille/camille_cassiopeia.ts
+import type { MatchupSummary } from "../_types";
+
+export const camille_cassiopeia: MatchupSummary = {
+  champs: ["camille", "cassiopeia"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

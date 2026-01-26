@@ -1,0 +1,10 @@
+// app/data/matchups/masteryi/masteryi_xinzhao.ts
+import type { MatchupSummary } from "../_types";
+
+export const masteryi_xinzhao: MatchupSummary = {
+  champs: ["masteryi", "xinzhao"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

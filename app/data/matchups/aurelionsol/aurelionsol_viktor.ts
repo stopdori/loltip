@@ -1,0 +1,10 @@
+// app/data/matchups/aurelionsol/aurelionsol_viktor.ts
+import type { MatchupSummary } from "../_types";
+
+export const aurelionsol_viktor: MatchupSummary = {
+  champs: ["aurelionsol", "viktor"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

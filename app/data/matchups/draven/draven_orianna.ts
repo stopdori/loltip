@@ -1,0 +1,10 @@
+// app/data/matchups/draven/draven_orianna.ts
+import type { MatchupSummary } from "../_types";
+
+export const draven_orianna: MatchupSummary = {
+  champs: ["draven", "orianna"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

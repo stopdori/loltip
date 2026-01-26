@@ -1,0 +1,10 @@
+// app/data/matchups/darius/darius_ezreal.ts
+import type { MatchupSummary } from "../_types";
+
+export const darius_ezreal: MatchupSummary = {
+  champs: ["darius", "ezreal"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

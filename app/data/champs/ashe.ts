@@ -1,0 +1,27 @@
+import type { ChampSkill } from "../types";
+
+const ashe: ChampSkill = {
+  id: "ashe",
+  skills: {
+    P: ["SLOW"],
+    Q: ["AA_RESET", "AS_UP"],
+    W: ["W_FLASH"],
+    E: ["VISION", "REVEALED"],
+    R: ["STUN"],
+    ETC: [],
+  },
+
+  notes: [
+    "[[W_FLASH]] 되는데 마우스 방향 잘 조준해야함\nW에는 [[SLOW]]가 없음\nP의 [[SLOW]]가 걸리는것", "E는 부쉬 안에도 보여줌"
+  ],
+
+
+  ultCooldown: {
+    6: 100,
+    11: 80,
+    16: 60,
+  },
+
+};
+
+export default ashe;

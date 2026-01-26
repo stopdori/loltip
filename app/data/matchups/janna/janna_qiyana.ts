@@ -1,0 +1,10 @@
+// app/data/matchups/janna/janna_qiyana.ts
+import type { MatchupSummary } from "../_types";
+
+export const janna_qiyana: MatchupSummary = {
+  champs: ["janna", "qiyana"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

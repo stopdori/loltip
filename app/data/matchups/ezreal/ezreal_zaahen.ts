@@ -1,0 +1,10 @@
+// app/data/matchups/ezreal/ezreal_zaahen.ts
+import type { MatchupSummary } from "../_types";
+
+export const ezreal_zaahen: MatchupSummary = {
+  champs: ["ezreal", "zaahen"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

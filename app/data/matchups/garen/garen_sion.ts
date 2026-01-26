@@ -1,0 +1,10 @@
+// app/data/matchups/garen/garen_sion.ts
+import type { MatchupSummary } from "../_types";
+
+export const garen_sion: MatchupSummary = {
+  champs: ["garen", "sion"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

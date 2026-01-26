@@ -1,0 +1,10 @@
+// app/data/matchups/khazix/khazix_vladimir.ts
+import type { MatchupSummary } from "../_types";
+
+export const khazix_vladimir: MatchupSummary = {
+  champs: ["khazix", "vladimir"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

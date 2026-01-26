@@ -1,0 +1,10 @@
+// app/data/matchups/fiddlesticks/fiddlesticks_milio.ts
+import type { MatchupSummary } from "../_types";
+
+export const fiddlesticks_milio: MatchupSummary = {
+  champs: ["fiddlesticks", "milio"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

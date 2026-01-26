@@ -1,0 +1,10 @@
+// app/data/matchups/jarvaniv/jarvaniv_singed.ts
+import type { MatchupSummary } from "../_types";
+
+export const jarvaniv_singed: MatchupSummary = {
+  champs: ["jarvaniv", "singed"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

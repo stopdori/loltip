@@ -1,0 +1,10 @@
+// app/data/matchups/blitzcrank/blitzcrank_jinx.ts
+import type { MatchupSummary } from "../_types";
+
+export const blitzcrank_jinx: MatchupSummary = {
+  champs: ["blitzcrank", "jinx"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

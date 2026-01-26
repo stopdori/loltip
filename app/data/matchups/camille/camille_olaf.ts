@@ -1,0 +1,10 @@
+// app/data/matchups/camille/camille_olaf.ts
+import type { MatchupSummary } from "../_types";
+
+export const camille_olaf: MatchupSummary = {
+  champs: ["camille", "olaf"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

@@ -1,0 +1,10 @@
+// app/data/matchups/galio/galio_heimerdinger.ts
+import type { MatchupSummary } from "../_types";
+
+export const galio_heimerdinger: MatchupSummary = {
+  champs: ["galio", "heimerdinger"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

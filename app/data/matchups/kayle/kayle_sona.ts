@@ -1,0 +1,10 @@
+// app/data/matchups/kayle/kayle_sona.ts
+import type { MatchupSummary } from "../_types";
+
+export const kayle_sona: MatchupSummary = {
+  champs: ["kayle", "sona"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

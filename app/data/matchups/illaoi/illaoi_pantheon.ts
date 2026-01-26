@@ -1,0 +1,10 @@
+// app/data/matchups/illaoi/illaoi_pantheon.ts
+import type { MatchupSummary } from "../_types";
+
+export const illaoi_pantheon: MatchupSummary = {
+  champs: ["illaoi", "pantheon"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

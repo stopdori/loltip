@@ -1,0 +1,160 @@
+
+치명타, 공속증가,처형, 시야
+
+
+야스오 W(장막)가 막을 수 있음.
+Yasuo’s W (Wind Wall) can block ’s .
+
+export type TagId =
+  /* 이동 / 위치 */
+  | "ALLY_TP_OK"
+  | "WALL_HOP"
+
+  /* 전투 메커니즘 */
+  | "AA_RESET"
+  | "UNTARGETABLE"
+  | "TOWER_DODGE"
+  | "SHIELD_BREAK"
+  | "WALL"
+  | "SUPPRESS" // 제압
+  | "SUPPRESSION"
+  | "REFLECT"
+  | "INSEC_KICK"
+  | "MS_UP"
+  | "AS_UP"          // 공속 증가
+  | "AS_DOWN"
+  | "AD_UP"          // 공격력 증가
+  | "AD_DOWN"       // 공격력 감소
+  | "AP_UP" // 주문력 증가
+
+  | "CRIT"
+  | "EXECUTE"
+  | "RANGE_UP"
+  | "PIERCE" // 관통
+
+
+  | "DMG_REDUCE"
+  | "DODGE"
+  | "TENACITY"
+  | "SPELL_SHIELD"
+  | "CC_IMMUNE"
+  | "CC_CLEANSE"
+  | "SLOW_RESIST"
+  | "SLOW_IMMUNE"
+  | "GHOSTING"
+  | "WINDSHIELD"
+  | "PROTECTIVE_ZONE"
+
+  /* 점멸 연계 */
+  | "Q_FLASH"
+  | "W_FLASH"
+  | "E_FLASH"
+  | "R_FLASH"
+
+  /* 피흡 */
+  | "LIFESTEAL"
+  | "HEAL"
+  | "SHIELD"
+  | "MAX_HP_UP"
+  | "MANA_RESTORE"
+  | "ENERGY_RESTORE"
+
+  | "REVIVE"        // 부활
+  | "INVULNERABLE"  // 무적
+
+
+  | "VISION"
+  | "REVEALED"
+  | "TRUE_SIGHT"
+  | "STEALTH"
+  | "INVISIBILITY"
+  | "CAMOUFLAGE"
+
+
+    /* 디버프 */
+  | "AR_SHRED"   // 방깍
+  | "MR_SHRED"      // 마깍
+  | "AR_MR_SHRED" // 방마깍
+  | "AR_PEN"   // 
+  | "MR_PEN"      // 
+  | "AR_MR_PEN" // 
+  | "GW"           // 치감
+  
+  | "HARD_CC"
+  | "STUN"
+  | "ROOT"
+  | "SLOW"
+  | "TAUNT"
+  | "SLEEP"
+  | "ANTI_DASH"
+  | "KNOCKBACK"
+  | "AIRBORNE"
+  | "SUSPENDING"
+  | "GRAB"
+  | "CHARM"
+  | "SILENCE"
+  | "GROUNDED"
+  | "FEAR"
+  | "CANCEL"
+  | "BERSERK"
+  | "NEARSIGHT"
+  | "BLIND"
+  | "POLYMORPH"
+  | "UNSTOPPABLE";
+
+
+notes: [
+    "",
+  ],
+
+
+
+
+폼변환 챔프
+엘리스 나르 제이스 니달리 크산테
+
+renekton
+
+
+
+잭스 q 요릭 벽에 써짐
+원하는 위치에 커서를 올리고 누르면 그위치로 점프함
+
+말자하 패시브 트페궁에 안벗겨짐, 트페 골카 막아줌
+
+모데는 사일러스랑 쓸때 나중에 써야 능력치를 더 많이 흡수 함
+
+바드 궁 모르가나 블쉴에 막힘
+
+
+인게임 테스트 해봐야할 목록
+"WALL_HOP"
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+
+
+
+
+야스오, 멜, // 사미라, 브라움, 잭스, 시비르, 모데, 
+
+뽀삐 궁에 날라가면 도발 영향 받긴하는데 따라가진않음
+
+
+
+
+
+
+
+타르코프 지역에 방사능 오염이 시작됨 (이유는 모름)
+
+여기에 PMC들이 파견되어서 각종 정보들을 모아오는 이야기.
+
+시간이 지날수록 방사능 오염 심각해져서 먹을것도 줄어들고 뭐 그런거아님?
+
+
+
+
+
+

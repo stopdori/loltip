@@ -1,0 +1,10 @@
+// app/data/matchups/leesin/leesin_velkoz.ts
+import type { MatchupSummary } from "../_types";
+
+export const leesin_velkoz: MatchupSummary = {
+  champs: ["leesin", "velkoz"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

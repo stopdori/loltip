@@ -1,0 +1,10 @@
+// app/data/matchups/ekko/ekko_viego.ts
+import type { MatchupSummary } from "../_types";
+
+export const ekko_viego: MatchupSummary = {
+  champs: ["ekko", "viego"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

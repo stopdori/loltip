@@ -1,0 +1,10 @@
+// app/data/matchups/skarner/skarner_vi.ts
+import type { MatchupSummary } from "../_types";
+
+export const skarner_vi: MatchupSummary = {
+  champs: ["skarner", "vi"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

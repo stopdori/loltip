@@ -1,0 +1,10 @@
+// app/data/matchups/senna/senna_udyr.ts
+import type { MatchupSummary } from "../_types";
+
+export const senna_udyr: MatchupSummary = {
+  champs: ["senna", "udyr"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

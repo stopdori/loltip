@@ -1,0 +1,10 @@
+// app/data/matchups/samira/samira_sett.ts
+import type { MatchupSummary } from "../_types";
+
+export const samira_sett: MatchupSummary = {
+  champs: ["samira", "sett"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

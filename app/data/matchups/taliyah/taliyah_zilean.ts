@@ -1,0 +1,10 @@
+// app/data/matchups/taliyah/taliyah_zilean.ts
+import type { MatchupSummary } from "../_types";
+
+export const taliyah_zilean: MatchupSummary = {
+  champs: ["taliyah", "zilean"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

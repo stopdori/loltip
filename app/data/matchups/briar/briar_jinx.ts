@@ -1,0 +1,10 @@
+// app/data/matchups/briar/briar_jinx.ts
+import type { MatchupSummary } from "../_types";
+
+export const briar_jinx: MatchupSummary = {
+  champs: ["briar", "jinx"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

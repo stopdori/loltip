@@ -1,0 +1,10 @@
+// app/data/matchups/gangplank/gangplank_renekton.ts
+import type { MatchupSummary } from "../_types";
+
+export const gangplank_renekton: MatchupSummary = {
+  champs: ["gangplank", "renekton"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

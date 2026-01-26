@@ -1,0 +1,10 @@
+// app/data/matchups/ornn/ornn_sett.ts
+import type { MatchupSummary } from "../_types";
+
+export const ornn_sett: MatchupSummary = {
+  champs: ["ornn", "sett"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

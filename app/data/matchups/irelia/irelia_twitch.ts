@@ -1,0 +1,10 @@
+// app/data/matchups/irelia/irelia_twitch.ts
+import type { MatchupSummary } from "../_types";
+
+export const irelia_twitch: MatchupSummary = {
+  champs: ["irelia", "twitch"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

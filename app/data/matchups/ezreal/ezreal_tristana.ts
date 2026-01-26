@@ -1,0 +1,10 @@
+// app/data/matchups/ezreal/ezreal_tristana.ts
+import type { MatchupSummary } from "../_types";
+
+export const ezreal_tristana: MatchupSummary = {
+  champs: ["ezreal", "tristana"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

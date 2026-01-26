@@ -1,0 +1,10 @@
+// app/data/matchups/rell/rell_veigar.ts
+import type { MatchupSummary } from "../_types";
+
+export const rell_veigar: MatchupSummary = {
+  champs: ["rell", "veigar"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

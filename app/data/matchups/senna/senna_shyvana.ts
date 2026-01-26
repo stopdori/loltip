@@ -1,0 +1,10 @@
+// app/data/matchups/senna/senna_shyvana.ts
+import type { MatchupSummary } from "../_types";
+
+export const senna_shyvana: MatchupSummary = {
+  champs: ["senna", "shyvana"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

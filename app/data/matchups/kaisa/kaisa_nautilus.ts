@@ -1,0 +1,10 @@
+// app/data/matchups/kaisa/kaisa_nautilus.ts
+import type { MatchupSummary } from "../_types";
+
+export const kaisa_nautilus: MatchupSummary = {
+  champs: ["kaisa", "nautilus"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

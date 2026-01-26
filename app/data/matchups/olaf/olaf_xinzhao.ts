@@ -1,0 +1,10 @@
+// app/data/matchups/olaf/olaf_xinzhao.ts
+import type { MatchupSummary } from "../_types";
+
+export const olaf_xinzhao: MatchupSummary = {
+  champs: ["olaf", "xinzhao"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

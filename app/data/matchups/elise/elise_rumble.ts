@@ -1,0 +1,10 @@
+// app/data/matchups/elise/elise_rumble.ts
+import type { MatchupSummary } from "../_types";
+
+export const elise_rumble: MatchupSummary = {
+  champs: ["elise", "rumble"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

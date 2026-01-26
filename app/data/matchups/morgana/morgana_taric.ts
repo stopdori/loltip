@@ -1,0 +1,10 @@
+// app/data/matchups/morgana/morgana_taric.ts
+import type { MatchupSummary } from "../_types";
+
+export const morgana_taric: MatchupSummary = {
+  champs: ["morgana", "taric"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

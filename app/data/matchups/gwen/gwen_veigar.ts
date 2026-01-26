@@ -1,0 +1,10 @@
+// app/data/matchups/gwen/gwen_veigar.ts
+import type { MatchupSummary } from "../_types";
+
+export const gwen_veigar: MatchupSummary = {
+  champs: ["gwen", "veigar"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

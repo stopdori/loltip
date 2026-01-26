@@ -1,0 +1,10 @@
+// app/data/matchups/gwen/gwen_taric.ts
+import type { MatchupSummary } from "../_types";
+
+export const gwen_taric: MatchupSummary = {
+  champs: ["gwen", "taric"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

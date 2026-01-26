@@ -1,0 +1,10 @@
+// app/data/matchups/hecarim/hecarim_ziggs.ts
+import type { MatchupSummary } from "../_types";
+
+export const hecarim_ziggs: MatchupSummary = {
+  champs: ["hecarim", "ziggs"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

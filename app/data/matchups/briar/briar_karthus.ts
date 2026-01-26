@@ -1,0 +1,10 @@
+// app/data/matchups/briar/briar_karthus.ts
+import type { MatchupSummary } from "../_types";
+
+export const briar_karthus: MatchupSummary = {
+  champs: ["briar", "karthus"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

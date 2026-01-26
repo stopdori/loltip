@@ -1,0 +1,10 @@
+// app/data/matchups/naafiri/naafiri_olaf.ts
+import type { MatchupSummary } from "../_types";
+
+export const naafiri_olaf: MatchupSummary = {
+  champs: ["naafiri", "olaf"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

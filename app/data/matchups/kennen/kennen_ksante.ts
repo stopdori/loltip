@@ -1,0 +1,10 @@
+// app/data/matchups/kennen/kennen_ksante.ts
+import type { MatchupSummary } from "../_types";
+
+export const kennen_ksante: MatchupSummary = {
+  champs: ["kennen", "ksante"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

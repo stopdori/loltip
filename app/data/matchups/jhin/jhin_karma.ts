@@ -1,0 +1,10 @@
+// app/data/matchups/jhin/jhin_karma.ts
+import type { MatchupSummary } from "../_types";
+
+export const jhin_karma: MatchupSummary = {
+  champs: ["jhin", "karma"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

@@ -1,0 +1,10 @@
+// app/data/matchups/ivern/ivern_reksai.ts
+import type { MatchupSummary } from "../_types";
+
+export const ivern_reksai: MatchupSummary = {
+  champs: ["ivern", "reksai"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

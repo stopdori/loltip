@@ -1,0 +1,10 @@
+// app/data/matchups/ryze/ryze_twistedfate.ts
+import type { MatchupSummary } from "../_types";
+
+export const ryze_twistedfate: MatchupSummary = {
+  champs: ["ryze", "twistedfate"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

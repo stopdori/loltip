@@ -1,0 +1,10 @@
+// app/data/matchups/pyke/pyke_teemo.ts
+import type { MatchupSummary } from "../_types";
+
+export const pyke_teemo: MatchupSummary = {
+  champs: ["pyke", "teemo"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

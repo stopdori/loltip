@@ -1,0 +1,10 @@
+// app/data/matchups/trundle/trundle_twistedfate.ts
+import type { MatchupSummary } from "../_types";
+
+export const trundle_twistedfate: MatchupSummary = {
+  champs: ["trundle", "twistedfate"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

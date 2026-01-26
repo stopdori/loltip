@@ -1,0 +1,10 @@
+// app/data/matchups/ambessa/ambessa_rumble.ts
+import type { MatchupSummary } from "../_types";
+
+export const ambessa_rumble: MatchupSummary = {
+  champs: ["ambessa", "rumble"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

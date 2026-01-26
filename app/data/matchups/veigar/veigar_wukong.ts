@@ -1,0 +1,10 @@
+// app/data/matchups/veigar/veigar_wukong.ts
+import type { MatchupSummary } from "../_types";
+
+export const veigar_wukong: MatchupSummary = {
+  champs: ["veigar", "wukong"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

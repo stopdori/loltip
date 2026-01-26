@@ -1,0 +1,10 @@
+// app/data/matchups/karma/karma_sett.ts
+import type { MatchupSummary } from "../_types";
+
+export const karma_sett: MatchupSummary = {
+  champs: ["karma", "sett"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

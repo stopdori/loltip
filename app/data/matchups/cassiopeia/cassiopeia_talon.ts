@@ -1,0 +1,10 @@
+// app/data/matchups/cassiopeia/cassiopeia_talon.ts
+import type { MatchupSummary } from "../_types";
+
+export const cassiopeia_talon: MatchupSummary = {
+  champs: ["cassiopeia", "talon"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

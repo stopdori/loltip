@@ -1,0 +1,10 @@
+// app/data/matchups/riven/riven_sion.ts
+import type { MatchupSummary } from "../_types";
+
+export const riven_sion: MatchupSummary = {
+  champs: ["riven", "sion"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

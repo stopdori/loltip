@@ -1,0 +1,10 @@
+// app/data/matchups/kalista/kalista_yuumi.ts
+import type { MatchupSummary } from "../_types";
+
+export const kalista_yuumi: MatchupSummary = {
+  champs: ["kalista", "yuumi"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

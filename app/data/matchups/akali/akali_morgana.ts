@@ -1,0 +1,10 @@
+// app/data/matchups/akali/akali_morgana.ts
+import type { MatchupSummary } from "../_types";
+
+export const akali_morgana: MatchupSummary = {
+  champs: ["akali", "morgana"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

@@ -1,0 +1,10 @@
+// app/data/matchups/draven/draven_quinn.ts
+import type { MatchupSummary } from "../_types";
+
+export const draven_quinn: MatchupSummary = {
+  champs: ["draven", "quinn"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

@@ -1,0 +1,10 @@
+// app/data/matchups/galio/galio_sejuani.ts
+import type { MatchupSummary } from "../_types";
+
+export const galio_sejuani: MatchupSummary = {
+  champs: ["galio", "sejuani"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

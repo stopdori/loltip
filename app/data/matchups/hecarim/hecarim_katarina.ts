@@ -1,0 +1,10 @@
+// app/data/matchups/hecarim/hecarim_katarina.ts
+import type { MatchupSummary } from "../_types";
+
+export const hecarim_katarina: MatchupSummary = {
+  champs: ["hecarim", "katarina"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

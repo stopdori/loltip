@@ -1,0 +1,10 @@
+// app/data/matchups/volibear/volibear_zilean.ts
+import type { MatchupSummary } from "../_types";
+
+export const volibear_zilean: MatchupSummary = {
+  champs: ["volibear", "zilean"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};

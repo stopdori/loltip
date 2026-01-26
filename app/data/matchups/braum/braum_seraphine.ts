@@ -1,0 +1,10 @@
+// app/data/matchups/braum/braum_seraphine.ts
+import type { MatchupSummary } from "../_types";
+
+export const braum_seraphine: MatchupSummary = {
+  champs: ["braum", "seraphine"],
+  highlights: {
+    ko: [""],
+    en: [""],
+  },
+};
