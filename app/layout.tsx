@@ -7,9 +7,10 @@ export const metadata = {
 };
 
 export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 5,
+  width: 960,
+  initialScale: 0.35,
+  maximumScale: 3,
+  minimumScale: 0.25,
   userScalable: true,
 };
 
@@ -21,9 +22,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="bg-slate-900">
-        <div className="min-h-screen overflow-x-hidden">
+        <div className="min-h-screen overflow-x-auto">
           {/* 본문 기준 레이아웃 */}
-          <div className="mx-auto w-full max-w-[960px] px-4 py-6">
+          <div className="mx-auto w-full min-w-[960px] w-full px-6 py-10">
             {/* 
               기본: 본문만 중앙
               xl 이상: 좌 / 본문 / 우 (광고 표시)
