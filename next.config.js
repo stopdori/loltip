@@ -2,20 +2,7 @@
 const nextConfig = {
   async redirects() {
     return [
-      // www → non-www
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.loltip.com',
-          },
-        ],
-        destination: 'https://loltip.com/:path*',
-        permanent: true,
-      },
-
-      // vercel 도메인 → 본도메인
+      // vercel 도메인만 본도메인으로 보내기
       {
         source: '/:path*',
         has: [
