@@ -15,6 +15,7 @@ import HelpButton from "../components/HelpButton";
 import NoticeButton from "../components/NoticeButton";
 import AdSlot from "../components/AdSlot";
 import TagGlossaryButton from "../components/TagGlossaryButton";
+import Link from "next/link";
 
 
 type Lang = "ko" | "en";
@@ -122,27 +123,35 @@ const enemyChamp =
           </div>
         </div>
 
-        <h1 className="text-5xl font-extrabold text-yellow-400">LOLTIP</h1>
+        <Link
+  href="/champ"
+  replace
+  className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110"
+>
+  LOLTIP
+</Link>
         <p className="mt-3 text-slate-300">{subtitle}</p>
       </header>
 
       {/* CHAMP PICK */}
       <section className="flex justify-center items-center gap-10">
         <ChampSelectButton
-          label={lang === "ko" ? "내 챔피언" : "My Champion"}
-          lang={lang}
-          selected={myChamp}
-          onClick={() => setOpenTarget("my")}
-        />
+  label={lang === "ko" ? "내 챔피언" : "My Champion"}
+  lang={lang}
+  selected={myChamp}
+  onClick={() => setOpenTarget("my")}
+  clearParam="me"
+/>
 
         <div className="text-xl font-black text-slate-400">VS</div>
 
         <ChampSelectButton
-          label={lang === "ko" ? "상대 챔피언" : "Enemy Champion"}
-          lang={lang}
-          selected={enemyChamp}
-          onClick={() => setOpenTarget("enemy")}
-        />
+  label={lang === "ko" ? "상대 챔피언" : "Enemy Champion"}
+  lang={lang}
+  selected={enemyChamp}
+  onClick={() => setOpenTarget("enemy")}
+  clearParam="enemy"
+/>
       </section>
 
       {/* MODAL */}

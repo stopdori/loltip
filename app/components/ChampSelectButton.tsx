@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import type { Champ } from "../data/champions";
+import { useRouter, useSearchParams } from "next/navigation";
 
 type Props = {
   label: string;
   lang: "ko" | "en";
   selected: Champ | null;
   onClick: () => void;
+  clearParam: "me" | "enemy";
 };
 
 export default function ChampSelectButton({
@@ -15,12 +17,26 @@ export default function ChampSelectButton({
   lang,
   selected,
   onClick,
+  clearParam,
 }: Props) {
+
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const title = selected ? (lang === "ko" ? selected.ko : selected.en) : label;
 
   const imgSrc = selected
     ? `/champs/${selected.id}.webp`
     : `/ui/SelectChamp.png`;
+
+const handleClear = (e: React.MouseEvent) => {
+  e.stopPropagation();
+
+  const params = new URLSearchParams(searchParams.toString());
+  params.delete(clearParam);
+
+  const query = params.toString();
+  router.replace(query ? `/champ?${query}` : "/champ");
+};
 
   return (
     <button
@@ -43,15 +59,26 @@ export default function ChampSelectButton({
       </div>
 
       {/* 챔피언 아이콘 */}
-      <div className="relative w-[96px] h-[96px] sm:w-[110px] sm:h-[110px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
-        <Image
-          src={imgSrc}
-          alt={title}
-          fill
-          className="object-cover group-hover:scale-[1.03] transition"
-          sizes="120px"
-        />
-      </div>
+<div className="relative w-[96px] h-[96px] sm:w-[110px] sm:h-[110px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
+
+  <Image
+    src={imgSrc}
+    alt={title}
+    fill
+    className="object-cover group-hover:scale-[1.03] transition"
+    sizes="120px"
+  />
+
+  {selected && (
+    <button
+      onClick={handleClear}
+      className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-black/80 hover:bg-red-500 text-white text-sm font-bold flex items-center justify-center border border-white/20"
+    >
+      ×
+    </button>
+  )}
+
+</div>
 
       {/* 챔피언 이름 / 선택하기 */}
       <div className="mt-4 text-center font-semibold text-slate-100">
