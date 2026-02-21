@@ -51,7 +51,7 @@ export default function FeedbackButton({ lang }: Props) {
     };
 
     try {
-      const res = await fetch("/api/feedback", {
+      const resp = await fetch(`${window.location.origin}/api/feedback`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
