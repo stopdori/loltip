@@ -60,6 +60,25 @@ const myChamp =
 
 const enemyChamp =
   enemyChampId ? CHAMPIONS.find((c) => c.id === enemyChampId) ?? null : null;
+
+useEffect(() => {
+  if (!myChamp) return;
+
+  ["P","Q","W","E","R"].forEach((s) => {
+  const img = new window.Image();
+  img.src = `/spells/${myChamp.id}/${s}.webp`;
+});
+}, [myChamp]);
+
+useEffect(() => {
+  if (!enemyChamp) return;
+
+  ["P","Q","W","E","R"].forEach((s) => {
+  const img = new window.Image();
+  img.src = `/spells/${enemyChamp.id}/${s}.webp`;
+});
+}, [enemyChamp]);
+
   const [openTarget, setOpenTarget] = useState<"my" | "enemy" | null>(null);
 
   const [myUltCd, setMyUltCd] = useState<number | null>(null);

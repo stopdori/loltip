@@ -92,12 +92,14 @@ const handleClear = (e: React.MouseEvent) => {
 <div className="relative w-[96px] h-[96px] sm:w-[110px] sm:h-[110px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
 
   <Image
-    src={imgSrc}
-    alt={title}
-    fill
-    className="object-cover group-hover:scale-[1.03] transition"
-    sizes="120px"
-  />
+  src={imgSrc}
+  alt={title}
+  fill
+  unoptimized
+  priority
+  className="object-cover group-hover:scale-[1.03] transition"
+  sizes="120px"
+/>
 
   
 
