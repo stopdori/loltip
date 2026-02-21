@@ -1,1 +1,5 @@
-import { redirect } from "next/navigation"; export default function Page() { redirect("/champ"); }
+import { redirect } from "next/navigation";
+
+export default function Home() {
+  redirect("/champ");
+}
