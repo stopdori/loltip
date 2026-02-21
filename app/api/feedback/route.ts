@@ -30,14 +30,16 @@ function pruneMap(now: number) {
 
 export async function POST(req: Request) {
   try {
+    console.log("WEBHOOK:", process.env.DISCORD_WEBHOOK_URL);
+
     const url = process.env.DISCORD_WEBHOOK_URL;
     if (!url) {
       return NextResponse.json(
-        { ok: false, error: "DISCORD_WEBHOOK_URL not set" },
+        { ok: false, error: "ENV_MISSING" },
         { status: 500 }
       );
     }
-
+    
     const body = await req.json().catch(() => ({}));
 
     const message = (body?.message ?? "").toString().trim();
