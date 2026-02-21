@@ -1,5 +1,6 @@
 import "./globals.css";
 import AdSlot from "./components/AdSlot";
+import Script from "next/script";
 
 export const metadata = {
   title: "LOLTIP - League of Legends Mechanic Guide",
@@ -21,7 +22,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className="bg-slate-900">
+
+  <Script
+    src="https://www.googletagmanager.com/gtag/js?id=G-RM86YD8RCM"
+    strategy="afterInteractive"
+  />
+  <Script id="ga-init" strategy="afterInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RM86YD8RCM');
+    `}
+  </Script>
+
+  <body className="bg-slate-900">
         <div className="min-h-screen overflow-x-auto">
           {/* 본문 기준 레이아웃 */}
           <div className="mx-auto min-w-[960px] w-full px-6 py-10">

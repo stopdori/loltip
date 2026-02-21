@@ -90,7 +90,7 @@ useEffect(() => {
   const diff = canCompare ? Math.abs(myUltCd! - enemyUltCd!) : null;
 
   const subtitle =
-    lang === "ko" ? "롤 메커니즘 사이트" : "Guides and tips by champion";
+    lang === "ko" ? "롤 챔피언 특징과 메커니즘 요약" : "Summary of LoL Champion Features and Mechanisms";
 
   const firstUltLabel = lang === "ko" ? "선궁" : "First Ult";
   const diffLabel = lang === "ko" ? "차이" : "diff";
