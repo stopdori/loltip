@@ -140,7 +140,7 @@ const enemyChamp =
       {/* CHAMP PICK */}
       <section className="flex justify-center items-center gap-10">
         <ChampSelectButton
-  label={lang === "ko" ? "내 챔피언" : "My Champion"}
+  label={lang === "ko" ? "챔피언" : "Champion"}
   lang={lang}
   selected={myChamp}
   onClick={() => setOpenTarget("my")}
@@ -150,7 +150,7 @@ const enemyChamp =
         <div className="text-xl font-black text-slate-400">VS</div>
 
         <ChampSelectButton
-  label={lang === "ko" ? "상대 챔피언" : "Enemy Champion"}
+  label={lang === "ko" ? "챔피언" : "Champion"}
   lang={lang}
   selected={enemyChamp}
   onClick={() => setOpenTarget("enemy")}
@@ -166,11 +166,11 @@ const enemyChamp =
         title={
           openTarget === "my"
             ? lang === "ko"
-              ? "내 챔피언 선택"
-              : "Pick My Champion"
+              ? "챔피언 선택"
+              : "Pick Champion"
             : lang === "ko"
-            ? "상대 챔피언 선택"
-            : "Pick Enemy Champion"
+            ? "챔피언 선택"
+            : "Pick Champion"
         }
         onClose={() => setOpenTarget(null)}
         onPick={(c) => {
