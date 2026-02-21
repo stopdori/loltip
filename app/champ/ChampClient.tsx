@@ -15,7 +15,7 @@ import HelpButton from "../components/HelpButton";
 import NoticeButton from "../components/NoticeButton";
 import AdSlot from "../components/AdSlot";
 import TagGlossaryButton from "../components/TagGlossaryButton";
-import Link from "next/link";
+
 
 
 type Lang = "ko" | "en";
@@ -79,6 +79,11 @@ const enemyChamp =
   const myIsSooner = canCompare ? myUltCd! < enemyUltCd! : false;
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
 
+  const handleLogoClick = () => {
+  router.replace("/champ");
+};
+
+
   return (
     <div className="space-y-12">
 
@@ -123,13 +128,12 @@ const enemyChamp =
           </div>
         </div>
 
-        <Link
-  href="/champ"
-  replace
-  className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110"
+        <h1
+  onClick={handleLogoClick}
+  className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
 >
   LOLTIP
-</Link>
+</h1>
         <p className="mt-3 text-slate-300">{subtitle}</p>
       </header>
 
