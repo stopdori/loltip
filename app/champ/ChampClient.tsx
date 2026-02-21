@@ -82,8 +82,8 @@ const enemyChamp =
     <div className="space-y-12">
 
 
-      <header className="relative text-center">
-        <div className="absolute right-0 top-0 flex flex-col items-end gap-2">
+      <header className="relative text-center max-w-6xl mx-auto px-4">
+        <div className="absolute right-4 top-4 flex flex-col items-end gap-2">
           {/* 상단: 패치 / 공지 / 도움말 */}
           <div className="flex items-center gap-2">
             <span className="text-xl text-slate-300 select-none whitespace-nowrap">

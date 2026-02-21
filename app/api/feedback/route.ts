@@ -5,7 +5,7 @@ export const runtime = "nodejs";
 
 const MAX_LEN = 500;
 const MIN_LEN = 5;
-const COOLDOWN_MS = 30_000;
+const COOLDOWN_MS = 120_000;
 
 // ✅ IP별 마지막 전송 시간 (메모리 기반)
 const lastSentByIp = new Map<string, number>();
