@@ -80,7 +80,7 @@ const enemyChamp =
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
 
   const handleLogoClick = () => {
-  router.replace("/champ");
+  window.location.href = "/champ";
 };
 
 
