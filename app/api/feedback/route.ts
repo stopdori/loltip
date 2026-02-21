@@ -1,6 +1,8 @@
 // app/api/feedback/route.ts
 import { NextResponse } from "next/server";
 
+export const runtime = "nodejs";
+
 const MAX_LEN = 500;
 const MIN_LEN = 5;
 const COOLDOWN_MS = 30_000;
