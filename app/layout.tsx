@@ -6,14 +6,6 @@ export const metadata = {
   description: "League of Legends Tips",
 };
 
-export const viewport = {
-  width: 960,
-  initialScale: 0.35,
-  maximumScale: 3,
-  minimumScale: 0.25,
-  userScalable: true,
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -24,14 +16,10 @@ export default function RootLayout({
       <body className="bg-slate-900">
         <div className="min-h-screen overflow-x-auto">
           {/* 본문 기준 레이아웃 */}
-          <div className="mx-auto w-full min-w-[960px] w-full px-6 py-10">
-            {/* 
-              기본: 본문만 중앙
-              xl 이상: 좌 / 본문 / 우 (광고 표시)
-            */}
-            <div className="grid grid-cols-1 xl:grid-cols-[240px_minmax(0,960px)_240px] gap-6 items-start justify-center">
+          <div className="mx-auto min-w-[960px] w-full px-6 py-10">
+            <div className="grid grid-cols-[960px] xl:grid-cols-[240px_960px_240px] gap-6 items-start justify-center">
 
-              {/* LEFT AD (xl 이상만) */}
+              {/* LEFT AD */}
               <aside className="sticky top-[220px] hidden xl:block">
                 <AdSlot side="left" />
               </aside>
@@ -39,7 +27,7 @@ export default function RootLayout({
               {/* MAIN */}
               <main>{children}</main>
 
-              {/* RIGHT AD (xl 이상만) */}
+              {/* RIGHT AD */}
               <aside className="sticky top-[220px] hidden xl:block justify-self-end">
                 <AdSlot side="right" />
               </aside>
