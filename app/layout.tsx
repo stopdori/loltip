@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="bg-slate-900">
-        <div className="min-h-screen overflow-x-auto">
+        <div className="min-h-screen overflow-x-hidden">
           {/* 본문 기준 레이아웃 */}
-          <div className="mx-auto min-w-[960px] w-full px-6 py-10">
+          <div className="mx-auto w-full max-w-[960px] px-4 py-6">
             {/* 
               기본: 본문만 중앙
               xl 이상: 좌 / 본문 / 우 (광고 표시)
