@@ -2,8 +2,16 @@ import "./globals.css";
 import AdSlot from "./components/AdSlot";
 
 export const metadata = {
-  title: "LOLTIP",
-  description: "League of Legends Tips",
+  title: "LOLTIP - League of Legends Mechanic Guide",
+  description: "Champion interactions, mechanics, unstoppable, vision, skill timing and matchup knowledge for League of Legends.",
+  openGraph: {
+    title: "LOLTIP",
+    description: "League of Legends champion interaction & mechanic guide",
+    url: "https://loltip.com",
+    siteName: "LOLTIP",
+    locale: "ko_KR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
