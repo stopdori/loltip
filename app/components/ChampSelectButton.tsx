@@ -29,6 +29,7 @@ export default function ChampSelectButton({
     : `/ui/SelectChamp.png`;
 
 const handleClear = (e: React.MouseEvent) => {
+  e.preventDefault();
   e.stopPropagation();
 
   const params = new URLSearchParams(searchParams.toString());
@@ -39,36 +40,53 @@ const handleClear = (e: React.MouseEvent) => {
 };
 
   return (
-    <button
-      onClick={onClick}
-      className="
-        group
-        w-[220px] sm:w-[260px]
-        rounded-2xl
-        bg-slate-800/60 hover:bg-slate-700/60
-        transition
-        p-6
-        border border-white/10 hover:border-white/20
-        shadow-lg
-        flex flex-col items-center
-      "
-    >
-      {/* 상단 라벨 + 초기화 버튼 */}
-<div className="flex items-center justify-center gap-2 mb-3">
-  <div className="text-sm font-semibold text-slate-300 text-center">
-    {label}
-  </div>
+  <div
+    onClick={onClick}
+    role="button"
+    tabIndex={0}
+    className="
+      group
+      relative
+      w-[220px] sm:w-[260px]
+      rounded-2xl
+      bg-slate-800/60 hover:bg-slate-700/60
+      transition
+      p-6
+      border border-white/10 hover:border-white/20
+      shadow-lg
+      flex flex-col items-center
+      cursor-pointer
+    "
+  >
 
-  {selected && (
+    {/* 🔁 초기화 버튼 (우상단 고정) */}
     <button
+      type="button"
       onClick={handleClear}
-      className="w-5 h-5 rounded-md bg-slate-700 hover:bg-red-500 text-white text-xs font-bold flex items-center justify-center border border-white/20 leading-none"
+      className="
+        absolute top-2 right-2
+        w-7 h-7
+        rounded-full
+        bg-slate-900/80 hover:bg-yellow-400
+        text-slate-200 hover:text-black
+        border border-white/15
+        flex items-center justify-center
+        text-sm
+        transition
+        z-10
+      "
       title="초기화"
     >
-      ×
+      ⟳
     </button>
-  )}
-</div>
+
+    {/* 상단 라벨 */}
+    <div className="text-sm font-semibold text-slate-300 text-center mb-3">
+      {label}
+    </div>
+  
+  
+
 
       {/* 챔피언 아이콘 */}
 <div className="relative w-[96px] h-[96px] sm:w-[110px] sm:h-[110px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
@@ -89,6 +107,6 @@ const handleClear = (e: React.MouseEvent) => {
       <div className="mt-4 text-center font-semibold text-slate-100">
         {selected ? title : <span className="text-slate-400">선택하기</span>}
       </div>
-    </button>
+    </div>
   );
 }
