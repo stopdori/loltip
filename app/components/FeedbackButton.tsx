@@ -51,13 +51,13 @@ export default function FeedbackButton({ lang }: Props) {
     };
 
     try {
-      const resp = await fetch(`${window.location.origin}/api/feedback`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const resp = await fetch("/api/feedback", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(payload),
+});
 
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
 
       alert(lang === "ko" ? "전송 완료!" : "Sent!");
       setMessage("");
