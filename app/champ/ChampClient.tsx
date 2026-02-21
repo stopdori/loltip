@@ -87,7 +87,7 @@ const enemyChamp =
           {/* 상단: 패치 / 공지 / 도움말 */}
           <div className="flex items-center gap-2">
             <span className="text-xl text-slate-300 select-none whitespace-nowrap">
-              🛠 26.3
+              🛠 26.4
             
             </span>
 
