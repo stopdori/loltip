@@ -28,7 +28,7 @@ export default function RootLayout({
               기본: 본문만 중앙
               xl 이상: 좌 / 본문 / 우 (광고 표시)
             */}
-            <div className="grid grid-cols-[960px] xl:grid-cols-[240px_960px_240px] gap-6 items-start justify-center">
+            <div className="grid grid-cols-1 xl:grid-cols-[240px_minmax(0,960px)_240px] gap-6 items-start justify-center">
 
               {/* LEFT AD (xl 이상만) */}
               <aside className="sticky top-[220px] hidden xl:block">
