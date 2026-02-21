@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const gangplank: ChampSkill = {
+const gangplank: ChampData = {
   id: "gangplank",
   skills: {
     P: ["MS_UP"],
@@ -11,9 +11,22 @@ const gangplank: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
-    ""
+  notes: {
+    ko: [
+    "마나 게이지 밑에 화약통 갯수 나옴"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 160,

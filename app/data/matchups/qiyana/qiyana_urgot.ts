@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const qiyana_urgot: MatchupSummary = {
   champs: ["qiyana", "urgot"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    qiyana: {
+      ko: [""],
+      en: [""],
+    },
+    urgot: {
+      ko: [],
+      en: [],
+    },
   },
 };

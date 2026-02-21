@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const nocturne_varus: MatchupSummary = {
   champs: ["nocturne", "varus"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    nocturne: {
+      ko: [""],
+      en: [""],
+    },
+    varus: {
+      ko: [],
+      en: [],
+    },
   },
 };

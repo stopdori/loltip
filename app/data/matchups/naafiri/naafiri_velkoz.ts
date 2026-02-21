@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const naafiri_velkoz: MatchupSummary = {
   champs: ["naafiri", "velkoz"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    naafiri: {
+      ko: [""],
+      en: [""],
+    },
+    velkoz: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const karthus: ChampSkill = {
+const karthus: ChampData = {
   id: "karthus",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const karthus: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "Q는 단일 대상 명중 시 피해가 증가함", "카서스 R 시전중에 점멸쓰면 절대 안됨\n궁 취소됨",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 200,

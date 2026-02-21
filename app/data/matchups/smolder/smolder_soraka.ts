@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_soraka: MatchupSummary = {
   champs: ["smolder", "soraka"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    smolder: {
+      ko: [""],
+      en: [""],
+    },
+    soraka: {
+      ko: [],
+      en: [],
+    },
   },
 };

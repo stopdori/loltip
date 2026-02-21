@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const darius_taric: MatchupSummary = {
   champs: ["darius", "taric"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    darius: {
+      ko: [""],
+      en: [""],
+    },
+    taric: {
+      ko: [],
+      en: [],
+    },
   },
 };

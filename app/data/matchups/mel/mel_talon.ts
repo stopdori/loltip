@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_talon: MatchupSummary = {
   champs: ["mel", "talon"],
-  highlights: {
-    ko: ["멜 W가 탈론 W 반사 가능."],
-    en: ["Mel’s W reflects Talon’s W"],
+  highlightsByChamp: {
+    mel: {
+      ko: ["멜 W가 탈론 W 반사 가능."],
+      en: ["Mel’s W reflects Talon’s W"],
+    },
+    talon: {
+      ko: [],
+      en: [],
+    },
   },
 };

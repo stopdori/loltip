@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const jhin_nunu: MatchupSummary = {
   champs: ["jhin", "nunu"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    jhin: {
+      ko: [""],
+      en: [""],
+    },
+    nunu: {
+      ko: [],
+      en: [],
+    },
   },
 };

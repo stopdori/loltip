@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const syndra_veigar: MatchupSummary = {
   champs: ["syndra", "veigar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    syndra: {
+      ko: [""],
+      en: [""],
+    },
+    veigar: {
+      ko: [],
+      en: [],
+    },
   },
 };

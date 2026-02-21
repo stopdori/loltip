@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const rell_thresh: MatchupSummary = {
   champs: ["rell", "thresh"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    rell: {
+      ko: [""],
+      en: [""],
+    },
+    thresh: {
+      ko: [],
+      en: [],
+    },
   },
 };

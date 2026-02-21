@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const masteryi_renekton: MatchupSummary = {
   champs: ["masteryi", "renekton"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    masteryi: {
+      ko: [""],
+      en: [""],
+    },
+    renekton: {
+      ko: [],
+      en: [],
+    },
   },
 };

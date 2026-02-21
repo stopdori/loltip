@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const qiyana_thresh: MatchupSummary = {
   champs: ["qiyana", "thresh"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    qiyana: {
+      ko: [""],
+      en: [""],
+    },
+    thresh: {
+      ko: [],
+      en: [],
+    },
   },
 };

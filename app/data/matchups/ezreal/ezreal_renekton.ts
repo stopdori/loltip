@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ezreal_renekton: MatchupSummary = {
   champs: ["ezreal", "renekton"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ezreal: {
+      ko: [""],
+      en: [""],
+    },
+    renekton: {
+      ko: [],
+      en: [],
+    },
   },
 };

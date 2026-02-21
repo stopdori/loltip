@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_taliyah: MatchupSummary = {
   champs: ["smolder", "taliyah"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    smolder: {
+      ko: [""],
+      en: [""],
+    },
+    taliyah: {
+      ko: [],
+      en: [],
+    },
   },
 };

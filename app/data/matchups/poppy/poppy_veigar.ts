@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const poppy_veigar: MatchupSummary = {
   champs: ["poppy", "veigar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    poppy: {
+      ko: [""],
+      en: [""],
+    },
+    veigar: {
+      ko: [],
+      en: [],
+    },
   },
 };

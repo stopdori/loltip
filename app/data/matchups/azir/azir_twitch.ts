@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const azir_twitch: MatchupSummary = {
   champs: ["azir", "twitch"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    azir: {
+      ko: [""],
+      en: [""],
+    },
+    twitch: {
+      ko: [],
+      en: [],
+    },
   },
 };

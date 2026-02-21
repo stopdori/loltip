@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const gangplank_shyvana: MatchupSummary = {
   champs: ["gangplank", "shyvana"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    gangplank: {
+      ko: [""],
+      en: [""],
+    },
+    shyvana: {
+      ko: [],
+      en: [],
+    },
   },
 };

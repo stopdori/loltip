@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const tryndamere_twistedfate: MatchupSummary = {
   champs: ["tryndamere", "twistedfate"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    tryndamere: {
+      ko: [""],
+      en: [""],
+    },
+    twistedfate: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const pantheon_velkoz: MatchupSummary = {
   champs: ["pantheon", "velkoz"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    pantheon: {
+      ko: [""],
+      en: [""],
+    },
+    velkoz: {
+      ko: [],
+      en: [],
+    },
   },
 };

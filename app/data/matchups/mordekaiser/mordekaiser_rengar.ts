@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const mordekaiser_rengar: MatchupSummary = {
   champs: ["mordekaiser", "rengar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    mordekaiser: {
+      ko: [""],
+      en: [""],
+    },
+    rengar: {
+      ko: [],
+      en: [],
+    },
   },
 };

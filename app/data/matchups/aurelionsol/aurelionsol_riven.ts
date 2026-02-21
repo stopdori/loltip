@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const aurelionsol_riven: MatchupSummary = {
   champs: ["aurelionsol", "riven"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    aurelionsol: {
+      ko: [""],
+      en: [""],
+    },
+    riven: {
+      ko: [],
+      en: [],
+    },
   },
 };

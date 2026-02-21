@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const illaoi_nunu: MatchupSummary = {
   champs: ["illaoi", "nunu"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    illaoi: {
+      ko: [""],
+      en: [""],
+    },
+    nunu: {
+      ko: [],
+      en: [],
+    },
   },
 };

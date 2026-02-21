@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const pantheon_rengar: MatchupSummary = {
   champs: ["pantheon", "rengar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    pantheon: {
+      ko: [""],
+      en: [""],
+    },
+    rengar: {
+      ko: [],
+      en: [],
+    },
   },
 };

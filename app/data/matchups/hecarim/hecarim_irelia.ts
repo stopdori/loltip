@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const hecarim_irelia: MatchupSummary = {
   champs: ["hecarim", "irelia"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    hecarim: {
+      ko: [""],
+      en: [""],
+    },
+    irelia: {
+      ko: [],
+      en: [],
+    },
   },
 };

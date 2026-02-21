@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const quinn_trundle: MatchupSummary = {
   champs: ["quinn", "trundle"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    quinn: {
+      ko: [""],
+      en: [""],
+    },
+    trundle: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const khazix_yone: MatchupSummary = {
   champs: ["khazix", "yone"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    khazix: {
+      ko: [""],
+      en: [""],
+    },
+    yone: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const sylas_zed: MatchupSummary = {
   champs: ["sylas", "zed"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    sylas: {
+      ko: [""],
+      en: [""],
+    },
+    zed: {
+      ko: [],
+      en: [],
+    },
   },
 };

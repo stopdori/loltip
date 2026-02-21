@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ornn_viktor: MatchupSummary = {
   champs: ["ornn", "viktor"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ornn: {
+      ko: [""],
+      en: [""],
+    },
+    viktor: {
+      ko: [],
+      en: [],
+    },
   },
 };

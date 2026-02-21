@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const nidalee: ChampSkill = {
+const nidalee: ChampData = {
   id: "nidalee",
 
   skills: {
@@ -25,9 +25,22 @@ const nidalee: ChampSkill = {
     },
   },
 
-  notes: [
+  notes: {
+    ko: [
     "쿠거폼 점멸+스킬들 다 안됨", "인간폼 Q, W를 맞히면 사냥이 발동되고 사냥이 발동되면 R 쿨타임이 초기화되서 바로 변신가능"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
 
   // 제이스 궁은 폼 전환이라 쿨 없음

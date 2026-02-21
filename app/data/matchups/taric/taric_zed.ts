@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const taric_zed: MatchupSummary = {
   champs: ["taric", "zed"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    taric: {
+      ko: [""],
+      en: [""],
+    },
+    zed: {
+      ko: [],
+      en: [],
+    },
   },
 };

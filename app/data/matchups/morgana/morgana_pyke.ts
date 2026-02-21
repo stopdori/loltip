@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const morgana_pyke: MatchupSummary = {
   champs: ["morgana", "pyke"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    morgana: {
+      ko: [""],
+      en: [""],
+    },
+    pyke: {
+      ko: [],
+      en: [],
+    },
   },
 };

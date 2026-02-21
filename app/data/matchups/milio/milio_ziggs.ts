@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const milio_ziggs: MatchupSummary = {
   champs: ["milio", "ziggs"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    milio: {
+      ko: [""],
+      en: [""],
+    },
+    ziggs: {
+      ko: [],
+      en: [],
+    },
   },
 };

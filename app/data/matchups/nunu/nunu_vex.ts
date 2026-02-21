@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const nunu_vex: MatchupSummary = {
   champs: ["nunu", "vex"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    nunu: {
+      ko: [""],
+      en: [""],
+    },
+    vex: {
+      ko: [],
+      en: [],
+    },
   },
 };

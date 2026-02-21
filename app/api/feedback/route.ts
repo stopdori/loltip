@@ -78,7 +78,7 @@ export async function POST(req: Request) {
       content: null,
       embeds: [
         {
-          title: "📩 LOLTIP 문의 도착",
+          title: "",
           description: message,
           color: 0xfacc15,
           fields: [

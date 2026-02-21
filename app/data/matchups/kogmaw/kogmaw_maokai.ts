@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const kogmaw_maokai: MatchupSummary = {
   champs: ["kogmaw", "maokai"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    kogmaw: {
+      ko: [""],
+      en: [""],
+    },
+    maokai: {
+      ko: [],
+      en: [],
+    },
   },
 };

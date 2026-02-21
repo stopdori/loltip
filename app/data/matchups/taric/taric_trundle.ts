@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const taric_trundle: MatchupSummary = {
   champs: ["taric", "trundle"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    taric: {
+      ko: [""],
+      en: [""],
+    },
+    trundle: {
+      ko: [],
+      en: [],
+    },
   },
 };

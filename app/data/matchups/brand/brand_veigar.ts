@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const brand_veigar: MatchupSummary = {
   champs: ["brand", "veigar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    brand: {
+      ko: [""],
+      en: [""],
+    },
+    veigar: {
+      ko: [],
+      en: [],
+    },
   },
 };

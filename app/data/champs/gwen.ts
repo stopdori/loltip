@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const gwen: ChampSkill = {
+const gwen: ChampData = {
   id: "gwen",
   skills: {
     P: ["LIFESTEAL"],
@@ -11,9 +11,22 @@ const gwen: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "Q는 중앙에 명중해야 좋음",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
 
   ultCooldown: {

@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const gragas: ChampSkill = {
+const gragas: ChampData = {
   id: "gragas",
   skills: {
     P: ["HEAL"],
@@ -11,9 +11,22 @@ const gragas: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
-    "E(배치기) 날아가는 도중에 Q R 다 가능",
+  notes: {
+    ko: [
+    "E로 날아가는 도중에 Q R 다 가능",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 100,

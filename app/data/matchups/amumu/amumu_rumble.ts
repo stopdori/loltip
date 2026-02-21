@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const amumu_rumble: MatchupSummary = {
   champs: ["amumu", "rumble"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    amumu: {
+      ko: [""],
+      en: [""],
+    },
+    rumble: {
+      ko: [],
+      en: [],
+    },
   },
 };

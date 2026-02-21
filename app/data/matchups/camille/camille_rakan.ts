@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const camille_rakan: MatchupSummary = {
   champs: ["camille", "rakan"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    camille: {
+      ko: [""],
+      en: [""],
+    },
+    rakan: {
+      ko: [],
+      en: [],
+    },
   },
 };

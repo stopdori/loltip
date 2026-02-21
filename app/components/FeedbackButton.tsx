@@ -19,8 +19,8 @@ export default function FeedbackButton({ lang }: Props) {
 
   const placeholder = useMemo(() => {
     return lang === "ko"
-      ? "추가했으면 하는 점이나 잘못된 점 문의 부탁드립니다. (예: 말파이트 Q 장막 판정 누락)"
-      : "Report an issue or incorrect info (e.g. missing interaction)";
+      ? "메커니즘이 잘못된 부분 제보 부탁드립니다. 정확도 높은 데이터 유지를 위해 짧은 영상(링크)이나 긴 영상(유튜브 어떤영상 OO시간 OO초)이나 리플레이(롤 닉네임, 날짜, 총 게임시간, 어떤 캐릭터 리플레이 OO시간 OO초)를 부탁드립니다."
+      : "Please report any incorrect mechanics. To maintain high data accuracy, please provide GIFs (link), videos (YouTube video title, MM:SS), or replays (LoL summoner name, date, total game time, champion name, and MM:SS).";
   }, [lang]);
 
   useEffect(() => {

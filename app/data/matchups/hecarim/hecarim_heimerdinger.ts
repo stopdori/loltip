@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const hecarim_heimerdinger: MatchupSummary = {
   champs: ["hecarim", "heimerdinger"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    hecarim: {
+      ko: [""],
+      en: [""],
+    },
+    heimerdinger: {
+      ko: [],
+      en: [],
+    },
   },
 };

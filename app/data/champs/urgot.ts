@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const urgot: ChampSkill = {
+const urgot: ChampData = {
   id: "urgot",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const urgot: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
-    "[[R_FLASH]] 안됨", "다리방향마다 추뎀과 쿨타임이 있음", "R [[EXECUTE]]은 대상의 체력 25% 이하일 때\n재사용을 눌러야 발동"
+  notes: {
+    ko: [
+    "[[R_FLASH]] 안됨", "다리방향마다 추뎀과 쿨타임이 있음", "E스킬은 두단계로 나뉨 준비/돌진\n준비단계에 우르곳이 맞은 CC는 유효하지만\n돌진단계가 발동되어 앞으로 이동하는것\n돌진단계에는 CC저항력 없음", "R [[EXECUTE]]은 대상의 체력 25% 이하일 때\n재사용을 눌러야 발동"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 100,

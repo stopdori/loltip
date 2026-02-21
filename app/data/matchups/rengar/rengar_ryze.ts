@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const rengar_ryze: MatchupSummary = {
   champs: ["rengar", "ryze"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    rengar: {
+      ko: [""],
+      en: [""],
+    },
+    ryze: {
+      ko: [],
+      en: [],
+    },
   },
 };

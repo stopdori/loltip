@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const braum_nasus: MatchupSummary = {
   champs: ["braum", "nasus"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    braum: {
+      ko: [""],
+      en: [""],
+    },
+    nasus: {
+      ko: [],
+      en: [],
+    },
   },
 };

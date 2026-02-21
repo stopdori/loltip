@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const seraphine_wukong: MatchupSummary = {
   champs: ["seraphine", "wukong"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    seraphine: {
+      ko: [""],
+      en: [""],
+    },
+    wukong: {
+      ko: [],
+      en: [],
+    },
   },
 };

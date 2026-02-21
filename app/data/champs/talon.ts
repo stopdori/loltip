@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const talon: ChampSkill = {
+const talon: ChampData = {
   id: "talon",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const talon: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "근접 Q는 [[CRIT]]\nQ로 대상을 처치하면 [[HEAL]]", "W [[SLOW]]는 돌아올 때", "R [[INVISIBILITY]]중에 점멸써도 안풀림", "내 탈론이 약한 이유는 R을 재사용으로 해제해서 그럴 수 있음.\n평타나 Q로 대상에게 해제해야 딜이 쌤",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
   
   ultCooldown: {
     6: 100,

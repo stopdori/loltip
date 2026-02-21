@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const bard_hecarim: MatchupSummary = {
   champs: ["bard", "hecarim"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    bard: {
+      ko: [""],
+      en: [""],
+    },
+    hecarim: {
+      ko: [],
+      en: [],
+    },
   },
 };

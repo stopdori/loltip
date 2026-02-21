@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const teemo_yone: MatchupSummary = {
   champs: ["teemo", "yone"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    teemo: {
+      ko: [""],
+      en: [""],
+    },
+    yone: {
+      ko: [],
+      en: [],
+    },
   },
 };

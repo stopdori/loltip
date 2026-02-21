@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const karma: ChampSkill = {
+const karma: ChampData = {
   id: "karma",
   skills: {
     base : {
@@ -23,9 +23,22 @@ const karma: ChampSkill = {
     },
   },
 
-  notes: [
-    "만트라 W는 발동할 때 한번\n[[ROOT]]되면 한번 더 [[HEAL]]을 함",
+  notes: {
+    ko: [
+    "만트라 W는 발동할 때 [[HEAL]]\n[[ROOT]]되면 한번 더 [[HEAL]]",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 38,

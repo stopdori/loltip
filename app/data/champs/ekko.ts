@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const ekko: ChampSkill = {
+const ekko: ChampData = {
   id: "ekko",
   skills: {
     P: ["MS_UP",],
@@ -11,9 +11,22 @@ const ekko: ChampSkill = {
     ETC: [],
   },
 
-   notes: [
+   notes: {
+    ko: [
     "W 깔면 밤위 슬로우임\n사라지기 전에만 들어가면 효과 발동됨"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 110,

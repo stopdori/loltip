@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const seraphine_smolder: MatchupSummary = {
   champs: ["seraphine", "smolder"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    seraphine: {
+      ko: [""],
+      en: [""],
+    },
+    smolder: {
+      ko: [],
+      en: [],
+    },
   },
 };

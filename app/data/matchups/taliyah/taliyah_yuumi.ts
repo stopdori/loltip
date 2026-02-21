@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const taliyah_yuumi: MatchupSummary = {
   champs: ["taliyah", "yuumi"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    taliyah: {
+      ko: [""],
+      en: [""],
+    },
+    yuumi: {
+      ko: [],
+      en: [],
+    },
   },
 };

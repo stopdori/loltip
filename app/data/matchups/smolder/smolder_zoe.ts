@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_zoe: MatchupSummary = {
   champs: ["smolder", "zoe"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    smolder: {
+      ko: [""],
+      en: [""],
+    },
+    zoe: {
+      ko: [],
+      en: [],
+    },
   },
 };

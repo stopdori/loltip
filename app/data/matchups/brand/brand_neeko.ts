@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const brand_neeko: MatchupSummary = {
   champs: ["brand", "neeko"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    brand: {
+      ko: [""],
+      en: [""],
+    },
+    neeko: {
+      ko: [],
+      en: [],
+    },
   },
 };

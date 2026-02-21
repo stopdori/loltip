@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const akali_warwick: MatchupSummary = {
   champs: ["akali", "warwick"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    akali: {
+      ko: ["아칼리 E2로 워윅 Q, R을 따라갈 수 있음"],
+      en: [""],
+    },
+    warwick: {
+      ko: [],
+      en: [],
+    },
   },
 };

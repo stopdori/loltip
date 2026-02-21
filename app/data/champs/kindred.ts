@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const kindred: ChampSkill = {
+const kindred: ChampData = {
   id: "kindred",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const kindred: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "R플 안됨", "표식당 Q의 [[AS_UP]] 5% 증가\nW, E 데미지증가\n4표식당 사거리 75증가", "정글표식은 랜덤으로 뜨는듯?", "R은 체력 10% 밑으로 [[INVULNERABLE]]임"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 160,

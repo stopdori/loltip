@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const veigar_warwick: MatchupSummary = {
   champs: ["veigar", "warwick"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    veigar: {
+      ko: [""],
+      en: [""],
+    },
+    warwick: {
+      ko: [],
+      en: [],
+    },
   },
 };

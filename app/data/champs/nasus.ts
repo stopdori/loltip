@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const nasus: ChampSkill = {
+const nasus: ChampData = {
   id: "nasus",
   skills: {
     P: ["LIFESTEAL"],
@@ -11,9 +11,22 @@ const nasus: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "R은 [[MAX_HP_UP]]여서 풀피에도 유효함\n[[GW]]영향도 안받음"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const irelia_pyke: MatchupSummary = {
   champs: ["irelia", "pyke"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    irelia: {
+      ko: [""],
+      en: [""],
+    },
+    pyke: {
+      ko: [],
+      en: [],
+    },
   },
 };

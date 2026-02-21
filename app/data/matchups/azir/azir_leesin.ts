@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const azir_leesin: MatchupSummary = {
   champs: ["azir", "leesin"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    azir: {
+      ko: [""],
+      en: [""],
+    },
+    leesin: {
+      ko: [],
+      en: [],
+    },
   },
 };

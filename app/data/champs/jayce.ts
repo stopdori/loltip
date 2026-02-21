@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const jayce: ChampSkill = {
+const jayce: ChampData = {
   id: "jayce",
 
   skills: {
@@ -26,9 +26,22 @@ const jayce: ChampSkill = {
   },
 
 
-  notes: [
+  notes: {
+    ko: [
     "P의 [[MS_UP]]는 폼 변환할 때마다 생김", "캐논폼으로 변환 후 평타를 치면 상대 [[AR_MR_SHRED]]", "해머폼 E는 [[INSEC_KICK]] 됨",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   // 제이스 궁은 폼 전환이라 쿨 없음
   ultCooldown: {

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_pyke: MatchupSummary = {
   champs: ["ahri", "pyke"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ahri: {
+      ko: ["아리 E로 파이크 E를 끊을 수 있음"],
+      en: [""],
+    },
+    pyke: {
+      ko: [],
+      en: [],
+    },
   },
 };

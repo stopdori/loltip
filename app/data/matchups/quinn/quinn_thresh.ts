@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const quinn_thresh: MatchupSummary = {
   champs: ["quinn", "thresh"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    quinn: {
+      ko: [""],
+      en: [""],
+    },
+    thresh: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const akshan_mel: MatchupSummary = {
   champs: ["akshan", "mel"],
-  highlights: {
-    ko: ["멜 W가 아크샨 Q R 반사 가능."],
-    en: ["Mel’s W reflects Akshan’s Q R."],
+  highlightsByChamp: {
+    akshan: {
+      ko: ["멜 W가 아크샨 Q R 반사 가능."],
+      en: ["Mel’s W reflects Akshan’s Q R."],
+    },
+    mel: {
+      ko: [],
+      en: [],
+    },
   },
 };

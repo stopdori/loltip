@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const kayn_vex: MatchupSummary = {
   champs: ["kayn", "vex"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    kayn: {
+      ko: [""],
+      en: [""],
+    },
+    vex: {
+      ko: [],
+      en: [],
+    },
   },
 };

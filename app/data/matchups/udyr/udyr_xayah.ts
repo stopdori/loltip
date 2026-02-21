@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const udyr_xayah: MatchupSummary = {
   champs: ["udyr", "xayah"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    udyr: {
+      ko: [""],
+      en: [""],
+    },
+    xayah: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ashe_sejuani: MatchupSummary = {
   champs: ["ashe", "sejuani"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ashe: {
+      ko: [""],
+      en: [""],
+    },
+    sejuani: {
+      ko: [],
+      en: [],
+    },
   },
 };

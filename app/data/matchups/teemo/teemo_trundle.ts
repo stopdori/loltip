@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const teemo_trundle: MatchupSummary = {
   champs: ["teemo", "trundle"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    teemo: {
+      ko: [""],
+      en: [""],
+    },
+    trundle: {
+      ko: [],
+      en: [],
+    },
   },
 };

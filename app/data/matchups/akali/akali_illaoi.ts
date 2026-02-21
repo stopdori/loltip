@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const akali_illaoi: MatchupSummary = {
   champs: ["akali", "illaoi"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    akali: {
+      ko: [],
+      en: [],
+    },
+    illaoi: {
+      ko: [],
+      en: [],
+    },
   },
 };

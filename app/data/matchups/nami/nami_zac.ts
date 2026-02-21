@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const nami_zac: MatchupSummary = {
   champs: ["nami", "zac"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    nami: {
+      ko: [""],
+      en: [""],
+    },
+    zac: {
+      ko: [],
+      en: [],
+    },
   },
 };

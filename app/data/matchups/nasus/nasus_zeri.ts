@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const nasus_zeri: MatchupSummary = {
   champs: ["nasus", "zeri"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    nasus: {
+      ko: [""],
+      en: [""],
+    },
+    zeri: {
+      ko: [],
+      en: [],
+    },
   },
 };

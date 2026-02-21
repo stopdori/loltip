@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const kled_soraka: MatchupSummary = {
   champs: ["kled", "soraka"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    kled: {
+      ko: [""],
+      en: [""],
+    },
+    soraka: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const pyke_seraphine: MatchupSummary = {
   champs: ["pyke", "seraphine"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    pyke: {
+      ko: [""],
+      en: [""],
+    },
+    seraphine: {
+      ko: [],
+      en: [],
+    },
   },
 };

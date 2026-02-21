@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const skarner_yuumi: MatchupSummary = {
   champs: ["skarner", "yuumi"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    skarner: {
+      ko: [""],
+      en: [""],
+    },
+    yuumi: {
+      ko: [],
+      en: [],
+    },
   },
 };

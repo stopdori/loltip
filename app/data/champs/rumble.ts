@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const rumble: ChampSkill = {
+const rumble: ChampData = {
   id: "rumble",
   skills: {
     P: ["AS_UP"],
@@ -11,9 +11,21 @@ const rumble: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
-    "과열되면 럼블이 침묵 되면서\n[[AS_UP]]에 추뎀있음", "럼블 E의 [[MR_SHRED]]은 [[SLOW]] 대상에게 적중하면 2배이고, 과열 E는 효과가 50% 증가함\n한마디로 맞지마라",
+  notes: {
+    ko: [
+    "과열되면 럼블이 [[SILENCE]] 되면서\n[[AS_UP]]에 추뎀있음", "럼블 E의 [[MR_SHRED]]은 [[SLOW]] 대상에게 적중하면 2배이고, 과열 E는 효과가 50% 증가함\n한마디로 맞지마라",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
 
   ultCooldown: {
     6: 130,

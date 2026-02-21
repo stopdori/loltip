@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const irelia_pantheon: MatchupSummary = {
   champs: ["irelia", "pantheon"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    irelia: {
+      ko: [""],
+      en: [""],
+    },
+    pantheon: {
+      ko: [],
+      en: [],
+    },
   },
 };

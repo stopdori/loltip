@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const jax_nunu: MatchupSummary = {
   champs: ["jax", "nunu"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    jax: {
+      ko: [""],
+      en: [""],
+    },
+    nunu: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const jarvaniv: ChampSkill = {
+const jarvaniv: ChampData = {
   id: "jarvaniv",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const jarvaniv: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "Q(창)에 [[AIRBORNE]]은 E(깃발)에 적중해야 됨", "E는 주변에 [[AS_UP]] 버프가 있음", "W는 상대 챔피언을 많이 맞힐수록 방어막 증가", "R은 발동했을 때 상대가 점멸을 쓰면 피해짐"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

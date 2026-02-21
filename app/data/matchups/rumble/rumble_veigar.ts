@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const rumble_veigar: MatchupSummary = {
   champs: ["rumble", "veigar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    rumble: {
+      ko: [""],
+      en: [""],
+    },
+    veigar: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const quinn_velkoz: MatchupSummary = {
   champs: ["quinn", "velkoz"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    quinn: {
+      ko: [""],
+      en: [""],
+    },
+    velkoz: {
+      ko: [],
+      en: [],
+    },
   },
 };

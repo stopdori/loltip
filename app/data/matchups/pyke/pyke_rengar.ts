@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const pyke_rengar: MatchupSummary = {
   champs: ["pyke", "rengar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    pyke: {
+      ko: [""],
+      en: [""],
+    },
+    rengar: {
+      ko: [],
+      en: [],
+    },
   },
 };

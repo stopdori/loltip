@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const orianna_soraka: MatchupSummary = {
   champs: ["orianna", "soraka"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    orianna: {
+      ko: [""],
+      en: [""],
+    },
+    soraka: {
+      ko: [],
+      en: [],
+    },
   },
 };

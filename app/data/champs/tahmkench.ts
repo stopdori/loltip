@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const tahmkench: ChampSkill = {
+const tahmkench: ChampData = {
   id: "tahmkench",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const tahmkench: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "Q는 챔피언에 적중하면 [[HEAL]]이 됨", "적 3스택 일 때 Q를 맞히면 [[STUN]]\nQR 하면 멀리 있어도 먹어짐", "E는 사용하면 [[SHIELD]]\n사용하지 않으면 [[HEAL]]", "R에 벽넘기 태그는 아군을 삼킬 때\n아군이 벽을 넘는다는 관점에서 가능",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

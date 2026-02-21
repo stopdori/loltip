@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const talon_udyr: MatchupSummary = {
   champs: ["talon", "udyr"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    talon: {
+      ko: [""],
+      en: [""],
+    },
+    udyr: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const akali_aurelionsol: MatchupSummary = {
   champs: ["akali", "aurelionsol"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    akali: {
+      ko: ["아칼리 E2로 아우솔 W를 따라 갈 수 있음"],
+      en: [""],
+    },
+    aurelionsol: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const vayne_vex: MatchupSummary = {
   champs: ["vayne", "vex"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    vayne: {
+      ko: [""],
+      en: [""],
+    },
+    vex: {
+      ko: [],
+      en: [],
+    },
   },
 };

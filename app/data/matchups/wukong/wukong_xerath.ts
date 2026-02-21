@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const wukong_xerath: MatchupSummary = {
   champs: ["wukong", "xerath"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    wukong: {
+      ko: [""],
+      en: [""],
+    },
+    xerath: {
+      ko: [],
+      en: [],
+    },
   },
 };

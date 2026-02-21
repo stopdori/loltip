@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ekko_katarina: MatchupSummary = {
   champs: ["ekko", "katarina"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ekko: {
+      ko: [""],
+      en: [""],
+    },
+    katarina: {
+      ko: [],
+      en: [],
+    },
   },
 };

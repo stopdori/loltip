@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const kindred_shaco: MatchupSummary = {
   champs: ["kindred", "shaco"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    kindred: {
+      ko: [""],
+      en: [""],
+    },
+    shaco: {
+      ko: [],
+      en: [],
+    },
   },
 };

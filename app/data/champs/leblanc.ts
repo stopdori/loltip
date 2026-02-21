@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const leblanc: ChampSkill = {
+const leblanc: ChampData = {
   id: "leblanc",
   skills: {
     P: ["INVISIBILITY"],
@@ -11,9 +11,22 @@ const leblanc: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[W_FLASH]] 안됨", "분신 컨트롤은 alt 우클릭으로 가능"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 45,

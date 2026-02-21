@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const sona_taric: MatchupSummary = {
   champs: ["sona", "taric"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    sona: {
+      ko: [""],
+      en: [""],
+    },
+    taric: {
+      ko: [],
+      en: [],
+    },
   },
 };

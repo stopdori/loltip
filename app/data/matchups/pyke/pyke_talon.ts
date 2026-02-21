@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const pyke_talon: MatchupSummary = {
   champs: ["pyke", "talon"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    pyke: {
+      ko: [""],
+      en: [""],
+    },
+    talon: {
+      ko: [],
+      en: [],
+    },
   },
 };

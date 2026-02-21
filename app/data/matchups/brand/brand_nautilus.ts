@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const brand_nautilus: MatchupSummary = {
   champs: ["brand", "nautilus"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    brand: {
+      ko: [""],
+      en: [""],
+    },
+    nautilus: {
+      ko: [],
+      en: [],
+    },
   },
 };

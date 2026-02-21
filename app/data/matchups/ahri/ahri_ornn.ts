@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_ornn: MatchupSummary = {
   champs: ["ahri", "ornn"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ahri: {
+      ko: ["아리 E로 오른 E, R2를 끊을 수 있음"],
+      en: [""],
+    },
+    ornn: {
+      ko: [],
+      en: [],
+    },
   },
 };

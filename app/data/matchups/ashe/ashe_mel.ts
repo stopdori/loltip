@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ashe_mel: MatchupSummary = {
   champs: ["ashe", "mel"],
-  highlights: {
-    ko: ["멜 W가 애쉬 W E R 반사 가능."],
-    en: ["Mel’s W reflects Ashe’s W E R."],
+  highlightsByChamp: {
+    ashe: {
+      ko: ["멜 W가 애쉬 W E R 반사 가능."],
+      en: ["Mel’s W reflects Ashe’s W E R."],
+    },
+    mel: {
+      ko: [],
+      en: [],
+    },
   },
 };

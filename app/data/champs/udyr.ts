@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const udyr: ChampSkill = {
+const udyr: ChampData = {
   id: "udyr",
 
   skills: {
@@ -16,7 +16,7 @@ const udyr: ChampSkill = {
 
     alt: {
       // 🔨 변신폼 (근접)
-      P: [],
+      P: ["AS_UP"],
       Q: ["RANGE_UP", "AS_UP"],      // 변신 Q는 Q플 가능
       W: ["SHIELD", "LIFESTEAL", "HEAL"],
       E: ["MS_UP", "CC_IMMUNE"],
@@ -25,9 +25,22 @@ const udyr: ChampSkill = {
     },
   },
 
-  notes: [
+  notes: {
+    ko: [
     "우디르는 P효과로 스킬 재사용이 궁임\nP쿨은 50~20s 이고\n태세변환하고 평타를 치면 P 쿨타임 감소"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   // 제이스 궁은 폼 전환이라 쿨 없음
   ultCooldown: {

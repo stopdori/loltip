@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ryze_yorick: MatchupSummary = {
   champs: ["ryze", "yorick"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ryze: {
+      ko: [""],
+      en: [""],
+    },
+    yorick: {
+      ko: [],
+      en: [],
+    },
   },
 };

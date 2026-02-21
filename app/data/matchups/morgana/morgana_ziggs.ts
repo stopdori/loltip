@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const morgana_ziggs: MatchupSummary = {
   champs: ["morgana", "ziggs"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    morgana: {
+      ko: [""],
+      en: [""],
+    },
+    ziggs: {
+      ko: [],
+      en: [],
+    },
   },
 };

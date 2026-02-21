@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const teemo: ChampSkill = {
+const teemo: ChampData = {
   id: "teemo",
   skills: {
     P: ["INVISIBILITY", "AS_UP"],
@@ -11,9 +11,22 @@ const teemo: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "P의 [[AS_UP]]는 [[INVISIBILITY]] 했다 풀었을 때 발동\n[[INVISIBILITY]]는\n부쉬 안 → 안 점멸 안풀림 \n부쉬 안 → 밖 점멸 풀림\n부쉬 밖 → 안 점멸 안풀림\n부쉬 밖 → 밖 점멸 풀림",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 35,

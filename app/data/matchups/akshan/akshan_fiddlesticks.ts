@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const akshan_fiddlesticks: MatchupSummary = {
   champs: ["akshan", "fiddlesticks"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    akshan: {
+      ko: [""],
+      en: [""],
+    },
+    fiddlesticks: {
+      ko: [],
+      en: [],
+    },
   },
 };

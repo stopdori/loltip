@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const rengar_taric: MatchupSummary = {
   champs: ["rengar", "taric"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    rengar: {
+      ko: [""],
+      en: [""],
+    },
+    taric: {
+      ko: [],
+      en: [],
+    },
   },
 };

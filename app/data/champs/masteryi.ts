@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const masteryi: ChampSkill = {
+const masteryi: ChampData = {
   id: "masteryi",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const masteryi: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "선진입 절대 하지마셈", "R은 킬관여 하면\n쿨타임 70%감소, 지속시간 7초 증가"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 85,

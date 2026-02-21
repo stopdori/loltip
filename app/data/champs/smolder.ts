@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const smolder: ChampSkill = {
+const smolder: ChampData = {
   id: "smolder",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const smolder: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
-    "P스택은 25 스플레쉬 /125 추가투사체\n225 3초지속 고정피해, [[EXECUTE]]", "R의 브레스를 스몰더 자신이 맞아야 [[HEAL]]", "E스킬은 [[HARD_CC]]에 끊김"
+  notes: {
+    ko: [
+    "P스택은 25 스플레쉬 /125 추가투사체\n225 3초지속 고정피해, [[EXECUTE]]", "W의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R의 브레스를 스몰더 자신이 맞아야 [[HEAL]]", "E스킬은 [[HARD_CC]]에 끊김"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

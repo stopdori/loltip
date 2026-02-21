@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const milio: ChampSkill = {
+const milio: ChampData = {
   id: "milio",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const milio: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[Q_FLASH]], [[R_FLASH]] 안됨", "W에 텔 안됨", "R은 자신이 CC걸리면 사용이 안됨"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 160,

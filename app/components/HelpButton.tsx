@@ -63,12 +63,13 @@ export default function HelpButton({ lang, className }: Props) {
         onClick={() => setOpen(true)}
         className={
           className ??
-          "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-700/70"
+"px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-700/60"
+
         }
         aria-label={t.title}
         title={t.title}
       >
-        ?
+        {lang === "ko" ? "사용법" : "Help"}
       </button>
 
       {open && (

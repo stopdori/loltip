@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const amumu: ChampSkill = {
+const amumu: ChampData = {
   id: "amumu",
   skills: {
     P: [],
@@ -11,9 +11,21 @@ const amumu: ChampSkill = {
     ETC: [],
   },
 
-   notes: [
+   notes: {
+    ko: [
     "Q로 날아가면서 R 안써짐"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
 
   ultCooldown: {
     6: 150,

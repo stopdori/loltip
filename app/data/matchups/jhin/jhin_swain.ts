@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const jhin_swain: MatchupSummary = {
   champs: ["jhin", "swain"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    jhin: {
+      ko: [""],
+      en: [""],
+    },
+    swain: {
+      ko: [],
+      en: [],
+    },
   },
 };

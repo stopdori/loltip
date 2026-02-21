@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const volibear_zac: MatchupSummary = {
   champs: ["volibear", "zac"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    volibear: {
+      ko: [""],
+      en: [""],
+    },
+    zac: {
+      ko: [],
+      en: [],
+    },
   },
 };

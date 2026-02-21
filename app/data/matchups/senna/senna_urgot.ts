@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const senna_urgot: MatchupSummary = {
   champs: ["senna", "urgot"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    senna: {
+      ko: [""],
+      en: [""],
+    },
+    urgot: {
+      ko: [],
+      en: [],
+    },
   },
 };

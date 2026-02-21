@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const yunara: ChampSkill = {
+const yunara: ChampData = {
   id: "yunara",
   skills: {
     base : {
@@ -22,9 +22,22 @@ const yunara: ChampSkill = {
   },
 },
 
-  notes: [
-    "W를 쓰고 R을 쓰면 쿨타임 80% 감소", "E를 쓰고 R을 쓰면 초기화"
+  notes: {
+    ko: [
+    "W를 쓰고 R을 쓰면 쿨타임 80% 감소", "E를 쓰고 R을 쓰면 E 초기화"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 100,

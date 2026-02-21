@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const xerath_yorick: MatchupSummary = {
   champs: ["xerath", "yorick"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    xerath: {
+      ko: [""],
+      en: [""],
+    },
+    yorick: {
+      ko: [],
+      en: [],
+    },
   },
 };

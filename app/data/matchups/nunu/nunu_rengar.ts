@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const nunu_rengar: MatchupSummary = {
   champs: ["nunu", "rengar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    nunu: {
+      ko: [""],
+      en: [""],
+    },
+    rengar: {
+      ko: [],
+      en: [],
+    },
   },
 };

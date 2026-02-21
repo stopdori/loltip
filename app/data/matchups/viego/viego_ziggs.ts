@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const viego_ziggs: MatchupSummary = {
   champs: ["viego", "ziggs"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    viego: {
+      ko: [""],
+      en: [""],
+    },
+    ziggs: {
+      ko: [],
+      en: [],
+    },
   },
 };

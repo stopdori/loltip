@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const malphite: ChampSkill = {
+const malphite: ChampData = {
   id: "malphite",
   skills: {
     P: ["SHIELD"],
@@ -11,9 +11,22 @@ const malphite: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[R_FLASH]] 안됨", "E에는 상대 공속감소가 있음"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
 
   ultCooldown: {

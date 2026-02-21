@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const lucian_malphite: MatchupSummary = {
   champs: ["lucian", "malphite"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    lucian: {
+      ko: [""],
+      en: [""],
+    },
+    malphite: {
+      ko: [],
+      en: [],
+    },
   },
 };

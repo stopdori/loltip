@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const malphite_tristana: MatchupSummary = {
   champs: ["malphite", "tristana"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    malphite: {
+      ko: [""],
+      en: [""],
+    },
+    tristana: {
+      ko: [],
+      en: [],
+    },
   },
 };

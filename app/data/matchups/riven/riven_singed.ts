@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const riven_singed: MatchupSummary = {
   champs: ["riven", "singed"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    riven: {
+      ko: [""],
+      en: [""],
+    },
+    singed: {
+      ko: [],
+      en: [],
+    },
   },
 };

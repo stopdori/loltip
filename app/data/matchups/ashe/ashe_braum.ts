@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ashe_braum: MatchupSummary = {
   champs: ["ashe", "braum"],
-  highlights: {
-    ko: ["브라움 E(방패)로 애쉬의 W, R을 막을 수 있음. 스턴은 브라움이 대신 받음."],
-en: ["Braum’s E (Unbreakable) blocks Ashe's W and R. Braum takes the stun from R instead."],
+  highlightsByChamp: {
+    ashe: {
+      ko: [],
+      en: [],
+    },
+    braum: {
+      ko: ["브라움 E로 애쉬 평타, Q(평타), W, R을 [[DAMAGE_NULLIFY]], [[INTERCEPT_PROJECTILE]] 할 수 있음.\n단, 애쉬 R은 브라움이 데미지를 입지 않고 [[STUN]]이 걸림\n애쉬 R의 범위피해는 아군에게 유효"],
+      en: [],
+    },
   },
 };

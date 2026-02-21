@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const aurora_illaoi: MatchupSummary = {
   champs: ["aurora", "illaoi"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    aurora: {
+      ko: [""],
+      en: [""],
+    },
+    illaoi: {
+      ko: [],
+      en: [],
+    },
   },
 };

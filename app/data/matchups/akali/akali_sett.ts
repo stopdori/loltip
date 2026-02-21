@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const akali_sett: MatchupSummary = {
   champs: ["akali", "sett"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    akali: {
+      ko: ["아칼리 E2로 세트 R을 따라갈 수 있음"],
+      en: [""],
+    },
+    sett: {
+      ko: [],
+      en: [],
+    },
   },
 };

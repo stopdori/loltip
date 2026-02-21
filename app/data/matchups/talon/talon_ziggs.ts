@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const talon_ziggs: MatchupSummary = {
   champs: ["talon", "ziggs"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    talon: {
+      ko: [""],
+      en: [""],
+    },
+    ziggs: {
+      ko: [],
+      en: [],
+    },
   },
 };

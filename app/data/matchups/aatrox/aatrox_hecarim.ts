@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const aatrox_hecarim: MatchupSummary = {
   champs: ["aatrox", "hecarim"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    aatrox: {
+      ko: [],
+      en: [],
+    },
+    hecarim: {
+      ko: [],
+      en: [],
+    },
   },
 };

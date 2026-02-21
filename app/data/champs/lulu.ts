@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const lulu: ChampSkill = {
+const lulu: ChampData = {
   id: "lulu",
   skills: {
     base: {
@@ -25,9 +25,22 @@ const lulu: ChampSkill = {
   },
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[Q_FLASH]]이 가능은 하지만, 픽스는 점멸로 따라오지 않아 데미지가 덜 들어감", "R이 [[MAX_HP_UP]]여서 풀피에 써도 유효하고\n[[GW]]효과도 안받음\n부담없이 써서 [[AIRBORNE]], [[SLOW]]를 활용해야 좋음",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

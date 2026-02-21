@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const renekton: ChampSkill = {
+const renekton: ChampData = {
   id: "renekton",
 
   skills: {
@@ -25,9 +25,22 @@ const renekton: ChampSkill = {
     },
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[Q_FLASH]] 안됨", "[[W_FLASH]]은 챔피언을 우클릭 해놓고 [[W_FLASH]] 하면 됨\nW에 [[STUN]]은 강화일 때 지속시간 2배", "E는 적에게 피해를 주면 한번 더 사용 가능", "R은 [[MAX_HP_UP]]여서 풀피에 써도 유효하고\n[[GW]]효과도 안받음",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

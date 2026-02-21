@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const renekton_zilean: MatchupSummary = {
   champs: ["renekton", "zilean"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    renekton: {
+      ko: [""],
+      en: [""],
+    },
+    zilean: {
+      ko: [],
+      en: [],
+    },
   },
 };

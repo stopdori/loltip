@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const aurelionsol: ChampSkill = {
+const aurelionsol: ChampData = {
   id: "aurelionsol",
   skills: {
     base: {
@@ -23,9 +23,22 @@ const aurelionsol: ChampSkill = {
     },
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[R_FLASH]] 사거리 밖에 사용하고 점멸 쓰면 발동 됨",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

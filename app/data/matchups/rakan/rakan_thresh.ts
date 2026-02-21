@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const rakan_thresh: MatchupSummary = {
   champs: ["rakan", "thresh"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    rakan: {
+      ko: [""],
+      en: [""],
+    },
+    thresh: {
+      ko: [],
+      en: [],
+    },
   },
 };

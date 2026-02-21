@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const nunu_samira: MatchupSummary = {
   champs: ["nunu", "samira"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    nunu: {
+      ko: [""],
+      en: [""],
+    },
+    samira: {
+      ko: [],
+      en: [],
+    },
   },
 };

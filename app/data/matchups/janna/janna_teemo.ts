@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const janna_teemo: MatchupSummary = {
   champs: ["janna", "teemo"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    janna: {
+      ko: [""],
+      en: [""],
+    },
+    teemo: {
+      ko: [],
+      en: [],
+    },
   },
 };

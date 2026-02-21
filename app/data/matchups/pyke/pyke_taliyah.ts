@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const pyke_taliyah: MatchupSummary = {
   champs: ["pyke", "taliyah"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    pyke: {
+      ko: [""],
+      en: [""],
+    },
+    taliyah: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const pyke_sett: MatchupSummary = {
   champs: ["pyke", "sett"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    pyke: {
+      ko: [""],
+      en: [""],
+    },
+    sett: {
+      ko: [],
+      en: [],
+    },
   },
 };

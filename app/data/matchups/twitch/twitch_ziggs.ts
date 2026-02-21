@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const twitch_ziggs: MatchupSummary = {
   champs: ["twitch", "ziggs"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    twitch: {
+      ko: [""],
+      en: [""],
+    },
+    ziggs: {
+      ko: [],
+      en: [],
+    },
   },
 };

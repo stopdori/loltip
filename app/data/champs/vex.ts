@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const vex: ChampSkill = {
+const vex: ChampData = {
   id: "vex",
   skills: {
     P: ["FEAR"],
@@ -11,9 +11,22 @@ const vex: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[W_FLASH]], [[E_FLASH]] 안됨", "R로 날아갈 때 점멸로 멈출 수 있음 ",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 140,

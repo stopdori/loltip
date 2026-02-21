@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const gragas_lux: MatchupSummary = {
   champs: ["gragas", "lux"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    gragas: {
+      ko: [],
+      en: [],
+    },
+    lux: {
+      ko: ["럭스 Q로 그라가스 E를 막을 수 없음"],
+      en: ["Lux's Q cannot interrupt Gragas's E"],
+    },
   },
 };

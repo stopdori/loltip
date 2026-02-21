@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const twitch_velkoz: MatchupSummary = {
   champs: ["twitch", "velkoz"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    twitch: {
+      ko: [""],
+      en: [""],
+    },
+    velkoz: {
+      ko: [],
+      en: [],
+    },
   },
 };

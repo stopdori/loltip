@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const sett_yorick: MatchupSummary = {
   champs: ["sett", "yorick"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    sett: {
+      ko: [""],
+      en: [""],
+    },
+    yorick: {
+      ko: [],
+      en: [],
+    },
   },
 };

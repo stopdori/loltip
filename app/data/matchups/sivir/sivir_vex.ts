@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const sivir_vex: MatchupSummary = {
   champs: ["sivir", "vex"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    sivir: {
+      ko: [""],
+      en: [""],
+    },
+    vex: {
+      ko: [],
+      en: [],
+    },
   },
 };

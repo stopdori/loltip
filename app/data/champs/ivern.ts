@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const ivern: ChampSkill = {
+const ivern: ChampData = {
   id: "ivern",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const ivern: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[Q_FLASH]] 안됨", "W는 일정시간 후 폭발하는데\n폭발에 상대가 맞으면 [[SLOW]]\n맞은대상이 없으면 추가 보호막 "
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 140,

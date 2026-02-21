@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const lissandra: ChampSkill = {
+const lissandra: ChampData = {
   id: "lissandra",
   skills: {
     base: {
@@ -26,9 +26,22 @@ const lissandra: ChampSkill = {
   },
   },
 
-    notes: [
-    "[[W_FLASH]] 안됨", "R은 자신에게 쓸 때 회복함",
+  notes: {
+    ko: [
+    "[[W_FLASH]] 안됨", "P의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R은 자신에게 쓸 때 회복함",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

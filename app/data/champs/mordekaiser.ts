@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const mordekaiser: ChampSkill = {
+const mordekaiser: ChampData = {
   id: "mordekaiser",
   skills: {
     P: ["MS_UP"],
@@ -11,9 +11,22 @@ const mordekaiser: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "Q는 단일 대상 명중 시 피해가 증가함", "R에 관련된 챔피언별 메커니즘은 하단 박스에 정리했음"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 140,

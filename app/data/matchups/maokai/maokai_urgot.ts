@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const maokai_urgot: MatchupSummary = {
   champs: ["maokai", "urgot"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    maokai: {
+      ko: [""],
+      en: [""],
+    },
+    urgot: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const olaf: ChampSkill = {
+const olaf: ChampData = {
   id: "olaf",
   skills: {
     P: ["AS_UP", "LIFESTEAL"],
@@ -11,9 +11,22 @@ const olaf: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "[[Q_FLASH]] 안됨\nQ(도끼)에 텔 안타짐", "E를 맞히면 R의 [[MS_UP]]와 지속시간 증가"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 100,

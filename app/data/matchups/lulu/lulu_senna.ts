@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const lulu_senna: MatchupSummary = {
   champs: ["lulu", "senna"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    lulu: {
+      ko: [""],
+      en: [""],
+    },
+    senna: {
+      ko: [],
+      en: [],
+    },
   },
 };

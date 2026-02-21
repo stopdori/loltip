@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const trundle_xerath: MatchupSummary = {
   champs: ["trundle", "xerath"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    trundle: {
+      ko: [""],
+      en: [""],
+    },
+    xerath: {
+      ko: [],
+      en: [],
+    },
   },
 };

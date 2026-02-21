@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const senna_trundle: MatchupSummary = {
   champs: ["senna", "trundle"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    senna: {
+      ko: [""],
+      en: [""],
+    },
+    trundle: {
+      ko: [],
+      en: [],
+    },
   },
 };

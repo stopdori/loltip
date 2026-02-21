@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const rengar_skarner: MatchupSummary = {
   champs: ["rengar", "skarner"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    rengar: {
+      ko: [""],
+      en: [""],
+    },
+    skarner: {
+      ko: [],
+      en: [],
+    },
   },
 };

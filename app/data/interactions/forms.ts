@@ -60,6 +60,13 @@ export const CHAMP_FORMS: Record<
     alt: { ko: "만트라", en: "Mantra" },
   },
 
+  // ✅ 케인 (3폼)
+  kayn: {
+    base: { ko: "케인", en: "Base" },
+    alt: { ko: "그암", en: "Shadow" },
+    alt2: { ko: "다르킨", en: "Rhaast" },
+  },
+
   khazix: {
     base: { ko: "기본", en: "Basic" },
     alt: { ko: "진화", en: "Evolutions" },
@@ -71,8 +78,8 @@ export const CHAMP_FORMS: Record<
   },
 
   ksante: {
-    base: { ko: "기본폼", en: "Base" },
-    alt: { ko: "변신폼", en: "All Out" },
+    base: { ko: "기본", en: "Base" },
+    alt: { ko: "변신", en: "All Out" },
   },
 
   lissandra: {
@@ -115,14 +122,7 @@ export const CHAMP_FORMS: Record<
     base: { ko: "기본", en: "Base" },
     alt: { ko: "강화", en: "Ferocity" },
   },
-
-  // ✅ 케인 (3폼)
-  kayn: {
-    base: { ko: "케인", en: "Base" },
-    alt: { ko: "다르킨", en: "Rhaast" },
-    alt2: { ko: "그암", en: "Shadow" },
-  },
-
+  
   udyr: {
     base: { ko: "기본", en: "Base" },
     alt: { ko: "각성", en: "Awakened" },
@@ -135,9 +135,9 @@ export const CHAMP_FORMS: Record<
 
    // ✅ 흐웨이 (3폼)
   hwei: {
-    base: { ko: "Q스킬", en: "Q Base" },
-    alt: { ko: "W스킬", en: "W Base" },
-    alt2: { ko: "E스킬", en: "E Base" },
+    base: { ko: "Q(빨강)", en: "Q Base" },
+    alt: { ko: "W(파랑)", en: "W Base" },
+    alt2: { ko: "E(보라)", en: "E Base" },
   },
 };
 

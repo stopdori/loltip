@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_xerath: MatchupSummary = {
   champs: ["smolder", "xerath"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    smolder: {
+      ko: [""],
+      en: [""],
+    },
+    xerath: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const karthus_thresh: MatchupSummary = {
   champs: ["karthus", "thresh"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    karthus: {
+      ko: [""],
+      en: [""],
+    },
+    thresh: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const sona_xinzhao: MatchupSummary = {
   champs: ["sona", "xinzhao"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    sona: {
+      ko: [""],
+      en: [""],
+    },
+    xinzhao: {
+      ko: [],
+      en: [],
+    },
   },
 };

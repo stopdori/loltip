@@ -1,12 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {
-  getMatchupSummary,
-  type MatchupLoadResult,
-} from "../data/matchups/_index";
+import TokenText from "./TokenText";
+import { getMatchupSummary, type MatchupLoadResult } from "../data/matchups/_index";
 
 type Lang = "ko" | "en";
+
 
 export default function MatchupSummaryBox({
   myChampId,
@@ -25,9 +24,7 @@ export default function MatchupSummaryBox({
 
   return (
     <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-8">
-      <h3 className="mb-4 text-lg font-extrabold text-slate-100">
-        핵심 요약
-      </h3>
+      <h3 className="mb-4 text-lg font-extrabold text-slate-100">판정</h3>
 
       {/* ✅ 정상 */}
       {result?.status === "ok" && (
@@ -35,24 +32,21 @@ export default function MatchupSummaryBox({
           {/* 내 챔피언 요약 먼저 */}
           {(result.data.highlightsByChamp?.[myChampId]?.[lang] ?? []).map(
             (text, idx) => (
-              <li
-                key={`my-${idx}`}
-                className="whitespace-pre-line"
-              >
-                {text}
-              </li>
+              <li key={`my-${idx}`} className="whitespace-pre-line">
+  <TokenText text={text} lang={lang} />
+
+</li>
             )
           )}
 
           {/* 상대 챔피언 요약 다음 */}
           {(result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).map(
             (text, idx) => (
-              <li
-                key={`enemy-${idx}`}
-                className="whitespace-pre-line"
-              >
-                {text}
-              </li>
+              <li key={`enemy-${idx}`} className="whitespace-pre-line">
+  <TokenText text={text} lang={lang} />
+
+</li>
+
             )
           )}
         </ul>

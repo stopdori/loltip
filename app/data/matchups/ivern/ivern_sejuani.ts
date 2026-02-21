@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ivern_sejuani: MatchupSummary = {
   champs: ["ivern", "sejuani"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ivern: {
+      ko: [""],
+      en: [""],
+    },
+    sejuani: {
+      ko: [],
+      en: [],
+    },
   },
 };

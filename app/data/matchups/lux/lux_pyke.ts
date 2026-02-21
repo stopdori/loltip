@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const lux_pyke: MatchupSummary = {
   champs: ["lux", "pyke"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    lux: {
+      ko: [""],
+      en: [""],
+    },
+    pyke: {
+      ko: [],
+      en: [],
+    },
   },
 };

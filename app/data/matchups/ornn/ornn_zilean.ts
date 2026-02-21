@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const ornn_zilean: MatchupSummary = {
   champs: ["ornn", "zilean"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    ornn: {
+      ko: [""],
+      en: [""],
+    },
+    zilean: {
+      ko: [],
+      en: [],
+    },
   },
 };

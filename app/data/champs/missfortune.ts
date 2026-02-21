@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const missfortune: ChampSkill = {
+const missfortune: ChampData = {
   id: "missfortune",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const missfortune: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
-    "R은 E로 [[SLOW]]를 걸고 그 다음 쓰는 게 좋음\nR을 시전중에 움직이면 풀림"
+  notes: {
+    ko: [
+    "E의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R은 E로 [[SLOW]]를 걸고 그 다음 쓰는 게 좋음\nR 채널링에 움직이면 풀림"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

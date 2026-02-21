@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const sivir: ChampSkill = {
+const sivir: ChampData = {
   id: "sivir",
   skills: {
     P: ["MS_UP"],
@@ -11,9 +11,22 @@ const sivir: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "E는 챔핀언별로 아래 박스에 정리", "R 활성화 중 챔피언에 기본공격하면\n기본스킬 쿨타임 감소\nW(튕부)에 챔피언이 맞는건 감소 안함",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

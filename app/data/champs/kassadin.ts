@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const kassadin: ChampSkill = {
+const kassadin: ChampData = {
   id: "kassadin",
   skills: {
     P: ["DMG_REDUCE", "GHOSTING"],
@@ -11,9 +11,22 @@ const kassadin: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "P의 [[DMG_REDUCE]]는 마법피해만 해당됨","Q에 채널링 캔슬 있음. 침묵 아님",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 0,

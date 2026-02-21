@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const elise: ChampSkill = {
+const elise: ChampData = {
   id: "elise",
 
   skills: {
@@ -25,9 +25,22 @@ const elise: ChampSkill = {
     },
   },
 
-  notes: [
-    "매복 상태에서는 렉사이의 시야가 줄어듦\n대신 상대 움직임을 감지할 수 있음 ", "매복에서 평타를 치면 W로 인해 대상이 [[AIRBORNE]]이 됨. W를 눌러서 하는게 아님", "렉사이 R 점멸로 못피함",
+  notes: {
+    ko: [
+    "매복 상태에서는 렉사이의 시야가 줄어듦\n대신 상대 움직임을 진동으로 감지할 수 있음 ", "매복에서 평타를 치면 W로 인해 대상과 대상주변이 [[AIRBORNE]] 됨. W를 눌러서 하는게 아님", "렉사이 R은 상대가 점멸로 못피함",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
   
   // 제이스 궁은 폼 전환이라 쿨 없음
   ultCooldown: {

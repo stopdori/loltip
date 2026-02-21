@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const karma_volibear: MatchupSummary = {
   champs: ["karma", "volibear"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    karma: {
+      ko: [""],
+      en: [""],
+    },
+    volibear: {
+      ko: [],
+      en: [],
+    },
   },
 };

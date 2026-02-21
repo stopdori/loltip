@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_zilean: MatchupSummary = {
   champs: ["smolder", "zilean"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    smolder: {
+      ko: [""],
+      en: [""],
+    },
+    zilean: {
+      ko: [],
+      en: [],
+    },
   },
 };

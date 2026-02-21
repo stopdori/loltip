@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const taric_volibear: MatchupSummary = {
   champs: ["taric", "volibear"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    taric: {
+      ko: [""],
+      en: [""],
+    },
+    volibear: {
+      ko: [],
+      en: [],
+    },
   },
 };

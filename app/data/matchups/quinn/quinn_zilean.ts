@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const quinn_zilean: MatchupSummary = {
   champs: ["quinn", "zilean"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    quinn: {
+      ko: [""],
+      en: [""],
+    },
+    zilean: {
+      ko: [],
+      en: [],
+    },
   },
 };

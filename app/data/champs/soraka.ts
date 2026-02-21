@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const soraka: ChampSkill = {
+const soraka: ChampData = {
   id: "soraka",
   skills: {
     P: ["MS_UP"],
@@ -11,9 +11,22 @@ const soraka: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
-    "Q로 상대를 맞추고 W를 써야 효율이 좋음", "E 위에 상대가 계속 서있으면 [[ROOT]]", "R은 체력 40% 이하 대상에게 효과 증가"
+  notes: {
+    ko: [
+    "Q로 상대를 맞추고 W를 써야 효율이 좋음", "E의 [[SILENCE]]은 범위 안에 있는 대상에게 지속 적용\nE 위에 상대가 계속 서있으면 [[ROOT]]", "R은 체력 40% 이하 대상에게 효과 증가"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 150,

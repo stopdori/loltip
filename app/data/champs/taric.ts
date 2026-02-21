@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const taric: ChampSkill = {
+const taric: ChampData = {
   id: "taric",
   skills: {
     P: ["AS_UP"],
@@ -11,9 +11,22 @@ const taric: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "P의 [[MS_UP]]은 스킬 사용 후 다음 평타 2대",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 180,

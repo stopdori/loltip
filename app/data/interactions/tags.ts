@@ -10,7 +10,7 @@ export type TagId =
   | "SHIELD_BREAK"
   | "WALL"
   | "SUPPRESS" // 제압
-  | "SUPPRESSION"
+  | "TETHER"
   | "REVIVE"        // 부활
   | "INVULNERABLE"  // 무적
   | "REFLECT"
@@ -31,6 +31,10 @@ export type TagId =
   | "VISION"
   | "REVEALED"
   | "TRUE_SIGHT"
+  | "VISION_CREATE"
+  | "POSITION_REVEAL"
+  | "POSITION_TRACK"
+  | "OUTLINE_REVEAL"
   | "SPELL_SHIELD"
   | "CC_IMMUNE"
   | "CC_CLEANSE"
@@ -42,6 +46,11 @@ export type TagId =
   | "GHOSTING"
   | "WINDSHIELD"
   | "PROTECTIVE_ZONE"
+
+  | "DAMAGE_NULLIFY"
+  | "INTERCEPT_PROJECTILE"
+  
+
 
   /* 점멸 연계 */
   | "Q_FLASH"
@@ -88,108 +97,150 @@ export type TagId =
   | "NEARSIGHT"
   | "BLIND"
   | "POLYMORPH"
-  | "UNSTOPPABLE";
+  | "UNSTOPPABLE"
+  | "PSEUDO_UNSTOPPABLE";
   
 
 
 export const TAG_LABEL: Record<TagId, { ko: string; en: string }> = {
-  /* 이동 / 위치 */
-  ALLY_TP_OK: { ko: "아군 텔가능", en: "Ally TP OK" },
-  WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
-
-  /* 전투 메커니즘 */
-  AA_RESET: { ko: "평캔", en: "AA Reset" },
-  UNTARGETABLE: { ko: "타겟 불가", en: "Untargetable" },
-  TOWER_DODGE: { ko: "타워 회피", en: "Tower Dodge" },
-  SHIELD_BREAK: { ko: "보호막 파괴", en: "Shield Break" },
-  WALL: { ko: "벽", en: "Wall" },
-  SUPPRESSION: { ko: "고정", en: "Suppression" },
-  REVIVE: { ko: "부활", en: "Revive" },
-  INVULNERABLE: { ko: "무적", en: "Invulnerable" },
-  REFLECT: { ko: "반사", en: "Reflect" },
-  INSEC_KICK: {  ko: "인섹킥",  en: "InSec Kick",},
-
-  MS_UP: { ko: "이속↑", en: "MS ↑" },
-  AS_UP: { ko: "공속↑", en: "AS ↑" },
-  AS_DOWN: {  ko: "공속↓",  en: "AS ↓",},
-  AD_UP: { ko: "공격력↑", en: "AD ↑" },
-  AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
-  AP_UP: {  ko: "주문력↑",  en: "AP Buff",},
-
-  DMG_REDUCE: { ko: "피해감소", en: "Damage Reduction" },
-  DODGE: { ko: "회피", en: "Dodge" },
-  TENACITY: { ko: "강인함", en: "Tenacity" },
-  CRIT: { ko: "치명타",  en: "Critical Strike" },
-  EXECUTE: {  ko: "처형",  en: "Execute",},
-  RANGE_UP: {  ko: "사거리↑",  en: "Range↑",},
-  PIERCE: {  ko: "관통",  en: "Piercing",},
 
 
+  /* =========================
+ * 1) 스탯 / 자원 변화
+ * ========================= */
+MS_UP: { ko: "이속↑", en: "MS ↑" },
+AS_UP: { ko: "공속↑", en: "AS ↑" },
+AS_DOWN: { ko: "공속↓", en: "AS ↓" },
+AD_UP: { ko: "공격력↑", en: "AD ↑" },
+AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
+AP_UP: { ko: "주문력↑", en: "AP Buff" },
+RANGE_UP: { ko: "사거리↑", en: "Range↑" },
+CRIT: { ko: "치명타", en: "Critical Strike" },
 
-  VISION: { ko: "시야", en: "Vision" },
-  REVEALED: { ko: "드러냄", en: "Revealed" },
-  TRUE_SIGHT: { ko: "절대시야", en: "True Sight" },
-  SPELL_SHIELD: { ko: "주문방어", en: "Spell Shield" },
-  CC_IMMUNE: { ko: "CC면역", en: "CC Immune" },
-  CC_CLEANSE: { ko: "CC해제", en: "Cleanse" },
-  STEALTH: { ko: "은신", en: "Stealth" },
-  INVISIBILITY: { ko: "투명화", en: "Invisibility" },
-  CAMOUFLAGE: { ko: "위장",  en: "Camouflage" },
-  SLOW_RESIST: { ko: "둔화저항", en: "Slow Resist" },
-  SLOW_IMMUNE: { ko: "둔화면역", en: "Slow Immune" },
-  GHOSTING: { ko: "유체화", en: "Ghosting" },
-  WINDSHIELD: { ko: "장막", en: "Projectile Block" },
-  PROTECTIVE_ZONE: { ko: "보호 결계", en: "Protective Zone"},
+/* =========================
+ * 2) 이동 / 위치
+ * ========================= */
+ALLY_TP_OK: { ko: "아군텔", en: "Ally TP" },
+WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
+WALL: { ko: "벽", en: "Wall" },
+GHOSTING: { ko: "유체화", en: "Ghosting" },
+
+/* =========================
+ * 3) 전투 메커니즘
+ * ========================= */
+AA_RESET: { ko: "평캔", en: "AA Reset" },
+UNTARGETABLE: { ko: "타겟불가", en: "Untargetable" },
+TOWER_DODGE: { ko: "타워회피", en: "Tower Dodge" },
+DODGE: { ko: "회피", en: "Dodge" },
+PIERCE: { ko: "관통", en: "Piercing" },
+EXECUTE: { ko: "처형", en: "Execute" },
+
+/* =========================
+ * 4) 생존 / 방어
+ * ========================= */
+INVULNERABLE: { ko: "무적", en: "Invulnerable" },
+REVIVE: { ko: "부활", en: "Revive" },
+DMG_REDUCE: { ko: "피해감소", en: "Damage Reduction" },
+TENACITY: { ko: "강인함", en: "Tenacity" },
+CC_CLEANSE: { ko: "CC해제", en: "Cleanse" },
+CC_IMMUNE: { ko: "CC면역", en: "CC Immune" },
+SLOW_RESIST: { ko: "둔화저항", en: "Slow Resist" },
+SLOW_IMMUNE: { ko: "둔화면역", en: "Slow Immune" },
+UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
+PSEUDO_UNSTOPPABLE: { ko: "유사 저지불가", en: "Pseudo-Unstoppable" },
+
+
+/* =========================
+ * 5) 시야 / 은신
+ * ========================= */
+VISION: { ko: "시야", en: "Vision" },
+REVEALED: { ko: "드러냄", en: "Revealed" },
+TRUE_SIGHT: { ko: "절대시야", en: "True Sight" },
+STEALTH: { ko: "은신", en: "Stealth" },
+INVISIBILITY: { ko: "투명", en: "Invisibility" },
+CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
+
+NEARSIGHT: { ko: "시야감소", en: "Nearsight" },
+BLIND: { ko: "실명", en: "Blind" },
+
+VISION_CREATE: { ko: "시야생성", en: "Vision Reveal Area" },
+POSITION_REVEAL: { ko: "위치노출", en: "Position Reveal" },
+POSITION_TRACK: { ko: "위치추적", en: "Position Tracking" },
+OUTLINE_REVEAL: { ko: "윤곽노출", en: "Outline Reveal" },
 
 
 
-  /* 점멸 연계 */
-  Q_FLASH: { ko: "Q플", en: "QF" },
-  W_FLASH: { ko: "W플", en: "WF" },
-  E_FLASH: { ko: "E플", en: "EF" },
-  R_FLASH: { ko: "R플", en: "RF" },
+/* =========================
+ * 6) 특수(개인 스킬/상호작용)
+ * ========================= */
+REFLECT: { ko: "반사", en: "Reflect" },
+WINDSHIELD: { ko: "장막", en: "Projectile Block" },
+PROTECTIVE_ZONE: { ko: "보호 결계", en: "Protective Zone" },
+POLYMORPH: { ko: "변이", en: "Polymorph" },
+BERSERK: { ko: "광란", en: "Berserk" },
+ANTI_DASH: { ko: "돌진방해", en: "Anti-Dash" },
+GROUNDED: { ko: "이동기금지", en: "Grounded" },
+SPELL_SHIELD: { ko: "주문방어", en: "Spell Shield" },
+DAMAGE_NULLIFY: { ko: "피해 무효화", en: "Damage Nullify" },
+INTERCEPT_PROJECTILE: { ko: "투사체 차단", en: "Projectile Delete" },
+   
+  
 
-  /* 피흡 */
-  LIFESTEAL: { ko: "피흡", en: "Lifesteal" },
-  HEAL: { ko: "회복", en: "Heal" },
-  SHIELD: { ko: "보호막", en: "Shield" },
-  MAX_HP_UP: {  ko: "최대체력↑",  en: "Max HP Increase",},
 
-  MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
-  ENERGY_RESTORE: {  ko: "기력회복",  en: "Energy Restore",},
+/* =========================
+ * 7) 회복 / 자원 회복
+ * ========================= */
+HEAL: { ko: "회복", en: "Heal" },
+SHIELD: { ko: "보호막", en: "Shield" },
+MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
+LIFESTEAL: { ko: "피흡", en: "Lifesteal" },
+MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
+ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
+
+/* =========================
+ * 8) 파괴 / 관통 / 치감
+ * ========================= */
+SHIELD_BREAK: { ko: "쉴드파괴", en: "Shield Break" },
+AR_SHRED: { ko: "방깍", en: "AR Shred" },
+MR_SHRED: { ko: "마깍", en: "MR Shred" },
+AR_MR_SHRED: { ko: "방마깍", en: "AR+MR Shred" },
+AR_PEN: { ko: "방관", en: "AR Penet" },
+MR_PEN: { ko: "마관", en: "AR Penet" },
+AR_MR_PEN: { ko: "방마관", en: "AR+MR Penet" },
+GW: { ko: "치감", en: "Grievous Wounds" },
+
+/* =========================
+ * 9) CC
+ * ========================= */
+SLOW: { ko: "둔화", en: "Slow" },
+TETHER: { ko: "사슬", en: "Tether" },
+SILENCE: { ko: "침묵", en: "Silence" },
+CANCEL: { ko: "캔슬", en: "Channel Cancel" },
+
+HARD_CC: { ko: "하드CC", en: "Hard CC" },
+STUN: { ko: "기절", en: "Stun" },
+ROOT: { ko: "속박", en: "Root" },
+KNOCKBACK: { ko: "넉백", en: "Knockback" },
+GRAB: { ko: "그렙", en: "Grab" },
+AIRBORNE: { ko: "에어본", en: "Airborne" },
+SUSPENDING: { ko: "체공", en: "Suspending" },
+SUPPRESS: { ko: "제압", en: "Suppress" },
+SLEEP: { ko: "수면", en: "Sleep" },
+FEAR: { ko: "공포", en: "Fear" },
+CHARM: { ko: "매혹", en: "Charm" },
+TAUNT: { ko: "도발", en: "Taunt" },
 
 
-  AR_SHRED: { ko: "방깍", en: "AR Shred" },
-  MR_SHRED: { ko: "마깍", en: "MR Shred" },
-  AR_MR_SHRED: { ko: "방마깍", en: "AR+MR Shred" },
-  AR_PEN: { ko: "방관", en: "AR Penet" },
-  MR_PEN: { ko: "마관", en: "AR Penet" },
-  AR_MR_PEN: { ko: "방마관", en: "AR+MR Penet" },
-  GW: { ko: "치감", en: "Grievous Wounds" },
 
-  HARD_CC: {  ko: "하드CC",  en: "Hard CC",},
-  STUN: { ko: "기절", en: "Stun" },
-  ROOT: { ko: "속박", en: "Root" },
-  SLOW: { ko: "둔화", en: "Slow" },
-  TAUNT: { ko: "도발", en: "Taunt" },
-  SLEEP: { ko: "수면", en: "Sleep" },
-  ANTI_DASH: { ko: "돌진방해", en: "Anti-Dash" },
-  KNOCKBACK: { ko: "넉백", en: "Knockback" },
-  AIRBORNE: { ko: "에어본", en: "Airborne" },
-  SUSPENDING: {  ko: "체공",  en: "Suspending",},
-  SUPPRESS: { ko: "제압", en: "Suppress" },
 
-  GRAB: { ko: "그렙", en: "Grab" },
-  CHARM: { ko: "매혹", en: "Charm" },
-  SILENCE: { ko: "침묵", en: "Silence" },
-  GROUNDED: { ko: "이동기X", en: "Grounded" },
-  FEAR: { ko: "공포", en: "Fear" },
-  CANCEL: {  ko: "캔슬",  en: "Channel Cancel",},
-  BERSERK: { ko: "광란", en: "Berserk" },
-  NEARSIGHT: { ko: "시야감소", en: "Nearsight" },
-  BLIND: { ko: "실명", en: "Blind" },
-  POLYMORPH: { ko: "변이", en: "Polymorph" },
-  UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
+/* =========================
+ * 10) 점멸 연계
+ * ========================= */
+Q_FLASH: { ko: "Q플", en: "QF" },
+W_FLASH: { ko: "W플", en: "WF" },
+E_FLASH: { ko: "E플", en: "EF" },
+R_FLASH: { ko: "R플", en: "RF" },
+INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
 
   
 }
@@ -219,16 +270,16 @@ TOWER_DODGE: {
   en: "Ignores turret damage",
 },
 SHIELD_BREAK: {
-  ko: "보호막 파괴 해버림",
+  ko: "상대의 보호막을 파괴",
   en: "Breaks shields",
 },
 WALL: {
-  ko: "벽 생성",
+  ko: "벽 생성\n(생성될 때 대체로 에어본)",
   en: "Creates a wall",
 },
-SUPPRESSION: {
-  ko: "해당 위치에 고정",
-  en: "Pins the target in place",
+TETHER: {
+  ko: "연결된 대상이 범위를 벗어나지 않으면\n스킬이 계속 유효하거나 추가 효과가 발동함",
+  en: "If the linked target does not leave the range,\nthe skill remains active or its additional effects will trigger.",
 },
 REVIVE: {
   ko: "부활",
@@ -270,7 +321,7 @@ DODGE: {
   en: "Dodges basic attacks",
 },
 TENACITY: {
-  ko: "기절, 속박, 둔화, 도발, 공포, 침묵, 실명, 수면, 변이\n지속시간 감소",
+  ko: "기절, 속박, 둔화, 도발, 공포, 매혹, 침묵, 실명, 수면, 변이\n지속시간 감소",
   en: "Reduces crowd control duration",
 },
 CRIT: {
@@ -315,21 +366,43 @@ CC_IMMUNE: {
   en: "Immune to crowd control",
 },
 CC_CLEANSE: {
-  ko: "걸려있는 CC를 해제함",
+  ko: "걸려있는 CC를 해제함\n에어본도 해제가 가능하지만 무빙은 하지 못함\n넉백, 그렙도 해제가 가능하지만 이동은 끝까지 이루어짐",
   en: "Removes existing crowd control effects",
 },
 STEALTH: {
-  ko: "상대 챔피언 근처, 핑와에 발각됨",
-  en: "Revealed near enemy champions or Control Wards",
+  ko: "투명화와 위장으로 나뉨\n절대시야에는 보이고, 드러냄 스킬에는 맞고 은신하면 보임",
+  en: "Invisibility and Camouflage",
 },
 INVISIBILITY: {
-  ko: "상대 챔피언, 핑와에 발각되지 않음\n단, 절대시야에는 보임",
-  en: "Not revealed by enemy champions or Control Wards, but visible to true sight",
+  ko: "은신류 - 상대 챔피언, 핑와에 발각되지 않음\n단, 절대시야에는 보이고, 드러냄 스킬에는 맞고 은신하면 보임",
+  en: "Stealth class\nInvisible units cannot be revealed by enemy champions or Control Wards\nOnly revealed by True Sight.",
 },
 CAMOUFLAGE: {
-  ko: "정체를 알 수 없음.\n근처 적 챔피언이나 핑와에 발각됨",
-  en: "Revealed by nearby enemy champions or Control Wards\nInvisible from a distance",
+  ko: "은신류 - 상대 챔피언, 핑와에 발각 됨\n단, 절대시야에는 보이고, 드러냄 스킬에는 맞고 은신하면 보임",
+  en: "Stealth class\nRevealed by nearby enemy champions or Control Wards.",
 },
+
+
+VISION_CREATE: {
+  ko: "스킬이 주변 지역의 시야를 밝혀 아군이 해당 구역을 볼 수 있음",
+  en: "Reveals the surrounding area, allowing allies to see the zone",
+},
+POSITION_REVEAL: {
+  ko: "상대시야 밖에서 시전자가 스킬을 사용했을 때 스킬 효과, 시야 제공으로 인해 사용자의 위치가 적에게 드러남",
+  en: "Casting a skill from fog of war reveals the caster’s location to enemies",
+},
+POSITION_TRACK: {
+  ko: "스킬 적중 시 효과음, 표식, 피해 반응 등으로 적의 대략적인 위치를 추측 가능",
+  en: "On hit, audio/visual cues allow enemies to estimate the caster’s location",
+},
+OUTLINE_REVEAL: {
+  ko: "상대의 모습이 완전히 보이진 않지만\n실루엣이 드러나 위치를 추측 할 수 있음",
+  en: "Shows the target’s silhouette without fully revealing them",
+},
+
+
+
+
 
 SLOW_RESIST: { ko: "둔화효과 감소", en: "Reduces the strength of slows" },
 
@@ -398,27 +471,27 @@ ENERGY_RESTORE: {
 
 
 AR_SHRED: {
-  ko: "방어력 감소",
+  ko: "상대 방어력 감소",
   en: "Reduces armor",
 },
 MR_SHRED: {
-  ko: "마법저항력 감소",
+  ko: "상대 마법저항력 감소",
   en: "Reduces magic resist",
 },
 AR_MR_SHRED: {
-  ko: "방어력, 마법저항력 감소",
+  ko: "상대 방어력, 마법저항력 감소",
   en: "Reduces armor and magic resist",
 },
 AR_PEN: { 
-  ko: "방어력 관통", 
+  ko: "상대의 방어력을 관통", 
   en: "Armor Penetration" 
 },
   MR_PEN: { 
-    ko: "마법 저항력 관통", 
+    ko: "상대의 마법저항력을 관통", 
     en: "Magic resist penetration" 
 },
   AR_MR_PEN: { 
-    ko: "방어력, 마법 저항력 관통", 
+    ko: "상대의 방어력, 마법저항력을 관통", 
     en: "Armor and magic penetration" 
 },
 
@@ -431,8 +504,8 @@ GW: {
 
 
 HARD_CC: {
-  ko: "기절, 속박, 그랩, 넉백, 에어본, 제압, 수면, 매혹, 도발",
-  en: "Strong crowd control that completely prevents actions\n(e.g. stun, knock-up, suppress)",
+  ko: "챔피언이 본인의 의지로 움직일 수 없게 만드는 제어기\n기절, 속박, 그렙, 넉백, 에어본, 체공, 제압, 수면, 공포, 매혹, 도발",
+  en: "Stun, Root, Grab, Knockback, Knockup, Suspension, Sleep, Fear, Charm, Taunt",
 },
 
 STUN: {
@@ -466,21 +539,21 @@ AIRBORNE: {
   en: "Knocks the target airborne — top-tier CC (cannot be cleansed)",
 },
 SUSPENDING: {
-  ko: "공중에 띄워서 거는 기절\n강인함의 영향을 받고, 클린즈 계열로 해제 가능\n야스오 궁 가능",
+  ko: "공중에 띄워서 거는 기절\n야스오 궁 가능\n(강인함의 영향을 받고, 클린즈 계열로 해제 가능)",
   en: "A stun that also knocks up\nAffected by Tenacity and can be removed by Cleanse\nYasuo can follow up with his ult",
 },
 KNOCKBACK: {
-  ko: "에어본 + 밀어냄 - 최상급 CC",
+  ko: "에어본 + 밀어냄 - 최상급 CC\n(클린즈 계열로 해제 불가능)",
   en: "Knocks the target back",
 },
 GRAB: {
-  ko: "에어본 + 잡아당김 - 최상급 CC",
+  ko: "에어본 + 잡아당김 - 최상급 CC\n(클린즈 계열로 해제 불가능)",
   en: "Pulls the target",
 },
 
 
 SUPPRESS: {
-  ko: "상대를 아무것도 할 수 없게 만듬\n스펠 사용도 불가능\n정화(스펠)로는 해제 불가",
+  ko: "상대를 아무것도 할 수 없게 만듬\n스펠 사용도 불가능\n정화(스펠)로는 해제 불가\n수은 미카엘로 해제 가능",
   en: "Prevents all actions and summoner spells (cannot be cleansed by Cleanse)",
 },
 
@@ -521,9 +594,18 @@ POLYMORPH: {
   en: "Transforms the target, preventing attacks and ability casts",
 },
 UNSTOPPABLE: {
-  ko: "CC 계열로 막을 수 없음",
-  en: "Cannot be stopped by crowd control",
+  ko: "CC 계열을 맞아도 시전자의 스킬이 유효함\n단, 저지불가 상태에서 적중한 CC가\n저지불가 종료 이후에도 남아있다면 CC효과 발동",
+  en: "It cannot be blocked by CC\nHowever, if CC hits during an unstoppable state and the duration remains after the state ends, the CC takes effect",
 },
+
+PSEUDO_UNSTOPPABLE: {
+  ko: "공식적인 저지불가는 아니지만 동일 효과라 보여짐\nCC 계열을 맞아도 시전자의 스킬이 유효함\n단, 스킬 사용 중에 적중한 CC가\n스킬 사용 종료 이후에도 남아있다면 CC효과 발동",
+  en: "Not officially Unstoppable, but the action continues and most crowd control will not interrupt it",
+},
+
+DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },
+INTERCEPT_PROJECTILE: { ko: "브라움이 아군에게 날아가는 것을 대신 맞아줌\n이때 투사체가 사라질 수 도 있음", en: "Braum leaps to an ally to take the hit for them\nAt this time, the projectile may be destroyed." },
+
 
 };
 

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const kayle_mel: MatchupSummary = {
   champs: ["kayle", "mel"],
-  highlights: {
-    ko: ["멜 W가 케일 Q 반사 가능."],
-    en: ["Mel’s W reflects Kayle’s Q."],
+  highlightsByChamp: {
+    kayle: {
+      ko: ["멜 W가 케일 Q 반사 가능."],
+      en: ["Mel’s W reflects Kayle’s Q."],
+    },
+    mel: {
+      ko: [],
+      en: [],
+    },
   },
 };

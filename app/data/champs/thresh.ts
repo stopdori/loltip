@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const thresh: ChampSkill = {
+const thresh: ChampData = {
   id: "thresh",
   skills: {
     P: [],
@@ -11,9 +11,22 @@ const thresh: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
-    "[[Q_FLASH]], [[E_FLASH]], [[R_FLASH]] 안됨\nQ 맞추고 날아갈 때 점멸은 되긴 함", "W(랜턴)은 아군의 진행방향에 깔아주면 좋음"
+  notes: {
+    ko: [
+    "[[Q_FLASH]], [[E_FLASH]], [[R_FLASH]] 안됨\nQ 돌진단계에 점멸은 되긴 함", "Q는 두단계로 나뉨 투척/돌진단계\n투척단계에 CC를 맞아도 대부분 유효\n돌진단계에 [[HARD_CC]]를 맞으면 끊길 수 있음", "W(랜턴)은 아군의 진행방향에 깔아주면 좋음"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

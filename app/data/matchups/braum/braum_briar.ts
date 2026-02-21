@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const braum_briar: MatchupSummary = {
   champs: ["braum", "briar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    braum: {
+      ko: ["브라움 E로 브라이어 평타, Q, W(평타), E, R1, R2를 [[DAMAGE_NULLIFY]] 할 수 있음."],
+      en: [""],
+    },
+    briar: {
+      ko: [],
+      en: [],
+    },
   },
 };

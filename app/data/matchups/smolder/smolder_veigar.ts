@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_veigar: MatchupSummary = {
   champs: ["smolder", "veigar"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    smolder: {
+      ko: [""],
+      en: [""],
+    },
+    veigar: {
+      ko: [],
+      en: [],
+    },
   },
 };

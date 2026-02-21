@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const poppy_quinn: MatchupSummary = {
   champs: ["poppy", "quinn"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    poppy: {
+      ko: [""],
+      en: [""],
+    },
+    quinn: {
+      ko: [],
+      en: [],
+    },
   },
 };

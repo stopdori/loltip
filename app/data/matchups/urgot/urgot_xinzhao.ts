@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const urgot_xinzhao: MatchupSummary = {
   champs: ["urgot", "xinzhao"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    urgot: {
+      ko: [""],
+      en: [""],
+    },
+    xinzhao: {
+      ko: [],
+      en: [],
+    },
   },
 };

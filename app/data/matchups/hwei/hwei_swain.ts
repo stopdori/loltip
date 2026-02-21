@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const hwei_swain: MatchupSummary = {
   champs: ["hwei", "swain"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    hwei: {
+      ko: [""],
+      en: [""],
+    },
+    swain: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const kaisa: ChampSkill = {
+const kaisa: ChampData = {
   id: "kaisa",
   skills: {
     base : {
@@ -23,8 +23,22 @@ const kaisa: ChampSkill = {
     },
   },
 
-  notes: [
-    "진화\nQ 추가 공격력100\nW 주문력 100\nE 공격속도 100%"  ],
+  notes: {
+    ko: [
+    "진화\nQ 추가 공격력100\nW 주문력 100\nE 공격속도 100%", "진화 W는 상대 챔피언을 맞히면\n쿨타임 감소"
+  ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 130,

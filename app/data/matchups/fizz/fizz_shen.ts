@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const fizz_shen: MatchupSummary = {
   champs: ["fizz", "shen"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    fizz: {
+      ko: [""],
+      en: [""],
+    },
+    shen: {
+      ko: [],
+      en: [],
+    },
   },
 };

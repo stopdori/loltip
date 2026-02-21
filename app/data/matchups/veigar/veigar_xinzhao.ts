@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const veigar_xinzhao: MatchupSummary = {
   champs: ["veigar", "xinzhao"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    veigar: {
+      ko: [""],
+      en: [""],
+    },
+    xinzhao: {
+      ko: [],
+      en: [],
+    },
   },
 };

@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const rumble_taric: MatchupSummary = {
   champs: ["rumble", "taric"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    rumble: {
+      ko: [""],
+      en: [""],
+    },
+    taric: {
+      ko: [],
+      en: [],
+    },
   },
 };

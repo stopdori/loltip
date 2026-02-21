@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const annie: ChampSkill = {
+const annie: ChampData = {
   id: "annie",
   skills: {
     P: ["STUN"],
@@ -11,9 +11,22 @@ const annie: ChampSkill = {
     ETC: [],
   },
 
-  notes: [
+  notes: {
+    ko: [
     "P의 [[STUN]]은 4스택 일 때 Q, W, R에 적용", "R의 기본지속 효과로 [[MR_PEN]]있음",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 130,

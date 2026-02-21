@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const sett_vex: MatchupSummary = {
   champs: ["sett", "vex"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    sett: {
+      ko: [""],
+      en: [""],
+    },
+    vex: {
+      ko: [],
+      en: [],
+    },
   },
 };

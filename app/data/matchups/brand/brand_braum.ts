@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const brand_braum: MatchupSummary = {
   champs: ["brand", "braum"],
-  highlights: {
-    ko: ["브라움 E(방패)로 브랜드의 Q, R을 막을 수 있음."],
-    en: ["Braum’s E (Unbreakable) blocks Brand's Q and R, stopping the ultimate from bouncing."],
+  highlightsByChamp: {
+    brand: {
+      ko: [],
+      en: [],
+    },
+    braum: {
+      ko: ["브라움 E로 브랜드 평타, Q, W, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음", "브라움 E로 브랜드 평타, Q, E(강화)를 [[INTERCEPT_PROJECTILE]] 할 수 있음.\nR은 방패에 튕겨도 사라지지 않음"],
+      en: [],
+    },
   },
 };

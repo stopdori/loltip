@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const fiora_kayn: MatchupSummary = {
   champs: ["fiora", "kayn"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    fiora: {
+      ko: [""],
+      en: [""],
+    },
+    kayn: {
+      ko: [],
+      en: [],
+    },
   },
 };

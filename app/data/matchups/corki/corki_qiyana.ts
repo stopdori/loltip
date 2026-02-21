@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const corki_qiyana: MatchupSummary = {
   champs: ["corki", "qiyana"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    corki: {
+      ko: [""],
+      en: [""],
+    },
+    qiyana: {
+      ko: [],
+      en: [],
+    },
   },
 };

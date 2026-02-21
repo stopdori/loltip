@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const akali_ivern: MatchupSummary = {
   champs: ["akali", "ivern"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    akali: {
+      ko: [],
+      en: [],
+    },
+    ivern: {
+      ko: ["아이번 R로 아칼리 E를 막을 수 있음"],
+      en: [],
+    },
   },
 };

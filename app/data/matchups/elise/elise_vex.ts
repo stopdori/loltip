@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const elise_vex: MatchupSummary = {
   champs: ["elise", "vex"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    elise: {
+      ko: [""],
+      en: [""],
+    },
+    vex: {
+      ko: [],
+      en: [],
+    },
   },
 };

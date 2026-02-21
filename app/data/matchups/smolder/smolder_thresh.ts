@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_thresh: MatchupSummary = {
   champs: ["smolder", "thresh"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    smolder: {
+      ko: [""],
+      en: [""],
+    },
+    thresh: {
+      ko: [],
+      en: [],
+    },
   },
 };

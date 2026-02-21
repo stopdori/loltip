@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const rammus_sett: MatchupSummary = {
   champs: ["rammus", "sett"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    rammus: {
+      ko: [""],
+      en: [""],
+    },
+    sett: {
+      ko: [],
+      en: [],
+    },
   },
 };

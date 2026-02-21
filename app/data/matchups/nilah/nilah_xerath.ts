@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const nilah_xerath: MatchupSummary = {
   champs: ["nilah", "xerath"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    nilah: {
+      ko: [""],
+      en: [""],
+    },
+    xerath: {
+      ko: [],
+      en: [],
+    },
   },
 };

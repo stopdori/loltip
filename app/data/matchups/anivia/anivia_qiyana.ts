@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const anivia_qiyana: MatchupSummary = {
   champs: ["anivia", "qiyana"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    anivia: {
+      ko: [""],
+      en: [""],
+    },
+    qiyana: {
+      ko: [],
+      en: [],
+    },
   },
 };

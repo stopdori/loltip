@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const senna_yuumi: MatchupSummary = {
   champs: ["senna", "yuumi"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    senna: {
+      ko: [""],
+      en: [""],
+    },
+    yuumi: {
+      ko: [],
+      en: [],
+    },
   },
 };

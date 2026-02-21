@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const pyke_xerath: MatchupSummary = {
   champs: ["pyke", "xerath"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    pyke: {
+      ko: [""],
+      en: [""],
+    },
+    xerath: {
+      ko: [],
+      en: [],
+    },
   },
 };

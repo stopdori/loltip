@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const draven_vi: MatchupSummary = {
   champs: ["draven", "vi"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    draven: {
+      ko: [""],
+      en: [""],
+    },
+    vi: {
+      ko: [],
+      en: [],
+    },
   },
 };

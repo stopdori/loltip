@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const sett_smolder: MatchupSummary = {
   champs: ["sett", "smolder"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    sett: {
+      ko: [""],
+      en: [""],
+    },
+    smolder: {
+      ko: [],
+      en: [],
+    },
   },
 };

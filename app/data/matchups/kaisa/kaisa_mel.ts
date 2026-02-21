@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const kaisa_mel: MatchupSummary = {
   champs: ["kaisa", "mel"],
-  highlights: {
-    ko: ["멜 W가 카이사 W 반사 가능."],
-    en: ["Mel’s W reflects Kaisa’s W"],
+  highlightsByChamp: {
+    kaisa: {
+      ko: ["멜 W가 카이사 W 반사 가능."],
+      en: ["Mel’s W reflects Kaisa’s W"],
+    },
+    mel: {
+      ko: [],
+      en: [],
+    },
   },
 };

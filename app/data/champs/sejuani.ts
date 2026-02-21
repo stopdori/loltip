@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const sejuani: ChampSkill = {
+const sejuani: ChampData = {
   id: "sejuani",
   skills: {
     P: [],
@@ -11,8 +11,22 @@ const sejuani: ChampSkill = {
     ETC: [],
   },
 
-  notes: ["P는 [[SLOW]]만 면역임", "W에 [[SLOW]]는 2타만 적용", "R은 사거리 1/4 보다 먼 대상에게 적중 할 때 여러가지 효과가 추가 되거나 증가함\n[[SLOW]]와 광역피해는 1/4이상일때만"
+  notes: {
+    ko: [
+    "P는 [[SLOW]]만 면역임", "W에 [[SLOW]]는 2타만 적용", "R은 사거리 1/4 보다 먼 대상에게 적중 할 때 여러가지 효과가 추가 되거나 증가함\n[[SLOW]]와 광역피해는 1/4이상일때만"
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 120,

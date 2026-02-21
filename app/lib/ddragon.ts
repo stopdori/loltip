@@ -64,10 +64,38 @@ export async function getChampSpells(
   return p;
 }
 
+// ✅ slug -> DDragon champId 변환
+const DD_ID_MAP: Record<string, string> = {
+  reksai: "RekSai",
+  leesin: "LeeSin",
+  masteryi: "MasterYi",
+  drmundo: "DrMundo",
+  missfortune: "MissFortune",
+  xinzhao: "XinZhao",
+  aurelionsol: "AurelionSol",
+  wukong: "MonkeyKing",
+  jarvaniv: "JarvanIV",
+  kogmaw: "KogMaw",
+  ksante: "KSante",
+  tahmkench: "TahmKench",
+  twistedfate: "TwistedFate",
+};
+
+export function toDdragonId(id: string) {
+  const key = id.toLowerCase();
+  if (DD_ID_MAP[key]) return DD_ID_MAP[key];
+
+  return id
+    .split("_")
+    .map((w) => (w ? w[0].toUpperCase() + w.slice(1) : ""))
+    .join("");
+}
+
 export function stripHtml(input: string) {
   return input
     .replace(/<[^>]*>/g, "")
-    .replace(/\{\{[^}]+\}\}/g, "") // ✅ {{ ... }} 토큰 제거
+    .replace(/\{\{[^}]+\}\}/g, "")
     .replace(/[ \t]{2,}/g, " ")
     .trim();
 }
+

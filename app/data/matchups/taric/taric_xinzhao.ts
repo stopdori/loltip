@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const taric_xinzhao: MatchupSummary = {
   champs: ["taric", "xinzhao"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    taric: {
+      ko: [""],
+      en: [""],
+    },
+    xinzhao: {
+      ko: [],
+      en: [],
+    },
   },
 };

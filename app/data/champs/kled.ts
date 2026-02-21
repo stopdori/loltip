@@ -1,6 +1,6 @@
-import type { ChampSkill } from "../types";
+import type { ChampData } from "../interactions/types";
 
-const kled: ChampSkill = {
+const kled: ChampData = {
   id: "kled",
   skills: {
     base : {
@@ -23,9 +23,22 @@ const kled: ChampSkill = {
     },
   },
 
-    notes: [
+  notes: {
+    ko: [
     "승마폼\nQ가 끝까지 유지되어야 [[GRAB]], [[SLOW]]가 걸림\nE는 대상에게 처음 적중하면 [[MS_UP]]가 증가하고, 추가로 사용 가능", "승마W 낙마W 둘다 평캔 안됨", "승마할 때 [[GW]]영향 받는지 궁금함 문의 바람",
   ],
+    en: []
+  },
+
+vision: {
+    P: [],
+    Q: [],
+    W: ["TRUE_SIGHT"],
+    E: [],
+    R: [],
+    ETC: [],
+  },
+
 
   ultCooldown: {
     6: 140,

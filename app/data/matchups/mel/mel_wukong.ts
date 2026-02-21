@@ -3,8 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_wukong: MatchupSummary = {
   champs: ["mel", "wukong"],
-  highlights: {
-    ko: [""],
-    en: [""],
+  highlightsByChamp: {
+    mel: {
+      ko: [""],
+      en: [""],
+    },
+    wukong: {
+      ko: [],
+      en: [],
+    },
   },
 };
