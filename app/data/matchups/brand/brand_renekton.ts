@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const brand_renekton: MatchupSummary = {
   champs: ["brand", "renekton"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     brand: {
       ko: [""],

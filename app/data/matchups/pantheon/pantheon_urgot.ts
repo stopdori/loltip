@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const pantheon_urgot: MatchupSummary = {
   champs: ["pantheon", "urgot"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     pantheon: {
       ko: [""],

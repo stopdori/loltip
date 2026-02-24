@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const taric_zaahen: MatchupSummary = {
   champs: ["taric", "zaahen"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     taric: {
       ko: [""],

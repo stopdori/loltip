@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const diana_yasuo: MatchupSummary = {
   champs: ["diana", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     diana: {
       ko: ["야스오 W(장막)가 다이애나 Q 막을 수 있음."],

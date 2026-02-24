@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const karma_kayle: MatchupSummary = {
   champs: ["karma", "kayle"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     karma: {
       ko: [""],

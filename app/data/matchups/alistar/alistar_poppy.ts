@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const alistar_poppy: MatchupSummary = {
   champs: ["alistar", "poppy"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 뽀삐 E를 끊을 수 있음", "알리스타 E의 [[STUN]]로 뽀삐 E를 끊을 수 없음. 단, [[STUN]]은 남아있음", "알리스타 R의 [[CC_CLEANSE]]로 뽀삐 Q의 [[SLOW]], W의 [[STUN]] [[AIRBORNE]] [[GROUNDED]], E의 [[STUN]], R의 [[AIRBORNE]]을 해제할 수 있음\n단, 길게 차징한 뽀삐 R은 해제해도 아무것도 할 수 없음"],

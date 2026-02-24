@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const twistedfate_urgot: MatchupSummary = {
   champs: ["twistedfate", "urgot"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     twistedfate: {
       ko: [""],

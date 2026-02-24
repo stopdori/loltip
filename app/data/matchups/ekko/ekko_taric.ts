@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ekko_taric: MatchupSummary = {
   champs: ["ekko", "taric"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ekko: {
       ko: [""],

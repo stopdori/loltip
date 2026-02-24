@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const kogmaw_yasuo: MatchupSummary = {
   champs: ["kogmaw", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     kogmaw: {
       ko: ["야스오 W(장막)가 코그모 Q, E, R을 막을 수 있음. R도 투사체 판정임."],

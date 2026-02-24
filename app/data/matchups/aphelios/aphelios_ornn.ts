@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const aphelios_ornn: MatchupSummary = {
   champs: ["aphelios", "ornn"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     aphelios: {
       ko: [""],

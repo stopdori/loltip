@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ornn_xerath: MatchupSummary = {
   champs: ["ornn", "xerath"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ornn: {
       ko: [""],

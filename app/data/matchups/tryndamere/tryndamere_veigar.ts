@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const tryndamere_veigar: MatchupSummary = {
   champs: ["tryndamere", "veigar"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     tryndamere: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ambessa_zilean: MatchupSummary = {
   champs: ["ambessa", "zilean"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ambessa: {
       ko: [""],

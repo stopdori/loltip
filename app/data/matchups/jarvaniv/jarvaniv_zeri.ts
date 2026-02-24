@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const jarvaniv_zeri: MatchupSummary = {
   champs: ["jarvaniv", "zeri"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     jarvaniv: {
       ko: [""],

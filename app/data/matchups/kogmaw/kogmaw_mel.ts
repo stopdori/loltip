@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const kogmaw_mel: MatchupSummary = {
   champs: ["kogmaw", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     kogmaw: {
       ko: ["멜 W가 코그모 Q E 반사가능"],

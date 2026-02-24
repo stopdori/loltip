@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gragas_yuumi: MatchupSummary = {
   champs: ["gragas", "yuumi"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gragas: {
       ko: [""],

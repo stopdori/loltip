@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const trundle_xinzhao: MatchupSummary = {
   champs: ["trundle", "xinzhao"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     trundle: {
       ko: [""],

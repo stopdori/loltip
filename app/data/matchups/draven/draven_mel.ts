@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const draven_mel: MatchupSummary = {
   champs: ["draven", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     draven: {
       ko: ["멜 W가 드레이븐 E R 반사 가능."],

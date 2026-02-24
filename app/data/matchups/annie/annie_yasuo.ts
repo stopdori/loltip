@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const annie_yasuo: MatchupSummary = {
   champs: ["annie", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     annie: {
       ko: ["야스오 W(장막)가 애니 Q 막을 수 있음."],

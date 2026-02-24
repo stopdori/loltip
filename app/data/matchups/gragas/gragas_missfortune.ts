@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gragas_missfortune: MatchupSummary = {
   champs: ["gragas", "missfortune"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gragas: {
       ko: ["그라가스 E, R로 미스포츈 R을 끊을 수 있음"],

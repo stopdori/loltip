@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gragas_pantheon: MatchupSummary = {
   champs: ["gragas", "pantheon"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gragas: {
       ko: ["그라가스 E, R로 판테온 W를 무효화 시킬 수 있음"],

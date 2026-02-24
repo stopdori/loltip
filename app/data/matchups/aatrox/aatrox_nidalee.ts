@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const aatrox_nidalee: MatchupSummary = {
   champs: ["aatrox", "nidalee"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W [[GRAB]]효과로 니달리 쿠거폼 W를 끊을 수 있음"],

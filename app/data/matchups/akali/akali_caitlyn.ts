@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const akali_caitlyn: MatchupSummary = {
   champs: ["akali", "caitlyn"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 케이틀린 E를 따라 갈 수 있음"],

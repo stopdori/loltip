@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const kalista_syndra: MatchupSummary = {
   champs: ["kalista", "syndra"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     kalista: {
       ko: [""],

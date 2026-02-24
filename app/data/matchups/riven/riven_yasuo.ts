@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const riven_yasuo: MatchupSummary = {
   champs: ["riven", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     riven: {
       ko: ["야스오 W(장막)는 리븐의 R(검기)을 막을 수 있음."],

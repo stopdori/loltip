@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const kled_syndra: MatchupSummary = {
   champs: ["kled", "syndra"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     kled: {
       ko: [""],

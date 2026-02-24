@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const lux_twitch: MatchupSummary = {
   champs: ["lux", "twitch"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     lux: {
       ko: [""],

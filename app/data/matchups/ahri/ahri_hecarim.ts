@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_hecarim: MatchupSummary = {
   champs: ["ahri", "hecarim"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E가 헤카림 E를 끊을 수 있음.\n단, 헤카림이 공격모션을 취하면 헤카림의 이동은 멈추지만 스킬이 유효함"],

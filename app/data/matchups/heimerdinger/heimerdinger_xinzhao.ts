@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const heimerdinger_xinzhao: MatchupSummary = {
   champs: ["heimerdinger", "xinzhao"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     heimerdinger: {
       ko: [""],

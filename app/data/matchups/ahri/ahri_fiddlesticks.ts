@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_fiddlesticks: MatchupSummary = {
   champs: ["ahri", "fiddlesticks"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 피들스틱 W(채널링), R(시전집중)을 끊을 수 있음"],

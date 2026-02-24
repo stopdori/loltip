@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const tryndamere_xerath: MatchupSummary = {
   champs: ["tryndamere", "xerath"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     tryndamere: {
       ko: [""],

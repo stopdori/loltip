@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const braum_sylas: MatchupSummary = {
   champs: ["braum", "sylas"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     braum: {
       ko: ["브라움 E(방패)가 사일러스 R을 물리적경로로 막을 수 있지만, 대신 브라움 R을 훔침\n예) 브라움 뒤쪽 애쉬의 궁을 사일러스가 강탈할 때 방패를 들면 브라움 궁이 대신 뺏어짐"],

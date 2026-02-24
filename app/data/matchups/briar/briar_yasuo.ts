@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const briar_yasuo: MatchupSummary = {
   champs: ["briar", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     briar: {
       ko: ["야스오 W(장막)가 브라이어 E R 막을 수 있음."],

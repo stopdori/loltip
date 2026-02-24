@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const alistar_singed: MatchupSummary = {
   champs: ["alistar", "singed"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 신지드 E의 [[GRAB]], W에 사용한 E의[[GRAB]] [[ROOT]]을 해제할 수 있음"],

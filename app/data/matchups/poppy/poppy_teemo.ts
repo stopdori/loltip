@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const poppy_teemo: MatchupSummary = {
   champs: ["poppy", "teemo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     poppy: {
       ko: [""],

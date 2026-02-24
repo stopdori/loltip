@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_galio: MatchupSummary = {
   champs: ["ahri", "galio"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 갈리오 E(돌진단계), R(시전집중)을 끊을 수 있음"],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const garen_poppy: MatchupSummary = {
   champs: ["garen", "poppy"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     garen: {
       ko: ["가렌 Q스킬은 뽀삐 W에 막히지 않음"],

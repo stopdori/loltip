@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_mel: MatchupSummary = {
   champs: ["ahri", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E의 [[CHARM]]으로 멜 R을 끊을 수 없음. 단, [[CHARM]]은 남아있음"],

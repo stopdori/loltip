@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const tahmkench_yasuo: MatchupSummary = {
   champs: ["tahmkench", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     tahmkench: {
       ko: ["야스오 W(장막)는 탐 켄치의 Q를 막을 수 있음."],

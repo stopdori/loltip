@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const tahmkench_xerath: MatchupSummary = {
   champs: ["tahmkench", "xerath"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     tahmkench: {
       ko: [""],

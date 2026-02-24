@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const leona_missfortune: MatchupSummary = {
   champs: ["leona", "missfortune"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     leona: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_gnar: MatchupSummary = {
   champs: ["ahri", "gnar"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 나르 인간폼 E, 메가폼 E를 끊을 수 있음"],

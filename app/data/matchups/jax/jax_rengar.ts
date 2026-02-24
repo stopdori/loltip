@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const jax_rengar: MatchupSummary = {
   champs: ["jax", "rengar"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     jax: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const reksai_viktor: MatchupSummary = {
   champs: ["reksai", "viktor"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     reksai: {
       ko: [""],

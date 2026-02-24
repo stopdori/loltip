@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_zoe: MatchupSummary = {
   champs: ["ahri", "zoe"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: [""],

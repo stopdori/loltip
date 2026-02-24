@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gragas_nocturne: MatchupSummary = {
   champs: ["gragas", "nocturne"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gragas: {
       ko: [],

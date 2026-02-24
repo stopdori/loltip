@@ -27,11 +27,11 @@ export default function MatchupSummaryBox({
   <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-8">
 
     {/* 판정 요약 */}
-    {result?.status === "ok" && result.data.summary?.[lang]?.length > 0 && (
-      <div className="mb-6 rounded-2xl bg-slate-900/40 ring-1 ring-yellow-400/30 p-5">
-        <h3 className="mb-3 text-lg font-extrabold text-yellow-300">판정 요약</h3>
+    {result && result.status === "ok" && (result.data.summary?.[lang]?.length ?? 0) > 0 && (
+      <div className="mb-8">
+        <h3 className="mb-2 text-lg font-extrabold text-yellow-300">대표판정 요약</h3>
         <ul className="list-disc pl-5 space-y-2 text-sm text-slate-100">
-          {result.data.summary[lang].map((text, idx) => (
+          {result.data.summary![lang].map((text, idx) => (
             <li key={`summary-${idx}`} className="whitespace-pre-line">
               <TokenText text={text} lang={lang} />
             </li>

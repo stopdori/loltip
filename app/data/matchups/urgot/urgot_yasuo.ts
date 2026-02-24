@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const urgot_yasuo: MatchupSummary = {
   champs: ["urgot", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     urgot: {
       ko: ["야스오 W(장막)는 우르곳의 Q R을 막을 수 있음."],

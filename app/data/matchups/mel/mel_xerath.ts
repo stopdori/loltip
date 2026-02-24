@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_xerath: MatchupSummary = {
   champs: ["mel", "xerath"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     mel: {
       ko: ["멜 W가 제라스 E 반사 가능."],

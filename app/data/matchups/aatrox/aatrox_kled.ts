@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const aatrox_kled: MatchupSummary = {
   champs: ["aatrox", "kled"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W [[GRAB]]효과로 클레드 E를 막을 수 있음\n아트록스 W를 클레드 승마폼에 맞히고 낙마를 시킨다면, 효과가 유지됨"],

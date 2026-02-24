@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const tristana_yasuo: MatchupSummary = {
   champs: ["tristana", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     tristana: {
       ko: ["야스오 W(장막)는 트리스타나의 E R을 막을 수 있음."],

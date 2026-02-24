@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const blitzcrank_zyra: MatchupSummary = {
   champs: ["blitzcrank", "zyra"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     blitzcrank: {
       ko: ["블리츠 Q(그랩)를 자이라 식물로 방어할 수 있음."],

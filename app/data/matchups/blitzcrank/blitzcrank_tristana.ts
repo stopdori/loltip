@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const blitzcrank_tristana: MatchupSummary = {
   champs: ["blitzcrank", "tristana"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     blitzcrank: {
       ko: ["트리스타나 W(점프)는 선딜레이가 있음. 블랭 Q(그랩)를 맞는중에 W를 시전하면 그랩이 무시됨."],

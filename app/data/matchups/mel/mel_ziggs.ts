@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_ziggs: MatchupSummary = {
   champs: ["mel", "ziggs"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     mel: {
       ko: ["멜 W가 직스 Q W E 반사 가능. 반사된 W는 타워 철거도 가능함"],

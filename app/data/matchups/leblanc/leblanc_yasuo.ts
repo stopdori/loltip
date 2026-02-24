@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const leblanc_yasuo: MatchupSummary = {
   champs: ["leblanc", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     leblanc: {
       ko: ["야스오 W(장막)가 르블랑 Q와 E를 막을 수 있음. W 이동은 막을 수 없음."],

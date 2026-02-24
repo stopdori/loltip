@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const alistar_kennen: MatchupSummary = {
   champs: ["alistar", "kennen"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 케넨 P의 [[STUN]]을 해제할 수 있음"],

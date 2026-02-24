@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const alistar_rammus: MatchupSummary = {
   champs: ["alistar", "rammus"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W, E로 람머스 Q를 끊을 수 있음\n단, W는 대신 부딪혀주는 방법으로 끊는것", "알리스타 R의 [[CC_CLEANSE]]로 람머스 Q의 [[SLOW]], E의 [[TAUNT]], R의 [[SLOW]]를 해제할 수 있음"],

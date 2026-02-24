@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const pyke_veigar: MatchupSummary = {
   champs: ["pyke", "veigar"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     pyke: {
       ko: [""],

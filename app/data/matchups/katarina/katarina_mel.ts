@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const katarina_mel: MatchupSummary = {
   champs: ["katarina", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     katarina: {
       ko: ["멜 W가 카타리나 Q 반사 가능."],

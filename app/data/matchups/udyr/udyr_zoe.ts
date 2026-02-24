@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const udyr_zoe: MatchupSummary = {
   champs: ["udyr", "zoe"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     udyr: {
       ko: [""],

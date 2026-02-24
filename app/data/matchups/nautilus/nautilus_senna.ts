@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const nautilus_senna: MatchupSummary = {
   champs: ["nautilus", "senna"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     nautilus: {
       ko: [""],

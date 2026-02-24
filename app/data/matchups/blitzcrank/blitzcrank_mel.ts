@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const blitzcrank_mel: MatchupSummary = {
   champs: ["blitzcrank", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     blitzcrank: {
       ko: ["멜 W가 블리츠 Q 반사 가능."],

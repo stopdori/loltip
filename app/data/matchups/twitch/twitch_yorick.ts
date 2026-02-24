@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const twitch_yorick: MatchupSummary = {
   champs: ["twitch", "yorick"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     twitch: {
       ko: [""],

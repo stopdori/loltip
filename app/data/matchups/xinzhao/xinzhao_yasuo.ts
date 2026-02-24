@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const xinzhao_yasuo: MatchupSummary = {
   champs: ["xinzhao", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     xinzhao: {
       ko: ["야스오 W(장막)는 신짜오의 W 투사체를 막을 수 있음."],

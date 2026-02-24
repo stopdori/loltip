@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const reksai_yasuo: MatchupSummary = {
   champs: ["reksai", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     reksai: {
       ko: ["야스오 W(장막)는 렉사이 매복 상태의 Q를 막을 수 있음."],

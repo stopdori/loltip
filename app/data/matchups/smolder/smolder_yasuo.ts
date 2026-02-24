@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_yasuo: MatchupSummary = {
   champs: ["smolder", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     smolder: {
       ko: ["야스오 W(장막)는 스몰더의 Q, W, E, R을 막을 수 있음."],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const shaco_varus: MatchupSummary = {
   champs: ["shaco", "varus"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     shaco: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const riven_twistedfate: MatchupSummary = {
   champs: ["riven", "twistedfate"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     riven: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const syndra_xerath: MatchupSummary = {
   champs: ["syndra", "xerath"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     syndra: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const anivia_mel: MatchupSummary = {
   champs: ["anivia", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     anivia: {
       ko: ["멜 W가 애니비아 Q E 반사 가능."],

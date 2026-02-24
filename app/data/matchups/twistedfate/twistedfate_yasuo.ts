@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const twistedfate_yasuo: MatchupSummary = {
   champs: ["twistedfate", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     twistedfate: {
       ko: ["야스오 W(장막)는 트위스티드 페이트의 Q W를 막을 수 있음."],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const qiyana_swain: MatchupSummary = {
   champs: ["qiyana", "swain"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     qiyana: {
       ko: [""],

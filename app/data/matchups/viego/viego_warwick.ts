@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const viego_warwick: MatchupSummary = {
   champs: ["viego", "warwick"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     viego: {
       ko: [""],

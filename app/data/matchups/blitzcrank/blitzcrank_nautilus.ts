@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const blitzcrank_nautilus: MatchupSummary = {
   champs: ["blitzcrank", "nautilus"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     blitzcrank: {
       ko: ["노틸이 블랭 Q를 맞고, Q(닻줄)이 어떤대상(벽, 챔피언 등등)에 닿으면 그랩이 무시됨."],

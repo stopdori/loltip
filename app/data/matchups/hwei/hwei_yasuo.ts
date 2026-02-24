@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const hwei_yasuo: MatchupSummary = {
   champs: ["hwei", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     hwei: {
       ko: ["야스오 W(장막)가 흐웨이 QQ, QE, WQ, EQ, EW, R을 막을 수 있음."],

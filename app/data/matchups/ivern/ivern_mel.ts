@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ivern_mel: MatchupSummary = {
   champs: ["ivern", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ivern: {
       ko: ["멜 W가 아이번 Q 반사 가능."],

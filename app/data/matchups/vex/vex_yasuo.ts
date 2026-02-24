@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const vex_yasuo: MatchupSummary = {
   champs: ["vex", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     vex: {
       ko: ["야스오 W(장막)는 벡스의 Q R을 막을 수 있음."],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const zed_zyra: MatchupSummary = {
   champs: ["zed", "zyra"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     zed: {
       ko: [""],

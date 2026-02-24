@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const trundle_vex: MatchupSummary = {
   champs: ["trundle", "vex"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     trundle: {
       ko: [""],

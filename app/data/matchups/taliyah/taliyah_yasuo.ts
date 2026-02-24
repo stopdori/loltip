@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const taliyah_yasuo: MatchupSummary = {
   champs: ["taliyah", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     taliyah: {
       ko: ["야스오 W(장막)는 탈리야의 Q E를 막을 수 있음."],

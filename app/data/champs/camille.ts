@@ -7,7 +7,7 @@ const camille: ChampData = {
     Q: ["MS_UP", "AA_RESET"],
     W: ["W_FLASH", "HEAL", "SLOW"],
     E: ["AS_UP", "STUN", "WALL_HOP"],
-    R: ["R_FLASH", "KNOCKBACK", "WALL_HOP", "UNSTOPPABLE", "UNTARGETABLE", "TOWER_DODGE"],
+    R: ["R_FLASH", "KNOCKBACK", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE", "PSEUDO_UNSTOPPABLE"],
     ETC: [],
   },
 

@@ -3,10 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const aatrox_fiora: MatchupSummary = {
   champs: ["aatrox", "fiora"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 피오라 Q를 끊을 수 있음"],
-      en: [],
+      en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Fiora's Q"],
     },
     fiora: {
       ko: ["피오라 W가 아트록스 Q끝, W [[GRAB]]효과를 무시하고 [[STUN]]을 걸 수 있음"],

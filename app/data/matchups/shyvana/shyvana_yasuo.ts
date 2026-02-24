@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const shyvana_yasuo: MatchupSummary = {
   champs: ["shyvana", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     shyvana: {
       ko: ["야스오 W(장막)는 쉬바나의 E를 막을 수 있음."],

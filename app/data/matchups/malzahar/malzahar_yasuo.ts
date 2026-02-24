@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const malzahar_yasuo: MatchupSummary = {
   champs: ["malzahar", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     malzahar: {
       ko: ["야스오 W(장막)가 말자하 Q를 막을 수 있음. E R은 못막음."],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const jhin_nocturne: MatchupSummary = {
   champs: ["jhin", "nocturne"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     jhin: {
       ko: [""],

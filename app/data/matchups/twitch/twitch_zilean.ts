@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const twitch_zilean: MatchupSummary = {
   champs: ["twitch", "zilean"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     twitch: {
       ko: [""],

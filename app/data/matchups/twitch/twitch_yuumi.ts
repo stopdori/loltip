@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const twitch_yuumi: MatchupSummary = {
   champs: ["twitch", "yuumi"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     twitch: {
       ko: [""],

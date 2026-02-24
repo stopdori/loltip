@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ekko_yasuo: MatchupSummary = {
   champs: ["ekko", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ekko: {
       ko: ["야스오 W(장막)가 에코 Q 막을 수 있음. W는 안됨"],

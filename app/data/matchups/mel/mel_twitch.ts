@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_twitch: MatchupSummary = {
   champs: ["mel", "twitch"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     mel: {
       ko: ["멜 W가 트위치 W R 반사 가능"],

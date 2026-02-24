@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const viego_yasuo: MatchupSummary = {
   champs: ["viego", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     viego: {
       ko: ["야스오 W(장막)는 비에고의 W를 막을 수 있음."],

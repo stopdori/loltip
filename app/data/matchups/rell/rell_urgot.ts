@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const rell_urgot: MatchupSummary = {
   champs: ["rell", "urgot"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     rell: {
       ko: [""],

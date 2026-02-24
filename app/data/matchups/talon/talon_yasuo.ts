@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const talon_yasuo: MatchupSummary = {
   champs: ["talon", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     talon: {
       ko: ["야스오 W(장막)는 탈론의 W R을 막을 수 있음."],

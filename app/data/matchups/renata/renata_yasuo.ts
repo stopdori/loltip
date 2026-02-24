@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const renata_yasuo: MatchupSummary = {
   champs: ["renata", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     renata: {
       ko: ["야스오 W(장막)는 레나타의 Q, E, R을 모두 막을 수 있음."],

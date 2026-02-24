@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const fizz_shyvana: MatchupSummary = {
   champs: ["fizz", "shyvana"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     fizz: {
       ko: [""],

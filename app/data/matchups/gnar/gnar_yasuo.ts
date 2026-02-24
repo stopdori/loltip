@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gnar_yasuo: MatchupSummary = {
   champs: ["gnar", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gnar: {
       ko: ["야스오 W(장막)가 나르 Q를 막을 수 있음. 미니/메가 나르의 부메랑과 돌덩이가 차단됨."],

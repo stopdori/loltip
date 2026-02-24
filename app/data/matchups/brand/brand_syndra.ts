@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const brand_syndra: MatchupSummary = {
   champs: ["brand", "syndra"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     brand: {
       ko: [""],

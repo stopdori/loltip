@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const blitzcrank_draven: MatchupSummary = {
   champs: ["blitzcrank", "draven"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     blitzcrank: {
       ko: ["블리츠 Q(그랩)를 드레이븐 도끼가 떨어지는곳에 쓰면 위협적임"],

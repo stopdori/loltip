@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gwen_nidalee: MatchupSummary = {
   champs: ["gwen", "nidalee"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gwen: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const talon_vex: MatchupSummary = {
   champs: ["talon", "vex"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     talon: {
       ko: [""],

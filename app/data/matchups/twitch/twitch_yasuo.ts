@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const twitch_yasuo: MatchupSummary = {
   champs: ["twitch", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     twitch: {
       ko: ["야스오 W(장막)는 트위치의 W와 R(강화 평타)을 막을 수 있음."],

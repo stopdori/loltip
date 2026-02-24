@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gnar_mel: MatchupSummary = {
   champs: ["gnar", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gnar: {
       ko: ["멜 W가 나르 인간폼 Q / 메가폼 Q 반사 가능."],

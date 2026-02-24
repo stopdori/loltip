@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gragas_reksai: MatchupSummary = {
   champs: ["gragas", "reksai"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gragas: {
       ko: ["그라가스 E와 렉사이 잠수폼 평타가 동시에 적중하면, 서로서로 적중함"],

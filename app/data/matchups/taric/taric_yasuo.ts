@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const taric_yasuo: MatchupSummary = {
   champs: ["taric", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     taric: {
       ko: ["타릭스턴 장막으로 못막음"],

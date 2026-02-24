@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const galio_mel: MatchupSummary = {
   champs: ["galio", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     galio: {
       ko: ["멜 W가 갈리오 Q 반사 가능."],

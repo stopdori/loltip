@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const smolder_udyr: MatchupSummary = {
   champs: ["smolder", "udyr"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     smolder: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const samira_trundle: MatchupSummary = {
   champs: ["samira", "trundle"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     samira: {
       ko: [""],

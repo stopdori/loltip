@@ -3,10 +3,14 @@ import type { MatchupSummary } from "../_types";
 
 export const aatrox_elise: MatchupSummary = {
   champs: ["aatrox", "elise"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 엘리스 거미폼 Q를 끊을 수 있음"],
-      en: [],
+      en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Elise's Spider Form Q"],
     },
     elise: {
       ko: ["엘리스의 새끼거미가 아트록스 W를 대신 맞을 수 있음"],

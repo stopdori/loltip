@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const braum_mel: MatchupSummary = {
   champs: ["braum", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     braum: {
       ko: ["멜 W가 브라움 Q R 반사 가능"],

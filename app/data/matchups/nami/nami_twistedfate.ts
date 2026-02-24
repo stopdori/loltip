@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const nami_twistedfate: MatchupSummary = {
   champs: ["nami", "twistedfate"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     nami: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const jhin_twistedfate: MatchupSummary = {
   champs: ["jhin", "twistedfate"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     jhin: {
       ko: [""],

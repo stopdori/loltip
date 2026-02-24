@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const graves_vayne: MatchupSummary = {
   champs: ["graves", "vayne"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     graves: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const trundle_urgot: MatchupSummary = {
   champs: ["trundle", "urgot"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     trundle: {
       ko: [""],

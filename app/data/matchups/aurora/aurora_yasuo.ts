@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const aurora_yasuo: MatchupSummary = {
   champs: ["aurora", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     aurora: {
       ko: ["야스오 W(장막)가 오로라 Q 막을 수 있음."],

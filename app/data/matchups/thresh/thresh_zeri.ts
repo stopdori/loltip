@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const thresh_zeri: MatchupSummary = {
   champs: ["thresh", "zeri"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     thresh: {
       ko: [""],

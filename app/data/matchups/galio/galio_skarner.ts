@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const galio_skarner: MatchupSummary = {
   champs: ["galio", "skarner"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     galio: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const teemo_yorick: MatchupSummary = {
   champs: ["teemo", "yorick"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     teemo: {
       ko: [""],

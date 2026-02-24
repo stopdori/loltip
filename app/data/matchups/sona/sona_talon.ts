@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const sona_talon: MatchupSummary = {
   champs: ["sona", "talon"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     sona: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const belveth_smolder: MatchupSummary = {
   champs: ["belveth", "smolder"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     belveth: {
       ko: [""],

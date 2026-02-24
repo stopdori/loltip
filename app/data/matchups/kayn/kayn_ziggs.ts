@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const kayn_ziggs: MatchupSummary = {
   champs: ["kayn", "ziggs"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     kayn: {
       ko: [""],

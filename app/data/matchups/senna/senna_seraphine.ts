@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const senna_seraphine: MatchupSummary = {
   champs: ["senna", "seraphine"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     senna: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_anivia: MatchupSummary = {
   champs: ["ahri", "anivia"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 애니비아 R(채널링)을 끊을 수 있음"],

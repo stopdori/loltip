@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const maokai_xerath: MatchupSummary = {
   champs: ["maokai", "xerath"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     maokai: {
       ko: [""],

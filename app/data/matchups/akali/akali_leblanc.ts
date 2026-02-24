@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const akali_leblanc: MatchupSummary = {
   champs: ["akali", "leblanc"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 르블랑 W를 따라갈 수 있음", "아칼리 E로 르블랑 P의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음"],

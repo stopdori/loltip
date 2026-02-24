@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_ornn: MatchupSummary = {
   champs: ["mel", "ornn"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     mel: {
       ko: ["멜 W가 오른 Q R 반사 가능. 다가오는 오른 R 이 아닌 재사용 한 R에 반사해야 에어본 가능."],

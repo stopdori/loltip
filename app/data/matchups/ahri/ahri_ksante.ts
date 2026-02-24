@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_ksante: MatchupSummary = {
   champs: ["ahri", "ksante"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 크산테 E를 끊을 수 있음"],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const sion_yuumi: MatchupSummary = {
   champs: ["sion", "yuumi"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     sion: {
       ko: [""],

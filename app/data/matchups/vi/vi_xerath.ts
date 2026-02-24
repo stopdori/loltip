@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const vi_xerath: MatchupSummary = {
   champs: ["vi", "xerath"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     vi: {
       ko: [""],

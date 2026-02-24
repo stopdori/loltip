@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const malphite_renekton: MatchupSummary = {
   champs: ["malphite", "renekton"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     malphite: {
       ko: [""],

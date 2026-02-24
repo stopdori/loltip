@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ashe_yasuo: MatchupSummary = {
   champs: ["ashe", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ashe: {
       ko: ["야스오 W(장막)가 애쉬 Q W E R 막을 수 있음."],

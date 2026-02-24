@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const lissandra_yasuo: MatchupSummary = {
   champs: ["lissandra", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     lissandra: {
       ko: ["야스오 W(장막)가 리산드라 Q와 E를 막을 수 있음."],

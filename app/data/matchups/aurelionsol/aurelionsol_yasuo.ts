@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const aurelionsol_yasuo: MatchupSummary = {
   champs: ["aurelionsol", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     aurelionsol: {
       ko: ["야스오 W(장막)가 아우솔 Q를 막을 수 있음. R은 막지 못하지만, 장막 앞에 떨어지게 할 수는 있음"],

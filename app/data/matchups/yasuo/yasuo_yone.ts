@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const yasuo_yone: MatchupSummary = {
   champs: ["yasuo", "yone"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     yasuo: {
       ko: ["야스오 W(장막)가 요네 Q 3타 조건부로 막을 수 있음. 요네 몸에 닿으면 막을 수 없음."],

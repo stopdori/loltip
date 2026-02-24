@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const maokai_reksai: MatchupSummary = {
   champs: ["maokai", "reksai"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     maokai: {
       ko: [""],

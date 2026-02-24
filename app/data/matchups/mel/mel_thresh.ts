@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_thresh: MatchupSummary = {
   champs: ["mel", "thresh"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     mel: {
       ko: ["멜 W가 쓰레쉬 Q W 반사 가능. 반사된 W(랜턴)를 아군이 사용 못함."],

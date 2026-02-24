@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ahri_belveth: MatchupSummary = {
   champs: ["ahri", "belveth"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 벨베스 Q, W(채널링)를 끊을 수 있음"],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_twistedfate: MatchupSummary = {
   champs: ["mel", "twistedfate"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     mel: {
       ko: ["멜 W가 트위스티드 페이트 Q W 반사 가능."],

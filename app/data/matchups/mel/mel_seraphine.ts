@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const mel_seraphine: MatchupSummary = {
   champs: ["mel", "seraphine"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     mel: {
       ko: ["멜 W가 세라핀 E R 반사 가능."],

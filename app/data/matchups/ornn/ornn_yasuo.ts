@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const ornn_yasuo: MatchupSummary = {
   champs: ["ornn", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     ornn: {
       ko: ["야스오 W(장막)는 오른의 R을 지울 수 있음."],

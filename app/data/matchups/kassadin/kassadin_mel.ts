@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const kassadin_mel: MatchupSummary = {
   champs: ["kassadin", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     kassadin: {
       ko: ["멜 W가 카사딘 Q 반사 가능."],

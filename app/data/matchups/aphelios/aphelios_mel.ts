@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const aphelios_mel: MatchupSummary = {
   champs: ["aphelios", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     aphelios: {
       ko: ["멜 W가 아펠리오스 R 반사 가능. Q는 제보 부탁드림"],

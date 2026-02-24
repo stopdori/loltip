@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gnar_naafiri: MatchupSummary = {
   champs: ["gnar", "naafiri"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gnar: {
       ko: [""],

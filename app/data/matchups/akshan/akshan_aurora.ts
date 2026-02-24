@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const akshan_aurora: MatchupSummary = {
   champs: ["akshan", "aurora"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     akshan: {
       ko: ["아크샨 R의 [[TRUE_SIGHT]]로 오로라 W의 [[INVISIBILITY]]를 볼 수 있음"],

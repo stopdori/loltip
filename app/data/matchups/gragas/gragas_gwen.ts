@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const gragas_gwen: MatchupSummary = {
   champs: ["gragas", "gwen"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     gragas: {
       ko: ["그라가스 E가 그웬 W 범위 밖에서 사용하여, 범위 안쪽으로 들어가도 스킬이 유효함"],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const braum_quinn: MatchupSummary = {
   champs: ["braum", "quinn"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     braum: {
       ko: [""],

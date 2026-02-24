@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const amumu_fiddlesticks: MatchupSummary = {
   champs: ["amumu", "fiddlesticks"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     amumu: {
       ko: [""],

@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const kayn_yasuo: MatchupSummary = {
   champs: ["kayn", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     kayn: {
       ko: ["야스오 W(장막)가 케인 W(그림자 암살자)를 막을 수 있음. 다르킨은 해당 없음."],

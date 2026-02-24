@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const kindred_naafiri: MatchupSummary = {
   champs: ["kindred", "naafiri"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     kindred: {
       ko: [""],

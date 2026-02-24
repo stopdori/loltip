@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const nautilus_poppy: MatchupSummary = {
   champs: ["nautilus", "poppy"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     nautilus: {
       ko: ["뽀삐가 R(홈런)을 차징해서 날릴 때, 노틸이 Q(닻줄)로 어떤대상(벽이나 챔피언 등등)에게 성공하면 홈런을 무시함."],

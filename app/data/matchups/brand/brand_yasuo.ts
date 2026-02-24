@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const brand_yasuo: MatchupSummary = {
   champs: ["brand", "yasuo"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     brand: {
       ko: ["야스오 W(장막)가 브랜드 Q R 막을 수 있음."],

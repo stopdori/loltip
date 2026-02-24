@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const drmundo_mel: MatchupSummary = {
   champs: ["drmundo", "mel"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     drmundo: {
       ko: ["멜 W가 문도박사 Q 반사 가능."],

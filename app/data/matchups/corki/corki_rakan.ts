@@ -3,6 +3,10 @@ import type { MatchupSummary } from "../_types";
 
 export const corki_rakan: MatchupSummary = {
   champs: ["corki", "rakan"],
+  summary: {
+    ko: [],
+    en: [],
+  },
   highlightsByChamp: {
     corki: {
       ko: [""],
