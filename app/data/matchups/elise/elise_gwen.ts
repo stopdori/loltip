@@ -9,11 +9,11 @@ export const elise_gwen: MatchupSummary = {
   },
   highlightsByChamp: {
     elise: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     gwen: {
-      ko: [],
+      ko: ["그웬 W로 엘리스 인간폼 평타, Q, W, E, 거미폼 E를 범위 밖에서 맞지 않음\n인간폼 평타, Q는 날아가던 중 범위 안에 들어올 때 사라짐"],
       en: [],
     },
   },

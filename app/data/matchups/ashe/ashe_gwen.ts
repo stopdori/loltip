@@ -9,11 +9,11 @@ export const ashe_gwen: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     gwen: {
-      ko: [],
+      ko: ["그웬 W로 애쉬 평타, Q(평타), W, R을 범위 밖에서 맞지 않음"],
       en: [],
     },
   },

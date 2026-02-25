@@ -13,7 +13,7 @@ export const ahri_gwen: MatchupSummary = {
       en: [""],
     },
     gwen: {
-      ko: ["그웬 W의 범위 밖에서 아리 Q, W, E, R 을 무효화 할 수 있음"],
+      ko: ["그웬 W로 아리 Q, W, E, R을 범위 밖에서 맞지 않음\n그웬에게 사용한 평타, W, R은 날아가던 중 범위 안에 들어올 때 사라짐"],
       en: [],
     },
   },

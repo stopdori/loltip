@@ -4,7 +4,7 @@ import type { MatchupSummary } from "../_types";
 export const aatrox_xayah: MatchupSummary = {
   champs: ["aatrox", "xayah"],
   summary: {
-    ko: [],
+    ko: ["자야 R로도 아트록스 W 사슬은 끊어지지 않음"],
     en: [],
   },
   highlightsByChamp: {

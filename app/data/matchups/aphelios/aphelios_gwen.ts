@@ -13,7 +13,7 @@ export const aphelios_gwen: MatchupSummary = {
       en: [""],
     },
     gwen: {
-      ko: [],
+      ko: ["그웬 W로 아펠리오스 평타, Q, R을 범위 밖에서 맞지 않음"],
       en: [],
     },
   },

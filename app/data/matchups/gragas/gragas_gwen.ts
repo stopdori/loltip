@@ -13,7 +13,7 @@ export const gragas_gwen: MatchupSummary = {
       en: ["Gragas's E remains effective even if cast from outside Gwen's W range, as long as he enters the zone during the dash"],
     },
     gwen: {
-      ko: [],
+      ko: ["그웬 W로 그라가스 Q, W(범위피해), R을 범위 밖에서 맞지 않음"],
       en: [],
     },
   },

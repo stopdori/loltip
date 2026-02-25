@@ -13,7 +13,7 @@ export const ekko_gwen: MatchupSummary = {
       en: [""],
     },
     gwen: {
-      ko: [],
+      ko: ["그웬 W로 에코 Q, W, R을 범위 밖에서 맞지 않음"],
       en: [],
     },
   },

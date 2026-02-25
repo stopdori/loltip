@@ -4,8 +4,8 @@ import type { MatchupSummary } from "../_types";
 export const aatrox_fizz: MatchupSummary = {
   champs: ["aatrox", "fizz"],
   summary: {
-    ko: [],
-    en: [],
+    ko: ["피즈 E(재간둥이)로도 아트록스 W(사슬) 끌림을 피할 수 없음"],
+    en: ["Fizz's E does not dodge Aatrox's W pull."],
   },
   highlightsByChamp: {
     aatrox: {

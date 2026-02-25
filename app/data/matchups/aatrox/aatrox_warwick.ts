@@ -9,7 +9,7 @@ export const aatrox_warwick: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
+      ko: ["아트록스 Q끝, W [[GRAB]]효과로 워윅 R을 끊을 수 있음"],
       en: [""],
     },
     warwick: {

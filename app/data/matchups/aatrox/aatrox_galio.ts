@@ -4,8 +4,8 @@ import type { MatchupSummary } from "../_types";
 export const aatrox_galio: MatchupSummary = {
   champs: ["aatrox", "galio"],
   summary: {
-    ko: [],
-    en: [],
+    ko: ["갈리오 E를 타이밍맞게 사용하면 아트 W(사슬) 무시함"],
+    en: ["Galio's E can ignore Aatrox's W pull with proper timing."],
   },
   highlightsByChamp: {
     aatrox: {
