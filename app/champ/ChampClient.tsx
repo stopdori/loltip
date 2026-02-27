@@ -35,7 +35,12 @@ function saveLang(v: Lang) {
   localStorage.setItem(LANG_KEY, v);
 }
 
-export default function Home() {
+type Props = {
+  forcedMe?: string | null;
+  forcedEnemy?: string | null;
+};
+
+export default function Home({ forcedMe, forcedEnemy }: Props) {
   const [lang, setLang] = useState<Lang>("ko");
 
   useEffect(() => {
@@ -52,8 +57,8 @@ export default function Home() {
   const router = useRouter();
 const searchParams = useSearchParams();
 
-const myChampId = searchParams.get("me");
-const enemyChampId = searchParams.get("enemy");
+const myChampId = forcedMe ?? searchParams.get("me");
+const enemyChampId = forcedEnemy ?? searchParams.get("enemy");
 
 const myChamp =
   myChampId ? CHAMPIONS.find((c) => c.id === myChampId) ?? null : null;
