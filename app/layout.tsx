@@ -42,8 +42,8 @@ export default function RootLayout({
         </Script>
 
         <div className="min-h-screen overflow-x-hidden">
-          <div className="mx-auto min-w-[960px] w-full px-6 py-10">
-            <div className="grid grid-cols-[960px] xl:grid-cols-[240px_960px_240px] gap-6 items-start justify-center">
+          <div className="mx-auto w-full max-w-screen-lg px-4 py-6 lg:px-6 lg:py-10">
+            <div className="grid grid-cols-1 lg:grid-cols-[960px] xl:grid-cols-[240px_960px_240px] gap-4 lg:gap-6 items-start justify-center">
 
               <aside className="sticky top-[220px] hidden xl:block">
                 <AdSlot side="left" />
