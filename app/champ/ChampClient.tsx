@@ -108,7 +108,11 @@ useEffect(() => {
 
 
       <header className="relative text-center max-w-6xl mx-auto px-4">
-        <div className="absolute right-4 top-4 flex flex-col items-end gap-2">
+        <div className="
+  mt-4
+  flex flex-col items-end gap-2
+  lg:absolute lg:right-4 lg:top-4 lg:mt-0
+">
           {/* 상단: 패치 / 공지 / 도움말 */}
           <div className="flex items-center gap-2">
             <span className="text-xl text-slate-300 select-none whitespace-nowrap">
@@ -153,12 +157,13 @@ useEffect(() => {
 >
   LOLTIP
 </h1>
-        <p className="mt-3 text-slate-300">{subtitle}</p>
+        <p className="mt-5 lg:mt-3 text-slate-300">{subtitle}</p>
       </header>
 
       {/* CHAMP PICK */}
-<section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 backdrop-blur border-b border-white/10">
+<section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 border-b border-white/10 supports-[backdrop-filter]:backdrop-blur">
   <div className="max-w-5xl mx-auto px-3 py-2">
+
 
     <div className="flex items-center justify-between gap-2">
 
@@ -232,7 +237,15 @@ useEffect(() => {
         </div>
 
         {/* MY */}
-<div className="flex flex-col rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40">
+<div className="flex flex-col rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0">
+
+{/* 챔피언 이름 표시 */}
+{myChamp && (
+  <div className="mb-3 text-center text-lg font-bold text-yellow-300 tracking-wide truncate">
+    {lang === "ko" ? myChamp.ko : myChamp.en}
+  </div>
+)}
+
   <div
     className={`rounded-2xl ring-2 transition ${
       myIsSooner
@@ -258,7 +271,15 @@ useEffect(() => {
 
 
         {/* ENEMY */}
-<div className="flex flex-col rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40">
+<div className="flex flex-col rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0">
+
+{/* 챔피언 이름 표시 */}
+{enemyChamp && (
+  <div className="mb-3 text-center text-lg font-bold text-sky-300 tracking-wide truncate">
+    {lang === "ko" ? enemyChamp.ko : enemyChamp.en}
+  </div>
+)}
+
   <div
     className={`rounded-2xl ring-2 transition ${
       enemyIsSooner
