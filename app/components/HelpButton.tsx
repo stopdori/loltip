@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 
 type Props = {
   lang: "ko" | "en";
@@ -96,15 +97,13 @@ export default function HelpButton({ lang, className }: Props) {
             </div>
 
             {/* 이미지 */}
-            <img
-              src={
-                lang === "ko"
-                  ? "/help/tutorial_ko.webp"
-                  : "/help/tutorial_en.webp"
-              }
-              alt={lang === "ko" ? "LOLTIP 사용 방법" : "LOLTIP tutorial"}
-              className="mb-4 w-full rounded-xl ring-1 ring-white/10"
-            />
+            <Image
+  src={lang === "ko" ? "/help/tutorial_ko.webp" : "/help/tutorial_en.webp"}
+  alt={lang === "ko" ? "LOLTIP 사용 방법" : "LOLTIP tutorial"}
+  width={520}
+  height={300}
+  className="mb-4 w-full rounded-xl ring-1 ring-white/10"
+/>
 
             <div className="text-xs text-slate-400 mb-4">{t.hint}</div>
 
