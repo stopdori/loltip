@@ -86,6 +86,7 @@ useEffect(() => {
 
   const canCompare =
     !!myChamp && !!enemyChamp && myUltCd != null && enemyUltCd != null;
+    const bothSelected = !!myChamp && !!enemyChamp;
 
   const diff = canCompare ? Math.abs(myUltCd! - enemyUltCd!) : null;
 
@@ -223,7 +224,8 @@ useEffect(() => {
       />
 
       {/* COMPARE */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-28 relative">
+{bothSelected && (
+<section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 relative">
 
         {/* 중앙 선궁 (PC) */}
         <div className="hidden lg:flex absolute left-1/2 top-[78px] -translate-x-1/2 -translate-y-1/2 flex-col items-center z-10">
@@ -236,15 +238,18 @@ useEffect(() => {
           </div>
         </div>
 
+
+
         {/* MY */}
 <div className="flex flex-col rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0">
 
+
 {/* 챔피언 이름 표시 */}
-{myChamp && (
-  <div className="mb-3 text-center text-lg font-bold text-yellow-300 tracking-wide truncate">
-    {lang === "ko" ? myChamp.ko : myChamp.en}
-  </div>
-)}
+<div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
+     {myChamp
+     ? (lang === "ko" ? myChamp.ko : myChamp.en)
+     : (lang === "ko" ? "챔피언" : "Champion")}
+ </div>
 
   <div
     className={`rounded-2xl ring-2 transition ${
@@ -274,11 +279,11 @@ useEffect(() => {
 <div className="flex flex-col rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0">
 
 {/* 챔피언 이름 표시 */}
-{enemyChamp && (
-  <div className="mb-3 text-center text-lg font-bold text-sky-300 tracking-wide truncate">
-    {lang === "ko" ? enemyChamp.ko : enemyChamp.en}
-  </div>
-)}
+ <div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
+   {enemyChamp
+     ? (lang === "ko" ? enemyChamp.ko : enemyChamp.en)
+     : (lang === "ko" ? "챔피언" : "Champion")}
+ </div>
 
   <div
     className={`rounded-2xl ring-2 transition ${
@@ -304,24 +309,32 @@ useEffect(() => {
 </div>
 
 </section>
-    
+)}
 
 
       {/* MATCHUP */}
       <section>
-        {myChamp && enemyChamp ? (
-          <MatchupSummaryBox
-            myChampId={myChamp.id}
-            enemyChampId={enemyChamp.id}
-            lang={lang}
-          />
-        ) : (
-          <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400">
-            {lang === "ko"
-              ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
-              : "Pick both champions to see matchup summary."}
-          </div>
-        )}
+        <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center">
+
+  <div className="text-xl font-bold text-slate-200 mb-3">
+    {lang === "ko" ? "상호작용 요약" : "Matchup Summary"}
+  </div>
+
+  {bothSelected ? (
+    <MatchupSummaryBox
+      myChampId={myChamp.id}
+      enemyChampId={enemyChamp.id}
+      lang={lang}
+    />
+  ) : (
+    <div className="text-slate-400">
+      {lang === "ko"
+        ? "두 챔피언을 선택하면 활성화됩니다."
+        : "Select two champions to activate."}
+    </div>
+  )}
+
+</div>
       </section>
 
       <FeedbackButton lang={lang} />
