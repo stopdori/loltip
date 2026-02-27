@@ -157,7 +157,7 @@ useEffect(() => {
       </header>
 
       {/* CHAMP PICK */}
-      <section className="flex justify-center items-center gap-10">
+      <section className="flex flex-col items-center gap-6 lg:flex-row lg:justify-center lg:items-center lg:gap-10">
         <ChampSelectButton
   label={lang === "ko" ? "챔피언" : "Champion"}
   lang={lang}
@@ -166,7 +166,7 @@ useEffect(() => {
   clearParam="me"
 />
 
-        <div className="text-xl font-black text-slate-400">VS</div>
+        <div className="text-lg lg:text-xl font-black text-slate-400 py-1 lg:py-0">VS</div>
 
         <ChampSelectButton
   label={lang === "ko" ? "챔피언" : "Champion"}
@@ -209,10 +209,10 @@ useEffect(() => {
       />
 
       {/* COMPARE */}
-      <section className="relative grid grid-cols-2 gap-28">
+      <section className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-28">
 
         {/* 중앙 선궁 (PC) */}
-        <div className="absolute left-1/2 top-[78px] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-10">
+        <div className="hidden lg:flex absolute left-1/2 top-[78px] -translate-x-1/2 -translate-y-1/2 flex-col items-center z-10">
 
           <div className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black">
             {firstUltLabel}
