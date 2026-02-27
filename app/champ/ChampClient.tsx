@@ -157,26 +157,35 @@ useEffect(() => {
       </header>
 
       {/* CHAMP PICK */}
-      <section className="flex flex-col items-center gap-6 lg:flex-row lg:justify-center lg:items-center lg:gap-10">
-        <ChampSelectButton
-  label={lang === "ko" ? "챔피언" : "Champion"}
-  lang={lang}
-  selected={myChamp}
-  onClick={() => setOpenTarget("my")}
-  clearParam="me"
-/>
+<section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 backdrop-blur border-b border-white/10">
+  <div className="max-w-5xl mx-auto px-3 py-2">
 
-        <div className="text-lg lg:text-xl font-black text-slate-400 py-1 lg:py-0">VS</div>
+    <div className="flex items-center justify-between gap-2">
 
-        <ChampSelectButton
-  label={lang === "ko" ? "챔피언" : "Champion"}
-  lang={lang}
-  selected={enemyChamp}
-  onClick={() => setOpenTarget("enemy")}
-  clearParam="enemy"
-/>
-      </section>
+      <ChampSelectButton
+        label={lang === "ko" ? "챔피언" : "Champion"}
+        lang={lang}
+        selected={myChamp}
+        onClick={() => setOpenTarget("my")}
+        clearParam="me"
+      />
 
+      <div className="text-sm font-extrabold text-slate-300 px-2">
+        VS
+      </div>
+
+      <ChampSelectButton
+        label={lang === "ko" ? "챔피언" : "Champion"}
+        lang={lang}
+        selected={enemyChamp}
+        onClick={() => setOpenTarget("enemy")}
+        clearParam="enemy"
+      />
+
+    </div>
+  </div>
+</section>
+        
       {/* MODAL */}
       <ChampSelectModal
         open={openTarget !== null}
@@ -209,7 +218,7 @@ useEffect(() => {
       />
 
       {/* COMPARE */}
-      <section className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-28">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-28 relative">
 
         {/* 중앙 선궁 (PC) */}
         <div className="hidden lg:flex absolute left-1/2 top-[78px] -translate-x-1/2 -translate-y-1/2 flex-col items-center z-10">
@@ -274,7 +283,8 @@ useEffect(() => {
 </div>
 
 </section>
-        
+    
+
 
       {/* MATCHUP */}
       <section>
