@@ -27,25 +27,7 @@ export default function HelpButton({ lang, className }: Props) {
         };
   }, [lang]);
 
-  const HIDE_KEY = "loltip_hide_help";
-  const todayKey = () => new Date().toISOString().slice(0, 10);
-
-  const isHiddenToday = () => {
-    if (typeof window === "undefined") return false;
-    return localStorage.getItem(HIDE_KEY) === todayKey();
-  };
-
-  const hideForToday = () => {
-    localStorage.setItem(HIDE_KEY, todayKey());
-    setOpen(false);
-  };
-
-  /* 🔹 첫 방문 자동 오픈 (오늘 숨김 아니면) */
-  useEffect(() => {
-    if (isHiddenToday()) return;
-    setOpen(true);
-  }, []);
-
+ 
   /* 🔹 ESC 닫기 */
   useEffect(() => {
     if (!open) return;
@@ -111,14 +93,10 @@ export default function HelpButton({ lang, className }: Props) {
             <div className="flex items-center justify-center">
               <button
                 type="button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  hideForToday();
-                }}
+                onClick={() => setOpen(false)}
                 className="rounded-xl bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-200 ring-1 ring-white/10 hover:bg-slate-700"
               >
-                {t.hide}
+                {t.close}
               </button>
             </div>
           </div>
