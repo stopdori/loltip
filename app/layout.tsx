@@ -41,7 +41,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <div className="min-h-screen overflow-x-auto">
+        <div className="min-h-screen overflow-x-hidden">
           <div className="mx-auto min-w-[960px] w-full px-6 py-10">
             <div className="grid grid-cols-[960px] xl:grid-cols-[240px_960px_240px] gap-6 items-start justify-center">
 

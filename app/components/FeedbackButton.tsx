@@ -78,7 +78,7 @@ export default function FeedbackButton({ lang }: Props) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="md:fixed absolute bottom-5 right-5 z-50 rounded-full bg-yellow-400 px-4 py-3 text-sm font-black text-black shadow-lg shadow-black/30 ring-1 ring-yellow-300 hover:brightness-95 active:scale-[0.98]"
+        className="fixed bottom-4 right-4 lg:bottom-5 lg:right-5 z-50 rounded-full bg-yellow-400 px-4 py-3 text-sm font-black text-black shadow-lg shadow-black/30 ring-1 ring-yellow-300 hover:brightness-95 active:scale-[0.98]"
       >
         {lang === "ko" ? "문의 / 제보" : "Feedback"}
       </button>
