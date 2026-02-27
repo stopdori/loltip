@@ -30,6 +30,29 @@ function pruneMap(now: number) {
   }
 }
 
+// ===== 욕설 필터 =====
+const BAD_WORDS = [
+  "씨발","시발","ㅅㅂ","ㅂㅅ","병신","븅신","병1신",
+  "개새끼","개새","개세","ㄱㅅㄲ",
+  "지랄","ㅈㄹ","ㅈㄴ","존나","좆","ㅈ같",
+  "꺼져","뒤져","죽어","죽어라",
+  "fuck","shit","bitch","asshole",
+  "새끼","미친","애미","애비","걸레","창녀","꺼지","닥쳐","멍청",
+];
+
+function normalize(text: string) {
+  return text
+    .toLowerCase()
+    .replace(/\s+/g, "")          // 공백 제거
+    .replace(/[0-9]/g, "")  // 숫자 제거
+.replace(/[.\-_,~`'"!@#$%^&*()+=|\\/:;?]/g, ""); // 특수문자 제거
+}
+
+function hasBadWord(text: string) {
+  const n = normalize(text);
+  return BAD_WORDS.some(w => n.includes(w));
+}
+
 export async function POST(req: Request) {
   try {
     console.log("WEBHOOK:", process.env.DISCORD_WEBHOOK_URL);
@@ -62,6 +85,11 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
+
+    // 욕설 포함 시 전송 차단 (아예 디코 안 감)
+if (hasBadWord(message)) {
+  return NextResponse.json({ ok: true }); // 성공처럼 응답하고 무시
+}
 
     // ✅ IP 기준 30초 쿨타임 (초과하면 '성공처럼' 응답하고 디코 전송 X)
     const nowMs = Date.now();
