@@ -166,7 +166,7 @@ useEffect(() => {
   <div className="max-w-5xl mx-auto px-3 py-2">
 
 
-    <div className="flex items-center justify-between gap-2">
+    <div className="flex items-center justify-center gap-16">
 
       <ChampSelectButton
         label={lang === "ko" ? "챔피언" : "Champion"}
@@ -224,24 +224,15 @@ useEffect(() => {
       />
 
       {/* COMPARE */}
-{bothSelected && (
-<section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 relative">
+{(myChamp || enemyChamp) ? (
+<section
+  className="grid grid-cols-1 lg:grid-cols-[1fr_80px_1fr] gap-8 lg:gap-6 relative w-full max-w-[980px] mx-auto items-start"
+>
 
-        {/* 중앙 선궁 (PC) */}
-        <div className="hidden lg:flex absolute left-1/2 top-[78px] -translate-x-1/2 -translate-y-1/2 flex-col items-center z-10">
-
-          <div className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black">
-            {firstUltLabel}
-          </div>
-          <div className="mt-1 text-lg font-bold text-emerald-300">
-            {diff != null ? `${diff}s ${diffLabel}` : "--"}
-          </div>
-        </div>
-
-
-
+      
         {/* MY */}
-<div className="flex flex-col rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0">
+{myChamp && (
+<div className="flex flex-col w-full max-w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 lg:col-start-1">
 
 
 {/* 챔피언 이름 표시 */}
@@ -275,8 +266,23 @@ useEffect(() => {
 </div>
 
 
+)}
+
+
+{myChamp && enemyChamp && (
+  <div className="hidden lg:flex flex-col items-center lg:col-start-2 pt-[72px]">
+    <div className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black">
+      {firstUltLabel}
+    </div>
+    <div className="mt-1 text-lg font-bold text-emerald-300">
+      {diff != null ? `${diff}s ${diffLabel}` : "--"}
+    </div>
+  </div>
+)}
+
         {/* ENEMY */}
-<div className="flex flex-col rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0">
+        {enemyChamp && (
+<div className="flex flex-col w-full max-w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 lg:col-start-3">
 
 {/* 챔피언 이름 표시 */}
  <div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
@@ -308,34 +314,25 @@ useEffect(() => {
   </div>
 </div>
 
-</section>
 )}
 
-
-      {/* MATCHUP */}
-      <section>
-        <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center">
-
-  <div className="text-xl font-bold text-slate-200 mb-3">
-    {lang === "ko" ? "상호작용 요약" : "Matchup Summary"}
-  </div>
-
-  {bothSelected ? (
+</section>
+) : null}
+<section>
+  {myChamp && enemyChamp ? (
     <MatchupSummaryBox
       myChampId={myChamp.id}
       enemyChampId={enemyChamp.id}
       lang={lang}
     />
   ) : (
-    <div className="text-slate-400">
+    <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400">
       {lang === "ko"
-        ? "두 챔피언을 선택하면 활성화됩니다."
-        : "Select two champions to activate."}
+        ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
+        : "Pick both champions to see matchup summary."}
     </div>
   )}
-
-</div>
-      </section>
+</section>
 
       <FeedbackButton lang={lang} />
 

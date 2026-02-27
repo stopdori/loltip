@@ -47,11 +47,11 @@ const handleClear = (e: React.MouseEvent) => {
     className="
       group
       relative
-      w-[220px] sm:w-[260px]
+      w-full max-w-[210px] sm:max-w-[230px]
       rounded-2xl
       bg-slate-800/60 hover:bg-slate-700/60
       transition
-      p-6
+      p-4
       border border-white/10 hover:border-white/20
       shadow-lg
       flex flex-col items-center
@@ -81,7 +81,7 @@ const handleClear = (e: React.MouseEvent) => {
     </button>
 
     {/* 상단 라벨 */}
-    <div className="text-sm font-semibold text-slate-300 text-center mb-3">
+    <div className="text-sm font-semibold text-slate-300 text-center mb-2">
       {label}
     </div>
   
@@ -89,7 +89,7 @@ const handleClear = (e: React.MouseEvent) => {
 
 
       {/* 챔피언 아이콘 */}
-<div className="relative w-[96px] h-[96px] sm:w-[110px] sm:h-[110px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
+<div className="relative w-[88px] h-[88px] sm:w-[100px] sm:h-[100px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
 
   <Image
   src={imgSrc}
