@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     alternates: {
-      canonical: `https://www.loltip.com/matchup/${canonical}`,
+      canonical: `https://loltip.com/matchup/${canonical}`,
     },
   };
 }
