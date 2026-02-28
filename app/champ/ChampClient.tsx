@@ -16,8 +16,6 @@ import NoticeButton from "../components/NoticeButton";
 import AdSlot from "../components/AdSlot";
 import TagGlossaryButton from "../components/TagGlossaryButton";
 
-
-
 type Lang = "ko" | "en";
 const LANG_KEY = "loltip_lang";
 
@@ -43,6 +41,7 @@ type Props = {
 export default function Home({ forcedMe, forcedEnemy }: Props) {
   const [lang, setLang] = useState<Lang>("ko");
 
+  
   useEffect(() => {
     const saved = readSavedLang();
     setLang(saved ?? detectDefaultLang());
@@ -55,10 +54,35 @@ export default function Home({ forcedMe, forcedEnemy }: Props) {
 
 
   const router = useRouter();
-const searchParams = useSearchParams();
 
-const myChampId = forcedMe ?? searchParams.get("me");
-const enemyChampId = forcedEnemy ?? searchParams.get("enemy");
+  function clearMyChamp() {
+  // 오른쪽만 남기기
+  if (enemyChampId) {
+    router.replace(`/champ/${enemyChampId}?side=enemy`);
+    return;
+  }
+
+  // 아무도 없으면 챔피언 선택 초기화
+  router.replace(`/champ`);
+}
+
+function clearEnemyChamp() {
+  if (myChampId) {
+    router.replace(`/champ/${myChampId}?side=my`);
+    return;
+  }
+
+  router.replace(`/champ`);
+}
+
+const [myChampId, setMyChampId] = useState<string | null>(null);
+const [enemyChampId, setEnemyChampId] = useState<string | null>(null);
+
+useEffect(() => {
+  // 이미 같은 값이면 덮어쓰지 않는다 (중요)
+  if (forcedMe !== myChampId) setMyChampId(forcedMe ?? null);
+  if (forcedEnemy !== enemyChampId) setEnemyChampId(forcedEnemy ?? null);
+}, [forcedMe, forcedEnemy]);
 
 const myChamp =
   myChampId ? CHAMPIONS.find((c) => c.id === myChampId) ?? null : null;
@@ -85,6 +109,10 @@ useEffect(() => {
 }, [enemyChamp]);
 
   const [openTarget, setOpenTarget] = useState<"my" | "enemy" | null>(null);
+
+  useEffect(() => {
+  setOpenTarget(null);
+}, [forcedMe, forcedEnemy]);
 
   const [myUltCd, setMyUltCd] = useState<number | null>(null);
   const [enemyUltCd, setEnemyUltCd] = useState<number | null>(null);
@@ -174,24 +202,24 @@ useEffect(() => {
     <div className="flex items-center justify-center gap-16">
 
       <ChampSelectButton
-        label={lang === "ko" ? "챔피언" : "Champion"}
-        lang={lang}
-        selected={myChamp}
-        onClick={() => setOpenTarget("my")}
-        clearParam="me"
-      />
+  label={lang === "ko" ? "챔피언" : "Champion"}
+  lang={lang}
+  selected={myChamp}
+  onClick={() => setOpenTarget("my")}
+  onClear={clearMyChamp}
+/>
 
       <div className="text-sm font-extrabold text-slate-300 px-2">
         VS
       </div>
 
       <ChampSelectButton
-        label={lang === "ko" ? "챔피언" : "Champion"}
-        lang={lang}
-        selected={enemyChamp}
-        onClick={() => setOpenTarget("enemy")}
-        clearParam="enemy"
-      />
+  label={lang === "ko" ? "챔피언" : "Champion"}
+  lang={lang}
+  selected={enemyChamp}
+  onClick={() => setOpenTarget("enemy")}
+  onClear={clearEnemyChamp}
+/>
 
     </div>
   </div>
@@ -213,20 +241,33 @@ useEffect(() => {
         }
         onClose={() => setOpenTarget(null)}
         onPick={(c) => {
-  const params = new URLSearchParams(searchParams.toString());
+        
+  // 현재 선택 상태 기준으로 새 상태 계산
+const nextMy = openTarget === "my" ? c.id : myChampId;
+const nextEnemy = openTarget === "enemy" ? c.id : enemyChampId;
 
-  if (openTarget === "my") {
-    params.set("me", c.id);
-    setMyUltCd(null);
-  } else {
-    params.set("enemy", c.id);
-    setEnemyUltCd(null);
-  }
-
-  router.push(`/champ?${params.toString()}`);
+// 둘 다 있으면 → matchup
+if (nextMy && nextEnemy) {
+  const pair = [nextMy, nextEnemy].sort().join("-vs-");
+router.push(`/matchup/${pair}?first=${openTarget === "my" ? c.id : myChampId}`);
   setOpenTarget(null);
+  return;
+}
+
+// 하나만 있으면 → 단일 챔프
+if (nextMy && !nextEnemy) {
+  router.push(`/champ/${nextMy}?side=my`);
+  return;
+}
+
+if (!nextMy && nextEnemy) {
+  router.push(`/champ/${nextEnemy}?side=enemy`);
+  return;
+}
+setOpenTarget(null);
+
 }}
-      />
+        />
 
       {/* COMPARE */}
 {(myChamp || enemyChamp) ? (
