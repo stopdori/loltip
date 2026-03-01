@@ -25,7 +25,7 @@ function TagPill({
   const [pos, setPos] = useState<{ left: number; top: number; arrowLeft: number } | null>(null);
 
   const base =
-    "inline-flex items-center justify-center h-6 rounded-md font-semibold ring-1 leading-none px-1 py-0.5 text-xs";
+  "flex items-center justify-center rounded-md font-semibold ring-1 align-top px-2 py-[3px] text-[12px]";
   const toneCls = TONE_CLASS[tone] ?? TONE_CLASS.default;
 
   const measure = () => {
@@ -67,7 +67,7 @@ function TagPill({
   return (
     <span
       ref={anchorRef}
-      className="relative inline-flex"
+      className="relative flex"
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
     >
@@ -104,24 +104,34 @@ function TagPill({
 
 
 function renderWithTokens(text: string, lang: "ko" | "en") {
-  return text.split(/(\[\[.*?\]\])/g).map((part, idx) => {
-    const raw = part.match(/^\[\[(.+?)\]\]$/)?.[1];
-    const token = raw?.trim() as TagId | undefined;
+  const parts = text.split(/(\[\[.*?\]\])/g);
 
-    if (token && TAG_LABEL[token]) {
-      const tone = toneOfTag(token);
-      return (
-        <TagPill
-          key={idx}
-          text={TAG_LABEL[token][lang]}
-          tip={TAG_DESC?.[token]?.[lang]}
-          tone={tone}
-        />
-      );
-    }
+  return (
+    <div className="flex flex-wrap items-start gap-x-0.5 gap-y-1.5">
+      {parts.map((part, idx) => {
+        const raw = part.match(/^\[\[(.+?)\]\]$/)?.[1];
+        const token = raw?.trim() as TagId | undefined;
 
-    return <span key={idx}>{part}</span>;
-  });
+        if (token && TAG_LABEL[token]) {
+          const tone = toneOfTag(token);
+          return (
+            <TagPill
+              key={idx}
+              text={TAG_LABEL[token][lang]}
+              tip={TAG_DESC?.[token]?.[lang]}
+              tone={tone}
+            />
+          );
+        }
+
+        return (
+          <span key={idx} className="text-slate-300 font-semibold">
+            {part}
+          </span>
+        );
+      })}
+    </div>
+  );
 }
 
 type Line = string | null;
@@ -312,7 +322,7 @@ export default function TagGlossaryButton({ lang }: { lang: "ko" | "en" }) {
                     t === null ? (
                       <div key={i} className="h-4" />
                     ) : (
-                      <div key={i} className="whitespace-pre-wrap">
+                      <div key={i}>
                         {renderWithTokens(t, lang)}
                       </div>
                     )
@@ -325,7 +335,7 @@ export default function TagGlossaryButton({ lang }: { lang: "ko" | "en" }) {
                     t === null ? (
                       <div key={i} className="h-4" />
                     ) : (
-                      <div key={i} className="whitespace-pre-wrap">
+                      <div key={i}>
                         {renderWithTokens(t, lang)}
                       </div>
                     )

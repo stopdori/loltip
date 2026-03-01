@@ -316,7 +316,7 @@ setOpenTarget(null);
 
 
 {myChamp && enemyChamp && (
-  <div className="hidden lg:flex flex-col items-center lg:col-start-2 pt-[72px]">
+  <div className="hidden lg:flex flex-col items-center md:col-start-2 pt-[72px]">
     <div className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black">
       {firstUltLabel}
     </div>
