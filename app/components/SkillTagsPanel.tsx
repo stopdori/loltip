@@ -29,11 +29,11 @@ function TagPill({
   tone?: Tone;
 }) {
   const base =
-    tone === "note"
-      ? "inline cursor-help hover:opacity-90"
-      : "inline-flex items-center justify-center h-6 rounded-md font-semibold ring-1 leading-none";
+  tone === "note"
+    ? "inline cursor-help hover:opacity-90"
+    : "flex items-center justify-center rounded-md font-semibold ring-1 align-top";
 
-  const size = tone === "note" ? "" : "px-1 py-0.5 text-xs";
+const size = tone === "note" ? "" : "px-2 py-[3px] text-[12px]";
 
 const toneCls = TONE_CLASS[tone] ?? TONE_CLASS.default;
 const cls = `${base} ${size} ${toneCls} ${className ?? ""}`;
@@ -303,7 +303,7 @@ if (champ?.notes) {
         />
       </div>
 
-      <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1.5 min-h-[28px]">
+      <div className="flex flex-wrap items-start gap-x-1.5 gap-y-2 leading-none">
         {tags.length > 0 ? (
           tags.map((t) => {
             const labelData = TAG_LABEL[t];

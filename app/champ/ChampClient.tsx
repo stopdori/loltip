@@ -271,14 +271,12 @@ setOpenTarget(null);
 
       {/* COMPARE */}
 {(myChamp || enemyChamp) ? (
-<section
-  className="grid grid-cols-1 lg:grid-cols-[1fr_80px_1fr] gap-8 lg:gap-6 relative w-full max-w-[980px] mx-auto items-start"
->
+<section className="relative grid grid-cols-1 md:grid-cols-[430px_80px_430px] gap-8 lg:gap-6 w-full max-w-[980px] mx-auto justify-center items-start">
 
       
         {/* MY */}
 {myChamp && (
-<div className="flex flex-col w-full max-w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 lg:col-start-1">
+<div className="flex flex-col w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-1">
 
 
 {/* 챔피언 이름 표시 */}
@@ -315,20 +313,10 @@ setOpenTarget(null);
 )}
 
 
-{myChamp && enemyChamp && (
-  <div className="hidden lg:flex flex-col items-center lg:col-start-2 pt-[72px]">
-    <div className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black">
-      {firstUltLabel}
-    </div>
-    <div className="mt-1 text-lg font-bold text-emerald-300">
-      {diff != null ? `${diff}s ${diffLabel}` : "--"}
-    </div>
-  </div>
-)}
 
         {/* ENEMY */}
         {enemyChamp && (
-<div className="flex flex-col w-full max-w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 lg:col-start-3">
+<div className="flex flex-col w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-3">
 
 {/* 챔피언 이름 표시 */}
  <div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
@@ -360,6 +348,17 @@ setOpenTarget(null);
   </div>
 </div>
 
+)}
+
+{myChamp && enemyChamp && (
+  <div className="hidden md:flex flex-col items-center absolute left-1/2 -translate-x-1/2 top-[88px] pointer-events-none">
+    <div className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black">
+      {firstUltLabel}
+    </div>
+    <div className="mt-1 text-lg font-bold text-emerald-300">
+      {diff != null ? `${diff}s ${diffLabel}` : "--"}
+    </div>
+  </div>
 )}
 
 </section>
