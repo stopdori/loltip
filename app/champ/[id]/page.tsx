@@ -11,11 +11,16 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-
   const { id } = await params;
   const champId = id.toLowerCase();
 
+  const champ = CHAMPIONS.find(c => c.id === champId);
+
+  const champName = champ?.name_ko ?? champId;
+
   return {
+    title: `${champName} 공략 - LOLTIP`,
+    description: `${champName} 스킬 상호작용, CC 메커니즘, 시야 상호작용, 카운터 상성 정보`,
     alternates: {
       canonical: `https://www.loltip.com/champ/${champId}`,
     },
