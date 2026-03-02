@@ -1,6 +1,7 @@
 import ChampClient from "../ChampClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { notFound } from "next/navigation";
+import { Fragment } from "react";
 
 import type { Metadata } from "next";
 
@@ -42,10 +43,21 @@ const forcedEnemy = side === "enemy" ? champId : null;
 const renderKey = `${forcedMe ?? "none"}-${forcedEnemy ?? "none"}`;
 
 return (
-  <ChampClient
-    key={renderKey}
-    forcedMe={forcedMe}
-    forcedEnemy={forcedEnemy}
-  />
+  <Fragment>
+    {/* SEO용 서버 렌더링 본문 (크롤러가 읽는 실제 페이지 내용) */}
+    <div className="hidden">
+      <h1>{champId} champion guide</h1>
+      <p>
+        {champId} abilities, skill interactions, crowd control mechanics,
+        vision interactions, and matchup knowledge in League of Legends.
+      </p>
+    </div>
+
+    <ChampClient
+      key={renderKey}
+      forcedMe={forcedMe}
+      forcedEnemy={forcedEnemy}
+    />
+  </Fragment>
 );
 }
