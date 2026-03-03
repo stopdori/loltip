@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 
 import { CHAMPIONS } from "@/app/data/champions";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
+import { TAG_LABEL } from "@/app/data/interactions/tags";
+import type { TagId } from "@/app/data/interactions/tags";
 import ChampClient from "@/app/champ/ChampClient";
 
 type Props = {
@@ -12,7 +14,9 @@ type Props = {
 };
 
 function stripTags(text: string): string {
-  return text.replace(/\[\[([^\]]+)\]\]/g, "$1");
+  return text.replace(/\[\[([^\]]+)\]\]/g, (_, tagId) => {
+    return TAG_LABEL[tagId as TagId]?.ko ?? tagId;
+  });
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
