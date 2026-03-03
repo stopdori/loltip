@@ -6,6 +6,10 @@ export const metadata = {
   title: "LOLTIP - League of Legends Mechanic Guide",
   description:
     "Champion interactions, mechanics, unstoppable, vision, skill timing and matchup knowledge for League of Legends.",
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://www.loltip.com/og-image.png"],
+  },
   openGraph: {
     title: "LOLTIP",
     description: "League of Legends champion interaction & mechanic guide",
@@ -13,6 +17,7 @@ export const metadata = {
     siteName: "LOLTIP",
     locale: "ko_KR",
     type: "website",
+    images: [{ url: "https://www.loltip.com/og-image.png", width: 1200, height: 630 }],
   },
 };
 

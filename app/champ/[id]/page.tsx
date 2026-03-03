@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: `${champ.en} champion mechanics and matchup breakdown.`,
       url: `https://www.loltip.com/champ/${champId}`,
       type: "website",
+      images: [{ url: "https://www.loltip.com/og-image.png", width: 1200, height: 630 }],
     },
   };
 }
@@ -64,8 +65,37 @@ export default async function Page(props: Props) {
   const forcedEnemy = side === "enemy" ? champId : null;
   const renderKey = `${forcedMe ?? "none"}-${forcedEnemy ?? "none"}`;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "홈",
+        item: "https://www.loltip.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "챔피언 목록",
+        item: "https://www.loltip.com/champ",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `${champInfo.en} Champion Guide`,
+        item: `https://www.loltip.com/champ/${champId}`,
+      },
+    ],
+  };
+
   return (
     <Fragment>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="hidden">
         <h1>{champInfo.en} Champion Guide</h1>
 
