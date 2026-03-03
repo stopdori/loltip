@@ -152,10 +152,12 @@ export default async function Page(props: Props) {
 
         <h2>Skill Mechanics</h2>
         <ul>
-          {Object.entries(champData.skills ?? {}).map(([key, value]) => (
-            <li key={key}>
-              {key}: {value.join(", ")}
-            </li>
+          {Object.entries("base" in champData.skills ? champData.skills.base : champData.skills).map(([key, value]) => (
+            Array.isArray(value) && value.length > 0 ? (
+              <li key={key}>
+                {key}: {value.join(", ")}
+              </li>
+            ) : null
           ))}
         </ul>
 
