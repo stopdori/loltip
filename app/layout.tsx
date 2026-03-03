@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: "LOLTIP",
     description: "League of Legends champion interaction & mechanic guide",
-    url: "https://loltip.com",
+    url: "https://www.loltip.com",
     siteName: "LOLTIP",
     locale: "ko_KR",
     type: "website",

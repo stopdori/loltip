@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://loltip.com/sitemap.xml',
-    host: 'https://loltip.com',
+    sitemap: 'https://www.loltip.com/sitemap.xml',
+    host: 'https://www.loltip.com',
   }
 }
