@@ -2,36 +2,60 @@ import ChampClient from "../ChampClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
+import { CHAMP_FORMS } from "@/app/data/interactions/forms";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
 
 import type { Metadata } from "next";
-import type { ChampSkillTags } from "@/app/data/interactions/types";
+import type { ChampSkillTags, SkillKey } from "@/app/data/interactions/types";
 
-const SKILL_KEYS = ["P", "Q", "W", "E", "R"] as const;
+const SKILL_KEYS: SkillKey[] = ["P", "Q", "W", "E", "R"];
 
-function buildSkillFaqJsonLd(champNameKo: string, skills: ChampSkillTags) {
-  const block = "base" in skills ? skills.base : skills;
+type FormBlock = { formKo: string; block: Partial<Record<SkillKey, readonly string[]>> };
 
-  const entities = SKILL_KEYS.flatMap((key) => {
-    const tags = block[key];
-    if (!tags || tags.length === 0) return [];
+function getFormBlocks(champId: string, skills: ChampSkillTags): FormBlock[] {
+  if (!("base" in skills)) {
+    return [{ formKo: "", block: skills as Partial<Record<SkillKey, readonly string[]>> }];
+  }
+  const labels = CHAMP_FORMS[champId];
+  const blocks: FormBlock[] = [
+    { formKo: labels?.base.ko ?? "기본", block: skills.base },
+    { formKo: labels?.alt.ko ?? "변신폼", block: skills.alt },
+  ];
+  if (skills.alt2) {
+    blocks.push({ formKo: labels?.alt2?.ko ?? "변신폼2", block: skills.alt2 });
+  }
+  return blocks;
+}
 
-    const labels = tags
-      .map((t) => TAG_LABEL[t]?.ko)
-      .filter(Boolean)
-      .join(", ");
-    if (!labels) return [];
+function buildSkillFaqJsonLd(champNameKo: string, champId: string, skills: ChampSkillTags) {
+  const forms = getFormBlocks(champId, skills);
 
-    return [{
-      "@type": "Question",
-      name: `${champNameKo} ${key}스킬의 특징은 무엇인가요?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `${key}스킬: ${labels}`,
-      },
-    }];
-  });
+  const entities = forms.flatMap(({ formKo, block }) =>
+    SKILL_KEYS.flatMap((key) => {
+      const tags = block[key];
+      if (!tags || tags.length === 0) return [];
+
+      const labels = tags
+        .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.ko)
+        .filter(Boolean)
+        .join(", ");
+      if (!labels) return [];
+
+      const name = formKo
+        ? `${champNameKo} ${formKo} ${key}스킬의 특징은 무엇인가요?`
+        : `${champNameKo} ${key}스킬의 특징은 무엇인가요?`;
+
+      return [{
+        "@type": "Question",
+        name,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${key}스킬: ${labels}`,
+        },
+      }];
+    })
+  );
 
   if (entities.length === 0) return null;
 
@@ -101,7 +125,7 @@ export default async function Page(props: Props) {
   const forcedEnemy = side === "enemy" ? champId : null;
   const renderKey = `${forcedMe ?? "none"}-${forcedEnemy ?? "none"}`;
 
-  const skillFaqJsonLd = buildSkillFaqJsonLd(champInfo.ko, champData.skills);
+  const skillFaqJsonLd = buildSkillFaqJsonLd(champInfo.ko, champId, champData.skills);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -151,15 +175,22 @@ export default async function Page(props: Props) {
         </p>
 
         <h2>Skill Mechanics</h2>
-        <ul>
-          {Object.entries("base" in champData.skills ? champData.skills.base : champData.skills).map(([key, value]) => (
-            Array.isArray(value) && value.length > 0 ? (
-              <li key={key}>
-                {key}: {value.join(", ")}
-              </li>
-            ) : null
-          ))}
-        </ul>
+        {getFormBlocks(champId, champData.skills).map(({ formKo, block }) => (
+          <div key={formKo || "flat"}>
+            {formKo && <h3>{formKo}</h3>}
+            <ul>
+              {SKILL_KEYS.map((key) => {
+                const tags = block[key];
+                if (!tags || tags.length === 0) return null;
+                return (
+                  <li key={key}>
+                    {formKo ? `${formKo} ${key}` : key}: {tags.join(", ")}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
 
         <h2>Champion Notes</h2>
         <ul>
