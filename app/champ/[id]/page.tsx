@@ -1,10 +1,46 @@
 import ChampClient from "../ChampClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
+import { TAG_LABEL } from "@/app/data/interactions/tags";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
 
 import type { Metadata } from "next";
+import type { ChampSkillTags } from "@/app/data/interactions/types";
+
+const SKILL_KEYS = ["P", "Q", "W", "E", "R"] as const;
+
+function buildSkillFaqJsonLd(champNameKo: string, skills: ChampSkillTags) {
+  const block = "base" in skills ? skills.base : skills;
+
+  const entities = SKILL_KEYS.flatMap((key) => {
+    const tags = block[key];
+    if (!tags || tags.length === 0) return [];
+
+    const labels = tags
+      .map((t) => TAG_LABEL[t]?.ko)
+      .filter(Boolean)
+      .join(", ");
+    if (!labels) return [];
+
+    return [{
+      "@type": "Question",
+      name: `${champNameKo} ${key}스킬의 특징은 무엇인가요?`,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: `${key}스킬: ${labels}`,
+      },
+    }];
+  });
+
+  if (entities.length === 0) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: entities,
+  };
+}
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -65,6 +101,8 @@ export default async function Page(props: Props) {
   const forcedEnemy = side === "enemy" ? champId : null;
   const renderKey = `${forcedMe ?? "none"}-${forcedEnemy ?? "none"}`;
 
+  const skillFaqJsonLd = buildSkillFaqJsonLd(champInfo.ko, champData.skills);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -96,6 +134,12 @@ export default async function Page(props: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {skillFaqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(skillFaqJsonLd) }}
+        />
+      )}
       <div className="hidden">
         <h1>{champInfo.en} Champion Guide</h1>
 
