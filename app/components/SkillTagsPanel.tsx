@@ -303,7 +303,7 @@ if (champ?.notes) {
         />
       </div>
 
-      <div className="flex flex-wrap items-start gap-x-1.5 gap-y-2 leading-none">
+      <div className="flex flex-wrap items-start gap-x-1.5 gap-y-2">
         {tags.length > 0 ? (
           tags.map((t) => {
             const labelData = TAG_LABEL[t];
