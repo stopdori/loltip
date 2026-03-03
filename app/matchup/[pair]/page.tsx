@@ -63,10 +63,33 @@ export default async function Page({ params, searchParams }: Props) {
   const renderKey = `${forcedMe}-vs-${forcedEnemy}`;
 
 return (
-  <ChampClient
-    key={renderKey}
-    forcedMe={forcedMe}
-    forcedEnemy={forcedEnemy}
-  />
+  <>
+    {/* SEO용 서버 렌더링 텍스트 (크롤러용) */}
+    <div className="hidden">
+      <h1>
+        {forcedMe} vs {forcedEnemy} Matchup Guide
+      </h1>
+
+      <h2>Champion Interaction Overview</h2>
+      <p>
+        Detailed skill interactions between {forcedMe} and {forcedEnemy}.
+        Includes crowd control mechanics, unstoppable interactions,
+        vision mechanics, skill timing and ultimate cooldown comparison.
+      </p>
+
+      <h2>Matchup Fundamentals</h2>
+      <p>
+        Learn lane priority, engage windows, scaling differences
+        and matchup specific decision making for
+        {forcedMe} versus {forcedEnemy}.
+      </p>
+    </div>
+
+    <ChampClient
+      key={renderKey}
+      forcedMe={forcedMe}
+      forcedEnemy={forcedEnemy}
+    />
+  </>
 );
 }
