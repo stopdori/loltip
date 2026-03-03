@@ -45,13 +45,20 @@ const renderKey = `${forcedMe ?? "none"}-${forcedEnemy ?? "none"}`;
 return (
   <Fragment>
     {/* SEO용 서버 렌더링 본문 (크롤러가 읽는 실제 페이지 내용) */}
+    {(() => {
+  const champ = CHAMPIONS.find(c => c.id === champId);
+  const champName = champ?.ko ?? champId;
+
+  return (
     <div className="hidden">
-      <h1>{champId} champion guide</h1>
+      <h1>{champName} 공략</h1>
       <p>
-        {champId} abilities, skill interactions, crowd control mechanics,
-        vision interactions, and matchup knowledge in League of Legends.
+        {champName} 스킬 상호작용, CC 메커니즘,
+        시야 상호작용 및 상성 정보 정리.
       </p>
     </div>
+  );
+})()}
 
     <ChampClient
       key={renderKey}
