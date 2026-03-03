@@ -6,6 +6,9 @@ export const metadata = {
   title: "LOLTIP - League of Legends Mechanic Guide",
   description:
     "Champion interactions, mechanics, unstoppable, vision, skill timing and matchup knowledge for League of Legends.",
+  icons: {
+    icon: "/icon.png",
+  },
   twitter: {
     card: "summary_large_image",
     images: ["https://www.loltip.com/og-image.png"],
