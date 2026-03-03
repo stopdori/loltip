@@ -33,7 +33,7 @@ function TagPill({
     ? "inline cursor-help hover:opacity-90"
     : "flex items-center justify-center rounded-md font-semibold ring-1 align-top";
 
-const size = tone === "note" ? "" : "px-2 py-[3px] text-[12px]";
+const size = tone === "note" ? "" : "px-1 py-[3px] text-[12px]";
 
 const toneCls = TONE_CLASS[tone] ?? TONE_CLASS.default;
 const cls = `${base} ${size} ${toneCls} ${className ?? ""}`;
