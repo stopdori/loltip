@@ -15,18 +15,6 @@ const nextConfig = {
         permanent: true,
       },
 
-      // non-www → www (canonical 통일)
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "loltip.com",
-          },
-        ],
-        destination: "https://www.loltip.com/:path*",
-        permanent: true,
-      },
     ];
   },
 };
