@@ -136,17 +136,6 @@ export default async function Page({ params, searchParams }: Props) {
       <div className="hidden">
         <h1>{champA.ko} vs {champB.ko} 매치업</h1>
 
-        {matchup?.status === "ok" && (matchup.data.summary?.ko.length ?? 0) > 0 && (
-          <>
-            <h2>대표 판정 요약</h2>
-            <ul>
-              {matchup.data.summary!.ko.map((text, i) => (
-                <li key={i}>{stripTags(text)}</li>
-              ))}
-            </ul>
-          </>
-        )}
-
         {highlights.map(({ champId, champKo, items }) => (
           <div key={champId}>
             <h2>{champKo} 판정</h2>
