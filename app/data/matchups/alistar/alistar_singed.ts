@@ -14,7 +14,7 @@ export const alistar_singed: MatchupSummary = {
     },
     singed: {
       ko: ["신지드 W로 알리스타 W를 사용할 수 없게 만들 수 있음", "신지드 E와 알리스타 W가 부딪히면 알리스타 W도 유효하고 신지드 E도 유효함"],
-      en: ["[TODO: 신지드 W로 알리스타 W를 사용할 수 없게 만들 수 있음]", "[TODO: 신지드 E와 알리스타 W가 부딪히면 알리스타 W도 유효하고 신지드 E도 유효함]"],
+      en: ["Singed's W can prevent Alistar from using W", "When Singed's E and Alistar's W collide, both Alistar's W and Singed's E remain valid"],
     },
   },
 };

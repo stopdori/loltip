@@ -10,7 +10,7 @@ export const alistar_swain: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 스웨인 W, R의 [[SLOW]], E의 [[ROOT]], [[GRAB]]을 해제할 수 있음\nE의 [[ROOT]]를 해제하면 스웨인이 [[GRAB]]을 사용할 수 없음"],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Swain's W and R [[SLOW]], E [[ROOT]] and [[GRAB]]\\n[TODO: E의 [[ROOT]]를 해제하면 스웨인이 [[GRAB]]을 사용할 수 없음]"],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Swain's W and R [[SLOW]], E [[ROOT]] and [[GRAB]]\\nCleansing E's [[ROOT]] prevents Swain from using [[GRAB]]"],
     },
     swain: {
       ko: [],

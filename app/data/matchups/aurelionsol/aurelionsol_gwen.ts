@@ -14,7 +14,7 @@ export const aurelionsol_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 아우렐리온 솔 평타, Q, E, R, R(천상강림)을 범위 밖에서 맞지 않음\n천상강림 충격파도 맞지 않음"],
-      en: ["Gwen's W prevents 아우렐리온 솔 평타, Q, E, R and R(Astral Infusion) from hitting when outside the zone\\n[TODO: 천상강림 충격파도 맞지 않음]"],
+      en: ["Gwen's W prevents 아우렐리온 솔 평타, Q, E, R and R(Astral Infusion) from hitting when outside the zone\\nThe Astral Infusion shockwave also does not hit"],
     },
   },
 };

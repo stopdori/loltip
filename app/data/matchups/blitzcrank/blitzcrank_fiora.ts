@@ -10,7 +10,7 @@ export const blitzcrank_fiora: MatchupSummary = {
   highlightsByChamp: {
     blitzcrank: {
       ko: ["피오라 W(응수)가 블리츠 Q(그랩) E(어퍼컷) 을 막을 수 있음."],
-      en: ["[TODO: 피오라 W(응수)가 블리츠 Q(그랩) E(어퍼컷) 을 막을 수 있음.]"],
+      en: ["Fiora's W (Riposte) can block Blitzcrank's Q (Rocket Grab) and E (Uppercut)"],
     },
     fiora: {
       ko: [],

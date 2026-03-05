@@ -10,7 +10,7 @@ export const alistar_irelia: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 이렐리아 Q를 끊을 수 있음", "알리스타 E의 [[STUN]]로 이렐리아 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음\n표식 대상에게 Q를 썼다면 스택을 소모함", "알리스타 R의 [[CC_CLEANSE]]로 이렐리아 E의 [[STUN]]을 해제할 수 있음"],
-      en: ["Alistar's Q and W can interrupt Irelia's Q", "Alistar's E [[STUN]] cannot interrupt Irelia's Q. However, the [[STUN]] still applies.\\n[TODO: 표식 대상에게 Q를 썼다면 스택을 소모함]", "Alistar's R [[CC_CLEANSE]] can cleanse Irelia's E [[STUN]]"],
+      en: ["Alistar's Q and W can interrupt Irelia's Q", "Alistar's E [[STUN]] cannot interrupt Irelia's Q. However, the [[STUN]] still applies.\\nIf Q is used on a marked target, the stack is consumed", "Alistar's R [[CC_CLEANSE]] can cleanse Irelia's E [[STUN]]"],
     },
     irelia: {
       ko: [],

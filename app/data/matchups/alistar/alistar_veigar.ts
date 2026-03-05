@@ -14,7 +14,7 @@ export const alistar_veigar: MatchupSummary = {
     },
     veigar: {
       ko: ["베이가 E가 활성화됐을 때 알리스타 W를 사용해서 넘으려고 한다면 [[STUN]]이 걸림"],
-      en: ["[TODO: 베이가 E가 활성화됐을 때 알리스타 W를 사용해서 넘으려고 한다면 [[STUN]]이 걸림]"],
+      en: ["If Alistar tries to use W to leap over Veigar's active E, he will be [[STUN]]ned"],
     },
   },
 };

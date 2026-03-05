@@ -10,7 +10,7 @@ export const aurora_briar: MatchupSummary = {
   highlightsByChamp: {
     aurora: {
       ko: ["오로라 W의 [[INVISIBILITY]]으로 브라이어 W를 따돌릴 수 있음"],
-      en: ["[TODO: 오로라 W의 [[INVISIBILITY]]으로 브라이어 W를 따돌릴 수 있음]"],
+      en: ["Aurora's W [[INVISIBILITY]] can evade Briar's W"],
     },
     briar: {
       ko: [],

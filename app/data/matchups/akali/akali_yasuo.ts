@@ -14,7 +14,7 @@ export const akali_yasuo: MatchupSummary = {
     },
     yasuo: {
       ko: ["야스오 W로 아칼리 Q, E 막을 수 있음"],
-      en: ["[TODO: 야스오 W로 아칼리 Q, E 막을 수 있음]"],
+      en: ["Yasuo's W can block Akali's Q and E"],
     },
   },
 };
