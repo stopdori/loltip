@@ -14,7 +14,7 @@ export const ahri_graves: MatchupSummary = {
     },
     graves: {
       ko: [],
-      en: []] still applies."],
+      en: [],
     },
   },
 };

@@ -14,7 +14,7 @@ export const ahri_darius: MatchupSummary = {
     },
     darius: {
       ko: ["다리우스 E로 아리 R을 끊을 수 있음"],
-      en: ["Darius's E can interrupt Ahri's R"]] cannot interrupt Darius's Q or R. However, the [[CHARM]] still applies."],
+      en: ["Darius's E can interrupt Ahri's R"],
     },
   },
 };

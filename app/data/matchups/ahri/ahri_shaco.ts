@@ -14,7 +14,7 @@ export const ahri_shaco: MatchupSummary = {
     },
     shaco: {
       ko: [],
-      en: []]"],
+      en: [],
     },
   },
 };

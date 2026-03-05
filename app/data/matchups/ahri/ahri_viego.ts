@@ -14,7 +14,7 @@ export const ahri_viego: MatchupSummary = {
     },
     viego: {
       ko: [],
-      en: []] still applies."],
+      en: [],
     },
   },
 };

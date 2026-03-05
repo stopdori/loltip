@@ -14,7 +14,7 @@ export const ahri_kindred: MatchupSummary = {
     },
     kindred: {
       ko: [],
-      en: []] can pull enemies outside Kindred's R zone"],
+      en: [],
     },
   },
 };

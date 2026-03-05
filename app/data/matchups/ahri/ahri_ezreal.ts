@@ -14,7 +14,7 @@ export const ahri_ezreal: MatchupSummary = {
     },
     ezreal: {
       ko: [],
-      en: []] still applies."],
+      en: [],
     },
   },
 };
