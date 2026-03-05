@@ -10,7 +10,7 @@ export const akali_nunu: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 누누 W를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Nunu & Willump's W"],
     },
     nunu: {
       ko: [],

@@ -10,7 +10,7 @@ export const aatrox_volibear: MatchupSummary = {
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W [[GRAB]]효과로 볼리베어 Q를 끊을 수 있음"],
-      en: [""],
+      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Volibear's Q"],
     },
     volibear: {
       ko: [],

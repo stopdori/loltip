@@ -10,7 +10,7 @@ export const ahri_pantheon: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 판테온 W를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Pantheon's W"],
     },
     pantheon: {
       ko: [],

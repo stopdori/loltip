@@ -10,7 +10,7 @@ export const akali_senna: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E로 세나 W의 [[CAMOUFLAGE]]를 볼 수 있음"],
-      en: [""],
+      en: ["Akali's E reveals Senna's W [[CAMOUFLAGE]]"],
     },
     senna: {
       ko: [],

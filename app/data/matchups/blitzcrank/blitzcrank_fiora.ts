@@ -10,7 +10,7 @@ export const blitzcrank_fiora: MatchupSummary = {
   highlightsByChamp: {
     blitzcrank: {
       ko: ["피오라 W(응수)가 블리츠 Q(그랩) E(어퍼컷) 을 막을 수 있음."],
-      en: [""],
+      en: ["[TODO: 피오라 W(응수)가 블리츠 Q(그랩) E(어퍼컷) 을 막을 수 있음.]"],
     },
     fiora: {
       ko: [],

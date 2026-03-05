@@ -10,7 +10,7 @@ export const alistar_masteryi: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W, E로 마스터이 W를 끊을 수 있음"],
-      en: [""],
+      en: ["Alistar's Q, W, and E can interrupt Master Yi's W"],
     },
     masteryi: {
       ko: [],

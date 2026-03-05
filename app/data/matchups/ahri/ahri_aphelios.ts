@@ -14,7 +14,7 @@ export const ahri_aphelios: MatchupSummary = {
     },
     aphelios: {
       ko: ["아펠리오스의 활성화된 포탑이 아리 E를 막을 수 있음"],
-      en: [],
+      en: ["Aphelios's activated turret can block Ahri's E"],
     },
   },
 };

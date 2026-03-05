@@ -14,7 +14,7 @@ export const ahri_brand: MatchupSummary = {
     },
     brand: {
       ko: ["브랜드 Q의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"],
-      en: [],
+      en: ["Brand's Q [[STUN]] cannot interrupt Ahri's R. However, the [[STUN]] still applies."],
     },
   },
 };

@@ -10,7 +10,7 @@ export const akali_nocturne: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 녹턴 R을 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Nocturne's R"],
     },
     nocturne: {
       ko: [],

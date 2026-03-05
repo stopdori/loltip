@@ -14,7 +14,7 @@ export const aatrox_kennen: MatchupSummary = {
     },
     kennen: {
       ko: ["케넨 P의 [[STUN]]로 아트록스 E를 끊을 수 없음. 단, [[STUN]]은 남아있음"],
-      en: [],
+      en: ["Kennen's P [[STUN]] cannot interrupt Aatrox's E. However, the [[STUN]] still applies."],
     },
   },
 };

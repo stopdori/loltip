@@ -10,7 +10,7 @@ export const akali_nidalee: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 니달리 쿠거폼 W를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow 니달리 쿠거폼 W"],
     },
     nidalee: {
       ko: [],

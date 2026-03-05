@@ -10,7 +10,7 @@ export const alistar_ashe: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 애쉬 P의 [[SLOW]], R의 [[STUN]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Ashe's P [[SLOW]] and R [[STUN]]"],
     },
     ashe: {
       ko: [],

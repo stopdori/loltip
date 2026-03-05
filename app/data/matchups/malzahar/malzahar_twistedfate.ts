@@ -10,7 +10,7 @@ export const malzahar_twistedfate: MatchupSummary = {
   highlightsByChamp: {
     malzahar: {
       ko: ["말자하 패시브에 트페골카 막힘"],
-      en: [""],
+      en: ["[TODO: 말자하 패시브에 트페골카 막힘]"],
     },
     twistedfate: {
       ko: [],

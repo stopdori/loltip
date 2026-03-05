@@ -10,7 +10,7 @@ export const alistar_lux: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 럭스 Q의 [[ROOT]]을 해제할 수 있음", "알리스타 R의 [[CC_CLEANSE]]로 럭스 E의 [[SLOW]]는 해제할 수 없음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Lux's Q [[ROOT]]", "Alistar's R [[CC_CLEANSE]] cannot cleanse Lux's E [[SLOW]]"],
     },
     lux: {
       ko: [],

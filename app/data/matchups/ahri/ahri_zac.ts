@@ -10,7 +10,7 @@ export const ahri_zac: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 자크 E(점프/시전집중)를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Zac's E (jump/channeling)"],
     },
     zac: {
       ko: [],

@@ -10,11 +10,11 @@ export const akali_leesin: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 리신 Q2를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Lee Sin's Q2"],
     },
     leesin: {
       ko: ["리신 E가 아칼리에 적중하고 W의 [[INVISIBILITY]] 효과가 발동하면 보임.\n반면, 아칼리의 [[INVISIBILITY]] 효과가 발동하고 리신이 E를 맞히면 보이지 않음"],
-      en: [],
+      en: ["[TODO: 리신 E가 아칼리에 적중하고 W의 [[INVISIBILITY]] 효과가 발동하면 보임.]\\n[TODO: 반면, 아칼리의 [[INVISIBILITY]] 효과가 발동하고 리신이 E를 맞히면 보이지 않음]"],
     },
   },
 };

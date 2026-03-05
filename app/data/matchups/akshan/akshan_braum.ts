@@ -14,7 +14,7 @@ export const akshan_braum: MatchupSummary = {
     },
     braum: {
       ko: ["브라움 E로 아크샨 평타, Q, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음", "브라움 E로 아크샨 평타, Q, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음"],
-      en: [],
+      en: ["Braum's E can [[DAMAGE_NULLIFY]] Akshan's basic attacks, Q, E, and R", "Braum's E can [[INTERCEPT_PROJECTILE]] Akshan's basic attacks, Q, and R"],
     },
   },
 };

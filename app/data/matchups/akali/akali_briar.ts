@@ -10,7 +10,7 @@ export const akali_briar: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 브라이어 Q, W, R을 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Briar's Q, W, and R"],
     },
     briar: {
       ko: [],

@@ -14,7 +14,7 @@ export const braum_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 브라움 Q, R을 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Braum's Q and R from hitting when outside the zone"],
     },
   },
 };

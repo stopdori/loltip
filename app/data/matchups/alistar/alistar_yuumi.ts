@@ -10,7 +10,7 @@ export const alistar_yuumi: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W, E로 유미 E를 끊을 수 있음", "알리스타 R의 [[CC_CLEANSE]]로 유미 Q, R의 [[SLOW]]를 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q, W, and E can interrupt Yuumi's E", "Alistar's R [[CC_CLEANSE]] can cleanse Yuumi's Q and R [[SLOW]]"],
     },
     yuumi: {
       ko: [],

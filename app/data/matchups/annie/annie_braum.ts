@@ -14,7 +14,7 @@ export const annie_braum: MatchupSummary = {
     },
     braum: {
       ko: ["브라움 E로 애니 평타, Q, W, R를 [[DAMAGE_NULLIFY]] 할 수 있음\n 단, 애니 P의 [[STUN]]은 유효", "브라움 E로 애니 평타, Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음."],
-      en: [""],
+      en: ["Braum's E can [[DAMAGE_NULLIFY]] against Annie's 평타, Q, W and R\\n[TODO: 단, 애니 P의 [[STUN]]은 유효]", "[TODO: 브라움 E로 애니 평타, Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음.]"],
     },
   },
 };

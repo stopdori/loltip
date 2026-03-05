@@ -10,7 +10,7 @@ export const ahri_tahmkench: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 탐켄치 W(시전집중)를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Tahm Kench's W (channeling)"],
     },
     tahmkench: {
       ko: [],

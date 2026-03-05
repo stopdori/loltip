@@ -10,7 +10,7 @@ export const aatrox_xerath: MatchupSummary = {
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W [[GRAB]]효과로 제라스 Q, R(시전집중)을 끊을 수 있음"],
-      en: [""],
+      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Xerath's Q and R (channeling)"],
     },
     xerath: {
       ko: [],

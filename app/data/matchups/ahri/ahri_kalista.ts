@@ -10,7 +10,7 @@ export const ahri_kalista: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 칼리스타 P를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Kalista's P"],
     },
     kalista: {
       ko: [],

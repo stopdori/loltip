@@ -14,7 +14,7 @@ export const aatrox_leesin: MatchupSummary = {
     },
     leesin: {
       ko: ["리신 R로 아트록스 E를 끊을 수 있음"],
-      en: [],
+      en: ["Lee Sin's R can interrupt Aatrox's E"],
     },
   },
 };

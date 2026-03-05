@@ -10,7 +10,7 @@ export const alistar_malphite: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 말파이트 Q의 [[SLOW]], R의 [[AIRBORNE]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Malphite's Q [[SLOW]], R [[AIRBORNE]]"],
     },
     malphite: {
       ko: [],

@@ -10,7 +10,7 @@ export const alistar_garen: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 가렌 Q의 [[SILENCE]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Garen's Q [[SILENCE]]"],
     },
     garen: {
       ko: [],

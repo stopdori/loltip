@@ -10,7 +10,7 @@ export const ahri_xinzhao: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 신짜오 E를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Xin Zhao's E"],
     },
     xinzhao: {
       ko: [],

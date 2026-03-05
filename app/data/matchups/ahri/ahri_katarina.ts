@@ -10,7 +10,7 @@ export const ahri_katarina: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 카타리나 R(채널링)을 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Katarina's R(channeling)"],
     },
     katarina: {
       ko: [],

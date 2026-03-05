@@ -10,11 +10,11 @@ export const ahri_ekko: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 에코 E(구르기)를 끊을 수 있음"],
-      en: [],
+      en: ["Ahri's E can interrupt Ekko's E (roll)"],
     },
     ekko: {
       ko: ["에코 W의 [[STUN]]으로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음", "에코 E로 아리 R을 조건에 따라 따라갈 수 있음. 그런데 정확한 조건을 잘 모르겠음 제보 부탁드림"],
-      en: [],
+      en: ["Ekko's W [[STUN]] cannot interrupt Ahri's R. However, the [[STUN]] still applies.", "Ekko's E can follow Ahri's R depending on conditions. The exact conditions are unclear — please report if you know."],
     },
   },
 };

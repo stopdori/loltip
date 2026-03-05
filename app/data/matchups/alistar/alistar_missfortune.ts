@@ -10,7 +10,7 @@ export const alistar_missfortune: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 미스포츈 E의 [[SLOW]]는 해제할 수 없음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] cannot cleanse Miss Fortune's E [[SLOW]]"],
     },
     missfortune: {
       ko: [],

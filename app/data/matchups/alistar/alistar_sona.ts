@@ -10,7 +10,7 @@ export const alistar_sona: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 소나 E평타의 [[SLOW]], R의 [[STUN]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Sona's E평타 [[SLOW]], R [[STUN]]"],
     },
     sona: {
       ko: [],

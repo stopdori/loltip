@@ -10,7 +10,7 @@ export const aatrox_akali: MatchupSummary = {
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 아칼리 E1, E2, R1, R2를 끊을 수 있음", "아트록스 W로 아칼리 W의 [[INVISIBILITY]] 모습을 보여줌"],
-      en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Akali's E1, E2, R1, and R2\nAatrox's W reveals Akali's [[INVISIBILITY]] during her W"],
+      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Akali's E1, E2, R1, and R2", "Aatrox's W reveals Akali's [[INVISIBILITY]] inside her W"],
     },
     akali: {
       ko: [],

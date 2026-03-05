@@ -10,7 +10,7 @@ export const alistar_zed: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 제드 E의 [[SLOW]]를 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Zed's E [[SLOW]]"],
     },
     zed: {
       ko: [],

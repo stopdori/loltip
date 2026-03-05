@@ -10,7 +10,7 @@ export const alistar_taric: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 타릭 E의 [[STUN]]를 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Taric's E [[STUN]]"],
     },
     taric: {
       ko: [],

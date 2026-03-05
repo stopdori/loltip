@@ -10,7 +10,7 @@ export const alistar_warwick: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W, E로 워윅 R(도약)을 끊을 수 없음", "알리스타 Q, W, E로 워윅 R(공격)을 끊을 수 있음", "알리스타 R의 [[CC_CLEANSE]]로 워윅 의 [[FEAR]], R의 [[SUPPRESS]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q, W, and E cannot interrupt 워윅 R(도약)", "Alistar's Q, W, and E can interrupt 워윅 R(공격)", "Alistar's R [[CC_CLEANSE]] can cleanse 워윅  [[FEAR]], R [[SUPPRESS]]"],
     },
     warwick: {
       ko: [],

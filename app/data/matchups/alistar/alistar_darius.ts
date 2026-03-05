@@ -10,7 +10,7 @@ export const alistar_darius: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 다리우스 W의 [[SLOW]], E의 [[SLOW]] [[GRAB]]을 해제할 수 있음"],
-      en: [],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Darius's W [[SLOW]] and E [[SLOW]] and [[GRAB]]"],
     },
     darius: {
       ko: [],

@@ -10,7 +10,7 @@ export const braum_chogath: MatchupSummary = {
   highlightsByChamp: {
     braum: {
       ko: ["브라움 E로 초가스 평타, Q, W, E, R [[DAMAGE_NULLIFY]] 할 수 있음. 단, Q의 [[AIRBORNE]] [[STUN]], W의 [[SILENCE]]은 남아있음.", "브라움 E로 초가스 E를 [[INTERCEPT_PROJECTILE]] 할 수 있음."],
-      en: [""],
+      en: ["[TODO: 브라움 E로 초가스 평타, Q, W, E, R [[DAMAGE_NULLIFY]] 할 수 있음. 단, Q의 [[AIRBORNE]] [[STUN]], W의 [[SILENCE]]은 남아있음.]", "[TODO: 브라움 E로 초가스 E를 [[INTERCEPT_PROJECTILE]] 할 수 있음.]"],
     },
     chogath: {
       ko: [],

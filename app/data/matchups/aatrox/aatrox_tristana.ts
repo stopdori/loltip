@@ -10,7 +10,7 @@ export const aatrox_tristana: MatchupSummary = {
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W [[GRAB]]효과로 트리스타나 W(점프단계)를 끊을 수 있음"],
-      en: [""],
+      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Tristana's W (jump phase)"],
     },
     tristana: {
       ko: [],

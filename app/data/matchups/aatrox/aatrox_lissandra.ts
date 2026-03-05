@@ -14,7 +14,7 @@ export const aatrox_lissandra: MatchupSummary = {
     },
     lissandra: {
       ko: ["리산드라 W의 [[ROOT]]으로 아트록스 E를 끊을 수 없음. 단, [[ROOT]]는 남아있음"],
-      en: [],
+      en: ["Lissandra's W [[ROOT]] cannot interrupt Aatrox's E. However, the [[ROOT]] still applies."],
     },
   },
 };

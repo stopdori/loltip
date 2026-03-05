@@ -10,7 +10,7 @@ export const alistar_blitzcrank: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 블리츠 Q E의 [[AIRBORNE]], R의 [[SILENCE]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Blitzcrank's Q and E [[AIRBORNE]] and R [[SILENCE]]"],
     },
     blitzcrank: {
       ko: [],

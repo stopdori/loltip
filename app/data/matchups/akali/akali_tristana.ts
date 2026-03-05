@@ -10,7 +10,7 @@ export const akali_tristana: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 트리스타나 W를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Tristana's W"],
     },
     tristana: {
       ko: [],

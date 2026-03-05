@@ -10,7 +10,7 @@ export const ahri_nunu: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 누누 W, R(시전집중)을 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Nunu's W and R (channeling)"],
     },
     nunu: {
       ko: [],

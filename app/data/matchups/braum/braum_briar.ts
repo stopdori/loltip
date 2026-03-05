@@ -10,7 +10,7 @@ export const braum_briar: MatchupSummary = {
   highlightsByChamp: {
     braum: {
       ko: ["브라움 E로 브라이어 평타, Q, W(평타), E, R1, R2를 [[DAMAGE_NULLIFY]] 할 수 있음."],
-      en: [""],
+      en: ["Braum's E can [[DAMAGE_NULLIFY]] against Briar's 평타, Q and W(평타), E, R1 and R2"],
     },
     briar: {
       ko: [],

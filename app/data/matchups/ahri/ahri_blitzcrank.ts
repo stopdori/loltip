@@ -14,7 +14,7 @@ export const ahri_blitzcrank: MatchupSummary = {
     },
     blitzcrank: {
       ko: ["블리츠크랭크 Q, E로 아리 R을 끊을 수 있음\n블리츠크랭크 R의 [[SILENCE]]으로 R을 끊을 수 없음. 단, [[SILENCE]]는 남아있음"],
-      en: [],
+      en: ["Blitzcrank's Q and E can interrupt Ahri's R\nBlitzcrank's R [[SILENCE]] cannot interrupt Ahri's R. However, the [[SILENCE]] still applies."],
     },
   },
 };

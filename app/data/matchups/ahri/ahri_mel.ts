@@ -10,11 +10,11 @@ export const ahri_mel: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E의 [[CHARM]]으로 멜 R을 끊을 수 없음. 단, [[CHARM]]은 남아있음"],
-      en: [],
+      en: ["Ahri's E [[CHARM]] cannot interrupt Mel's R. However, the [[CHARM]] still applies."],
     },
     mel: {
       ko: ["멜 W로 아리 Q, W, E, R 다 반사 가능."],
-      en: ["Mel’s W reflects Ahri’s Q W E R."],
+      en: ["Ahri's E [[CHARM]] cannot interrupt Mel's R. However, the [[CHARM]] still applies."],
     },
   },
 };

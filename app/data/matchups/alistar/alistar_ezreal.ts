@@ -10,7 +10,7 @@ export const alistar_ezreal: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 이즈리얼 E를 끊을 수 없음", "알리스타 E의 [[STUN]]로 이즈리얼 E를 끊을 수 없음. 단, [[STUN]]은 남아있음."],
-      en: [""],
+      en: ["Alistar's Q and W cannot interrupt Ezreal's E", "Alistar's E [[STUN]] cannot interrupt Ezreal's E. However, the [[STUN]] still applies."],
     },
     ezreal: {
       ko: [],

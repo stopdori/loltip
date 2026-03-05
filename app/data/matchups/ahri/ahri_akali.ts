@@ -10,11 +10,11 @@ export const ahri_akali: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 아칼리 E1, E2, R1, R2를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Akali's E1, E2, R1, and R2"],
     },
     akali: {
       ko: ["아칼리 E2로 아리 R을 따라갈 수 있음"],
-      en: [],
+      en: ["Akali's E2 can follow Ahri's R"],
     },
   },
 };

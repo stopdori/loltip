@@ -10,11 +10,11 @@ export const akali_leona: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 레오나 E를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Leona's E"],
     },
     leona: {
       ko: ["레오나 E로 아칼리 E, E2, R, R2를 따라갈 수 있음. E2를 제외하고 도착지점으로 이동"],
-      en: [],
+      en: ["Leona's E can follow Akali's E, E2, R and R2. E2를 제외하고 도착지점으로 이동"],
     },
   },
 };

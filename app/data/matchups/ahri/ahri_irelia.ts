@@ -10,11 +10,11 @@ export const ahri_irelia: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 이렐리아 Q를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Irelia's Q"],
     },
     irelia: {
       ko: ["이렐리아 E의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"],
-      en: [],
+      en: ["Irelia's E [[STUN]] cannot interrupt Ahri's R. However, the [[STUN]] still applies."],
     },
   },
 };

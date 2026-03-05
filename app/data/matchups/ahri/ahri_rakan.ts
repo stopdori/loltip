@@ -10,7 +10,7 @@ export const ahri_rakan: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 라칸 W, E를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Rakan's W and E"],
     },
     rakan: {
       ko: [],

@@ -10,11 +10,11 @@ export const ahri_leblanc: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 르블랑 W를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt LeBlanc's W"],
     },
     leblanc: {
       ko: ["르블랑 E의 [[ROOT]]로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음"],
-      en: [],
+      en: ["LeBlanc's E [[ROOT]] cannot interrupt Ahri's R. However, the [[ROOT]] still applies."],
     },
   },
 };

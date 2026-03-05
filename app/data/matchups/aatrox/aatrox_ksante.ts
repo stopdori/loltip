@@ -14,7 +14,7 @@ export const aatrox_ksante: MatchupSummary = {
     },
     ksante: {
       ko: ["크산테 Q3, 일반폼 W차징, R로 아트록스 E를 끊을 수 있음", "크산테 W 차징효과로 아트록스 Q끝, W [[GRAB]]효과를 무시할 수 있음"],
-      en: [],
+      en: ["K'Sante's Q3, non-ult W (charging), and R can interrupt Aatrox's E", "K'Sante's W (charging) can ignore Aatrox's Q (sweet spot) and W's [[GRAB]] effect"],
     },
   },
 };

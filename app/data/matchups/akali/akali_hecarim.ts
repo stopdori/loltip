@@ -10,7 +10,7 @@ export const akali_hecarim: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 헤카림 E, R을 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Hecarim's E and R"],
     },
     hecarim: {
       ko: [],

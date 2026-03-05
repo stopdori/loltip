@@ -10,7 +10,7 @@ export const alistar_corki: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 코르키 W를 끊을 수 있음", "알리스타 E의 [[STUN]]로 코르키 W를 끊을 수 없음. 단, [[STUN]]은 남아있음."],
-      en: [""],
+      en: ["Alistar's Q and W can interrupt Corki's W", "Alistar's E [[STUN]] cannot interrupt Corki's W. However, the [[STUN]] still applies."],
     },
     corki: {
       ko: [],

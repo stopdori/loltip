@@ -10,7 +10,7 @@ export const garen_poppy: MatchupSummary = {
   highlightsByChamp: {
     garen: {
       ko: ["가렌 Q스킬은 뽀삐 W에 막히지 않음"],
-      en: [""],
+      en: ["[TODO: 가렌 Q스킬은 뽀삐 W에 막히지 않음]"],
     },
     poppy: {
       ko: [],

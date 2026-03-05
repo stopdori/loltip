@@ -10,7 +10,7 @@ export const alistar_zilean: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 질리언 Q의 [[STUN]], E의 [[SLOW]]를 해제할 수 있음", "알리스타 R의 [[CC_CLEANSE]]로 질리언 Q자체를 해제할 수 없음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Zilean's Q [[STUN]], E [[SLOW]]", "[TODO: 알리스타 R의 [[CC_CLEANSE]]로 질리언 Q자체를 해제할 수 없음]"],
     },
     zilean: {
       ko: [],

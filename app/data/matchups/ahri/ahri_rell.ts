@@ -10,7 +10,7 @@ export const ahri_rell: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 렐 승마폼 W를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Rell's mounted W"],
     },
     rell: {
       ko: [],

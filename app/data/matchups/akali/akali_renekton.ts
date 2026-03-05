@@ -10,7 +10,7 @@ export const akali_renekton: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 레넥톤 E, E2를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Renekton's E and E2"],
     },
     renekton: {
       ko: [],

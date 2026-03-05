@@ -14,7 +14,7 @@ export const aatrox_leblanc: MatchupSummary = {
     },
     leblanc: {
       ko: ["르블랑 E의 [[ROOT]]으로 아트록스 E를 끊을 수 없음. 단, [[ROOT]]는 남아있음"],
-      en: [],
+      en: ["LeBlanc's E [[ROOT]] cannot interrupt Aatrox's E. However, the [[ROOT]] still applies."],
     },
   },
 };

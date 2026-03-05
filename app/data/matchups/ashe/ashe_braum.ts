@@ -14,7 +14,7 @@ export const ashe_braum: MatchupSummary = {
     },
     braum: {
       ko: ["브라움 E로 애쉬 평타, Q(평타), W, R을 [[DAMAGE_NULLIFY]], [[INTERCEPT_PROJECTILE]] 할 수 있음.\n단, 애쉬 R은 브라움이 데미지를 입지 않고 [[STUN]]이 걸림\n애쉬 R의 범위피해는 아군에게 유효"],
-      en: [],
+      en: ["Braum's E can [[DAMAGE_NULLIFY]], and [[INTERCEPT_PROJECTILE]] against Ashe's 평타, Q(평타), W and R\\n[TODO: 단, 애쉬 R은 브라움이 데미지를 입지 않고 [[STUN]]이 걸림]\\n[TODO: 애쉬 R의 범위피해는 아군에게 유효]"],
     },
   },
 };

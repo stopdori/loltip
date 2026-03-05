@@ -10,11 +10,11 @@ export const akali_jarvaniv: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 자르반 EQ, R을 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Jarvan IV's EQ and R"],
     },
     jarvaniv: {
       ko: ["자르반 EQ로 아칼리 E, E2, R, R2를 끊을 수 있음"],
-      en: [],
+      en: ["Jarvan IV's EQ can interrupt Akali's E, E2, R and R2"],
     },
   },
 };

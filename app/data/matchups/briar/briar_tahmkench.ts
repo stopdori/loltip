@@ -10,7 +10,7 @@ export const briar_tahmkench: MatchupSummary = {
   highlightsByChamp: {
     briar: {
       ko: ["브라이어 R은 저지불가여서 어떤 대상이 적중했다면, 탐캔치가 삼켜도 뱃속에서 나와 날아감"],
-      en: [""],
+      en: ["[TODO: 브라이어 R은 저지불가여서 어떤 대상이 적중했다면, 탐캔치가 삼켜도 뱃속에서 나와 날아감]"],
     },
     tahmkench: {
       ko: [],

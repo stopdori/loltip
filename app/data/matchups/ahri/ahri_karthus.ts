@@ -10,7 +10,7 @@ export const ahri_karthus: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 카서스 R(시전집중)을 끊을 수 있음"],
-      en: [],
+      en: ["Ahri's E can interrupt Karthus's R(channeling)"],
     },
     karthus: {
       ko: [],

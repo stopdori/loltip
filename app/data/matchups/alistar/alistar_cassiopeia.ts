@@ -10,7 +10,7 @@ export const alistar_cassiopeia: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 카시오페아 R의 [[STUN]], [[SLOW]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Cassiopeia's R [[STUN]] and [[SLOW]]"],
     },
     cassiopeia: {
       ko: [],

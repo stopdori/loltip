@@ -14,7 +14,7 @@ export const gragas_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 그라가스 Q, W(범위피해), R을 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Gragas's Q and W(AoE damage), R from hitting when outside the zone"],
     },
   },
 };

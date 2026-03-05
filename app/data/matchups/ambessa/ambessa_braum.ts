@@ -14,7 +14,7 @@ export const ambessa_braum: MatchupSummary = {
     },
     braum: {
       ko: ["브라움 E로 암베사 평타, Q1, Q2, W, E 를 [[DAMAGE_NULLIFY]] 할 수 있음"],
-      en: [],
+      en: ["Braum's E can [[DAMAGE_NULLIFY]] Ambessa's basic attacks, Q1, Q2, W, and E"],
     },
   },
 };

@@ -10,7 +10,7 @@ export const akali_amumu: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 아무무 Q를 따라 갈 수 있음"],
-      en: [],
+      en: ["Akali's E2 can follow Amumu's Q"],
     },
     amumu: {
       ko: [],

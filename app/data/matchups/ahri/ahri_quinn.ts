@@ -10,7 +10,7 @@ export const ahri_quinn: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 퀸 E를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Quinn's E"],
     },
     quinn: {
       ko: [],

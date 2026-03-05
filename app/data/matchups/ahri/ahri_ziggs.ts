@@ -10,7 +10,7 @@ export const ahri_ziggs: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 직스 W를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Ziggs's W"],
     },
     ziggs: {
       ko: [],

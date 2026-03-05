@@ -14,7 +14,7 @@ export const aphelios_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 아펠리오스 평타, Q, R을 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Aphelios's 평타, Q and R from hitting when outside the zone"],
     },
   },
 };

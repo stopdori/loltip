@@ -10,7 +10,7 @@ export const akali_sejuani: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 세주아니 Q를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Sejuani's Q"],
     },
     sejuani: {
       ko: [],

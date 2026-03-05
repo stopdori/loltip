@@ -14,7 +14,7 @@ export const aatrox_leona: MatchupSummary = {
     },
     leona: {
       ko: ["레오나 E의 [[ROOT]]와 Q, R의 [[STUN]]로 아트록스 E를 끊을 수 없음. 단, [[ROOT]], [[STUN]]은 남아있음"],
-      en: [],
+      en: ["Leona's E [[ROOT]] and Q/R [[STUN]] cannot interrupt Aatrox's E. However, the [[ROOT]] and [[STUN]] still apply."],
     },
   },
 };

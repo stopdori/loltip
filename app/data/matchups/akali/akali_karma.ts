@@ -14,7 +14,7 @@ export const akali_karma: MatchupSummary = {
     },
     karma: {
       ko: ["카르마 W의 [[TETHER]]효과로 아칼리 W의 [[INVISIBILITY]]를 볼 수 있음", "카르마 W의 [[TETHER]]효과로 아칼리 E, E2, R, R2를 끊을 수 없음. 단, [[ROOT]]은 남아있음"],
-      en: [],
+      en: ["Karma's W [[TETHER]]효과 reveals Akali's W [[INVISIBILITY]]", "Karma's W [[TETHER]]효과 cannot interrupt Akali's E, E2, R and R2. However, [[ROOT]] still applies."],
     },
   },
 };
