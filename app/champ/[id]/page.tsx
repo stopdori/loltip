@@ -3,7 +3,7 @@ import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import { CHAMP_FORMS } from "@/app/data/interactions/forms";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Fragment } from "react";
 
 import type { Metadata } from "next";
@@ -107,6 +107,12 @@ export default async function Page(props: Props) {
   if (!id) notFound();
 
   const champId = id.toLowerCase();
+
+  // URL이 소문자가 아니면 canonical URL로 리다이렉트
+  if (id !== champId) {
+    const side = searchParams?.side ?? "my";
+    redirect(`/champ/${champId}?side=${side}`);
+  }
 
   const champData = CHAMPS[champId as keyof typeof CHAMPS];
   if (!champData) notFound();
