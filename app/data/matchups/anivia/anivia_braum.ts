@@ -13,8 +13,8 @@ export const anivia_braum: MatchupSummary = {
       en: [],
     },
     braum: {
-      ko: ["브라움 E로 애니비아 평타, Q, E, R(처음 한틱)을 [[DAMAGE_NULLIFY]] 할 수 있음.", "브라움 E로 애니비아 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음. 단, Q는 즉시 삭제되어 데미지, [[STUN]]이 없음"],
-      en: ["Braum's E can [[DAMAGE_NULLIFY]] against Anivia's 평타, Q, E and R(처음 한틱)", "Braum's E can [[INTERCEPT_PROJECTILE]] Anivia's Q. However, Q is instantly destroyed, so there is no damage or [[STUN]]"],
+      ko: ["브라움 E(방패)로 애니비아 평타, Q, E, R(처음 한틱)을 [[DAMAGE_NULLIFY]] 할 수 있음.", "브라움 E(방패)로 애니비아 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음. 단, Q는 즉시 삭제되어 데미지, [[STUN]]이 없음"],
+      en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] against Anivia's basic attacks, Q, E and R (first tick)", "Braum's E(Shield) can [[INTERCEPT_PROJECTILE]] Anivia's Q. However, Q is instantly destroyed, so there is no damage or [[STUN]]"],
     },
   },
 };

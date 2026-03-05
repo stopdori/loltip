@@ -115,7 +115,7 @@ AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
 RANGE_UP: { ko: "사거리↑", en: "Range↑" },
-CRIT: { ko: "치명타", en: "Critical Strike" },
+CRIT: { ko: "치명타", en: "Critical" },
 
 /* =========================
  * 2) 이동 / 위치
@@ -183,7 +183,6 @@ GROUNDED: { ko: "이동기금지", en: "Grounded" },
 SPELL_SHIELD: { ko: "주문방어", en: "Spell Shield" },
 DAMAGE_NULLIFY: { ko: "피해 무효화", en: "Damage Nullify" },
 INTERCEPT_PROJECTILE: { ko: "투사체 차단", en: "Projectile Delete" },
-   
   
 
 

@@ -9,8 +9,8 @@ export const braum_corki: MatchupSummary = {
   },
   highlightsByChamp: {
     braum: {
-      ko: ["브라움 E로 코르키 평타, Q, R을 [[DAMAGE_NULLIFY]] 할 수 있음. 단, R의 [[STUN]]은 남아있음.", "브라움 E로 코르키 평타, Q, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음."],
-      en: ["Braum's E can [[DAMAGE_NULLIFY]] against Corki's 평타, Q and R", "Braum's E can [[INTERCEPT_PROJECTILE]] Corki's auto attacks, Q and R"],
+      ko: ["브라움 E(방패)로 코르키 평타, Q, R을 [[DAMAGE_NULLIFY]] 할 수 있음. 단, R의 [[STUN]]은 남아있음.", "브라움 E(방패)로 코르키 평타, Q, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음."],
+      en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] against Corki's basic attacks, Q and R. However, R's [[STUN]] still applies.", "Braum's E(Shield) can [[INTERCEPT_PROJECTILE]] Corki's basic attacks, Q and R"],
     },
     corki: {
       ko: [],

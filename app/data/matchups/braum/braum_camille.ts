@@ -9,8 +9,8 @@ export const braum_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     braum: {
-      ko: ["브라움 E로 카밀 평타, Q1, Q2, W, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음. 단, E의 [[STUN]]은 남아있음.", "브라움 P의 [[STUN]]로 케이틀린 E을 끊을 수 없음. 단, [[STUN]]은 남아있음"],
-      en: ["Braum's E can [[DAMAGE_NULLIFY]] against Camille's 평타, Q1, Q2, W, E and R", "Braum's P [[STUN]] cannot interrupt Caitlyn's E. However, [[STUN]] still applies."],
+      ko: ["브라움 E(방패)로 카밀 평타, Q1, Q2, W, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음. 단, E(방패)의 [[STUN]]은 남아있음.", "브라움 P의 [[STUN]]로 카밀 E을 끊을 수 없음. 단, [[STUN]]은 남아있음"],
+      en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] against Camille's basic attacks, Q1, Q2, W, E and R", "Braum's P [[STUN]] cannot interrupt Camille's E. However, [[STUN]] still applies."],
     },
     camille: {
       ko: [],
