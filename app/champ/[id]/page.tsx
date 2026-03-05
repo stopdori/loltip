@@ -85,7 +85,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${champ.en} Champion Guide – Skills, Mechanics & Matchups | LOLTIP`,
-    description: `${champ.en} (${champ.ko}) abilities, crowd control interactions, unstoppable mechanics, vision interactions and matchup knowledge.`,
+    description: `${champ.en} skill mechanics, CC interactions, and matchup tips for League of Legends. Learn what abilities ${champ.en} can interrupt, block, or counter.`,
     alternates: {
       canonical: `https://www.loltip.com/champ/${champId}`,
     },
