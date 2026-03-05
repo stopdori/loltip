@@ -379,8 +379,8 @@ return (
       </>
     ) : (
       <>
-        <div className={`${toggleBtnBase} ${toggleBtnDisabled}`}>기본</div>
-        <div className={`${toggleBtnBase} ${toggleBtnDisabled}`}>변환</div>
+        <div className={`${toggleBtnBase} ${toggleBtnDisabled}`}>{lang === "ko" ? "기본" : "Base"}</div>
+        <div className={`${toggleBtnBase} ${toggleBtnDisabled}`}>{lang === "ko" ? "변환" : "Alt"}</div>
       </>
     )}
   </ToggleGroup>
