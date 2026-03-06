@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-# ?side= 및 ?first= 쿼리 파라미터는 동일 콘텐츠를 생성하므로 크롤링 차단
-Disallow: /*?side=
-Disallow: /*?first=
-
-Sitemap: https://www.loltip.com/sitemap.xml
