@@ -25,6 +25,13 @@ const nextConfig = {
         permanent: true,
       },
 
+      // / → /champ (308 퍼머넌트)
+      {
+        source: "/",
+        destination: "/champ",
+        permanent: true,
+      },
+
       // vercel.app → www 본도메인
       {
         source: "/:path*",
