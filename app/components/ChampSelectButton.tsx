@@ -45,7 +45,7 @@ export default function ChampSelectButton({
         rounded-2xl
         bg-slate-800/60 hover:bg-slate-700/60
         transition
-        p-4
+        px-4 pt-4 pb-2
         border border-white/10 hover:border-white/20
         shadow-lg
         flex flex-col items-center
@@ -89,6 +89,7 @@ export default function ChampSelectButton({
           sizes="120px"
         />
       </div>
+      <div className="h-10" />
     </div>
   );
 }
