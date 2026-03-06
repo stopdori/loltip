@@ -199,7 +199,7 @@ useEffect(() => {
   <div className="max-w-5xl mx-auto px-3 py-2">
 
 
-    <div className="flex items-center justify-center gap-16">
+    <div className="flex items-center justify-center gap-3 sm:gap-16">
 
       <ChampSelectButton
   label={lang === "ko" ? "챔피언" : "Champion"}
@@ -276,7 +276,7 @@ setOpenTarget(null);
       
         {/* MY */}
 {myChamp && (
-<div className="flex flex-col w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-1">
+<div className="flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-1">
 
 
 {/* 챔피언 이름 표시 */}
@@ -316,7 +316,7 @@ setOpenTarget(null);
 
         {/* ENEMY */}
         {enemyChamp && (
-<div className="flex flex-col w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-3">
+<div className="flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-3">
 
 {/* 챔피언 이름 표시 */}
  <div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
