@@ -74,7 +74,7 @@ export default function ChampSelectButton({
       </button>
 
       <div className="text-sm font-semibold text-slate-300 text-center mb-2">
-        {label}
+        {selected ? title : "챔피언 선택하기"}
       </div>
 
       <div className="relative w-[88px] h-[88px] sm:w-[100px] sm:h-[100px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
@@ -87,10 +87,6 @@ export default function ChampSelectButton({
           className="object-cover group-hover:scale-[1.03] transition"
           sizes="120px"
         />
-      </div>
-
-      <div className="mt-4 text-center font-semibold text-slate-100">
-        {selected ? title : <span className="text-slate-400">선택하기</span>}
       </div>
     </div>
   );
