@@ -74,7 +74,7 @@ export default function ChampSelectButton({
         ⟳
       </button>
 
-      <div className="h-10 flex items-center justify-center text-base font-semibold text-slate-300 text-center mb-2">
+      <div className="h-10 flex items-center justify-center text-xl font-semibold text-slate-300 text-center mb-2">
         {selected ? title : "챔피언 선택하기"}
       </div>
 
