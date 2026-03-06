@@ -41,6 +41,7 @@ export default function ChampSelectButton({
         group
         relative
         w-full max-w-[210px] sm:max-w-[230px]
+        min-h-[168px] sm:min-h-[180px]
         rounded-2xl
         bg-slate-800/60 hover:bg-slate-700/60
         transition
