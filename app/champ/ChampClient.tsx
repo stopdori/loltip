@@ -127,7 +127,6 @@ useEffect(() => {
     lang === "ko" ? "롤 챔피언 특징과 메커니즘 요약" : "Summary of LoL Champion Features and Mechanisms";
 
   const firstUltLabel = lang === "ko" ? "궁 주도권" : "Cooldown Lead";
-  const diffLabel = lang === "ko" ? "차이" : "diff";
 
   const myIsSooner = canCompare ? myUltCd! < enemyUltCd! : false;
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
@@ -356,7 +355,7 @@ setOpenTarget(null);
       {firstUltLabel}
     </div>
     <div className="mt-1 text-lg font-bold text-emerald-300">
-      {diff != null ? `${diff}s ${diffLabel}` : "--"}
+      {diff != null ? `${diff}s` : "--"}
     </div>
   </div>
 )}
