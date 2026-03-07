@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/*?side=', '/*?first='],
+        disallow: ['/*?side=', '/*?first=', '/*?me=', '/*?enemy='],
       },
     ],
     sitemap: 'https://www.loltip.com/sitemap.xml',
