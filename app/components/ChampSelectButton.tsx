@@ -75,7 +75,7 @@ export default function ChampSelectButton({
       </button>
 
       <div className="h-10 flex items-center justify-center text-base font-semibold text-slate-300 text-center mb-2">
-        {selected ? title : "챔피언 선택하기"}
+        {selected ? title : lang === "en" ? "Select Champion" : "챔피언 선택하기"}
       </div>
 
       <div className="relative w-[88px] h-[88px] sm:w-[100px] sm:h-[100px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
