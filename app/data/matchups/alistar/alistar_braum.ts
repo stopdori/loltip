@@ -13,8 +13,8 @@ export const alistar_braum: MatchupSummary = {
       en: ["Alistar's Q and W can interrupt Braum's W", "Alistar's E [[STUN]] cannot interrupt Braum's W. However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Braum's P [[STUN]], Q [[SLOW]], and R [[AIRBORNE]]"],
     },
     braum: {
-      ko: ["브라움 E(방패)로 알리스타의 평타, Q, W, E를 막을([[DAMAGE_NULLIFY]]) 수 있음"],
-      en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Alistar's basic attacks, Q, W, and E"],
+      ko: ["브라움 E(방패)로 알리스타의 평타, Q, W, E를 막을([[DAMAGE_NULLIFY]]) 수 있음", "브라움 P의 [[STUN]]로 알리스타 W를 끊을 수 없음. 단, [[STUN]]은 남아있음", "브라움 R의 [[AIRBORNE]]으로 알리스타 W를 끊을 수 있음"],
+      en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Alistar's basic attacks, Q, W, and E", "Braum's P [[STUN]] cannot interrupt Alistar's W. However, [[STUN]] still applies.", "Braum's R [[AIRBORNE]] can interrupt Alistar's W"],
     },
   },
 };
