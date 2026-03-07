@@ -107,11 +107,15 @@ export default async function Page({ params, searchParams }: Props) {
 
   // JSON-LD FAQPage (판정 세부사항)
   const faqEntities = highlights.flatMap(({ champKo, items }) =>
-    items.map((text, i) => ({
-      "@type": "Question",
-      name: `${champKo} 판정 ${i + 1}번`,
-      acceptedAnswer: { "@type": "Answer", text: stripTags(text) },
-    }))
+    items.flatMap((text, i) => {
+      const stripped = stripTags(text);
+      if (!stripped) return [];
+      return [{
+        "@type": "Question",
+        name: `${champKo} 판정 ${i + 1}번`,
+        acceptedAnswer: { "@type": "Answer", text: stripped },
+      }];
+    })
   );
 
   const faqJsonLd =
