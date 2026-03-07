@@ -13,7 +13,7 @@ export const ambessa_braum: MatchupSummary = {
       en: [],
     },
     braum: {
-      ko: ["브라움 E(방패)로 암베사 평타, Q1, Q2, W, E 를 [[DAMAGE_NULLIFY]] 할 수 있음", "브라움 E(방패)로 암베사 R을 막을 수 없음 (방향과 관계없이 불가)"],
+      ko: ["브라움 E(방패)로 암베사 평타, Q1, Q2, W, E를 막을([[DAMAGE_NULLIFY]]) 수 있음", "브라움 E(방패)로 암베사 R의 데미지를 막을 수 없음 (방향과 관계없이 불가)"],
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Ambessa's basic attacks, Q1, Q2, W, and E", "Braum's E(Shield) cannot block Ambessa's R (regardless of direction)"],
     },
   },

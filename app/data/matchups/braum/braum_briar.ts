@@ -9,7 +9,7 @@ export const braum_briar: MatchupSummary = {
   },
   highlightsByChamp: {
     braum: {
-      ko: ["브라움 E(방패)로 브라이어 평타, Q, W(평타), E, R1, R2를 [[DAMAGE_NULLIFY]] 할 수 있음."],
+      ko: ["브라움 E(방패)로 브라이어 평타, Q, W(평타), E, R1, R2를 막을([[DAMAGE_NULLIFY]]) 수 있음."],
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] against Briar's basic attacks, Q, W (basic attacks), E, R1 and R2"],
     },
     briar: {

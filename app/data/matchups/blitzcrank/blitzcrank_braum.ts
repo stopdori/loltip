@@ -13,7 +13,7 @@ export const blitzcrank_braum: MatchupSummary = {
       en: [],
     },
     braum: {
-      ko: ["브라움 E(방패)로 블리츠 평타, Q, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음"],
+      ko: ["브라움 E(방패)로 블리츠 평타, Q, E, R을 막을([[DAMAGE_NULLIFY]]) 수 있음"],
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] against Blitzcrank's basic attacks, Q, E and R"],
     },
   },
