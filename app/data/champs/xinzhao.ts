@@ -15,7 +15,7 @@ const xinzhao: ChampData = {
     ko: [
     "Q에 [[AIRBORNE]]은 Q3타에 발동", "W를 맞혀야 E사거리가 늘어남", "R은 범위 밖 공격에 [[INVULNERABLE]]\n단)타워, 중립, 에픽몬스터 공격은 [[INVULNERABLE]] 불가"
   ],
-    en: []
+    en: ["Q [[AIRBORNE]] triggers on the 3rd hit", "Hitting W extends E range", "R is [[INVULNERABLE]] to attacks from outside the zone.\nHowever, towers, neutral monsters, and epic monsters bypass [[INVULNERABLE]]"]
   },
 
 vision: {

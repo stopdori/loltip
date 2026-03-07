@@ -15,7 +15,7 @@ const riven: ChampData = {
     ko: [
     "[[Q_FLASH]], [[W_FLASH]] 안됨", "Q 3타만 [[WALL_HOP]] 가능", "R을 처음 쓸때 모션이 있음\n근데 ER하면 R모션 캔슬 됨",
   ],
-    en: []
+    en: ["[[Q_FLASH]] and [[W_FLASH]] not possible", "Only Q third cast allows [[WALL_HOP]]", "R has a wind-up animation on first use.\nUsing E then R cancels the animation"]
   },
 
 vision: {

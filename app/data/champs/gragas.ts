@@ -15,7 +15,7 @@ const gragas: ChampData = {
     ko: [
     "E로 날아가는 도중에 Q R 다 가능",
   ],
-    en: []
+    en: ["Q and R can be cast mid-flight during E"]
   },
 
 vision: {

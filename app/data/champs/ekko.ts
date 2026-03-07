@@ -15,7 +15,7 @@ const ekko: ChampData = {
     ko: [
     "W 깔면 밤위 슬로우임\n사라지기 전에만 들어가면 효과 발동됨"
   ],
-    en: []
+    en: ["W creates a slow field.\nThe effect activates as long as enemies enter before it disappears"]
   },
 
 vision: {

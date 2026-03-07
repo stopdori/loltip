@@ -15,7 +15,7 @@ const gwen: ChampData = {
     ko: [
     "Q는 중앙에 명중해야 좋음", "W는 범위 밖에서 날아오는 투사체를 맞지않음\n그웬에게 시전한 타겟팅 스킬도 날아오다 그웬이 W를 키면 맞지 않음"
   ],
-    en: []
+    en: ["Q is most effective when hitting with the center", "W blocks projectiles originating from outside its area.\nTargeted projectiles already flying toward Gwen are also blocked if W is activated before they arrive"]
   },
 
 vision: {

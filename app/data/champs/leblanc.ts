@@ -15,7 +15,7 @@ const leblanc: ChampData = {
     ko: [
     "[[W_FLASH]] 안됨", "분신 컨트롤은 alt 우클릭으로 가능"
   ],
-    en: []
+    en: ["[[W_FLASH]] not possible", "Clone can be controlled with alt + right-click"]
   },
 
 vision: {

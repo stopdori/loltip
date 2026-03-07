@@ -15,7 +15,7 @@ const bard: ChampData = {
     ko: [
     "P의 [[SLOW]]는 5스택부터\n스택이 쌓일수록 여러 효과 증가", "Q는 그냥 맞히면 [[SLOW]]\n관통해서 다른 적이나 벽에 닿으면 [[STUN]]", "W는 땅에 깔아두고 시간이 지나면 효과증가\n상대편이 밟으면 사라짐", "E로 이동하는 도중에 공격도 당할 수 있고\nCC맞으면 벽에서 튀어나옴"
   ],
-    en: []
+    en: ["P's [[SLOW]] activates at 5 stacks.\nMore stacks increase various effects", "Q applies [[SLOW]] on a straight hit.\nPiercing through another enemy or hitting a wall applies [[STUN]]", "W gains power over time when left on the ground.\nEnemies stepping on it destroy it", "Allies and enemies can attack you during E travel.\nBeing hit by CC ejects you from the wall"]
   },
 
 vision: {

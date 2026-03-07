@@ -15,7 +15,7 @@ const smolder: ChampData = {
     ko: [
     "P스택은 25 스플레쉬 /125 추가투사체\n225 3초지속 고정피해, [[EXECUTE]]", "W의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R의 브레스를 스몰더 자신이 맞아야 [[HEAL]]", "E스킬은 [[HARD_CC]]에 끊김"
   ],
-    en: []
+    en: ["P stacks: 25 splash / 125 bonus projectile / 225 persistent true damage, [[EXECUTE]]", "W's [[SLOW]] continuously applies to targets inside the area", "R [[HEAL]] only activates if Smolder himself is hit by the breath", "E is interrupted by [[HARD_CC]]"]
   },
 
 vision: {

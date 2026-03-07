@@ -15,7 +15,7 @@ const gangplank: ChampData = {
     ko: [
     "마나 게이지 밑에 화약통 갯수 나옴"
   ],
-    en: []
+    en: ["Powder keg count is shown below the mana bar"]
   },
 
 vision: {

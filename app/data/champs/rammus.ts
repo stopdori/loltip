@@ -15,7 +15,7 @@ const rammus: ChampData = {
     ko: [
     "P [[AD_UP]]은 방마저 비례", "R의 점프 거리가 이속 비례임\n[[AIRBORNE]]은 Q상태일 때만 가능함\n[[SLOW]]도 지역에 3회 추가 적용임",
   ],
-    en: []
+    en: ["P [[AD_UP]] scales with armor and MR", "R jump distance scales with movement speed.\n[[AIRBORNE]] is only possible while in Q (Powerball).\n[[SLOW]] applies 3 additional times in the area"]
   },
 
 vision: {

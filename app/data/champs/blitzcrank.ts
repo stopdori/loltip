@@ -15,7 +15,7 @@ const blitzcrank: ChampData = {
     ko: [
     "[[Q_FLASH]] 안됨", "W는 지속시간이 종료되면 자체 [[SLOW]]가 걸림"
   ],
-    en: []
+    en: ["[[Q_FLASH]] not possible", "W applies a self [[SLOW]] when its duration expires"]
   },
 
 vision: {

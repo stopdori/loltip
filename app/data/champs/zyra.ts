@@ -15,7 +15,7 @@ const zyra: ChampData = {
     ko: [
     "[[R_FLASH]] 안됨", "씨앗에는 텔 안됨\n식물에는 [[ALLY_TP_OK]]", "Q로 자란 꽃은 ''가시 발사 꽃'' (사거리 김)\nE로 자란 꽃은 ''덩굴 채찍 손'' ([[SLOW]]를 검)\nR은 꽃을 자라게 할 수 없고 버프만 줌", "W로 깐 씨앗을 상대가 밟으면 [[TRUE_SIGHT]]\nP로 생성된 식물은 해당없음"
   ],
-    en: []
+    en: ["[[R_FLASH]] not possible", "Cannot TP onto seeds.\nPlants allow [[ALLY_TP_OK]]", "Q-grown plant: 'Thorn Spitter' (long range)\nE-grown plant: 'Vine Lasher' (applies [[SLOW]])\nR does not grow plants — it only buffs existing ones", "Enemies stepping on W seeds reveal themselves via [[TRUE_SIGHT]].\nP-spawned plants do not have this effect"]
   },
 
 vision: {

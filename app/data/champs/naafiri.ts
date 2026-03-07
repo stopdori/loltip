@@ -15,7 +15,7 @@ const naafiri: ChampData = {
     ko: [
     "Q는 2타가 [[LIFESTEAL]]임", "R은 원래는 기본 스킬이었지만, 리워크 되면서 궁으로 바뀌었는데 앞에서 가로 막아주기가 없어짐\n하지만 R은 CC로 끊길 수 있음", "R은 사용하고 7초이내 킬관여 하면 초기화\n처음 사용에는 [[SHIELD]]이 없고\n초기화 궁은 사용하면 생김\n초기화 궁은 사용하지 않으면 사라짐",
   ],
-    en: []
+    en: ["Q's second hit applies [[LIFESTEAL]]", "R was originally a basic skill that was reworked into an ultimate. As a result it no longer has allies blocking for it.\nHowever, R can still be interrupted by CC", "R resets if Naafiri kills or assists within 7s.\nThe initial cast has no [[SHIELD]], but the reset cast grants [[SHIELD]] on use.\nThe reset disappears if unused"]
   },
 
 vision: {

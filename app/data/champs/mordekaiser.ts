@@ -15,7 +15,7 @@ const mordekaiser: ChampData = {
     ko: [
     "Q는 단일 대상 명중 시 피해가 증가함", "R에 관련된 챔피언별 메커니즘은 하단 박스에 정리했음"
   ],
-    en: []
+    en: ["Q deals increased damage to a single target", "Champion-specific R mechanics are detailed in the box below"]
   },
 
 vision: {

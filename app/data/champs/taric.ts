@@ -15,7 +15,7 @@ const taric: ChampData = {
     ko: [
     "P의 [[MS_UP]]은 스킬 사용 후 다음 평타 2대",
   ],
-    en: []
+    en: ["P's [[MS_UP]] applies for the next 2 basic attacks after using a skill"]
   },
 
 vision: {

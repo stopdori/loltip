@@ -15,7 +15,7 @@ const vladimir: ChampData = {
     ko: [
     "P는 주문력당 체력, 체력당 주문력 증가", "W의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "E 쓰면서 W 쓸 수 있음\nE는 스마트키 풀면 편함", "R은 ''받는 모든피해 증가''여서\nR 대상에게 아군 데미지도 증가시킴"
   ],
-    en: []
+    en: ["P increases max HP based on AP, and AP based on max HP", "W's [[SLOW]] continuously applies to targets inside the area", "E can be cast while using W.\nDisabling smartcast on E is recommended", "R applies 'increased damage taken' — ally damage on R targets is also amplified"]
   },
 
 vision: {

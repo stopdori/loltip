@@ -15,7 +15,7 @@ const leesin: ChampData = {
     ko: [
     "[[Q_FLASH]] 안됨", "R에 당구로 맞으면\n날아간 대상의 최대체력의 %데미지가\n부딪힌 대상에게 추가"
   ],
-    en: []
+    en: ["[[Q_FLASH]] not possible", "Enemies hit by the billiard bounce take bonus damage based on a % of the launched target's max HP"]
   },
 
 vision: {

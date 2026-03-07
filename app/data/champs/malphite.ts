@@ -15,7 +15,7 @@ const malphite: ChampData = {
     ko: [
     "[[R_FLASH]] 안됨", "E에는 상대 공속감소가 있음"
   ],
-    en: []
+    en: ["[[R_FLASH]] not possible", "E reduces the target's attack speed"]
   },
 
 vision: {

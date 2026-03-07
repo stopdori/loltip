@@ -15,7 +15,7 @@ const azir: ChampData = {
     ko: [
     "[[Q_FLASH]], [[R_FLASH]] 안됨", "병사에 텔 안됨", "아지르 E의 이동거리는 생각보다 짧음\n그래서 E를 쓰고 도착하기전에\nQ를 써서 더 멀리 갈 수 있음\nQ로 방향도 바꿀 수 있음"
   ],
-    en: []
+    en: ["[[Q_FLASH]] and [[R_FLASH]] not possible", "Cannot TP onto soldiers", "Azir's E travel distance is shorter than expected.\nCast E then immediately Q before arriving to travel farther.\nQ can also redirect the path"]
   },
 
 vision: {

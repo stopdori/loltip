@@ -15,7 +15,7 @@ const samira: ChampData = {
     ko: [
     "P는 랭크마다 [[MS_UP]]\n[[AIRBORNE]]이 걸린 대상 기본공격 시 대상에게 [[AIRBORNE]]을 다시 검 (적 챔피언마다 쿨타임)\n설명에 최대사거리까지 돌진이라 나와있지만 그런건 없음 그냥 평타사거리", "W는 챔피언별로 아래 박스에 정리", "R 쿨타임 5초임\n스택을 잘 쌓으면 자주 사용함\nR은 치명타 적용 가능"
   ],
-    en: []
+    en: ["P grants [[MS_UP]] per rank.\nBasic attacks on an [[AIRBORNE]] target re-apply [[AIRBORNE]] (per-champion cooldown).\nDescription says she dashes to max range — that does not exist; she attacks at standard AA range", "W is detailed per champion in the box below", "R cooldown is 5s.\nBuilding style meter lets you use it frequently.\nR can critically strike"]
   },
 
 vision: {

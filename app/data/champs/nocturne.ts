@@ -15,7 +15,7 @@ const nocturne: ChampData = {
     ko: [
     "[[Q_FLASH]] 안됨", "Q의 버프는 Q장판 위에서만 발동", "W의 [[AS_UP]]는 방어해내면 효과 2배 ", "E가 끊기지 않아야 [[FEAR]]를 검", "R의 [[NEARSIGHT]]는 자기 시야만 보임"
   ],
-    en: []
+    en: ["[[Q_FLASH]] not possible", "Q's buffs only activate while standing in the trail", "W's [[AS_UP]] doubles if successfully blocked", "[[FEAR]] only applies if E's tether remains unbroken", "R's [[NEARSIGHT]] leaves only self-vision"]
   },
 
 vision: {

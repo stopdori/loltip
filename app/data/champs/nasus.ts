@@ -15,7 +15,7 @@ const nasus: ChampData = {
     ko: [
     "R은 [[MAX_HP_UP]]여서 풀피에도 유효함\n[[GW]]영향도 안받음"
   ],
-    en: []
+    en: ["R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]]"]
   },
 
 vision: {

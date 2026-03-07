@@ -15,7 +15,7 @@ const milio: ChampData = {
     ko: [
     "[[Q_FLASH]], [[R_FLASH]] 안됨", "W에 텔 안됨", "R은 자신이 CC걸리면 사용이 안됨"
   ],
-    en: []
+    en: ["[[Q_FLASH]] and [[R_FLASH]] not possible", "Cannot TP onto W", "R cannot be cast while Milio is CC'd"]
   },
 
 vision: {

@@ -15,7 +15,7 @@ const kassadin: ChampData = {
     ko: [
     "P의 [[DMG_REDUCE]]는 마법피해만 해당됨","Q에 채널링 캔슬 있음. 침묵 아님",
   ],
-    en: []
+    en: ["P's [[DMG_REDUCE]] applies to magic damage only", "Q has channel interruption (not silence)"]
   },
 
 vision: {

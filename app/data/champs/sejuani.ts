@@ -15,7 +15,7 @@ const sejuani: ChampData = {
     ko: [
     "P는 [[SLOW]]만 면역임", "W에 [[SLOW]]는 2타만 적용", "R은 사거리 1/4 보다 먼 대상에게 적중 할 때 여러가지 효과가 추가 되거나 증가함\n[[SLOW]]와 광역피해는 1/4이상일때만"
   ],
-    en: []
+    en: ["P only immunizes against [[SLOW]]", "W's [[SLOW]] only applies on the second hit", "R effects and bonus are only applied when hitting a target farther than 1/4 of the range.\n[[SLOW]] and AoE damage only apply beyond 1/4 range"]
   },
 
 vision: {

@@ -15,7 +15,7 @@ const yone: ChampData = {
     ko: [
     "[[R_FLASH]] 안됨", "P의 [[AD_UP]]는 치명타 초과분이 변환", "Q [[AIRBORNE]]은 Q3타에 발동", "W에 보호막은\n적중한 적 챔피언 수에 따라 증가", "E의 [[PSEUDO_UNSTOPPABLE]]는 돌아올때만 ", "E 발동 시에는 벽 못넘음\n돌아오는 E는 벽 넘음",
   ],
-    en: []
+    en: ["[[R_FLASH]] not possible", "P [[AD_UP]] converts excess crit chance", "Q [[AIRBORNE]] triggers on the 3rd cast", "W shield scales with the number of enemy champions hit", "E [[PSEUDO_UNSTOPPABLE]] only applies on the return", "E cannot wall-hop on cast.\nThe returning E can wall-hop"]
   },
 
 vision: {

@@ -15,7 +15,7 @@ const amumu: ChampData = {
     ko: [
     "Q로 날아가면서 R 안써짐"
   ],
-    en: []
+    en: ["R cannot be cast while flying with Q"]
   },
 
 vision: {

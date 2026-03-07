@@ -15,7 +15,7 @@ const masteryi: ChampData = {
     ko: [
     "선진입 절대 하지마셈", "R은 킬관여 하면\n쿨타임 70%감소, 지속시간 7초 증가"
   ],
-    en: []
+    en: ["Do not engage first", "Kill participation with R reduces its cooldown by 70% and extends its duration by 7s"]
   },
 
 vision: {

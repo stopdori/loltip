@@ -15,7 +15,7 @@ const irelia: ChampData = {
     ko: [
     "[[E_FLASH]] 안됨", "P는 최대 4스택\n 중첩 유지는 챔피언, 타워 때려야 됨"
   ],
-    en: []
+    en: ["[[E_FLASH]] not possible", "P stacks up to 4.\nStacks are maintained only by hitting champions or towers"]
   },
 
 vision: {

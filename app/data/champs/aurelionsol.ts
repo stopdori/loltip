@@ -27,7 +27,7 @@ const aurelionsol: ChampData = {
     ko: [
     "[[R_FLASH]] 사거리 밖에 사용하고 점멸 쓰면 발동 됨",
   ],
-    en: []
+    en: ["[[R_FLASH]] works by using R outside range then flashing"]
   },
 
 vision: {

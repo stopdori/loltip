@@ -15,7 +15,7 @@ const cassiopeia: ChampData = {
     ko: [
     "이제 신발 구매가능함", "Q [[MS_UP]]는 맞혀야 증가함", "R은 카시를 바라보고 걸리면 [[STUN]]\n카시를 등지고 걸리면 [[SLOW]]"
   ],
-    en: []
+    en: ["Boots can now be purchased", "Q [[MS_UP]] only applies if the shot lands", "R applies [[STUN]] to enemies facing Cassiopeia, and [[SLOW]] to those facing away"]
   },
 
 vision: {

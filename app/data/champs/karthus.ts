@@ -15,7 +15,7 @@ const karthus: ChampData = {
     ko: [
     "Q는 단일 대상 명중 시 피해가 증가함", "카서스 R 시전중에 점멸쓰면 절대 안됨\n궁 취소됨",
   ],
-    en: []
+    en: ["Q deals increased damage to a single target", "Using flash during R channeling cancels R immediately — never do this"]
   },
 
 vision: {

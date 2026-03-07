@@ -15,7 +15,7 @@ const jarvaniv: ChampData = {
     ko: [
     "Q(창)에 [[AIRBORNE]]은 E(깃발)에 적중해야 됨", "E는 주변에 [[AS_UP]] 버프가 있음", "W는 상대 챔피언을 많이 맞힐수록 방어막 증가", "R은 발동했을 때 상대가 점멸을 쓰면 피해짐"
   ],
-    en: []
+    en: ["Q's [[AIRBORNE]] requires hitting the E (flag)", "E provides [[AS_UP]] to nearby allies", "W's shield increases with more enemy champions hit", "If a target flashes after R is cast, they can escape"]
   },
 
 vision: {

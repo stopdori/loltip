@@ -15,7 +15,7 @@ const kennen: ChampData = {
     ko: [
     "Q플 안됨", "P가 3스택되면 스턴걸림", "E에 [[AS_UP]]은 종료하고 발동", "R은 어떤 CC를 맞아도 해제되지 않음"
   ],
-    en: []
+    en: ["Q flash not possible", "P at 3 stacks applies a stun", "E's [[AS_UP]] activates on deactivation", "R cannot be cancelled by any CC"]
   },
 
 vision: {

@@ -15,7 +15,7 @@ const kogmaw: ChampData = {
     ko: [
     "[[Q_FLASH]], [[E_FLASH]] 안됨", "Q의 [[AS_UP]]은 기본지속", "E의 [[SLOW]]는 범위 위의 대상에게 지속 적용"
   ],
-    en: []
+    en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "Q's [[AS_UP]] is a passive effect", "E's [[SLOW]] continuously applies to targets standing in the area"]
   },
 
 vision: {

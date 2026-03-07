@@ -29,7 +29,7 @@ const elise: ChampData = {
     ko: [
     "거미폼 Q가 벽을 못넘음", "거미폼 E는 부쉬 안에도 시야가 보임\n[[LIFESTEAL]] 맞음 오타아님 \n정확한 메커니즘은 거미폼 E를 대상에게 하강하면 엘리스 P(패시브)효과가 증가함. 그래서 [[LIFESTEAL]]량이 증가함",
   ],
-    en: []
+    en: ["Spider form Q cannot hop walls", "Spider form E reveals inside brushes.\n[[LIFESTEAL]] is correct, not a typo.\nThe exact mechanic: using Spider E to descend on a target increases Elise's P passive effect, boosting [[LIFESTEAL]]"]
   },
 
 vision: {

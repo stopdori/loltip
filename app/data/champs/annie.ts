@@ -15,7 +15,7 @@ const annie: ChampData = {
     ko: [
     "P의 [[STUN]]은 4스택 일 때 Q, W, R에 적용", "R의 기본지속 효과로 [[MR_PEN]]있음",
   ],
-    en: []
+    en: ["P's [[STUN]] applies on Q, W, or R when at 4 stacks", "R has [[MR_PEN]] as a passive effect"]
   },
 
 vision: {

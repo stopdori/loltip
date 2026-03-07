@@ -15,7 +15,7 @@ const singed: ChampData = {
     ko: [
     "[[E_FLASH]] 되는데, [[INSEC_KICK]]은 불가능\nE에 [[ROOT]]은 W 위에 던져야 발동", "E는 던지는 모션이 발동하면 웬만해서 스킬이 유효함\n대상이 날아가는 위치는 E를 사용한 곳 기준", "R에 [[GW]]은 Q에만 적용"
   ],
-    en: []
+    en: ["[[E_FLASH]] works but [[INSEC_KICK]] is not possible.\nE's [[ROOT]] only triggers if thrown onto W", "E activates once the throw animation starts — the skill mostly goes through.\nThe landing position is based on where E was cast", "R's [[GW]] only applies to Q"]
   },
 
 vision: {

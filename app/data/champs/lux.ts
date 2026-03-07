@@ -15,7 +15,7 @@ const lux: ChampData = {
     ko: [
     "[[W_FLASH]], [[R_FLASH]] 안됨", "Q에 [[PIERCE]]은 1번만", "E의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "E에 텔 안타짐"
   ],
-    en: []
+    en: ["[[W_FLASH]] and [[R_FLASH]] not possible", "Q [[PIERCE]]s once only", "E's [[SLOW]] continuously applies to targets inside the area", "Cannot TP onto E"]
   },
 
 vision: {
