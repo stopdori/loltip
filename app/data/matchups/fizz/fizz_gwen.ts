@@ -14,7 +14,7 @@ export const fizz_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 피즈 E, R을 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Fizz's E and R from hitting when outside the zone"],
     },
   },
 };

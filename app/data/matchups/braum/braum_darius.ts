@@ -9,8 +9,8 @@ export const braum_darius: MatchupSummary = {
   },
   highlightsByChamp: {
     braum: {
-      ko: [""],
-      en: [""],
+      ko: ["브라움 E(방패)로 다리우스 평타, Q, W, R을 막을([[DAMAGE_NULLIFY]]) 수 있음"],
+      en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Darius's basic attacks, Q, W and R"],
     },
     darius: {
       ko: [],

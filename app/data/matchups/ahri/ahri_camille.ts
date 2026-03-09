@@ -10,11 +10,11 @@ export const ahri_camille: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 카밀 E(그렙/돌진단계)를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Camille's E (grapple/dash phase)"],
     },
     camille: {
       ko: ["카밀 R로 아리 Q, W, E, R을 회피 할 수 있음"],
-      en: [],
+      en: ["Camille's R can dodge Ahri's Q, W, E, and R"],
     },
   },
 };

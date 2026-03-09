@@ -10,7 +10,7 @@ export const akali_kindred: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 킨드레드 Q를 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Kindred's Q"],
     },
     kindred: {
       ko: [],

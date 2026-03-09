@@ -14,7 +14,7 @@ export const aatrox_kled: MatchupSummary = {
     },
     kled: {
       ko: ["클레드 Q의 [[GRAB]], R의 [[KNOCKBACK]]으로 아트록스 E를 끊을 수 있음"],
-      en: [],
+      en: ["Kled's Q [[GRAB]] and R [[KNOCKBACK]] can interrupt Aatrox's E"],
     },
   },
 };

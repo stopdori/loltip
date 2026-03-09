@@ -15,7 +15,7 @@ const kayle: ChampData = {
     ko: [
     "[[Q_FLASH]] 안됨", "P효과는 E스킬을 찍어야 발동\nP에 [[MS_UP]]는 5스택일 때 기본 공격 시 발동", "6 / 11 / 16 레벨에 R을 찍으면 강화\n6은 [[RANGE_UP]]\n11은 5스택 일 때 기본공격 시 화염파발동\n화염파는 범위+추뎀 (기본공격은 한대상만)\n16은 추가 [[RANGE_UP]] + 항상 5스택효과"
   ],
-    en: []
+    en: ["[[Q_FLASH]] not possible", "P activates after putting points in E.\nP's [[MS_UP]] triggers during autos at 5 stacks", "Leveling R at 6/11/16 provides upgrades:\n6: [[RANGE_UP]]\n11: auto-attacks at 5 stacks fire a flame wave (AoE + bonus damage; basic attacks only hit one target)\n16: additional [[RANGE_UP]] + permanent 5-stack effect"]
   },
 
 vision: {

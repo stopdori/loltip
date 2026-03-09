@@ -30,7 +30,7 @@ const lissandra: ChampData = {
     ko: [
     "[[W_FLASH]] 안됨", "P의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R은 자신에게 쓸 때 회복함",
   ],
-    en: []
+    en: ["[[W_FLASH]] not possible", "P's [[SLOW]] continuously applies to targets inside the area", "R heals Lissandra when cast on herself"]
   },
 
 vision: {

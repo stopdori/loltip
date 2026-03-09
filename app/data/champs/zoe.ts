@@ -15,7 +15,7 @@ const zoe: ChampData = {
     ko: [
     "첫 [[Q_FLASH]]은 불가능하고\n두번째는 [[Q_FLASH]] 가능함", "[[E_FLASH]] 안됨", "P를 Q1타, 2타, W, E, R 등으로 계속 돌려서 싸우는게 핵심", "Q는 투사체 이동거리에 따라 데미지 증가\n(상한선 있는듯)", "W로 점멸을 주웠을 때\n조이의 점멸을 사용해도 W부터 사용됨", "E는 벽을타고 계속 날아감\n아무도 맞지 않으면 바닥에 덫으로 남음", "E에 [[SLEEP]]은 평타, 스킬 데미지에 2배로 피해를 주는데 아군이 때려도 2배 적용 됨"
   ],
-    en: []
+    en: ["First [[Q_FLASH]] not possible; second Q can [[Q_FLASH]]", "[[E_FLASH]] not possible", "Core gameplay: keep cycling P through Q1, Q2, W, E, R", "Q damage increases with travel distance (appears to have an upper limit)", "When Zoe collects a flash from W,\nusing Zoe's flash consumes W's flash first", "E travels along walls and stays as a ground trap if it hits nothing", "E [[SLEEP]] doubles damage from the next basic attack or skill — including ally attacks"]
   },
 
 vision: {

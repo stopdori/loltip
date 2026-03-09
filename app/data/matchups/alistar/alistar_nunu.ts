@@ -10,7 +10,7 @@ export const alistar_nunu: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 누누 W의 [[AIRBORNE]], E의 [[SLOW]], [[ROOT]]을 해제할 수 있음", "알리스타 R의 [[CC_CLEANSE]]로 누누 R의 [[SLOW]]는 해제할 수 없음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Nunu's W [[AIRBORNE]], E [[SLOW]], [[ROOT]]", "Alistar's R [[CC_CLEANSE]] cannot cleanse Nunu's R [[SLOW]]"],
     },
     nunu: {
       ko: [],

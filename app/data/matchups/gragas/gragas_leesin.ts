@@ -13,7 +13,7 @@ export const gragas_leesin: MatchupSummary = {
         "그라가스 E, R로 리신 W를 끊을 수 있음. [[SHIELD]]도 생기지 않음", 
       "그라가스 E와 리신 R 판정은 서로서로를 밀어내고, 후속 CC를 걸고 데미지가 모두 들어감"
     ],
-      en: [],
+      en: ["Gragas's E and R can interrupt Lee Sin's QQ. 데미지도 안들어감", "Gragas's E and R can interrupt Lee Sin's W. [[SHIELD]]도 생기지 않음", "Gragas's E and Lee Sin's R push each other, applying subsequent CC and dealing full damage to both"],
     },
     leesin: {
       ko: [],

@@ -15,7 +15,7 @@ const maokai: ChampData = {
     ko: [
     "[[R_FLASH]] 안됨", "묘목에 텔 안됨", "R의 [[MS_UP]]는 상대에게 적중하면 적용됨"
   ],
-    en: []
+    en: ["[[R_FLASH]] not possible", "Cannot TP onto saplings", "R's [[MS_UP]] applies when hitting an enemy"]
   },
 
 vision: {

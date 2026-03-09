@@ -10,7 +10,7 @@ export const alistar_senna: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 세나 W의 [[ROOT]]를 해제할 수 있음. 단, W의 [[ROOT]]가 완전히 발동 되고 사용해야 해제됨"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Senna's W [[ROOT]]. However, it must be used after the W [[ROOT]] has fully activated"],
     },
     senna: {
       ko: [],

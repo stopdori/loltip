@@ -41,10 +41,11 @@ export default function ChampSelectButton({
         group
         relative
         w-full max-w-[210px] sm:max-w-[230px]
+        min-h-[168px] sm:min-h-[180px]
         rounded-2xl
         bg-slate-800/60 hover:bg-slate-700/60
         transition
-        p-4
+        px-4 pt-4 pb-2
         border border-white/10 hover:border-white/20
         shadow-lg
         flex flex-col items-center
@@ -73,8 +74,8 @@ export default function ChampSelectButton({
         ⟳
       </button>
 
-      <div className="text-sm font-semibold text-slate-300 text-center mb-2">
-        {label}
+      <div className="h-10 flex items-center justify-center text-base font-semibold text-slate-300 text-center mb-2">
+        {selected ? title : lang === "en" ? "Select Champion" : "챔피언 선택하기"}
       </div>
 
       <div className="relative w-[88px] h-[88px] sm:w-[100px] sm:h-[100px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
@@ -88,10 +89,7 @@ export default function ChampSelectButton({
           sizes="120px"
         />
       </div>
-
-      <div className="mt-4 text-center font-semibold text-slate-100">
-        {selected ? title : <span className="text-slate-400">선택하기</span>}
-      </div>
+      <div className="h-10" />
     </div>
   );
 }

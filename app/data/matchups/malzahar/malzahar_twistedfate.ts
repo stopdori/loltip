@@ -10,7 +10,7 @@ export const malzahar_twistedfate: MatchupSummary = {
   highlightsByChamp: {
     malzahar: {
       ko: ["말자하 패시브에 트페골카 막힘"],
-      en: [""],
+      en: ["Malzahar's passive can block Twisted Fate's Gold Card"],
     },
     twistedfate: {
       ko: [],

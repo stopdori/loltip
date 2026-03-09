@@ -10,7 +10,7 @@ export const alistar_jinx: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 징크스 W의 [[SLOW]], E의 [[ROOT]]를 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Jinx's W [[SLOW]], E [[ROOT]]"],
     },
     jinx: {
       ko: [],

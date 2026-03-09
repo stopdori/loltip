@@ -10,7 +10,7 @@ export const ahri_urgot: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 우르곳 E(돌진단계)를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Urgot's E (dash phase)"],
     },
     urgot: {
       ko: [],

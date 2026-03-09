@@ -15,7 +15,7 @@ const shyvana: ChampData = {
     ko: [
     "분노 100에 R(변신) 사용 가능 \n초당 1 /1.5/ 2 분노 획득. 평타 시 2씩 획득", "R플은 애매함. R플을하면 기능적으로는 되는데 거리가 늘어나지 않음. 하지만 R플 E하면 E모션이 조금 단축돼서 순간적인 폭딜+에어본 가능",
   ],
-    en: []
+    en: ["Transform (R) is available at 100 fury.\nFury gained: 1/1.5/2 per second. 2 per basic attack", "R flash is ambiguous — functionally possible but travel distance doesn't increase. However, R flash then E slightly shortens E animation for a quick burst damage + airborne"]
   },
 
 vision: {

@@ -10,11 +10,11 @@ export const alistar_veigar: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 베이가 E의 [[STUN]]를 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Veigar's E [[STUN]]"],
     },
     veigar: {
       ko: ["베이가 E가 활성화됐을 때 알리스타 W를 사용해서 넘으려고 한다면 [[STUN]]이 걸림"],
-      en: [],
+      en: ["If Alistar tries to use W to leap over Veigar's active E, he will be [[STUN]]ned"],
     },
   },
 };

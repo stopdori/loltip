@@ -10,7 +10,7 @@ export const ahri_velkoz: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 벨코즈 R(채널링)을 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Vel'Koz's R (channeling)"],
     },
     velkoz: {
       ko: [],

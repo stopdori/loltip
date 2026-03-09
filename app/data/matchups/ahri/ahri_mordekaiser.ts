@@ -14,7 +14,7 @@ export const ahri_mordekaiser: MatchupSummary = {
     },
     mordekaiser: {
       ko: ["모데카이저 E로 아리 R을 끊을 수 있음"],
-      en: [],
+      en: ["Mordekaiser's E can interrupt Ahri's R"],
     },
   },
 };

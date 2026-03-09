@@ -10,7 +10,7 @@ export const aatrox_sion: MatchupSummary = {
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W [[GRAB]]효과로 사이온 Q(시전집중)를 끊을 수 있음"],
-      en: [""],
+      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Sion's Q (channeling)"],
     },
     sion: {
       ko: [],

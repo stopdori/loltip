@@ -15,7 +15,7 @@ const vex: ChampData = {
     ko: [
     "[[W_FLASH]], [[E_FLASH]] 안됨", "R로 날아갈 때 점멸로 멈출 수 있음 ",
   ],
-    en: []
+    en: ["[[W_FLASH]] and [[E_FLASH]] not possible", "Flash can stop R mid-flight"]
   },
 
 vision: {

@@ -15,7 +15,7 @@ const drmundo: ChampData = {
     ko: [
     "[[Q_FLASH]] 안됨\nQ(뼈톱)는 맞혀야 체력 50[[HEAL]] 합니다", "W를 사용하고 맞다가 상대 챔피언에게 터뜨려야 회색체력 100%를 [[HEAL]]함\n요약) 대충 W키고 상대에게 비벼라",
   ],
-    en: []
+    en: ["[[Q_FLASH]] not possible.\nQ (Infected Bonesaw) heals 50 HP when it lands", "Using W and taking damage, then letting it detonate on an enemy champion heals 100% of grey health.\nSummary: activate W and get in their face"]
   },
 
 vision: {

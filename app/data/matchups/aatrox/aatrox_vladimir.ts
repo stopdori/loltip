@@ -5,12 +5,12 @@ export const aatrox_vladimir: MatchupSummary = {
   champs: ["aatrox", "vladimir"],
   summary: {
     ko: ["블라디미르 W로도 아트록스 W 사슬은 끊어지지 않음"],
-    en: [],
+    en: ["Vladimir's W cannot escape Aatrox's W pull/chain"],
   },
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 W를 맞고 블라디가 W를 사용하면 [[TETHER]]효과가 남아있고, 벗어나지 않으면 [[GRAB]] 뿐만아니라 데미지도 들어감"],
-      en: [""],
+      en: ["If Vladimir uses W after being hit by Aatrox's W, the [[TETHER]] remains; if he doesn't escape, he takes full damage including the [[GRAB]]"],
     },
     vladimir: {
       ko: [],

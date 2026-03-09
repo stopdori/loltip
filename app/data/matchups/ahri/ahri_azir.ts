@@ -10,11 +10,11 @@ export const ahri_azir: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 아지르 E를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Azir's E"],
     },
     azir: {
       ko: ["아지르 R로 아리 R을 끊을 수 있음"],
-      en: [],
+      en: ["Azir's R can interrupt Ahri's R"],
     },
   },
 };

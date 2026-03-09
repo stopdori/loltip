@@ -10,7 +10,7 @@ export const blitzcrank_drmundo: MatchupSummary = {
   highlightsByChamp: {
     blitzcrank: {
       ko: ["문도 패시브가 블리츠 Q 또는 E를 막을 수 있음."],
-      en: [""],
+      en: ["Dr. Mundo's passive can block Blitzcrank's Q or E"],
     },
     drmundo: {
       ko: [],

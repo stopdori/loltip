@@ -15,7 +15,7 @@ const caitlyn: ChampData = {
     ko: [
     "P 스택은 부쉬에서 2씩참\nW(덫)에 걸린 대상에겐 추가피해도 있음", "[[Q_FLASH]] 안됨 \nQ는 여러대상 관통할수록 딜이 덜 들어감 \n그런데 W(덫)에 걸린 대상에겐 항상 100% Q딜이 들어감", "W(덫)에 텔 안됨", "E를 적중시키면 [[AA_RESET]] 됨",
   ],
-    en: []
+    en: ["P stacks charge at 2 per bush auto.\nW (Yordle Snap Trap) also deals bonus damage to trapped targets", "[[Q_FLASH]] not possible.\nQ damage decreases per additional target pierced.\nHowever Q always deals 100% damage to targets trapped by W", "Cannot TP onto W (traps)", "E applies [[AA_RESET]] on hit"]
   },
 
 vision: {

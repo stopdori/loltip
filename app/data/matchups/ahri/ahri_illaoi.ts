@@ -10,7 +10,7 @@ export const ahri_illaoi: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 일라오이 W를 끊을 수 있음"],
-      en: [],
+      en: ["Ahri's E can interrupt Illaoi's W"],
     },
     illaoi: {
       ko: [],

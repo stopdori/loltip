@@ -10,7 +10,7 @@ export const ahri_vi: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 바이 Q를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Vi's Q"],
     },
     vi: {
       ko: [],

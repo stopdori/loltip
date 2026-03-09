@@ -10,7 +10,7 @@ export const akali_fiddlesticks: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 피들스틱 R을 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Fiddlesticks's R"],
     },
     fiddlesticks: {
       ko: [],

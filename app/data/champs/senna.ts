@@ -15,7 +15,7 @@ const senna: ChampData = {
     ko: [
     "P의 [[MS_UP]], [[SLOW]]는 챔피언 대상으로\n스택을 터뜨렸을 때만 발동", "P 망령들에 텔 안타짐\n[[CRIT]]가 100% 넘어가면\nP의 [[CRIT]] 수치가 생명력 흡수로 변환됨", "W는 광역 [[ROOT]]임", "E는 아군이 E속에 들어갔다 나오면 망령이 되는데, 망령일 때 [[UNTARGETABLE]], [[MS_UP]]가 됨"
   ],
-    en: []
+    en: ["P's [[MS_UP]] and [[SLOW]] trigger only when attacking a champion\nand only when the stack burst is triggered", "Cannot TP onto P wraiths.\nWhen [[CRIT]] exceeds 100%, excess crit converts to lifesteal via P", "W is a wide-range [[ROOT]]", "E: allies who enter and exit the mist become wraiths, gaining [[UNTARGETABLE]] and [[MS_UP]]"]
   },
 
 vision: {

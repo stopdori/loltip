@@ -10,7 +10,7 @@ export const ahri_xerath: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 제라스 Q, R(시전집중)을 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Xerath's Q and R (channeling)"],
     },
     xerath: {
       ko: [],

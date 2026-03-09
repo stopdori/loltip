@@ -15,7 +15,7 @@ const ezreal: ChampData = {
     ko: [
     "P는 스택형 버프여서 스킬들로 유지시켜야 함", "[[E_FLASH]] 판정이 점멸 도착한 곳에서 공격이 나감", "[[R_FLASH]]은 가능하지만, 원래 위치에서 스킬이 발동하기 때문에 불가능이라고 분류하기로 함",
   ],
-    en: []
+    en: ["P is a stacking buff that must be maintained with skills", "[[E_FLASH]] fires from the flash destination", "[[R_FLASH]] technically works but since R fires from Ezreal's original position, it's classified as not possible"]
   },
 
 vision: {

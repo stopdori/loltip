@@ -10,7 +10,7 @@ export const alistar_evelynn: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 이블린 E를 끊을 수 있음", "알리스타 E의 [[STUN]]로 이블린 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.", "알리스타 R의 [[CC_CLEANSE]]로 이블린 W의 [[CHARM]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q and W can interrupt Evelynn's E", "Alistar's E [[STUN]] cannot interrupt Evelynn's E. However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Evelynn's W [[CHARM]]"],
     },
     evelynn: {
       ko: [],

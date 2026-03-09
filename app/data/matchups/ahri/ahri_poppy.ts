@@ -10,7 +10,7 @@ export const ahri_poppy: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 뽀삐 E, R(시전집중)을 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Poppy's E and R (channeling)"],
     },
     poppy: {
       ko: [],

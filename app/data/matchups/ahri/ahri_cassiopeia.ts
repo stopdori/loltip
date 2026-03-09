@@ -14,7 +14,7 @@ export const ahri_cassiopeia: MatchupSummary = {
     },
     cassiopeia: {
       ko: ["카시오페아 W의 [[GROUNDED]]로 아리 R을 사용하지 못하게 할 수 있음\n이미 사용된 아리 R을 끊을 수는 없음"],
-      en: [],
+      en: ["Cassiopeia's W [[GROUNDED]] can prevent Ahri from casting R\nHowever, it cannot interrupt Ahri's R once already activated"],
     },
   },
 };

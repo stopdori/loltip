@@ -10,11 +10,11 @@ export const ahri_lillia: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 릴리아 W를 조건부로 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Lillia's W under certain conditions"],
     },
     lillia: {
       ko: ["릴리아 R의 [[SLEEP]]으로 아리 R을 끊을 수 없음. 단, [[SLEEP]]은 남아있음"],
-      en: [],
+      en: ["Lillia's R [[SLEEP]] cannot interrupt Ahri's R. However, the [[SLEEP]] still applies."],
     },
   },
 };

@@ -10,7 +10,7 @@ export const alistar_pyke: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 파이크 E를 끊을 수 있음", "알리스타 E의 [[STUN]]로 파이크 E를 끊을 수 없음. 단, [[STUN]]은 남아있음", "알리스타 R의 [[CC_CLEANSE]]로 파이크 Q의 [[SLOW]] [[GRAB]], E의 [[STUN]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q and W can interrupt Pyke's E", "Alistar's E [[STUN]] cannot interrupt Pyke's E. However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Pyke's Q [[SLOW]] [[GRAB]], E [[STUN]]"],
     },
     pyke: {
       ko: [],

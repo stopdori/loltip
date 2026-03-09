@@ -10,7 +10,7 @@ export const ahri_missfortune: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 미스포츈 R(채널링)을 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Miss Fortune's R (channeling)"],
     },
     missfortune: {
       ko: [],

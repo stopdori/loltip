@@ -10,7 +10,7 @@ export const akali_ambessa: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 암베사 P, R을 따라 갈 수 있음"],
-      en: [],
+      en: ["Akali's E2 can follow Ambessa's P and R"],
     },
     ambessa: {
       ko: [],

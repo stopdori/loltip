@@ -14,7 +14,7 @@ export const akali_ivern: MatchupSummary = {
     },
     ivern: {
       ko: ["아이번 R로 아칼리 E를 막을 수 있음"],
-      en: [],
+      en: ["Ivern's R can block Akali's E"],
     },
   },
 };

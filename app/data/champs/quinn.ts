@@ -15,7 +15,7 @@ const quinn: ChampData = {
     ko: [
     "퀸은 거의 모든스킬이 P를 발동시키기 때문에 사실상 모든스킬이 [[REVEALED]]을 가지고 있음", "Q의 [[NEARSIGHT]]는 정화로 풀리지 않음\n단, 정화를 제외한 [[CC_CLEANSE]]로 해제 가능", "W는 부쉬 안에도 보여줌"
   ],
-    en: []
+    en: ["Almost all of Quinn's skills proc P, so effectively all skills have [[REVEALED]]", "Q's [[NEARSIGHT]] cannot be removed by Cleanse.\nOther [[CC_CLEANSE]] methods (not Cleanse) can remove it", "W reveals targets inside brushes"]
   },
 
 vision: {

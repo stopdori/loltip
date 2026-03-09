@@ -10,11 +10,11 @@ export const ahri_diana: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 다이애나 E를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Diana's E"],
     },
     diana: {
       ko: ["다이애나 R로 아리 R을 끊을 수 있음"],
-      en: [],
+      en: ["Diana's R can interrupt Ahri's R"],
     },
   },
 };

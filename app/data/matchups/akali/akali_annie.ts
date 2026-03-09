@@ -14,7 +14,7 @@ export const akali_annie: MatchupSummary = {
     },
     annie: {
       ko: ["애니 R 소환으로 아칼리 E를 막을 수 있음"],
-      en: [],
+      en: ["Annie's R summon can block Akali's E"],
     },
   },
 };

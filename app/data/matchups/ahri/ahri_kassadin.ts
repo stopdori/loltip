@@ -10,7 +10,7 @@ export const ahri_kassadin: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 카사딘 R을 끊을 수 없음. 단, [[CHARM]]은 남아있음"],
-      en: [""],
+      en: ["Ahri's E cannot interrupt Kassadin's R. However, [[CHARM]] still applies."],
     },
     kassadin: {
       ko: [],

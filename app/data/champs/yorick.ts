@@ -15,7 +15,7 @@ const yorick: ChampData = {
     ko: [
     "W에 텔 안됨", "R 재사용하면 다시 불러들일 수 없음"
   ],
-    en: []
+    en: ["Cannot TP onto W", "R cannot be recalled after recasting"]
   },
 
 vision: {

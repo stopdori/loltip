@@ -14,7 +14,7 @@ export const ashe_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 애쉬 평타, Q(평타), W, R을 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Ashe's 평타, Q(평타), W and R from hitting when outside the zone"],
     },
   },
 };

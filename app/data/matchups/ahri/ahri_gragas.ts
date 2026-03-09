@@ -10,11 +10,11 @@ export const ahri_gragas: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 그라가스 E를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Gragas's E"],
     },
     gragas: {
       ko: ["그라가스 E, R로 아리 R을 끊을 수 있음"],
-      en: [],
+      en: ["Gragas's E and R can interrupt Ahri's R"],
     },
   },
 };

@@ -10,7 +10,7 @@ export const ahri_shen: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 쉔 E, R(시전집중)을 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Shen's E and R (channeling)"],
     },
     shen: {
       ko: [],

@@ -10,7 +10,7 @@ export const aatrox_teemo: MatchupSummary = {
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 W로 [[INVISIBILITY]] 티모를 볼 수 있음"],
-      en: [""],
+      en: ["Aatrox's W reveals [[INVISIBILITY]] Teemo"],
     },
     teemo: {
       ko: [],

@@ -10,7 +10,7 @@ export const aatrox_samira: MatchupSummary = {
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W [[GRAB]]효과로 사미라 E와 R의 채널링을 끊을 수 있음"],
-      en: [""],
+      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Samira's E and R (channeling)"],
     },
     samira: {
       ko: [],

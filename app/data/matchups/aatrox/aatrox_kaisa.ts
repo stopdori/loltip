@@ -10,7 +10,7 @@ export const aatrox_kaisa: MatchupSummary = {
   highlightsByChamp: {
     aatrox: {
       ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 카이사 R을 끊을 수 있음", "아트록스 W로 카이사 진화E의 [[INVISIBILITY]]을 볼 수 있음"],
-      en: [],
+      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Kai'Sa's R", "Aatrox's W reveals Kai'Sa's evolved E [[INVISIBILITY]]"],
     },
     kaisa: {
       ko: [],

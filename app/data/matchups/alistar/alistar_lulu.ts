@@ -10,7 +10,7 @@ export const alistar_lulu: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 룰루 Q의 [[SLOW]], W의 [[POLYMORPH]], R의 [[SLOW]] [[AIRBORNE]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Lulu's Q [[SLOW]], W [[POLYMORPH]], R [[SLOW]] [[AIRBORNE]]"],
     },
     lulu: {
       ko: [],

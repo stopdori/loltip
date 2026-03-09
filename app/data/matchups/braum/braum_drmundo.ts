@@ -9,8 +9,8 @@ export const braum_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     braum: {
-      ko: [""],
-      en: [""],
+      ko: ["브라움 E(방패)로 문도박사 평타, Q, W(최초 한틱), E를 막을([[DAMAGE_NULLIFY]]) 수 있음", "브라움 E(방패)로 문도박사 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음"],
+      en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Dr. Mundo's basic attacks, Q, W (first tick) and E", "Braum's E(Shield) can [[INTERCEPT_PROJECTILE]] Dr. Mundo's Q"],
     },
     drmundo: {
       ko: [],

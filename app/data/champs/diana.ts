@@ -15,7 +15,7 @@ const diana: ChampData = {
     ko: [
     "P는 레벨별 [[AS_UP]]이 있고\n스킬 사용시 [[AS_UP]] 추가로 있음", "W 구체를 다 터뜨리면 추가 [[SHIELD]] 얻음", "EQ로 E 초기화 안됨",
   ],
-    en: []
+    en: ["P has a level-based [[AS_UP]] plus additional [[AS_UP]] from using skills", "Fully detonating all W spheres grants a bonus [[SHIELD]]", "E+Q does not reset E"]
   },
 
 vision: {

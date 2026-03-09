@@ -14,7 +14,7 @@ export const ahri_drmundo: MatchupSummary = {
     },
     drmundo: {
       ko: ["문도 P가 아리 E의 [[CHARM]]을 무시할 수 있음"],
-      en: [],
+      en: ["Dr. Mundo's P can ignore Ahri's E [[CHARM]]"],
     },
   },
 };

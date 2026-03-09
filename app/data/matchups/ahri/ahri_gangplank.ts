@@ -14,7 +14,7 @@ export const ahri_gangplank: MatchupSummary = {
     },
     gangplank: {
       ko: ["갱플랭크 W의 [[CC_CLEANSE]]로 아리 E의 [[CHARM]]을 해제할 수 있음"],
-      en: [],
+      en: ["Gangplank's W [[CC_CLEANSE]] can cleanse Ahri's E [[CHARM]]"],
     },
   },
 };

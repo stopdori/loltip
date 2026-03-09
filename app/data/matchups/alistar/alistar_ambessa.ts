@@ -10,7 +10,7 @@ export const alistar_ambessa: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 암베사 P를 끊을 수 있음", "알리스타 E의 [[STUN]]로 암베사 P를 끊을 수 없음. 단, [[STUN]]은 남아있음", "알리스타 R의 [[CC_CLEANSE]]로 암베사 E의 [[SLOW]], R의 [[STUN]]/[[SUPPRESS]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q and W can interrupt Ambessa's P", "Alistar's E [[STUN]] cannot interrupt Ambessa's P. However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Ambessa's E [[SLOW]] and R [[STUN]]/[[SUPPRESS]]"],
     },
     ambessa: {
       ko: [],

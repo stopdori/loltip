@@ -10,7 +10,7 @@ export const ahri_jarvaniv: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 자르반 EQ를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Jarvan IV's EQ combo"],
     },
     jarvaniv: {
       ko: [],

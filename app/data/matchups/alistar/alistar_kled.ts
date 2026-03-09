@@ -10,7 +10,7 @@ export const alistar_kled: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 클레드 승마폼 E를 끊을 수 있음", "알리스타 E의 [[STUN]]로 클레드 승마폼 E를 끊을 수 없음. 단, [[STUN]]은 남아있음", "알리스타 R의 [[CC_CLEANSE]]로 클레드 승마폼 Q의 [[SLOW]] [[AIRBORNE]], R의 [[AIRBORNE]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q and W can interrupt Kled's 승마폼 E", "Alistar's E [[STUN]] cannot interrupt Kled's 승마폼 E. However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Kled's 승마폼 Q [[SLOW]] [[AIRBORNE]], R [[AIRBORNE]]"],
     },
     kled: {
       ko: [],

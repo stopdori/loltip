@@ -14,7 +14,7 @@ export const ahri_yasuo: MatchupSummary = {
     },
     yasuo: {
       ko: ["야스오 W가 아리 Q, W, E, R을 막을 수 있음."],
-      en: [],
+      en: ["Yasuo's W can block Ahri's Q, W, E, and R."],
     },
   },
 };

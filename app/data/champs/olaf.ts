@@ -15,7 +15,7 @@ const olaf: ChampData = {
     ko: [
     "[[Q_FLASH]] 안됨\nQ(도끼)에 텔 안타짐", "E를 맞히면 R의 [[MS_UP]]와 지속시간 증가"
   ],
-    en: []
+    en: ["[[Q_FLASH]] not possible. Cannot TP onto Q (axe)", "Hitting E extends R's [[MS_UP]] duration"]
   },
 
 vision: {

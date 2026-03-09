@@ -14,7 +14,7 @@ export const drmundo_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 문도 박사 Q, E(관통)을 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Dr. Mundo's 박사 Q and E(pierce) from hitting when outside the zone"],
     },
   },
 };

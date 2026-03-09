@@ -10,7 +10,7 @@ export const alistar_katarina: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W, E로 카타리나 R(채널링)을 끊을 수 있음"],
-      en: [""],
+      en: ["Alistar's Q, W, and E can interrupt Katarina's R(channeling)"],
     },
     katarina: {
       ko: [],

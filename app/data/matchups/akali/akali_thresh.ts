@@ -10,7 +10,7 @@ export const akali_thresh: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 쓰레쉬 Q, W를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Thresh's Q and W"],
     },
     thresh: {
       ko: [],

@@ -14,7 +14,7 @@ export const amumu_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 아무무 Q, R을 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W can avoid Amumu's Q and R from outside the range"],
     },
   },
 };

@@ -10,7 +10,7 @@ export const akali_neeko: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E로 니코 W의 [[INVISIBILITY]]를 볼 수 있음"],
-      en: [""],
+      en: ["Akali's E reveals 니코 W [[INVISIBILITY]]"],
     },
     neeko: {
       ko: [],

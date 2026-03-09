@@ -10,11 +10,11 @@ export const ahri_jayce: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 제이스 해머폼 Q를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Jayce's hammer form Q"],
     },
     jayce: {
       ko: ["제이스 해머폼 E로 아리 R을 끊을 수 있음"],
-      en: [],
+      en: ["Jayce's hammer form E can interrupt Ahri's R"],
     },
   },
 };

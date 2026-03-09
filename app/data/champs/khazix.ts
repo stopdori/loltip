@@ -27,7 +27,7 @@ const khazix: ChampData = {
     ko: [
     "P에 [[SLOW]]는 내 모습이 상대에게 안 보일 때 발동", "W [[HEAL]]은 폭발 범위내에 서 있어야 발동", "[[INVISIBILITY]] 상태일 때 점멸 써도 안 풀림\nE(점프)는 풀림", "E로 날아가는 도중 스킬 시전 가능"
   ],
-    en: []
+    en: ["P's [[SLOW]] activates when Kha'Zix is invisible to the target", "W [[HEAL]] only activates when standing inside the explosion radius", "[[INVISIBILITY]] does not break on flash.\nE (jump) does break it", "Skills can be cast while mid-air from E"]
   },
 
 vision: {

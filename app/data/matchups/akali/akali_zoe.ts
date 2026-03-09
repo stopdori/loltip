@@ -10,7 +10,7 @@ export const akali_zoe: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 조이 R을 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Zoe's R"],
     },
     zoe: {
       ko: [],

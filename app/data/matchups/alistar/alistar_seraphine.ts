@@ -10,7 +10,7 @@ export const alistar_seraphine: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 세라핀 E의 [[SLOW]] [[STUN]] [[ROOT]], R의 [[CHARM]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Seraphine's E [[SLOW]] [[STUN]] [[ROOT]], R [[CHARM]]"],
     },
     seraphine: {
       ko: [],

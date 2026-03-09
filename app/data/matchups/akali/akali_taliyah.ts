@@ -10,7 +10,7 @@ export const akali_taliyah: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 탈리야 R을 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Taliyah's R"],
     },
     taliyah: {
       ko: [],

@@ -10,11 +10,11 @@ export const akali_yasuo: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 야스오 E, R을 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Yasuo's E and R"],
     },
     yasuo: {
       ko: ["야스오 W로 아칼리 Q, E 막을 수 있음"],
-      en: [],
+      en: ["Yasuo's W can block Akali's Q and E"],
     },
   },
 };

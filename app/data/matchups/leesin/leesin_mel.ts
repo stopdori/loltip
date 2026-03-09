@@ -10,7 +10,7 @@ export const leesin_mel: MatchupSummary = {
   highlightsByChamp: {
     leesin: {
       ko: ["멜 W로 리신 Q 반사 가능. 이때 리신은 Q2를 사용 할 수 없음"],
-      en: [""],
+      en: ["Mel's W can reflect Lee Sin's Q. In this case, Lee Sin cannot use Q2"],
     },
     mel: {
       ko: [],

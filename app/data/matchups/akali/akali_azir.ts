@@ -10,7 +10,7 @@ export const akali_azir: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 아지르 E를 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Azir's E"],
     },
     azir: {
       ko: [],

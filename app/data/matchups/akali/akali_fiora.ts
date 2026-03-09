@@ -10,11 +10,11 @@ export const akali_fiora: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 피오라 Q를 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Fiora's Q"],
     },
     fiora: {
       ko: ["피오라 W를 아칼리 E에 사용하면 아칼리 E2 사용불가"],
-      en: [],
+      en: ["If Fiora uses W during Akali's E, Akali cannot use E2"],
     },
   },
 };

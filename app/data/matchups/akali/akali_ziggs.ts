@@ -10,7 +10,7 @@ export const akali_ziggs: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 직스 W를 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow 직스 W"],
     },
     ziggs: {
       ko: [],

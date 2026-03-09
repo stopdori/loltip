@@ -10,7 +10,7 @@ export const alistar_nasus: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 나서스 W의 [[SLOW]]를 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Nasus's W [[SLOW]]"],
     },
     nasus: {
       ko: [],

@@ -10,7 +10,7 @@ export const akali_rammus: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 람머스 Q, R을 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Rammus's Q and R"],
     },
     rammus: {
       ko: [],

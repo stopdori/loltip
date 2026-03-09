@@ -40,7 +40,7 @@ const kayn: ChampData = {
     ko: [
     "진화 전 케인은 정말 약함", "다르킨 P(패시브)에 [[LIFESTEAL]]이있어서 모든스킬이 [[LIFESTEAL]]이 가능함",
   ],
-    en: []
+    en: ["Pre-transformation Kayn is very weak", "Darkin P's [[LIFESTEAL]] applies to all abilities"]
   },
 
 vision: {

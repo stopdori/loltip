@@ -10,7 +10,7 @@ export const alistar_soraka: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 소라카 E의 [[SLOW]]는 해제할 수 없음", "알리스타 R의 [[CC_CLEANSE]]로 소라카 E의 [[SILENCE]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] cannot cleanse Soraka's E [[SLOW]]", "Alistar's R [[CC_CLEANSE]] can cleanse Soraka's E [[SILENCE]]"],
     },
     soraka: {
       ko: [],

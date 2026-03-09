@@ -126,8 +126,7 @@ useEffect(() => {
   const subtitle =
     lang === "ko" ? "롤 챔피언 특징과 메커니즘 요약" : "Summary of LoL Champion Features and Mechanisms";
 
-  const firstUltLabel = lang === "ko" ? "선궁" : "First Ult";
-  const diffLabel = lang === "ko" ? "차이" : "diff";
+  const firstUltLabel = lang === "ko" ? "궁 주도권" : "Cooldown Lead";
 
   const myIsSooner = canCompare ? myUltCd! < enemyUltCd! : false;
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
@@ -150,7 +149,7 @@ useEffect(() => {
           {/* 상단: 패치 / 공지 / 도움말 */}
           <div className="flex items-center gap-2">
             <span className="text-xl text-slate-300 select-none whitespace-nowrap">
-              🛠 26.4
+              🛠 26.5
             
             </span>
 
@@ -199,7 +198,7 @@ useEffect(() => {
   <div className="max-w-5xl mx-auto px-3 py-2">
 
 
-    <div className="flex items-center justify-center gap-16">
+    <div className="flex items-center justify-center gap-3 sm:gap-16">
 
       <ChampSelectButton
   label={lang === "ko" ? "챔피언" : "Champion"}
@@ -276,7 +275,7 @@ setOpenTarget(null);
       
         {/* MY */}
 {myChamp && (
-<div className="flex flex-col w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-1">
+<div className="flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-1">
 
 
 {/* 챔피언 이름 표시 */}
@@ -316,7 +315,7 @@ setOpenTarget(null);
 
         {/* ENEMY */}
         {enemyChamp && (
-<div className="flex flex-col w-[430px] rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-3">
+<div className="flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-3">
 
 {/* 챔피언 이름 표시 */}
  <div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
@@ -356,7 +355,7 @@ setOpenTarget(null);
       {firstUltLabel}
     </div>
     <div className="mt-1 text-lg font-bold text-emerald-300">
-      {diff != null ? `${diff}s ${diffLabel}` : "--"}
+      {diff != null ? `${diff}s` : "--"}
     </div>
   </div>
 )}

@@ -15,7 +15,7 @@ const zed: ChampData = {
     ko: [
     "제드는 그림자와 같이 공격해야\n추가 효과들이 있음", "[[W_FLASH]], [[E_FLASH]] 안됨", "R은 제드가 사라졌다\n상대방 뒤에서 나옴(자리 고정)"
   ],
-    en: []
+    en: ["Zed must attack alongside his shadow for bonus effects", "[[W_FLASH]] and [[E_FLASH]] not possible", "R makes Zed disappear then reappear behind the target (fixed position)"]
   },
 
 vision: {

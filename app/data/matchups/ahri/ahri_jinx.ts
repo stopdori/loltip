@@ -14,7 +14,7 @@ export const ahri_jinx: MatchupSummary = {
     },
     jinx: {
       ko: ["징크스 E의 [[ROOT]]으로 아리 R을 끊을 수 있음. (흔치않은 판정)"],
-      en: [],
+      en: ["Jinx's E [[ROOT]] can interrupt Ahri's R. (uncommon interaction)"],
     },
   },
 };

@@ -10,7 +10,7 @@ export const ahri_rengar: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 렝가 P를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Rengar's P"],
     },
     rengar: {
       ko: [],

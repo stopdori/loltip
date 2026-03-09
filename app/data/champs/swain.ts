@@ -15,7 +15,7 @@ const swain: ChampData = {
     ko: [
     "[[E_FLASH]] 안됨", "P는 W, E, 킬관여로 획득\n체력회복은 [[GW]] 적용\n최대체력 증가는 [[GW]] 안됨", "E1은 적중하면 [[ROOT]]\nE2는 [[GRAB]]", "R에 [[SLOW]]는 재사용 했을 때 나오는 파동에만"
   ],
-    en: []
+    en: ["[[E_FLASH]] not possible", "P is gained from W, E, and kill participation.\nHP recovery is affected by [[GW]].\nMax HP increase is not affected by [[GW]]", "E1 applies [[ROOT]] on hit.\nE2 is [[GRAB]]", "R's [[SLOW]] only applies to the wave released on recast"]
   },
 
 vision: {

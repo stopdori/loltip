@@ -10,11 +10,11 @@ export const ahri_amumu: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 아무무 Q를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Amumu's Q"],
     },
     amumu: {
       ko: ["아무무 Q로 아리 R을 끊을 수 없고 아리를 따라갈 수 있음. 단, [[STUN]]은 남아있음", "아무무 R로 아리 R을 끊을 수 있음. Q, R 둘다 같은 [[STUN]]인데 판정이 다름"],
-      en: [],
+      en: ["Amumu's Q cannot interrupt Ahri's R but can follow her. The [[STUN]] still applies.", "Amumu's R can interrupt Ahri's R. Both Q and R apply the same [[STUN]], but their interrupt interactions differ."],
     },
   },
 };

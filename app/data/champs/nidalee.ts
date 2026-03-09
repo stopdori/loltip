@@ -29,7 +29,7 @@ const nidalee: ChampData = {
     ko: [
     "쿠거폼 점멸+스킬들 다 안됨", "인간폼 Q, W를 맞히면 사냥이 발동되고 사냥이 발동되면 R 쿨타임이 초기화되서 바로 변신가능"
   ],
-    en: []
+    en: ["All cougar form flash combos are not possible", "Hitting with human form Q or W activates Hunting, which resets R cooldown for an immediate transform"]
   },
 
 vision: {

@@ -10,7 +10,7 @@ export const alistar_skarner: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W, E로 스카너 E(벽통과)를 끊을 수 있음", "알리스타 R의 [[CC_CLEANSE]]로 스카너 Q W 의 [[SLOW]], E의 [[SUPPRESS]] [[STUN]], R의 [[SUPPRESS]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q, W, and E can interrupt Skarner's E(벽통과)", "Alistar's R [[CC_CLEANSE]] can cleanse Skarner's Q W  [[SLOW]], E [[SUPPRESS]] [[STUN]], R [[SUPPRESS]]"],
     },
     skarner: {
       ko: [],

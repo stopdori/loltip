@@ -14,7 +14,7 @@ export const aatrox_lillia: MatchupSummary = {
     },
     lillia: {
       ko: ["릴리아 R의 [[SLEEP]]으로 아트록스 E를 끊을 수 없음. 단, [[SLEEP]]는 남아있음"],
-      en: [],
+      en: ["Lillia's R [[SLEEP]] cannot interrupt Aatrox's E. However, the [[SLEEP]] still applies."],
     },
   },
 };

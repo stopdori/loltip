@@ -15,7 +15,7 @@ const viego: ChampData = {
     ko: [
     "P로 챔피언을 지배했다면\n적에게 다가갈 때 [[MS_UP]]", "벽에 E쓰면 암흑시야여도 보임\n정글링할때 벽에 E를 쓰면\n상대가 내 위치를 알 수 있음", "R의 [[SLOW]]는 체력이 가장 낮은 적 챔피언에게만 적용"
   ],
-    en: []
+    en: ["P grants [[MS_UP]] when approaching an enemy after possessing a champion", "Using E near a wall reveals Viego's position even through fog of war — be careful when jungling", "R [[SLOW]] only applies to the enemy champion with the lowest HP"]
   },
 
 vision: {

@@ -10,7 +10,7 @@ export const alistar_nilah: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 닐라 R의 [[GRAB]]을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Nilah's R [[GRAB]]"],
     },
     nilah: {
       ko: [],

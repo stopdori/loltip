@@ -10,7 +10,7 @@ export const akshan_briar: MatchupSummary = {
   highlightsByChamp: {
     akshan: {
       ko: ["아크샨 R(투사체)은 브라이어 R도 따라감"],
-      en: [""],
+      en: ["Akshan's R (projectiles) will also follow Briar during her R"],
     },
     briar: {
       ko: [],

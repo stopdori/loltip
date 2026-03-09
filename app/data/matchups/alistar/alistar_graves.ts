@@ -10,7 +10,7 @@ export const alistar_graves: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 그레이브즈 E, R을 끊을 수 있음", "알리스타 E의 [[STUN]]로 그레이브즈 E, R을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "알리스타 R의 [[CC_CLEANSE]]로 그레이브즈 W의 [[SLOW]]는 해제할 수 없음"],
-      en: [""],
+      en: ["Alistar's Q and W can interrupt Graves's E and R", "Alistar's E [[STUN]] cannot interrupt Graves's E and R. However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] cannot cleanse Graves's W [[SLOW]]"],
     },
     graves: {
       ko: [],

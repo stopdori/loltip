@@ -15,7 +15,7 @@ const mel: ChampData = {
     ko: [
     "멜 P가 상대에게 충분히 쌓였을때 체력바가 빨갛게 변하는데, 이때 멜이 평타를 친다면 처형.\n(스킬과는 상관 없음)", "W는 챔피언별로 아래 박스에 정리\n하단 박스를 참고", "E [[ROOT]]은 중심부만 걸림", "R로 상대가 처형인지 아닌지 구분하는 방법은\n하단 R의 아이콘이 황금색 테두리가 생기는지 확인"
   ],
-    en: []
+    en: ["When Mel's P stacks are sufficiently built on a target, their health bar turns red — Mel's basic attack then executes them.\n(Skills are not involved)", "W is detailed per champion in the box below", "E [[ROOT]] only applies to the center of the ability", "To determine if R will execute, check if the R icon has a golden border"]
   },
 
 vision: {

@@ -14,7 +14,7 @@ export const evelynn_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 이블린 Q, R을 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Evelynn's Q and R from hitting when outside the zone"],
     },
   },
 };

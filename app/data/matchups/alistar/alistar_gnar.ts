@@ -10,7 +10,7 @@ export const alistar_gnar: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 나르 E(인간/메가)를 끊을 수 있음", "알리스타 E의 [[STUN]]로 나르 E(인간/메가)를 끊을 수 없음. 단, [[STUN]]은 남아있음.", "알리스타 R의 [[CC_CLEANSE]]로 나르 인간폼 Q E의 [[SLOW]], 나르 메가폼 Q E R의 [[SLOW]], W R의 [[STUN]], R의 [[AIRBORNE]] 을 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q and W can interrupt Gnar's E (mini/mega)", "Alistar's E [[STUN]] cannot interrupt Gnar's E (mini/mega). However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Gnar's mini form Q and E [[SLOW]], Gnar's mega form Q, E, and R [[SLOW]], W and R [[STUN]], and R [[AIRBORNE]]"],
     },
     gnar: {
       ko: [],

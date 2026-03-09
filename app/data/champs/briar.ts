@@ -15,7 +15,7 @@ const briar: ChampData = {
     ko: [
     "브라이어 [[LIFESTEAL]] 귀신임\n브라이어 상대로는 [[GW]] 필수임", "E에 [[STUN]]은 대상이 벽에 부딪혀야 걸림"
   ],
-    en: []
+    en: ["Briar's [[LIFESTEAL]] is exceptional — [[GW]] is essential against her", "E's [[STUN]] requires the target to collide with a wall"]
   },
 
 vision: {

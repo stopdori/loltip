@@ -10,7 +10,7 @@ export const ahri_khazix: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 카직스 E를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Kha'Zix's E"],
     },
     khazix: {
       ko: [],

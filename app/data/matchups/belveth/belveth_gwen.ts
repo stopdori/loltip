@@ -14,7 +14,7 @@ export const belveth_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 벨베스 평타, W, E, R를 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Bel'Veth's 평타, W, E and R from hitting when outside the zone"],
     },
   },
 };

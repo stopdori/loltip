@@ -29,7 +29,7 @@ const lulu: ChampData = {
     ko: [
     "[[Q_FLASH]]이 가능은 하지만, 픽스는 점멸로 따라오지 않아 데미지가 덜 들어감", "R이 [[MAX_HP_UP]]여서 풀피에 써도 유효하고\n[[GW]]효과도 안받음\n부담없이 써서 [[AIRBORNE]], [[SLOW]]를 활용해야 좋음",
   ],
-    en: []
+    en: ["[[Q_FLASH]] technically works but the polymorph doesn't follow the flash, so damage is reduced", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]].\nUse it freely for [[AIRBORNE]] and [[SLOW]] utility"]
   },
 
 vision: {

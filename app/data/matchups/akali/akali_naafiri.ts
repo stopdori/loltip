@@ -10,7 +10,7 @@ export const akali_naafiri: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 나피리 E, R을 따라갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Naafiri's E and R"],
     },
     naafiri: {
       ko: [],

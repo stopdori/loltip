@@ -15,7 +15,7 @@ const orianna: ChampData = {
     ko: [
     "공에 텔 안타짐", "E 기본지속 효과로\n공을 들고있는 대상은 방마저 증가가 있음", "오리녹턴(말파,요네,조이 등등) 연계는\n아군이 오리 E 사거리 안에 있다가 아군이 날아가는 순간에 오리가 E를 주고 R을 연타하면 공이 도착해서 발동함",
   ],
-    en: []
+    en: ["Cannot TP onto the ball", "E's passive grants bonus armor and MR to whoever holds the ball", "Orianna-Nocturne (Malphite, Yone, Zoe, etc.) combos:\nWhile an ally is within E range and about to be launched, Orianna casts E then immediately R — the ball arrives in time to trigger"]
   },
 
 vision: {

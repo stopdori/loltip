@@ -10,7 +10,7 @@ export const akali_graves: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 그레이브즈 E, R을 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Graves's E and R"],
     },
     graves: {
       ko: [],

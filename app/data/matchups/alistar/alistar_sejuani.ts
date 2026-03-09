@@ -10,7 +10,7 @@ export const alistar_sejuani: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 Q, W로 세주아니 Q를 끊을 수 있음", "알리스타 E의 [[STUN]]로 세주아니 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음", "알리스타 R의 [[CC_CLEANSE]]로 세주아니 Q의 [[AIRBORNE]], E의 [[STUN]], R의 [[SLOW]] [[STUN]] 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's Q and W can interrupt Sejuani's Q", "Alistar's E [[STUN]] cannot interrupt Sejuani's Q. However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Sejuani's Q [[AIRBORNE]], E [[STUN]], R [[SLOW]] [[STUN]]"],
     },
     sejuani: {
       ko: [],

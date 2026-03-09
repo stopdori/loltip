@@ -14,7 +14,7 @@ export const bard_gwen: MatchupSummary = {
     },
     gwen: {
       ko: ["그웬 W로 바드 평타, Q, R를 범위 밖에서 맞지 않음"],
-      en: [],
+      en: ["Gwen's W prevents Bard's 평타, Q and R from hitting when outside the zone"],
     },
   },
 };

@@ -15,7 +15,7 @@ const jhin: ChampData = {
     ko: [
     "P의 [[MS_UP]]는 평타로 치명타 적중시 발동", "4타를 들고있으면 이속이 빠름\n4타 유지를 위해 덫을 깔아 지속시간 연장시키면 좋음", "W의 [[ROOT]]은 대상이 어떤 피해(디버프들 포함)를 받으면 조건이 활성화됨", "E의 [[SLOW]]는 덫 범위위에 있는동안 발동"
   ],
-    en: []
+    en: ["P's [[MS_UP]] triggers on crit with a basic attack", "Holding the 4th shot increases movement speed.\nPlacing traps to extend the 4th shot buff is effective", "W's [[ROOT]] activates when the target receives any damage or debuff", "E's [[SLOW]] applies continuously to enemies standing in the trap area"]
   },
 
 vision: {

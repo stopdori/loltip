@@ -15,7 +15,7 @@ const taliyah: ChampData = {
     ko: [
     "Q [[SLOW]]는 다진땅 에서 발동한 Q만 발동", "R은 비전투에만 사용 가능\nR벽에 텔 안타짐\nR로 전령 박치기 막을 수 있음\nR은 타고있을 때 데미지 들어오면 내려짐"
   ],
-    en: []
+    en: ["Q [[SLOW]] only applies from Q cast on Worked Ground", "R is only usable out of combat.\nCannot TP onto R wall.\nR can block Void Herald charge.\nTaking damage while riding R dismounts Taliyah"]
   },
 
 vision: {

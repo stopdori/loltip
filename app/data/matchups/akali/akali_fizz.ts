@@ -10,7 +10,7 @@ export const akali_fizz: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 피즈 Q, E를 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Fizz's Q and E"],
     },
     fizz: {
       ko: [],

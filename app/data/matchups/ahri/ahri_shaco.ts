@@ -10,7 +10,7 @@ export const ahri_shaco: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E를 샤코 R(시전집중)에 맞히면 샤코가 분화되고 본체가 [[CHARM]]에 걸려있음"],
-      en: [""],
+      en: ["If Ahri's E hits Shaco during his R (channeling), Shaco splits and the main body is affected by [[CHARM]]"],
     },
     shaco: {
       ko: [],

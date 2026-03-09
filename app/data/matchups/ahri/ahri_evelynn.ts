@@ -10,11 +10,11 @@ export const ahri_evelynn: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 이블린 E를 끊을 수 있음"],
-      en: [],
+      en: ["Ahri's E can interrupt Evelynn's E"],
     },
     evelynn: {
       ko: ["이블린 W의 [[CHARM]]으로 아리 R을 끊을 수 있음"],
-      en: [],
+      en: ["Evelynn's W [[CHARM]] can interrupt Ahri's R"],
     },
   },
 };

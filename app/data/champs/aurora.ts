@@ -15,7 +15,7 @@ const aurora: ChampData = {
     ko: [
     "[[R_FLASH]] 안됨", "E는 스킬이 2단계로 나뉨 1.준비단계, 2.후진단계\n 1.준비단계에서 CC를 맞으면 CC를 무시하고 후진이 발동함"
   ],
-    en: []
+    en: ["[[R_FLASH]] not possible", "E has two phases: 1. Wind-up, 2. Retreat.\nIf hit by CC during phase 1, Aurora ignores it and phase 2 still triggers"]
   },
 
 vision: {

@@ -10,7 +10,7 @@ export const ahri_tristana: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 트리스타나 W(점프단계)를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Tristana's W (jump phase)"],
     },
     tristana: {
       ko: [],

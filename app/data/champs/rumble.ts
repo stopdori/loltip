@@ -15,7 +15,7 @@ const rumble: ChampData = {
     ko: [
     "과열되면 럼블이 [[SILENCE]] 되면서\n[[AS_UP]]에 추뎀있음", "럼블 E의 [[MR_SHRED]]은 [[SLOW]] 대상에게 적중하면 2배이고, 과열 E는 효과가 50% 증가함\n한마디로 맞지마라",
   ],
-    en: []
+    en: ["Overheating causes [[SILENCE]] on Rumble\nbut grants [[AS_UP]] with bonus damage", "Rumble's E [[MR_SHRED]] doubles when hitting a [[SLOW]]ed target, and overheat E increases the effect by 50%.\nIn short: don't get hit"]
   },
 
 vision: {

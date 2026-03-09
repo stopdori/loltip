@@ -15,7 +15,7 @@ const galio: ChampData = {
     ko: [
     "[[W_FLASH]] 안됨. 막혔습니다\nW는 스마트키를 풀고 쓰시면 좋음", "[[E_FLASH]] 안됨", "E스킬은 두단계로 나뉨 후진/돌진\n후진단계에 갈리오가 맞은 CC는 유효하지만\n돌진단계가 발동되어 앞으로 이동하는것\n돌진단계에는 CC저항력 없음"
   ],
-    en: []
+    en: ["[[W_FLASH]] not possible (patched).\nDisabling smartcast on W is recommended", "[[E_FLASH]] not possible", "E has two phases: wind-up / dash.\nCC hit during wind-up is valid, but Galio still dashes forward.\nThere is no CC immunity during the dash phase"]
   },
 
 vision: {

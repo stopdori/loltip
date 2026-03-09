@@ -14,7 +14,7 @@ export const akali_heimerdinger: MatchupSummary = {
     },
     heimerdinger: {
       ko: ["하이머딩거 Q로 아칼리 E를 막을 수 있음"],
-      en: [],
+      en: ["Heimerdinger's Q can block Akali's E"],
     },
   },
 };

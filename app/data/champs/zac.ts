@@ -15,7 +15,7 @@ const zac: ChampData = {
     ko: [
     "[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]] 안됨", "P 쿨타임은 300s\n [[REVIVE]]은 [[GW]]효과 안받음", "E에 [[AIRBORNE]]은 충전시간에 비례", "R에 처음 맞으면 [[AIRBORNE]]\n그 다음은 [[SLOW]]"
   ],
-    en: []
+    en: ["[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]] not possible", "P cooldown is 300s.\n[[REVIVE]] is unaffected by [[GW]]", "E [[AIRBORNE]] scales with charge duration", "First hit of R applies [[AIRBORNE]], subsequent hits apply [[SLOW]]"]
   },
 
 vision: {

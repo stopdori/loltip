@@ -14,7 +14,7 @@ export const akali_hwei: MatchupSummary = {
     },
     hwei: {
       ko: ["흐웨이 EQ, EE로 아칼리 E, E2, R, R2를 끊을 수 있음"],
-      en: [],
+      en: ["Hwei's EQ, EE can interrupt Akali's E, E2, R and R2"],
     },
   },
 };

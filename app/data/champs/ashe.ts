@@ -15,7 +15,7 @@ const ashe: ChampData = {
     ko: [
     "[[W_FLASH]] 되는데 마우스 방향 잘 조준해야함\nW에는 [[SLOW]]가 없음\nP의 [[SLOW]]가 걸리는것", "E는 부쉬 안에도 보여줌"
   ],
-    en: []
+    en: ["[[W_FLASH]] works but mouse aim is important.\nW itself has no [[SLOW]] — the [[SLOW]] comes from P", "E reveals targets inside brushes"]
   },
 
 vision: {

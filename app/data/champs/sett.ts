@@ -15,7 +15,7 @@ const sett: ChampData = {
     ko: [
     "[[E_FLASH]] 안됨", "W는 중심에 맞히면 고정 데미지\nW는 신중하게 쓰는게 좋음", "E [[STUN]]은 조건부로, 양쪽을 박치기 해야함\n미니언이랑 부딪혀도 [[STUN]]이 걸림", "R은 탱커에게 쓰면 착지 데미지가 쌔짐 "
   ],
-    en: []
+    en: ["[[E_FLASH]] not possible", "W center hit deals true damage.\nUse W carefully", "E [[STUN]] is conditional — both targets must collide with each other.\nMinions can also be the collision partner for [[STUN]]", "R landing damage is amplified on tanks"]
   },
 
 vision: {

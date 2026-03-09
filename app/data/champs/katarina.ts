@@ -15,7 +15,7 @@ const katarina: ChampData = {
     ko: [
     "단검에 텔 안됨", "E스킬은 대상 근처로 순간이동하고 때리는 스킬임 \n그래서 대상 또는 근처 땅에 쓰면 그 위치로 이동함",
   ],
-    en: []
+    en: ["Cannot TP onto daggers", "E teleports Katarina near the target and strikes.\nCasting on the target or nearby ground moves her to that position"]
   },
 
 vision: {

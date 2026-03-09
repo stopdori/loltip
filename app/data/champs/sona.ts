@@ -15,7 +15,7 @@ const sona: ChampData = {
     ko: [
     "스킬+점멸이 하나도 안됨\n리메이크 필요해보임", "P의 [[SLOW]]는 E강화 평타만", "W강화 평타는 대상의 피해를 감소시킴\n(탈진과 비슷)"
   ],
-    en: []
+    en: ["No skill+flash combos work at all. Needs a rework", "P's [[SLOW]] only applies through E-enhanced basic attacks", "W-enhanced basic attack reduces incoming damage on the target (similar to Exhaust)"]
   },
 
 vision: {

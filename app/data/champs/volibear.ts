@@ -15,7 +15,7 @@ const volibear: ChampData = {
     ko: [
     "[[R_FLASH]] 안됨", "P는 최대 5스택", "Q스킬은 두단계로 나뉨 추격/공격\n추격단계에 볼리베어가 맞은 CC는 유효하여 Q스킬이 해제되지만, 쿨타임을 돌려줌\n공격단계가 발동되면 CC를 맞아도 스킬이 유효함", "Q로 얇은벽 넘어의 적을 공격하면 벽 넘어짐", "W에 [[HEAL]]은 W로 2번 때려야 발동", "R은 [[MAX_HP_UP]]여서 풀피에도 유효함\n[[GW]]영향도 안받음", "R타워 비활성화\n이미 발사한 타워공격을 무효화 시킬 수 없음\n타워 어그로를 해제할 수 없음",
   ],
-    en: []
+    en: ["[[R_FLASH]] not possible", "P stacks up to 5", "Q has two phases: charge / strike.\nCC during the charge phase cancels Q but refunds the cooldown.\nOnce the strike phase activates, CC is ignored", "Q over a thin wall toward an enemy wall-hops", "W [[HEAL]] requires hitting with W twice", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]]", "R disables towers.\nAlready-fired tower shots cannot be nullified.\nTower aggro cannot be removed"]
   },
 
 vision: {

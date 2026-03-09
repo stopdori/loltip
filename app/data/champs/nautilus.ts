@@ -15,7 +15,7 @@ const nautilus: ChampData = {
     ko: [
     "[[Q_FLASH]] 안됨\nQ는 벽이나 구조물에 적중하면 이동 가능함", "Q스킬은 두단계로 나뉨 투척/그렙\n투척탄계에 노틸러스가 맞은 CC는 유효하지만\n그렙단계가 발동되어 앞으로 이동하는것\n그렙단계에는 CC저항력 없음"
   ],
-    en: []
+    en: ["[[Q_FLASH]] not possible.\nQ can pull Nautilus toward walls and structures", "Q has two phases: throw / grapple.\nCC during the throw phase is valid.\nOnce the grapple phase starts and Nautilus moves forward, there is no CC immunity"]
   },
 
 vision: {

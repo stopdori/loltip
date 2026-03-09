@@ -15,7 +15,7 @@ const chogath: ChampData = {
     ko: [
     "R(포식)은 대상을 처치하면 최대체력이 증가한다는 관점에서 [[HEAL]]이라고 적음 \n다만 [[GW]]은 적용안됨"
   ],
-    en: []
+    en: ["R (Feast) is listed as [[HEAL]] because it increases max HP on kill,\nbut [[GW]] does not apply"]
   },
 
 vision: {

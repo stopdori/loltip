@@ -14,7 +14,7 @@ export const gragas_morgana: MatchupSummary = {
     },
     morgana: {
       ko: ["모르가나 E로 그라가스 E, R을 막을 수 있음"],
-      en: [],
+      en: ["Morgana's E can block Gragas's E and R"],
     },
   },
 };

@@ -10,7 +10,7 @@ export const ahri_ambessa: MatchupSummary = {
   highlightsByChamp: {
     ahri: {
       ko: ["아리 E로 암베사 P를 끊을 수 있음"],
-      en: [""],
+      en: ["Ahri's E can interrupt Ambessa's P"],
     },
     ambessa: {
       ko: [],

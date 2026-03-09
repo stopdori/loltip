@@ -10,7 +10,7 @@ export const akali_kassadin: MatchupSummary = {
   highlightsByChamp: {
     akali: {
       ko: ["아칼리 E2로 카사딘 R을 따라 갈 수 있음"],
-      en: [""],
+      en: ["Akali's E2 can follow Kassadin's R"],
     },
     kassadin: {
       ko: [],

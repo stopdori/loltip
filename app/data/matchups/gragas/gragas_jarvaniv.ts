@@ -10,7 +10,7 @@ export const gragas_jarvaniv: MatchupSummary = {
   highlightsByChamp: {
     gragas: {
       ko: ["그라가스 E가 자르반 EQ를 막을 수 있음."],
-      en: [""],
+      en: ["Gragas's E can interrupt Jarvan IV's EQ"],
     },
     jarvaniv: {
       ko: [],

@@ -10,7 +10,7 @@ export const alistar_olaf: MatchupSummary = {
   highlightsByChamp: {
     alistar: {
       ko: ["알리스타 R의 [[CC_CLEANSE]]로 올라프 Q의 [[SLOW]]를 해제할 수 있음"],
-      en: [""],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Olaf's Q [[SLOW]]"],
     },
     olaf: {
       ko: [],
