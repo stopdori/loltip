@@ -64,12 +64,25 @@ function TagPill({
     setPos(null);
   };
 
+  useEffect(() => {
+    if (!open) return;
+    const close = (e: TouchEvent) => {
+      if (!anchorRef.current?.contains(e.target as Node)) onLeave();
+    };
+    document.addEventListener("touchstart", close);
+    return () => document.removeEventListener("touchstart", close);
+  }, [open]);
+
   return (
   <span
     ref={anchorRef}
     className="relative flex"
     onMouseEnter={onEnter}
     onMouseLeave={onLeave}
+    onTouchStart={(e) => {
+      e.preventDefault();
+      open ? onLeave() : onEnter();
+    }}
   >
     <span className={`${base} ${toneCls}`}>{text}</span>
 
