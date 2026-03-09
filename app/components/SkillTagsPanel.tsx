@@ -28,6 +28,18 @@ function TagPill({
   className?: string;
   tone?: Tone;
 }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const close = (e: TouchEvent) => {
+      if (!ref.current?.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("touchstart", close);
+    return () => document.removeEventListener("touchstart", close);
+  }, [open]);
+
   const base =
   tone === "note"
     ? "inline cursor-help hover:opacity-90"
@@ -40,15 +52,29 @@ const cls = `${base} ${size} ${toneCls} ${className ?? ""}`;
 
 
   return (
-    <span className="relative inline-flex group">
+    <span
+      ref={ref}
+      className="relative inline-flex group"
+      onTouchStart={(e) => {
+        if (!tip) return;
+        e.preventDefault();
+        setOpen((prev) => !prev);
+      }}
+    >
       <span className={cls}>{text}</span>
 
-      <span className="pointer-events-none absolute left-1/2 top-0 z-50 hidden -translate-x-1/2 -translate-y-[110%] group-hover:flex flex-col items-center">
-        <span className="inline-block w-max whitespace-pre break-keep text-center leading-snug rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold text-slate-100 ring-1.5 ring-white/10 shadow-lg">
-          {tip}
+      {tip && (
+        <span
+          className={`pointer-events-none absolute left-1/2 top-0 z-50 -translate-x-1/2 -translate-y-[110%] flex-col items-center ${
+            open ? "flex" : "hidden group-hover:flex"
+          }`}
+        >
+          <span className="inline-block w-max whitespace-pre break-keep text-center leading-snug rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold text-slate-100 ring-1.5 ring-white/10 shadow-lg">
+            {tip}
+          </span>
+          <span className="mt-0 block h-0 w-0 border-x-[6px] border-t-[6px] border-x-transparent border-t-black/95" />
         </span>
-        <span className="mt-0 block h-0 w-0 border-x-[6px] border-t-[6px] border-x-transparent border-t-black/95" />
-      </span>
+      )}
     </span>
   );
 }
@@ -118,6 +144,15 @@ function SkillLabelWithTip({
     setPos(null);
   };
 
+  useEffect(() => {
+    if (!open) return;
+    const close = (e: TouchEvent) => {
+      if (!anchorRef.current?.contains(e.target as Node)) onLeave();
+    };
+    document.addEventListener("touchstart", close);
+    return () => document.removeEventListener("touchstart", close);
+  }, [open]);
+
   if (!tip) return <span>{labelText}</span>;
 
   return (
@@ -126,6 +161,10 @@ function SkillLabelWithTip({
       className="relative inline-flex cursor-help"
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
+      onTouchStart={(e) => {
+        e.preventDefault();
+        open ? onLeave() : onEnter();
+      }}
     >
       <span>{labelText}</span>
 
