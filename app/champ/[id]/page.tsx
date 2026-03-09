@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const champ = CHAMPIONS.find(c => c.id === champId);
 
-  const champName = champ?.name_ko ?? champId;
+  const champName = champ?.ko ?? champId;
 
   return {
     title: `${champName} 공략 - LOLTIP`,
