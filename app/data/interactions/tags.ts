@@ -98,7 +98,10 @@ export type TagId =
   | "BLIND"
   | "POLYMORPH"
   | "UNSTOPPABLE"
-  | "PSEUDO_UNSTOPPABLE";
+  | "PSEUDO_UNSTOPPABLE"
+  
+  
+  | "THE_COPYPASTA";
   
 
 
@@ -240,6 +243,10 @@ W_FLASH: { ko: "W플", en: "WF" },
 E_FLASH: { ko: "E플", en: "EF" },
 R_FLASH: { ko: "R플", en: "RF" },
 INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
+
+
+
+THE_COPYPASTA: { ko: "그 긴거", en: "The Copypasta"}
 
   
 }
@@ -605,6 +612,8 @@ PSEUDO_UNSTOPPABLE: {
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },
 INTERCEPT_PROJECTILE: { ko: "브라움이 아군에게 날아가는 것을 대신 맞아줌\n이때 투사체가 사라질 수 도 있음", en: "Braum leaps to an ally to take the hit for them\nAt this time, the projectile may be destroyed." },
 
+
+THE_COPYPASTA: { ko: "이게 크산테다 체력 4700 방어력 329 마저201인 챔피언👤이 [[UNSTOPPABLE]]🚫, 실드🛡, 벽🧱 넘기는 거 있고요. 에어본🌪 있고, 심지어 쿨타임은 1️⃣초밖에 안되고 마나🧙‍♂️는 1️⃣5️⃣ 들고 w는 심지어 변신💫하면 쿨 초기화에다가 패시브는 고정피해🗡가 들어가며 그 다음에 방마저🥋 올리면📈 올릴수록📈 스킬 가속⏰이 생기고! q에 스킬가속⏰이 생기고 스킬 속도🚀가 빨라지고📈 그 다음에 공격력🗡 계수가 있어가지고 W가 그 이익- 으아아아악😱😱 - Showmaker", en: "This is K'Sante: 4700 HP, 329 armor, 201 MR, with [[UNSTOPPABLE]], shield, wall-hop, airborne, 1s cooldown, 15 mana cost. W resets on transform, P deals true damage, armor/MR increase cooldown reduction, Q benefits from ability haste and projectile speed — AAAAAH — Showmaker"}
 
 };
 
