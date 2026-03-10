@@ -98,7 +98,10 @@ export type TagId =
   | "BLIND"
   | "POLYMORPH"
   | "UNSTOPPABLE"
-  | "PSEUDO_UNSTOPPABLE";
+  | "PSEUDO_UNSTOPPABLE"
+  
+  
+  | "THE_COPYPASTA";
   
 
 
@@ -241,6 +244,10 @@ E_FLASH: { ko: "E플", en: "EF" },
 R_FLASH: { ko: "R플", en: "RF" },
 INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
 
+
+
+THE_COPYPASTA: { ko: "그 긴거", en: "The Copypasta"}
+
   
 }
 
@@ -278,7 +285,7 @@ WALL: {
 },
 TETHER: {
   ko: "연결된 대상이 범위를 벗어나지 않으면\n스킬이 계속 유효하거나 추가 효과가 발동함",
-  en: "If the linked target does not leave the range,\nthe skill remains active or its additional effects will trigger.",
+  en: "If the linked target does not leave the range,\nthe skill remains active or \nits additional effects will trigger.",
 },
 REVIVE: {
   ko: "부활",
@@ -295,7 +302,7 @@ REFLECT: {
 
 INSEC_KICK: {
   ko: "대상을 뒤로 밀치는 스킬을\n점멸과 연계하여 반대로 밀치는 플레이\n(전직 프로게이머 현 스트리머 INSEC의 이름을 딴 기술)",
-  en: "Using a knockback skill with Flash to push a target toward allies.\nA play where you Flash behind an enemy and knock them back; known as the ''InSec kick''\nThe ''InSec'': Flashing during a knockback ability to redirect the enemy toward your team.",
+  en: "A play that combines a knockback skill with \nFlash to push a target in the opposite direction\n(named after former pro gamer \nand current streamer Insec)",
 },
 
 
@@ -339,7 +346,7 @@ RANGE_UP: {
 
 PIERCE: {
   ko: "대상을 관통하여 뒤에 있는 적에게도 적중함",
-  en: "Pierces through targets and can hit enemies behind them",
+  en: "Pierces through targets and can \nhit enemies behind them",
 },
 
 
@@ -374,11 +381,11 @@ STEALTH: {
 },
 INVISIBILITY: {
   ko: "은신류 - 상대 챔피언, 핑와에 발각되지 않음\n단, 절대시야에는 보이고, 드러냄 스킬에는 맞고 은신하면 보임",
-  en: "Stealth class\nInvisible units cannot be revealed by enemy champions or Control Wards\nOnly revealed by True Sight.",
+  en: "Stealth class\nInvisible units cannot be revealed \nby enemy champions or Control Wards\nOnly revealed by True Sight.",
 },
 CAMOUFLAGE: {
   ko: "은신류 - 상대 챔피언, 핑와에 발각 됨\n단, 절대시야에는 보이고, 드러냄 스킬에는 맞고 은신하면 보임",
-  en: "Stealth class\nRevealed by nearby enemy champions or Control Wards.",
+  en: "Stealth class\nRevealed by nearby enemy champions \nor Control Wards.",
 },
 
 
@@ -426,19 +433,19 @@ PROTECTIVE_ZONE: {
 /* 점멸 연계 */
 Q_FLASH: {
   ko: "Q를 쓰고 바로 점멸을 썼을 때\n스킬이 유효함",
-  en: "Casting Q then immediately Flash keeps the skill effective",
+  en: "Casting Q then immediately Flash \nkeeps the skill effective",
 },
 W_FLASH: {
   ko: "W를 쓰고 바로 점멸을 썼을 때\n스킬이 유효함",
-  en: "Casting W then immediately Flash keeps the skill effective",
+  en: "Casting W then immediately Flash \nkeeps the skill effective",
 },
 E_FLASH: {
   ko: "E를 쓰고 바로 점멸을 썼을 때\n스킬이 유효함",
-  en: "Casting E then immediately Flash keeps the skill effective",
+  en: "Casting E then immediately Flash \nkeeps the skill effective",
 },
 R_FLASH: {
   ko: "R을 쓰고 바로 점멸을 썼을 때\n스킬이 유효함",
-  en: "Casting R then immediately Flash keeps the skill effective",
+  en: "Casting R then immediately Flash \nkeeps the skill effective",
 },
 
 /* 피흡 */
@@ -456,7 +463,7 @@ SHIELD: {
 },
 MAX_HP_UP: {
   ko: "최대 체력 증가\n(치감 효과에 영향을 받지 않음)",
-  en: "Increases maximum health. (Not affected by Grievous Wounds)",
+  en: "Increases maximum health. \n(Not affected by Grievous Wounds)",
 },
 
 MANA_RESTORE: {
@@ -504,7 +511,7 @@ GW: {
 
 HARD_CC: {
   ko: "챔피언이 본인의 의지로 움직일 수 없게 만드는 제어기\n기절, 속박, 그렙, 넉백, 에어본, 체공, 제압, 수면, 공포, 매혹, 도발",
-  en: "Stun, Root, Grab, Knockback, Knockup, Suspension, Sleep, Fear, Charm, Taunt",
+  en: "Stun, Root, Grab, Knockback, Knockup,\nSuspension, Sleep, Fear, Charm, Taunt",
 },
 
 STUN: {
@@ -521,11 +528,11 @@ SLOW: {
 },
 TAUNT: {
   ko: "상대가 나를 강제로 기본공격만 하게 만듦\n(클린즈 계열로 해제 가능)",
-  en: "Forces the target to basic attack you (can be cleansed)",
+  en: "Forces the target to basic attack you \n(can be cleansed)",
 },
 SLEEP: {
   ko: "아무런 행동을 할 수 없지만\n즉발적인 공격을 받으면 해제됨(지속피해 제외)\n(클린즈 계열로 해제 가능)",
-  en: "Cannot act, but ends immediately when damaged (can be cleansed)",
+  en: "Cannot act, but ends immediately \nwhen damaged (can be cleansed)",
 },
 ANTI_DASH: {
   ko: "돌진스킬을 방해하고 에어본과 기절을 검",
@@ -535,11 +542,11 @@ ANTI_DASH: {
 
 AIRBORNE: {
   ko: "공중에 띄움 - 최상급 CC\n(클린즈 계열로 해제 불가능)",
-  en: "Knocks the target airborne — top-tier CC (cannot be cleansed)",
+  en: "Knocks the target airborne — top-tier CC \n(cannot be cleansed)",
 },
 SUSPENDING: {
   ko: "공중에 띄워서 거는 기절\n야스오 궁 가능\n(강인함의 영향을 받고, 클린즈 계열로 해제 가능)",
-  en: "A stun that also knocks up\nAffected by Tenacity and can be removed by Cleanse\nYasuo can follow up with his ult",
+  en: "A stun that also knocks up Affected \nby Tenacity and can be removed by Cleanse\nYasuo can follow up with his ult",
 },
 KNOCKBACK: {
   ko: "에어본 + 밀어냄 - 최상급 CC\n(클린즈 계열로 해제 불가능)",
@@ -553,12 +560,12 @@ GRAB: {
 
 SUPPRESS: {
   ko: "상대를 아무것도 할 수 없게 만듬\n스펠 사용도 불가능\n정화(스펠)로는 해제 불가\n수은 미카엘로 해제 가능",
-  en: "Prevents all actions and summoner spells (cannot be cleansed by Cleanse)",
+  en: "Prevents all actions and summoner spells \n(cannot be cleansed by Cleanse)",
 },
 
 CHARM: {
   ko: "대상을 내 쪽으로 걸어오게 만듦\n(클린즈 계열로 해제 가능)",
-  en: "Forces the target to walk toward you (can be cleansed)",
+  en: "Forces the target to walk toward you \n(can be cleansed)",
 },
 SILENCE: {
   ko: "스킬을 사용하지 못하게 만듦\n(클린즈 계열로 해제 가능)",
@@ -570,7 +577,7 @@ GROUNDED: {
 },
 FEAR: {
   ko: "대상이 시전자 반대쪽으로 도망치게 만듦\n(클린즈 계열로 해제 가능)",
-  en: "Forces the target to flee away from you (can be cleansed)",
+  en: "Forces the target to flee away from you \n(can be cleansed)",
 },
 CANCEL: {
   ko: "지속스킬을 중단시킴",
@@ -578,7 +585,7 @@ CANCEL: {
 },
 BERSERK: {
   ko: "주변 유닛을 공격함(자신의 아군 우선)\n(클린즈 계열로 해제 가능)",
-  en: "Attacks nearby units, prioritizing allies (can be cleansed)",
+  en: "Attacks nearby units, prioritizing allies\n(can be cleansed)",
 },
 NEARSIGHT: {
   ko: "시야가 축소됨",
@@ -590,21 +597,24 @@ BLIND: {
 },
 POLYMORPH: {
   ko: "상대를 동물로 변이\n침묵, 무장해제, 고정둔화(60)\n고정둔화는 둔화저항을 무시함\n(단,둔화면역은 무시못함)",
-  en: "Transforms the target, preventing attacks and ability casts",
+  en: "Transforms the target, \npreventing attacks and ability casts",
 },
 UNSTOPPABLE: {
   ko: "CC 계열을 맞아도 시전자의 스킬이 유효함\n단, 저지불가 상태에서 적중한 CC가\n저지불가 종료 이후에도 남아있다면 CC효과 발동",
-  en: "It cannot be blocked by CC\nHowever, if CC hits during an unstoppable state and the duration remains after the state ends, the CC takes effect",
+  en: "It cannot be blocked by CC\nHowever, if CC hits during an unstoppable state \nand the duration remains after the state ends, \nthe CC takes effect",
 },
 
 PSEUDO_UNSTOPPABLE: {
   ko: "공식적인 저지불가는 아니지만 동일 효과라 보여짐\nCC 계열을 맞아도 시전자의 스킬이 유효함\n단, 스킬 사용 중에 적중한 CC가\n스킬 사용 종료 이후에도 남아있다면 CC효과 발동",
-  en: "Not officially Unstoppable, but the action continues and most crowd control will not interrupt it",
+  en: "Not officially Unstoppable, \nbut the action continues and \nmost crowd control will not interrupt it",
 },
 
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },
 INTERCEPT_PROJECTILE: { ko: "브라움이 아군에게 날아가는 것을 대신 맞아줌\n이때 투사체가 사라질 수 도 있음", en: "Braum leaps to an ally to take the hit for them\nAt this time, the projectile may be destroyed." },
 
+
+THE_COPYPASTA: { ko: "이게 크산테다 \n체력 4700 방어력 329 마저201인 챔피언👤이\n 저지불가🚫, 실드🛡, 벽🧱 넘기는 거 있고요.\n에어본🌪 있고, 심지어 쿨타임은 1️⃣초밖에 안되고 \n마나🧙‍♂️는 1️⃣5️⃣ 들고 \nw는 심지어 변신💫하면 쿨 초기화에다가 \n패시브는 고정피해🗡가 들어가며 \n그 다음에 방마저🥋 올리면📈 올릴수록📈 \n스킬 가속⏰이 생기고! \nq에 스킬가속⏰이 생기고 스킬 속도🚀가 빨라지고📈 \n그 다음에 공격력🗡 계수가 있어가지고 \nW가 그 이익- 으아아아악😱😱 - Showmaker", 
+  en: "This is K'Sante: 4700 HP, 329 armor, 201 MR, \nwith Unstoppable, shield, wall-hop, \nairborne, 1s cooldown, 15 mana cost. \nW resets on transform, P deals true damage, \narmor/MR increase cooldown reduction, \nQ benefits from ability haste and projectile speed \n— AAAAAH — Showmaker"}
 
 };
 

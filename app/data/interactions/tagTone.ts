@@ -91,6 +91,10 @@ export const TAG_TONE: Partial<Record<TagId, Tone>> = {
   SLEEP: "teal",
   INSEC_KICK: "teal",
 
+
+  THE_COPYPASTA: "teal",
+
+  
   // 🩷 pink (매혹/도발)
   CHARM: "pink",
   TAUNT: "pink",

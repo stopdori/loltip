@@ -4,7 +4,7 @@ const warwick: ChampData = {
   id: "warwick",
   skills: {
     P: ["LIFESTEAL"],
-    Q: ["LIFESTEAL", "WALL_HOP"],
+    Q: ["LIFESTEAL", "WALL_HOP", "PSEUDO_UNSTOPPABLE"],
     W: ["AS_UP", "MS_UP"],
     E: ["DMG_REDUCE", "FEAR"],
     R: ["LIFESTEAL", "SUPPRESS", "WALL_HOP", "PSEUDO_UNSTOPPABLE"],

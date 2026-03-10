@@ -4,7 +4,7 @@ const kayle: ChampData = {
   id: "kayle",
   skills: {
     P: ["AS_UP", "MS_UP"],
-    Q: ["SLOW", "AR_MR_SHRED"],
+    Q: ["SLOW", "AR_MR_SHRED", "PIERCE"],
     W: ["W_FLASH", "HEAL", "MS_UP"],
     E: ["AA_RESET"],
     R: ["R_FLASH", "INVULNERABLE"],

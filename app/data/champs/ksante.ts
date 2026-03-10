@@ -23,10 +23,9 @@ const ksante: ChampData = {
   },
 
   notes: {
-    ko: [
-    "이게 크산테다 체력 4700 방어력 329 마저201인 챔피언👤이 [[UNSTOPPABLE]]🚫, 실드🛡, 벽🧱 넘기는 거 있고요. 에어본🌪 있고, 심지어 쿨타임은 1️⃣초밖에 안되고 마나🧙‍♂️는 1️⃣5️⃣ 들고 w는 심지어 변신💫하면 쿨 초기화에다가 패시브는 고정피해🗡가 들어가며 그 다음에 방마저🥋 올리면📈 올릴수록📈 스킬 가속⏰이 생기고! q에 스킬가속⏰이 생기고 스킬 속도🚀가 빨라지고📈 그 다음에 공격력🗡 계수가 있어가지고 W가 그 이익- 으아아아악😱😱 - Showmaker"
-  ],
-    en: ["This is K'Sante: 4700 HP, 329 armor, 201 MR, with [[UNSTOPPABLE]], shield, wall-hop, airborne, 1s cooldown, 15 mana cost. W resets on transform, P deals true damage, armor/MR increase cooldown reduction, Q benefits from ability haste and projectile speed — AAAAAH — Showmaker"]
+    ko: ["[[THE_COPYPASTA]]", "R은 대상을 뒤로 밀치고 대상 뒤에 크산테가 등장해서 때리는 것. 이때 뒤에 지형지물(협곡외벽 제외)이 있다면 끝까지 통과", "R은 사용 후, 재사용해서 해제 불가"
+    ],
+    en: ["[[THE_COPYPASTA]]", "R launches the target backward while K'Sante appears behind them to strike. If there is terrain behind the target (excluding the map boundary), K'Sante passes all the way through.", "R cannot be cancelled by reactivating after use."]
   },
 
 vision: {

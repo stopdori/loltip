@@ -25,9 +25,9 @@ const pantheon: ChampData = {
 
   notes: {
     ko: [
-    "Q의 [[CRIT]]는 체력20% 이하인 적에게 적용", "E의 [[INVULNERABLE]]은 바라보는 방향만 적용\n단, 타워 데미지는 막을 수 없음", "R 기본효과에 [[AR_PEN]]이 있음"
+    "Q의 [[CRIT]]는 체력20% 이하인 적에게 적용", "E의 [[INVULNERABLE]]은 바라보는 방향만 적용\n단, 타워 데미지는 막을 수 없음", "R 기본효과에 [[AR_PEN]]이 있음", "R로 점프해서 사라진 후 착지 전까지 [[INVULNERABLE]] 판정"
   ],
-    en: ["Q's [[CRIT]] applies to enemies below 20% HP", "E's [[INVULNERABLE]] only applies in the direction Pantheon is facing.\nTower damage cannot be blocked", "R has [[AR_PEN]] as a passive base effect"]
+    en: ["Q's [[CRIT]] applies to enemies below 20% HP", "E's [[INVULNERABLE]] only applies in the direction Pantheon is facing.\nTower damage cannot be blocked", "R has [[AR_PEN]] as a passive base effect", "Becomes [[INVULNERABLE]] after jumping with R until landing"]
   },
 
 vision: {
