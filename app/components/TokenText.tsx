@@ -16,7 +16,28 @@ function TokenPill({
   tone: Tone;
 }) {
   const [open, setOpen] = useState(false);
+  const [shift, setShift] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
+  const tooltipRef = useRef<HTMLSpanElement>(null);
+
+  const adjustPosition = () => {
+    requestAnimationFrame(() => {
+      const el = tooltipRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const MARGIN = 8;
+      const vw = window.innerWidth;
+      let s = 0;
+      if (rect.left < MARGIN) s = MARGIN - rect.left;
+      else if (rect.right > vw - MARGIN) s = vw - MARGIN - rect.right;
+      setShift(s);
+    });
+  };
+
+  useEffect(() => {
+    if (!open) { setShift(0); return; }
+    adjustPosition();
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -36,6 +57,7 @@ function TokenPill({
         e.preventDefault();
         setOpen((prev) => !prev);
       }}
+      onMouseEnter={adjustPosition}
     >
       <span className={`inline cursor-help hover:opacity-90 ${NOTE_TONE_CLASS[tone]}`}>
         {label}
@@ -46,8 +68,12 @@ function TokenPill({
           className={`pointer-events-none absolute left-1/2 top-0 z-50 -translate-x-1/2 -translate-y-[110%] flex-col items-center ${
             open ? "flex" : "hidden group-hover:flex"
           }`}
+          style={{ marginLeft: shift }}
         >
-          <span className="inline-block w-max whitespace-pre break-keep text-center leading-snug rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold text-slate-100 ring-1.5 ring-white/10 shadow-lg">
+          <span
+            ref={tooltipRef}
+            className="inline-block w-max max-w-[calc(100vw-16px)] whitespace-pre break-keep text-center leading-snug rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold text-slate-100 ring-1.5 ring-white/10 shadow-lg"
+          >
             {tip}
           </span>
           <span className="mt-0 block h-0 w-0 border-x-[6px] border-t-[6px] border-x-transparent border-t-black/95" />
