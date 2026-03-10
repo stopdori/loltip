@@ -35,7 +35,7 @@ function TokenPill({
   };
 
   useEffect(() => {
-    if (!open) { setShift(0); return; }
+    if (!open) return;
     adjustPosition();
   }, [open]);
 
