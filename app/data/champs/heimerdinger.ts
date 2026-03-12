@@ -26,7 +26,7 @@ const heimerdinger: ChampData = {
 
   notes: {
     ko: [
-    "P의 [[MS_UP]]는 Q, 아군타워 근처에서만 발동", "[[W_FLASH]], [[E_FLASH]] 안됨", "E는 중앙에 맞혀야 [[STUN]]"
+    "P의 [[MS_UP]]는 Q, 아군타워 근처에서만 발동", "[[W_FLASH]], [[E_FLASH]] 안됨", "E는 중심에 맞혀야 [[STUN]]"
   ],
     en: ["P's [[MS_UP]] only activates near Q (turrets) or allied towers", "[[W_FLASH]] and [[E_FLASH]] not possible", "E must hit the center to apply [[STUN]]"]
   },

@@ -13,7 +13,7 @@ const xerath: ChampData = {
 
   notes: {
     ko: [
-    "Q플은 차징중에만 가능\n발사 중에는 안됨", "W는 중앙부에 적중하면 효과 증가", "E는 거리가 멀 수록 [[STUN]] 시간 증가", "R은 찍을수록 발사수가 4/5/6\n시전 중 움직이면 종료"
+    "Q플은 차징중에만 가능\n발사 중에는 안됨", "W는 중심 부분에 적중하면 효과 증가", "E는 거리가 멀 수록 [[STUN]] 시간 증가", "R은 찍을수록 발사수가 4/5/6\n시전 중 움직이면 종료"
   ],
     en: ["[[Q_FLASH]] only works during charging phase, not during firing", "W's effect increases when hitting the center", "E [[STUN]] duration increases with distance", "R shot count: 4/5/6 per rank.\nMoving during cast ends R"]
   },
