@@ -203,10 +203,10 @@ export default function TagGlossaryButton({ lang }: { lang: "ko" | "en" }) {
 
       lang === "ko"
         ? "특수버프  :  [[TENACITY]]  [[DODGE]]  [[DMG_REDUCE]]  [[INVULNERABLE]]  [[REVIVE]]"
-        : "Special Buff  :  [[TENACITY]]  [[DODGE]]  [[DMG_REDUCE]]  [[INVULNERABLE]]  [[REVIVE]]",
+        : "Special Buff  :  [[TENACITY]]  [[DODGE]]  [[DMG_REDUCE]]  [[INVULNERABLE]]  [[REVIVE]]", 
 
       "                  [[GHOSTING]]  [[SLOW_RESIST]]  [[SLOW_IMMUNE]]",
-      "                  [[CC_CLEANSE]]  [[CC_IMMUNE]]  [[UNSTOPPABLE]]",
+      "                  [[CC_CLEANSE]]  [[CC_IMMUNE]]  [[UNSTOPPABLE]]  [[PSEUDO_UNSTOPPABLE]]",
 
       null,
 
