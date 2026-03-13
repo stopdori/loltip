@@ -27,9 +27,9 @@ const lulu: ChampData = {
 
   notes: {
     ko: [
-    "[[Q_FLASH]]이 가능은 하지만\n픽스는 점멸로 따라오지 않아 데미지가 덜 들어감", "룰루 평타는 룰루가 1개를 날리고\n픽스가 3개를 추가로 날림", "R이 [[MAX_HP_UP]]여서 풀피에 써도 유효하고\n[[GW]]효과도 안받음\n부담없이 써서 [[AIRBORNE]], [[SLOW]]를 활용해야 좋음",
+    "[[Q_FLASH]]이 가능은 하지만\n픽스는 점멸로 따라오지 않아 데미지가 덜 들어감", "룰루 평타는 룰루가 1개를 날리고\n픽스가 3개를 추가로 날림", "R이 [[MAX_HP_UP]]여서 풀피에 써도 유효하고\n[[GW]]효과도 안받음\nR의 [[SLOW]]는 주변에 지속.\n부담없이 써서 [[AIRBORNE]], [[SLOW]]를 활용해야 좋음",
   ],
-    en: ["[[Q_FLASH]] technically works \nbut the polymorph doesn't follow the flash, so damage is reduced", "Lulu fires 1 basic attack while Pix fires 3 additional ones", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]].\nUse it freely for [[AIRBORNE]] and [[SLOW]] utility"]
+    en: ["[[Q_FLASH]] technically works \nbut the polymorph doesn't follow the flash, so damage is reduced", "Lulu fires 1 basic attack while Pix fires 3 additional ones", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]].\nR [[SLOW]] persists in the surrounding area.\nUse it freely for [[AIRBORNE]] and [[SLOW]] utility"]
   },
 
 vision: {

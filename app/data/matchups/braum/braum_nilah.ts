@@ -13,7 +13,7 @@ export const braum_nilah: MatchupSummary = {
       en: ["Braum's E (shield) can [[DAMAGE_NULLIFY]] Nilah's basic attacks, empowered basic attacks, Q, E, and R.","Braum's P [[STUN]] cannot interrupt Nilah's E. Note: [[STUN]] still applies","Braum's R [[AIRBORNE]] can interrupt Nilah's E"],
     },
     nilah: {
-      ko: ["닐라 W의 [[DODGE]]로 브라움 평타를 무시 할 수 있음. 이때 브라움 P스택도 무시함."],
+      ko: ["닐라 W의 [[DODGE]]로 브라움 평타를 무시할 수 있음. 이때 브라움 P스택도 무시함."],
       en: ["Nilah's W [[DODGE]] can ignore Braum's basic attacks, including P stack application."],
     },
   },

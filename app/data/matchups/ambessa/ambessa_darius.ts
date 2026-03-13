@@ -9,8 +9,8 @@ export const ambessa_darius: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[UNSTOPPABLE]]로 다리우스 E의 [[GRAB]]을 무시할 수 있음."],
+      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Darius's E [[GRAB]]."],
     },
     darius: {
       ko: [],

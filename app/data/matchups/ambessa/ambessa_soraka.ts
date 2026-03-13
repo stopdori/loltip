@@ -9,8 +9,8 @@ export const ambessa_soraka: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[UNSTOPPABLE]]로 소라카 E의 [[SILENCE]] [[ROOT]]을 무시할 수 있음.\n단, 소라카 E의 [[SILENCE]], [[ROOT]]은 남아있음."],
+      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Soraka's E [[SILENCE]] [[ROOT]].\nHowever, Soraka's E [[SILENCE]] and [[ROOT]] still apply."],
     },
     soraka: {
       ko: [],

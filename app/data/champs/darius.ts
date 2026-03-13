@@ -13,9 +13,9 @@ const darius: ChampData = {
 
   notes: {
     ko: [
-    "P는 5중첩 또는 R막타에 [[AD_UP]] 있음", "Q는 도끼 끝에 맞혀야 P중첩과 [[HEAL]]이 됨", "E스킬 [[AR_PEN]]은 기본지속임", "R은 P스택당 추가데미지 있음\nR로 대상을 처치하면\n1,2렙 궁은 20초간 재사용 가능. 사용하지 않으면 사라짐 \n3렙궁은 완전 초기화. 안써도 사라지지않음", "R은 시전중에 대상이 사라지거나 존야를 쓰면 쿨타임이 돌지않아 바로 다시 사용 가능함 (단, 샤코 R 제외)"
+    "P는 5중첩 또는 R막타에 [[AD_UP]] 있음", "발동된 Q는 CC로도 끊을 수 없음.", "Q는 도끼 끝에 맞혀야 P중첩과 [[HEAL]]이 됨", "E스킬 [[AR_PEN]]은 기본지속임", "R은 P스택당 추가데미지 있음\nR로 대상을 처치하면\n1,2렙 궁은 20초간 재사용 가능. 사용하지 않으면 사라짐 \n3렙궁은 완전 초기화. 안써도 사라지지않음", "R은 시전중에 대상이 사라지거나 존야를 쓰면 쿨타임이 돌지않아 바로 다시 사용 가능함 (단, 샤코 R 제외)"
   ],
-    en: ["P applies [[AD_UP]] at 5 stacks or on R last-hit", "Q applies P stacks and [[HEAL]] only when hitting with the outer edge", "E's [[AR_PEN]] is a passive effect", "R deals bonus damage per P stack.\nKilling with R:\n1st/2nd rank: R can be recast for 20s. It disappears if unused.\n3rd rank: full cooldown reset that doesn't expire", "If the target disappears or uses Zhonya's mid-cast, R's cooldown doesn't start — it can be reused immediately (except vs Shaco R)"]
+    en: ["P applies [[AD_UP]] at 5 stacks or on R last-hit", "Once activated, Q cannot be interrupted even by CC.", "Q applies P stacks and [[HEAL]] only when hitting with the outer edge", "E's [[AR_PEN]] is a passive effect", "R deals bonus damage per P stack.\nKilling with R:\n1st/2nd rank: R can be recast for 20s. It disappears if unused.\n3rd rank: full cooldown reset that doesn't expire", "If the target disappears or uses Zhonya's mid-cast, R's cooldown doesn't start — it can be reused immediately (except vs Shaco R)"]
   },
 
 vision: {

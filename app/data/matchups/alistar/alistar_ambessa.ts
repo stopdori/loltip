@@ -13,8 +13,8 @@ export const alistar_ambessa: MatchupSummary = {
       en: ["Alistar's Q and W can interrupt Ambessa's P", "Alistar's E [[STUN]] cannot interrupt Ambessa's P. However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Ambessa's E [[SLOW]] and R [[STUN]]/[[SUPPRESS]]"],
     },
     ambessa: {
-      ko: [],
-      en: [],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 알리스타 W를 끊을 수 있음.", "암베사 R의 [[UNSTOPPABLE]]로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시할 수 있음.\n단, [[STUN]]은 남아있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Alistar's W.", "Ambessa's R [[UNSTOPPABLE]] can ignore Alistar's Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]].\nHowever, [[STUN]] still applies."],
     },
   },
 };

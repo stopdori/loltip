@@ -9,8 +9,8 @@ export const ambessa_singed: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[UNSTOPPABLE]]로 신지드 E의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Singed's E [[KNOCKBACK]]."],
     },
     singed: {
       ko: [],

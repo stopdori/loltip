@@ -9,8 +9,8 @@ export const ambessa_aurora: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 오로라 W, E(후진단계)를 끊을 수 있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Aurora's W and E (retreat phase)."],
     },
     aurora: {
       ko: [],
