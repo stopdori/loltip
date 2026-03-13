@@ -37,6 +37,25 @@ function initialsToDubeol(initials: string) {
   return [...initials].map((ch) => CHOSEONG_TO_KEY[ch] ?? ch).join("");
 }
 
+// 두벌식 역매핑: 영문 자음 키 → 한글 초성 (소문자 기준, 첫 등장 우선)
+const DUBEOL_TO_CHOSEONG: Record<string, string> = {};
+CHOSEONG.forEach((jamo, i) => {
+  const key = (CHOSEONG_KEY[i] ?? "").toLowerCase();
+  if (key && !DUBEOL_TO_CHOSEONG[key]) DUBEOL_TO_CHOSEONG[key] = jamo;
+});
+
+// 영어 키보드 입력(두벌식 자음만)을 한글 초성 문자열로 변환
+// 모든 문자가 자음 키인 경우만 변환, 하나라도 아니면 null 반환
+function engToKorInitials(str: string): string | null {
+  let result = "";
+  for (const ch of str) {
+    const jamo = DUBEOL_TO_CHOSEONG[ch];
+    if (!jamo) return null;
+    result += jamo;
+  }
+  return result || null;
+}
+
 
 // 종성(받침) 인덱스 0은 없음("")
 const JONGSEONG_KEY = [
@@ -176,6 +195,8 @@ export default function ChampSelectModal({
 
   const filtered = useMemo(() => {
     const key = normalize(q.trim());
+    // 영어 키보드 입력을 한글 초성으로 역변환 (예: "dxft" → "ㅇㅌㄹㅅ")
+    const korKey = key ? engToKorInitials(key) : null;
 
     const list = champions
       .slice()
@@ -190,7 +211,10 @@ export default function ChampSelectModal({
 
     return list.filter((c) => {
       const keys = buildSearchKeys(c);
-      return keys.some((k) => k.includes(key));
+      if (keys.some((k) => k.includes(key))) return true;
+      // 영어 자음 키 → 한글 초성 변환 후 재검색
+      if (korKey && keys.some((k) => k.includes(korKey))) return true;
+      return false;
     });
   }, [q, champions, lang, collator]);
 
@@ -217,7 +241,7 @@ export default function ChampSelectModal({
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder={lang === "ko" ? "챔피언 검색 (예: 나 / ㅇ / rkfps)" : "Search champion (e.g. a / rkfps)"}
+            placeholder={lang === "ko" ? "챔피언 검색 (예: 나 / ㅇ / rkfps / df=아리)" : "Search champion (e.g. a / rkfps / df=Ahri)"}
             className="w-full rounded-xl bg-slate-800/70 border border-white/10 px-4 py-3 outline-none focus:border-white/20"
             autoFocus
           />
