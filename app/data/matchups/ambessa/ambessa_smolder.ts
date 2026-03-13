@@ -9,8 +9,8 @@ export const ambessa_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 스몰더 E(벽이동)를 끊을 수 있음"],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Smolder's E (wall movement)."],
     },
     smolder: {
       ko: [],

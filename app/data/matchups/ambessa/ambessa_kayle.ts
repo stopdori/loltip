@@ -9,8 +9,8 @@ export const ambessa_kayle: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kayle: {
       ko: [],

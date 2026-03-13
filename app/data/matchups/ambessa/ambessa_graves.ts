@@ -9,8 +9,8 @@ export const ambessa_graves: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 그브 E, R(후진 단계)를 끊을 수 있음"],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Graves's E and R (retreat phase)."],
     },
     graves: {
       ko: [],

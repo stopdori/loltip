@@ -9,8 +9,8 @@ export const ambessa_kassadin: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 카사딘 R(이동)을 끊을 수 없음."],
+      en: ["Ambessa's R [[SUPPRESS]] cannot interrupt Kassadin's R (movement)."],
     },
     kassadin: {
       ko: [],

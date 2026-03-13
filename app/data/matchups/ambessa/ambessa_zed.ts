@@ -9,8 +9,8 @@ export const ambessa_zed: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zed: {
       ko: [],

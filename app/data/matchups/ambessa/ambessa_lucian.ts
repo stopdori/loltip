@@ -9,8 +9,8 @@ export const ambessa_lucian: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 루시안 E를 끊을 수 있음"],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Lucian's E."],
     },
     lucian: {
       ko: [],

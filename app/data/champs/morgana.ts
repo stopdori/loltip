@@ -13,9 +13,9 @@ const morgana: ChampData = {
 
   notes: {
     ko: [
-    "[[Q_FLASH]] 안됨", "E(블랙쉴드)는 [[SHIELD]]이 유지되는동안 [[CC_IMMUNE]]임\n지속시간이 끝나거나 피해로 쉴드가 벗겨지면 CC면역도 끝임\n \n단, 쉴드가 사라질정도의 충분한 데미지로 CC를 맞히면 그 스킬의 CC까지는 면역임\n예) 애쉬 R 데미지 500, 모르가나 E 보호막 200일때 맞으면 쉴드가 사라지면서 300의 데미지가 들어오지만 CC는 면역","R은 상대가 은신으로 주변에 다가와도 활성화 됨. 사용 가능한지는 제보좀 부탁드림\nR에 [[STUN]]은 사슬이 끊기지 않으면 걸림"
+    "[[Q_FLASH]] 안됨", "E(블랙쉴드)는 [[SHIELD]]이 유지되는동안 [[CC_IMMUNE]]임\n지속시간이 끝나거나 피해로 쉴드가 벗겨지면 CC면역도 끝임\n \n단, 쉴드가 사라질정도의 충분한 데미지로 CC를 맞히면 그 스킬의 CC까지는 면역임\n예) 애쉬 R 데미지 500, 모르가나 E 보호막 200일때 맞으면 쉴드가 사라지면서 300의 데미지가 들어오지만 CC는 면역", "R은 상대가 [[STEALTH]]으로 주변에 다가와도 활성화 되고 사용 가능함.\n 사용하면 [[STEALTH]]이 보임\nR에 [[STUN]]은 사슬이 끊기지 않으면 걸림"
   ],
-    en: ["[[Q_FLASH]] not possible", "E (Black Shield) grants [[CC_IMMUNE]] while the [[SHIELD]] holds.\nWhen the shield breaks or duration ends, CC immunity ends.\nHowever, if CC hits with enough damage to destroy the shield simultaneously, that CC is still blocked.\nExample: Ashe R deals 500 damage, Morgana E shield is 200 — the shield breaks and 300 damage goes through, but the CC is blocked", "R activates even if stealthed enemies approach nearby. Usability in this case needs confirmation.\nR [[STUN]] applies only if the chain is not broken"]
+    en: ["[[Q_FLASH]] not possible", "E (Black Shield) grants [[CC_IMMUNE]] while the [[SHIELD]] holds.\nWhen the shield breaks or duration ends, CC immunity ends.\nHowever, if CC hits with enough damage to destroy the shield simultaneously, that CC is still blocked.\nExample: Ashe R deals 500 damage, Morgana E shield is 200 — the shield breaks and 300 damage goes through, but the CC is blocked", "Morgana's R activates and becomes castable even if an enemy is nearby in [[STEALTH]].\nOnce cast, it reveals the target's [[STEALTH]]\nR [[STUN]] applies only if the chain is not broken"]
   },
 
 vision: {

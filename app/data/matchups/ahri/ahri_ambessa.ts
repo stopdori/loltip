@@ -13,8 +13,8 @@ export const ahri_ambessa: MatchupSummary = {
       en: ["Ahri's E can interrupt Ambessa's P"],
     },
     ambessa: {
-      ko: [],
-      en: [],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 아리 R을 끊을 수 있음.", "암베사 R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 무시할 수 있음.\n단, [[CHARM]]은 남아있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Ahri's R.", "Ambessa's R [[UNSTOPPABLE]] can ignore Ahri's E [[CHARM]].\nHowever, [[CHARM]] still applies."],
     },
   },
 };

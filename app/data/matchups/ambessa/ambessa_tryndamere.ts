@@ -9,8 +9,8 @@ export const ambessa_tryndamere: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     tryndamere: {
       ko: [],

@@ -9,8 +9,8 @@ export const ambessa_missfortune: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 미포 R(채널링)을 끊을 수 있음"],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Miss Fortune's R (channeling)."],
     },
     missfortune: {
       ko: [],

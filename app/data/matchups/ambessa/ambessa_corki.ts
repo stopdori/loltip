@@ -9,8 +9,8 @@ export const ambessa_corki: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: [""],
-      en: [""],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 코르키 W를 끊을 수 있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Corki's W."],
     },
     corki: {
       ko: [],

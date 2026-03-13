@@ -13,8 +13,8 @@ export const akshan_ambessa: MatchupSummary = {
       en: [],
     },
     ambessa: {
-      ko: [],
-      en: [],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 아크샨 E, R(시전 집중)을 끊을 수 있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Akshan's E and R (channeling)."],
     },
   },
 };
