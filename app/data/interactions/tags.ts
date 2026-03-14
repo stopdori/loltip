@@ -527,8 +527,8 @@ SLOW: {
   en: "Movement speed reduced (can be cleansed)",
 },
 TAUNT: {
-  ko: "상대가 나를 강제로 기본공격만 하게 만듦\n(클린즈 계열로 해제 가능)",
-  en: "Forces the target to basic attack you \n(can be cleansed)",
+  ko: "상대가 나를 강제로 기본공격만 하게 만듦\n(클린즈 계열로 해제 가능)\n단 시전자가 죽으면 도발이 해제됨",
+  en: "Forces the target to basic attack you \n(can be cleansed)\nHowever, if the caster dies, the taunt is removed",
 },
 SLEEP: {
   ko: "아무런 행동을 할 수 없지만\n즉발적인 공격을 받으면 해제됨(지속피해 제외)\n(클린즈 계열로 해제 가능)",
@@ -564,8 +564,8 @@ SUPPRESS: {
 },
 
 CHARM: {
-  ko: "대상을 내 쪽으로 걸어오게 만듦\n(클린즈 계열로 해제 가능)",
-  en: "Forces the target to walk toward you \n(can be cleansed)",
+  ko: "대상을 내 쪽으로 걸어오게 만듦\n(클린즈 계열로 해제 가능)\n단, 시전자가 죽으면 매혹이 해제됨",
+  en: "Forces the target to walk toward you \n(can be cleansed)\nHowever, if the caster dies, the charm is removed",
 },
 SILENCE: {
   ko: "스킬을 사용하지 못하게 만듦\n(클린즈 계열로 해제 가능)",
