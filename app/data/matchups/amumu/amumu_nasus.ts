@@ -9,8 +9,8 @@ export const amumu_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: [""],
-      en: [""],
+      ko: ["딱히 없음"],
+      en: ["Nothing notable."],
     },
     nasus: {
       ko: [],

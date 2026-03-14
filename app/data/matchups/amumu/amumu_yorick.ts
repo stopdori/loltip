@@ -9,8 +9,8 @@ export const amumu_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: [""],
-      en: [""],
+      ko: ["아무무 Q로 요릭 W(벽)을 맞힐 수 없음."],
+      en: ["Amumu's Q cannot hit Yorick's W (wall)."],
     },
     yorick: {
       ko: [],
