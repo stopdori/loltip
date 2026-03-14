@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import ChampSelectButton from "../components/ChampSelectButton";
 import ChampSelectModal from "../components/ChampSelectModal";
 import SkillTagsPanel from "../components/SkillTagsPanel";
@@ -11,6 +11,7 @@ import UltCooldownBox from "../components/UltCooldownBox";
 import { CHAMPIONS, type Champ } from "../data/champions";
 import { CHAMPS } from "../data/champs/_index";
 import FeedbackButton from "../components/FeedbackButton";
+import QuizWidget from "../components/QuizWidget";
 import HelpButton from "../components/HelpButton";
 import NoticeButton from "../components/NoticeButton";
 import AdSlot from "../components/AdSlot";
@@ -36,9 +37,10 @@ function saveLang(v: Lang) {
 type Props = {
   forcedMe?: string | null;
   forcedEnemy?: string | null;
+  highlight?: string;
 };
 
-export default function Home({ forcedMe, forcedEnemy }: Props) {
+export default function Home({ forcedMe, forcedEnemy, highlight }: Props) {
   const [lang, setLang] = useState<Lang>("ko");
 
   
@@ -156,6 +158,14 @@ useEffect(() => {
             <NoticeButton lang={lang} />
             <HelpButton lang={lang} />
             <TagGlossaryButton lang={lang} />
+            <a
+              href="/quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
+            >
+              {lang === "ko" ? "퀴즈" : "Quiz"}
+            </a>
           </div>
 
           {/* 하단: 언어 선택 */}
@@ -368,15 +378,21 @@ setOpenTarget(null);
       myChampId={myChamp.id}
       enemyChampId={enemyChamp.id}
       lang={lang}
+      highlight={highlight}
     />
   ) : (
-    <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400">
-      {lang === "ko"
-        ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
-        : "Pick both champions to see matchup summary."}
+    <div className="space-y-4">
+      <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400">
+        {lang === "ko"
+          ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
+          : "Pick both champions to see matchup summary."}
+      </div>
+      {!(myChamp && enemyChamp) && <QuizWidget lang={lang} />}
     </div>
   )}
 </section>
+
+      {myChamp && enemyChamp && <QuizWidget lang={lang} />}
 
       <FeedbackButton lang={lang} />
 

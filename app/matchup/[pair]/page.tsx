@@ -10,7 +10,7 @@ import ChampClient from "@/app/champ/ChampClient";
 
 type Props = {
   params: Promise<{ pair: string }>;
-  searchParams: Promise<{ first?: string }>;
+  searchParams: Promise<{ first?: string; highlight?: string }>;
 };
 
 function stripTags(text: string): string {
@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Page({ params, searchParams }: Props) {
   const { pair } = await params;
-  const { first } = await searchParams;
+  const { first, highlight } = await searchParams;
 
   const parts = pair.split("-vs-");
   if (parts.length !== 2) notFound();
@@ -156,6 +156,7 @@ export default async function Page({ params, searchParams }: Props) {
         key={`${forcedMe}-vs-${forcedEnemy}`}
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
+        highlight={highlight}
       />
     </Fragment>
   );
