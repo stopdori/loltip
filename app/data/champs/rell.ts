@@ -9,7 +9,7 @@ const rell: ChampData = {
       Q: ["Q_FLASH", "STUN", "SHIELD_BREAK"],
       W: ["SHIELD", "AS_UP", "AIRBORNE", "WALL_HOP"],
       E: ["MS_UP"],
-      R: ["R_FLASH", "GRAB"],
+      R: ["R_FLASH"],
       ETC: [],
    },
 
@@ -18,7 +18,7 @@ const rell: ChampData = {
       Q: ["Q_FLASH", "STUN", "SHIELD_BREAK"],
       W: ["MS_UP", "GRAB", "WALL_HOP"],
       E: ["MS_UP"],
-      R: ["R_FLASH", "GRAB"],
+      R: ["R_FLASH"],
       ETC: [],
    },
   },

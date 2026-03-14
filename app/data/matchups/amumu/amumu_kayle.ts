@@ -9,8 +9,8 @@ export const amumu_kayle: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kayle: {
       ko: [],

@@ -9,8 +9,8 @@ export const amumu_kogmaw: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kogmaw: {
       ko: [],

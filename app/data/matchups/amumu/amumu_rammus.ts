@@ -9,8 +9,8 @@ export const amumu_rammus: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: [""],
-      en: [""],
+      ko: ["아무무 Q의 [[STUN]]로 람머스 R을 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 Q, R의 [[STUN]]로 람머스 Q를 끊을 수 있음.", "아무무 Q로 람머스 E의 [[TAUNT]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효하고 E의 [[TAUNT]]도 남아있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Rammus's R, but can follow him.\nHowever, [[STUN]] remains active.", "Amumu's Q and R [[STUN]] can interrupt Rammus's Q.", "Amumu's Q is affected by Rammus's E [[TAUNT]], but can still move if the dash phase activates.\nHowever, damage is applied and E's [[TAUNT]] remains active."],
     },
     rammus: {
       ko: [],

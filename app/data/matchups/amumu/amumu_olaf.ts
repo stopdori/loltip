@@ -9,8 +9,8 @@ export const amumu_olaf: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: [""],
-      en: [""],
+      ko: ["아무무 Q의 [[STUN]]로 올라프 R를 끊을 수 없지만 따라갈 수 있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Olaf's R, but can follow him."],
     },
     olaf: {
       ko: [],

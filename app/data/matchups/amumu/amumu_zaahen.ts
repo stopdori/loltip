@@ -9,8 +9,8 @@ export const amumu_zaahen: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: [""],
-      en: [""],
+      ko: ["아무무 Q의 [[STUN]]로 자헨 E, R를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 자헨 E를 끊을 수 있음.", "아무무 Q, R의 [[STUN]]로 자헨 R(시전 집중)을 끊을 수 없음.", "아무무 Q로 자헨 Q의 [[AIRBORNE]], W의 [[GRAB]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Zaahen's E and R, but can follow him.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Zaahen's E.", "Amumu's Q and R [[STUN]] cannot interrupt Zaahen's R (channeling).", "Amumu's Q is affected by Zaahen's Q [[AIRBORNE]] and W [[GRAB]], but can still move if the dash phase activates.\nHowever, damage is applied."],
     },
     zaahen: {
       ko: [],
