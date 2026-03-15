@@ -196,7 +196,7 @@ HEAL: { ko: "회복", en: "Heal" },
 SHIELD: { ko: "보호막", en: "Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
 LIFESTEAL: { ko: "피흡", en: "Lifesteal" },
-MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
+MANA_RESTORE: { ko: "마나", en: "Mana" },
 ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
 
 /* =========================
@@ -541,8 +541,8 @@ ANTI_DASH: {
 
 
 AIRBORNE: {
-  ko: "공중에 띄움 - 최상급 CC\n(클린즈 계열로 해제 불가능)",
-  en: "Knocks the target airborne — top-tier CC \n(cannot be cleansed)",
+  ko: "공중에 띄움 - 최상급 CC\n(클린즈 계열로 해제 불가능)\n그랩, 넉백, 체공, 에어본",
+  en: "Knocks the target airborne — top-tier CC \n(cannot be cleansed)\nGrab, Knockback, Suspending, Airborne",
 },
 SUSPENDING: {
   ko: "공중에 띄워서 거는 기절\n야스오 궁 가능\n(강인함의 영향을 받고, 클린즈 계열로 해제 가능)",

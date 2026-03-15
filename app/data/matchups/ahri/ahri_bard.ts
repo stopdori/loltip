@@ -9,7 +9,7 @@ export const ahri_bard: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 바드 E(벽이동)를 끊을 수 있음"],
+      ko: ["아리 E로 바드 E(터널)를 끊을 수 있음"],
       en: ["Ahri's E can interrupt Bard's E (wall-travel)"],
     },
     bard: {
