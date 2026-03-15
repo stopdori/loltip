@@ -76,11 +76,11 @@ function clearEnemyChamp() {
   router.replace(`/champ`);
 }
 
-const [myChampId, setMyChampId] = useState<string | null>(null);
-const [enemyChampId, setEnemyChampId] = useState<string | null>(null);
+const [myChampId, setMyChampId] = useState<string | null>(forcedMe ?? null);
+const [enemyChampId, setEnemyChampId] = useState<string | null>(forcedEnemy ?? null);
 
 useEffect(() => {
-  // 이미 같은 값이면 덮어쓰지 않는다 (중요)
+  // SPA 네비게이션으로 props 변경 시 동기화
   if (forcedMe !== myChampId) setMyChampId(forcedMe ?? null);
   if (forcedEnemy !== enemyChampId) setEnemyChampId(forcedEnemy ?? null);
 }, [forcedMe, forcedEnemy]);
