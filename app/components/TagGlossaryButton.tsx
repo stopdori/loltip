@@ -176,7 +176,7 @@ function splitLeftRight(lines: Line[]) {
   return { left, right };
 }
 
-export default function TagGlossaryButton({ lang }: { lang: "ko" | "en" }) {
+export default function TagGlossaryButton({ lang, className }: { lang: "ko" | "en"; className?: string }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -296,7 +296,7 @@ export default function TagGlossaryButton({ lang }: { lang: "ko" | "en" }) {
       <button
   type="button"
   onClick={() => setOpen(true)}
-  className="px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
+  className={className ?? "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-800/80"}
 >
   {lang === "ko" ? "말풍선" : "Tags"}
 </button>

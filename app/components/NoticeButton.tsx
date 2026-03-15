@@ -76,7 +76,7 @@ export default function NoticeButton({ lang, className }: Props) {
 
       {/* 작은 모달(팝오버) */}
       {open && (
-        <div className="absolute right-0 top-full mt-2 w-[min(320px,78vw)] rounded-2xl bg-slate-900/95 p-4 ring-1 ring-slate-700 shadow-xl z-50">
+        <div className="absolute left-0 top-full mt-2 w-[min(320px,78vw)] rounded-2xl bg-slate-900/95 p-4 ring-1 ring-slate-700 shadow-xl z-50">
           {/* ✅ 제목 가운데 (닫기 버튼 없음) */}
           <div className="mb-3 text-center">
             <div className="text-sm font-extrabold text-slate-100">

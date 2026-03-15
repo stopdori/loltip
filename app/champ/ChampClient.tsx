@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import ChampSelectButton from "../components/ChampSelectButton";
 import ChampSelectModal from "../components/ChampSelectModal";
 import SkillTagsPanel from "../components/SkillTagsPanel";
@@ -11,10 +11,9 @@ import UltCooldownBox from "../components/UltCooldownBox";
 import { CHAMPIONS, type Champ } from "../data/champions";
 import { CHAMPS } from "../data/champs/_index";
 import FeedbackButton from "../components/FeedbackButton";
-import HelpButton from "../components/HelpButton";
-import NoticeButton from "../components/NoticeButton";
+import QuizWidget from "../components/QuizWidget";
+import SiteHeader from "../components/SiteHeader";
 import AdSlot from "../components/AdSlot";
-import TagGlossaryButton from "../components/TagGlossaryButton";
 
 type Lang = "ko" | "en";
 const LANG_KEY = "loltip_lang";
@@ -36,9 +35,10 @@ function saveLang(v: Lang) {
 type Props = {
   forcedMe?: string | null;
   forcedEnemy?: string | null;
+  highlight?: string;
 };
 
-export default function Home({ forcedMe, forcedEnemy }: Props) {
+export default function Home({ forcedMe, forcedEnemy, highlight }: Props) {
   const [lang, setLang] = useState<Lang>("ko");
 
   
@@ -51,6 +51,7 @@ export default function Home({ forcedMe, forcedEnemy }: Props) {
     setLang(v);
     saveLang(v);
   };
+
 
 
   const router = useRouter();
@@ -131,67 +132,24 @@ useEffect(() => {
   const myIsSooner = canCompare ? myUltCd! < enemyUltCd! : false;
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
 
-  const handleLogoClick = () => {
-  window.location.href = "/champ";
-};
 
 
   return (
     <div className="space-y-12">
 
 
-      <header className="relative text-center max-w-6xl mx-auto px-4">
-        <div className="
-  mt-4
-  flex flex-col items-end gap-2
-  lg:absolute lg:right-4 lg:top-4 lg:mt-0
-">
-          {/* 상단: 패치 / 공지 / 도움말 */}
-          <div className="flex items-center gap-2">
-            <span className="text-xl text-slate-300 select-none whitespace-nowrap">
-              🛠 26.5
-            
-            </span>
+      <SiteHeader
+        lang={lang}
+        onLangChange={setLangAndPersist}
+        subtitle={subtitle}
+      />
 
-            <NoticeButton lang={lang} />
-            <HelpButton lang={lang} />
-            <TagGlossaryButton lang={lang} />
-          </div>
-
-          {/* 하단: 언어 선택 */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setLangAndPersist("ko")}
-              className={`px-3 py-2 rounded-xl text-sm font-bold border ${
-                lang === "ko"
-                  ? "bg-yellow-400 text-black border-yellow-300"
-                  : "bg-slate-800/60 border-white/10"
-              }`}
-            >
-              한글
-            </button>
-
-            <button
-              onClick={() => setLangAndPersist("en")}
-              className={`px-3 py-2 rounded-xl text-sm font-bold border ${
-                lang === "en"
-                  ? "bg-yellow-400 text-black border-yellow-300"
-                  : "bg-slate-800/60 border-white/10"
-              }`}
-            >
-              EN
-            </button>
-          </div>
+      {/* 빈 상태: CHAMP PICK 위에 QuizWidget */}
+      {!myChamp && !enemyChamp && (
+        <div className="max-w-[474px] sm:max-w-[648px] mx-auto px-3">
+          <QuizWidget lang={lang} />
         </div>
-
-        <h1
-  onClick={handleLogoClick}
-  className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
->
-  LOLTIP
-</h1>
-        <p className="mt-5 lg:mt-3 text-slate-300">{subtitle}</p>
-      </header>
+      )}
 
       {/* CHAMP PICK */}
 <section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 border-b border-white/10 supports-[backdrop-filter]:backdrop-blur">
@@ -368,15 +326,21 @@ setOpenTarget(null);
       myChampId={myChamp.id}
       enemyChampId={enemyChamp.id}
       lang={lang}
+      highlight={highlight}
     />
   ) : (
-    <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400">
-      {lang === "ko"
-        ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
-        : "Pick both champions to see matchup summary."}
+    <div className="space-y-4">
+      <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400">
+        {lang === "ko"
+          ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
+          : "Pick both champions to see matchup summary."}
+      </div>
+      {(myChamp || enemyChamp) && <QuizWidget lang={lang} />}
     </div>
   )}
 </section>
+
+      {myChamp && enemyChamp && <QuizWidget lang={lang} />}
 
       <FeedbackButton lang={lang} />
 
