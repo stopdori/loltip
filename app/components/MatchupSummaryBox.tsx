@@ -63,15 +63,9 @@ export default function MatchupSummaryBox({
                 <li
                   key={`my-${idx}`}
                   ref={isHighlighted ? highlightRef : null}
-                  className="whitespace-pre-line"
+                  className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
                 >
-                  {isHighlighted ? (
-                    <span className="inline-block border-2 border-yellow-400 rounded px-2 py-1">
-                      <TokenText text={text} lang={lang} />
-                    </span>
-                  ) : (
-                    <TokenText text={text} lang={lang} />
-                  )}
+                  <TokenText text={text} lang={lang} />
                 </li>
               );
             }
@@ -85,15 +79,9 @@ export default function MatchupSummaryBox({
                 <li
                   key={`enemy-${idx}`}
                   ref={isHighlighted ? highlightRef : null}
-                  className="whitespace-pre-line"
+                  className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
                 >
-                  {isHighlighted ? (
-                    <span className="inline-block border-2 border-yellow-400 rounded px-2 py-1">
-                      <TokenText text={text} lang={lang} />
-                    </span>
-                  ) : (
-                    <TokenText text={text} lang={lang} />
-                  )}
+                  <TokenText text={text} lang={lang} />
                 </li>
               );
             }

@@ -5,11 +5,13 @@ import { quizData } from "../data/quiz";
 
 type Lang = "ko" | "en";
 
-function randomIndex(exclude: number, len: number): number {
-  if (len <= 1) return 0;
-  let next;
-  do { next = Math.floor(Math.random() * len); } while (next === exclude);
-  return next;
+function shuffle(len: number): number[] {
+  const arr = Array.from({ length: len }, (_, i) => i);
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
 }
 
 type Phase = "in" | "out-up" | "out-down" | "from-bottom" | "from-top";
@@ -23,54 +25,61 @@ const phaseStyle: Record<Phase, React.CSSProperties> = {
 };
 
 export default function QuizWidget({ lang }: { lang: Lang }) {
-  const [idx, setIdx] = useState(() => Math.floor(Math.random() * quizData.length));
+  const [shuffled, setShuffled] = useState<number[]>(() => shuffle(quizData.length));
+  const [pos, setPos] = useState(0);
   const [phase, setPhase] = useState<Phase>("in");
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const idx = shuffled[pos];
 
   function clearTimer() {
     if (timerRef.current) clearTimeout(timerRef.current);
   }
 
-  function switchTo(nextIdx: number, direction: "up" | "down" = "up") {
+  function goTo(nextPos: number, nextShuffled: number[], direction: "up" | "down") {
+    clearTimer();
     setPhase(direction === "up" ? "out-up" : "out-down");
     setTimeout(() => {
-      setIdx(nextIdx);
+      setShuffled(nextShuffled);
+      setPos(nextPos);
       setPhase(direction === "up" ? "from-bottom" : "from-top");
       requestAnimationFrame(() => requestAnimationFrame(() => setPhase("in")));
     }, 150);
   }
 
-  function scheduleNext() {
-    clearTimer();
-    timerRef.current = setTimeout(() => {
-      switchTo(randomIndex(idx, quizData.length), "up");
-    }, 5000);
+  function next() {
+    const nextPos = pos + 1 >= shuffled.length ? 0 : pos + 1;
+    goTo(nextPos, shuffled, "up");
+  }
+
+  function prev() {
+    const nextPos = pos === 0 ? shuffled.length - 1 : pos - 1;
+    goTo(nextPos, shuffled, "down");
   }
 
   useEffect(() => {
-    scheduleNext();
+    clearTimer();
+    timerRef.current = setTimeout(next, 7000);
     return clearTimer;
-  }, [idx]);
+  }, [pos, shuffled]);
 
   function handlePrev(e: React.MouseEvent) {
     e.preventDefault();
     e.stopPropagation();
-    switchTo((idx - 1 + quizData.length) % quizData.length, "down");
+    prev();
   }
 
   function handleNext(e: React.MouseEvent) {
     e.preventDefault();
     e.stopPropagation();
-    switchTo((idx + 1) % quizData.length, "up");
+    next();
   }
 
   const item = quizData[idx];
   const pair = [item.link.champ1, item.link.champ2].sort().join("-vs-");
   const url = `/matchup/${pair}?first=${item.link.champ1}&highlight=${item.link.highlight}`;
-
   return (
     <div className="flex items-center gap-1">
-      {/* 본문 박스 */}
       <a
         href={url}
         target="_blank"
@@ -81,7 +90,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center">
             <p className="text-base font-bold text-yellow-400 tracking-wide uppercase mr-1.5">
-              {lang === "ko" ? "오늘의 퀴즈" : "Quiz"}
+              {lang === "ko" ? "판정 퀴즈" : "Ruling Quiz"}
             </p>
             <span className="flex flex-row" style={{ gap: 0, lineHeight: 1 }}>
               <button
@@ -104,8 +113,6 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
           </div>
           <a
             href="/quiz"
-            target="_blank"
-            rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
             className="text-base text-white hover:text-yellow-400 transition-colors"
           >
@@ -114,15 +121,14 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
         </div>
 
         {/* 질문 */}
-        <div style={{ overflow: "hidden" }}>
-        <div style={phaseStyle[phase]}>
-          <p className="text-sm text-slate-200 leading-relaxed">
-            {item.question[lang]}
-          </p>
-        </div>
+        <div className="min-h-[4.5rem] sm:min-h-0" style={{ overflow: "hidden" }}>
+          <div style={phaseStyle[phase]}>
+            <p className="text-sm text-slate-200 leading-relaxed">
+              {item.question[lang]}
+            </p>
+          </div>
         </div>
       </a>
-
     </div>
   );
 }

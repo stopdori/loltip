@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { quizData } from "../data/quiz";
+import SiteHeader from "../components/SiteHeader";
 
 type Lang = "ko" | "en";
 const LANG_KEY = "loltip_lang";
@@ -32,8 +33,8 @@ export default function QuizClient() {
   const title = lang === "ko" ? "롤 상호작용 퀴즈" : "LoL Interaction Quiz";
   const subtitle =
     lang === "ko"
-      ? "챔피언 간 상호작용을 맞혀보세요"
-      : "Test your knowledge of champion interactions";
+      ? "신기하거나 궁금할만한 상호작용"
+      : "Interesting and curious champion interactions";
   const answerLabel = lang === "ko" ? "정답 확인" : "Check Answer";
 
   function handleAnswer(champ1: string, champ2: string, highlight: string) {
@@ -44,49 +45,15 @@ export default function QuizClient() {
 
   return (
     <div className="space-y-10">
-      {/* Header */}
-      <header className="relative text-center">
-        {/* 언어 선택 버튼 */}
-        <div className="mt-4 flex items-center gap-2 justify-end lg:absolute lg:right-4 lg:top-4 lg:mt-0">
-          <button
-            onClick={() => setLangAndPersist("ko")}
-            className={`px-3 py-2 rounded-xl text-sm font-bold border ${
-              lang === "ko"
-                ? "bg-yellow-400 text-black border-yellow-300"
-                : "bg-slate-800/60 border-white/10"
-            }`}
-          >
-            한글
-          </button>
-          <button
-            onClick={() => setLangAndPersist("en")}
-            className={`px-3 py-2 rounded-xl text-sm font-bold border ${
-              lang === "en"
-                ? "bg-yellow-400 text-black border-yellow-300"
-                : "bg-slate-800/60 border-white/10"
-            }`}
-          >
-            EN
-          </button>
-        </div>
-
-        <h1
-          onClick={() => (window.location.href = "/champ")}
-          className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
-        >
-          LOLTIP
-        </h1>
-        <p className="mt-3 text-slate-300">{subtitle}</p>
-      </header>
+      <SiteHeader
+        lang={lang}
+        onLangChange={setLangAndPersist}
+        subtitle={subtitle}
+      />
 
       {/* Page title */}
       <div className="text-center">
         <h2 className="text-2xl font-bold text-slate-100">{title}</h2>
-        <p className="mt-1 text-sm text-slate-400">
-          {lang === "ko"
-            ? `총 ${quizData.length}문제`
-            : `${quizData.length} questions`}
-        </p>
       </div>
 
       {/* Quiz list */}
@@ -97,7 +64,7 @@ export default function QuizClient() {
             className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 p-5 flex flex-col sm:flex-row sm:items-center gap-4"
           >
             {/* Question number */}
-            <div className="flex-shrink-0 w-9 h-9 rounded-full bg-yellow-400 text-black font-extrabold text-sm flex items-center justify-center">
+            <div className="flex-shrink-0 w-9 h-9 font-extrabold text-2xl text-yellow-400 flex items-center justify-center">
               {i + 1}
             </div>
 

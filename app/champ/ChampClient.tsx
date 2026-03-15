@@ -12,10 +12,8 @@ import { CHAMPIONS, type Champ } from "../data/champions";
 import { CHAMPS } from "../data/champs/_index";
 import FeedbackButton from "../components/FeedbackButton";
 import QuizWidget from "../components/QuizWidget";
-import HelpButton from "../components/HelpButton";
-import NoticeButton from "../components/NoticeButton";
+import SiteHeader from "../components/SiteHeader";
 import AdSlot from "../components/AdSlot";
-import TagGlossaryButton from "../components/TagGlossaryButton";
 
 type Lang = "ko" | "en";
 const LANG_KEY = "loltip_lang";
@@ -53,6 +51,7 @@ export default function Home({ forcedMe, forcedEnemy, highlight }: Props) {
     setLang(v);
     saveLang(v);
   };
+
 
 
   const router = useRouter();
@@ -133,75 +132,24 @@ useEffect(() => {
   const myIsSooner = canCompare ? myUltCd! < enemyUltCd! : false;
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
 
-  const handleLogoClick = () => {
-  window.location.href = "/champ";
-};
 
 
   return (
     <div className="space-y-12">
 
 
-      <header className="relative text-center max-w-6xl mx-auto px-4">
-        <div className="
-  mt-4
-  flex flex-col items-end gap-2
-  lg:absolute lg:right-4 lg:top-4 lg:mt-0
-">
-          {/* 상단: 패치 / 공지 / 도움말 */}
-          <div className="flex items-center gap-2">
-            <span className="text-xl text-slate-300 select-none whitespace-nowrap">
-              🛠 26.5
-            
-            </span>
+      <SiteHeader
+        lang={lang}
+        onLangChange={setLangAndPersist}
+        subtitle={subtitle}
+      />
 
-            <NoticeButton lang={lang} />
-            <HelpButton lang={lang} />
-            <TagGlossaryButton lang={lang} />
-            <a
-              href="/quiz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
-            >
-              {lang === "ko" ? "퀴즈" : "Quiz"}
-            </a>
-          </div>
-
-          {/* 하단: 언어 선택 */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setLangAndPersist("ko")}
-              className={`px-3 py-2 rounded-xl text-sm font-bold border ${
-                lang === "ko"
-                  ? "bg-yellow-400 text-black border-yellow-300"
-                  : "bg-slate-800/60 border-white/10"
-              }`}
-            >
-              한글
-            </button>
-
-            <button
-              onClick={() => setLangAndPersist("en")}
-              className={`px-3 py-2 rounded-xl text-sm font-bold border ${
-                lang === "en"
-                  ? "bg-yellow-400 text-black border-yellow-300"
-                  : "bg-slate-800/60 border-white/10"
-              }`}
-            >
-              EN
-            </button>
-          </div>
+      {/* 빈 상태: CHAMP PICK 위에 QuizWidget */}
+      {!myChamp && !enemyChamp && (
+        <div className="max-w-[474px] sm:max-w-[648px] mx-auto px-3">
+          <QuizWidget lang={lang} />
         </div>
-
-        <h1
-  onClick={handleLogoClick}
-  className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
->
-  LOLTIP
-</h1>
-        <p className="mt-5 lg:mt-3 text-slate-300">{subtitle}</p>
-      </header>
+      )}
 
       {/* CHAMP PICK */}
 <section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 border-b border-white/10 supports-[backdrop-filter]:backdrop-blur">
@@ -387,7 +335,7 @@ setOpenTarget(null);
           ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
           : "Pick both champions to see matchup summary."}
       </div>
-      {!(myChamp && enemyChamp) && <QuizWidget lang={lang} />}
+      {(myChamp || enemyChamp) && <QuizWidget lang={lang} />}
     </div>
   )}
 </section>
