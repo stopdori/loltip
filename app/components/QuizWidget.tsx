@@ -28,7 +28,10 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
   const [shuffled, setShuffled] = useState<number[]>(() => shuffle(quizData.length));
   const [pos, setPos] = useState(0);
   const [phase, setPhase] = useState<Phase>("in");
+  const [mounted, setMounted] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => { setMounted(true); }, []);
 
   const idx = shuffled[pos];
 
@@ -79,7 +82,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
   const pair = [item.link.champ1, item.link.champ2].sort().join("-vs-");
   const url = `/matchup/${pair}?first=${item.link.champ1}&highlight=${item.link.highlight}`;
   return (
-    <div className="flex items-center gap-1">
+    <div className={`flex items-center gap-1 transition-opacity duration-300 ${mounted ? "opacity-100" : "opacity-0"}`}>
       <a
         href={url}
         target="_blank"

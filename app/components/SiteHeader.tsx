@@ -31,6 +31,14 @@ export default function SiteHeader({ lang, onLangChange, subtitle }: Props) {
 
   return (
     <header className="max-w-6xl mx-auto px-4">
+      <style>{`
+        @keyframes quiz-shimmer {
+          0%, 70%, 100% { color: inherit; border-color: rgba(255,255,255,0.1); box-shadow: none; }
+          80% { color: #facc15; border-color: #facc15; box-shadow: 0 0 6px rgba(250,204,21,0.4); }
+          90% { color: inherit; border-color: rgba(255,255,255,0.1); box-shadow: none; }
+        }
+        .quiz-shimmer { animation: quiz-shimmer 3s ease-in-out infinite; }
+      `}</style>
       {/* 네비게이션 바 */}
       <div className="flex items-center justify-between gap-2">
 
@@ -47,7 +55,7 @@ export default function SiteHeader({ lang, onLangChange, subtitle }: Props) {
               <NoticeButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} />
               <HelpButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} />
               <TagGlossaryButton lang={lang} className={btnFull} />
-              <a href="/quiz" className={btnFull}>
+              <a href="/quiz" className={`${btnFull} quiz-shimmer`}>
                 {lang === "ko" ? "퀴즈" : "Quiz"}
               </a>
             </div>
@@ -59,7 +67,7 @@ export default function SiteHeader({ lang, onLangChange, subtitle }: Props) {
           <NoticeButton lang={lang} />
           <HelpButton lang={lang} />
           <TagGlossaryButton lang={lang} />
-          <a href="/quiz" className={btnBase}>
+          <a href="/quiz" className={`${btnBase} quiz-shimmer`}>
             {lang === "ko" ? "퀴즈" : "Quiz"}
           </a>
         </div>

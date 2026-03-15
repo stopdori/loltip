@@ -330,7 +330,7 @@ setOpenTarget(null);
     />
   ) : (
     <div className="space-y-4">
-      <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400">
+      <div className="max-w-[474px] sm:max-w-[648px] mx-auto rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400">
         {lang === "ko"
           ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
           : "Pick both champions to see matchup summary."}
