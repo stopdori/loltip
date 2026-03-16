@@ -361,7 +361,7 @@ if (champ?.notes) {
   const spellTip = getSpellTip(k);
 
   return (
-    <div className="grid grid-cols-[24px_1fr] gap-x-4 items-center py-2.5 min-h-[35px]">
+    <div className="grid grid-cols-[24px_1fr] gap-x-4 items-center py-1 sm:py-2.5 min-h-[35px]">
       <div
         className={`w-[24px] text-lg font-black text-center flex items-center justify-center ${
           k === "R"
@@ -464,7 +464,7 @@ return (
 
 
 
-    <div className="space-y-1.5">
+    <div className="space-y-0.5 sm:space-y-1.5">
       {renderRow("P")}
       {renderRow("Q")}
       {renderRow("W")}

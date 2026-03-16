@@ -258,7 +258,7 @@ setOpenTarget(null);
 
 
 {/* 챔피언 이름 표시 */}
-<div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
+<div className="hidden sm:block mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
      {myChamp
      ? (lang === "ko" ? myChamp.ko : myChamp.en)
      : (lang === "ko" ? "챔피언" : "Champion")}
@@ -297,7 +297,7 @@ setOpenTarget(null);
 <div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 sm:col-start-3 sm:flex ${myChamp && enemyChamp && mobileTab !== "enemy" ? "hidden sm:flex" : ""}`}>
 
 {/* 챔피언 이름 표시 */}
- <div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
+ <div className="hidden sm:block mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
    {enemyChamp
      ? (lang === "ko" ? enemyChamp.ko : enemyChamp.en)
      : (lang === "ko" ? "챔피언" : "Champion")}
@@ -342,7 +342,7 @@ setOpenTarget(null);
 </section>
 </>
 ) : null}
-<section className="max-w-[980px] mx-auto w-full">
+<section className="max-w-[430px] sm:max-w-[980px] mx-auto w-full">
   {myChamp && enemyChamp ? (
     <MatchupSummaryBox
       myChampId={myChamp.id}
@@ -362,7 +362,7 @@ setOpenTarget(null);
   )}
 </section>
 
-      {myChamp && enemyChamp && <div className="max-w-[980px] mx-auto w-full"><QuizWidget lang={lang} /></div>}
+      {myChamp && enemyChamp && <div className="max-w-[430px] sm:max-w-[980px] mx-auto w-full"><QuizWidget lang={lang} /></div>}
 
       <FeedbackButton lang={lang} />
 
