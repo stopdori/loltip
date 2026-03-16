@@ -10,7 +10,7 @@ export const anivia_smolder: MatchupSummary = {
   highlightsByChamp: {
     anivia: {
       ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 스몰더 E(벽이동)를 끊을 수 있음."],
-      en: [""],
+      en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Smolder's E (wall traverse)."],
     },
     smolder: {
       ko: [],

@@ -9,8 +9,8 @@ export const anivia_singed: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 사미라 E의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 사미라 E의 이동을 끊을 수 있음.", "애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 사미라 R을 끊을 수 있음."],
-      en: [""],
+      ko: ["애니비아 W(벽)의 [[AIRBORNE]]으로 신지드 E의 [[GRAB]]에 끌려가는 아군의 이동을 끊을 수 있음. 즉, 구조가능."],
+      en: ["Anivia's W (wall) [[AIRBORNE]] can interrupt an ally being pulled by Singed's E [[GRAB]], effectively rescuing them."],
     },
     singed: {
       ko: [],
