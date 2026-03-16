@@ -9,7 +9,7 @@ export const anivia_morgana: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 다이애나 R의 [[TETHER]]을 끊을 수 없음.\n단, 애니비아 Q의 [[STUN]]은 남아있음."],
+      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 모르가나 R의 [[TETHER]]을 끊을 수 없음.\n단, 애니비아 Q의 [[STUN]]은 남아있음."],
       en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] cannot interrupt Morgana's R [[TETHER]].\nHowever, [[STUN]] still applies."],
     },
     morgana: {
