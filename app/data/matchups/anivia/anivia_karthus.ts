@@ -13,8 +13,8 @@ export const anivia_karthus: MatchupSummary = {
       en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Karthus's R (channeling)."],
     },
     karthus: {
-      ko: [],
-      en: [],
+      ko: ["카서스 R을 시전 중 일 때 애니비아가 P(알)로 변해도 카서스 R의 대상에 포함."],
+      en: ["If Anivia transforms into P (Egg) while Karthus is channeling R, she is still a target of Karthus's R."],
     },
   },
 };

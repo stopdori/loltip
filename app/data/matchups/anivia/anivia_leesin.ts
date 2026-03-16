@@ -9,8 +9,8 @@ export const anivia_leesin: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: ["애니비아 Q의 [[STUN]]로 리신 Q2, W의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 리신 Q2, W의 이동을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Lee Sin's Q2 or W movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Lee Sin's Q2 or W movement."],
     },
     leesin: {
       ko: [],

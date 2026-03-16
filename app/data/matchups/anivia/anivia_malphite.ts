@@ -9,8 +9,8 @@ export const anivia_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     malphite: {
       ko: [],
