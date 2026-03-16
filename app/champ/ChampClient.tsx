@@ -128,7 +128,7 @@ useEffect(() => {
   const subtitle =
     lang === "ko" ? "롤 챔피언 특징과 메커니즘 요약" : "Summary of LoL Champion Features and Mechanisms";
 
-  const firstUltLabel = lang === "ko" ? "궁 주도권" : "Cooldown Lead";
+  const firstUltLabel = lang === "ko" ? "궁 주도권" : "ULT CD Lead";
 
   const myIsSooner = canCompare ? myUltCd! < enemyUltCd! : false;
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
@@ -236,20 +236,20 @@ setOpenTarget(null);
     <button
       type="button"
       onClick={() => setMobileTab("my")}
-      className={`flex-1 py-2 text-sm font-bold text-center transition ${mobileTab === "my" ? "text-yellow-400 bg-slate-700/60" : "text-slate-400"}`}
+      className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "my" ? "text-yellow-400 bg-slate-700/60" : "text-slate-400"}`}
     >
       {lang === "ko" ? myChamp.ko : myChamp.en}
     </button>
     <button
       type="button"
       onClick={() => setMobileTab("enemy")}
-      className={`flex-1 py-2 text-sm font-bold text-center transition ${mobileTab === "enemy" ? "text-yellow-400 bg-slate-700/60" : "text-slate-400"}`}
+      className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "enemy" ? "text-yellow-400 bg-slate-700/60" : "text-slate-400"}`}
     >
       {lang === "ko" ? enemyChamp.ko : enemyChamp.en}
     </button>
   </div>
 )}
-<section className="relative grid grid-cols-1 sm:grid-cols-[430px_80px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
+<section className="relative grid grid-cols-1 sm:grid-cols-[430px_68px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
 
       
         {/* MY */}
