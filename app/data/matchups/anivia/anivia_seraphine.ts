@@ -9,8 +9,8 @@ export const anivia_seraphine: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     seraphine: {
       ko: [],

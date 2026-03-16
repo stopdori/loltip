@@ -228,7 +228,7 @@ setOpenTarget(null);
 
       {/* COMPARE */}
 {(myChamp || enemyChamp) ? (
-<section className="relative grid grid-cols-1 md:grid-cols-[430px_80px_430px] gap-8 lg:gap-6 w-full max-w-[980px] mx-auto justify-center items-start">
+<section className="relative grid grid-cols-1 md:grid-cols-[430px_80px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
 
       
         {/* MY */}
@@ -320,7 +320,7 @@ setOpenTarget(null);
 
 </section>
 ) : null}
-<section>
+<section className="max-w-[980px] mx-auto w-full">
   {myChamp && enemyChamp ? (
     <MatchupSummaryBox
       myChampId={myChamp.id}
@@ -340,7 +340,7 @@ setOpenTarget(null);
   )}
 </section>
 
-      {myChamp && enemyChamp && <QuizWidget lang={lang} />}
+      {myChamp && enemyChamp && <div className="max-w-[980px] mx-auto w-full"><QuizWidget lang={lang} /></div>}
 
       <FeedbackButton lang={lang} />
 
