@@ -9,8 +9,8 @@ export const anivia_rammus: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 람머스 Q를 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Rammus's Q."],
     },
     rammus: {
       ko: [],

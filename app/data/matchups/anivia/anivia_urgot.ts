@@ -9,8 +9,8 @@ export const anivia_urgot: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: ["애니비아 Q의 [[STUN]]로 우르곳 E의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 우르곳 E(돌진 단계)의 이동을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Urgot's E dash. However, the [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Urgot's E (during the dash phase)."],
     },
     urgot: {
       ko: [],

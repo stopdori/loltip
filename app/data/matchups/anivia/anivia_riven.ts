@@ -9,8 +9,8 @@ export const anivia_riven: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: ["애니비아 Q의 [[STUN]]로 리븐 Q1, Q2, Q3, E의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 리븐 Q1, Q2, Q3, E의 이동을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Riven's Q1, Q2, Q3, or E movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Riven's Q1, Q2, Q3, or E movement."],
     },
     riven: {
       ko: [],

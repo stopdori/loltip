@@ -9,8 +9,8 @@ export const anivia_braum: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [],
-      en: [],
+      ko: ["애니비아 Q의 [[STUN]]로 브라움 W의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 브라움 W의 이동을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Braum's W movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Braum's W movement."],
     },
     braum: {
       ko: ["브라움 E(방패)로 애니비아 평타, Q, E, R(처음 한틱)을 막을([[DAMAGE_NULLIFY]]) 수 있음.", "브라움 E(방패)로 애니비아 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음. 단, 애니비아 Q는 즉시 ''삭제''되어 데미지, [[STUN]]이 없음", "브라움 P의 [[STUN]], R의 [[AIRBORNE]]으로 애니비아 R(채널링)을 끊을 수 있음"],

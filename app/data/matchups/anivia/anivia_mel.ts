@@ -9,8 +9,8 @@ export const anivia_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["멜 W가 애니비아 Q E 반사 가능."],
-      en: ["Mel’s W reflects Anivia’s Q E."],
+      ko: ["멜 W(반사)로 애니비아 Q, E를 반사 할 수 있음.\n단, 애니비아 Q를 반사했을 때 애니비아의 Q2를 사용할 수는 없음. 그대로 쭉 날아감."],
+      en: ["Mel's W (Reflect) can reflect Anivia's Q and E.\nHowever, when Q is reflected, Anivia cannot detonate it with Q2 — it flies straight through."],
     },
     mel: {
       ko: [],

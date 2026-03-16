@@ -9,8 +9,8 @@ export const anivia_tahmkench: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 탐켄치 W(시전 집중)를 끊을 수 있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 탐켄치 R(삼키기)을 끊을 수 없음."],
+      en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Tahm Kench's W (channeling).", "Anivia's W (wall) [[AIRBORNE]] cannot interrupt Tahm Kench's R (Devour)."],
     },
     tahmkench: {
       ko: [],

@@ -9,8 +9,8 @@ export const anivia_sejuani: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: ["애니비아 Q의 [[STUN]]로 세주아니 Q의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 세주아니 Q의 이동을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Sejuani's Q dash. However, the [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Sejuani's Q dash."],
     },
     sejuani: {
       ko: [],

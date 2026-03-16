@@ -117,6 +117,7 @@ useEffect(() => {
 
   const [myUltCd, setMyUltCd] = useState<number | null>(null);
   const [enemyUltCd, setEnemyUltCd] = useState<number | null>(null);
+  const [mobileTab, setMobileTab] = useState<"my" | "enemy">("my");
 
   const canCompare =
     !!myChamp && !!enemyChamp && myUltCd != null && enemyUltCd != null;
@@ -127,7 +128,7 @@ useEffect(() => {
   const subtitle =
     lang === "ko" ? "롤 챔피언 특징과 메커니즘 요약" : "Summary of LoL Champion Features and Mechanisms";
 
-  const firstUltLabel = lang === "ko" ? "궁 주도권" : "Cooldown Lead";
+  const firstUltLabel = lang === "ko" ? "궁 주도권" : "ULT CD Lead";
 
   const myIsSooner = canCompare ? myUltCd! < enemyUltCd! : false;
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
@@ -156,7 +157,7 @@ useEffect(() => {
   <div className="max-w-5xl mx-auto px-3 py-2">
 
 
-    <div className="flex items-center justify-center gap-3 sm:gap-16">
+    <div className="flex items-center justify-center gap-3 sm:gap-8 w-full max-w-[430px] sm:max-w-none mx-auto">
 
       <ChampSelectButton
   label={lang === "ko" ? "챔피언" : "Champion"}
@@ -228,16 +229,36 @@ setOpenTarget(null);
 
       {/* COMPARE */}
 {(myChamp || enemyChamp) ? (
-<section className="relative grid grid-cols-1 md:grid-cols-[430px_80px_430px] gap-8 lg:gap-6 w-full max-w-[980px] mx-auto justify-center items-start">
+<>
+{/* 모바일 탭바 */}
+{myChamp && enemyChamp && (
+  <div className="sm:hidden flex w-full max-w-[430px] mx-auto rounded-xl bg-slate-800/40 ring-1 ring-white/10 overflow-hidden mb-2">
+    <button
+      type="button"
+      onClick={() => setMobileTab("my")}
+      className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "my" ? "text-yellow-400 bg-slate-700/60" : "text-slate-400"}`}
+    >
+      {lang === "ko" ? myChamp.ko : myChamp.en}
+    </button>
+    <button
+      type="button"
+      onClick={() => setMobileTab("enemy")}
+      className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "enemy" ? "text-yellow-400 bg-slate-700/60" : "text-slate-400"}`}
+    >
+      {lang === "ko" ? enemyChamp.ko : enemyChamp.en}
+    </button>
+  </div>
+)}
+<section className="relative grid grid-cols-1 sm:grid-cols-[430px_68px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
 
       
         {/* MY */}
 {myChamp && (
-<div className="flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-1">
+<div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 sm:col-start-1 sm:flex ${myChamp && enemyChamp && mobileTab !== "my" ? "hidden sm:flex" : ""}`}>
 
 
 {/* 챔피언 이름 표시 */}
-<div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
+<div className="hidden sm:block mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
      {myChamp
      ? (lang === "ko" ? myChamp.ko : myChamp.en)
      : (lang === "ko" ? "챔피언" : "Champion")}
@@ -273,10 +294,10 @@ setOpenTarget(null);
 
         {/* ENEMY */}
         {enemyChamp && (
-<div className="flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 md:col-start-3">
+<div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 sm:col-start-3 sm:flex ${myChamp && enemyChamp && mobileTab !== "enemy" ? "hidden sm:flex" : ""}`}>
 
 {/* 챔피언 이름 표시 */}
- <div className="mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
+ <div className="hidden sm:block mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
    {enemyChamp
      ? (lang === "ko" ? enemyChamp.ko : enemyChamp.en)
      : (lang === "ko" ? "챔피언" : "Champion")}
@@ -308,7 +329,7 @@ setOpenTarget(null);
 )}
 
 {myChamp && enemyChamp && (
-  <div className="hidden md:flex flex-col items-center absolute left-1/2 -translate-x-1/2 top-[88px] pointer-events-none">
+  <div className="hidden sm:flex flex-col items-center absolute left-1/2 -translate-x-1/2 top-[88px] pointer-events-none">
     <div className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black">
       {firstUltLabel}
     </div>
@@ -319,8 +340,9 @@ setOpenTarget(null);
 )}
 
 </section>
+</>
 ) : null}
-<section>
+<section className="max-w-[430px] sm:max-w-[980px] mx-auto w-full">
   {myChamp && enemyChamp ? (
     <MatchupSummaryBox
       myChampId={myChamp.id}
@@ -340,7 +362,7 @@ setOpenTarget(null);
   )}
 </section>
 
-      {myChamp && enemyChamp && <QuizWidget lang={lang} />}
+      {myChamp && enemyChamp && <div className="max-w-[430px] sm:max-w-[980px] mx-auto w-full"><QuizWidget lang={lang} /></div>}
 
       <FeedbackButton lang={lang} />
 

@@ -9,8 +9,8 @@ export const anivia_shaco: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     shaco: {
       ko: [],
