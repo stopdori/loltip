@@ -9,12 +9,12 @@ export const anivia_brand: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
-    },
-    brand: {
       ko: [],
       en: [],
+    },
+    brand: {
+      ko: ["브랜드 R은 애니비아 P(알)에도 튕김."],
+      en: ["Brand's R also bounces off Anivia's P (egg)."],
     },
   },
 };

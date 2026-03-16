@@ -9,8 +9,8 @@ export const anivia_cassiopeia: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     cassiopeia: {
       ko: [],

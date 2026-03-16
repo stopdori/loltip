@@ -9,8 +9,8 @@ export const anivia_hecarim: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     hecarim: {
       ko: [],

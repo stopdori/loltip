@@ -9,8 +9,8 @@ export const anivia_karma: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     karma: {
       ko: [],
