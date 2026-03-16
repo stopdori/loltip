@@ -9,8 +9,8 @@ export const anivia_veigar: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     veigar: {
       ko: [],
