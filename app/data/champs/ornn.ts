@@ -4,7 +4,7 @@ const ornn: ChampData = {
   id: "ornn",
   skills: {
     P: [],
-    Q: ["SLOW", "WALL"],
+    Q: ["SLOW", "WALL", "AIRBORNE"],
     W: ["UNSTOPPABLE"],
     E: ["AIRBORNE"],
     R: ["R_FLASH", "SLOW", "AIRBORNE"],
