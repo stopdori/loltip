@@ -231,21 +231,39 @@ setOpenTarget(null);
 {(myChamp || enemyChamp) ? (
 <>
 {/* 모바일 탭바 */}
-{myChamp && enemyChamp && (
+{(myChamp || enemyChamp) && (
   <div className="sm:hidden flex w-full max-w-[430px] mx-auto rounded-xl bg-slate-800/40 ring-1 ring-white/10 overflow-hidden mb-2">
     <button
       type="button"
-      onClick={() => setMobileTab("my")}
-      className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "my" ? "text-yellow-400 bg-slate-700/60" : "text-slate-400"}`}
+      onClick={() => myChamp && setMobileTab("my")}
+      disabled={!myChamp}
+      className={`flex-1 py-2 text-base font-bold text-center transition ${
+        !myChamp
+          ? "text-slate-600 cursor-not-allowed"
+          : mobileTab === "my"
+          ? "text-yellow-400 bg-slate-700/60"
+          : "text-slate-400"
+      }`}
     >
-      {lang === "ko" ? myChamp.ko : myChamp.en}
+      {myChamp
+        ? (lang === "ko" ? myChamp.ko : myChamp.en)
+        : (lang === "ko" ? "챔피언 선택" : "Select")}
     </button>
     <button
       type="button"
-      onClick={() => setMobileTab("enemy")}
-      className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "enemy" ? "text-yellow-400 bg-slate-700/60" : "text-slate-400"}`}
+      onClick={() => enemyChamp && setMobileTab("enemy")}
+      disabled={!enemyChamp}
+      className={`flex-1 py-2 text-base font-bold text-center transition ${
+        !enemyChamp
+          ? "text-slate-600 cursor-not-allowed"
+          : mobileTab === "enemy"
+          ? "text-yellow-400 bg-slate-700/60"
+          : "text-slate-400"
+      }`}
     >
-      {lang === "ko" ? enemyChamp.ko : enemyChamp.en}
+      {enemyChamp
+        ? (lang === "ko" ? enemyChamp.ko : enemyChamp.en)
+        : (lang === "ko" ? "챔피언 선택" : "Select")}
     </button>
   </div>
 )}
