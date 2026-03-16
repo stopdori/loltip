@@ -35,7 +35,7 @@ export default function QuizClient() {
     lang === "ko"
       ? "신기하거나 궁금할만한 상호작용"
       : "Interesting and curious champion interactions";
-  const answerLabel = lang === "ko" ? "정답 확인" : "Check Answer";
+  const answerLabel = lang === "ko" ? "정답" : "Answer";
 
   function handleAnswer(champ1: string, champ2: string, highlight: string) {
     const pair = [champ1, champ2].sort().join("-vs-");
@@ -61,7 +61,7 @@ export default function QuizClient() {
         {quizData.map((item, i) => (
           <div
             key={item.id}
-            className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 p-5 flex flex-col sm:flex-row sm:items-center gap-4"
+            className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 p-5 flex flex-row items-center gap-4 min-h-[110px] sm:min-h-[80px]"
           >
             {/* Question number */}
             <div className="flex-shrink-0 w-9 h-9 font-extrabold text-2xl text-yellow-400 flex items-center justify-center">
