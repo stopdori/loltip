@@ -106,7 +106,7 @@ export default function SiteHeader({ lang, onLangChange, subtitle }: Props) {
           LOLTIP
         </h1>
         <p className="mt-2 text-slate-300">{subtitle}</p>
-        <p className="mt-1 text-xs text-slate-400">26.5 {lang === "ko" ? "패치 반영" : "patch"}</p>
+        <p className="mt-1 text-xs text-slate-400">26.6 {lang === "ko" ? "패치 반영" : "patch"}</p>
       </div>
     </header>
   );
