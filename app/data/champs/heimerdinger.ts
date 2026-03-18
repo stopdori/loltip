@@ -16,7 +16,7 @@ const heimerdinger: ChampData = {
       
       P: ["MS_UP"],
       Q: ["SLOW", "ALLY_TP_OK"],
-      W: [],
+      W: ["UNSTOPPABLE_CAST"],
       E: ["SLOW", "STUN"],
       R: [],
       ETC: [],

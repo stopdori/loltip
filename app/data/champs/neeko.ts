@@ -7,7 +7,7 @@ const neeko: ChampData = {
     Q: [],
     W: ["MS_UP", "INVISIBILITY"],
     E: ["E_FLASH", "ROOT"],
-    R: ["R_FLASH", "SUSPENDING", "STUN"],
+    R: ["R_FLASH", "SUSPENDING", "STUN", "UNSTOPPABLE_CHANNEL"],
     ETC: [],
   },
 

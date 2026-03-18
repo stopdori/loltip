@@ -7,7 +7,7 @@ const sona: ChampData = {
     Q: [],
     W: ["HEAL", "SHIELD"],
     E: ["MS_UP"],
-    R: ["STUN"],
+    R: ["STUN", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

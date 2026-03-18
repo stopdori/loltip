@@ -5,8 +5,8 @@ const singed: ChampData = {
   skills: {
     P: ["MS_UP" ],
     Q: [],
-    W: ["W_FLASH", "GROUNDED", "SLOW"],
-    E: ["E_FLASH", "GRAB", "ROOT"],
+    W: ["W_FLASH", "GROUNDED", "SLOW", "UNSTOPPABLE_CAST"],
+    E: ["E_FLASH", "GRAB", "ROOT", "UNSTOPPABLE_CAST"],
     R: ["HEAL", "MS_UP", "GW"],
     ETC: [],
   },

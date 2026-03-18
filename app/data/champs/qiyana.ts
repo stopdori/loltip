@@ -5,7 +5,7 @@ const qiyana: ChampData = {
   skills: {
     base : {
     P: [],
-    Q: ["Q_FLASH", "INVISIBILITY", "MS_UP"],
+    Q: ["Q_FLASH", "INVISIBILITY", "MS_UP", "UNSTOPPABLE_CAST"],
     W: ["AS_UP", "WALL_HOP"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "KNOCKBACK", "STUN"],
@@ -15,7 +15,7 @@ const qiyana: ChampData = {
   alt: {
       // 🔨 W스킬 기반
       P: [],
-    Q: ["Q_FLASH", "ROOT", "SLOW"],
+    Q: ["Q_FLASH", "ROOT", "SLOW", "UNSTOPPABLE_CAST"],
     W: ["AS_UP", "WALL_HOP"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "KNOCKBACK", "STUN"],
@@ -25,7 +25,7 @@ const qiyana: ChampData = {
     alt2: {
       // 🔨 E스킬 기반
       P: [],
-    Q: ["Q_FLASH"],
+    Q: ["Q_FLASH", "UNSTOPPABLE_CAST"],
     W: ["AS_UP", "WALL_HOP"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "KNOCKBACK", "STUN"],

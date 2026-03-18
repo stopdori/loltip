@@ -4,7 +4,7 @@ const olaf: ChampData = {
   id: "olaf",
   skills: {
     P: ["AS_UP", "LIFESTEAL"],
-    Q: ["SLOW", "AR_SHRED"],
+    Q: ["SLOW", "AR_SHRED", "UNSTOPPABLE_CAST"],
     W: ["AA_RESET", "AS_UP", "SHIELD"],
     E: ["E_FLASH"],
     R: ["AD_UP", "MS_UP", "CC_CLEANSE", "CC_IMMUNE"],

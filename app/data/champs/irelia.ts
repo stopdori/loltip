@@ -5,9 +5,9 @@ const irelia: ChampData = {
   skills: {
     P: ["AS_UP"],
     Q: ["Q_FLASH", "LIFESTEAL", "WALL_HOP"],
-    W: ["W_FLASH", "DMG_REDUCE", "UNSTOPPABLE"],
+    W: ["W_FLASH", "DMG_REDUCE", "UNSTOPPABLE_CHANNEL"],
     E: ["STUN"],
-    R: ["R_FLASH", "SLOW"],
+    R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

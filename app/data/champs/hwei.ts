@@ -10,7 +10,7 @@ const hwei: ChampData = {
       Q: ["Q_FLASH"],
       W: ["W_FLASH"],
       E: ["SLOW"],
-      R: ["R_FLASH", "SLOW"],
+      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
       ETC: [],
     },
 
@@ -20,7 +20,7 @@ const hwei: ChampData = {
       Q: ["MS_UP"],
       W: ["W_FLASH", "SHIELD"],
       E: ["MANA_RESTORE"],
-      R: ["R_FLASH", "SLOW"],
+      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
       ETC: [],
     },
 
@@ -30,7 +30,7 @@ const hwei: ChampData = {
       Q: ["Q_FLASH", "FEAR"],
       W: ["W_FLASH", "ROOT"],
       E: ["E_FLASH", "AIRBORNE", "SLOW"],
-      R: ["R_FLASH", "SLOW"],
+      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
       ETC: [],
     },
   },

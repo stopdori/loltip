@@ -6,7 +6,7 @@ const taric: ChampData = {
     P: ["AS_UP"],
     Q: ["HEAL"],
     W: ["W_FLASH", "SHIELD"],
-    E: ["E_FLASH", "STUN"],
+    E: ["E_FLASH", "STUN", "UNSTOPPABLE_CHANNEL"],
     R: ["R_FLASH", "INVULNERABLE"],
     ETC: [],
   },

@@ -6,7 +6,7 @@ const vladimir: ChampData = {
     P: ["AP_UP", "MAX_HP_UP"],
     Q: ["Q_FLASH", "LIFESTEAL", "MS_UP"],
     W: ["W_FLASH", "LIFESTEAL", "MS_UP", "GHOSTING", "SLOW", "UNTARGETABLE", "TOWER_DODGE"],
-    E: ["E_FLASH", "SLOW"],
+    E: ["E_FLASH", "SLOW", "UNSTOPPABLE_CHANNEL"],
     R: ["R_FLASH", "LIFESTEAL"],
     ETC: [],
   },

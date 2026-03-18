@@ -5,7 +5,7 @@ const jhin: ChampData = {
   skills: {
     P: ["MS_UP"],
     Q: ["Q_FLASH"],
-    W: ["ROOT"],
+    W: ["ROOT", "UNSTOPPABLE_CAST"],
     E: ["E_FLASH", "SLOW", "REVEALED", "ALLY_TP_OK"],
     R: ["SLOW", "REVEALED"],
     ETC: [],

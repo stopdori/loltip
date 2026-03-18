@@ -5,7 +5,7 @@ const hecarim: ChampData = {
   skills: {
     P: ["AD_UP"],
     Q: [],
-    W: ["HEAL"],
+    W: ["HEAL", "UNSTOPPABLE_CHANNEL"],
     E: ["WALL_HOP", "KNOCKBACK", "GHOSTING"],
     R: ["WALL_HOP", "FEAR", "UNSTOPPABLE"],
     ETC: [],

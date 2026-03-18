@@ -6,7 +6,7 @@ const karthus: ChampData = {
     P: [],
     Q: ["Q_FLASH", "VISION"],
     W: ["W_FLASH", "VISION", "MR_SHRED", "SLOW"],
-    E: [],
+    E: ["UNSTOPPABLE_CHANNEL"],
     R: [],
     ETC: [],
   },

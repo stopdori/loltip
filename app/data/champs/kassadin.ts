@@ -7,7 +7,7 @@ const kassadin: ChampData = {
     Q: ["Q_FLASH", "SHIELD"],
     W: ["AA_RESET"],
     E: ["E_FLASH", "SLOW"],
-    R: ["R_FLASH", "WALL_HOP"],
+    R: ["R_FLASH", "WALL_HOP", "CC_BUFFER"],
     ETC: [],
   },
 

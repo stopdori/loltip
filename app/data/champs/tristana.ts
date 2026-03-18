@@ -5,7 +5,7 @@ const tristana: ChampData = {
   skills: {
     P: ["RANGE_UP"],
     Q: ["AS_UP"],
-    W: ["W_FLASH", "SLOW", "WALL_HOP"],
+    W: ["W_FLASH", "SLOW", "WALL_HOP", "CC_BUFFER"],
     E: ["E_FLASH"],
     R: ["R_FLASH", "KNOCKBACK", "STUN"],
     ETC: [],

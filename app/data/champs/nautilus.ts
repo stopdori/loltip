@@ -4,10 +4,10 @@ const nautilus: ChampData = {
   id: "nautilus",
   skills: {
     P: ["ROOT"],
-    Q: ["GRAB", "STUN"],
+    Q: ["GRAB", "STUN", "CC_BUFFER"],
     W: ["SHIELD", "AA_RESET"],
     E: ["E_FLASH", "SLOW"],
-    R: ["R_FLASH", "AIRBORNE", "STUN"],
+    R: ["R_FLASH", "AIRBORNE", "STUN", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

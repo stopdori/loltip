@@ -7,7 +7,7 @@ const graves: ChampData = {
     Q: ["Q_FLASH"],
     W: ["W_FLASH", "NEARSIGHT", "SLOW"],
     E: ["E_FLASH", "AA_RESET", "WALL_HOP"],
-    R: ["R_FLASH", "WALL_HOP"],
+    R: ["R_FLASH", "WALL_HOP", "UNSTOPPABLE_CAST", "CC_BUFFER"],
     ETC: [],
   },
 

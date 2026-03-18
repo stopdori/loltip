@@ -6,7 +6,7 @@ const jax: ChampData = {
     P: ["AS_UP"],
     Q: ["Q_FLASH", "WALL_HOP"],
     W: ["AA_RESET"],
-    E: ["DODGE", "STUN"],
+    E: ["DODGE", "STUN", "UNSTOPPABLE_CHANNEL"],
     R: [],
     ETC: [],
   },

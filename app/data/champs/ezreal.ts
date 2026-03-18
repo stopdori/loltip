@@ -7,7 +7,7 @@ const ezreal: ChampData = {
     Q: ["Q_FLASH"],
     W: ["W_FLASH"],
     E: ["E_FLASH", "WALL_HOP"],
-    R: [],
+    R: ["CC_BUFFER"],
     ETC: [],
   },
 

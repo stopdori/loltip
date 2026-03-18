@@ -7,7 +7,7 @@ const malphite: ChampData = {
     Q: ["Q_FLASH", "SLOW", "MS_UP"],
     W: ["AA_RESET"],
     E: ["E_FLASH", "AS_DOWN"],
-    R: ["UNSTOPPABLE", "WALL_HOP"],
+    R: ["WALL_HOP", "UNSTOPPABLE"],
     ETC: [],
   },
 

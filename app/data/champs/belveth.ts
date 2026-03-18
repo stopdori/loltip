@@ -7,7 +7,7 @@ const belveth: ChampData = {
     Q: ["WALL_HOP"],
     W: ["AIRBORNE"],
     E: ["DMG_REDUCE", "LIFESTEAL"],
-    R: ["MS_UP", "WALL_HOP"],
+    R: ["MS_UP", "WALL_HOP", "UNSTOPPABLE_CHANNEL"],
     ETC: [],
   },
 

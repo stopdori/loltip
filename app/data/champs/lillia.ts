@@ -5,7 +5,7 @@ const lillia: ChampData = {
   skills: {
     P: ["LIFESTEAL"],
     Q: ["Q_FLASH", "MS_UP"],
-    W: [],
+    W: ["CC_BUFFER"],
     E: ["E_FLASH", "SLOW"],
     R: ["SLEEP"],
     ETC: [],

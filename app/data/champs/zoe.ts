@@ -7,7 +7,7 @@ const zoe: ChampData = {
     Q: ["Q_FLASH"],
     W: ["MS_UP"],
     E: ["SLEEP", "MR_SHRED"],
-    R: ["R_FLASH", "WALL_HOP", "PSEUDO_UNSTOPPABLE"],
+    R: ["R_FLASH", "WALL_HOP", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

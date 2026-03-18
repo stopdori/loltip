@@ -7,7 +7,7 @@ const nami: ChampData = {
     Q: ["Q_FLASH", "SUSPENDING"],
     W: ["W_FLASH", "HEAL"],
     E: ["E_FLASH", "SLOW"],
-    R: ["AIRBORNE", "SLOW"],
+    R: ["AIRBORNE", "SLOW", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

@@ -4,7 +4,7 @@ const aatrox: ChampData = {
   id: "aatrox",
   skills: {
     P: ["LIFESTEAL"],
-    Q: ["Q_FLASH", "AIRBORNE"],
+    Q: ["Q_FLASH", "AIRBORNE", "UNSTOPPABLE_CAST"],
     W: ["W_FLASH", "SLOW", "TETHER", "TRUE_SIGHT"],
     E: ["E_FLASH", "AA_RESET", "WALL_HOP", "LIFESTEAL"],
     R: ["MS_UP"],

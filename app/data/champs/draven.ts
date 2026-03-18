@@ -7,7 +7,7 @@ const draven: ChampData = {
     Q: [],
     W: ["AS_UP", "MS_UP"],
     E: ["E_FLASH", "AIRBORNE", "SLOW"],
-    R: ["EXECUTE"],
+    R: ["EXECUTE", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

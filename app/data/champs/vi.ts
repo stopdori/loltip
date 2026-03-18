@@ -7,7 +7,7 @@ const vi: ChampData = {
     Q: ["Q_FLASH", "AIRBORNE", "WALL_HOP"],
     W: ["AR_SHRED", "AS_UP"],
     E: ["AA_RESET"],
-    R: ["R_FLASH", "REVEALED", "UNSTOPPABLE", "KNOCKBACK", "STUN", "WALL_HOP"],
+    R: ["R_FLASH", "REVEALED", "KNOCKBACK", "STUN", "WALL_HOP", "UNSTOPPABLE"],
     ETC: [],
   },
 

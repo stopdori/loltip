@@ -108,6 +108,11 @@ export const CHAMP_FORMS: Record<
     alt: { ko: "매복", en: "Burrowed" },
   },
 
+  shyvana: {
+    base: { ko: "기본형", en: "Human" },
+    alt: { ko: "용형상", en: "Dragon" },
+  },
+
   rell: {
     base: { ko: "승마", en: "Mounted" },
     alt: { ko: "중갑", en: "Dismounted" },

@@ -7,7 +7,7 @@ const mel: ChampData = {
     Q: ["Q_FLASH"],
     W: ["REFLECT", "INVULNERABLE", "MS_UP",],
     E: ["E_FLASH", "ROOT", "SLOW"],
-    R: ["PSEUDO_UNSTOPPABLE"],
+    R: ["UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

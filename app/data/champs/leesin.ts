@@ -7,7 +7,7 @@ const leesin: ChampData = {
     Q: ["TRUE_SIGHT", "WALL_HOP"],
     W: ["W_FLASH", "SHIELD", "LIFESTEAL", "WALL_HOP"],
     E: ["E_FLASH", "REVEALED"],
-    R: ["R_FLASH", "AIRBORNE"],
+    R: ["R_FLASH", "AIRBORNE", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

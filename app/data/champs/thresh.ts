@@ -4,10 +4,10 @@ const thresh: ChampData = {
   id: "thresh",
   skills: {
     P: [],
-    Q: ["STUN", "GRAB", "TRUE_SIGHT", "WALL_HOP"],
+    Q: ["STUN", "GRAB", "TRUE_SIGHT", "WALL_HOP", "UNSTOPPABLE_CAST"],
     W: ["W_FLASH", "SHIELD", "ALLY_TP_OK"],
-    E: ["AIRBORNE", "SLOW"],
-    R: ["SLOW"],
+    E: ["AIRBORNE", "SLOW", "UNSTOPPABLE_CAST"],
+    R: ["SLOW", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 

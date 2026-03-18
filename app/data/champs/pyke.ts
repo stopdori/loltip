@@ -5,9 +5,9 @@ const pyke: ChampData = {
   skills: {
     P: ["HEAL"],
     Q: ["Q_FLASH", "SLOW", "GRAB"],
-    W: ["W_FLASH", "MS_UP"],
-    E: ["E_FLASH", "WALL_HOP", "STUN"],
-    R: ["R_FLASH", "WALL_HOP", "EXECUTE", "UNSTOPPABLE"],
+    W: ["W_FLASH", "MS_UP", "UNSTOPPABLE_CHANNEL"],
+    E: ["E_FLASH", "WALL_HOP", "STUN", "UNSTOPPABLE_CHANNEL"],
+    R: ["R_FLASH", "WALL_HOP", "EXECUTE", "UNSTOPPABLE_CAST"],
     ETC: [],
   },
 
