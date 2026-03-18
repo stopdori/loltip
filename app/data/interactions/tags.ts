@@ -98,7 +98,9 @@ export type TagId =
   | "BLIND"
   | "POLYMORPH"
   | "UNSTOPPABLE"
-  | "PSEUDO_UNSTOPPABLE"
+  | "UNSTOPPABLE_CHANNEL"
+  | "UNSTOPPABLE_CAST"
+  | "CC_BUFFER"
   
   
   | "THE_COPYPASTA";
@@ -150,7 +152,9 @@ CC_IMMUNE: { ko: "CC면역", en: "CC Immune" },
 SLOW_RESIST: { ko: "둔화저항", en: "Slow Resist" },
 SLOW_IMMUNE: { ko: "둔화면역", en: "Slow Immune" },
 UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
-PSEUDO_UNSTOPPABLE: { ko: "유사 저지불가", en: "Pseudo-Unstoppable" },
+UNSTOPPABLE_CHANNEL: { ko: "저불집중", en: "Unstoppable Channel" },
+UNSTOPPABLE_CAST: { ko: "저불시전", en: "Unstoppable Cast" },
+CC_BUFFER: { ko: "부분저불", en: "CC Buffer" },
 
 
 /* =========================
@@ -604,9 +608,19 @@ UNSTOPPABLE: {
   en: "It cannot be blocked by CC\nHowever, if CC hits during an unstoppable state \nand the duration remains after the state ends, \nthe CC takes effect",
 },
 
-PSEUDO_UNSTOPPABLE: {
-  ko: "공식적인 저지불가는 아니지만 동일 효과라 보여짐\nCC 계열을 맞아도 시전자의 스킬이 유효함\n단, 스킬 사용 중에 적중한 CC가\n스킬 사용 종료 이후에도 남아있다면 CC효과 발동",
-  en: "Not officially Unstoppable, \nbut the action continues and \nmost crowd control will not interrupt it",
+UNSTOPPABLE_CHANNEL: {
+  ko: "채널링/토글 스킬 시전 중 CC에는 걸리지만\n효과를 무시하고 유지됨.\n단, 공식 저지불가는 아님.\n",
+  en: "CC can still be applied while channeling or toggled,\nbut its effect is ignored and the skill continues.\nNot officially classified as Unstoppable.",
+},
+
+UNSTOPPABLE_CAST: {
+  ko: "스킬을 사용하면, CC에는 걸리지만\n효과를 무시하고 스킬을 시전함.\n단, 공식 저지불가는 아님.",
+  en: "CC can still be applied at cast time,\nbut its effect is ignored and the cast completes.\nNot officially classified as Unstoppable.",
+},
+
+CC_BUFFER: {
+  ko: "일부 단계에서만 CC를 무시함\n주로 이동기에 사용",
+  en: "CC is ignored only during specific phases.\nCommonly seen on mobility abilities.",
 },
 
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },

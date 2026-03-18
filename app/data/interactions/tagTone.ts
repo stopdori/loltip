@@ -123,7 +123,9 @@ export const TAG_TONE: Partial<Record<TagId, Tone>> = {
   CC_IMMUNE: "zinc",
   CC_CLEANSE: "zinc",
   UNSTOPPABLE: "zinc",
-  PSEUDO_UNSTOPPABLE: "zinc",
+  UNSTOPPABLE_CHANNEL: "zinc",
+  UNSTOPPABLE_CAST: "zinc",
+  CC_BUFFER: "zinc",
 
   // 💜 fuchsia (치감/그라운드/TP류)
   GW: "fuchsia",
