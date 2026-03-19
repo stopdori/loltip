@@ -7,7 +7,7 @@ const rakan: ChampData = {
     Q: ["Q_FLASH", "HEAL"],
     W: ["AIRBORNE", "WALL_HOP"],
     E: ["E_FLASH", "SHIELD", "WALL_HOP"],
-    R: ["MS_UP", "CHARM", "UNSTOPPABLE_CHANNEL"],
+    R: ["MS_UP", "CHARM", "BUFF_FORM"],
     ETC: [],
   },
 

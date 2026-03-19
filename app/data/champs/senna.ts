@@ -6,8 +6,8 @@ const senna: ChampData = {
     P: ["MS_UP", "SLOW", "AD_UP", "RANGE_UP", "CRIT", "LIFESTEAL"],
     Q: ["Q_FLASH", "SLOW", "HEAL"],
     W: ["W_FLASH", "ROOT"],
-    E: ["E_FLASH", "UNTARGETABLE", "MS_UP"],
-    R: ["SHIELD", "UNSTOPPABLE_CAST"],
+    E: ["E_FLASH", "UNTARGETABLE", "MS_UP", "BUFF_FORM"],
+    R: ["SHIELD", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

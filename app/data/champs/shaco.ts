@@ -7,7 +7,7 @@ const shaco: ChampData = {
     Q: ["Q_FLASH", "INVISIBILITY", "CRIT", "WALL_HOP"],
     W: ["W_FLASH", "ALLY_TP_OK", "FEAR"],
     E: ["E_FLASH", "SLOW"],
-    R: ["R_FLASH", "FEAR", "WALL_HOP", "TOWER_DODGE", "ALLY_TP_OK", "UNSTOPPABLE_CAST"],
+    R: ["R_FLASH", "FEAR", "WALL_HOP", "TOWER_DODGE", "ALLY_TP_OK", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

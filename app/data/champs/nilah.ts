@@ -7,7 +7,7 @@ const nilah: ChampData = {
     Q: ["Q_FLASH", "AA_RESET", "AS_UP", "AR_PEN", "LIFESTEAL", "SHIELD"],
     W: ["DODGE", "DMG_REDUCE", "GHOSTING", "MS_UP"],
     E: ["E_FLASH", "WALL_HOP"],
-    R: ["R_FLASH", "GRAB", "LIFESTEAL", "SHIELD", "UNSTOPPABLE_CHANNEL"],
+    R: ["R_FLASH", "GRAB", "LIFESTEAL", "SHIELD", "BUFF_FORM"],
     ETC: [],
   },
 

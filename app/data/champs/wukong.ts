@@ -7,7 +7,7 @@ const wukong: ChampData = {
     Q: ["AR_SHRED", "AA_RESET"],
     W: ["W_FLASH", "WALL_HOP", "INVISIBILITY"],
     E: ["E_FLASH", "WALL_HOP", "AS_UP"],
-    R: ["R_FLASH", "MS_UP", "AIRBORNE", "UNSTOPPABLE_CHANNEL"],
+    R: ["R_FLASH", "MS_UP", "AIRBORNE", "UNINTERRUPTIBLE_CHANNEL"],
     ETC: [],
   },
 

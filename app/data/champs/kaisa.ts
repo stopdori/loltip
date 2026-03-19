@@ -6,7 +6,7 @@ const kaisa: ChampData = {
     base : {
     P: [],
     Q: [],
-    W: ["W_FLASH", "UNSTOPPABLE_CAST", "REVEALED"],
+    W: ["W_FLASH", "UNINTERRUPTIBLE_CAST", "REVEALED"],
     E: ["AS_UP", "MS_UP", "GHOSTING"],
     R: ["R_FLASH", "SHIELD", "WALL_HOP"],
     ETC: [],
@@ -16,7 +16,7 @@ const kaisa: ChampData = {
       
       P: [],
       Q: [],
-      W: ["W_FLASH", "UNSTOPPABLE_CAST", "REVEALED"],
+      W: ["W_FLASH", "UNINTERRUPTIBLE_CAST", "REVEALED"],
       E: ["AS_UP", "MS_UP", "GHOSTING", "INVISIBILITY"],
       R: ["R_FLASH", "SHIELD", "WALL_HOP"],
       ETC: [],

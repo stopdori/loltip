@@ -4,7 +4,7 @@ const nocturne: ChampData = {
   id: "nocturne",
   skills: {
     P: ["HEAL"],
-    Q: ["GHOSTING", "MS_UP", "AD_UP", "UNSTOPPABLE_CAST"],
+    Q: ["GHOSTING", "MS_UP", "AD_UP", "UNINTERRUPTIBLE_CAST"],
     W: ["AS_UP", "SPELL_SHIELD"],
     E: ["E_FLASH", "TETHER", "FEAR"],
     R: ["R_FLASH", "WALL_HOP", "NEARSIGHT", "UNSTOPPABLE"],

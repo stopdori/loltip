@@ -8,9 +8,9 @@ const renekton: ChampData = {
       // 🔫 인간폼 (원거리)
       P: [],
       Q: ["LIFESTEAL"],                // 인간 Q는 Q플 X
-      W: ["W_FLASH", "AA_RESET", "STUN", "UNSTOPPABLE_CAST"],
+      W: ["W_FLASH", "AA_RESET", "STUN", "UNINTERRUPTIBLE_CAST"],
       E: ["WALL_HOP"],
-      R: ["R_FLASH", "MAX_HP_UP", "UNSTOPPABLE_CHANNEL"],
+      R: ["R_FLASH", "MAX_HP_UP", "BUFF_FORM"],
       ETC: [],
     },
 
@@ -18,9 +18,9 @@ const renekton: ChampData = {
       // 🔨 변신폼 (근접)
       P: [],
       Q: ["LIFESTEAL"],      // 변신 Q는 Q플 가능
-      W: ["W_FLASH", "AA_RESET", "STUN", "SHIELD_BREAK", "UNSTOPPABLE_CAST"],
+      W: ["W_FLASH", "AA_RESET", "STUN", "SHIELD_BREAK", "UNINTERRUPTIBLE_CAST"],
       E: ["WALL_HOP", "AR_SHRED"],
-      R: ["R_FLASH", "MAX_HP_UP", "UNSTOPPABLE_CHANNEL"],
+      R: ["R_FLASH", "MAX_HP_UP", "BUFF_FORM"],
       ETC: [],
     },
   },

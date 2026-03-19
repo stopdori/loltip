@@ -7,7 +7,7 @@ const yuumi: ChampData = {
     Q: ["SLOW"],
     W: ["HEAL", "WALL_HOP", "UNTARGETABLE"],
     E: ["AS_UP", "MS_UP", "SHIELD", "MANA_RESTORE"],
-    R: ["HEAL", "SHIELD", "SLOW", "UNSTOPPABLE_CHANNEL"],
+    R: ["HEAL", "SHIELD", "SLOW", "UNINTERRUPTIBLE_CHANNEL"],
     ETC: [],
   },
 

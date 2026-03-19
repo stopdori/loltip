@@ -7,7 +7,7 @@ const nautilus: ChampData = {
     Q: ["GRAB", "STUN", "CC_BUFFER"],
     W: ["SHIELD", "AA_RESET"],
     E: ["E_FLASH", "SLOW"],
-    R: ["R_FLASH", "AIRBORNE", "STUN", "UNSTOPPABLE_CAST"],
+    R: ["R_FLASH", "AIRBORNE", "STUN", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

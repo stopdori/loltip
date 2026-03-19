@@ -4,7 +4,7 @@ const maokai: ChampData = {
   id: "maokai",
   skills: {
     P: ["HEAL"],
-    Q: ["Q_FLASH", "SLOW", "AIRBORNE"],
+    Q: ["Q_FLASH", "SLOW", "AIRBORNE", "UNINTERRUPTIBLE_CAST"],
     W: ["W_FLASH", "ROOT", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE"],
     E: ["E_FLASH", "SLOW", "VISION"],
     R: ["ROOT", "MS_UP"],

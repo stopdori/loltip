@@ -6,7 +6,7 @@ const briar: ChampData = {
     P: ["Q_FLASH", "LIFESTEAL"],
     Q: ["W_FLASH", "AA_RESET", "AR_MR_SHRED", "WALL_HOP"],
     W: ["AS_UP", "MS_UP", "LIFESTEAL", "WALL_HOP"],
-    E: ["DMG_REDUCE", "KNOCKBACK", "STUN", "UNSTOPPABLE_CHANNEL"],
+    E: ["DMG_REDUCE", "KNOCKBACK", "STUN", "UNINTERRUPTIBLE_CHANNEL"],
     R: ["R_FLASH", "MS_UP", "LIFESTEAL", "FEAR", "WALL_HOP", "CC_IMMUNE", "UNSTOPPABLE"],
     ETC: [],
   },

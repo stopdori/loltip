@@ -7,7 +7,7 @@ const lux: ChampData = {
     Q: ["Q_FLASH", "PIERCE", "ROOT"],
     W: ["SHIELD"],
     E: ["E_FLASH", "SLOW", "VISION"],
-    R: ["CC_BUFFER", "VISION"],
+    R: ["UNINTERRUPTIBLE_CAST", "VISION"],
     ETC: [],
   },
 

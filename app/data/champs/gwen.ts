@@ -4,7 +4,7 @@ const gwen: ChampData = {
   id: "gwen",
   skills: {
     P: ["LIFESTEAL"],
-    Q: ["Q_FLASH", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
     W: ["W_FLASH", "UNTARGETABLE"],
     E: ["E_FLASH", "AA_RESET", "WALL_HOP"],
     R: ["R_FLASH", "SLOW"],

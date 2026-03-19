@@ -7,7 +7,7 @@ const nasus: ChampData = {
     Q: ["AA_RESET"],
     W: ["W_FLASH", "AS_DOWN", "SLOW"],
     E: ["E_FLASH", "AR_SHRED"],
-    R: ["MAX_HP_UP"],
+    R: ["MAX_HP_UP", "BUFF_FORM"],
     ETC: [],
   },
 

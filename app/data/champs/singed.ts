@@ -3,11 +3,11 @@ import type { ChampData } from "../interactions/types";
 const singed: ChampData = {
   id: "singed",
   skills: {
-    P: ["MS_UP" ],
-    Q: [],
-    W: ["W_FLASH", "GROUNDED", "SLOW", "UNSTOPPABLE_CAST"],
-    E: ["E_FLASH", "GRAB", "ROOT", "UNSTOPPABLE_CAST"],
-    R: ["HEAL", "MS_UP", "GW"],
+    P: ["MS_UP"],
+    Q: ["BUFF_FORM"],
+    W: ["W_FLASH", "GROUNDED", "SLOW", "UNINTERRUPTIBLE_CAST"],
+    E: ["E_FLASH", "GRAB", "ROOT", "UNINTERRUPTIBLE_CAST"],
+    R: ["HEAL", "MS_UP", "GW", "BUFF_FORM"],
     ETC: [],
   },
 

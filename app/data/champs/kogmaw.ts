@@ -5,7 +5,7 @@ const kogmaw: ChampData = {
   skills: {
     P: [],
     Q: ["AS_UP", "AR_MR_SHRED"],
-    W: ["RANGE_UP"],
+    W: ["RANGE_UP",],
     E: ["SLOW"],
     R: ["R_FLASH", "REVEALED"],
     ETC: [],

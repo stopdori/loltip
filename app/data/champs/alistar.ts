@@ -7,7 +7,7 @@ const alistar: ChampData = {
     Q: ["Q_FLASH", "AIRBORNE"],
     W: ["W_FLASH", "WALL_HOP", "KNOCKBACK"],
     E: ["GHOSTING", "STUN"],
-    R: ["CC_CLEANSE", "DMG_REDUCE"],
+    R: ["CC_CLEANSE", "DMG_REDUCE", "BUFF_FORM"],
     ETC: [],
   },
    notes: {

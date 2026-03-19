@@ -7,7 +7,7 @@ const yasuo: ChampData = {
     Q: ["Q_FLASH", "AIRBORNE"],
     W: ["WINDSHIELD"],
     E: ["E_FLASH", "WALL_HOP"],
-    R: ["AIRBORNE", "AR_SHRED", "WALL_HOP", "UNSTOPPABLE_CHANNEL"],
+    R: ["AIRBORNE", "AR_SHRED", "WALL_HOP", "UNINTERRUPTIBLE_CHANNEL"],
     ETC: [],
   },
 

@@ -5,9 +5,9 @@ const jinx: ChampData = {
   skills: {
     P: ["AS_UP", "MS_UP"],
     Q: ["AS_UP"],
-    W: ["UNSTOPPABLE_CAST", "REVEALED"],
+    W: ["UNINTERRUPTIBLE_CAST", "REVEALED"],
     E: ["VISION", "ROOT"],
-    R: ["UNSTOPPABLE_CAST", "VISION"],
+    R: ["UNINTERRUPTIBLE_CAST", "VISION"],
     ETC: [],
   },
 

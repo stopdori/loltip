@@ -7,7 +7,7 @@ const cassiopeia: ChampData = {
     Q: ["Q_FLASH", "MS_UP"],
     W: ["W_FLASH", "GROUNDED", "SLOW"],
     E: ["E_FLASH", "HEAL"],
-    R: ["R_FLASH", "STUN", "SLOW", "UNSTOPPABLE_CAST"],
+    R: ["R_FLASH", "STUN", "SLOW", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

@@ -5,7 +5,7 @@ const sett: ChampData = {
   skills: {
     P: ["HEAL"],
     Q: ["MS_UP", "AA_RESET"],
-    W: ["W_FLASH", "SHIELD", "UNSTOPPABLE_CHANNEL"],
+    W: ["W_FLASH", "SHIELD", "UNINTERRUPTIBLE_CHANNEL"],
     E: ["GRAB", "SLOW", "STUN"],
     R: ["R_FLASH", "SUPPRESS", "SLOW", "WALL_HOP", "UNSTOPPABLE"],
     ETC: [],

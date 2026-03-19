@@ -7,7 +7,7 @@ const blitzcrank: ChampData = {
     Q: ["GRAB"],
     W: ["AS_UP", "MS_UP"],
     E: ["AA_RESET", "AIRBORNE"],
-    R: ["R_FLASH", "SHIELD_BREAK", "SILENCE"],
+    R: ["R_FLASH", "SHIELD_BREAK", "SILENCE", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

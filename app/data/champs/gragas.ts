@@ -5,9 +5,9 @@ const gragas: ChampData = {
   skills: {
     P: ["HEAL"],
     Q: ["Q_FLASH", "SLOW"],
-    W: ["DMG_REDUCE"],
+    W: ["DMG_REDUCE", "UNINTERRUPTIBLE_CHANNEL"],
     E: ["E_FLASH", "KNOCKBACK", "WALL_HOP"],
-    R: ["R_FLASH", "KNOCKBACK"],
+    R: ["R_FLASH", "AIRBORNE"],
     ETC: [],
   },
 

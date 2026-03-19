@@ -7,7 +7,7 @@ const braum: ChampData = {
     Q: ["Q_FLASH", "SLOW"],
     W: ["W_FLASH", "WALL_HOP"],
     E: ["E_FLASH", "DMG_REDUCE"],
-    R: ["AIRBORNE", "SLOW", "UNSTOPPABLE_CAST"],
+    R: ["AIRBORNE", "SLOW", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

@@ -7,7 +7,7 @@ const zilean: ChampData = {
     Q: ["Q_FLASH", "STUN"],
     W: [],
     E: ["E_FLASH", "SLOW", "MS_UP"],
-    R: ["R_FLASH", "REVIVE", "UNTARGETABLE"],
+    R: ["R_FLASH", "REVIVE", "UNTARGETABLE", "BUFF_FORM"],
     ETC: [],
   },
 

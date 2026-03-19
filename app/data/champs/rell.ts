@@ -6,19 +6,19 @@ const rell: ChampData = {
   skills: {
     base: {  //승마
       P: ["AR_MR_SHRED"],
-      Q: ["Q_FLASH", "STUN", "SHIELD_BREAK", "UNSTOPPABLE_CAST"],
+      Q: ["Q_FLASH", "STUN", "SHIELD_BREAK", "UNINTERRUPTIBLE_CAST"],
       W: ["SHIELD", "AS_UP", "AIRBORNE", "WALL_HOP"],
       E: ["MS_UP"],
-      R: ["R_FLASH"],
+      R: ["R_FLASH", "BUFF_FORM"],
       ETC: [],
    },
 
    alt: {    //중갑
       P: ["AR_MR_SHRED"],
-      Q: ["Q_FLASH", "STUN", "SHIELD_BREAK", "UNSTOPPABLE_CAST"],
+      Q: ["Q_FLASH", "STUN", "SHIELD_BREAK", "UNINTERRUPTIBLE_CAST"],
       W: ["MS_UP", "GRAB", "WALL_HOP"],
       E: ["MS_UP"],
-      R: ["R_FLASH"],
+      R: ["R_FLASH", "BUFF_FORM"],
       ETC: [],
    },
   },

@@ -7,10 +7,10 @@ const hwei: ChampData = {
     base: {
       // 🔫 Q스킬 기반
       P: [],
-      Q: ["Q_FLASH"],
+      Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
       W: ["W_FLASH"],
       E: ["SLOW"],
-      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
+      R: ["R_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
       ETC: [],
     },
 
@@ -20,7 +20,7 @@ const hwei: ChampData = {
       Q: ["MS_UP"],
       W: ["W_FLASH", "SHIELD"],
       E: ["MANA_RESTORE"],
-      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
+      R: ["R_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
       ETC: [],
     },
 
@@ -30,7 +30,7 @@ const hwei: ChampData = {
       Q: ["Q_FLASH", "FEAR"],
       W: ["W_FLASH", "ROOT"],
       E: ["E_FLASH", "AIRBORNE", "SLOW"],
-      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
+      R: ["R_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
       ETC: [],
     },
   },

@@ -4,10 +4,10 @@ const mordekaiser: ChampData = {
   id: "mordekaiser",
   skills: {
     P: ["MS_UP"],
-    Q: ["Q_FLASH", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
     W: ["SHIELD", "HEAL"],
-    E: ["E_FLASH", "GRAB", "MR_PEN", "UNSTOPPABLE_CAST"],
-    R: ["R_FLASH", "NEARSIGHT", "TRUE_SIGHT", "UNSTOPPABLE_CAST"],
+    E: ["E_FLASH", "GRAB", "MR_PEN", "UNINTERRUPTIBLE_CAST"],
+    R: ["R_FLASH", "NEARSIGHT", "TRUE_SIGHT", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

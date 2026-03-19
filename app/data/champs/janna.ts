@@ -7,7 +7,7 @@ const janna: ChampData = {
     Q: ["AIRBORNE"],
     W: ["W_FLASH", "MS_UP", "SLOW", "GHOSTING"],
     E: ["E_FLASH", "SHIELD"],
-    R: ["HEAL", "AIRBORNE"],
+    R: ["HEAL", "KNOCKBACK"],
     ETC: [],
   },
 

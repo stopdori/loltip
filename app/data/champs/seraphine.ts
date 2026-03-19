@@ -4,10 +4,10 @@ const seraphine: ChampData = {
   id: "seraphine",
   skills: {
     P: [],
-    Q: ["UNSTOPPABLE_CAST"],
+    Q: [],
     W: ["MS_UP", "SHIELD", "HEAL"],
-    E: ["E_FLASH", "SLOW", "ROOT", "STUN", "UNSTOPPABLE_CAST"],
-    R: ["R_FLASH", "CHARM", "UNSTOPPABLE_CAST"],
+    E: ["E_FLASH", "SLOW", "ROOT", "STUN"],
+    R: ["R_FLASH", "CHARM", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

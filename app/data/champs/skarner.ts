@@ -4,10 +4,10 @@ const skarner: ChampData = {
   id: "skarner",
   skills: {
     P: [],
-    Q: ["Q_FLASH", "AS_UP", "SLOW", "AA_RESET", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "AS_UP", "SLOW", "AA_RESET", "UNINTERRUPTIBLE_CAST"],
     W: ["W_FLASH", "SLOW", "SHIELD"],
     E: ["SUPPRESS", "STUN", "WALL_HOP"],
-    R: ["SUPPRESS", "UNSTOPPABLE_CAST"],
+    R: ["SUPPRESS", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

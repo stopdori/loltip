@@ -6,8 +6,8 @@ const kennen: ChampData = {
     P: ["STUN"],
     Q: [],
     W: [],
-    E: ["AS_UP", "MS_UP", "GHOSTING", "UNSTOPPABLE_CHANNEL"],
-    R: ["R_FLASH", "UNSTOPPABLE_CHANNEL"],
+    E: ["AS_UP", "MS_UP", "GHOSTING", "BUFF_FORM"],
+    R: ["R_FLASH", "BUFF_FORM"],
     ETC: [],
   },
 

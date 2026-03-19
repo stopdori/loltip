@@ -4,7 +4,7 @@ const xerath: ChampData = {
   id: "xerath",
   skills: {
     P: ["MANA_RESTORE"],
-    Q: ["Q_FLASH", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
     W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "STUN"],
     R: [],

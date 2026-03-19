@@ -4,7 +4,7 @@ const caitlyn: ChampData = {
   id: "caitlyn",
   skills: {
     P: [],
-    Q: ["UNSTOPPABLE_CAST"],
+    Q: ["UNINTERRUPTIBLE_CAST"],
     W: ["W_FLASH", "ROOT", "TRUE_SIGHT"],
     E: ["E_FLASH", "AA_RESET", "WALL_HOP"],
     R: ["TRUE_SIGHT"],

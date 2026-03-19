@@ -4,10 +4,10 @@ const mel: ChampData = {
   id: "mel",
   skills: {
     P: ["EXECUTE"],
-    Q: ["Q_FLASH"],
-    W: ["REFLECT", "INVULNERABLE", "MS_UP",],
-    E: ["E_FLASH", "ROOT", "SLOW"],
-    R: ["UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
+    W: ["REFLECT", "MS_UP",],
+    E: ["E_FLASH", "ROOT", "SLOW", "UNINTERRUPTIBLE_CAST"],
+    R: ["UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

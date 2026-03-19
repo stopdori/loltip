@@ -4,10 +4,10 @@ const rumble: ChampData = {
   id: "rumble",
   skills: {
     P: ["AS_UP"],
-    Q: ["Q_FLASH", "UNSTOPPABLE_CHANNEL"],
+    Q: ["Q_FLASH", "BUFF_FORM"],
     W: ["MS_UP", "SHIELD"],
     E: ["E_FLASH", "SLOW", "MR_SHRED"],
-    R: ["SLOW", "UNSTOPPABLE_CAST"],
+    R: ["SLOW", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

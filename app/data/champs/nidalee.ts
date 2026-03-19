@@ -17,9 +17,9 @@ const nidalee: ChampData = {
     alt: {
       // 쿠거폼
       P: ["MS_UP"],
-      Q: ["UNSTOPPABLE_CAST"],      
+      Q: ["UNINTERRUPTIBLE_CAST"],      
       W: ["WALL_HOP"],
-      E: ["UNSTOPPABLE_CAST"],
+      E: ["UNINTERRUPTIBLE_CAST"],
       R: [],
       ETC: [],
     },

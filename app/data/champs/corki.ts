@@ -13,9 +13,9 @@ const corki: ChampData = {
 
   notes: {
     ko: [
-    "[[R_FLASH]]은 R누르고 바로 점멸하면 안됨 \nR누르고 점멸을 약간 천천히 써야 함", "W는 [[AIRBORNE]]류에 끊김\n(다른종류로도 끊긴다면 알려주세요)"
+    "[[R_FLASH]]은 R누르고 바로 점멸하면 안됨.\nR누르고 점멸을 약간 천천히 써야 적용.", "R의 스택 개수는 코르키 마나바 아래에 표시됨.\n상대도 볼 수 있음."
   ],
-    en: ["[[R_FLASH]] requires a slight delay after pressing R — using flash immediately cancels it", "W is interrupted by [[AIRBORNE]] (please report if other CC types also interrupt it)"]
+    en: ["[[R_FLASH]] requires a slight delay after pressing R — using flash immediately cancels it.", "The R stack count is displayed below Corki's mana bar and is visible to enemies."]
   },
 
 vision: {

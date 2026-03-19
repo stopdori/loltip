@@ -6,8 +6,8 @@ const garen: ChampData = {
     P: ["HEAL"],
     Q: ["AA_RESET", "MS_UP", "SILENCE"],
     W: ["SHIELD", "DMG_REDUCE", "TENACITY"],
-    E: ["E_FLASH", "AR_SHRED", "UNSTOPPABLE_CHANNEL"],
-    R: ["R_FLASH", "UNSTOPPABLE_CAST"],
+    E: ["E_FLASH", "AR_SHRED", "UNINTERRUPTIBLE_CHANNEL"],
+    R: ["R_FLASH", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

@@ -4,9 +4,9 @@ const darius: ChampData = {
   id: "darius",
   skills: {
     P: ["AD_UP"],
-    Q: ["Q_FLASH", "HEAL", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "HEAL", "UNINTERRUPTIBLE_CAST"],
     W: ["AA_RESET", "SLOW"],
-    E: ["E_FLASH", "GRAB", "SLOW", "AR_PEN", "UNSTOPPABLE_CAST"],
+    E: ["E_FLASH", "GRAB", "SLOW", "AR_PEN", "UNINTERRUPTIBLE_CAST"],
     R: ["R_FLASH"],
     ETC: [],
   },

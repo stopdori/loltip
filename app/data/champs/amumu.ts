@@ -4,10 +4,10 @@ const amumu: ChampData = {
   id: "amumu",
   skills: {
     P: [],
-    Q: ["Q_FLASH", "STUN", "WALL_HOP", "VISION"],
-    W: [],
-    E: ["E_FLASH"],
-    R: ["R_FLASH", "STUN"],
+    Q: ["Q_FLASH", "STUN", "WALL_HOP", "VISION", "UNINTERRUPTIBLE_CAST", "CC_BUFFER"],
+    W: ["UNINTERRUPTIBLE_CHANNEL"],
+    E: ["E_FLASH", "UNINTERRUPTIBLE_CAST"],
+    R: ["R_FLASH", "STUN", "UNINTERRUPTIBLE_CAST"],
     ETC: [],
   },
 

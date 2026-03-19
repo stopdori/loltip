@@ -17,10 +17,10 @@ const gnar: ChampData = {
     alt: {
       // 🔨 변신폼 (근접)
       P: ["MAX_HP_UP"],
-      Q: ["Q_FLASH", "SLOW", "UNSTOPPABLE_CAST"],      // 변신 Q는 Q플 가능
-      W: ["STUN", "UNSTOPPABLE_CAST"],
+      Q: ["Q_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],      // 변신 Q는 Q플 가능
+      W: ["STUN", "UNINTERRUPTIBLE_CAST"],
       E: ["SLOW", "WALL_HOP"],
-      R: ["KNOCKBACK", "SLOW", "STUN", "UNSTOPPABLE_CAST"],
+      R: ["AIRBORNE", "SLOW", "STUN", "UNINTERRUPTIBLE_CAST"],
       ETC: [],
     },
   },

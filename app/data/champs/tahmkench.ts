@@ -4,7 +4,7 @@ const tahmkench: ChampData = {
   id: "tahmkench",
   skills: {
     P: [],
-    Q: ["Q_FLASH", "HEAL", "SLOW", "STUN", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "HEAL", "SLOW", "STUN", "UNINTERRUPTIBLE_CAST"],
     W: ["AIRBORNE", "WALL_HOP"],
     E: ["SHIELD", "HEAL"],
     R: ["R_FLASH", "SHIELD", "UNTARGETABLE", "WALL_HOP"],
