@@ -8,7 +8,22 @@ const smolder: ChampData = {
     W: ["W_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
     E: ["E_FLASH", "MS_UP", "WALL_HOP"],
     R: ["SLOW", "HEAL"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const smolder: ChampData = {
   ],
     en: ["P stacks: 25 splash / 125 bonus projectile / 225 persistent true damage, [[EXECUTE]]", "W's [[SLOW]] continuously applies to targets inside the area", "R [[HEAL]] only activates if Smolder himself is hit by the breath", "E is interrupted by [[HARD_CC]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

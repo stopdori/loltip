@@ -10,7 +10,6 @@ const ksante: ChampData = {
       W: ["DMG_REDUCE", "UNSTOPPABLE", "STUN", "UNSTOPPABLE"],
       E: ["SHIELD", "WALL_HOP"],
       R: ["AS_UP", "SUPPRESS", "WALL_HOP", "UNSTOPPABLE"],
-      ETC: [],
     },
     alt: {
       P: ["LIFESTEAL", "AR_PEN"],
@@ -18,7 +17,40 @@ const ksante: ChampData = {
       W: ["DMG_REDUCE", "UNSTOPPABLE"],
       E: ["SHIELD", "WALL_HOP"],
       R: [],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -27,16 +59,6 @@ const ksante: ChampData = {
     ],
     en: ["[[THE_COPYPASTA]]", "R's [[UNSTOPPABLE]] is not shown in the description, but appears above K'Sante's health bar while launching the target backward. It ends upon arrival.", "R launches the target backward while K'Sante appears behind them to strike. If there is terrain behind the target (excluding the map boundary), K'Sante passes all the way through.", "R cannot be cancelled by reactivating after use."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

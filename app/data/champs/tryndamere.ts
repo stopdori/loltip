@@ -8,7 +8,22 @@ const tryndamere: ChampData = {
     W: ["AD_DOWN", "SLOW"],
     E: ["WALL_HOP"],
     R: ["INVULNERABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const tryndamere: ChampData = {
   ],
     en: ["[[E_FLASH]] not possible", "P [[CRIT]] increases with fury level", "Q [[AD_UP]] scales with missing HP", "W activates when nearby enemy champions are present.\nUseful for detecting invisible or stealthed enemies.\nApplies bonus [[SLOW]] when target is facing away", "E cooldown is reduced on crits.\n2x reduction on crits vs champions", "R can be activated under any CC (including silence).\nCannot be used during own W or E cast"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

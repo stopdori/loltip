@@ -8,7 +8,22 @@ const lucian: ChampData = {
     W: ["W_FLASH", "MS_UP"],
     E: ["WALL_HOP"],
     R: [],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const lucian: ChampData = {
   ],
     en: ["W grants [[MS_UP]] to Lucian when the marked target is attacked by any ally, not just Lucian"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

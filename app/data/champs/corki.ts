@@ -8,7 +8,22 @@ const corki: ChampData = {
     W: ["W_FLASH", "WALL_HOP"],
     E: ["E_FLASH", "AR_MR_SHRED"],
     R: ["R_FLASH"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const corki: ChampData = {
   ],
     en: ["[[R_FLASH]] requires a slight delay after pressing R — using flash immediately cancels it.", "The R stack count is displayed below Corki's mana bar and is visible to enemies."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 0,

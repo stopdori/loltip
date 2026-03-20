@@ -8,7 +8,22 @@ const cassiopeia: ChampData = {
     W: ["W_FLASH", "GROUNDED", "SLOW"],
     E: ["E_FLASH", "HEAL"],
     R: ["R_FLASH", "STUN", "SLOW", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const cassiopeia: ChampData = {
   ],
     en: ["Boots can now be purchased", "Q [[MS_UP]] only applies if the shot lands", "W can be overlapped on terrain or created walls.", "Interactions with W are listed in the matchup box below.", "E deals bonus damage to poisoned targets.\nPoison sources include Q, W, as well as\nTeemo E (auto), R (mushroom), Twitch P, W, and Singed Q.", "R applies [[STUN]] to enemies facing Cassiopeia, and [[SLOW]] to those facing away"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

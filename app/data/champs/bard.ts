@@ -8,7 +8,22 @@ const bard: ChampData = {
     W: ["HEAL", "MS_UP"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const bard: ChampData = {
   ],
     en: ["P's [[SLOW]] activates at 5 stacks.\nMore stacks increase various effects", "Q applies [[SLOW]] on a straight hit.\nPiercing through another enemy or hitting a wall applies [[STUN]]", "W gains power over time when left on the ground.\nEnemies stepping on it destroy it", "You can be attacked during E travel.\nBeing hit by [[AIRBORNE]] ejects you from the tunnel.\nOther CC types apply but you still travel to the end — the CC remains after arrival.", "R (Tempered Fate) cannot be stopped by:\nSpell shields e.g. Morgana E (Black Shield), Nocturne W\nItem shields e.g. Night's Edge, Banshee's Veil\nUnstoppable e.g. Malphite R"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

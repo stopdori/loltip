@@ -8,7 +8,22 @@ const irelia: ChampData = {
     W: ["W_FLASH", "DMG_REDUCE", "UNINTERRUPTIBLE_CHANNEL"],
     E: ["STUN"],
     R: ["R_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const irelia: ChampData = {
   ],
     en: ["[[E_FLASH]] not possible", "P stacks up to 4.\nStacks are maintained only by hitting champions or towers"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 125,

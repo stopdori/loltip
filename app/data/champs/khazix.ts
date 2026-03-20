@@ -9,7 +9,6 @@ const khazix: ChampData = {
     W: ["W_FLASH", "HEAL"],
     E: ["WALL_HOP"],
     R: ["INVISIBILITY", "MS_UP"],
-    ETC: [],
   },
 
   alt: {
@@ -19,7 +18,40 @@ const khazix: ChampData = {
       W: ["W_FLASH", "HEAL", "SLOW", "REVEALED"],
       E: ["WALL_HOP"],
       R: ["INVISIBILITY", "MS_UP"],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -29,16 +61,6 @@ const khazix: ChampData = {
   ],
     en: ["P's [[SLOW]] activates when Kha'Zix is invisible to the target", "W [[HEAL]] only activates when standing inside the explosion radius", "[[INVISIBILITY]] does not break on flash.\nE (jump) does break it", "Skills can be cast while mid-air from E"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

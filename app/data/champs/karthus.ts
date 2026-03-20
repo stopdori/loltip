@@ -8,7 +8,22 @@ const karthus: ChampData = {
     W: ["W_FLASH", "VISION", "MR_SHRED", "SLOW"],
     E: ["UNINTERRUPTIBLE_CHANNEL"],
     R: [],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const karthus: ChampData = {
   ],
     en: ["When Karthus dies, P allows him to overcome death — he cannot move but can still cast skills.\nMana is not consumed during this state.", "Q deals increased damage to a single target", "Using flash during R channeling cancels R immediately — never do this"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 200,

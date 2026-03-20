@@ -8,7 +8,22 @@ const zeri: ChampData = {
     W: ["SLOW"],
     E: ["WALL_HOP"],
     R: ["R_FLASH", "AS_UP", "MS_UP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const zeri: ChampData = {
   ],
     en: ["Q cooldown is affected by ability haste and attack speed.\n70% of excess attack speed converts to AD", "[[CRIT]] can apply to W", "Using E then W fires W through the wall.\nE grants Q 3 pierce charges", "R buffs only trigger when hitting an enemy champion.\nBuff duration is refreshed by basic attacks, Q, or W damage (not item effects)"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 80,

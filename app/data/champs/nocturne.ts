@@ -8,7 +8,22 @@ const nocturne: ChampData = {
     W: ["AS_UP", "SPELL_SHIELD"],
     E: ["E_FLASH", "TETHER", "FEAR"],
     R: ["R_FLASH", "WALL_HOP", "NEARSIGHT", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const nocturne: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible", "Q's buffs only activate while standing in the trail", "W's [[AS_UP]] doubles if successfully blocked", "[[FEAR]] only applies if E's tether remains unbroken", "R's [[NEARSIGHT]] leaves only self-vision"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

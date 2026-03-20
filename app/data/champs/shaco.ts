@@ -8,7 +8,22 @@ const shaco: ChampData = {
     W: ["W_FLASH", "ALLY_TP_OK", "FEAR"],
     E: ["E_FLASH", "SLOW"],
     R: ["R_FLASH", "FEAR", "WALL_HOP", "TOWER_DODGE", "ALLY_TP_OK", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const shaco: ChampData = {
   ],
     en: ["Shaco deals bonus damage from behind", "Q then attacking from behind applies [[CRIT]].\nQ [[INVISIBILITY]] doesn't break on flash, W, or R.\n(E does break it)", "R (clone) explodes on death, applying AoE [[FEAR]]", "Cannot TP onto the clone,\nbut boxes spawned after clone death allow [[ALLY_TP_OK]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

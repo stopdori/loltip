@@ -8,7 +8,22 @@ const warwick: ChampData = {
     W: ["AS_UP", "MS_UP", "BUFF_FORM"],
     E: ["DMG_REDUCE", "FEAR", "UNINTERRUPTIBLE_CHANNEL"],
     R: ["LIFESTEAL", "SUPPRESS", "WALL_HOP", "CC_IMMUNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const warwick: ChampData = {
   ],
     en: ["[[E_FLASH]] and [[R_FLASH]] not possible", "Both short and long [[Q_FLASH]] work.\nFor long Q flash: press Q outside range then flash into Q range at the moment Q would fire", "Hold Q when the target uses a movement ability to track them", "W applies to targets below 50% HP.\n2x effect below 25% HP", "R [[UNINTERRUPTIBLE_CAST]] is during the leap phase.\nR [[SUPPRESS]] is during the attack phase"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

@@ -8,7 +8,22 @@ const fiora: ChampData = {
     W: ["AS_UP", "MS_UP", "SLOW", "STUN", "UNINTERRUPTIBLE_CHANNEL"],
     E: ["AS_UP", "SLOW", "AA_RESET"],
     R: ["R_FLASH", "HEAL", "MS_UP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const fiora: ChampData = {
   ],
     en: ["P activates only when a ''vital'' is struck", "[[Q_FLASH]](Lunge) not possible", "[[W_FLASH]](Riposte) not possible", "W applies [[SLOW]]; if Fiora is hit by CC while casting, the CC is completely negated and [[STUN]] is applied instead of [[SLOW]]", "Abilities that trigger [[STUN]] when blocked by W are listed separately in the box below.", "[[MS_UP]] from R enhances P effectiveness\nIf a vital is hit at least once while R is active and the target dies, a geyser is created"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

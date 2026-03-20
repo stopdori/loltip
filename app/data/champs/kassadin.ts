@@ -8,7 +8,22 @@ const kassadin: ChampData = {
     W: ["AA_RESET"],
     E: ["E_FLASH", "SLOW"],
     R: ["R_FLASH", "WALL_HOP", "CC_BUFFER"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const kassadin: ChampData = {
   ],
     en: ["P's [[DMG_REDUCE]] applies to magic damage only", "Q has channel interruption (not silence)", "R has two phases: wind-up / blink.\nCC during the wind-up phase is valid, but the blink still triggers and Kassadin moves.\nThere is no CC immunity during the blink phase.\nIf CC duration remains when Kassadin blinks, the CC effect still applies."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 0,

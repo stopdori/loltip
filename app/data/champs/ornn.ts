@@ -8,7 +8,22 @@ const ornn: ChampData = {
     W: ["UNSTOPPABLE"],
     E: ["AIRBORNE"],
     R: ["R_FLASH", "SLOW", "AIRBORNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const ornn: ChampData = {
   ],
     en: ["P item upgrades begin at level 13, one slot at a time.\nOrnn's Masterwork items are worth 1000g of value", "[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]] not possible", "[[R_FLASH]] is possible if done very quickly at R2 timing", "Cannot TP onto Q (pillar)", "Hitting the last part of W makes the target Brittle, which makes the next attack apply bonus CC duration and knockback", "E's [[AIRBORNE]] only triggers on collision with a wall.\nIf the wall belongs to the enemy team, it is destroyed instead", "Both charges of R apply Brittle.\nR's second strike is not [[UNSTOPPABLE]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

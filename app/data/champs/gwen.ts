@@ -8,7 +8,22 @@ const gwen: ChampData = {
     W: ["W_FLASH", "UNTARGETABLE"],
     E: ["E_FLASH", "AA_RESET", "WALL_HOP"],
     R: ["R_FLASH", "SLOW"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const gwen: ChampData = {
   ],
     en: ["Q is most effective when hitting with the center", "W blocks projectiles originating from outside its area.\nTargeted projectiles already flying toward Gwen are also blocked if W is activated before they arrive"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 120,

@@ -8,7 +8,22 @@ const azir: ChampData = {
     W: [],
     E: ["E_FLASH", "SHIELD", "WALL_HOP"],
     R: ["WALL", "AIRBORNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const azir: ChampData = {
   ],
     en: ["[[Q_FLASH]] and [[R_FLASH]] not possible", "Cannot TP onto soldiers", "E activates [[SHIELD]] at the start of movement toward the W (soldier).\nBecause the travel distance is short, cast E toward the soldier then Q before arriving to push the soldier further and travel farther.\nThe direction can also be changed."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

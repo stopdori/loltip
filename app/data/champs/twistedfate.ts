@@ -7,8 +7,23 @@ const twistedfate: ChampData = {
     Q: ["Q_FLASH"],
     W: ["W_FLASH", "AA_RESET", "MANA_RESTORE", "SLOW","STUN"],
     E: ["AS_UP"],
-    R: ["R_FLASH", "TRUE_SIGHT"],
-    ETC: [],
+    R: ["R_FLASH"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const twistedfate: ChampData = {
   ],
     en: ["W card order: Blue ([[MANA_RESTORE]]) → Red ([[SLOW]]) → Yellow ([[STUN]])", "Even if you get CC'd after using W1, the card order keeps cycling and you can still pick a card with W2.", "Hold the gold card, right-click a target, then flash for a smooth [[W_FLASH]] gold card", "E's [[AS_UP]] is a passive effect", "R's [[TRUE_SIGHT]] can be blocked by spell shields (including Banshee's, Night's Edge)"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 170,

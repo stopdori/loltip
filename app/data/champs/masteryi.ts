@@ -8,7 +8,22 @@ const masteryi: ChampData = {
     W: ["DMG_REDUCE", "HEAL", "AA_RESET"],
     E: [],
     R: ["AS_UP", "MS_UP", "SLOW_IMMUNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const masteryi: ChampData = {
   ],
     en: ["Kill participation with R reduces its cooldown by 70% and extends its duration by 7s."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 85,

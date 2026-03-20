@@ -8,7 +8,22 @@ const volibear: ChampData = {
     W: ["W_FLASH", "HEAL"],
     E: ["E_FLASH", "SHIELD", "SLOW"],
     R: ["MAX_HP_UP", "SLOW", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const volibear: ChampData = {
   ],
     en: ["[[R_FLASH]] not possible", "P stacks up to 5", "Q's [[MS_UP]] while chasing only triggers if the enemy is visible within range.\nDoes not activate if the enemy is in a bush or hidden by [[STEALTH]].", "Q has two phases: charge / strike.\nCC during the charge phase cancels Q but refunds the cooldown.\nOnce the strike phase activates, CC is ignored", "Q over a thin wall toward an enemy wall-hops", "W [[HEAL]] requires hitting with W twice", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]]", "R disables towers.\nAlready-fired tower shots cannot be nullified.\nTower aggro cannot be removed"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 160,

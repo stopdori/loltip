@@ -11,7 +11,6 @@ const elise: ChampData = {
       W: ["MS_UP", "GHOSTING"],
       E: ["E_FLASH"],
       R: ["R_FLASH", "UNTARGETABLE", "TOWER_DODGE", "UNSTOPPABLE"],
-      ETC: [],
     },
 
     alt: {
@@ -21,7 +20,40 @@ const elise: ChampData = {
       W: ["AIRBORNE"],
       E: [],
       R: ["R_FLASH", "UNTARGETABLE", "TOWER_DODGE", "UNSTOPPABLE"],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -30,15 +62,6 @@ const elise: ChampData = {
     "매복 상태에서는 렉사이의 시야가 줄어듦\n대신 상대 움직임을 진동으로 감지할 수 있음 ", "매복에서 평타를 치면 W로 인해 대상과 대상주변이 [[AIRBORNE]] 됨. W를 눌러서 하는게 아님", "렉사이 R은 상대가 점멸로 못피함",
   ],
     en: ["Burrowed vision is reduced for Rek'Sai,\nbut enemy movement is detected as vibrations", "Basic attacking while burrowed launches W — it is not a separate button press.\nTargets hit and nearby enemies are [[AIRBORNE]]d", "Rek'Sai's R cannot be dodged with flash"]
-  },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
   },
 
   

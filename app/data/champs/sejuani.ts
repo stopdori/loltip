@@ -8,7 +8,22 @@ const sejuani: ChampData = {
     W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "STUN", "AA_RESET"],
     R: ["R_FLASH", "STUN", "SLOW", "REVEALED"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const sejuani: ChampData = {
   ],
     en: ["P only immunizes against [[SLOW]]", "W's [[SLOW]] only applies on the second hit", "R effects and bonus are only applied when hitting a target farther than 1/4 of the range.\n[[SLOW]] and AoE damage only apply beyond 1/4 range"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

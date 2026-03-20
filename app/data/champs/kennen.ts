@@ -8,7 +8,22 @@ const kennen: ChampData = {
     W: [],
     E: ["AS_UP", "MS_UP", "GHOSTING", "BUFF_FORM"],
     R: ["R_FLASH", "BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const kennen: ChampData = {
   ],
     en: ["Q flash not possible", "P at 3 stacks applies a stun", "E's [[AS_UP]] activates on deactivation", "R cannot be cancelled by any CC"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 120,

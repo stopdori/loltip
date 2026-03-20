@@ -8,7 +8,22 @@ const belveth: ChampData = {
     W: ["AIRBORNE"],
     E: ["DMG_REDUCE", "LIFESTEAL"],
     R: ["MS_UP", "WALL_HOP", "UNINTERRUPTIBLE_CHANNEL", "BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const belveth: ChampData = {
   ],
     en: ["[[AS_UP]] increases and [[GHOSTING]] activates after using a skill", "Void Coral spawns allow [[ALLY_TP_OK]]", "[[WALL_HOP]] on Q is only available in R (Endless Banquet) form", "[[W_FLASH]] not possible", "E cancels if hit by CC during cast"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 0,

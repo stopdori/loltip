@@ -8,7 +8,22 @@ const malphite: ChampData = {
     W: ["AA_RESET"],
     E: ["E_FLASH", "AS_DOWN"],
     R: ["WALL_HOP", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const malphite: ChampData = {
   ],
     en: ["[[R_FLASH]] not possible", "E reduces the target's attack speed"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 130,

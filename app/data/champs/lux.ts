@@ -8,7 +8,22 @@ const lux: ChampData = {
     W: ["SHIELD"],
     E: ["E_FLASH", "SLOW", "VISION"],
     R: ["UNINTERRUPTIBLE_CAST", "VISION"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const lux: ChampData = {
   ],
     en: ["[[W_FLASH]] and [[R_FLASH]] not possible", "Q [[PIERCE]]s once only", "E's [[SLOW]] continuously applies to targets inside the area", "Cannot TP onto E"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 60,

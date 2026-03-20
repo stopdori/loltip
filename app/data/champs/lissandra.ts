@@ -9,7 +9,6 @@ const lissandra: ChampData = {
     W: ["ROOT"],
     E: ["WALL_HOP"],
     R: ["R_FLASH", "STUN", "SLOW", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
 
   },
 
@@ -20,10 +19,42 @@ const lissandra: ChampData = {
     W: ["ROOT"],
     E: ["WALL_HOP"],
     R: ["SLOW", "HEAL", "UNTARGETABLE", "TOWER_DODGE"],
-    ETC: [],
-
 
   },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
   },
 
   notes: {
@@ -32,16 +63,6 @@ const lissandra: ChampData = {
   ],
     en: ["[[W_FLASH]] not possible", "P activates when an enemy champion dies near Lissandra — even without kill participation.\nThe range is approximately the width of the mid lane side brush.", "P's [[SLOW]] continuously applies to targets inside the area.", "R has [[UNINTERRUPTIBLE_CAST]] when cast on an enemy.\nWhen cast on herself, it is instant."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

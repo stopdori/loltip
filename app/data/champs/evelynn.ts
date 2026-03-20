@@ -8,7 +8,22 @@ const evelynn: ChampData = {
     W: ["W_FLASH", "SLOW", "CHARM", "MR_SHRED"],
     E: ["E_FLASH", "MS_UP", "WALL_HOP"],
     R: ["WALL_HOP", "UNTARGETABLE", "TOWER_DODGE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const evelynn: ChampData = {
   ],
     en: ["[[CAMOUFLAGE]] does not break on flash", "W's [[CHARM]] and [[MR_SHRED]] are secondary effects triggered only by attacking a target with full stacks", "E's dash is empowered while in [[CAMOUFLAGE]].\nE can [[WALL_HOP]] under very specific conditions", "R deals increased damage to targets below 30% HP"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 120,

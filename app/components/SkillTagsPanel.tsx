@@ -279,7 +279,7 @@ export default function SkillTagsPanel({
   lang: "ko" | "en";
 }) {
   const [form, setForm] = useState<FormKey>("base");
-  const [mode, setMode] = useState<"skill" | "vision">("skill");
+  const [mode, setMode] = useState<"skill" | "vision" | "gimmick">("skill");
 
   useEffect(() => {
     setForm("base");
@@ -312,7 +312,6 @@ if (champ?.notes) {
     W: "W",
     E: "E",
     R: "R",
-    ETC: lang === "ko" ? "기타" : "Other",
   };
 
     const getSpellTip = (k: SkillKey) => {
@@ -349,14 +348,34 @@ if (champ?.notes) {
 
 
 
-  const renderRow = (k: SkillKey) => {
-  const source = mode === "skill" ? champ?.skills : (champ as any)?.vision;
+  // 기믹 탭에서만 표시 (스킬 탭에서는 숨김, UNSTOPPABLE 제외)
+  const GIMMICK_ONLY_TAGS = new Set<TagId>([
+    "UNINTERRUPTIBLE_CAST",
+    "UNINTERRUPTIBLE_CHANNEL",
+    "BUFF_FORM",
+    "CC_BUFFER",
+  ]);
 
-  const tags: TagId[] = hasForms(champId ?? "")
+  // 기믹 탭에서 표시할 전체 기믹 태그 (UNSTOPPABLE 포함)
+  const GIMMICK_TAGS = new Set<TagId>([
+    "UNSTOPPABLE",
+    "UNINTERRUPTIBLE_CAST",
+    "UNINTERRUPTIBLE_CHANNEL",
+    "BUFF_FORM",
+    "CC_BUFFER",
+  ]);
+
+  const renderRow = (k: SkillKey) => {
+  const source = mode === "vision" ? (champ as any)?.vision : champ?.skills;
+
+  const allTags: TagId[] = hasForms(champId ?? "")
     ? (source?.[form]?.[k] ?? source?.[k] ?? [])
     : (source?.[k] ?? []);
 
-  if (k === "ETC" && tags.length === 0) return null;
+  const tags: TagId[] = mode === "gimmick"
+    ? allTags.filter((t) => GIMMICK_TAGS.has(t))
+    : allTags.filter((t) => !GIMMICK_ONLY_TAGS.has(t));
+
 
   const spellTip = getSpellTip(k);
 
@@ -411,16 +430,23 @@ return (
   <div className="space-y-2">
     {/* 🔹 탭 + 폼 토글 영역 */}
 <div className="h-10 flex items-center justify-between gap-2">
-  {/* 왼쪽: 스킬 / 시야 */}
+  {/* 왼쪽: 스킬 / 기믹 */}
   <ToggleGroup>
-  <button
-    type="button"
-    onClick={() => setMode("skill")}
-    className={toggleBtnClass(true)}
-  >
-    {lang === "ko" ? "스킬" : "Skills"}
-  </button>
-</ToggleGroup>
+    <button
+      type="button"
+      onClick={() => setMode("skill")}
+      className={toggleBtnClass(mode === "skill")}
+    >
+      {lang === "ko" ? "스킬" : "Skills"}
+    </button>
+    <button
+      type="button"
+      onClick={() => setMode("gimmick")}
+      className={toggleBtnClass(mode === "gimmick")}
+    >
+      {lang === "ko" ? "기믹" : "Gimmick"}
+    </button>
+  </ToggleGroup>
 
 
   {/* 오른쪽: 폼 토글 */}

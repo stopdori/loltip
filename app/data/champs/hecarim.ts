@@ -8,7 +8,22 @@ const hecarim: ChampData = {
     W: ["HEAL", "BUFF_FORM"],
     E: ["WALL_HOP", "KNOCKBACK", "GHOSTING", "BUFF_FORM"],
     R: ["WALL_HOP", "FEAR", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const hecarim: ChampData = {
   ],
     en: ["[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]], [[R_FLASH]] all not possible", "Hecarim gains [[AD_UP]] based on bonus movement speed", "E has two phases: charge / strike.\nCC during the charge phase is valid but does not cancel E ([[BUFF_FORM]]).\nOnce the strike phase activates (rearing up), CC is ignored.", "R's [[FEAR]] has inconsistent hit detection.\nEnemies using mobility at the right timing can often dodge it easily"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

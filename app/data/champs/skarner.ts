@@ -8,7 +8,22 @@ const skarner: ChampData = {
     W: ["W_FLASH", "SLOW", "SHIELD"],
     E: ["SUPPRESS", "STUN", "WALL_HOP"],
     R: ["SUPPRESS", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const skarner: ChampData = {
   ],
     en: ["Picking up a rock with Q enables AA cancel.\nThe final empowered auto applies [[SLOW]].\nThe thrown rock also applies [[SLOW]]", "E suppresses on collision, then allows ~3 more units of movement.\nHitting a wall during that window applies [[STUN]]", "R can [[SUPPRESS]] up to 3 targets.\nDuring R, Skarner can move and use W and non-flash summoner spells.\n[[MS_UP]] applies on hit"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

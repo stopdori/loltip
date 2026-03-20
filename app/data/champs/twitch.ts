@@ -8,7 +8,22 @@ const twitch: ChampData = {
     W: ["W_FLASH", "SLOW"],
     E: [],
     R: ["RANGE_UP", "AD_UP", "PIERCE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const twitch: ChampData = {
   ],
     en: ["Q [[CAMOUFLAGE]] does not break on flash.\nQ's [[AS_UP]] applies after [[CAMOUFLAGE]] ends.\nQ resets its cooldown when a poisoned champion dies", "W's [[SLOW]] continuously applies to targets inside the area"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 90,

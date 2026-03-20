@@ -11,7 +11,6 @@ const udyr: ChampData = {
       W: ["SHIELD", "LIFESTEAL", "HEAL"],
       E: ["MS_UP", "STUN"],
       R: ["SLOW"],
-      ETC: [],
     },
 
     alt: {
@@ -21,7 +20,40 @@ const udyr: ChampData = {
       W: ["SHIELD", "LIFESTEAL", "HEAL"],
       E: ["MS_UP", "CC_IMMUNE"],
       R: ["SLOW"],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -31,16 +63,6 @@ const udyr: ChampData = {
   ],
     en: ["Udyr's passive is what makes reusing skills his ultimate.\nP cooldown is 50–20s.\nBasic attacking after switching stances reduces P cooldown"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   // 제이스 궁은 폼 전환이라 쿨 없음
   ultCooldown: {

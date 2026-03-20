@@ -5,10 +5,19 @@ const kalista: ChampData = {
   skills: {
     P: ["WALL_HOP"],
     Q: ["Q_FLASH", "PIERCE"],
-    W: ["TRUE_SIGHT", "ALLY_TP_OK"],
+    W: ["ALLY_TP_OK"],
     E: ["SLOW"],
     R: ["AIRBORNE", "UNTARGETABLE", "TOWER_DODGE"],
-    ETC: [],
+  },
+
+  vision: { P: [], Q: [], W: [], E: [], R: [] },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {

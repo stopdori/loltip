@@ -8,7 +8,22 @@ const urgot: ChampData = {
     W: ["W_FLASH", "AA_RESET", "SLOW_RESIST"],
     E: ["E_FLASH", "SHIELD", "GRAB", "STUN"],
     R: ["SLOW", "GRAB", "EXECUTE", "FEAR"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const urgot: ChampData = {
   ],
     en: ["[[R_FLASH]] not possible", "Each leg has individual bonus damage and cooldowns", "E has two phases: prep / dash.\nCC during prep is valid but the dash still fires.\nThere is no CC immunity during the dash phase", "R [[EXECUTE]] requires manual recast when the target falls below 25% HP"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

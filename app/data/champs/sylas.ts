@@ -8,7 +8,22 @@ const sylas: ChampData = {
     W: ["W_FLASH", "LIFESTEAL", "WALL_HOP"],
     E: ["AIRBORNE", "WALL_HOP", "CC_BUFFER"],
     R: ["R_FLASH"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const sylas: ChampData = {
   ],
     en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "P is not an AA cancel — it increases attack speed", "E splits into E1 and E2.\nE2 has a throw / dash phase.\nCC during the throw phase is ignored and the dash still triggers.\nHard CC during the dash can interrupt it", "R is detailed per champion in the box below"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 80,

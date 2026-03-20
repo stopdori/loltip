@@ -8,7 +8,22 @@ const riven: ChampData = {
     W: ["STUN"],
     E: ["E_FLASH", "SHIELD"],
     R: ["R_FLASH", "AD_UP", "BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const riven: ChampData = {
   ],
     en: ["[[Q_FLASH]] and [[W_FLASH]] not possible", "Only Q third cast allows [[WALL_HOP]]", "R has a wind-up animation on first use.\nUsing E then R cancels the animation"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

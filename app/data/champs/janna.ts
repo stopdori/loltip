@@ -8,7 +8,22 @@ const janna: ChampData = {
     W: ["W_FLASH", "MS_UP", "SLOW", "GHOSTING"],
     E: ["E_FLASH", "SHIELD"],
     R: ["HEAL", "KNOCKBACK"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const janna: ChampData = {
   ],
     en: ["P's [[MS_UP]] applies to nearby allies", "[[Q_FLASH]] and [[R_FLASH]] not possible", "If Janna is hit by CC after casting Q1, Q2 cannot be activated.", "W's [[GHOSTING]] disappears when on cooldown"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 130,

@@ -8,7 +8,22 @@ const darius: ChampData = {
     W: ["AA_RESET", "SLOW"],
     E: ["E_FLASH", "GRAB", "SLOW", "AR_PEN", "UNINTERRUPTIBLE_CAST"],
     R: ["R_FLASH"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const darius: ChampData = {
   ],
     en: ["P applies [[AD_UP]] at 5 stacks or on R last-hit", "Once activated, Q cannot be interrupted even by CC.", "Q applies P stacks and [[HEAL]] only when hitting with the outer edge", "E's [[AR_PEN]] is a passive effect", "R deals bonus damage per P stack.\nKilling with R:\n1st/2nd rank: R can be recast for 20s. It disappears if unused.\n3rd rank: full cooldown reset that doesn't expire", "If the target disappears or uses Zhonya's mid-cast, R's cooldown doesn't start — it can be reused immediately (except vs Shaco R)"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

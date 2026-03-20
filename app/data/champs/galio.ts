@@ -8,7 +8,22 @@ const galio: ChampData = {
     W: ["SHIELD", "DMG_REDUCE", "TAUNT"],
     E: ["AIRBORNE", "CC_BUFFER"],
     R: ["R_FLASH", "SHIELD", "AIRBORNE", "WALL_HOP", "UNINTERRUPTIBLE_CHANNEL"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const galio: ChampData = {
   ],
     en: ["[[W_FLASH]] not possible (patched).\nDisabling smartcast on W is recommended", "[[E_FLASH]] not possible", "E has two phases: wind-up / dash.\nCC hit during wind-up is valid, but Galio still dashes forward.\nThere is no CC immunity during the dash phase.", "R has no CC immunity during the jump wind-up, but briefly enters a 'channeling focus' state upon landing, marked as [[UNINTERRUPTIBLE_CHANNEL]].\nCC applied during this state is ignored, including [[SUPPRESS]]."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 180,

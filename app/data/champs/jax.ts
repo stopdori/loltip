@@ -8,7 +8,22 @@ const jax: ChampData = {
     W: ["AA_RESET"],
     E: ["DODGE", "STUN", "UNINTERRUPTIBLE_CHANNEL"],
     R: ["BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const jax: ChampData = {
   ],
     en: ["P stacks up to 8", "After learning R, always think 'beat-beat-hit' in your head.\nAfter using R it changes to 'beat-hit'.\nOn the 'hit' rhythm, attack the enemy"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

@@ -8,7 +8,22 @@ const sivir: ChampData = {
     W: ["AS_UP", "AA_RESET"],
     E: ["SPELL_SHIELD", "HEAL"],
     R: ["MS_UP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const sivir: ChampData = {
   ],
     en: ["E is detailed per champion in the box below", "During R, basic attacking a champion reduces basic skill cooldowns.\nW (Ricochet) bouncing off champions does NOT reduce cooldowns"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

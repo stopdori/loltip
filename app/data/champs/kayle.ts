@@ -8,7 +8,22 @@ const kayle: ChampData = {
     W: ["W_FLASH", "HEAL", "MS_UP"],
     E: ["AA_RESET", "BUFF_FORM"],
     R: ["R_FLASH", "INVULNERABLE", "BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const kayle: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible", "P activates after putting points in E.\nP's [[MS_UP]] triggers during autos at 5 stacks", "Leveling R at 6/11/16 provides upgrades:\n6: [[RANGE_UP]]\n11: auto-attacks at 5 stacks fire a flame wave (AoE + bonus damage; basic attacks only hit one target)\n16: additional [[RANGE_UP]] + permanent 5-stack effect"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 160,

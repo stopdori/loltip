@@ -9,7 +9,6 @@ const karma: ChampData = {
     W: ["W_FLASH", "ROOT", "TETHER", "REVEALED"],
     E: ["E_FLASH", "SHIELD", "MS_UP"],
     R: [],
-    ETC: [],
   },
 
   alt: {
@@ -19,7 +18,40 @@ const karma: ChampData = {
       W: ["W_FLASH", "ROOT", "TETHER", "REVEALED", "HEAL"],
       E: ["E_FLASH", "SHIELD", "MS_UP"],
       R: [],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -29,16 +61,6 @@ const karma: ChampData = {
   ],
     en: ["Mantra W heals on activation.\nIf the [[TETHER]] triggers and [[ROOT]] is applied, it heals again"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 38,

@@ -18,7 +18,8 @@ export type Tone =
   | "lime" // 체력/힐/부활
   | "zinc" // 은신/시야제한/면역류
   | "fuchsia" // 치감/그라운드/특수
-  | "stone"; // 벽/특수/리셋
+  | "stone" // 벽/특수/리셋
+  | "indigo"; // 저지불가/시전보장 계열
 
 // ✅ TagId -> Tone 매핑(색상 관리의 "단일 진실 소스")
 export const TAG_TONE: Partial<Record<TagId, Tone>> = {
@@ -123,8 +124,9 @@ export const TAG_TONE: Partial<Record<TagId, Tone>> = {
   CC_IMMUNE: "zinc",
   CC_CLEANSE: "zinc",
   UNSTOPPABLE: "zinc",
-  UNSTOPPABLE_CHANNEL: "zinc",
-  UNSTOPPABLE_CAST: "zinc",
+  UNINTERRUPTIBLE_CHANNEL: "zinc",
+  UNINTERRUPTIBLE_CAST: "zinc",
+  BUFF_FORM: "indigo",
   CC_BUFFER: "zinc",
 
   // 💜 fuchsia (치감/그라운드/TP류)
@@ -165,6 +167,7 @@ export const TONE_CLASS: Record<Tone, string> = {
   zinc: "bg-zinc-800/70 text-zinc-200 ring-zinc-600/50",
   fuchsia: "bg-fuchsia-500/15 text-fuchsia-200 ring-fuchsia-400/30",
   stone: "bg-stone-500/20 text-stone-200 ring-stone-400/40",
+  indigo: "bg-indigo-500/20 text-indigo-200 ring-indigo-400/40",
 };
 
 // ✅ note용 텍스트 컬러 (inline)
@@ -189,4 +192,5 @@ export const NOTE_TONE_CLASS: Record<Tone, string> = {
   zinc: "text-zinc-500",
   fuchsia: "text-fuchsia-300",
   stone: "text-stone-300",
+  indigo: "text-indigo-300",
 };

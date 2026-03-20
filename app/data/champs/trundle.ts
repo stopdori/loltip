@@ -8,7 +8,22 @@ const trundle: ChampData = {
     W: ["W_FLASH", "MS_UP"],
     E: ["E_FLASH", "WALL", "AIRBORNE"],
     R: ["R_FLASH", "HEAL", "AR_MR_SHRED"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const trundle: ChampData = {
   ],
     en: ["P [[HEAL]] triggers when nearby enemies die", "W [[MS_UP]] and bonus healing only apply in the frozen zone.\nBonus healing may not apply to P — report if confirmed", "Cannot TP onto E wall", "R steals armor and MR from the target\n(target loses, Trundle gains)"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

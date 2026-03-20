@@ -8,7 +8,22 @@ const nilah: ChampData = {
     W: ["DODGE", "DMG_REDUCE", "GHOSTING", "MS_UP"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "GRAB", "LIFESTEAL", "SHIELD", "BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const nilah: ChampData = {
   ],
     en: ["Q's passive base effects — [[AR_PEN]], [[HEAL]] on champion attacks, and [[SHIELD]] at max HP — all scale with crit", "W also applies its effects to allies touching Nilah.\nW's [[DMG_REDUCE]] is magic damage only", "E can target allies", "R effects trigger when enemies are grabbed.\nAllies touched by R are also [[HEAL]]ed"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

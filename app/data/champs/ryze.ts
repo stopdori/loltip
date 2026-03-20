@@ -8,7 +8,22 @@ const ryze: ChampData = {
     W: ["W_FLASH", "SLOW", "ROOT"],
     E: ["E_FLASH"],
     R: ["WALL_HOP", "TOWER_DODGE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const ryze: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible", "P increases max mana by 10% of AP", "Rune and Spellflux are distinct.\nRunes are stacks charged by W and E.\nSpellflux is applied when E hits an enemy", "Both W and E reset Q's cooldown.\nAt 2 runes, Q on a Spellflux target consumes runes to grant [[MS_UP]]", "W applies [[SLOW]] normally.\nW on a Spellflux target applies [[ROOT]]", "[[W_FLASH]] on a Spellflux target is extremely strong", "R cancels if Ryze is CC'd mid-channel.\nAllies can still travel even if CC'd.\nPressing recall during R excludes only the user from the portal.\nAllies become [[INVULNERABLE]] while teleporting, blocking all damage including tower shots.\nWhen teleporting with minions near an enemy tower, aggro is drawn to minions and pets first"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 180,

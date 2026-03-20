@@ -8,7 +8,22 @@ const fiddlesticks: ChampData = {
     W: ["LIFESTEAL"],
     E: ["E_FLASH", "SLOW", "SILENCE"],
     R: ["WALL_HOP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const fiddlesticks: ChampData = {
   ],
     en: ["Cannot TP onto the effigy", "Q [[FEAR]] is a persistent passive.\nBeing out of combat, outside vision, or standing still for 2s (pretending to be the effigy) activates the condition.\nDealing damage with a skill then triggers [[FEAR]].\n[[FEAR]] has a per-champion cooldown shown as a circular timer around the target"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

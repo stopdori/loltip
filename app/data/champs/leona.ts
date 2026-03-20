@@ -8,7 +8,22 @@ const leona: ChampData = {
     W: ["DMG_REDUCE"],
     E: ["E_FLASH", "ROOT", "WALL_HOP", "CC_BUFFER"],
     R: ["R_FLASH", "SLOW", "STUN"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const leona: ChampData = {
   ],
     en: ["Using W grants a [[DMG_REDUCE]] buff. When it expires, a damage zone is released — hitting an enemy champion extends the [[DMG_REDUCE]] duration.", "E dashes to the last target hit.", "E has two phases: stab / dash.\nCC that hits Leona during the stab phase is registered,\nbut the dash phase still activates and she moves forward.\nThe dash phase has no CC resistance.", "R deals [[STUN]] to targets hit at the center, and [[SLOW]] to those hit in the surrounding area"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 90,

@@ -8,7 +8,22 @@ const orianna: ChampData = {
     W: ["MS_UP", "SLOW"],
     E: ["E_FLASH", "SHIELD"],
     R: ["R_FLASH", "GRAB", "AIRBORNE", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const orianna: ChampData = {
   ],
     en: ["Cannot TP onto the ball", "E's passive grants bonus armor and MR to whoever holds the ball", "Orianna-Nocturne (Malphite, Yone, Zoe, etc.) combos:\nWhile an ally is within E range and about to be launched, Orianna casts E then immediately R — the ball arrives in time to trigger"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

@@ -8,7 +8,22 @@ const thresh: ChampData = {
     W: ["W_FLASH", "SHIELD", "ALLY_TP_OK"],
     E: ["AIRBORNE", "SLOW", "UNINTERRUPTIBLE_CAST"],
     R: ["SLOW", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const thresh: ChampData = {
   ],
     en: ["[[Q_FLASH]], [[E_FLASH]], [[R_FLASH]] not possible.\nFlash during Q dash phase technically works", "Q has two phases: throw / dash.\nCC during the throw phase is mostly valid.\nHard CC during the dash can interrupt it", "W (lantern) is best placed in the ally's direction of movement"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

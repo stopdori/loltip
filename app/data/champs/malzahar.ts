@@ -8,7 +8,22 @@ const malzahar: ChampData = {
     W: ["ALLY_TP_OK"],
     E: ["E_FLASH"],
     R: ["R_FLASH", "SUPPRESS"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const malzahar: ChampData = {
   ],
     en: ["P (passive) is CC immunity.\nTower damage still applies while P is active,\nbut damage is reduced by 90%", "[[R_FLASH]] is extremely powerful"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

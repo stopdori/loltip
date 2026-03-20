@@ -8,7 +8,22 @@ const nasus: ChampData = {
     W: ["W_FLASH", "AS_DOWN", "SLOW"],
     E: ["E_FLASH", "AR_SHRED"],
     R: ["MAX_HP_UP", "BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const nasus: ChampData = {
   ],
     en: ["R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

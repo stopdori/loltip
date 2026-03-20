@@ -11,7 +11,6 @@ const rengar: ChampData = {
       W: ["HEAL"],
       E: ["E_FLASH", "REVEALED", "SLOW"],
       R: ["R_FLASH", "CAMOUFLAGE", "MS_UP", "TRUE_SIGHT", "AR_SHRED", "WALL_HOP"],
-      ETC: [],
     },
 
     alt: {
@@ -21,7 +20,40 @@ const rengar: ChampData = {
       W: ["HEAL", "CC_CLEANSE"],
       E: ["E_FLASH", "REVEALED","ROOT"],
       R: ["R_FLASH", "CAMOUFLAGE", "MS_UP", "TRUE_SIGHT", "AR_SHRED", "WALL_HOP"],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -31,16 +63,6 @@ const rengar: ChampData = {
   ],
     en: ["[[W_FLASH]] not possible", "P [[AD_UP]]: 1, 4, 9, 16, 25% per kill (max 5 kills)", "P's [[MS_UP]] activates on using an empowered skill", "Cannot leap out of a bush by flashing first", "R [[CAMOUFLAGE]] does not break on flash, enabling [[R_FLASH]].\nR reveals the nearest enemy champion and nearby enemies with [[TRUE_SIGHT]].\nR [[AR_SHRED]] only applies to the target leaped on"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

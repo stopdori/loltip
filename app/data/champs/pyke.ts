@@ -8,7 +8,22 @@ const pyke: ChampData = {
     W: ["W_FLASH", "MS_UP", "BUFF_FORM"],
     E: ["E_FLASH", "WALL_HOP", "STUN", "BUFF_FORM"],
     R: ["R_FLASH", "WALL_HOP", "EXECUTE", "UNINTERRUPTIBLE_CAST", "CC_BUFFER"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const pyke: ChampData = {
   ],
     en: ["Pyke's P converts 14 HP into 1 AD", "Using E then W when recalling is effective.\nUsing W then E breaks [[CAMOUFLAGE]]", "[[CAMOUFLAGE]] does not break on flash during W", "E's [[STUN]] triggers as the returning dagger comes back", "R is [[UNSTOPPABLE]] even though it's not stated in the description"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

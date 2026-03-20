@@ -8,7 +8,22 @@ const aurora: ChampData = {
     W: ["MS_UP", "INVISIBILITY", "WALL_HOP"],
     E: ["E_FLASH", "SLOW", "WALL_HOP", "CC_BUFFER"],
     R: ["SLOW", "WALL_HOP", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const aurora: ChampData = {
   ],
     en: ["[[R_FLASH]] not possible", "P triggers at 3 stacks, dealing bonus damage and [[HEAL]]ing.", "Q1 hits an enemy to leave a mark. When the duration ends or Q2 is pressed, the mark returns and hits enemies along its path.\nThis can stack P on targets in the path.\nUse Q to hit both a minion and an enemy champion, then let the mark return through the champion.", "W can hop thin walls; E can hop even thinner walls.", "E has two phases: Wind-up and Retreat.\nCC during the wind-up phase applies to Aurora, but the retreat phase still triggers and moves her backward.\nThere is no CC resistance during the retreat phase.", "R's description doesn't mention [[UNSTOPPABLE]], but the [[UNSTOPPABLE]] icon appears above Aurora's health bar when the skill is cast.\nThis applies only during the initial leap when expanding the boundary.", "When Aurora crosses the boundary with R, she reappears from the opposite direction (180°)."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

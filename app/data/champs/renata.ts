@@ -8,7 +8,22 @@ const renata: ChampData = {
     W: ["W_FLASH", "MS_UP"],
     E: ["SHIELD", "SLOW"],
     R: ["R_FLASH", "BERSERK", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const renata: ChampData = {
   ],
     en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "Q hitting champion A applies [[ROOT]].\nRe-casting into champion B applies [[STUN]] to B only", "W target revives at 20% max HP — not a heal, so [[GW]] doesn't apply", "E applies [[SHIELD]] to allies and [[SLOW]] to enemies"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 150,

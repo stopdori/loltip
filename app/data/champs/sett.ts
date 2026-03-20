@@ -8,7 +8,22 @@ const sett: ChampData = {
     W: ["W_FLASH", "SHIELD", "UNINTERRUPTIBLE_CHANNEL"],
     E: ["GRAB", "SLOW", "STUN"],
     R: ["R_FLASH", "SUPPRESS", "SLOW", "WALL_HOP", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const sett: ChampData = {
   ],
     en: ["[[E_FLASH]] not possible", "Q's [[MS_UP]] while chasing only triggers if the enemy is visible within range.\nDoes not activate if the enemy is in a bush or hidden by [[STEALTH]].", "W center hit deals true damage.\nUse W carefully", "E [[STUN]] is conditional — both targets must collide with each other.\nMinions can also be the collision partner for [[STUN]]", "R landing damage is amplified on tanks"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

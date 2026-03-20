@@ -8,7 +8,22 @@ const vladimir: ChampData = {
     W: ["W_FLASH", "LIFESTEAL", "MS_UP", "GHOSTING", "SLOW", "UNTARGETABLE", "TOWER_DODGE", "BUFF_FORM"],
     E: ["E_FLASH", "SLOW"],
     R: ["R_FLASH", "LIFESTEAL"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const vladimir: ChampData = {
   ],
     en: ["P increases max HP based on AP, and AP based on max HP", "W's [[SLOW]] continuously applies to targets inside the area", "E can be cast while using W.\nDisabling smartcast on E is recommended", "R applies 'increased damage taken' — ally damage on R targets is also amplified"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

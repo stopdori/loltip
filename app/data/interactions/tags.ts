@@ -98,8 +98,9 @@ export type TagId =
   | "BLIND"
   | "POLYMORPH"
   | "UNSTOPPABLE"
-  | "UNSTOPPABLE_CHANNEL"
-  | "UNSTOPPABLE_CAST"
+  | "UNINTERRUPTIBLE_CHANNEL"
+  | "UNINTERRUPTIBLE_CAST"
+  | "BUFF_FORM"
   | "CC_BUFFER"
   
   
@@ -152,8 +153,9 @@ CC_IMMUNE: { ko: "CC면역", en: "CC Immune" },
 SLOW_RESIST: { ko: "둔화저항", en: "Slow Resist" },
 SLOW_IMMUNE: { ko: "둔화면역", en: "Slow Immune" },
 UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
-UNSTOPPABLE_CHANNEL: { ko: "저불집중", en: "Unstoppable Channel" },
-UNSTOPPABLE_CAST: { ko: "저불시전", en: "Unstoppable Cast" },
+UNINTERRUPTIBLE_CHANNEL: { ko: "채널보장", en: "Uninterruptible Channel" },
+UNINTERRUPTIBLE_CAST: { ko: "시전보장", en: "Uninterruptible Cast" },
+BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
 CC_BUFFER: { ko: "부분저불", en: "CC Buffer" },
 
 
@@ -276,7 +278,7 @@ UNTARGETABLE: {
   en: "Cannot be targeted",
 },
 TOWER_DODGE: {
-  ko: "타워데미지 무시",
+  ko: "타워데미지 무시\n즉, 웬만한 투사체 데미지 무시",
   en: "Ignores turret damage",
 },
 SHIELD_BREAK: {
@@ -608,18 +610,23 @@ UNSTOPPABLE: {
   en: "It cannot be blocked by CC\nHowever, if CC hits during an unstoppable state \nand the duration remains after the state ends, \nthe CC takes effect",
 },
 
-UNSTOPPABLE_CHANNEL: {
-  ko: "채널링/토글 스킬 시전 중 CC에는 걸리지만\n효과를 무시하고 유지됨.\n단, 공식 저지불가는 아님.\n",
-  en: "CC can still be applied while channeling or toggled,\nbut its effect is ignored and the skill continues.\nNot officially classified as Unstoppable.",
+UNINTERRUPTIBLE_CHANNEL: {
+  ko: "채널링/토글 중 CC를 맞아도 스킬이 취소되지 않음\nCC는 정상적으로 적용됨",
+  en: "The channel or toggle cannot be interrupted by CC\nCC effects still apply normally",
 },
 
-UNSTOPPABLE_CAST: {
-  ko: "스킬을 사용하면, CC에는 걸리지만\n효과를 무시하고 스킬을 시전함.\n단, 공식 저지불가는 아님.",
-  en: "CC can still be applied at cast time,\nbut its effect is ignored and the cast completes.\nNot officially classified as Unstoppable.",
+UNINTERRUPTIBLE_CAST: {
+  ko: "시전 중 CC를 맞아도 스킬이 취소되지 않고 발동됨.\nCC는 정상적으로 적용됨.",
+  en: "The ability cannot be interrupted during its cast time, even if CC is applied\nCC effects still apply normally",
+},
+
+BUFF_FORM: {
+  ko: "버프 형태의 스킬로 CC를 맞아도 취소되지 않음",
+  en: "This ability applies a self-buff and cannot be canceled by CC\nCC effects still apply normally",
 },
 
 CC_BUFFER: {
-  ko: "일부 단계에서만 CC를 무시함\n주로 이동기에 사용",
+  ko: "일부 단계에서 CC를 무시하고 다음단계를 발동함.\n단, CC는 남아있음.\n주로 이동기에 사용.",
   en: "CC is ignored only during specific phases.\nCommonly seen on mobility abilities.",
 },
 

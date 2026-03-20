@@ -8,7 +8,22 @@ const nunu: ChampData = {
     W: ["W_FLASH", "AIRBORNE"],
     E: ["E_FLASH", "SLOW", "ROOT", "BUFF_FORM"],
     R: ["SHIELD", "SLOW"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const nunu: ChampData = {
   ],
     en: ["During W snowball rolling, recasting throws it", "E creates a circle around Nunu that applies [[ROOT]] at expiration.\nOnly targets hit at least once by E during this time are [[ROOT]]ed", "[[R_FLASH]] not possible. R cancels on any other action", "R's [[SLOW]] continuously applies to targets inside the area"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 110,

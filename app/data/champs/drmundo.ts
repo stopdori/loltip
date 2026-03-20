@@ -8,7 +8,22 @@ const drmundo: ChampData = {
     W: ["HEAL"],
     E: ["AA_RESET"],
     R: ["HEAL", "MS_UP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const drmundo: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible.\nQ (Infected Bonesaw) heals 50 HP when it lands", "Using W and taking damage, then letting it detonate on an enemy champion heals 100% of grey health.\nSummary: activate W and get in their face"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

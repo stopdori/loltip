@@ -8,7 +8,22 @@ const yone: ChampData = {
     W: ["W_FLASH", "SHIELD", "UNINTERRUPTIBLE_CAST"],
     E: ["E_FLASH", "MS_UP", "WALL_HOP"],
     R: ["AIRBORNE", "WALL_HOP", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const yone: ChampData = {
   ],
     en: ["[[R_FLASH]] not possible", "P [[AD_UP]] converts excess crit chance", "Q [[AIRBORNE]] triggers on the 3rd cast", "W shield scales with the number of enemy champions hit", "E [[UNINTERRUPTIBLE_CAST]] only applies on the return", "E cannot wall-hop on cast.\nThe returning E can wall-hop"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

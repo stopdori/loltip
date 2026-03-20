@@ -8,7 +8,22 @@ const draven: ChampData = {
     W: ["AS_UP", "MS_UP"],
     E: ["E_FLASH", "AIRBORNE", "SLOW"],
     R: ["EXECUTE", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const draven: ChampData = {
   ],
     en: ["Q does not [[AA_RESET]]", "After R deals damage, if the target's remaining HP is lower than Draven's stack bonus, they are executed.\nExample: target HP 1000, R damage 300, stack bonus 700 → execute"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 100,

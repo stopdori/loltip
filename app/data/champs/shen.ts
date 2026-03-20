@@ -8,7 +8,22 @@ const shen: ChampData = {
     W: ["PROTECTIVE_ZONE"],
     E: ["E_FLASH", "TAUNT", "WALL_HOP"],
     R: ["SHIELD", "WALL_HOP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const shen: ChampData = {
   ],
     en: ["Key mechanic is positioning enemies between Shen and his blade.\nHitting with the blade applies [[SLOW]] and [[AS_UP]].\n[[SLOW]] only applies when the target moves away from Shen", "W deactivates if neither Shen nor allies are inside its area.\nReactivates the moment one enters", "R brings the blade along when teleporting to an ally"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 200,

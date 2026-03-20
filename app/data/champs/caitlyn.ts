@@ -5,10 +5,25 @@ const caitlyn: ChampData = {
   skills: {
     P: [],
     Q: ["UNINTERRUPTIBLE_CAST"],
-    W: ["W_FLASH", "ROOT", "TRUE_SIGHT"],
+    W: ["W_FLASH", "ROOT"],
     E: ["E_FLASH", "AA_RESET", "WALL_HOP"],
     R: ["TRUE_SIGHT"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: ["TRUE_SIGHT"],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const caitlyn: ChampData = {
   ],
     en: ["P stacks charge at 2 per bush auto.\nW (Yordle Snap Trap) also deals bonus damage to trapped targets", "[[Q_FLASH]] not possible.\nQ damage decreases per additional target pierced.\nHowever Q always deals 100% damage to targets trapped by W", "Cannot TP onto W (traps)", "E applies [[AA_RESET]] on hit"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: ["TRUE_SIGHT"],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 90,

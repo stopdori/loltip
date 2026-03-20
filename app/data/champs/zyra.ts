@@ -5,10 +5,25 @@ const zyra: ChampData = {
   skills: {
     P: ["ALLY_TP_OK"],
     Q: ["Q_FLASH"],
-    W: ["W_FLASH", "TRUE_SIGHT"],
+    W: ["W_FLASH"],
     E: ["E_FLASH", "ROOT",],
     R: ["AIRBORNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const zyra: ChampData = {
   ],
     en: ["[[R_FLASH]] not possible", "Cannot TP onto seeds.\nPlants allow [[ALLY_TP_OK]]", "Q-grown plant: 'Thorn Spitter' (long range)\nE-grown plant: 'Vine Lasher' (applies [[SLOW]])\nR does not grow plants — it only buffs existing ones", "Enemies stepping on W seeds reveal themselves via [[TRUE_SIGHT]].\nP-spawned plants do not have this effect"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

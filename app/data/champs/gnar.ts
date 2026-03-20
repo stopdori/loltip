@@ -11,7 +11,6 @@ const gnar: ChampData = {
       W: ["MS_UP"],
       E: ["E_FLASH", "AS_UP", "SLOW", "WALL_HOP"],
       R: ["MS_UP"],
-      ETC: [],
     },
 
     alt: {
@@ -21,7 +20,40 @@ const gnar: ChampData = {
       W: ["STUN", "UNINTERRUPTIBLE_CAST"],
       E: ["SLOW", "WALL_HOP"],
       R: ["AIRBORNE", "SLOW", "STUN", "UNINTERRUPTIBLE_CAST"],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -31,16 +63,6 @@ const gnar: ChampData = {
   ],
     en: ["Gnar transforms when rage reaches 100 and a skill is used.\nMini E (hop) landing on a target double-jumps and triggers the transform", "Mini form:\nP [[MS_UP]] is always active in mini form.\n[[Q_FLASH]] not possible.\nE applies [[SLOW]] on hit — minions can also be hopped on.\nR amplifies W [[MS_UP]]", "Mega form:\nP is [[MAX_HP_UP]] so [[GW]] has no effect.\n[[W_FLASH]] not possible.\nR requires hitting a wall for [[STUN]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   // 제이스 궁은 폼 전환이라 쿨 없음
   ultCooldown: {

@@ -9,7 +9,6 @@ const qiyana: ChampData = {
     W: ["AS_UP", "WALL_HOP"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "KNOCKBACK", "STUN", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
   },
 
   alt: {
@@ -19,7 +18,6 @@ const qiyana: ChampData = {
     W: ["AS_UP", "WALL_HOP"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "KNOCKBACK", "STUN", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
     },
 
     alt2: {
@@ -29,7 +27,54 @@ const qiyana: ChampData = {
     W: ["AS_UP", "WALL_HOP"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "KNOCKBACK", "STUN", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt2: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt2: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -39,16 +84,6 @@ const qiyana: ChampData = {
   ],
     en: ["P resets by hitting a different element with W", "Earth Q deals bonus damage to targets below 50% HP", "R has unique hit detection.\nNormally R explodes on wall contact to apply [[STUN]],\nbut if river or brush is in R's path, it explodes and deals damage + [[STUN]] without hitting a wall.\nExample: if the knockback lands on flat ground after passing river/brush, neither the damage nor [[STUN]] will apply"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

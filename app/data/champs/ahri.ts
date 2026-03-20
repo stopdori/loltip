@@ -8,7 +8,22 @@ const ahri: ChampData = {
     W: ["MS_UP"],
     E: ["E_FLASH", "CHARM"],
     R: ["R_FLASH", "WALL_HOP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const ahri: ChampData = {
   ],
     en: ["P's [[HEAL]] activates at 9 stacks.\nGain 1 stack from killing minions or monsters.\nKill participation within 3s triggers ~18 stacks instantly\n(stacks are not consumed when triggered this way)", "Kill participation during R's duration\ngrants +1 R charge and extends its duration"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

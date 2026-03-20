@@ -9,7 +9,6 @@ const heimerdinger: ChampData = {
     W: [],
     E: ["SLOW", "STUN"],
     R: [],
-    ETC: [],
   },
 
   alt: {
@@ -19,10 +18,42 @@ const heimerdinger: ChampData = {
       W: ["UNINTERRUPTIBLE_CAST"],
       E: ["SLOW", "STUN"],
       R: [],
-      ETC: [],
     },
   },
 
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
 
   notes: {
     ko: [
@@ -30,16 +61,6 @@ const heimerdinger: ChampData = {
   ],
     en: ["P's [[MS_UP]] only activates near Q (turrets) or allied towers", "[[W_FLASH]] and [[E_FLASH]] not possible", "E must hit the center to apply [[STUN]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

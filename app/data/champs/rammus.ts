@@ -8,7 +8,22 @@ const rammus: ChampData = {
     W: ["UNINTERRUPTIBLE_CHANNEL"],
     E: ["E_FLASH", "TAUNT", "UNINTERRUPTIBLE_CAST"],
     R: ["WALL_HOP", "AIRBORNE", "SLOW", "CC_IMMUNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const rammus: ChampData = {
   ],
     en: ["P [[AD_UP]] scales with armor and MR", "R jump distance scales with movement speed.\n[[AIRBORNE]] is only possible while in Q (Powerball).\n[[SLOW]] applies 3 additional times in the area"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

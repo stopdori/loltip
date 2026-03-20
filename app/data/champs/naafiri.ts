@@ -8,7 +8,22 @@ const naafiri: ChampData = {
     W: ["W_FLASH", "AD_UP", "MS_UP", "UNTARGETABLE", "TOWER_DODGE"],
     E: ["WALL_HOP"],
     R: ["WALL_HOP", "SLOW", "SHIELD"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const naafiri: ChampData = {
   ],
     en: ["Q's second hit applies [[LIFESTEAL]]", "R was originally a basic skill that was reworked into an ultimate. As a result it no longer has allies blocking for it.\nHowever, R can still be interrupted by CC", "R resets if Naafiri kills or assists within 7s.\nThe initial cast has no [[SHIELD]], but the reset cast grants [[SHIELD]] on use.\nThe reset disappears if unused"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

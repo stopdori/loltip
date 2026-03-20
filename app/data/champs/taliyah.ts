@@ -8,7 +8,22 @@ const taliyah: ChampData = {
     W: ["W_FLASH", "AIRBORNE"],
     E: ["E_FLASH", "SLOW", "STUN", "UNINTERRUPTIBLE_CAST"],
     R: ["AIRBORNE", "WALL_HOP", "UNINTERRUPTIBLE_CAST"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const taliyah: ChampData = {
   ],
     en: ["Q [[SLOW]] only applies from Q cast on Worked Ground", "R is only usable out of combat.\nCannot TP onto R wall.\nR can block Void Herald charge.\nTaking damage while riding R dismounts Taliyah"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 180,

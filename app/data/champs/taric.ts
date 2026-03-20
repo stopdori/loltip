@@ -8,7 +8,22 @@ const taric: ChampData = {
     W: ["W_FLASH", "SHIELD", "BUFF_FORM"],
     E: ["E_FLASH", "STUN", "BUFF_FORM"],
     R: ["R_FLASH", "INVULNERABLE", "BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const taric: ChampData = {
   ],
     en: ["P's [[MS_UP]] applies for the next 2 basic attacks after using a skill"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 180,

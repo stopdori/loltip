@@ -8,7 +8,22 @@ const yasuo: ChampData = {
     W: ["WINDSHIELD"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["AIRBORNE", "AR_SHRED", "WALL_HOP", "UNINTERRUPTIBLE_CHANNEL"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const yasuo: ChampData = {
   ],
     en: ["[[W_FLASH]] and [[R_FLASH]] not possible", "P [[AD_UP]] converts excess crit chance into bonus AD", "Q [[AIRBORNE]] triggers on the 3rd cast", "Using Q while mid-dash with E deals AoE damage around Yasuo while moving", "Right-clicking the ground after an E dash prevents Q from becoming a tornado spin", "Yasuo's E has poor CC resistance compared to typical dashes.\nMost dashes ignore [[STUN]], but Yasuo's E stops immediately on [[STUN]]", "R can only target [[AIRBORNE]] enemies.\nR [[AR_SHRED]] applies to all hit targets"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 70,

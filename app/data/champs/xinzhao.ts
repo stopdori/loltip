@@ -8,7 +8,22 @@ const xinzhao: ChampData = {
     W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "AS_UP", "SLOW", "WALL_HOP"],
     R: ["R_FLASH", "KNOCKBACK", "INVULNERABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const xinzhao: ChampData = {
   ],
     en: ["Q [[AIRBORNE]] triggers on the 3rd hit", "Hitting W extends E range", "R is [[INVULNERABLE]] to attacks from outside the zone.\nHowever, towers, neutral monsters, and epic monsters bypass [[INVULNERABLE]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

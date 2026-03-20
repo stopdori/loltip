@@ -8,7 +8,22 @@ const brand: ChampData = {
     W: ["W_FLASH"],
     E: [],
     R: ["SLOW"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const brand: ChampData = {
   ],
     en: ["P's [[MANA_RESTORE]] triggers when killing a target with Blaze.\nBlaze stacks up to 3 per target from skills.\nAt 3 stacks it triggers an AoE explosion.\nItem effects (e.g. Liandry's, Luden's) don't proc it", "Q's [[STUN]] only applies to targets already affected by Blaze (e.g. WQ, EQ, RQ)", "R's [[SLOW]] only applies to targets already affected by Blaze"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 100,

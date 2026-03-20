@@ -8,7 +8,22 @@ const singed: ChampData = {
     W: ["W_FLASH", "GROUNDED", "SLOW", "UNINTERRUPTIBLE_CAST"],
     E: ["E_FLASH", "GRAB", "ROOT", "UNINTERRUPTIBLE_CAST"],
     R: ["HEAL", "MS_UP", "GW", "BUFF_FORM"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const singed: ChampData = {
   ],
     en: ["[[E_FLASH]] works but [[INSEC_KICK]] is not possible.\nE's [[ROOT]] only triggers if thrown onto W", "E activates once the throw animation starts — the skill mostly goes through.\nThe landing position is based on where E was cast", "R's [[GW]] only applies to Q"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,
