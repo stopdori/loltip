@@ -1,5 +1,6 @@
 // app/data/interactions/tagTone.ts
 import type { TagId } from "./index";
+import type { GimmickTagId } from "./tags_gimmick";
 
 // ✅ 스타일 팔레트용 톤(색상 그룹)
 export type Tone =
@@ -22,7 +23,7 @@ export type Tone =
   | "indigo"; // 저지불가/시전보장 계열
 
 // ✅ TagId -> Tone 매핑(색상 관리의 "단일 진실 소스")
-export const TAG_TONE: Partial<Record<TagId, Tone>> = {
+export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // --- note inline은 TagPill tone="note"로만 쓰고 여기선 보통 안 씀 ---
 
   // 🔶 amber (플래시/노랑)
@@ -140,10 +141,32 @@ export const TAG_TONE: Partial<Record<TagId, Tone>> = {
   SHIELD_BREAK: "stone",
   AA_RESET: "stone",
   UNTARGETABLE: "stone",
-};
+
+  // 🎭 gimmick 태그 (tags_gimmick.ts)
+  // 스킬 형태
+  SKILL_ACTIVE:  "stone",
+  SKILL_CHANNEL: "stone",
+  SKILL_TOGGLE:  "stone",
+  SKILL_CHARGED: "stone",
+  // 타이밍
+  TIMING_INSTANT:   "sky",
+  TIMING_CAST:      "sky",
+  TIMING_AFTERCAST: "sky",
+  // 중단 여부
+  CANCELLABLE: "lime",
+  LOCKED:      "red",
+  // 판정 방식
+  PROJECTILE:     "stone",
+  NON_PROJECTILE: "stone",
+  ZONE:           "stone",
+  // 속성
+  CHAIN:         "amber",
+  PASSIVE_BONUS: "amber",
+  SKILL_RECAST:  "amber",
+} satisfies Partial<Record<TagId | GimmickTagId, Tone>>;
 
 // ✅ tag가 등록 안 되어있으면 default
-export const toneOfTag = (tag: TagId): Tone => TAG_TONE[tag] ?? "default";
+export const toneOfTag = (tag: TagId | GimmickTagId): Tone => TAG_TONE[tag] ?? "default";
 
 // ✅ pill 색상
 export const TONE_CLASS: Record<Tone, string> = {
