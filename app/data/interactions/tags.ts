@@ -1,7 +1,3 @@
-import type { GimmickTagId } from "./tags_gimmick";
-export type { GimmickTagId } from "./tags_gimmick";
-import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC } from "./tags_gimmick";
-
 export type TagId =
   /* 이동 / 위치 */
   | "ALLY_TP_OK"
@@ -12,6 +8,7 @@ export type TagId =
   | "UNTARGETABLE"
   | "TOWER_DODGE"
   | "SHIELD_BREAK"
+  | "SHIELD_PIERCE"
   | "WALL"
   | "SUPPRESS" // 제압
   | "TETHER"
@@ -108,12 +105,11 @@ export type TagId =
   | "CC_BUFFER"
   
   
-  | "THE_COPYPASTA"
-  | GimmickTagId;
+  | "THE_COPYPASTA";
   
 
 
-const _BASE_TAG_LABEL: Record<Exclude<TagId, GimmickTagId>, { ko: string; en: string }> = {
+export const TAG_LABEL: Record<TagId, { ko: string; en: string }> = {
 
 
   /* =========================
@@ -158,7 +154,7 @@ CC_IMMUNE: { ko: "CC면역", en: "CC Immune" },
 SLOW_RESIST: { ko: "둔화저항", en: "Slow Resist" },
 SLOW_IMMUNE: { ko: "둔화면역", en: "Slow Immune" },
 UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
-UNINTERRUPTIBLE_CHANNEL: { ko: "채널보장", en: "Uninterruptible Channel" },
+UNINTERRUPTIBLE_CHANNEL: { ko: "채널링 ", en: "Uninterruptible Channel" },
 UNINTERRUPTIBLE_CAST: { ko: "시전보장", en: "Uninterruptible Cast" },
 BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
 CC_BUFFER: { ko: "부분저불", en: "CC Buffer" },
@@ -213,7 +209,8 @@ ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
 /* =========================
  * 8) 파괴 / 관통 / 치감
  * ========================= */
-SHIELD_BREAK: { ko: "쉴드파괴", en: "Shield Break" },
+SHIELD_BREAK:  { ko: "쉴드파괴", en: "Shield Break"  },
+SHIELD_PIERCE: { ko: "실드관통", en: "Shield Pierce" },
 AR_SHRED: { ko: "방깍", en: "AR Shred" },
 MR_SHRED: { ko: "마깍", en: "MR Shred" },
 AR_MR_SHRED: { ko: "방마깍", en: "AR+MR Shred" },
@@ -259,15 +256,10 @@ INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
 
 THE_COPYPASTA: { ko: "그 긴거", en: "The Copypasta"}
 
+  
+}
 
-};
-
-export const TAG_LABEL: Record<TagId, { ko: string; en: string }> = {
-  ..._BASE_TAG_LABEL,
-  ...GIMMICK_TAG_LABEL,
-};
-
-const _BASE_TAG_DESC: Partial<Record<Exclude<TagId, GimmickTagId>, { ko: string; en: string }>> = {
+export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
   /* 이동 / 위치 */
 ALLY_TP_OK: {
   ko: "아군이 텔을 사용할 수 있음",
@@ -294,6 +286,10 @@ TOWER_DODGE: {
 SHIELD_BREAK: {
   ko: "상대의 보호막을 파괴",
   en: "Breaks shields",
+},
+SHIELD_PIERCE: {
+  ko: "실드를 무시하고 체력에 직접 피해를 줌",
+  en: "Bypasses shields and deals damage directly to health",
 },
 WALL: {
   ko: "벽 생성\n(생성될 때 대체로 에어본)",
@@ -647,10 +643,5 @@ INTERCEPT_PROJECTILE: { ko: "브라움이 아군에게 날아가는 것을 대�
 THE_COPYPASTA: { ko: "이게 크산테다 \n체력 4700 방어력 329 마저201인 챔피언👤이\n 저지불가🚫, 실드🛡, 벽🧱 넘기는 거 있고요.\n에어본🌪 있고, 심지어 쿨타임은 1️⃣초밖에 안되고 \n마나🧙‍♂️는 1️⃣5️⃣ 들고 \nw는 심지어 변신💫하면 쿨 초기화에다가 \n패시브는 고정피해🗡가 들어가며 \n그 다음에 방마저🥋 올리면📈 올릴수록📈 \n스킬 가속⏰이 생기고! \nq에 스킬가속⏰이 생기고 스킬 속도🚀가 빨라지고📈 \n그 다음에 공격력🗡 계수가 있어가지고 \nW가 그 이익- 으아아아악😱😱 - Showmaker", 
   en: "This is K'Sante: 4700 HP, 329 armor, 201 MR, \nwith Unstoppable, shield, wall-hop, \nairborne, 1s cooldown, 15 mana cost. \nW resets on transform, P deals true damage, \narmor/MR increase cooldown reduction, \nQ benefits from ability haste and projectile speed \n— AAAAAH — Showmaker"}
 
-};
-
-export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
-  ..._BASE_TAG_DESC,
-  ...GIMMICK_TAG_DESC,
 };
 

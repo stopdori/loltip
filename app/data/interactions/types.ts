@@ -14,11 +14,26 @@ export type MultiForms = {
 
 export type ChampSkill = SingleForm | MultiForms;
 
+type GimmickPhase = {
+  label: { ko: string; en: string };
+  tags: TagId[];
+};
+
+export type GimmickSkillData =
+  | TagId[]
+  | { phases: [GimmickPhase, GimmickPhase?, GimmickPhase?, GimmickPhase?] };
+
+type GimmickSkillBlock = Partial<Record<SkillKey, GimmickSkillData>>;
+
+type ChampGimmick =
+  | GimmickSkillBlock
+  | { base: GimmickSkillBlock; alt?: GimmickSkillBlock; alt2?: GimmickSkillBlock };
+
 export interface ChampData {
   id: string;
   skills: ChampSkill;
   vision?: ChampSkill;
-  gimmick?: ChampSkill;
+  gimmick?: ChampGimmick;
   notes?: { ko: string[]; en: string[] };
   ultCooldown?: Partial<Record<6 | 11 | 16, number>>;
 }

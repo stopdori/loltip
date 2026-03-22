@@ -134,6 +134,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   GW: "fuchsia",
   GROUNDED: "fuchsia",
   ALLY_TP_OK: "fuchsia",
+  SHIELD_PIERCE: "fuchsia",
 
   // 🪨 stone (벽/특수/리셋)
   WALL: "stone",
@@ -163,6 +164,16 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CHAIN:         "amber",
   PASSIVE_BONUS: "amber",
   SKILL_RECAST:  "amber",
+  // 피해 범위
+  SINGLE:  "red",
+  // PIERCE: "red" — TagId에 이미 정의됨
+  AOE:     "red",
+  GLOBAL:  "red",
+  SUMMON:  "red",
+  // 피해 종류
+  DMG_PHYSICAL: "red",
+  DMG_MAGIC:    "purple",
+  DMG_TRUE:     "amber",
 } satisfies Partial<Record<TagId | GimmickTagId, Tone>>;
 
 // ✅ tag가 등록 안 되어있으면 default
