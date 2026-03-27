@@ -20,7 +20,8 @@ export type Tone =
   | "zinc" // 은신/시야제한/면역류
   | "fuchsia" // 치감/그라운드/특수
   | "stone" // 벽/특수/리셋
-  | "indigo"; // 저지불가/시전보장 계열
+  | "indigo" // 저지불가/시전보장 계열
+  | "white"; // 고정피해
 
 // ✅ TagId -> Tone 매핑(색상 관리의 "단일 진실 소스")
 export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
@@ -72,10 +73,11 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   VISION: "sky_soft",
   REVEALED: "sky_soft",
   TRUE_SIGHT: "sky_soft",
-  VISION_CREATE: "sky_soft",
-  POSITION_REVEAL: "sky_soft",
-  POSITION_TRACK: "sky_soft",
-  OUTLINE_REVEAL: "sky_soft",
+  POSITION_REVEAL:  "sky_soft",
+  POSITION_TRACK:   "sky_soft",
+  FEEDBACK_SOUND:      "sky_soft",
+  FEEDBACK_EFFECT:     "sky_soft",
+  FEEDBACK_INDICATOR:  "sky_soft",
 
   // 🟩 teal (CC/제어)
   HARD_CC: "teal",
@@ -125,10 +127,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CC_IMMUNE: "zinc",
   CC_CLEANSE: "zinc",
   UNSTOPPABLE: "zinc",
-  UNINTERRUPTIBLE_CHANNEL: "zinc",
-  UNINTERRUPTIBLE_CAST: "zinc",
   BUFF_FORM: "indigo",
-  CC_BUFFER: "zinc",
 
   // 💜 fuchsia (치감/그라운드/TP류)
   GW: "fuchsia",
@@ -145,35 +144,61 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🎭 gimmick 태그 (tags_gimmick.ts)
   // 스킬 형태
-  SKILL_ACTIVE:  "stone",
-  SKILL_CHANNEL: "stone",
-  SKILL_TOGGLE:  "stone",
-  SKILL_CHARGED: "stone",
+  SKILL_ACTIVE:  "indigo",
+  SKILL_CHANNEL: "indigo",
+  SKILL_TOGGLE:  "indigo",
+  SKILL_CHARGED: "indigo",
+  SKILL_RECAST:  "indigo",
+  RECHARGE:      "indigo",
+  STACKING:      "indigo",
+  PROC:          "indigo",
+  DEBUFF_STACK:  "indigo",
+  BUFF_STACK:    "indigo",
   // 타이밍
-  TIMING_INSTANT:   "sky",
-  TIMING_CAST:      "sky",
-  TIMING_AFTERCAST: "sky",
+  TIMING_INSTANT:   "indigo",
+  TIMING_CAST:      "indigo",
+  TIMING_AFTERCAST: "indigo",
+  ST_IMPACT:      "indigo",
+  ST_DELAYED:     "indigo",
+  ST_CONDITIONAL: "indigo",
   // 중단 여부
-  CANCELLABLE: "lime",
-  LOCKED:      "red",
+  CANCELLABLE: "indigo",
+  LOCKED:      "indigo",
   // 판정 방식
-  PROJECTILE:     "stone",
-  NON_PROJECTILE: "stone",
-  ZONE:           "stone",
+  TARGETED:       "indigo",
+  NON_TARGETED:   "indigo",
+  PROJECTILE:     "indigo",
+  NON_PROJECTILE: "indigo",
+  ZONE:           "indigo",
+  TRAP:           "indigo",
   // 속성
-  CHAIN:         "amber",
-  PASSIVE_BONUS: "amber",
-  SKILL_RECAST:  "amber",
+  CHAIN:         "indigo",
+  PASSIVE_BONUS: "indigo",
+  MARK:          "indigo",
+  HOMING:        "indigo",
   // 피해 범위
-  SINGLE:  "red",
+  SINGLE:  "indigo",
   // PIERCE: "red" — TagId에 이미 정의됨
-  AOE:     "red",
-  GLOBAL:  "red",
-  SUMMON:  "red",
+  PIERCE_MINION: "indigo",
+  AOE:     "indigo",
+  GLOBAL:  "indigo",
+  SUMMON:  "indigo",
+  SWARM:   "indigo",
+  VOLLEY:  "indigo",
   // 피해 종류
   DMG_PHYSICAL: "red",
-  DMG_MAGIC:    "purple",
-  DMG_TRUE:     "amber",
+  DMG_MAGIC:    "sky",
+  DMG_TRUE:     "white",
+  DOT:          "indigo",
+  ON_HIT:       "indigo",
+  // 시전 행동
+  CAST_COMMIT:  "indigo",
+  CAST_CANCEL:  "indigo",
+  CC_BUFFER:    "zinc",
+  // 이동
+  MOBILITY: "indigo",
+  DASH:     "indigo",
+  BLINK:    "indigo",
 } satisfies Partial<Record<TagId | GimmickTagId, Tone>>;
 
 // ✅ tag가 등록 안 되어있으면 default
@@ -202,6 +227,7 @@ export const TONE_CLASS: Record<Tone, string> = {
   fuchsia: "bg-fuchsia-500/15 text-fuchsia-200 ring-fuchsia-400/30",
   stone: "bg-stone-500/20 text-stone-200 ring-stone-400/40",
   indigo: "bg-indigo-500/20 text-indigo-200 ring-indigo-400/40",
+  white:  "bg-white/15 text-white ring-white/30",
 };
 
 // ✅ note용 텍스트 컬러 (inline)
@@ -227,4 +253,5 @@ export const NOTE_TONE_CLASS: Record<Tone, string> = {
   fuchsia: "text-fuchsia-300",
   stone: "text-stone-300",
   indigo: "text-indigo-300",
+  white:  "text-white",
 };
