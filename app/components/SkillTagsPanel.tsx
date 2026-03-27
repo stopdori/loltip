@@ -406,6 +406,55 @@ if (champ?.notes) {
     }
   }
 
+  // 스킬 탭: phase 구조 확인
+  if (mode === "skill") {
+    const skillData: GimmickSkillData | undefined = hasForms(champId ?? "")
+      ? (champ?.skills as any)?.[form]?.[k]
+      : (champ?.skills as any)?.[k];
+
+    if (skillData && !Array.isArray(skillData) && "phases" in skillData) {
+      const phases = skillData.phases.filter(Boolean) as Array<{
+        label: { ko: string; en: string };
+        tags: (TagId | GimmickTagId)[];
+      }>;
+
+      const renderTagPill = (t: TagId | GimmickTagId) => {
+        const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
+        const rLabel = TAG_LABEL[t as TagId];
+        const labelData = gLabel ?? rLabel;
+        if (!labelData) return null;
+        const desc =
+          GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
+          TAG_DESC?.[t as TagId]?.[lang];
+        return <TagPill key={t} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+      };
+
+      return (
+        <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
+          <div className={`w-[24px] shrink-0 text-lg font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
+          </div>
+          <div className="flex-1 space-y-2">
+            {phases.map((phase, i) => (
+              <div key={i} className="space-y-1">
+                <div className="text-xs font-semibold text-slate-400">
+                  {phase.label[lang]}
+                </div>
+                <div className="flex flex-wrap gap-x-1.5 gap-y-1">
+                  {phase.tags.length > 0 ? (
+                    phase.tags.map(renderTagPill)
+                  ) : (
+                    <span className="text-sm text-slate-500">-</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+  }
+
   // 시야 탭: phase 구조 확인
   if (mode === "vision") {
     const visionData: GimmickSkillData | undefined = hasForms(champId ?? "")
