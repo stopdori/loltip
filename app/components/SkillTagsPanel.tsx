@@ -4,6 +4,8 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
 import { TAG_LABEL, TAG_DESC, type SkillKey, type TagId } from "../data/interactions";
+import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
+import type { GimmickSkillData } from "../data/interactions/types";
 import { CHAMPS } from "../data/champs/_index";
 import { CHAMP_FORMS, hasForms, type FormKey } from "../data/interactions/forms";
 import { useChampSpells } from "@/app/lib/useChampSpells";
@@ -348,48 +350,129 @@ if (champ?.notes) {
 
 
 
-  // 기믹 탭에서만 표시 (스킬 탭에서는 숨김, UNSTOPPABLE 제외)
-  const GIMMICK_ONLY_TAGS = new Set<TagId>([
-    "UNINTERRUPTIBLE_CAST",
-    "UNINTERRUPTIBLE_CHANNEL",
-    "BUFF_FORM",
-    "CC_BUFFER",
-  ]);
-
-  // 기믹 탭에서 표시할 전체 기믹 태그 (UNSTOPPABLE 포함)
-  const GIMMICK_TAGS = new Set<TagId>([
-    "UNSTOPPABLE",
-    "UNINTERRUPTIBLE_CAST",
-    "UNINTERRUPTIBLE_CHANNEL",
-    "BUFF_FORM",
-    "CC_BUFFER",
-  ]);
-
   const renderRow = (k: SkillKey) => {
-  const source = mode === "vision" ? (champ as any)?.vision : champ?.skills;
-
-  const allTags: TagId[] = hasForms(champId ?? "")
-    ? (source?.[form]?.[k] ?? source?.[k] ?? [])
-    : (source?.[k] ?? []);
-
-  const tags: TagId[] = mode === "gimmick"
-    ? allTags.filter((t) => GIMMICK_TAGS.has(t))
-    : allTags.filter((t) => !GIMMICK_ONLY_TAGS.has(t));
-
-
   const spellTip = getSpellTip(k);
+
+  const skillKeyClass = `w-[24px] text-lg font-black text-center flex items-center justify-center ${
+    k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"
+  }`;
+
+  // 기믹 탭: phase 구조 확인
+  if (mode === "gimmick") {
+    const gimmickData: GimmickSkillData | undefined = hasForms(champId ?? "")
+      ? (champ?.gimmick as any)?.[form]?.[k]
+      : (champ?.gimmick as any)?.[k];
+
+    if (gimmickData && !Array.isArray(gimmickData) && "phases" in gimmickData) {
+      const phases = gimmickData.phases.filter(Boolean) as Array<{
+        label: { ko: string; en: string };
+        tags: (TagId | GimmickTagId)[];
+      }>;
+
+      const renderTagPill = (t: TagId | GimmickTagId) => {
+        const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
+        const rLabel = TAG_LABEL[t as TagId];
+        const labelData = gLabel ?? rLabel;
+        if (!labelData) return null;
+        const desc =
+          GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
+          TAG_DESC?.[t as TagId]?.[lang];
+        return <TagPill key={t} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+      };
+
+      return (
+        <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
+          <div className={`w-[24px] shrink-0 text-lg font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
+          </div>
+          <div className="flex-1 space-y-2">
+            {phases.map((phase, i) => (
+              <div key={i} className="space-y-1">
+                <div className="text-xs font-semibold text-slate-400">
+                  {phase.label[lang]}
+                </div>
+                <div className="flex flex-wrap gap-x-1.5 gap-y-1">
+                  {phase.tags.length > 0 ? (
+                    phase.tags.map(renderTagPill)
+                  ) : (
+                    <span className="text-sm text-slate-500">-</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+  }
+
+  // 시야 탭: phase 구조 확인
+  if (mode === "vision") {
+    const visionData: GimmickSkillData | undefined = hasForms(champId ?? "")
+      ? (champ?.vision as any)?.[form]?.[k]
+      : (champ?.vision as any)?.[k];
+
+    if (visionData && !Array.isArray(visionData) && "phases" in visionData) {
+      const phases = visionData.phases.filter(Boolean) as Array<{
+        label: { ko: string; en: string };
+        tags: (TagId | GimmickTagId)[];
+      }>;
+
+      const renderTagPill = (t: TagId | GimmickTagId) => {
+        const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
+        const rLabel = TAG_LABEL[t as TagId];
+        const labelData = gLabel ?? rLabel;
+        if (!labelData) return null;
+        const desc =
+          GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
+          TAG_DESC?.[t as TagId]?.[lang];
+        return <TagPill key={t} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+      };
+
+      return (
+        <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
+          <div className={`w-[24px] shrink-0 text-lg font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
+          </div>
+          <div className="flex-1 space-y-2">
+            {phases.map((phase, i) => (
+              <div key={i} className="space-y-1">
+                <div className="text-xs font-semibold text-slate-400">
+                  {phase.label[lang]}
+                </div>
+                <div className="flex flex-wrap gap-x-1.5 gap-y-1">
+                  {phase.tags.length > 0 ? (
+                    phase.tags.map(renderTagPill)
+                  ) : (
+                    <span className="text-sm text-slate-500">-</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+  }
+
+  // 기본 렌더링 (skill / vision / 기믹 비phase)
+  let tags: (TagId | GimmickTagId)[];
+
+  if (mode === "gimmick") {
+    const gimmickArr = hasForms(champId ?? "")
+      ? (champ?.gimmick as any)?.[form]?.[k] ?? (champ?.gimmick as any)?.[k]
+      : (champ?.gimmick as any)?.[k];
+    tags = Array.isArray(gimmickArr) ? gimmickArr : [];
+  } else {
+    const source = mode === "vision" ? (champ as any)?.vision : champ?.skills;
+    tags = hasForms(champId ?? "")
+      ? (source?.[form]?.[k] ?? source?.[k] ?? [])
+      : (source?.[k] ?? []);
+  }
 
   return (
     <div className="grid grid-cols-[24px_1fr] gap-x-4 items-center py-1 sm:py-2.5 min-h-[35px]">
-      <div
-        className={`w-[24px] text-lg font-black text-center flex items-center justify-center ${
-          k === "R"
-            ? "text-yellow-400"
-            : k === "P"
-            ? "text-slate-200"
-            : "text-sky-300"
-        }`}
-      >
+      <div className={skillKeyClass}>
         <SkillLabelWithTip
           labelText={label[k]}
           tip={spellTip}
@@ -401,15 +484,16 @@ if (champ?.notes) {
       <div className="flex flex-wrap items-start gap-x-1.5 gap-y-2">
         {tags.length > 0 ? (
           tags.map((t) => {
-            const labelData = TAG_LABEL[t];
+            const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
+            const rLabel = TAG_LABEL[t as TagId];
+            const labelData = gLabel ?? rLabel;
             if (!labelData) return null;
-
             return (
               <TagPill
                 key={t}
                 text={labelData[lang]}
                 tone={toneOfTag(t)}
-                tip={TAG_DESC?.[t]?.[lang]}
+                tip={GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ?? TAG_DESC?.[t as TagId]?.[lang]}
               />
             );
           })
