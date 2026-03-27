@@ -8,7 +8,22 @@ const yorick: ChampData = {
     W: ["W_FLASH", "WALL", "AIRBORNE"],
     E: ["E_FLASH", "MS_UP", "SLOW", "AR_SHRED"],
     R: ["ALLY_TP_OK"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const yorick: ChampData = {
   ],
     en: ["Cannot TP onto W", "R cannot be recalled after recasting"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

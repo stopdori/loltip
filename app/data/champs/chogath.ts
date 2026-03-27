@@ -8,7 +8,22 @@ const chogath: ChampData = {
     W: ["W_FLASH", "SILENCE"],
     E: ["AA_RESET", "SLOW"],
     R: ["R_FLASH", "HEAL", "EXECUTE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const chogath: ChampData = {
   ],
     en: ["R (Feast) is listed as [[HEAL]] because it increases max HP on kill,\nbut [[GW]] does not apply"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 80,

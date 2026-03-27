@@ -8,20 +8,52 @@ const renekton: ChampData = {
       // 🔫 인간폼 (원거리)
       P: [],
       Q: ["LIFESTEAL"],                // 인간 Q는 Q플 X
-      W: ["W_FLASH", "AA_RESET", "STUN", "UNSTOPPABLE_CAST"],
+      W: ["W_FLASH", "AA_RESET", "STUN", "UNINTERRUPTIBLE_CAST"],
       E: ["WALL_HOP"],
-      R: ["R_FLASH", "MAX_HP_UP", "UNSTOPPABLE_CHANNEL"],
-      ETC: [],
+      R: ["R_FLASH", "MAX_HP_UP", "BUFF_FORM"],
     },
 
     alt: {
       // 🔨 변신폼 (근접)
       P: [],
       Q: ["LIFESTEAL"],      // 변신 Q는 Q플 가능
-      W: ["W_FLASH", "AA_RESET", "STUN", "SHIELD_BREAK", "UNSTOPPABLE_CAST"],
+      W: ["W_FLASH", "AA_RESET", "STUN", "SHIELD_BREAK", "UNINTERRUPTIBLE_CAST"],
       E: ["WALL_HOP", "AR_SHRED"],
-      R: ["R_FLASH", "MAX_HP_UP", "UNSTOPPABLE_CHANNEL"],
-      ETC: [],
+      R: ["R_FLASH", "MAX_HP_UP", "BUFF_FORM"],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -31,16 +63,6 @@ const renekton: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible", "[[W_FLASH]] works by right-clicking a champion then flashing.\nW [[STUN]] lasts twice as long when empowered", "E can be recast once after dealing damage to an enemy", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

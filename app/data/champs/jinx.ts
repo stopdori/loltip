@@ -5,10 +5,25 @@ const jinx: ChampData = {
   skills: {
     P: ["AS_UP", "MS_UP"],
     Q: ["AS_UP"],
-    W: ["UNSTOPPABLE_CAST", "REVEALED"],
+    W: ["UNINTERRUPTIBLE_CAST", "REVEALED"],
     E: ["VISION", "ROOT"],
-    R: ["UNSTOPPABLE_CAST", "VISION"],
-    ETC: [],
+    R: ["UNINTERRUPTIBLE_CAST", "VISION"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const jinx: ChampData = {
   ],
     en: ["[[W_FLASH]], [[E_FLASH]], [[R_FLASH]] all not possible", "P [[MS_UP]] only activates from champions, epic monsters, or structures", "Q: Minigun mode ([[AS_UP]])\nFishbones mode (splash damage, increased range)", "E's [[ROOT]] has better hitbox detection than most roots and interrupts many dashes"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 85,

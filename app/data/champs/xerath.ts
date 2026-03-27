@@ -4,11 +4,26 @@ const xerath: ChampData = {
   id: "xerath",
   skills: {
     P: ["MANA_RESTORE"],
-    Q: ["Q_FLASH", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
     W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "STUN"],
     R: [],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const xerath: ChampData = {
   ],
     en: ["[[Q_FLASH]] only works during charging phase, not during firing", "W's effect increases when hitting the center", "E [[STUN]] duration increases with distance", "R shot count: 4/5/6 per rank.\nMoving during cast ends R"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 130,

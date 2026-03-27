@@ -7,8 +7,23 @@ const syndra: ChampData = {
     Q: [],
     W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "KNOCKBACK", "STUN"],
-    R: ["R_FLASH", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    R: ["R_FLASH", "UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const syndra: ChampData = {
   ],
     en: ["Cannot TP onto orbs", "P upgrades: 40 orbs empower Q (2 stacks), 60 empower W (add true damage), 80 empower E ([[SLOW]])", "[[W_FLASH]] works both when picking up and throwing", "E stuns enemies hit by flying orbs", "EQ combo doesn't work; use QE.\nWE combo still works"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

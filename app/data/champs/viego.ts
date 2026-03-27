@@ -8,7 +8,22 @@ const viego: ChampData = {
     W: ["W_FLASH", "STUN", "AA_RESET"],
     E: ["CAMOUFLAGE", "AS_UP", "MS_UP"],
     R: ["WALL_HOP", "KNOCKBACK", "SLOW", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const viego: ChampData = {
   ],
     en: ["P grants [[MS_UP]] when approaching an enemy after possessing a champion", "Using E near a wall reveals Viego's position even through fog of war — be careful when jungling", "R [[SLOW]] only applies to the enemy champion with the lowest HP"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

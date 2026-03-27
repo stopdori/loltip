@@ -7,8 +7,23 @@ const graves: ChampData = {
     Q: ["Q_FLASH"],
     W: ["W_FLASH", "NEARSIGHT", "SLOW"],
     E: ["E_FLASH", "AA_RESET", "WALL_HOP"],
-    R: ["R_FLASH", "WALL_HOP", "UNSTOPPABLE_CAST", "CC_BUFFER"],
-    ETC: [],
+    R: ["R_FLASH", "WALL_HOP", "UNINTERRUPTIBLE_CAST", "CC_BUFFER"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const graves: ChampData = {
   ],
     en: ["Autoattacking while hugging a thick wall with E creates extremely fast AA cancels", "W's [[SLOW]] continuously applies to targets inside the area", "If interrupted during R cast, the projectile still fires but movement may be restricted depending on the situation"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

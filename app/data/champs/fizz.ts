@@ -8,7 +8,22 @@ const fizz: ChampData = {
     W: ["AA_RESET"],
     E: ["E_FLASH", "SLOW", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE"],
     R: ["R_FLASH", "SLOW", "AIRBORNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const fizz: ChampData = {
   ],
     en: ["Q wall-hop only works by targeting an enemy across the wall", "E's [[SLOW]] only applies if landing without recasting", "R's [[SLOW]] applies twice:\n1. When the fish hits\n2. When the shark bites", "Place mouse far away before using R for maximum range"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

@@ -1,30 +1,46 @@
 import type { TagId } from "./tags";
+import type { GimmickTagId } from "./tags_gimmick";
 
-export type SkillKey = "P" | "Q" | "W" | "E" | "R" | "ETC";
+export type SkillKey = "P" | "Q" | "W" | "E" | "R";
 
+type SkillBlock = Partial<Record<SkillKey, (TagId | GimmickTagId)[]>>;
 
-type SkillBlock = Partial<Record<SkillKey, TagId[]>>;
+export type SingleForm = SkillBlock;
 
-export type ChampSkillTags =
-  | (SkillBlock & { notes?: string[] })
-  | {
-      base: SkillBlock;
-      alt: SkillBlock;
-      alt2?: SkillBlock;
-      notes?: {
-  ko: string[];
-  en: string[];
+export type MultiForms = {
+  base: SkillBlock;
+  alt: SkillBlock;
+  alt2?: SkillBlock;
 };
 
-    };
+export type ChampSkill = SingleForm | MultiForms;
 
-export type ChampSkill = ChampSkillTags;
+type GimmickPhase = {
+  label: { ko: string; en: string };
+  tags: (TagId | GimmickTagId)[];
+};
+
+export type GimmickSkillData =
+  | (TagId | GimmickTagId)[]
+  | { phases: [GimmickPhase, GimmickPhase?, GimmickPhase?, GimmickPhase?] };
+
+type GimmickSkillBlock = Partial<Record<SkillKey, GimmickSkillData>>;
+
+type ChampGimmick =
+  | GimmickSkillBlock
+  | { base: GimmickSkillBlock; alt?: GimmickSkillBlock; alt2?: GimmickSkillBlock };
+
+type VisionSkillBlock = Partial<Record<SkillKey, GimmickSkillData>>;
+
+type ChampVision =
+  | VisionSkillBlock
+  | { base: VisionSkillBlock; alt?: VisionSkillBlock; alt2?: VisionSkillBlock };
+
 export interface ChampData {
   id: string;
   skills: ChampSkill;
-  vision?: ChampSkill;
-  notes?: string[] | { ko: string[]; en: string[] };
-
-  // 궁 쿨타임 정보 (레벨 6/11/16)
+  vision?: ChampVision;
+  gimmick?: ChampGimmick;
+  notes?: { ko: string[]; en: string[] };
   ultCooldown?: Partial<Record<6 | 11 | 16, number>>;
 }

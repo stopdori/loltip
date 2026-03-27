@@ -8,7 +8,22 @@ const kindred: ChampData = {
     W: ["W_FLASH", "HEAL"],
     E: ["E_FLASH", "SLOW"],
     R: ["HEAL", "INVULNERABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const kindred: ChampData = {
   ],
     en: ["R flash not possible", "Each mark increases Q [[AS_UP]] by 5%, W and E damage, and range by 75 every 4 marks", "Jungle marks appear to be random", "R grants [[INVULNERABLE]] below 10% HP"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 160,

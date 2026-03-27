@@ -8,7 +8,22 @@ const veigar: ChampData = {
     W: ["W_FLASH"],
     E: ["E_FLASH", "STUN"],
     R: ["R_FLASH"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const veigar: ChampData = {
   ],
     en: ["P grants 1 permanent AP per stack.\n1 stack per skill hit, 5 stacks per kill participation", "Only Q can gain stacks from killing enemies (2 from large units)", "W reduces cooldown by 10% multiplicatively per 50 stacks — theoretically zero-cooldown is possible", "E [[STUN]] only triggers at the outer border of the cage", "R deals maximum damage when the target is below 33% HP"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

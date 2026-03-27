@@ -8,7 +8,22 @@ const milio: ChampData = {
     W: ["W_FLASH", "HEAL"],
     E: ["E_FLASH", "SHIELD", "MS_UP"],
     R: ["HEAL", "CC_CLEANSE", "TENACITY"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const milio: ChampData = {
   ],
     en: ["[[Q_FLASH]] and [[R_FLASH]] not possible", "P: allies hit by skills have their basic attacks empowered.\nQ also empowers allies standing in its path.", "Cannot TP onto W", "R cannot be cast while Milio is CC'd"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 160,

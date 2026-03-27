@@ -8,7 +8,22 @@ const teemo: ChampData = {
     W: ["MS_UP"],
     E: [],
     R: ["R_FLASH", "SLOW", "ALLY_TP_OK"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const teemo: ChampData = {
   ],
     en: ["P's [[AS_UP]] activates when coming out of [[INVISIBILITY]].\n[[INVISIBILITY]] flash rules:\nBush inside → inside: doesn't break\nBush inside → outside: breaks\nBush outside → inside: doesn't break\nBush outside → outside: breaks"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 35,

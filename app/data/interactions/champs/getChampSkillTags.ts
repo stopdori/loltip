@@ -1,8 +1,8 @@
-import type { ChampSkillTags, ChampData } from "../types";
+import type { ChampSkill, ChampData } from "../types";
 
-export async function getChampSkillTags(
+export async function getChampSkill(
   champId: string
-): Promise<ChampSkillTags> {
+): Promise<ChampSkill> {
   try {
     const mod = await import(`../../champs/${champId}`);
     const champ: ChampData | undefined = mod.default;
@@ -14,7 +14,7 @@ export async function getChampSkillTags(
 
     return skills;
   } catch (e) {
-    console.error("[getChampSkillTags] failed:", champId, e);
+    console.error("[getChampSkill] failed:", champId, e);
     return {};
   }
 }

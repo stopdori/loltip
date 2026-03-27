@@ -8,7 +8,22 @@ const diana: ChampData = {
     W: ["W_FLASH", "SHIELD"],
     E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "GRAB"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,18 +32,6 @@ const diana: ChampData = {
   ],
     en: ["P has a level-based [[AS_UP]] plus additional [[AS_UP]] from using skills", "Fully detonating all W spheres grants a bonus [[SHIELD]]", "E+Q does not reset E"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
-
 
   ultCooldown: {
     6: 100,

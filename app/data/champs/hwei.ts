@@ -7,11 +7,10 @@ const hwei: ChampData = {
     base: {
       // 🔫 Q스킬 기반
       P: [],
-      Q: ["Q_FLASH"],
+      Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
       W: ["W_FLASH"],
       E: ["SLOW"],
-      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
-      ETC: [],
+      R: ["R_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
     },
 
     alt: {
@@ -20,8 +19,7 @@ const hwei: ChampData = {
       Q: ["MS_UP"],
       W: ["W_FLASH", "SHIELD"],
       E: ["MANA_RESTORE"],
-      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
-      ETC: [],
+      R: ["R_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
     },
 
     alt2: {
@@ -30,18 +28,56 @@ const hwei: ChampData = {
       Q: ["Q_FLASH", "FEAR"],
       W: ["W_FLASH", "ROOT"],
       E: ["E_FLASH", "AIRBORNE", "SLOW"],
-      R: ["R_FLASH", "SLOW", "UNSTOPPABLE_CAST"],
-      ETC: [],
+      R: ["R_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
     },
   },
 
   vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt2: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt2: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
   },
 
   notes: {
@@ -50,7 +86,6 @@ const hwei: ChampData = {
   ],
     en: ["Hwei's skills are easiest to memorize by color", "Q skills (red — damage):\nQW deals bonus damage to isolated or CC'd targets", "W skills (blue — utility)", "E skills (purple — CC):\nEW travels and expands after a delay.\nIf an enemy champion is within range when it expands, it launches a homing projectile.\nThe projectile can be blocked by other units (minions, jungle monsters, etc.)"]
   },
-
 
   ultCooldown: {
     6: 140,

@@ -4,11 +4,26 @@ const olaf: ChampData = {
   id: "olaf",
   skills: {
     P: ["AS_UP", "LIFESTEAL"],
-    Q: ["SLOW", "AR_SHRED", "UNSTOPPABLE_CAST"],
+    Q: ["SLOW", "AR_SHRED", "UNINTERRUPTIBLE_CAST"],
     W: ["AA_RESET", "AS_UP", "SHIELD"],
     E: ["E_FLASH"],
     R: ["AD_UP", "MS_UP", "CC_CLEANSE", "CC_IMMUNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const olaf: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible. Cannot TP onto Q (axe)", "Hitting E extends R's [[MS_UP]] duration"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

@@ -6,9 +6,24 @@ const akali: ChampData = {
     P: [],
     Q: ["Q_FLASH", "SLOW"],
     W: ["INVISIBILITY", "MS_UP"],
-    E: ["E_FLASH", "WALL_HOP", "TRUE_SIGHT"],
+    E: ["E_FLASH", "WALL_HOP"],
     R: ["R_FLASH", "WALL_HOP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const akali: ChampData = {
   ],
     en: ["Q's [[SLOW]] only applies when hitting at max range", "W grants [[INVISIBILITY]] only inside the shroud.\nIf hit by a [[REVEALED]] ability (e.g. Lee Sin E) after hiding, you become visible.\nHiding before being hit keeps you hidden.\nTrue sight (e.g. Lee Sin Q) always reveals you", "E can be thrown into the shroud and recalled with E2.\nE2 cannot target [[UNTARGETABLE]] units\ne.g. Fizz E (Playful/Trickster), Vladimir W (Sanguine Pool)"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

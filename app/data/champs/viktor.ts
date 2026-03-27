@@ -8,7 +8,22 @@ const viktor: ChampData = {
     W: ["W_FLASH", "SLOW", "STUN"],
     E: [],
     R: ["R_FLASH", "CANCEL"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const viktor: ChampData = {
   ],
     en: ["Q upgrade adds [[MS_UP]] to Q", "W upgrade adds [[SLOW]] to all skills", "E upgrade adds a second laser explosion", "R upgrade increases R speed and expands radius on kill participation", "W's [[SLOW]] continuously applies to targets inside the area"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

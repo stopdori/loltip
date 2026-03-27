@@ -8,7 +8,22 @@ const annie: ChampData = {
     W: ["W_FLASH",],
     E: ["SHIELD", "MS_UP"],
     R: ["MR_PEN", "ALLY_TP_OK"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const annie: ChampData = {
   ],
     en: ["P's [[STUN]] applies on Q, W, or R when at 4 stacks", "E's reflected damage hits once per attacker targeting the protected unit.\nIf enemy pets attack, each pet and their owner champion are each counted separately.", "R has [[MR_PEN]] as a passive effect"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 130,

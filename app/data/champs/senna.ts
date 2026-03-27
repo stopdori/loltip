@@ -6,9 +6,24 @@ const senna: ChampData = {
     P: ["MS_UP", "SLOW", "AD_UP", "RANGE_UP", "CRIT", "LIFESTEAL"],
     Q: ["Q_FLASH", "SLOW", "HEAL"],
     W: ["W_FLASH", "ROOT"],
-    E: ["E_FLASH", "UNTARGETABLE", "MS_UP"],
-    R: ["SHIELD", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    E: ["E_FLASH", "UNTARGETABLE", "MS_UP", "BUFF_FORM"],
+    R: ["SHIELD", "UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const senna: ChampData = {
   ],
     en: ["P's [[MS_UP]] and [[SLOW]] trigger only when attacking a champion\nand only when the stack burst is triggered", "Cannot TP onto P wraiths.\nWhen [[CRIT]] exceeds 100%, excess crit converts to lifesteal via P", "W is a wide-range [[ROOT]]", "E: allies who enter and exit the mist become wraiths, gaining [[UNTARGETABLE]] and [[MS_UP]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

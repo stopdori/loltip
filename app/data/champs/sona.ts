@@ -7,8 +7,23 @@ const sona: ChampData = {
     Q: [],
     W: ["HEAL", "SHIELD"],
     E: ["MS_UP"],
-    R: ["STUN", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    R: ["STUN", "UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const sona: ChampData = {
   ],
     en: ["No skill+flash combos work at all. Needs a rework", "P's [[SLOW]] only applies through E-enhanced basic attacks", "W-enhanced basic attack reduces incoming damage on the target (similar to Exhaust)"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

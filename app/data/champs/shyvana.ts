@@ -11,7 +11,6 @@ skills: {
       W: ["SHIELD", "MS_UP"],
       E: ["E_FLASH", "SLOW"],
       R: ["MAX_HP_UP", "FEAR", "WALL_HOP", "UNSTOPPABLE"],
-    ETC: [],
     },
 
     alt: {
@@ -21,7 +20,40 @@ skills: {
       W: ["SHIELD", "MS_UP", "HEAL"],
       E: ["E_FLASH", "SLOW", "PIERCE"],
       R: [],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -31,16 +63,6 @@ skills: {
   ],
     en: ["Transform (R) is available at 100 fury.\nFury gained: 0.5/0.75/1 per second. +1.25 per basic attack or skill hit.\n+2.5 per hit while in Dragon form.", "[[R_FLASH]] not possible.", "Each rank of R increases skill size, [[RANGE_UP]], and [[MAX_HP_UP]] further.", "Human form\nQ: auto/Q1/auto/Q2 feels most efficient.\nW: [[SHIELD]] scales with number of nearby enemy champions. Deals AoE damage on detonation.", "Dragon form\nQ: can use up to Q3. Q3 deals fixed damage.\nW: detonation heals based on missing HP when hitting enemy champions — [[HEAL]].\nE: gains [[PIERCE]], and hitting an enemy champion triggers an additional explosion that leaves a zone on the ground.\nHits 1 or 100 enemies — same result."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 0,

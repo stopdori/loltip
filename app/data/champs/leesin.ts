@@ -4,11 +4,26 @@ const leesin: ChampData = {
   id: "leesin",
   skills: {
     P: ["AS_UP"],
-    Q: ["TRUE_SIGHT", "WALL_HOP"],
+    Q: ["WALL_HOP"],
     W: ["W_FLASH", "SHIELD", "LIFESTEAL", "WALL_HOP"],
     E: ["E_FLASH", "REVEALED"],
-    R: ["R_FLASH", "AIRBORNE", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    R: ["R_FLASH", "AIRBORNE", "UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const leesin: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible", "Enemies hit by the billiard bounce take bonus damage based on a % of the launched target's max HP"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

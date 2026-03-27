@@ -8,7 +8,22 @@ const zed: ChampData = {
     W: ["WALL_HOP"],
     E: ["SLOW",],
     R: ["R_FLASH", "UNTARGETABLE", "TOWER_DODGE", "WALL_HOP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const zed: ChampData = {
   ],
     en: ["Zed must attack alongside his shadow for bonus effects", "[[W_FLASH]] and [[E_FLASH]] not possible", "R makes Zed disappear then reappear behind the target (fixed position)"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

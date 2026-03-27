@@ -7,8 +7,23 @@ const zilean: ChampData = {
     Q: ["Q_FLASH", "STUN"],
     W: [],
     E: ["E_FLASH", "SLOW", "MS_UP"],
-    R: ["R_FLASH", "REVIVE", "UNTARGETABLE"],
-    ETC: [],
+    R: ["R_FLASH", "REVIVE", "UNTARGETABLE", "BUFF_FORM"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const zilean: ChampData = {
   ],
     en: ["Q applies AoE [[STUN]] when two Q's hit the same target, detonating the first", "E applies [[MS_UP]] to allies and [[SLOW]] to enemies", "R lasts 5s; [[REVIVE]] takes 3s.\n[[REVIVE]] heals, so [[GW]] applies"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

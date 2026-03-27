@@ -8,7 +8,22 @@ const ziggs: ChampData = {
     W: ["W_FLASH", "AIRBORNE", "WALL_HOP"],
     E: ["E_FLASH", "SLOW"],
     R: ["R_FLASH"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const ziggs: ChampData = {
   ],
     en: ["[[W_FLASH]] and [[E_FLASH]] not possible", "W can [[EXECUTE]] towers", "R deals maximum damage in the center"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

@@ -11,7 +11,6 @@ const jayce: ChampData = {
       W: ["AA_RESET", "AS_UP"],
       E: ["MS_UP"],
       R: [],
-      ETC: [],
     },
 
     alt: {
@@ -21,10 +20,42 @@ const jayce: ChampData = {
       W: [],
       E: ["E_FLASH", "AIRBORNE"],
       R: [],
-      ETC: [],
     },
   },
 
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
 
   notes: {
     ko: [
@@ -32,16 +63,6 @@ const jayce: ChampData = {
   ],
     en: ["Hammer form basic attacks restore mana", "P's [[MS_UP]] activates on every form swap", "Swapping to cannon form then auto-attacking applies [[AR_MR_SHRED]] to the target", "Hammer form E is [[INSEC_KICK]] capable"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   // 제이스 궁은 폼 전환이라 쿨 없음
   ultCooldown: {

@@ -8,7 +8,22 @@ const ashe: ChampData = {
     W: ["W_FLASH"],
     E: ["VISION", "REVEALED"],
     R: ["STUN", "SLOW"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const ashe: ChampData = {
   ],
     en: ["[[W_FLASH]] works but mouse aim is important.\nW itself has no [[SLOW]] — the [[SLOW]] comes from P", "E has no range limit and reveals targets inside brushes.", "R's [[STUN]] duration increases with the distance traveled."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 100,

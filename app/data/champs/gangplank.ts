@@ -8,7 +8,22 @@ const gangplank: ChampData = {
     W: ["HEAL", "CC_CLEANSE"],
     E: ["E_FLASH", "SLOW", ],
     R: ["SLOW"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const gangplank: ChampData = {
   ],
     en: ["Powder keg count is shown below the mana bar"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 160,

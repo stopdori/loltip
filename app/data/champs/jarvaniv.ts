@@ -8,7 +8,22 @@ const jarvaniv: ChampData = {
     W: ["SHIELD", "SLOW"],
     E: ["AS_UP"],
     R: ["R_FLASH", "WALL", "WALL_HOP", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const jarvaniv: ChampData = {
   ],
     en: ["Q's [[AIRBORNE]] requires hitting the E (flag)", "EQ (Flag-Toss Combo) has two phases: wind-up / dash.\nCC that hits Jarvan IV during the wind-up phase applies, but the dash phase still activates and he moves forward.\nThere is no CC resistance during the dash phase.\nNote: the wind-up phase is very brief.", "E provides [[AS_UP]] to nearby allies", "W's shield increases with more enemy champions hit", "If a target flashes after R is cast, they can escape", "If Jarvan IV is hit by CC after casting R1, R2 cannot be activated.\nThe arena wall cannot be removed."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

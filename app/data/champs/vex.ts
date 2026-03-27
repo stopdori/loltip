@@ -8,7 +8,22 @@ const vex: ChampData = {
     W: ["SHIELD"],
     E: ["SLOW"],
     R: ["R_FLASH", "WALL_HOP", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const vex: ChampData = {
   ],
     en: ["[[W_FLASH]] and [[E_FLASH]] not possible", "Flash can stop R mid-flight"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

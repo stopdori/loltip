@@ -5,10 +5,25 @@ const kogmaw: ChampData = {
   skills: {
     P: [],
     Q: ["AS_UP", "AR_MR_SHRED"],
-    W: ["RANGE_UP"],
+    W: ["RANGE_UP",],
     E: ["SLOW"],
     R: ["R_FLASH", "REVEALED"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const kogmaw: ChampData = {
   ],
     en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "Q's [[AS_UP]] is a passive effect", "E's [[SLOW]] continuously applies to targets standing in the area"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 0,

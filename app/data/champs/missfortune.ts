@@ -8,7 +8,22 @@ const missfortune: ChampData = {
     W: ["AS_UP", "MS_UP"],
     E: ["E_FLASH", "SLOW", "VISION"],
     R: [],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const missfortune: ChampData = {
   ],
     en: ["E's [[SLOW]] continuously applies to targets inside the area", "Use E's [[SLOW]] first, then follow with R.\nR channeling cancels on movement"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

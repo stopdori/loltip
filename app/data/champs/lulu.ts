@@ -10,7 +10,6 @@ const lulu: ChampData = {
     W: ["W_FLASH", "AS_UP", "MS_UP"],
     E: ["E_FLASH", "SHIELD"],
     R: ["R_FLASH", "MAX_HP_UP", "AIRBORNE", "SLOW"],
-    ETC: [],
   },
 
   alt: {
@@ -20,9 +19,42 @@ const lulu: ChampData = {
     W: ["W_FLASH", "POLYMORPH"],
     E: ["E_FLASH", "REVEALED"],
     R: [],
-    ETC: [],
 
   },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
   },
 
   notes: {
@@ -31,16 +63,6 @@ const lulu: ChampData = {
   ],
     en: ["[[Q_FLASH]] technically works \nbut the polymorph doesn't follow the flash, so damage is reduced", "Lulu fires 1 basic attack while Pix fires 3 additional ones", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]].\nR [[SLOW]] persists in the surrounding area.\nUse it freely for [[AIRBORNE]] and [[SLOW]] utility"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

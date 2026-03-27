@@ -7,9 +7,8 @@ const pantheon: ChampData = {
     P: [],
     Q: ["Q_FLASH", "CRIT"],
     W: ["W_FLASH", "STUN", "WALL_HOP"],
-    E: ["INVULNERABLE", "UNSTOPPABLE_CHANNEL"],
+    E: ["INVULNERABLE", "UNINTERRUPTIBLE_CHANNEL"],
     R: ["AR_PEN", "WALL_HOP"],
-    ETC: [],
   },
 
   alt: {
@@ -17,9 +16,42 @@ const pantheon: ChampData = {
       P: [],
     Q: ["Q_FLASH", "CRIT"],
     W: ["W_FLASH", "STUN", "WALL_HOP"],
-    E: ["INVULNERABLE", "UNSTOPPABLE_CHANNEL", "MS_UP"],
+    E: ["INVULNERABLE", "UNINTERRUPTIBLE_CHANNEL", "MS_UP"],
     R: ["AR_PEN", "WALL_HOP"],
-    ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -29,17 +61,6 @@ const pantheon: ChampData = {
   ],
     en: ["Q's [[CRIT]] applies to enemies below 20% HP", "E's [[INVULNERABLE]] only applies in the direction Pantheon is facing.\nTower damage cannot be blocked", "R has [[AR_PEN]] as a passive base effect", "Becomes [[INVULNERABLE]] after jumping with R until landing"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 180,

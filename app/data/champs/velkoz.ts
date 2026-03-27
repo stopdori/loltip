@@ -8,7 +8,22 @@ const velkoz: ChampData = {
     W: [],
     E: ["E_FLASH", "AIRBORNE"],
     R: ["R_FLASH"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const velkoz: ChampData = {
   ],
     en: ["Q flies slightly farther than the indicated max range", "E applies [[KNOCKBACK]] to nearby targets and [[AIRBORNE]] to distant ones"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

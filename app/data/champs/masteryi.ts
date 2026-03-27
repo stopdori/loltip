@@ -4,29 +4,34 @@ const masteryi: ChampData = {
   id: "masteryi",
   skills: {
     P: [],
-    Q: ["Q_FLASH", "WALL_HOP"],
+    Q: ["Q_FLASH", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE"],
     W: ["DMG_REDUCE", "HEAL", "AA_RESET"],
     E: [],
     R: ["AS_UP", "MS_UP", "SLOW_IMMUNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
     ko: [
-    "선진입 절대 하지마셈", "R은 킬관여 하면\n쿨타임 70%감소, 지속시간 7초 증가"
+    "R은 킬관여 하면\n쿨타임 70%감소, 지속시간 7초 증가."
   ],
-    en: ["Do not engage first", "Kill participation with R reduces its cooldown by 70% and extends its duration by 7s"]
+    en: ["Kill participation with R reduces its cooldown by 70% and extends its duration by 7s."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 85,

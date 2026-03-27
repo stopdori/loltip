@@ -7,8 +7,23 @@ const yuumi: ChampData = {
     Q: ["SLOW"],
     W: ["HEAL", "WALL_HOP", "UNTARGETABLE"],
     E: ["AS_UP", "MS_UP", "SHIELD", "MANA_RESTORE"],
-    R: ["HEAL", "SHIELD", "SLOW", "UNSTOPPABLE_CHANNEL"],
-    ETC: [],
+    R: ["HEAL", "SHIELD", "SLOW", "UNINTERRUPTIBLE_CHANNEL"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const yuumi: ChampData = {
   ],
     en: ["P heals Yuumi from basic attacks or skills dealing damage,\nand that heal transfers to the attached ally", "E effects (excluding [[MANA_RESTORE]]) apply to Yuumi when unattached.\nWhen attached, effects transfer to the ally plus [[MANA_RESTORE]]", "Getting hit by [[HARD_CC]] while unattached puts W on a 5s cooldown", "R excess healing converts to [[SHIELD]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

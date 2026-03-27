@@ -8,7 +8,22 @@ const morgana: ChampData = {
     W: ["W_FLASH"],
     E: ["E_FLASH", "SHIELD", "CC_IMMUNE"],
     R: ["MS_UP", "REVEALED", "SLOW", "STUN"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const morgana: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible", "E (Black Shield) grants [[CC_IMMUNE]] while the [[SHIELD]] holds.\nWhen the shield breaks or duration ends, CC immunity ends.\nHowever, if CC hits with enough damage to destroy the shield simultaneously, that CC is still blocked.\nExample: Ashe R deals 500 damage, Morgana E shield is 200 — the shield breaks and 300 damage goes through, but the CC is blocked", "Morgana's R activates and becomes castable even if an enemy is nearby in [[STEALTH]].\nOnce cast, it reveals the target's [[STEALTH]]\nR [[STUN]] applies only if the chain is not broken"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

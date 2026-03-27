@@ -8,7 +8,22 @@ const leblanc: ChampData = {
     W: ["WALL_HOP"],
     E: ["E_FLASH", "REVEALED", "ROOT"],
     R: [],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const leblanc: ChampData = {
   ],
     en: ["[[W_FLASH]] not possible", "Clone can be controlled with alt + right-click"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 45,

@@ -8,7 +8,22 @@ const vayne: ChampData = {
     W: [],
     E: ["E_FLASH", "KNOCKBACK", "STUN"],
     R: ["INVISIBILITY"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const vayne: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible", "P activates when approaching an enemy champion", "Rolling along a wall with Q creates extremely fast AA cancels", "E [[STUN]] only triggers when [[KNOCKBACK]] causes a wall collision.\n[[E_FLASH]] enables [[INSEC_KICK]]", "During R, Q [[INVISIBILITY]] does not break on flash"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

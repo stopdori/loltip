@@ -8,32 +8,77 @@ const kayn: ChampData = {
       // 🔫 인간폼 (원거리)
       P: [],
       Q: ["WALL_HOP"],                // 인간 Q는 Q플 X
-      W: ["SLOW"],
+      W: ["SLOW", "UNINTERRUPTIBLE_CAST"],
       E: ["WALL_HOP", "HEAL", "MS_UP"],
       R: ["R_FLASH", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE"],
-      ETC: [],
     },
 
     alt: {
       // 그림자 암살자
       P: [],
       Q: ["WALL_HOP"],      // 변신 Q는 Q플 가능
-      W: ["SLOW"],
+      W: ["SLOW", "UNINTERRUPTIBLE_CAST"],
       E: ["WALL_HOP", "HEAL", "MS_UP"],
       R: ["R_FLASH", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE"],
-      ETC: [],
     },
 
     alt2: {
       // 다르킨
       P: ["LIFESTEAL"],
       Q: ["WALL_HOP"],      // 변신 Q는 Q플 가능
-      W: ["AIRBORNE"],
+      W: ["AIRBORNE", "UNINTERRUPTIBLE_CAST"],
       E: ["WALL_HOP", "HEAL", "MS_UP"],
       R: ["R_FLASH", "WALL_HOP", "HEAL", "UNTARGETABLE", "TOWER_DODGE"],
-      ETC: [],
     },
 
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt2: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt2: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
   },
 
   notes: {
@@ -42,17 +87,6 @@ const kayn: ChampData = {
   ],
     en: ["Kayn is very weak before evolving", "The Darkin P(Passive) grants [[LIFESTEAL]], allowing all skills to benefit from [[LIFESTEAL]]", "Q has two phases: dash phase / slash phase.\nIf hit by [[AIRBORNE]], [[FEAR]], [[SUPPRESS]], or [[SLEEP]] during the dash phase, Q will not perform the spin slash\n(Please report if there are any other effects that stop the spin slash)"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   // 제이스 궁은 폼 전환이라 쿨 없음
   ultCooldown: {

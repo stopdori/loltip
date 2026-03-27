@@ -4,11 +4,26 @@ const swain: ChampData = {
   id: "swain",
   skills: {
     P: ["HEAL"],
-    Q: ["Q_FLASH", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
     W: ["W_FLASH", "SLOW", "REVEALED"],
     E: ["ROOT", "GRAB"],
-    R: ["R_FLASH", "LIFESTEAL", "SLOW"],
-    ETC: [],
+    R: ["R_FLASH", "LIFESTEAL", "SLOW", "BUFF_FORM"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const swain: ChampData = {
   ],
     en: ["[[E_FLASH]] not possible", "P is gained from W, E, and kill participation.\nHP recovery is affected by [[GW]].\nMax HP increase is not affected by [[GW]]", "E1 applies [[ROOT]] on hit.\nE2 is [[GRAB]]", "R's [[SLOW]] only applies to the wave released on recast"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

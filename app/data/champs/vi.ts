@@ -8,7 +8,22 @@ const vi: ChampData = {
     W: ["AR_SHRED", "AS_UP"],
     E: ["AA_RESET"],
     R: ["R_FLASH", "REVEALED", "KNOCKBACK", "STUN", "WALL_HOP", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const vi: ChampData = {
   ],
     en: ["Setting up CC first makes it much easier for teammates to follow up", "W effects apply on Q hit", "R targets are visible even through [[INVISIBILITY]].\nEnemies in R's path are [[KNOCKBACK]]ed and [[STUN]]ed"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

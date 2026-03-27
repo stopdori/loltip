@@ -8,7 +8,22 @@ const xayah: ChampData = {
     W: ["AS_UP", "MS_UP"],
     E: ["E_FLASH", "ROOT"],
     R: ["R_FLASH", "GHOSTING", "UNTARGETABLE", "TOWER_DODGE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const xayah: ChampData = {
   ],
     en: ["W does not [[AA_RESET]].\n[[MS_UP]] only activates when feathers touch an enemy champion", "E [[ROOT]] requires hitting 3 or more feathers", "Xayah & Rakan synergy:\nIf Rakan walks up to a recalling Xayah and presses recall, he shares her recall progress.\nRakan gains Xayah's W.\n[[MS_UP]] requires Xayah to attack to trigger on Rakan.\nRakan's E range is doubled when targeting Xayah"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

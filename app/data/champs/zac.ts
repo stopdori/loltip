@@ -7,8 +7,23 @@ const zac: ChampData = {
     Q: ["SLOW", "AIRBORNE", "TETHER"],
     W: [],
     E: ["AIRBORNE", "WALL_HOP"],
-    R: ["R_FLASH", "KNOCKBACK", "SLOW", "UNSTOPPABLE_CHANNEL"],
-    ETC: [],
+    R: ["R_FLASH", "KNOCKBACK", "SLOW", "UNINTERRUPTIBLE_CHANNEL"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const zac: ChampData = {
   ],
     en: ["[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]] not possible", "P cooldown is 300s.\n[[REVIVE]] is unaffected by [[GW]]", "E [[AIRBORNE]] scales with charge duration", "First hit of R applies [[AIRBORNE]], subsequent hits apply [[SLOW]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

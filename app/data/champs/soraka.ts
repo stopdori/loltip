@@ -8,7 +8,22 @@ const soraka: ChampData = {
     W: ["W_FLASH", "HEAL"],
     E: ["E_FLASH", "SILENCE", "ROOT"],
     R: ["HEAL"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const soraka: ChampData = {
   ],
     en: ["Hit Q on enemies, then use W for maximum efficiency", "E's [[SILENCE]] continuously applies to targets inside the area.\nTargets standing in E long enough are [[ROOT]]ed", "R's effect is amplified on targets below 40% HP"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 150,

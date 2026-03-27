@@ -8,7 +8,22 @@ const quinn: ChampData = {
     W: ["REVEALED", "AS_UP"],
     E: ["REVEALED", "E_FLASH", "KNOCKBACK", "SLOW", "WALL_HOP",],
     R: ["REVEALED"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const quinn: ChampData = {
   ],
     en: ["Almost all of Quinn's skills proc P, so effectively all skills have [[REVEALED]]", "Q's [[NEARSIGHT]] cannot be removed by Cleanse.\nOther [[CC_CLEANSE]] methods (not Cleanse) can remove it", "W reveals targets inside brushes", "When R is active, [[HARD_CC]] or [[SILENCE]] will deactivate it"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 0,

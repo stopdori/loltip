@@ -4,11 +4,26 @@ const mel: ChampData = {
   id: "mel",
   skills: {
     P: ["EXECUTE"],
-    Q: ["Q_FLASH"],
-    W: ["REFLECT", "INVULNERABLE", "MS_UP",],
-    E: ["E_FLASH", "ROOT", "SLOW"],
-    R: ["UNSTOPPABLE_CAST"],
-    ETC: [],
+    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
+    W: ["REFLECT", "MS_UP",],
+    E: ["E_FLASH", "ROOT", "SLOW", "UNINTERRUPTIBLE_CAST"],
+    R: ["UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const mel: ChampData = {
   ],
     en: ["P has 2 types of stacks.", "1. Stacks on Mel\nUsing a skill builds 3 stacks, up to 9 max.\nBasic attack consumes all stacks and fires additional projectiles (up to 10 projectiles)", "2. Stacks on enemies (Dominance)\n1 Dominance per basic attack projectile.\n1 Dominance per Q projectile (max 8)\n1 Dominance per tick while touching E.\nCircle grows larger with distance (min 4, max 11 observed)", "When Mel's Dominance stacks are sufficiently built on a target, their health bar turns red — Mel's basic attack or skill use then executes them.\nNote: Item effects (Liandry's, Shadowflame, Redemption, etc.) cannot trigger [[EXECUTE]].", "W is detailed per champion in the box below", "E [[ROOT]] only applies to the center of the ability", "When P (Dominance) stacks are sufficient, R can execute — check if the R icon gains a golden border.", "If Mel dies while casting R, no cooldown is applied"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

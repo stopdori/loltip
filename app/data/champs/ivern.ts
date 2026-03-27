@@ -8,7 +8,22 @@ const ivern: ChampData = {
     W: ["W_FLASH"],
     E: ["E_FLASH", "SHIELD", "SLOW"],
     R: ["AIRBORNE", "ALLY_TP_OK"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const ivern: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible", "W explodes after a delay.\nHitting an enemy with the explosion applies [[SLOW]].\nIf no enemy is hit, Ivern gains a bonus shield"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

@@ -8,25 +8,30 @@ const azir: ChampData = {
     W: [],
     E: ["E_FLASH", "SHIELD", "WALL_HOP"],
     R: ["WALL", "AIRBORNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
     ko: [
-    "[[Q_FLASH]], [[R_FLASH]] 안됨", "병사에 텔 안됨", "아지르 E의 이동거리는 생각보다 짧음.\n그래서 W(병사)에 E를 쓰고 도착하기전에 Q를 써서 W를 이동시켜 더 멀리 갈 수 있음.\n이 때 방향도 바꿀 수 있음.", ""
+    "[[Q_FLASH]], [[R_FLASH]] 안됨", "병사에 텔 안됨", "E는 W(병사)에게 이동을 시작하면서 [[SHIELD]] 발동.\n이동거리가 짧아서 W(병사)에 E를 사용하고 도착하기 전에 Q를 써서 W(병사)와의 거리를 벌려 더 멀리 갈 수 있음.\n이 때 방향도 바꿀 수 있음."
   ],
-    en: ["[[Q_FLASH]] and [[R_FLASH]] not possible", "Cannot TP onto soldiers", "Azir's E travel distance is shorter than expected.\nCast E then immediately Q before arriving to travel farther.\nQ can also redirect the path"]
+    en: ["[[Q_FLASH]] and [[R_FLASH]] not possible", "Cannot TP onto soldiers", "E activates [[SHIELD]] at the start of movement toward the W (soldier).\nBecause the travel distance is short, cast E toward the soldier then Q before arriving to push the soldier further and travel farther.\nThe direction can also be changed."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

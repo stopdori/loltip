@@ -8,7 +8,22 @@ const tristana: ChampData = {
     W: ["W_FLASH", "SLOW", "WALL_HOP", "CC_BUFFER"],
     E: ["E_FLASH"],
     R: ["R_FLASH", "KNOCKBACK", "STUN"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const tristana: ChampData = {
   ],
     en: ["W has two phases: prep / jump.\nCC during prep is valid but the jump still launches Tristana forward.\nThere is no CC immunity during the jump phase", "W resets on:\nKill or assist participation, or\nE (max stacks, 4 charges) detonation", "[[R_FLASH]] allows [[INSEC_KICK]]"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 100,

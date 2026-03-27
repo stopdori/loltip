@@ -9,7 +9,6 @@ const aurelionsol: ChampData = {
     W: ["MS_UP", "GHOSTING", "WALL_HOP"],
     E: ["SLOW", "EXECUTE"],
     R: ["R_FLASH", "STUN"],
-    ETC: [],
   },
 
   alt: {
@@ -19,7 +18,40 @@ const aurelionsol: ChampData = {
     W: ["MS_UP", "GHOSTING", "WALL_HOP"],
     E: ["SLOW", "EXECUTE"],
     R: ["R_FLASH", "STUN", "AIRBORNE", "SLOW"],
-    ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -29,16 +61,6 @@ const aurelionsol: ChampData = {
   ],
     en: ["[[R_FLASH]] works by using R outside range then flashing", "Each Stardust stack increases:\nQ (damage), W (flight distance), E (execute threshold), R (area).", "Q is a channeled skill.\nRotate your mouse while holding Q to aim Sol's head.\nStardust gains 2 stacks per second when hitting an enemy champion for 1+ second — brief hits do not count.", "Right-clicking during W (flight) cancels it.\nUsing Q during flight keeps your direction but slows flight speed, and you can aim with your mouse.\nReleasing Q resumes fast flight in the same direction.\nUsing E or R during W flight does not cancel the flight.\nLanding on a wall pushes you to the nearest ground.", "E's pull CC is not [[AIRBORNE]] type.\nHitting an enemy champion with E grants 1 Stardust per second.\nGrazing with E still grants P (Stardust).\nMinions/jungle monsters dying inside E range grant 1 stack (no last hit required).\nStardust is granted all at once when E ends.", "R grants 5 P (Stardust) per champion hit.\nHits from R (Falling Stars) itself do not grant P (Stardust).\nR requires hitting with the AOE zone to apply [[AIRBORNE]]."]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

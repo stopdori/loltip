@@ -8,7 +8,22 @@ const samira: ChampData = {
     W: ["W_FLASH", "WINDSHIELD"],
     E: ["E_FLASH", "AS_UP", "WALL_HOP"],
     R: ["LIFESTEAL"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const samira: ChampData = {
   ],
     en: ["P grants [[MS_UP]] per rank.\nBasic attacks on an [[AIRBORNE]] target re-apply [[AIRBORNE]] (per-champion cooldown).\nDescription says she dashes to max range — that does not exist; she attacks at standard AA range", "W is detailed per champion in the box below", "R cooldown is 5s.\nBuilding style meter lets you use it frequently.\nR can critically strike"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 5,

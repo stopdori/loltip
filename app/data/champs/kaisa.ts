@@ -6,20 +6,52 @@ const kaisa: ChampData = {
     base : {
     P: [],
     Q: [],
-    W: ["W_FLASH", "UNSTOPPABLE_CAST", "REVEALED"],
+    W: ["W_FLASH", "UNINTERRUPTIBLE_CAST", "REVEALED"],
     E: ["AS_UP", "MS_UP", "GHOSTING"],
     R: ["R_FLASH", "SHIELD", "WALL_HOP"],
-    ETC: [],
   },
 
   alt: {
       
       P: [],
       Q: [],
-      W: ["W_FLASH", "UNSTOPPABLE_CAST", "REVEALED"],
+      W: ["W_FLASH", "UNINTERRUPTIBLE_CAST", "REVEALED"],
       E: ["AS_UP", "MS_UP", "GHOSTING", "INVISIBILITY"],
       R: ["R_FLASH", "SHIELD", "WALL_HOP"],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -29,16 +61,6 @@ const kaisa: ChampData = {
   ],
     en: ["Evolutions:\nQ — 100 bonus AD\nW — 100 AP\nE — 100% AS", "Evolved W reduces its cooldown when hitting an enemy champion"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 130,

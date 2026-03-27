@@ -8,7 +8,22 @@ const sion: ChampData = {
     W: ["HEAL", "SHIELD"],
     E: ["E_FLASH", "SLOW", "AR_SHRED"],
     R: ["R_FLASH", "SLOW", "AIRBORNE", "STUN", "CC_IMMUNE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const sion: ChampData = {
   ],
     en: ["[[Q_FLASH]] and [[W_FLASH]] not possible", "Q: charging for 1+ seconds adds [[AIRBORNE]] and [[STUN]] to the release", "Releasing Q by being interrupted (not self-canceling) nullifies the skill", "W increases max HP so [[GW]] has no effect", "R damage and [[STUN]] scale with travel distance.\nColliding with a target causes [[AIRBORNE]], then [[STUN]] on landing"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

@@ -8,7 +8,22 @@ const zaahen: ChampData = {
     W: ["W_FLASH", "GRAB"],
     E: ["E_FLASH",],
     R: ["AR_PEN", "DMG_REDUCE", "LIFESTEAL", "WALL_HOP", "CC_IMMUNE", "UNSTOPPABLE"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const zaahen: ChampData = {
   ],
     en: ["[[E_FLASH]] works but is very difficult", "P at 12 stacks doubles [[AD_UP]].\nFull stacks required for [[REVIVE]]", "Q [[AIRBORNE]] only applies on Q2", "R [[AR_PEN]] is a passive effect"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 110,

@@ -7,26 +7,31 @@ const riven: ChampData = {
     Q: ["AA_RESET", "AIRBORNE", "WALL_HOP"],
     W: ["STUN"],
     E: ["E_FLASH", "SHIELD"],
-    R: ["R_FLASH", "AD_UP", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    R: ["R_FLASH", "AD_UP", "BUFF_FORM"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
     ko: [
-    "[[Q_FLASH]], [[W_FLASH]] 안됨", "Q 3타만 [[WALL_HOP]] 가능", "R을 처음 쓸때 모션이 있음\n근데 ER하면 R모션 캔슬 됨", "R의 [[UNSTOPPABLE_CAST]]은 R1에 해당. R2는 즉발"
+    "[[Q_FLASH]], [[W_FLASH]] 안됨", "Q 3타만 [[WALL_HOP]] 가능", "R을 처음 쓸때 모션이 있음\n근데 ER하면 R모션 캔슬 됨", "R의 [[UNINTERRUPTIBLE_CAST]]은 R1에 해당. R2는 즉발"
   ],
     en: ["[[Q_FLASH]] and [[W_FLASH]] not possible", "Only Q third cast allows [[WALL_HOP]]", "R has a wind-up animation on first use.\nUsing E then R cancels the animation"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

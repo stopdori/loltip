@@ -11,17 +11,49 @@ const nidalee: ChampData = {
       W: ["W_FLASH", "REVEALED", "ALLY_TP_OK"],
       E: ["E_FLASH", "HEAL", "AS_UP"],
       R: [],
-      ETC: [],
     },
 
     alt: {
       // 쿠거폼
       P: ["MS_UP"],
-      Q: ["UNSTOPPABLE_CAST"],      
+      Q: ["UNINTERRUPTIBLE_CAST"],      
       W: ["WALL_HOP"],
-      E: ["UNSTOPPABLE_CAST"],
+      E: ["UNINTERRUPTIBLE_CAST"],
       R: [],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -31,17 +63,6 @@ const nidalee: ChampData = {
   ],
     en: ["All cougar form flash combos are not possible", "Hitting with human form Q or W activates Hunting, which resets R cooldown for an immediate transform"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   // 제이스 궁은 폼 전환이라 쿨 없음
   ultCooldown: {

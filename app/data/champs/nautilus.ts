@@ -7,8 +7,23 @@ const nautilus: ChampData = {
     Q: ["GRAB", "STUN", "CC_BUFFER"],
     W: ["SHIELD", "AA_RESET"],
     E: ["E_FLASH", "SLOW"],
-    R: ["R_FLASH", "AIRBORNE", "STUN", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    R: ["R_FLASH", "AIRBORNE", "STUN", "UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,17 +32,6 @@ const nautilus: ChampData = {
   ],
     en: ["[[Q_FLASH]] not possible.\nQ can pull Nautilus toward walls and structures", "Q has two phases: throw / grapple.\nCC during the throw phase is valid.\nOnce the grapple phase starts and Nautilus moves forward, there is no CC immunity"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
-
 
   ultCooldown: {
     6: 120,

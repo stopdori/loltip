@@ -5,10 +5,25 @@ const jhin: ChampData = {
   skills: {
     P: ["MS_UP"],
     Q: ["Q_FLASH"],
-    W: ["ROOT", "UNSTOPPABLE_CAST"],
+    W: ["ROOT", "UNINTERRUPTIBLE_CAST"],
     E: ["E_FLASH", "SLOW", "REVEALED", "ALLY_TP_OK"],
     R: ["SLOW", "REVEALED"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const jhin: ChampData = {
   ],
     en: ["P's [[MS_UP]] triggers on crit with a basic attack", "Holding the 4th shot increases movement speed.\nPlacing traps to extend the 4th shot buff is effective", "W's [[ROOT]] activates when the target receives any damage or debuff", "E's [[SLOW]] applies continuously to enemies standing in the trap area"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

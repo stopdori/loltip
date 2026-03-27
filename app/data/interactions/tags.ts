@@ -8,6 +8,7 @@ export type TagId =
   | "UNTARGETABLE"
   | "TOWER_DODGE"
   | "SHIELD_BREAK"
+  | "SHIELD_PIERCE"
   | "WALL"
   | "SUPPRESS" // 제압
   | "TETHER"
@@ -31,10 +32,11 @@ export type TagId =
   | "VISION"
   | "REVEALED"
   | "TRUE_SIGHT"
-  | "VISION_CREATE"
   | "POSITION_REVEAL"
   | "POSITION_TRACK"
-  | "OUTLINE_REVEAL"
+  | "FEEDBACK_SOUND"
+  | "FEEDBACK_EFFECT"
+  | "FEEDBACK_INDICATOR"
   | "SPELL_SHIELD"
   | "CC_IMMUNE"
   | "CC_CLEANSE"
@@ -98,11 +100,9 @@ export type TagId =
   | "BLIND"
   | "POLYMORPH"
   | "UNSTOPPABLE"
-  | "UNSTOPPABLE_CHANNEL"
-  | "UNSTOPPABLE_CAST"
-  | "CC_BUFFER"
-  
-  
+  | "BUFF_FORM"
+
+
   | "THE_COPYPASTA";
   
 
@@ -152,17 +152,12 @@ CC_IMMUNE: { ko: "CC면역", en: "CC Immune" },
 SLOW_RESIST: { ko: "둔화저항", en: "Slow Resist" },
 SLOW_IMMUNE: { ko: "둔화면역", en: "Slow Immune" },
 UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
-UNSTOPPABLE_CHANNEL: { ko: "저불집중", en: "Unstoppable Channel" },
-UNSTOPPABLE_CAST: { ko: "저불시전", en: "Unstoppable Cast" },
-CC_BUFFER: { ko: "부분저불", en: "CC Buffer" },
+BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
 
 
 /* =========================
  * 5) 시야 / 은신
  * ========================= */
-VISION: { ko: "시야", en: "Vision" },
-REVEALED: { ko: "드러냄", en: "Revealed" },
-TRUE_SIGHT: { ko: "절대시야", en: "True Sight" },
 STEALTH: { ko: "은신", en: "Stealth" },
 INVISIBILITY: { ko: "투명", en: "Invisibility" },
 CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
@@ -170,11 +165,17 @@ CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
 NEARSIGHT: { ko: "시야감소", en: "Nearsight" },
 BLIND: { ko: "실명", en: "Blind" },
 
-VISION_CREATE: { ko: "시야생성", en: "Vision Reveal Area" },
+VISION: { ko: "시야", en: "Vision" },
+REVEALED: { ko: "드러냄", en: "Revealed" },
+TRUE_SIGHT: { ko: "절대시야", en: "True Sight" },
 POSITION_REVEAL: { ko: "위치노출", en: "Position Reveal" },
-POSITION_TRACK: { ko: "위치추적", en: "Position Tracking" },
-OUTLINE_REVEAL: { ko: "윤곽노출", en: "Outline Reveal" },
+FEEDBACK_SOUND:     { ko: "소리 피드백",     en: "Sound Feedback"     },
+FEEDBACK_EFFECT:    { ko: "이펙트 피드백",  en: "Effect Feedback"    },
+FEEDBACK_INDICATOR: { ko: "피드백",     en: "Indicator Feedback"          },
 
+
+
+POSITION_TRACK: { ko: "위치추적", en: "Position Tracking" },
 
 
 /* =========================
@@ -200,13 +201,14 @@ HEAL: { ko: "회복", en: "Heal" },
 SHIELD: { ko: "보호막", en: "Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
 LIFESTEAL: { ko: "피흡", en: "Lifesteal" },
-MANA_RESTORE: { ko: "마나", en: "Mana" },
+MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
 ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
 
 /* =========================
  * 8) 파괴 / 관통 / 치감
  * ========================= */
-SHIELD_BREAK: { ko: "쉴드파괴", en: "Shield Break" },
+SHIELD_BREAK:  { ko: "쉴드파괴", en: "Shield Break"  },
+SHIELD_PIERCE: { ko: "실드관통", en: "Shield Pierce" },
 AR_SHRED: { ko: "방깍", en: "AR Shred" },
 MR_SHRED: { ko: "마깍", en: "MR Shred" },
 AR_MR_SHRED: { ko: "방마깍", en: "AR+MR Shred" },
@@ -276,12 +278,16 @@ UNTARGETABLE: {
   en: "Cannot be targeted",
 },
 TOWER_DODGE: {
-  ko: "타워데미지 무시",
+  ko: "타워데미지 무시\n즉, 웬만한 투사체 데미지 무시",
   en: "Ignores turret damage",
 },
 SHIELD_BREAK: {
   ko: "상대의 보호막을 파괴",
   en: "Breaks shields",
+},
+SHIELD_PIERCE: {
+  ko: "실드를 무시하고 체력에 직접 피해를 줌",
+  en: "Bypasses shields and deals damage directly to health",
 },
 WALL: {
   ko: "벽 생성\n(생성될 때 대체로 에어본)",
@@ -360,12 +366,12 @@ VISION: {
   en: "Grants vision",
 },
 REVEALED: {
-  ko: "적중한 상대의 모습이 보이지만\n은신, 투명화를 발견하지는 못함",
-  en: "Reveals the target, but does not reveal stealth or invisibility",
+  ko: "대상 챔피언만 보여줌 (주변 시야 없음)\n은신 전에 적중한 경우 → 보임\n은신 후에 적중한 경우 → 보이지 않음",
+  en: "Reveals only the target champion (no surrounding vision)\nReveals if hit before stealth\nDoes not reveal if hit after stealth",
 },
 TRUE_SIGHT: {
-  ko: "은신, 투명화 까지 모두 보여줌",
-  en: "Reveals stealth and invisibility",
+  ko: "대상과 대상 주변의 약간의 시야를 제공함\n은신 상태와 무관하게 타겟에 디버프로 붙어 계속 보임",
+  en: "Reveals the target and grants a small amount of surrounding vision\nApplies a debuff that persists regardless of stealth",
 },
 SPELL_SHIELD: {
   ko: "주문을 한번 막아줌",
@@ -393,21 +399,25 @@ CAMOUFLAGE: {
 },
 
 
-VISION_CREATE: {
-  ko: "스킬이 주변 지역의 시야를 밝혀 아군이 해당 구역을 볼 수 있음",
-  en: "Reveals the surrounding area, allowing allies to see the zone",
-},
 POSITION_REVEAL: {
-  ko: "상대시야 밖에서 시전자가 스킬을 사용했을 때 스킬 효과, 시야 제공으로 인해 사용자의 위치가 적에게 드러남",
-  en: "Casting a skill from fog of war reveals the caster’s location to enemies",
+  ko: "상대시야 밖에서 시전자가 스킬을 사용했을 때\n스킬 효과, 시야 제공으로 인해 사용자의 위치가 적에게 드러남",
+  en: "Casting a skill from fog of war\n reveals the caster’s location to enemies",
 },
 POSITION_TRACK: {
-  ko: "스킬 적중 시 효과음, 표식, 피해 반응 등으로 적의 대략적인 위치를 추측 가능",
-  en: "On hit, audio/visual cues allow enemies to estimate the caster’s location",
+  ko: "스킬 적중 시 효과음, 표식, 피해 반응 등으로 \n적의 대략적인 위치를 추측 가능",
+  en: "On hit, audio/visual cues allow \nenemies to estimate the caster’s location",
 },
-OUTLINE_REVEAL: {
-  ko: "상대의 모습이 완전히 보이진 않지만\n실루엣이 드러나 위치를 추측 할 수 있음",
-  en: "Shows the target’s silhouette without fully revealing them",
+FEEDBACK_SOUND: {
+  ko: "스킬이 시야를 제공하지 않지만\n적중 시 소리로 상대의 존재를 파악할 수 있음",
+  en: "The skill does not grant vision\nbut audio cues upon hit reveal the enemy’s presence",
+},
+FEEDBACK_EFFECT: {
+  ko: "스킬이 시야를 제공하지 않지만\n적중 시 이펙트로 상대의 존재를 파악할 수 있음",
+  en: "The skill does not grant vision\nbut visual effects upon hit reveal the enemy’s presence",
+},
+FEEDBACK_INDICATOR: {
+  ko: "소리나 이펙트 없이도 스킬 상태 변화나 \n버프/디버프 반응으로\n적의 존재를 간접적으로 알 수 있음.",
+  en: "Indirectly detects enemy presence \nthrough skill state changes or buff/debuff reactions, \nwithout sound or visual effects.",
 },
 
 
@@ -608,19 +618,9 @@ UNSTOPPABLE: {
   en: "It cannot be blocked by CC\nHowever, if CC hits during an unstoppable state \nand the duration remains after the state ends, \nthe CC takes effect",
 },
 
-UNSTOPPABLE_CHANNEL: {
-  ko: "채널링/토글 스킬 시전 중 CC에는 걸리지만\n효과를 무시하고 유지됨.\n단, 공식 저지불가는 아님.\n",
-  en: "CC can still be applied while channeling or toggled,\nbut its effect is ignored and the skill continues.\nNot officially classified as Unstoppable.",
-},
-
-UNSTOPPABLE_CAST: {
-  ko: "스킬을 사용하면, CC에는 걸리지만\n효과를 무시하고 스킬을 시전함.\n단, 공식 저지불가는 아님.",
-  en: "CC can still be applied at cast time,\nbut its effect is ignored and the cast completes.\nNot officially classified as Unstoppable.",
-},
-
-CC_BUFFER: {
-  ko: "일부 단계에서만 CC를 무시함\n주로 이동기에 사용",
-  en: "CC is ignored only during specific phases.\nCommonly seen on mobility abilities.",
+BUFF_FORM: {
+  ko: "버프 형태의 스킬\nCC를 맞아도 취소되지 않음",
+  en: "This ability applies a self-buff and cannot be canceled by CC\nCC effects still apply normally",
 },
 
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },

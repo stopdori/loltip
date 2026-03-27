@@ -4,11 +4,26 @@ const mordekaiser: ChampData = {
   id: "mordekaiser",
   skills: {
     P: ["MS_UP"],
-    Q: ["Q_FLASH", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
     W: ["SHIELD", "HEAL"],
-    E: ["E_FLASH", "GRAB", "MR_PEN", "UNSTOPPABLE_CAST"],
-    R: ["R_FLASH", "NEARSIGHT", "TRUE_SIGHT", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    E: ["E_FLASH", "GRAB", "MR_PEN", "UNINTERRUPTIBLE_CAST"],
+    R: ["R_FLASH", "NEARSIGHT", "TRUE_SIGHT", "UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const mordekaiser: ChampData = {
   ],
     en: ["Q deals increased damage to a single target", "If the target moves outside Death Realm range while R is being cast, the cast is cancelled without consuming the cooldown.", "Even if the target uses [[STEALTH]] during R's cast, R's [[TRUE_SIGHT]] still reveals them and they are taken to the Death Realm.", "While inside the Death Realm with R, if enemy minions die outside, Mordekaiser does not receive the experience.", "Champion-specific R mechanics are detailed in the box below"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

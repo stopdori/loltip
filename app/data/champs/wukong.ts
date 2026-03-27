@@ -7,8 +7,23 @@ const wukong: ChampData = {
     Q: ["AR_SHRED", "AA_RESET"],
     W: ["W_FLASH", "WALL_HOP", "INVISIBILITY"],
     E: ["E_FLASH", "WALL_HOP", "AS_UP"],
-    R: ["R_FLASH", "MS_UP", "AIRBORNE", "UNSTOPPABLE_CHANNEL"],
-    ETC: [],
+    R: ["R_FLASH", "MS_UP", "AIRBORNE", "UNINTERRUPTIBLE_CHANNEL"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const wukong: ChampData = {
   ],
     en: ["W [[INVISIBILITY]] does not break on flash", "E's [[MS_UP]] also applies to the clone", "R cannot be cancelled by any CC"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 130,

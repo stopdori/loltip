@@ -7,13 +7,13 @@ import { notFound, redirect } from "next/navigation";
 import { Fragment } from "react";
 
 import type { Metadata } from "next";
-import type { ChampSkillTags, SkillKey } from "@/app/data/interactions/types";
+import type { ChampSkill, SkillKey } from "@/app/data/interactions/types";
 
 const SKILL_KEYS: SkillKey[] = ["P", "Q", "W", "E", "R"];
 
 type FormBlock = { formKo: string; block: Partial<Record<SkillKey, readonly string[]>> };
 
-function getFormBlocks(champId: string, skills: ChampSkillTags): FormBlock[] {
+function getFormBlocks(champId: string, skills: ChampSkill): FormBlock[] {
   if (!("base" in skills)) {
     return [{ formKo: "", block: skills as Partial<Record<SkillKey, readonly string[]>> }];
   }
@@ -28,7 +28,7 @@ function getFormBlocks(champId: string, skills: ChampSkillTags): FormBlock[] {
   return blocks;
 }
 
-function buildSkillFaqJsonLd(champNameKo: string, champId: string, skills: ChampSkillTags) {
+function buildSkillFaqJsonLd(champNameKo: string, champId: string, skills: ChampSkill) {
   const forms = getFormBlocks(champId, skills);
 
   const entities = forms.flatMap(({ formKo, block }) =>

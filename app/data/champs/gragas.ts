@@ -5,10 +5,25 @@ const gragas: ChampData = {
   skills: {
     P: ["HEAL"],
     Q: ["Q_FLASH", "SLOW"],
-    W: ["DMG_REDUCE"],
+    W: ["DMG_REDUCE", "UNINTERRUPTIBLE_CHANNEL"],
     E: ["E_FLASH", "KNOCKBACK", "WALL_HOP"],
-    R: ["R_FLASH", "KNOCKBACK"],
-    ETC: [],
+    R: ["R_FLASH", "AIRBORNE"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const gragas: ChampData = {
   ],
     en: ["If Gragas is hit by CC after casting Q1, Q2 cannot be activated.", "Q and R can be cast mid-flight during E"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,

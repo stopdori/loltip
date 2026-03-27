@@ -6,9 +6,24 @@ const garen: ChampData = {
     P: ["HEAL"],
     Q: ["AA_RESET", "MS_UP", "SILENCE"],
     W: ["SHIELD", "DMG_REDUCE", "TENACITY"],
-    E: ["E_FLASH", "AR_SHRED", "UNSTOPPABLE_CHANNEL"],
-    R: ["R_FLASH", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    E: ["E_FLASH", "AR_SHRED", "UNINTERRUPTIBLE_CHANNEL"],
+    R: ["R_FLASH", "UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const garen: ChampData = {
   ],
     en: ["Using W before a CC hits reduces the CC duration significantly", "E hit count increases with attack speed.\n[[AR_SHRED]] applies after hitting 6 or more times", "E cannot be cancelled by any CC"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

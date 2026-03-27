@@ -7,8 +7,23 @@ const nami: ChampData = {
     Q: ["Q_FLASH", "SUSPENDING"],
     W: ["W_FLASH", "HEAL"],
     E: ["E_FLASH", "SLOW"],
-    R: ["AIRBORNE", "SLOW", "UNSTOPPABLE_CAST"],
-    ETC: [],
+    R: ["AIRBORNE", "SLOW", "UNINTERRUPTIBLE_CAST"],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const nami: ChampData = {
   ],
     en: ["Q is surprisingly [[SUSPENDING]]", "Having allies hit by R together doubles P's effect on them"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

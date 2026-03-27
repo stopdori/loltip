@@ -9,7 +9,6 @@ const kled: ChampData = {
     W: ["AS_UP"],
     E: ["MS_UP"],
     R: ["SHIELD", "AIRBORNE", "WALL_HOP", "UNSTOPPABLE"],
-    ETC: [],
   },
   
   alt: {
@@ -19,7 +18,40 @@ const kled: ChampData = {
       W: ["AS_UP"],
       E: [],
       R: [],
-      ETC: [],
+    },
+  },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
     },
   },
 
@@ -29,16 +61,6 @@ const kled: ChampData = {
   ],
     en: ["Mounted:\nQ must remain in contact to apply [[GRAB]] and [[SLOW]].\nE grants [[MS_UP]] on first hit and becomes recastable", "Neither mounted nor dismounted W can AA cancel", "Unsure if [[GW]] affects mounted healing — please report"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 140,

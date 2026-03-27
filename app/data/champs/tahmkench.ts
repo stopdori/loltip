@@ -4,11 +4,26 @@ const tahmkench: ChampData = {
   id: "tahmkench",
   skills: {
     P: [],
-    Q: ["Q_FLASH", "HEAL", "SLOW", "STUN", "UNSTOPPABLE_CAST"],
+    Q: ["Q_FLASH", "HEAL", "SLOW", "STUN", "UNINTERRUPTIBLE_CAST"],
     W: ["AIRBORNE", "WALL_HOP"],
     E: ["SHIELD", "HEAL"],
     R: ["R_FLASH", "SHIELD", "UNTARGETABLE", "WALL_HOP"],
-    ETC: [],
+  },
+
+  vision: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
+  },
+
+  gimmick: {
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   notes: {
@@ -17,16 +32,6 @@ const tahmkench: ChampData = {
   ],
     en: ["Q heals when hitting a champion", "Q applies [[STUN]] when hitting a target with 3 stacks.\nQR can devour targets from long range", "E applies [[SHIELD]] on cast.\nNot casting it provides [[HEAL]] instead", "W wall-hop tag means allies are the ones wall-hopping when devoured"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 120,

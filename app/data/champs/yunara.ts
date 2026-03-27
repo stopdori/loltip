@@ -9,7 +9,6 @@ const yunara: ChampData = {
     W: ["W_FLASH", "SLOW"],
     E: ["MS_UP"],
     R: [],
-    ETC: [],
   },
 
   alt : {
@@ -18,9 +17,42 @@ const yunara: ChampData = {
     W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "WALL_HOP"],
     R: [],
-    ETC: [],
   },
 },
+
+  vision: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
+
+  gimmick: {
+    base: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+    alt: {
+      P: [],
+      Q: [],
+      W: [],
+      E: [],
+      R: [],
+    },
+  },
 
   notes: {
     ko: [
@@ -28,16 +60,6 @@ const yunara: ChampData = {
   ],
     en: ["Using W then R reduces W cooldown by 80%", "Using E then R resets E"]
   },
-
-vision: {
-    P: [],
-    Q: [],
-    W: ["TRUE_SIGHT"],
-    E: [],
-    R: [],
-    ETC: [],
-  },
-
 
   ultCooldown: {
     6: 100,
