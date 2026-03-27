@@ -3,7 +3,16 @@ import type { GimmickTagId } from "./tags_gimmick";
 
 export type SkillKey = "P" | "Q" | "W" | "E" | "R";
 
-type SkillBlock = Partial<Record<SkillKey, (TagId | GimmickTagId)[]>>;
+type SkillPhase = {
+  label: { ko: string; en: string };
+  tags: (TagId | GimmickTagId)[];
+};
+
+export type SkillSkillData =
+  | (TagId | GimmickTagId)[]
+  | { phases: [SkillPhase, SkillPhase?, SkillPhase?, SkillPhase?] };
+
+type SkillBlock = Partial<Record<SkillKey, SkillSkillData>>;
 
 export type SingleForm = SkillBlock;
 
