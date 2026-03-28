@@ -2,20 +2,21 @@ import ChampClient from "../ChampClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
+import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import { CHAMP_FORMS } from "@/app/data/interactions/forms";
 import { notFound, redirect } from "next/navigation";
 import { Fragment } from "react";
 
 import type { Metadata } from "next";
-import type { ChampSkill, SkillKey } from "@/app/data/interactions/types";
+import type { ChampSkill, SkillKey, SkillSkillData } from "@/app/data/interactions/types";
 
 const SKILL_KEYS: SkillKey[] = ["P", "Q", "W", "E", "R"];
 
-type FormBlock = { formKo: string; block: Partial<Record<SkillKey, readonly string[]>> };
+type FormBlock = { formKo: string; block: Partial<Record<SkillKey, SkillSkillData>> };
 
 function getFormBlocks(champId: string, skills: ChampSkill): FormBlock[] {
   if (!("base" in skills)) {
-    return [{ formKo: "", block: skills as Partial<Record<SkillKey, readonly string[]>> }];
+    return [{ formKo: "", block: skills }];
   }
   const labels = CHAMP_FORMS[champId];
   const blocks: FormBlock[] = [
@@ -33,11 +34,15 @@ function buildSkillFaqJsonLd(champNameKo: string, champId: string, skills: Champ
 
   const entities = forms.flatMap(({ formKo, block }) =>
     SKILL_KEYS.flatMap((key) => {
-      const tags = block[key];
-      if (!tags || tags.length === 0) return [];
+      const raw = block[key];
+      if (!raw) return [];
+      const tags = Array.isArray(raw)
+        ? raw
+        : raw.phases.flatMap((p) => (p ? p.tags : []));
+      if (tags.length === 0) return [];
 
       const labels = tags
-        .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.ko)
+        .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.ko ?? GIMMICK_TAG_LABEL[t as keyof typeof GIMMICK_TAG_LABEL]?.ko)
         .filter(Boolean)
         .join(", ");
       if (!labels) return [];
@@ -185,8 +190,12 @@ export default async function Page(props: Props) {
             {formKo && <h3>{formKo}</h3>}
             <ul>
               {SKILL_KEYS.map((key) => {
-                const tags = block[key];
-                if (!tags || tags.length === 0) return null;
+                const raw = block[key];
+                if (!raw) return null;
+                const tags = Array.isArray(raw)
+                  ? raw
+                  : raw.phases.flatMap((p) => (p ? p.tags : []));
+                if (tags.length === 0) return null;
                 return (
                   <li key={key}>
                     {formKo ? `${formKo} ${key}` : key}: {tags.join(", ")}
