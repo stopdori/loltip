@@ -7,7 +7,7 @@ const syndra: ChampData = {
     Q: [],
     W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "KNOCKBACK", "STUN"],
-    R: ["R_FLASH", "UNINTERRUPTIBLE_CAST"],
+    R: ["R_FLASH"],
   },
 
   vision: {

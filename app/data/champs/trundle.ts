@@ -6,7 +6,7 @@ const trundle: ChampData = {
     P: ["HEAL"],
     Q: ["AA_RESET", "AD_UP", "AD_DOWN", "SLOW"],
     W: ["W_FLASH", "MS_UP"],
-    E: ["E_FLASH", "WALL", "AIRBORNE"],
+    E: ["E_FLASH", "TERRAIN", "AIRBORNE"],
     R: ["R_FLASH", "HEAL", "AR_MR_SHRED"],
   },
 

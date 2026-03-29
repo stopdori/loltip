@@ -5,7 +5,7 @@ const vladimir: ChampData = {
   skills: {
     P: ["AP_UP", "MAX_HP_UP"],
     Q: ["Q_FLASH", "LIFESTEAL", "MS_UP"],
-    W: ["W_FLASH", "LIFESTEAL", "MS_UP", "GHOSTING", "SLOW", "UNTARGETABLE", "TOWER_DODGE", "BUFF_FORM"],
+    W: ["W_FLASH", "LIFESTEAL", "MS_UP", "GHOSTING", "SLOW", "UNTARGETABLE", "TOWER_DODGE"],
     E: ["E_FLASH", "SLOW"],
     R: ["R_FLASH", "LIFESTEAL"],
   },

@@ -20,10 +20,13 @@ const volibear: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
+    Q: { phases: [
+      { label: { ko: "추격단계", en: "Chase"  }, tags: [] },
+      { label: { ko: "공격단계", en: "Strike" }, tags: [] },
+    ] },
     W: [],
     E: [],
-    R: [],
+    R: ["UNSTOPPABLE"],
   },
 
   notes: {

@@ -7,7 +7,7 @@ const seraphine: ChampData = {
     Q: [],
     W: ["MS_UP", "SHIELD", "HEAL"],
     E: ["E_FLASH", "SLOW", "ROOT", "STUN"],
-    R: ["R_FLASH", "CHARM", "UNINTERRUPTIBLE_CAST"],
+    R: ["R_FLASH", "CHARM"],
   },
 
   vision: {

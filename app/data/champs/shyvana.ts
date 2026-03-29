@@ -46,7 +46,7 @@ skills: {
       Q: [],
       W: [],
       E: [],
-      R: [],
+      R: ["UNSTOPPABLE"],
     },
     alt: {
       P: [],

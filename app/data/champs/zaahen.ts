@@ -23,7 +23,7 @@ const zaahen: ChampData = {
     Q: [],
     W: [],
     E: [],
-    R: [],
+    R: ["UNSTOPPABLE"],
   },
 
   notes: {

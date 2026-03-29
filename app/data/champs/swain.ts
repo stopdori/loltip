@@ -4,7 +4,7 @@ const swain: ChampData = {
   id: "swain",
   skills: {
     P: ["HEAL"],
-    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
+    Q: ["Q_FLASH", "CAST_COMMIT"],
     W: ["W_FLASH", "SLOW", "REVEALED"],
     E: ["ROOT", "GRAB"],
     R: ["R_FLASH", "LIFESTEAL", "SLOW", "BUFF_FORM"],
@@ -23,7 +23,7 @@ const swain: ChampData = {
     Q: [],
     W: [],
     E: [],
-    R: [],
+    R: ["BUFF_FORM"],
   },
 
   notes: {
