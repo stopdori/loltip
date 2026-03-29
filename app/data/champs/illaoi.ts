@@ -4,9 +4,9 @@ const illaoi: ChampData = {
   id: "illaoi",
   skills: {
     P: ["HEAL", "ALLY_TP_OK"],
-    Q: ["UNINTERRUPTIBLE_CAST"],
+    Q: [],
     W: ["AA_RESET", "WALL_HOP"],
-    E: ["E_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
+    E: ["E_FLASH", "SLOW"],
     R: ["R_FLASH", "UNSTOPPABLE"],
   },
 
@@ -19,16 +19,16 @@ const illaoi: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["SUMMON", "DMG_PHYSICAL", "HOMING", "AOE", "ST_DELAYED",],
+    Q: ["PASSIVE_BONUS", "DMG_PHYSICAL", "TIMING_CAST", "AOE"],
+    W: ["DMG_PHYSICAL", "ON_HIT", "DASH"],
+    E: ["TIMING_CAST", "PROJECTILE", "SINGLE", "MARK", "SUMMON"],
+    R: ["UNSTOPPABLE", "DMG_PHYSICAL", "TIMING_CAST", "AOE", "SUMMON"],
   },
 
   notes: {
     ko: [
-    "[[Q_FLASH]] 안됨", "촉수 공격 한대당 잃은체력 회복임\n그래서 사실상 Q, W, E, R 다 [[HEAL]] 됨", "W는 ", "E는 미니언 관통 불가.\n상대 챔피언을 맞히면 상대의 영혼을 추출함\n영혼을 공격하면 피해가 육체에게 전이됨\n영혼의 체력이 0이 되거나 범위를 벗어나면 육체에게 돌아가고 [[SLOW]]와 표식", "R은 설명에 [[UNSTOPPABLE]]가 없지만, 모데카이저 R을 무시하는 걸로 봐서 [[UNSTOPPABLE]]가 맞음.\n아니면, 제보 좀"
+    "[[Q_FLASH]] 안됨", "촉수 공격 한대당 잃은체력 회복임", "E는 미니언 관통 불가.\n상대 챔피언을 맞히면 상대의 영혼을 추출함\n영혼을 공격하면 피해가 육체에게 전이됨\n영혼의 체력이 0이 되거나 범위를 벗어나면 육체에게 돌아가고 [[SLOW]]와 표식", "R은 공식적인 저지불가는 아니지만, 각종 CC 효과를 무시하거나 유예하는 걸로 보아 [[UNSTOPPABLE]]이 맞는 것으로 보임."
   ],
     en: ["[[Q_FLASH]] not possible", "Each tentacle hit heals based on missing HP, so effectively Q, W, E, R all [[HEAL]]", "Illaoi's E cannot pierce minions.\nHitting an enemy champion extracts their soul.\nDamaging the soul transfers damage to the body.\nIf the soul reaches 0 HP or leaves the area, it returns to the body applying [[SLOW]] and a mark.", "R's description doesn't mention [[UNSTOPPABLE]], but based on it ignoring Mordekaiser's R, it appears to be [[UNSTOPPABLE]].\nPlease report if you have more info."]
   },

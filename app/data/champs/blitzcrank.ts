@@ -5,9 +5,9 @@ const blitzcrank: ChampData = {
   skills: {
     P: ["SHIELD"],
     Q: ["GRAB"],
-    W: ["AS_UP", "MS_UP"],
+    W: ["AS_UP", "MS_UP", "BUFF_FORM"],
     E: ["AA_RESET", "AIRBORNE"],
-    R: ["R_FLASH", "SHIELD_BREAK", "SILENCE", "UNINTERRUPTIBLE_CAST"],
+    R: ["R_FLASH", "SHIELD_BREAK", "SILENCE"],
   },
 
   vision: {
@@ -20,10 +20,13 @@ const blitzcrank: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE"],
+    W: ["BUFF_FORM", "DMG_MAGIC", "ON_HIT"],
+    E: ["DMG_PHYSICAL", "ON_HIT"],
+    R: { phases: [
+      { label: { ko: "낙뢰", en: "Lightning Strike" }, tags: ["DMG_MAGIC", "SINGLE"] },
+      { label: { ko: "R 액티브", en: "R Active"  }, tags: ["DMG_MAGIC", "TIMING_CAST", "AOE"] },
+    ] },
   },
 
   notes: {

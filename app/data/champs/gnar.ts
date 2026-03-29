@@ -6,7 +6,7 @@ const gnar: ChampData = {
   skills: {
     base: {
       // 🔫 인간폼 (원거리)
-      P: ["AS_UP", "MS_UP"],
+      P: ["AS_UP", "MS_UP", "BUFF_FORM"],
       Q: ["SLOW"],                // 인간 Q는 Q플 X
       W: ["MS_UP"],
       E: ["E_FLASH", "AS_UP", "SLOW", "WALL_HOP"],
@@ -15,11 +15,11 @@ const gnar: ChampData = {
 
     alt: {
       // 🔨 변신폼 (근접)
-      P: ["MAX_HP_UP"],
-      Q: ["Q_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],      // 변신 Q는 Q플 가능
-      W: ["STUN", "UNINTERRUPTIBLE_CAST"],
+      P: ["MAX_HP_UP", "BUFF_FORM"],
+      Q: ["Q_FLASH", "SLOW"],      // 변신 Q는 Q플 가능
+      W: ["STUN"],
       E: ["SLOW", "WALL_HOP"],
-      R: ["AIRBORNE", "SLOW", "STUN", "UNINTERRUPTIBLE_CAST"],
+      R: ["AIRBORNE", "SLOW", "STUN"],
     },
   },
 
@@ -42,24 +42,24 @@ const gnar: ChampData = {
 
   gimmick: {
     base: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
+      P: ["BUFF_FORM"],
+      Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE"],
+      W: ["PASSIVE_BONUS", "DMG_MAGIC", "PROC"],
+      E: ["DMG_PHYSICAL", "DASH"],
       R: [],
     },
     alt: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
+      P: ["BUFF_FORM"],
+      Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "AOE"],
+      W: ["DMG_PHYSICAL", "TIMING_CAST", "AOE"],
+      E: ["DMG_PHYSICAL", "DASH", "AOE"],
+      R: ["DMG_PHYSICAL", "TIMING_CAST", "AOE"],
     },
   },
 
   notes: {
     ko: [
-    "나르 변신은 분노가 100이 되고\n스킬을 사용하면 발동\n미니 E(점프)로 대상을 밟으면 2단점프 하면서 변신", "미니폼\nP의 [[MS_UP]]는 미니폼일 때 항시 적용\n[[Q_FLASH]] 안됨\nE는 대상을 맞혀야 [[SLOW]]. 미니언도 밟아짐\nR은 W의 [[MS_UP]]효과를 증가시킴", "메가폼\nP는 [[MAX_HP_UP]]여서 [[GW]]효과 안받음\n[[W_FLASH]] 안됨\nR은 벽에 부딪혀야 [[STUN]]"
+    "나르 변신은 분노가 100이 되고\n스킬을 사용하면 발동\n미니 E(점프)로 적을 밟으면 2단점프 하면서 변신", "미니폼\nP의 [[MS_UP]]는 미니폼일 때 항시 적용\n[[Q_FLASH]] 안됨\nE는 대상을 맞혀야 [[SLOW]]. 미니언도 밟아짐\nR은 W의 [[MS_UP]]효과를 증가시킴", "메가폼\nP는 [[MAX_HP_UP]]여서 [[GW]]효과 안받음\n[[W_FLASH]] 안됨\nR은 벽에 부딪혀야 [[STUN]]"
   ],
     en: ["Gnar transforms when rage reaches 100 and a skill is used.\nMini E (hop) landing on a target double-jumps and triggers the transform", "Mini form:\nP [[MS_UP]] is always active in mini form.\n[[Q_FLASH]] not possible.\nE applies [[SLOW]] on hit — minions can also be hopped on.\nR amplifies W [[MS_UP]]", "Mega form:\nP is [[MAX_HP_UP]] so [[GW]] has no effect.\n[[W_FLASH]] not possible.\nR requires hitting a wall for [[STUN]]"]
   },

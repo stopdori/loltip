@@ -6,6 +6,17 @@ export type GimmickTagId =
 
 
   | "PASSIVE_BONUS"
+  | "PASSIVE_INTERACT"
+  | "BUFF_INTERACT"
+  | "DEBUFF_INTERACT"
+  | "MARK_INTERACT"
+  | "MARK_CONSUME"
+  // 스킬 키
+  | "P"
+  | "Q"
+  | "W"
+  | "E"
+  | "R"
   // 피해 종류
   | "DMG_PHYSICAL"
   | "DMG_MAGIC"
@@ -24,8 +35,6 @@ export type GimmickTagId =
   | "NON_TARGETED"
   | "PROJECTILE"
   | "NON_PROJECTILE"
-  | "ON_HIT"
-  | "ZONE"
   | "TRAP"
   // 피해 범위
   | "GLOBAL"
@@ -38,6 +47,7 @@ export type GimmickTagId =
   | "SINGLE"
   | "PIERCE"
   | "PIERCE_MINION"
+  | "PIERCE_ONCE"
 
   | "ON_HIT"
   | "ZONE"
@@ -62,6 +72,7 @@ export type GimmickTagId =
   | "PROC"
   | "BUFF_STACK"
   | "DEBUFF_STACK"
+  | "STACK_CONSUME"
   // 스킬 타이밍
   | "ST_IMPACT"
   | "ST_DELAYED"
@@ -79,8 +90,9 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   RECHARGE:      { ko: "충전식",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
   PROC:          { ko: "스택발동", en: "Proc" },
-  BUFF_STACK:    { ko: "버프 스택",   en: "Buff Stack"  },
+  BUFF_STACK:    { ko: "버프 스택",   en: "Buff Stack"   },
   DEBUFF_STACK:  { ko: "디버프 스택", en: "Debuff Stack" },
+  STACK_CONSUME: { ko: "스택 소모",   en: "Stack Consume" },
 
   // 타이밍
   TIMING_INSTANT:   { ko: "즉발",     en: "Instant"    },
@@ -100,14 +112,26 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ZONE:           { ko: "장판",      en: "Zone"           },
   TRAP:           { ko: "트랩",      en: "Trap"           },
   // 속성
-  CHAIN:         { ko: "연쇄",     en: "Chain"         },
-  PASSIVE_BONUS: { ko: "기본효과",   en: "Passive Bonus" },
+  CHAIN:            { ko: "연쇄",      en: "Chain"            },
+  PASSIVE_BONUS:    { ko: "기본효과",   en: "Passive Bonus"    },
+  PASSIVE_INTERACT: { ko: "패시브 연동", en: "Passive Interact" },
+  BUFF_INTERACT:    { ko: "버프 연동",   en: "Buff Interact"   },
+  DEBUFF_INTERACT:  { ko: "디버프 연동", en: "Debuff Interact" },
+  MARK_INTERACT:    { ko: "표식 연동",   en: "Mark Interact"  },
+  MARK_CONSUME:     { ko: "표식 소모",   en: "Mark Consume"   },
+  // 스킬 키
+  P: { ko: "P", en: "P" },
+  Q: { ko: "Q", en: "Q" },
+  W: { ko: "W", en: "W" },
+  E: { ko: "E", en: "E" },
+  R: { ko: "R", en: "R" },
   MARK:          { ko: "표식",     en: "Mark"          },
   HOMING:        { ko: "호밍",     en: "Homing"        },
   // 피해 범위
   SINGLE:  { ko: "단일",   en: "Single Target"   },
   PIERCE:        { ko: "관통",      en: "Pierce"        },
   PIERCE_MINION: { ko: "미니언 관통", en: "Minion Pierce" },
+  PIERCE_ONCE:   { ko: "1회 관통",   en: "Pierce Once"  },
   AOE:     { ko: "범위",   en: "Area of Effect"  },
   GLOBAL:  { ko: "전체맵", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
@@ -140,6 +164,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   PROC:             { ko: "상대 또는 자신에게 스택을 쌓고 N번째 적중 시 추가 효과가 발동됨", en: "Stacks build up on the target or yourself, and an additional effect is triggered on the $N$-th hit." },
   BUFF_STACK:       { ko: "자신에게 스택을 쌓아 추가 효과가 생김", en: "Applies stacks to self, granting additional effects" },
   DEBUFF_STACK:     { ko: "상대에게 스택을 쌓아 추가 효과가 생김", en: "Applies stacks to enemies, granting additional effects" },
+  STACK_CONSUME:    { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함.", en: "Consumes accumulated buff stacks to trigger or empower an effect." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
   TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림.", en: "Takes time between cast and activation." },
   TIMING_AFTERCAST: { ko: "발동 후 다음 행동까지 시간이 걸림.", en: "Takes time between activation and the next action." },
@@ -152,20 +177,31 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   NON_TARGETED:     { ko: "방향 또는 위치를 지정하여 시전하는 스킬\n대상이 피할 수 있음", en: "Targets a direction or location\nCan be dodged by the enemy" },
   PROJECTILE:       { ko: "날아가는 투사체가 존재함", en: "A projectile travels to the target." },
   NON_PROJECTILE:   { ko: "외형상 투사체처럼 보이지만 실제로는 투사체가 아님.", en: "Appears to be a projectile but is not." },
-  ZONE:             { ko: "시전자와 분리되어 특정 위치에 독립적으로 존재하는 효과", en: "An effect that exists independently at a fixed location, separate from the caster" },
+  ZONE:             { ko: "시전자와 분리되어 \n 특정 위치에 독립적으로 존재하는 효과", en: "An effect that exists independently at a fixed location, \n separate from the caster" },
   TRAP:             { ko: "설치 후 적이 밟으면 발동되는 함정", en: "A trap that activates when an enemy steps on it" },
   CHAIN:            { ko: "조건 충족 시 추가 투사체 또는 효과가 연쇄 생성됨", en: "Generates additional projectiles or effects when a condition is met" },
   HOMING:           { ko: "시전 후 스스로 대상을 추적.", en: "Tracks a target on its own after cast." },
   PASSIVE_BONUS:    { ko: "스킬을 찍으면 별도의 기본 지속 효과가 추가됨", en: "Leveling this ability grants an additional persistent passive effect" },
-  MARK:             { ko: "적에게 표식을 남기며 표식이 있는 대상에게 추가 효과가 발동됨", en: "Marks an enemy and triggers a bonus effect on marked targets" },
+  PASSIVE_INTERACT: { ko: "패시브와 다른 스킬이 서로 영향을 주고받음.", en: "The passive and other abilities interact with each other." },
+  BUFF_INTERACT:    { ko: "버프가 다른 스킬과 서로 영향을 주고받음.", en: "A buff interacts with other abilities." },
+  DEBUFF_INTERACT:  { ko: "디버프가 다른 스킬과 서로 영향을 주고받음.", en: "A debuff interacts with other abilities." },
+  MARK_INTERACT:    { ko: "표식이 다른 스킬과 서로 영향을 주고받음.", en: "A mark interacts with other abilities." },
+  MARK_CONSUME:     { ko: "표식을 소모하여 추가 효과를 발동함.", en: "Consumes a mark to trigger a bonus effect." },
+  P: { ko: "P", en: "P" },
+  Q: { ko: "Q", en: "Q" },
+  W: { ko: "W", en: "W" },
+  E: { ko: "E", en: "E" },
+  R: { ko: "R", en: "R" },
+  MARK:             { ko: "적에게 표식을 남기며 \n 표식이 있는 대상에게 추가 효과가 발동됨", en: "Marks an enemy and triggers \n a bonus effect on marked targets" },
   // 피해 범위
   SINGLE:      { ko: "단일 대상에게만 적용되는 스킬", en: "Affects only a single target" },
   PIERCE:        { ko: "투사체가 대상을 관통하여 뒤의 적에게도 적중", en: "Projectile passes through targets" },
   PIERCE_MINION: { ko: "미니언을 관통하여 지나가지만 챔피언은 관통 못하는 조건부 관통", en:   "Passes through minions\nDoes not pierce champions"  },
+  PIERCE_ONCE:   { ko: "적 챔피언 1명을 관통하고 멈춤.", en: "Pierces through one enemy champion and stops." },
   AOE:         { ko: "특정 범위 내 여러 대상에게 적용", en: "Affects multiple targets within an area" },
   GLOBAL:      { ko: "맵 전체 또는 모든 적에게 적용", en: "Affects all enemies or the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
-  SWARM:   { ko: "여러 투사체가 근처 적에게 나뉘어 각각 단일 적중", en: "Multiple projectiles distribute among nearby enemies, each hitting a single target" },
+  SWARM:   { ko: "스킬이 근처 적에게 나뉘어 각각 단일 적중", en: "Splits among nearby enemies,\n each hitting a single target"},
   VOLLEY:  { ko: "여러 투사체를 같은 방향으로 발사\n각 투사체는 첫 번째 적에게만 적중", en: "Fires multiple projectiles in the same direction\nEach projectile hits only the first enemy" },
   // 피해 종류
   DMG_PHYSICAL: { ko: "방어력에 의해 감소되는 피해", en: "Damage mitigated by armor" },

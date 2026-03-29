@@ -19,11 +19,19 @@ const lillia: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["ST_CONDITIONAL", "DEBUFF_STACK", "DMG_MAGIC", "DOT"],
+    Q: { phases: [
+      { label: { ko: "Q 패시브", en: "Q Passive" }, tags: ["PASSIVE_BONUS", "BUFF_STACK"] },
+      { label: { ko: "Q 액티브", en: "Q Active" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "TIMING_CAST", "AOE", "DEBUFF_STACK"] },
+      { label: { ko: "Q 가장자리", en: "Q Edge" }, tags: ["DMG_TRUE", "SKILL_CHANNEL", "TIMING_CAST", "AOE", "DEBUFF_STACK"] },
+    ] },
+    W: ["DMG_MAGIC", "TIMING_CAST", "AOE", "DASH", "DEBUFF_STACK"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE", "DEBUFF_STACK"],
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["ST_CONDITIONAL", "TIMING_CAST", "PROJECTILE", "SWARM", "ST_DELAYED"] },
+      { label: { ko: "수면", en: "Asleep" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC"] },
+    ] },
+   
   },
 
   notes: {

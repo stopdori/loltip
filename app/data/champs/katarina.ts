@@ -19,16 +19,16 @@ const katarina: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "CHAIN"],
+    W: ["ZONE"],
+    E: ["DMG_MAGIC", "ON_HIT", "BLINK"],
+    R: ["DMG_MAGIC", "SKILL_CHANNEL", "PROJECTILE", "SWARM", "SINGLE", "CANCELLABLE"],
   },
 
   notes: {
     ko: [
-    "단검에 텔 안됨", "E스킬은 대상 근처로 순간이동하고 때리는 스킬임 \n그래서 대상 또는 근처 땅에 쓰면 그 위치로 이동함",
+    "단검에 텔 안됨", "Q는 범위내 3번만 연쇄\n챔피언 우선", "E스킬은 대상 근처에 사용하면 평타만, 대상에게 순간이동하면 추가 데미지.", "R은 움직이면 취소됨."
   ],
     en: ["Cannot TP onto daggers", "E teleports Katarina near the target and strikes.\nCasting on the target or nearby ground moves her to that position"]
   },

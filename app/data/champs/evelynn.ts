@@ -20,10 +20,16 @@ const evelynn: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: { phases: [
+      { label: { ko: "Q1", en: "Q1"  }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE"] },
+      { label: { ko: "Q2~Q4", en: "Q2~Q4"  }, tags: ["DMG_MAGIC", "PROJECTILE", "HOMING", "PIERCE"] },
+    ] },
+    W: ["DMG_MAGIC", "TARGETED", "TIMING_CAST", "MARK", ],
+    E: { phases: [
+      { label: { ko: "E", en: "E"  }, tags: ["DMG_MAGIC", "TIMING_CAST"] },
+      { label: { ko: "E 위장", en: "E Camouflage"  }, tags: ["DMG_MAGIC", "TIMING_CAST", "DASH"] },
+    ] },
+    R: ["DMG_MAGIC", "AOE", "BLINK"],
   },
 
   notes: {

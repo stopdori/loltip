@@ -5,8 +5,8 @@ const briar: ChampData = {
   skills: {
     P: ["Q_FLASH", "LIFESTEAL"],
     Q: ["W_FLASH", "AA_RESET", "AR_MR_SHRED", "WALL_HOP"],
-    W: ["AS_UP", "MS_UP", "LIFESTEAL", "WALL_HOP"],
-    E: ["DMG_REDUCE", "KNOCKBACK", "STUN", "UNINTERRUPTIBLE_CHANNEL"],
+    W: ["AS_UP", "MS_UP", "LIFESTEAL", "WALL_HOP", "BUFF_FORM"],
+    E: ["DMG_REDUCE", "KNOCKBACK", "STUN"],
     R: ["R_FLASH", "MS_UP", "LIFESTEAL", "FEAR", "WALL_HOP", "CC_IMMUNE", "UNSTOPPABLE"],
   },
 
@@ -19,11 +19,14 @@ const briar: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DMG_PHYSICAL", "DOT", "DEBUFF_STACK"],
+    Q: ["DMG_PHYSICAL", "DASH", "ON_HIT", "DEBUFF_STACK"],
+    W: ["BUFF_FORM", "DMG_PHYSICAL", "DASH", "ON_HIT", "AOE", "HOMING", "DEBUFF_STACK"],
+    E: ["DMG_MAGIC", "SKILL_CHARGED", "CAST_COMMIT", "AOE", "CAST_COMMIT", "DEBUFF_STACK"],
+    R: { phases: [
+      { label: { ko: "R 투사체", en: "R Projectile" }, tags: ["TIMING_CAST", "PROJECTILE", "LOCKED", "CC_IMMUNE"] },
+      { label: { ko: "돌진", en: "Dash"  }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "TIMING_CAST", "LOCKED", "AOE", "HOMING", "UNSTOPPABLE"] },
+    ] },
   },
 
   notes: {

@@ -19,11 +19,18 @@ const quinn: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["ST_CONDITIONAL", "DMG_PHYSICAL", "REVEALED", "MARK"],
+    Q: ["DMG_PHYSICAL", "PROJECTILE", "AOE", "MARK"],
+    W: { phases: [
+      { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_INTERACT", "P", "Q", "W", "E", "R"] },
+      { label: { ko: "W", en: "W" }, tags: ["REVEALED", "AOE"] },
+    ] },
+    E: ["DMG_PHYSICAL", "TARGETED", "DASH", "MARK"],
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["SKILL_RECAST"] },
+      { label: { ko: "R 화살비", en: "R Raining Arrows" }, tags: ["DMG_PHYSICAL", "AOE", "MARK"] },
+    ] },
+    
   },
 
   notes: {

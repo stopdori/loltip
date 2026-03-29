@@ -20,10 +20,17 @@ const rakan: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: { phases: [
+      { label: { ko: "Q", en: "Q" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE"] },
+      { label: { ko: "Q 회복", en: "Q Heal" }, tags: ["ST_CONDITIONAL"] },
+    ] },
+    
+    W: { phases: [
+      { label: { ko: "돌진단계", en: "Dash" }, tags: ["DASH"] },
+      { label: { ko: "도약단계", en: "Leap" }, tags: ["DMG_MAGIC", "AOE"] },
+    ] },
+    E: ["TARGETED", "DASH"],
+    R: ["BUFF_FORM", "DMG_MAGIC", "TIMING_CAST", "AOE"],
   },
 
   notes: {

@@ -5,7 +5,7 @@ const fiora: ChampData = {
   skills: {
     P: ["MS_UP", "HEAL"],
     Q: ["WALL_HOP"],
-    W: ["AS_UP", "MS_UP", "SLOW", "STUN", "UNINTERRUPTIBLE_CHANNEL"],
+    W: ["AS_UP", "MS_UP", "SLOW", "STUN"],
     E: ["AS_UP", "SLOW", "AA_RESET"],
     R: ["R_FLASH", "HEAL", "MS_UP"],
   },
@@ -19,11 +19,14 @@ const fiora: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DMG_TRUE", "ON_HIT"],
+    Q: ["DMG_PHYSICAL", "ON_HIT", "DASH"],
+    W: ["DMG_MAGIC", "SKILL_CHANNEL", "PROJECTILE", "PIERCE_MINION"],
+    E: ["DMG_PHYSICAL", "ON_HIT", "SKILL_RECAST"],
+    R: { phases: [
+      { label: { ko: "R 시전", en: "R Active" }, tags: ["DMG_TRUE", "TARGETED", "ON_HIT", "MARK"] },
+      { label: { ko: "장판", en: "Zone" }, tags: ["ZONE"] },
+    ] },
   },
 
   notes: {

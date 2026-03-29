@@ -10,7 +10,7 @@ type SkillPhase = {
 
 export type SkillSkillData =
   | (TagId | GimmickTagId)[]
-  | { phases: [SkillPhase, SkillPhase?, SkillPhase?, SkillPhase?] };
+  | { phases: [SkillPhase, SkillPhase?, SkillPhase?, SkillPhase?, SkillPhase?, SkillPhase?] };
 
 type SkillBlock = Partial<Record<SkillKey, SkillSkillData>>;
 
@@ -31,7 +31,7 @@ type GimmickPhase = {
 
 export type GimmickSkillData =
   | (TagId | GimmickTagId)[]
-  | { phases: [GimmickPhase, GimmickPhase?, GimmickPhase?, GimmickPhase?] };
+  | { phases: [GimmickPhase, GimmickPhase?, GimmickPhase?, GimmickPhase?, GimmickPhase?, GimmickPhase?] };
 
 type GimmickSkillBlock = Partial<Record<SkillKey, GimmickSkillData>>;
 

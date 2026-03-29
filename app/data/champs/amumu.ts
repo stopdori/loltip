@@ -4,10 +4,10 @@ const amumu: ChampData = {
   id: "amumu",
   skills: {
     P: [],
-    Q: ["Q_FLASH", "STUN", "WALL_HOP", "VISION", "UNINTERRUPTIBLE_CAST", "CC_BUFFER"],
-    W: ["UNINTERRUPTIBLE_CHANNEL"],
-    E: ["E_FLASH", "UNINTERRUPTIBLE_CAST"],
-    R: ["R_FLASH", "STUN", "UNINTERRUPTIBLE_CAST"],
+    Q: ["Q_FLASH", "STUN", "WALL_HOP", "VISION", "CC_BUFFER"],
+    W: [],
+    E: ["E_FLASH"],
+    R: ["R_FLASH", "STUN"],
   },
 
   vision: {
@@ -19,11 +19,14 @@ const amumu: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DMG_TRUE", "DEBUFF_STACK"],
+    Q: { phases: [
+      { label: { ko: "투척단계", en: "Throw" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "CC_BUFFER"] },
+      { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DASH", "HOMING"] },
+    ] },
+    W: ["DMG_MAGIC", "SKILL_TOGGLE", "AOE", "DOT"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
+    R: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
   },
 
      notes: {

@@ -7,7 +7,7 @@ const graves: ChampData = {
     Q: ["Q_FLASH"],
     W: ["W_FLASH", "NEARSIGHT", "SLOW"],
     E: ["E_FLASH", "AA_RESET", "WALL_HOP"],
-    R: ["R_FLASH", "WALL_HOP", "UNINTERRUPTIBLE_CAST", "CC_BUFFER"],
+    R: ["R_FLASH", "WALL_HOP", "CC_BUFFER"],
   },
 
   vision: {
@@ -19,11 +19,11 @@ const graves: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DMG_PHYSICAL", "PROJECTILE", ],
+    Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "ZONE", "AOE",],
+    W: ["DMG_MAGIC", "PROJECTILE", "ZONE", "AOE"],
+    E: ["BUFF_STACK", "DASH"],
+    R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE_MINION", "AOE", "DASH", "CC_BUFFER"],
   },
 
   notes: {

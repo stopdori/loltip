@@ -7,7 +7,7 @@ const cassiopeia: ChampData = {
     Q: ["Q_FLASH", "MS_UP"],
     W: ["W_FLASH", "GROUNDED", "SLOW"],
     E: ["E_FLASH", "HEAL"],
-    R: ["R_FLASH", "STUN", "SLOW", "UNINTERRUPTIBLE_CAST"],
+    R: ["R_FLASH", "STUN", "SLOW"],
   },
 
   vision: {
@@ -20,10 +20,10 @@ const cassiopeia: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "ST_DELAYED", "ZONE", "DOT"],
+    W: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "ZONE", "DOT"],
+    E: ["DMG_MAGIC", "TARGETED", "PROJECTILE", "SINGLE"],
+    R: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
   },
 
   notes: {

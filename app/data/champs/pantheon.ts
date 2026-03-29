@@ -3,56 +3,57 @@ import type { ChampData } from "../interactions/types";
 const pantheon: ChampData = {
   id: "pantheon",
   skills: {
-    base : {
     P: [],
-    Q: ["Q_FLASH", "CRIT"],
-    W: ["W_FLASH", "STUN", "WALL_HOP"],
-    E: ["INVULNERABLE", "UNINTERRUPTIBLE_CHANNEL"],
+    Q: { phases: [
+      { label: { ko: "Q 짧게", en: "Q Tap" }, tags: ["Q_FLASH", "CRIT"] },
+      { label: { ko: "Q 길게", en: "Q Charged" }, tags: ["Q_FLASH", "CRIT"] },
+    ] },
+    
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["W_FLASH", "STUN", "WALL_HOP"] },
+      { label: { ko: "W 강화", en: "W Improved" }, tags: ["W_FLASH", "STUN", "WALL_HOP"] },
+    ] },
+    
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["INVULNERABLE", "BUFF_FORM"] },
+      { label: { ko: "E 강화", en: "E Improved" }, tags: ["INVULNERABLE", "MS_UP", "BUFF_FORM"] },
+    ] },
     R: ["AR_PEN", "WALL_HOP"],
-  },
-
-  alt: {
-      // 🔨 변신폼 (근접)
-      P: [],
-    Q: ["Q_FLASH", "CRIT"],
-    W: ["W_FLASH", "STUN", "WALL_HOP"],
-    E: ["INVULNERABLE", "UNINTERRUPTIBLE_CHANNEL", "MS_UP"],
-    R: ["AR_PEN", "WALL_HOP"],
-    },
   },
 
   vision: {
-    base: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
-    },
-    alt: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
-    },
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   gimmick: {
-    base: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
-    },
-    alt: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
-    },
+    P: ["BUFF_INTERACT", "Q", "W", "E"],
+    Q: { phases: [
+      { label: { ko: "Q 짧게", en: "Q Tap" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "BUFF_STACK"] },
+      { label: { ko: "Q 길게", en: "Q Charged" }, tags: ["DMG_PHYSICAL", "SKILL_CHARGED", "PROJECTILE", "PIERCE", "BUFF_STACK"] },
+    ] },
+
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["DMG_PHYSICAL", "TARGETED", "DASH", "BUFF_STACK"] },
+      { label: { ko: "W 강화", en: "W Improved" }, tags: ["DMG_PHYSICAL", "TARGETED", "DASH", "BUFF_STACK"] },
+      { label: { ko: "W 강화평타", en: "W Improved BA" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "SKILL_CHANNEL", "ON_HIT", "BUFF_STACK"] },
+    ] },
+
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["BUFF_FORM", "DMG_PHYSICAL", "AOE", "DOT", "CANCELLABLE", "SKILL_RECAST", "BUFF_STACK"] },
+      { label: { ko: "E 강화", en: "E Improved" }, tags: ["BUFF_FORM", "DMG_PHYSICAL", "AOE", "DOT", "CANCELLABLE", "SKILL_RECAST", "BUFF_STACK"] },
+      { label: { ko: "E 방패타격", en: "E Slams" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "TIMING_CAST", "AOE"] },
+    ] },
+    
+    R: { phases: [
+      { label: { ko: "R 패시브", en: "R Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL", "MOBILITY"] },
+      { label: { ko: "R 창", en: "R Spear" }, tags: ["DMG_PHYSICAL", "NON_PROJECTILE"] },
+      { label: { ko: "R 착지", en: "R Crashes Down" }, tags: ["DMG_PHYSICAL", "SKILL_CHANNEL", "MOBILITY", "BUFF_STACK"] },
+    ] },
   },
 
   notes: {

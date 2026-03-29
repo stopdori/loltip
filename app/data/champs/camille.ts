@@ -20,10 +20,21 @@ const camille: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: { phases: [
+      { label: { ko: "Q1", en: "Q1"  }, tags: ["DMG_PHYSICAL", "ON_HIT", "SKILL_RECAST"] },
+      { label: { ko: "Q2", en: "Q2"  }, tags: ["DMG_PHYSICAL", "DMG_TRUE", "TIMING_CAST", "ON_HIT"] },
+    ] },
+    W: ["DMG_PHYSICAL", "AOE"],
+    E: { phases: [
+      { label: { ko: "투척단계", en: "Throw" }, tags: ["PROJECTILE", "CC_BUFFER"] },
+      { label: { ko: "그렙단계", en: "Grab"  }, tags: ["DASH"] },
+      { label: { ko: "대기단계", en: "Hold"  }, tags: ["SKILL_RECAST"] },
+      { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "DASH"] },
+    ] },
+    R:{ phases: [
+      { label: { ko: "도약", en: "Dash" }, tags: ["UNSTOPPABLE", "TIMING_CAST", "ZONE", "MARK", "DASH"] },
+      { label: { ko: "Mark", en: "Mark"  }, tags: ["DMG_MAGIC", "ON_HIT"] },
+    ] },
   },
 
   notes: {

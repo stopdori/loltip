@@ -4,26 +4,34 @@ const mordekaiser: ChampData = {
   id: "mordekaiser",
   skills: {
     P: ["MS_UP"],
-    Q: ["Q_FLASH", "UNINTERRUPTIBLE_CAST"],
+    Q: ["Q_FLASH"],
     W: ["SHIELD", "HEAL"],
-    E: ["E_FLASH", "GRAB", "MR_PEN", "UNINTERRUPTIBLE_CAST"],
-    R: ["R_FLASH", "NEARSIGHT", "TRUE_SIGHT", "UNINTERRUPTIBLE_CAST"],
+    E: ["E_FLASH", "GRAB", "MR_PEN"],
+    R: ["R_FLASH", "NEARSIGHT", "TRUE_SIGHT"],
   },
 
   vision: {
     P: [],
-    Q: [],
+    Q: ["FEEDBACK_SOUND"],
     W: [],
-    E: [],
-    R: [],
+    E: ["VISION"],
+    R: ["POSITION_REVEAL"],
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["ST_CONDITIONAL", "PROC", "DMG_MAGIC", "AOE"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "NON_PROJECTILE", "AOE", "BUFF_STACK"],
+    W: { phases: [
+      { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "W1", en: "W1" }, tags: ["SKILL_RECAST"] },
+      { label: { ko: "W2", en: "W2" }, tags: ["SKILL_RECAST"] },
+    ] },
+    E: { phases: [
+      { label: { ko: "E 패시브", en: "E Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "E 액티브", en: "E Active" }, tags: ["DMG_MAGIC", "TIMING_CAST", "NON_PROJECTILE", "ZONE", "BUFF_STACK"] },
+    ] },
+    
+    R: ["TIMING_CAST", "NON_PROJECTILE"],
   },
 
   notes: {
