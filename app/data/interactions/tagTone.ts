@@ -74,6 +74,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   REVEALED: "sky_soft",
   TRUE_SIGHT: "sky_soft",
   POSITION_REVEAL:  "sky_soft",
+  POSITION_HIDDEN:  "sky_soft",
   POSITION_TRACK:   "sky_soft",
   FEEDBACK_SOUND:      "sky_soft",
   FEEDBACK_EFFECT:     "sky_soft",
@@ -136,7 +137,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SHIELD_PIERCE: "fuchsia",
 
   // 🪨 stone (벽/특수/리셋)
-  WALL: "stone",
+  TERRAIN: "stone",
   WALL_HOP: "stone",
   SHIELD_BREAK: "stone",
   AA_RESET: "stone",
@@ -154,6 +155,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   PROC:          "indigo",
   DEBUFF_STACK:  "indigo",
   BUFF_STACK:    "indigo",
+  STACK_CONSUME: "indigo",
   // 타이밍
   TIMING_INSTANT:   "indigo",
   TIMING_CAST:      "indigo",
@@ -172,14 +174,26 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ZONE:           "indigo",
   TRAP:           "indigo",
   // 속성
-  CHAIN:         "indigo",
-  PASSIVE_BONUS: "indigo",
-  MARK:          "indigo",
-  HOMING:        "indigo",
+  CHAIN:            "indigo",
+  PASSIVE_BONUS:    "indigo",
+  PASSIVE_INTERACT: "indigo",
+  BUFF_INTERACT:    "indigo",
+  DEBUFF_INTERACT:  "indigo",
+  MARK_INTERACT:    "indigo",
+  MARK_CONSUME:     "indigo",
+  MARK:             "indigo",
+  HOMING:           "indigo",
+  // 스킬 키
+  P: "indigo",
+  Q: "indigo",
+  W: "indigo",
+  E: "indigo",
+  R: "indigo",
   // 피해 범위
   SINGLE:  "indigo",
   // PIERCE: "red" — TagId에 이미 정의됨
   PIERCE_MINION: "indigo",
+  PIERCE_ONCE:   "indigo",
   AOE:     "indigo",
   GLOBAL:  "indigo",
   SUMMON:  "indigo",

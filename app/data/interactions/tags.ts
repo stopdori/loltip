@@ -9,7 +9,7 @@ export type TagId =
   | "TOWER_DODGE"
   | "SHIELD_BREAK"
   | "SHIELD_PIERCE"
-  | "WALL"
+  | "TERRAIN"
   | "SUPPRESS" // 제압
   | "TETHER"
   | "REVIVE"        // 부활
@@ -29,14 +29,22 @@ export type TagId =
   | "DMG_REDUCE"
   | "DODGE"
   | "TENACITY"
+
+
+    // 시야
   | "VISION"
   | "REVEALED"
   | "TRUE_SIGHT"
   | "POSITION_REVEAL"
+  | "POSITION_HIDDEN"
+  | "POSITION_INDICATOR"
   | "POSITION_TRACK"
   | "FEEDBACK_SOUND"
   | "FEEDBACK_EFFECT"
   | "FEEDBACK_INDICATOR"
+
+
+
   | "SPELL_SHIELD"
   | "CC_IMMUNE"
   | "CC_CLEANSE"
@@ -127,7 +135,7 @@ CRIT: { ko: "치명타", en: "Critical" },
  * ========================= */
 ALLY_TP_OK: { ko: "아군텔", en: "Ally TP" },
 WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
-WALL: { ko: "벽", en: "Wall" },
+TERRAIN: { ko: "벽", en: "TERRAIN" },
 GHOSTING: { ko: "유체화", en: "Ghosting" },
 
 /* =========================
@@ -169,6 +177,8 @@ VISION: { ko: "시야", en: "Vision" },
 REVEALED: { ko: "드러냄", en: "Revealed" },
 TRUE_SIGHT: { ko: "절대시야", en: "True Sight" },
 POSITION_REVEAL: { ko: "위치노출", en: "Position Reveal" },
+POSITION_HIDDEN: { ko: "위치 은닉", en: "Position Hidden" },
+POSITION_INDICATOR: { ko: "위치 단서", en: "Position Indicator" },
 FEEDBACK_SOUND:     { ko: "소리 피드백",     en: "Sound Feedback"     },
 FEEDBACK_EFFECT:    { ko: "이펙트 피드백",  en: "Effect Feedback"    },
 FEEDBACK_INDICATOR: { ko: "피드백",     en: "Indicator Feedback"          },
@@ -289,7 +299,7 @@ SHIELD_PIERCE: {
   ko: "실드를 무시하고 체력에 직접 피해를 줌",
   en: "Bypasses shields and deals damage directly to health",
 },
-WALL: {
+TERRAIN: {
   ko: "벽 생성\n(생성될 때 대체로 에어본)",
   en: "Creates a wall",
 },
@@ -402,6 +412,14 @@ CAMOUFLAGE: {
 POSITION_REVEAL: {
   ko: "상대시야 밖에서 시전자가 스킬을 사용했을 때\n스킬 효과, 시야 제공으로 인해 사용자의 위치가 적에게 드러남",
   en: "Casting a skill from fog of war\n reveals the caster’s location to enemies",
+},
+POSITION_HIDDEN: {
+  ko: "시전해도 위치 정보가 노출되지 않음",
+  en: "Casting this ability does not reveal your position",
+},
+POSITION_INDICATOR: {
+  ko: "내 위치가 직접 노출되지 않지만\n스킬의 장판이나 이펙트로 내 위치가 간접적 노출.",
+  en: "My position is not directly revealed,\nbut the skill’s zone or effects allow\nthe enemy to indirectly infer my location",
 },
 POSITION_TRACK: {
   ko: "스킬 적중 시 효과음, 표식, 피해 반응 등으로 \n적의 대략적인 위치를 추측 가능",
