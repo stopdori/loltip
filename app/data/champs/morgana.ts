@@ -12,18 +12,22 @@ const morgana: ChampData = {
 
   vision: {
     P: [],
-    Q: [],
+    Q: ["FEEDBACK_INDICATOR"],
     W: [],
     E: [],
-    R: [],
+    R: ["TRUE_SIGHT", "POSITION_REVEAL"],
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["PASSIVE_INTERACT", "Q", "W", "R"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE"],
+    W: ["DMG_MAGIC", "TIMING_CAST", "ZONE"],
+    E: ["TARGETED"],
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "TIMING_CAST", "SWARM"] },
+      { label: { ko: "R 사슬", en: "R Tether" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC"] },
+    ] },
+  
   },
 
   notes: {

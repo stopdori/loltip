@@ -5,7 +5,7 @@ const anivia: ChampData = {
   skills: {
     P: ["REVIVE"],
     Q: ["SLOW", "STUN"],
-    W: ["W_FLASH", "WALL", "AIRBORNE"],
+    W: ["W_FLASH", "TERRAIN", "AIRBORNE"],
     E: ["E_FLASH"],
     R: ["R_FLASH", "SLOW"],
   },
@@ -20,10 +20,13 @@ const anivia: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: { phases: [
+      { label: { ko: "Q1", en: "Q1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "MARK", "SKILL_RECAST"] },
+      { label: { ko: "Q2", en: "Q2"  }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE", "MARK"] },
+    ] },
+    W: ["TIMING_CAST", "ZONE", "LOCKED"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "SINGLE"],
+    R: ["DMG_MAGIC", "SKILL_CHANNEL", "TIMING_CAST", "ZONE", "DOT", "MARK"],
   },
 
   notes: {

@@ -12,18 +12,25 @@ const malzahar: ChampData = {
 
   vision: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["VISION"],
+    W: ["VISION"],
+    E: ["POSITION_REVEAL"],
+    R: ["POSITION_REVEAL"],
   },
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "AOE", "BUFF_STACK"],
+    W: { phases: [
+      { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "W 액티브", en: "W Active" }, tags: ["DMG_MAGIC", "STACK_CONSUME", "SUMMON"] },
+    ] },
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "BUFF_STACK"] },
+      { label: { ko: "E 전이", en: "E Contagion" }, tags: ["ST_CONDITIONAL", "CHAIN"] },
+    ] },
+ 
+    R: ["DMG_MAGIC", "SKILL_CHANNEL", "TIMING_CAST", "TARGETED", "SINGLE", "ZONE", "BUFF_STACK"],
   },
 
   notes: {

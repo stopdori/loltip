@@ -6,24 +6,39 @@ const kayle: ChampData = {
     P: ["AS_UP", "MS_UP"],
     Q: ["SLOW", "AR_MR_SHRED", "PIERCE"],
     W: ["W_FLASH", "HEAL", "MS_UP"],
-    E: ["AA_RESET", "BUFF_FORM"],
+    E: ["AA_RESET"],
     R: ["R_FLASH", "INVULNERABLE", "BUFF_FORM"],
   },
 
   vision: {
     P: [],
-    Q: [],
+    Q: ["FEEDBACK_SOUND", "FEEDBACK_EFFECT"],
     W: [],
-    E: [],
+    E: ["POSITION_REVEAL"],
     R: [],
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: { phases: [
+      { label: { ko: "1레벨", en: "1 Lv" }, tags: ["BUFF_STACK", "ON_HIT"] },
+      { label: { ko: "11레벨 희열", en: "11 Lv Exalted" }, tags: ["BUFF_STACK", "DMG_MAGIC", "ON_HIT", "AOE"] },
+    ] },
+
+    Q: { phases: [
+      { label: { ko: "Q", en: "Q" }, tags: ["TIMING_CAST", "PROJECTILE", "SINGLE"] },
+      { label: { ko: "Q 적중", en: "Q Hit" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "NON_PROJECTILE", "AOE"] },
+    ] },
+    
+    W: ["TIMING_CAST", "TARGETED", "CHAIN"],
+    E: { phases: [
+      { label: { ko: "1레벨 E", en: "1 Lv E" }, tags: ["DMG_MAGIC", "PROJECTILE", "ON_HIT"] },
+      { label: { ko: "11레벨 E", en: "11 Lv E" }, tags: ["DMG_MAGIC", "PROJECTILE", "ON_HIT", "AOE"] },
+    ] },
+
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["BUFF_FORM", "TIMING_CAST", "TARGETED"] },
+      { label: { ko: "R 심판", en: "R Judgment" }, tags: ["ST_DELAYED", "DMG_MAGIC", "AOE"] },
+    ] },
   },
 
   notes: {

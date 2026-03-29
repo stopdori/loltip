@@ -7,7 +7,7 @@ const chogath: ChampData = {
     Q: ["Q_FLASH", "AIRBORNE", "SLOW"],
     W: ["W_FLASH", "SILENCE"],
     E: ["AA_RESET", "SLOW"],
-    R: ["R_FLASH", "HEAL", "EXECUTE"],
+    R: ["R_FLASH", "MAX_HP_UP", "EXECUTE"],
   },
 
   vision: {
@@ -20,17 +20,17 @@ const chogath: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "ZONE"],
+    W: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
+    E: ["DMG_MAGIC", "PROJECTILE", "PIERCE", "BUFF_STACK"],
+    R: ["DMG_TRUE", "TIMING_CAST", "TARGETED"],
   },
 
   notes: {
     ko: [
-    "R(포식)은 대상을 처치하면 최대체력이 증가한다는 관점에서 [[HEAL]]이라고 적음 \n다만 [[GW]]은 적용안됨"
+    "초가스의 덩치가 커지면 평타 사거리, 스킬 사정거리들이 증가함.", "E 스킬은 [[BUFF_STACK]] 3개를 초가스에게 부여하는것.\n 이때 평타를 때리면 버프스택을 소모해서 투사체를 추가로 발사하는 것."
   ],
-    en: ["R (Feast) is listed as [[HEAL]] because it increases max HP on kill,\nbut [[GW]] does not apply"]
+    en: ["As Cho'Gath grows larger, basic attack range and skill ranges increase.", "E grants Cho'Gath 3 [[BUFF_STACK]] stacks.\nAuto-attacking consumes stacks to fire bonus projectiles."]
   },
 
   ultCooldown: {

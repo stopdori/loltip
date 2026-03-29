@@ -6,7 +6,7 @@ const corki: ChampData = {
     P: [],
     Q: ["Q_FLASH", "REVEALED"],
     W: ["W_FLASH", "WALL_HOP"],
-    E: ["E_FLASH", "AR_MR_SHRED"],
+    E: ["E_FLASH", "AR_MR_SHRED", "BUFF_FORM"],
     R: ["R_FLASH"],
   },
 
@@ -19,11 +19,11 @@ const corki: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DMG_TRUE", "ON_HIT"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE"],
+    W: ["DMG_MAGIC", "PROJECTILE", "DOT", "AOE", "DASH"],
+    E: ["BUFF_FORM", "DMG_PHYSICAL", "LOCKED", "DOT", "AOE"],
+    R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "AOE", "RECHARGE"],
   },
 
   notes: {

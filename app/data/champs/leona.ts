@@ -19,11 +19,20 @@ const leona: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: { phases: [
+      { label: { ko: "표식", en: "Mark" }, tags: ["ST_CONDITIONAL", "MARK"] },
+      { label: { ko: "표식 폭발", en: "Burst" }, tags: ["ST_CONDITIONAL", "PROC", "DMG_MAGIC"] },
+    ] },
+    Q: ["DMG_MAGIC", "ON_HIT", ],
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["BUFF_FORM"] },
+      { label: { ko: "W 폭발", en: "W Burst" }, tags: ["DMG_MAGIC", "AOE"] },
+    ] },
+    E: { phases: [
+      { label: { ko: "찌르기단계", en: "Stab" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "CC_BUFFER"] },
+      { label: { ko: "돌진단계",   en: "Dash" }, tags: ["ST_CONDITIONAL", "DASH"] },
+    ] },
+    R: ["DMG_MAGIC", "TIMING_CAST", "ZONE"],
   },
 
   notes: {

@@ -3,11 +3,15 @@ import type { ChampData } from "../interactions/types";
 const pyke: ChampData = {
   id: "pyke",
   skills: {
-    P: ["HEAL"],
-    Q: ["Q_FLASH", "SLOW", "GRAB"],
-    W: ["W_FLASH", "MS_UP", "BUFF_FORM"],
-    E: ["E_FLASH", "WALL_HOP", "STUN", "BUFF_FORM"],
-    R: ["R_FLASH", "WALL_HOP", "EXECUTE", "UNINTERRUPTIBLE_CAST", "CC_BUFFER"],
+    P: ["HEAL", "AD_UP"],
+    Q: { phases: [
+      { label: { ko: "Q 짧게", en: "Q Stab" }, tags: ["Q_FLASH", "SLOW"] },
+      { label: { ko: "Q 길게", en: "Q Charged" }, tags: ["Q_FLASH", "GRAB"] },
+    ] },
+    
+    W: ["W_FLASH", "MS_UP", "CAMOUFLAGE"],
+    E: ["E_FLASH", "WALL_HOP", "STUN", "GHOSTING"],
+    R: ["R_FLASH", "WALL_HOP", "EXECUTE", "CC_BUFFER"],
   },
 
   vision: {
@@ -19,11 +23,20 @@ const pyke: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["PASSIVE_BONUS"],
+    Q: { phases: [
+      { label: { ko: "Q 짧게", en: "Q Stab" }, tags: ["DMG_PHYSICAL", "TIMING_INSTANT", "NON_PROJECTILE", "SINGLE"] },
+      { label: { ko: "Q 길게", en: "Q Charged" }, tags: ["DMG_PHYSICAL", "SKILL_CHARGED", "TIMING_CAST", "PROJECTILE"] },
+    ] },
+    W: ["BUFF_FORM"],
+    E: { phases: [
+      { label: { ko: "E", en: "E"}, tags: ["DASH"] },
+      { label: { ko: "E 잔상", en: "E Afterimage" }, tags: ["DMG_PHYSICAL", "AOE", "ST_DELAYED"] },
+    ] },
+    R: { phases: [
+      { label: { ko: "준비단계",     en: "Wind-up" }, tags: ["TIMING_CAST", "CC_BUFFER", "MOBILITY"] },
+      { label: { ko: "순간이동단계", en: "Blink"   }, tags: ["DMG_PHYSICAL", "AOE", "BLINK", "SKILL_RECAST"] },
+    ] },
   },
 
   notes: {

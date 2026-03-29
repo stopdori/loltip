@@ -19,16 +19,19 @@ const gangplank: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
+    P: ["DMG_TRUE", "ON_HIT", "DOT"],
+    Q: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "PROJECTILE"],
     W: [],
-    E: [],
-    R: [],
+    E: ["DMG_PHYSICAL", "TIMING_CAST", "ZONE", "CHAIN", "SUMMON"],
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DOT", "LOCKED"] },
+      { label: { ko: "죽음의 여신", en: " Death's Daughter" }, tags: ["DMG_TRUE"] },
+    ] },
   },
 
   notes: {
     ko: [
-    "마나 게이지 밑에 화약통 갯수 나옴"
+    "P의 쿨타임은 갱플랭크가 화약통을 폭발시키면 초기화 됨.", "마나 게이지 밑에 화약통 갯수 나옴", 
   ],
     en: ["Powder keg count is shown below the mana bar"]
   },

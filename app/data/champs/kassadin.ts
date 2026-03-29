@@ -20,10 +20,13 @@ const kassadin: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE"],
+    W: ["DMG_MAGIC", "ON_HIT"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
+    R: { phases: [
+      { label: { ko: "준비단계",     en: "Wind-up" }, tags: ["TIMING_CAST"] },
+      { label: { ko: "순간이동단계", en: "Blink"   }, tags: ["DMG_MAGIC", "AOE", "BUFF_STACK"] },
+    ] },
   },
 
   notes: {

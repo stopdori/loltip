@@ -6,8 +6,8 @@ const braum: ChampData = {
     P: ["STUN"],
     Q: ["Q_FLASH", "SLOW"],
     W: ["W_FLASH", "WALL_HOP"],
-    E: ["E_FLASH", "DMG_REDUCE"],
-    R: ["AIRBORNE", "SLOW", "UNINTERRUPTIBLE_CAST"],
+    E: ["E_FLASH", "DMG_REDUCE", "BUFF_FORM"],
+    R: ["AIRBORNE", "SLOW"],
   },
 
   vision: {
@@ -19,11 +19,11 @@ const braum: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DMG_MAGIC", "PROC"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "DEBUFF_STACK"],
+    W: ["DASH"],
+    E: ["BUFF_FORM", "LOCKED"],
+    R: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE"],
   },
 
   notes: {

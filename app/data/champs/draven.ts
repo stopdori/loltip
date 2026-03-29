@@ -7,7 +7,7 @@ const draven: ChampData = {
     Q: [],
     W: ["AS_UP", "MS_UP"],
     E: ["E_FLASH", "AIRBORNE", "SLOW"],
-    R: ["EXECUTE", "UNINTERRUPTIBLE_CAST"],
+    R: ["EXECUTE"],
   },
 
   vision: {
@@ -20,10 +20,13 @@ const draven: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
+    Q: { phases: [
+      { label: { ko: "Q", en: "Q" }, tags: ["BUFF_STACK"] },
+      { label: { ko: "회전도끼", en: "Spinning Axe"  }, tags: ["DMG_PHYSICAL", "PROJECTILE", "ON_HIT"] },
+    ] },
     W: [],
-    E: [],
-    R: [],
+    E: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE"],
+    R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE", "SKILL_RECAST"],
   },
 
   notes: {

@@ -4,31 +4,51 @@ const poppy: ChampData = {
   id: "poppy",
   skills: {
     P: ["SHIELD"],
-    Q: ["Q_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
+    Q: ["Q_FLASH", "SLOW"],
     W: ["ANTI_DASH", "MS_UP", "GROUNDED", "BUFF_FORM"],
     E: ["E_FLASH", "STUN", "WALL_HOP"],
-    R: ["R_FLASH", "AIRBORNE", "UNINTERRUPTIBLE_CAST"],
+    R: ["R_FLASH", "AIRBORNE"],
   },
 
   vision: {
-    P: [],
-    Q: [],
+    P: ["POSITION_REVEAL"],
+    Q: ["FEEDBACK_SOUND"],
     W: [],
-    E: [],
-    R: [],
+    E: ["POSITION_REVEAL"],
+    R: ["REVEALED"],
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: { phases: [
+      { label: { ko: "P", en: "P" }, tags: ["DMG_MAGIC", "PROJECTILE", "ON_HIT"] },
+      { label: { ko: "P 방패", en: "P Shield" }, tags: ["ZONE"] },
+    ] },
+
+    Q: { phases: [
+      { label: { ko: "Q ", en: "Q" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE"] },
+      { label: { ko: "Q 폭발", en: "Q Burst" }, tags: ["ST_DELAYED", "DMG_PHYSICAL", "AOE"] },
+    ] },
+
+    W: { phases: [
+      { label: { ko: "W 패시브", en: "W Passive" }, tags: [] },
+      { label: { ko: "W 액티브", en: "W Active" }, tags: ["AOE", "LOCKED", "BUFF_FORM"] },
+      { label: { ko: "W 이동방해", en: "W Grounded" }, tags: ["DMG_MAGIC", "DEBUFF_STACK"] },
+    ] },
+
+    E: { phases: [
+      { label: { ko: "E", en: "" }, tags: ["DMG_PHYSICAL", "TARGETED", "DASH"] },
+      { label: { ko: "E 벽꿍", en: "E Hits Terrain" }, tags: ["DMG_PHYSICAL"] },
+    ] },
+
+    R: { phases: [
+      { label: { ko: "", en: "" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE"] },
+      { label: { ko: "", en: "" }, tags: ["DMG_PHYSICAL", "SKILL_CHARGED", "TIMING_CAST", "TIMING_AFTERCAST", "PROJECTILE", "PIERCE", "CANCELLABLE"] },
+    ] },
   },
 
   notes: {
     ko: [
-    "P는 방패를 주워야 방어막이 생김", "[[E_FLASH]]은 [[INSEC_KICK]] 안됨", "[[R_FLASH]]은 짧게 모은것만 됨\n충전하면 불가\n충전하면 넥서스방향으로 날려보냄", "뽀삐가 W로 상대 이동스킬을 저지하면\n더이상 이동기를 사용하지 못하게 만듦\n[[GROUNDED]]를 [[CC_CLEANSE]]하면 이동기 사용 가능", "예) 레넥톤이 뽀삐에 붙어서 E를 쓰면 스킬이 유효하고 E 쿨타임을 돌려줌. 그리고나서 뽀삐 W에 막혀 [[AIRBORNE]]과 [[GROUNDED]]가 걸림\n이때 레넥톤이 [[CC_CLEANSE]]를 사용하면 레넥톤 E 사용 가능", "E는 이동기 중에서도 판정이 최고", "R의 [[UNINTERRUPTIBLE_CAST]]은 R을 짧게 쓸 때, 길게 쓸 때, 다 해당."
+    "P는 방패를 주워야 방어막이 생김", "[[E_FLASH]]은 [[INSEC_KICK]] 안됨", "[[R_FLASH]]은 짧게 모은것만 됨\n충전하면 불가\n충전하면 넥서스방향으로 날려보냄", "뽀삐가 W로 상대 이동스킬을 저지하면\n더이상 이동기를 사용하지 못하게 만듦\n[[GROUNDED]]를 [[CC_CLEANSE]]하면 이동기 사용 가능", "예) 레넥톤이 뽀삐에 붙어서 E를 쓰면 스킬이 유효하고 E 쿨타임을 돌려줌. 그리고나서 뽀삐 W에 막혀 [[AIRBORNE]]과 [[GROUNDED]]가 걸림\n이때 레넥톤이 [[CC_CLEANSE]]를 사용하면 레넥톤 E 사용 가능", "E는 이동기 중에서도 판정이 최고"
   ],
     en: ["P requires picking up the shield to gain the barrier", "[[E_FLASH]] does not [[INSEC_KICK]]", "[[R_FLASH]] only works with a short charge.\nFull charge version fires toward the nexus instead", "When Poppy's W interrupts a dash, the target can no longer use movement abilities.\n[[GROUNDED]] can be removed by [[CC_CLEANSE]] to re-enable movement skills", "Example: Renekton dashes into Poppy with E — the skill activates and the cooldown runs. Then Poppy's W blocks him, applying [[AIRBORNE]] and [[GROUNDED]].\nIf Renekton uses [[CC_CLEANSE]], E becomes usable again", "E has the highest interrupt priority among movement abilities"]
   },

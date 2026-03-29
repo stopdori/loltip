@@ -20,10 +20,13 @@ const ashe: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["DMG_PHYSICAL", "PROJECTILE", "ON_HIT", "BUFF_STACK"],
+    W: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "VOLLEY"],
+    E: ["TIMING_CAST", "ZONE", "GLOBAL", "RECHARGE"],
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE"] },
+      { label: { ko: "R 폭발", en: "R Burst"  }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE"] },
+    ] },
   },
 
   notes: {

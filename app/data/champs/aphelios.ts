@@ -7,7 +7,7 @@ const aphelios: ChampData = {
     Q: ["Q_FLASH", "LIFESTEAL", "SHIELD", "ALLY_TP_OK"],
     W: [],
     E: [],
-    R: ["UNINTERRUPTIBLE_CAST"],
+    R: [],
   },
 
   vision: {
