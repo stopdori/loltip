@@ -1,9 +1,12 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import AdSlot from "@/app/components/AdSlot";
 import Script from "next/script";
+
+const BASE_URL = "https://www.loltip.com";
 
 export default async function LocaleLayout({
   children,
@@ -20,8 +23,18 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  const headersList = await headers();
+  const fullPathname = headersList.get("x-pathname") ?? `/${locale}`;
+  // /ko/champ/ahri → /champ/ahri
+  const pathWithoutLocale = fullPathname.replace(new RegExp(`^/${locale}`), "") || "/";
+
   return (
     <html lang={locale}>
+      <head>
+        <link rel="alternate" hrefLang="ko" href={`${BASE_URL}/ko${pathWithoutLocale}`} />
+        <link rel="alternate" hrefLang="en" href={`${BASE_URL}/en${pathWithoutLocale}`} />
+        <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/ko${pathWithoutLocale}`} />
+      </head>
       <body className="bg-slate-900">
 
         <NextIntlClientProvider messages={messages}>
