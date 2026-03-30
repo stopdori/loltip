@@ -1,36 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import ChampSelectButton from "../components/ChampSelectButton";
-import ChampSelectModal from "../components/ChampSelectModal";
-import SkillTagsPanel from "../components/SkillTagsPanel";
-import MatchupSummaryBox from "../components/MatchupSummaryBox";
-import UltCooldownBox from "../components/UltCooldownBox";
+import { useLocale } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
+import ChampSelectButton from "@/app/components/ChampSelectButton";
+import ChampSelectModal from "@/app/components/ChampSelectModal";
+import SkillTagsPanel from "@/app/components/SkillTagsPanel";
+import MatchupSummaryBox from "@/app/components/MatchupSummaryBox";
+import UltCooldownBox from "@/app/components/UltCooldownBox";
 
-import { CHAMPIONS, type Champ } from "../data/champions";
-import { CHAMPS } from "../data/champs/_index";
-import FeedbackButton from "../components/FeedbackButton";
-import QuizWidget from "../components/QuizWidget";
-import SiteHeader from "../components/SiteHeader";
-import AdSlot from "../components/AdSlot";
+import { CHAMPIONS, type Champ } from "@/app/data/champions";
+import { CHAMPS } from "@/app/data/champs/_index";
+import FeedbackButton from "@/app/components/FeedbackButton";
+import QuizWidget from "@/app/components/QuizWidget";
+import SiteHeader from "@/app/components/SiteHeader";
+import AdSlot from "@/app/components/AdSlot";
 
 type Lang = "ko" | "en";
-const LANG_KEY = "loltip_lang";
-
-function detectDefaultLang(): Lang {
-  const browser = (navigator.language || "").toLowerCase();
-  return browser.startsWith("ko") ? "ko" : "en";
-}
-
-function readSavedLang(): Lang | null {
-  const v = localStorage.getItem(LANG_KEY);
-  return v === "ko" || v === "en" ? v : null;
-}
-
-function saveLang(v: Lang) {
-  localStorage.setItem(LANG_KEY, v);
-}
 
 type Props = {
   forcedMe?: string | null;
@@ -39,20 +25,8 @@ type Props = {
 };
 
 export default function Home({ forcedMe, forcedEnemy, highlight }: Props) {
-  const [lang, setLang] = useState<Lang>("ko");
-
-  
-  useEffect(() => {
-    const saved = readSavedLang();
-    setLang(saved ?? detectDefaultLang());
-  }, []);
-
-  const setLangAndPersist = (v: Lang) => {
-    setLang(v);
-    saveLang(v);
-  };
-
-
+  const locale = useLocale();
+  const lang = locale as Lang;
 
   const router = useRouter();
 
@@ -147,8 +121,6 @@ useEffect(() => {
 
 
       <SiteHeader
-        lang={lang}
-        onLangChange={setLangAndPersist}
         subtitle={subtitle}
         champSearchOpen={openTarget !== null}
         helpOpen={helpOpen}

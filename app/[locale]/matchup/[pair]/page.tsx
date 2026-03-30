@@ -6,16 +6,24 @@ import { CHAMPIONS } from "@/app/data/champions";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import type { TagId } from "@/app/data/interactions/tags";
-import ChampClient from "@/app/champ/ChampClient";
+import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
+import type { GimmickTagId } from "@/app/data/interactions/tags_gimmick";
+import ChampClient from "@/app/[locale]/champ/ChampClient";
+
+type Lang = "ko" | "en";
 
 type Props = {
-  params: Promise<{ pair: string }>;
+  params: Promise<{ locale: string; pair: string }>;
   searchParams: Promise<{ first?: string; highlight?: string }>;
 };
 
-function stripTags(text: string): string {
+function stripTags(text: string, lang: Lang): string {
   return text.replace(/\[\[([^\]]+)\]\]/g, (_, tagId) => {
-    return TAG_LABEL[tagId as TagId]?.ko ?? tagId;
+    return (
+      GIMMICK_TAG_LABEL[tagId as GimmickTagId]?.[lang] ??
+      TAG_LABEL[tagId as TagId]?.[lang] ??
+      tagId
+    );
   });
 }
 
@@ -53,7 +61,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params, searchParams }: Props) {
-  const { pair } = await params;
+  const { locale, pair } = await params;
+  const lang = locale as Lang;
   const { first, highlight } = await searchParams;
 
   const parts = pair.split("-vs-");
@@ -81,7 +90,7 @@ export default async function Page({ params, searchParams }: Props) {
   const highlights: { champId: string; champKo: string; items: string[] }[] = [];
   if (matchup?.status === "ok") {
     for (const champId of [forcedMe, forcedEnemy]) {
-      const items = matchup.data.highlightsByChamp?.[champId]?.ko ?? [];
+      const items = matchup.data.highlightsByChamp?.[champId]?.[lang] ?? [];
       if (items.length > 0) {
         const info = CHAMPIONS.find((c) => c.id === champId);
         highlights.push({ champId, champKo: info?.ko ?? champId, items });
@@ -108,7 +117,7 @@ export default async function Page({ params, searchParams }: Props) {
   // JSON-LD FAQPage (판정 세부사항)
   const faqEntities = highlights.flatMap(({ champKo, items }) =>
     items.flatMap((text, i) => {
-      const stripped = stripTags(text);
+      const stripped = stripTags(text, lang);
       if (!stripped) return [];
       return [{
         "@type": "Question",
@@ -145,7 +154,7 @@ export default async function Page({ params, searchParams }: Props) {
             <h2>{champKo} 판정</h2>
             <ul>
               {items.map((text, i) => (
-                <li key={i}>{stripTags(text)}</li>
+                <li key={i}>{stripTags(text, lang)}</li>
               ))}
             </ul>
           </div>

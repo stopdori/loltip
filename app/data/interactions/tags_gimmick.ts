@@ -54,6 +54,7 @@ export type GimmickTagId =
   | "ON_HIT"
   | "ZONE"
   | "AOE"
+  | "AURA"
   | "DOT"
   // 시전 행동
   | "CAST_COMMIT"
@@ -137,6 +138,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   PIERCE_MINION: { ko: "미니언 관통", en: "Minion Pierce" },
   PIERCE_ONCE:   { ko: "1회 관통",   en: "Pierce Once"  },
   AOE:     { ko: "범위",   en: "Area of Effect"  },
+  AURA:    { ko: "오라",   en: "Aura"            },
   GLOBAL:  { ko: "전체맵", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
   SWARM:   { ko: "분산",     en: "Swarm"   },
@@ -205,6 +207,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   PIERCE_MINION: { ko: "미니언을 관통하여 지나가지만 챔피언은 관통 못하는 조건부 관통", en:   "Passes through minions\nDoes not pierce champions"  },
   PIERCE_ONCE:   { ko: "적 챔피언 1명을 관통하고 멈춤.", en: "Pierces through one enemy champion and stops." },
   AOE:         { ko: "특정 범위 내 여러 대상에게 적용", en: "Affects multiple targets within an area" },
+  AURA:        { ko: "주변 아군 또는 적에게 지속적으로 영향을 주는 범위 효과.", en: "A persistent area effect that continuously affects nearby allies or enemies." },
   GLOBAL:      { ko: "맵 전체 또는 모든 적에게 적용", en: "Affects all enemies or the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
   SWARM:   { ko: "스킬이 근처 적에게 나뉘어 각각 단일 적중", en: "Splits among nearby enemies,\n each hitting a single target"},

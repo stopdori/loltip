@@ -197,6 +197,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   PIERCE_MINION: "indigo",
   PIERCE_ONCE:   "indigo",
   AOE:     "indigo",
+  AURA:    "indigo",
   GLOBAL:  "indigo",
   SUMMON:  "indigo",
   SWARM:   "indigo",

@@ -29,7 +29,7 @@ function getFormBlocks(champId: string, skills: ChampSkill): FormBlock[] {
   return blocks;
 }
 
-function buildSkillFaqJsonLd(champNameKo: string, champId: string, skills: ChampSkill) {
+function buildSkillFaqJsonLd(champName: string, champId: string, skills: ChampSkill, lang: Lang) {
   const forms = getFormBlocks(champId, skills);
 
   const entities = forms.flatMap(({ formKo, block }) =>
@@ -42,21 +42,21 @@ function buildSkillFaqJsonLd(champNameKo: string, champId: string, skills: Champ
       if (tags.length === 0) return [];
 
       const labels = tags
-        .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.ko ?? GIMMICK_TAG_LABEL[t as keyof typeof GIMMICK_TAG_LABEL]?.ko)
+        .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.[lang] ?? GIMMICK_TAG_LABEL[t as keyof typeof GIMMICK_TAG_LABEL]?.[lang])
         .filter(Boolean)
         .join(", ");
       if (!labels) return [];
 
-      const name = formKo
-        ? `${champNameKo} ${formKo} ${key}스킬의 특징은 무엇인가요?`
-        : `${champNameKo} ${key}스킬의 특징은 무엇인가요?`;
+      const name = lang === "ko"
+        ? (formKo ? `${champName} ${formKo} ${key}스킬의 특징은 무엇인가요?` : `${champName} ${key}스킬의 특징은 무엇인가요?`)
+        : (formKo ? `What are the features of ${champName} ${formKo} ${key} skill?` : `What are the features of ${champName}'s ${key} skill?`);
 
       return [{
         "@type": "Question",
         name,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `${key}스킬: ${labels}`,
+          text: lang === "ko" ? `${key}스킬: ${labels}` : `${key} skill: ${labels}`,
         },
       }];
     })
@@ -71,8 +71,10 @@ function buildSkillFaqJsonLd(champNameKo: string, champId: string, skills: Champ
   };
 }
 
+type Lang = "ko" | "en";
+
 type Props = {
-  params: Promise<{ id: string }>;
+  params: Promise<{ locale: string; id: string }>;
   searchParams: Promise<{ side?: string }>;
 };
 
@@ -108,6 +110,7 @@ export default async function Page(props: Props) {
   const params = await props.params;
   const searchParams = await props.searchParams;
 
+  const lang = (params?.locale ?? "ko") as Lang;
   const id = params?.id;
   if (!id) notFound();
 
@@ -124,10 +127,10 @@ export default async function Page(props: Props) {
   const champInfo = CHAMPIONS.find(c => c.id === champId);
   if (!champInfo) notFound();
 
-  const notesKo =
+  const notes =
     Array.isArray(champData.notes)
       ? champData.notes
-      : champData.notes?.ko ?? [];
+      : champData.notes?.[lang] ?? [];
 
   const side = searchParams?.side ?? "my";
 
@@ -135,7 +138,12 @@ export default async function Page(props: Props) {
   const forcedEnemy = side === "enemy" ? champId : null;
   const renderKey = `${forcedMe ?? "none"}-${forcedEnemy ?? "none"}`;
 
-  const skillFaqJsonLd = buildSkillFaqJsonLd(champInfo.ko, champId, champData.skills);
+  const skillFaqJsonLd = buildSkillFaqJsonLd(
+    lang === "ko" ? champInfo.ko : champInfo.en,
+    champId,
+    champData.skills,
+    lang
+  );
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -196,9 +204,12 @@ export default async function Page(props: Props) {
                   ? raw
                   : raw.phases.flatMap((p) => (p ? p.tags : []));
                 if (tags.length === 0) return null;
+                const labelStr = tags
+                  .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.[lang] ?? GIMMICK_TAG_LABEL[t as keyof typeof GIMMICK_TAG_LABEL]?.[lang] ?? t)
+                  .join(", ");
                 return (
                   <li key={key}>
-                    {formKo ? `${formKo} ${key}` : key}: {tags.join(", ")}
+                    {formKo ? `${formKo} ${key}` : key}: {labelStr}
                   </li>
                 );
               })}
@@ -208,7 +219,7 @@ export default async function Page(props: Props) {
 
         <h2>Champion Notes</h2>
         <ul>
-          {notesKo.slice(0, 3).map((note, i) => (
+          {notes.slice(0, 3).map((note, i) => (
             <li key={i}>{note}</li>
           ))}
         </ul>
