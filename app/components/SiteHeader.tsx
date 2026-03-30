@@ -89,7 +89,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
             className={`px-3 py-2 rounded-xl text-sm font-bold border ${
               lang === "ko"
                 ? "bg-yellow-400 text-black border-yellow-300"
-                : "bg-slate-800/60 border-white/10"
+                : "bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
             }`}
           >
             한글
@@ -99,7 +99,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
             className={`px-3 py-2 rounded-xl text-sm font-bold border ${
               lang === "en"
                 ? "bg-yellow-400 text-black border-yellow-300"
-                : "bg-slate-800/60 border-white/10"
+                : "bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
             }`}
           >
             EN
