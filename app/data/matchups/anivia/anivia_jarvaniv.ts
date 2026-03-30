@@ -9,8 +9,8 @@ export const anivia_jarvaniv: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 자르반 EQ(깃창)의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 자르반 EQ(깃창)의 이동을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Jarvan IV's EQ (flag-toss combo) movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Jarvan IV's EQ (flag-toss combo) movement."],
+      ko: ["애니비아 Q의 [[STUN]]로 자르반 EQ(깃창)의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 자르반 EQ(깃창)의 [[DASH]]을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Jarvan IV's EQ (flag-toss combo) [[DASH]]. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Jarvan IV's EQ (flag-toss combo) [[DASH]]."],
     },
     jarvaniv: {
       ko: [],

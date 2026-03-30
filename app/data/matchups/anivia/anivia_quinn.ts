@@ -9,8 +9,8 @@ export const anivia_quinn: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 퀸 E의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 퀸 E의 이동을 끊을 수 있음.", "애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 퀸 R을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Quinn's E movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Quinn's E movement.", "Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Quinn's R."],
+      ko: ["애니비아 Q의 [[STUN]]로 퀸 E의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 퀸 E의 [[DASH]]을 끊을 수 있음.", "애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 퀸 R을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Quinn's E [[DASH]]. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Quinn's E [[DASH]].", "Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Quinn's R."],
     },
     quinn: {
       ko: [],
