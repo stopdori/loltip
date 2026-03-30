@@ -1,43 +1,44 @@
 import { MetadataRoute } from "next";
 import { CHAMPIONS } from "@/app/data/champions";
 
+const LOCALES = ["ko", "en"] as const;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.loltip.com";
+  const now = new Date();
 
   const urls: MetadataRoute.Sitemap = [];
 
-  // 메인
-  urls.push({
-    url: `${baseUrl}/champ`,
-    lastModified: new Date(),
-    changeFrequency: "daily",
-    priority: 1,
-  });
-
-  // 단일 챔피언 페이지
-  for (const champ of CHAMPIONS) {
+  for (const locale of LOCALES) {
+    // 메인
     urls.push({
-      url: `${baseUrl}/champ/${champ.id}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      url: `${baseUrl}/${locale}/champ`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: locale === "ko" ? 1 : 0.9,
     });
-  }
 
-  // ★ 핵심: 모든 매치업 페이지 생성
-  for (let i = 0; i < CHAMPIONS.length; i++) {
-    for (let j = i + 1; j < CHAMPIONS.length; j++) {
-      const a = CHAMPIONS[i].id;
-      const b = CHAMPIONS[j].id;
-
-      const pair = [a, b].sort().join("-vs-");
-
+    // 단일 챔피언 페이지
+    for (const champ of CHAMPIONS) {
       urls.push({
-        url: `${baseUrl}/matchup/${pair}`,
-        lastModified: new Date(),
+        url: `${baseUrl}/${locale}/champ/${champ.id}`,
+        lastModified: now,
         changeFrequency: "weekly",
-        priority: 0.7,
+        priority: locale === "ko" ? 0.8 : 0.7,
       });
+    }
+
+    // 모든 매치업 페이지
+    for (let i = 0; i < CHAMPIONS.length; i++) {
+      for (let j = i + 1; j < CHAMPIONS.length; j++) {
+        const pair = [CHAMPIONS[i].id, CHAMPIONS[j].id].sort().join("-vs-");
+        urls.push({
+          url: `${baseUrl}/${locale}/matchup/${pair}`,
+          lastModified: now,
+          changeFrequency: "weekly",
+          priority: locale === "ko" ? 0.7 : 0.6,
+        });
+      }
     }
   }
 
