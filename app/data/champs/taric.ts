@@ -6,7 +6,7 @@ const taric: ChampData = {
     P: ["AS_UP"],
     Q: ["HEAL"],
     W: ["W_FLASH", "SHIELD", "BUFF_FORM"],
-    E: ["E_FLASH", "STUN", "BUFF_FORM"],
+    E: ["E_FLASH", "STUN"],
     R: ["R_FLASH", "INVULNERABLE", "BUFF_FORM"],
   },
 
@@ -21,9 +21,9 @@ const taric: ChampData = {
   gimmick: {
     P: [],
     Q: [],
-    W: [],
+    W: ["BUFF_FORM"],
     E: [],
-    R: [],
+    R: ["BUFF_FORM"],
   },
 
   notes: {

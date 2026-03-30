@@ -5,7 +5,7 @@ const smolder: ChampData = {
   skills: {
     P: [],
     Q: ["Q_FLASH", "EXECUTE"],
-    W: ["W_FLASH", "SLOW", "UNINTERRUPTIBLE_CAST"],
+    W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "MS_UP", "WALL_HOP"],
     R: ["SLOW", "HEAL"],
   },

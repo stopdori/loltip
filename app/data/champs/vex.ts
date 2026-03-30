@@ -23,7 +23,7 @@ const vex: ChampData = {
     Q: [],
     W: [],
     E: [],
-    R: [],
+    R: ["UNSTOPPABLE"],
   },
 
   notes: {

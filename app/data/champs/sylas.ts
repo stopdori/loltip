@@ -4,7 +4,7 @@ const sylas: ChampData = {
   id: "sylas",
   skills: {
     P: [],
-    Q: ["SLOW", "UNINTERRUPTIBLE_CAST"],
+    Q: ["SLOW"],
     W: ["W_FLASH", "LIFESTEAL", "WALL_HOP"],
     E: ["AIRBORNE", "WALL_HOP", "CC_BUFFER"],
     R: ["R_FLASH"],

@@ -5,8 +5,8 @@ const singed: ChampData = {
   skills: {
     P: ["MS_UP"],
     Q: ["BUFF_FORM"],
-    W: ["W_FLASH", "GROUNDED", "SLOW", "UNINTERRUPTIBLE_CAST"],
-    E: ["E_FLASH", "GRAB", "ROOT", "UNINTERRUPTIBLE_CAST"],
+    W: ["W_FLASH", "GROUNDED", "SLOW", "CAST_COMMIT"],
+    E: ["E_FLASH", "GRAB", "ROOT", "CAST_COMMIT"],
     R: ["HEAL", "MS_UP", "GW", "BUFF_FORM"],
   },
 
@@ -23,7 +23,7 @@ const singed: ChampData = {
     Q: [],
     W: [],
     E: [],
-    R: [],
+    R: ["BUFF_FORM"],
   },
 
   notes: {

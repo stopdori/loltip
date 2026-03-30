@@ -1,12 +1,8 @@
-import aurelionsol from "../champs/aurelionsol";
 import heimerdinger from "../champs/heimerdinger";
 import kaisa from "../champs/kaisa";
 import karma from "../champs/karma";
 import khazix from "../champs/khazix";
 import lissandra from "../champs/lissandra";
-import lulu from "../champs/lulu";
-import pantheon from "../champs/pantheon";
-import qiyana from "../champs/qiyana";
 import yunara from "../champs/yunara";
 
 export type FormKey = "base" | "alt" | "alt2";
@@ -19,11 +15,6 @@ export const CHAMP_FORMS: Record<
     alt2?: { ko: string; en: string };
   }
 > = {
-
-  aurelionsol: {
-    base: { ko: "기본", en: "Nomal" },
-    alt: { ko: "천상강림", en: "Cosmic Flight" },
-  },
 
   jayce: {
     base: { ko: "캐논", en: "Ranged" },
@@ -82,26 +73,6 @@ export const CHAMP_FORMS: Record<
     alt: { ko: "변신", en: "All Out" },
   },
 
-  lissandra: {
-    base: { ko: "R상대", en: "R Nomal" },
-    alt: { ko: "R자신", en: "R Self" },
-  },
-
-  lulu: {
-    base: { ko: "아군", en: "Base" },
-    alt: { ko: "상대", en: "Enermy" },
-  },
-
-  pantheon: {
-    base: { ko: "기본", en: "Base" },
-    alt: { ko: "강화", en: "Enchanted" },
-  },
-
-  qiyana: {
-    base: { ko: "숲", en: "Brush" },
-    alt: { ko: "물", en: "River" },
-    alt2: { ko: "땅", en: "Terrain" },
-  },
 
   reksai: {
     base: { ko: "돌출", en: "Base" },
@@ -113,21 +84,6 @@ export const CHAMP_FORMS: Record<
     alt: { ko: "용형상", en: "Dragon" },
   },
 
-  rell: {
-    base: { ko: "승마", en: "Mounted" },
-    alt: { ko: "중갑", en: "Dismounted" },
-  },
-
-  renekton: {
-    base: { ko: "기본", en: "Base" },
-    alt: { ko: "강화", en: "Anger" },
-  },
-
-  rengar: {
-    base: { ko: "기본", en: "Base" },
-    alt: { ko: "강화", en: "Ferocity" },
-  },
-  
   udyr: {
     base: { ko: "기본", en: "Base" },
     alt: { ko: "각성", en: "Awakened" },

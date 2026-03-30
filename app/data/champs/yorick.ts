@@ -5,7 +5,7 @@ const yorick: ChampData = {
   skills: {
     P: ["ALLY_TP_OK"],
     Q: ["HEAL", "AA_RESET"],
-    W: ["W_FLASH", "WALL", "AIRBORNE"],
+    W: ["W_FLASH", "TERRAIN", "AIRBORNE"],
     E: ["E_FLASH", "MS_UP", "SLOW", "AR_SHRED"],
     R: ["ALLY_TP_OK"],
   },

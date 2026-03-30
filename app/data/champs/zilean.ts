@@ -23,7 +23,7 @@ const zilean: ChampData = {
     Q: [],
     W: [],
     E: [],
-    R: [],
+    R: ["BUFF_FORM"],
   },
 
   notes: {

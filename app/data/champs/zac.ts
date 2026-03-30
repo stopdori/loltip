@@ -7,7 +7,7 @@ const zac: ChampData = {
     Q: ["SLOW", "AIRBORNE", "TETHER"],
     W: [],
     E: ["AIRBORNE", "WALL_HOP"],
-    R: ["R_FLASH", "KNOCKBACK", "SLOW", "UNINTERRUPTIBLE_CHANNEL"],
+    R: ["R_FLASH", "KNOCKBACK", "SLOW"],
   },
 
   vision: {
