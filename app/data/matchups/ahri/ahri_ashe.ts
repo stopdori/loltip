@@ -13,7 +13,7 @@ export const ahri_ashe: MatchupSummary = {
       en: [],
     },
     ashe: {
-      ko: ["애쉬 R의 [[STUN]]으로 아리 R을 끊을 수 없음"],
+      ko: ["애쉬 R의 [[STUN]]으로 아리 R의 [[DASH]]을 끊을 수 없음.\n단, [[STUN]]은 남아있음."],
       en: ["Ashe's R [[STUN]] cannot interrupt Ahri's R"],
     },
   },

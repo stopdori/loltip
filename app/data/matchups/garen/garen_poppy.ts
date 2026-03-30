@@ -9,11 +9,11 @@ export const garen_poppy: MatchupSummary = {
   },
   highlightsByChamp: {
     garen: {
-      ko: ["가렌 Q스킬은 뽀삐 W에 막히지 않음"],
-      en: ["Garen's Q is not blocked by Poppy's W"],
+      ko: ["가렌 W의 [[TENACITY]]으로 뽀삐 E의 [[STUN]]의 지속시간을 줄일 수 있음."],
+      en: [],
     },
     poppy: {
-      ko: [],
+      ko: ["뽀삐 W의 [[GROUNDED]]로 가렌 Q를 막을 수 없음."],
       en: [],
     },
   },

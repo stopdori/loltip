@@ -22,8 +22,8 @@ const yasuo: ChampData = {
     P: [],
     Q: ["TIMING_CAST"],
     W: ["TIMING_CAST"],
-    E: [],
-    R: [],
+    E: ["DASH"],
+    R: ["MOBILITY"],
   },
 
   notes: {

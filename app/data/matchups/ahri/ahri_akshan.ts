@@ -9,7 +9,7 @@ export const ahri_akshan: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 아크샨 E, R을 끊을 수 있음"],
+      ko: ["아리 E의 [[CHARM]]으로 아크샨 E, R(시전 집중)을 끊을 수 있음."],
       en: ["Ahri's E can interrupt Akshan's E and R"],
     },
     akshan: {

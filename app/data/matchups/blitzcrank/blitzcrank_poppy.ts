@@ -9,8 +9,8 @@ export const blitzcrank_poppy: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     poppy: {
       ko: [],

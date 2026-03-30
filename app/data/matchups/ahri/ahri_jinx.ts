@@ -9,11 +9,11 @@ export const ahri_jinx: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [],
-      en: [],
+      ko: ["아리 E의 [[CHARM]]으로 징크스 W, R의 [[CAST_COMMIT]]을 멈출 수 없음."],
+      en: ["Ahri's E [[CHARM]] cannot stop Jinx's W or R [[CAST_COMMIT]]."],
     },
     jinx: {
-      ko: ["징크스 E의 [[ROOT]]으로 아리 R을 끊을 수 있음. (흔치않은 판정)"],
+      ko: ["징크스 E의 [[ROOT]]으로 아리 R의 [[DASH]]을 끊을 수 있음. ([[ROOT]]에서는 흔치 않은 판정)"],
       en: ["Jinx's E [[ROOT]] can interrupt Ahri's R. (uncommon interaction)"],
     },
   },

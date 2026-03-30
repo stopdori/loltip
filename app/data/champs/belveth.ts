@@ -25,7 +25,7 @@ const belveth: ChampData = {
     E: ["DMG_PHYSICAL", "SKILL_CHANNEL", "SKILL_TOGGLE", "NON_PROJECTILE", "SINGLE", "HOMING"],
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["PASSIVE_BONUS", "DMG_TRUE", "PROC"] },
-      { label: { ko: "R 액티브", en: "R Active"  }, tags: ["BUFF_FORM", "DMG_TRUE", "LOCKED", "AOE"] },
+      { label: { ko: "R 액티브", en: "R Active"  }, tags: ["BUFF_FORM", "DMG_TRUE", "LOCKED", "AOE", "MOBILITY"] },
     ] },
   },
 

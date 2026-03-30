@@ -9,7 +9,7 @@ export const poppy_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     poppy: {
-      ko: [""],
+      ko: ["뽀삐 W의 [[ANTI_DASH]]로 스카너 E를 막을 수 없음."],
       en: [""],
     },
     skarner: {

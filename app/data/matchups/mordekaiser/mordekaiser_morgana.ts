@@ -9,11 +9,11 @@ export const mordekaiser_morgana: MatchupSummary = {
   },
   highlightsByChamp: {
     mordekaiser: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     morgana: {
-      ko: [],
+      ko: ["모르가나 E의 [[CC_IMMUNE]]으로 모데카이저 R을 무시할 수 있음.\n즉, 이세계로 가지 않음. 모데 R 쿨타임 소모."],
       en: [],
     },
   },

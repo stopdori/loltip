@@ -9,11 +9,11 @@ export const ahri_janna: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 잔나 R을 끊을 수 있음"],
+      ko: ["아리 E의 [[CHARM]]으로 잔나 R(채널링)을 끊을 수 있음."],
       en: ["Ahri's E can interrupt Janna's R"],
     },
     janna: {
-      ko: ["잔나 Q, R로 아리 R을 끊을 수 있음"],
+      ko: ["잔나 Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
       en: ["Janna's Q and R can interrupt Ahri's R"],
     },
   },

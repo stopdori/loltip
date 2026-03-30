@@ -3,6 +3,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { TAG_LABEL, TAG_DESC, type TagId } from "../data/interactions";
+import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
 import { toneOfTag, NOTE_TONE_CLASS } from "../data/interactions/tagTone";
 import type { Tone } from "../data/interactions/tagTone";
 
@@ -114,10 +115,13 @@ export default function TokenText({
         const raw = part.match(/^\[\[(.+?)\]\]$/)?.[1];
         const token = raw?.trim() as TagId | undefined;
 
-        if (token && TAG_LABEL[token]) {
-          const tone = toneOfTag(token);
-          const label = TAG_LABEL[token][lang];
-          const tip = TAG_DESC?.[token]?.[lang];
+        const labelData = GIMMICK_TAG_LABEL[token as GimmickTagId] ?? TAG_LABEL[token as TagId];
+
+        if (token && labelData) {
+          const tone = toneOfTag(token as TagId | GimmickTagId);
+          const label = labelData[lang];
+          const tip = GIMMICK_TAG_DESC?.[token as GimmickTagId]?.[lang]
+                   ?? TAG_DESC?.[token as TagId]?.[lang];
 
           return (
             <TokenPill key={idx} label={label} tip={tip} tone={tone} />
@@ -127,7 +131,7 @@ export default function TokenText({
 
 return (
   <span key={idx}>
-    {part.split(/(https?:\/\/[^\s\)\],]+)/g)
+    {part.split(/(https?:\/\/[^\s\],]+)/g)
 .map((seg, j) => {
       if (/^https?:\/\//.test(seg)) {
         return (

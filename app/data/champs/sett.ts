@@ -19,11 +19,22 @@ const sett: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: ["UNSTOPPABLE"],
+    P: { phases: [
+      { label: { ko: "강력한 손", en: "Heavy Hands" }, tags: ["DMG_PHYSICAL", "ON_HIT"] },
+      { label: { ko: "반인반수의 심장", en: "Heart of the Half-Beast" }, tags: ["PASSIVE_BONUS"] },
+    ] },
+    Q: ["DMG_PHYSICAL", "ON_HIT"],
+    W: { phases: [
+      { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "W 액티브 부채꼴", en: "W Active Cone" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "LOCKED"] },
+      { label: { ko: "W 액티브 중심부", en: "W Active Center" }, tags: ["DMG_TRUE", "TIMING_CAST", "AOE", "LOCKED"] },
+    ] },
+    E: ["DMG_PHYSICAL", "AOE"],
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["DASH", "UNSTOPPABLE"] },
+      { label: { ko: "R 낙하", en: "R Landing" }, tags: ["DMG_PHYSICAL", "AOE"] },
+    ] },
+    
   },
 
   notes: {

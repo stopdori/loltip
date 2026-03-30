@@ -11,24 +11,27 @@ const quinn: ChampData = {
   },
 
   vision: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["REVEALED"],
+    Q: ["REVEALED"],
+    W: ["VISION"],
+    E: ["POSITION_REVEAL"],
+    R: { phases: [
+      { label: { ko: "R1", en: "R1" }, tags: [] },
+      { label: { ko: "R2", en: "R2" }, tags: ["POSITION_REVEAL"] },
+    ] },
   },
 
   gimmick: {
     P: ["ST_CONDITIONAL", "DMG_PHYSICAL", "REVEALED", "MARK"],
-    Q: ["DMG_PHYSICAL", "PROJECTILE", "AOE", "MARK"],
+    Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "AOE", "MARK"],
     W: { phases: [
       { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_INTERACT", "P", "Q", "W", "E", "R"] },
-      { label: { ko: "W", en: "W" }, tags: ["REVEALED", "AOE"] },
+      { label: { ko: "W", en: "W" }, tags: ["VISION", "AOE"] },
     ] },
     E: ["DMG_PHYSICAL", "TARGETED", "DASH", "MARK"],
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["SKILL_RECAST"] },
-      { label: { ko: "R 화살비", en: "R Raining Arrows" }, tags: ["DMG_PHYSICAL", "AOE", "MARK"] },
+      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL", "TIMING_CAST", "LOCKED", "SKILL_RECAST"] },
+      { label: { ko: "R 화살비", en: "R Raining Arrows" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "AOE", "MARK"] },
     ] },
     
   },

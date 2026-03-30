@@ -9,7 +9,7 @@ export const mordekaiser_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     mordekaiser: {
-      ko: [""],
+      ko: ["모데카이저 R을 요릭에게 사용했을 때, 소환 되어있던 요릭의 하수인들은 그대로 두고 요릭만 이세계로 이동."],
       en: [""],
     },
     yorick: {

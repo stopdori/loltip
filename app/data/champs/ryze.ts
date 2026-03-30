@@ -40,15 +40,22 @@ const ryze: ChampData = {
  
   gimmick: {
  
-    P: [],
+    P: ["PASSIVE_BONUS"],
  
-    Q: [],
+    Q: ["DMG_MAGIC", "PROJECTILE", "STACK_CONSUME"],
  
-    W: [],
+    W: ["DMG_MAGIC", "TARGETED", "NON_PROJECTILE", "BUFF_STACK"],
  
-    E: [],
- 
-    R: [],
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "BUFF_STACK"] },
+      { label: { ko: "E 디버프 연쇄", en: "E Debuff Chained" }, tags: ["PROJECTILE", "CHAIN", "DEBUFF_STACK"] },
+    ] },
+     
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL", "ZONE", "MOBILITY"] },
+      { label: { ko: "R 순간이동", en: "R Blink" }, tags: ["ZONE", "BLINK"] },
+    ] },
+    
  
   },
  

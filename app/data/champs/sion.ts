@@ -14,16 +14,20 @@ const sion: ChampData = {
     P: [],
     Q: [],
     W: [],
-    E: [],
-    R: [],
+    E: ["FEEDBACK_INDICATOR"],
+    R: ["FEEDBACK_INDICATOR"],
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["PASSIVE_BONUS"],
+    Q: ["DMG_PHYSICAL", "SKILL_CHARGED", "AOE"],
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["SKILL_RECAST"] },
+      { label: { ko: "W 폭발", en: "W Explodes" }, tags: ["ST_DELAYED", "DMG_MAGIC", "AOE"] },
+    ] },
+    
+    E: ["DMG_MAGIC", "TIMING_CAST", "PIERCE_MINION"],
+    R: ["DMG_PHYSICAL", "SKILL_CHANNEL", "TIMING_CAST", "AOE", "MOBILITY", "CANCELLABLE", "SKILL_RECAST", "CC_IMMUNE"],
   },
 
   notes: {
