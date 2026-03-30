@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import NoticeButton from "./NoticeButton";
 import HelpButton from "./HelpButton";
 import TagGlossaryButton from "./TagGlossaryButton";
@@ -8,8 +10,6 @@ import TagGlossaryButton from "./TagGlossaryButton";
 type Lang = "ko" | "en";
 
 type Props = {
-  lang: Lang;
-  onLangChange: (v: Lang) => void;
   subtitle: string;
   champSearchOpen?: boolean;
   helpOpen?: boolean;
@@ -19,7 +19,11 @@ type Props = {
   onGlossaryOpenChange?: (v: boolean) => void;
 };
 
-export default function SiteHeader({ lang, onLangChange, subtitle, champSearchOpen, helpOpen = false, onHelpOpenChange, onNoticeOpenChange, onGlossaryOpenChange }: Props) {
+export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false, onHelpOpenChange, onNoticeOpenChange, onGlossaryOpenChange }: Props) {
+  const locale = useLocale();
+  const lang = locale as Lang;
+  const router = useRouter();
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -61,7 +65,7 @@ export default function SiteHeader({ lang, onLangChange, subtitle, champSearchOp
               <NoticeButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} hidden={!!champSearchOpen || helpOpen} onOpenChange={onNoticeOpenChange} />
               <HelpButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} onOpenChange={onHelpOpenChange} />
               <TagGlossaryButton lang={lang} className={btnFull} onOpenChange={onGlossaryOpenChange} />
-              <a href="/quiz" className={`${btnFull} quiz-shimmer`}>
+              <a href={`/${locale}/quiz`} className={`${btnFull} quiz-shimmer`}>
                 {lang === "ko" ? "퀴즈" : "Quiz"}
               </a>
             </div>
@@ -73,7 +77,7 @@ export default function SiteHeader({ lang, onLangChange, subtitle, champSearchOp
           <NoticeButton lang={lang} hidden={!!champSearchOpen} onOpenChange={onNoticeOpenChange} />
           <HelpButton lang={lang} />
           <TagGlossaryButton lang={lang} onOpenChange={onGlossaryOpenChange} />
-          <a href="/quiz" className={`${btnBase} quiz-shimmer`}>
+          <a href={`/${locale}/quiz`} className={`${btnBase} quiz-shimmer`}>
             {lang === "ko" ? "퀴즈" : "Quiz"}
           </a>
         </div>
@@ -81,7 +85,7 @@ export default function SiteHeader({ lang, onLangChange, subtitle, champSearchOp
         {/* 우측: 언어 선택 */}
         <div className="flex items-center gap-1">
           <button
-            onClick={() => onLangChange("ko")}
+            onClick={() => router.replace(pathname, { locale: "ko" })}
             className={`px-3 py-2 rounded-xl text-sm font-bold border ${
               lang === "ko"
                 ? "bg-yellow-400 text-black border-yellow-300"
@@ -91,7 +95,7 @@ export default function SiteHeader({ lang, onLangChange, subtitle, champSearchOp
             한글
           </button>
           <button
-            onClick={() => onLangChange("en")}
+            onClick={() => router.replace(pathname, { locale: "en" })}
             className={`px-3 py-2 rounded-xl text-sm font-bold border ${
               lang === "en"
                 ? "bg-yellow-400 text-black border-yellow-300"
@@ -106,7 +110,7 @@ export default function SiteHeader({ lang, onLangChange, subtitle, champSearchOp
       {/* 로고 */}
       <div className="mt-8 text-center">
         <h1
-          onClick={() => { window.location.href = "/champ"; }}
+          onClick={() => router.push("/champ")}
           className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
         >
           LOLTIP

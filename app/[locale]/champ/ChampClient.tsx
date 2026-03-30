@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import ChampSelectButton from "@/app/components/ChampSelectButton";
 import ChampSelectModal from "@/app/components/ChampSelectModal";
 import SkillTagsPanel from "@/app/components/SkillTagsPanel";
@@ -16,21 +17,6 @@ import SiteHeader from "@/app/components/SiteHeader";
 import AdSlot from "@/app/components/AdSlot";
 
 type Lang = "ko" | "en";
-const LANG_KEY = "loltip_lang";
-
-function detectDefaultLang(): Lang {
-  const browser = (navigator.language || "").toLowerCase();
-  return browser.startsWith("ko") ? "ko" : "en";
-}
-
-function readSavedLang(): Lang | null {
-  const v = localStorage.getItem(LANG_KEY);
-  return v === "ko" || v === "en" ? v : null;
-}
-
-function saveLang(v: Lang) {
-  localStorage.setItem(LANG_KEY, v);
-}
 
 type Props = {
   forcedMe?: string | null;
@@ -39,20 +25,8 @@ type Props = {
 };
 
 export default function Home({ forcedMe, forcedEnemy, highlight }: Props) {
-  const [lang, setLang] = useState<Lang>("ko");
-
-  
-  useEffect(() => {
-    const saved = readSavedLang();
-    setLang(saved ?? detectDefaultLang());
-  }, []);
-
-  const setLangAndPersist = (v: Lang) => {
-    setLang(v);
-    saveLang(v);
-  };
-
-
+  const locale = useLocale();
+  const lang = locale as Lang;
 
   const router = useRouter();
 
@@ -147,8 +121,6 @@ useEffect(() => {
 
 
       <SiteHeader
-        lang={lang}
-        onLangChange={setLangAndPersist}
         subtitle={subtitle}
         champSearchOpen={openTarget !== null}
         helpOpen={helpOpen}

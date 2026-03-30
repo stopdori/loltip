@@ -1,34 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useLocale } from "next-intl";
 import { quizData } from "@/app/data/quiz";
 import SiteHeader from "@/app/components/SiteHeader";
 
 type Lang = "ko" | "en";
-const LANG_KEY = "loltip_lang";
-
-function readSavedLang(): Lang | null {
-  const v = localStorage.getItem(LANG_KEY);
-  return v === "ko" || v === "en" ? v : null;
-}
-
-function detectDefaultLang(): Lang {
-  const browser = (navigator.language || "").toLowerCase();
-  return browser.startsWith("ko") ? "ko" : "en";
-}
 
 export default function QuizClient() {
-  const [lang, setLang] = useState<Lang>("ko");
-
-  useEffect(() => {
-    const saved = readSavedLang();
-    setLang(saved ?? detectDefaultLang());
-  }, []);
-
-  function setLangAndPersist(v: Lang) {
-    setLang(v);
-    localStorage.setItem(LANG_KEY, v);
-  }
+  const locale = useLocale();
+  const lang = locale as Lang;
 
   const title = lang === "ko" ? "롤 상호작용 퀴즈" : "LoL Interaction Quiz";
   const subtitle =
@@ -39,15 +19,13 @@ export default function QuizClient() {
 
   function handleAnswer(champ1: string, champ2: string, highlight: string) {
     const pair = [champ1, champ2].sort().join("-vs-");
-    const url = `/matchup/${pair}?first=${champ1}&highlight=${highlight}`;
+    const url = `/${locale}/matchup/${pair}?first=${champ1}&highlight=${highlight}`;
     window.open(url, "_blank");
   }
 
   return (
     <div className="space-y-10">
       <SiteHeader
-        lang={lang}
-        onLangChange={setLangAndPersist}
         subtitle={subtitle}
       />
 
@@ -93,7 +71,7 @@ export default function QuizClient() {
       {/* Back link */}
       <div className="text-center">
         <a
-          href="/champ"
+          href={`/${locale}/champ`}
           className="text-sm text-slate-400 hover:text-slate-200 underline underline-offset-2 transition"
         >
           {lang === "ko" ? "← 챔피언 가이드로 돌아가기" : "← Back to Champion Guide"}
