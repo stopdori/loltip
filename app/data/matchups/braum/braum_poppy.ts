@@ -13,8 +13,8 @@ export const braum_poppy: MatchupSummary = {
       en: ["Braum's E (shield) can [[DAMAGE_NULLIFY]] Poppy's basic attacks, P (basic attack), Q (initial damage), Q (explosion damage), W, E, R, and R (charge).\nNote: Only one of Q's initial or explosion damage can be [[DAMAGE_NULLIFY]]d at a time.\nNote: For Poppy's W, if Braum holds the shield toward Poppy while moving via W on an ally, Braum can [[DAMAGE_NULLIFY]] the damage.\nAt this time, Poppy's W [[GROUNDED]] still applies.","Braum's E (shield) can [[INTERCEPT_PROJECTILE]] Poppy's P (basic attack) and R (charge).\nNote: Even if Braum blocks Poppy's P, Poppy's P (shield) still drops to the ground.","Braum's P [[STUN]] cannot interrupt Poppy's E.","Braum's R [[AIRBORNE]] can interrupt Poppy's E","Braum's P [[STUN]] and R [[AIRBORNE]] can interrupt Poppy's R (channel)"],
     },
     poppy: {
-      ko: ["뽀삐 W의 [[GROUNDED]]로 브라움 W를 끊을 수 있음.", "뽀삐 E로 브라움 W를 끊을 수 있음."],
-      en: ["Poppy's W [[GROUNDED]] can interrupt Braum's W movement.","Poppy's E can interrupt Braum's W movement."],
+      ko: ["뽀삐 W의 [[ANTI_DASH]]로 브라움 W의 [[DASH]]을 막고 [[GROUNDED]] 디버프를 걸 수 있음."],
+      en: ["Poppy's W [[ANTI_DASH]] can block Braum's W [[DASH]] and apply the [[GROUNDED]] debuff."],
     },
   },
 };

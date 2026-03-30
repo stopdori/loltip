@@ -13,8 +13,8 @@ export const ahri_garen: MatchupSummary = {
       en: [""],
     },
     garen: {
-      ko: ["가렌 Q의 [[SILENCE]]으로 아리 R을 끊을 수 없음. 단, [[SILENCE]]는 남아있음"],
-      en: ["Garen's Q [[SILENCE]] cannot interrupt Ahri's R. However, the [[SILENCE]] still applies."],
+      ko: ["가렌 Q의 [[SILENCE]]으로 아리 R을 끊을 수 없음. 단, [[SILENCE]]는 남아있음.", "가렌 W를 사용하고 아리 E의 [[CHARM]]을 맞으면 [[TENACITY]]이 증가되어 [[CHARM]]의 지속시간을 줄일 수 있음."],
+      en: ["Garen's Q [[SILENCE]] cannot interrupt Ahri's R. However, the [[SILENCE]] still applies.", "If Garen uses W and gets hit by Ahri's E [[CHARM]], the increased [[TENACITY]] reduces the [[CHARM]] duration."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const ahri_milio: MatchupSummary = {
       en: [],
     },
     milio: {
-      ko: ["밀리오 Q로 아리 R을 끊을 수 있음"],
-      en: ["Milio's Q can interrupt Ahri's R"],
+      ko: ["밀리오 Q의 [[KNOCKBACK]]으로 아리 R의 [[DASH]]을 끊을 수 있음.", "밀리오 R의 [[CC_CLEANSE]]로 아리 E의 [[CHARM]]을 해제할 수 있음.\n단, 밀리오에게 걸린 [[CHARM]]은 해제할 수 없음."],
+      en: ["Milio's Q [[KNOCKBACK]] can interrupt Ahri's R", "Milio's R [[CC_CLEANSE]] can cleanse Ahri's E [[CHARM]] from allies.\nHowever, it cannot cleanse [[CHARM]] on Milio himself."],
     },
   },
 };

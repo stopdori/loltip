@@ -34,7 +34,7 @@ const pyke: ChampData = {
       { label: { ko: "E 잔상", en: "E Afterimage" }, tags: ["DMG_PHYSICAL", "AOE", "ST_DELAYED"] },
     ] },
     R: { phases: [
-      { label: { ko: "준비단계",     en: "Wind-up" }, tags: ["TIMING_CAST", "CC_BUFFER", "MOBILITY"] },
+      { label: { ko: "준비단계",     en: "Wind-up" }, tags: ["TIMING_CAST", "CC_BUFFER", "MOBILITY", "LOCKED"] },
       { label: { ko: "순간이동단계", en: "Blink"   }, tags: ["DMG_PHYSICAL", "AOE", "BLINK", "SKILL_RECAST"] },
     ] },
   },

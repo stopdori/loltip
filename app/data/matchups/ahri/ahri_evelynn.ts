@@ -9,7 +9,7 @@ export const ahri_evelynn: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 이블린 E를 끊을 수 있음"],
+      ko: ["아리 E의 [[CHARM]]으로 이블린 P([[CAMOUFLAGE]])상태의 E를 끊을 수 있음.\n즉, 데미지도 무효."],
       en: ["Ahri's E can interrupt Evelynn's E"],
     },
     evelynn: {

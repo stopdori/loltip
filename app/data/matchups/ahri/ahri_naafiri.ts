@@ -9,7 +9,7 @@ export const ahri_naafiri: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 나피리 E, R을 끊을 수 있음"],
+      ko: ["아리 E의 [[CHARM]]으로 나피리 E, R을 끊을 수 있음."],
       en: ["Ahri's E can interrupt Naafiri's E and R"],
     },
     naafiri: {

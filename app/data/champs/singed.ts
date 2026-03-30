@@ -11,7 +11,7 @@ const singed: ChampData = {
   },
 
   vision: {
-    P: [],
+    P: ["FEEDBACK_INDICATOR"],
     Q: [],
     W: [],
     E: [],
@@ -19,10 +19,10 @@ const singed: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
+    P: ["BUFF_STACK"],
+    Q: ["DMG_MAGIC", "SKILL_TOGGLE", "ZONE", "DOT"],
+    W: ["TIMING_CAST", "PROJECTILE", "ZONE"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "TARGETED"],
     R: ["BUFF_FORM"],
   },
 

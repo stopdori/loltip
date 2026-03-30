@@ -21,11 +21,13 @@ export type GimmickTagId =
   | "DMG_PHYSICAL"
   | "DMG_MAGIC"
   | "DMG_TRUE"
+  | "DOT_DMG_TRUE"
   // 스킬 형태
   | "SKILL_ACTIVE"
   | "SKILL_TOGGLE"
   | "SKILL_CHANNEL"
   | "SKILL_CHARGED"
+  | "SKILL_VECTOR"
   // 타이밍
   | "TIMING_INSTANT"
   | "TIMING_CAST"
@@ -67,9 +69,10 @@ export type GimmickTagId =
   // 기타
   | "SKILL_RECAST"
   | "RECHARGE"
-  | "STACKING"
   | "MARK"
   | "PROC"
+
+  | "STACKING"
   | "BUFF_STACK"
   | "DEBUFF_STACK"
   | "STACK_CONSUME"
@@ -86,6 +89,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   SKILL_TOGGLE:  { ko: "토글",    en: "Toggle"  },
   SKILL_CHANNEL: { ko: "채널링",  en: "Channel" },
   SKILL_CHARGED: { ko: "차징",    en: "Charged" },
+  SKILL_VECTOR:  { ko: "벡터",    en: "Vector"  },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
   RECHARGE:      { ko: "충전식",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
@@ -141,6 +145,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DMG_PHYSICAL: { ko: "물리피해", en: "Physical Damage" },
   DMG_MAGIC:    { ko: "마법피해", en: "Magic Damage"    },
   DMG_TRUE:     { ko: "고정피해", en: "True Damage"     },
+  DOT_DMG_TRUE: { ko: "지속고피", en: "True DoT" },
   DOT:          { ko: "지속피해", en: "DoT"             },
   ON_HIT:       { ko: "온힛",    en: "On-Hit"          },
   // 시전 행동
@@ -158,6 +163,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SKILL_CHANNEL:    { ko: "버튼 한 번으로 발동하고 시전을 유지하는 스킬\nCC에 맞으면 중단.", en: "Activates on a single press and maintains its effect over time.\nInterrupted by CC."},
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬", en: "Charges up while held\nCaster can move while charging" },
+  SKILL_VECTOR:     { ko: "시전 위치와 방향을 드래그로 지정하는 스킬.", en: "A skill where the cast location and direction are specified by dragging." },
   SKILL_RECAST:     { ko: "쿨타임이 돌기 전에 스킬을 다시 사용할 수 있음", en: "The ability can be used again before its cooldown begins" },
   RECHARGE:         { ko: "스킬을 여러 개 충전해두고 사용할 수 있음\n최대 충전이 아니면 쿨타임이 돔.", en: "Multiple charges of the skill can be stored and used\nCooldown applies if not at maximum charges." },
   STACKING:         { ko: "조건을 충족할 때마다 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced each time the conditions are met" },
@@ -207,6 +213,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DMG_PHYSICAL: { ko: "방어력에 의해 감소되는 피해", en: "Damage mitigated by armor" },
   DMG_MAGIC:    { ko: "마법 저항력에 의해 감소되는 피해", en: "Damage mitigated by magic resistance" },
   DMG_TRUE:     { ko: "저항력에 감소되지 않는 피해\n단, 실드와 무적에는 막힘", en: "Ignores resistances\nStill blocked by shields and invulnerability" },
+  DOT_DMG_TRUE: { ko: "시간에 걸쳐 지속적으로 입히는 고정 피해.", en: "True damage dealt continuously over time." },
   DOT:          { ko: "일정 시간 동안 지속적으로 피해를 줌", en: "Deals damage repeatedly over a duration" },
   ON_HIT:       { ko: "기본 공격 적중 시 추가 피해가 발생함", en: "Deals bonus damage on basic attack hit" },
   // 시전 행동
@@ -214,7 +221,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   CAST_CANCEL:  { ko: "시전 중 CC에 걸리면 스킬이 취소됨\n쿨타임만 소모됨", en: "The skill is canceled if hit by CC during the cast\nOnly the cooldown is consumed" },
   CC_BUFFER:    { ko: "일부 단계에서 CC를 무시하고 다음단계를 발동함.\n단, CC는 남아있음.\n주로 이동기에 사용.", en: "CC is ignored only during specific phases.\nCommonly seen on mobility abilities." },
   // 이동
-  MOBILITY: { ko: "대쉬나 순간이동으로 분류되지 않는 이동 전용 스킬", en: "A movement-only ability that does not qualify as a dash or blink" },
-  DASH:  { ko: "지형을 따라 이동하는 돌진 스킬\n매혹/공포/에어본/체공/제압에 즉시 중단됨\n나머지 CC는 도착 후 발동", en: "A dash that travels along terrain\nInterrupted immediately by Charm/Fear/Airborne/Suspension/Suppression\nOther CC applies after arrival" },
-  BLINK: { ko: "거리를 순간적으로 건너뛰는 이동 스킬", en: "A blink that instantly crosses a distance" },
+  MOBILITY: { ko: "이동 능력의 상위 분류. \n 이동기 금지 상태에서 사용 불가.", en: "The overarching category of movement abilities. \n Cannot be used while grounded." },
+  DASH: { ko: "목표 지점까지 경로를 따라 실제로 이동하는 스킬. \n 이동기의 하위 분류.", en: "Moves the caster along a path to the target location. \n A subcategory of Mobility." },
+  BLINK: { ko: "거리를 순간적으로 건너뛰는 이동. \n 이동기의 하위 분류.", en: "Instantly crosses a distance without traversing the space between. \n A subcategory of Mobility." }
 };

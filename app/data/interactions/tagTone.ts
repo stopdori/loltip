@@ -132,6 +132,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 💜 fuchsia (치감/그라운드/TP류)
   GW: "fuchsia",
+  ANTI_DASH: "fuchsia",
   GROUNDED: "fuchsia",
   ALLY_TP_OK: "fuchsia",
   SHIELD_PIERCE: "fuchsia",
@@ -149,6 +150,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SKILL_CHANNEL: "indigo",
   SKILL_TOGGLE:  "indigo",
   SKILL_CHARGED: "indigo",
+  SKILL_VECTOR:  "indigo",
   SKILL_RECAST:  "indigo",
   RECHARGE:      "indigo",
   STACKING:      "indigo",
@@ -203,6 +205,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   DMG_PHYSICAL: "red",
   DMG_MAGIC:    "sky",
   DMG_TRUE:     "white",
+  DOT_DMG_TRUE: "white",
   DOT:          "indigo",
   ON_HIT:       "indigo",
   // 시전 행동

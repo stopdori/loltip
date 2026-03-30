@@ -604,8 +604,8 @@ SILENCE: {
   en: "Prevents ability casts (can be cleansed)",
 },
 GROUNDED: {
-  ko: "이동스킬(점멸포함)을 사용하지 못하게 만듦",
-  en: "Prevents the use of movement abilities",
+  ko: "이동스킬(돌진, 순간이동, 점멸, 아이템 벨트 등등)을 \n 사용하지 못하게 만드는 디버프",
+  en: "A debuff that prevents the target from using movement abilities \n (dashes, blinks, teleports, etc.)",
 },
 FEAR: {
   ko: "대상이 시전자 반대쪽으로 도망치게 만듦\n(클린즈 계열로 해제 가능)",

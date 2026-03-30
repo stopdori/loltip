@@ -9,7 +9,7 @@ export const lulu_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     lulu: {
-      ko: [""],
+      ko: ["룰루 W(변이)를 시전하면 투사체가 날아가고, 투사체가 날아갈 때 이세계로 이동하면 변이에 걸리지 않음.\n모데 R을 시전 중 일 때 적중하면 동물로 변하고 이세계로 이동."],
       en: [""],
     },
     mordekaiser: {

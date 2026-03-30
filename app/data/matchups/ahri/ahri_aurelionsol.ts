@@ -9,12 +9,12 @@ export const ahri_aurelionsol: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 아우렐리온솔 Q, W를 끊을 수 있음"],
+      ko: ["아리 E의 [[CHARM]]으로 아우솔 Q(채널링), W(비행)를 끊을 수 있음."],
       en: ["Ahri's E can interrupt Aurelion Sol's Q and W"],
     },
     aurelionsol: {
-      ko: ["아우렐리온솔 E, R로 아리 R을 끊을 수 없음"],
-      en: ["Aurelion Sol's E and R cannot interrupt Ahri's R"],
+      ko: ["아우솔 R의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음.\n단, [[STUN]]은 남아있음.", "아우솔 R(천상 강림)의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Ahri's R. However, the [[STUN]] still applies.", "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Ahri's R"],
     },
   },
 };

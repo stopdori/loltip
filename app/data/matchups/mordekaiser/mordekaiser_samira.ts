@@ -9,7 +9,7 @@ export const mordekaiser_samira: MatchupSummary = {
   },
   highlightsByChamp: {
     mordekaiser: {
-      ko: [""],
+      ko: ["사미라 W(장막)로 모데카이저 Q, E를 막을 수 없음. 투사체가 아님.", "사미라 W(장막)로 모데카이저 R을 무시할 수 없음. 이세계로 끌려감."],
       en: [""],
     },
     samira: {

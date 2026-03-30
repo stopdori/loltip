@@ -3,8 +3,12 @@ import type { ChampData } from "../interactions/types";
 const smolder: ChampData = {
   id: "smolder",
   skills: {
-    P: [],
-    Q: ["Q_FLASH", "EXECUTE"],
+    P: ["STACKING"],
+    Q: { phases: [
+      { label: { ko: "Q 0~224 스택", en: "Q 0~224 Stacks" }, tags: ["Q_FLASH"] },
+      { label: { ko: "Q 225 스택 이상", en: "Q Over 225 Stacks" }, tags: ["Q_FLASH", "EXECUTE"] },
+    ] },
+
     W: ["W_FLASH", "SLOW"],
     E: ["E_FLASH", "MS_UP", "WALL_HOP"],
     R: ["SLOW", "HEAL"],
@@ -12,23 +16,31 @@ const smolder: ChampData = {
 
   vision: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["FEEDBACK_INDICATOR", "POSITION_REVEAL"],
+    W: ["FEEDBACK_INDICATOR"],
+    E: ["POSITION_REVEAL"],
+    R: ["VISION"],
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["STACKING"],
+    Q: { phases: [
+      { label: { ko: "Q 1~24 스택", en: "Q 1~24 Stacks" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "PROJECTILE", "SINGLE"] },
+      { label: { ko: "Q 25~125 스택", en: "Q 25~124 Stacks" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "AOE"] },
+      { label: { ko: "Q 126~224 스택", en: "Q 126~224 Stacks" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "AOE"] },
+      { label: { ko: "Q 225 이상", en: "Q Over 225 Stacks" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "DOT_DMG_TRUE", "TIMING_CAST", "TARGETED", "PROJECTILE", "AOE"] },
+      { label: { ko: "Q 추가 투사체 ( 125스택 이상 )", en: "Q Addtional Projectile ( Over 125 Stacks )" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DMG_MAGIC", "PROJECTILE", "PIERCE"] },
+      { label: { ko: "Q 추가 투사체 ( 225스택 이상 )", en: "Q Addtional Projectile ( Over 125 Stacks )" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DMG_MAGIC", "DOT_DMG_TRUE", "PROJECTILE", "PIERCE"] },
+    ] },
+   
+    W: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST"],
+    E: ["DMG_PHYSICAL", "DMG_MAGIC", "SKILL_CHANNEL", "MOBILITY"],
+    R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE"],
   },
 
   notes: {
     ko: [
-    "P스택은 25 스플레쉬 /125 추가투사체\n225 3초지속 고정피해, [[EXECUTE]]", "W의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R의 브레스를 스몰더 자신이 맞아야 [[HEAL]]", "E스킬은 [[HARD_CC]]에 끊김"
+    "P 스택은 25 스플레쉬 /125 추가투사체 (최초 2개 + 125스택 마다 1개씩 추가.)\n225 3초지속 고정피해, [[EXECUTE]]", "P 스택이 25 / 125 / 225 마다 스몰더의 화염뿔이 자라남.", "W의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R의 브레스를 스몰더 자신이 맞아야 [[HEAL]]", "E스킬은 [[HARD_CC]]에 끊김"
   ],
     en: ["P stacks: 25 splash / 125 bonus projectile / 225 persistent true damage, [[EXECUTE]]", "W's [[SLOW]] continuously applies to targets inside the area", "R [[HEAL]] only activates if Smolder himself is hit by the breath", "E is interrupted by [[HARD_CC]]"]
   },

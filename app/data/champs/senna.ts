@@ -26,13 +26,13 @@ const senna: ChampData = {
  
     P: [],
  
-    Q: [],
+    Q: ["FEEDBACK_INDICATOR"],
  
-    W: [],
+    W: ["FEEDBACK_INDICATOR"],
  
     E: [],
  
-    R: [],
+    R: ["VISION"],
  
   },
  
@@ -40,15 +40,22 @@ const senna: ChampData = {
  
   gimmick: {
  
-    P: [],
+    P: { phases: [
+      { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS", "SUMMON", "MARK_INTERACT", "Q", "W", "R"] },
+      { label: { ko: "영혼", en: "Soul" }, tags: ["STACKING"] },
+      { label: { ko: "챔피언 영혼흡수", en: "Soul Siphon On Champion" }, tags: ["STACKING"] },
+    ] },
  
-    Q: [],
+    Q: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "AOE", "MARK", "MARK_CONSUME"],
  
-    W: [],
+    W: { phases: [
+      { label: { ko: "W 투사체", en: "W Projectile" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "MARK", "MARK_CONSUME"] },
+      { label: { ko: "W 범위속박", en: "W AOE" }, tags: ["ST_CONDITIONAL", "AOE", "MARK", "MARK_CONSUME"] },
+    ] },
  
-    E: [],
+    E: ["BUFF_FORM", "TIMING_CAST", "AOE"],
  
-    R: [],
+    R: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "MARK", "MARK_CONSUME", "LOCKED"],
  
   },
  

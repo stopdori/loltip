@@ -13,8 +13,8 @@ export const ahri_karma: MatchupSummary = {
       en: [""],
     },
     karma: {
-      ko: ["카르마 W의 [[ROOT]]으로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음"],
-      en: ["Karma's W [[ROOT]] cannot interrupt Ahri's R. However, [[ROOT]] still applies."],
+      ko: ["카르마 W의 [[ROOT]]으로 아리 R을 끊을 수 없음.\n단, [[ROOT]]은 남아있음"],
+      en: ["Karma's W [[ROOT]] cannot interrupt Ahri's R.\nHowever, [[ROOT]] still applies."],
     },
   },
 };

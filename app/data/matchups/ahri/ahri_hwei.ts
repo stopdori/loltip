@@ -13,8 +13,8 @@ export const ahri_hwei: MatchupSummary = {
       en: [],
     },
     hwei: {
-      ko: ["흐웨이 EQ, EE가 아리 R을 끊을 수 있음"],
-      en: ["Hwei's EQ and EE can interrupt Ahri's R"],
+      ko: ["흐웨이 EQ의 [[FEAR]], EE의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음.", "흐웨이 EW의 [[ROOT]]으로 아리 R의 [[DASH]]을 끊을 수 없음.\n단, [[ROOT]]은 남아있음."],
+      en: ["Hwei's EQ [[FEAR]] and EE [[AIRBORNE]] can interrupt Ahri's R", "Hwei's EW [[ROOT]] cannot interrupt Ahri's R. However, the [[ROOT]] still applies."],
     },
   },
 };

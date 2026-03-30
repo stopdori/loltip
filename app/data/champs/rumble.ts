@@ -30,7 +30,7 @@ const rumble: ChampData = {
  
     W: [],
  
-    E: [],
+    E: ["FEEDBACK_INDICATOR"],
  
     R: [],
  
@@ -40,15 +40,18 @@ const rumble: ChampData = {
  
   gimmick: {
  
-    P: [],
+    P: { phases: [
+      { label: { ko: "열기", en: "Heat" }, tags: [] },
+      { label: { ko: "과열", en: "Over Heated" }, tags: ["DMG_MAGIC", "ON_HIT"] },
+    ] },
  
-    Q: [],
+    Q: ["BUFF_FORM", "DMG_MAGIC", "AOE"],
  
     W: [],
  
-    E: [],
+    E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SKILL_RECAST", "DEBUFF_STACK"],
  
-    R: [],
+    R: ["DMG_MAGIC", "SKILL_VECTOR", "TIMING_CAST", "ZONE", "DOT"],
  
   },
  
@@ -58,7 +61,7 @@ const rumble: ChampData = {
  
     ko: [
  
-    "과열되면 럼블이 [[SILENCE]] 되면서\n[[AS_UP]]에 추뎀있음", "럼블 E의 [[MR_SHRED]]은 [[SLOW]] 대상에게 적중하면 2배이고, 과열 E는 효과가 50% 증가함\n한마디로 맞지마라",
+    "열은 150이 최대\n50이상에서 스킬들이 강화.", "150이 되면 과열.\n 럼블이 [[SILENCE]] 되면서 \n [[AS_UP]]에 추뎀있음", "럼블 E의 [[MR_SHRED]]은 [[SLOW]] 대상에게 적중하면 2배, \n 강화 E는 효과가 50% 증가.\n한마디로 맞지마라.",
  
   ],
  

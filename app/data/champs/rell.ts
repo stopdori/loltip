@@ -18,28 +18,31 @@ const rell: ChampData = {
 
   vision: {
     P: [],
-    Q: [],
-    W: [],
+    Q: ["FEEDBACK_INDICATOR"],
+    W: { phases: [
+      { label: { ko: "W 붕괴", en: "W Dismounted" }, tags: ["FEEDBACK_INDICATOR"] },
+    ] },
+    
     E: [],
-    R: [],
+    R: ["FEEDBACK_INDICATOR"],
   },
 
   gimmick: {
     P: ["DMG_MAGIC", "ON_HIT"],
-    Q: [],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
     W: { phases: [
       { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_BONUS"] },
-      { label: { ko: "W 붕괴", en: "W Dismounted" }, tags: ["BUFF_FORM", "DMG_MAGIC"] },
+      { label: { ko: "W 붕괴", en: "W Dismounted" }, tags: ["BUFF_FORM", "DMG_MAGIC", "TIMING_CAST"] },
       { label: { ko: "W 철마술", en: "W Mount Up" }, tags: ["BUFF_FORM", "BUFF_STACK"] },
       { label: { ko: "W 철마술 버프", en: "W Mount Up Buff" }, tags: ["STACK_CONSUME", "DMG_MAGIC", "ON_HIT"] },
     ] },
     
     E: { phases: [
-      { label: { ko: "", en: "" }, tags: [] },
+      { label: { ko: "E", en: "E" }, tags: ["BUFF_STACK"] },
       { label: { ko: "E 평타 강화", en: "E Improved Basic Attack" }, tags: ["DMG_MAGIC", "ON_HIT", "AOE"] },
     ] },
 
-    R: ["DMG_MAGIC", ],
+    R: ["DMG_MAGIC", "TIMING_CAST", "AOE", "DOT"],
   },
 
   notes: {

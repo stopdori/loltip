@@ -13,7 +13,7 @@ export const bard_poppy: MatchupSummary = {
       en: [""],
     },
     poppy: {
-      ko: [],
+      ko: ["뽀삐 W의 [[ANTI_DASH]]로 바드 E(터널)의 [[DASH]]을 막고 [[GROUNDED]] 디버프를 걸 수 있음."],
       en: [],
     },
   },

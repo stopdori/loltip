@@ -30,7 +30,7 @@ const renata: ChampData = {
 
     W: ["BUFF_FORM", "TARGETED"],
     E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE"],
-    R: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE"],
+    R: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "LOCKED"],
   },
 
   notes: {

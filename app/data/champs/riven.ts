@@ -10,7 +10,10 @@ const riven: ChampData = {
  
     P: [],
  
-    Q: ["AA_RESET", "AIRBORNE", "WALL_HOP"],
+    Q: { phases: [
+      { label: { ko: "Q1, Q2", en: "Q3" }, tags: ["AA_RESET"] },
+      { label: { ko: "Q3", en: "Q3" }, tags: ["AA_RESET", "AIRBORNE", "WALL_HOP"] },
+    ] },
  
     W: ["STUN"],
  
@@ -40,15 +43,21 @@ const riven: ChampData = {
  
   gimmick: {
  
-    P: [],
+    P: ["BUFF_INTERACT", "P", "Q", "W", "E", "R"],
  
-    Q: [],
+    Q: { phases: [
+      { label: { ko: "Q1, Q2", en: "Q1, Q2" }, tags: ["DMG_PHYSICAL", "AOE", "BUFF_STACK"] },
+      { label: { ko: "Q3", en: "Q3" }, tags: ["DMG_PHYSICAL", "AOE", "BUFF_STACK"] },
+    ] },
  
-    W: [],
+    W: ["DMG_PHYSICAL", "TIMING_AFTERCAST", "AOE", "BUFF_STACK"],
  
-    E: [],
+    E: ["DASH", "BUFF_STACK"],
  
-    R: ["BUFF_FORM"],
+    R: { phases: [
+      { label: { ko: "R1", en: "R1" }, tags: ["BUFF_FORM", "TIMING_CAST", "BUFF_STACK"] },
+      { label: { ko: "R2", en: "R2" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE", "BUFF_STACK"] },
+    ] },
  
   },
  

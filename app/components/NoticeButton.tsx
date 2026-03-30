@@ -5,15 +5,22 @@ import { useEffect, useMemo, useRef, useState } from "react";
 type Props = {
   lang: "ko" | "en";
   className?: string;
+  hidden?: boolean;
+  onOpenChange?: (v: boolean) => void;
 };
 
 const NOTICE = {
-  ko: ["상호작용 상시 업데이트 중", "시야 관련 대규모 업데이트 준비중", "데이터 오류나 제보할것은 문의 바람"],
-  en: ["Interaction updates are ongoing", "Major vision-related update in progress", "Please report data errors or feedback via inquiry"],
+  ko: ["상호작용 상시 업데이트 중", "데이터 오류 발견 시 문의 바람"],
+  en: ["Interaction updates in progress", "Please contact us if you find any data errors"],
 };
 
-export default function NoticeButton({ lang, className }: Props) {
+export default function NoticeButton({ lang, className, hidden, onOpenChange }: Props) {
   const [open, setOpen] = useState(false);
+
+  const handleOpen = (v: boolean) => {
+    setOpen(v);
+    onOpenChange?.(v);
+  };
   const rootRef = useRef<HTMLSpanElement | null>(null);
 
   const t = useMemo(() => {
@@ -26,7 +33,7 @@ export default function NoticeButton({ lang, className }: Props) {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") handleOpen(false);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -46,7 +53,7 @@ export default function NoticeButton({ lang, className }: Props) {
       // 버튼/팝업 내부 클릭이면 유지
       if (el.contains(target)) return;
 
-      setOpen(false);
+      handleOpen(false);
     };
 
     window.addEventListener("mousedown", onDown);
@@ -57,12 +64,14 @@ export default function NoticeButton({ lang, className }: Props) {
     };
   }, [open]);
 
+  if (hidden) return null;
+
   return (
     <span ref={rootRef} className="relative inline-flex">
       {/* 버튼 */}
       <button
   type="button"
-  onClick={() => setOpen((v) => !v)}
+  onClick={() => handleOpen(!open)}
   className={
     className ??
     "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 text-slate-200 border-white/10 hover:bg-slate-700/60"

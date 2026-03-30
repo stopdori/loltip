@@ -24,7 +24,7 @@ const renekton: ChampData = {
     P: [],
     Q: [],
     W: [],
-    E: [],
+    E: ["FEEDBACK_INDICATOR"],
     R: [],
   },
 
@@ -42,7 +42,7 @@ const renekton: ChampData = {
       { label: { ko: "E 강화", en: "E Improved" }, tags: ["DMG_PHYSICAL", "AOE", "DASH", "SKILL_RECAST"] },
     ] },
 
-    R: ["BUFF_FORM", "DMG_MAGIC", "AOE"],
+    R: ["BUFF_FORM", "DMG_MAGIC", "TIMING_CAST", "AOE"],
   },
 
   notes: {
