@@ -9,8 +9,8 @@ export const anivia_rengar: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 렝가 P의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 렝가 P의 이동을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Rengar's P (passive leap) movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Rengar's P (passive leap) movement."],
+      ko: ["애니비아 Q의 [[STUN]]로 렝가 P의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 렝가 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Rengar's P (passive leap) [[DASH]]. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Rengar's P (passive leap) [[DASH]]."],
     },
     rengar: {
       ko: [],

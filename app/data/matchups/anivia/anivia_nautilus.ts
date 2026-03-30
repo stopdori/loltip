@@ -9,8 +9,8 @@ export const anivia_nautilus: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 노틸러스 Q의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 노틸러스 Q의 이동을 끊을 수 있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 노틸러스 Q의 [[GRAB]]에 끌려가는 아군의 이동을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Nautilus's Q movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Nautilus's Q movement.", "Anivia's W (wall) [[AIRBORNE]] can interrupt an ally being pulled by Nautilus's Q [[GRAB]]."],
+      ko: ["애니비아 Q의 [[STUN]]로 노틸러스 Q의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 노틸러스 Q의 [[DASH]]을 끊을 수 있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 노틸러스 Q의 [[GRAB]]에 끌려가는 아군의 이동을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Nautilus's Q [[DASH]]. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Nautilus's Q [[DASH]].", "Anivia's W (wall) [[AIRBORNE]] can interrupt an ally being pulled by Nautilus's Q [[GRAB]]."],
     },
     nautilus: {
       ko: ["노틸러스 R을 애니비아에게 사용했을 때, 애니비아가 P(알)로 변해도 노틸러스 R은 애니비아 P(알)를 추격."],

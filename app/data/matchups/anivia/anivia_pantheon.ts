@@ -9,8 +9,8 @@ export const anivia_pantheon: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 판테온 W의 이동을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 판테온 W의 이동을 끊을 수 있음.", "애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 판테온 R(시전 집중)을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Pantheon's W movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Pantheon's W movement.", "Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Pantheon's R (channeling)."],
+      ko: ["애니비아 Q의 [[STUN]]로 판테온 W의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 판테온 W의 [[DASH]]을 끊을 수 있음.", "애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 판테온 R(시전 집중)을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Pantheon's W [[DASH]]. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Pantheon's W [[DASH]].", "Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Pantheon's R (channeling)."],
     },
     pantheon: {
       ko: [],
