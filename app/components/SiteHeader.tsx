@@ -11,9 +11,15 @@ type Props = {
   lang: Lang;
   onLangChange: (v: Lang) => void;
   subtitle: string;
+  champSearchOpen?: boolean;
+  helpOpen?: boolean;
+  onHelpOpenChange?: (v: boolean) => void;
+  noticeOpen?: boolean;
+  onNoticeOpenChange?: (v: boolean) => void;
+  onGlossaryOpenChange?: (v: boolean) => void;
 };
 
-export default function SiteHeader({ lang, onLangChange, subtitle }: Props) {
+export default function SiteHeader({ lang, onLangChange, subtitle, champSearchOpen, helpOpen = false, onHelpOpenChange, onNoticeOpenChange, onGlossaryOpenChange }: Props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -52,9 +58,9 @@ export default function SiteHeader({ lang, onLangChange, subtitle }: Props) {
           </button>
           {menuOpen && (
             <div className="absolute left-0 top-full mt-1 z-50 flex flex-col gap-1 rounded-2xl bg-slate-900 ring-1 ring-white/10 shadow-xl p-2 min-w-[140px]">
-              <NoticeButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} />
-              <HelpButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} />
-              <TagGlossaryButton lang={lang} className={btnFull} />
+              <NoticeButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} hidden={!!champSearchOpen || helpOpen} onOpenChange={onNoticeOpenChange} />
+              <HelpButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} onOpenChange={onHelpOpenChange} />
+              <TagGlossaryButton lang={lang} className={btnFull} onOpenChange={onGlossaryOpenChange} />
               <a href="/quiz" className={`${btnFull} quiz-shimmer`}>
                 {lang === "ko" ? "퀴즈" : "Quiz"}
               </a>
@@ -64,9 +70,9 @@ export default function SiteHeader({ lang, onLangChange, subtitle }: Props) {
 
         {/* 좌측: 데스크탑 버튼 나열 */}
         <div className="hidden sm:flex items-center gap-1">
-          <NoticeButton lang={lang} />
+          <NoticeButton lang={lang} hidden={!!champSearchOpen} onOpenChange={onNoticeOpenChange} />
           <HelpButton lang={lang} />
-          <TagGlossaryButton lang={lang} />
+          <TagGlossaryButton lang={lang} onOpenChange={onGlossaryOpenChange} />
           <a href="/quiz" className={`${btnBase} quiz-shimmer`}>
             {lang === "ko" ? "퀴즈" : "Quiz"}
           </a>

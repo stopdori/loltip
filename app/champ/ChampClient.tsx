@@ -110,6 +110,13 @@ useEffect(() => {
 }, [enemyChamp]);
 
   const [openTarget, setOpenTarget] = useState<"my" | "enemy" | null>(null);
+  const [helpOpen, setHelpOpen] = useState(false);
+  const [noticeOpen, setNoticeOpen] = useState(false);
+  const [glossaryOpen, setGlossaryOpen] = useState(false);
+
+  useEffect(() => {
+    console.log('openTarget:', openTarget);
+  }, [openTarget]);
 
   useEffect(() => {
   setOpenTarget(null);
@@ -143,6 +150,11 @@ useEffect(() => {
         lang={lang}
         onLangChange={setLangAndPersist}
         subtitle={subtitle}
+        champSearchOpen={openTarget !== null}
+        helpOpen={helpOpen}
+        onHelpOpenChange={setHelpOpen}
+        onNoticeOpenChange={setNoticeOpen}
+        onGlossaryOpenChange={setGlossaryOpen}
       />
 
       {/* 빈 상태: CHAMP PICK 위에 QuizWidget */}
@@ -382,7 +394,7 @@ setOpenTarget(null);
 
       {myChamp && enemyChamp && <div className="max-w-[430px] sm:max-w-[980px] mx-auto w-full"><QuizWidget lang={lang} /></div>}
 
-      <FeedbackButton lang={lang} />
+      <FeedbackButton lang={lang} hidden={openTarget !== null || helpOpen || noticeOpen || glossaryOpen} />
 
 <div className="pt-8">
   <AdSlot side="bottom" />

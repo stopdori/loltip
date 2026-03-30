@@ -4,9 +4,10 @@ import { useEffect, useMemo, useState } from "react";
 
 type Props = {
   lang: "ko" | "en";
+  hidden?: boolean;
 };
 
-export default function FeedbackButton({ lang }: Props) {
+export default function FeedbackButton({ lang, hidden }: Props) {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -71,6 +72,8 @@ export default function FeedbackButton({ lang }: Props) {
       );
     }
   };
+
+  if (hidden) return null;
 
   return (
     <>

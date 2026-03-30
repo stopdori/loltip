@@ -176,13 +176,18 @@ function splitLeftRight(lines: Line[]) {
   return { left, right };
 }
 
-export default function TagGlossaryButton({ lang, className }: { lang: "ko" | "en"; className?: string }) {
+export default function TagGlossaryButton({ lang, className, onOpenChange }: { lang: "ko" | "en"; className?: string; onOpenChange?: (v: boolean) => void }) {
   const [open, setOpen] = useState(false);
+
+  const handleOpen = (v: boolean) => {
+    setOpen(v);
+    onOpenChange?.(v);
+  };
 
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") handleOpen(false);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -295,7 +300,7 @@ export default function TagGlossaryButton({ lang, className }: { lang: "ko" | "e
     <>
       <button
   type="button"
-  onClick={() => setOpen(true)}
+  onClick={() => handleOpen(true)}
   className={className ?? "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-800/80"}
 >
   {lang === "ko" ? "말풍선" : "Tags"}
@@ -305,7 +310,7 @@ export default function TagGlossaryButton({ lang, className }: { lang: "ko" | "e
       {open && (
         <div
           className="fixed inset-0 z-[9999] flex items-center justify-center"
-          onMouseDown={() => setOpen(false)}
+          onMouseDown={() => handleOpen(false)}
         >
           <div className="absolute inset-0 bg-black/60" />
 
@@ -321,7 +326,7 @@ export default function TagGlossaryButton({ lang, className }: { lang: "ko" | "e
 
               <button
                 type="button"
-                onClick={() => setOpen(false)}
+                onClick={() => handleOpen(false)}
                 className="px-3 py-2 rounded-xl text-sm font-bold bg-slate-800/60 border border-white/10 hover:bg-slate-800/80"
               >
                 {lang === "ko" ? "닫기" : "Close"}

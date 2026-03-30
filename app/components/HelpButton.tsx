@@ -6,10 +6,16 @@ import Image from "next/image";
 type Props = {
   lang: "ko" | "en";
   className?: string;
+  onOpenChange?: (v: boolean) => void;
 };
 
-export default function HelpButton({ lang, className }: Props) {
+export default function HelpButton({ lang, className, onOpenChange }: Props) {
   const [open, setOpen] = useState(false);
+
+  const handleOpen = (v: boolean) => {
+    setOpen(v);
+    onOpenChange?.(v);
+  };
 
   const t = useMemo(() => {
     return lang === "ko"
@@ -32,7 +38,7 @@ export default function HelpButton({ lang, className }: Props) {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") handleOpen(false);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -43,7 +49,7 @@ export default function HelpButton({ lang, className }: Props) {
       {/* ? 버튼 (수동 오픈은 항상 가능) */}
       <button
         type="button"
-        onClick={() => setOpen(true)}
+        onClick={() => handleOpen(true)}
         className={
           className ??
 "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-700/60"
@@ -59,7 +65,7 @@ export default function HelpButton({ lang, className }: Props) {
         <div className="fixed inset-0 z-50">
           <div
             className="absolute inset-0 bg-black/60"
-            onClick={() => setOpen(false)}
+            onClick={() => handleOpen(false)}
           />
 
           <div className="absolute left-1/2 top-1/2 w-[min(520px,92vw)] -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-slate-900 p-5 ring-1 ring-slate-700 shadow-xl">
@@ -71,7 +77,7 @@ export default function HelpButton({ lang, className }: Props) {
 
               <button
                 type="button"
-                onClick={() => setOpen(false)}
+                onClick={() => handleOpen(false)}
                 className="rounded-lg px-2 py-1 text-sm text-slate-200 hover:bg-slate-800"
               >
                 {t.close}
@@ -93,7 +99,7 @@ export default function HelpButton({ lang, className }: Props) {
             <div className="flex items-center justify-center">
               <button
                 type="button"
-                onClick={() => setOpen(false)}
+                onClick={() => handleOpen(false)}
                 className="rounded-xl bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-200 ring-1 ring-white/10 hover:bg-slate-700"
               >
                 {t.close}
