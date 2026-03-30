@@ -33,14 +33,18 @@ const smolder: ChampData = {
       { label: { ko: "Q 추가 투사체 ( 225스택 이상 )", en: "Q Addtional Projectile ( Over 125 Stacks )" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DMG_MAGIC", "DOT_DMG_TRUE", "PROJECTILE", "PIERCE"] },
     ] },
    
-    W: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST"],
-    E: ["DMG_PHYSICAL", "DMG_MAGIC", "SKILL_CHANNEL", "MOBILITY"],
-    R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE"],
+    W: { phases: [
+      { label: { ko: "W 투사체", en: "W Projectile" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE"] },
+      { label: { ko: "W 범위피해", en: "W AOE" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DMG_MAGIC", "AOE"] },
+    ] },
+    
+    E: ["DMG_PHYSICAL", "DMG_MAGIC", "SKILL_CHANNEL", "SINGLE", "MOBILITY"],
+    R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE"],
   },
 
   notes: {
     ko: [
-    "P 스택은 25 스플레쉬 /125 추가투사체 (최초 2개 + 125스택 마다 1개씩 추가.)\n225 3초지속 고정피해, [[EXECUTE]]", "P 스택이 25 / 125 / 225 마다 스몰더의 화염뿔이 자라남.", "W의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R의 브레스를 스몰더 자신이 맞아야 [[HEAL]]", "E스킬은 [[HARD_CC]]에 끊김"
+    "P 스택은 25 스플레쉬 /125 추가투사체 (최초 2개 + 125스택 마다 1개씩 추가.)\n225 3초지속 고정피해, [[EXECUTE]]", "P 스택이 25 / 125 / 225 마다 스몰더의 화염뿔이 자라남.", "공허충 작은 새끼는 스택을 주지 않음.", "W의 범위 폭발피해는 중첩이 가능하지만, 추가되는 피해가 25%만 들어감.", "W의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R의 브레스를 스몰더 자신이 맞아야 [[HEAL]]", "E스킬은 [[HARD_CC]]에 끊김"
   ],
     en: ["P stacks: 25 splash / 125 bonus projectile / 225 persistent true damage, [[EXECUTE]]", "W's [[SLOW]] continuously applies to targets inside the area", "R [[HEAL]] only activates if Smolder himself is hit by the breath", "E is interrupted by [[HARD_CC]]"]
   },
