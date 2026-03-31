@@ -25,14 +25,14 @@ const khazix: ChampData = {
     base: {
       P: [],
       Q: ["POSITION_REVEAL"],
-      W: ["FEEDBACK_SOUND"],
+      W: ["HIT_SOUND"],
       E: [],
       R: [],
     },
     alt: {
       P: [],
       Q: ["POSITION_REVEAL"],
-      W: ["FEEDBACK_SOUND", "REVEALED"],
+      W: ["HIT_SOUND", "REVEALED"],
       E: [],
       R: [],
     },

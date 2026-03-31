@@ -12,7 +12,7 @@ const maokai: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_SOUND"],
+    Q: ["HIT_SOUND"],
     W: ["POSITION_REVEAL"],
     E: ["VISION"],
     R: ["VISION"],

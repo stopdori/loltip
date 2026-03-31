@@ -12,9 +12,9 @@ const neeko: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
     W: ["VISION"],
-    E: ["FEEDBACK_INDICATOR"],
+    E: ["HIT_INDICATOR"],
     R: [],
   },
 

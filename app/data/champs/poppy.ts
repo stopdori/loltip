@@ -12,7 +12,7 @@ const poppy: ChampData = {
 
   vision: {
     P: ["POSITION_REVEAL"],
-    Q: ["FEEDBACK_SOUND"],
+    Q: ["HIT_SOUND"],
     W: [],
     E: ["POSITION_REVEAL"],
     R: ["REVEALED"],

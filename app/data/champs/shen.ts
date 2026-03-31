@@ -12,9 +12,9 @@ const shen: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_INDICATOR", "POSITION_REVEAL"],
+    Q: ["HIT_INDICATOR", "POSITION_REVEAL"],
     W: [],
-    E: ["FEEDBACK_INDICATOR"],
+    E: ["HIT_INDICATOR"],
     R: [],
   },
 

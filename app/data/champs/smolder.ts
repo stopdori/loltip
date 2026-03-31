@@ -16,8 +16,8 @@ const smolder: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_INDICATOR", "POSITION_REVEAL"],
-    W: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR", "POSITION_REVEAL"],
+    W: ["HIT_INDICATOR"],
     E: ["POSITION_REVEAL"],
     R: ["VISION"],
   },

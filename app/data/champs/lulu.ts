@@ -18,7 +18,7 @@ const lulu: ChampData = {
 
   vision: {
       P: [],
-      Q: ["FEEDBACK_SOUND"],
+      Q: ["HIT_SOUND"],
       W: { phases: [
       { label: { ko: "W 아군", en: "W Ally" }, tags: [] },
       { label: { ko: "W 상대", en: "W Enemy" }, tags: ["POSITION_REVEAL"] },

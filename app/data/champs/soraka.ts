@@ -14,7 +14,7 @@ const soraka: ChampData = {
     P: [],
     Q: ["VISION"],
     W: [],
-    E: ["FEEDBACK_SOUND"],
+    E: ["HIT_SOUND"],
     R: [],
   },
 

@@ -12,7 +12,7 @@ const akali: ChampData = {
 
   vision: {
     P: [],
-    Q: ["POSITION_REVEAL", "FEEDBACK_INDICATOR"],
+    Q: ["POSITION_REVEAL", "HIT_INDICATOR"],
     W: [],
     E: { phases: [
       { label: { ko: "E1", en: "E1" }, tags: ["TRUE_SIGHT"] },

@@ -36,8 +36,8 @@ const kayn: ChampData = {
   vision: {
     base: {
       P: [],
-      Q: ["FEEDBACK_SOUND", "FEEDBACK_EFFECT"],
-      W: ["FEEDBACK_EFFECT"],
+      Q: ["HIT_SOUND", "HIT_EFFECT"],
+      W: ["HIT_EFFECT"],
       E: [],
       R: [],
     },

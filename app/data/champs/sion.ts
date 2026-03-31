@@ -14,8 +14,8 @@ const sion: ChampData = {
     P: [],
     Q: [],
     W: [],
-    E: ["FEEDBACK_INDICATOR"],
-    R: ["FEEDBACK_INDICATOR"],
+    E: ["HIT_INDICATOR"],
+    R: ["HIT_INDICATOR"],
   },
 
   gimmick: {

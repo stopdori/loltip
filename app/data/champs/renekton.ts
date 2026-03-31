@@ -24,7 +24,7 @@ const renekton: ChampData = {
     P: [],
     Q: [],
     W: [],
-    E: ["FEEDBACK_INDICATOR"],
+    E: ["HIT_INDICATOR"],
     R: [],
   },
 

@@ -12,7 +12,7 @@ const kayle: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_SOUND", "FEEDBACK_EFFECT"],
+    Q: ["HIT_SOUND", "HIT_EFFECT"],
     W: [],
     E: ["POSITION_REVEAL"],
     R: [],

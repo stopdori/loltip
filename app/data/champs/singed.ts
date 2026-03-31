@@ -11,7 +11,7 @@ const singed: ChampData = {
   },
 
   vision: {
-    P: ["FEEDBACK_INDICATOR"],
+    P: ["HIT_INDICATOR"],
     Q: [],
     W: [],
     E: [],

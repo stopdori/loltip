@@ -36,12 +36,14 @@ export type TagId =
   | "REVEALED"
   | "TRUE_SIGHT"
   | "POSITION_REVEAL"
-  | "POSITION_HIDDEN"
   | "POSITION_INDICATOR"
-  | "POSITION_TRACK"
-  | "FEEDBACK_SOUND"
-  | "FEEDBACK_EFFECT"
-  | "FEEDBACK_INDICATOR"
+  | "POSITION_SOUND"
+  | "POSITION_EFFECT"
+  | "POSITION_EFFECT_SOUND"
+  | "HIT_SOUND"
+  | "HIT_EFFECT"
+  | "HIT_EFFECT_SOUND"
+  | "HIT_INDICATOR"
 
 
 
@@ -177,15 +179,14 @@ VISION: { ko: "시야", en: "Vision" },
 REVEALED: { ko: "드러냄", en: "Revealed" },
 TRUE_SIGHT: { ko: "절대시야", en: "True Sight" },
 POSITION_REVEAL: { ko: "위치노출", en: "Position Reveal" },
-POSITION_HIDDEN: { ko: "위치 은닉", en: "Position Hidden" },
-POSITION_INDICATOR: { ko: "위치 단서", en: "Position Indicator" },
-FEEDBACK_SOUND:     { ko: "소리 피드백",     en: "Sound Feedback"     },
-FEEDBACK_EFFECT:    { ko: "이펙트 피드백",  en: "Effect Feedback"    },
-FEEDBACK_INDICATOR: { ko: "피드백",     en: "Indicator Feedback"          },
-
-
-
-POSITION_TRACK: { ko: "위치추적", en: "Position Tracking" },
+POSITION_INDICATOR:    { ko: "위치 단서",        en: "Position Indicator"   },
+POSITION_SOUND:        { ko: "위치 소리",        en: "Position Sound"       },
+POSITION_EFFECT:       { ko: "위치 이펙트",      en: "Position Effect"      },
+POSITION_EFFECT_SOUND: { ko: "위치 소리+이펙트", en: "Position Effect+Sound" },
+HIT_SOUND:             { ko: "적중 소리",        en: "Hit Sound"            },
+HIT_EFFECT:            { ko: "적중 이펙트",      en: "Hit Effect"           },
+HIT_EFFECT_SOUND:      { ko: "적중 소리+이펙트", en: "Hit Effect+Sound"     },
+HIT_INDICATOR:         { ko: "적중 반응",        en: "Hit Indicator"        },
 
 
 /* =========================
@@ -413,27 +414,35 @@ POSITION_REVEAL: {
   ko: "상대시야 밖에서 시전자가 스킬을 사용했을 때\n스킬 효과, 시야 제공으로 인해 사용자의 위치가 적에게 드러남",
   en: "Casting a skill from fog of war\n reveals the caster’s location to enemies",
 },
-POSITION_HIDDEN: {
-  ko: "시전해도 위치 정보가 노출되지 않음",
-  en: "Casting this ability does not reveal your position",
-},
 POSITION_INDICATOR: {
   ko: "내 위치가 직접 노출되지 않지만\n스킬의 장판이나 이펙트로 내 위치가 간접적 노출.",
   en: "My position is not directly revealed,\nbut the skill’s zone or effects allow\nthe enemy to indirectly infer my location",
 },
-POSITION_TRACK: {
-  ko: "스킬 적중 시 효과음, 표식, 피해 반응 등으로 \n적의 대략적인 위치를 추측 가능",
-  en: "On hit, audio/visual cues allow \nenemies to estimate the caster’s location",
+POSITION_SOUND: {
+  ko: "스킬 사용 시 소리로 내 위치가 간접적으로 노출될 수 있음",
+  en: "Using the skill may indirectly reveal your position via sound",
 },
-FEEDBACK_SOUND: {
+POSITION_EFFECT: {
+  ko: "스킬 사용 시 이펙트로 내 위치가 간접적으로 노출될 수 있음",
+  en: "Using the skill may indirectly reveal your position via visual effects",
+},
+POSITION_EFFECT_SOUND: {
+  ko: "스킬 사용 시 소리 및 이펙트로 내 위치가 간접적으로 노출될 수 있음",
+  en: "Using the skill may indirectly reveal your position via sound and visual effects",
+},
+HIT_SOUND: {
   ko: "스킬이 시야를 제공하지 않지만\n적중 시 소리로 상대의 존재를 파악할 수 있음",
   en: "The skill does not grant vision\nbut audio cues upon hit reveal the enemy’s presence",
 },
-FEEDBACK_EFFECT: {
+HIT_EFFECT: {
   ko: "스킬이 시야를 제공하지 않지만\n적중 시 이펙트로 상대의 존재를 파악할 수 있음",
   en: "The skill does not grant vision\nbut visual effects upon hit reveal the enemy’s presence",
 },
-FEEDBACK_INDICATOR: {
+HIT_EFFECT_SOUND: {
+  ko: "스킬이 시야를 제공하지 않지만\n적중 시 소리 및 이펙트로 상대의 존재를 파악할 수 있음",
+  en: "The skill does not grant vision\nbut audio and visual cues upon hit reveal the enemy’s presence",
+},
+HIT_INDICATOR: {
   ko: "소리나 이펙트 없이도 스킬 상태 변화나 \n버프/디버프 반응으로\n적의 존재를 간접적으로 알 수 있음.",
   en: "Indirectly detects enemy presence \nthrough skill state changes or buff/debuff reactions, \nwithout sound or visual effects.",
 },

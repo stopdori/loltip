@@ -26,9 +26,9 @@ const sejuani: ChampData = {
  
     P: [],
  
-    Q: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
  
-    W: ["FEEDBACK_SOUND"],
+    W: ["HIT_SOUND"],
  
     E: ["POSITION_REVEAL"],
  

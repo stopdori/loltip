@@ -12,8 +12,8 @@ const sivir: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_SOUND"],
-    W: ["FEEDBACK_INDICATOR", "REVEALED"],
+    Q: ["HIT_SOUND"],
+    W: ["HIT_INDICATOR", "REVEALED"],
     E: [],
     R: [],
   },

@@ -12,7 +12,7 @@ const nilah: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
     W: [],
     E: ["POSITION_REVEAL"],
     R: [],

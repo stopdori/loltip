@@ -12,7 +12,7 @@ const mordekaiser: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_SOUND"],
+    Q: ["HIT_SOUND"],
     W: [],
     E: ["VISION"],
     R: ["POSITION_REVEAL"],

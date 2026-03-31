@@ -30,7 +30,7 @@ const rumble: ChampData = {
  
     W: [],
  
-    E: ["FEEDBACK_INDICATOR"],
+    E: ["HIT_INDICATOR"],
  
     R: [],
  

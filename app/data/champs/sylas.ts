@@ -12,11 +12,11 @@ const sylas: ChampData = {
 
   vision: {
     P: [],
-    Q: ["POSITION_REVEAL", "FEEDBACK_EFFECT"],
+    Q: ["POSITION_REVEAL", "HIT_EFFECT"],
     W: ["POSITION_REVEAL"],
     E: { phases: [
       { label: { ko: "", en: "" }, tags: [] },
-      { label: { ko: "", en: "" }, tags: ["FEEDBACK_INDICATOR"] },
+      { label: { ko: "", en: "" }, tags: ["HIT_INDICATOR"] },
     ] },
     
     R: { phases: [

@@ -12,13 +12,13 @@ const swain: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_EFFECT", "POSITION_REVEAL"],
+    Q: ["HIT_EFFECT", "POSITION_REVEAL"],
     W: ["VISION", "REVEALED"],
     E: { phases: [
       { label: { ko: "E1", en: "E1" }, tags: ["VISION"] },
       { label: { ko: "E2", en: "E2" }, tags: ["REVEALED"] },
     ] },
-    R: ["FEEDBACK_INDICATOR"],
+    R: ["HIT_INDICATOR"],
   },
 
   gimmick: {

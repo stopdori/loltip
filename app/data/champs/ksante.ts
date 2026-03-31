@@ -23,14 +23,14 @@ const ksante: ChampData = {
   vision: {
     base: {
       P: [],
-      Q: ["FEEDBACK_INDICATOR"],
+      Q: ["HIT_INDICATOR"],
       W: [],
       E: [],
       R: [],
     },
     alt: {
       P: [],
-      Q: ["FEEDBACK_INDICATOR"],
+      Q: ["HIT_INDICATOR"],
       W: [],
       E: [],
       R: [],

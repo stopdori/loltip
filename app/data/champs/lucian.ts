@@ -15,7 +15,7 @@ const lucian: ChampData = {
     Q: [],
     W: ["VISION"],
     E: [],
-    R: ["FEEDBACK_INDICATOR"],
+    R: ["HIT_INDICATOR"],
   },
 
   gimmick: {

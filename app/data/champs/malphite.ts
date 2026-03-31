@@ -15,7 +15,7 @@ const malphite: ChampData = {
     Q: ["POSITION_REVEAL"],
     W: [],
     E: ["POSITION_REVEAL"],
-    R: ["FEEDBACK_SOUND"],
+    R: ["HIT_SOUND"],
   },
 
   gimmick: {

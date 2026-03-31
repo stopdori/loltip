@@ -12,10 +12,10 @@ const skarner: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
     W: [],
-    E: ["FEEDBACK_INDICATOR"],
-    R: ["FEEDBACK_INDICATOR", "REVEALED"],
+    E: ["HIT_INDICATOR"],
+    R: ["HIT_INDICATOR", "REVEALED"],
   },
 
   gimmick: {

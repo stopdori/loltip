@@ -31,7 +31,7 @@ const kled: ChampData = {
     },
     alt: {
       P: [],
-      Q: ["FEEDBACK_EFFECT"],
+      Q: ["HIT_EFFECT"],
       W: [],
       E: [],
       R: [],

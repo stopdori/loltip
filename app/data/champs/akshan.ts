@@ -12,8 +12,8 @@ const akshan: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_INDICATOR"],
-    W: ["ST_CONDITIONAL", "FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
+    W: ["ST_CONDITIONAL", "HIT_INDICATOR"],
     E: [],
     R: ["TRUE_SIGHT"],
   },

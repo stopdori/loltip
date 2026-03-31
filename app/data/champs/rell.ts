@@ -18,13 +18,13 @@ const rell: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
     W: { phases: [
-      { label: { ko: "W 붕괴", en: "W Dismounted" }, tags: ["FEEDBACK_INDICATOR"] },
+      { label: { ko: "W 붕괴", en: "W Dismounted" }, tags: ["HIT_INDICATOR"] },
     ] },
     
     E: [],
-    R: ["FEEDBACK_INDICATOR"],
+    R: ["HIT_INDICATOR"],
   },
 
   gimmick: {

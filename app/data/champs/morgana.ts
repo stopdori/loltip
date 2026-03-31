@@ -12,7 +12,7 @@ const morgana: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
     W: [],
     E: [],
     R: ["TRUE_SIGHT", "POSITION_REVEAL"],

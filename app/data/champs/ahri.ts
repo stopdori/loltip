@@ -12,9 +12,9 @@ const ahri: ChampData = {
 
   vision: {
     P: [],
-    Q: ["FEEDBACK_SOUND"],
+    Q: ["HIT_SOUND"],
     W: ["POSITION_REVEAL"],
-    E: ["FEEDBACK_SOUND", "FEEDBACK_EFFECT"],
+    E: ["HIT_SOUND", "HIT_EFFECT"],
     R: ["POSITION_REVEAL"],
   },
 

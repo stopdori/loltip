@@ -28,7 +28,7 @@ skills: {
       P: [],
       Q: ["POSITION_REVEAL"],
       W: [],
-      E: ["FEEDBACK_INDICATOR"],
+      E: ["HIT_INDICATOR"],
       R: [],
     },
     alt: {

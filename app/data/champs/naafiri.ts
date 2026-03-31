@@ -12,7 +12,7 @@ const naafiri: ChampData = {
 
   vision: {
     P: ["VISION"],
-    Q: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
     W: [],
     E: [],
     R: [],

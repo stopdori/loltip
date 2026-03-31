@@ -26,9 +26,9 @@ const senna: ChampData = {
  
     P: [],
  
-    Q: ["FEEDBACK_INDICATOR"],
+    Q: ["HIT_INDICATOR"],
  
-    W: ["FEEDBACK_INDICATOR"],
+    W: ["HIT_INDICATOR"],
  
     E: [],
  
