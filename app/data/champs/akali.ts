@@ -39,10 +39,14 @@ const akali: ChampData = {
   },
 
   notes: {
-    ko: [
-    "Q의 [[SLOW]]는 사거리 끝에 맞혀야만 유효.", "W는 장막 안에서만 [[INVISIBILITY]].\n[[REVEALED]]이 있는 스킬(예- 리신E)에\n스킬을 맞고 숨으면 보임.\n맞기전에 숨으면 안보임.\n절대시야(예 - 리신Q)는 무조건 보임.", "E1은 [[TRUE_SIGHT]].\n[[INVISIBILITY]] 대상에게 E2를 사용해서 E1 표창이 사라지면 더 이상 모습이 보이지 않음.", "E1를 장막에 맞히고 E2로 되돌아 올 수 있음.\n[[UNTARGETABLE]] 대상에게는 E2 사용불가.\n예) 피즈 E(재간둥이), 블라디 W(웅덩이)"
-  ],
-    en: ["Q's [[SLOW]] only applies when hitting at max range", "W grants [[INVISIBILITY]] only inside the shroud.\nIf hit by a [[REVEALED]] ability (e.g. Lee Sin E) after hiding, you become visible.\nHiding before being hit keeps you hidden.\nTrue sight (e.g. Lee Sin Q) always reveals you", "E1 can be thrown into the shroud and recalled with E2.\nE2 cannot target [[UNTARGETABLE]] units\ne.g. Fizz E (Playful/Trickster), Vladimir W (Sanguine Pool)"]
+    skill: {
+      note2: {
+        ko: [
+        "Q의 [[SLOW]]는 사거리 끝에 맞혀야만 유효.", "W는 장막 안에서만 [[INVISIBILITY]].\n[[REVEALED]]이 있는 스킬(예- 리신E)에\n스킬을 맞고 숨으면 보임.\n맞기전에 숨으면 안보임.\n절대시야(예 - 리신Q)는 무조건 보임.", "E1은 [[TRUE_SIGHT]].\n[[INVISIBILITY]] 대상에게 E2를 사용해서 E1 표창이 사라지면 더 이상 모습이 보이지 않음.", "E1를 장막에 맞히고 E2로 되돌아 올 수 있음.\n[[UNTARGETABLE]] 대상에게는 E2 사용불가.\n예) 피즈 E(재간둥이), 블라디 W(웅덩이)"
+      ],
+        en: ["Q's [[SLOW]] only applies when hitting at max range", "W grants [[INVISIBILITY]] only inside the shroud.\nIf hit by a [[REVEALED]] ability (e.g. Lee Sin E) after hiding, you become visible.\nHiding before being hit keeps you hidden.\nTrue sight (e.g. Lee Sin Q) always reveals you", "E1 can be thrown into the shroud and recalled with E2.\nE2 cannot target [[UNTARGETABLE]] units\ne.g. Fizz E (Playful/Trickster), Vladimir W (Sanguine Pool)"]
+        },
+    },
   },
 
   ultCooldown: {

@@ -58,10 +58,14 @@ const udyr: ChampData = {
   },
 
   notes: {
-    ko: [
-    "우디르는 P효과로 스킬 재사용이 궁임\nP쿨은 50~20s 이고\n태세변환하고 평타를 치면 P 쿨타임 감소"
-  ],
-    en: ["Udyr's passive is what makes reusing skills his ultimate.\nP cooldown is 50–20s.\nBasic attacking after switching stances reduces P cooldown"]
+    skill: {
+      note2: {
+        ko: [
+        "우디르는 P효과로 스킬 재사용이 궁임\nP쿨은 50~20s 이고\n태세변환하고 평타를 치면 P 쿨타임 감소"
+      ],
+        en: ["Udyr's passive is what makes reusing skills his ultimate.\nP cooldown is 50–20s.\nBasic attacking after switching stances reduces P cooldown"]
+        },
+    },
   },
 
   // 제이스 궁은 폼 전환이라 쿨 없음

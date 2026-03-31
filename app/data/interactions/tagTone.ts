@@ -201,7 +201,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   GLOBAL:  "indigo",
   SUMMON:  "indigo",
   SWARM:   "indigo",
-  VOLLEY:  "indigo",
+  VOLLEY:         "indigo",
+  VOLLEY_OVERLAP: "indigo",
   // 피해 종류
   DMG_PHYSICAL: "red",
   DMG_MAGIC:    "sky",

@@ -31,10 +31,14 @@ const masteryi: ChampData = {
   },
 
   notes: {
-    ko: [
-    "평타가 3번을 치면 4번째 평타는 두대를 때림.\nE를 사용하고 때리면 두번 적용됨.", "E를 사용하고 Q를 사용하면 E가 적용됨.", "R은 킬관여 하면\n쿨타임 70%감소, 지속시간 7초 증가."
-  ],
-    en: ["Kill participation with R reduces its cooldown by 70% and extends its duration by 7s."]
+    skill: {
+      note2: {
+        ko: [
+        "평타가 3번을 치면 4번째 평타는 두대를 때림.\nE를 사용하고 때리면 두번 적용됨.", "E를 사용하고 Q를 사용하면 E가 적용됨.", "R은 킬관여 하면\n쿨타임 70%감소, 지속시간 7초 증가."
+      ],
+        en: ["Kill participation with R reduces its cooldown by 70% and extends its duration by 7s."]
+        },
+    },
   },
 
   ultCooldown: {

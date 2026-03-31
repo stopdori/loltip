@@ -44,6 +44,7 @@ export type GimmickTagId =
   | "HOMING"
   | "SWARM"
   | "VOLLEY"
+  | "VOLLEY_OVERLAP"
   | "CHAIN"
   
   | "SINGLE"
@@ -142,7 +143,8 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   GLOBAL:  { ko: "전체맵", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
   SWARM:   { ko: "분산",     en: "Swarm"   },
-  VOLLEY:  { ko: "일제사격", en: "Volley"  },
+  VOLLEY:         { ko: "일제사격", en: "Volley"         },
+  VOLLEY_OVERLAP: { ko: "중첩사격", en: "Overlap Volley" },
   // 피해 종류
   DMG_PHYSICAL: { ko: "물리피해", en: "Physical Damage" },
   DMG_MAGIC:    { ko: "마법피해", en: "Magic Damage"    },
@@ -206,12 +208,16 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   PIERCE:        { ko: "투사체가 대상을 관통하여 뒤의 적에게도 적중", en: "Projectile passes through targets" },
   PIERCE_MINION: { ko: "미니언을 관통하여 지나가지만 챔피언은 관통 못하는 조건부 관통", en:   "Passes through minions\nDoes not pierce champions"  },
   PIERCE_ONCE:   { ko: "적 챔피언 1명을 관통하고 멈춤.", en: "Pierces through one enemy champion and stops." },
-  AOE:         { ko: "특정 범위 내 여러 대상에게 적용", en: "Affects multiple targets within an area" },
-  AURA:        { ko: "주변 아군 또는 적에게 지속적으로 영향을 주는 범위 효과.", en: "A persistent area effect that continuously affects nearby allies or enemies." },
+  AOE:         { ko: "특정 범위 내 \여러 대상에게 적용", en: "Affects multiple targets within an area" },
+  AURA:        { ko: "주변 아군 또는 적에게 지속적으로 영향을 주는 범위 효과. \n CC에 맞아도 풀리지 않음.", en: "A persistent area effect that continuously affects nearby allies or enemies.\nCannot be dispelled by CC." },
   GLOBAL:      { ko: "맵 전체 또는 모든 적에게 적용", en: "Affects all enemies or the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
   SWARM:   { ko: "스킬이 근처 적에게 나뉘어 각각 단일 적중", en: "Splits among nearby enemies,\n each hitting a single target"},
   VOLLEY:  { ko: "여러 투사체를 같은 방향으로 발사\n각 투사체는 첫 번째 적에게만 적중", en: "Fires multiple projectiles in the same direction\nEach projectile hits only the first enemy" },
+  VOLLEY_OVERLAP: {
+    ko: "여러 투사체가 발사되며 가까운 적에게 여러 발이 겹쳐 맞을 수 있음.\n두 번째 발부터는 감소된 피해가 적용됨.",
+    en: "Fires multiple projectiles that can overlap on close-range enemies.\nSubsequent hits deal reduced damage.",
+  },
   // 피해 종류
   DMG_PHYSICAL: { ko: "방어력에 의해 감소되는 피해", en: "Damage mitigated by armor" },
   DMG_MAGIC:    { ko: "마법 저항력에 의해 감소되는 피해", en: "Damage mitigated by magic resistance" },

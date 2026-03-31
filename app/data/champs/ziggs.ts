@@ -27,10 +27,14 @@ const ziggs: ChampData = {
   },
 
   notes: {
-    ko: [
-    "[[W_FLASH]], [[E_FLASH]] 안됨", "W로 타워[[EXECUTE]] 가능", "R은 중심이 효과가 큼"
-  ],
-    en: ["[[W_FLASH]] and [[E_FLASH]] not possible", "W can [[EXECUTE]] towers", "R deals maximum damage in the center"]
+    skill: {
+      note2: {
+        ko: [
+        "[[W_FLASH]], [[E_FLASH]] 안됨", "W로 타워[[EXECUTE]] 가능", "R은 중심이 효과가 큼"
+      ],
+        en: ["[[W_FLASH]] and [[E_FLASH]] not possible", "W can [[EXECUTE]] towers", "R deals maximum damage in the center"]
+        },
+    },
   },
 
   ultCooldown: {

@@ -27,10 +27,14 @@ const karthus: ChampData = {
   },
 
   notes: {
-    ko: [
-    "카서스는 죽었을 때 P로 인해 죽음을 극복하고 움직일 수 없지만 스킬을 사용 할 수 있음.\n이 때 마나소모를 하지 않음.", "Q는 단일 대상 명중 시 피해가 증가함", "카서스 R(진혼곡) 시전중에 점멸쓰면 R 취소됨",
-  ],
-    en: ["When Karthus dies, P allows him to overcome death — he cannot move but can still cast skills.\nMana is not consumed during this state.", "Q deals increased damage to a single target", "Using flash during R channeling cancels R immediately — never do this"]
+    skill: {
+      note2: {
+        ko: [
+        "카서스는 죽었을 때 P로 인해 죽음을 극복하고 움직일 수 없지만 스킬을 사용 할 수 있음.\n이 때 마나소모를 하지 않음.", "Q는 단일 대상 명중 시 피해가 증가함", "카서스 R(진혼곡) 시전중에 점멸쓰면 R 취소됨",
+      ],
+        en: ["When Karthus dies, P allows him to overcome death — he cannot move but can still cast skills.\nMana is not consumed during this state.", "Q deals increased damage to a single target", "Using flash during R channeling cancels R immediately — never do this"]
+        },
+    },
   },
 
   ultCooldown: {

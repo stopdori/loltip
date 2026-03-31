@@ -27,10 +27,14 @@ const hecarim: ChampData = {
   },
 
   notes: {
-    ko: [
-    "[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]], [[R_FLASH]] 다 안됨", "헤카림은 이속이 증가하면 [[AD_UP]]", "R의 [[FEAR]]는 판정이 좀 좋지않음\n타이밍 맞춰 상대가 이동기를 쓰면\n쉽게 피하는 모습을 자주 봄"
-  ],
-    en: ["[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]], [[R_FLASH]] all not possible", "Hecarim gains [[AD_UP]] based on bonus movement speed", "E has two phases: charge / strike.\nCC during the charge phase is valid but does not cancel E .\nOnce the strike phase activates (rearing up), CC is ignored.", "R's [[FEAR]] has inconsistent hit detection.\nEnemies using mobility at the right timing can often dodge it easily"]
+    skill: {
+      note2: {
+        ko: [
+        "[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]], [[R_FLASH]] 다 안됨", "헤카림은 이속이 증가하면 [[AD_UP]]", "R의 [[FEAR]]는 판정이 좀 좋지않음\n타이밍 맞춰 상대가 이동기를 쓰면\n쉽게 피하는 모습을 자주 봄"
+      ],
+        en: ["[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]], [[R_FLASH]] all not possible", "Hecarim gains [[AD_UP]] based on bonus movement speed", "E has two phases: charge / strike.\nCC during the charge phase is valid but does not cancel E .\nOnce the strike phase activates (rearing up), CC is ignored.", "R's [[FEAR]] has inconsistent hit detection.\nEnemies using mobility at the right timing can often dodge it easily"]
+        },
+    },
   },
 
   ultCooldown: {

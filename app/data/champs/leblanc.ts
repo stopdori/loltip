@@ -38,10 +38,14 @@ const leblanc: ChampData = {
   },
 
   notes: {
-    ko: [
-    "[[W_FLASH]] 안됨", "분신 컨트롤은 alt 우클릭으로 가능", "Q는 미니언 막타시 마나를 돌려주고 쿨타임 30%로 감소.", "R은 마지막으로 사용한 스킬을 모방해서 사용 가능.\n 예시) Q, W, E 순서로 사용했다면 E를 모방."
-  ],
-    en: ["[[W_FLASH]] not possible", "Clone can be controlled with alt + right-click"]
+    skill: {
+      note2: {
+        ko: [
+        "[[W_FLASH]] 안됨", "분신 컨트롤은 alt 우클릭으로 가능", "Q는 미니언 막타시 마나를 돌려주고 쿨타임 30%로 감소.", "R은 마지막으로 사용한 스킬을 모방해서 사용 가능.\n 예시) Q, W, E 순서로 사용했다면 E를 모방."
+      ],
+        en: ["[[W_FLASH]] not possible", "Clone can be controlled with alt + right-click"]
+        },
+    },
   },
 
   ultCooldown: {

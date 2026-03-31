@@ -65,10 +65,14 @@ const karma: ChampData = {
   },
 
   notes: {
-    ko: [
-    "만트라 W는 발동할 때 [[HEAL]]\n[[TETHER]]효과 발동 해서 [[ROOT]]되면 한번 더 [[HEAL]]",
-  ],
-    en: ["Mantra W heals on activation.\nIf the [[TETHER]] triggers and [[ROOT]] is applied, it heals again"]
+    skill: {
+      note2: {
+        ko: [
+        "만트라 W는 발동할 때 [[HEAL]]\n[[TETHER]]효과 발동 해서 [[ROOT]]되면 한번 더 [[HEAL]]",
+      ],
+        en: ["Mantra W heals on activation.\nIf the [[TETHER]] triggers and [[ROOT]] is applied, it heals again"]
+        },
+    },
   },
 
   ultCooldown: {

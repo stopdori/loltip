@@ -30,10 +30,14 @@ const gangplank: ChampData = {
   },
 
   notes: {
-    ko: [
-    "P의 쿨타임은 갱플랭크가 화약통을 폭발시키면 초기화 됨.", "마나 게이지 밑에 화약통 갯수 나옴", 
-  ],
-    en: ["Powder keg count is shown below the mana bar"]
+    skill: {
+      note2: {
+        ko: [
+        "P의 쿨타임은 갱플랭크가 화약통을 폭발시키면 초기화 됨.", "마나 게이지 밑에 화약통 갯수 나옴", 
+      ],
+        en: ["Powder keg count is shown below the mana bar"]
+        },
+    },
   },
 
   ultCooldown: {

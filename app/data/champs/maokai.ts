@@ -35,10 +35,14 @@ const maokai: ChampData = {
   },
 
   notes: {
-    ko: [
-    "[[R_FLASH]] 안됨", "Q의 주변 범위 피해와 Q 투사체의 피해는 동일하고, 같은대상에게 두번적용되지 않음.", "W는 시전하면 멈출 수 없음.", "E는 부쉬에 소환하면 강화.", "E의 시야 범위는 넥서스 크기정도.", "묘목에 텔 안됨", "R의 [[MS_UP]]는 상대에게 적중하면 적용됨"
-  ],
-    en: ["[[R_FLASH]] not possible", "Cannot TP onto saplings", "R's [[MS_UP]] applies when hitting an enemy"]
+    skill: {
+      note2: {
+        ko: [
+        "[[R_FLASH]] 안됨", "Q의 주변 범위 피해와 Q 투사체의 피해는 동일하고, 같은대상에게 두번적용되지 않음.", "W는 시전하면 멈출 수 없음.", "E는 부쉬에 소환하면 강화.", "E의 시야 범위는 넥서스 크기정도.", "묘목에 텔 안됨", "R의 [[MS_UP]]는 상대에게 적중하면 적용됨"
+      ],
+        en: ["[[R_FLASH]] not possible", "Cannot TP onto saplings", "R's [[MS_UP]] applies when hitting an enemy"]
+        },
+    },
   },
 
   ultCooldown: {

@@ -33,9 +33,13 @@ const aatrox: ChampData = {
   },
 
   notes: {
-    ko: ["Q는 끝에 맞히면 [[AIRBORNE]].", "Q는 Q2 또는 Q3를 사용하지 않으면,\nQ1 쿨타임이 더 빨리 돌아옴.", "W는 스킬설명에 [[TRUE_SIGHT]]가 없는데\n효과가 똑같이 작동함.", "E스킬 [[PASSIVE_BONUS]]에는 챔피언을 대상으로\n모든피해 [[LIFESTEAL]]이 붙어있음.\n그래서 평타, Q, W, 아이템효과 등등 다 적용.",
-  ],
-    en: ["Q deals [[AIRBORNE]] only when hitting at the edge", "If Q2 or Q3 is not used, Q1's cooldown returns faster.", "W has no [[TRUE_SIGHT]] in the tooltip,\nbut the effect works the same", "E's base effect includes [[LIFESTEAL]] on all damage to champions,\nso it applies to basic attacks, Q, W, item effects, etc."]
+    skill: {
+      note2: {
+        ko: ["Q는 끝에 맞히면 [[AIRBORNE]].", "Q는 Q2 또는 Q3를 사용하지 않으면,\nQ1 쿨타임이 더 빨리 돌아옴.", "W는 스킬설명에 [[TRUE_SIGHT]]가 없는데\n효과가 똑같이 작동함.", "E스킬 [[PASSIVE_BONUS]]에는 챔피언을 대상으로\n모든피해 [[LIFESTEAL]]이 붙어있음.\n그래서 평타, Q, W, 아이템효과 등등 다 적용.",
+      ],
+        en: ["Q deals [[AIRBORNE]] only when hitting at the edge", "If Q2 or Q3 is not used, Q1's cooldown returns faster.", "W has no [[TRUE_SIGHT]] in the tooltip,\nbut the effect works the same", "E's base effect includes [[LIFESTEAL]] on all damage to champions,\nso it applies to basic attacks, Q, W, item effects, etc."]
+        },
+    },
   },
 
   ultCooldown: {

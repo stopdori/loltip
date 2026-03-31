@@ -64,15 +64,19 @@ const riven: ChampData = {
 
  
   notes: {
+    skill: {
+      note2: {
  
-    ko: [
+        ko: [
  
-    "[[Q_FLASH]], [[W_FLASH]] 안됨", "Q 3타만 [[WALL_HOP]] 가능", "R을 처음 쓸때 [[TIMING_CAST]]모션이 있음\n근데 ER하면 R [[TIMING_CAST]]이 없음."
+        "[[Q_FLASH]], [[W_FLASH]] 안됨", "Q 3타만 [[WALL_HOP]] 가능", "R을 처음 쓸때 [[TIMING_CAST]]모션이 있음\n근데 ER하면 R [[TIMING_CAST]]이 없음."
  
-  ],
+      ],
  
-    en: ["[[Q_FLASH]] and [[W_FLASH]] not possible", "Only Q third cast allows [[WALL_HOP]]", "R has a wind-up animation on first use.\nUsing E then R cancels the animation"]
+        en: ["[[Q_FLASH]] and [[W_FLASH]] not possible", "Only Q third cast allows [[WALL_HOP]]", "R has a wind-up animation on first use.\nUsing E then R cancels the animation"]
  
+        },
+    },
   },
  
 

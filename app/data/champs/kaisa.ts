@@ -56,10 +56,14 @@ const kaisa: ChampData = {
   },
 
   notes: {
-    ko: [
-    "진화 기준\nQ 추가 공격력100\nW 주문력 100\nE 공격속도 100%", "P의 [[DEBUFF_STACK]]은 스택이 쌓인 대상을 평타로 공격할때 마다 추가 데미지도 있고, 스택이 다 쌓이면 표식폭발 데미지도 있음.", "진화 W는 상대 챔피언을 맞히면\n쿨타임 감소"
-  ],
-    en: ["Evolutions:\nQ — 100 bonus AD\nW — 100 AP\nE — 100% AS", "Evolved W reduces its cooldown when hitting an enemy champion"]
+    skill: {
+      note2: {
+        ko: [
+        "진화 기준\nQ 추가 공격력100\nW 주문력 100\nE 공격속도 100%", "P의 [[DEBUFF_STACK]]은 스택이 쌓인 대상을 평타로 공격할때 마다 추가 데미지도 있고, 스택이 다 쌓이면 표식폭발 데미지도 있음.", "진화 W는 상대 챔피언을 맞히면\n쿨타임 감소"
+      ],
+        en: ["Evolutions:\nQ — 100 bonus AD\nW — 100 AP\nE — 100% AS", "Evolved W reduces its cooldown when hitting an enemy champion"]
+        },
+    },
   },
 
   ultCooldown: {

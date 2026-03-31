@@ -34,10 +34,14 @@ const malzahar: ChampData = {
   },
 
   notes: {
-    ko: [
-    "P(패시브)는 CC기 무시임\nP있을 때 타워데미지 들어옴\n대신 90% 딜감소 임", "[[R_FLASH]]이 진짜 좋음"
-  ],
-    en: ["P (passive) is CC immunity.\nTower damage still applies while P is active,\nbut damage is reduced by 90%", "[[R_FLASH]] is extremely powerful"]
+    skill: {
+      note2: {
+        ko: [
+        "P(패시브)는 CC기 무시임\nP있을 때 타워데미지 들어옴\n대신 90% 딜감소 임", "[[R_FLASH]]이 진짜 좋음"
+      ],
+        en: ["P (passive) is CC immunity.\nTower damage still applies while P is active,\nbut damage is reduced by 90%", "[[R_FLASH]] is extremely powerful"]
+        },
+    },
   },
 
   ultCooldown: {

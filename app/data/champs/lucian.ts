@@ -30,10 +30,14 @@ const lucian: ChampData = {
   },
 
   notes: {
-    ko: [
-    "스킬을 사용하면 P(2타)가 발동하고, 아군이 [[HEAL]], [[SHIELD]]를 주거나 상대가 이동불가가 되면 P(2타 추뎀)이 추가 발동.", "W는 상대에게 적중하고 공격하면 루시안의 [[MS_UP]]가 되는데, 아군이 공격해도 루시안의 [[MS_UP]]가 발동.", "R 쓰는 도중에 E 사용 가능."
-  ],
-    en: ["W grants [[MS_UP]] to Lucian when the marked target is attacked by any ally, not just Lucian"]
+    skill: {
+      note2: {
+        ko: [
+        "스킬을 사용하면 P(2타)가 발동하고, 아군이 [[HEAL]], [[SHIELD]]를 주거나 상대가 이동불가가 되면 P(2타 추뎀)이 추가 발동.", "W는 상대에게 적중하고 공격하면 루시안의 [[MS_UP]]가 되는데, 아군이 공격해도 루시안의 [[MS_UP]]가 발동.", "R 쓰는 도중에 E 사용 가능."
+      ],
+        en: ["W grants [[MS_UP]] to Lucian when the marked target is attacked by any ally, not just Lucian"]
+        },
+    },
   },
 
   ultCooldown: {

@@ -27,10 +27,14 @@ const taric: ChampData = {
   },
 
   notes: {
-    ko: [
-    "P의 [[MS_UP]]은 스킬 사용 후 다음 평타 2대", "R은 나와 연결된 대상의 하늘에서 광휘 내려오는데, 다 떨어지면 범위내의 대상 [[INVULNERABLE]].",
-  ],
-    en: ["P's [[MS_UP]] applies for the next 2 basic attacks after using a skill"]
+    skill: {
+      note2: {
+        ko: [
+        "P의 [[MS_UP]]은 스킬 사용 후 다음 평타 2대", "R은 나와 연결된 대상의 하늘에서 광휘 내려오는데, 다 떨어지면 범위내의 대상 [[INVULNERABLE]].",
+      ],
+        en: ["P's [[MS_UP]] applies for the next 2 basic attacks after using a skill"]
+        },
+    },
   },
 
   ultCooldown: {

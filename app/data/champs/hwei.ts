@@ -88,10 +88,14 @@ const hwei: ChampData = {
   },
 
   notes: {
-    ko: [
-    "흐웨이 스킬은 색상별로 외우면 좋음", "P는 스킬 한대 맞히면 스택이 쌓이고 다른스킬로 한대 더 맞히면 발동.", "P스택이 쌓이는 스킬\nQQ, QW, QE, WE(평타), EQ, EW, EE, R(범위에 닿으면)", "Q, W, E를 한번 누르고 R을 누르면 취소할 수 있음.", "귀환중에 Q, W, E를 한번 눌러도, 귀환이 끊기지 않음.", "Q스킬 (빨강 - 딜)\nQW는 CC걸린 대상 또는 고립된 대상에게 추가데미지를 줌", "W스킬 (파랑 - 유틸)\nWW은 장판위에 서 있으면 쉴드가 지속적으로 차오름.\nWE는 이미 시전한 스킬에도 추가될 수 있음.", "E스킬 (보라 - CC)\nEW는 날아가서 펼쳐지는데 시간이 걸림\n펼처지고도 범위내에 상대 챔피언이 있다면\n상대를 따라가는 유도투사체를 발사함\n투사체는 다른대상에게 막힐 수 있음\n(미니언 ,정글몹, 등등 포함)"
-  ],
-    en: ["Hwei's skills are easiest to memorize by color", "Q skills (red — damage):\nQW deals bonus damage to isolated or CC'd targets", "W skills (blue — utility)", "E skills (purple — CC):\nEW travels and expands after a delay.\nIf an enemy champion is within range when it expands, it launches a homing projectile.\nThe projectile can be blocked by other units (minions, jungle monsters, etc.)"]
+    skill: {
+      note2: {
+        ko: [
+        "흐웨이 스킬은 색상별로 외우면 좋음", "P는 스킬 한대 맞히면 스택이 쌓이고 다른스킬로 한대 더 맞히면 발동.", "P스택이 쌓이는 스킬\nQQ, QW, QE, WE(평타), EQ, EW, EE, R(범위에 닿으면)", "Q, W, E를 한번 누르고 R을 누르면 취소할 수 있음.", "귀환중에 Q, W, E를 한번 눌러도, 귀환이 끊기지 않음.", "Q스킬 (빨강 - 딜)\nQW는 CC걸린 대상 또는 고립된 대상에게 추가데미지를 줌", "W스킬 (파랑 - 유틸)\nWW은 장판위에 서 있으면 쉴드가 지속적으로 차오름.\nWE는 이미 시전한 스킬에도 추가될 수 있음.", "E스킬 (보라 - CC)\nEW는 날아가서 펼쳐지는데 시간이 걸림\n펼처지고도 범위내에 상대 챔피언이 있다면\n상대를 따라가는 유도투사체를 발사함\n투사체는 다른대상에게 막힐 수 있음\n(미니언 ,정글몹, 등등 포함)"
+      ],
+        en: ["Hwei's skills are easiest to memorize by color", "Q skills (red — damage):\nQW deals bonus damage to isolated or CC'd targets", "W skills (blue — utility)", "E skills (purple — CC):\nEW travels and expands after a delay.\nIf an enemy champion is within range when it expands, it launches a homing projectile.\nThe projectile can be blocked by other units (minions, jungle monsters, etc.)"]
+        },
+    },
   },
 
   ultCooldown: {

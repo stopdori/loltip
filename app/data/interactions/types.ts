@@ -45,11 +45,22 @@ type ChampVision =
   | VisionSkillBlock
   | { base: VisionSkillBlock; alt?: VisionSkillBlock; alt2?: VisionSkillBlock };
 
+export type NoteBlock = { ko: string[]; en: string[] };
+
+export type ChampNotes = {
+  skill?: {
+    note1?: NoteBlock;
+    note2?: NoteBlock;
+  };
+  vision?: NoteBlock;
+  gimmick?: NoteBlock;
+};
+
 export interface ChampData {
   id: string;
   skills: ChampSkill;
   vision?: ChampVision;
   gimmick?: ChampGimmick;
-  notes?: { ko: string[]; en: string[] };
+  notes?: NoteBlock | ChampNotes;
   ultCooldown?: Partial<Record<6 | 11 | 16, number>>;
 }

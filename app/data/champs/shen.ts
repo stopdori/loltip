@@ -45,10 +45,14 @@ const shen: ChampData = {
   },
 
   notes: {
-    ko: [
-    "쉔과 검 사이에 상대 챔프를 두는게 핵심\n검을 적중시켜야 [[SLOW]], [[AS_UP]] 발동\n여기서 [[SLOW]]는 쉔에게 멀어질 때만", "검은 부쉬안에 있을때 상대에게 보이지 않음.", "W를 쓰고 범위 내에 쉔이나 아군이 없으면 비활성화\n들어오는 순간 발동", "E의 [[PASSIVE_BONUS]]로 Q의 경로에 챔피언을 맞히거나 E(도발)을 맞히면 P(보호막)의 쿨타임이 줄어듬.", "R로 아군에게 이동 할 때, 검도 같이 옴"
-  ],
-    en: ["Key mechanic is positioning enemies between Shen and his blade.\nHitting with the blade applies [[SLOW]] and [[AS_UP]].\n[[SLOW]] only applies when the target moves away from Shen", "W deactivates if neither Shen nor allies are inside its area.\nReactivates the moment one enters", "R brings the blade along when teleporting to an ally"]
+    skill: {
+      note2: {
+        ko: [
+        "쉔과 검 사이에 상대 챔프를 두는게 핵심\n검을 적중시켜야 [[SLOW]], [[AS_UP]] 발동\n여기서 [[SLOW]]는 쉔에게 멀어질 때만", "검은 부쉬안에 있을때 상대에게 보이지 않음.", "W를 쓰고 범위 내에 쉔이나 아군이 없으면 비활성화\n들어오는 순간 발동", "E의 [[PASSIVE_BONUS]]로 Q의 경로에 챔피언을 맞히거나 E(도발)을 맞히면 P(보호막)의 쿨타임이 줄어듬.", "R로 아군에게 이동 할 때, 검도 같이 옴"
+      ],
+        en: ["Key mechanic is positioning enemies between Shen and his blade.\nHitting with the blade applies [[SLOW]] and [[AS_UP]].\n[[SLOW]] only applies when the target moves away from Shen", "W deactivates if neither Shen nor allies are inside its area.\nReactivates the moment one enters", "R brings the blade along when teleporting to an ally"]
+        },
+    },
   },
 
   ultCooldown: {

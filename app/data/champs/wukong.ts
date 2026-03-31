@@ -27,10 +27,14 @@ const wukong: ChampData = {
   },
 
   notes: {
-    ko: [
-    "W에 [[INVISIBILITY]] 중에 점멸 써도 안풀림", "E의 [[MS_UP]]는 분신도 같이 증가함", "R은 CC를 맞아도 시전을 멈추지 않음"
-  ],
-    en: ["W [[INVISIBILITY]] does not break on flash", "E's [[MS_UP]] also applies to the clone", "R cannot be cancelled by any CC"]
+    skill: {
+      note2: {
+        ko: [
+        "W에 [[INVISIBILITY]] 중에 점멸 써도 안풀림", "E의 [[MS_UP]]는 분신도 같이 증가함", "R은 CC를 맞아도 시전을 멈추지 않음"
+      ],
+        en: ["W [[INVISIBILITY]] does not break on flash", "E's [[MS_UP]] also applies to the clone", "R cannot be cancelled by any CC"]
+        },
+    },
   },
 
   ultCooldown: {
