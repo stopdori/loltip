@@ -127,10 +127,15 @@ export default async function Page(props: Props) {
   const champInfo = CHAMPIONS.find(c => c.id === champId);
   if (!champInfo) notFound();
 
-  const notes =
-    Array.isArray(champData.notes)
-      ? champData.notes
-      : champData.notes?.[lang] ?? [];
+  const notes = (() => {
+    if (!champData.notes) return [];
+    if ('ko' in champData.notes) return (champData.notes as { ko: string[]; en: string[] })[lang] ?? [];
+    const cn = champData.notes;
+    return [
+      ...(cn.skill?.note1?.[lang] ?? []),
+      ...(cn.skill?.note2?.[lang] ?? []),
+    ];
+  })();
 
   const side = searchParams?.side ?? "my";
 
