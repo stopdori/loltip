@@ -27,10 +27,14 @@ const yorick: ChampData = {
   },
 
   notes: {
-    ko: [
-    "W에 텔 안됨", "R 재사용하면 다시 불러들일 수 없음"
-  ],
-    en: ["Cannot TP onto W", "R cannot be recalled after recasting"]
+    skill: {
+      note2: {
+        ko: [
+        "W에 텔 안됨", "R 재사용하면 다시 불러들일 수 없음"
+      ],
+        en: ["Cannot TP onto W", "R cannot be recalled after recasting"]
+        },
+    },
   },
 
   ultCooldown: {

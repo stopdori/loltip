@@ -27,10 +27,14 @@ const illaoi: ChampData = {
   },
 
   notes: {
-    ko: [
-    "[[Q_FLASH]] 안됨", "촉수 공격 한대당 잃은체력 회복임", "E는 미니언 관통 불가.\n상대 챔피언을 맞히면 상대의 영혼을 추출함\n영혼을 공격하면 피해가 육체에게 전이됨\n영혼의 체력이 0이 되거나 범위를 벗어나면 육체에게 돌아가고 [[SLOW]]와 표식", "R은 공식적인 저지불가는 아니지만, 각종 CC 효과를 무시하거나 유예하는 걸로 보아 [[UNSTOPPABLE]]이 맞는 것으로 보임."
-  ],
-    en: ["[[Q_FLASH]] not possible", "Each tentacle hit heals based on missing HP, so effectively Q, W, E, R all [[HEAL]]", "Illaoi's E cannot pierce minions.\nHitting an enemy champion extracts their soul.\nDamaging the soul transfers damage to the body.\nIf the soul reaches 0 HP or leaves the area, it returns to the body applying [[SLOW]] and a mark.", "R's description doesn't mention [[UNSTOPPABLE]], but based on it ignoring Mordekaiser's R, it appears to be [[UNSTOPPABLE]].\nPlease report if you have more info."]
+    skill: {
+      note2: {
+        ko: [
+        "[[Q_FLASH]] 안됨", "촉수 공격 한대당 잃은체력 회복임", "E는 미니언 관통 불가.\n상대 챔피언을 맞히면 상대의 영혼을 추출함\n영혼을 공격하면 피해가 육체에게 전이됨\n영혼의 체력이 0이 되거나 범위를 벗어나면 육체에게 돌아가고 [[SLOW]]와 표식", "R은 공식적인 저지불가는 아니지만, 각종 CC 효과를 무시하거나 유예하는 걸로 보아 [[UNSTOPPABLE]]이 맞는 것으로 보임."
+      ],
+        en: ["[[Q_FLASH]] not possible", "Each tentacle hit heals based on missing HP, so effectively Q, W, E, R all [[HEAL]]", "Illaoi's E cannot pierce minions.\nHitting an enemy champion extracts their soul.\nDamaging the soul transfers damage to the body.\nIf the soul reaches 0 HP or leaves the area, it returns to the body applying [[SLOW]] and a mark.", "R's description doesn't mention [[UNSTOPPABLE]], but based on it ignoring Mordekaiser's R, it appears to be [[UNSTOPPABLE]].\nPlease report if you have more info."]
+        },
+    },
   },
 
   ultCooldown: {

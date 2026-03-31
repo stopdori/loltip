@@ -74,11 +74,13 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   REVEALED: "sky_soft",
   TRUE_SIGHT: "sky_soft",
   POSITION_REVEAL:  "sky_soft",
-  POSITION_HIDDEN:  "sky_soft",
-  POSITION_TRACK:   "sky_soft",
-  FEEDBACK_SOUND:      "sky_soft",
-  FEEDBACK_EFFECT:     "sky_soft",
-  FEEDBACK_INDICATOR:  "sky_soft",
+  POSITION_SOUND:        "sky_soft",
+  POSITION_EFFECT:       "sky_soft",
+  POSITION_EFFECT_SOUND: "sky_soft",
+  HIT_SOUND:             "sky_soft",
+  HIT_EFFECT:            "sky_soft",
+  HIT_EFFECT_SOUND:      "sky_soft",
+  HIT_INDICATOR:         "sky_soft",
 
   // 🟩 teal (CC/제어)
   HARD_CC: "teal",
@@ -201,7 +203,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   GLOBAL:  "indigo",
   SUMMON:  "indigo",
   SWARM:   "indigo",
-  VOLLEY:  "indigo",
+  VOLLEY:         "indigo",
+  VOLLEY_OVERLAP: "indigo",
   // 피해 종류
   DMG_PHYSICAL: "red",
   DMG_MAGIC:    "sky",

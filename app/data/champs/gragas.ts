@@ -27,10 +27,14 @@ const gragas: ChampData = {
   },
 
   notes: {
-    ko: [
-    "Q1을 사용했을 때 그라가스가 CC에 걸리면 Q2를 사용 할 수 없음.", "E(배치기)로 날아가는 도중에 Q, R 다 가능",
-  ],
-    en: ["If Gragas is hit by CC after casting Q1, Q2 cannot be activated.", "Q and R can be cast mid-flight during E"]
+    skill: {
+      note2: {
+        ko: [
+        "Q1을 사용했을 때 그라가스가 CC에 걸리면 Q2를 사용 할 수 없음.", "E(배치기)로 날아가는 도중에 Q, R 다 가능",
+      ],
+        en: ["If Gragas is hit by CC after casting Q1, Q2 cannot be activated.", "Q and R can be cast mid-flight during E"]
+        },
+    },
   },
 
   ultCooldown: {

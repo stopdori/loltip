@@ -64,10 +64,14 @@ const nidalee: ChampData = {
   },
 
   notes: {
-    ko: [
-    "쿠거폼 점멸+스킬들 다 안됨", "니달리 P 범위는 미드 일자부쉬 정도.", "인간폼 Q(창)는 거리에 비례해서 데미지 증가.\n최대 사거리는 미드 일자부쉬 정도.", "인간폼 Q, W를 상대에게 맞히면\n나와 대상에게 사냥 표식이 생김.", "니달리는 [[MS_UP]] 최대 30%와 쿠거폼 쿨타임이 초기화되서 바로 변신가능.\n쿠거폼 W는 사거리 증가.\nW [[DASH]] 유도선이 떳을 때 W는 쓰면 됨.", "대상은 [[TRUE_SIGHT]]와, 받는 피해 30% 증가.", 
-  ],
-    en: ["All cougar form flash combos are not possible", "Hitting with human form Q or W activates Hunting, which resets R cooldown for an immediate transform"]
+    skill: {
+      note2: {
+        ko: [
+        "쿠거폼 점멸+스킬들 다 안됨", "니달리 P 범위는 미드 일자부쉬 정도.", "인간폼 Q(창)는 거리에 비례해서 데미지 증가.\n최대 사거리는 미드 일자부쉬 정도.", "인간폼 Q, W를 상대에게 맞히면\n나와 대상에게 사냥 표식이 생김.", "니달리는 [[MS_UP]] 최대 30%와 쿠거폼 쿨타임이 초기화되서 바로 변신가능.\n쿠거폼 W는 사거리 증가.\nW [[DASH]] 유도선이 떳을 때 W는 쓰면 됨.", "대상은 [[TRUE_SIGHT]]와, 받는 피해 30% 증가.", 
+      ],
+        en: ["All cougar form flash combos are not possible", "Hitting with human form Q or W activates Hunting, which resets R cooldown for an immediate transform"]
+        },
+    },
   },
 
   // 제이스 궁은 폼 전환이라 쿨 없음

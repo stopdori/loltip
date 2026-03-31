@@ -291,15 +291,22 @@ export default function SkillTagsPanel({
 
   const champ = champId ? CHAMPS[champId as keyof typeof CHAMPS] : null;
 
-let notes: string[] = [];
-
-if (champ?.notes) {
-  if (Array.isArray(champ.notes)) {
-    notes = champ.notes;
-  } else {
-    notes = champ.notes[lang] ?? [];
-  }
-}
+const renderNoteSection = (items: string[], title: string) => {
+  if (items.length === 0) return null;
+  return (
+    <div className="mt-3 rounded-xl bg-slate-800/40 ring-1 ring-white/10 p-3">
+      <div className="text-sm font-bold text-slate-200 mb-2">{title}</div>
+      <ul className="space-y-2 text-sm text-slate-200">
+        {items.map((n, i) => (
+          <li key={i} className="flex gap-2 whitespace-pre-line">
+            <span className="text-slate-300">•</span>
+            <span><TokenText text={n} lang={lang} /></span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 
   // ✅ Data Dragon (스킬 설명) 준비
@@ -556,6 +563,35 @@ if (champ?.notes) {
 
 
 
+// 노트 콘텐츠 계산
+let noteContent: ReactNode = null;
+if (champ?.notes) {
+  const n = champ.notes;
+  if ('ko' in n) {
+    if (mode === "skill") {
+      noteContent = renderNoteSection((n as { ko: string[]; en: string[] })[lang] ?? [], lang === "ko" ? "노트" : "Notes");
+    }
+  } else {
+    const cn = n as { skill?: { note1?: { ko: string[]; en: string[] }; note2?: { ko: string[]; en: string[] } }; vision?: { ko: string[]; en: string[] }; gimmick?: { ko: string[]; en: string[] } };
+    if (mode === "skill") {
+      const n1 = cn.skill?.note1?.[lang] ?? [];
+      const n2 = cn.skill?.note2?.[lang] ?? [];
+      if (n1.length > 0 || n2.length > 0) {
+        noteContent = (
+          <>
+            {renderNoteSection(n1, lang === "ko" ? "챔피언 요약" : "Overview")}
+            {renderNoteSection(n2, lang === "ko" ? "TMI" : "TMI")}
+          </>
+        );
+      }
+    } else if (mode === "vision") {
+      noteContent = renderNoteSection(cn.vision?.[lang] ?? [], lang === "ko" ? "노트" : "Notes");
+    } else if (mode === "gimmick") {
+      noteContent = renderNoteSection(cn.gimmick?.[lang] ?? [], lang === "ko" ? "노트" : "Notes");
+    }
+  }
+}
+
 // ✅ 폼 라벨/버튼 스타일 (여기만 고치면 전체 통일)
 const formLabel = champId && hasForms(champId) ? CHAMP_FORMS[champId] : null;
 
@@ -571,6 +607,13 @@ return (
       className={toggleBtnClass(mode === "skill")}
     >
       {lang === "ko" ? "스킬" : "Skills"}
+    </button>
+    <button
+      type="button"
+      onClick={() => setMode("vision")}
+      className={toggleBtnClass(mode === "vision")}
+    >
+      {lang === "ko" ? "시야" : "Vision"}
     </button>
     <button
       type="button"
@@ -632,25 +675,7 @@ return (
     </div>
 
     {/* 🔹 노트 */}
-    {notes.length > 0 && (
-      <div className="mt-3 rounded-xl bg-slate-800/40 ring-1 ring-white/10 p-3">
-        <div className="text-sm font-bold text-slate-200 mb-2">
-          {lang === "ko" ? "노트" : "Notes"}
-        </div>
-
-        <ul className="space-y-2 text-sm text-slate-200">
-          {notes.map((n, i) => (
-            <li key={i} className="flex gap-2 whitespace-pre-line">
-              <span className="text-slate-300">•</span>
-              <span>
-  <TokenText text={n} lang={lang} />
-</span>
-
-            </li>
-          ))}
-        </ul>
-      </div>
-    )}
+    {noteContent}
     </div>
 );
 }

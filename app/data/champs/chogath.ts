@@ -27,10 +27,14 @@ const chogath: ChampData = {
   },
 
   notes: {
-    ko: [
-    "초가스의 덩치가 커지면 평타 사거리, 스킬 사정거리들이 증가함.", "E 스킬은 [[BUFF_STACK]] 3개를 초가스에게 부여하는것.\n 이때 평타를 때리면 버프스택을 소모해서 투사체를 추가로 발사하는 것."
-  ],
-    en: ["As Cho'Gath grows larger, basic attack range and skill ranges increase.", "E grants Cho'Gath 3 [[BUFF_STACK]] stacks.\nAuto-attacking consumes stacks to fire bonus projectiles."]
+    skill: {
+      note2: {
+        ko: [
+        "초가스의 덩치가 커지면 평타 사거리, 스킬 사정거리들이 증가함.", "E 스킬은 [[BUFF_STACK]] 3개를 초가스에게 부여하는것.\n 이때 평타를 때리면 버프스택을 소모해서 투사체를 추가로 발사하는 것."
+      ],
+        en: ["As Cho'Gath grows larger, basic attack range and skill ranges increase.", "E grants Cho'Gath 3 [[BUFF_STACK]] stacks.\nAuto-attacking consumes stacks to fire bonus projectiles."]
+        },
+    },
   },
 
   ultCooldown: {

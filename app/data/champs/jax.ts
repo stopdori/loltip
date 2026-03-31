@@ -30,10 +30,14 @@ const jax: ChampData = {
   },
 
   notes: {
-    ko: [
-    "P는 8중첩까지 가능", "R 배우고는 항상 마음속으로 ''쿵쿵따''를 생각하는게 좋음\nR을 사용하면 ''쿵따''로 바뀜 \n''따'' 리듬에는 상대를 패셈",
-  ],
-    en: ["P stacks up to 8", "After learning R, always think 'beat-beat-hit' in your head.\nAfter using R it changes to 'beat-hit'.\nOn the 'hit' rhythm, attack the enemy"]
+    skill: {
+      note2: {
+        ko: [
+        "P는 8중첩까지 가능", "R 배우고는 항상 마음속으로 ''쿵쿵따''를 생각하는게 좋음\nR을 사용하면 ''쿵따''로 바뀜 \n''따'' 리듬에는 상대를 패셈",
+      ],
+        en: ["P stacks up to 8", "After learning R, always think 'beat-beat-hit' in your head.\nAfter using R it changes to 'beat-hit'.\nOn the 'hit' rhythm, attack the enemy"]
+        },
+    },
   },
 
   ultCooldown: {

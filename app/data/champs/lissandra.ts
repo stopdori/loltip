@@ -43,10 +43,14 @@ const lissandra: ChampData = {
   },
 
   notes: {
-    ko: [
-    "[[W_FLASH]] 안됨", "P는 리산드라 주변에서 적 챔피언이 죽으면 발동.\n처치관여 하지 않아도 생성.\n 범위는 미드 일자부쉬 정도.", "P의 [[SLOW]]는 노예 범위 안에 있는 대상에게 지속 적용.", "Q는 적중해야 뒤쪽에 원뿔형으로 관통 피해.", "E는 얼음갈퀴가 있는 곳으로 [[BLINK]].", "R은 적에게 사용할때 [[TIMING_CAST]]이 있음.\n자신에게 쓸 때는 즉시시전.",
-  ],
-    en: ["[[W_FLASH]] not possible", "P activates when an enemy champion dies near Lissandra — even without kill participation.\nThe range is approximately the width of the mid lane side brush.", "P's [[SLOW]] continuously applies to targets inside the area.", "R has [[CAST_COMMIT]] when cast on an enemy.\nWhen cast on herself, it is instant."]
+    skill: {
+      note2: {
+        ko: [
+        "[[W_FLASH]] 안됨", "P는 리산드라 주변에서 적 챔피언이 죽으면 발동.\n처치관여 하지 않아도 생성.\n 범위는 미드 일자부쉬 정도.", "P의 [[SLOW]]는 노예 범위 안에 있는 대상에게 지속 적용.", "Q는 적중해야 뒤쪽에 원뿔형으로 관통 피해.", "E는 얼음갈퀴가 있는 곳으로 [[BLINK]].", "R은 적에게 사용할때 [[TIMING_CAST]]이 있음.\n자신에게 쓸 때는 즉시시전.",
+      ],
+        en: ["[[W_FLASH]] not possible", "P activates when an enemy champion dies near Lissandra — even without kill participation.\nThe range is approximately the width of the mid lane side brush.", "P's [[SLOW]] continuously applies to targets inside the area.", "R has [[CAST_COMMIT]] when cast on an enemy.\nWhen cast on herself, it is instant."]
+        },
+    },
   },
 
   ultCooldown: {

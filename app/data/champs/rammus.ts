@@ -28,10 +28,14 @@ const rammus: ChampData = {
   },
 
   notes: {
-    ko: [
-    "P [[AD_UP]]은 방마저 비례", "Q로 변신했을 때 CC에 맞으면 풀림.\nW를 사용해도 풀림.", "E는 몬스터에게만 [[DMG_MAGIC]]. \n 챔피언에게는 피해 없음.", "R은 설명에 [[CC_IMMUNE]]이 없지만, 점프해서 날아갈 때 람머스 체력바 위에 [[CC_IMMUNE]]이 생김. 도착하면 끝.", "R의 점프 거리가 이속 비례임 \n Q 상태에서는 중심부에 추가 [[DMG_MAGIC]], [[AIRBORNE]]. \n [[SLOW]]도 지역에 3회 추가 적용임",
-  ],
-    en: ["P [[AD_UP]] scales with armor and MR", "R jump distance scales with movement speed.\n[[AIRBORNE]] is only possible while in Q (Powerball).\n[[SLOW]] applies 3 additional times in the area"]
+    skill: {
+      note2: {
+        ko: [
+        "P [[AD_UP]]은 방마저 비례", "Q로 변신했을 때 CC에 맞으면 풀림.\nW를 사용해도 풀림.", "E는 몬스터에게만 [[DMG_MAGIC]]. \n 챔피언에게는 피해 없음.", "R은 설명에 [[CC_IMMUNE]]이 없지만, 점프해서 날아갈 때 람머스 체력바 위에 [[CC_IMMUNE]]이 생김. 도착하면 끝.", "R의 점프 거리가 이속 비례임 \n Q 상태에서는 중심부에 추가 [[DMG_MAGIC]], [[AIRBORNE]]. \n [[SLOW]]도 지역에 3회 추가 적용임",
+      ],
+        en: ["P [[AD_UP]] scales with armor and MR", "R jump distance scales with movement speed.\n[[AIRBORNE]] is only possible while in Q (Powerball).\n[[SLOW]] applies 3 additional times in the area"]
+        },
+    },
   },
 
   ultCooldown: {

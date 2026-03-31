@@ -12,25 +12,41 @@ const swain: ChampData = {
 
   vision: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["HIT_EFFECT", "POSITION_REVEAL"],
+    W: ["VISION", "REVEALED"],
+    E: { phases: [
+      { label: { ko: "E1", en: "E1" }, tags: ["VISION"] },
+      { label: { ko: "E2", en: "E2" }, tags: ["REVEALED"] },
+    ] },
+    R: ["HIT_INDICATOR"],
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: ["BUFF_FORM"],
+    P: ["STACKING"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "VOLLEY_OVERLAP", "PIERCE"],
+    W: ["DMG_MAGIC", "TIMING_CAST", "ZONE"],
+
+    E: { phases: [
+      { label: { ko: "E1", en: "E1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PIERCE", "AOE"] },
+      { label: { ko: "E2", en: "E2" }, tags: ["ST_CONDITIONAL", "SKILL_RECAST"] },      
+    ] },
+
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["BUFF_FORM", "DMG_MAGIC", "TIMING_CAST", "AURA", "DOT", "LOCKED"] },
+      { label: { ko: "R 재사용", en: "R Recast" }, tags: ["SKILL_RECAST", "DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE"] },
+    ] },
+    
   },
 
   notes: {
-    ko: [
-    "[[E_FLASH]] 안됨", "P는 W, E, 킬관여로 획득\n체력회복은 [[GW]] 적용\n최대체력 증가는 [[GW]] 안됨", "E1은 적중하면 [[ROOT]]\nE2는 [[GRAB]]", "E1이 적중했을때 스웨인이 [[HARD_CC]]에 걸리면 E2를 사용 할 수 없음.", "R에 [[SLOW]]는 재사용 했을 때 나오는 파동에만"
-  ],
-    en: ["[[E_FLASH]] not possible", "P is gained from W, E, and kill participation.\nHP recovery is affected by [[GW]].\nMax HP increase is not affected by [[GW]]", "E1 applies [[ROOT]] on hit.\nE2 is [[GRAB]]", "R's [[SLOW]] only applies to the wave released on recast"]
+    skill: {
+      note2: {
+        ko: [
+        "[[E_FLASH]] 안됨", "P는 W, E, 킬관여로 획득\n체력회복은 [[GW]] 적용\n최대체력 증가는 [[GW]] 안됨", "E1은 적중하면 [[ROOT]]\nE2는 [[GRAB]]", "E1이 적중했을때 스웨인이 [[HARD_CC]]에 걸리면 E2를 사용 할 수 없음.", "R에 [[SLOW]]는 재사용 했을 때 나오는 파동에만"
+      ],
+        en: ["[[E_FLASH]] not possible", "P is gained from W, E, and kill participation.\nHP recovery is affected by [[GW]].\nMax HP increase is not affected by [[GW]]", "E1 applies [[ROOT]] on hit.\nE2 is [[GRAB]]", "R's [[SLOW]] only applies to the wave released on recast"]
+        },
+    },
   },
 
   ultCooldown: {

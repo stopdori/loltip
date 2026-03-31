@@ -33,10 +33,14 @@ const nami: ChampData = {
   },
 
   notes: {
-    ko: [
-    "Q는 놀랍게도 [[SUSPENDING]]", "W는 아군 적군 아군 순서,\n또는 적군 아군 적군 순서로 [[CHAIN]].\n같은 대상에게 튕기지 않음.\nW는 상대에게 [[CHAIN]] 될 때, 시야가 보여야 유효.", "R을 아군도 같이 맞추면 P의 버프 발동.\n이때 아군에게 패시브가 두배로 발동됨",
-  ],
-    en: ["Q is surprisingly [[SUSPENDING]]", "Having allies hit by R together doubles P's effect on them"]
+    skill: {
+      note2: {
+        ko: [
+        "Q는 놀랍게도 [[SUSPENDING]]", "W는 아군 적군 아군 순서,\n또는 적군 아군 적군 순서로 [[CHAIN]].\n같은 대상에게 튕기지 않음.\nW는 상대에게 [[CHAIN]] 될 때, 시야가 보여야 유효.", "R을 아군도 같이 맞추면 P의 버프 발동.\n이때 아군에게 패시브가 두배로 발동됨",
+      ],
+        en: ["Q is surprisingly [[SUSPENDING]]", "Having allies hit by R together doubles P's effect on them"]
+        },
+    },
   },
 
   ultCooldown: {

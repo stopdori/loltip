@@ -45,10 +45,14 @@ const leesin: ChampData = {
   },
 
   notes: {
-    ko: [
-    "[[Q_FLASH]] 안됨", "Q의 [[TRUE_SIGHT]]는 Q2를 사용하면 사라짐.", "E2의 효과는 E에 맞은 대상에게만 적용.", "R에 당구로 맞으면\n날아간 대상의 최대체력의 %데미지가\n부딪힌 대상에게 추가"
-  ],
-    en: ["[[Q_FLASH]] not possible", "Enemies hit by the billiard bounce take bonus damage based on a % of the launched target's max HP"]
+    skill: {
+      note2: {
+        ko: [
+        "[[Q_FLASH]] 안됨", "Q의 [[TRUE_SIGHT]]는 Q2를 사용하면 사라짐.", "E2의 효과는 E에 맞은 대상에게만 적용.", "R에 당구로 맞으면\n날아간 대상의 최대체력의 %데미지가\n부딪힌 대상에게 추가"
+      ],
+        en: ["[[Q_FLASH]] not possible", "Enemies hit by the billiard bounce take bonus damage based on a % of the launched target's max HP"]
+        },
+    },
   },
 
   ultCooldown: {
