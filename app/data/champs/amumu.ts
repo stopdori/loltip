@@ -38,6 +38,8 @@ const amumu: ChampData = {
         en: ["R cannot be used while Q is in flight", "Q is split into two phases: throwing phase / dash phase.\nEven if hit by CC during the throwing phase, if the bandage connects, the dash phase activates and Amumu still moves.\nHowever, the CC remains active.", "Q appears to have a maximum follow distance/time — roughly the distance between the 1st and 2nd mid lane towers.", "There is a delay (wind-up) between pressing the R button and the skill being activated."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

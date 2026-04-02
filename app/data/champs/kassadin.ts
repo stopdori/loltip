@@ -38,6 +38,8 @@ const kassadin: ChampData = {
         en: ["P's [[DMG_REDUCE]] applies to magic damage only", "Q has channel interruption (not silence)", "R has two phases: wind-up / blink.\nCC during the wind-up phase is valid, but the blink still triggers and Kassadin moves.\nThere is no CC immunity during the blink phase.\nIf CC duration remains when Kassadin blinks, the CC effect still applies."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -43,6 +43,8 @@ const maokai: ChampData = {
         en: ["[[R_FLASH]] not possible", "Cannot TP onto saplings", "R's [[MS_UP]] applies when hitting an enemy"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

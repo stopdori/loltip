@@ -70,6 +70,8 @@ const heimerdinger: ChampData = {
         en: ["P's [[MS_UP]] only activates near Q (turrets) or allied towers", "[[W_FLASH]] and [[E_FLASH]] not possible", "E must hit the center to apply [[STUN]]"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -41,6 +41,8 @@ const evelynn: ChampData = {
         en: ["[[CAMOUFLAGE]] does not break on flash", "W's [[CHARM]] and [[MR_SHRED]] are secondary effects triggered only by attacking a target with full stacks", "E's dash is empowered while in [[CAMOUFLAGE]].\nE can [[WALL_HOP]] under very specific conditions", "R deals increased damage to targets below 30% HP"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -35,6 +35,8 @@ const yone: ChampData = {
         en: ["[[R_FLASH]] not possible", "P [[AD_UP]] converts excess crit chance", "Q [[AIRBORNE]] triggers on the 3rd cast", "W shield scales with the number of enemy champions hit", "E [[CAST_COMMIT]] only applies on the return", "E cannot wall-hop on cast.\nThe returning E can wall-hop"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

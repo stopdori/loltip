@@ -72,6 +72,8 @@ const nidalee: ChampData = {
         en: ["All cougar form flash combos are not possible", "Hitting with human form Q or W activates Hunting, which resets R cooldown for an immediate transform"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   // 제이스 궁은 폼 전환이라 쿨 없음

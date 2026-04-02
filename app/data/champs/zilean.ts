@@ -35,6 +35,8 @@ const zilean: ChampData = {
         en: ["Q applies AoE [[STUN]] when two Q's hit the same target, detonating the first", "E applies [[MS_UP]] to allies and [[SLOW]] to enemies", "R lasts 5s; [[REVIVE]] takes 3s.\n[[REVIVE]] heals, so [[GW]] applies"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

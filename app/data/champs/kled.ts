@@ -72,6 +72,8 @@ const kled: ChampData = {
         en: ["Mounted:\nQ must remain in contact to apply [[GRAB]] and [[SLOW]].\nE grants [[MS_UP]] on first hit and becomes recastable", "Neither mounted nor dismounted W can AA cancel", "Unsure if [[GW]] affects mounted healing — please report"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

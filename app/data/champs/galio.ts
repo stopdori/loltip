@@ -44,6 +44,8 @@ const galio: ChampData = {
         en: ["[[W_FLASH]] not possible (patched).\nDisabling smartcast on W is recommended", "[[E_FLASH]] not possible", "E has two phases: wind-up / dash.\nCC hit during wind-up is valid, but Galio still dashes forward.\nThere is no CC immunity during the dash phase.", "R has no CC immunity during the jump wind-up, but briefly enters a 'channeling focus' state upon landing, marked as [[CAST_COMMIT]].\nCC applied during this state is ignored, including [[SUPPRESS]]."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

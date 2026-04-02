@@ -99,6 +99,8 @@ skills: {
         en: ["Transform (R) is available at 100 fury.\nFury gained: 0.5/0.75/1 per second. +1.25 per basic attack or skill hit.\n+2.5 per hit while in Dragon form.", "[[R_FLASH]] not possible.", "Each rank of R increases skill size, [[RANGE_UP]], and [[MAX_HP_UP]] further.", "Human form\nQ: auto/Q1/auto/Q2 feels most efficient.\nW: [[SHIELD]] scales with number of nearby enemy champions. Deals AoE damage on detonation.", "Dragon form\nQ: can use up to Q3. Q3 deals fixed damage.\nW: detonation heals based on missing HP when hitting enemy champions — [[HEAL]].\nE: gains [[PIERCE]], and hitting an enemy champion triggers an additional explosion that leaves a zone on the ground.\nHits 1 or 100 enemies — same result."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

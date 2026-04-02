@@ -55,6 +55,8 @@ const poppy: ChampData = {
         en: ["P requires picking up the shield to gain the barrier", "[[E_FLASH]] does not [[INSEC_KICK]]", "[[R_FLASH]] only works with a short charge.\nFull charge version fires toward the nexus instead", "When Poppy's W interrupts a dash, the target can no longer use movement abilities.\n[[GROUNDED]] can be removed by [[CC_CLEANSE]] to re-enable movement skills", "Example: Renekton dashes into Poppy with E — the skill activates and the cooldown runs. Then Poppy's W blocks him, applying [[AIRBORNE]] and [[GROUNDED]].\nIf Renekton uses [[CC_CLEANSE]], E becomes usable again", "E has the highest interrupt priority among movement abilities"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

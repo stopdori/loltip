@@ -39,6 +39,8 @@ const jinx: ChampData = {
         en: ["[[W_FLASH]], [[E_FLASH]], [[R_FLASH]] all not possible", "P [[MS_UP]] only activates from champions, epic monsters, or structures", "Q: Minigun mode ([[AS_UP]])\nFishbones mode (splash damage, increased range)", "E's [[ROOT]] has better hitbox detection than most roots and interrupts many dashes"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

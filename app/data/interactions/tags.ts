@@ -24,7 +24,6 @@ export type TagId =
   | "AP_UP"
   | "CRIT"
   | "EXECUTE"
-  | "RANGE_UP"
   | "PIERCE"
   | "DMG_REDUCE"
   | "DODGE"
@@ -129,7 +128,6 @@ AS_DOWN: { ko: "공속↓", en: "AS ↓" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
-RANGE_UP: { ko: "사거리↑", en: "Range↑" },
 CRIT: { ko: "치명타", en: "Critical" },
 
 /* =========================
@@ -360,10 +358,6 @@ EXECUTE: {
   en: "Instantly kills targets below a health threshold",
 },
 
-RANGE_UP: {
-  ko: "기본 공격의 사거리가 증가함",
-  en: "Increases attack range",
-},
 
 PIERCE: {
   ko: "대상을 관통하여 뒤에 있는 적에게도 적중함",

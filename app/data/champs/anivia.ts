@@ -38,6 +38,8 @@ const anivia: ChampData = {
         en: ["[[Q_FLASH]] not possible", "P (Egg) cooldown is 240s.\nThe Egg is identical to Anivia in all ways, but skills, movement, and attacks are disabled.\n[[GW]] applies to the egg but it revives at full HP anyway.\nCannot TP onto the egg.\nHowever, if TP is already channeling when you transform into the egg, the TP is maintained.", "Q applies [[SLOW]] via chill to enemies standing in its path.\nReactivating it detonates the explosion and applies [[STUN]]", "If Anivia is hit by CC after casting Q1, Q2 cannot be activated.", "W (Wall) can be placed on terrain. Walls can overlap.", "E's description is slightly misleading.\nIt says double damage on chilled targets, but E actually double-damages targets with Frostbite (the frozen debuff).\nQ and R both chill, but Frostbite from Q is instant while R's Frostbite only applies after the field fully expands", "That's why RE sometimes fails to double-damage — R hasn't fully expanded yet before E hits.\nWait briefly after R before throwing E to get the expected damage"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

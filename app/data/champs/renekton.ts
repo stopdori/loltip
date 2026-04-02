@@ -62,6 +62,8 @@ const renekton: ChampData = {
         ],
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -39,6 +39,8 @@ const alistar: ChampData = {
         en: ["P's [[HEAL]] gains 1 stack from landing CC or when a nearby enemy minion dies.\nAt 7 stacks per champion or epic monster, heals Alistar and a nearby ally", "Disabling smartcast on W makes the Pulverize-Headbutt combo easier", "R is best used after getting hit by CC.\nR has no [[TENACITY]].\nUsing R's [[CC_CLEANSE]] to remove persistent CC will reapply it (e.g. Kog'Maw E [[SLOW]], Graves W [[SLOW]])", "Cleansing [[AIRBORNE]] with R stops movement but still allows skill use.\nHowever, W may be bugged — the charge triggers but the skill is nullified: the target is not knocked back and takes no damage"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

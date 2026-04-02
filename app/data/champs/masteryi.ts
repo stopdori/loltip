@@ -39,6 +39,8 @@ const masteryi: ChampData = {
         en: ["Kill participation with R reduces its cooldown by 70% and extends its duration by 7s."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

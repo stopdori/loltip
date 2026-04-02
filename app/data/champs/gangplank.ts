@@ -38,6 +38,8 @@ const gangplank: ChampData = {
         en: ["Powder keg count is shown below the mana bar"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

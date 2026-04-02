@@ -35,6 +35,8 @@ const gragas: ChampData = {
         en: ["If Gragas is hit by CC after casting Q1, Q2 cannot be activated.", "Q and R can be cast mid-flight during E"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

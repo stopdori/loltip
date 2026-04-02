@@ -38,6 +38,8 @@ const malphite: ChampData = {
         en: ["[[R_FLASH]] not possible", "E reduces the target's attack speed"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

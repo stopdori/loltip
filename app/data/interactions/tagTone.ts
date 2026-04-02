@@ -56,7 +56,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   AP_UP: "red",
   CRIT: "red",
   EXECUTE: "red",
-  RANGE_UP: "red",
+  RANGE_UP: "indigo",
   PIERCE: "red",
   BERSERK: "red",
   LIFESTEAL: "red",
@@ -193,6 +193,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   W: "indigo",
   E: "indigo",
   R: "indigo",
+  BA: "indigo",
+  EMPOWERED: "indigo",
   // 피해 범위
   SINGLE:  "indigo",
   // PIERCE: "red" — TagId에 이미 정의됨
@@ -202,6 +204,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   AURA:    "indigo",
   GLOBAL:  "indigo",
   SUMMON:  "indigo",
+  CLONE:   "indigo",
   SWARM:   "indigo",
   VOLLEY:         "indigo",
   VOLLEY_OVERLAP: "indigo",
@@ -213,8 +216,10 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   DOT:          "indigo",
   ON_HIT:       "indigo",
   // 시전 행동
-  CAST_COMMIT:  "indigo",
-  CAST_CANCEL:  "indigo",
+  CAST_COMMIT:   "indigo",
+  CAST_CANCEL:   "indigo",
+  CAST_MOVE:     "indigo",
+  CAST_IMMOBILE: "indigo",
   CC_BUFFER:    "zinc",
   // 이동
   MOBILITY: "indigo",

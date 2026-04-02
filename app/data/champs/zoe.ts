@@ -35,6 +35,8 @@ const zoe: ChampData = {
         en: ["First [[Q_FLASH]] not possible; second Q can [[Q_FLASH]]", "[[E_FLASH]] not possible", "Core gameplay: keep cycling P through Q1, Q2, W, E, R", "Q damage increases with travel distance (appears to have an upper limit)", "When Zoe collects a flash from W,\nusing Zoe's flash consumes W's flash first", "E travels along walls and stays as a ground trap if it hits nothing", "E [[SLEEP]] doubles damage from the next basic attack or skill — including ally attacks"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   

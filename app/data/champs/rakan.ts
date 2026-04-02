@@ -42,6 +42,8 @@ const rakan: ChampData = {
         en: ["[[W_FLASH]] and [[R_FLASH]] not possible", "W is split into two phases: dash phase / leap phase.\nIf hit by [[HARD_CC]] during the dash phase, the leap phase will not activate.", "R briefly applies bonus [[MS_UP]] upon hitting the first target", "Xayah & Rakan synergy:\nIf Rakan walks up to a recalling Xayah and presses recall, he shares her recall progress.\nRakan gains Xayah's W.\n[[MS_UP]] requires Xayah to attack to trigger on Rakan.\nRakan's E range is doubled when targeting Xayah"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

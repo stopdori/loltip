@@ -9,7 +9,7 @@ export const aatrox_anivia: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 애니비아 R(채널링)을 끊을 수 있음"],
+      ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 애니비아 R([[SKILL_CHANNEL]])을 끊을 수 있음"],
       en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Anivia's R channeling"],
     },
     anivia: {

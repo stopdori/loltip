@@ -49,6 +49,8 @@ const sona: ChampData = {
         en: ["No skill+flash combos work at all. Needs a rework", "P's [[SLOW]] only applies through E-enhanced basic attacks", "W-enhanced basic attack reduces incoming damage on the target (similar to Exhaust)"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

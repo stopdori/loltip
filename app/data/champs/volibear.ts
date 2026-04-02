@@ -22,11 +22,21 @@ const volibear: ChampData = {
     P: [],
     Q: { phases: [
       { label: { ko: "추격단계", en: "Chase"  }, tags: [] },
-      { label: { ko: "공격단계", en: "Strike" }, tags: [] },
+      { label: { ko: "공격단계", en: "Strike" }, tags: ["DMG_PHYSICAL", "ON_HIT"] },
     ] },
-    W: [],
-    E: [],
-    R: ["UNSTOPPABLE"],
+
+    W: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "ON_HIT", "MARK", "MARK_CONSUME"],
+
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["DMG_MAGIC", "ZONE"] },
+      { label: { ko: "E 보호막", en: "E Shield" }, tags: ["ST_CONDITIONAL"] },
+    ] },
+    
+    R: { phases: [
+      { label: { ko: "R 점프", en: "R Dash" }, tags: ["BUFF_FORM", "DASH", "UNSTOPPABLE", "RANGE_UP", "W"] },
+      { label: { ko: "R 착지", en: "R C" }, tags: ["DMG_PHYSICAL", "AOE"] },
+    ] },
+   
   },
 
   notes: {
@@ -38,6 +48,8 @@ const volibear: ChampData = {
         en: ["[[R_FLASH]] not possible", "P stacks up to 5", "Q's [[MS_UP]] while chasing only triggers if the enemy is visible within range.\nDoes not activate if the enemy is in a bush or hidden by [[STEALTH]].", "Q has two phases: charge / strike.\nCC during the charge phase cancels Q but refunds the cooldown.\nOnce the strike phase activates, CC is ignored", "Q over a thin wall toward an enemy wall-hops", "W [[HEAL]] requires hitting with W twice", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]]", "R disables towers.\nAlready-fired tower shots cannot be nullified.\nTower aggro cannot be removed"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

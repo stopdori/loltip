@@ -35,6 +35,8 @@ const garen: ChampData = {
         en: ["Using W before a CC hits reduces the CC duration significantly", "E hit count increases with attack speed.\n[[AR_SHRED]] applies after hitting 6 or more times.\nDeals bonus damage to the nearest target.", "E cannot be cancelled by any CC"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

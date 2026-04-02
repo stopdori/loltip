@@ -74,6 +74,8 @@ const samira: ChampData = {
  
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
  
 

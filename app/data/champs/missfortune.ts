@@ -38,6 +38,8 @@ const missfortune: ChampData = {
         en: ["E's [[SLOW]] continuously applies to targets inside the area", "Use E's [[SLOW]] first, then follow with R.\nR channeling cancels on movement"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

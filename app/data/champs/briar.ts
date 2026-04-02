@@ -38,6 +38,8 @@ const briar: ChampData = {
         en: ["Briar's [[LIFESTEAL]] is exceptional — [[GW]] is essential against her", "E's [[STUN]] requires the target to collide with a wall", "R is [[CC_IMMUNE]] while casting; once it hits and Briar flies toward the target, it becomes [[UNSTOPPABLE]]", "R creates an area around the target it hits.\nEnemies inside the area (excluding the target) are afflicted with [[FEAR]]."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

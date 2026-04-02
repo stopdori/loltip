@@ -77,6 +77,8 @@ const jayce: ChampData = {
         en: ["Hammer form basic attacks restore mana", "P's [[MS_UP]] activates on every form swap", "Swapping to cannon form then auto-attacking applies [[AR_MR_SHRED]] to the target", "Hammer form E is [[INSEC_KICK]] capable"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   // 제이스 궁은 폼 전환이라 쿨 없음

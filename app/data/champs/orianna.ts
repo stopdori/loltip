@@ -39,6 +39,8 @@ const orianna: ChampData = {
         en: ["Cannot TP onto the ball", "E's passive grants bonus armor and MR to whoever holds the ball", "Orianna-Nocturne (Malphite, Yone, Zoe, etc.) combos:\nWhile an ally is within E range and about to be launched, Orianna casts E then immediately R — the ball arrives in time to trigger"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

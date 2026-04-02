@@ -71,6 +71,8 @@ const rengar: ChampData = {
         ],
        },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

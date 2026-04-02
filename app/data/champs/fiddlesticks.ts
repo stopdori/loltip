@@ -38,6 +38,8 @@ const fiddlesticks: ChampData = {
         en: ["Cannot TP onto the effigy", "Q [[FEAR]] is a persistent passive.\nBeing out of combat, outside vision, or standing still for 2s (pretending to be the effigy) activates the condition.\nDealing damage with a skill then triggers [[FEAR]].\n[[FEAR]] has a per-champion cooldown shown as a circular timer around the target", "Completing the full W channel without interruption refunds 60% of its cooldown."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

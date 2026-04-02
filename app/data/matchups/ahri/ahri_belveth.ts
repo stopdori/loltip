@@ -9,7 +9,7 @@ export const ahri_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 벨베스 Q, W(채널링)를 끊을 수 있음.", "아리 E의 [[CHARM]]으로 벨베스 R의 [[CAST_COMMIT]]을 멈출 수 없음.\n단, [[CHARM]]은 남아있음."],
+      ko: ["아리 E의 [[CHARM]]으로 벨베스 Q, W([[SKILL_CHANNEL]])를 끊을 수 있음.", "아리 E의 [[CHARM]]으로 벨베스 R의 [[CAST_COMMIT]]을 멈출 수 없음.\n단, [[CHARM]]은 남아있음."],
       en: ["Ahri's E can interrupt Bel'Veth's Q and W (channeling)", "Ahri's E [[CHARM]] cannot stop Bel'Veth's R [[CAST_COMMIT]].\nHowever, the [[CHARM]] still applies."],
     },
     belveth: {

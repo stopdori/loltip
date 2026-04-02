@@ -35,6 +35,8 @@ const zac: ChampData = {
         en: ["[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]] not possible", "P cooldown is 300s.\n[[REVIVE]] is unaffected by [[GW]]", "E [[AIRBORNE]] scales with charge duration", "First hit of R applies [[AIRBORNE]], subsequent hits apply [[SLOW]]"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

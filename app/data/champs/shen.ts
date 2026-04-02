@@ -53,6 +53,8 @@ const shen: ChampData = {
         en: ["Key mechanic is positioning enemies between Shen and his blade.\nHitting with the blade applies [[SLOW]] and [[AS_UP]].\n[[SLOW]] only applies when the target moves away from Shen", "W deactivates if neither Shen nor allies are inside its area.\nReactivates the moment one enters", "R brings the blade along when teleporting to an ally"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

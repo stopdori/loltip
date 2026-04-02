@@ -9,7 +9,7 @@ export const anivia_aurelionsol: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 아우솔 Q(채널링), W(비행)를 끊을 수 있음."],
+      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 아우솔 Q([[SKILL_CHANNEL]]), W(비행)를 끊을 수 있음."],
       en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Aurelion Sol's Q (channeling) and W (flight)."],
     },
     aurelionsol: {

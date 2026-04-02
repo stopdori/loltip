@@ -57,6 +57,8 @@ const sylas: ChampData = {
         en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "P is not an AA cancel — it increases attack speed", "E splits into E1 and E2.\nE2 has a throw / dash phase.\nCC during the throw phase is ignored and the dash still triggers.\nHard CC during the dash can interrupt it", "R is detailed per champion in the box below"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

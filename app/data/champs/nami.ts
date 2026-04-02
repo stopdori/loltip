@@ -41,6 +41,8 @@ const nami: ChampData = {
         en: ["Q is surprisingly [[SUSPENDING]]", "Having allies hit by R together doubles P's effect on them"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

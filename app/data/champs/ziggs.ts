@@ -35,6 +35,8 @@ const ziggs: ChampData = {
         en: ["[[W_FLASH]] and [[E_FLASH]] not possible", "W can [[EXECUTE]] towers", "R deals maximum damage in the center"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

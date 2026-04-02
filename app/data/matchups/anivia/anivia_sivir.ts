@@ -9,7 +9,7 @@ export const anivia_sivir: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [],
+      ko:  ["애니비아 W(벽)의 [[AIRBORNE]]으로 시비르 E([[SPELL_SHIELD]])를 낭비시킬 수 없음."],
       en: [],
     },
     sivir: {

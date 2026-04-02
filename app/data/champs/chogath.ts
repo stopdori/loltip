@@ -35,6 +35,8 @@ const chogath: ChampData = {
         en: ["As Cho'Gath grows larger, basic attack range and skill ranges increase.", "E grants Cho'Gath 3 [[BUFF_STACK]] stacks.\nAuto-attacking consumes stacks to fire bonus projectiles."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

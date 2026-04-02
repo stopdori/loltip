@@ -9,7 +9,7 @@ export const anivia_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [""],
+      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 볼리베어 Q를 풀 수 있음. \n 단, 볼리베어 Q를 바로 다시 사용할 수 있음."],
       en: [""],
     },
     volibear: {

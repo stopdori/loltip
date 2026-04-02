@@ -38,6 +38,8 @@ const ahri: ChampData = {
         en: ["P's [[HEAL]] activates at 9 stacks.\nGain 1 stack from killing minions or monsters.\nKill participation within 3s triggers ~18 stacks instantly\n(stacks are not consumed when triggered this way)", "When R is active, a yellow border appears on the R icon showing its remaining duration.\nKill participation during this window grants +1 R charge and extends the duration.\nEven if all charges are used within the duration, the effect does not end immediately."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

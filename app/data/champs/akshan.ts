@@ -38,6 +38,8 @@ const akshan: ChampData = {
         en: ["P's basic attack is a double hit by default. Moving to cancel before the second hit triggers a movement speed increase.\nBonus damage is dealt when the separate stack on an enemy reaches 3.", "Q [[PIERCE]]s on hit and gains bonus range, repeating until it misses", "W's [[REVIVE]] triggers under specific conditions.\nA Scoundrel is an enemy who killed an ally within 60s.\nKilling or assisting a Scoundrel within 3s instantly [[REVIVE]]s allies that Scoundrel killed.\nOther Scoundrel marks are removed", "E scales along walls. Landing near the target via E reuse causes less DPS loss than right-clicking to land", "Can wall-travel with E while channeling R", "If the target uses [[CAMOUFLAGE]] or [[INVISIBILITY]] while R is channeling/targeting, they become visible.\nIf they go invisible after R is fired, they become hidden but R still tracks them."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

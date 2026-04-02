@@ -35,6 +35,8 @@ const yorick: ChampData = {
         en: ["Cannot TP onto W", "R cannot be recalled after recasting"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

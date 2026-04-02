@@ -19,11 +19,22 @@ const twitch: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DOT_DMG_TRUE", "DEBUFF_INTERACT", "W", ],
+
+    Q: { phases: [
+      { label: { ko: "Q 위장", en: "Q Camouflage" }, tags: ["BUFF_FORM", "ST_DELAYED"] },
+      { label: { ko: "Q 위장 해제", en: "Q Camouflage Unveiled" }, tags: ["ST_CONDITIONAL", "BUFF_FORM"] },
+    ] },
+
+    W: { phases: [
+      { label: { ko: "W 독병 투척", en: "W Venom Cask Toss" }, tags: ["TIMING_CAST", "PROJECTILE"] },
+      { label: { ko: "W 독 구름", en: "W Venom Cloud" }, tags: ["ZONE", "DEBUFF_STACK"] },
+    ] },
+
+    E: ["TIMING_CAST"],
+
+    R: ["BUFF_FORM", "PROJECTILE", "PIERCE", "ON_HIT"],
+    
   },
 
   notes: {
@@ -35,6 +46,8 @@ const twitch: ChampData = {
         en: ["Q [[CAMOUFLAGE]] does not break on flash.\nQ's [[AS_UP]] applies after [[CAMOUFLAGE]] ends.\nQ resets its cooldown when a poisoned champion dies", "W's [[SLOW]] continuously applies to targets inside the area"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

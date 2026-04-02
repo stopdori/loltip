@@ -41,6 +41,8 @@ const irelia: ChampData = {
         en: ["[[E_FLASH]] not possible", "P stacks up to 4.\nStacks are maintained only by hitting champions or towers"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

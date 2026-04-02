@@ -50,6 +50,8 @@ const kayle: ChampData = {
         en: ["[[Q_FLASH]] not possible", "P activates after putting points in E.\nP's [[MS_UP]] triggers during autos at 5 stacks", "Leveling R at 6/11/16 provides upgrades:\n6: [[RANGE_UP]]\n11: auto-attacks at 5 stacks fire a flame wave (AoE + bonus damage; basic attacks only hit one target)\n16: additional [[RANGE_UP]] + permanent 5-stack effect"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

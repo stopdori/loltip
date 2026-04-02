@@ -9,8 +9,8 @@ export const ahri_fiddlesticks: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CAHRM]]으로 피들스틱 W(채널링), R(시전집중)을 끊을 수 있음."],
-      en: ["Ahri's E can interrupt Fiddlesticks's W (channeling) and R (channeling)"],
+      ko: ["아리 E의 [[CHARM]]으로 피들스틱 W([[SKILL_CHANNEL]]), R(시전집중)을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Fiddlesticks's W ([[SKILL_CHANNEL]]) and R (channeling)."],
     },
     fiddlesticks: {
       ko: ["피들스틱의 [[FEAR]]로 아리 R의 [[DASH]]을 끊을 수 있음."],

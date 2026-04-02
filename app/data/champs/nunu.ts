@@ -44,6 +44,8 @@ const nunu: ChampData = {
         en: ["During W snowball rolling, recasting throws it", "E creates a circle around Nunu that applies [[ROOT]] at expiration.\nOnly targets hit at least once by E during this time are [[ROOT]]ed", "[[R_FLASH]] not possible. R cancels on any other action", "R's [[SLOW]] continuously applies to targets inside the area"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

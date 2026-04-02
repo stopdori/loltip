@@ -46,6 +46,8 @@ const camille: ChampData = {
         en: ["P: the shield type reflects the higher proportion of incoming physical/magic damage received.\nExample: if Camille has 30 armor / 50 MR and takes 100 physical / 100 magic damage,\nmore physical damage goes through, so she gets a physical shield", "W applies [[HEAL]] and [[SLOW]] only when hitting with the outer ring", "E has four phases: lunge / grapple / wait / dash.\nCC hit during the lunge phase is valid, but the grapple still triggers and Camille moves toward the wall.\nIf CC persists until the wait phase, E is canceled.\nCC during the grapple / wait phase cancels E.", "E can be used on most generated terrain walls.\n[[AS_UP]] and [[STUN]] only trigger on collision with an enemy (minions, monsters, or champions).", "R's [[UNSTOPPABLE]] is not shown in the description, but appears above Camille's health bar while leaping to the target. It ends upon arrival.", "R traps the target inside an arena, briefly applies [[SILENCE]], and [[KNOCKBACK]]s nearby enemy champions out when the arena expands."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

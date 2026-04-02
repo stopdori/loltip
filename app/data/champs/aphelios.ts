@@ -35,6 +35,8 @@ const aphelios: ChampData = {
         en: ["Weapon order: Calibrum→Severum→Gravitum→Infernum→Crescendum (or Moonlit→Crimson→Gravitum→Infernum→Flare)", "Honestly too many cases to cover. For accurate details, refer to the wiki or similar resources.", "Simplified overview:\nThere's a main weapon and an off-hand weapon. The off-hand effect piggybacks onto the main weapon's actions.\nCalibrum (green) — [[RANGE_UP]], bonus auto.\nSeverum (red) — [[LIFESTEAL]], [[MS_UP]].\nGravitum (purple) — [[SLOW]], [[ROOT]].\nInfernum (blue) — area attacks, bonus damage.\nCrescendum (white) — damage increases per blade stack (max 20). The closer to the target, the higher [[AS_UP]].", "Calibrum (green) — Q and R hits mark the target, allowing one bonus auto within range. R can mark multiple targets but only one can be bonus-auto'd; the rest are auto-attacked with the off-hand weapon.\nIf off-hand is Gravitum (purple), press W to swap and use Q.", "Severum (red) is melee range.\nQ [[LIFESTEAL]] generates [[SHIELD]] when at max HP", "Infernum (blue): if two enemies are lined up, aiming at the front one lets the back one get hit by the cone blast; aiming at the back one damages the front one as the projectile passes through.\nDamage mechanics vary per target", "Crescendum (white) Q turret allows [[ALLY_TP_OK]]", "R deals area damage then auto-attacks all hit targets once with the current weapon", "...I give up"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   

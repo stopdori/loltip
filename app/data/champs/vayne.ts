@@ -19,11 +19,16 @@ const vayne: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["PASSIVE_BONUS"],
+    Q: ["DMG_PHYSICAL", "PROJECTILE", "ON_HIT", "DASH", "DEBUFF_STACK"],
+    W: ["DMG_TRUE", "PROJECTILE", "DEBUFF_INTERACT", "BA", "Q", "E", "PROC"],
+
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "TARGETED", "DEBUFF_STACK"] },
+      { label: { ko: "E 벽꿍", en: "E Terrain Crash" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL"] },
+    ] },
+    
+    R: ["BUFF_FORM"],
   },
 
   notes: {
@@ -35,6 +40,8 @@ const vayne: ChampData = {
         en: ["[[Q_FLASH]] not possible", "P activates when approaching an enemy champion", "Rolling along a wall with Q creates extremely fast AA cancels", "E [[STUN]] only triggers when [[KNOCKBACK]] causes a wall collision.\n[[E_FLASH]] enables [[INSEC_KICK]]", "During R, Q [[INVISIBILITY]] does not break on flash"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

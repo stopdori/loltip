@@ -65,6 +65,8 @@ const pantheon: ChampData = {
         en: ["Q's [[CRIT]] applies to enemies below 20% HP", "E's [[INVULNERABLE]] only applies in the direction Pantheon is facing.\nTower damage cannot be blocked", "R has [[AR_PEN]] as a passive base effect", "Becomes [[INVULNERABLE]] after jumping with R until landing"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

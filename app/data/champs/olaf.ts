@@ -38,6 +38,8 @@ const olaf: ChampData = {
         en: ["[[Q_FLASH]] not possible. Cannot TP onto Q (axe)", "Hitting E extends R's [[MS_UP]] duration"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

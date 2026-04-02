@@ -66,6 +66,8 @@ const elise: ChampData = {
         en: ["Spider form Q cannot hop walls", "Spider form E reveals vision inside brushes when Elise is hanging on the line."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   

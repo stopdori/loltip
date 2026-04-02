@@ -73,6 +73,8 @@ const karma: ChampData = {
         en: ["Mantra W heals on activation.\nIf the [[TETHER]] triggers and [[ROOT]] is applied, it heals again"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

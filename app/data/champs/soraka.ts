@@ -47,6 +47,8 @@ const soraka: ChampData = {
         en: ["Hit Q on enemies, then use W for maximum efficiency", "E's [[SILENCE]] continuously applies to targets inside the area.\nTargets standing in E long enough are [[ROOT]]ed", "R's effect is amplified on targets below 40% HP"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

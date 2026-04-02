@@ -41,6 +41,8 @@ const ambessa: ChampData = {
         en: ["[[WALL_HOP]] via Ambessa's P is not possible.", "P's [[ENERGY_RESTORE]] builds P (buff) stacks by using QWER skills, and consumes those stacks with basic attacks to restore energy.", "Hitting Q1 enables Q2. Missing Q1 means no Q2.", "R's [[LIFESTEAL]] and [[AR_PEN]] are baseline passive effects that activate whenever R is leveled — effectively all skills lifesteal.", "R only hits the rearmost enemy champion in its path."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

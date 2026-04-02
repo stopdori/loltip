@@ -35,6 +35,8 @@ const karthus: ChampData = {
         en: ["When Karthus dies, P allows him to overcome death — he cannot move but can still cast skills.\nMana is not consumed during this state.", "Q deals increased damage to a single target", "Using flash during R channeling cancels R immediately — never do this"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

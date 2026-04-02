@@ -35,6 +35,8 @@ const yuumi: ChampData = {
         en: ["P heals Yuumi from basic attacks or skills dealing damage,\nand that heal transfers to the attached ally", "E effects (excluding [[MANA_RESTORE]]) apply to Yuumi when unattached.\nWhen attached, effects transfer to the ally plus [[MANA_RESTORE]]", "Getting hit by [[HARD_CC]] while unattached puts W on a 5s cooldown", "R excess healing converts to [[SHIELD]]"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

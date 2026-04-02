@@ -35,6 +35,8 @@ const jhin: ChampData = {
         en: ["P's [[MS_UP]] triggers on crit with a basic attack", "Holding the 4th shot increases movement speed.\nPlacing traps to extend the 4th shot buff is effective", "W's [[ROOT]] activates when the target receives any damage or debuff", "E's [[SLOW]] applies continuously to enemies standing in the trap area"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

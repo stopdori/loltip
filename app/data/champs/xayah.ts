@@ -19,11 +19,25 @@ const xayah: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: { phases: [
+      { label: { ko: "자야라칸 귀환", en: "Lover's Leap Recall" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "깃털", en: "Feathers" }, tags: ["DMG_PHYSICAL", "PIERCE", "ZONE", "BUFF_INTERACT", "Q", "W", "E", "R"] },
+    ] },
+    
+    Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE", "ZONE", "BUFF_STACK"],
+
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["BUFF_FORM", "BUFF_STACK"] },
+      { label: { ko: "W 온힛", en: "W On-hit" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "ON_HIT", "PIERCE", "STACK_CONSUME", "ZONE"] },
+    ] },
+    
+    E: ["ST_CONDITIONAL", "DMG_PHYSICAL", "PROJECTILE", "PIERCE", "ST_DELAYED", "BUFF_STACK"],
+
+    R: { phases: [
+      { label: { ko: "R 점프", en: "R Leap" }, tags: ["BUFF_FORM", "BUFF_STACK"] },
+      { label: { ko: "R 깃털투척", en: "R Shoots" }, tags: ["ST_DELAYED", "DMG_PHYSICAL", "PROJECTILE", "PIERCE", "ZONE"] },
+    ] },
+
   },
 
   notes: {
@@ -35,6 +49,8 @@ const xayah: ChampData = {
         en: ["W does not [[AA_RESET]].\n[[MS_UP]] only activates when feathers touch an enemy champion", "E [[ROOT]] requires hitting 3 or more feathers", "Xayah & Rakan synergy:\nIf Rakan walks up to a recalling Xayah and presses recall, he shares her recall progress.\nRakan gains Xayah's W.\n[[MS_UP]] requires Xayah to attack to trigger on Rakan.\nRakan's E range is doubled when targeting Xayah"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

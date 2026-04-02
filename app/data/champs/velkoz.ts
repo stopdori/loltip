@@ -19,11 +19,20 @@ const velkoz: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DEBUFF_INTERACT", "Q", "W", "E", "R", "DMG_TRUE", "PROC"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "SKILL_RECAST", "DEBUFF_STACK"],
+
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["DMG_MAGIC", "PROJECTILE", "PIERCE", "RECHARGE", "DEBUFF_STACK"] },
+      { label: { ko: "W 장판", en: "W Zone" }, tags: ["DMG_MAGIC", "ZONE", "DEBUFF_STACK"] },
+    ] },
+    
+    E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "ZONE", "DEBUFF_STACK"],
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "TIMING_CAST", "NON_PROJECTILE", "AOE", "DEBUFF_STACK"] },
+      { label: { ko: "P의 디버프가 발동된 대상", en: "P Researched Targets" }, tags: ["ST_CONDITIONAL", "DMG_TRUE"] },
+    ] },
+    
   },
 
   notes: {
@@ -35,6 +44,8 @@ const velkoz: ChampData = {
         en: ["Q flies slightly farther than the indicated max range", "E applies [[KNOCKBACK]] to nearby targets and [[AIRBORNE]] to distant ones"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

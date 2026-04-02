@@ -9,7 +9,7 @@ export const ahri_aurelionsol: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 아우솔 Q(채널링), W(비행)를 끊을 수 있음."],
+      ko: ["아리 E의 [[CHARM]]으로 아우솔 Q([[SKILL_CHANNEL]]), W(비행)를 끊을 수 있음."],
       en: ["Ahri's E can interrupt Aurelion Sol's Q and W"],
     },
     aurelionsol: {

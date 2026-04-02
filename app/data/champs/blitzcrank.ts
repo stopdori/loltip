@@ -38,6 +38,8 @@ const blitzcrank: ChampData = {
         en: ["[[Q_FLASH]] not possible", "Without Q (Rocket Grab), Blitzcrank is just a tin can.\nSaving Q is also a valid strategy.", "W applies a self [[SLOW]] when its duration expires"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

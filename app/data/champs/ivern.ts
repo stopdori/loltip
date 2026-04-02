@@ -49,6 +49,8 @@ const ivern: ChampData = {
         en: ["[[Q_FLASH]] not possible", "W explodes after a delay.\nHitting an enemy with the explosion applies [[SLOW]].\nIf no enemy is hit, Ivern gains a bonus shield"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

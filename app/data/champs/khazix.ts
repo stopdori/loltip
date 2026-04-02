@@ -70,6 +70,8 @@ const khazix: ChampData = {
         en: ["P's [[SLOW]] activates when Kha'Zix is invisible to the target", "W [[HEAL]] only activates when standing inside the explosion radius", "[[INVISIBILITY]] does not break on flash.\nE (jump) does break it", "Skills can be cast while mid-air from E"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

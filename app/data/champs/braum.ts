@@ -35,6 +35,8 @@ const braum: ChampData = {
         en: ["E blocks the first incoming projectile's damage", "Most CC effects from skills blocked by E still apply.", "E's blocking concept has two categories:\n1. [[DAMAGE_NULLIFY]] — nullifies the first hit on Braum\n2. [[INTERCEPT_PROJECTILE]] — intercepts projectiles aimed at allies (projectile deleted)", "Per-champion E data focuses on cases where normally unblockable projectiles become blockable", "Using E then Zhonya's prevents E from activating", "[[R_FLASH]] not possible.\nR applies [[AIRBORNE]] for 1s on the first target and 0.6s on others"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {
