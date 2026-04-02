@@ -38,6 +38,8 @@ const draven: ChampData = {
         en: ["Q does not [[AA_RESET]]", "After R deals damage, if the target's remaining HP is lower than Draven's stack bonus, they are executed.\nExample: target HP 1000, R damage 300, stack bonus 700 → execute"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

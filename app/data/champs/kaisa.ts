@@ -64,6 +64,8 @@ const kaisa: ChampData = {
         en: ["Evolutions:\nQ — 100 bonus AD\nW — 100 AP\nE — 100% AS", "Evolved W reduces its cooldown when hitting an enemy champion"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

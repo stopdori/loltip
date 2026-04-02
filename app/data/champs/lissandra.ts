@@ -51,6 +51,8 @@ const lissandra: ChampData = {
         en: ["[[W_FLASH]] not possible", "P activates when an enemy champion dies near Lissandra — even without kill participation.\nThe range is approximately the width of the mid lane side brush.", "P's [[SLOW]] continuously applies to targets inside the area.", "R has [[CAST_COMMIT]] when cast on an enemy.\nWhen cast on herself, it is instant."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

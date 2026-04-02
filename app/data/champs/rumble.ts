@@ -71,6 +71,8 @@ const rumble: ChampData = {
  
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
  
 

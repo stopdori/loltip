@@ -45,6 +45,8 @@ const neeko: ChampData = {
         en: ["[[Q_FLASH]] not possible", "Cannot TP onto Neeko's disguise or W clones", "W clone can be kept alive longer with Ctrl+1 emote", "E applies a longer [[ROOT]] when piercing through", "Neeko's R combo flows naturally as R → Flash → Belt", "Neeko's R has three phases:\nPrep phase\n[[SUSPENDING]] phase — Neeko jumps and [[SUSPENDING]]s nearby enemy champions\n[[STUN]] phase — landing deals [[STUN]] in the area", "Enemies outside the area during [[SUSPENDING]] but inside during [[STUN]] will be hit by [[STUN]] and damage"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

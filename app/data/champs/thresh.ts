@@ -12,18 +12,34 @@ const thresh: ChampData = {
 
   vision: {
     P: [],
-    Q: [],
-    W: [],
+    Q: { phases: [
+      { label: { ko: "Q1", en: "Q1" }, tags: ["TRUE_SIGHT"] },
+      { label: { ko: "Q2", en: "Q2" }, tags: [] },
+    ] },
+    W: ["VISION"],
     E: [],
     R: [],
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["ST_CONDITIONAL", "STACKING"],
+
+    Q: { phases: [
+      { label: { ko: "Q1", en: "Q1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE"] },
+      { label: { ko: "Q2", en: "Q2" }, tags: ["HOMING", "DASH"] },
+    ] },
+
+    W: { phases: [
+      { label: { ko: "W 랜턴", en: "W Lantern" }, tags: ["PROJECTILE", "SUMMON", "ZONE"] },
+      { label: { ko: "W 랜턴 이동", en: "W Lantern Dash" }, tags: ["ST_CONDITIONAL", "HOMING", "DASH"] },
+    ] },
+
+    E: { phases: [
+      { label: { ko: "E 패시브", en: "E Passive" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ON_HIT"] },
+      { label: { ko: "E 액티브", en: "E Active" }, tags: ["DMG_MAGIC", "TIMING_CAST", "AOE"] },
+    ] },
+    
+    R: ["DMG_MAGIC", "TIMING_CAST", "TRAP"],
   },
 
   notes: {
@@ -35,6 +51,8 @@ const thresh: ChampData = {
         en: ["[[Q_FLASH]], [[E_FLASH]], [[R_FLASH]] not possible.\nFlash during Q dash phase technically works", "Q has two phases: throw / dash.\nCC during the throw phase is mostly valid.\nHard CC during the dash can interrupt it", "W (lantern) is best placed in the ally's direction of movement"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

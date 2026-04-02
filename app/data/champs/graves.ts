@@ -23,7 +23,14 @@ const graves: ChampData = {
     Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "ZONE", "AOE",],
     W: ["DMG_MAGIC", "PROJECTILE", "ZONE", "AOE"],
     E: ["BUFF_STACK", "DASH"],
-    R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE_MINION", "AOE", "DASH", "CC_BUFFER"],
+    
+    R:{ phases: [
+      { label: { ko: "준비단계", en: "Wind-up" }, tags: ["TIMING_CAST", "CC_BUFFER"] },
+      { label: { ko: "후진단계", en: "Retreat" }, tags: ["ST_DELAYED", "DASH"] },
+      { label: { ko: "R 투사체", en: "R Projectile" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "PIERCE_MINION"] },
+      { label: { ko: "R 폭발", en: "R Explodes" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "AOE"] },
+    ] },
+     
   },
 
   notes: {
@@ -35,6 +42,8 @@ const graves: ChampData = {
         en: ["Autoattacking while hugging a thick wall with E creates extremely fast AA cancels", "W's [[SLOW]] continuously applies to targets inside the area", "If interrupted during R cast, the projectile still fires but movement may be restricted depending on the situation"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

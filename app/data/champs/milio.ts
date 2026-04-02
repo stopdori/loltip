@@ -38,6 +38,8 @@ const milio: ChampData = {
         en: ["[[Q_FLASH]] and [[R_FLASH]] not possible", "P: allies hit by skills have their basic attacks empowered.\nQ also empowers allies standing in its path.", "Cannot TP onto W", "R cannot be cast while Milio is CC'd"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

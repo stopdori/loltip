@@ -4,7 +4,7 @@
 export type GimmickTagId =
 
 
-
+  | "STACKING"
   | "PASSIVE_BONUS"
   | "PASSIVE_INTERACT"
   | "BUFF_INTERACT"
@@ -12,6 +12,7 @@ export type GimmickTagId =
   | "MARK_INTERACT"
   | "MARK_CONSUME"
   // 스킬 키
+  | "BA"
   | "P"
   | "Q"
   | "W"
@@ -41,6 +42,7 @@ export type GimmickTagId =
   // 피해 범위
   | "GLOBAL"
   | "SUMMON"
+  | "CLONE"
   | "HOMING"
   | "SWARM"
   | "VOLLEY"
@@ -48,11 +50,11 @@ export type GimmickTagId =
   | "CHAIN"
   
   | "SINGLE"
+  | "ON_HIT"
   | "PIERCE"
   | "PIERCE_MINION"
   | "PIERCE_ONCE"
 
-  | "ON_HIT"
   | "ZONE"
   | "AOE"
   | "AURA"
@@ -60,6 +62,8 @@ export type GimmickTagId =
   // 시전 행동
   | "CAST_COMMIT"
   | "CAST_CANCEL"
+  | "CAST_MOVE"
+  | "CAST_IMMOBILE"
   | "CC_BUFFER"
   // 이동
   | "MOBILITY"
@@ -69,12 +73,13 @@ export type GimmickTagId =
   | "CANCELLABLE"
   | "LOCKED"
   // 기타
+  | "EMPOWERED"
+  | "RANGE_UP"
   | "SKILL_RECAST"
   | "RECHARGE"
   | "MARK"
   | "PROC"
 
-  | "STACKING"
   | "BUFF_STACK"
   | "DEBUFF_STACK"
   | "STACK_CONSUME"
@@ -92,6 +97,8 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   SKILL_CHANNEL: { ko: "채널링",  en: "Channel" },
   SKILL_CHARGED: { ko: "차징",    en: "Charged" },
   SKILL_VECTOR:  { ko: "벡터",    en: "Vector"  },
+  EMPOWERED:     { ko: "강화",    en: "Empowered" },
+  RANGE_UP:      { ko: "사거리↑", en: "Range↑" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
   RECHARGE:      { ko: "충전식",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
@@ -131,6 +138,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   W: { ko: "W", en: "W" },
   E: { ko: "E", en: "E" },
   R: { ko: "R", en: "R" },
+  BA: { ko: "평타", en: "Basic Attack" },
   MARK:          { ko: "표식",     en: "Mark"          },
   HOMING:        { ko: "호밍",     en: "Homing"        },
   // 피해 범위
@@ -142,6 +150,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   AURA:    { ko: "오라",   en: "Aura"            },
   GLOBAL:  { ko: "전체맵", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
+  CLONE:   { ko: "분신",     en: "Clone"   },
   SWARM:   { ko: "분산",     en: "Swarm"   },
   VOLLEY:         { ko: "일제사격", en: "Volley"         },
   VOLLEY_OVERLAP: { ko: "중첩사격", en: "Overlap Volley" },
@@ -153,8 +162,10 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DOT:          { ko: "지속피해", en: "DoT"             },
   ON_HIT:       { ko: "온힛",    en: "On-Hit"          },
   // 시전 행동
-  CAST_COMMIT:  { ko: "시전강행", en: "Cast Commit" },
-  CAST_CANCEL:  { ko: "시전취소", en: "Cast Cancel" },
+  CAST_COMMIT:   { ko: "시전강행",  en: "Cast Commit"  },
+  CAST_CANCEL:   { ko: "시전취소",  en: "Cast Cancel"  },
+  CAST_MOVE:     { ko: "이동 가능", en: "Can Move"      },
+  CAST_IMMOBILE: { ko: "이동 불가", en: "Immobile"      },
   CC_BUFFER:    { ko: "CC버퍼", en: "CC Buffer"   },
   // 이동
   MOBILITY: { ko: "이동기",    en: "Mobility" },
@@ -168,6 +179,8 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬", en: "Charges up while held\nCaster can move while charging" },
   SKILL_VECTOR:     { ko: "시전 위치와 방향을 드래그로 지정하는 스킬.", en: "A skill where the cast location and direction are specified by dragging." },
+  EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
+  RANGE_UP:         { ko: "스킬 또는 공격의 사거리가 증가함", en: "Increases attack range" },
   SKILL_RECAST:     { ko: "쿨타임이 돌기 전에 스킬을 다시 사용할 수 있음", en: "The ability can be used again before its cooldown begins" },
   RECHARGE:         { ko: "스킬을 여러 개 충전해두고 사용할 수 있음\n최대 충전이 아니면 쿨타임이 돔.", en: "Multiple charges of the skill can be stored and used\nCooldown applies if not at maximum charges." },
   STACKING:         { ko: "조건을 충족할 때마다 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced each time the conditions are met" },
@@ -176,7 +189,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DEBUFF_STACK:     { ko: "상대에게 스택을 쌓아 추가 효과가 생김", en: "Applies stacks to enemies, granting additional effects" },
   STACK_CONSUME:    { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함.", en: "Consumes accumulated buff stacks to trigger or empower an effect." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
-  TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림.", en: "Takes time between cast and activation." },
+  TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸리고 \n 움직일 수 없음.", en: "Has a delay before activating after cast, \n and cannot move." },
   TIMING_AFTERCAST: { ko: "발동 후 다음 행동까지 시간이 걸림.", en: "Takes time between activation and the next action." },
   ST_IMPACT:      { ko: "스킬이 대상에게 즉시 발동됨", en: "The skill activates immediately upon hitting the target" },
   ST_DELAYED:     { ko: "스킬이 발동까지 일정 시간이 걸림", en: "The skill takes time before it activates" },
@@ -185,7 +198,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   LOCKED:           { ko: "시전 중 직접 중단할 수 없음\n끝까지 완료되어야 함", en: "Cannot be manually cancelled\nMust complete fully" },
   TARGETED:         { ko: "대상을 직접 지정하여 시전하는 스킬\n단, 무적/타겟불가 상태에는 적중하지 않음", en: "Targets an enemy directly\nDoes not hit invulnerable or untargetable units" },
   NON_TARGETED:     { ko: "방향 또는 위치를 지정하여 시전하는 스킬\n대상이 피할 수 있음", en: "Targets a direction or location\nCan be dodged by the enemy" },
-  PROJECTILE:       { ko: "날아가는 투사체가 존재함", en: "A projectile travels to the target." },
+  PROJECTILE:       { ko: "투사체", en: "Projectile" },
   NON_PROJECTILE:   { ko: "외형상 투사체처럼 보이지만 실제로는 투사체가 아님.", en: "Appears to be a projectile but is not." },
   ZONE:             { ko: "시전자와 분리되어 \n 특정 위치에 독립적으로 존재하는 효과", en: "An effect that exists independently at a fixed location, \n separate from the caster" },
   TRAP:             { ko: "설치 후 적이 밟으면 발동되는 함정", en: "A trap that activates when an enemy steps on it" },
@@ -202,6 +215,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   W: { ko: "W", en: "W" },
   E: { ko: "E", en: "E" },
   R: { ko: "R", en: "R" },
+  BA: { ko: "기본 공격", en: "Basic Attack" },
   MARK:             { ko: "적에게 표식을 남기며 \n 표식이 있는 대상에게 추가 효과가 발동됨", en: "Marks an enemy and triggers \n a bonus effect on marked targets" },
   // 피해 범위
   SINGLE:      { ko: "단일 대상에게만 적용되는 스킬", en: "Affects only a single target" },
@@ -212,6 +226,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   AURA:        { ko: "주변 아군 또는 적에게 지속적으로 영향을 주는 범위 효과. \n CC에 맞아도 풀리지 않음.", en: "A persistent area effect that continuously affects nearby allies or enemies.\nCannot be dispelled by CC." },
   GLOBAL:      { ko: "맵 전체 또는 모든 적에게 적용", en: "Affects all enemies or the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
+  CLONE:   { ko: "자신의 외형을 모방한 분신", en: "A clone that mimics the champion's appearance" },
   SWARM:   { ko: "스킬이 근처 적에게 나뉘어 각각 단일 적중", en: "Splits among nearby enemies,\n each hitting a single target"},
   VOLLEY:  { ko: "여러 투사체를 같은 방향으로 발사\n각 투사체는 첫 번째 적에게만 적중", en: "Fires multiple projectiles in the same direction\nEach projectile hits only the first enemy" },
   VOLLEY_OVERLAP: {
@@ -226,8 +241,10 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DOT:          { ko: "일정 시간 동안 지속적으로 피해를 줌", en: "Deals damage repeatedly over a duration" },
   ON_HIT:       { ko: "기본 공격 적중 시 추가 피해가 발생함", en: "Deals bonus damage on basic attack hit" },
   // 시전 행동
-  CAST_COMMIT:  { ko: "시전 중 CC에 걸려도 스킬이 끊기지 않고 유지됨.\nCC 효과는 시전 도중에도 정상 작동.", en: "The skill is not interrupted and persists even if hit by CC during the cast.\nCC effects function normally during the casting process." },
-  CAST_CANCEL:  { ko: "시전 중 CC에 걸리면 스킬이 취소됨\n쿨타임만 소모됨", en: "The skill is canceled if hit by CC during the cast\nOnly the cooldown is consumed" },
+  CAST_COMMIT:   { ko: "시전 중 CC에 걸려도 스킬이 끊기지 않고 유지됨.\nCC 효과는 시전 도중에도 정상 작동.", en: "The skill is not interrupted and persists even if hit by CC during the cast.\nCC effects function normally during the casting process." },
+  CAST_CANCEL:   { ko: "시전 중 CC에 걸리면 스킬이 취소됨\n쿨타임만 소모됨", en: "The skill is canceled if hit by CC during the cast\nOnly the cooldown is consumed" },
+  CAST_MOVE:     { ko: "시전 중 이동할 수 있음", en: "Caster can move freely during cast" },
+  CAST_IMMOBILE: { ko: "시전 중 이동할 수 없음", en: "Caster cannot move during cast" },
   CC_BUFFER:    { ko: "일부 단계에서 CC를 무시하고 다음단계를 발동함.\n단, CC는 남아있음.\n주로 이동기에 사용.", en: "CC is ignored only during specific phases.\nCommonly seen on mobility abilities." },
   // 이동
   MOBILITY: { ko: "이동 능력의 상위 분류. \n 이동기 금지 상태에서 사용 불가.", en: "The overarching category of movement abilities. \n Cannot be used while grounded." },

@@ -44,6 +44,8 @@ const kindred: ChampData = {
         en: ["R flash not possible", "Each mark increases Q [[AS_UP]] by 5%, W and E damage, and range by 75 every 4 marks", "Jungle marks appear to be random", "R grants [[INVULNERABLE]] below 10% HP"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -41,6 +41,8 @@ const caitlyn: ChampData = {
         en: ["P stacks charge at 2 per bush auto.\nW (Yordle Snap Trap) also deals bonus damage to trapped targets", "[[Q_FLASH]] not possible.\nQ damage decreases per additional target pierced.\nHowever Q always deals 100% damage to targets trapped by W", "Cannot TP onto W (traps)", "E applies [[AA_RESET]] on hit"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

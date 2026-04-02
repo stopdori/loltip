@@ -35,6 +35,8 @@ const zed: ChampData = {
         en: ["Zed must attack alongside his shadow for bonus effects", "[[W_FLASH]] and [[E_FLASH]] not possible", "R makes Zed disappear then reappear behind the target (fixed position)"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

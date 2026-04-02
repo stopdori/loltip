@@ -42,6 +42,8 @@ const renata: ChampData = {
         en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "Q hitting champion A applies [[ROOT]].\nRe-casting into champion B applies [[STUN]] to B only", "W target revives at 20% max HP — not a heal, so [[GW]] doesn't apply", "E applies [[SHIELD]] to allies and [[SLOW]] to enemies"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

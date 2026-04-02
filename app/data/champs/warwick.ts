@@ -19,13 +19,26 @@ const warwick: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
+    P: ["DMG_MAGIC", "ON_HIT"],
+
+    Q: { phases: [
+      { label: { ko: "Q 짧게", en: "Q" }, tags: ["DMG_MAGIC", "SKILL_CHARGED", "TARGETED", "ON_HIT"] },
+      { label: { ko: "Q 길게", en: "Q Hold" }, tags: ["DMG_MAGIC", "SKILL_CHARGED", "TARGETED", "ON_HIT", "DASH", "CC_IMMUNE"] },
+    ] },
+    
+    W: { phases: [
+      { label: { ko: "W 패시브", en: "W Passive" }, tags: ["ST_CONDITIONAL", "PASSIVE_BONUS", "MARK"] },
+      { label: { ko: "W 액티브", en: "W Active" }, tags: ["TIMING_CAST", "MARK"] },
+    ] },
+
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["BUFF_STACK", "CANCELLABLE", "SKILL_RECAST"] },
+      { label: { ko: "E 폭발", en: "E Explodes" }, tags: ["ST_CONDITIONAL", "AOE", "FEAR"] },
+    ] },
+    
     R: { phases: [
-      { label: { ko: "도약단계", en: "Leap"   }, tags: [] },
-      { label: { ko: "공격단계", en: "Strike" }, tags: [] },
+      { label: { ko: "도약단계", en: "Leap"   }, tags: ["TIMING_CAST", "DASH", "CC_IMMUNE"] },
+      { label: { ko: "공격단계", en: "Strike" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "ON_HIT", "LOCKED"] },
     ] },
   },
 
@@ -38,6 +51,8 @@ const warwick: ChampData = {
         en: ["[[E_FLASH]] and [[R_FLASH]] not possible", "Both short and long [[Q_FLASH]] work.\nFor long Q flash: press Q outside range then flash into Q range at the moment Q would fire", "Hold Q when the target uses a movement ability to track them", "W applies to targets below 50% HP.\n2x effect below 25% HP", "R [[CAST_COMMIT]] is during the leap phase.\nR [[SUPPRESS]] is during the attack phase"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

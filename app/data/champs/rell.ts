@@ -62,6 +62,8 @@ const rell: ChampData = {
         ],
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -40,6 +40,8 @@ const aatrox: ChampData = {
         en: ["Q deals [[AIRBORNE]] only when hitting at the edge", "If Q2 or Q3 is not used, Q1's cooldown returns faster.", "W has no [[TRUE_SIGHT]] in the tooltip,\nbut the effect works the same", "E's base effect includes [[LIFESTEAL]] on all damage to champions,\nso it applies to basic attacks, Q, W, item effects, etc."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -35,6 +35,8 @@ const zaahen: ChampData = {
         en: ["[[E_FLASH]] works but is very difficult", "P at 12 stacks doubles [[AD_UP]].\nFull stacks required for [[REVIVE]]", "Q [[AIRBORNE]] only applies on Q2", "R [[AR_PEN]] is a passive effect"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

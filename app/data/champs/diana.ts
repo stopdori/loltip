@@ -38,6 +38,8 @@ const diana: ChampData = {
         en: ["P gains [[BUFF_STACK]] stacks on basic attacks. At 3 stacks, the next attack is empowered.", "P has a level-based [[AS_UP]] plus additional [[AS_UP]] from using skills", "Fully detonating all W spheres grants a bonus [[SHIELD]]", "E+Q does not reset E", "R requires hitting at least one enemy to summon and detonate the moon."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

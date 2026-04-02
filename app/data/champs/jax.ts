@@ -38,6 +38,8 @@ const jax: ChampData = {
         en: ["P stacks up to 8", "After learning R, always think 'beat-beat-hit' in your head.\nAfter using R it changes to 'beat-hit'.\nOn the 'hit' rhythm, attack the enemy"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

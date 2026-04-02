@@ -53,6 +53,8 @@ const leesin: ChampData = {
         en: ["[[Q_FLASH]] not possible", "Enemies hit by the billiard bounce take bonus damage based on a % of the launched target's max HP"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

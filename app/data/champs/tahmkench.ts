@@ -19,11 +19,20 @@ const tahmkench: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: ["TIMING_CAST"],
-    W: ["SKILL_CHANNEL"],
-    E: ["TIMING_CAST"],
-    R: ["TIMING_CAST"],
+    P: ["DMG_MAGIC", "ON_HIT", "DEBUFF_STACK"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE", "DEBUFF_STACK", "PROC"],
+
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["SKILL_CHANNEL", "MOBILITY"] },
+      { label: { ko: "W 이동", en: "W Mobility" }, tags: ["ST_DELAYED", "DMG_MAGIC", "AOE", "BLINK"] },
+    ] },
+    
+    E: { phases: [
+      { label: { ko: "E 패시브", en: "E Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "E 액티브", en: "E Active" }, tags: ["TIMING_CAST"] },
+    ] },
+
+    R: ["ST_CONDITIONAL", "TIMING_CAST", "TARGETED", "PROC"],
   },
 
   notes: {
@@ -33,6 +42,7 @@ const tahmkench: ChampData = {
           "Q는 챔피언에 적중하면 [[HEAL]]이 됨",
           "적 3스택 일 때 Q를 맞히면 [[STUN]]\nQR 하면 멀리 있어도 먹어짐",
           "E는 사용하면 [[SHIELD]]\n사용하지 않으면 [[HEAL]]",
+          "R 데미지는 뱉을 때 줌.",
           "R에 벽넘기 태그는 아군을 삼킬 때\n아군이 벽을 넘는다는 관점에서 가능",
         ],
         en: [
@@ -43,6 +53,8 @@ const tahmkench: ChampData = {
         ],
       },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

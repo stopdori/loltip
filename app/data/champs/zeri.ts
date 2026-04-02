@@ -35,6 +35,8 @@ const zeri: ChampData = {
         en: ["Q cooldown is affected by ability haste and attack speed.\n70% of excess attack speed converts to AD", "[[CRIT]] can apply to W", "Using E then W fires W through the wall.\nE grants Q 3 pierce charges", "R buffs only trigger when hitting an enemy champion.\nBuff duration is refreshed by basic attacks, Q, or W damage (not item effects)"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

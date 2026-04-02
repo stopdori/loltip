@@ -51,6 +51,8 @@ const smolder: ChampData = {
         en: ["P stacks: 25 splash / 125 bonus projectile / 225 persistent true damage, [[EXECUTE]]", "W's [[SLOW]] continuously applies to targets inside the area", "R [[HEAL]] only activates if Smolder himself is hit by the breath", "E is interrupted by [[HARD_CC]]"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

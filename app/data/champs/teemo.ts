@@ -15,15 +15,27 @@ const teemo: ChampData = {
     Q: [],
     W: [],
     E: [],
-    R: [],
+    R: { phases: [
+      { label: { ko: "R 버섯", en: "R Mushroom" }, tags: ["VISION"] },
+      { label: { ko: "R 폭발", en: "R Explodes" }, tags: ["REVEALED"] },
+    ] },
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["ST_CONDITIONAL"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE"],
+
+    W: { phases: [
+      { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_BONUS", "ST_CONDITIONAL"] },
+      { label: { ko: "W 액티브", en: "W Active" }, tags: ["BUFF_STACK"] },
+    ] },
+
+    E: ["PASSIVE_BONUS", "DMG_MAGIC", "PROJECTILE", "ON_HIT", "DOT"],
+    R: { phases: [
+      { label: { ko: "R 버섯", en: "R Mushroom" }, tags: ["TIMING_CAST", "TRAP", "RECHARGE"] },
+      { label: { ko: "R 폭발", en: "R Explodes" }, tags: ["DMG_MAGIC", "ZONE", "DOT"] },
+    ] },
+    
   },
 
   notes: {
@@ -35,6 +47,8 @@ const teemo: ChampData = {
         en: ["P's [[AS_UP]] activates when coming out of [[INVISIBILITY]].\n[[INVISIBILITY]] flash rules:\nBush inside → inside: doesn't break\nBush inside → outside: breaks\nBush outside → inside: doesn't break\nBush outside → outside: breaks"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

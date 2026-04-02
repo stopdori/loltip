@@ -9,7 +9,7 @@ export const amumu_masteryi: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q, R의 [[STUN]]로 마이 W(채널링)을 끊을 수 있음."],
+      ko: ["아무무 Q, R의 [[STUN]]로 마이 W([[SKILL_CHANNEL]])을 끊을 수 있음."],
       en: ["Amumu's Q and R [[STUN]] can interrupt Master Yi's W (channeling)."],
     },
     masteryi: {

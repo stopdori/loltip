@@ -43,6 +43,8 @@ const mordekaiser: ChampData = {
         en: ["Q deals increased damage to a single target", "If the target moves outside Death Realm range while R is being cast, the cast is cancelled without consuming the cooldown.", "Even if the target uses [[STEALTH]] during R's cast, R's [[TRUE_SIGHT]] still reveals them and they are taken to the Death Realm.", "While inside the Death Realm with R, if enemy minions die outside, Mordekaiser does not receive the experience.", "Champion-specific R mechanics are detailed in the box below"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

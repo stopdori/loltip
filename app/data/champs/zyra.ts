@@ -35,6 +35,8 @@ const zyra: ChampData = {
         en: ["[[R_FLASH]] not possible", "Cannot TP onto seeds.\nPlants allow [[ALLY_TP_OK]]", "Q-grown plant: 'Thorn Spitter' (long range)\nE-grown plant: 'Vine Lasher' (applies [[SLOW]])\nR does not grow plants — it only buffs existing ones", "Enemies stepping on W seeds reveal themselves via [[TRUE_SIGHT]].\nP-spawned plants do not have this effect"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

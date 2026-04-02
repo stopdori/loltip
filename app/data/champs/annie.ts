@@ -41,6 +41,8 @@ const annie: ChampData = {
         en: ["P's [[STUN]] applies on Q, W, or R when at 4 stacks", "E's reflected damage hits once per attacker targeting the protected unit.\nIf enemy pets attack, each pet and their owner champion are each counted separately.", "R has [[MR_PEN]] as a passive effect"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -46,6 +46,8 @@ const sett: ChampData = {
         en: ["[[E_FLASH]] not possible", "Q's [[MS_UP]] while chasing only triggers if the enemy is visible within range.\nDoes not activate if the enemy is in a bush or hidden by [[STEALTH]].", "W center hit deals true damage.\nUse W carefully", "E [[STUN]] is conditional — both targets must collide with each other.\nMinions can also be the collision partner for [[STUN]]", "R landing damage is amplified on tanks"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

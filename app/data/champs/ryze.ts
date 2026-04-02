@@ -75,6 +75,8 @@ const ryze: ChampData = {
  
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
  
 

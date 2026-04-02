@@ -9,7 +9,7 @@ export const ahri_anivia: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 애니비아 R(채널링)을 끊을 수 있음.", "아리 E의 [[CHARM]]이 에니비아 P(알)에 사용했을 때 애니비아가 [[REVIVE]] 한다면, [[CHARM]]이 남아있음."],
+      ko: ["아리 E의 [[CHARM]]으로 애니비아 R([[SKILL_CHANNEL]])을 끊을 수 있음.", "아리 E의 [[CHARM]]이 에니비아 P(알)에 사용했을 때 애니비아가 [[REVIVE]] 한다면, [[CHARM]]이 남아있음."],
       en: ["Ahri's E can interrupt Anivia's R (channeling)", "If Ahri's E hits Anivia's P (egg) and Anivia [[REVIVE]]s, the [[CHARM]] remains active."],
     },
     anivia: {

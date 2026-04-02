@@ -53,6 +53,8 @@ const shaco: ChampData = {
         en: ["Shaco deals bonus damage from behind", "Q then attacking from behind applies [[CRIT]].\nQ [[INVISIBILITY]] doesn't break on flash, W, or R.\n(E does break it)", "R (clone) explodes on death, applying AoE [[FEAR]]", "Cannot TP onto the clone,\nbut boxes spawned after clone death allow [[ALLY_TP_OK]]"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -43,6 +43,8 @@ const nasus: ChampData = {
         en: ["R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]]"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

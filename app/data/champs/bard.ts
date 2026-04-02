@@ -38,6 +38,8 @@ const bard: ChampData = {
         en: ["Ancient Chimes grant permanent [[STACKING]]", "Chime bonus effects table\n(expand after clicking the link): https://namu.wiki/w/바드(리그%20오브%20레전드)#s-5.1", "P's [[SLOW]] activates at 5 stacks when a spirit is consumed.\nMore stacks increase various effects", "Q applies [[SLOW]] on a straight hit.\nPiercing through another enemy or hitting a wall applies [[STUN]]", "W gains power over time when left on the ground.\nEnemies stepping on it destroy it", "You can be attacked during E travel.\nBeing hit by [[AIRBORNE]], [[FEAR]], or [[CHARM]] ejects you from the tunnel.\nOther CC types apply but you still travel to the end — the CC remains after arrival.", "R (Tempered Fate) cannot be stopped by:\n[[SPELL_SHIELD]] e.g. Nocturne W\n[[CC_IMMUNE]] e.g. Morgana E (Black Shield)\nItem shields e.g. Night's Edge, Banshee's Veil\n[[UNSTOPPABLE]] e.g. Malphite R"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

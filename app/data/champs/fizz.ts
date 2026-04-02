@@ -44,6 +44,8 @@ const fizz: ChampData = {
         en: ["Q wall-hop only works by targeting an enemy across the wall", "E's [[SLOW]] only applies if landing without recasting", "R's [[SLOW]] applies twice:\n1. When the fish hits\n2. When the shark bites", "Place mouse far away before using R for maximum range"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

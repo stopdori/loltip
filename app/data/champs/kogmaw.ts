@@ -39,6 +39,8 @@ const kogmaw: ChampData = {
         en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "Q's [[AS_UP]] is a passive effect", "E's [[SLOW]] continuously applies to targets standing in the area"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

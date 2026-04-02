@@ -20,10 +20,14 @@ const vladimir: ChampData = {
 
   gimmick: {
     P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    Q: ["TIMING_CAST"],
+    W: ["SKILL_CHANNEL"],
+    E: ["SKILL_CHARGED"],
+    
+    R: { phases: [
+      { label: { ko: "", en: "" }, tags: [] },
+      { label: { ko: "", en: "" }, tags: [] },
+    ] },
   },
 
   notes: {
@@ -35,6 +39,8 @@ const vladimir: ChampData = {
         en: ["P increases max HP based on AP, and AP based on max HP", "W's [[SLOW]] continuously applies to targets inside the area", "E can be cast while using W.\nDisabling smartcast on E is recommended", "R applies 'increased damage taken' — ally damage on R targets is also amplified"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

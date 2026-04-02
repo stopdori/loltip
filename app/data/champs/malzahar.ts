@@ -42,6 +42,8 @@ const malzahar: ChampData = {
         en: ["P (passive) is CC immunity.\nTower damage still applies while P is active,\nbut damage is reduced by 90%", "[[R_FLASH]] is extremely powerful"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

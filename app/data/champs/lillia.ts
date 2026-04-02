@@ -43,6 +43,8 @@ const lillia: ChampData = {
         en: ["Q's [[MS_UP]] is a passive effect so all skills build stacks.\nMax 4 stacks", "Q deals damage upon contact with the staff\n and additional true damage if hit by the edge.", "[[WALL_HOP]] is not possible with W", "W is interrupted by CC but damage behavior varies:\n1. If CC lands while Lillia is spinning her staff, no damage is dealt\n2. If CC lands while she swings down, movement is interrupted but damage is dealt"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

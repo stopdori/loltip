@@ -62,6 +62,8 @@ const ksante: ChampData = {
         en: ["[[THE_COPYPASTA]]", "R's [[UNSTOPPABLE]] is not shown in the description, but appears above K'Sante's health bar while launching the target backward. It ends upon arrival.", "R launches the target backward while K'Sante appears behind them to strike. If there is terrain behind the target (excluding the map boundary), K'Sante passes all the way through.", "R cannot be cancelled by reactivating after use."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

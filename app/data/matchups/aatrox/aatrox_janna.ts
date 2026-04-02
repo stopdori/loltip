@@ -9,7 +9,7 @@ export const aatrox_janna: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 잔나 R의 채널링을 끊을 수 있음"],
+      ko: ["아트록스 Q끝, W [[GRAB]]효과로 잔나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음"],
       en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Janna's R channeling"],
     },
     janna: {

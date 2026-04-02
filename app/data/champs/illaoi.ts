@@ -35,6 +35,8 @@ const illaoi: ChampData = {
         en: ["[[Q_FLASH]] not possible", "Each tentacle hit heals based on missing HP, so effectively Q, W, E, R all [[HEAL]]", "Illaoi's E cannot pierce minions.\nHitting an enemy champion extracts their soul.\nDamaging the soul transfers damage to the body.\nIf the soul reaches 0 HP or leaves the area, it returns to the body applying [[SLOW]] and a mark.", "R's description doesn't mention [[UNSTOPPABLE]], but based on it ignoring Mordekaiser's R, it appears to be [[UNSTOPPABLE]].\nPlease report if you have more info."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

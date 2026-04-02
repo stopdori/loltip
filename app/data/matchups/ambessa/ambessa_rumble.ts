@@ -9,7 +9,7 @@ export const ambessa_rumble: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 럼블 Q(채널링)를 멈출 수 없음."],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 럼블 Q([[SKILL_CHANNEL]])를 멈출 수 없음."],
       en: ["Ambessa's R [[SUPPRESS]] cannot stop Rumble's Q (channeling)."],
     },
     rumble: {

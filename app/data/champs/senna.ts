@@ -75,6 +75,8 @@ const senna: ChampData = {
  
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
  
 

@@ -42,11 +42,23 @@ const udyr: ChampData = {
 
   gimmick: {
     base: {
-      P: [],
-      Q: [],
+      P: ["BUFF_INTERACT", "Q", "W", "E", "R"],
+
+      Q: { phases: [
+      { label: { ko: "Q", en: "Q" }, tags: ["BUFF_STACK"] },
+      { label: { ko: "Q", en: "Q" }, tags: ["BUFF_STACK"] },
+      { label: { ko: "Q", en: "Q" }, tags: [] },
+    ] },
+
       W: [],
       E: [],
-      R: [],
+      
+      R: { phases: [
+      { label: { ko: "Q", en: "Q" }, tags: ["BUFF_STACK"] },
+      { label: { ko: "Q", en: "Q" }, tags: ["BUFF_STACK"] },
+      { label: { ko: "Q", en: "Q" }, tags: [] },
+    ] },
+
     },
     alt: {
       P: [],
@@ -66,6 +78,8 @@ const udyr: ChampData = {
         en: ["Udyr's passive is what makes reusing skills his ultimate.\nP cooldown is 50–20s.\nBasic attacking after switching stances reduces P cooldown"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   // 제이스 궁은 폼 전환이라 쿨 없음

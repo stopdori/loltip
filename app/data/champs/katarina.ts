@@ -35,6 +35,8 @@ const katarina: ChampData = {
         en: ["Cannot TP onto daggers", "E teleports Katarina near the target and strikes.\nCasting on the target or nearby ground moves her to that position"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

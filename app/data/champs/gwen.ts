@@ -35,6 +35,8 @@ const gwen: ChampData = {
         en: ["Q is most effective when hitting with the center", "W blocks projectiles originating from outside its area.\nTargeted projectiles already flying toward Gwen are also blocked if W is activated before they arrive"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -41,6 +41,8 @@ const ezreal: ChampData = {
         en: ["P is a stacking buff that must be maintained with skills", "[[E_FLASH]] fires from the flash destination", "[[R_FLASH]] technically works but since R fires from Ezreal's original position, it's classified as not possible.", "E has two phases: wind-up / blink.\nCC during the wind-up phase is valid, but the blink still triggers and Ezreal moves.\nThere is no CC immunity during the blink phase.\nIf CC duration remains when Ezreal blinks, the CC effect still applies."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

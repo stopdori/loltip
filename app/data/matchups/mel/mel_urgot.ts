@@ -9,8 +9,8 @@ export const mel_urgot: MatchupSummary = {
   },
   highlightsByChamp: {
     mel: {
-      ko: ["멜 W가 우르곳 R 반사 가능."],
-      en: ["Mel’s W reflects Urgot’s R."],
+      ko: ["멜 W([[REFLECT]])로 우르곳 R1을 반사할 수 있음. \n 단, [[EXECUTE]]은 불가."],
+      en: ["Mel’s W ([[REFLECT]]) can reflect Urgot’s R1.\nHowever, [[EXECUTE]] is not possible."],
     },
     urgot: {
       ko: [],

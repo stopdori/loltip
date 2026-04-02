@@ -38,6 +38,8 @@ const brand: ChampData = {
         en: ["P triggers when hitting enemies with skills.\nAt 3 stacks, it deals a large additional hit.", "P's [[MANA_RESTORE]] triggers when killing a target with Blaze.\nBlaze stacks up to 3 per target from skills.\nAt 3 stacks it triggers an AoE explosion.\nItem effects (e.g. Liandry's, Luden's) don't stack [[DEBUFF_STACK]]", "Q's [[STUN]] only applies to targets already affected by Blaze (e.g. WQ, EQ, RQ)", "R's [[SLOW]] only applies to targets already affected by Blaze"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -19,22 +19,24 @@ const wukong: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["BUFF_INTERACT", "BA", "Q", "W", "E", "R"],
+    Q: ["DMG_PHYSICAL", "ON_HIT", "BUFF_STACK"],
+    W: ["CLONE", "CAMOUFLAGE", "BUFF_STACK"],
+    E: ["DMG_MAGIC", "TARGETED", "SWARM", "DASH", "BUFF_STACK"],
+    R: ["DMG_PHYSICAL", "SKILL_TOGGLE", "AOE", "DOT", "BUFF_STACK"],
   },
 
   notes: {
     skill: {
       note2: {
         ko: [
-        "W에 [[INVISIBILITY]] 중에 점멸 써도 안풀림", "E의 [[MS_UP]]는 분신도 같이 증가함", "R은 CC를 맞아도 시전을 멈추지 않음"
-      ],
+        "W에 [[INVISIBILITY]] 중에 점멸 써도 안풀림", "E의 [[MS_UP]]는 분신도 같이 증가함", "E는 적중한 대상 하나당 P [[BUFF_STACK]] 증가.", "R은 CC를 맞아도 시전을 멈추지 않음",
+        ],
         en: ["W [[INVISIBILITY]] does not break on flash", "E's [[MS_UP]] also applies to the clone", "R cannot be cancelled by any CC"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

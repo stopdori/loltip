@@ -99,6 +99,8 @@ const kayn: ChampData = {
         en: ["Kayn is very weak before evolving", "The Darkin P(Passive) grants [[LIFESTEAL]], allowing all skills to benefit from [[LIFESTEAL]]", "Q has two phases: dash phase / slash phase.\nIf hit by [[AIRBORNE]], [[FEAR]], [[SUPPRESS]], or [[SLEEP]] during the dash phase, Q will not perform the spin slash\n(Please report if there are any other effects that stop the spin slash)"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   // 제이스 궁은 폼 전환이라 쿨 없음

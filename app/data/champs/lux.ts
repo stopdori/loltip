@@ -39,6 +39,8 @@ const lux: ChampData = {
         en: ["[[W_FLASH]] and [[R_FLASH]] not possible", "Q [[PIERCE]]s once only", "E's [[SLOW]] continuously applies to targets inside the area", "Cannot TP onto E"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

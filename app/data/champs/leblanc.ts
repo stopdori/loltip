@@ -46,6 +46,8 @@ const leblanc: ChampData = {
         en: ["[[W_FLASH]] not possible", "Clone can be controlled with alt + right-click"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

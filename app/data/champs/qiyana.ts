@@ -52,6 +52,8 @@ const qiyana: ChampData = {
         en: ["P resets by hitting a different element with W", "Earth Q deals bonus damage to targets below 50% HP", "R has unique hit detection.\nNormally R explodes on wall contact to apply [[STUN]],\nbut if river or brush is in R's path, it explodes and deals damage + [[STUN]] without hitting a wall.\nExample: if the knockback lands on flat ground after passing river/brush, neither the damage nor [[STUN]] will apply"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

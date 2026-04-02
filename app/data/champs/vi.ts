@@ -19,11 +19,20 @@ const vi: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: ["UNSTOPPABLE"],
+    P: ["PASSIVE_BONUS"],
+    Q: ["DMG_PHYSICAL", "SKILL_CHARGED", "DASH", "SINGLE", "DEBUFF_STACK"],
+    W: ["PASSIVE_BONUS", "DEBUFF_INTERACT", "BA", "Q", "E"],
+
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["DMG_PHYSICAL", "ON_HIT", "RECHARGE", "DEBUFF_STACK"] },
+      { label: { ko: "E 장풍", en: "E Cone" }, tags: ["DMG_PHYSICAL", "AOE"] },
+    ] },
+
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "SINGLE", "HOMING", "DASH", "LOCKED", "UNSTOPPABLE"] },
+      { label: { ko: "R 경로", en: "R Through" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "AOE"] },
+    ] },
+    
   },
 
   notes: {
@@ -35,6 +44,8 @@ const vi: ChampData = {
         en: ["Setting up CC first makes it much easier for teammates to follow up", "W effects apply on Q hit", "R targets are visible even through [[INVISIBILITY]].\nEnemies in R's path are [[KNOCKBACK]]ed and [[STUN]]ed"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -39,6 +39,8 @@ const sion: ChampData = {
         en: ["[[Q_FLASH]] and [[W_FLASH]] not possible", "Q: charging for 1+ seconds adds [[AIRBORNE]] and [[STUN]] to the release", "Releasing Q by being interrupted (not self-canceling) nullifies the skill", "W increases max HP so [[GW]] has no effect", "R damage and [[STUN]] scale with travel distance.\nColliding with a target causes [[AIRBORNE]], then [[STUN]] on landing"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

@@ -66,6 +66,8 @@ const gnar: ChampData = {
         en: ["Gnar transforms when rage reaches 100 and a skill is used.\nMini E (hop) landing on a target double-jumps and triggers the transform", "Mini form:\nP [[MS_UP]] is always active in mini form.\n[[Q_FLASH]] not possible.\nE applies [[SLOW]] on hit — minions can also be hopped on.\nR amplifies W [[MS_UP]]", "Mega form:\nP is [[MAX_HP_UP]] so [[GW]] has no effect.\n[[W_FLASH]] not possible.\nR requires hitting a wall for [[STUN]]"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   // 제이스 궁은 폼 전환이라 쿨 없음

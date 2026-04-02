@@ -38,6 +38,8 @@ const drmundo: ChampData = {
         en: ["[[Q_FLASH]] not possible.", "When P's [[CC_IMMUNE]] triggers, Dr. Mundo drops a canister. Picking it up [[HEAL]]s Mundo; enemies picking it up destroy it.", "Q (Infected Bonesaw) heals 50 HP when it lands.", "W detonates when its duration expires or when reactivated.\nDetonating on an enemy champion heals 100% of grey health.\nSummary: activate W and get in their face"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

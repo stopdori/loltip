@@ -9,7 +9,7 @@ export const anivia_vladimir: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [],
+      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 블라디미르 E의 [[SKILL_CHARGED]]을 멈출 수 있음.\n단, 블라디 E는 즉시 발동."],
       en: [],
     },
     vladimir: {

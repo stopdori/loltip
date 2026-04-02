@@ -13,7 +13,7 @@ export const anivia_trundle: MatchupSummary = {
       en: [],
     },
     trundle: {
-      ko: [],
+      ko: ["트런들 E(기둥)의 [[AIRBORNE]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [],
     },
   },

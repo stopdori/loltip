@@ -63,6 +63,8 @@ const yunara: ChampData = {
         en: ["Using W then R reduces W cooldown by 80%", "Using E then R resets E"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

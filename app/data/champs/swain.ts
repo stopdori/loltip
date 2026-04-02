@@ -47,6 +47,8 @@ const swain: ChampData = {
         en: ["[[E_FLASH]] not possible", "P is gained from W, E, and kill participation.\nHP recovery is affected by [[GW]].\nMax HP increase is not affected by [[GW]]", "E1 applies [[ROOT]] on hit.\nE2 is [[GRAB]]", "R's [[SLOW]] only applies to the wave released on recast"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

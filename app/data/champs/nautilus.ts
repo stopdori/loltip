@@ -41,6 +41,8 @@ const nautilus: ChampData = {
         en: ["[[Q_FLASH]] not possible.\nQ can pull Nautilus toward walls and structures", "Q has two phases: throw / grapple.\nCC during the throw phase is valid.\nOnce the grapple phase starts and Nautilus moves forward, there is no CC immunity"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

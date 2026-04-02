@@ -9,7 +9,7 @@ export const anivia_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 하이머딩거 RW(채널링)를 끊을 수 없음. 단, [[STUN]]은 남아있음."],
+      ko: ["애니비아 Q의 [[STUN]]로 하이머딩거 RW([[SKILL_CHANNEL]])를 끊을 수 없음. 단, [[STUN]]은 남아있음."],
       en: ["Anivia's Q [[STUN]] cannot interrupt Heimerdinger's RW (channeling). However, [[STUN]] still applies."],
     },
     heimerdinger: {

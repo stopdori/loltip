@@ -35,6 +35,8 @@ const hecarim: ChampData = {
         en: ["[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]], [[R_FLASH]] all not possible", "Hecarim gains [[AD_UP]] based on bonus movement speed", "E has two phases: charge / strike.\nCC during the charge phase is valid but does not cancel E .\nOnce the strike phase activates (rearing up), CC is ignored.", "R's [[FEAR]] has inconsistent hit detection.\nEnemies using mobility at the right timing can often dodge it easily"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

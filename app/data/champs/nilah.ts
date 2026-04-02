@@ -39,6 +39,8 @@ const nilah: ChampData = {
         en: ["Q's passive base effects — [[AR_PEN]], [[HEAL]] on champion attacks, and [[SHIELD]] at max HP — all scale with crit", "W also applies its effects to allies touching Nilah.\nW's [[DMG_REDUCE]] is magic damage only", "E can target allies", "R effects trigger when enemies are grabbed.\nAllies touched by R are also [[HEAL]]ed"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

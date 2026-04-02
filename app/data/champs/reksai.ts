@@ -78,6 +78,8 @@ const reksai: ChampData = {
         en: ["Burrowed vision is reduced for Rek'Sai,\nbut enemy movement is detected as vibrations", "Basic attacking while burrowed launches W — it is not a separate button press.\nTargets hit and nearby enemies are [[AIRBORNE]]d", "Rek'Sai's R cannot be dodged with flash"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   

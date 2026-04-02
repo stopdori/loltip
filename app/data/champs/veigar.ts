@@ -19,11 +19,16 @@ const veigar: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["PASSIVE_BONUS", "ST_CONDITIONAL", "STACKING"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE_ONCE"],
+    W: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "ST_DELAYED"],
+
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: ["TIMING_CAST", "ZONE", "ST_DELAYED"] },
+      { label: { ko: "E 스턴", en: "E Stun" }, tags: ["ST_CONDITIONAL", "STUN"] },
+    ] },
+    
+    R: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE"],
   },
 
   notes: {
@@ -35,12 +40,14 @@ const veigar: ChampData = {
         en: ["P grants 1 permanent AP per stack.\n1 stack per skill hit, 5 stacks per kill participation", "Only Q can gain stacks from killing enemies (2 from large units)", "W reduces cooldown by 10% multiplicatively per 50 stacks — theoretically zero-cooldown is possible", "E [[STUN]] only triggers at the outer border of the cage", "R deals maximum damage when the target is below 33% HP"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {
     6: 120,
-    11: 100,
-    16: 80,
+    11: 90,
+    16: 60,
   },
 
 };

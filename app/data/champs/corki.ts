@@ -35,6 +35,8 @@ const corki: ChampData = {
         en: ["[[R_FLASH]] requires a slight delay after pressing R — using flash immediately cancels it.", "The R stack count is displayed below Corki's mana bar and is visible to enemies."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

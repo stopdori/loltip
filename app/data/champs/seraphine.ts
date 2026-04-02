@@ -43,6 +43,8 @@ const seraphine: ChampData = {
         en: ["[[Q_FLASH]] and [[W_FLASH]] not possible", "P stacks extend Seraphine's basic attack range", "W heals when Seraphine already has a shield.\nConfirmation needed on whether ally-applied shields also proc this", "E applies [[SLOW]] on a direct hit.\n[[SLOW]]ed targets become [[ROOT]]ed.\n[[ROOT]]ed targets become [[STUN]]ed", "R range increases when hitting ally or enemy champions.\n[[R_FLASH]] is extremely powerful"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

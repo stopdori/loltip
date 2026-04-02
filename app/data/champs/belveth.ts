@@ -38,6 +38,8 @@ const belveth: ChampData = {
         en: ["[[AS_UP]] increases and [[GHOSTING]] activates after using a skill", "Void Coral spawns allow [[ALLY_TP_OK]]", "[[WALL_HOP]] on Q is only available in R (Endless Banquet) form", "[[W_FLASH]] not possible", "E cancels if hit by CC during cast"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

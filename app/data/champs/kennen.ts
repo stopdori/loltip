@@ -39,6 +39,8 @@ const kennen: ChampData = {
         en: ["Q flash not possible", "P at 3 stacks applies a stun", "E's [[AS_UP]] activates on deactivation", "R cannot be cancelled by any CC"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

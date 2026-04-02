@@ -46,6 +46,8 @@ const naafiri: ChampData = {
         en: ["Q's second hit applies [[LIFESTEAL]]", "R was originally a basic skill that was reworked into an ultimate. As a result it no longer has allies blocking for it.\nHowever, R can still be interrupted by CC", "R resets if Naafiri kills or assists within 7s.\nThe initial cast has no [[SHIELD]], but the reset cast grants [[SHIELD]] on use.\nThe reset disappears if unused"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

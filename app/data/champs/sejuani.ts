@@ -77,6 +77,8 @@ const sejuani: ChampData = {
  
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
  
 

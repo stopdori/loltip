@@ -62,6 +62,8 @@ const lulu: ChampData = {
         en: ["[[Q_FLASH]] technically works \nbut the polymorph doesn't follow the flash, so damage is reduced", "Lulu fires 1 basic attack while Pix fires 3 additional ones", "R is [[MAX_HP_UP]] so it's effective even at full HP and ignores [[GW]].\nR [[SLOW]] persists in the surrounding area.\nUse it freely for [[AIRBORNE]] and [[SLOW]] utility"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

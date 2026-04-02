@@ -38,6 +38,8 @@ const lucian: ChampData = {
         en: ["W grants [[MS_UP]] to Lucian when the marked target is attacked by any ally, not just Lucian"]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {

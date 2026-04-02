@@ -39,6 +39,8 @@ const ekko: ChampData = {
         en: ["P's [[PROC]] stacks on basic attacks and skill damage, triggering on the 3rd stack.", "W creates a slow zone.\nIf Ekko enters before it disappears, a bonus effect activates.", "E has three phases: roll / buffer / blink.\nCC applied during the buffer phase is valid, but the blink still triggers and Ekko moves and attacks.\nThere is no CC immunity during the blink phase.\nIf CC duration remains when Ekko blinks, the CC effect still applies.", "The buffer duration of E's buffer phase is fixed and unaffected by attack speed."]
         },
     },
+    vision: { ko: [], en: [] },
+    gimmick: { ko: [], en: [] },
   },
 
   ultCooldown: {
