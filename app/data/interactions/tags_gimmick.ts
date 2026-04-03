@@ -29,6 +29,7 @@ export type GimmickTagId =
   | "SKILL_CHANNEL"
   | "SKILL_CHARGED"
   | "SKILL_VECTOR"
+  | "SKILL_STEERABLE"
   // 타이밍
   | "TIMING_INSTANT"
   | "TIMING_CAST"
@@ -42,6 +43,12 @@ export type GimmickTagId =
   // 피해 범위
   | "GLOBAL"
   | "SUMMON"
+  | "DROP"
+  | "X2"
+  | "X3"
+  | "X4"
+  | "X5"
+  | "XN"
   | "CLONE"
   | "HOMING"
   | "SWARM"
@@ -92,11 +99,12 @@ export type GimmickTagId =
 
 export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }> = {
   // 스킬 형태
-  SKILL_ACTIVE:  { ko: "액티브",  en: "Active"  },
-  SKILL_TOGGLE:  { ko: "토글",    en: "Toggle"  },
-  SKILL_CHANNEL: { ko: "채널링",  en: "Channel" },
-  SKILL_CHARGED: { ko: "차징",    en: "Charged" },
-  SKILL_VECTOR:  { ko: "벡터",    en: "Vector"  },
+  SKILL_ACTIVE:      { ko: "액티브",   en: "Active"     },
+  SKILL_TOGGLE:      { ko: "토글",     en: "Toggle"     },
+  SKILL_CHANNEL:     { ko: "채널링",   en: "Channel"    },
+  SKILL_CHARGED:     { ko: "차징",     en: "Charged"    },
+  SKILL_VECTOR:      { ko: "벡터",     en: "Vector"     },
+  SKILL_STEERABLE:   { ko: "조종 가능", en: "Steerable" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   RANGE_UP:      { ko: "사거리↑", en: "Range↑" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
@@ -150,6 +158,12 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   AURA:    { ko: "오라",   en: "Aura"            },
   GLOBAL:  { ko: "전체맵", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
+  DROP:          { ko: "드랍스",    en: "Drops"    },
+  X2:            { ko: "x2",       en: "x2"      },
+  X3:            { ko: "x3",       en: "x3"      },
+  X4:            { ko: "x4",       en: "x4"      },
+  X5:            { ko: "x5",       en: "x5"      },
+  XN:            { ko: "xN",       en: "xN"      },
   CLONE:   { ko: "분신",     en: "Clone"   },
   SWARM:   { ko: "분산",     en: "Swarm"   },
   VOLLEY:         { ko: "일제사격", en: "Volley"         },
@@ -174,7 +188,8 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
 };
 
 export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: string }>> = {
-  SKILL_ACTIVE:     { ko: "버튼 한 번으로 발동되는 스킬", en: "Ability that activates immediately on a single press" },
+  SKILL_ACTIVE:      { ko: "버튼 한 번으로 발동되는 스킬", en: "Ability that activates immediately on a single press" },
+  SKILL_STEERABLE:   { ko: "시전 중 마우스 방향으로 조종할 수 있음", en: "Can be steered toward the mouse cursor during cast" },
   SKILL_CHANNEL:    { ko: "버튼 한 번으로 발동하고 시전을 유지하는 스킬\nCC에 맞으면 중단.", en: "Activates on a single press and maintains its effect over time.\nInterrupted by CC."},
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬", en: "Charges up while held\nCaster can move while charging" },
@@ -226,6 +241,12 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   AURA:        { ko: "주변 아군 또는 적에게 지속적으로 영향을 주는 범위 효과. \n CC에 맞아도 풀리지 않음.", en: "A persistent area effect that continuously affects nearby allies or enemies.\nCannot be dispelled by CC." },
   GLOBAL:      { ko: "맵 전체 또는 모든 적에게 적용", en: "Affects all enemies or the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
+  DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
+  X2:            { ko: "해당 효과가 2회 발생함", en: "The effect occurs 2 times" },
+  X3:            { ko: "해당 효과가 3회 발생함", en: "The effect occurs 3 times" },
+  X4:            { ko: "해당 효과가 4회 발생함", en: "The effect occurs 4 times" },
+  X5:            { ko: "해당 효과가 5회 발생함", en: "The effect occurs 5 times" },
+  XN:            { ko: "특정 조건이나 스택에 따라 발생 횟수가 달라짐", en: "The number of occurrences varies based on stacks or conditions" },
   CLONE:   { ko: "자신의 외형을 모방한 분신", en: "A clone that mimics the champion's appearance" },
   SWARM:   { ko: "스킬이 근처 적에게 나뉘어 각각 단일 적중", en: "Splits among nearby enemies,\n each hitting a single target"},
   VOLLEY:  { ko: "여러 투사체를 같은 방향으로 발사\n각 투사체는 첫 번째 적에게만 적중", en: "Fires multiple projectiles in the same direction\nEach projectile hits only the first enemy" },

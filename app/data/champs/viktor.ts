@@ -27,8 +27,8 @@ const viktor: ChampData = {
     P: ["STACKING"],
 
     Q: { phases: [
-      { label: { ko: "Q, Q Augmented, QW Augmented", en: "Q, Q Augmented, QW Augmented" }, tags: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE"] },
-      { label: { ko: "Q, Q강화, QW강화 평타", en: "Q, Q Augmented, QW Augmented On-hit" }, tags: ["DMG_MAGIC", "ON_HIT"] },
+      { label: { ko: "Q, Q 강화, QW 강화", en: "Q, Q Augmented, QW Augmented" }, tags: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE"] },
+      { label: { ko: "Q, Q 강화, QW 강화 평타", en: "Q, Q Augmented, QW Augmented On-hit" }, tags: ["DMG_MAGIC", "ON_HIT"] },
       
     ] },
     W: { phases: [

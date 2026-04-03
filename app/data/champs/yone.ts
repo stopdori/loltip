@@ -19,11 +19,24 @@ const yone: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: { phases: [
+      { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "강철과 영혼", en: "Steel And Spirit" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DMG_MAGIC", "ON_HIT"] },
+    ] },
+
+    Q: { phases: [
+      { label: { ko: "Q1, Q2", en: "Q1, Q2" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "BUFF_STACK"] },
+      { label: { ko: "Q3", en: "Q3" }, tags: ["STACK_CONSUME", "DMG_PHYSICAL", "TIMING_CAST", "AOE", "DASH", "AIRBORNE"] },
+    ] },
+    
+    W: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "AOE"],
+
+    E: { phases: [
+      { label: { ko: "영혼 해방", en: "Spirit Form" }, tags: ["BUFF_FORM", "DASH", "CANCELLABLE", "SKILL_RECAST"] },
+      { label: { ko: "복귀", en: "Recast" }, tags: ["ST_CONDITIONAL", "DMG_TRUE", "TIMING_CAST", "DASH" , "UNSTOPPABLE"] },
+    ] },
+    
+    R: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "AOE", "AIRBORNE"],
   },
 
   notes: {

@@ -19,11 +19,24 @@ const zoe: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["DMG_MAGIC", "NON_PROJECTILE", "ON_HIT", "BUFF_INTERACT", "Q", "W", "E", "R"],
+
+    Q: { phases: [
+      { label: { ko: "Q1", en: "Q1" }, tags: ["TIMING_CAST", "PROJECTILE", "BUFF_STACK"] },
+      { label: { ko: "Q2", en: "Q2" }, tags: ["DMG_MAGIC", "PROJECTILE", "AOE", "BUFF_STACK"] },
+    ] },
+
+    W: { phases: [
+      { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["ST_CONDITIONAL", "BUFF_STACK"] },
+    ] },
+    
+    E: { phases: [
+      { label: { ko: "수면 투사체", en: "Sleepy Bubble Projectile" }, tags: ["TIMING_CAST", "ST_CONDITIONAL", "RANGE_UP", "BUFF_STACK"] },
+      { label: { ko: "수면 장판", en: "Sleepy Bubble Zone" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ZONE", "SINGLE"] },
+    ] },
+    
+    R: ["TIMING_CAST", "BLINK", "BUFF_STACK"],
   },
 
   notes: {

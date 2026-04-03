@@ -19,11 +19,27 @@ const zilean: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
+    P: ["ST_CONDITIONAL"],
+
+    Q: { phases: [
+      { label: { ko: "폭탄 투척", en: "Bomb Toss" }, tags: ["TIMING_CAST", "PROJECTILE"] },
+      { label: { ko: "폭탄 장판", en: "Bomb Land" }, tags: ["DMG_MAGIC", "ZONE"] },
+      { label: { ko: "폭탄 부착", en: "Bomb Land" }, tags: ["HOMING", "DMG_MAGIC", "AOE"] },
+      { label: { ko: "폭탄 2 부착 폭발", en: "Bomb Detonates (2 Attached)" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE", "STUN"] },
+    ] },
+
     W: [],
-    E: [],
-    R: ["BUFF_FORM"],
+
+    E: { phases: [
+      { label: { ko: "아군", en: "Allies" }, tags: ["TARGETED"] },
+      { label: { ko: "상대", en: "Enemies" }, tags: ["TARGETED", "NON_PROJECTILE", "SLOW"] },
+    ] },
+
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["BUFF_FORM", "TARGETED"] },
+      { label: { ko: "부활", en: "Revive" }, tags: ["ST_CONDITIONAL", "UNTARGETABLE", "REVIVE"] },
+    ] },
+    
   },
 
   notes: {
