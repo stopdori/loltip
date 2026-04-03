@@ -19,11 +19,21 @@ const zed: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["ST_CONDITIONAL", "ON_HIT", "DMG_MAGIC"],
+    Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE"],
+
+    W: { phases: [
+      { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["CLONE", "SKILL_RECAST"] },
+    ] },
+
+    E: ["DMG_PHYSICAL", "AOE"],
+
+    R: { phases: [
+      { label: { ko: "R", en: "R" }, tags: ["UNTARGETABLE", "CLONE", "SKILL_RECAST"] },
+      { label: { ko: "데미지", en: "DMG" }, tags: ["ST_DELAYED", "DMG_PHYSICAL"] },
+    ] },
+    
   },
 
   notes: {

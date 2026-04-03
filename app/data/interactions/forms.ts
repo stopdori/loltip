@@ -3,7 +3,6 @@ import kaisa from "../champs/kaisa";
 import karma from "../champs/karma";
 import khazix from "../champs/khazix";
 import lissandra from "../champs/lissandra";
-import yunara from "../champs/yunara";
 
 export type FormKey = "base" | "alt" | "alt2";
 
@@ -87,11 +86,6 @@ export const CHAMP_FORMS: Record<
   udyr: {
     base: { ko: "기본", en: "Base" },
     alt: { ko: "각성", en: "Awakened" },
-  },
-
-  yunara: {
-    base: { ko: "기본", en: "Base" },
-    alt: { ko: "초월", en: "Transcend" },
   },
 
    // ✅ 흐웨이 (3폼)

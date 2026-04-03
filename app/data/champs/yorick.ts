@@ -19,11 +19,24 @@ const yorick: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["PASSIVE_BONUS"],
+
+    Q: { phases: [
+      { label: { ko: "평타 강화", en: "Empowered Basic Attack" }, tags: ["EMPOWERED", "BA", "DMG_PHYSICAL", "ON_HIT"] },
+      { label: { ko: "망령 소환", en: "Wlaker Summon" }, tags: ["ST_CONDITIONAL", "SUMMON"] },
+    ] },
+
+    W: ["SUMMON", "TERRAIN", "ZONE"],
+    
+    E: { phases: [
+      { label: { ko: "투사체", en: "Projectile" }, tags: ["TIMING_CAST", "PROJECTILE"] },
+      { label: { ko: "장판", en: "Zone" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ZONE", "MARK"] },
+    ] },
+  
+    R: { phases: [
+      { label: { ko: "망령 2, 마녀 소환", en: "2 Walkers And Maiden Summon" }, tags: ["TIMING_CAST", "SUMMON", "SKILL_RECAST", "CANCELLABLE"] },
+      { label: { ko: "마녀", en: "Maiden" }, tags: ["DMG_MAGIC", "NON_PROJECTILE", "SINGLE"] },
+    ] },
   },
 
   notes: {

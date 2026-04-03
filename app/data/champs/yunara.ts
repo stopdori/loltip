@@ -3,7 +3,6 @@ import type { ChampData } from "../interactions/types";
 const yunara: ChampData = {
   id: "yunara",
   skills: {
-    base : {
     P: [],
     Q: ["AS_UP"],
     W: ["W_FLASH", "SLOW"],
@@ -11,47 +10,34 @@ const yunara: ChampData = {
     R: [],
   },
 
-  alt : {
-    P: [],
-    Q: ["AS_UP"],
-    W: ["W_FLASH", "SLOW"],
-    E: ["E_FLASH", "WALL_HOP"],
-    R: [],
-  },
-},
-
   vision: {
-    base: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
-    },
-    alt: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
-    },
+    P: [],
+    Q: [],
+    W: [],
+    E: [],
+    R: [],
   },
 
   gimmick: {
-    base: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
-    },
-    alt: {
-      P: [],
-      Q: [],
-      W: [],
-      E: [],
-      R: [],
-    },
+    P: ["ST_CONDITIONAL", "DMG_MAGIC", "ON_HIT"],
+
+    Q: { phases: [
+      { label: { ko: "패시브", en: "Passive" }, tags: ["DMG_MAGIC", "ON_HIT", "BUFF_STACK"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["STACK_CONSUME", "BUFF_FORM", "DMG_MAGIC", "PROJECTILE", "ON_HIT"] },
+      { label: { ko: "액티브 온힛 전이", en: "Active On-hit Chain" }, tags: ["ST_CONDITIONAL", "CHAIN", "DMG_PHYSICAL", "PROJECTILE"] },
+    ] },
+
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "DOT"] },
+      { label: { ko: "W 초월", en: "W Transcend" }, tags: ["DMG_MAGIC", "TIMING_CAST", "NON_PROJECTILE", "AOE"] },
+    ] },
+
+    E: { phases: [
+      { label: { ko: "E", en: "E" }, tags: [] },
+      { label: { ko: "E 초월", en: "E Transcend" }, tags: ["DASH"] },
+    ] },
+
+    R: ["BUFF_FORM"],
   },
 
   notes: {

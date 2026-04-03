@@ -19,11 +19,21 @@ const ziggs: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: [],
-    W: [],
-    E: [],
-    R: [],
+    P: ["ST_CONDITIONAL", "ON_HIT"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE"],
+
+    W: { phases: [
+      { label: { ko: "투사체", en: "Projectile" }, tags: ["TIMING_CAST", "PROJECTILE", "SKILL_RECAST"] },
+      { label: { ko: "장판", en: "Zone" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ZONE", "AIRBORNE"] },
+      { label: { ko: "포탑 처형", en: "Turret Execute" }, tags: ["ST_CONDITIONAL", "EXECUTE"] },
+    ] },
+
+    E: { phases: [
+      { label: { ko: "투사체", en: "Projectile" }, tags: ["TIMING_CAST", "PROJECTILE"] },
+      { label: { ko: "장판", en: "Zone" }, tags: ["DMG_MAGIC", "ZONE", "SLOW"] },
+    ] },
+    
+    R: ["DMG_MAGIC", "TIMING_CAST", "NON_PROJECTILE", "ZONE"],
   },
 
   notes: {
