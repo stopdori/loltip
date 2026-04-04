@@ -94,7 +94,9 @@ export type GimmickTagId =
   | "ST_IMPACT"
   | "ST_DELAYED"
   | "ST_CONDITIONAL"
-  
+
+  | "SEPARATOR"
+
   ;
 
 export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }> = {
@@ -185,6 +187,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   MOBILITY: { ko: "이동기",    en: "Mobility" },
   DASH:     { ko: "돌진",     en: "Dash"     },
   BLINK:    { ko: "순간이동", en: "Blink"    },
+  SEPARATOR: { ko: "/", en: "/" },
 };
 
 export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: string }>> = {

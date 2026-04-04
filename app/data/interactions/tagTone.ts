@@ -113,6 +113,11 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   AR_MR_PEN: "purple",
   SILENCE: "purple",
 
+  // 🔴 red (방어력/마법저항력 증가)
+  AR_UP: "amber_deep",
+  MR_UP: "amber_deep",
+  AR_MR_UP: "amber_deep",
+
   // 🌹 rose (물리 방깎 / AR)
   AR_SHRED: "rose",
   AR_PEN: "rose",
