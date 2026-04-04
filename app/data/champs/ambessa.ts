@@ -38,7 +38,10 @@ const ambessa: ChampData = {
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: { 
+        ko: [
+        "Q, W, E로 어그로끌다 R로 진입해서 각만들기.\n또는 R로 도망치기.", "R로 고립된 챔피언 암살.", "그냥 잘 싸우기."
+        ], en: [] },
       note1: {
 
         ko: [

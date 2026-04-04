@@ -33,7 +33,12 @@ const amumu: ChampData = {
     skill: {
       note3: {
 
-        ko: [],
+        ko: [
+          
+          "Q로 진입해서 R 쓰고, W를 키고 [[DEBUFF]] 안 걸린 애들 [[BA]]로 한대씩 때리면서 중간중간 E로 패기.",
+          "들어오는 상대 R로 수비하기."
+        
+        ],
 
         en: []
 
@@ -48,8 +53,7 @@ const amumu: ChampData = {
         "Q를 맞히면 대상에게 [[DASH]] \n 대상이 움직이면 따라감.",
         "W는 P의 [[DEBUFF]]의 지속시간 초기화.",
         "E는 주변대상 후리기. \n 아무무가 맞을수록 쿨타임 감소",
-
-        "요약의 요약 \nQ로 진입해서 R쓰고, W를 키고 평타로 한대씩 때리면서 디버프 걸면서 중간중간 E로 패기"
+        "R은 적중한 대상 모두 [[STUN]]과 P의 [[DEBUFF]]",
         ],
 
         en: []
@@ -58,7 +62,7 @@ const amumu: ChampData = {
 
       note2: {
         ko: [
-        "Q로 날아가면서 R 안써짐", "Q는 두단계로 나뉨.\n투척단계 / 돌진단계\n투척 단계에 CC를 맞아도 붕대가 적중하면 돌진 단계가 발동하여 이동하는것.\n단, CC는 남아있음.", "Q로 따라갈 수 있는 최대 거리? 시간?이 있는것으로 추정됨\n약 미드 1~2차 타워 사이거리 정도.", "R은 버튼을 누르고 스킬이 발동하는 데까지 딜레이가 있음.(선딜) 꽤 김."
+        "Q로 날아가면서 R 안써짐", "Q는 두단계로 나뉨.\n투척단계 / 돌진단계\n투척 단계에 CC를 맞아도 붕대가 적중하면 돌진 단계가 발동하여 이동하는것.\n단, CC는 남아있음.", "Q로 따라갈 수 있는 최대 거리? 시간?이 있는것으로 추정됨\n약 미드 1~2차 타워 사이거리 정도.", "R은 버튼을 누르고 스킬이 발동하는 데까지 딜레이가 있음.(선딜) 꽤 체감됨."
       ],
         en: ["R cannot be used while Q is in flight", "Q is split into two phases: throwing phase / dash phase.\nEven if hit by CC during the throwing phase, if the bandage connects, the dash phase activates and Amumu still moves.\nHowever, the CC remains active.", "Q appears to have a maximum follow distance/time — roughly the distance between the 1st and 2nd mid lane towers.", "There is a delay (wind-up) between pressing the R button and the skill being activated."]
         },

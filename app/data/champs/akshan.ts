@@ -40,7 +40,11 @@ const akshan: ChampData = {
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: { 
+        ko: [
+        "작성자가 할줄 모름."
+
+        ], en: [] },
       note1: {
 
         ko: [

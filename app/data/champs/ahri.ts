@@ -31,7 +31,11 @@ const ahri: ChampData = {
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: { 
+        
+        ko: [
+          "R로 왔다갔다 하면서 Q, W로 데미지를 넣고 \n E([[CHARM]])로 상대 진입을 막기", "R 또는 [[R_FLASH]]로 진입해서 E를 맞히고 아군의 호응을 유도하거나 암살각을 노리기.",
+          ], en: [] },
       note1: {
         ko: [
           "P는 [[BUFF_STACK]]이 쌓이면 [[HEAL]] 발동. \n [[BUFF_STACK]]은 처치 시 1개, 3초 이내 킬관여 시 18개",

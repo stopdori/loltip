@@ -150,7 +150,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   TERRAIN: "stone",
   WALL_HOP: "zinc",
   SHIELD_BREAK: "stone",
-  AA_RESET: "stone",
+  AA_RESET: "indigo",
   UNTARGETABLE: "zinc",
 
   // 🎭 gimmick 태그 (tags_gimmick.ts)
