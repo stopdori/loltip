@@ -48,13 +48,18 @@ const aatrox: ChampData = {
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: { 
+        ko: [
+            "Q, EQ, W, [[EMPOWERED]][[BA]]로 살짝씩 간보다가 \n R키고 진심모드로 패기", "R쓰고 뒤에서 나타나기"
+
+        ], en: [] },
       note1: {
         ko: [
-            "P 평타강화 쿨타임이 있음.",
+            "P [[EMPOWERED]][[BA]]에 쿨타임이 있음.",
             "Q1, Q2는 끝 / Q3는 중앙에 맞히면 \n 추가 [[DMG_PHYSICAL]], [[AIRBORNE]].", 
             "Q2, Q3를 사용하지 않으면 \n 쿨타임이 더 빨리 돌아옴.",
-            "평타, Q, W, 아이템효과 등등 다 모든피해 [[LIFESTEAL]]. \n E의 [[PASSIVE_BONUS]]에 있음.",
+            "W로 [[SLOW]], [[TETHER]]을 걸고 \n 대상이 벗어나지 못하면 중앙쪽으로 [[GRAB]]",
+            "평타, Q, W, 아이템효과 등등 다 모든피해 [[LIFESTEAL]]. \n E의 [[PASSIVE_BONUS]]에 있음. \n E로 [[AA_RESET]] 가능.",
             "R은 [[MS_UP]], [[AD_UP]], 주변 미니언 [[FEAR]]",
 
 
