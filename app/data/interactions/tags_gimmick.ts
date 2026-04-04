@@ -88,7 +88,6 @@ export type GimmickTagId =
   | "COOLDOWN"
   | "EMPOWERED"
   | "RANGE_UP"
-  | "SKILL_RECAST"
   | "RECHARGE"
   | "MARK"
   | "PROC"
@@ -97,6 +96,7 @@ export type GimmickTagId =
   | "DEBUFF_STACK"
   | "STACK_CONSUME"
   // 스킬 타이밍
+  | "SKILL_RECAST"
   | "ST_IMPACT"
   | "ST_DELAYED"
   | "ST_CONDITIONAL"
@@ -222,7 +222,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DEBUFF_STACK:     { ko: "상대에게 스택을 쌓아 추가 효과가 생김", en: "Applies stacks to enemies, granting additional effects" },
   STACK_CONSUME:    { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함.", en: "Consumes accumulated buff stacks to trigger or empower an effect." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
-  TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸리고 \n 움직일 수 없음.", en: "Has a delay before activating after cast, \n and cannot move." },
+  TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림", en: "Has a cast delay before activating." },
   TIMING_AFTERCAST: { ko: "발동 후 다음 행동까지 시간이 걸림.", en: "Takes time between activation and the next action." },
   ST_IMPACT:      { ko: "스킬이 대상에게 즉시 발동됨", en: "The skill activates immediately upon hitting the target" },
   ST_DELAYED:     { ko: "스킬이 발동까지 일정 시간이 걸림", en: "The skill takes time before it activates" },
