@@ -12,7 +12,7 @@ const aatrox: ChampData = {
 
     E: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["LIFESTEAL"] },
-      { label: { ko: "액티브", en: "Active" }, tags: ["E_FLASH", "AA_RESET", "WALL_HOP"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["E_FLASH", "AA_RESET", "DASH", "WALL_HOP"] },
     ] },
 
     R: ["BUFF_FORM", "MS_UP", "AD_UP"],
@@ -53,7 +53,7 @@ const aatrox: ChampData = {
             "P 평타강화 쿨타임이 있음.",
             "Q1, Q2는 끝 / Q3는 중앙에 맞히면 \n 추가 [[DMG_PHYSICAL]], [[AIRBORNE]].", 
             "Q2, Q3를 사용하지 않으면 \n 쿨타임이 더 빨리 돌아옴.",
-            "평타, Q, W, 아이템효과 등등 다 모든피해 [[LIFESTEAL]]. \n E의 [[PASSIVE_BONUS]]에 효과가 있음.",
+            "평타, Q, W, 아이템효과 등등 다 모든피해 [[LIFESTEAL]]. \n E의 [[PASSIVE_BONUS]]에 있음.",
             "R은 [[MS_UP]], [[AD_UP]], 주변 미니언 [[FEAR]]",
 
 
@@ -62,7 +62,7 @@ const aatrox: ChampData = {
             "P's empowered auto has a cooldown.",
             "Q1, Q2 deal bonus [[DMG_PHYSICAL]] and [[AIRBORNE]] at the tip.\n Q3 does so at the center.",
             "If Q2 or Q3 is not used,\n Q1's cooldown returns faster.",
-            "[[LIFESTEAL]] applies to all damage to champions — \n basic attacks, Q, W, items, etc. \n This is part of E's [[PASSIVE_BONUS]].",
+            "[[LIFESTEAL]] applies to all damage — \n basic attacks, Q, W, items, etc. \n This is part of E's [[PASSIVE_BONUS]].",
             "R grants [[MS_UP]], [[AD_UP]], and [[FEAR]] on nearby minions.",
         ]
       },
