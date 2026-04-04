@@ -19,14 +19,14 @@ const amumu: ChampData = {
   },
 
   gimmick: {
-    P: ["DMG_TRUE", "DEBUFF_STACK"],
+    P: ["DMG_TRUE", "DEBUFF"],
     Q: { phases: [
-      { label: { ko: "투척단계", en: "Throw" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "RECHARGE", "CC_BUFFER"] },
+      { label: { ko: "투척단계", en: "Throw" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "RECHARGE", "CC_BUFFER", "STUN"] },
       { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DASH", "HOMING"] },
     ] },
     W: ["DMG_MAGIC", "SKILL_TOGGLE", "AOE", "DOT"],
     E: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
-    R: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
+    R: ["DMG_MAGIC", "TIMING_CAST", "AOE", "DEBUFF", "STUN"],
   },
 
      notes: {
