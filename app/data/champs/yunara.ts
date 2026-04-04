@@ -42,6 +42,14 @@ const yunara: ChampData = {
 
   notes: {
     skill: {
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "W를 쓰고 R을 쓰면 쿨타임 80% 감소", "E를 쓰고 R을 쓰면 E 초기화"

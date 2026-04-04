@@ -295,7 +295,7 @@ const renderNoteSection = (items: string[], title: string) => {
   if (items.length === 0) return null;
   return (
     <div className="mt-3 rounded-xl bg-slate-800/40 ring-1 ring-white/10 p-3">
-      <div className="text-sm font-bold text-slate-200 mb-2">{title}</div>
+      <div className="text-base font-bold text-yellow-400 mb-2">{title}</div>
       <ul className="space-y-2 text-sm text-slate-200">
         {items.map((n, i) => (
           <li key={i} className="flex gap-2 whitespace-pre-line">
@@ -377,6 +377,7 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
+        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -426,6 +427,7 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
+        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -475,6 +477,7 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
+        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -540,6 +543,7 @@ const renderNoteSection = (items: string[], title: string) => {
       <div className="flex flex-wrap items-start gap-x-1.5 gap-y-2">
         {tags.length > 0 ? (
           tags.map((t) => {
+            if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
             const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
             const rLabel = TAG_LABEL[t as TagId];
             const labelData = gLabel ?? rLabel;

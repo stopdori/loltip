@@ -80,6 +80,9 @@ export type TagId =
   | "ENERGY_RESTORE"
 
     /* 디버프 */
+  | "AR_UP"      // 방어력 증가
+  | "MR_UP"      // 마법저항력 증가
+  | "AR_MR_UP"   // 방마저 증가
   | "AR_SHRED"   // 방깍
   | "MR_SHRED"      // 마깍
   | "AR_MR_SHRED"     // 방마깍
@@ -218,6 +221,9 @@ ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
  * ========================= */
 SHIELD_BREAK:  { ko: "쉴드파괴", en: "Shield Break"  },
 SHIELD_PIERCE: { ko: "실드관통", en: "Shield Pierce" },
+AR_UP: { ko: "방어력↑", en: "AR ↑" },
+MR_UP: { ko: "마저↑", en: "MR ↑" },
+AR_MR_UP: { ko: "방마저↑", en: "AR+MR ↑" },
 AR_SHRED: { ko: "방깍", en: "AR Shred" },
 MR_SHRED: { ko: "마깍", en: "MR Shred" },
 AR_MR_SHRED: { ko: "방마깍", en: "AR+MR Shred" },
@@ -511,6 +517,18 @@ ENERGY_RESTORE: {
 },
 
 
+AR_UP: {
+  ko: "방어력 증가",
+  en: "Increases armor",
+},
+MR_UP: {
+  ko: "마법저항력 증가",
+  en: "Increases magic resistance",
+},
+AR_MR_UP: {
+  ko: "방어력, 마법저항력 증가",
+  en: "Increases armor and magic resistance",
+},
 AR_SHRED: {
   ko: "상대 방어력 감소",
   en: "Reduces armor",
