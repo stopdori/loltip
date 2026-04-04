@@ -28,6 +28,15 @@ const katarina: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "단검에 텔 안됨", "Q는 범위내 3번만 연쇄\n챔피언 우선", "E스킬은 대상 근처에 사용하면 평타만, 대상에게 순간이동하면 추가 데미지.", "R은 움직이면 취소됨."

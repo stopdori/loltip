@@ -36,6 +36,15 @@ const xerath: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]]은 차징중에만 가능. \n Q 발사 발동 중에는 불가.", "W는 중심 부분에 적중하면 효과 증가", "E의 [[STUN]]은 거리가 멀 수록 시간 증가", "R은 찍을수록 발사수가 4/5/6\n시전 중 움직이면 종료"

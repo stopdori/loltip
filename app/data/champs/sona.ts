@@ -42,6 +42,15 @@ const sona: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "스킬+점멸이 하나도 안됨.", "P의 [[SLOW]]는 E강화 평타만", "W강화 평타는 대상의 피해를 감소시킴\n(탈진과 비슷)"

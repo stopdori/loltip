@@ -55,6 +55,15 @@ const lulu: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]]이 가능은 하지만\n픽스는 점멸로 따라오지 않아 데미지가 덜 들어감", "룰루 평타는 룰루가 1개를 날리고\n픽스가 3개를 추가로 날림", "R이 [[MAX_HP_UP]]여서 풀피에 써도 유효하고\n[[GW]]효과도 안받음\nR의 [[SLOW]]는 주변에 지속.\n부담없이 써서 [[AIRBORNE]], [[SLOW]]를 활용해야 좋음",

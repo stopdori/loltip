@@ -28,6 +28,15 @@ const hecarim: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]], [[R_FLASH]] 다 안됨", "헤카림은 이속이 증가하면 [[AD_UP]]", "R의 [[FEAR]]는 판정이 좀 좋지않음\n타이밍 맞춰 상대가 이동기를 쓰면\n쉽게 피하는 모습을 자주 봄"

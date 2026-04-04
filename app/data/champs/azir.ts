@@ -32,6 +32,15 @@ const azir: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
       ko: [   
       "[[Q_FLASH]], [[R_FLASH]] 안됨", "병사에 텔 안됨", "E는 W(병사)에게 [[DASH]]을 시작하면서 [[SHIELD]] 발동.\nE는 이동거리가 짧아서 W(병사)에 E를 사용하고 도착하기 전에 Q를 써서 W(병사)와의 거리를 벌려 더 멀리 갈 수 있음.\n이 때 방향도 바꿀 수 있음."   

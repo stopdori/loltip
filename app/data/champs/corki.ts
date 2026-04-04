@@ -28,6 +28,15 @@ const corki: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[R_FLASH]]은 R누르고 바로 점멸하면 안됨.\nR누르고 점멸을 약간 천천히 써야 적용.", "R의 스택 개수는 코르키 마나바 아래에 표시됨.\n상대도 볼 수 있음."

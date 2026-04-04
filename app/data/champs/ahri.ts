@@ -31,6 +31,7 @@ const ahri: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
       note1: {
         ko: [
           "P는 [[BUFF_STACK]]이 쌓이면 [[HEAL]] 발동. \n [[BUFF_STACK]]은 처치 시 1개, 3초 이내 킬관여 시 18개",

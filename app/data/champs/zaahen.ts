@@ -48,6 +48,15 @@ const zaahen: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[E_FLASH]]은 정말 어렵게 되긴함", "P는 12스택 다 채우면 [[AD_UP]] 효과 두배\nP를 다 채워야 [[REVIVE]] 가능", "Q의 [[AIRBORNE]]은 Q2에만 적용", "R에 [[AR_PEN]]은 기본지속", "Q는 두단계로 나뉨. 돌진단계/베기단계\n돌진단계 중에 [[AIRBORNE]]류, [[CHARM]], [[FEAR]], [[SUPPRESS]], [[SLEEP]]을 맞으면 베기단계를 하지 않음.", "R은 시전할 때 [[CC_IMMUNE]], 도약하고 착지할 때까지 [[UNSTOPPABLE]]"

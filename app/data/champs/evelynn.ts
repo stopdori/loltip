@@ -34,6 +34,15 @@ const evelynn: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[CAMOUFLAGE]] 중 점멸써도 [[CAMOUFLAGE]] 안풀림", "W에 [[CHARM]], [[MR_SHRED]]은 추가발동 느낌으로\n표식이 다 찬 대상을 공격해야 발동", "E의 돌진은 [[CAMOUFLAGE]]중일 때 강화\nE가 정말 어려운 조건에서 [[WALL_HOP]] 가능", "R은 체력 30%이하 대상에게 피해증가"

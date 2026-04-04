@@ -44,6 +44,15 @@ const nocturne: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]] 안됨", "Q의 버프는 Q장판 위에서만 발동", "W의 [[AS_UP]]는 방어해내면 효과 2배 ", "E가 끊기지 않아야 [[FEAR]]를 검", "R의 [[NEARSIGHT]]는 상대가 자기 시야만 보임.", "R을 사용하면 날아갈수 있는 대상 발밑에 표식이 보임.", "R2 설명에 [[UNSTOPPABLE]]가 없지만, 스킬로 날아갈 때 녹턴 체력바 위에 [[UNSTOPPABLE]]가 생김. 도착하면 끝."

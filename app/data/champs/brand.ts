@@ -31,6 +31,15 @@ const brand: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "P는 스킬로 적을 맞히면 발동.\n3중첩이면 큰 피해 추가발동.", "P의 [[MANA_RESTORE]]회복은 불길 대상을 처치시 발동.\n불길은 스킬을 맞히면 3스택까지 적중\n3스택시 광역 폭발\n아이템 효과로 [[DEBUFF_STACK]] 축적 안됨(벨트, 루덴 등등)", "Q의 [[STUN]]은 이미 불길이 걸려있는 대상에게만 발동 됨. (예- WQ, EQ, RQ)","R의 [[SLOW]]는 불길이 있는상태에만 걸림"

@@ -42,6 +42,15 @@ const twistedfate: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "W 카드 순서는\n블루([[MANA_RESTORE]]) 레드([[SLOW]]) 골드([[STUN]])", 

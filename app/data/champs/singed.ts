@@ -28,6 +28,15 @@ const singed: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[E_FLASH]] 되는데, [[INSEC_KICK]]은 불가능\nE에 [[ROOT]]은 W 위에 던져야 발동", "E는 던지는 모션이 발동하면 웬만해서 스킬이 유효함\n대상이 날아가는 위치는 E를 사용한 곳 기준", "R에 [[GW]]은 Q에만 적용"

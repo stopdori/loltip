@@ -31,6 +31,15 @@ const belveth: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "스킬 사용후 [[AS_UP]]이 증가하고 [[GHOSTING]]가 됨", "애기 벌레들에 [[ALLY_TP_OK]]", "Q의 [[WALL_HOP]]는 R로 변신했을때만 가능", "[[W_FLASH]] 안됨", "E 시전중에 CC맞으면 풀림"

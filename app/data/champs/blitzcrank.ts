@@ -31,6 +31,15 @@ const blitzcrank: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]] 안됨", "Q(그랩) 빠지면 그냥 깡통임.\nQ를 아끼는것도 좋은 전략.", "W는 지속시간이 종료되면 자체 이속감소가 걸림"

@@ -37,6 +37,15 @@ const velkoz: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "Q는 표시된 최대 사거리보다 조금 더 멀리 날아감", "Q 시전중에 CC에 걸리면 Q2를 사용 할 수 없음.", "E는 벨코즈와 가까우면 [[KNOCKBACK]] 멀면 [[AIRBORNE]]"

@@ -59,6 +59,15 @@ const elise: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "거미폼 Q는 벽을 못넘음", "거미폼 E는 줄을 타고 올라갔을 때, 부쉬 안에도 시야가 보임."
