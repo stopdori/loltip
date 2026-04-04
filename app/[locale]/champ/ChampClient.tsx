@@ -256,7 +256,7 @@ setOpenTarget(null);
       
         {/* MY */}
 {myChamp && (
-<div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 sm:col-start-1 sm:flex ${myChamp && enemyChamp && mobileTab !== "my" ? "hidden sm:flex" : ""}`}>
+<div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-2 pb-3 sm:p-6 sm:pb-8 ring-2 ring-black/40 min-w-0 sm:col-start-1 sm:flex ${myChamp && enemyChamp && mobileTab !== "my" ? "hidden sm:flex" : ""}`}>
 
 
 {/* 챔피언 이름 표시 */}
@@ -284,7 +284,7 @@ setOpenTarget(null);
     />
   </div>
 
-  <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-4">
+  <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-2 sm:p-4">
     <SkillTagsPanel champId={myChamp?.id ?? null} lang={lang} />
   </div>
 </div>
@@ -296,7 +296,7 @@ setOpenTarget(null);
 
         {/* ENEMY */}
         {enemyChamp && (
-<div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-6 pb-8 ring-2 ring-black/40 min-w-0 sm:col-start-3 sm:flex ${myChamp && enemyChamp && mobileTab !== "enemy" ? "hidden sm:flex" : ""}`}>
+<div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-2 pb-3 sm:p-6 sm:pb-8 ring-2 ring-black/40 min-w-0 sm:col-start-3 sm:flex ${myChamp && enemyChamp && mobileTab !== "enemy" ? "hidden sm:flex" : ""}`}>
 
 {/* 챔피언 이름 표시 */}
  <div className="hidden sm:block mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
@@ -323,7 +323,7 @@ setOpenTarget(null);
     />
   </div>
 
-  <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-4">
+  <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-2 sm:p-4">
     <SkillTagsPanel champId={enemyChamp?.id ?? null} lang={lang} />
   </div>
 </div>
