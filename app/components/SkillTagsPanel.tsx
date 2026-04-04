@@ -360,7 +360,7 @@ const renderNoteSection = (items: string[], title: string) => {
   const renderRow = (k: SkillKey) => {
   const spellTip = getSpellTip(k);
 
-  const skillKeyClass = `w-[24px] text-lg font-black text-center flex items-center justify-center ${
+  const skillKeyClass = `w-[24px] ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center flex items-center justify-center ${
     k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"
   }`;
 
@@ -390,7 +390,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       return (
         <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
-          <div className={`w-[24px] shrink-0 text-lg font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+          <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
           <div className="flex-1 space-y-2">
@@ -440,7 +440,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       return (
         <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
-          <div className={`w-[24px] shrink-0 text-lg font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+          <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
           <div className="flex-1 space-y-2">
@@ -490,7 +490,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       return (
         <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
-          <div className={`w-[24px] shrink-0 text-lg font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+          <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
           <div className="flex-1 space-y-2">
