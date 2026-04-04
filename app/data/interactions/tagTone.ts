@@ -149,7 +149,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   WALL_HOP: "stone",
   SHIELD_BREAK: "stone",
   AA_RESET: "stone",
-  UNTARGETABLE: "stone",
+  UNTARGETABLE: "zinc",
 
   // 🎭 gimmick 태그 (tags_gimmick.ts)
   // 스킬 형태
@@ -163,7 +163,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   RECHARGE:      "indigo",
   STACKING:      "indigo",
   PROC:          "indigo",
-  DEBUFF_STACK:  "indigo",
+  DEBUFF_STACK:  "fuchsia",
   BUFF_STACK:    "indigo",
   STACK_CONSUME: "indigo",
   // 타이밍
@@ -179,6 +179,9 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 판정 방식
   TARGETED:       "indigo",
   NON_TARGETED:   "indigo",
+  TARGET_ALLY:    "indigo",
+  TARGET_ENEMY:   "indigo",
+  TARGET_BOTH:    "indigo",
   PROJECTILE:     "indigo",
   NON_PROJECTILE: "indigo",
   ZONE:           "indigo",

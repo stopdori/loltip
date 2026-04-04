@@ -46,7 +46,7 @@ export default function UltCooldownBox({
     ? "opacity-40 cursor-not-allowed pointer-events-none"
     : "";
 
-  const hasteLabel = lang === "ko" ? "스킬가속" : "A.Haste";
+  const hasteLabel = lang === "ko" ? "가속" : "Haste";
   const ultLabel = lang === "ko" ? "레벨" : "Level";
   const lvSuffix = lang === "ko" ? "Lv" : "Lv";
 

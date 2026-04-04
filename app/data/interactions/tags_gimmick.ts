@@ -37,6 +37,9 @@ export type GimmickTagId =
   // 판정 방식
   | "TARGETED"
   | "NON_TARGETED"
+  | "TARGET_ALLY"
+  | "TARGET_ENEMY"
+  | "TARGET_BOTH"
   | "PROJECTILE"
   | "NON_PROJECTILE"
   | "TRAP"
@@ -113,23 +116,26 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   RECHARGE:      { ko: "충전식",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
   PROC:          { ko: "스택발동", en: "Proc" },
-  BUFF_STACK:    { ko: "버프 스택",   en: "Buff Stack"   },
+  BUFF_STACK:    { ko: "버프스택",   en: "Buff Stack"   },
   DEBUFF_STACK:  { ko: "디버프 스택", en: "Debuff Stack" },
-  STACK_CONSUME: { ko: "스택 소모",   en: "Stack Consume" },
+  STACK_CONSUME: { ko: "스택소모",   en: "Stack Consume" },
 
   // 타이밍
   TIMING_INSTANT:   { ko: "즉발",     en: "Instant"    },
   TIMING_CAST:      { ko: "선딜",     en: "Cast-time"       },
   TIMING_AFTERCAST: { ko: "후딜",     en: "After-cast" },
-  ST_IMPACT:      { ko: "즉시 발동", en: "Impact" },
-  ST_DELAYED:     { ko: "지연 발동", en: "Delayed" },
-  ST_CONDITIONAL: { ko: "조건 발동", en: "Conditional" },
+  ST_IMPACT:      { ko: "즉시발동", en: "Impact" },
+  ST_DELAYED:     { ko: "지연발동", en: "Delayed" },
+  ST_CONDITIONAL: { ko: "조건발동", en: "Conditional" },
   // 중단 여부
-  CANCELLABLE: { ko: "취소 가능", en: "Cancellable" },
-  LOCKED:      { ko: "취소 불가", en: "Locked"      },
+  CANCELLABLE: { ko: "취소가능", en: "Cancellable" },
+  LOCKED:      { ko: "취소불가", en: "Locked"      },
   // 판정 방식
   TARGETED:       { ko: "타겟팅",   en: "Targeted"       },
   NON_TARGETED:   { ko: "논타겟",   en: "Skill Shot"     },
+  TARGET_ALLY:    { ko: "아군 대상", en: "Ally Target"   },
+  TARGET_ENEMY:   { ko: "적군 대상", en: "Enemy Target"  },
+  TARGET_BOTH:    { ko: "아/적 대상", en: "Both Target"  },
   PROJECTILE:     { ko: "투사체",   en: "Projectile"     },
   NON_PROJECTILE: { ko: "비투사체",  en: "Non-projectile" },
   ZONE:           { ko: "장판",      en: "Zone"           },
@@ -138,10 +144,10 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   CHAIN:            { ko: "연쇄",      en: "Chain"            },
   PASSIVE_BONUS:    { ko: "기본효과",   en: "Passive Bonus"    },
   PASSIVE_INTERACT: { ko: "패시브 연동", en: "Passive Interact" },
-  BUFF_INTERACT:    { ko: "버프 연동",   en: "Buff Interact"   },
+  BUFF_INTERACT:    { ko: "버프연동",   en: "Buff Interact"   },
   DEBUFF_INTERACT:  { ko: "디버프 연동", en: "Debuff Interact" },
-  MARK_INTERACT:    { ko: "표식 연동",   en: "Mark Interact"  },
-  MARK_CONSUME:     { ko: "표식 소모",   en: "Mark Consume"   },
+  MARK_INTERACT:    { ko: "표식연동",   en: "Mark Interact"  },
+  MARK_CONSUME:     { ko: "표식소모",   en: "Mark Consume"   },
   // 스킬 키
   P: { ko: "P", en: "P" },
   Q: { ko: "Q", en: "Q" },
@@ -180,8 +186,8 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   // 시전 행동
   CAST_COMMIT:   { ko: "시전강행",  en: "Cast Commit"  },
   CAST_CANCEL:   { ko: "시전취소",  en: "Cast Cancel"  },
-  CAST_MOVE:     { ko: "이동 가능", en: "Can Move"      },
-  CAST_IMMOBILE: { ko: "이동 불가", en: "Immobile"      },
+  CAST_MOVE:     { ko: "이동가능", en: "Can Move"      },
+  CAST_IMMOBILE: { ko: "이동불가", en: "Immobile"      },
   CC_BUFFER:    { ko: "CC버퍼", en: "CC Buffer"   },
   // 이동
   MOBILITY: { ko: "이동기",    en: "Mobility" },
@@ -216,6 +222,9 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   LOCKED:           { ko: "시전 중 직접 중단할 수 없음\n끝까지 완료되어야 함", en: "Cannot be manually cancelled\nMust complete fully" },
   TARGETED:         { ko: "대상을 직접 지정하여 시전하는 스킬\n단, 무적/타겟불가 상태에는 적중하지 않음", en: "Targets an enemy directly\nDoes not hit invulnerable or untargetable units" },
   NON_TARGETED:     { ko: "방향 또는 위치를 지정하여 시전하는 스킬\n대상이 피할 수 있음", en: "Targets a direction or location\nCan be dodged by the enemy" },
+  TARGET_ALLY:      { ko: "아군에게 사용하는 스킬", en: "Ability that targets allies" },
+  TARGET_ENEMY:     { ko: "적군에게 사용하는 스킬", en: "Ability that targets enemies" },
+  TARGET_BOTH:      { ko: "아군과 적군 모두에게 사용 가능한 스킬", en: "Ability that can target both allies and enemies" },
   PROJECTILE:       { ko: "투사체", en: "Projectile" },
   NON_PROJECTILE:   { ko: "외형상 투사체처럼 보이지만 실제로는 투사체가 아님.", en: "Appears to be a projectile but is not." },
   ZONE:             { ko: "시전자와 분리되어 \n 특정 위치에 독립적으로 존재하는 효과", en: "An effect that exists independently at a fixed location, \n separate from the caster" },
