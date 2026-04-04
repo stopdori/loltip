@@ -56,15 +56,16 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   AP_UP: "red",
   CRIT: "red",
   EXECUTE: "red",
-  RANGE_UP: "indigo",
+  RANGE_UP: "red",
   PIERCE: "red",
   BERSERK: "red",
-  LIFESTEAL: "red",
+  LIFESTEAL: "lime",
 
   // 🔵 sky (이동/회복/자원/저항)
   MS_UP: "sky",
   AS_UP: "sky",
   MANA_RESTORE: "sky",
+  ENERGY_RESTORE: "amber",
   SLOW_RESIST: "sky",
   SLOW_IMMUNE: "sky",
   GHOSTING: "sky",
@@ -124,6 +125,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🟢 lime (힐/체력/부활)
   HEAL: "lime",
+  SHIELD: "white",
   MAX_HP_UP: "lime",
   REVIVE: "lime",
 
@@ -146,7 +148,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🪨 stone (벽/특수/리셋)
   TERRAIN: "stone",
-  WALL_HOP: "stone",
+  WALL_HOP: "zinc",
   SHIELD_BREAK: "stone",
   AA_RESET: "stone",
   UNTARGETABLE: "zinc",
@@ -190,6 +192,9 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CHAIN:            "indigo",
   PASSIVE_BONUS:    "indigo",
   PASSIVE_INTERACT: "indigo",
+  BUFF:             "indigo",
+  DEBUFF:           "fuchsia",
+  COOLDOWN:         "indigo",
   BUFF_INTERACT:    "indigo",
   DEBUFF_INTERACT:  "indigo",
   MARK_INTERACT:    "indigo",

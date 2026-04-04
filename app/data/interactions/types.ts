@@ -49,6 +49,7 @@ export type NoteBlock = { ko: string[]; en: string[] };
 
 export type ChampNotes = {
   skill?: {
+    note3?: NoteBlock;
     note1?: NoteBlock;
     note2?: NoteBlock;
   };

@@ -83,6 +83,9 @@ export type GimmickTagId =
   | "CANCELLABLE"
   | "LOCKED"
   // 기타
+  | "BUFF"
+  | "DEBUFF"
+  | "COOLDOWN"
   | "EMPOWERED"
   | "RANGE_UP"
   | "SKILL_RECAST"
@@ -110,6 +113,9 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   SKILL_CHARGED:     { ko: "차징",     en: "Charged"    },
   SKILL_VECTOR:      { ko: "벡터",     en: "Vector"     },
   SKILL_STEERABLE:   { ko: "조종 가능", en: "Steerable" },
+  BUFF:          { ko: "버프",    en: "Buff"      },
+  DEBUFF:        { ko: "디버프",  en: "Debuff"    },
+  COOLDOWN:      { ko: "쿨타임",  en: "Cooldown"  },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   RANGE_UP:      { ko: "사거리↑", en: "Range↑" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
@@ -203,6 +209,9 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬", en: "Charges up while held\nCaster can move while charging" },
   SKILL_VECTOR:     { ko: "시전 위치와 방향을 드래그로 지정하는 스킬.", en: "A skill where the cast location and direction are specified by dragging." },
+  BUFF:             { ko: "자신 또는 아군에게 유리한 효과", en: "A beneficial effect applied to self or allies" },
+  DEBUFF:           { ko: "적에게 불리한 효과", en: "A negative effect applied to enemies" },
+  COOLDOWN:         { ko: "스킬의 재사용 대기시간과 관련된 효과", en: "An effect related to the ability's cooldown" },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
   RANGE_UP:         { ko: "스킬 또는 공격의 사거리가 증가함", en: "Increases attack range" },
   SKILL_RECAST:     { ko: "쿨타임이 돌기 전에 스킬을 다시 사용할 수 있음", en: "The ability can be used again before its cooldown begins" },
