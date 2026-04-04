@@ -41,6 +41,15 @@ const vex: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[W_FLASH]], [[E_FLASH]] 안됨", "R2 설명에 [[UNSTOPPABLE]]가 없지만, 스킬로 날아갈 때 벡스 체력바 위에 [[UNSTOPPABLE]]가 생김. 도착하면 끝.", "R2로 날아갈 때 점멸로 멈출 수 있음 ", "R은 쿨타임이 일시적 초기화 되어 재사용할때, 내부 쿨타임은 이미 진행중."

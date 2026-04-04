@@ -35,6 +35,15 @@ const malzahar: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "P(패시브)는 CC기 무시임\nP있을 때 타워데미지 들어옴\n대신 90% 딜감소 임", "[[R_FLASH]]이 진짜 좋음"

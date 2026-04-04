@@ -66,6 +66,15 @@ const karma: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "만트라 W는 발동할 때 [[HEAL]]\n[[TETHER]]효과 발동 해서 [[ROOT]]되면 한번 더 [[HEAL]]",

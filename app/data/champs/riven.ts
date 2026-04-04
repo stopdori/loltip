@@ -65,6 +65,15 @@ const riven: ChampData = {
  
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
  
         ko: [

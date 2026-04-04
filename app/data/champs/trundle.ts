@@ -28,6 +28,15 @@ const trundle: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "P에 [[HEAL]]은 트런들 주변에 적이 죽으면 발동", "W의 [[MS_UP]], [[HEAL]]량 증가는 얼음지대 유효\n[[HEAL]]량 증가 있는데 P에는 적용 안되는거같음. 되면 누가 제보좀 해주셈", "E [[WALL]]에 텔 안됨", "R은 대상의 방마저를 훔치는것\n(대상은 감소 트런들은 증가)"

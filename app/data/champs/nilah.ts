@@ -32,6 +32,15 @@ const nilah: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "P는 2인 경험치 공유로 인해 손실된 부분의 50%를 돌려줌.", "Q [[PASSIVE_BONUS]]\n[[AR_PEN]], 챔피언 기본공격 시 [[HEAL]], 최대체력일 때 [[SHIELD]] 으로 흡수\n모두 치명타비례", "W는 닐라와 닿은 아군도 효과를 받아 감\nW에 [[DMG_REDUCE]]는 마법피해만임", "E는 아군에게도 사용 가능", "R은 그랩 될 때 효과들이 발동\nR에 닿은 아군도 [[HEAL]]시킴",

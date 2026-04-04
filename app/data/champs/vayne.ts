@@ -33,6 +33,15 @@ const vayne: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]] 안됨", "P는 상대 챔피언에 접근할 때 적용", "Q를 벽에 붙어서 구르면 평캔 엄청빠름", "E에 [[STUN]]은 [[KNOCKBACK]]으로 벽에 부딪혀야 발동\n[[E_FLASH]]은 [[INSEC_KICK]] 가능", "R중에 Q로 [[INVISIBILITY]] 했을 때\n점멸써도 안풀림",

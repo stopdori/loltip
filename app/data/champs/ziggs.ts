@@ -38,6 +38,15 @@ const ziggs: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[W_FLASH]], [[E_FLASH]] 안됨", "W로 타워[[EXECUTE]] 가능", "R은 중심이 효과가 큼"

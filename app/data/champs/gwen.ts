@@ -28,6 +28,15 @@ const gwen: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "Q는 중심에 명중해야 [[DMG_TRUE]].", "W는 범위 밖에서 날아오는 투사체를 맞지않음\n그웬에게 시전한 타겟팅 스킬도 날아오다 그웬이 W를 키면 맞지 않음"

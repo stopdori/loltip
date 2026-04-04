@@ -31,6 +31,15 @@ const gangplank: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "P의 쿨타임은 갱플랭크가 화약통을 폭발시키면 초기화 됨.", "마나 게이지 밑에 화약통 갯수 나옴", 

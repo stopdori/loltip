@@ -41,6 +41,15 @@ const yorick: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "W에 텔 안됨", "R 재사용하면 다시 불러들일 수 없음"

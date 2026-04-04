@@ -44,6 +44,15 @@ const thresh: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]], [[E_FLASH]], [[R_FLASH]] 안됨\nQ 돌진단계에 점멸은 되긴 함", "Q는 두단계로 나뉨 투척/돌진단계\n투척단계에 CC를 맞아도 대부분 유효\n돌진단계에 [[HARD_CC]]를 맞으면 끊길 수 있음", "W(랜턴)은 아군의 진행방향에 깔아주면 좋음"

@@ -32,6 +32,15 @@ const kogmaw: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]], [[E_FLASH]] 안됨", "Q의 [[AS_UP]]은 [[PASSIVE_BONUS]].", "W [[AA_RESET]] 안됨.", "E의 [[SLOW]]는 범위 위의 대상에게 지속 적용", "R은 사용하면 중첩이 쌓이는데\n중첩이 쌓일수록 마나소모량이 40씩 증가함.\n최대 400."

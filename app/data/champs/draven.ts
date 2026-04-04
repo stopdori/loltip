@@ -31,6 +31,15 @@ const draven: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "Q [[AA_RESET]] 안됨", "드레이븐 R로 피해를준 다음 \n대상의 남은 체력이 드레이븐 스택보다 낮으면 처형됨\n예) 대상 체력 1000, 드레이븐 궁 데미지 300, 스택 700 이면 처형",

@@ -31,6 +31,15 @@ const missfortune: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "P는 상대 챔피언 하나당 한번.\n챔피언 개별의 쿨타임이 존재.", "P효과가 발동하면 W의 쿨타임이 2초씩 감소.", "Q의 뒤쪽 연쇄는 [[INVISIBILITY]] 또는 부쉬에 숨어있어도 연쇄 가능.", "E의 [[SLOW]]는 범위 안에 있는 대상에게 지속 적용", "R은 E로 [[SLOW]]를 걸고 그 다음 쓰는 게 좋음\nR [[SKILL_CHANNEL]]에 움직이면 풀림"

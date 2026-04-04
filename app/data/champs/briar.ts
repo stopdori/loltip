@@ -31,6 +31,15 @@ const briar: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "브라이어 [[LIFESTEAL]] 귀신임.\n브라이어 상대로는 [[GW]] 필수.", "E에 [[STUN]]은 대상이 벽에 부딪혀야 걸림.", "R은 시전 중 일 때는 [[CC_IMMUNE]], 적중해서 날아갈 때는 [[UNSTOPPABLE]]", "R이 적중한 대상 주변에 범위가 생기고,\n대상을 제외한 범위 내의 적들에게는 [[FEAR]]."

@@ -40,6 +40,15 @@ const swain: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[E_FLASH]] 안됨", "P는 W, E, 킬관여로 획득\n체력회복은 [[GW]] 적용\n최대체력 증가는 [[GW]] 안됨", "E1은 적중하면 [[ROOT]]\nE2는 [[GRAB]]", "E1이 적중했을때 스웨인이 [[HARD_CC]]에 걸리면 E2를 사용 할 수 없음.", "R에 [[SLOW]]는 재사용 했을 때 나오는 파동에만"

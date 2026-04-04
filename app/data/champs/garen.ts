@@ -28,6 +28,15 @@ const garen: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "W를 CC기를 맞기 전에 쓰면, CC기가 금방 해제됨", "E는 공격속도에 따라 횟수 증가\n[[AR_SHRED]]은 6회이상 맞혀야 적용 됨\n가장 가까운 대상에게 추가 피해.", "E는 어떤 CC를 맞아도 해제되지 않음"

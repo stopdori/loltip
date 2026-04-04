@@ -70,6 +70,15 @@ const jayce: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "해머폼 평타는 [[MANA_RESTORE]]", "P의 [[MS_UP]]는 폼 변환할 때마다 생김", "캐논폼으로 변환 후 평타를 치면 상대 [[AR_MR_SHRED]]", "해머폼 E는 [[INSEC_KICK]] 됨",

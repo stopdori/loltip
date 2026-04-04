@@ -5,7 +5,7 @@ const akali: ChampData = {
   skills: {
     P: [],
     Q: ["Q_FLASH", "SEPARATOR", "ST_CONDITIONAL", "SLOW"],
-    W: ["MS_UP", "SEPARATOR", "ST_CONDITIONAL", "INVISIBILITY"],
+    W: ["MS_UP", "ENERGY_RESTORE", "SEPARATOR", "ST_CONDITIONAL", "INVISIBILITY"],
     E: ["E_FLASH", "DASH", "WALL_HOP", "TRUE_SIGHT"],
     R: ["R_FLASH", "DASH", "WALL_HOP"],
   },
@@ -46,12 +46,13 @@ const akali: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
       note1: {
 
         ko: [
         "스킬 맞히고 생기는 장판을 아칼리가 벗어나면 \n 평타 강화 ([[RANGE_UP]], [[DMG_MAGIC]]).",
         "Q는 끝에 맞혀야 함. \n 끝에 맞히면 [[SLOW]]",
-        "W(장막)를 사용하면 \n 최대기력 100증가, 현재기력 100 추가. \n\n W에 숨으면 [[INVISIBILITY]] \n W에 E1을 꽂아둘 수 있음. \n E2도 사용할 수 있음.(지속시간 짧음)",
+        "W(장막)를 사용하면 \n 일시적 최대기력 100증가. \n 현재기력 100 추가. \n\n W에 숨으면 [[INVISIBILITY]] \n W에 E1을 꽂아둘 수 있음. \n E2도 사용할 수 있음. (지속시간 짧음)",
         "E1, E2 데미지가 정말 쌤 \n E1을 맞힌 대상에게 E2로 날아갈 수 있음.",
         "R은 돌진하는 경로 대상들에게 피해. \n R2는 잃은체력 비례 피해증가.",
 

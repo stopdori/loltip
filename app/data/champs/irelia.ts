@@ -34,6 +34,15 @@ const irelia: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[E_FLASH]] 안됨", "P는 최대 4스택\n 중첩 유지는 챔피언, 타워 때려야 됨", "W를 누르고 있는 동안에 CC를 맞아도 W를 풀지 않음.", "R은 적중하면 결계가 펴지고 결계에 닿은적은 추가 데미지와 [[SLOW]]."

@@ -71,6 +71,15 @@ const udyr: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "우디르는 P효과로 스킬 재사용이 궁임\nP쿨은 50~20s 이고\n태세변환하고 평타를 치면 P 쿨타임 감소"

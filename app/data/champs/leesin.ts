@@ -46,6 +46,15 @@ const leesin: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]] 안됨", "Q의 [[TRUE_SIGHT]]는 Q2를 사용하면 사라짐.", "E2의 효과는 E에 맞은 대상에게만 적용.", "R에 당구로 맞으면\n날아간 대상의 최대체력의 %데미지가\n부딪힌 대상에게 추가"

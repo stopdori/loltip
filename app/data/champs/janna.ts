@@ -32,6 +32,15 @@ const janna: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "[[Q_FLASH]], [[R_FLASH]] 안됨", "P에 [[MS_UP]]는 아군에게 적용되는것", "Q는 충전시간에 따라 거리, 데미지, [[AIRBORNE]] 증가.", "Q1을 사용했을 때 CC에 걸리면 Q2를 사용할 수 없음.", "W에 [[GHOSTING]]는 쿨타임일 때 사라짐", "E 쿨타임은 잔나가 CC를 맞히면 20%씩 감소."

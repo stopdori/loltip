@@ -28,6 +28,15 @@ const gragas: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "Q1을 사용했을 때 그라가스가 CC에 걸리면 Q2를 사용 할 수 없음.", "E(배치기)로 날아가는 도중에 Q, R 다 가능",

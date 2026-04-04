@@ -38,6 +38,15 @@ const zed: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "제드는 그림자와 같이 공격해야\n추가 효과들이 있음", "[[W_FLASH]], [[E_FLASH]] 안됨", "R은 제드가 사라졌다\n상대방 뒤에서 나옴(자리 고정)"

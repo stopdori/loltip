@@ -31,6 +31,15 @@ const diana: ChampData = {
 
   notes: {
     skill: {
+      note3: { ko: [], en: [] },
+      note1: {
+
+        ko: [],
+
+        en: []
+
+      },
+
       note2: {
         ko: [
         "P는 평타를 때리면 [[BUFF_STACK]]이 다이애나에게 쌓이고, 3스택이 쌓이면 다음 공격이 강화됨.", "P는 레벨별 [[AS_UP]]이 있고\n스킬 사용시 [[AS_UP]] 추가로 있음", "W 구체를 다 터뜨리면 추가 [[SHIELD]] 얻음", "EQ로 E 초기화 안됨", "R은 한 명이라도 R에 적중해야 달을 소환해서 터뜨릴 수 있음."
