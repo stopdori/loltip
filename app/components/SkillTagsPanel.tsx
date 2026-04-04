@@ -576,13 +576,15 @@ if (champ?.notes) {
       noteContent = renderNoteSection((n as { ko: string[]; en: string[] })[lang] ?? [], lang === "ko" ? "노트" : "Notes");
     }
   } else {
-    const cn = n as { skill?: { note1?: { ko: string[]; en: string[] }; note2?: { ko: string[]; en: string[] } }; vision?: { ko: string[]; en: string[] }; gimmick?: { ko: string[]; en: string[] } };
+    const cn = n as { skill?: { note3?: { ko: string[]; en: string[] }; note1?: { ko: string[]; en: string[] }; note2?: { ko: string[]; en: string[] } }; vision?: { ko: string[]; en: string[] }; gimmick?: { ko: string[]; en: string[] } };
     if (mode === "skill") {
+      const n3 = cn.skill?.note3?.[lang] ?? [];
       const n1 = cn.skill?.note1?.[lang] ?? [];
       const n2 = cn.skill?.note2?.[lang] ?? [];
-      if (n1.length > 0 || n2.length > 0) {
+      if (n3.length > 0 || n1.length > 0 || n2.length > 0) {
         noteContent = (
           <>
+            {renderNoteSection(n3, lang === "ko" ? "운용법" : "Playstyle")}
             {renderNoteSection(n1, lang === "ko" ? "챔피언 요약" : "Overview")}
             {renderNoteSection(n2, lang === "ko" ? "TMI" : "TMI")}
           </>

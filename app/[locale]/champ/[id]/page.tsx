@@ -132,6 +132,7 @@ export default async function Page(props: Props) {
     if ('ko' in champData.notes) return (champData.notes as { ko: string[]; en: string[] })[lang] ?? [];
     const cn = champData.notes;
     return [
+      ...(cn.skill?.note3?.[lang] ?? []),
       ...(cn.skill?.note1?.[lang] ?? []),
       ...(cn.skill?.note2?.[lang] ?? []),
     ];
