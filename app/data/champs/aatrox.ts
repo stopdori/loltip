@@ -4,40 +4,73 @@ const aatrox: ChampData = {
   id: "aatrox",
   skills: {
     P: ["LIFESTEAL"],
-    Q: ["Q_FLASH", "AIRBORNE"],
-    W: ["W_FLASH", "SLOW", "TETHER", "TRUE_SIGHT"],
-    E: ["E_FLASH", "AA_RESET", "WALL_HOP", "LIFESTEAL"],
-    R: ["MS_UP", "BUFF_FORM"],
+    Q: ["Q_FLASH", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"],
+    W: { phases: [
+      { label: { ko: "W", en: "W" }, tags: ["W_FLASH", "TETHER", "SLOW", "TRUE_SIGHT"] },
+      { label: { ko: "사슬효과 발동", en: "Tether" }, tags: ["AIRBORNE"] },
+    ] },
+
+    E: { phases: [
+      { label: { ko: "패시브", en: "Passive" }, tags: ["LIFESTEAL"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["E_FLASH", "AA_RESET", "WALL_HOP"] },
+    ] },
+
+    R: ["BUFF_FORM", "MS_UP", "AD_UP"],
   },
   vision: {
     P: [],
     Q: [],
-    W: [],
+    W: ["TRUE_SIGHT"],
     E: [],
     R: [],
   },
 
   gimmick: {
-    P: ["DMG_MAGIC", "ON_HIT"],
+    P: ["ST_CONDITIONAL", "DMG_MAGIC", "ON_HIT"],
+
     Q: { phases: [
-      { label: { ko: "Q1", en: "Q1" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "SKILL_RECAST"] },
-      { label: { ko: "Q2", en: "Q2"  }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "SKILL_RECAST"] },
-      { label: { ko: "Q3", en: "Q3"  }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE"] },
+      { label: { ko: "Q1, Q2", en: "Q1, Q2" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "SKILL_RECAST", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"] },
+      { label: { ko: "Q3", en: "Q3"  }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"] },
     ] },
+
     W: { phases: [
-      { label: { ko: "투사체", en: "Projectile" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "SINGLE"] },
-      { label: { ko: "사슬", en: "Tether" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "SINGLE"] },
+      { label: { ko: "투사체", en: "Projectile" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "SINGLE", "TETHER", "SLOW"] },
+      { label: { ko: "사슬", en: "Tether" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL"] },
 ] },
-    E: ["PASSIVE_BONUS", "DASH"],
+
+    E: { phases: [
+      { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["DASH"] },
+    ] },
+    
     R: ["BUFF_FORM"],
   },
 
   notes: {
     skill: {
+      note1: {
+        ko: [
+            "P 평타강화 쿨타임이 있음.",
+            "Q1, Q2는 끝 / Q3는 중앙에 맞히면 \n 추가 [[DMG_PHYSICAL]], [[AIRBORNE]].", 
+            "Q2, Q3를 사용하지 않으면 \n 쿨타임이 더 빨리 돌아옴.",
+            "평타, Q, W, 아이템효과 등등 다 모든피해 [[LIFESTEAL]]. \n E의 [[PASSIVE_BONUS]]에 효과가 있음.",
+            "R은 [[MS_UP]], [[AD_UP]], 주변 미니언 [[FEAR]]",
+
+
+        ],
+        en: [
+            "P's empowered auto has a cooldown.",
+            "Q1, Q2 deal bonus [[DMG_PHYSICAL]] and [[AIRBORNE]] at the tip.\n Q3 does so at the center.",
+            "If Q2 or Q3 is not used,\n Q1's cooldown returns faster.",
+            "[[LIFESTEAL]] applies to all damage to champions — \n basic attacks, Q, W, items, etc. \n This is part of E's [[PASSIVE_BONUS]].",
+            "R grants [[MS_UP]], [[AD_UP]], and [[FEAR]] on nearby minions.",
+        ]
+      },
+
       note2: {
-        ko: ["Q는 끝에 맞히면 [[AIRBORNE]].", "Q는 Q2 또는 Q3를 사용하지 않으면,\nQ1 쿨타임이 더 빨리 돌아옴.", "W는 스킬설명에 [[TRUE_SIGHT]]가 없는데\n효과가 똑같이 작동함.", "E스킬 [[PASSIVE_BONUS]]에는 챔피언을 대상으로\n모든피해 [[LIFESTEAL]]이 붙어있음.\n그래서 평타, Q, W, 아이템효과 등등 다 적용.",
+        ko: ["W는 원래 스킬설명에 [[TRUE_SIGHT]]가 없는데\n효과가 똑같이 작동함.",
       ],
-        en: ["Q deals [[AIRBORNE]] only when hitting at the edge", "If Q2 or Q3 is not used, Q1's cooldown returns faster.", "W has no [[TRUE_SIGHT]] in the tooltip,\nbut the effect works the same", "E's base effect includes [[LIFESTEAL]] on all damage to champions,\nso it applies to basic attacks, Q, W, item effects, etc."]
+        en: ["W has no [[TRUE_SIGHT]] in the tooltip,\nbut the effect works the same."]
         },
     },
     vision: { ko: [], en: [] },

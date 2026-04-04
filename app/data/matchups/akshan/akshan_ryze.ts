@@ -9,11 +9,11 @@ export const akshan_ryze: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     ryze: {
-      ko: [],
+      ko: ["라이즈 R(공간 이동)로 아크샨 R을 시전 취소시키거나, 투사체를 무효화할 수 있음."],
       en: [],
     },
   },
