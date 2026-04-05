@@ -36,7 +36,11 @@ const alistar: ChampData = {
       note3: { 
         ko: [
           "R쓰고 맞아주면서 Q, W, E로 적절히 수비.", "상대 핵심 딜러진에 WQ 박아서 딜로스 만들어내기.", "[[Q_FLASH]]로 진입해서 W로 상대 딜러 낚아오기."
-        ], en: [] },
+        ], en: [
+          "Use R to tank hits while peeling with Q, W, and E.",
+          "Land WQ on the enemy carry to create a window of lost damage.",
+          "Use [[Q_FLASH]] to engage, then W to pull in the enemy carry.",
+        ] },
       note1: {
 
         ko: [

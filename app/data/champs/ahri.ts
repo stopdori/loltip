@@ -34,8 +34,11 @@ const ahri: ChampData = {
       note3: { 
         
         ko: [
-          "R로 왔다갔다 하면서 Q, W로 데미지를 넣고 \n E([[CHARM]])로 상대 진입을 막기", "R 또는 [[R_FLASH]]로 진입해서 E를 맞히고 아군의 호응을 유도하거나 암살각을 노리기.",
-          ], en: [] },
+          "R로 왔다갔다 하면서 Q, W로 데미지를 넣고 \n E([[CHARM]])로 상대 진입 막기.", "RE 또는 [[E_FLASH]]로 진입해서 \n 아군의 호응을 유도하거나 암살각을 노리기.",
+          ], en: [
+          "Use R to reposition while dealing damage with Q and W, \n then block enemy advances with E ([[CHARM]]).",
+          "Engage with RE or [[E_FLASH]] to bait allied follow-up \n or go for an assassination.",
+          ] },
       note1: {
         ko: [
           "P는 [[BUFF_STACK]]이 쌓이면 [[HEAL]] 발동. \n [[BUFF_STACK]]은 처치 시 1개, 3초 이내 킬관여 시 18개",
@@ -59,7 +62,7 @@ const ahri: ChampData = {
 
       note2: {
         ko: [
-        "W는 최초 타격 데미지가 제일 쌔고 \n 나머지는 감소한 피해로 들어감. \n 만약, 각각의 대상에게 1개씩만 날아가면 감소없는 피해로 들어감. \n 만약 최근 타겟이 없을 때 W를 쓰면 자기 맘대로 날아감. (챔피언은 우선 1개이상.)", "R을 사용하면 R 아이콘에 노란색 테두리로 \n 지속시간 15초가 생김. \n 이 지속시간 동안 킬 관여 시 R 사용 가능 횟수 +1 \n 동시에 지속시간 다시 10초로 증가 \n 횟수를 다 사용해도 지속시간은 끝나지 않음."
+        "W는 1개 데미지가 제일 쌔고 \n 2~3개는 감소한 피해로 들어감. \n 만약, 각각의 대상에게 1개씩만 날아가면 감소없는 피해로 들어감. \n 만약 최근 타겟이 없을 때 W를 쓰면 자기 맘대로 날아감. (챔피언은 우선 1개이상.)", "R을 사용하면 R 아이콘에 노란색 테두리로 \n 지속시간 15초가 생김. \n 이 지속시간 동안 킬 관여 시 R 사용 가능 횟수 +1 \n 동시에 지속시간 다시 10초로 증가 \n 횟수를 다 사용해도 지속시간은 끝나지 않음."
       ],
         en: [
           "W's first hit deals full damage; additional hits to the same target deal reduced damage. \n If only 1 orb flies to each target, it deals full damage. \n If no recent target exists, W fires freely (prioritizes champions, at least 1 orb).",

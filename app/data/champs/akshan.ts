@@ -44,7 +44,9 @@ const akshan: ChampData = {
         ko: [
         "작성자가 할줄 모름."
 
-        ], en: [] },
+        ], en: [
+        "Author doesn't know how to play this one."
+        ] },
       note1: {
 
         ko: [
@@ -71,7 +73,7 @@ const akshan: ChampData = {
 
       note2: {
         ko: [
-        "[[REVIVE]]은 특정조건에 발동. \n 아군 챔피언을 처치하면 악당이 되고 \n 60초간 표식이 생김.\n악당을 3초 내에 처치/관여하면 \n 그에게 죽었던 아군만 즉시 [[REVIVE]].\n다른 악당표식은 바로 사라짐.", "R(시전 집중)로 지정한 대상이 [[CAMOUFLAGE]], [[INVISIBILITY]]을 하면 모습이 보임.\nR로 대상에게 발사 했을때 [[CAMOUFLAGE]], [[INVISIBILITY]]를 하면 모습은 보이지 않지만 R은 날아가고 실루엣이 보임."
+        "[[REVIVE]]은 특정조건에 발동. \n 아군 챔피언을 처치하면 악당이 되고 60초간 표식이 생김.\n악당을 3초 내에 처치/관여하면 \n 그에게 죽었던 아군만 즉시 [[REVIVE]].\n다른 악당표식은 바로 사라짐.", "R(시전 집중)로 지정한 대상이 [[CAMOUFLAGE]], [[INVISIBILITY]]을 하면 모습이 보임.\nR로 대상에게 발사 했을때 [[CAMOUFLAGE]], [[INVISIBILITY]]를 하면 모습은 보이지 않지만 R은 날아가고 실루엣이 보임."
       ],
         en: ["P's basic attack is a double hit by default. Moving to cancel before the second hit triggers a movement speed increase.\nBonus damage is dealt when the separate stack on an enemy reaches 3.", "Q [[PIERCE]]s on hit and gains bonus range, repeating until it misses", "W's [[REVIVE]] triggers under specific conditions.\nA Scoundrel is an enemy who killed an ally within 60s.\nKilling or assisting a Scoundrel within 3s instantly [[REVIVE]]s allies that Scoundrel killed.\nOther Scoundrel marks are removed", "E scales along walls. Landing near the target via E reuse causes less DPS loss than right-clicking to land", "Can wall-travel with E while channeling R", "If the target uses [[CAMOUFLAGE]] or [[INVISIBILITY]] while R is channeling/targeting, they become visible.\nIf they go invisible after R is fired, they become hidden but R still tracks them."]
         },
