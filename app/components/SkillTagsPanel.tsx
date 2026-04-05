@@ -360,7 +360,7 @@ const renderNoteSection = (items: string[], title: string) => {
   const renderRow = (k: SkillKey) => {
   const spellTip = getSpellTip(k);
 
-  const skillKeyClass = `w-[24px] ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center flex items-center justify-center ${
+  const skillKeyClass = `w-[24px] ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center flex justify-center ${
     k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"
   }`;
 
@@ -378,6 +378,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
         if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -428,6 +429,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
         if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -478,6 +480,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
         if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -530,8 +533,8 @@ const renderNoteSection = (items: string[], title: string) => {
   }
 
   return (
-    <div className="grid grid-cols-[24px_1fr] gap-x-4 items-center py-1 sm:py-2.5 min-h-[35px]">
-      <div className={skillKeyClass}>
+    <div className={`grid grid-cols-[24px_1fr] gap-x-4 ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"} py-1 sm:py-2.5 ${tags.includes("SEPARATOR_NEWLINE") ? "" : "min-h-[35px]"}`}>
+      <div className={`${skillKeyClass} ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"}`}>
         <SkillLabelWithTip
           labelText={label[k]}
           tip={spellTip}
@@ -540,10 +543,11 @@ const renderNoteSection = (items: string[], title: string) => {
         />
       </div>
 
-      <div className="flex flex-wrap items-start gap-x-1.5 gap-y-2">
+      <div className={`flex flex-wrap items-start gap-x-1.5 gap-y-2${tags.includes("SEPARATOR_NEWLINE") ? " mt-1" : ""}`}>
         {tags.length > 0 ? (
           tags.map((t) => {
             if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full" />;
             const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
             const rLabel = TAG_LABEL[t as TagId];
             const labelData = gLabel ?? rLabel;

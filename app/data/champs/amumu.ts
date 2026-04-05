@@ -35,12 +35,15 @@ const amumu: ChampData = {
 
         ko: [
           
-          "Q로 진입해서 R 쓰고, W를 키고 [[DEBUFF]] 안 걸린 애들 [[BA]]로 한대씩 때리면서 중간중간 E로 패기.",
-          "들어오는 상대 R로 수비하기."
+          "Q로 진입하고 R로 광역 [[STUN]]과 [[DEBUFF]]를 걸고 \n W로 비벼서 [[DEBUFF]] 유지 시키면서 \n 안 걸린 애들 [[BA]]로 한대씩 때리고 중간중간 E로 패기.",
+          "들어오는 상대 Q, R로 수비하기."
         
         ],
 
-        en: []
+        en: [
+          "Engage with Q, apply AoE [[STUN]] and [[DEBUFF]] with R, \n keep the [[DEBUFF]] active by staying close with W, \n hit unaffected enemies with [[BA]], and mix in E.",
+          "Use Q and R defensively against incoming enemies.",
+        ]
 
       },
 
@@ -56,7 +59,13 @@ const amumu: ChampData = {
         "R은 적중한 대상 모두 [[STUN]]과 P의 [[DEBUFF]]",
         ],
 
-        en: []
+        en: [
+        "Hitting a champion with [[BA]] applies [[DEBUFF]]. \n When that target takes [[DMG_MAGIC]], it triggers bonus [[DMG_TRUE]]. \n Can apply to multiple targets.",
+        "Hitting with Q dashes to the target. \n Follows the target if they move.",
+        "W resets the duration of P's [[DEBUFF]].",
+        "E strikes nearby targets. \n Cooldown decreases the more Amumu gets hit.",
+        "R applies [[STUN]] and P's [[DEBUFF]] to all targets hit.",
+        ]
 
       },
 

@@ -102,6 +102,7 @@ export type GimmickTagId =
   | "ST_CONDITIONAL"
 
   | "SEPARATOR"
+  | "SEPARATOR_NEWLINE"
 
   ;
 
@@ -200,6 +201,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DASH:     { ko: "돌진",     en: "Dash"     },
   BLINK:    { ko: "순간이동", en: "Blink"    },
   SEPARATOR: { ko: "/", en: "/" },
+  SEPARATOR_NEWLINE: { ko: "↵", en: "↵" },
 };
 
 export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: string }>> = {
