@@ -52,7 +52,10 @@ const aatrox: ChampData = {
         ko: [
             "Q, EQ, W, [[EMPOWERED]][[BA]]로 살짝씩 간보다가 \n R키고 진심모드로 패기", "R쓰고 뒤에서 나타나기"
 
-        ], en: [] },
+        ], en: [
+            "Poke gradually with Q, EQ, W, and [[EMPOWERED]][[BA]], \n then activate R and go all-in.",
+            "Use R and appear from behind.",
+        ] },
       note1: {
         ko: [
             "P [[EMPOWERED]][[BA]]에 쿨타임이 있음.",

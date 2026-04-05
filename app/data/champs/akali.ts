@@ -46,10 +46,13 @@ const akali: ChampData = {
 
   notes: {
     skill: {
-      note3: { 
+      note3: {
         ko: [
-        "W(장막)를 깔고 어그로를 끌면서 스킬 섞어 때리기", "E와 R을 잘 조합해서 암살각 보기"
-        ], en: [] },
+        "W(장막)를 깔고 어그로를 끌면서 스킬 섞어 때리기.", "E와 R을 잘 조합해서 상대 딜러진 암살각 보기"
+        ], en: [
+        "Use W (shroud) to draw aggro and mix in skills while staying hidden.",
+        "Combine E and R to find assassination angles on the enemy carries."
+        ] },
       note1: {
 
         ko: [
