@@ -27,12 +27,12 @@ const aurelionsol: ChampData = {
       { label: { ko: "Q", en: "Q" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "SKILL_STEERABLE", "NON_PROJECTILE", "DOT", "SINGLE"] },
       { label: { ko: "Q 폭발", en: "Q Burst" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE"] },
     ] },
-    W: ["SKILL_CHANNEL", "TIMING_CAST", "DASH"],
-    E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DOT"],
+    W: ["SKILL_CHANNEL", "TIMING_CAST", "DASH", "WALL_HOP"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DOT", "SLOW"],
     R: { phases: [
-      { label: { ko: "R", en: "The Skies Descend" }, tags: ["DMG_MAGIC", "PROJECTILE", "ZONE"] },
-      { label: { ko: "천상강림", en: "Falling Star" }, tags: ["DMG_MAGIC", "PROJECTILE", "ZONE"] },
-      { label: { ko: "천상강림 충격파", en: "Waves" }, tags: ["DMG_MAGIC", "AOE"] },
+      { label: { ko: "R", en: "The Skies Descend" }, tags: ["DMG_MAGIC", "PROJECTILE", "ZONE", "STUN"] },
+      { label: { ko: "천상강림", en: "Falling Star" }, tags: ["DMG_MAGIC", "PROJECTILE", "ZONE", "AIRBORNE"] },
+      { label: { ko: "천상강림 충격파", en: "Waves" }, tags: ["DMG_MAGIC", "AOE", "SLOW"] },
     ] },
   },
 
@@ -49,7 +49,7 @@ const aurelionsol: ChampData = {
         ko: [
           "P의 별가루 [[STACKING]]으로 스킬 강화.",
           "Q는 버튼을 누르면서 마우스를 움직여 사용. \n 적 챔피언에게 6각형 디버프가 생기고 \n 다 차면 폭발피해. \n 1초당 2의 별가루.",
-          "W는 날아가는 도중 움직이면 내려짐. \n Q, E, R은 사용해도 내리지 않음. \n 쿨타임 일 때 킬 관여시 쿨감.",
+          "W는 날아가는 도중 움직이면 내려짐. \n Q, E, R은 사용해도 내리지 않음. \n 킬 관여 시 쿨감.",
           "E는 중앙 블랙홀에 조건부 [[EXECUTE]] \n 블랙홀에 챔피언이 닿으면 초당 별가루 1. \n E 범위에서 미니언, 몬스터가 죽으면 마리당 1. \n 막타치지 않아도 오름.",
           "R은 범위 [[STUN]] \n 강화 R(천상강림)은 중앙범위 [[AIRBORNE]] \n 넓은 범위 충격파는 [[SLOW]] \n\n 일반 R은 챔피언당 별가루 5. \n 강화 R은 없음.",
 

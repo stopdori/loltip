@@ -22,14 +22,14 @@ const ashe: ChampData = {
     P: ["SLOW"],
     Q: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["BUFF_STACK"] },
-      { label: { ko: "액티브", en: "Active" }, tags: ["ST_CONDITIONAL", "STACK_CONSUME", "DMG_PHYSICAL", "PROJECTILE", "ON_HIT"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["ST_CONDITIONAL", "STACK_CONSUME", "DMG_PHYSICAL", "PROJECTILE", "ON_HIT", "SEPARATOR", "ST_CONDITIONAL", "SLOW"] },
     ] },
    
-    W: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "VOLLEY"],
+    W: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "VOLLEY", "SEPARATOR", "ST_CONDITIONAL", "SLOW"],
     E: ["TIMING_CAST", "ZONE", "GLOBAL", "RECHARGE"],
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE"] },
-      { label: { ko: "R 폭발", en: "R Burst"  }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE"] },
+      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE", "STUN"] },
+      { label: { ko: "R 폭발", en: "R Burst"  }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE", "SLOW"] },
     ] },
   },
 

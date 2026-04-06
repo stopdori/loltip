@@ -397,11 +397,11 @@ CC_CLEANSE: {
   en: "Removes existing crowd control effects",
 },
 STEALTH: {
-  ko: "투명화와 위장으로 나뉨\n절대시야에는 보이고, 드러냄 스킬에는 맞고 은신하면 보임",
+  ko: "투명화와 위장으로 나뉨\n절대시야에는 보이고, \n 드러냄 스킬에는 맞고 은신하면 보임",
   en: "Invisibility and Camouflage",
 },
 INVISIBILITY: {
-  ko: "은신류 - 상대 챔피언, 핑와에 발각되지 않음\n단, 절대시야에는 보이고, 드러냄 스킬에는 맞고 은신하면 보임",
+  ko: "은신류 - 상대 챔피언, 핑와에 발각되지 않음\n단, 절대시야에는 보이고, \n 드러냄 스킬에는 맞고 은신하면 보임",
   en: "Stealth class\nInvisible units cannot be revealed \nby enemy champions or Control Wards\nOnly revealed by True Sight.",
 },
 CAMOUFLAGE: {
