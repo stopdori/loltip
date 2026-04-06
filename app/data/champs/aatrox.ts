@@ -71,7 +71,8 @@ const aatrox: ChampData = {
             "P's empowered auto has a cooldown.",
             "Q1, Q2 deal bonus [[DMG_PHYSICAL]] and [[AIRBORNE]] at the tip.\n Q3 does so at the center.",
             "If Q2 or Q3 is not used,\n Q1's cooldown returns faster.",
-            "[[LIFESTEAL]] applies to all damage — \n basic attacks, Q, W, items, etc. \n This is part of E's [[PASSIVE_BONUS]].",
+            "W applies [[SLOW]] and [[TETHER]]. \n If the target cannot escape, they are pulled toward the center with [[GRAB]].",
+            "[[LIFESTEAL]] applies to all damage — \n basic attacks, Q, W, items, etc. \n Part of E's [[PASSIVE_BONUS]]. \n E also provides [[AA_RESET]].",
             "R grants [[MS_UP]], [[AD_UP]], and [[FEAR]] on nearby minions.",
         ]
       },

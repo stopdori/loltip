@@ -39,7 +39,10 @@ const annie: ChampData = {
         ko: [
           "하나 삐져나온 대상을 [[STUN]]으로 잘라먹기.", 
           "상대 딜러진에 R로 광역 [[STUN]]을 넣어서 \n 잡거나 전투이탈 만들기.",
-        ], en: [] },
+        ], en: [
+          "Pick off an isolated target with [[STUN]].",
+          "Land an AoE [[STUN]] on the enemy carries with R \n to catch them or force them out of the fight.",
+        ] },
       note1: {
 
         ko: [
@@ -51,7 +54,14 @@ const annie: ChampData = {
           "R [[STUN]]로 이니시를 하면 티버 풀딜. \n 티버는 애니가 [[STUN]]을 걸거나 죽으면 분노."
         ],
 
-        en: []
+        en: [
+          "P's [[STUN]] applies on Q, W, or R when at 4 stacks.",
+          "R grants [[MR_PEN]] as a [[PASSIVE_BONUS]].",
+          "Last-hitting with Q \n refunds 50% cooldown and 100% [[MANA_RESTORE]].",
+          "W deals cone-shaped area damage.",
+          "E applies [[SHIELD]]. \n Also copied to Tibbers if summoned. \n While the [[SHIELD]] holds, reflects damage once per attacker.",
+          "Initiating with R's [[STUN]] maximizes Tibbers' damage. \n Tibbers enrages when Annie applies [[STUN]] or dies.",
+        ]
 
       },
 
@@ -59,7 +69,7 @@ const annie: ChampData = {
         ko: [
         "E의 반사 데미지는 [[SHIELD]]가 남아있을 때, 적군이 공격면 공격한 대상당 한 번씩 피해를 입음.\n상대 챔피언의 소환수가 공격하면 소환수 개별 \n 주인 챔피언도 별개로 한 번씩 적용."
       ],
-        en: ["P's [[STUN]] applies on Q, W, or R when at 4 stacks", "E's reflected damage hits once per attacker targeting the protected unit.\nIf enemy pets attack, each pet and their owner champion are each counted separately.", "R has [[MR_PEN]] as a passive effect"]
+        en: ["E's reflected damage hits once per attacker while the [[SHIELD]] holds.\nIf enemy pets attack, each pet and their owner champion are counted separately."]
         },
     },
     vision: { ko: [], en: [] },
