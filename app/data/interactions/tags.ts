@@ -210,7 +210,7 @@ INTERCEPT_PROJECTILE: { ko: "투사체 차단", en: "Projectile Delete" },
  * 7) 회복 / 자원 회복
  * ========================= */
 HEAL: { ko: "회복", en: "Heal" },
-SHIELD: { ko: "보호막", en: "Shield" },
+SHIELD: { ko: "쉴드", en: "Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
 LIFESTEAL: { ko: "피흡", en: "Lifesteal" },
 MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
