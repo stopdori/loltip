@@ -38,7 +38,10 @@ const ashe: ChampData = {
       note3: { 
         ko: [
           "R의 [[STUN]]로 하나 잘라먹기.", "P의 [[SLOW]]로 최대한 카이팅. \n R의 [[STUN]]로 상대 진입 막기."
-        ], en: [] },
+        ], en: [
+          "Pick off an isolated target with R's [[STUN]].",
+          "Kite as much as possible with P's [[SLOW]]. \n Use R's [[STUN]] to stop enemy dives.",
+        ] },
       note1: {
 
         ko: [
@@ -50,7 +53,13 @@ const ashe: ChampData = {
 
         ],
 
-        en: []
+        en: [
+          "P's [[SLOW]] applies on [[BA]] and W.",
+          "Q becomes usable after landing 4 [[BA]]s.",
+          "W deals damage only once per target. \n Additional projectiles hitting the same target are ignored.",
+          "E is a global-range vision hawk. \n Reveals targets inside bushes.",
+          "R is a global-range arrow. \n Only the direct target is [[STUN]]ned, with area damage and [[SLOW]] on impact. \n [[STUN]] duration scales with travel distance, up to 3 seconds.",
+        ]
 
       },
 
@@ -58,7 +67,7 @@ const ashe: ChampData = {
         ko: [
         "[[W_FLASH]] 되는데 마우스 방향 잘 조준해야 함.", " W에는 [[SLOW]]가 없음\nP의 [[SLOW]]가 걸리는것", 
       ],
-        en: ["[[W_FLASH]] works but mouse aim is important.\nW itself has no [[SLOW]] — the [[SLOW]] comes from P", "E has no range limit and reveals targets inside brushes.", "R's [[STUN]] duration increases with the distance traveled."]
+        en: ["[[W_FLASH]] works but aim carefully with the mouse direction.", "W itself has no [[SLOW]] — the [[SLOW]] comes from P."]
         },
     },
     vision: { ko: [], en: [] },
