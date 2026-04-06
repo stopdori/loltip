@@ -173,7 +173,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   AURA:    { ko: "오라",   en: "Aura"            },
   GLOBAL:  { ko: "전체맵", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
-  DROP:          { ko: "드랍스",    en: "Drops"    },
+  DROP:          { ko: "드롭",    en: "Drops"    },
   X2:            { ko: "x2",       en: "x2"      },
   X3:            { ko: "x3",       en: "x3"      },
   X4:            { ko: "x4",       en: "x4"      },
