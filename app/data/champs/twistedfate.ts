@@ -58,7 +58,7 @@ const twistedfate: ChampData = {
         "R2 [[SKILL_CHANNEL]] 중에 W1, W2 모두 사용할 수 있음.",
         "골카를 들고 대상에게 우클릭한 후 점멸을 누르면 점멸골카가 예쁘게 나감", 
         "E의 [[AS_UP]]는 지속효과", 
-        "R1의 [[TRUE_SIGHT]]는 방어막류(밴시, 밤끝 포함)로 막아짐"
+        "R1의 [[TRUE_SIGHT]]는 [[SPELL_SHIELD]]류(밴시, 밤끝 포함)로 막아짐"
       ],
         en: ["W card order: Blue ([[MANA_RESTORE]]) → Red ([[SLOW]]) → Yellow ([[STUN]])", "Even if you get CC'd after using W1, the card order keeps cycling and you can still pick a card with W2.", "Hold the gold card, right-click a target, then flash for a smooth [[W_FLASH]] gold card", "E's [[AS_UP]] is a passive effect", "R's [[TRUE_SIGHT]] can be blocked by spell shields (including Banshee's, Night's Edge)"]
         },

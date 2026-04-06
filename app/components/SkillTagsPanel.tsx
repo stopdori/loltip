@@ -377,8 +377,8 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
-        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full" />;
+        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-xl px-1">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -428,8 +428,8 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
-        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full" />;
+        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-xl px-1">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -479,8 +479,8 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId) => {
-        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full" />;
+        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-xl px-1">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -543,11 +543,11 @@ const renderNoteSection = (items: string[], title: string) => {
         />
       </div>
 
-      <div className={`flex flex-wrap items-start gap-x-1.5 gap-y-2${tags.includes("SEPARATOR_NEWLINE") ? " mt-1" : ""}`}>
+      <div className={`flex flex-wrap items-start gap-x-1.5 ${tags.includes("SEPARATOR_NEWLINE") ? "gap-y-1" : "gap-y-2"}${tags.includes("SEPARATOR_NEWLINE") ? " mt-1" : ""}`}>
         {tags.length > 0 ? (
           tags.map((t) => {
-            if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-sm px-1">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full" />;
+            if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-xl px-1">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full h-1" />;
             const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
             const rLabel = TAG_LABEL[t as TagId];
             const labelData = gLabel ?? rLabel;
