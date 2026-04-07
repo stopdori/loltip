@@ -21,8 +21,8 @@ const corki: ChampData = {
   gimmick: {
     P: ["DMG_TRUE", "ON_HIT"],
     Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE"],
-    W: ["DMG_MAGIC", "PROJECTILE", "DOT", "ZONE", "DASH"],
-    E: ["BUFF_FORM", "LOCKED", "DMG_PHYSICAL", "DOT", "AOE", "AR_MR_SHRED"],
+    W: ["DMG_MAGIC", "PROJECTILE", "ZONE", "DOT", "DASH"],
+    E: ["BUFF_FORM", "LOCKED", "DMG_PHYSICAL", "AOE", "DOT", "AR_MR_SHRED"],
     R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "AOE", "RECHARGE"],
   },
 
@@ -42,7 +42,7 @@ const corki: ChampData = {
           "Q는 범위 [[DMG_MAGIC]]에 맞은 대상은 [[REVEALED]].",
           "W는 [[DASH]]하면서 경로에 [[ZONE]]을 깔고 \n [[DOT]] 피해를 줌.",
           "E는 4초동안 [[DOT]] [[DMG_PHYSICAL]]. 틱당 [[AR_MR_SHRED]]. \n 스킬을 찍을수록 [[AR_MR_SHRED]] 최대량 증가.",
-          "R은 [[RECHARGE]]식 체력바 밑에 남은 개수가 보임. \n 상대도 볼 수 있음. \n 빨간색 미사일은 2배 피해. \n 챔피언에게 [[BA]]를 때리면 [[CRIT]] 비례 쿨타임 감소.",
+          "R은 [[RECHARGE]]식 체력바 밑에 남은 개수가 보임. \n 최대 4개까지 보유 가능. 상대도 볼 수 있음. \n 빨간색 미사일은 2배 피해. \n 챔피언에게 [[BA]]를 때리면 [[CRIT]] 비례 쿨타임 감소.",
         ],
 
         en: [
