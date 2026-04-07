@@ -62,7 +62,7 @@ const camille: ChampData = {
           "P의 [[SHIELD]]는 [[BA]], Q로 상대를 때리면 생김. \n 표식 색깔에 따라 물리[[SHIELD]], 마법[[SHIELD]]",
           "Q1으로 때리면 [[MS_UP]]. \n 바로 재사용하면 약한 Q2. \n 노란 테두리일 때 쓰면 80% [[DMG_TRUE]]의 Q2.",
           "W는 바깥쪽에 맞혀야지만 [[HEAL]]과 [[SLOW]] 효과 발동",
-          "E는 벽에 [[DASH]]해서 붙었다가 다시 [[DASH]] 가능. \n 다시 [[DASH]]할 때 [[AS_UP]] \n 적 챔피언에게 [[DASH]]하면 사거리 2배. \n 챔피언과 부딪히면 [[STUN]]과 피해를 주고 멈춤. \n [[CC_BUFFER]]로 일부 CC 무시가능.",
+          "E는 벽에 [[DASH]]해서 붙었다가 다시 [[DASH]] 가능. \n 다시 [[DASH]]할 때 [[AS_UP]] \n 적 챔피언에게 [[DASH]]하면 사거리 2배. \n 챔피언과 부딪히면 [[STUN]]과 피해를 주고 멈춤. \n [[CC_BUFFER]]로 일부 CC 무시 가능.",
           "R은 [[UNTARGETABLE]], [[UNSTOPPABLE]]로 한 대상에게 [[DASH]]. \n 대상을 일정 범위에 가두고 [[MARK]]을 찍음. \n 짧은 [[SILENCE]]과 [[MARK]] 대상에게 [[BA]] [[DMG_MAGIC]] 추가. \n 범위에 있던 다른 적들을 [[KNOCKBACK]]. \n 스킬을 찍을수록 가두는 시간 증가. \n 카밀이 범위를 벗어나면 스킬 해제."
         ],
 

@@ -287,8 +287,8 @@ WALL_HOP: {
 
 /* 전투 메커니즘 */
 AA_RESET: {
-  ko: "평타를 치고 스킬을 눌렀을 때\n바로 다시 평타를 칠 수 있음",
-  en: "Using a skill right after\nan auto-attack resets the auto-attack timer",
+  ko: "평타 기반 스킬을 사용할 때 \n 평타를 때리고 스킬을 사용하면 딜로스가 없음.",
+  en: "When using basic attack-based skills, \n auto-attacking before casting avoids damage loss.",
 },
 UNTARGETABLE: {
   ko: "타겟 불가",
