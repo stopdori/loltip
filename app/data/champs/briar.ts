@@ -41,8 +41,8 @@ const briar: ChampData = {
           "난전에 정말 까다로움.",
           "R1을 딜러진에 맞히기.", "이니시 보단 중간에 진입해서 쓸어먹는게 그림이 예쁨.",
         ], en: [
-          "Extremely difficult to deal with in skirmishes.\nProbably near the top tier for 1v1.",
-          "Land R on the enemy carries.",
+          "Extremely difficult to deal with in skirmishes.",
+          "Land R1 on the enemy carries.",
           "Rather than initiating, diving in mid-fight to clean up looks cleaner.",
         ] },
       note1: {

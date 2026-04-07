@@ -50,7 +50,7 @@ const corki: ChampData = {
           "Q deals AoE [[DMG_MAGIC]] and [[REVEALED|reveals]] targets it hits.",
           "W [[DASH]]es and leaves a [[ZONE]] along the path that deals [[DOT]] damage.",
           "E deals [[DOT]] [[DMG_PHYSICAL]] for 4 seconds.\nEach tick applies [[AR_MR_SHRED]].\nMax [[AR_MR_SHRED]] increases with rank.",
-          "R uses [[RECHARGE]] — the remaining count is shown below the health bar and is visible to enemies.\nThe red missile deals double damage.\nAuto-attacking a champion reduces R's recharge time based on [[CRIT]].",
+          "R uses [[RECHARGE]] — the remaining count is shown below the health bar.\nMax 4 charges can be held. Visible to enemies.\nThe red missile deals double damage.\nAuto-attacking a champion reduces R's recharge time based on [[CRIT]].",
         ]
 
       },
