@@ -6,8 +6,8 @@ const camille: ChampData = {
     P: ["SHIELD"],
     Q: ["AA_RESET", "MS_UP"],
     W: ["W_FLASH", "SEPARATOR", "ST_CONDITIONAL", "HEAL", "SLOW"],
-    E: ["DASH", "WALL_HOP", "CC_BUFFER", "AS_UP", "STUN"],
-    R: ["R_FLASH", "KNOCKBACK", "WALL_HOP", "SILENCE", "UNTARGETABLE", "TOWER_DODGE", "UNSTOPPABLE"],
+    E: ["DASH", "WALL_HOP", "CC_BUFFER", "AS_UP", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
+    R: ["R_FLASH", "SILENCE", "DASH", "WALL_HOP", "UNTARGETABLE", "UNSTOPPABLE", "TOWER_DODGE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "KNOCKBACK"],
   },
 
   vision: {
@@ -20,20 +20,25 @@ const camille: ChampData = {
 
   gimmick: {
     P: [],
+    
     Q: { phases: [
       { label: { ko: "Q1", en: "Q1"  }, tags: ["DMG_PHYSICAL", "ON_HIT", "SKILL_RECAST"] },
       { label: { ko: "Q2", en: "Q2"  }, tags: ["DMG_PHYSICAL", "DMG_TRUE", "TIMING_CAST", "ON_HIT"] },
     ] },
-    W: ["DMG_PHYSICAL", "AOE"],
+
+    W: ["DMG_PHYSICAL", "AOE", "SEPARATOR", "ST_CONDITIONAL", "SLOW"],
+
     E: { phases: [
       { label: { ko: "투척단계", en: "Throw" }, tags: ["PROJECTILE", "CC_BUFFER"] },
       { label: { ko: "그렙단계", en: "Grab"  }, tags: ["DASH"] },
       { label: { ko: "대기단계", en: "Hold"  }, tags: ["SKILL_RECAST"] },
-      { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "DASH"] },
+      { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "DASH", "SEPARATOR", "ST_CONDITIONAL", "STUN"] },
     ] },
+
     R:{ phases: [
-      { label: { ko: "도약", en: "Dash" }, tags: ["UNSTOPPABLE", "TIMING_CAST", "ZONE", "MARK", "DASH"] },
-      { label: { ko: "Mark", en: "Mark"  }, tags: ["DMG_MAGIC", "ON_HIT"] },
+      { label: { ko: "도약", en: "Dash" }, tags: ["TIMING_CAST", "SILENCE", "DASH", "WALL_HOP", "UNTARGETABLE", "UNSTOPPABLE", "TOWER_DODGE"] },
+      { label: { ko: "장판", en: "Zone" }, tags: ["ST_DELAYED", "ZONE", "SEPARATOR", "ST_CONDITIONAL", "KNOCKBACK"] },
+      { label: { ko: "표식", en: "Mark"  }, tags: ["DMG_MAGIC", "ON_HIT"] },
     ] },
   },
 
