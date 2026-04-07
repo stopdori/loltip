@@ -61,6 +61,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   BERSERK: "red",
   LIFESTEAL: "lime",
 
+  MS_DOWN: "amber_dark",
+
   // 🔵 sky (이동/회복/자원/저항)
   MS_UP: "sky",
   AS_UP: "sky",
@@ -242,9 +244,9 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CAST_IMMOBILE: "indigo",
   CC_BUFFER:    "zinc",
   // 이동
-  MOBILITY: "indigo",
-  DASH:     "indigo",
-  BLINK:    "indigo",
+  MOBILITY: "zinc",
+  DASH:     "zinc",
+  BLINK:    "zinc",
 } satisfies Partial<Record<TagId | GimmickTagId, Tone>>;
 
 // ✅ tag가 등록 안 되어있으면 default
@@ -257,7 +259,7 @@ export const TONE_CLASS: Record<Tone, string> = {
 
   amber: "bg-amber-400/70 text-amber-100 ring-amber-400/40",
   amber_dark: "bg-amber-700/40 text-amber-000 ring-amber-500/50",
-  amber_deep: "bg-amber-900/40 text-amber-000 ring-amber-700/50",
+  amber_deep: "bg-amber-900/40 text-amber-000 ring-amber-500/50",
 
   red: "bg-red-900/60 text-red-300 ring-red-600/70",
 
@@ -283,7 +285,7 @@ export const NOTE_TONE_CLASS: Record<Tone, string> = {
 
   amber: "text-amber-300",
   amber_dark: "text-amber-300",
-  amber_deep: "text-amber-300",
+  amber_deep: "text-amber-700",
 
   red: "text-red-400 font-extrabold",
 

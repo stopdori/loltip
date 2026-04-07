@@ -376,9 +376,9 @@ const renderNoteSection = (items: string[], title: string) => {
         tags: (TagId | GimmickTagId)[];
       }>;
 
-      const renderTagPill = (t: TagId | GimmickTagId) => {
-        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-xl px-1">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full h-1" />;
+      const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
+        if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={i} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -386,7 +386,7 @@ const renderNoteSection = (items: string[], title: string) => {
         const desc =
           GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
           TAG_DESC?.[t as TagId]?.[lang];
-        return <TagPill key={t} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+        return <TagPill key={i} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
       };
 
       return (
@@ -427,9 +427,9 @@ const renderNoteSection = (items: string[], title: string) => {
         tags: (TagId | GimmickTagId)[];
       }>;
 
-      const renderTagPill = (t: TagId | GimmickTagId) => {
-        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-xl px-1">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full h-1" />;
+      const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
+        if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={i} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -437,7 +437,7 @@ const renderNoteSection = (items: string[], title: string) => {
         const desc =
           GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
           TAG_DESC?.[t as TagId]?.[lang];
-        return <TagPill key={t} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+        return <TagPill key={i} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
       };
 
       return (
@@ -478,9 +478,9 @@ const renderNoteSection = (items: string[], title: string) => {
         tags: (TagId | GimmickTagId)[];
       }>;
 
-      const renderTagPill = (t: TagId | GimmickTagId) => {
-        if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-xl px-1">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full h-1" />;
+      const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
+        if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+        if (t === "SEPARATOR_NEWLINE") return <div key={i} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -488,7 +488,7 @@ const renderNoteSection = (items: string[], title: string) => {
         const desc =
           GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
           TAG_DESC?.[t as TagId]?.[lang];
-        return <TagPill key={t} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+        return <TagPill key={i} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
       };
 
       return (
@@ -545,16 +545,16 @@ const renderNoteSection = (items: string[], title: string) => {
 
       <div className={`flex flex-wrap items-start gap-x-1.5 ${tags.includes("SEPARATOR_NEWLINE") ? "gap-y-1" : "gap-y-2"}${tags.includes("SEPARATOR_NEWLINE") ? " mt-1" : ""}`}>
         {tags.length > 0 ? (
-          tags.map((t) => {
-            if (t === "SEPARATOR") return <span key={t} className="text-slate-400 text-xl px-1">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={t} className="w-full h-1" />;
+          tags.map((t, i) => {
+            if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+            if (t === "SEPARATOR_NEWLINE") return <div key={i} className="w-full h-1" />;
             const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
             const rLabel = TAG_LABEL[t as TagId];
             const labelData = gLabel ?? rLabel;
             if (!labelData) return null;
             return (
               <TagPill
-                key={t}
+                key={i}
                 text={labelData[lang]}
                 tone={toneOfTag(t)}
                 tip={GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ?? TAG_DESC?.[t as TagId]?.[lang]}

@@ -120,7 +120,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   RANGE_UP:      { ko: "사거리↑", en: "Range↑" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
-  RECHARGE:      { ko: "충전식",  en: "Recharge" },
+  RECHARGE:      { ko: "충전",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
   PROC:          { ko: "스택발동", en: "Proc" },
   BUFF_STACK:    { ko: "버프스택",   en: "Buff Stack"   },
