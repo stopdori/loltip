@@ -34,7 +34,10 @@ const blitzcrank: ChampData = {
       note3: { 
         ko: [
           "블랭은 Q([[GRAB]])이 알파이자 오메가. \n [[GRAB]]으로 잘라먹거나 \n 딜러진을 끌어야 함.", "아군 딜러진에 붙는 적들을 [[GRAB]]으로 떼어놓거나 \n E로 [[AIRBORNE]], R의 [[SILENCE]]으로 방해."
-        ], en: [] },
+        ], en: [
+          "Q ([[GRAB]]) is everything for Blitzcrank. \n Use [[GRAB]] to pick off isolated targets \n or pull in the enemy carries.",
+          "Pull enemies off your carries with [[GRAB]], \n or disrupt them with E's [[AIRBORNE]] and R's [[SILENCE]].",
+        ] },
       note1: {
 
         ko: [
@@ -45,7 +48,13 @@ const blitzcrank: ChampData = {
           "R을 들고있을 때 [[BA]]로 때리면 1초뒤에 낙뢰. \n 평E 하면 2번에걸쳐 낙뢰가 떨어짐. \n 쿨타임에는 불가. \n R을 사용하면 광역 피해, [[SILENCE]], [[SHIELD_BREAK]].",
         ],
 
-        en: []
+        en: [
+          "[[SHIELD]] activates when HP drops to 30%, \n scaling with 35% of max mana.",
+          "Aiming slightly past the target on Q ([[GRAB]]) can make it land more reliably. \n Without Q, Blitzcrank is just a tin can. \n Saving Q is also a valid strategy.",
+          "W grants [[MS_UP]] and [[AS_UP]]. \n When the duration ends, Blitzcrank suffers [[MS_DOWN]].",
+          "E empowers the next [[BA]] to apply [[AIRBORNE]]. \n [[AA_RESET]] is possible.",
+          "While R is ready, [[BA]] triggers a lightning strike 1s later. \n Auto then E triggers two consecutive strikes. \n Not available on cooldown. \n Activating R deals AoE damage, [[SILENCE]], and [[SHIELD_BREAK]].",
+        ]
 
       },
 
@@ -53,7 +62,10 @@ const blitzcrank: ChampData = {
         ko: [
         "[[Q_FLASH]] 안됨", "R의 [[PASSIVE_BONUS]] 낙뢰는 구인수효과에 영향을 받지만, 1초의 쿨타임은 계속 적용되어 두번에 걸쳐 낙뢰가 떨어짐. (1초, 1초)"
       ],
-        en: ["[[Q_FLASH]] not possible", "Without Q (Rocket Grab), Blitzcrank is just a tin can.\nSaving Q is also a valid strategy.", "W applies a self [[SLOW]] when its duration expires"]
+        en: [
+          "[[Q_FLASH]] not possible",
+          "R's [[PASSIVE_BONUS]] lightning is affected by Spellblade (item), but the 1s internal cooldown still applies — two strikes fire in sequence (1s apart).",
+        ]
         },
     },
     vision: { ko: [], en: [] },
