@@ -17,6 +17,7 @@ export type TagId =
   | "REFLECT"
   | "INSEC_KICK"
   | "MS_UP"
+  | "MS_DOWN"
   | "AS_UP"          // 공속 증가
   | "AS_DOWN"
   | "AD_UP"          // 공격력 증가
@@ -126,6 +127,7 @@ export const TAG_LABEL: Record<TagId, { ko: string; en: string }> = {
  * 1) 스탯 / 자원 변화
  * ========================= */
 MS_UP: { ko: "이속↑", en: "MS ↑" },
+MS_DOWN: { ko: "이속↓", en: "MS ↓" },
 AS_UP: { ko: "공속↑", en: "AS ↑" },
 AS_DOWN: { ko: "공속↓", en: "AS ↓" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
@@ -221,7 +223,7 @@ ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
  * ========================= */
 SHIELD_BREAK:  { ko: "쉴드파괴", en: "Shield Break"  },
 SHIELD_PIERCE: { ko: "실드관통", en: "Shield Pierce" },
-AR_UP: { ko: "방어력↑", en: "AR ↑" },
+AR_UP: { ko: "방어↑", en: "AR ↑" },
 MR_UP: { ko: "마저↑", en: "MR ↑" },
 AR_MR_UP: { ko: "방마저↑", en: "AR+MR ↑" },
 AR_SHRED: { ko: "방깍", en: "AR Shred" },
@@ -297,8 +299,8 @@ TOWER_DODGE: {
   en: "Ignores turret damage",
 },
 SHIELD_BREAK: {
-  ko: "상대의 보호막을 파괴",
-  en: "Breaks shields",
+  ko: "상대의 보호막을 파괴. \n 스킬 데미지가 있다면 파괴후 데미지 적용.",
+  en: "Breaks the target's shield. \n If the skill deals damage, \n it is applied after the shield is destroyed.",
 },
 SHIELD_PIERCE: {
   ko: "실드를 무시하고 체력에 직접 피해를 줌",
@@ -335,6 +337,10 @@ MS_UP: {
   ko: "이동속도 증가",
   en: "Increases movement speed",
 },
+MS_DOWN: {
+  ko: "자신의 이동속도가 감소함",
+  en: "Decreases own movement speed",
+},
 
 AS_UP: { ko: "공격속도 증가", en: "Increases attack speed" },
 AS_DOWN: {  ko: "상대 공격속도 감소",  en: "Reduces attack speed",},
@@ -344,8 +350,8 @@ AP_UP: {  ko: "주문력 증가",  en: "Increases ability power",},
 
 
 DMG_REDUCE: {
-  ko: "피해감소",
-  en: "Reduces incoming damage",
+  ko: "스킬이 유지되는 동안 \n 받는 피해가 감소.",
+  en: "Damage taken is reduced \n while the skill is active.",
 },
 DODGE: {
   ko: "평타를 무시함",
@@ -356,8 +362,8 @@ TENACITY: {
   en: "Reduces crowd control duration",
 },
 CRIT: {
-  ko: "치명타가 적용됨",
-  en: "Applies critical strikes",
+  ko: "일반 피해의 200% 피해.",
+  en: "Deals 200% of normal damage.",
 },
 EXECUTE: {
   ko: "체력이 일정 수치 이하일 때 즉시처치",
