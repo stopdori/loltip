@@ -54,8 +54,8 @@ const elise: ChampData = {
       W: ["BUFF_FORM"],
 
       E: { phases: [
-      { label: { ko: "줄 타기", en: "" }, tags: ["SKILL_RECAST", "UNTARGETABLE", "TOWER_DODGE"] },
-      { label: { ko: "줄 내려오기", en: "" }, tags: ["ST_CONDITIONAL", "BLINK", "WALL_HOP", "CANCELLABLE"] },
+      { label: { ko: "줄 타기", en: "Ascend" }, tags: ["SKILL_RECAST", "UNTARGETABLE", "TOWER_DODGE"] },
+      { label: { ko: "줄 내려오기", en: "Descend" }, tags: ["ST_CONDITIONAL", "BLINK", "WALL_HOP", "CANCELLABLE"] },
     ] },
     
       R: ["TRANSFORM"],
