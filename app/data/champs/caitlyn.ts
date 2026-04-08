@@ -24,12 +24,12 @@ const caitlyn: ChampData = {
     
     W: { phases: [
       { label: { ko: "덫", en: "TRAP" }, tags: ["TIMING_CAST", "TRAP", "MARK", "RECHARGE", "ROOT"] },
-      { label: { ko: "헤드샷", en: "Head Shot"  }, tags: ["DMG_PHYSICAL", "PROJECTILE", "ON_HIT"] },
+      { label: { ko: "헤드샷", en: "Head Shot"  }, tags: ["AA_RESET", "DMG_PHYSICAL", "PROJECTILE", "ON_HIT"] },
     ] },
 
     E: { phases: [
       { label: { ko: "투망", en: "Neat" }, tags: ["DMG_MAGIC", "PROJECTILE", "MARK", "DASH", "SLOW"] },
-      { label: { ko: "헤드샷", en: "Head Shot"  }, tags: ["DMG_PHYSICAL", "PROJECTILE", "ON_HIT"] },
+      { label: { ko: "헤드샷", en: "Head Shot"  }, tags: ["AA_RESET", "DMG_PHYSICAL", "PROJECTILE", "ON_HIT"] },
     ] },
 
     R: { phases: [

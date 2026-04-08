@@ -40,7 +40,7 @@ const aatrox: ChampData = {
 
     E: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS"] },
-      { label: { ko: "액티브", en: "Active" }, tags: ["DASH"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["AA_RESET", "DASH"] },
     ] },
     
     R: ["BUFF_FORM"],

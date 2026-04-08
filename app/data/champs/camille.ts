@@ -22,8 +22,9 @@ const camille: ChampData = {
     P: [],
     
     Q: { phases: [
-      { label: { ko: "Q1", en: "Q1"  }, tags: ["DMG_PHYSICAL", "ON_HIT", "SKILL_RECAST"] },
-      { label: { ko: "Q2", en: "Q2"  }, tags: ["DMG_PHYSICAL", "DMG_TRUE", "TIMING_CAST", "ON_HIT"] },
+      { label: { ko: "Q1", en: "Q1"  }, tags: ["AA_RESET", "DMG_PHYSICAL", "ON_HIT", "SKILL_RECAST"] },
+      { label: { ko: "Q2", en: "Q2"  }, tags: ["AA_RESET", "DMG_PHYSICAL", "ON_HIT"] },
+      { label: { ko: "강화 Q2", en: "Empowered Q2"  }, tags: ["ST_CONDITIONAL", "AA_RESET", "DMG_PHYSICAL", "DMG_TRUE", "ON_HIT"] },
     ] },
 
     W: ["DMG_PHYSICAL", "AOE", "SEPARATOR", "ST_CONDITIONAL", "SLOW"],
