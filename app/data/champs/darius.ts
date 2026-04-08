@@ -5,7 +5,7 @@ const darius: ChampData = {
   skills: {
     P: ["AD_UP"],
     Q: ["Q_FLASH", "SEPARATOR", "ST_CONDITIONAL", "HEAL"],
-    W: ["AA_RESET", "SLOW"],
+    W: ["AA_RESET", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
     E: ["E_FLASH", "GRAB", "SLOW", "AR_PEN"],
     R: ["R_FLASH"],
   },
@@ -29,7 +29,7 @@ const darius: ChampData = {
       { label: { ko: "도끼 날", en: "Blade"  }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DEBUFF_STACK", "HEAL"] },
     ] },
     
-    W: ["AA_RESET", "DMG_PHYSICAL", "ON_HIT", "DEBUFF_STACK"],
+    W: ["AA_RESET", "DMG_PHYSICAL", "ON_HIT", "DEBUFF_STACK", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
     E: ["PASSIVE_BONUS", "TIMING_CAST"],
     R: ["DMG_TRUE", "TIMING_CAST", "TARGETED", "BUFF_STACK", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST"],
   },
@@ -51,7 +51,7 @@ const darius: ChampData = {
         ko: [
           "P의 [[DEBUFF]]는 상대를 [[BA]], [[Q]]끝, [[W]], [[R]]로 때리면 중첩. \n 5중첩이 되면 다리에게 [[BUFF]]가 생기고 [[AD_UP]]. \n [[BUFF]]가 있을때 [[DEBUFF]]를 1개라도 걸면 5중첩으로 적용." ,
           "Q는 끝에 맞혀야 큰 데미지와 [[DEBUFF]], [[HEAL]]. \n CC에 걸려도 시전 유지.",
-          "W는 [[AA_RESET]]가능. \n [[SLOW]]는 90% 거의 [[ROOT]]급. \n W로 처치하면 [[MANA_RESTORE]]과 쿨감 50%.",
+          "W는 [[AA_RESET]]가능. \n [[SLOW]]는 90% 거의 [[ROOT]]급. \n W로 처치하면 [[MANA_RESTORE]]과 [[CDR]] 50%.",
           "E는 부채꼴 [[GRAB]]과 [[SLOW]]. \n E의 [[PASSIVE_BONUS]]에 [[AR_PEN]].",
           "R은 [[DMG_TRUE]]. \n 걸려있던 [[DEBUFF]] 개수에 따라 추가 피해. \n R로 대상을 처치하면 20초간 [[SKILL_RECAST]] 가능. \n 3렙 궁이라면 완전 초기화에 마나도 들지않음.",
         ],
