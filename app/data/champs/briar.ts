@@ -22,9 +22,9 @@ const briar: ChampData = {
     P: ["DMG_PHYSICAL", "DOT", "DEBUFF_STACK"],
     Q: ["DMG_PHYSICAL", "ON_HIT", "DASH", "DEBUFF_STACK"],
     W: { phases: [
-      { label: { ko: "W", en: "W" }, tags: ["BUFF_FORM", "DMG_PHYSICAL", "ON_HIT", "DEBUFF_STACK", "DASH", "HOMING", "SKILL_RECAST"] },
+      { label: { ko: "W", en: "W" }, tags: ["BUFF_FORM", "AA_RESET", "DMG_PHYSICAL", "ON_HIT", "DEBUFF_STACK", "DASH", "HOMING", "SKILL_RECAST"] },
       { label: { ko: "범위피해", en: "AOE" }, tags: ["DMG_PHYSICAL", "AOE"] },
-      { label: { ko: "W2", en: "W2" }, tags: ["DMG_PHYSICAL", "ON_HIT", "DEBUFF_STACK"] },
+      { label: { ko: "W2", en: "W2" }, tags: ["AA_RESET", "DMG_PHYSICAL", "ON_HIT", "DEBUFF_STACK"] },
     ] },
    
     E: ["DMG_MAGIC", "SKILL_CHARGED", "CAST_COMMIT", "AOE", "KNOCKBACK", "DEBUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "STUN"],

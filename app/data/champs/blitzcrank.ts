@@ -22,7 +22,7 @@ const blitzcrank: ChampData = {
     P: [],
     Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "GRAB"],
     W: ["BUFF_FORM", "MS_UP", "AS_UP", "SEPARATOR", "ST_DELAYED", "MS_DOWN"],
-    E: ["DMG_PHYSICAL", "ON_HIT"],
+    E: ["AA_RESET", "DMG_PHYSICAL", "ON_HIT"],
     R: { phases: [
       { label: { ko: "낙뢰", en: "Lightning Strike" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "SINGLE"] },
       { label: { ko: "R 액티브", en: "R Active"  }, tags: ["DMG_MAGIC", "TIMING_CAST", "AOE", "SILENCE"] },

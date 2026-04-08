@@ -21,7 +21,7 @@ const belveth: ChampData = {
   gimmick: {
     P: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["STACKING", "AS_UP"] },
-      { label: { ko: "버프 스택", en: "Buff Stacks" }, tags: ["ST_CONDITIONAL", "AS_UP", "GHOSTING"] },
+      { label: { ko: "버프스택", en: "Buff Stacks" }, tags: ["ST_CONDITIONAL", "AS_UP", "GHOSTING"] },
     ] },
 
     Q: ["DMG_PHYSICAL", "DASH", "AOE", "RECHARGE", "SEPARATOR", "ST_CONDITIONAL", "WALL_HOP"],

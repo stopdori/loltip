@@ -21,7 +21,7 @@ const darius: ChampData = {
   gimmick: {
     P: { phases: [
       { label: { ko: "출혈", en: "Bleeding" }, tags: ["DMG_PHYSICAL", "DOT", "DEBUFF_STACK"] },
-      { label: { ko: "5 스택", en: "5 Stacks"  }, tags: ["BUFF", "AD_UP"] },
+      { label: { ko: "5스택", en: "5 Stacks"  }, tags: ["BUFF", "AD_UP"] },
     ] },
 
     Q: { phases: [
@@ -29,7 +29,7 @@ const darius: ChampData = {
       { label: { ko: "도끼 날", en: "Blade"  }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DEBUFF_STACK", "HEAL"] },
     ] },
     
-    W: ["DMG_PHYSICAL", "ON_HIT", "DEBUFF_STACK"],
+    W: ["AA_RESET", "DMG_PHYSICAL", "ON_HIT", "DEBUFF_STACK"],
     E: ["PASSIVE_BONUS", "TIMING_CAST"],
     R: ["DMG_TRUE", "TIMING_CAST", "TARGETED", "BUFF_STACK", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST"],
   },

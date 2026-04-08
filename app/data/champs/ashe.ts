@@ -22,7 +22,7 @@ const ashe: ChampData = {
     P: ["SLOW"],
     Q: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["BUFF_STACK"] },
-      { label: { ko: "액티브", en: "Active" }, tags: ["ST_CONDITIONAL", "STACK_CONSUME", "DMG_PHYSICAL", "PROJECTILE", "ON_HIT", "SEPARATOR", "ST_CONDITIONAL", "SLOW"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["ST_CONDITIONAL", "AA_RESET", "STACK_CONSUME", "DMG_PHYSICAL", "PROJECTILE", "ON_HIT", "SEPARATOR", "ST_CONDITIONAL", "SLOW"] },
     ] },
    
     W: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "VOLLEY", "SEPARATOR", "ST_CONDITIONAL", "SLOW"],
