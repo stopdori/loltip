@@ -140,6 +140,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CC_CLEANSE: "zinc",
   UNSTOPPABLE: "zinc",
   BUFF_FORM: "indigo",
+  TRANSFORM: "indigo",
 
   // 💜 fuchsia (치감/그라운드/TP류)
   GW: "fuchsia",

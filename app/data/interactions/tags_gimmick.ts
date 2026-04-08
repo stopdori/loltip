@@ -171,7 +171,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   PIERCE_ONCE:   { ko: "1회 관통",   en: "Pierce Once"  },
   AOE:     { ko: "범위",   en: "Area of Effect"  },
   AURA:    { ko: "오라",   en: "Aura"            },
-  GLOBAL:  { ko: "전체맵", en: "Global"          },
+  GLOBAL:  { ko: "맵전체", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
   DROP:          { ko: "드롭",    en: "Drops"    },
   X2:            { ko: "x2",       en: "x2"      },
