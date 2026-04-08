@@ -4,7 +4,7 @@ const ezreal: ChampData = {
   id: "ezreal",
   skills: {
     P: ["AS_UP"],
-    Q: ["Q_FLASH"],
+    Q: ["Q_FLASH", "SEPARATOR", "ST_CONDITIONAL", "CDR", "Q", "W", "E", "R"],
     W: ["W_FLASH", "SEPARATOR", "ST_CONDITIONAL", "MANA_RESTORE"],
     E: ["E_FLASH", "BLINK", "WALL_HOP", "CC_BUFFER"],
     R: [],
@@ -20,7 +20,7 @@ const ezreal: ChampData = {
 
   gimmick: {
     P: ["PASSIVE_INTERACT", "Q", "W", "E", "R"],
-    Q: ["DMG_PHYSICAL", "PROJECTILE", "ON_HIT", "BUFF_STACK"],
+    Q: ["DMG_PHYSICAL", "PROJECTILE", "ON_HIT", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "CDR", "Q", "W", "E", "R"],
 
     W: { phases: [
       { label: { ko: "W",     en: "W" }, tags: ["TIMING_CAST", "PROJECTILE", "SINGLE", "MARK", "BUFF_STACK"] },
@@ -45,7 +45,7 @@ const ezreal: ChampData = {
 
         ko: [
           "P는 스킬이 적중하면 [[BUFF_STACK]]. \n 스택당 [[AS_UP]] 최대 5스택.",
-          "Q는 적중하면 쿨감 1.5초 (궁극기 포함).",
+          "Q는 적중하면 [[CDR]] 1.5초 (궁극기 포함).",
           "W는 [[MARK]]을 걸고 [[BA]], 스킬로 발동. \n 발동시킨 스킬의 마나 + 60 [[MANA_RESTORE]]. \n [[BA]]로 발동하면 [[MANA_RESTORE]] 없음.",
           "E는 [[BLINK]]하고 [[PROJECTILE]] 발사. \n [[CC_BUFFER]]로 일부 CC 무시 가능.",
           "R은 기모아서 [[GLOBAL]] 투사체 발사. \n 시전을 취소할 수 없고 CC에도 끊기지 않음.",

@@ -41,7 +41,7 @@ const cassiopeia: ChampData = {
         ko: [
           "P는 [[MS_UP]] 효과를 증가시킴.",
           "Q는 상대에게 독 [[DEBUFF]]를 검. \n 챔피언 적중 시 [[MS_UP]].",
-          "W는 독 [[ZONE]]을 깔고 그 위의 대상에게 \n 독 [[DEBUFF]]와 [[GROUNDED]]  [[DEBUFF]]를 적용. \n 벗어나면 사라짐. \n [[GROUNDED]]는 [[MOBILITY]]스킬을 사용 할 수 없게 만듬.", "W에 관련된 판정은 챔피언별로 하단 박스에 정리.",
+          "W는 독 [[ZONE]]을 깔고 그 위의 대상에게 \n 독 [[DEBUFF]]와 [[GROUNDED]]  [[DEBUFF]]를 적용. \n 벗어나면 사라짐. \n [[GROUNDED]]는 [[MOBILITY]]스킬을 사용 할 수 없게 만듬.", "W의 디테일한 판정은 챔피언별로 하단 박스에 정리.",
           "E는 독 [[DEBUFF]]에 걸린 대상에게 추가 데미지와 [[HEAL]].",
           "R은 광역 데미지와 [[SLOW]]. \n 카시를 바라본 대상은 [[STUN]]."
         ],

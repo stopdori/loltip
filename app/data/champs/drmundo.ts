@@ -3,7 +3,7 @@ import type { ChampData } from "../interactions/types";
 const drmundo: ChampData = {
   id: "drmundo",
   skills: {
-    P: ["CC_IMMUNE", "SEPARATOR", "ST_CONDITIONAL", "HEAL"],
+    P: ["CC_IMMUNE", "SEPARATOR", "ST_CONDITIONAL", "HEAL", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
     Q: ["SLOW", "SEPARATOR", "ST_CONDITIONAL", "HEAL"],
     W: ["HEAL"],
     E: ["AA_RESET"],
@@ -19,7 +19,7 @@ const drmundo: ChampData = {
   },
 
   gimmick: {
-    P: ["ST_CONDITIONAL", "CC_IMMUNE", "SEPARATOR", "ST_CONDITIONAL", "DROP"],
+    P: ["ST_CONDITIONAL", "CC_IMMUNE", "SEPARATOR", "ST_CONDITIONAL", "DROP", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
     Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SLOW"],
 
     W: { phases: [
@@ -46,7 +46,7 @@ const drmundo: ChampData = {
       note1: {
 
         ko: [
-          "P의 [[CC_IMMUNE]]은 쿨타임마다 1번 적용. \n 4%의 체력이 깎이고 바닥에 화학통을 떨어뜨림. \n 주우면 4% 돌려받고 + [[HEAL]]에 P 쿨감. \n 적이 주우면 파괴.",
+          "P의 [[CC_IMMUNE]]은 쿨타임마다 1번 적용. \n 4%의 체력이 깎이고 바닥에 화학통을 떨어뜨림. \n 주우면 4% 돌려받고 + [[HEAL]]에 P [[CDR]]. \n 적이 주우면 파괴.",
           "Q는 체력을 소모해서 사용. \n 적 챔피언에게 [[SLOW]]와 소모량만큼 [[HEAL]]. \n 비 챔피언은 반절만큼 [[HEAL]].",
           "W는 3초간 지속. \n 처음 0.75초에 맞은 피해의 90% 정도를 \n 회색 체력으로 저장. \n 나머지 2.25초 동안은 25%로 저장. \n \n [[SKILL_RECAST]] 또는 3초 뒤에 폭발. \n 적 챔피언이 맞으면 회색체력의 100%를 [[HEAL]]. \n 맞지 않으면 50%만큼 [[HEAL]].",
           "E의 [[PASSIVE_BONUS]]는 체력비례 [[AD_UP]].",
