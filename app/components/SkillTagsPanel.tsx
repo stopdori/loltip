@@ -608,8 +608,9 @@ const formLabel = champId && hasForms(champId) ? CHAMP_FORMS[champId] : null;
 return (
   <div className="space-y-2">
     {/* 🔹 탭 + 폼 토글 영역 */}
-<div className="h-10 flex items-center justify-between gap-2">
-  {/* 왼쪽: 스킬 / 기믹 */}
+<div className="flex flex-col gap-2.5">
+  {/* 1줄: 스킬 / 시야 / 기믹 */}
+  <div className="w-fit">
   <ToggleGroup>
     <button
       type="button"
@@ -633,9 +634,10 @@ return (
       {lang === "ko" ? "기믹" : "Gimmick"}
     </button>
   </ToggleGroup>
+  </div>
 
-
-  {/* 오른쪽: 폼 토글 */}
+  {/* 2줄: 폼 토글 */}
+  <div className="w-fit">
   <ToggleGroup>
     {formLabel ? (
       <>
@@ -672,6 +674,7 @@ return (
       </>
     )}
   </ToggleGroup>
+  </div>
 </div>
 
 
