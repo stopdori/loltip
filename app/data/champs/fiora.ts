@@ -26,12 +26,12 @@ const fiora: ChampData = {
 
     E: { phases: [
       { label: { ko: "E", en: "E" }, tags: ["BUFF_STACK", "AA_RESET"] },
-      { label: { ko: "1타", en: "" }, tags: ["STACK_CONSUME", "DMG_PHYSICAL", "ON_HIT", "SLOW", "BUFF_STACK"] },
-      { label: { ko: "2타", en: "" }, tags: ["STACK_CONSUME", "DMG_PHYSICAL", "ON_HIT", "CRIT"] },
+      { label: { ko: "1타", en: "1st Hit" }, tags: ["STACK_CONSUME", "DMG_PHYSICAL", "ON_HIT", "SLOW", "BUFF_STACK"] },
+      { label: { ko: "2타", en: "2nd Hit" }, tags: ["STACK_CONSUME", "DMG_PHYSICAL", "ON_HIT", "CRIT"] },
     ] },
 
     R: { phases: [
-      { label: { ko: "R 시전", en: "R Active" }, tags: ["DMG_TRUE", "TARGETED", "ON_HIT", "MARK"] },
+      { label: { ko: "R 시전", en: "R Active" }, tags: ["TARGETED","DEBUFF_STACK", "X4", "SEPARATOR", "ST_CONDITIONAL", "DMG_TRUE", "ON_HIT"] },
       { label: { ko: "장판", en: "Zone" }, tags: ["ZONE"] },
     ] },
   },

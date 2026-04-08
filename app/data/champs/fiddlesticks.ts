@@ -5,8 +5,8 @@ const fiddlesticks: ChampData = {
   skills: {
     P: ["BUFF_FORM", "SUMMON"],
     Q: { phases: [
-      { label: { ko: "패시브", en: "" }, tags: ["PASSIVE_BONUS", "FEAR"] },
-      { label: { ko: "액티브", en: "" }, tags: ["Q_FLASH", "SEPARATOR", "ST_CONDITIONAL", "FEAR"] },
+      { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS", "FEAR"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["Q_FLASH", "SEPARATOR", "ST_CONDITIONAL", "FEAR"] },
     ] },
     W: ["TETHER", "LIFESTEAL", "SEPARATOR", "ST_CONDITIONAL", "CDR", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
     E: ["E_FLASH", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "SILENCE", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
@@ -24,8 +24,8 @@ const fiddlesticks: ChampData = {
   gimmick: {
     P: ["SKILL_VECTOR", "SUMMON"],
     Q: { phases: [
-      { label: { ko: "패시브", en: "" }, tags: ["PASSIVE_BONUS", "FEAR"] },
-      { label: { ko: "액티브", en: "" }, tags: ["DMG_MAGIC", "TARGETED", "PROJECTILE", "SINGLE", "SEPARATOR", "ST_CONDITIONAL", "FEAR"] },
+      { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS", "FEAR"] },
+      { label: { ko: "액티브", en: "Active" }, tags: ["DMG_MAGIC", "TARGETED", "PROJECTILE", "SINGLE", "SEPARATOR", "ST_CONDITIONAL", "FEAR"] },
     ] },
     
     W: ["DMG_MAGIC", "SKILL_CHANNEL", "SWARM", "DOT", "CANCELLABLE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "CDR", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
