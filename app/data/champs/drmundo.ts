@@ -7,7 +7,7 @@ const drmundo: ChampData = {
     Q: ["SLOW", "SEPARATOR", "ST_CONDITIONAL", "HEAL"],
     W: ["HEAL"],
     E: ["AA_RESET"],
-    R: ["HEAL", "MS_UP", "BUFF_FORM"],
+    R: ["HEAL", "HP_REGEN", "MS_UP", "BUFF_FORM"],
   },
 
   vision: {
@@ -51,7 +51,7 @@ const drmundo: ChampData = {
           "W는 3초간 지속. \n 처음 0.75초에 맞은 피해의 90% 정도를 \n 회색 체력으로 저장. \n 나머지 2.25초 동안은 25%로 저장. \n \n [[SKILL_RECAST]] 또는 3초 뒤에 폭발. \n 적 챔피언이 맞으면 회색체력의 100%를 [[HEAL]]. \n 맞지 않으면 50%만큼 [[HEAL]].",
           "E의 [[PASSIVE_BONUS]]는 체력비례 [[AD_UP]].",
           "E는 [[AA_RESET]] 가능. \n 문도의 체력이 낮을수록 위력 증가. \n 대상이 처치되면 뒤로 밀려나면서 동일한 피해를 줌. \n 챔피언도 밀려남.",
-          "R은 잃은체력의 20% 정도를 [[MAX_HP_UP]]로 획득. \n + 10초에 걸쳐 최대체력 비례 [[HEAL]]. \n \n 3렙궁은 범위내 적 챔피언 하나당 5%씩 효과 증가.",
+          "R은 잃은체력의 20% 정도를 [[MAX_HP_UP]]로 획득. \n + 10초에 걸쳐 최대체력 비례 [[HP_REGEN]]. \n \n 3렙궁은 범위내 적 챔피언 하나당 5%씩 효과 증가.",
         ],
 
         en: [

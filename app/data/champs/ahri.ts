@@ -46,9 +46,6 @@ const ahri: ChampData = {
           "W는 3초이내 공격 대상에게 날아감. \n",
           "E의 [[CHARM]]은 [[DASH]] 계열을 막기 좋음. \n [[E_FLASH]]이 정말 좋음.",
           "R은 [[DASH]] 3번 가능. \n 3초 안에 킬 관여 시 +1회 \n 지속시간 15초, 킬관여 시 10초",
-          "W, R의 투사체는 대상의 시야가 있어야 날아감.",
-
-
           ],
         en: [
           "P's [[BUFF_STACK]] triggers [[HEAL]] when full. \n 1 stack per kill, 18 stacks on kill participation within 3s.",
@@ -62,7 +59,9 @@ const ahri: ChampData = {
 
       note2: {
         ko: [
-        "W는 1개 데미지가 제일 쌔고 \n 2~3개는 감소한 피해로 들어감. \n 만약, 각각의 대상에게 1개씩만 날아가면 감소없는 피해로 들어감. \n 만약 최근 타겟이 없을 때 W를 쓰면 자기 맘대로 날아감. (챔피언은 우선 1개이상.)", "R을 사용하면 R 아이콘에 노란색 테두리로 \n 지속시간 15초가 생김. \n 이 지속시간 동안 킬 관여 시 R 사용 가능 횟수 +1 \n 동시에 지속시간 다시 10초로 증가 \n 횟수를 다 사용해도 지속시간은 끝나지 않음."
+        "W, R의 투사체는 대상의 시야가 있어야 날아감.",
+        "W는 1개 데미지가 제일 쌔고 \n 2~3개는 감소한 피해로 들어감. \n 만약, 각각의 대상에게 1개씩만 날아가면 \n 감소없는 피해로 들어감. \n 만약 최근 타겟이 없을 때 W를 쓰면 \n 자기 맘대로 날아감. (챔피언은 우선 1개이상.)",
+        "R을 사용하면 R 아이콘에 노란색 테두리로 \n 지속시간 15초가 생김. \n 이 지속시간 동안 킬 관여 시 R 사용 가능 횟수 +1 \n 동시에 지속시간 다시 10초로 증가 \n 횟수를 다 사용해도 지속시간은 끝나지 않음."
       ],
         en: [
           "W's first hit deals full damage; additional hits to the same target deal reduced damage. \n If only 1 orb flies to each target, it deals full damage. \n If no recent target exists, W fires freely (prioritizes champions, at least 1 orb).",
