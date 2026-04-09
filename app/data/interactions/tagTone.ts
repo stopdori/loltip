@@ -170,7 +170,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SKILL_RECAST:  "indigo",
   RECHARGE:      "indigo",
   STACKING:      "indigo",
-  PROC:          "indigo",
+  PROC:          "white",
   DEBUFF_STACK:  "white",
   BUFF_STACK:    "white",
   STACK_CONSUME: "white",
