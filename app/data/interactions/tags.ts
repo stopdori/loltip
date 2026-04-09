@@ -112,7 +112,7 @@ export type TagId =
   | "FEAR"
   | "CANCEL"
   | "BERSERK"
-  | "NEARSIGHT"
+  | "NEAR_SIGHT"
   | "BLIND"
   | "POLYMORPH"
   | "UNSTOPPABLE"
@@ -182,7 +182,7 @@ STEALTH: { ko: "은신", en: "Stealth" },
 INVISIBILITY: { ko: "투명", en: "Invisibility" },
 CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
 
-NEARSIGHT: { ko: "시야감소", en: "Nearsight" },
+NEAR_SIGHT: { ko: "시야감소", en: "Nearsight" },
 BLIND: { ko: "실명", en: "Blind" },
 
 VISION: { ko: "시야", en: "Vision" },
@@ -666,7 +666,7 @@ BERSERK: {
   ko: "주변 유닛을 공격함(자신의 아군 우선)\n(클린즈 계열로 해제 가능)",
   en: "Attacks nearby units, prioritizing allies\n(can be cleansed)",
 },
-NEARSIGHT: {
+NEAR_SIGHT: {
   ko: "시야가 축소됨",
   en: "Reduces vision range",
 },

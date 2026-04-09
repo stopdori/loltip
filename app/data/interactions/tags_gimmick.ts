@@ -274,8 +274,8 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SWARM:   { ko: "스킬이 근처 적에게 나뉘어 각각 단일 적중", en: "Splits among nearby enemies,\n each hitting a single target"},
   VOLLEY:  { ko: "여러 투사체를 한번에 발사. \n 한개만 피해.", en: "Fires multiple projectiles at once. \n Only one projectile can hit each enemy." },
   VOLLEY_OVERLAP: {
-    ko: "여러 투사체가 발사되며 가까운 적에게 여러 발이 겹쳐 맞을 수 있음.\n두 번째 발부터는 감소된 피해가 적용됨.",
-    en: "Fires multiple projectiles that can overlap on close-range enemies.\nSubsequent hits deal reduced damage.",
+    ko: "여러 투사체가 발사되며 \n 가까운 적에게 여러 발이 겹쳐 맞을 수 있음.\n두 번째 발부터는 감소된 피해가 적용됨.",
+    en: "Fires multiple projectiles \n that can overlap on close-range enemies.\nSubsequent hits deal reduced damage.",
   },
   // 피해 종류
   DMG_PHYSICAL: { ko: "방어력에 의해 감소되는 피해", en: "Damage mitigated by armor" },

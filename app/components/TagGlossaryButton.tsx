@@ -232,7 +232,7 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
       lang === "ko" ? "시야 / 은신" : "Sight / Staelth",
       "[[VISION]]  [[REVEALED]]  [[TRUE_SIGHT]]",
       "[[STEALTH]]  [[CAMOUFLAGE]]  [[INVISIBILITY]]",
-      "[[NEARSIGHT]]  [[BLIND]]",
+      "[[NEAR_SIGHT]]  [[BLIND]]",
 
 
       "[[LEFT_END]]",
@@ -247,8 +247,8 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
         ? "기본 디버프  :  [[SLOW]] [[AS_DOWN]] [[AD_DOWN]]"
         : "Debuff  :  [[SLOW]] [[AS_DOWN]] [[AD_DOWN]]",
       lang === "ko"
-        ? "특수 디버프  :  [[NEARSIGHT]]  [[BLIND]]  [[GW]]" 
-        : "Special Debuff  :  [[NEARSIGHT]]  [[BLIND]]  [[GW]]",
+        ? "특수 디버프  :  [[NEAR_SIGHT]]  [[BLIND]]  [[GW]]" 
+        : "Special Debuff  :  [[NEAR_SIGHT]]  [[BLIND]]  [[GW]]",
     null,
     null,
     null,
