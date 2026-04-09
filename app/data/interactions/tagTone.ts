@@ -60,6 +60,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   PIERCE: "red",
   BERSERK: "red",
   LIFESTEAL: "lime",
+  HP_REGEN: "lime",
 
   MS_DOWN: "amber_dark",
 
@@ -71,6 +72,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ENERGY_RESTORE: "amber",
   SLOW_RESIST: "sky",
   SLOW_IMMUNE: "sky",
+  SLOW_CLEANSE: "sky",
   GHOSTING: "sky",
 
   // 🔵 sky_soft (예전 sky-000/15: 시야)
@@ -289,7 +291,7 @@ export const NOTE_TONE_CLASS: Record<Tone, string> = {
   amber_dark: "text-amber-300",
   amber_deep: "text-amber-700",
 
-  red: "text-red-400 font-extrabold",
+  red: "text-red-400",
 
   sky: "text-sky-300",
   sky_soft: "text-sky-300",

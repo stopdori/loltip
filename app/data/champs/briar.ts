@@ -48,11 +48,11 @@ const briar: ChampData = {
       note1: {
 
         ko: [
-          "브라이어는 기본 체력재생이 없고 \n 스킬 소모값은 현재체력 5%. \n 잃은 체력이 많을수록 [[LIFESTEAL]]량 엄청나게 증가.",
+          "브라이어는 기본 체젠이 없고 \n 스킬 소모값은 현재체력 5%. \n 잃은 체력이 많을수록 [[LIFESTEAL]]량 엄청나게 증가.",
           "P의 [[DEBUFF]]는 최대 5스택. \n [[BA]] 1개, Q 1개, E 1개, R2 1개  \n 출혈 피해도 [[LIFESTEAL]] 함.",
           "Q는 [[TARGETED]] 스킬. [[STUN]]과 [[AR_MR_SHRED]]. \n Q는 [[DASH]]으로 [[WALL_HOP]] 가능.",
           "W는 [[DASH]]을 하고 광분가 됨. [[WALL_HOP]] 가능. \n 적 챔피언을 우선 타겟으로 자동공격. \n 광분 상태에서 W를 다시 사용하면 강하게 한방. \n Q로 타겟을 바꿀 수 있음. \n E로 광분상태를 빠져나올 수 있음.",
-          "E는 [[DMG_REDUCE]]와 최대체력 10% 이상을 [[HEAL]]. \n CC에 맞아도 시전을 멈추지 않음. \n E 맞은 적은 [[KNOCKBACK]]. \n [[STUN]]은 적이 벽에 부딪혀야 걸림.",
+          "E는 [[DMG_REDUCE]]와 최대체력 10% 이상을 [[HP_REGEN]]. \n CC에 맞아도 시전을 멈추지 않음. \n E 맞은 적은 [[KNOCKBACK]]. \n [[STUN]]은 적이 벽에 부딪혀야 걸림.",
           "R1을 시전하는 중에 [[CC_IMMUNE]]에 사거리가 정말 김. \n 맞은 적 챔피언 주변에 원이 생기고 \n [[UNSTOPPABLE]] [[DASH]]하여 광역피해와 광역 [[FEAR]]. \n [[FEAR]]는 대상만 제외. \n \n 도착하면 자동 W상태로 \n W 원래버프에 [[AR_MR_UP]], [[MS_UP]], [[LIFESTEAL]] 추가에 무제한 광분 \n 똑같이 E로 빠져나올 수 있음.",
         ],
 

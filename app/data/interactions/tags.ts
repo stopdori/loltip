@@ -56,6 +56,7 @@ export type TagId =
   | "CAMOUFLAGE"
   | "SLOW_RESIST"
   | "SLOW_IMMUNE"
+  | "SLOW_CLEANSE"  // 둔화해제
   | "GHOSTING"
   | "WINDSHIELD"
   | "PROTECTIVE_ZONE"
@@ -75,6 +76,7 @@ export type TagId =
   
   | "LIFESTEAL"
   | "HEAL"
+  | "HP_REGEN"       // 체력재생
   | "SHIELD"
   | "MAX_HP_UP" // 최대체력 증가
 
@@ -167,6 +169,7 @@ CC_CLEANSE: { ko: "CC해제", en: "Cleanse" },
 CC_IMMUNE: { ko: "CC면역", en: "CC Immune" },
 SLOW_RESIST: { ko: "둔화저항", en: "Slow Resist" },
 SLOW_IMMUNE: { ko: "둔화면역", en: "Slow Immune" },
+SLOW_CLEANSE: { ko: "둔화해제", en: "Slow Cleanse" },
 UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
 BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
 TRANSFORM: { ko: "폼 변환", en: "Transform" },
@@ -216,6 +219,7 @@ INTERCEPT_PROJECTILE: { ko: "투사체 차단", en: "Projectile Delete" },
  * 7) 회복 / 자원 회복
  * ========================= */
 HEAL: { ko: "회복", en: "Heal" },
+HP_REGEN: { ko: "체젠", en: "HP Regen" },
 SHIELD: { ko: "쉴드", en: "Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
 LIFESTEAL: { ko: "피흡", en: "Lifesteal" },
@@ -471,6 +475,10 @@ SLOW_IMMUNE: {
   ko: "둔화가 걸려도 무시함",
   en: "Ignores slow effects",
 },
+SLOW_CLEANSE: {
+  ko: "둔화 효과를 해제함",
+  en: "Removes slow effects",
+},
 GHOSTING: {
   ko: "유닛을 통과할 수 있게 됨",
   en: "Can move through units",
@@ -511,6 +519,10 @@ LIFESTEAL: {
 HEAL: {
   ko: "생명력 회복",
   en: "Restores health",
+},
+HP_REGEN: {
+  ko: "체력이 지속적으로 재생됨",
+  en: "Regenerates health over time",
 },
 SHIELD: {
   ko: "보호막",
