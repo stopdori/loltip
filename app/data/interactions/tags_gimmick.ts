@@ -218,7 +218,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   RANGE_UP:         { ko: "스킬 또는 공격의 사거리가 증가함", en: "Increases attack range" },
   SKILL_RECAST:     { ko: "쿨타임이 돌기 전에 스킬을 다시 사용할 수 있음", en: "The ability can be used again before its cooldown begins" },
   RECHARGE:         { ko: "스킬을 여러 개 충전해두고 사용할 수 있음\n최대 충전이 아니면 쿨타임이 돔.", en: "Multiple charges of the skill can be stored and used\nCooldown applies if not at maximum charges." },
-  STACKING:         { ko: "조건을 충족할 때마다 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced each time the conditions are met" },
+  STACKING:         { ko: "조건을 충족할 때마다 \n 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced \n each time the conditions are met" },
   PROC:             { ko: "상대 또는 자신에게 스택을 쌓고 \n N번째 적중 시 추가 효과가 발동됨", en: "Stacks build up on the target or yourself, \n and an additional effect is triggered on the $N$-th hit." },
   BUFF_STACK:       { ko: "자신에게 스택을 쌓아 추가 효과가 생김", en: "Applies stacks to self, granting additional effects" },
   DEBUFF_STACK:     { ko: "상대에게 스택을 쌓아 추가 효과가 생김", en: "Applies stacks to enemies, granting additional effects" },
@@ -281,7 +281,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DMG_PHYSICAL: { ko: "방어력에 의해 감소되는 피해", en: "Damage mitigated by armor" },
   DMG_MAGIC:    { ko: "마법 저항력에 의해 감소되는 피해", en: "Damage mitigated by magic resistance" },
   DMG_TRUE:     { ko: "저항력에 감소되지 않는 피해\n단, 실드와 무적에는 막힘", en: "Ignores resistances\nStill blocked by shields and invulnerability" },
-  DOT_DMG_TRUE: { ko: "시간에 걸쳐 지속적으로 입히는 고정 피해.", en: "True damage dealt continuously over time." },
+  DOT_DMG_TRUE: { ko: "시간에 걸쳐 지속적으로 입히는 \n 고정 피해.", en: "True damage dealt continuously over time." },
   DOT:          { ko: "일정 시간 동안 지속적으로 피해를 줌", en: "Deals damage repeatedly over a duration" },
   ON_HIT:       { ko: "기본 공격 적중 시 추가 피해가 발생함", en: "Deals bonus damage on basic attack hit" },
   // 시전 행동
