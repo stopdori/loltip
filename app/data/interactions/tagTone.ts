@@ -137,7 +137,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // ⚫ zinc (은신/시야제한/면역류)
   CAMOUFLAGE: "zinc",
   INVISIBILITY: "zinc",
-  NEARSIGHT: "zinc",
+  NEAR_SIGHT: "zinc",
   BLIND: "zinc",
   CC_IMMUNE: "zinc",
   CC_CLEANSE: "zinc",
