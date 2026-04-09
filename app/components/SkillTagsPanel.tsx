@@ -263,11 +263,15 @@ function ToggleGroup({ children }: { children: ReactNode }) {
 
 const toggleBtnBase = "px-2 py-1 rounded-lg text-[14px] font-bold transition";
 const toggleBtnOn = "bg-yellow-400 text-black";
+const toggleBtnOnForm = "bg-sky-500 text-black";
 const toggleBtnOff = "text-slate-200 hover:bg-slate-800/70";
 const toggleBtnDisabled = "bg-slate-800/30 text-slate-500 cursor-default";
 
 function toggleBtnClass(active: boolean) {
   return `${toggleBtnBase} ${active ? toggleBtnOn : toggleBtnOff}`;
+}
+function toggleBtnFormClass(active: boolean) {
+  return `${toggleBtnBase} ${active ? toggleBtnOnForm : toggleBtnOff}`;
 }
 
 
@@ -644,7 +648,7 @@ return (
         <button
           type="button"
           onClick={() => setForm("base")}
-          className={toggleBtnClass(form === "base")}
+          className={toggleBtnFormClass(form === "base")}
         >
           {formLabel.base[lang]}
         </button>
@@ -652,7 +656,7 @@ return (
         <button
           type="button"
           onClick={() => setForm("alt")}
-          className={toggleBtnClass(form === "alt")}
+          className={toggleBtnFormClass(form === "alt")}
         >
           {formLabel.alt[lang]}
         </button>
@@ -661,7 +665,7 @@ return (
           <button
             type="button"
             onClick={() => setForm("alt2")}
-            className={toggleBtnClass(form === "alt2")}
+            className={toggleBtnFormClass(form === "alt2")}
           >
             {formLabel.alt2[lang]}
           </button>
