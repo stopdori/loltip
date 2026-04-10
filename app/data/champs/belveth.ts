@@ -30,7 +30,7 @@ const belveth: ChampData = {
     R: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS", "DMG_TRUE", "PROC"] },
       { label: { ko: "공허 빨판상어 소환", en: "Summon Void Remora" }, tags: ["ST_CONDITIONAL", "SUMMON", "DMG_PHYSICAL", "ALLY_TP_OK"] },
-      { label: { ko: "액티브", en: "Active"  }, tags: ["ST_CONDITIONAL", "BUFF_FORM", "LOCKED", "AOE", "DMG_TRUE", "MOBILITY"] },
+      { label: { ko: "액티브", en: "Active"  }, tags: ["ST_CONDITIONAL", "BUFF_FORM", "CAST_COMMIT", "LOCKED", "AOE", "DMG_TRUE", "MOBILITY"] },
     ] },
   },
 
