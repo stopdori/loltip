@@ -10,8 +10,8 @@ type Props = {
 };
 
 const NOTICE = {
-  ko: ["상호작용 상시 업데이트 중", "데이터 오류 발견 시 문의 바람"],
-  en: ["Interaction updates in progress", "Please contact us if you find any data errors"],
+  ko: ["상호작용 상시 업데이트 중", "데이터 오류 발견 시 문의 바람", "대 AI 시대를 맞이해 잘못된 정보가 범람하고 있지만, 인간이 하나하나 실험해서 팩트만 정리해서 기록했습니다."],
+  en: ["Interaction updates in progress", "Please contact us if you find any data errors", "In an era of AI where misinformation is everywhere, every piece of information here has been personally tested and verified by humans — facts only."],
 };
 
 export default function NoticeButton({ lang, className, hidden, onOpenChange }: Props) {
