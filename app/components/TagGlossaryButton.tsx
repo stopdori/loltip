@@ -224,7 +224,7 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
         : "Special Buff  :  [[TENACITY]]  [[DODGE]]  [[DMG_REDUCE]]  [[INVULNERABLE]]  [[REVIVE]]", 
 
       "                  [[GHOSTING]]  [[SLOW_RESIST]]  [[SLOW_IMMUNE]]",
-      "                  [[CC_CLEANSE]]  [[CC_IMMUNE]]  [[UNSTOPPABLE]]  [[UNSTOPPABLE_CHANNEL]]  [[UNSTOPPABLE_CAST]]  [[CC_BUFFER]]",
+      "                  [[CC_CLEANSE]]  [[CC_IMMUNE]]  [[UNSTOPPABLE]]",
 
       null,
 
