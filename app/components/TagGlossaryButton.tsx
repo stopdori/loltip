@@ -3,6 +3,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { TAG_LABEL, TAG_DESC, type TagId } from "../data/interactions";
+import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
 import { toneOfTag, TONE_CLASS } from "../data/interactions/tagTone";
 
 function clamp(n: number, min: number, max: number) {
@@ -125,13 +126,25 @@ function renderWithTokens(text: string, lang: "ko" | "en") {
         const raw = part.match(/^\[\[(.+?)\]\]$/)?.[1];
         const token = raw?.trim() as TagId | undefined;
 
-        if (token && TAG_LABEL[token]) {
-          const tone = toneOfTag(token);
+        if (token && TAG_LABEL[token as TagId]) {
+          const tone = toneOfTag(token as TagId);
           return (
             <TagPill
               key={idx}
-              text={TAG_LABEL[token][lang]}
-              tip={TAG_DESC?.[token]?.[lang]}
+              text={TAG_LABEL[token as TagId][lang]}
+              tip={TAG_DESC?.[token as TagId]?.[lang]}
+              tone={tone}
+            />
+          );
+        }
+
+        if (token && GIMMICK_TAG_LABEL[token as GimmickTagId]) {
+          const tone = toneOfTag(token as GimmickTagId);
+          return (
+            <TagPill
+              key={idx}
+              text={GIMMICK_TAG_LABEL[token as GimmickTagId][lang]}
+              tip={GIMMICK_TAG_DESC?.[token as GimmickTagId]?.[lang]}
               tone={tone}
             />
           );
@@ -219,7 +232,7 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
       lang === "ko" ? "특수 기능" : "Special Technique",
       "[[AA_RESET]]  [[UNTARGETABLE]]  [[TOWER_DODGE]]",
       "[[SHIELD_BREAK]]  [[PIERCE]]  [[EXECUTE]]",
-      "[[WALL]]  [[WALL_HOP]]  [[ALLY_TP_OK]]",
+      "[[TERRAIN]]  [[WALL_HOP]]  [[ALLY_TP_OK]]",
 
       null,
       null,
@@ -281,8 +294,8 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
         : "Cleanseable  :  [[STUN]]  [[ROOT]]  [[SUSPENDING]]  [[SLEEP]]  [[FEAR]]  [[CHARM]]  [[TAUNT]]",
 
       lang === "ko"
-        ? "클린즈 불가능  :  [[KNOCKBACK]]  [[GRAB]]  [[AIRBORNE]]  [[SUPPRESS]]  [[WALL]]"
-        : "Uncleanseable  :  [[KNOCKBACK]]  [[GRAB]]  [[AIRBORNE]]  [[SUPPRESS]]  [[WALL]]",
+        ? "클린즈 불가능  :  [[KNOCKBACK]]  [[GRAB]]  [[AIRBORNE]]  [[SUPPRESS]]  [[TERRAIN]]"
+        : "Uncleanseable  :  [[KNOCKBACK]]  [[GRAB]]  [[AIRBORNE]]  [[SUPPRESS]]  [[TERRAIN]]",
 
       lang === "ko"
         ? "일반 CC  :  [[SLOW]]  [[SILENCE]]  [[TETHER]]  [[CANCEL]]"

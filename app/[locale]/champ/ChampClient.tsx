@@ -107,7 +107,7 @@ useEffect(() => {
   const diff = canCompare ? Math.abs(myUltCd! - enemyUltCd!) : null;
 
   const subtitle =
-    lang === "ko" ? "롤 챔피언 특징과 메커니즘 요약" : "Summary of LoL Champion Features and Mechanisms";
+    lang === "ko" ? "롤 챔피언 요약과 상호작용 매커니즘 정리" : "LoL Champion Overview & Interaction Mechanics Guide";
 
   const firstUltLabel = lang === "ko" ? "궁 주도권" : "ULT CD Lead";
 
