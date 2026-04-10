@@ -1,4 +1,3 @@
-import heimerdinger from "../champs/heimerdinger";
 import kaisa from "../champs/kaisa";
 import karma from "../champs/karma";
 import khazix from "../champs/khazix";
@@ -34,11 +33,6 @@ export const CHAMP_FORMS: Record<
     base: { ko: "미니", en: "Mini" },
     alt: { ko: "메가", en: "Mega" },
   },
-
-  heimerdinger: {
-    base: { ko: "기본", en: "Basic" },
-    alt: { ko: "강화", en: "R Enchanted" },
-    },
 
   kaisa: {
     base: { ko: "기본", en: "Basic" },

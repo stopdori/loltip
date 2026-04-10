@@ -61,7 +61,7 @@ const hwei: ChampData = {
       P: ["DMG_MAGIC", "PROC", "ZONE", "ST_DELAYED"],
       Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE", "DEBUFF_STACK"],
       W: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DEBUFF_STACK", "ST_DELAYED"],
-      E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "ZONE", "DOT", "DEBUFF_STACK", "ST_DELAYED"],
+      E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "ZONE", "DOT", "DEBUFF_STACK", "ST_DELAYED", "SLOW"],
       R: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE", "DEBUFF_STACK", "ST_DELAYED"],
     },
 
@@ -77,32 +77,71 @@ const hwei: ChampData = {
 
     alt2: {
       P: ["DMG_MAGIC", "ZONE", "PROC"],
-      Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "DEBUFF_STACK"],
+      Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "DEBUFF_STACK", "FEAR"],
+
       W:{ phases: [
       { label: { ko: "EW 장판", en: "EW Zone" }, tags: ["TIMING_CAST", "PROJECTILE", "ZONE", "ST_DELAYED"] },
-      { label: { ko: "EW 투사체", en: "EW Projectile" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "PROJECTILE", "HOMING", "SINGLE", "DEBUFF_STACK"] },
+      { label: { ko: "EW 투사체", en: "EW Projectile" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "PROJECTILE", "HOMING", "SINGLE", "DEBUFF_STACK", "ROOT"] },
     ] },
-      E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DEBUFF_STACK", "ST_DELAYED"],
+
+      E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DEBUFF_STACK", "ST_DELAYED", "AIRBORNE"],
       R: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE", "DEBUFF_STACK", "ST_DELAYED"],
     },
   },
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: {
+        ko: [
+          "Q 계열로 포킹을 하다 \n E 계열로 이동을 제한하고 \n R을 묻혀 광역피해.", "R을 맞히면 QE, EE로 최대한 P의 [[DEBUFF]]를 많이 터뜨려 \n [[AOE]] [[DMG_MAGIC]]를 많이 넣는게 좋음.",
+        ],
+        en: [
+          "Poke with Q skills, \n then limit movement with E skills \n and land R for area damage.",
+          "After landing R, use QE and EE to trigger as many P [[DEBUFF]] explosions as possible \n for maximum [[AOE]] [[DMG_MAGIC]].",
+        ] },
       note1: {
 
-        ko: [],
+        ko: [
+          "흐웨이는 Q, W, E를 눌러서 스킬을 준비. \n 이때 Q, W, E, R이 변경됨. R은 취소버튼. \n \n Q는 큰 피해를 주는 3개의 스킬 \n W는 아군에게 이로운 3개의 스킬 \n E는 CC 계열 3개의 스킬 \n \n 그래서 일반 R까지 총 10개의 스킬이 있음. \n \n",
 
-        en: []
+          "P는 스킬로 [[DEBUFF]]를 걸고 \n 스킬로 한 번 더 걸면 \n 발밑에 폭발이 일어나 [[AOE]] [[DMG_MAGIC]]. \n \n",
+
+          "Q는 빨강 데미지 계열 \n \n QQ 적 최대체력 비례 [[AOE]] [[DMG_MAGIC]]와 [[DEBUFF]]. \n \n QW [[AOE]] [[DMG_MAGIC]]와 [[DEBUFF]]. \n 고립, 이동불가 챔피언에 잃은체력 비례 데미지. \n \n QE [[ZONE]] [[DOT]] [[DMG_MAGIC]]와 [[DEBUFF]]와 [[SLOW]]. \n \n",
+
+          "W는 파랑 아군 [[BUFF]] 계열. \n \n WQ 아군 [[MS_UP]] [[ZONE]]. \n \n WW 지속적으로 차는 [[SHIELD]] [[ZONE]]. \n \n WE [[BUFF]]스택 3개 추가. \n 스킬과 [[BA]]마다 1개 소모. \n [[BUFF]] 하나당 [[MANA_RESTORE]]과 [[DMG_MAGIC]]. \n [[BA]]에는 [[DEBUFF]]도 추가. \n \n",
+
+          "E는 보라 CC 계열 \n \n EQ [[SINGLE]]대상 [[FEAR]] [[DEBUFF]] [[PROJECTILE]] 발사. \n \n EW [[ZONE]]을 깔고 잠시뒤에 \n [[ZONE]]이 사라지면서 [[AOE]]내의 적 챔피언에게 \n [[ROOT]] [[DEBUFF]] [[PROJECTILE]] 발사. \n [[PIERCE]] 안됨. 미니언에도 막힘. \n \n EE [[AOE]] [[AIRBORNE]]과 [[SLOW]]와 [[DEBUFF]]. \n \n ",
+
+          "R은 [[PROJECTILE]]를 발사. \n 적 챔피언이 맞으면 대상 주변에 [[AURA]]를 생성. \n [[AURA]]는 [[DOT]] [[DMG_MAGIC]]와 중첩되는 [[SLOW]]. \n [[DEBUFF]]는 1번. \n 시간이 지나면 [[AURA]]가 폭발하여 광역 [[DMG_MAGIC]].",
+        ],
+
+        en: [
+          "Hwei prepares a skill by pressing Q, W, or E. \n This changes Q, W, E, and R — R becomes a cancel button. \n \n Q: 3 high-damage skills \n W: 3 ally utility skills \n E: 3 CC skills \n \n Including the base R, Hwei has 10 skills total. \n \n",
+
+          "P: Applying [[DEBUFF]] with a skill, \n then applying it again \n triggers an explosion at the target's feet for [[AOE]] [[DMG_MAGIC]]. \n \n",
+
+          "Q — Red damage skills. \n \n QQ: [[AOE]] [[DMG_MAGIC]] and [[DEBUFF]] scaling with enemy max HP. \n \n QW: [[AOE]] [[DMG_MAGIC]] and [[DEBUFF]]. \n Bonus damage scaling with missing HP against isolated or immobilized champions. \n \n QE: [[ZONE]] [[DOT]] [[DMG_MAGIC]] with [[DEBUFF]] and [[SLOW]]. \n \n",
+
+          "W — Blue ally [[BUFF]] skills. \n \n WQ: [[ZONE]] that grants ally [[MS_UP]]. \n \n WW: [[ZONE]] that continuously regenerates a [[SHIELD]]. \n \n WE: Adds 3 [[BUFF]] stacks. \n Each skill or [[BA]] consumes 1 stack. \n Each stack provides [[MANA_RESTORE]] and [[DMG_MAGIC]]. \n [[BA]]s also apply [[DEBUFF]]. \n \n",
+
+          "E — Purple CC skills. \n \n EQ: Fires a [[SINGLE]]-target [[PROJECTILE]] applying [[FEAR]] and [[DEBUFF]]. \n \n EW: Places a [[ZONE]], then after a delay the zone collapses \n and fires a [[ROOT]] [[DEBUFF]] [[PROJECTILE]] at enemy champions inside. \n Cannot [[PIERCE]] — blocked by minions. \n \n EE: [[AOE]] [[AIRBORNE]], [[SLOW]], and [[DEBUFF]]. \n \n",
+
+          "R: Fires a [[PROJECTILE]]. \n Hitting an enemy champion creates an [[AURA]] around them. \n The [[AURA]] deals [[DOT]] [[DMG_MAGIC]] and stacking [[SLOW]]. \n Applies [[DEBUFF]] once. \n After a delay, the [[AURA]] explodes for [[AOE]] [[DMG_MAGIC]].",
+        ]
 
       },
 
       note2: {
         ko: [
-        "흐웨이 스킬은 색상별로 외우면 좋음", "P는 스킬 한대 맞히면 스택이 쌓이고 다른스킬로 한대 더 맞히면 발동.", "P스택이 쌓이는 스킬\nQQ, QW, QE, WE(평타), EQ, EW, EE, R(범위에 닿으면)", "Q, W, E를 한번 누르고 R을 누르면 취소할 수 있음.", "귀환중에 Q, W, E를 한번 눌러도, 귀환이 끊기지 않음.", "Q스킬 (빨강 - 딜)\nQW는 CC걸린 대상 또는 고립된 대상에게 추가데미지를 줌", "W스킬 (파랑 - 유틸)\nWW은 장판위에 서 있으면 쉴드가 지속적으로 차오름.\nWE는 이미 시전한 스킬에도 추가될 수 있음.", "E스킬 (보라 - CC)\nEW는 날아가서 펼쳐지는데 시간이 걸림\n펼처지고도 범위내에 상대 챔피언이 있다면\n상대를 따라가는 유도투사체를 발사함\n투사체는 다른대상에게 막힐 수 있음\n(미니언 ,정글몹, 등등 포함)"
+        "WW [[SHIELD]]는 아군에게 효과 15% 감소",
+        "P의 [[DEBUFF]]가 쌓이는 스킬\nQQ, QW, QE, WE([[BA]]) \n EQ, EW, EE, R ([[AURA]] 범위에 닿으면)",
+        "귀환 중에 Q, W, E로 준비를 해도 \n 귀환이 끊기지 않음.",
       ],
-        en: ["Hwei's skills are easiest to memorize by color", "Q skills (red — damage):\nQW deals bonus damage to isolated or CC'd targets", "W skills (blue — utility)", "E skills (purple — CC):\nEW travels and expands after a delay.\nIf an enemy champion is within range when it expands, it launches a homing projectile.\nThe projectile can be blocked by other units (minions, jungle monsters, etc.)"]
+        en: [
+          "WW [[SHIELD]] is 15% less effective on allies.",
+          "Skills that apply P's [[DEBUFF]]:\nQQ, QW, QE, WE ([[BA]]) \n EQ, EW, EE, R (on contact with the [[AURA]])",
+          "Preparing a skill with Q, W, or E during recall \n does not cancel the recall.",
+        ]
         },
     },
     vision: { ko: [], en: [] },
