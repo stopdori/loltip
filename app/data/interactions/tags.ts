@@ -21,6 +21,7 @@ export type TagId =
   | "AS_UP"          // 공속 증가
   | "AS_DOWN"
   | "CDR"            // 쿨감
+  | "CDR_RESET"      // 쿨초기화
   | "AD_UP"          // 공격력 증가
   | "AD_DOWN"       // 공격력 감소
   | "AP_UP"
@@ -135,6 +136,7 @@ MS_DOWN: { ko: "이속↓", en: "MS ↓" },
 AS_UP: { ko: "공속↑", en: "AS ↑" },
 AS_DOWN: { ko: "공속↓", en: "AS ↓" },
 CDR: { ko: "쿨감", en: "CDR" },
+CDR_RESET: { ko: "쿨초", en: "CDR" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
@@ -354,6 +356,10 @@ AS_UP: { ko: "공격속도 증가", en: "Increases attack speed" },
 CDR: {
   ko: "쿨타임 감소",
   en: "Reduces cooldown",
+},
+CDR_RESET: {
+  ko: "쿨타임이 초기화됨",
+  en: "Resets cooldown",
 },
 AS_DOWN: {  ko: "상대 공격속도 감소",  en: "Reduces attack speed",},
 AD_UP: { ko: "공격력 증가", en: "Increases attack damage" },
