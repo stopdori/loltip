@@ -72,7 +72,7 @@ const graves: ChampData = {
 
       note2: {
         ko: [
-        "그브 [[BA]]의 치명타는 일반 치명타와 다르게 \n 1발에 6개 [[PROJECTILE]]와 50% 추가데미지.", "E의 버프는 수정초, 꿀열매, 빨콩 공격해도 유지.", "두꺼운벽에 붙어서 평E평하면 평캔 엄청빠름"
+        "그브 [[BA]]의 치명타는 일반 치명타와 다르게 \n 1발에 6개 [[PROJECTILE]]와 50% 추가데미지.", "E의 버프는 수정초, 꿀열매, 솔방울탄을 공격해도 유지.", "두꺼운벽에 붙어서 평E평하면 평캔 엄청빠름"
       ],
         en: ["Graves's critical [[BA]] fires 6 [[PROJECTILE]]s per shot with 50% bonus damage, unlike a normal crit.", "E's buff is maintained when attacking Honeyfruit, Blast Cones, and Scryer's Bloom.", "Hugging a thick wall and using AA-E-AA creates extremely fast AA cancels."]
         },
