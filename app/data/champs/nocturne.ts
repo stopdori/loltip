@@ -7,7 +7,7 @@ const nocturne: ChampData = {
     Q: ["GHOSTING", "MS_UP", "AD_UP"],
     W: ["AS_UP", "SPELL_SHIELD"],
     E: ["E_FLASH", "TETHER", "FEAR"],
-    R: ["R_FLASH", "WALL_HOP", "NEARSIGHT", "UNSTOPPABLE"],
+    R: ["R_FLASH", "WALL_HOP", "NEAR_SIGHT", "UNSTOPPABLE"],
   },
 
   vision: {
@@ -44,10 +44,19 @@ const nocturne: ChampData = {
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: { 
+        ko: [
+          "",
+        ], en: [] },
       note1: {
 
-        ko: [],
+        ko: [
+          "P",
+          "Q",
+          "W",
+          "E",
+          "R",
+        ],
 
         en: []
 
@@ -55,9 +64,9 @@ const nocturne: ChampData = {
 
       note2: {
         ko: [
-        "[[Q_FLASH]] 안됨", "Q의 버프는 Q장판 위에서만 발동", "W의 [[AS_UP]]는 방어해내면 효과 2배 ", "E가 끊기지 않아야 [[FEAR]]를 검", "R의 [[NEARSIGHT]]는 상대가 자기 시야만 보임.", "R을 사용하면 날아갈수 있는 대상 발밑에 표식이 보임.", "R2 설명에 [[UNSTOPPABLE]]가 없지만, 스킬로 날아갈 때 녹턴 체력바 위에 [[UNSTOPPABLE]]가 생김. 도착하면 끝."
+        "[[Q_FLASH]] 안됨", "Q의 버프는 Q장판 위에서만 발동", "W의 [[AS_UP]]는 방어해내면 효과 2배 ", "E가 끊기지 않아야 [[FEAR]]를 검", "R의 [[NEAR_SIGHT]]는 상대가 자기 시야만 보임.", "R을 사용하면 날아갈수 있는 대상 발밑에 표식이 보임.", "R2 설명에 [[UNSTOPPABLE]]가 없지만, 스킬로 날아갈 때 녹턴 체력바 위에 [[UNSTOPPABLE]]가 생김. 도착하면 끝."
       ],
-        en: ["[[Q_FLASH]] not possible", "Q's buffs only activate while standing in the trail", "W's [[AS_UP]] doubles if successfully blocked", "[[FEAR]] only applies if E's tether remains unbroken", "R's [[NEARSIGHT]] leaves only self-vision"]
+        en: ["[[Q_FLASH]] not possible", "Q's buffs only activate while standing in the trail", "W's [[AS_UP]] doubles if successfully blocked", "[[FEAR]] only applies if E's tether remains unbroken", "R's [[NEAR_SIGHT]] leaves only self-vision"]
         },
     },
     vision: { ko: [], en: [] },
