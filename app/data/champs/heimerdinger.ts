@@ -5,8 +5,8 @@ const heimerdinger: ChampData = {
   skills: {
     P: ["ST_CONDITIONAL", "MS_UP"],
     Q: { phases: [
-      { label: { ko: "Q", en: "" }, tags: ["ALLY_TP_OK"] },
-      { label: { ko: "강화 Q", en: "" }, tags: ["SLOW", "ALLY_TP_OK"] },
+      { label: { ko: "Q", en: "Q" }, tags: ["ALLY_TP_OK"] },
+      { label: { ko: "강화 Q", en: "Empowered Q" }, tags: ["SLOW", "ALLY_TP_OK"] },
     ] },
     W: [],
     E: ["SLOW", "STUN"],
@@ -26,7 +26,7 @@ const heimerdinger: ChampData = {
 
     Q: { phases: [
       { label: { ko: "Q", en: "Q" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SUMMON", "RECHARGE"] },
-      { label: { ko: "강화 Q", en: "" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SUMMON", "SLOW"] },
+      { label: { ko: "강화 Q", en: "Empowered Q" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SUMMON", "SLOW"] },
       { label: { ko: "포탑 빔", en: "Turret beam" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE"] },
     ] },
 
