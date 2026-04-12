@@ -71,7 +71,7 @@ const gnar: ChampData = {
         ko: [
           "미니나르에서 때리거나 맞을 때 분노가 차고 \n 분노가 100일때 참을수 없는 [[BUFF]]가 생김. \n 기다리면 메가나르로 [[TRANSFORM]]. \n 이때 스킬을 사용하면 즉시 [[TRANSFORM]]. \n \n",
 
-          "미니 나르 \n 기본 [[MS_UP]], [[AS_UP]], [[RANGE_UP]]. \n \n Q에 대상이 맞으면 [[DMG_PHYSICAL]]와 [[SLOW]]. \n 약간의 [[PIERCE]] 후에 되돌아옴. \n 돌아온 걸 받으면 [[CDR]]. \n \n W의 [[PASSIVE_BONUS]]는  [[BA]]와 [[Q]]로 \n 총 3대 때리면 \n 최대체력 비례 [[DMG_MAGIC]]와 [[MS_UP]][[BUFF]]. \n \n E는 [[DASH]]하여 [[AS_UP]]. \n 적을 밟으면 [[DMG_PHYSICAL]], [[SLOW]]. \n 그리고 자동으로 다시 [[DASH]]. \n \n R은 W의 [[PASSIVE_BONUS]] [[MS_UP]]를 [[EMPOWERED]]. \n \n",
+          "미니 나르 \n 기본 [[MS_UP]], [[AS_UP]], [[RANGE_UP]]. \n \n Q에 대상이 맞으면 [[DMG_PHYSICAL]]와 [[SLOW]]. \n 약간의 [[PIERCE]] 후에 되돌아옴. \n 나르가 서있는 쪽으로 돌아오고. \n 돌아올 때도 데미지. (처음 Q에 맞지 않았다면) \n 돌아온 걸 받으면 [[CDR]]. \n \n W의 [[PASSIVE_BONUS]]는  [[BA]]와 [[Q]]로 \n 총 3대 때리면 \n 최대체력 비례 [[DMG_MAGIC]]와 [[MS_UP]][[BUFF]]. \n \n E는 [[DASH]]하여 [[AS_UP]]. \n 적을 밟으면 [[DMG_PHYSICAL]], [[SLOW]]. \n 그리고 자동으로 다시 [[DASH]]. \n \n R은 W의 [[PASSIVE_BONUS]] [[MS_UP]]를 [[EMPOWERED]]. \n \n",
           
           "메가 나르 \n 기본 [[MAX_HP_UP]], [[AR_MR_UP]], [[AD_UP]].\n \n Q는 돌을 던져 적중하면 [[AOE]] [[DMG_PHYSICAL]], [[SLOW]]. \n 바닥에 떨어진 돌을 다시 주우면 [[CDR]]. \n \n W는 일직선상 [[AOE]] [[DMG_PHYSICAL]], [[STUN]]. \n \n E는 [[DASH]]하여 [[AOE]] [[DMG_PHYSICAL]]. \n 중앙은 [[SLOW]] 추가. \n \n R은 사용하면 [[AOE]] [[DMG_PHYSICAL]], [[KNOCKBACK]], [[SLOW]]. \n 벽에 부딪히면 추가 [[DMG_PHYSICAL]], [[STUN]]."
         ],

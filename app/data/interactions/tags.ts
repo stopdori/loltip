@@ -119,6 +119,7 @@ export type TagId =
   | "UNSTOPPABLE"
   | "BUFF_FORM"
   | "TRANSFORM"  // 폼변환
+  | "EVOLVED"    // 진화
 
 
   | "THE_COPYPASTA";
@@ -175,6 +176,7 @@ SLOW_CLEANSE: { ko: "둔화해제", en: "Slow Cleanse" },
 UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
 BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
 TRANSFORM: { ko: "폼 변환", en: "Transform" },
+EVOLVED: { ko: "진화", en: "Evolved" },
 
 
 /* =========================
@@ -697,6 +699,11 @@ BUFF_FORM: {
 TRANSFORM: {
   ko: "폼을 변환하여 스킬 구성이 바뀜",
   en: "Changes form, altering the ability kit",
+},
+
+EVOLVED: {
+  ko: "스킬이 영구적으로 강화됨",
+  en: "Permanently enhances the ability",
 },
 
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },

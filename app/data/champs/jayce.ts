@@ -9,7 +9,7 @@ const jayce: ChampData = {
       P: ["ST_CONDITIONAL", "MS_UP"],
       Q: ["Q_FLASH"],
       W: ["AA_RESET", "AS_UP"],
-      E: ["MS_UP", "SEPARATOR", "ST_CONDITIONAL", "ST_CONDITIONAL", "EMPOWERED", "Q"],
+      E: ["MS_UP", "SEPARATOR", "ST_CONDITIONAL", "EMPOWERED", "Q"],
       R: ["TRANSFORM"],
     },
 
