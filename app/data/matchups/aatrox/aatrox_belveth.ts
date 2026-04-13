@@ -9,8 +9,8 @@ export const aatrox_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 벨베스 Q, W를 끊을 수 있음"],
-      en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Bel'Veth's Q and W"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 벨베스 Q의 [[DASH]], W([[SKILL_CHANNEL]])를 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Bel'Veth's Q [[DASH]] and W [[SKILL_CHANNEL]]."],
     },
     belveth: {
       ko: [],

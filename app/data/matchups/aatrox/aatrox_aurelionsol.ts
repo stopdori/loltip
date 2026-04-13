@@ -9,8 +9,8 @@ export const aatrox_aurelionsol: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 아우렐리온솔 W를 끊을 수 있음"],
-      en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Aurelion Sol's W"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 아우렐리온솔 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Aurelion Sol's W [[DASH]]."],
     },
     aurelionsol: {
       ko: [],

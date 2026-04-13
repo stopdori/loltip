@@ -9,8 +9,8 @@ export const aatrox_graves: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 그레이브즈 E를 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) or W pull can interrupt Graves's E"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W [[GRAB]] 효과로 그레이브즈 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] effect can interrupt Graves's E [[DASH]]."],
     },
     graves: {
       ko: [],
