@@ -9,12 +9,12 @@ export const ahri_evelynn: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 이블린 P([[CAMOUFLAGE]])상태의 E를 끊을 수 있음.\n즉, 데미지도 무효."],
-      en: ["Ahri's E can interrupt Evelynn's E"],
+      ko: ["아리 E의 [[CHARM]]으로 이블린 P의 [[CAMOUFLAGE]] 상태일 때 [[EMPOWERED]] E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Evelynn's [[EMPOWERED]] E [[DASH]] while in [[CAMOUFLAGE]] (P state)."],
     },
     evelynn: {
-      ko: ["이블린 W의 [[CHARM]]으로 아리 R을 끊을 수 있음"],
-      en: ["Evelynn's W [[CHARM]] can interrupt Ahri's R"],
+      ko: ["이블린 W의 [[CHARM]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["Evelynn's W [[CHARM]] can interrupt Ahri's R [[DASH]]."],
     },
   },
 };

@@ -9,12 +9,12 @@ export const ahri_gwen: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 그웬 E를 끊을 수 있음."],
-      en: ["Ahri's E can interrupt Gwen's E"],
+      ko: ["아리 E의 [[CHARM]]으로 그웬 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Gwen's E [[DASH]]."],
     },
     gwen: {
-      ko: ["그웬 W(그면상)로 아리 Q, W, E, R을 범위 밖에서 맞지 않음.\n그웬에게 사용한 평타, W, R은 날아가던 중 범위 안에 들어올 때 사라짐."],
-      en: ["Gwen's W prevents Ahri's Q, W, E, and R from hitting her when cast from outside the range\nBasic attacks, W, and R aimed at Gwen disappear when they enter the range mid-flight"],
+      ko: ["그웬 W(그면상)의 [[UNTARGETABLE]]로 아리 Q, W, E, R의 [[PROJECTILE]]을 범위 밖에서 피하거나 맞지 않을 수 있음. \n 단, 그웬에게 사용한 평타, W, R의 [[PROJECTILE]]는 날아가던 중 범위 안에 들어올 때 사라짐."],
+      en: ["Gwen's W (Hallowed Mist) [[UNTARGETABLE]] can block Ahri's Q, W, E, and R [[PROJECTILE]] if Ahri is outside the mist. However, [[PROJECTILE]]s from auto attacks, W, and R that are already in flight will disappear upon entering the mist."],
     },
   },
 };

@@ -9,12 +9,14 @@ export const ahri_graves: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 W를 사용했을 때, 그브 W의 [[NEAR_SIGHT]]에 당하면 아리의 시야가 축소되어 W가 날아가기 힘들어짐.", "아리 E의 [[CHARM]]으로 그브 E(빨리 뽑기)를 끊을 수 있음.", "아리 E의 [[CHARM]]으로 그레이브즈 R의 [[CAST_COMMIT]]을 멈출 수 없음.", "아리 E의 [[CHARM]]으로 그브 R(준비 단계)을 끊을 수 없음.\n단, [[CHARM]]은 남아있음.", "아리 E의 [[CHARM]]으로 그브 R(후진 단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["When Ahri uses W, Graves's W [[NEAR_SIGHT]] reduces Ahri's vision, making it harder to land W.", "Ahri's E can interrupt Graves's E (Quick Draw)", "Ahri's E [[CHARM]] cannot stop Graves's R [[CAST_COMMIT]].", "Ahri's E cannot interrupt Graves's R (setup phase). However, the [[CHARM]] still applies.", "Ahri's E can interrupt Graves's R (backstep phase)"],
+      ko: ["그브 W의 [[NEAR_SIGHT]]로 아리 W, R의 [[HOMING]]을 어렵게 만들 수 있음.",
+        "아리 E의 [[CHARM]]으로 그브 E의 [[DASH]]을 끊을 수 있음.",
+        "아리 E의 [[CHARM]]으로 그브 R(후진단계)의 [[DASH]]을 끊을 수 있음."],
+      en: ["Graves' W [[NEAR_SIGHT]] makes it difficult to land Ahri's W and R [[HOMING]].", "Ahri's E [[CHARM]] can interrupt Graves' E [[DASH]].", "Ahri's E [[CHARM]] can interrupt Graves' R (backstep phase) [[DASH]]."],
     },
     graves: {
-      ko: [],
-      en: [],
+      ko: ["그브 R(준비단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]]을 잠시 무시할 수 있음. \n 단, 그브 E(후진단계)가 종료 후 [[CHARM]]은 남아있음.", ],
+      en: ["Graves' R (charge phase) [[CC_BUFFER]] allows him to temporarily ignore Ahri's E [[CHARM]]. However, the [[CHARM]] remains after Graves' E (backstep phase) ends."],
     },
   },
 };

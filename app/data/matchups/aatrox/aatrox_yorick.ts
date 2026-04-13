@@ -13,8 +13,8 @@ export const aatrox_yorick: MatchupSummary = {
       en: ["Aatrox's E [[DASH]] can [[WALL_HOP]] over Yorick's W [[TERRAIN]]."],
     },
     yorick: {
-      ko: ["요릭 P, R의 [[SUMMON]]으로 아트록스 W의 [[PROJECTILE]]를 막을 수 있음."],
-      en: ["Yorick's P and R [[SUMMON]] can block Aatrox's W [[PROJECTILE]]."],
+      ko: ["요릭 P, R의 [[SUMMON]]으로 아트록스 W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Yorick's P and R [[SUMMON]] can block Aatrox's W [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };

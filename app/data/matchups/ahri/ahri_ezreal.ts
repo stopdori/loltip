@@ -9,12 +9,12 @@ export const ahri_ezreal: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CAHRM]]으로 이즈리얼 E(비전이동)를 끊을 수 없음. \n단, [[CHARM]]은 남아있음."],
-      en: ["Ahri's E cannot interrupt Ezreal's E. However, the [[CHARM]] still applies."],
-    },
-    ezreal: {
       ko: [],
       en: [],
+    },
+    ezreal: {
+      ko: ["이즈리얼 E(준비단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]]을 잠시 무시하고 다음 단계를 시전할 수 있음. \n 단, E(순간이동단계) 종료 후 [[CHARM]]은 남아있음."],
+      en: ["Ezreal's E (preparation phase) [[CC_BUFFER]] can briefly ignore Ahri's E [[CHARM]] to cast the next phase.\nHowever, the [[CHARM]] still applies after the teleport phase ends."],
     },
   },
 };

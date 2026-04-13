@@ -13,8 +13,8 @@ export const ahri_elise: MatchupSummary = {
       en: ["Ahri's E [[CHARM]] can interrupt Elise's spider form Q [[DASH]]."],
     },
     elise: {
-      ko: ["엘리스 거미폼 새끼거미 [[SUMMON]]으로 아리 E의 [[PROJECTILE]]를 막을 수 있음."],
-      en: ["Elise's spider form spiderlings [[SUMMON]] can block Ahri's E [[PROJECTILE]]."],
+      ko: ["엘리스 거미폼 새끼거미 [[SUMMON]]으로 아리 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Elise's spider form spiderlings [[SUMMON]] can block Ahri's E [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const aatrox_elise: MatchupSummary = {
       en: ["Aatrox's Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Elise's Spider Form Q [[DASH]]."],
     },
     elise: {
-      ko: ["엘리스의 새끼거미가 아트록스 W의 [[PROJECTILE]]를 대신 맞을 수 있음."],
-      en: ["Elise's Spiderlings can block Aatrox's W [[PROJECTILE]]."],
+      ko: ["엘리스 거미폼 P(새끼거미)의 [[SUMMON]]으로 아트록스 W의 [[SINGLE]] [[PROJECTILE]]를 대신 맞을 수 있음."],
+      en: ["Elise's Spider Form P (Spiderlings) [[SUMMON]] can block Aatrox's W [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };

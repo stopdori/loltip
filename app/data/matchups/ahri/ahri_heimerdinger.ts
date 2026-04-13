@@ -9,12 +9,12 @@ export const ahri_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CAHRM]]으로 하이머딩거 RW(강화)의 [[CAST_COMMIT]] 끊을 수 없음.\n단, [[CHARM]]은 남아있음."],
-      en: ["Ahri's E [[CHARM]] cannot interrupt Heimerdinger's RW (empowered) [[CAST_COMMIT]].\nHowever, the [[CHARM]] still applies."],
+      ko: [],
+      en: [],
     },
     heimerdinger: {
-      ko: ["하이머딩거 Q(포탑), RQ(강화 포탑)로 아리 E를 막을 수 있음."],
-      en: ["Heimerdinger's Q (turret) can block Ahri's E"],
+      ko: ["하이머딩거(하딩) Q(포탑), RQ(강화 포탑)의 [[SUMMON]]으로 아리 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Heimerdinger's Q (turret) and RQ (empowered turret) [[SUMMON]] can block Ahri's E [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };

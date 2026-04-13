@@ -9,12 +9,12 @@ export const ahri_gnar: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CAHRM]]으로 나르 인간폼 E, 메가폼 E를 끊을 수 있음."],
-      en: ["Ahri's E can interrupt Gnar's mini E and mega E"],
+      ko: ["아리 E의 [[CHARM]]으로 나르 인간폼 / 메가폼 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Gnar's mini / mega E [[DASH]]."],
     },
     gnar: {
-      ko: ["나르 메가폼 W의 [[STUN]]으로 아리 R을 끊을 수 없음.\n단, [[STUN]]은 남아있음", "나르 R의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Gnar's mega W [[STUN]] cannot interrupt Ahri's R. However, the [[STUN]] still applies.", "Gnar's R can interrupt Ahri's R"],
+      ko: ["나르 메가폼 W의 [[STUN]]으로 아리 R을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", "나르 R의 [[KNOCKBACK]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["Gnar's mega W [[STUN]] cannot interrupt Ahri's R [[DASH]]. However, the [[STUN]] still applies.", "Gnar's R [[KNOCKBACK]] can interrupt Ahri's R [[DASH]]."],
     },
   },
 };
