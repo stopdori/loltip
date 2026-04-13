@@ -9,12 +9,12 @@ export const ahri_elise: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 엘리스 거미폼 Q를 끊을 수 있음. 즉, 데미지도 무효."],
-      en: ["Ahri's E can interrupt Elise's spider form Q"],
+      ko: ["아리 E의 [[CHARM]]으로 엘리스 거미폼 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Elise's spider form Q [[DASH]]."],
     },
     elise: {
-      ko: ["엘리스 거미폼 변신으로 소환된 새끼 거미들로 아리 E(매혹)를 막을 수 있음."],
-      en: ["The spiderlings summoned by Elise's spider form transformation can block Ahri's E"],
+      ko: ["엘리스 거미폼 새끼거미 [[SUMMON]]으로 아리 E의 [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Elise's spider form spiderlings [[SUMMON]] can block Ahri's E [[PROJECTILE]]."],
     },
   },
 };

@@ -61,7 +61,7 @@ const amumu: ChampData = {
 
         en: [
         "Hitting a champion with [[BA]] applies [[DEBUFF]]. \n When that target takes [[DMG_MAGIC]], it triggers bonus [[DMG_TRUE]]. \n Can apply to multiple targets.",
-        "Hitting with Q dashes to the target. \n Follows the target if they move.",
+        "Hitting with Q [[DASH]]es to the target. \n Follows the target if they move.",
         "W resets the duration of P's [[DEBUFF]].",
         "E strikes nearby targets. \n Cooldown decreases the more Amumu gets hit.",
         "R applies [[STUN]] and P's [[DEBUFF]] to all targets hit.",
@@ -71,9 +71,12 @@ const amumu: ChampData = {
 
       note2: {
         ko: [
-        "Q로 날아가면서 R 안써짐", "Q는 두단계로 나뉨.\n투척단계 / 돌진단계\n투척 단계에 CC를 맞아도 붕대가 적중하면 돌진 단계가 발동하여 이동하는것.\n단, CC는 남아있음.", "Q로 따라갈 수 있는 최대 거리? 시간?이 있는것으로 추정됨\n약 미드 1~2차 타워 사이거리 정도.", "R은 버튼을 누르고 스킬이 발동하는 데까지 딜레이가 있음.(선딜) 꽤 체감됨."
+        "Q로 날아가면서 R 안써짐", 
+        "Q는 두단계로 나뉨.\n투척단계 / 돌진단계\n투척 단계에 CC를 맞아도 붕대가 적중하면 \n 돌진 단계가 발동하여 이동하는것.\n단, CC는 남아있음.", 
+        "Q로 따라갈 수 있는 \n 최대 거리? 시간?이 있는것으로 추정됨\n약 미드 1~2차 타워 사이거리 정도.", 
+        "R은 버튼을 누르고 스킬이 발동하는 데까지 딜레이가 있음. \n [[TIMING_CAST]] 꽤 체감됨."
       ],
-        en: ["R cannot be used while Q is in flight", "Q is split into two phases: throwing phase / dash phase.\nEven if hit by CC during the throwing phase, if the bandage connects, the dash phase activates and Amumu still moves.\nHowever, the CC remains active.", "Q appears to have a maximum follow distance/time — roughly the distance between the 1st and 2nd mid lane towers.", "There is a delay (wind-up) between pressing the R button and the skill being activated."]
+        en: ["R cannot be used while Q is in flight", "Q is split into two phases: throwing phase / dash phase.\nEven if hit by CC during the throwing phase, if the bandage connects, the dash phase activates and Amumu still moves.\nHowever, the CC remains active.", "Q appears to have a maximum follow distance/time — roughly the distance between the 1st and 2nd mid lane towers.", "There is a delay (wind-up) between pressing the R button and the skill being activated. \n [[TIMING_CAST]] is quite noticeable."]
         },
     },
     vision: { ko: [], en: [] },

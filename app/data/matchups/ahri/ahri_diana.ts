@@ -9,12 +9,12 @@ export const ahri_diana: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 다이애나 E를 끊을 수 있음.\n즉, 데미지도 무효."],
-      en: ["Ahri's E can interrupt Diana's E"],
+      ko: ["아리 E의 [[CHARM]]으로 다이애나 E의 [[DASH]]를 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Diana's E [[DASH]]."],
     },
     diana: {
       ko: ["다이애나 R의 [[GARB]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Diana's R can interrupt Ahri's R"],
+      en: ["Diana's R [[GARB]] can interrupt Ahri's R [[DASH]]."],
     },
   },
 };
