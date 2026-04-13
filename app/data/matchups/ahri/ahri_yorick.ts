@@ -13,8 +13,8 @@ export const ahri_yorick: MatchupSummary = {
       en: [""],
     },
     yorick: {
-      ko: [],
-      en: [],
+      ko: ["요릭 P, R의 [[SUMMON]]으로 아리 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Yorick's P and R [[SUMMON]] can block Ahri's E [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };

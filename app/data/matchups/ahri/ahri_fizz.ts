@@ -9,12 +9,13 @@ export const ahri_fizz: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CAHRM]]으로 피즈 Q를 끊을 수 있음."],
-      en: ["Ahri's E can interrupt Fizz's Q"],
+      ko: ["아리 E의 [[CHARM]]으로 피즈 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Fizz's Q [[DASH]]."],
     },
     fizz: {
-      ko: ["피즈 E의 [[UNTARGETABLE]], [[TOWER_DODGE]]로 아리 Q, W, E, R을 피할 수 있음.", "피즈 R의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Fizz's E can dodge Ahri's Q, W, E, and R", "Fizz's R [[AIRBORNE]] can interrupt Ahri's R"],
+      ko: ["피즈 E의 [[UNTARGETABLE]]로 아리 Q, W, E, R의 [[PROJECTILE]]를 피할 수 있음.",
+        "피즈 R의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["Fizz's E [[UNTARGETABLE]] can dodge Ahri's Q, W, E, and R [[PROJECTILE]].", "Fizz's R [[AIRBORNE]] can interrupt Ahri's R [[DASH]]."],
     },
   },
 };

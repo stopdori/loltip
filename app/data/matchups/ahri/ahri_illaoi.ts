@@ -9,12 +9,12 @@ export const ahri_illaoi: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CAHRM]]으로 일라오이 W를 끊을 수 있음. 즉, 데미지도 무효."],
-      en: ["Ahri's E can interrupt Illaoi's W. The damage is also negated."],
+      ko: ["아리 E의 [[CHARM]]으로 일라오이 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Illaoi's W [[DASH]]."],
     },
     illaoi: {
-      ko: [],
-      en: [],
+      ko: ["일라오이 R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 무시할 수 있음. \n 단, [[CHARM]]은 남아있음."],
+      en: ["Illaoi's R [[UNSTOPPABLE]] allows her to ignore Ahri's E [[CHARM]]. However, the [[CHARM]] still applies."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const aatrox_heimerdinger: MatchupSummary = {
       en: [],
     },
     heimerdinger: {
-      ko: ["하이머딩거 Q의 [[SUMMON]]으로 아트록스 W의 [[PROJECTILE]]를 막을 수 있음."],
-      en: ["Heimerdinger's Q [[SUMMON]] can block Aatrox's W [[PROJECTILE]]."],
+      ko: ["하이머딩거 Q의 [[SUMMON]]으로 아트록스 W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Heimerdinger's Q [[SUMMON]] can block Aatrox's W [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };
