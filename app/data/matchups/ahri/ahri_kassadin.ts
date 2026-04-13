@@ -9,12 +9,12 @@ export const ahri_kassadin: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 카사딘 R을 끊을 수 없음.\n단, [[CHARM]]은 남아있음"],
-      en: ["Ahri's E cannot interrupt Kassadin's R.\nHowever, [[CHARM]] still applies."],
-    },
-    kassadin: {
       ko: [],
       en: [],
+    },
+    kassadin: {
+      ko: ["카사딘 R(준비단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]] 효과를 잠시 무시하고 다음 단계를 시전할 수 있음. \n 단, 카사딘 R(순간이동단계)가 종료 후 [[CHARM]]은 남아있음."],
+      en: ["Kassadin's R (preparation phase) [[CC_BUFFER]] allows him to temporarily ignore Ahri's E [[CHARM]] and continue to the next phase. \n However, the [[CHARM]] remains after Kassadin's R (teleport phase) ends."],
     },
   },
 };

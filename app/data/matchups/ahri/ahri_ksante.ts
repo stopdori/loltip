@@ -9,12 +9,13 @@ export const ahri_ksante: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 크산테 E의 [[DASH]]을 끊을 수 있음.", "아리 E의 [[CHARM]]으로 크산테 W, R의 [[UNSTOPPABLE]]을 끊을 수 없음.\n단, [[CHARM]]은 남아있음."],
-      en: ["Ahri's E can interrupt K'Sante's E", "Ahri's E [[CHARM]] cannot interrupt K'Sante's W or R [[UNSTOPPABLE]].\nHowever, the [[CHARM]] still applies."],
+      ko: ["아리 E의 [[CHARM]]으로 크산테 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt K'Sante's E [[DASH]]."],
     },
     ksante: {
-      ko: ["크산테 Q3의 [[AIRBORNE]], R의 [[SUPPRESS]]로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["K'Sante's Q3 and R can interrupt Ahri's R"],
+      ko: ["크산테 Q3의 [[AIRBORNE]], R의 [[SUPPRESS]]로 아리 R의 [[DASH]]을 끊을 수 있음.",
+        "크산테 W, R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 무시할 수 있음 \n 단, [[CHARM]]은 남아있음."],
+      en: ["K'Sante's Q3 [[AIRBORNE]] and R [[SUPPRESS]] can interrupt Ahri's R [[DASH]].", "K'Sante's W and R [[UNSTOPPABLE]] can ignore Ahri's E [[CHARM]]. \n However, the [[CHARM]] still applies."],
     },
   },
 };

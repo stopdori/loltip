@@ -9,8 +9,9 @@ export const ahri_kindred: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 킨드레드 Q의 [[DASH]]을 끊을 수 있음.", "아리 E의 [[CHARM]]으로 킨드레드 R 범위 밖으로 꺼낼 수 있음."],
-      en: ["Ahri's E can interrupt Kindred's Q", "Ahri's E [[CHARM]] can pull enemies outside Kindred's R zone"],
+      ko: ["아리 E의 [[CHARM]]으로 킨드레드 Q의 [[DASH]]을 끊을 수 있음.", 
+        "아리 E의 [[CHARM]]으로 킨드레드 R의 [[INVULNERABLE]] [[ZONE]] 밖으로 꺼낼 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Kindred's Q [[DASH]].", "Ahri's E [[CHARM]] can pull enemies outside Kindred's R [[INVULNERABLE]] [[ZONE]]."],
     },
     kindred: {
       ko: [],

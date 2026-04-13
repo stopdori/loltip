@@ -16,7 +16,7 @@ export const ahri_ivern: MatchupSummary = {
       ko: ["아이번 Q의 [[ROOT]]으로 아리 R을 끊을 수 없음. \n 단, [[ROOT]]은 남아있음.", 
         "아이번 R(데이지)의 3타 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음.", 
         "아이번 R(데이지)의 [[SUMMON]]으로 아리 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["Ivern's Q [[ROOT]] cannot interrupt Ahri's R. However, the [[ROOT]] still applies.", "Ivern's R (Daisy) 3rd hit [[AIRBORNE]] can interrupt Ahri's R [[DASH]].", "Ivern's R (Daisy) [[SUMMON]] can block Ahri's E [[SINGLE]] [[PROJECTILE]]."],
+      en: ["Ivern's Q [[ROOT]] cannot interrupt Ahri's R. \n However, the [[ROOT]] still applies.", "Ivern's R (Daisy) 3rd hit [[AIRBORNE]] can interrupt Ahri's R [[DASH]].", "Ivern's R (Daisy) [[SUMMON]] can block Ahri's E [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };
