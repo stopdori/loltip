@@ -36,10 +36,19 @@ const skarner: ChampData = {
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: { 
+        ko: [
+          "",
+        ], en: [] },
       note1: {
 
-        ko: [],
+        ko: [
+          "P",
+          "Q",
+          "W",
+          "E",
+          "R",
+        ],
 
         en: []
 

@@ -9,8 +9,8 @@ export const aatrox_tahmkench: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 탐켄치 W(시전집중)를 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Tahm Kench's W (channeling)"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 탐켄치 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Tahm Kench's W [[SKILL_CHANNEL]]."],
     },
     tahmkench: {
       ko: [],

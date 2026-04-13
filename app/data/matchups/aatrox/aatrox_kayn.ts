@@ -9,8 +9,8 @@ export const aatrox_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 케인 E의 벽타기를 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) or W pull can interrupt Kayn's E (Shadow Step)"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 케인 E의 벽타기([[MOBILITY]])를 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Kayn's E [[MOBILITY]]."],
     },
     kayn: {
       ko: [],

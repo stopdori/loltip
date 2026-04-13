@@ -9,8 +9,8 @@ export const aatrox_zoe: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zoe: {
       ko: [],

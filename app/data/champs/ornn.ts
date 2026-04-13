@@ -27,7 +27,7 @@ const ornn: ChampData = {
     
     W: { phases: [
       { label: { ko: "W", en: "W" }, tags: ["SKILL_CHANNEL", "DOT", "MARK", "MOBILITY", "UNSTOPPABLE"] },
-      { label: { ko: "마지막 불꽃", en: "" }, tags: ["MARK", "UNSTOPPABLE"] },
+      { label: { ko: "마지막 불꽃", en: "Last Flame" }, tags: ["MARK", "UNSTOPPABLE"] },
       { label: { ko: "표식 (불안정 상태)", en: "MARK (Brittle)" }, tags: ["ST_CONDITIONAL", "ON_HIT"] },
     ] },
     
@@ -44,10 +44,19 @@ const ornn: ChampData = {
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: { 
+        ko: [
+          "",
+        ], en: [] },
       note1: {
 
-        ko: [],
+        ko: [
+          "P",
+          "Q",
+          "W",
+          "E",
+          "R",
+        ],
 
         en: []
 

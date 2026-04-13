@@ -13,8 +13,8 @@ export const aatrox_jinx: MatchupSummary = {
       en: [],
     },
     jinx: {
-      ko: ["징크스의 활성화된 E로 아트록스 E가 멈춤"],
-      en: ["Jinx's activated E can interrupt Aatrox's E"],
+      ko: ["징크스 E(활성화)로 아트록스 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Jinx's activated E can interrupt Aatrox's E [[DASH]]."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const aatrox_katarina: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 카타리나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) or W pull can interrupt katarina's R"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 카타리나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Katarina's R [[SKILL_CHANNEL]]."],
     },
     katarina: {
       ko: [],

@@ -13,8 +13,8 @@ export const aatrox_senna: MatchupSummary = {
       en: [],
     },
     senna: {
-      ko: ["세나 E에 숨은 대상이 아트록스 W를 맞으면 모습이 보임"],
-      en: ["Targets hidden in Senna's E become visible when hit by Aatrox's W"],
+      ko: [""],
+      en: [""],
     },
   },
 };

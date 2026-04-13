@@ -9,12 +9,12 @@ export const aatrox_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
-      en: [""],
+      ko: ["아트록스 E의 [[DASH]]으로 요릭 W([[TERRAIN]])를 [[WALL_HOP]] 할 수 있음.", ],
+      en: ["Aatrox's E [[DASH]] can [[WALL_HOP]] over Yorick's W [[TERRAIN]]."],
     },
     yorick: {
-      ko: [],
-      en: [],
+      ko: ["요릭 P, R의 [[SUMMON]]으로 아트록스 W의 [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Yorick's P and R [[SUMMON]] can block Aatrox's W [[PROJECTILE]]."],
     },
   },
 };

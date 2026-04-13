@@ -9,8 +9,8 @@ export const aatrox_zac: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 자크 E(시전집중), E의 [[DASH]]을 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Zac's E (channeling) and E movement"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 자크 E의 [[SKILL_CHANNEL]], E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Zac's E [[SKILL_CHANNEL]] and E [[DASH]]."],
     },
     zac: {
       ko: [],
