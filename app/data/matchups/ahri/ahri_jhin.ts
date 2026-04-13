@@ -14,7 +14,7 @@ export const ahri_jhin: MatchupSummary = {
     },
     jhin: {
       ko: ["진 W의 [[ROOT]]으로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]은 남아있음."],
-      en: ["Jhin's W [[ROOT]] cannot interrupt Ahri's R [[DASH]]. However, the [[ROOT]] still applies."],
+      en: ["Jhin's W [[ROOT]] cannot interrupt Ahri's R [[DASH]]. \n However, the [[ROOT]] still applies."],
     },
   },
 };

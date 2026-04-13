@@ -16,7 +16,7 @@ export const ahri_graves: MatchupSummary = {
     },
     graves: {
       ko: ["그브 R(준비단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]]을 잠시 무시할 수 있음. \n 단, 그브 E(후진단계)가 종료 후 [[CHARM]]은 남아있음.", ],
-      en: ["Graves' R (charge phase) [[CC_BUFFER]] allows him to temporarily ignore Ahri's E [[CHARM]]. However, the [[CHARM]] remains after Graves' E (backstep phase) ends."],
+      en: ["Graves' R (charge phase) [[CC_BUFFER]] allows him to temporarily ignore Ahri's E [[CHARM]]. \n However, the [[CHARM]] remains after Graves' E (backstep phase) ends."],
     },
   },
 };

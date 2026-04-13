@@ -9,8 +9,8 @@ export const ahri_kogmaw: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 코그모 W를 해제할 수 없음."],
-      en: ["Ahri's E [[CHARM]] cannot deactivate Kog'Maw's W."],
+      ko: [],
+      en: [],
     },
     kogmaw: {
       ko: [],
