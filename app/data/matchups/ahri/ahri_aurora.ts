@@ -9,12 +9,12 @@ export const ahri_aurora: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 오로라 W, E(후진 단계)의 [[DASH]]을 끊을 수 있음.", "아리 E의 [[CHARM]]으로 오로라 R의 [[UNSTOPPABLE]]를 막을 수 없음.\n단, [[CHARM]]은 남아있음."],
-      en: ["Ahri's E can interrupt Aurora's W and E (backstep phase)", "Ahri's E [[CHARM]] cannot stop Aurora's R [[UNSTOPPABLE]].\nHowever, the [[CHARM]] still applies."],
+      ko: ["아리 E의 [[CHARM]]으로 오로라 W, E(후진 단계)의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Aurora's W and E (backward phase) [[DASH]]."],
     },
     aurora: {
-      ko: [],
-      en: [],
+      ko: ["오로라 R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 잠시 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[CHARM]]은 남아있음."],
+      en: ["Aurora's R [[UNSTOPPABLE]] can briefly ignore Ahri's E [[CHARM]].\nHowever, the [[CHARM]] still applies after [[UNSTOPPABLE]] ends."],
     },
   },
 };
