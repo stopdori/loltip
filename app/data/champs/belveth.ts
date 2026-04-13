@@ -7,7 +7,7 @@ const belveth: ChampData = {
     Q: ["DASH", "SEPARATOR", "ST_CONDITIONAL", "WALL_HOP"],
     W: ["AIRBORNE", "SLOW"],
     E: ["DMG_REDUCE", "LIFESTEAL"],
-    R: ["ST_CONDITIONAL", "BUFF_FORM", "MS_UP", "WALL_HOP", "SLOW", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "ALLY_TP_OK"],
+    R: ["ST_CONDITIONAL", "CAST_COMMIT", "MS_UP", "WALL_HOP", "SLOW", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "ALLY_TP_OK"],
   },
 
   vision: {
@@ -54,7 +54,7 @@ const belveth: ChampData = {
           "W로 적 챔피언을 맞히면 \n 맞힌 방향의 Q 쿨타임 초기화.", 
           "E는 [[DMG_REDUCE]], [[LIFESTEAL]] \n 체력이 낮은대상 부터 공격",
           "R은 [[PASSIVE_BONUS]]로 \n 같은 대상을 두 대 때릴 때마다 [[DMG_TRUE]] 중첩. \n 1000번 때리면 500번 중첩.", 
-          "R은 킬관여 시 공허 산호가 떨어지고 \n R을 사용하면 벨베스가 본모습으로 변신하면서 \n 여러가지 버프와 주변에 광역 [[SLOW]], [[DMG_TRUE]]. \n 본모습일 때 Q로 [[WALL_HOP]] 가능.",
+          "R은 킬관여 시 공허 산호가 떨어지고 \n R을 사용하면 벨베스가 본모습으로 변신하면서 \n 여러가지 버프와 주변에 광역 [[SLOW]], [[DMG_TRUE]]. \n R을 사용하는 도중에는 [[CAST_COMMIT]]. \n 본모습일 때 Q로 [[WALL_HOP]] 가능.",
         ],
 
         en: [
@@ -64,7 +64,7 @@ const belveth: ChampData = {
           "Hitting an enemy champion with W resets the Q cooldown for the direction it was hit from.",
           "E grants [[DMG_REDUCE]] and [[LIFESTEAL]].\nPrioritizes attacking the lowest-health target.",
           "R's [[PASSIVE_BONUS]] stacks [[DMG_TRUE]] every 2 hits on the same target.\n1000 hits = 500 stacks.",
-          "On kill participation, Void Coral drops.\nActivating R transforms Bel'Veth into her true form, granting various buffs, AoE [[SLOW]], and [[DMG_TRUE]] nearby.\nIn true form, Q enables [[WALL_HOP]].",
+          "On kill participation, Void Coral drops.\nActivating R transforms Bel'Veth into her true form, granting various buffs, AoE [[SLOW]], and [[DMG_TRUE]] nearby.\nR is [[CAST_COMMIT]] during activation.\nIn true form, Q enables [[WALL_HOP]].",
         ]
 
       },

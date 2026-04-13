@@ -9,12 +9,13 @@ export const ahri_ekko: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 에코 E(구르기)를 끊을 수 있음."],
-      en: ["Ahri's E can interrupt Ekko's E (roll)"],
+      ko: ["아리 E의 [[CHARM]]으로 에코 E(구르기)의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Ekko's E (roll) [[DASH]]."],
     },
     ekko: {
-      ko: ["에코 W의 [[STUN]]으로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "에코 E(점멸 타격)로 아리 R의 [[DASH]]을 따라갈 수 있음."],
-      en: ["Ekko's W [[STUN]] cannot interrupt Ahri's R. However, the [[STUN]] still applies.", "Ekko's E (Phase Dive) can follow Ahri's R"],
+      ko: ["에코 W의 [[STUN]]으로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "에코 E(순간이동단계)의 [[HOMING]]으로 아리 R의 [[DASH]]을 따라갈 수 있음.", "에코 E(경직단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]]을 잠시 무시할 수 있음. \n 단, E(순간이동단계) 종료 후 [[CHARM]]은 남아있음."],
+      en: ["Ekko's W [[STUN]] cannot interrupt Ahri's R [[DASH]]. However, the [[STUN]] still applies.", "Ekko's E (teleport phase) [[HOMING]] can follow Ahri's R [[DASH]].", "Ekko's E (stun phase) [[CC_BUFFER]] can briefly ignore Ahri's E [[CHARM]].\nHowever, the [[CHARM]] still applies after the teleport phase ends."],
     },
   },
 };

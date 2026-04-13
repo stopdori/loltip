@@ -9,12 +9,12 @@ export const ahri_darius: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 다리우스 Q, E의 [[CAST_COMMIT]]을 끊을 수 없음. 단, [[CHARM]]은 남아있음."],
-      en: ["Ahri's E [[CHARM]] cannot interrupt Darius's Q or E [[CAST_COMMIT]]. However, the [[CHARM]] still applies."],
+      ko: [],
+      en: [],
     },
     darius: {
       ko: ["다리우스 E의 [[GRAB]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Darius's E can interrupt Ahri's R"],
+      en: ["Darius's E [[GRAB]] can interrupt Ahri's R [[DASH]]."],
     },
   },
 };
