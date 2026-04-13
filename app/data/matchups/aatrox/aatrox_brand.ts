@@ -9,8 +9,8 @@ export const aatrox_brand: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["특이사항 없음"],
-      en: ["None"],
+      ko: [],
+      en: [],
     },
     brand: {
       ko: [],

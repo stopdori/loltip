@@ -9,8 +9,8 @@ export const aatrox_twistedfate: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 트페 R(시전집중)을 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Twisted Fate's R (channeling)"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 트페 R2의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Twisted Fate's R2 [[SKILL_CHANNEL]]."],
     },
     twistedfate: {
       ko: [],

@@ -9,8 +9,8 @@ export const aatrox_zyra: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zyra: {
       ko: [],

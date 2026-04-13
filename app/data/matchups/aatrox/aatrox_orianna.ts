@@ -9,8 +9,8 @@ export const aatrox_orianna: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     orianna: {
       ko: [],

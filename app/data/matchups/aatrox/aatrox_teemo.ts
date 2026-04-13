@@ -9,8 +9,8 @@ export const aatrox_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 W로 [[INVISIBILITY]] 티모를 볼 수 있음"],
-      en: ["Aatrox's W reveals [[INVISIBILITY]] Teemo"],
+      ko: ["아트록스 W의 [[TRUE_SIGHT]]로 티모 P의 [[INVISIBILITY]]을 볼 수 있음."],
+      en: ["Aatrox's W [[TRUE_SIGHT]] reveals Teemo's P [[INVISIBILITY]]."],
     },
     teemo: {
       ko: [],

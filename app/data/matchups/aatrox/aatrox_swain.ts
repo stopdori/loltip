@@ -9,8 +9,8 @@ export const aatrox_swain: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     swain: {
       ko: [],

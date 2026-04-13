@@ -9,12 +9,13 @@ export const aatrox_fiddlesticks: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W의 [[GRAB]]효과로 피들스틱 W, R(시전집중)을 끊을 수 있음"],
-      en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Fiddlesticks' W and R (channeling)"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 피들스틱 W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 발동된 피들스틱 R의 [[AURA]]를 끊을 수 없음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Fiddlesticks' W and R [[SKILL_CHANNEL]].", "Aatrox's Q [[AIRBORNE]] and W [[GRAB]] cannot interrupt Fiddlesticks' R [[AURA]] once it is already active."],
     },
     fiddlesticks: {
-      ko: ["피들스틱 W는 아트록스 Q끝, W [[GRAB]]효과로 끊길 수 있음", "피들스틱 R은 시전중일 때는 동일, 시전 후엔 끊기지 않음"],
-      en: ["Fiddlesticks' W can be interrupted by Aatrox's Q (sweet spot) or W pull", "Fiddlesticks' R can be interrupted while channeling, but it cannot be stopped once it has been cast"],
+      ko: [],
+      en: [],
     },
   },
 };

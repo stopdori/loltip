@@ -13,8 +13,8 @@ export const aatrox_ivern: MatchupSummary = {
       en: [],
     },
     ivern: {
-      ko: ["아이번 Q로 아트록스 E를 끊을 수 없음. 단, [[ROOT]]은 남아있음", "아이번 R로 아트록스 W를 막을 수 있음"],
-      en: ["Ivern's Q cannot interrupt Aatrox's E, but the [[ROOT]] remains", "Ivern's R can block Aatrox's W"],
+      ko: ["아이번 Q의 [[ROOT]]으로 아트록스 E의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]은 남아있음", "아이번 R의 [[SUMMON]]으로 아트록스 W의 [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Ivern's Q [[ROOT]] cannot interrupt Aatrox's E [[DASH]]. \n However, [[ROOT]] still applies.", "Ivern's R [[SUMMON]] can block Aatrox's W [[PROJECTILE]]."],
     },
   },
 };

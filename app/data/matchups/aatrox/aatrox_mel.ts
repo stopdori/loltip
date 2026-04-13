@@ -13,8 +13,8 @@ export const aatrox_mel: MatchupSummary = {
       en: [],
     },
     mel: {
-      ko: ["멜 W가 아트록스 W 반사 가능."],
-      en: ["Mel’s W reflects Aatrox’s W."],
+      ko: ["멜 W([[REFLECT]])로 아트록스 W를 [[REFLECT]]할 수 있음."],
+      en: ["Mel’s W [[REFLECT]] can reflect Aatrox’s W."],
     },
   },
 };

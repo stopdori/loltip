@@ -9,8 +9,8 @@ export const aatrox_sylas: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 사일러스 W, E1, E2를 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Sylas's W, E1, and E2"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 사일러스 W, E1, E2 의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Sylas's W, E1, and E2 [[DASH]]."],
     },
     sylas: {
       ko: [],

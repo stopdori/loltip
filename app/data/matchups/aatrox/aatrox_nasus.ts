@@ -9,8 +9,8 @@ export const aatrox_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nasus: {
       ko: [],

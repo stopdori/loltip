@@ -9,12 +9,13 @@ export const aatrox_ksante: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 크산테 E를 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) or W pull can interrupt K'Sante's E"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W [[GRAB]] 효과로 크산테 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt K'Sante's E [[DASH]]."],
     },
     ksante: {
-      ko: ["크산테 Q3, 일반폼 W차징, R로 아트록스 E를 끊을 수 있음", "크산테 W 차징효과로 아트록스 Q끝, W [[GRAB]]효과를 무시할 수 있음"],
-      en: ["K'Sante's Q3, non-ult W (charging), and R can interrupt Aatrox's E", "K'Sante's W (charging) can ignore Aatrox's Q (sweet spot) and W's [[GRAB]] effect"],
+      ko: ["크산테 Q3의 [[AIRBORNE]], 일반폼 W의 [[KNOCKBACK]], R의 [[SUPPRESS]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음.", 
+        "크산테 일반폼 / 변신폼 W, R의 [[UNSTOPPABLE]] 효과로 아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과를 무시할 수 있음."],
+      en: ["K'Sante's Q3 [[AIRBORNE]], non-ult W [[KNOCKBACK]], and R [[SUPPRESS]] can interrupt Aatrox's E [[DASH]].", "K'Sante's non-ult / ult-form W and R [[UNSTOPPABLE]] can ignore Aatrox's Q [[AIRBORNE]] and W [[GRAB]]."],
     },
   },
 };

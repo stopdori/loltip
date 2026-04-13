@@ -9,8 +9,8 @@ export const aatrox_akshan: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 W가 아크샨 W의 [[CAMOUFLAGE]] 모습을 보여줌"],
-      en: ["Aatrox's W reveals Akshan's [[CAMOUFLAGE]]"],
+      ko: ["아트록스 W의 [[TRUE_SIGHT]]가 아크샨 W의 [[CAMOUFLAGE]] 모습을 보여줌."],
+      en: ["Aatrox's W [[TRUE_SIGHT]] reveals Akshan's [[CAMOUFLAGE]]."],
     },
     akshan: {
       ko: [],

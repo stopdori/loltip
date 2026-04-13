@@ -9,8 +9,8 @@ export const aatrox_olaf: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     olaf: {
       ko: [],

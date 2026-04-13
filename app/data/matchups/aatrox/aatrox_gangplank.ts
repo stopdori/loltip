@@ -9,8 +9,8 @@ export const aatrox_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 W의 끌려감효과로 끌려갈때 갱플랭크 W를 사용해도 계속 끌려감"],
-      en: ["Gangplank cannot cleanse Aatrox's W pull with his W; he will still be pulled back"],
+      ko: ["아트록스 W의 [[GRAB]] 효과로 끌려갈 때 갱플랭크 W를 사용해도 멈추지 않음."],
+      en: ["Using Gangplank's W while being [[GRAB]]bed by Aatrox's W does not stop the pull."],
     },
     gangplank: {
       ko: [],

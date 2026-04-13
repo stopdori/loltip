@@ -5,8 +5,8 @@ const smolder: ChampData = {
   skills: {
     P: ["STACKING"],
     Q: { phases: [
-      { label: { ko: "Q 0~224 스택", en: "Q 0~224 Stacks" }, tags: ["Q_FLASH"] },
-      { label: { ko: "Q 225 스택 이상", en: "Q Over 225 Stacks" }, tags: ["Q_FLASH", "EXECUTE"] },
+      { label: { ko: "Q 0~224스택", en: "Q 0~224 Stacks" }, tags: ["Q_FLASH"] },
+      { label: { ko: "Q 225스택 이상", en: "Q Over 225 Stacks" }, tags: ["Q_FLASH", "EXECUTE"] },
     ] },
 
     W: ["W_FLASH", "SLOW"],
@@ -25,9 +25,9 @@ const smolder: ChampData = {
   gimmick: {
     P: ["STACKING"],
     Q: { phases: [
-      { label: { ko: "Q 1~24 스택", en: "Q 1~24 Stacks" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "PROJECTILE", "SINGLE"] },
-      { label: { ko: "Q 25~125 스택", en: "Q 25~124 Stacks" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "AOE"] },
-      { label: { ko: "Q 126~224 스택", en: "Q 126~224 Stacks" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "AOE"] },
+      { label: { ko: "Q 1~24스택", en: "Q 1~24 Stacks" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "PROJECTILE", "SINGLE"] },
+      { label: { ko: "Q 25~125스택", en: "Q 25~124 Stacks" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "AOE"] },
+      { label: { ko: "Q 126~224스택", en: "Q 126~224 Stacks" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "AOE"] },
       { label: { ko: "Q 225 이상", en: "Q Over 225 Stacks" }, tags: ["DMG_PHYSICAL", "DMG_MAGIC", "DOT_DMG_TRUE", "TIMING_CAST", "TARGETED", "PROJECTILE", "AOE"] },
       { label: { ko: "Q 추가 투사체 ( 125스택 이상 )", en: "Q Addtional Projectile ( Over 125 Stacks )" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DMG_MAGIC", "PROJECTILE", "PIERCE"] },
       { label: { ko: "Q 추가 투사체 ( 225스택 이상 )", en: "Q Addtional Projectile ( Over 125 Stacks )" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DMG_MAGIC", "DOT_DMG_TRUE", "PROJECTILE", "PIERCE"] },
@@ -44,10 +44,19 @@ const smolder: ChampData = {
 
   notes: {
     skill: {
-      note3: { ko: [], en: [] },
+      note3: { 
+        ko: [
+          "",
+        ], en: [] },
       note1: {
 
-        ko: [],
+        ko: [
+          "P",
+          "Q",
+          "W",
+          "E",
+          "R",
+        ],
 
         en: []
 

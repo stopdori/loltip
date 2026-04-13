@@ -4,7 +4,7 @@ const akshan: ChampData = {
   id: "akshan",
   skills: {
     P: ["SHIELD", "MS_UP"],
-    Q: ["Q_FLASH", "PIERCE"],
+    Q: ["Q_FLASH"],
     W: ["CAMOUFLAGE", "MS_UP", "MANA_RESTORE", "REVIVE"],
     E: ["DASH"],
     R: ["R_FLASH", "TRUE_SIGHT"],
@@ -23,7 +23,7 @@ const akshan: ChampData = {
       { label: { ko: "P1~P2", en: "P1~P2" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "DEBUFF_STACK"] },
       { label: { ko: "P3", en: "P3"  }, tags: ["DMG_MAGIC", "PROJECTILE", "ON_HIT", "DEBUFF_STACK", "PROC"]},
     ] },
-    Q: ["DMG_PHYSICAL", "PROJECTILE", "PIERCE", "DEBUFF_STACK"],
+    Q: ["DMG_PHYSICAL", "PROJECTILE", "PIERCE", "DEBUFF_STACK", "SEPARATOR", "ST_CONDITIONAL", "RANGE_UP"],
     W: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS", "SEPARATOR", "ST_CONDITIONAL", "TARGET_ALLY", "REVIVE"] },
       { label: { ko: "액티브", en: "Active" }, tags: ["TIMING_CAST", "SEPARATOR", "ST_CONDITIONAL", "CAMOUFLAGE", "MANA_RESTORE"] },

@@ -9,8 +9,8 @@ export const aatrox_rammus: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 람머스 Q를 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Rammus's Q"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 람머스 Q(구르기)를 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Rammus's Q (rolling)."],
     },
     rammus: {
       ko: [],

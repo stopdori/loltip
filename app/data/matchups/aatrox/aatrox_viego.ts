@@ -9,8 +9,8 @@ export const aatrox_viego: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q끝, W [[GRAB]]효과로 비에고 W를 끊을 수 있음"],
-      en: ["Aatrox's Q (sweet spot) and W's [[GRAB]] effect can interrupt Viego's W"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 비에고 W의 [[SKILL_CHARGED]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Viego's W [[SKILL_CHARGED]]."],
     },
     viego: {
       ko: [],

@@ -1,5 +1,4 @@
 import kaisa from "../champs/kaisa";
-import karma from "../champs/karma";
 import khazix from "../champs/khazix";
 import lissandra from "../champs/lissandra";
 
@@ -38,11 +37,6 @@ export const CHAMP_FORMS: Record<
     base: { ko: "기본", en: "Basic" },
     alt: { ko: "진화", en: "Evolutions" },
     },
-
-  karma: {
-    base: { ko: "기본", en: "Basic" },
-    alt: { ko: "만트라", en: "Mantra" },
-  },
 
   // ✅ 케인 (3폼)
   kayn: {

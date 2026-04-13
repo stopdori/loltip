@@ -9,11 +9,11 @@ export const aatrox_lissandra: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["특이사항 없음"],
-      en: ["None"],
+      ko: [],
+      en: [],
     },
     lissandra: {
-      ko: ["리산드라 W의 [[ROOT]]으로 아트록스 E를 끊을 수 없음. 단, [[ROOT]]는 남아있음"],
+      ko: ["리산드라 W의 [[ROOT]]으로 아트록스 E의 [[DASH]]를 끊을 수 없음. \n 단, [[ROOT]]는 남아있음."],
       en: ["Lissandra's W [[ROOT]] cannot interrupt Aatrox's E. However, the [[ROOT]] still applies."],
     },
   },

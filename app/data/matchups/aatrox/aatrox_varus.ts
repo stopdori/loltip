@@ -9,8 +9,8 @@ export const aatrox_varus: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     varus: {
       ko: [],
