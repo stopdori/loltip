@@ -9,8 +9,8 @@ export const ahri_vayne: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 베인 Q를 끊을 수 있음"],
-      en: ["Ahri's E can interrupt Vayne's Q"],
+      ko: ["아리 E의 [[CHARM]]으로 베인 Q(구르기)의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Vayne's Q (roll) [[DASH]]."],
     },
     vayne: {
       ko: [],

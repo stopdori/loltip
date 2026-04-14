@@ -9,8 +9,8 @@ export const ahri_tryndamere: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 트린다미어 E를 끊을 수 있음"],
-      en: ["Ahri's E can interrupt Tryndamere's E"],
+      ko: ["아리 E의 [[CHARM]]으로 트린다미어 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Tryndamere's E [[DASH]]."],
     },
     tryndamere: {
       ko: [],

@@ -9,8 +9,8 @@ export const ahri_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 스몰더 E를 끊을 수 있음"],
-      en: ["Ahri's E can interrupt Smolder's E"],
+      ko: ["아리 E의 [[CHARM]]으로 스몰더 E의 벽이동([[MOBILITY]])을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Smolder's E wall movement ([[MOBILITY]])."],
     },
     smolder: {
       ko: [],

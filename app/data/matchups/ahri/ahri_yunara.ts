@@ -9,8 +9,8 @@ export const ahri_yunara: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 유나라 E(R상태)를 끊을 수 있음"],
-      en: ["Ahri's E can interrupt Yunara's E (during R state)"],
+      ko: ["아리 E의 [[CHARM]]으로 유나라 RE의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Yunara's RE [[DASH]]."],
     },
     yunara: {
       ko: [],

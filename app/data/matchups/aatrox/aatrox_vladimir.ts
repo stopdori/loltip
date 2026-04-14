@@ -13,7 +13,7 @@ export const aatrox_vladimir: MatchupSummary = {
       en: ["If Vladimir uses W after being hit by Aatrox's W, the [[TETHER]] remains; if he doesn't escape, he takes full damage including the [[GRAB]]."],
     },
     vladimir: {
-      ko: [],
+      ko: ["블라디미르 E의 [[SKILL_CHARGED]]은 아트록스 Q의 [[AIRBORNE]] W의 [[GRAB]]으로 끊길 수 있음. \n 단, 맞는 순간까지 모았던 [[SKILL_CHARGED]]은 발사."],
       en: [],
     },
   },

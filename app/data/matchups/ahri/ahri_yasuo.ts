@@ -13,8 +13,8 @@ export const ahri_yasuo: MatchupSummary = {
       en: [],
     },
     yasuo: {
-      ko: ["야스오 W가 아리 Q, W, E, R을 막을 수 있음."],
-      en: ["Yasuo's W can block Ahri's Q, W, E, and R."],
+      ko: ["야스오 W의 [[WINDSHIELD]] 효과로 아리 평타, Q, W, E, R의 [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Yasuo's W [[WINDSHIELD]] can block Ahri's basic attacks, Q, W, E, and R [[PROJECTILE]]."],
     },
   },
 };

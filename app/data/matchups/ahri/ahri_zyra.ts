@@ -13,8 +13,8 @@ export const ahri_zyra: MatchupSummary = {
       en: [],
     },
     zyra: {
-      ko: ["자이라 식물로 아리 E를 막을 수 있음"],
-      en: ["Zyra's plants can block Ahri's E"],
+      ko: ["자이라 Q, E의 식물 [[SUMMON]]으로 아리 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Zyra's Q and E plants [[SUMMON]] can block Ahri's E [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };

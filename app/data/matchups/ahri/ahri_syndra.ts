@@ -9,8 +9,8 @@ export const ahri_syndra: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     syndra: {
       ko: [],

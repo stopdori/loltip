@@ -9,8 +9,8 @@ export const ahri_senna: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     senna: {
       ko: [],

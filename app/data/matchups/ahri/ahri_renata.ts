@@ -9,8 +9,8 @@ export const ahri_renata: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     renata: {
       ko: [],

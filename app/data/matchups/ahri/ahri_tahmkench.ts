@@ -9,7 +9,7 @@ export const ahri_tahmkench: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 탐켄치 W(시전집중)를 끊을 수 있음"],
+      ko: ["아리 E의 [[CHARM]]으로 탐켄치 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: ["Ahri's E can interrupt Tahm Kench's W (channeling)"],
     },
     tahmkench: {

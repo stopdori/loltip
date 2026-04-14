@@ -9,8 +9,8 @@ export const ahri_yone: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 요네 Q3을 끊을 수 있음. 단, Q3검기는 계속 날아감"],
-      en: ["Ahri's E can interrupt Yone's Q3. However, the Q3 projectile continues flying."],
+      ko: ["아리 E의 [[CHARM]]으로 요네 Q3, E의 [[DASH]]을 끊을 수 있음. \n 단, Q3의 [[PROJECTILE]]은 계속 날아감."],
+      en: ["Ahri's E [[CHARM]] can interrupt Yone's Q3 and E [[DASH]]. \n However, Q3's [[PROJECTILE]] continues flying."],
     },
     yone: {
       ko: [],
