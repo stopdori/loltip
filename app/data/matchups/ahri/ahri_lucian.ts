@@ -9,8 +9,8 @@ export const ahri_lucian: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CAHRM]]으로 루시안 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E can interrupt Lucian's E"],
+      ko: ["아리 E의 [[CHARM]]으로 루시안 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Lucian's E [[DASH]]."],
     },
     lucian: {
       ko: [],
