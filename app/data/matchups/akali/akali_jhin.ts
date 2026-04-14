@@ -9,8 +9,8 @@ export const akali_jhin: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     jhin: {
       ko: [],

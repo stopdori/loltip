@@ -9,8 +9,8 @@ export const akali_ksante: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 크산테 E, R을 따라갈 수 있음"],
-      en: ["Akali's E2 can follow K'Sante's E and R"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 크산테 W, E, R의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow K'Sante's W, E, and R [[DASH]]."],
     },
     ksante: {
       ko: [],

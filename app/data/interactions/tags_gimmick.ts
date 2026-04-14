@@ -241,7 +241,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   ZONE:             { ko: "시전자와 분리되어 \n 특정 위치에 독립적으로 존재하는 효과", en: "An effect that exists independently at a fixed location, \n separate from the caster" },
   TRAP:             { ko: "설치 후 적이 밟으면 발동되는 함정", en: "A trap that activates when an enemy steps on it" },
   CHAIN:            { ko: "조건 충족 시 추가 투사체 또는 효과가 연쇄 생성됨", en: "Generates additional projectiles or effects when a condition is met" },
-  HOMING:           { ko: "시전 후 스스로 대상을 추적.", en: "Tracks a target on its own after cast." },
+  HOMING:           { ko: "시전 후 투사체나 캐릭터가 스스로 대상을 추적.", en: "Self-targeting projectile or character after cast." },
   PASSIVE_BONUS:    { ko: "스킬을 찍으면 별도의 패시브 효과가 추가됨", en: "Leveling this ability grants an additional persistent passive effect" },
   PASSIVE_INTERACT: { ko: "패시브와 다른 스킬이 서로 영향을 주고받음.", en: "The passive and other abilities interact with each other." },
   BUFF_INTERACT:    { ko: "버프가 다른 스킬과 서로 영향을 주고받음.", en: "A buff interacts with other abilities." },
