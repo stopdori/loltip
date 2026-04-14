@@ -9,8 +9,8 @@ export const ahri_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nasus: {
       ko: [],

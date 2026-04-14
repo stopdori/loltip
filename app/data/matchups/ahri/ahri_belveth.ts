@@ -9,13 +9,14 @@ export const ahri_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 벨베스 Q의 [[DASH]], W의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
-        "아리 E의 [[CHARM]]으로 벨베스 R의 [[CAST_COMMIT]]을 멈출 수 없음. \n 단, [[CHARM]]은 남아있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Bel'Veth's Q [[DASH]] and W [[SKILL_CHANNEL]].", "Ahri's E [[CHARM]] cannot stop Bel'Veth's R [[CAST_COMMIT]].\nHowever, the [[CHARM]] still applies."],
+      ko: ["아리 E의 [[CHARM]]으로 벨베스 Q의 [[DASH]], W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Bel'Veth's Q [[DASH]] and W [[SKILL_CHANNEL]]."],
     },
     belveth: {
-      ko: ["벨베스 W의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Bel'Veth's W [[AIRBORNE]] can interrupt Ahri's R [[DASH]]."],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음.",
+        "벨베스 R의 [[CAST_COMMIT]]으로 아리 E의 [[CHARM]]에 걸려도 시전을 유지할 수 있음.",
+      ],
+      en: ["Bel'Veth's W [[AIRBORNE]] can interrupt Ahri's R [[DASH]].", "Bel'Veth's R [[CAST_COMMIT]] can maintain its cast even when hit by Ahri's E [[CHARM]]."],
     },
   },
 };

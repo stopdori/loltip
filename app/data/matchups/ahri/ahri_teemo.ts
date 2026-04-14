@@ -9,8 +9,8 @@ export const ahri_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     teemo: {
       ko: [],

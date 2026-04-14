@@ -4,7 +4,7 @@ const volibear: ChampData = {
   id: "volibear",
   skills: {
     P: ["AS_UP"],
-    Q: ["Q_FLASH","MS_UP", "STUN", "AA_RESET"],
+    Q: ["Q_FLASH","TRANSFORM", "MS_UP", "STUN", "AA_RESET"],
     W: ["W_FLASH", "HEAL"],
     E: ["E_FLASH", "SHIELD", "SLOW"],
     R: ["MAX_HP_UP", "SLOW", "UNSTOPPABLE"],
@@ -21,7 +21,7 @@ const volibear: ChampData = {
   gimmick: {
     P: [],
     Q: { phases: [
-      { label: { ko: "추격단계", en: "Chase"  }, tags: [] },
+      { label: { ko: "추격단계", en: "Chase"  }, tags: ["TRANSFORM"] },
       { label: { ko: "공격단계", en: "Strike" }, tags: ["DMG_PHYSICAL", "ON_HIT"] },
     ] },
 

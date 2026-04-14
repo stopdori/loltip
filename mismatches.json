@@ -1,0 +1,528 @@
+{
+  "app/data/matchups/ahri/ahri_akshan.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Akshan's E and R"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_ambessa.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Ambessa's P"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_aurora.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Aurora's W",
+        "Ahri's E can interrupt Aurora's E depending on conditions"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_corki.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Corki's W"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_ezreal.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E cannot interrupt Ezreal's E. However, the [[CHARM]] still applies."
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_graves.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Graves's E",
+        "Ahri's E cannot interrupt Graves's R. However, the [[CHARM]] still applies."
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_illaoi.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Illaoi's W"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_jarvaniv.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Jarvan IV's EQ combo"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_khazix.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Kha'Zix's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_kindred.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Kindred's Q",
+        "Ahri's E [[CHARM]] can pull enemies outside Kindred's R zone"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_lucian.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Lucian's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_missfortune.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Miss Fortune's R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_naafiri.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Naafiri's E and R"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_nautilus.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Nautilus's Q (grab phase)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_nidalee.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Nidalee's cougar form W"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_nilah.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Nilah's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_nunu.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Nunu's W and R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_ornn.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Ornn's E and R2"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_pantheon.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Pantheon's W"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_poppy.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Poppy's E and R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_pyke.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Pyke's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_qiyana.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Qiyana's W and E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_quinn.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Quinn's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_rakan.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Rakan's W and E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_rammus.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Rammus's Q"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_reksai.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Rek'Sai's burrowed E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_rell.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Rell's mounted W"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_renekton.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Renekton's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_rengar.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Rengar's P"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_riven.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Riven's Q and E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_ryze.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Ryze's R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_samira.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Samira's E and R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_sejuani.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Sejuani's Q"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_shaco.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "If Ahri's E hits Shaco during his R (channeling), Shaco splits and the main body is affected by [[CHARM]]"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_shen.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Shen's E and R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_skarner.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Skarner's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_smolder.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Smolder's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_tahmkench.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Tahm Kench's W (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_talon.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Talon's Q and E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_tristana.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Tristana's W (jump phase)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_tryndamere.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Tryndamere's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_twistedfate.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Twisted Fate's R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_urgot.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Urgot's E (dash phase)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_vayne.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Vayne's Q"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_velkoz.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Vel'Koz's R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_vi.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Vi's Q"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_viego.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Viego's W",
+        "Ahri's E cannot interrupt Viego's R. However, the [[CHARM]] still applies."
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_volibear.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Volibear's Q"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_wukong.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Wukong's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_xerath.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Xerath's Q and R (channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_xinzhao.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Xin Zhao's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_yone.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Yone's Q3. However, the Q3 projectile continues flying."
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_yunara.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Yunara's E (during R state)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_yuumi.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Yuumi's W"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_zaahen.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Zaahen's E. However, the E projectile remains."
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_zac.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Zac's E (jump/channeling)"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_zeri.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Zeri's E"
+      ]
+    }
+  ],
+  "app/data/matchups/ahri/ahri_ziggs.ts": [
+    {
+      "arrayIndex": 2,
+      "ko": [],
+      "en": [
+        "Ahri's E can interrupt Ziggs's W"
+      ]
+    }
+  ]
+}

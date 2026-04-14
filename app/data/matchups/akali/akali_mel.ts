@@ -9,12 +9,12 @@ export const akali_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["멜 W로 아칼리 E 반사 가능."],
-      en: ["Mel's W can reflect Akali's E"],
-    },
-    mel: {
       ko: [],
       en: [],
+    },
+    mel: {
+      ko: ["멜 W의 [[REFLECT]]로 아칼리 E1의 [[PROJECTILE]]를 반사 가능."],
+      en: ["Mel's W [[REFLECT]] can reflect Akali's E1 [[PROJECTILE]]."],
     },
   },
 };

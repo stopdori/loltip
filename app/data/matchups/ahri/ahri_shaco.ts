@@ -9,8 +9,8 @@ export const ahri_shaco: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E를 샤코 R(시전집중)에 맞히면 샤코가 분화되고 본체가 [[CHARM]]에 걸려있음"],
-      en: ["If Ahri's E hits Shaco during his R (channeling), Shaco splits and the main body is affected by [[CHARM]]"],
+      ko: ["아리 E의 [[CHARM]]으로 샤코 R의 [[TIMING_CAST]] 중에 맞히면 샤코가 복제되고 본체에 [[CHARM]]이 걸려있음."],
+      en: ["Ahri's E [[CHARM]] hitting Shaco during R [[TIMING_CAST]] will cause Shaco to split, and the [[CHARM]] is applied to the real Shaco."],
     },
     shaco: {
       ko: [],

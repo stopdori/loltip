@@ -13,7 +13,7 @@ export const jarvaniv_lucian: MatchupSummary = {
       en: [""],
     },
     lucian: {
-      ko: [],
+      ko: ["루시안 E([[DASH]])로 자르반 R을 정말 어렵게(정말정말 칼 타이밍으로 쓰면) 피할 수 있음."],
       en: [],
     },
   },

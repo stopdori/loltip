@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx vercel:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)",
+      "Bash(grep:*)",
+      "Bash(python3:*)",
+      "Bash(node:*)",
+      "Bash(winget upgrade:*)",
+      "Bash(do echo:*)",
+      "Bash(ls:*)",
+      "Bash(for f in app/data/matchups/braum/braum_naafiri.ts app/data/matchups/braum/braum_nami.ts app/data/matchups/braum/braum_nasus.ts app/data/matchups/braum/braum_nautilus.ts app/data/matchups/braum/braum_neeko.ts app/data/matchups/braum/braum_nidalee.ts app/data/matchups/braum/braum_nilah.ts app/data/matchups/braum/braum_nocturne.ts app/data/matchups/braum/braum_nunu.ts app/data/matchups/braum/braum_olaf.ts app/data/matchups/braum/braum_orianna.ts app/data/matchups/braum/braum_ornn.ts app/data/matchups/braum/braum_pantheon.ts app/data/matchups/braum/braum_poppy.ts app/data/matchups/braum/braum_pyke.ts app/data/matchups/braum/braum_qiyana.ts app/data/matchups/braum/braum_quinn.ts)",
+      "Read(//c/Users/stopdori/loltip/**)",
+      "Bash(done)",
+      "Bash(xargs sed:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git:*)",
+      "Bash(sed:*)",
+      "Bash(py:*)",
+      "Bash(powershell:*)",
+      "Bash(gh run:*)",
+      "Bash(for champ:*)",
+      "Bash(do)",
+      "Bash(echo \"=== $champ ===\")",
+      "Read(//c/Users/stopdori/loltip/app/data/champs/**)",
+      "Bash(cd:*)",
+      "Bash(for f:*)",
+      "mcp__ide__getDiagnostics",
+      "WebFetch(domain:wiki.leagueoflegends.com)",
+      "Bash(perl:*)",
+      "Bash(git log:*)",
+      "Bash(mkdir:*)",
+      "Bash(file:*)",
+      "Bash(cp:*)",
+      "Skill(update-config)"
+    ]
+  }
+}

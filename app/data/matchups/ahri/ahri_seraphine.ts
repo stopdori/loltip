@@ -9,8 +9,8 @@ export const ahri_seraphine: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     seraphine: {
       ko: [],

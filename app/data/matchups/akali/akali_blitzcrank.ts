@@ -9,8 +9,8 @@ export const akali_blitzcrank: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     blitzcrank: {
       ko: [],

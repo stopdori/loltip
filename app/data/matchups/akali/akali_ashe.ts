@@ -9,8 +9,8 @@ export const akali_ashe: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     ashe: {
       ko: [],

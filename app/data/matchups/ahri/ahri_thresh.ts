@@ -9,8 +9,8 @@ export const ahri_thresh: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     thresh: {
       ko: [],

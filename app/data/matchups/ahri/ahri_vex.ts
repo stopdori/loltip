@@ -9,8 +9,8 @@ export const ahri_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     vex: {
       ko: [],

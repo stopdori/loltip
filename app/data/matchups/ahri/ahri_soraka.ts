@@ -9,8 +9,8 @@ export const ahri_soraka: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     soraka: {
       ko: [],

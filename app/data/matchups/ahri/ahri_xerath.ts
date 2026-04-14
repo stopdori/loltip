@@ -9,8 +9,8 @@ export const ahri_xerath: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 제라스 Q, R(시전집중)을 끊을 수 있음"],
-      en: ["Ahri's E can interrupt Xerath's Q and R (channeling)"],
+      ko: ["아리 E의 [[CHARM]]으로 제라스 Q의 [[SKILL_CHARGED]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Xerath's Q [[SKILL_CHARGED]] and R [[SKILL_CHANNEL]]."],
     },
     xerath: {
       ko: [],

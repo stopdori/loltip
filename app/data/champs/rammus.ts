@@ -3,7 +3,7 @@ import type { ChampData } from "../interactions/types";
 const rammus: ChampData = {
   id: "rammus",
   skills: {
-    P: ["AD_UP"],
+    P: ["TRANSFORM", "AD_UP"],
     Q: ["Q_FLASH", "AIRBORNE", "SLOW"],
     W: ["BUFF_FORM"],
     E: ["E_FLASH", "TAUNT"],
@@ -20,7 +20,7 @@ const rammus: ChampData = {
 
   gimmick: {
     P: [],
-    Q: ["BUFF_STACK", "DMG_MAGIC", "SKILL_CHANNEL", "CANCELLABLE"],
+    Q: ["TRANSFORM", "DMG_MAGIC", "SKILL_CHANNEL", "CANCELLABLE", ],
     W: ["BUFF_FORM", "ST_CONDITIONAL", "DMG_MAGIC", "CANCELLABLE"],
     E: ["TIMING_CAST", "TARGETED"],
     R: ["DMG_MAGIC", "ZONE", "DASH", "CC_IMMUNE"]

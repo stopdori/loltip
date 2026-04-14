@@ -9,8 +9,8 @@ export const akali_janna: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     janna: {
       ko: ["잔나 Q, R로 아칼리 E, E2, R, R2 를 끊을 수 있음"],

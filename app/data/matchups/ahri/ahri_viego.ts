@@ -9,12 +9,12 @@ export const ahri_viego: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 비에고 W를 끊을 수 있음", "아리 E로 비에고 R을 끊을 수 없음. 단, [[CHARM]]은 남아있음"],
-      en: ["Ahri's E can interrupt Viego's W", "Ahri's E cannot interrupt Viego's R. However, the [[CHARM]] still applies."],
+      ko: ["아리 E의 [[CHARM]]으로 비에고 W의 [[SKILL_CHARGED]], [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Viego's W [[SKILL_CHARGED]] and [[DASH]]."],
     },
     viego: {
-      ko: [],
-      en: [],
+      ko: ["비에고 R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 무시할 수 있음. \n 단, [[CHARM]]은 남아있음."],
+      en: ["Viego's R [[UNSTOPPABLE]] can ignore Ahri's E [[CHARM]]. \n However, the [[CHARM]] still applies."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const akali_darius: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     darius: {
       ko: [],

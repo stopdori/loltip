@@ -13,8 +13,8 @@ export const aatrox_irelia: MatchupSummary = {
       en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] effect can interrupt Irelia's Q [[DASH]]."],
     },
     irelia: {
-      ko: [],
-      en: [],
+      ko: ["이렐리아 R의 [[CAST_COMMIT]]으로 아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]]에 걸려도 시전을 유지할 수 있음."],
+      en: ["Irelia's R [[CAST_COMMIT]] can maintain its cast even when hit by Aatrox's Q [[AIRBORNE]] and W [[GRAB]]."],
     },
   },
 };

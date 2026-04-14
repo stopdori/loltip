@@ -9,8 +9,8 @@ export const akali_maokai: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 마오카이 W의 [[DASH]]을 따라갈 수 있음. \n 단, 아칼리 E2를 마오카이 W의 [[UNTARGETABLE]] 상태일 때 사용할 수 없음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Maokai's W [[DASH]]. \n However, Akali's E2 cannot be used while Maokai's W [[UNTARGETABLE]] is active."],
     },
     maokai: {
       ko: [],

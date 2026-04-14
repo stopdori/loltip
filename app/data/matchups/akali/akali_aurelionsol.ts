@@ -9,8 +9,8 @@ export const akali_aurelionsol: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 아우솔 W를 따라 갈 수 있음"],
-      en: ["Akali's E2 can follow Aurelion Sol's W"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 아우솔 W(비행)의 [[DASH]]을 따라 갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Aurelion Sol's W (flight) [[DASH]]."],
     },
     aurelionsol: {
       ko: [],

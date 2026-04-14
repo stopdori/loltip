@@ -9,8 +9,8 @@ export const ahri_viktor: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     viktor: {
       ko: [],

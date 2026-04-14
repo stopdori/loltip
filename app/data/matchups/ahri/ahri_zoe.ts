@@ -9,8 +9,8 @@ export const ahri_zoe: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zoe: {
       ko: [],

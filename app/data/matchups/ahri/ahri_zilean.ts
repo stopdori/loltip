@@ -9,8 +9,8 @@ export const ahri_zilean: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zilean: {
       ko: [],

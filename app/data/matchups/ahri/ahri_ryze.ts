@@ -9,8 +9,8 @@ export const ahri_ryze: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 라이즈 R(시전집중)을 끊을 수 있음"],
-      en: ["Ahri's E can interrupt Ryze's R (channeling)"],
+      ko: ["아리 E의 [[CHARM]]으로 라이즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Ryze's R [[SKILL_CHANNEL]]."],
     },
     ryze: {
       ko: [],

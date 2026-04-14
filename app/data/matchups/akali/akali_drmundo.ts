@@ -9,8 +9,8 @@ export const akali_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     drmundo: {
       ko: [],

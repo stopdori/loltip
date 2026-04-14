@@ -9,8 +9,8 @@ export const akali_braum: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 브라움 W를 따라 갈 수 있음"],
-      en: ["Akali's E2 can follow Braum's W"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 브라움 W의 [[DASH]]을 따라 갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Braum's W [[DASH]]."],
     },
     braum: {
       ko: ["브라움 E(방패)로 아칼리 평타, Q, E1, E2, R1, R2를 막을([[DAMAGE_NULLIFY]]) 수 있음", "브라움 E(방패)로 아칼리 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음", "브라움 E(방패)로 아칼리 E1을 [[INTERCEPT_PROJECTILE]] 할 수 있음. \n단, E1를 막아도 투사체가 삭제되지 않고 아칼리가 E2를 사용 할 수 있음.", "브라움 P의 [[STUN]]로 아칼리 E1, E2, R1, R2를 끊을 수 없음. 단, [[STUN]]은 남아있음", "브라움 R의 [[AIRBORNE]]으로 아칼리 E1, E2, R1, R2를 끊을 수 있음"],

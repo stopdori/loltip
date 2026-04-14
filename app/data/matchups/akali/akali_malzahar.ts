@@ -9,8 +9,8 @@ export const akali_malzahar: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     malzahar: {
       ko: [],

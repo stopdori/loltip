@@ -9,8 +9,8 @@ export const ahri_shyvana: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     shyvana: {
       ko: [],

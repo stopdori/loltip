@@ -9,8 +9,8 @@ export const akali_jax: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 잭스 Q를 따라 갈 수 있음"],
-      en: ["Akali's E2 can follow Jax's Q"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 잭스 Q의 [[DASH]]을 따라 갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Jax's Q [[DASH]]."],
     },
     jax: {
       ko: [],

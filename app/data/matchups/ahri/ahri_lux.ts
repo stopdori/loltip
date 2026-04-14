@@ -9,12 +9,12 @@ export const ahri_lux: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     lux: {
-      ko: ["럭스 Q의 [[ROOT]]으로 아리 R을 끊을 수 없음.\n단, [[ROOT]]은 남아있음."],
-      en: ["Lux's Q [[ROOT]] cannot interrupt Ahri's R. However, the [[ROOT]] still applies."],
+      ko: ["럭스 Q의 [[ROOT]]으로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]은 남아있음."],
+      en: ["Lux's Q [[ROOT]] cannot interrupt Ahri's R [[DASH]]. \n However, the [[ROOT]] still applies."],
     },
   },
 };

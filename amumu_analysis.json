@@ -1,0 +1,870 @@
+{
+  "tagErrors": [
+    {
+      "file": "app/data/matchups/amumu/amumu_fizz.ts",
+      "tags": [
+        "AIRBONRE"
+      ]
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_gragas.ts",
+      "tags": [
+        "AIRBONRE"
+      ]
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_sion.ts",
+      "tags": [
+        "AIRBONRE"
+      ]
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ziggs.ts",
+      "tags": [
+        "AIRBONRE"
+      ]
+    }
+  ],
+  "enMissing": [
+    {
+      "file": "app/data/matchups/amumu/amumu_anivia.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_anivia.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_annie.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_annie.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_aphelios.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_aphelios.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ashe.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_ashe.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_aurelionsol.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_aurelionsol.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_aurora.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_aurora.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_azir.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_azir.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_bard.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_bard.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_bard.ts",
+      "champ": "bard",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_bard.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_belveth.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_belveth.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_blitzcrank.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_blitzcrank.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_brand.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_brand.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_braum.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_braum.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_briar.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_briar.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_caitlyn.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_caitlyn.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_caitlyn.ts",
+      "champ": "caitlyn",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_caitlyn.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_camille.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_camille.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_cassiopeia.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_cassiopeia.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_chogath.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_chogath.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_corki.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_corki.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_darius.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_darius.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_diana.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_diana.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_draven.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_draven.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ekko.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_ekko.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_elise.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_elise.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_evelynn.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_evelynn.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ezreal.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_ezreal.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_fiddlesticks.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_fiddlesticks.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_fiora.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_fiora.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_fizz.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_fizz.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_galio.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_galio.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_garen.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_garen.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_gnar.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_gnar.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_gragas.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_gragas.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_graves.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_graves.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_gwen.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_gwen.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_hecarim.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_hecarim.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_heimerdinger.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_heimerdinger.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_hwei.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_hwei.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_illaoi.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_illaoi.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_irelia.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_irelia.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ivern.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_ivern.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_janna.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_janna.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_jarvaniv.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_jarvaniv.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_jax.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_jax.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_jayce.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_jayce.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_jhin.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_jhin.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_jinx.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_jinx.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_jinx.ts",
+      "champ": "jinx",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_jinx.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_kaisa.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_kaisa.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_kalista.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_kalista.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_karma.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_karma.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_karthus.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_karthus.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_kassadin.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_kassadin.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_katarina.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_katarina.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_kayn.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_kayn.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_kennen.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_kennen.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_khazix.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_khazix.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_kindred.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_kindred.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_kled.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_kled.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ksante.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_ksante.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_leblanc.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_leblanc.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_leesin.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_leesin.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_leona.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_leona.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_lillia.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_lillia.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_lissandra.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_lissandra.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_lucian.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_lucian.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_lulu.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_lulu.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_lux.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_lux.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_malphite.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_malphite.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_malzahar.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_malzahar.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_maokai.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_maokai.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_masteryi.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_masteryi.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_mel.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_mel.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_mel.ts",
+      "champ": "mel",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_mel.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_milio.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_milio.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_missfortune.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_missfortune.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_mordekaiser.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_mordekaiser.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_morgana.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_morgana.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_naafiri.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_naafiri.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_nami.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_nami.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_nasus.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_nasus.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_nautilus.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_nautilus.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_neeko.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_neeko.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_nidalee.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_nidalee.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_nilah.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_nilah.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_nocturne.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_nocturne.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_nunu.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_nunu.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_olaf.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_olaf.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_orianna.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_orianna.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ornn.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_ornn.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_pantheon.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_pantheon.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_poppy.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_poppy.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_poppy.ts",
+      "champ": "poppy",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_poppy.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_pyke.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_pyke.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_qiyana.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_qiyana.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_quinn.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_quinn.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_rakan.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_rakan.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_rammus.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_rammus.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_reksai.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_reksai.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_rell.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_rell.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_renata.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_renata.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_renekton.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_renekton.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_rengar.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_rengar.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_riven.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_riven.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ryze.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_ryze.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_samira.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_samira.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_sejuani.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_sejuani.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_senna.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_senna.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_seraphine.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_seraphine.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_sett.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_sett.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_shaco.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_shaco.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_shen.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_shen.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_shyvana.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_shyvana.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_singed.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_singed.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_sion.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_sion.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_skarner.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_skarner.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_smolder.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_smolder.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_sona.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_sona.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_soraka.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_soraka.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_swain.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_swain.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_sylas.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_sylas.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_syndra.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_syndra.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_tahmkench.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_tahmkench.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_taliyah.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_taliyah.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_talon.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_talon.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_taric.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_taric.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_teemo.ts",
+      "champ": "teemo",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_teemo.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_thresh.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_thresh.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_tristana.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_tristana.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_trundle.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_trundle.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_tryndamere.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_tryndamere.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_twistedfate.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_twistedfate.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_udyr.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_udyr.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_urgot.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_urgot.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_varus.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_varus.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_vayne.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_vayne.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_veigar.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_veigar.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_velkoz.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_velkoz.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_vex.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_vex.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_vi.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_vi.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_viego.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_viego.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_viktor.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_viktor.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_vladimir.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_vladimir.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_volibear.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_volibear.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_warwick.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_warwick.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_wukong.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_wukong.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_xayah.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_xayah.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_xerath.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_xerath.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_xinzhao.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_xinzhao.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_yasuo.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_yasuo.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_yasuo.ts",
+      "champ": "yasuo",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_yasuo.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_yone.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_yone.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_yorick.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_yorick.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_yunara.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_yunara.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_yuumi.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_yuumi.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_zaahen.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_zaahen.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_zac.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_zac.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_zeri.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_zeri.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_ziggs.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_ziggs.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_zilean.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_zilean.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_zoe.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_zoe.ts"
+    },
+    {
+      "file": "app/data/matchups/amumu/amumu_zyra.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\amumu\\amumu_zyra.ts"
+    },
+    {
+      "file": "app/data/matchups/aatrox/aatrox_amumu.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\aatrox\\aatrox_amumu.ts"
+    },
+    {
+      "file": "app/data/matchups/akali/akali_amumu.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\akali\\akali_amumu.ts"
+    },
+    {
+      "file": "app/data/matchups/akshan/akshan_amumu.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\akshan\\akshan_amumu.ts"
+    },
+    {
+      "file": "app/data/matchups/alistar/alistar_amumu.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\alistar\\alistar_amumu.ts"
+    },
+    {
+      "file": "app/data/matchups/ambessa/ambessa_amumu.ts",
+      "champ": "amumu",
+      "filePath": "C:\\Users\\stopdori\\loltip\\app\\data\\matchups\\ambessa\\ambessa_amumu.ts"
+    }
+  ]
+}

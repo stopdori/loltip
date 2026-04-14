@@ -9,8 +9,8 @@ export const ahri_vladimir: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [""],
-      en: [""],
+      ko: ["아리 E의 [[CHARM]]으로 블라디미르 E의 [[SKILL_CHARGED]]을 끊을 수 있음. \n 단, 맞는 순간까지 모았던 [[SKILL_CHARGED]]은 발사."],
+      en: ["Ahri's E [[CHARM]] can interrupt Vladimir's E [[SKILL_CHARGED]]. \n However, the [[SKILL_CHARGED]] charged up until the moment of impact is still released."],
     },
     vladimir: {
       ko: [],

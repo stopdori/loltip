@@ -9,8 +9,8 @@ export const akali_lux: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     lux: {
       ko: [],

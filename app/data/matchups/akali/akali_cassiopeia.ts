@@ -9,8 +9,8 @@ export const akali_cassiopeia: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     cassiopeia: {
       ko: [],
