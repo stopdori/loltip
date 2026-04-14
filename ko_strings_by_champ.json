@@ -1,0 +1,2122 @@
+{
+  "aatrox": {
+    "app/data/matchups/aatrox/aatrox_akali.ts": [
+      "아트록스 W로 아칼리 W의 [[INVISIBILITY]] 모습을 보여줌"
+    ],
+    "app/data/matchups/aatrox/aatrox_jarvaniv.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 자르반 EQ를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_jax.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 잭스 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_jayce.ts": [
+      "아트록스 Q끝, W의 [[GRAB]]효과로 제이스 해머폼 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_jhin.ts": [
+      "아트록스 Q끝, W의 [[GRAB]]효과로 진 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_jinx.ts": [
+      "징크스의 활성화된 E로 아트록스 E가 멈춤"
+    ],
+    "app/data/matchups/aatrox/aatrox_kaisa.ts": [
+      "아트록스 Q끝, W의 [[GRAB]]효과로 카이사 R을 끊을 수 있음",
+      "아트록스 W로 카이사 진화E의 [[INVISIBILITY]]을 볼 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_kennen.ts": [
+      "케넨 P의 [[STUN]]로 아트록스 E를 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_khazix.ts": [
+      "아트록스 W의 [[TRUE_SIGHT]]로 카직스 R의 [[INVISIBILITY]]를 볼 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_kled.ts": [
+      "클레드 Q의 [[GRAB]], R의 [[KNOCKBACK]]으로 아트록스 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_ksante.ts": [
+      "크산테 Q3, 일반폼 W차징, R로 아트록스 E를 끊을 수 있음",
+      "크산테 W 차징효과로 아트록스 Q끝, W [[GRAB]]효과를 무시할 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_leblanc.ts": [
+      "르블랑 E의 [[ROOT]]으로 아트록스 E를 끊을 수 없음. 단, [[ROOT]]는 남아있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_leesin.ts": [
+      "리신 R로 아트록스 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_leona.ts": [
+      "레오나 E의 [[ROOT]]와 Q, R의 [[STUN]]로 아트록스 E를 끊을 수 없음. 단, [[ROOT]], [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_lillia.ts": [
+      "릴리아 R의 [[SLEEP]]으로 아트록스 E를 끊을 수 없음. 단, [[SLEEP]]는 남아있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_lissandra.ts": [
+      "리산드라 W의 [[ROOT]]으로 아트록스 E를 끊을 수 없음. 단, [[ROOT]]는 남아있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_lulu.ts": [
+      "룰루 W의 [[POLYMORPH]]로 아트록스 E를 끊을 수 없음. 단, [[POLYMORPH]]는 남아있음",
+      "룰루 R의 [[AIRBORNE]]으로 아트록스 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_lux.ts": [
+      "럭스 Q의 [[ROOT]]으로 아트록스 E를 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_malzahar.ts": [
+      "아트록스 W의 [[TETHER]]효과는 말자하의 P에 적중시켜도 유지 됨\\n이후 [[GRAB]]효과도 발동될 수 있음",
+      "말자하 P로 아트록스 Q끝의 [[AIRBORNE]]을 무시할 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_missfortune.ts": [
+      "아트록스 Q끝, W의 [[GRAB]]효과로 미스포츈 R의 채널링을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_naafiri.ts": [
+      "아트록스 W를 맞고 나피리가 W를 사용하면 [[TETHER]]효과가 남아있고, 벗어나지 않으면 [[GRAB]] 뿐만아니라 데미지도 들어감",
+      "아트록스 Q끝, W [[GRAB]]효과로 나피리 E, R을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_nautilus.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 노틸러스 Q의 그렙단계를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_nidalee.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 니달리 쿠거폼 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_nilah.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 닐라 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_nunu.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 누누 W, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_ornn.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 오른 R2를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_pantheon.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 판테온 W, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_poppy.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 뽀삐 E, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_pyke.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 파이크 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_qiyana.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 키아나 W, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_quinn.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 퀸 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_rakan.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 라칸 W, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_rammus.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 람머스 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_reksai.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 렉사이 매복폼 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_rell.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 렐 승마폼 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_renekton.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 레넥톤 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_rengar.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 렝가 P를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_riven.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 리븐 Q, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_ryze.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 라이즈 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_samira.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 사미라 E와 R의 채널링을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_sejuani.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 세주아니 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_senna.ts": [
+      "세나 E에 숨은 대상이 아트록스 W를 맞으면 모습이 보임"
+    ],
+    "app/data/matchups/aatrox/aatrox_shen.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 쉔 E, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_sion.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 사이온 Q(시전집중)를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_skarner.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 스카너 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_smolder.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 스몰더 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_sylas.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 사일러스 W, E1, E2를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_tahmkench.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 탐켄치 W(시전집중)를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_taliyah.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 탈리야 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_talon.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 탈론 Q, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_teemo.ts": [
+      "아트록스 W로 [[INVISIBILITY]] 티모를 볼 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_tristana.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 트리스타나 W(점프단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_tryndamere.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 트린다미어 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_twistedfate.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 트페 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_urgot.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 우르곳 E(돌진단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_vayne.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 베인 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_velkoz.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 벨코즈 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_vi.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 바이 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_viego.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 비에고 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_vladimir.ts": [
+      "블라디미르 W로도 아트록스 W 사슬은 끊어지지 않음",
+      "아트록스 W를 맞고 블라디가 W를 사용하면 [[TETHER]]효과가 남아있고, 벗어나지 않으면 [[GRAB]] 뿐만아니라 데미지도 들어감"
+    ],
+    "app/data/matchups/aatrox/aatrox_volibear.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 볼리베어 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_warwick.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 워윅 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_wukong.ts": [
+      "아트록스 W로 오공 W의 [[INVISIBILITY]]을 볼 수 있음",
+      "아트록스 Q끝, W [[GRAB]]효과로 오공 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_xayah.ts": [
+      "자야 R로도 아트록스 W 사슬은 끊어지지 않음",
+      "아트록스 W를 맞고 자야가 R을 사용하면 [[TETHER]]효과가 남아있고, 벗어나지 않으면 [[GRAB]] 뿐만아니라 데미지도 들어감"
+    ],
+    "app/data/matchups/aatrox/aatrox_xerath.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 제라스 Q, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_xinzhao.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 신짜오 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_yasuo.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 야스오 E를 끊을 수 있음",
+      "야스오 W로 아트록스 W 막을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_yunara.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 유나라 E(R상태)를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_yuumi.ts": [
+      "아트록스 W를 맞고 유미가 W를 사용하면 [[TETHER]]효과가 남아있고, 벗어나지 않으면 데미지만 추가로 들어감\\n[[GRAB]]은 무시하고 내려지지 않음",
+      "아트록스 Q끝, W [[GRAB]]효과로 유미 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_zaahen.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 자헨 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_zac.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 자크 E(시전집중), E이동을 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_zeri.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 제리 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/aatrox/aatrox_ziggs.ts": [
+      "아트록스 Q끝, W [[GRAB]]효과로 직스 W의 이동을 끊을 수 있음"
+    ]
+  },
+  "ahri": {
+    "app/data/matchups/ahri/ahri_akali.ts": [
+      "아리 E로 아칼리 E1, E2, R1, R2를 끊을 수 있음",
+      "아칼리 E2로 아리 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_akshan.ts": [
+      "아리 E로 아크샨 E, R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_alistar.ts": [
+      "아리 E로 알리스타 W를 끊을 수 있음",
+      "알리스타 Q, W로 아리 R을 끊을 수 있음",
+      "알리스타 E의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 아리 E의 [[CHARM]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_ambessa.ts": [
+      "아리 E로 암베사 P를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_amumu.ts": [
+      "아리 E로 아무무 Q를 끊을 수 있음",
+      "아무무 Q로 아리 R을 끊을 수 없고 아리를 따라갈 수 있음. 단, [[STUN]]은 남아있음",
+      "아무무 R로 아리 R을 끊을 수 있음. Q, R 둘다 같은 [[STUN]]인데 판정이 다름"
+    ],
+    "app/data/matchups/ahri/ahri_anivia.ts": [
+      "아리 E로 애니비아 R(채널링)을 끊을 수 있음",
+      "애니비아 W로 아리 R을 끊을 수 있음\\n애니비아 Q의 [[STUN]]로 아리 R을 끊을 수 없음"
+    ],
+    "app/data/matchups/ahri/ahri_annie.ts": [
+      "애니 P로 아리 R을 끊을 수 없음(Q, W, R 어느것도 불가능)",
+      "애니의 소환된 R로 아리 E를 막을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_aphelios.ts": [
+      "아펠리오스의 활성화된 포탑이 아리 E를 막을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_ashe.ts": [
+      "애쉬 R의 [[STUN]]으로 아리 R을 끊을 수 없음"
+    ],
+    "app/data/matchups/ahri/ahri_aurelionsol.ts": [
+      "아리 E로 아우렐리온솔 Q, W를 끊을 수 있음",
+      "아우렐리온솔 E, R로 아리 R을 끊을 수 없음"
+    ],
+    "app/data/matchups/ahri/ahri_aurora.ts": [
+      "아리 E로 오로라 E를 조건에 따라 끊을 수 있음",
+      "아리 E로 오로라 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_azir.ts": [
+      "아리 E로 아지르 E를 끊을 수 있음",
+      "아지르 R로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_bard.ts": [
+      "아리 E로 바드 E를 이용한 벽 이동을 끊을 수 있음",
+      "바드 Q의 [[STUN]]로 아리 R을 끊을 수 있음. 단, [[STUN]]은 남아있음\\n바드 R로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_belveth.ts": [
+      "아리 E로 벨베스 Q, W(채널링)를 끊을 수 있음",
+      "벨베스 W로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_blitzcrank.ts": [
+      "블리츠크랭크 Q, E로 아리 R을 끊을 수 있음\\n블리츠크랭크 R의 [[SILENCE]]으로 R을 끊을 수 없음. 단, [[SILENCE]]는 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_brand.ts": [
+      "브랜드 Q의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_braum.ts": [
+      "아리 E로 브라움 W를 끊을 수 있음",
+      "브라움 E로 아리의 평타, Q, W, E, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음\\n단, E의 [[CHARM]]은 남아있음.",
+      "브라움 P의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "브라움 R의 [[AIRBORNE]]으로 아리 R을 끊을 수 있음",
+      "브라움 E로 아리 평타, Q, W, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음.\\n단, W는 최초 타격되는 투사체 1개만"
+    ],
+    "app/data/matchups/ahri/ahri_briar.ts": [
+      "아리 E로 브라이어 Q를 끊을 수 있음",
+      "브라이어 Q의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_caitlyn.ts": [
+      "아리 E로 케이틀린 E, R을 끊을 수 있음",
+      "케이틀린 W의 [[ROOT]]로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_camille.ts": [
+      "아리 E로 카밀 E(그렙/돌진단계)를 끊을 수 있음",
+      "카밀 R로 아리 Q, W, E, R을 회피 할 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_cassiopeia.ts": [
+      "카시오페아 W의 [[GROUNDED]]로 아리 R을 사용하지 못하게 할 수 있음\\n이미 사용된 아리 R을 끊을 수는 없음"
+    ],
+    "app/data/matchups/ahri/ahri_chogath.ts": [
+      "초가스 Q로 아리 R을 끊을 수 있음\\n초가스 W의 [[SILENCE]]으로 아리 R을 끊을 수 없음. 단, [[SILENCE]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_corki.ts": [
+      "아리 E가 코르키 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_darius.ts": [
+      "아리 E의 [[CHARM]]으로 다리우스 Q, R을 끊을 수 없음. 단, [[CHARM]]은 남아있음",
+      "다리우스 E로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_diana.ts": [
+      "아리 E로 다이애나 E를 끊을 수 있음",
+      "다이애나 R로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_draven.ts": [
+      "드레이븐 E로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_drmundo.ts": [
+      "문도 P가 아리 E의 [[CHARM]]을 무시할 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_ekko.ts": [
+      "아리 E로 에코 E(구르기)를 끊을 수 있음",
+      "에코 W의 [[STUN]]으로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "에코 E로 아리 R을 조건에 따라 따라갈 수 있음. 그런데 정확한 조건을 잘 모르겠음 제보 부탁드림"
+    ],
+    "app/data/matchups/ahri/ahri_elise.ts": [
+      "아리 E로 엘리스 거미폼 Q를 끊을 수 있음",
+      "엘리스 거미폼 변신으로 소환된 새끼 거미들로 아리 E를 막을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_evelynn.ts": [
+      "아리 E로 이블린 E를 끊을 수 있음",
+      "이블린 W의 [[CHARM]]으로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_ezreal.ts": [
+      "아리 E로 이즈리얼 E를 끊을 수 없음. 단, [[CHARM]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_fiddlesticks.ts": [
+      "아리 E로 피들스틱 W(채널링), R(시전집중)을 끊을 수 있음",
+      "피들스틱의 [[FEAR]]로 아리 R을 끊을 수 없음. 단, [[FEAR]]는 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_fiora.ts": [
+      "아리 E로 피오라 Q를 끊을 수 있음",
+      "피오라 W가 아리 E를 무시하고 [[STUN]]을 걸 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_fizz.ts": [
+      "아리 E로 피즈 Q를 끊을 수 있음",
+      "피즈 E로 아리 Q, W, E, R을 피할 수 있음",
+      "피즈 R의 [[AIRBORNE]]으로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_galio.ts": [
+      "아리 E로 갈리오 E(돌진단계), R(시전집중)을 끊을 수 있음",
+      "갈리오 E(후진단계)에 아리 E를 맞으면 [[CHARM]]을 무시하고 이동할 수 있음. 단, [[CHARM]]은 남아있음",
+      "갈리오 W의 [[TAUNT]]로 아리 R을 끊을 수 없음. 단, [[TAUNT]]은 남아있음",
+      "갈리오 E, R의 [[AIRBORNE]]으로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_gangplank.ts": [
+      "갱플랭크 W의 [[CC_CLEANSE]]로 아리 E의 [[CHARM]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_garen.ts": [
+      "가렌 Q의 [[SILENCE]]으로 아리 R을 끊을 수 없음. 단, [[SILENCE]]는 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_gnar.ts": [
+      "아리 E로 나르 인간폼 E, 메가폼 E를 끊을 수 있음",
+      "나르 메가폼 W의 [[STUN]]으로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "나르 R이 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_gragas.ts": [
+      "아리 E로 그라가스 E를 끊을 수 있음",
+      "그라가스 E, R로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_graves.ts": [
+      "아리 E로 그레이브즈 R을 끊을 수 없음. 단, [[CHARM]]은 남아있음",
+      "아리 E로 그레이브즈 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_gwen.ts": [
+      "아리 E로 그웬 E를 끊을 수 있음",
+      "그웬 W로 아리 Q, W, E, R을 범위 밖에서 맞지 않음\\n그웬에게 사용한 평타, W, R은 날아가던 중 범위 안에 들어올 때 사라짐"
+    ],
+    "app/data/matchups/ahri/ahri_hecarim.ts": [
+      "아리 E가 헤카림 E를 끊을 수 있음.\\n단, 헤카림이 공격모션을 취하면 헤카림의 이동은 멈추지만 스킬이 유효함",
+      "헤카림 E로 아리 R을 끊을 수 있음",
+      "헤카림 R의 [[FEAR]]로 아리 R을 끊을 수 없음. 단, [[FEAR]]는 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_heimerdinger.ts": [
+      "하이머딩거 Q(포탑)로 아리 E를 막을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_hwei.ts": [
+      "흐웨이 EQ, EE가 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_illaoi.ts": [
+      "아리 E로 일라오이 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_irelia.ts": [
+      "아리 E로 이렐리아 Q를 끊을 수 있음",
+      "이렐리아 E의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_ivern.ts": [
+      "아이번 Q의 [[ROOT]]으로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음",
+      "아이번 R의 [[AIRBORNE]]으로 아리 R을 끊을 수 있음",
+      "아이번 R 소환으로 아리 E를 막을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_janna.ts": [
+      "아리 E로 잔나 R을 끊을 수 있음",
+      "잔나 Q, R로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_jarvaniv.ts": [
+      "아리 E로 자르반 EQ를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_jax.ts": [
+      "아리 E로 잭스 Q를 끊을 수 있음",
+      "잭스 E의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_jayce.ts": [
+      "아리 E로 제이스 해머폼 Q를 끊을 수 있음",
+      "제이스 해머폼 E로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_jhin.ts": [
+      "아리 E로 진 R(시전집중)을 끊을 수 있음",
+      "진 W의 [[ROOT]]으로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_jinx.ts": [
+      "징크스 E의 [[ROOT]]으로 아리 R을 끊을 수 있음. (흔치않은 판정)"
+    ],
+    "app/data/matchups/ahri/ahri_kaisa.ts": [
+      "아리 E로 카이사 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_kalista.ts": [
+      "아리 E로 칼리스타 P를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_karma.ts": [
+      "카르마 W의 [[ROOT]]으로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_karthus.ts": [
+      "아리 E로 카서스 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_kassadin.ts": [
+      "아리 E로 카사딘 R을 끊을 수 없음. 단, [[CHARM]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_katarina.ts": [
+      "아리 E로 카타리나 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_kayn.ts": [
+      "아리 E로 케인 E의 벽 이동을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_kennen.ts": [
+      "케넨 P의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_khazix.ts": [
+      "아리 E로 카직스 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_kindred.ts": [
+      "아리 E의 [[CHARM]]으로 킨드레드 R 범위 밖으로 꺼낼 수 있음",
+      "아리 E로 킨드레드 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_kled.ts": [
+      "아리 E로 클레드 승마폼 E를 끊을 수 있음",
+      "클레드 Q의 [[GRAB]]으로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_ksante.ts": [
+      "아리 E로 크산테 E를 끊을 수 있음",
+      "크산테 Q3, R로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_leblanc.ts": [
+      "아리 E로 르블랑 W를 끊을 수 있음",
+      "르블랑 E의 [[ROOT]]로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_leesin.ts": [
+      "아리 E로 리신 Q2, W를 끊을 수 있음",
+      "리신 R로 아리 R을 끊을 수 있음. 날아가는 방향은 경우에 따라 다름"
+    ],
+    "app/data/matchups/ahri/ahri_leona.ts": [
+      "아리 E로 레오나 E(돌진단계)를 끊을 수 있음",
+      "레오나 Q, R의 [[STUN]]과 E의 [[ROOT]]으로 아리 R을 끊을 수 없음. 단, [[ROOT]], [[STUN]]은 남아있음",
+      "레오나 E를 아리 R에 적중시키면 아리의 도착지점으로 같이 이동"
+    ],
+    "app/data/matchups/ahri/ahri_lillia.ts": [
+      "아리 E로 릴리아 W를 조건부로 끊을 수 있음",
+      "릴리아 R의 [[SLEEP]]으로 아리 R을 끊을 수 없음. 단, [[SLEEP]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_lissandra.ts": [
+      "리산드라 W의 [[ROOT]], R의 [[STUN]]로 아리 R을 끊을 수 없음. 단, [[ROOT]], [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_lucian.ts": [
+      "아리 E로 루시안 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_lulu.ts": [
+      "룰루 W의 [[POLYMORPH]]로 아리 R을 끊을 수 없음. 단, [[POLYMORPH]]는 남아있음",
+      "룰루 R의 [[AIRBORNE]]으로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_lux.ts": [
+      "럭스 Q의 [[ROOT]]으로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_malzahar.ts": [
+      "말자하 P로 아리 E의 [[CHARM]]을 무시 할 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_maokai.ts": [
+      "마오카이 W의 [[ROOT]]으로 아리 R을 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_masteryi.ts": [
+      "아리 E로 마스터이 W(채널링)을 끊을 수 있음",
+      "마스터이 Q로 아리 Q, W, E, R을 회피할 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_mel.ts": [
+      "아리 E의 [[CHARM]]으로 멜 R을 끊을 수 없음. 단, [[CHARM]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_milio.ts": [
+      "밀리오 Q로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_missfortune.ts": [
+      "아리 E로 미스포츈 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_mordekaiser.ts": [
+      "모데카이저 E로 아리 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_naafiri.ts": [
+      "아리 E로 나피리 E, R을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_nautilus.ts": [
+      "아리 E로 노틸러스 Q(그렙단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_nidalee.ts": [
+      "아리 E로 니달리 쿠거폼 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_nilah.ts": [
+      "아리 E로 닐라 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_nunu.ts": [
+      "아리 E로 누누 W, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_ornn.ts": [
+      "아리 E로 오른 E, R2를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_pantheon.ts": [
+      "아리 E로 판테온 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_poppy.ts": [
+      "아리 E로 뽀삐 E, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_pyke.ts": [
+      "아리 E로 파이크 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_qiyana.ts": [
+      "아리 E로 키아나 W, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_quinn.ts": [
+      "아리 E로 퀸 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_rakan.ts": [
+      "아리 E로 라칸 W, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_rammus.ts": [
+      "아리 E로 람머스 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_reksai.ts": [
+      "아리 E로 렉사이 매복 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_rell.ts": [
+      "아리 E로 렐 승마폼 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_renekton.ts": [
+      "아리 E로 레넥톤 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_rengar.ts": [
+      "아리 E로 렝가 P를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_riven.ts": [
+      "아리 E로 리븐 Q, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_ryze.ts": [
+      "아리 E로 라이즈 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_samira.ts": [
+      "아리 E로 사미라 E, R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_sejuani.ts": [
+      "아리 E로 세주아니 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_shaco.ts": [
+      "아리 E를 샤코 R(시전집중)에 맞히면 샤코가 분화되고 본체가 [[CHARM]]에 걸려있음"
+    ],
+    "app/data/matchups/ahri/ahri_shen.ts": [
+      "아리 E로 쉔 E, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_skarner.ts": [
+      "아리 E로 스카너 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_smolder.ts": [
+      "아리 E로 스몰더 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_sylas.ts": [
+      "아리 E로 사일러스 W, E1, E2를 끊을 수 있음",
+      "사일러스 R(아리)를 사용한 상태로 킬 관여를 하면 R스택을 추가로 줌.\\n스킬 설명에는 아리 P가 발동했을 때 R 스택을 추가해 준다고 나와있는데 왜 사일러스도 가능한지 모르겠음\\n심지어 사일러스가 R로 처치하면 아리 P 효과도 발동함"
+    ],
+    "app/data/matchups/ahri/ahri_tahmkench.ts": [
+      "아리 E로 탐켄치 W(시전집중)를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_taliyah.ts": [
+      "아리 E로 탈리야 R을 끊을 수 있음",
+      "탈리야 E의 [[STUN]]로 아리 R을 끊을 수 없음.\\n단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_talon.ts": [
+      "아리 E로 탈론 Q, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_tristana.ts": [
+      "아리 E로 트리스타나 W(점프단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_tryndamere.ts": [
+      "아리 E로 트린다미어 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_twistedfate.ts": [
+      "아리 E로 트페 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_urgot.ts": [
+      "아리 E로 우르곳 E(돌진단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_vayne.ts": [
+      "아리 E로 베인 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_velkoz.ts": [
+      "아리 E로 벨코즈 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_vi.ts": [
+      "아리 E로 바이 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_viego.ts": [
+      "아리 E로 비에고 R을 끊을 수 없음. 단, [[CHARM]]은 남아있음",
+      "아리 E로 비에고 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_volibear.ts": [
+      "아리 E로 볼리베어 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_wukong.ts": [
+      "아리 E로 오공 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_xerath.ts": [
+      "아리 E로 제라스 Q, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_xinzhao.ts": [
+      "아리 E로 신짜오 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_yasuo.ts": [
+      "야스오 W가 아리 Q, W, E, R을 막을 수 있음."
+    ],
+    "app/data/matchups/ahri/ahri_yone.ts": [
+      "아리 E로 요네 Q3을 끊을 수 있음. 단, Q3검기는 계속 날아감"
+    ],
+    "app/data/matchups/ahri/ahri_yunara.ts": [
+      "아리 E로 유나라 E(R상태)를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_yuumi.ts": [
+      "아리 E로 유미 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_zaahen.ts": [
+      "아리 E로 자헨 E를 끊을 수 있음. 단, E 검기는 남아있음"
+    ],
+    "app/data/matchups/ahri/ahri_zac.ts": [
+      "아리 E로 자크 E(점프/시전집중)를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_zeri.ts": [
+      "아리 E로 제리 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_ziggs.ts": [
+      "아리 E로 직스 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/ahri/ahri_zyra.ts": [
+      "자이라 식물로 아리 E를 막을 수 있음"
+    ]
+  },
+  "akali": {
+    "app/data/matchups/akali/akali_akshan.ts": [
+      "아칼리 E2로 아크샨 E를 따라 갈 수 있음. 판정에 따라 갈고리에서 떨어뜨릴 수도 있음",
+      "아칼리 E로 트위치 Q의 [[CAMOUFLAGE]]을 볼 수 있음",
+      "아크샨 R로 아칼리를 조준하면, 아칼리가 장막에 숨어도 모습이 보임"
+    ],
+    "app/data/matchups/akali/akali_alistar.ts": [
+      "아칼리 E2로 알리스타 W를 따라 갈 수 있음",
+      "알리스타 Q, W로 아칼리 E1, E2, R1, R2를 끊을 수 있음",
+      "알리스타 E의 [[STUN]]로 아칼리 E1, E2, R1, R2를 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/akali/akali_ambessa.ts": [
+      "아칼리 E2로 암베사 P, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_amumu.ts": [
+      "아칼리 E2로 아무무 Q를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_annie.ts": [
+      "애니 R 소환으로 아칼리 E를 막을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_aurelionsol.ts": [
+      "아칼리 E2로 아우솔 W를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_aurora.ts": [
+      "아칼리 E로 오로라 W의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음",
+      "아칼리 E2로 오로라 W, E, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_azir.ts": [
+      "아칼리 E2로 아지르 E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_bard.ts": [
+      "아칼리 E2로 바드 E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_belveth.ts": [
+      "아칼리 E2로 벨베스 Q, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_braum.ts": [
+      "아칼리 E2로 브라움 W를 따라 갈 수 있음",
+      "브라움 E로 아칼리 평타, Q, E1, E2, R1, R2 모두 [[DAMAGE_NULLIFY]] 할 수 있음",
+      "브라움 E로 아칼리 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음",
+      "브라움 E로 아칼리 E1을 [[INTERCEPT_PROJECTILE]] 할 수 있음. \\n단, E1를 막아도 투사체가 삭제되지 않고 아칼리가 E2를 사용 할 수 있음.",
+      "브라움 P의 [[STUN]]로 아칼리 E1, E2, R1, R2를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "브라움 R의 [[AIRBORNE]]으로 아칼리 E1, E2, R1, R2를 끊을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_briar.ts": [
+      "아칼리 E2로 브라이어 Q, W, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_caitlyn.ts": [
+      "아칼리 E2로 케이틀린 E를 따라 갈 수 있음",
+      "아칼리 W(장막) 속에서 케이틀린 W(덫)를 밟으면 위치가 드러남. 케이틀린 R에 조준당하면 장막에 숨지못함. 아칼리 R 경로에 케이틀린 W(덫)이 있으면 날아오다 밟음"
+    ],
+    "app/data/matchups/akali/akali_camille.ts": [
+      "아칼리 E2로 카밀 E, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_corki.ts": [
+      "아칼리 E2로 코르키 W를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_diana.ts": [
+      "아칼리 E2로 다이애나 E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_ekko.ts": [
+      "아칼리 E2로 에코 E, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_elise.ts": [
+      "아칼리 E2로 엘리스 거미폼 Q, E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_evelynn.ts": [
+      "아칼리 E로 이블린 P의 [[CAMOUFLAGE]]를 볼 수 있음",
+      "아칼리 E2로 이블린 E, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_ezreal.ts": [
+      "아칼리 E2로 이즈리얼 E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_fiddlesticks.ts": [
+      "아칼리 E2로 피들스틱 R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_fiora.ts": [
+      "아칼리 E2로 피오라 Q를 따라 갈 수 있음",
+      "피오라 W를 아칼리 E에 사용하면 아칼리 E2 사용불가"
+    ],
+    "app/data/matchups/akali/akali_fizz.ts": [
+      "아칼리 E2로 피즈 Q, E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_galio.ts": [
+      "아칼리 E2로 갈리오 E, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_gnar.ts": [
+      "아칼리 E2로 나르 E(인간폼/메가폼)를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_gragas.ts": [
+      "아칼리 E2와 그라가스 E가 부딪히면 서로 데미지가 들어가고 아칼리는 [[AIRBORNE]]과 [[STUN]]",
+      "아칼리 E2로 그라가스 E를 따라 갈 수 있음",
+      "그라가스 R로 아칼리 E2를 끊을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_graves.ts": [
+      "아칼리 E2로 그레이브즈 E, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_gwen.ts": [
+      "아칼리 E2로 그웬 E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_hecarim.ts": [
+      "아칼리 E2로 헤카림 E, R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_heimerdinger.ts": [
+      "하이머딩거 Q로 아칼리 E를 막을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_hwei.ts": [
+      "흐웨이 EQ, EE로 아칼리 E, E2, R, R2를 끊을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_irelia.ts": [
+      "아칼리 E2로 이렐리아 Q를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_ivern.ts": [
+      "아이번 R로 아칼리 E를 막을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_janna.ts": [
+      "잔나 Q, R로 아칼리 E, E2, R, R2 를 끊을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_jarvaniv.ts": [
+      "아칼리 E2로 자르반 EQ, R을 따라 갈 수 있음",
+      "자르반 EQ로 아칼리 E, E2, R, R2를 끊을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_jax.ts": [
+      "아칼리 E2로 잭스 Q를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_jayce.ts": [
+      "아칼리 E2로 제이스 해머폼 Q를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_jinx.ts": [
+      "징크스 E(활성화)로 아칼리 E, E2, R, R2를 막을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_kaisa.ts": [
+      "아칼리 E로 카이사 E(진화)의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음",
+      "아칼리 E2로 카이사 R을 따라 갈 수 있음",
+      "카이사 W로 아칼리 W의 [[INVISIBILITY]]를 볼 수 있음"
+    ],
+    "app/data/matchups/akali/akali_kalista.ts": [
+      "아칼리 E2로 칼리스타 P를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_karma.ts": [
+      "카르마 W의 [[TETHER]]효과로 아칼리 W의 [[INVISIBILITY]]를 볼 수 있음",
+      "카르마 W의 [[TETHER]]효과로 아칼리 E, E2, R, R2를 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/akali/akali_kassadin.ts": [
+      "아칼리 E2로 카사딘 R을 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_katarina.ts": [
+      "아칼리 E2로 카타리나 E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_kayn.ts": [
+      "아칼리 E2로 케인 E를 따라갈 수 있음. 단, 벽을 통과중일때 아칼리가 도착하면 케인은 계속 이동하고, 아칼리는 데미지를 입히고 벽에서 나옴"
+    ],
+    "app/data/matchups/akali/akali_kennen.ts": [
+      "케넨 P의 [[STUN]]로 아칼리 E, E2, R, R2를 끊을 수 없음. 단, [[STUN]]은 남아있음."
+    ],
+    "app/data/matchups/akali/akali_khazix.ts": [
+      "아칼리 E를 카직스 R에 맞히면 모습이 보이고 E2를 사용 할 수 있음",
+      "아칼리 E2로 카직스 E를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_kindred.ts": [
+      "아칼리 E2로 킨드레드 Q를 따라 갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_kled.ts": [
+      "아칼리 E2로 클레드 승마폼 E, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_ksante.ts": [
+      "아칼리 E2로 크산테 E, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_leblanc.ts": [
+      "아칼리 E로 르블랑 P의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음",
+      "아칼리 E2로 르블랑 W를 따라갈 수 있음",
+      "르블랑 E의 [[TETHER]]효과로 아칼리 W의 [[INVISIBILITY]]를 볼 수 있음",
+      "르블랑 W의 [[TETHER]]효과로 아칼리 E, E2, R, R2를 끊을 수 없음. 단, [[ROOT]]은 남아있음"
+    ],
+    "app/data/matchups/akali/akali_leesin.ts": [
+      "아칼리 E2로 리신 Q2를 따라갈 수 있음",
+      "리신 E가 아칼리에 적중하고 W의 [[INVISIBILITY]] 효과가 발동하면 보임.\\n반면, 아칼리의 [[INVISIBILITY]] 효과가 발동하고 리신이 E를 맞히면 보이지 않음"
+    ],
+    "app/data/matchups/akali/akali_leona.ts": [
+      "아칼리 E2로 레오나 E를 따라갈 수 있음",
+      "레오나 E로 아칼리 E, E2, R, R2를 따라갈 수 있음. E2를 제외하고 도착지점으로 이동"
+    ],
+    "app/data/matchups/akali/akali_lissandra.ts": [
+      "아칼리 E2로 리산드라 E2를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_lucian.ts": [
+      "아칼리 E2로 루시안 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_malphite.ts": [
+      "아칼리 E2로 말파이트 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_masteryi.ts": [
+      "아칼리 E2로 마스터이 Q를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_mel.ts": [
+      "멜 W로 아칼리 E 반사 가능."
+    ],
+    "app/data/matchups/akali/akali_naafiri.ts": [
+      "아칼리 E2로 나피리 E, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_nautilus.ts": [
+      "아칼리 E2로 노틸러스 Q를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_neeko.ts": [
+      "아칼리 E로 니코 W의 [[INVISIBILITY]]를 볼 수 있음"
+    ],
+    "app/data/matchups/akali/akali_nidalee.ts": [
+      "아칼리 E2로 니달리 쿠거폼 W를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_nilah.ts": [
+      "아칼리 E2로 닐라 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_nocturne.ts": [
+      "아칼리 E2로 녹턴 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_nunu.ts": [
+      "아칼리 E2로 누누 W를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_ornn.ts": [
+      "아칼리 E2로 오른 E, R2를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_pantheon.ts": [
+      "아칼리 E2로 판테온 W, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_poppy.ts": [
+      "아칼리 E2로 뽀삐 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_pyke.ts": [
+      "아칼리 E로 파이크 W의 [[CAMOUFLAGE]]를 볼 수 있음",
+      "아칼리 E2로 파이크 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_qiyana.ts": [
+      "아칼리 E로 키아나 숲Q의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음",
+      "아칼리 E2로 키아나 W, E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_quinn.ts": [
+      "아칼리 E2로 퀸 E, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_rakan.ts": [
+      "아칼리 E2로 라칸 W, E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_rammus.ts": [
+      "아칼리 E2로 람머스 Q, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_reksai.ts": [
+      "아칼리 E2로 렉사이 E(잠행폼), R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_rell.ts": [
+      "아칼리 E2로 렐 W(승마폼)를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_renekton.ts": [
+      "아칼리 E2로 레넥톤 E, E2를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_rengar.ts": [
+      "아칼리 E로 렝가 R의 [[INVISIBILITY]]를 볼 수 있음",
+      "아칼리 E2로 렝가 P를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_riven.ts": [
+      "아칼리 E2로 리븐 Q, E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_ryze.ts": [
+      "아칼리 E2로 라이즈 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_samira.ts": [
+      "아칼리 E2로 사미라 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_sejuani.ts": [
+      "아칼리 E2로 세주아니 Q를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_senna.ts": [
+      "아칼리 E로 세나 W의 [[CAMOUFLAGE]]를 볼 수 있음"
+    ],
+    "app/data/matchups/akali/akali_sett.ts": [
+      "아칼리 E2로 세트 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_shaco.ts": [
+      "아칼리 E로 샤코 Q의 [[INVISIBILITY]]를 볼 수 있음",
+      "아칼리 E를 샤코에게 맞혔을 때 샤코가 R로 분화하면 본체에 E가 남아있음",
+      "아칼리 E2로 샤코 Q를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_shen.ts": [
+      "아칼리 E2로 쉔 E, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_shyvana.ts": [
+      "아칼리 E2로 쉬바나 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_sion.ts": [
+      "아칼리 E2로 사이온 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_skarner.ts": [
+      "아칼리 E2로 스카너 E를 따라갈 수 있음. 단, 벽을 통과중일때 아칼리가 도착하면 스카너는 계속 이동하고, 아칼리는 데미지를 입히고 벽에서 나옴"
+    ],
+    "app/data/matchups/akali/akali_smolder.ts": [
+      "아칼리 E2로 스몰더 E를 따라갈 수 있음. 단, 벽을 통과중일때 아칼리가 도착하면 스몰더는 계속 이동하고, 아칼리는 데미지를 입히고 벽에서 나옴"
+    ],
+    "app/data/matchups/akali/akali_sylas.ts": [
+      "아칼리 E2로 사일러스 W, E, E2를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_tahmkench.ts": [
+      "아칼리 E2로 탐켄치 W를 따라갈 수 있음",
+      "탐켄치 R로 아칼리 E를 맞은 아군을 삼키면 아칼리가 E2를 사용할 수 없음.",
+      "아칼리가 E2로 아군에게 날아올 때 탐켄치가 아군을 삼키면, 아칼리는 아군 챔피언이 있던 위치로 이동하고 데미지 무효화"
+    ],
+    "app/data/matchups/akali/akali_taliyah.ts": [
+      "아칼리 E2로 탈리야 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_talon.ts": [
+      "아칼리 E로 탈론 R의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음",
+      "아칼리 E2로 탈론 Q, E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_teemo.ts": [
+      "아칼리 E로 티모 P의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음"
+    ],
+    "app/data/matchups/akali/akali_thresh.ts": [
+      "아칼리 E2로 쓰레쉬 Q, W를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_tristana.ts": [
+      "아칼리 E2로 트리스타나 W를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_tryndamere.ts": [
+      "아칼리 E2로 트린다미어 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_twistedfate.ts": [
+      "아칼리 E2로 트페 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_twitch.ts": [
+      "아칼리 E로 트위치 Q의 [[CAMOUFLAGE]]을 볼 수 있음"
+    ],
+    "app/data/matchups/akali/akali_urgot.ts": [
+      "아칼리 E2로 우르곳 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_vayne.ts": [
+      "아칼리 E로 베인 Q(궁극기)의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음",
+      "아칼리 E2로 베인 Q를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_vex.ts": [
+      "아칼리 E2로 벡스 R2를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_vi.ts": [
+      "아칼리 E2로 바이 Q, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_viego.ts": [
+      "아칼리 E로 비에고 E의 [[CAMOUFLAGE]]를 볼 수 있음",
+      "아칼리 E2로 비에고 W, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_volibear.ts": [
+      "아칼리 E2로 볼리베어 R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_warwick.ts": [
+      "아칼리 E2로 워윅 Q, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_wukong.ts": [
+      "아칼리 E로 오공 W의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음",
+      "아칼리 E2로 오공 W, E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_xayah.ts": [
+      "아칼리 E를 자야에게 맞혔을 때 자야가 R을 사용하면 아칼리 E2를 사용할 수 없음"
+    ],
+    "app/data/matchups/akali/akali_xinzhao.ts": [
+      "아칼리 E2로 신짜오 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_yasuo.ts": [
+      "아칼리 E2로 야스오 E, R을 따라갈 수 있음",
+      "야스오 W로 아칼리 Q, E 막을 수 있음"
+    ],
+    "app/data/matchups/akali/akali_yone.ts": [
+      "아칼리 E2로 요네 Q3, E, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_yunara.ts": [
+      "아칼리 E2로 유나라 E(초월)를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_yuumi.ts": [
+      "아칼리 E2로 유미 E를 따라갈 수 있음. 단, 유미가 아군에게 탑승하면 E2를 사용할 수 없음"
+    ],
+    "app/data/matchups/akali/akali_zaahen.ts": [
+      "아칼리 E2로 자헨 E, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_zac.ts": [
+      "아칼리 E2로 자크 E를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_zed.ts": [
+      "아칼리 E2로 제드 W, R을 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_zeri.ts": [
+      "아칼리 E2로 제리 E를 따라갈 수 있음. 단, 제리가 E로 벽을 이동중일때 아칼리가 도착하면 제리는 계속 이동하고 아칼리는 데미지를 주고 벽에서 나옴"
+    ],
+    "app/data/matchups/akali/akali_ziggs.ts": [
+      "아칼리 E2로 직스 W를 따라갈 수 있음"
+    ],
+    "app/data/matchups/akali/akali_zoe.ts": [
+      "아칼리 E2로 조이 R을 따라갈 수 있음"
+    ]
+  },
+  "akshan": {
+    "app/data/matchups/akshan/akshan_alistar.ts": [
+      "알리스타 Q/W는 아크샨 E 이동을 끊음",
+      "알리스타 Q, W, E로 아크샨 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/akshan/akshan_anivia.ts": [
+      "아크샨 E를 애니비아 W(얼음벽)에 사용 가능"
+    ],
+    "app/data/matchups/akshan/akshan_aurora.ts": [
+      "아크샨 R의 [[TRUE_SIGHT]]로 오로라 W의 [[INVISIBILITY]]를 볼 수 있음",
+      "오로라 R의 공간이동으로 아크샨 R(투사체)을 피할 수 없음. 결국 투사체 모두가 따라옴"
+    ],
+    "app/data/matchups/akshan/akshan_azir.ts": [
+      "아크샨 E를 아지르 R(벽)에 사용 가능"
+    ],
+    "app/data/matchups/akshan/akshan_braum.ts": [
+      "브라움 E로 아크샨 평타, Q, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음",
+      "브라움 E로 아크샨 평타, Q, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음"
+    ],
+    "app/data/matchups/akshan/akshan_briar.ts": [
+      "아크샨 R(투사체)은 브라이어 R도 따라감"
+    ],
+    "app/data/matchups/akshan/akshan_gwen.ts": [
+      "아크샨 R을 그웬에게 시전집중 할 때, 그웬이 W를 범위 밖에서 사용하면 아크샨 R이 취소 됨\\n아크샨 R을 그웬에게 사용했을 때, 그웬이 W를 범위 밖에서 사용하면 그웬이 맞지 않음",
+      "그웬 W로 아크샨 평타, Q, R을 범위 밖에서 맞지 않음\\n그웬에게 사용한 평타, R은 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "alistar": {
+    "app/data/matchups/alistar/alistar_ambessa.ts": [
+      "알리스타 E의 [[STUN]]로 암베사 P를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 암베사 E의 [[SLOW]], R의 [[STUN]]/[[SUPPRESS]]을 해제할 수 있음",
+      "알리스타 Q, W로 암베사 P를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_amumu.ts": [
+      "알리스타 E의 [[STUN]]로 아무무 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 아무무 Q, R의 [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 아무무 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_anivia.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 애니비아 Q의 [[SLOW]], [[STUN]]을 해제할 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 애니비아 R의 [[SLOW]]는 해제할 수 없음",
+      "알리스타 Q, W, E로 애니비아 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_annie.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 애니 P의 [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_aphelios.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 아펠리오스 중력포(보라) Q의 [[ROOT]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_ashe.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 애쉬 P의 [[SLOW]], R의 [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_aurelionsol.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 아우솔 E의 [[SLOW]], R의 [[SLOW]], [[STUN]], [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W, E로 아우솔 Q, W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_aurora.ts": [
+      "알리스타 E의 [[STUN]]로 오로라 W, E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 오로라 E의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 오로라 W, E(조건부)를 끊을 수 있음",
+      "오로라 R의 범위 밖으로 알리스타 W를 맞아 오로라가 밀려나면 R효과 발동"
+    ],
+    "app/data/matchups/alistar/alistar_azir.ts": [
+      "알리스타 E의 [[STUN]]로 아지르 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 아지르 Q의 [[SLOW]], R의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 아지르 E를 끊을 수 있음",
+      "아지르 R로 알리스타 W를 막을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_bard.ts": [
+      "알리스타 E로 바드 E의 벽이동을 끊을 수 없음",
+      "알리스타 R의 [[CC_CLEANSE]]로 바드 Q의 [[SLOW]], [[STUN]]을 해제할 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 바드 R(존야)을 해제할 수 없음",
+      "알리스타 Q, W로 바드 E의 벽이동을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_belveth.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 벨베스 W의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W, E로 벨베스 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_blitzcrank.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 블리츠 Q E의 [[AIRBORNE]], R의 [[SILENCE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_brand.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 브랜드 Q의 [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_braum.ts": [
+      "알리스타 E의 [[STUN]]로 브라움 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 브라움 P의 [[STUN]], Q의 [[SLOW]], R의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 브라움 W를 끊을 수 있음",
+      "브라움 E로 알리스타의 평타, Q, W, E 를 [[DAMAGE_NULLIFY]] 할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_briar.ts": [
+      "알리스타 E의 [[STUN]] 브라이어 Q, W를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 브라이어 Q의 [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 브라이어 Q, W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_caitlyn.ts": [
+      "알리스타 E의 [[STUN]]로 케이틀린 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 케이틀린 E의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 케이틀린 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_camille.ts": [
+      "알리스타 E의 [[STUN]]로 카밀 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 카밀 W의 [[SLOW]], E의 [[STUN]], R의 [[KNOCKBACK]]을 해제할 수 있음",
+      "알리스타 Q, W로 카밀 E(그렙/돌진)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_cassiopeia.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 카시오페아 R의 [[STUN]], [[SLOW]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_chogath.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 초가스 Q의 [[SLOW]] [[AIRBORNE]], W의 [[SILENCE]]을 해제할 수 있음\\n단, Q의 [[SLOW]]판정이 정말 특이하기 때문에 주의 해야 함. 초가스 Q의 [[AIRBORNE]]이 끝나고 땅에 내려온 후에 [[SLOW]]가 걸리기 때문에\\n 공중에서 해제하면 [[SLOW]]는 남아있을 수도 있음"
+    ],
+    "app/data/matchups/alistar/alistar_corki.ts": [
+      "알리스타 E의 [[STUN]]로 코르키 W를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 Q, W로 코르키 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_darius.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 다리우스 W의 [[SLOW]], E의 [[SLOW]] [[GRAB]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_diana.ts": [
+      "알리스타 E의 [[STUN]]로 다이애나 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 다이애나 R의 [[SLOW]], [[AIRBORNE]]를 해제할 수 있음",
+      "알리스타 Q, W로 다이애나 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_draven.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 드레이븐 E의 [[SLOW]], [[AIRBORNE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_drmundo.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 문도박사 Q의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_ekko.ts": [
+      "알리스타 E의 [[STUN]]로 에코 E(구르기)를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 에코 W의 [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 애코 E(구르기)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_elise.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 엘리스 인간폼 E의 [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_evelynn.ts": [
+      "알리스타 E의 [[STUN]]로 이블린 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 이블린 W의 [[CHARM]]을 해제할 수 있음",
+      "알리스타 Q, W로 이블린 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_ezreal.ts": [
+      "알리스타 E의 [[STUN]]로 이즈리얼 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 Q, W로 이즈리얼 E를 끊을 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_fiddlesticks.ts": [
+      "알리스타 Q, W, E로 피들스틱 W, R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_fiora.ts": [
+      "알리스타 E의 [[STUN]]로 피오라 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 피오라 W의 [[SLOW]], [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 피오라 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_fizz.ts": [
+      "알리스타 E의 [[STUN]]로 피즈 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 피즈 E의 [[SLOW]], R의 1번[[SLOW]], 2번[[SLOW]], [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 피즈 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_galio.ts": [
+      "알리스타 E의 [[STUN]]로 갈리오 E(전진)를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 갈리오 W의 [[TAUNT]], E의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 갈리오 E(전진), R(시전집중)을 끊을 수 있음\\n알리스타 E의 [[STUN]]로 갈리오 R(시전집중)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_gangplank.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 갱플랭크 E, R [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_garen.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 가렌 Q의 [[SILENCE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_gnar.ts": [
+      "알리스타 E의 [[STUN]]로 나르 E(인간/메가)를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 나르 인간폼 Q E의 [[SLOW]], 나르 메가폼 Q E R의 [[SLOW]], W R의 [[STUN]], R의 [[AIRBORNE]] 을 해제할 수 있음",
+      "알리스타 Q, W로 나르 E(인간/메가)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_gragas.ts": [
+      "알리스타 E의 [[STUN]]로 그라가스 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 그라가스 Q의 [[SLOW]], E의 [[STUN]], R의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 그라가스 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_graves.ts": [
+      "알리스타 E의 [[STUN]]로 그레이브즈 E, R을 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 그레이브즈 W의 [[SLOW]]는 해제할 수 없음",
+      "알리스타 Q, W로 그레이브즈 E, R을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_gwen.ts": [
+      "알리스타 E의 [[STUN]]로 그웬 E를 끊을 수 없음. 단, [[STUN]]은 남아있음.",
+      "알리스타 R의 [[CC_CLEANSE]]로 그웬 R의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 그웬 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_hecarim.ts": [
+      "알리스타 Q, W, E로 헤카림 E(공격단계)를 끊을 수 없음",
+      "알리스타 R의 [[CC_CLEANSE]]로 헤카림 E의 [[KNOCKBACK]], R의 [[FEAR]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 헤카림 E(추격단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_heimerdinger.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 하이머딩거 E의 [[SLOW]], [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_illaoi.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 일라오이 E의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_irelia.ts": [
+      "알리스타 E의 [[STUN]]로 이렐리아 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음\\n표식 대상에게 Q를 썼다면 스택을 소모함",
+      "알리스타 R의 [[CC_CLEANSE]]로 이렐리아 E의 [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 이렐리아 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_ivern.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 아이번 Q의 [[ROOT]], E의 [[SLOW]], R의 [[AIRBORNE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_janna.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 잔나 Q R의 [[AIRBORNE]], W의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 잔나 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_jarvaniv.ts": [
+      "알리스타 E의 [[STUN]]로 자르반 EQ를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 자르반 EQ의 [[AIRBORNE]], W의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 W로 자르반 R(벽)을 넘을 수 있음",
+      "알리스타 Q, W로 자르반 EQ를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_jax.ts": [
+      "알리스타 E의 [[STUN]]로 잭스 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 잭스 E의 [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 잭스 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_jayce.ts": [
+      "알리스타 E의 [[STUN]]로 제이스 해머폼 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 제이스 해머폼 Q의 [[SLOW]], 해머폼 E의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 제이스 해머폼 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_jhin.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 진 W의 [[ROOT]], R의 [[SLOW]]를 해제할 수 있음\\n[[CC_CLEANSE]]로 진 E의 [[SLOW]]는 해제할 수 없음",
+      "알리스타 Q, W, E로 진 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_jinx.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 징크스 W의 [[SLOW]], E의 [[ROOT]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kaisa.ts": [
+      "알리스타 E의 [[STUN]]로 카이사 R을 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 Q, W로 카이사 R을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kalista.ts": [
+      "알리스타 E의 [[STUN]]로 칼리스타 P를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 칼리스타 E의 [[SLOW]], R의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 칼리스타 P를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_karma.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 카르마 Q의 [[SLOW]], W의 [[ROOT]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_karthus.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 카서스 W의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 카서스 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kassadin.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 카사딘 E의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 카사딘 R을 끊을 수 없음\\n알리스타 E의 [[STUN]]로 카사딘 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/alistar/alistar_katarina.ts": [
+      "알리스타 Q, W, E로 카타리나 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kayle.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 케일 Q의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kayn.ts": [
+      "알리스타 E의 [[STUN]]로 케인 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 Q, W, E로 케인 E(벽통과)를 끊을 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 케인 W(기본/그암)의 [[SLOW]], 케인 W(다르킨)의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 케인 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kennen.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 케넨 P의 [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_khazix.ts": [
+      "알리스타 E의 [[STUN]]로 카직스 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 카직스 W의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 카직스 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kindred.ts": [
+      "알리스타 E의 [[STUN]]로 킨드레드 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 킨드레드 E의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 W의 [[KNOCKBACK]]으로 킨드레드 R범위 밖으로 밀어낼 수 있음",
+      "알리스타 Q, W로 킨드레드 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kled.ts": [
+      "알리스타 E의 [[STUN]]로 클레드 승마폼 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 클레드 승마폼 Q의 [[SLOW]] [[AIRBORNE]], R의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 클레드 승마폼 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_kogmaw.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 코그모 E의 [[SLOW]]는 해제할 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_ksante.ts": [
+      "알리스타 E의 [[STUN]]로 크산테 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 크산테 Q의 [[SLOW]][[STUN]], W의 [[STUN]], R의 [[SUPPRESS]]를 해제할 수 있음",
+      "알리스타 Q, W로 크산테 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_leblanc.ts": [
+      "알리스타 E의 [[STUN]]로 르블랑 W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 르블랑 E의 [[ROOT]]를 해제할 수 있음",
+      "알리스타 Q, W로 르블랑 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_leesin.ts": [
+      "알리스타 E의 [[STUN]]로 리신 Q2, W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 리신 E의 [[SLOW]], R의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 리신 Q2, W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_leona.ts": [
+      "알리스타 E의 [[STUN]]로 레오나 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 레오나 Q의 [[STUN]], E의 [[ROOT]], R의 [[SLOW]][[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 레오나 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_lillia.ts": [
+      "알리스타 E의 [[STUN]]로 릴리아 W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 릴리아 E의 [[SLOW]], R의 [[SLEEP]]을 해제할 수 있음",
+      "알리스타 Q, W로 릴리아 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_lissandra.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 리산드라 P의 [[SLOW]]는 해제할 수 없음",
+      "알리스타 R의 [[CC_CLEANSE]]로 리산드라 Q의 [[SLOW]], W의 [[ROOT]], R의 [[SLOW]], [[STUN]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_lucian.ts": [
+      "알리스타 E의 [[STUN]]로 루시안 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 Q ,W ,E로 루시안 R(채널링)을 끊을 수 있음",
+      "알리스타 Q, W로 루시안 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_lulu.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 룰루 Q의 [[SLOW]], W의 [[POLYMORPH]], R의 [[SLOW]] [[AIRBORNE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_lux.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 럭스 E의 [[SLOW]]는 해제할 수 없음",
+      "알리스타 R의 [[CC_CLEANSE]]로 럭스 Q의 [[ROOT]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_malphite.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 말파이트 Q의 [[SLOW]], R의 [[AIRBORNE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_malzahar.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 말자하 Q의 [[SILENCE]], R의 [[SUPPRESS]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 말자하 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_maokai.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 마오카이 Q의 [[SLOW]] [[AIRBORNE]], W의 [[ROOT]], E의 [[SLOW]], R의 [[ROOT]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_masteryi.ts": [
+      "알리스타 Q, W, E로 마스터이 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_mel.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 멜 E의 [[SLOW]], [[ROOT]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_milio.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 밀리오 Q의 [[SLOW]] [[AIRBORNE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_missfortune.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 미스포츈 E의 [[SLOW]]는 해제할 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_mordekaiser.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 모데카이저 E의 [[GRAB]]을 해제할 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 모데카이저 R(이세계)를 해제할 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_morgana.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 모르가나 Q의 [[ROOT]], R의 [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_naafiri.ts": [
+      "알리스타 E의 [[STUN]]로 나피리 R(시전집중)을 끊을 수 있음",
+      "알리스타 E의 [[STUN]]로 나피리 E, R(돌진)을 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 나피리 R의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 나피리 E, R를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_nami.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 나미 Q의 [[SUSPENDING]], R의 [[AIRBORNE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_nasus.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 나서스 W의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_nautilus.ts": [
+      "알리스타 E의 [[STUN]]로 노틸러스 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 노틸러스 P의 [[ROOT]], Q의 [[AIRBORNE]] [[STUN]], E의 [[SLOW]], R의 [[AIRBORNE]] [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 노틸러스 Q(그렙단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_neeko.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 니코 E의 [[ROOT]], R의 [[SUSPENDING]] [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_nidalee.ts": [
+      "알리스타 E의 [[STUN]]로 니달리 쿠거폼 W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 Q, W로 니달리 쿠거폼 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_nilah.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 닐라 R의 [[GRAB]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_nocturne.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 녹턴 E의 [[FEAR]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_nunu.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 누누 R의 [[SLOW]]는 해제할 수 없음",
+      "알리스타 R의 [[CC_CLEANSE]]로 누누 W의 [[AIRBORNE]], E의 [[SLOW]], [[ROOT]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_olaf.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 올라프 Q의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_orianna.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 오리아나 W의 [[SLOW]], R의 [[AIRBORNE]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_ornn.ts": [
+      "알리스타 E의 [[STUN]]로 오른 E, R2를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 오른 Q R의 [[SLOW]], E R2의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 오른 E, R2를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_pantheon.ts": [
+      "알리스타 E의 [[STUN]]로 판테온 R(시전집중)을 끊을 수 있음",
+      "알리스타 E의 [[STUN]]로 판테온 W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 판테온 W의 [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 판테온 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_poppy.ts": [
+      "알리스타 E의 [[STUN]]로 뽀삐 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 뽀삐 Q의 [[SLOW]], W의 [[STUN]] [[AIRBORNE]] [[GROUNDED]], E의 [[STUN]], R의 [[AIRBORNE]]을 해제할 수 있음\\n단, 길게 차징한 뽀삐 R은 해제해도 아무것도 할 수 없음",
+      "알리스타 Q, W로 뽀삐 E를 끊을 수 있음",
+      "뽀삐 W로 알리스타 W를 [[ANTI_DASH]] 할 수 있음",
+      "뽀삐 E와 알리스타 W가 부딪히면 알리스타 W가 무효화\\n뽀삐 E를 알리스타에게 사용했을 때 알리스타 Q를 타이밍맞춰 사용하면, 뽀삐 E는 유효하고 알리스타 Q도 유효함\\n단, 뽀삐에게 [[AIRBORNE]] 모션이 없지만 CC게이지에 공중에뜸 으로 유효함"
+    ],
+    "app/data/matchups/alistar/alistar_pyke.ts": [
+      "알리스타 E의 [[STUN]]로 파이크 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 파이크 Q의 [[SLOW]] [[GRAB]], E의 [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 파이크 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_qiyana.ts": [
+      "알리스타 E의 [[STUN]]로 키아나 W, E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 키아나 Q(물)의 [[ROOT]], R의 [[AIRBORNE]] [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W로 키아나 W, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_quinn.ts": [
+      "알리스타 E의 [[STUN]]로 퀸 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 퀸 Q의 [[NEARSIGHT]], E의 [[SLOW]] [[AIRBORNE]]를 해제할 수 있음",
+      "알리스타 Q, W로 퀸 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_rakan.ts": [
+      "알리스타 E의 [[STUN]]로 라칸 W(이동), E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 라칸 W의 [[AIRBORNE]], R의 [[CHARM]]을 해제할 수 있음",
+      "알리스타 Q, W로 라칸 W, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_rammus.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 람머스 Q의 [[SLOW]], E의 [[TAUNT]], R의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 람머스 Q를 끊을 수 있음\\n단, W는 대신 부딪혀주는 방법으로 끊는것",
+      "람머스 Q와 알리스타 W가 부딪히면 람머스 Q는 유효 알리스타 W는 무효화\\n그래서 알리스타는 람머스 Q에 WQ자체가 불가능"
+    ],
+    "app/data/matchups/alistar/alistar_reksai.ts": [
+      "알리스타 E의 [[STUN]]로 렉사이 E(매복)를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 렉사이 매복평타의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 렉사이 E(매복)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_rell.ts": [
+      "알리스타 E의 [[STUN]]로 렐 W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 렐 Q의 [[STUN]], W(승마폼)의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 렐 W(승마)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_renata.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 레나타 Q의 [[ROOT]] [[STUN]], E의 [[SLOW]], R의 [[BERSERK]]을 해제할 수 있음",
+      "알리스타가 레나타 Q에 맞자마자 R을 사용하면\\n[[CC_CLEANSE]]로 [[ROOT]]를 해제하면서 레나타 Q를 재사용 불가"
+    ],
+    "app/data/matchups/alistar/alistar_renekton.ts": [
+      "알리스타 E의 [[STUN]]로 레넥톤 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 레넥톤 W의 [[STUN]]를 해제할 수 있음",
+      "알리스타 Q, W로 레넥톤 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_rengar.ts": [
+      "알리스타 E의 [[STUN]]로 렝가 P를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 렝가 E의 [[SLOW]], 강화 E의 [[ROOT]]를 해제할 수 있음",
+      "알리스타 Q, W로 렝가 P를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_riven.ts": [
+      "알리스타 E의 [[STUN]]로 리븐 Q, E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 리븐 Q3의 [[AIRBORNE]], W의 [[STUN]]를 해제할 수 있음",
+      "알리스타 Q, W로 리븐 Q, E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_rumble.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 럼블 E의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_ryze.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 라이즈 W의 [[SLOW]], EW의 [[ROOT]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 라이즈 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_samira.ts": [
+      "알리스타 E의 [[STUN]]로 사미라 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 사미라 P의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 사미라 E를 끊을 수 있음\\n알리스타 Q, W, E로 사미라 R를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_sejuani.ts": [
+      "알리스타 E의 [[STUN]]로 세주아니 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 세주아니 Q의 [[AIRBORNE]], E의 [[STUN]], R의 [[SLOW]] [[STUN]] 해제할 수 있음",
+      "알리스타 Q, W로 세주아니 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_senna.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 세나 W의 [[ROOT]]를 해제할 수 있음. 단, W의 [[ROOT]]가 완전히 발동 되고 사용해야 해제됨"
+    ],
+    "app/data/matchups/alistar/alistar_seraphine.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 세라핀 E의 [[SLOW]] [[STUN]] [[ROOT]], R의 [[CHARM]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_sett.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 세트 E의 [[SLOW]] [[STUN]], R의 [[SUPPRESS]]을 해제할 수 있음\\n알리스타가 [[SUPPRESS]]을 해제하면 그 즉시 벗어나지만, 세트는 알리스타를 매다 꽂은 것처럼 도착지 주변에 피해를 줌",
+      "알리스타 W로 세트 W를 끊을 수는 없지만 각도를 바꿀수는 있음"
+    ],
+    "app/data/matchups/alistar/alistar_shaco.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 샤코 W, R의 [[FEAR]]를 해제할 수 있음",
+      "알리스타 W를 [[INVISIBILITY]]화가 안된 박스에 사용하면, 박스가 [[STUN]]에 걸리고 밀려남\\n알리스타 W를 [[INVISIBILITY]]화된 박스에 사용하면, 박스가 즉시 활성화 되어 [[FEAR]]를 시전하고 데미지는 입지만 밀려나지 않음"
+    ],
+    "app/data/matchups/alistar/alistar_shen.ts": [
+      "알리스타 E의 [[STUN]]로 쉔 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 쉔 E의 [[TAUNT]]을 해제할 수 있음",
+      "알리스타 Q, W로 쉔 E, R(시전집중)을 끊을 수 있음\\n알리스타 E로 쉔 R(시전집중)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_shyvana.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 쉬바나 R의 [[KNOCKBACK]]을 해제할 수 있음",
+      "알리스타 Q, W로 쉬바나 R을 끊을 수 없음\\n알리스타 E의 [[STUN]]로 쉬바나 R을 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/alistar/alistar_singed.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 신지드 E의 [[GRAB]], W에 사용한 E의[[GRAB]] [[ROOT]]을 해제할 수 있음",
+      "신지드 W로 알리스타 W를 사용할 수 없게 만들 수 있음",
+      "신지드 E와 알리스타 W가 부딪히면 알리스타 W도 유효하고 신지드 E도 유효함"
+    ],
+    "app/data/matchups/alistar/alistar_sion.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 사이온 Q, R의 [[SLOW]] [[AIRBORNE]] [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W, E로 사이온 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_skarner.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 스카너 Q W 의 [[SLOW]], E의 [[SUPPRESS]] [[STUN]], R의 [[SUPPRESS]]을 해제할 수 있음",
+      "알리스타 Q, W, E로 스카너 E(벽통과)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_smolder.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 스몰더 W의 [[SLOW]]는 해제할 수 없음",
+      "알리스타 R의 [[CC_CLEANSE]]로 스몰더 R의 [[SLOW]]는 해제할 수 있음",
+      "알리스타 Q, W, E로 스몰더 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_sona.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 소나 E평타의 [[SLOW]], R의 [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_soraka.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 소라카 E의 [[SILENCE]]을 해제할 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 소라카 E의 [[SLOW]]는 해제할 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_swain.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 스웨인 W, R의 [[SLOW]], E의 [[ROOT]], [[GRAB]]을 해제할 수 있음\\nE의 [[ROOT]]를 해제하면 스웨인이 [[GRAB]]을 사용할 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_sylas.ts": [
+      "알리스타 E의 [[STUN]]로 사일러스 W, E1, E2를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 사일러스 Q의 [[SLOW]], E2의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W로 사일러스 W, E1, E2(돌진단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_syndra.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 신드라 W의 [[SLOW]], E의 [[KNOCKBACK]] [[STUN]]을 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_tahmkench.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 탐켄치 Q의 [[STUN]], W의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 R은 탐켄치 R속에서 사용 불가",
+      "알리스타 Q, W, E로 탐켄치 W(시전집중)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_taliyah.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 탈리야 Q의 [[SLOW]], W의 [[AIRBORNE]], E의 [[SLOW]] [[STUN]], R의 [[AIRBORNE]] 를 해제할 수 있음",
+      "알리스타 Q, W, E로 탈리야 R를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_talon.ts": [
+      "알리스타 E의 [[STUN]]로 탈론 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 탈론 W의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 탈론 Q(돌진), E를 끊을 수 있음\\n알리스타 E로 탈론 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_taric.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 타릭 E의 [[STUN]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_teemo.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 티모 Q의 [[BLIND]], R의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_thresh.ts": [
+      "알리스타 E의 [[STUN]]로 쓰레쉬 Q(돌진), W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 쓰레쉬 Q의 [[STUN]] [[GRAB]], E의 [[AIRBORNE]] [[SLOW]], R의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 쓰레쉬 Q(돌진), W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_tristana.ts": [
+      "알리스타 E의 [[STUN]]로 트리스타나 W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 트리스타나 R의 [[KNOCKBACK]]을 해제할 수 있음",
+      "알리스타 Q, W로 트리스타나 W(점프단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_trundle.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 트런들 Q의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_tryndamere.ts": [
+      "알리스타 E의 [[STUN]]로 트린다미어 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 트린다미어 W의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 트린다미어 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_twistedfate.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 트페 W(빨강)의 [[SLOW]], W(골드)의 [[STUN]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 트페 R(시전집중)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_twitch.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 트위치 W의 [[SLOW]]는 해제할 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_udyr.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 우디르 E의 [[STUN]], R의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_urgot.ts": [
+      "알리스타 E의 [[STUN]]로 우르곳 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 우르곳 Q의 [[SLOW]], R의 [[SLOW]] [[SUPPRESS]] [[FEAR]]를 해제할 수 있음\\n즉, 끌려갈때 R을 사용하면 사실상 [[EXECUTE]]면역",
+      "알리스타 Q, W로 우르곳 E(돌진단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_varus.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 바루스 R의 [[ROOT]]를 해제할 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 바루스 E의 [[SLOW]]를 해제할 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_vayne.ts": [
+      "알리스타 E의 [[STUN]]로 베인 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 베인 E의 [[KNOCKBACK]] [[STUN]]를 해제할 수 있음",
+      "알리스타 Q, W로 베인 Q를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_veigar.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 베이가 E의 [[STUN]]를 해제할 수 있음",
+      "베이가 E가 활성화됐을 때 알리스타 W를 사용해서 넘으려고 한다면 [[STUN]]이 걸림"
+    ],
+    "app/data/matchups/alistar/alistar_velkoz.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 벨코즈 Q의 [[SLOW]], E의 [[AIRBORNE]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 벨코즈 R(채널링)을 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_vex.ts": [
+      "알리스타 E의 [[STUN]]로 벡스 R2를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 벡스 P의 [[FEAR]]를 해제할 수 있음",
+      "알리스타 Q, W로 벡스 R2를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_vi.ts": [
+      "알리스타 E의 [[STUN]]로 바이 Q(돌진)를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 바이 Q의 [[STUN]], R의 [[AIRBORNE]] [[STUN]]을 해제할 수 있음",
+      "알리스타 Q, W, E로 바이 Q(충전)를 끊을 수 있음\\n알리스타 Q, W로 바이 Q(돌진)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_viego.ts": [
+      "알리스타 E의 [[STUN]]로 비에고 W를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 비에고 W의 [[STUN]], R의 [[KNOCKBACK]] [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 비에고 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_viktor.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 빅토르 W강화 영향으로 인한[[SLOW]], W의 [[STUN]]을 해제할 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 빅토르 W의 [[SLOW]]를 해제할 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_vladimir.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 블라디 E의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 블라디 W의 [[SLOW]], R(디버프)을 해제할 수 없음",
+      "알리스타 Q, W, E로 블라디 E를 끊을 수 있음. 단, 블라디 E는 즉시 발사"
+    ],
+    "app/data/matchups/alistar/alistar_volibear.ts": [
+      "알리스타 Q, W, E로 볼리베어 Q(공격단계)를 끊을 수 없음",
+      "알리스타 R의 [[CC_CLEANSE]]로 볼리베어 Q의 [[STUN]], E R의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 볼리베어 Q(추격단계)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_warwick.ts": [
+      "알리스타 Q, W, E로 워윅 R(공격)을 끊을 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 워윅 의 [[FEAR]], R의 [[SUPPRESS]]을 해제할 수 있음",
+      "알리스타 Q, W, E로 워윅 R(도약)을 끊을 수 없음"
+    ],
+    "app/data/matchups/alistar/alistar_wukong.ts": [
+      "알리스타 E의 [[STUN]]로 오공 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 오공 R의 [[AIRBORNE]]를 해제할 수 있음",
+      "알리스타 Q, W로 오공 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_xerath.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 제라스 W의 [[SLOW]], E의 [[STUN]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 제라스 R(채널링)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_xinzhao.ts": [
+      "알리스타 E의 [[STUN]]로 신짜오 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 신짜오 Q의 [[AIRBORNE]], W의 [[SLOW]], E의 [[SLOW]], R의 [[KNOCKBACK]]을 해제할 수 있음",
+      "알리스타 Q, W로 신짜오 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_yasuo.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 아스오 Q3, R의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 Q, W, E 아스오 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_yone.ts": [
+      "알리스타 E의 [[STUN]]로 요네 Q3를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 요네 Q3, R의 [[AIRBORNE]]를 해제할 수 있음",
+      "알리스타 Q, W로 요네 Q3를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_yorick.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 요릭 E의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_yunara.ts": [
+      "알리스타 E의 [[STUN]]로 유나라 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 유나라 W의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 유나라 E(초월)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_yuumi.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 유미 Q, R의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W, E로 유미 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_zaahen.ts": [
+      "알리스타 E의 [[STUN]]로 자헨 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 자헨 Q의 [[AIRBORNE]], W의 [[GRAB]]을 해제할 수 있음",
+      "알리스타 Q, W로 자헨 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_zac.ts": [
+      "알리스타 E의 [[STUN]]로 자크 E(돌진)를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 자크 Q E의 [[SLOW]], Q E R의 [[AIRBORNE]]을 해제할 수 있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 자크 Q의 [[TETHER]]을 해제할 수 없음",
+      "알리스타 Q, W, E로 자크 E(준비)를 끊을 수 있음\\n알리스타 Q, W로 자크 E(돌진)를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_zed.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 제드 E의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_zeri.ts": [
+      "알리스타 E의 [[STUN]]로 제리 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 제리 W의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 제리 E를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_ziggs.ts": [
+      "알리스타 E의 [[STUN]]로 직스 E를 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "알리스타 R의 [[CC_CLEANSE]]로 직스 W의 [[AIRBORNE]], E의 [[SLOW]]를 해제할 수 있음",
+      "알리스타 Q, W로 직스 W를 끊을 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_zilean.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 질리언 Q자체를 해제할 수 없음",
+      "알리스타 R의 [[CC_CLEANSE]]로 질리언 Q의 [[STUN]], E의 [[SLOW]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_zoe.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 레넥톤 W의 [[STUN]]를 해제할 수 있음"
+    ],
+    "app/data/matchups/alistar/alistar_zyra.ts": [
+      "알리스타 R의 [[CC_CLEANSE]]로 자이라 덩굴 채찍 손(E식물)의 [[SLOW]], E의 [[ROOT]], R의 [[AIRBORNE]]을 해제할 수 있음"
+    ]
+  },
+  "ambessa": {
+    "app/data/matchups/ambessa/ambessa_braum.ts": [
+      "브라움 E로 암베사 평타, Q1, Q2, W, E 를 [[DAMAGE_NULLIFY]] 할 수 있음"
+    ],
+    "app/data/matchups/ambessa/ambessa_gwen.ts": [
+      "그웬 W로 암베사 Q2, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "amumu": {
+    "app/data/matchups/amumu/amumu_braum.ts": [
+      "브라움 E로 아무무 평타, Q, W(처음 한틱), E, R을 [[DAMAGE_NULLIFY]] 할 수 있음.\\n단, 아무무 Q, R의 [[STUN]]은 남아있음.",
+      "브라움 E로 아무무 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음",
+      "브라움 P의 [[STUN]]로 아무무 Q을 끊을 수 없음. 단, [[STUN]]은 남아있음"
+    ],
+    "app/data/matchups/amumu/amumu_gwen.ts": [
+      "그웬 W로 아무무 Q, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "anivia": {
+    "app/data/matchups/anivia/anivia_braum.ts": [
+      "브라움 E로 애니비아 평타, Q, E, R(처음 한틱)을 [[DAMAGE_NULLIFY]] 할 수 있음.",
+      "브라움 E로 애니비아 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음. 단, Q는 즉시 삭제되어 데미지, [[STUN]]이 없음"
+    ],
+    "app/data/matchups/anivia/anivia_gwen.ts": [
+      "그웬 W로 애니비아 평타, Q, E, R을 범위 밖에서 맞지 않음\\n그웬에게 사용한 평타, E는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "annie": {
+    "app/data/matchups/annie/annie_braum.ts": [
+      "브라움 E로 애니 평타, Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음.",
+      "브라움 E로 애니 평타, Q, W, R를 [[DAMAGE_NULLIFY]] 할 수 있음\\n 단, 애니 P의 [[STUN]]은 유효"
+    ],
+    "app/data/matchups/annie/annie_gwen.ts": [
+      "그웬 W로 애니 평타, Q, W, R을 범위 밖에서 맞지 않음\\n평타, Q는 날아가던 중 범위 안에 들어올 때 사라짐",
+      "그웬이 W를 범위 밖에서 사용했을 때, 애니 R(소환된)이 범위 안으로 들어가면 때릴 수 있음"
+    ]
+  },
+  "aphelios": {
+    "app/data/matchups/aphelios/aphelios_braum.ts": [
+      "아군이 아펠리오스 만월총에 맞아 추가평타가 들어오는것을 브라움 E로 막아 줄 수 있음. 단, 절단검(빨강) 제외",
+      "브라움 E로 아펠리오스 평타를 절단검(빨강)을 제외하고 막을 수 있음",
+      "아군에게 아펠리오스가 중력포(보라) Q를 쓸때, 브라움 E로 막아 줄 수 없음",
+      "브라움 E로 아펠리오스 R을 막을 수 있음.\\n단, 브라움이 막았을때 범위 폭발이 일어나 주변에 데미지를 주고, 이때 브라움은 데미지를 입지 않음. \\n그 이후 아펠리오스가 R의 효과로 추가 평타를 날릴때 브라움 E로 [[INTERCEPT_PROJECTILE]] 할 수 있음. 이때도 브라움은 데미지를 입음"
+    ],
+    "app/data/matchups/aphelios/aphelios_gwen.ts": [
+      "그웬 W로 아펠리오스 평타, Q, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "ashe": {
+    "app/data/matchups/ashe/ashe_braum.ts": [
+      "브라움 E로 애쉬 평타, Q(평타), W, R을 [[DAMAGE_NULLIFY]], [[INTERCEPT_PROJECTILE]] 할 수 있음.\\n단, 애쉬 R은 브라움이 데미지를 입지 않고 [[STUN]]이 걸림\\n애쉬 R의 범위피해는 아군에게 유효"
+    ],
+    "app/data/matchups/ashe/ashe_gwen.ts": [
+      "그웬 W로 애쉬 평타, Q(평타), W, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "aurelionsol": {
+    "app/data/matchups/aurelionsol/aurelionsol_braum.ts": [
+      "브라움 E로 아우솔의 평타를 [[INTERCEPT_PROJECTILE]] 할 수 있음",
+      "브라움 E로 아우솔 평타, Q(최초 한틱), E(최초 한틱), R을 [[DAMAGE_NULLIFY]] 할 수 있음"
+    ],
+    "app/data/matchups/aurelionsol/aurelionsol_gwen.ts": [
+      "그웬 W로 아우렐리온 솔 평타, Q, E, R, R(천상강림)을 범위 밖에서 맞지 않음\\n천상강림 충격파도 맞지 않음"
+    ]
+  },
+  "aurora": {
+    "app/data/matchups/aurora/aurora_braum.ts": [
+      "브라움 E로 오로라 평타, Q1, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음.\\n단, Q1은 데미지가 들어오지 않지만 Q2는 데미지가 들어옴\\n오로라 R은 중앙부분에 방패를 들어야 [[DAMAGE_NULLIFY]]",
+      "브라움 E로 오로라 평타, Q1를 [[INTERCEPT_PROJECTILE]] 할 수 있음.\\n단, 오로라가 Q2를 사용할 수 있음 "
+    ],
+    "app/data/matchups/aurora/aurora_briar.ts": [
+      "오로라 W의 [[INVISIBILITY]]으로 브라이어 W를 따돌릴 수 있음"
+    ],
+    "app/data/matchups/aurora/aurora_gwen.ts": [
+      "그웬 W로 오로라 평타, Q, E, R을 범위 밖에서 맞지 않음\\n그웬에게 사용한 평타는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "azir": {
+    "app/data/matchups/azir/azir_braum.ts": [
+      "브라움 E로 아지르 평타, Q, W, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음. (평타 불가) \\n단, Q의 경우 가로막힌 모든 병사의 데미지를 무효화",
+      "브라움 E로 아지르의 Q, E, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음. 단, 병사는 사라지지 않음\\n아지르 평타는 투사체가 아니여서 [[INTERCEPT_PROJECTILE]] 수 없음",
+      "브라움 E를 아지르 R이 다가오는 방향으로 들면 [[INTERCEPT_PROJECTILE]] 하는데, 방패에 막힐 때 브라움은 밀려나지 않고 병사들은 이동을 멈춤"
+    ],
+    "app/data/matchups/azir/azir_gwen.ts": [
+      "그웬 W로 아지르 평타, Q, W, R를 범위 밖에서 맞지 않음\\n관통한 W도 맞지 않음"
+    ]
+  },
+  "bard": {
+    "app/data/matchups/bard/bard_braum.ts": [
+      "브라움 E로 바드 평타, Q를 [[DAMAGE_NULLIFY]], [[INTERCEPT_PROJECTILE]] 할 수 있음.\\nQ는 브라움이 앞에서 방패로 막으면 뒤로는 관통이 없음.\\n브라움이 관통한 Q를 막으면 둘다 [[STUN]]이 걸림."
+    ],
+    "app/data/matchups/bard/bard_gwen.ts": [
+      "그웬 W로 바드 평타, Q, R를 범위 밖에서 맞지 않음"
+    ]
+  },
+  "belveth": {
+    "app/data/matchups/belveth/belveth_braum.ts": [
+      "브라움 E로 벨베스 평타, Q, W, E(처음 한틱), R을 [[DAMAGE_NULLIFY]] 할 수 있음"
+    ],
+    "app/data/matchups/belveth/belveth_gwen.ts": [
+      "그웬 W로 벨베스 평타, W, E, R를 범위 밖에서 맞지 않음"
+    ],
+    "app/data/matchups/belveth/belveth_yasuo.ts": [
+      "야스오 W(장막)가 벨베스 W 막을 수 있다는 소문을 들음. 안되면 제보 바람."
+    ]
+  },
+  "blitzcrank": {
+    "app/data/matchups/blitzcrank/blitzcrank_braum.ts": [
+      "브라움 E로 블리츠 평타, Q, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음"
+    ],
+    "app/data/matchups/blitzcrank/blitzcrank_drmundo.ts": [
+      "문도 패시브가 블리츠 Q 또는 E를 막을 수 있음."
+    ],
+    "app/data/matchups/blitzcrank/blitzcrank_fiddlesticks.ts": [
+      "피들이 블리츠 Q(그랩)을 4번(장신구)으로 막을 수 있음"
+    ],
+    "app/data/matchups/blitzcrank/blitzcrank_fiora.ts": [
+      "피오라 W(응수)가 블리츠 Q(그랩) E(어퍼컷) 을 막을 수 있음."
+    ],
+    "app/data/matchups/blitzcrank/blitzcrank_gwen.ts": [
+      "그웬 W로 블리츠크랭크 Q, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "brand": {
+    "app/data/matchups/brand/brand_braum.ts": [
+      "브라움 E로 브랜드 평타, Q, W, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음",
+      "브라움 E로 브랜드 평타, Q, E(강화)를 [[INTERCEPT_PROJECTILE]] 할 수 있음.\\nR은 방패에 튕겨도 사라지지 않음"
+    ],
+    "app/data/matchups/brand/brand_gwen.ts": [
+      "그웬 W로 브랜드 평타, Q, W, R을 범위 밖에서 맞지 않음\\n브랜드 E는 직접 사용하는 것은 맞고, 전이되어 날아오는 것은 맞지 않음\\n그웬에게 사용한 평타, E(전이되어 날아오는), R은 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "braum": {
+    "app/data/matchups/braum/braum_briar.ts": [
+      "브라움 E로 브라이어 평타, Q, W(평타), E, R1, R2를 [[DAMAGE_NULLIFY]] 할 수 있음."
+    ],
+    "app/data/matchups/braum/braum_caitlyn.ts": [
+      "브라움 E로 케이틀린의 평타, Q, E, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음",
+      "브라움 P의 [[STUN]]로 케이틀린 E을 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "브라움 E로 케이틀린 평타, Q, E, R 투사체를 모두 [[DAMAGE_NULLIFY]] 할 수 있음"
+    ],
+    "app/data/matchups/braum/braum_camille.ts": [
+      "브라움 P의 [[STUN]]로 케이틀린 E을 끊을 수 없음. 단, [[STUN]]은 남아있음",
+      "브라움 E로 카밀 평타, Q1, Q2, W, E, R을 [[DAMAGE_NULLIFY]] 할 수 있음. 단, E의 [[STUN]]은 남아있음."
+    ],
+    "app/data/matchups/braum/braum_cassiopeia.ts": [
+      "브라움 E로 카시오페아 평타, W, E를 [[INTERCEPT_PROJECTILE]] 할 수 있음.\\n단, W는 사라지지 않고 브라움 방패에 막혀 바닥에 깔림",
+      "브라움 E로 카시오페아 R을 [[INTERCEPT_PROJECTILE]] 할 수 없음",
+      "브라움 E로 카시오페아 평타, E, R [[DAMAGE_NULLIFY]] 할 수 있음. 단, R의 [[STUN]]은 남아있음."
+    ],
+    "app/data/matchups/braum/braum_chogath.ts": [
+      "브라움 E로 초가스 E를 [[INTERCEPT_PROJECTILE]] 할 수 있음.",
+      "브라움 E로 초가스 평타, Q, W, E, R [[DAMAGE_NULLIFY]] 할 수 있음. 단, Q의 [[AIRBORNE]] [[STUN]], W의 [[SILENCE]]은 남아있음."
+    ],
+    "app/data/matchups/braum/braum_corki.ts": [
+      "브라움 E로 코르키 평타, Q, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음.",
+      "브라움 E로 코르키 평타, Q, R을 [[DAMAGE_NULLIFY]] 할 수 있음. 단, R의 [[STUN]]은 남아있음."
+    ],
+    "app/data/matchups/braum/braum_gwen.ts": [
+      "그웬 W로 브라움 Q, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "briar": {
+    "app/data/matchups/briar/briar_gwen.ts": [
+      "그웬 W로 브라이어 E, R을 범위 밖에서 맞지 않음"
+    ],
+    "app/data/matchups/briar/briar_tahmkench.ts": [
+      "브라이어 R은 저지불가여서 어떤 대상이 적중했다면, 탐캔치가 삼켜도 뱃속에서 나와 날아감"
+    ]
+  },
+  "caitlyn": {
+    "app/data/matchups/caitlyn/caitlyn_gwen.ts": [
+      "케이틀린 R을 그웬에게 시전집중 할 때, 그웬이 W를 범위 밖에서 사용하면 케이틀린 R이 취소 됨\\n케이틀린 R을 그웬에게 사용하여 발사 됐을 때, 그웬이 W를 범위 밖에서 사용하면 날아가던 중 범위 안에 들어갈 때 사라짐",
+      "그웬 W로 케이틀린 평타, Q, E, R을 범위 밖에서 맞지 않음\\n그웬에게 사용한 평타, R은 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "cassiopeia": {
+    "app/data/matchups/cassiopeia/cassiopeia_gwen.ts": [
+      "그웬 W로 카시오페아 평타, Q, W, E, R을 범위 밖에서 맞지 않음\\n평타, E는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "chogath": {
+    "app/data/matchups/chogath/chogath_gwen.ts": [
+      "그웬 W로 초가스 Q, W, E를 범위 밖에서 맞지 않음"
+    ]
+  },
+  "corki": {
+    "app/data/matchups/corki/corki_gwen.ts": [
+      "그웬 W로 코르키 평타, Q, W, E, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "darius": {
+    "app/data/matchups/darius/darius_gwen.ts": [
+      "그웬 W로 다리우스 Q, E를 범위 밖에서 맞지 않음"
+    ]
+  },
+  "diana": {
+    "app/data/matchups/diana/diana_gwen.ts": [
+      "그웬 W로 다이애나 Q, W, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "draven": {
+    "app/data/matchups/draven/draven_gwen.ts": [
+      "그웬 W로 드레이븐 평타, Q(펑타), E, R을 범위 밖에서 맞지 않음\\n평타, Q(평타)는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "drmundo": {
+    "app/data/matchups/drmundo/drmundo_gwen.ts": [
+      "그웬 W로 문도 박사 Q, E(관통)을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "ekko": {
+    "app/data/matchups/ekko/ekko_gwen.ts": [
+      "그웬 W로 에코 Q, W, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "elise": {
+    "app/data/matchups/elise/elise_gwen.ts": [
+      "그웬 W로 엘리스 인간폼 평타, Q, W, E, 거미폼 E를 범위 밖에서 맞지 않음\\n인간폼 평타, Q는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "evelynn": {
+    "app/data/matchups/evelynn/evelynn_gwen.ts": [
+      "그웬 W로 이블린 Q, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "ezreal": {
+    "app/data/matchups/ezreal/ezreal_gwen.ts": [
+      "그웬 W로 이즈리얼 평타, Q, W, E, R을 범위 밖에서 맞지 않음\\n평타, E(투사체)는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "fiddlesticks": {
+    "app/data/matchups/fiddlesticks/fiddlesticks_gwen.ts": [
+      "그웬 W로 피들스틱 평타, Q, E, R을 범위 밖에서 맞지 않음\\n평타, Q는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "fiora": {
+    "app/data/matchups/fiora/fiora_gwen.ts": [
+      "그웬 W로 피오라 Q, W를 범위 밖에서 맞지 않음"
+    ]
+  },
+  "fizz": {
+    "app/data/matchups/fizz/fizz_gwen.ts": [
+      "그웬 W로 피즈 E, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "galio": {
+    "app/data/matchups/galio/galio_gwen.ts": [
+      "그웬 W로 갈리오 평타(범위피해), Q, W, R을 범위 밖에서 맞지 않음"
+    ]
+  },
+  "gangplank": {
+    "app/data/matchups/gangplank/gangplank_gwen.ts": [
+      "그웬 W로 갱플랭크 Q, E, R을 범위 밖에서 맞지 않음\\nQ는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "garen": {
+    "app/data/matchups/garen/garen_gwen.ts": [
+      "그웬 W로 가렌 E를 범위 밖에서 맞지 않음"
+    ],
+    "app/data/matchups/garen/garen_poppy.ts": [
+      "가렌 Q스킬은 뽀삐 W에 막히지 않음"
+    ]
+  },
+  "gnar": {
+    "app/data/matchups/gnar/gnar_gwen.ts": [
+      "그웬 W로 나르 미니폼 평타 Q, 메가폼 Q, W, E(범위 피해), R을 범위 밖에서 맞지 않음\\n평타는 날아가던 중 범위 안에 들어올 때 사라짐"
+    ]
+  },
+  "gragas": {
+    "app/data/matchups/gragas/gragas_gwen.ts": [
+      "그웬 W로 그라가스 Q, W(범위피해), R을 범위 밖에서 맞지 않음"
+    ],
+    "app/data/matchups/gragas/gragas_jarvaniv.ts": [
+      "그라가스 E가 자르반 EQ를 막을 수 있음."
+    ],
+    "app/data/matchups/gragas/gragas_leesin.ts": [
+      "그라가스 E, R로 리신 QQ를 끊을 수 있음. 데미지도 안들어감",
+      "그라가스 E, R로 리신 W를 끊을 수 있음. [[SHIELD]]도 생기지 않음",
+      "그라가스 E와 리신 R 판정은 서로서로를 밀어내고, 후속 CC를 걸고 데미지가 모두 들어감"
+    ],
+    "app/data/matchups/gragas/gragas_morgana.ts": [
+      "모르가나 E로 그라가스 E, R을 막을 수 있음"
+    ]
+  },
+  "graves": {
+    "app/data/matchups/graves/graves_gwen.ts": [
+      "그웬 W로 그레이브즈 평타, Q, W, R을 범위 밖에서 맞지 않음\\n단, 그레이브즈 W가 범위 밖에서 [[NEARSIGHT]]는 발동"
+    ]
+  },
+  "hwei": {
+    "app/data/matchups/hwei/hwei_mel.ts": [
+      "멜 W로 흐웨이스킬 뭐뭐 반사 가능한지 제보 바람."
+    ]
+  },
+  "ksante": {
+    "app/data/matchups/ksante/ksante_poppy.ts": [
+      "크산테 R과 뽀삐 E가 부딪힌다면, 크산테는 밀리지 않고 크산테의 R이 발동되어 뽀삐가 밀려나게 됨",
+      "크산테 R을 뽀삐 W안에서 사용하면 [[ANTI_DASH]] 판정이 없고\\n크산테가 뽀삐 W 범위 밖에서 등장하여 역시 [[ANTI_DASH]] 효과가 없음"
+    ]
+  },
+  "leesin": {
+    "app/data/matchups/leesin/leesin_mel.ts": [
+      "멜 W로 리신 Q 반사 가능. 이때 리신은 Q2를 사용 할 수 없음"
+    ]
+  },
+  "lissandra": {
+    "app/data/matchups/lissandra/lissandra_seraphine.ts": [
+      "세라핀 R이 리산드라 P로 생성된 챔피언들로 사거리 증가가 가능함."
+    ]
+  },
+  "malzahar": {
+    "app/data/matchups/malzahar/malzahar_twistedfate.ts": [
+      "말자하 패시브에 트페골카 막힘"
+    ]
+  },
+  "mel": {
+    "app/data/matchups/mel/mel_vex.ts": [
+      "벡스 P의 [[FEAR]]가 활성화 된 스킬을 반사한다면, [[FEAR]]도 적용.",
+      "멜 W로 벡스 평타(일반), Q, E, R 반사 가능.\\n단, 멜이 벡스 R을 반사해도 R2를 사용할 수 없음"
+    ]
+  }
+}
