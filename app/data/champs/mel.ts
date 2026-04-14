@@ -25,7 +25,7 @@ const mel: ChampData = {
     E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "BUFF_STACK", "DEBUFF_STACK"],
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["PASSIVE_BONUS"] },
-      { label: { ko: "R 액티브", en: "R Active" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "TIMING_CAST", "SKILL_CHANNEL", "GLOBAL", "BUFF_STACK", "DEBUFF_STACK"] },
+      { label: { ko: "R 액티브", en: "R Active" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "TIMING_CAST", "SKILL_CHANNEL", "CAST_COMMIT", "GLOBAL", "BUFF_STACK", "DEBUFF_STACK"] },
     ] },
   },
 

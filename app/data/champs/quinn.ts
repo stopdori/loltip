@@ -7,7 +7,7 @@ const quinn: ChampData = {
     Q: ["REVEALED", "NEAR_SIGHT"],
     W: ["REVEALED", "AS_UP"],
     E: ["REVEALED", "E_FLASH", "KNOCKBACK", "SLOW", "WALL_HOP",],
-    R: ["REVEALED"],
+    R: ["REVEALED", "TRANSFORM"],
   },
 
   vision: {
@@ -30,7 +30,7 @@ const quinn: ChampData = {
     ] },
     E: ["DMG_PHYSICAL", "TARGETED", "DASH", "MARK"],
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL", "TIMING_CAST", "LOCKED", "SKILL_RECAST"] },
+      { label: { ko: "R", en: "R" }, tags: ["TRANSFORM", "SKILL_CHANNEL", "TIMING_CAST", "LOCKED", "SKILL_RECAST"] },
       { label: { ko: "R 화살비", en: "R Raining Arrows" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "AOE", "MARK"] },
     ] },
     
