@@ -13,8 +13,8 @@ export const ahri_akali: MatchupSummary = {
       en: ["Ahri's E [[CHARM]] can interrupt Akali's E1, E2, R1, and R2 [[DASH]]."],
     },
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]]으로 아리 R의 [[DASH]]을 따라갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] can follow Ahri's R [[DASH]]."],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 아리 R의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Ahri's R [[DASH]]."],
     },
   },
 };

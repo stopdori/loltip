@@ -9,12 +9,13 @@ export const akali_akshan: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 아크샨 E를 따라 갈 수 있음. 판정에 따라 갈고리에서 떨어뜨릴 수도 있음", "아칼리 E로 트위치 Q의 [[CAMOUFLAGE]]을 볼 수 있음"],
-      en: ["Akali's E2 can follow Akshan's E. Depending on hitboxes, it may detach Akshan from his grappling hook", "Akali's E reveals Twitch's [[CAMOUFLAGE]] from Q"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 아크샨 E의 [[DASH]]을 따라 갈 수 있음. \n 단, 판정에 따라 갈고리에서 떨어뜨릴 수도 있음.",
+        "아칼리 E1으로 아크샨 W의 [[CAMOUFLAGE]]을 볼 수 있음. \n 단, E2로 부딪히면 더 이상 모습이 보이지 않음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Akshan's E [[DASH]]. \n However, it may knock Akshan off the hook depending on timing.", "Akali's E1 can reveal Akshan's W [[CAMOUFLAGE]]. \n However, using E2 to collide will hide Akshan again."],
     },
     akshan: {
-      ko: ["아크샨 R로 아칼리를 조준하면, 아칼리가 장막에 숨어도 모습이 보임"],
-      en: ["When Akshan's R locks onto Akali, she remains visible even while hiding in her shroud"],
+      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 아칼리 W(장막)의 [[INVISIBILITY]]을 볼 수 있음."],
+      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Akali's W (shroud) [[INVISIBILITY]]."],
     },
   },
 };

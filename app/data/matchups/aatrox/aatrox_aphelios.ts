@@ -13,7 +13,7 @@ export const aatrox_aphelios: MatchupSummary = {
       en: [],
     },
     aphelios: {
-      ko: ["아펠리오스의 반월검(흰색)의 Q의 [[SUMMON]]으로 포탑이 활성화 되면, 아트록스 W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      ko: ["아펠리오스의 반월검(흰색) Q의 [[SUMMON]]으로 포탑이 활성화 되면, 아트록스 W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
       en: ["When Aphelios' Crescendum (white) Q [[SUMMON]] turret is active, it can block Aatrox's W [[SINGLE]] [[PROJECTILE]]."],
     },
   },
