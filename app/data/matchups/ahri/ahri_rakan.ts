@@ -9,8 +9,8 @@ export const ahri_rakan: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 라칸 W, E를 끊을 수 있음"],
-      en: ["Ahri's E can interrupt Rakan's W and E"],
+      ko: ["아리 E의 [[CHARM]]으로 라칸 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Rakan's W and E [[DASH]]."],
     },
     rakan: {
       ko: [],

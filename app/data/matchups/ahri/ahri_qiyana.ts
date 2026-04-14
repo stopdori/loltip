@@ -9,8 +9,8 @@ export const ahri_qiyana: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E로 키아나 W, E를 끊을 수 있음"],
-      en: ["Ahri's E can interrupt Qiyana's W and E"],
+      ko: ["아리 E의 [[DASH]]으로 키아나 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[DASH]] can interrupt Qiyana's W and E [[DASH]]."],
     },
     qiyana: {
       ko: [],
