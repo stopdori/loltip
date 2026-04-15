@@ -9,8 +9,8 @@ export const alistar_brand: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 브랜드 Q의 [[STUN]]을 해제할 수 있음"],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Brand's Q [[STUN]]"],
+      ko: ["알리스타 R의 [[CC_CLEANSE]]로 브랜드 Q의 [[STUN]], R의 [[SLOW]]를 해제할 수 있음."],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Brand's Q [[STUN]] and R [[SLOW]]."],
     },
     brand: {
       ko: [],

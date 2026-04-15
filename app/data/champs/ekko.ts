@@ -82,12 +82,14 @@ const ekko: ChampData = {
         ko: [
         "Q의 [[SLOW]]는 가는 Q의 역장모드에 적용. \n 역장모드는 챔피언에 적중하거나 일정거리가 지나면 발동.",
         "E 스킬은 3단계로 나뉨 구르기/경직/순간이동.\n경직 단계에서 에코가 맞은 CC는 유효 하지만\n[[BLINK]] 단계가 발동되어 이동하고 공격하는 것.\n[[BLINK]] 단계에는 CC 저항력 없음.\n[[BLINK]] 했을 때 CC의 지속시간이 남아있다면 \n CC 효과 유효.", "E의 경직 단계의 경직 시간은 공격속도와 무관하게 일정함.",
+        "W는 지속[[SLOW]].",
         "R을 6레벨에 배우지 않고 있다가 필요할 때 배우면 \n 돌아가는 위치를 숨길 수 있음."
       ],
         en: [
           "Q's [[SLOW]] applies in the accelerated mode of the outgoing Q. \n Accelerated mode triggers when Q hits a champion or travels past a certain distance.",
           "E has three phases: roll / buffer / blink.\nCC applied during the buffer phase is valid, but the blink still triggers and Ekko moves and attacks.\nThere is no CC immunity during the blink phase.\nIf CC duration remains when Ekko blinks, the CC effect still applies.",
           "The buffer duration of E's buffer phase is fixed and unaffected by attack speed.",
+          "W applies persistent [[SLOW]].",
           "Delaying R until needed (instead of learning it at level 6) \n can hide the return location from enemies.",
         ]
         },

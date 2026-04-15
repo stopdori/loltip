@@ -133,11 +133,13 @@ const hwei: ChampData = {
 
       note2: {
         ko: [
+        "QE, R은 지속[[SLOW]].",
         "WW [[SHIELD]]는 아군에게 효과 15% 감소",
         "P의 [[DEBUFF]]가 쌓이는 스킬\nQQ, QW, QE, WE([[BA]]) \n EQ, EW, EE, R ([[AURA]] 범위에 닿으면)",
         "귀환 중에 Q, W, E로 준비를 해도 \n 귀환이 끊기지 않음.",
       ],
         en: [
+          "QE and R apply persistent [[SLOW]].",
           "WW [[SHIELD]] is 15% less effective on allies.",
           "Skills that apply P's [[DEBUFF]]:\nQQ, QW, QE, WE ([[BA]]) \n EQ, EW, EE, R (on contact with the [[AURA]])",
           "Preparing a skill with Q, W, or E during recall \n does not cancel the recall.",

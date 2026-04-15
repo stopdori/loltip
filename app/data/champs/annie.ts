@@ -37,7 +37,7 @@ const annie: ChampData = {
     skill: {
       note3: { 
         ko: [
-          "하나 삐져나온 대상을 [[STUN]]으로 잘라먹기.", 
+          "하나 삐져나온 대상을 [[STUN]]로 잘라먹기.", 
           "상대 딜러진에 R로 광역 [[STUN]]을 넣어서 \n 잡거나 전투이탈 만들기.",
         ], en: [
           "Pick off an isolated target with [[STUN]].",
