@@ -6,8 +6,8 @@ const hecarim: ChampData = {
     P: ["AD_UP"],
     Q: [],
     W: ["HEAL", "AURA"],
-    E: ["WALL_HOP", "MS_UP", "KNOCKBACK", "GHOSTING"],
-    R: ["WALL_HOP", "FEAR", "DASH", "UNSTOPPABLE"],
+    E: ["DASH", "WALL_HOP", "MS_UP", "KNOCKBACK", "GHOSTING"],
+    R: ["DASH", "WALL_HOP", "FEAR", "UNSTOPPABLE"],
   },
 
   vision: {
@@ -22,7 +22,7 @@ const hecarim: ChampData = {
     P: [],
     Q: ["DMG_PHYSICAL", "AOE", "BUFF_STACK"],
     W: ["BUFF_FORM", "DMG_MAGIC", "AURA"],
-    E: ["BUFF_FORM", "DMG_PHYSICAL", "TIMING_AFTERCAST", "ON_HIT", "DASH"],
+    E: ["BUFF_FORM", "DASH", "DMG_PHYSICAL", "TIMING_AFTERCAST", "ON_HIT"],
     R: ["DMG_MAGIC", "DASH", "UNSTOPPABLE", "FEAR"],
   },
 

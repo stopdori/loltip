@@ -69,10 +69,10 @@ const jhin: ChampData = {
         "진의 [[CRIT]]는 25% 감소한 피해. \n 200%에서 25% 감소라 150%.", 
         "4타는 일정시간 사용하지 않으면 자동으로 재장전. \n 이때 스킬을 사용하면 시간 초기화. \n 4타를 들고 다니는게 여러가지 이점이 많음. \n 4타 유지를 위해 덫을 깔아 지속시간 연장시키면 좋음.",
         "E의 [[INVISIBILITY]]은 \n 수정초, 바위게의 수정초 효과에 보이지 않음.",
-        "E의 [[SLOW]]는 [[TRAP]] 범위 위에 있는동안 지속.", 
+        "E의 지속[[SLOW]]는 [[TRAP]] 범위 위에 있는동안 지속.", 
         "R(커튼콜)의 각도는 60도, 사거리는 3500.", "진의 총은 사실 두 자루이고. \n 오른팔은 기계팔. \n [[BA]]는 권총. Q는 기계팔에서 유탄발사. W는 장총 \n R은 두 총을 결합한 사격."
       ],
-        en: ["Jhin's [[CRIT]] deals 25% reduced damage. \n 200% reduced by 25% equals 150%.", "The 4th shot reloads automatically if unused for a while. \n Using a skill resets the timer. \n Holding onto the 4th shot has many advantages. \n Place traps to extend the 4th shot buff.", "E's [[INVISIBILITY]] is not revealed \n by Scryer's Bloom or the Rift Scuttler's vision shrine.", "E's [[SLOW]] persists while standing in the [[TRAP]] area.", "R (Curtain Call) has a 60-degree angle and 3500 range.", "Jhin actually has two guns. \n His right arm is a mechanical arm. \n [[BA]] uses a pistol. Q fires a grenade from the mechanical arm. W uses a rifle. \n R fires both guns combined."]
+        en: ["Jhin's [[CRIT]] deals 25% reduced damage. \n 200% reduced by 25% equals 150%.", "The 4th shot reloads automatically if unused for a while. \n Using a skill resets the timer. \n Holding onto the 4th shot has many advantages. \n Place traps to extend the 4th shot buff.", "E's [[INVISIBILITY]] is not revealed \n by Scryer's Bloom or the Rift Scuttler's vision shrine.", "E's persistent [[SLOW]] applies while standing in the [[TRAP]] area.", "R (Curtain Call) has a 60-degree angle and 3500 range.", "Jhin actually has two guns. \n His right arm is a mechanical arm. \n [[BA]] uses a pistol. Q fires a grenade from the mechanical arm. W uses a rifle. \n R fires both guns combined."]
         },
     },
     vision: { ko: [], en: [] },

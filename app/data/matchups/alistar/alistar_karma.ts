@@ -9,8 +9,8 @@ export const alistar_karma: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 카르마 Q의 [[SLOW]], W의 [[ROOT]]을 해제할 수 있음"],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Karma's Q [[SLOW]], W [[ROOT]]"],
+      ko: ["알리스타 R의 [[CC_CLEANSE]]로 카르마 Q의 [[SLOW]], W의 [[ROOT]]을 해제할 수 있음."],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Karma's Q [[SLOW]] and W [[ROOT]]."],
     },
     karma: {
       ko: [],

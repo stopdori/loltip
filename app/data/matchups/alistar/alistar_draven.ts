@@ -9,8 +9,8 @@ export const alistar_draven: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 드레이븐 E의 [[SLOW]], [[AIRBORNE]]을 해제할 수 있음"],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Draven's E [[SLOW]] and [[AIRBORNE]]"],
+      ko: ["알리스타 R의 [[CC_CLEANSE]]로 드레이븐 E의 [[SLOW]], [[AIRBORNE]]을 해제할 수 있음."],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Draven's E [[SLOW]] and [[AIRBORNE]]."],
     },
     draven: {
       ko: [],

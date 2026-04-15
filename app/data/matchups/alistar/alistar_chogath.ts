@@ -9,8 +9,8 @@ export const alistar_chogath: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 초가스 Q의 [[SLOW]] [[AIRBORNE]], W의 [[SILENCE]]을 해제할 수 있음\n단, Q의 [[SLOW]]판정이 정말 특이하기 때문에 주의 해야 함. 초가스 Q의 [[AIRBORNE]]이 끝나고 땅에 내려온 후에 [[SLOW]]가 걸리기 때문에\n 공중에서 해제하면 [[SLOW]]는 남아있을 수도 있음"],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Cho'Gath's Q [[SLOW]] and [[AIRBORNE]] and W [[SILENCE]]\nNote: The Q [[SLOW]] timing is very unusual. Because the [[SLOW]] is applied after the [[AIRBORNE]] ends and the target lands,\ncleansing in the air may still leave the [[SLOW]] active."],
+      ko: ["알리스타 R의 [[CC_CLEANSE]]로 초가스 Q의 [[SLOW]] [[AIRBORNE]], W의 [[SILENCE]]을 해제할 수 있음. \n 단, 초가스 Q의 [[SLOW]]는 [[AIRBORNE]]이 끝나고 땅에 내려온 후에 걸림."],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Cho'Gath's Q [[SLOW]] [[AIRBORNE]] and W [[SILENCE]]. \n However, Cho'Gath's Q [[SLOW]] is applied after [[AIRBORNE]] ends and the target lands."],
     },
     chogath: {
       ko: [],
