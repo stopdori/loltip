@@ -9,8 +9,10 @@ export const aatrox_akshan: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 W의 [[TRUE_SIGHT]]가 아크샨 W의 [[CAMOUFLAGE]] 모습을 보여줌."],
-      en: ["Aatrox's W [[TRUE_SIGHT]] reveals Akshan's [[CAMOUFLAGE]]."],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 아크샨 E, R의 [[SKILL_CHANNEL]] 끊을 수 있음.", 
+        "아트록스 W의 [[TRUE_SIGHT]]가 아크샨 W의 [[CAMOUFLAGE]] 모습을 보여줌."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Akshan's E and R [[SKILL_CHANNEL]].",
+        "Aatrox's W [[TRUE_SIGHT]] reveals Akshan's W [[CAMOUFLAGE]]."],
     },
     akshan: {
       ko: [],

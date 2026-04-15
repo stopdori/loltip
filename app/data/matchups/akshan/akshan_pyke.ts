@@ -9,8 +9,8 @@ export const akshan_pyke: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: [""],
-      en: [""],
+      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 파이크 W의 [[CAMOUFLAGE]]을 볼 수 있음."],
+      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Pyke's W [[CAMOUFLAGE]]."],
     },
     pyke: {
       ko: [],

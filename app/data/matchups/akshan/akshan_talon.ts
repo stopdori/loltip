@@ -9,8 +9,8 @@ export const akshan_talon: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: [""],
-      en: [""],
+      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 탈론 R의 [[INVISIBILITY]]을 볼 수 있음."],
+      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Talon's R [[INVISIBILITY]]."],
     },
     talon: {
       ko: [],
