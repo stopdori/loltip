@@ -9,8 +9,8 @@ export const akali_rakan: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 라칸 W, E를 따라갈 수 있음"],
-      en: ["Akali's E2 can follow 라칸 W and E"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 라칸 W, E의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Rakan's W and E [[DASH]]."],
     },
     rakan: {
       ko: [],

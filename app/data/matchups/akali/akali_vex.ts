@@ -9,8 +9,8 @@ export const akali_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 벡스 R2를 따라갈 수 있음"],
-      en: ["Akali's E2 can follow 벡스 R2"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 벡스 R2의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Vex's R2 [[DASH]]."],
     },
     vex: {
       ko: [],

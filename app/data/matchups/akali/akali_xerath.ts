@@ -9,8 +9,8 @@ export const akali_xerath: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     xerath: {
       ko: [],

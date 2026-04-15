@@ -9,8 +9,8 @@ export const akali_velkoz: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     velkoz: {
       ko: [],

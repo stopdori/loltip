@@ -9,8 +9,8 @@ export const akali_zeri: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 제리 E를 따라갈 수 있음. 단, 제리가 E로 벽을 이동중일때 아칼리가 도착하면 제리는 계속 이동하고 아칼리는 데미지를 주고 벽에서 나옴"],
-      en: ["Akali's E2 can follow 제리 E. 단, 제리가 E로 벽을 이동중일때 아칼리가 도착하면 제리는 계속 이동하고 아칼리는 데미지를 주고 벽에서 나옴"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 제리 E의 [[DASH]]을 따라갈 수 있음. \n 단, 벽을 통과중일때 아칼리가 부딪히면 제리는 데미지를 받지만 계속 이동하고, 아칼리는 벽에서 나옴."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Zeri's E [[DASH]]. \n However, if Akali collides with Zeri while she is passing through a wall, Zeri takes damage but continues moving, while Akali exits the wall."],
     },
     zeri: {
       ko: [],

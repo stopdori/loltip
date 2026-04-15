@@ -9,8 +9,8 @@ export const akali_milio: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     milio: {
       ko: [],

@@ -9,8 +9,8 @@ export const akali_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 스몰더 E를 따라갈 수 있음. 단, 벽을 통과중일때 아칼리가 도착하면 스몰더는 계속 이동하고, 아칼리는 데미지를 입히고 벽에서 나옴"],
-      en: ["Akali's E2 can follow Smolder's E. 단, 벽을 통과중일때 아칼리가 도착하면 스몰더는 계속 이동하고, 아칼리는 데미지를 입히고 벽에서 나옴"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 스몰더 E의 벽이동([[MOBILITY]])을 따라갈 수 있음. \n 단, 벽을 통과중일때 부딪히면 스몰더는 데미지를 받지만 계속 이동하고, 아칼리는 벽에서 나옴."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Smolder's E wall-traverse ([[MOBILITY]]). \n However, if Akali collides with Smolder while he is passing through a wall, Smolder takes damage but continues moving, while Akali exits the wall."],
     },
     smolder: {
       ko: [],

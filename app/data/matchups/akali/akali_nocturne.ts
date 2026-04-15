@@ -9,8 +9,8 @@ export const akali_nocturne: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 녹턴 R을 따라갈 수 있음"],
-      en: ["Akali's E2 can follow Nocturne's R"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 녹턴 R2의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Nocturne's R2 [[DASH]]."],
     },
     nocturne: {
       ko: [],
