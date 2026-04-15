@@ -9,8 +9,8 @@ export const akali_twitch: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E로 트위치 Q의 [[CAMOUFLAGE]]을 볼 수 있음"],
-      en: ["Akali's E reveals Twitch's Q [[CAMOUFLAGE]]"],
+      ko: ["아칼리 E1의 [[TRUE_SIGHT]]로 트위치 Q의 [[CAMOUFLAGE]]을 볼 수 있음."],
+      en: ["Akali's E1 [[TRUE_SIGHT]] can reveal Twitch's Q [[CAMOUFLAGE]]."],
     },
     twitch: {
       ko: [],

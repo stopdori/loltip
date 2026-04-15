@@ -9,8 +9,8 @@ export const akali_thresh: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 쓰레쉬 Q, W를 따라갈 수 있음"],
-      en: ["Akali's E2 can follow Thresh's Q and W"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 쓰레쉬 Q, W의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Thresh's Q and W [[DASH]]."],
     },
     thresh: {
       ko: [],

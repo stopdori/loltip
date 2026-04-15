@@ -9,8 +9,8 @@ export const akali_tryndamere: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 트린다미어 E를 따라갈 수 있음"],
-      en: ["Akali's E2 can follow Tryndamere's E"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 트린다미어 E의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Tryndamere's E [[DASH]]."],
     },
     tryndamere: {
       ko: [],

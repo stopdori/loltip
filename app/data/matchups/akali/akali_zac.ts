@@ -9,8 +9,8 @@ export const akali_zac: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 자크 E를 따라갈 수 있음"],
-      en: ["Akali's E2 can follow Zac's E"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 자크 E의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Zac's E [[DASH]]."],
     },
     zac: {
       ko: [],

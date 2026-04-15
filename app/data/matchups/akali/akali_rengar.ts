@@ -9,8 +9,9 @@ export const akali_rengar: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 렝가 P를 따라갈 수 있음", "아칼리 E로 렝가 R의 [[INVISIBILITY]]를 볼 수 있음"],
-      en: ["Akali's E2 can follow Rengar's P", "Akali's E reveals Rengar's R [[INVISIBILITY]]"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 렝가 P, R의 [[DASH]]을 따라갈 수 있음.", 
+        "아칼리 E1의 [[TRUE_SIGHT]]로 렝가 R의 [[CAMOUFLAGE]]를 볼 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Rengar's P and R [[DASH]].", "Akali's E1 [[TRUE_SIGHT]] can reveal Rengar's R [[CAMOUFLAGE]]."],
     },
     rengar: {
       ko: [],

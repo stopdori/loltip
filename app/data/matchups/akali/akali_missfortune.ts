@@ -9,8 +9,8 @@ export const akali_missfortune: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     missfortune: {
       ko: [],

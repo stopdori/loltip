@@ -9,8 +9,10 @@ export const akali_qiyana: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 키아나 W, E를 따라갈 수 있음", "아칼리 E로 키아나 숲Q의 [[INVISIBILITY]]를 볼 수 있음. 단, E2를 사용하면 더이상 모습이 보이지 않음"],
-      en: ["Akali's E2 can follow Qiyana's W and E", "Akali's E reveals Qiyana's 숲Q [[INVISIBILITY]]. 단, E2를 사용하면 더이상 모습이 보이지 않음"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 키아나 W, E의 [[DASH]]을 따라갈 수 있음.", 
+        "아칼리 E1의 [[TRUE_SIGHT]]로 키아나 숲Q의 [[INVISIBILITY]]를 볼 수 있음. \n 단, E2로 부딪히면 더 이상 모습이 보이지 않음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Qiyana's W and E [[DASH]].",
+        "Akali's E1 [[TRUE_SIGHT]] can reveal Qiyana's Forest Q [[INVISIBILITY]]. \n However, if Akali's E2 collides with her, the invisibility is no longer revealed."],
     },
     qiyana: {
       ko: [],

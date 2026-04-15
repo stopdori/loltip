@@ -9,8 +9,8 @@ export const akali_warwick: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 워윅 Q, R을 따라갈 수 있음"],
-      en: ["Akali's E2 can follow 워윅 Q and R"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 워윅 Q, R의 [[DASH]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Warwick's Q and R [[DASH]]."],
     },
     warwick: {
       ko: [],

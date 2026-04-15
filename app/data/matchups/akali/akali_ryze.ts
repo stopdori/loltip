@@ -9,8 +9,8 @@ export const akali_ryze: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 라이즈 R을 따라갈 수 있음"],
-      en: ["Akali's E2 can follow Ryze's R"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 라이즈 R의 [[BLINK]]을 따라갈 수 있음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Ryze's R [[BLINK]]."],
     },
     ryze: {
       ko: [],

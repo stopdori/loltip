@@ -9,8 +9,8 @@ export const akali_taliyah: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2로 탈리야 R을 따라갈 수 있음"],
-      en: ["Akali's E2 can follow Taliyah's R"],
+      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 탈리야 R2의 [[DASH]]을 따라갈 수 있음. \n 단, 내리게 할 수는 없음."],
+      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Taliyah's R2 [[DASH]]. \n However, Akali cannot knock Taliyah off."],
     },
     taliyah: {
       ko: [],
