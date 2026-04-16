@@ -9,8 +9,8 @@ export const ambessa_kaisa: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 카이사 R을 끊을 수 있음.(이론상)", "암베사 R의 [[SUPPRESS]]으로 카이사 W를 끊을 수 없음. 발사됨."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Kai'Sa's R (theoretically).", "Ambessa's R [[SUPPRESS]] cannot interrupt Kai'Sa's W. It still fires."],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 카이사 R의 [[DASH]]을 끊을 수 있음.(이론상)"],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Kai'Sa's R [[DASH]] (theoretically)."],
     },
     kaisa: {
       ko: [],

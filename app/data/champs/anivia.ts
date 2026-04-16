@@ -51,7 +51,7 @@ const anivia: ChampData = {
 
         en: [
           "Dying while P is active turns Anivia into an Egg. \n When the descending light touches the Egg, she [[REVIVE]]s.",
-          "Enemies standing in Q's path are [[SLOW]]ed by chill. \n Reactivating Q detonates it, applying [[STUN]].",
+          "Enemies standing in Q's path are [[SLOW]]ed by chill.\nReactivating Q detonates it, applying [[STUN]].",
           "W ([[TERRAIN]]) blocks movement. \n Casting it overlapping an enemy champion causes a brief [[AIRBORNE]].",
           "E deals double damage to targets with the Frostbite [[DEBUFF]]. \n [[DEBUFF]] can be applied by Q or R.",
           "R applies area [[SLOW]] and [[DOT]]. \n However, it drains mana heavily.",
@@ -61,9 +61,9 @@ const anivia: ChampData = {
 
       note2: {
         ko: [
-        "[[Q_FLASH]] 불가.", "P(알) 쿨타임은 240s. \n 애니비아와 P(알)는 완벽하게 동일하지만 \n 스킬, 이동, 공격이 불가능한 상태.", "[[GW]] 묻고 알로변해도 풀피. \n [[GW]] 묻고 애니비아로 [[REVIVE]]해도 풀피.", "알에 텔 안타짐.", "알텔은 알이 되기전 텔을 타고 변하면 텔은 유지.", "W([[TERRAIN]])는 지형지물(협곡)에 사용 가능. 겹쳐짐.", "E는 설명이 조금 잘못 나와있음. \n 설명에는 냉각에 걸린 대상에게 2배 데미지 라고 적혀있지만, E의 2배 데미지는 사실 얼음땡 [[DEBUFF]]가 걸린 대상에게 발동함. \n\n 얼음땡 [[DEBUFF]]는 Q에는 즉시 \n R에는 장판이 다 펴지고 나서 걸기 시작. \n\n 그래서 가끔 RE로 2배 데미지가 안 터질 때 버그라고 생각할 수 있지만 사실은 얼음땡이 걸리기 전에 E를 적중 시킨 것.\n그래서 R을 쓰고 잠깐 기다렸다 E를 날려야 기대하는 데미지가 나옴."
+        "[[Q_FLASH]] 불가.", "P(알) 쿨타임은 240s. \n 애니비아와 P(알)는 완벽하게 동일하지만 \n 스킬, 이동, 공격이 불가능한 상태. \n 쉽게 니달리, 제이스처럼 [[TRANSFORM]].", "[[GW]] 묻고 알로변해도 풀피. \n [[GW]] 묻고 애니비아로 [[REVIVE]]해도 풀피.", "알에 텔 안타짐.", "알텔은 알이 되기전 텔을 타고 변하면 텔은 유지.", "W([[TERRAIN]])는 지형지물(협곡)에 사용 가능. 겹쳐짐.", "E는 설명이 조금 잘못 나와있음. \n 설명에는 냉각에 걸린 대상에게 2배 데미지 라고 적혀있지만, E의 2배 데미지는 사실 얼음땡 [[DEBUFF]]가 걸린 대상에게 발동함. \n\n 얼음땡 [[DEBUFF]]는 Q에는 즉시 \n R에는 장판이 다 펴지고 나서 걸기 시작. \n\n 그래서 가끔 RE로 2배 데미지가 안 터질 때 버그라고 생각할 수 있지만 사실은 얼음땡이 걸리기 전에 E를 적중 시킨 것.\n그래서 R을 쓰고 잠깐 기다렸다 E를 날려야 기대하는 데미지가 나옴."
       ],
-        en: ["[[Q_FLASH]] not possible.", "P (Egg) cooldown is 240s.\nThe Egg is identical to Anivia in all ways, but skills, movement, and attacks are disabled.", "[[GW]] on the egg still revives at full HP.\n[[GW]] on Anivia before [[REVIVE]] also revives at full HP.", "Cannot TP onto the egg.", "If TP is already channeling when you transform, the TP is maintained.", "W ([[TERRAIN]]) can be placed on terrain (walls). Overlapping is allowed.", "E's description is slightly misleading.\nIt says double damage on chilled targets, but E actually double-damages targets with Frostbite (the frozen debuff).\nQ and R both chill, but Frostbite from Q is instant while R's Frostbite only applies after the field fully expands.\nThat's why RE sometimes fails to double-damage — R hasn't fully expanded yet before E hits.\nWait briefly after R before throwing E to get the expected damage."]
+        en: ["[[Q_FLASH]] not possible.", "P (Egg) cooldown is 240s. \n The Egg is identical to Anivia in all ways, \n but skills, movement, and attacks are disabled. \n Think of it like [[TRANSFORM]], similar to Nidalee or Jayce.", "[[GW]] on the egg still revives at full HP. \n [[GW]] on Anivia before [[REVIVE]] also revives at full HP.", "Cannot TP onto the egg.", "If TP is already channeling when you transform, the TP is maintained.", "W ([[TERRAIN]]) can be placed on terrain (walls). Overlapping is allowed.", "E's description is slightly misleading. \n It says double damage on chilled targets, but E actually double-damages targets with Frostbite [[DEBUFF]]. \n\n Frostbite [[DEBUFF]] from Q is applied instantly, \n while R's Frostbite only applies after the field fully expands. \n\n That's why RE sometimes fails to double-damage — E hits before Frostbite is applied.\nWait briefly after R before throwing E to get the expected damage."]
         },
     },
     vision: { ko: [], en: [] },

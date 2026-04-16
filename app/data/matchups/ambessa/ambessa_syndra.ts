@@ -9,8 +9,8 @@ export const ambessa_syndra: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[UNSTOPPABLE]]로 신드라 QE의 [[KNOCKBACK]], [[STUN]]을 무시할 수 있음."],
-      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Syndra's QE [[KNOCKBACK]] and [[STUN]]."],
+      ko: ["암베사 R의 [[UNSTOPPABLE]]로 신드라 QE의 [[KNOCKBACK]], [[STUN]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
+      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Syndra's QE [[KNOCKBACK]] and [[STUN]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
     },
     syndra: {
       ko: [],

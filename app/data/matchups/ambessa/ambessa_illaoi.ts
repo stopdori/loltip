@@ -9,8 +9,8 @@ export const ambessa_illaoi: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 일라오이 W(이동)를 끊을 수 있음.\n단, 데미지, P효과는 발동."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Illaoi's W (movement).\nHowever, damage and P effect still activate."],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 일라오이 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Illaoi's W [[DASH]]."],
     },
     illaoi: {
       ko: [],
