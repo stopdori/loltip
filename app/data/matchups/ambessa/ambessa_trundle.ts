@@ -9,8 +9,8 @@ export const ambessa_trundle: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[UNSTOPPABLE]]로 트런들 E(기둥)의 [[AIRBORNE]]을 무시할 수 있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Taliyah's R (channeling).", "Ambessa's R [[UNSTOPPABLE]] can ignore Trundle's E (pillar) [[AIRBORNE]]."],
+      ko: ["암베사 R의 [[UNSTOPPABLE]]로 트런들 E([[TERRAIN]])의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Trundle's E [[TERRAIN]] [[AIRBORNE]]."],
     },
     trundle: {
       ko: [],

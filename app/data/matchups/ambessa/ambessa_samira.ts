@@ -9,8 +9,8 @@ export const ambessa_samira: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 사미라 E, R([[SKILL_CHANNEL]])을 끊을 수 있음"],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Samira's E and R (channeling)."],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 사미라 E의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Samira's E [[DASH]] and R [[SKILL_CHANNEL]]."],
     },
     samira: {
       ko: [],

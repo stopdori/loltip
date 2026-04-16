@@ -9,8 +9,9 @@ export const ambessa_fizz: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 피즈 Q를 끊을 수 있음.", "암베사 R의 [[UNSTOPPABLE]]로 피즈 R의 [[AIRBORNE]]을 무시할 수 있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Fizz's Q.", "Ambessa's R [[UNSTOPPABLE]] can ignore Fizz's R [[AIRBORNE]]."],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 피즈 Q의 [[DASH]]을 끊을 수 있음.", 
+        "암베사 R의 [[UNSTOPPABLE]]로 피즈 R의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Fizz's Q [[DASH]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Fizz's R [[AIRBORNE]]."],
     },
     fizz: {
       ko: [],

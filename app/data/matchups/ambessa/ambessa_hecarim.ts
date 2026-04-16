@@ -9,8 +9,9 @@ export const ambessa_hecarim: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 헤카림 E를 끊을 수 있음.\n단 헤카림이 발굽을 들면 데미지, [[KNOCKBACK]]은 유효", "암베사 R의 [[UNSTOPPABLE]]로 헤카림 E의 [[KNOCKBACK]], R의 [[FEAR]]를 무시할 수 있음.\n단, [[FEAR]]는 남아있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Hecarim's E.\nHowever, if Hecarim has already raised his hooves, damage and [[KNOCKBACK]] are still valid.", "Ambessa's R [[UNSTOPPABLE]] can ignore Hecarim's E [[KNOCKBACK]] and R [[FEAR]].\nHowever, [[FEAR]] still applies."],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 헤카림 E의 [[DASH]]을 끊을 수 있음.", 
+        "암베사 R의 [[UNSTOPPABLE]]로 헤카림 E의 [[KNOCKBACK]], R의 [[FEAR]]를 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[FEAR]]는 남아있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Hecarim's E [[DASH]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Hecarim's E [[KNOCKBACK]] and R [[FEAR]]. \n However, the [[FEAR]] still applies after [[UNSTOPPABLE]] ends."],
     },
     hecarim: {
       ko: [],

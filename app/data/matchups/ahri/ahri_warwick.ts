@@ -9,7 +9,7 @@ export const ahri_warwick: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [],
+      ko: ["아리 E의 [[CHARM]]으로 워윅 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [],
     },
     warwick: {

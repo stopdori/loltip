@@ -9,8 +9,8 @@ export const ambessa_yunara: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 유나라 E(초월)을 끊을 수 있음"],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Yunara's E (transcendence)."],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 유나라 RE의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Yunara's RE [[DASH]]."],
     },
     yunara: {
       ko: [],

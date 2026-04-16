@@ -9,8 +9,9 @@ export const ambessa_leona: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 레오나 E(돌진 단계)를 끊을 수 있음", "암베사 R의 [[UNSTOPPABLE]]로 레오나 Q의 [[STUN]], E의 [[ROOT]], R의 [[STUN]]을 무시할 수 있음.\n단, [[STUN]], [[ROOT]]은 남아있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Leona's E (dash phase).", "Ambessa's R [[UNSTOPPABLE]] can ignore Leona's Q [[STUN]], E [[ROOT]], and R [[STUN]].\nHowever, [[STUN]] and [[ROOT]] still apply."],
+      ko: ["암베사 R의 [[SUPPRESS]]으로 레오나 E의 [[DASH]]을 끊을 수 있음.", 
+        "암베사 R의 [[UNSTOPPABLE]]로 레오나 Q의 [[STUN]], E의 [[ROOT]], R의 [[STUN]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]], [[ROOT]]은 남아있음."],
+      en: ["Ambessa's R [[SUPPRESS]] can interrupt Leona's E [[DASH]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Leona's Q [[STUN]], E [[ROOT]], and R [[STUN]]. \n However, the [[STUN]] and [[ROOT]] still apply after [[UNSTOPPABLE]] ends."],
     },
     leona: {
       ko: [],
