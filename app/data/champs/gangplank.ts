@@ -74,9 +74,10 @@ const gangplank: ChampData = {
       note2: {
         ko: [ 
         "E(화약통)는 체력바 밑에 사용할 수 있는 화약통 갯수 표시. \n 시간이 지날수록 체력이 1칸까지 감소. \n 적이 범위에 겹쳐있어도 데미지는 한 번만 받음.", 
+        "R은 간격이 좀 있는 지속[[SLOW]].",
         "R의 [[EMPOWERED]]는 3종류. 개당 500 은화 \n 죽음의 여신: \n 처음 포격시 중앙에 [[AOE]] [[DMG_TRUE]] 포탄 하나 추가. \n 가차없는 포격: \n 3번씩 2세트 추가 포격. 뒷부분 2세트 사이에 추가. \n 사기진작: \n 범위 안의 아군 [[MS_UP]]. 벗어나도 2초간 지속."
       ],
-        en: ["Powder keg count is shown below the mana bar"]
+        en: ["Powder keg count is shown below the mana bar. \n Keg HP decreases to 1 over time. \n Overlapping enemies only take damage once.", "R applies persistent [[SLOW]] with brief intervals between pulses.", "R has 3 [[EMPOWERED]] upgrades — 500 silver serpents each: \n Death's Daughter: adds a center [[AOE]] [[DMG_TRUE]] cannonball on the first volley. \n Fire at Will: adds 2 extra sets of 3 cannonballs, inserted after the last 2 sets. \n Raise Morale: grants ally [[MS_UP]] within the zone, persisting for 2 seconds after leaving."]
         },
     },
     vision: { ko: [], en: [] },

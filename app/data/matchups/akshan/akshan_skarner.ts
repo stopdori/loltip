@@ -9,8 +9,8 @@ export const akshan_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     skarner: {
       ko: [],

@@ -60,7 +60,7 @@ const soraka: ChampData = {
 
       note2: {
         ko: [
-        "Q로 상대를 맞추면 W의 [[HEAL]]이 강화.", "E의 [[SILENCE]]은 범위 안에 있는 대상에게 지속 적용\nE 위에 상대가 계속 서있으면 [[ROOT]]", "R은 체력 40% 이하 대상에게 효과 증가"
+        "Q로 상대를 맞추면 W의 [[HEAL]]이 강화.", "E는 지속[[SILENCE]]. \n 위에 계속 서있으면 [[ROOT]].", "R은 체력 40% 이하 대상에게 효과 증가"
       ],
         en: ["Hit Q on enemies, then use W for maximum efficiency", "E's [[SILENCE]] continuously applies to targets inside the area.\nTargets standing in E long enough are [[ROOT]]ed", "R's effect is amplified on targets below 40% HP"]
         },

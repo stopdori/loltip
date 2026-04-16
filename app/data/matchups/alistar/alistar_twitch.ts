@@ -9,8 +9,8 @@ export const alistar_twitch: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 트위치 W의 [[SLOW]]는 해제할 수 없음"],
-      en: ["Alistar's R [[CC_CLEANSE]] cannot cleanse Twitch's W [[SLOW]]"],
+      ko: ["알리스타 R의 [[CC_CLEANSE]]로 트위치 W의 지속[[SLOW]]는 해제해도 다시 걸림."],
+      en: ["Alistar's R [[CC_CLEANSE]] cannot cleanse Twitch's W [[SLOW]]."],
     },
     twitch: {
       ko: [],

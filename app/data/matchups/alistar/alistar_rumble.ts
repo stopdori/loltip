@@ -9,8 +9,8 @@ export const alistar_rumble: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 럼블 E의 [[SLOW]]를 해제할 수 있음"],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse 럼블 E [[SLOW]]"],
+      ko: ["알리스타 R의 [[CC_CLEANSE]]로 럼블 E의 [[SLOW]]를 해제할 수 있음."],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Rumble's E [[SLOW]]."],
     },
     rumble: {
       ko: [],
