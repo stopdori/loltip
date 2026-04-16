@@ -9,8 +9,9 @@ export const alistar_viktor: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 빅토르 W의 [[SLOW]]를 해제할 수 없음", "알리스타 R의 [[CC_CLEANSE]]로 빅토르 W강화 영향으로 인한[[SLOW]], W의 [[STUN]]을 해제할 수 있음"],
-      en: ["Alistar's R [[CC_CLEANSE]] cannot cleanse Viktor's W [[SLOW]]", "Alistar's R [[CC_CLEANSE]] can cleanse Viktor's W강화 영향으로 인한[[SLOW]], W [[STUN]]"],
+      ko: ["알리스타 R의 [[CC_CLEANSE]]로 빅토르 W강화 영향으로 인한[[SLOW]], W의 [[STUN]]을 해제할 수 있음.", 
+        "알리스타 R의 [[CC_CLEANSE]]로 빅토르 W의 지속[[SLOW]]를 해제해도 다시 걸림."],
+      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Viktor's [[EMPOWERED]] W [[SLOW]] and W [[STUN]].", "Viktor's W persistent [[SLOW]] will reapply after being cleansed by Alistar's R [[CC_CLEANSE]]."],
     },
     viktor: {
       ko: [],

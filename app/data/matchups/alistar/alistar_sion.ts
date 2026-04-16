@@ -9,8 +9,9 @@ export const alistar_sion: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 Q, W, E로 사이온 Q를 끊을 수 있음", "알리스타 R의 [[CC_CLEANSE]]로 사이온 Q, R의 [[SLOW]] [[AIRBORNE]] [[STUN]]을 해제할 수 있음"],
-      en: ["Alistar's Q, W, and E can interrupt 사이온 Q", "Alistar's R [[CC_CLEANSE]] can cleanse 사이온 Q and R [[SLOW]] [[AIRBORNE]] [[STUN]]"],
+      ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]로 사이온 Q의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "알리스타 R의 [[CC_CLEANSE]]로 사이온 E의 [[SLOW]] / Q, R의 [[SLOW]] [[AIRBORNE]] [[STUN]]을 해제할 수 있음."],
+      en: ["Alistar's Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] can interrupt Sion's Q [[SKILL_CHANNEL]].", "Alistar's R [[CC_CLEANSE]] can cleanse Sion's E [[SLOW]], and Q and R [[SLOW]][[AIRBORNE]][[STUN]]."],
     },
     sion: {
       ko: [],

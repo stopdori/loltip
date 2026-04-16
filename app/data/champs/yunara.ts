@@ -62,7 +62,7 @@ const yunara: ChampData = {
 
       note2: {
         ko: [
-        "W를 쓰고 R을 쓰면 쿨타임 80% 감소", "E를 쓰고 R을 쓰면 E 초기화"
+        "W는 지속[[SLOW]]가 아님.", "W를 쓰고 R을 쓰면 쿨타임 80% 감소", "E를 쓰고 R을 쓰면 E 초기화"
       ],
         en: ["Using W then R reduces W cooldown by 80%", "Using E then R resets E"]
         },

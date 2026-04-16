@@ -9,8 +9,8 @@ export const alistar_sivir: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     sivir: {
       ko: [],

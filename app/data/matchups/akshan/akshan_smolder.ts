@@ -9,8 +9,8 @@ export const akshan_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     smolder: {
       ko: [],
