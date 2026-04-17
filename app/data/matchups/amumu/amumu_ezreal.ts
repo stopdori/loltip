@@ -9,8 +9,8 @@ export const amumu_ezreal: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 이즈리얼 E를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 이즈리얼 E를 끊을 수 없음.", "아무무 Q, R의 [[STUN]]로 이즈리얼 R(시전 집중)을 끊을 수 없음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Ezreal's E, but can follow him.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] cannot interrupt Ezreal's E.", "Amumu's Q and R [[STUN]] cannot interrupt Ezreal's R (channeling)."],
+      ko: ["아무무 Q의 [[STUN]]로 이즈리얼 E의 [[BLINK]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 이즈리얼 E의 [[BLINK]]을 따라갈 수 있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Ezreal's E [[BLINK]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Ezreal's E [[BLINK]]."],
     },
     ezreal: {
       ko: [],

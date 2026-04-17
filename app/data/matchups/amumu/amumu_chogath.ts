@@ -9,8 +9,8 @@ export const amumu_chogath: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q로 초가스 Q의 [[AIRBORNE]], W의 [[SILENCE]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효하고 [[AIRBORNE]], [[SILENCE]]도 남아있음."],
-      en: ["Amumu's Q is affected by Cho'Gath's Q [[AIRBORNE]] and W [[SILENCE]], but can still move if the dash phase activates.\nHowever, damage is applied and [[AIRBORNE]], [[SILENCE]] remain active."],
+      ko: ["아무무 Q의 [[CC_BUFFER]]로 초가스 Q의 [[AIRBORNE]], W의 [[SILENCE]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[AIRBORNE]], [[SILENCE]]은 남아있음."],
+      en: ["Amumu's Q [[CC_BUFFER]] can ignore Cho'Gath's Q [[AIRBORNE]] and W [[SILENCE]] and continue [[DASH]]. \n However, the [[AIRBORNE]] and [[SILENCE]] still apply."],
     },
     chogath: {
       ko: [],

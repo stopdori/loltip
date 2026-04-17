@@ -9,8 +9,10 @@ export const amumu_briar: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 브라이어 Q, W를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 브라이어 Q, W를 끊을 수 있음.", "아무무 Q로 브라이어 Q의 [[STUN]], E의 [[KNOCKBACK]] [[STUN]], R의 [[FEAR]]를 무시할 수 있음.\n단, 브라이어 Q, E, R의 데미지는 유효하고 [[STUN]], [[FEAR]]도 남아있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Briar's Q and W, but can follow her.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Briar's Q and W.", "Amumu's Q can ignore Briar's Q [[STUN]], E [[KNOCKBACK]] [[STUN]], and R [[FEAR]] during the dash phase.\nHowever, damage from Briar's Q, E, and R is applied and [[STUN]], [[FEAR]] remain active."],
+      ko: ["아무무 Q의 [[STUN]]로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 브라이어 Q, W의 [[DASH]]을 따라갈 수 있음.", 
+        "아무무 R의 [[STUN]]로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 브라이어 Q의 [[STUN]] / E의 [[KNOCKBACK]] [[STUN]] / R의 [[FEAR]]를 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]], [[FEAR]]는 남아있음."],
+      en: ["Amumu's Q [[STUN]] can interrupt Briar's Q and W [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Briar's Q and W [[DASH]].", "Amumu's R [[STUN]] can interrupt Briar's Q and W [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Briar's Q [[STUN]] / E [[KNOCKBACK]] [[STUN]] / R [[FEAR]] and continue [[DASH]]. \n However, the [[STUN]] and [[FEAR]] still apply."],
     },
     briar: {
       ko: [],

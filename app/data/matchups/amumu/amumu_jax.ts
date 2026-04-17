@@ -9,8 +9,10 @@ export const amumu_jax: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 잭스 Q를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 잭스 Q를 끊을 수 있음.", "아무무 Q, R의 [[STUN]]로 잭스 E([[SKILL_CHANNEL]])을 끊을 수 없음.", "아무무 Q로 잭스 E의 [[STUN]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n데미지는 유효하고 E의 [[STUN]]도 남아있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Jax's Q, but can follow him.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Jax's Q.", "Amumu's Q and R [[STUN]] cannot interrupt Jax's E (channeling).", "Amumu's Q is affected by Jax's E [[STUN]], but can still move if the dash phase activates.\nDamage is applied and E's [[STUN]] remains active."],
+      ko: ["아무무 Q의 [[STUN]]로 잭스 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 잭스 Q의 [[DASH]]을 따라갈 수 있음.", 
+        "아무무 R의 [[STUN]]로 잭스 Q의 [[DASH]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 잭스 E의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Jax's Q [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Jax's Q [[DASH]].", "Amumu's R [[STUN]] can interrupt Jax's Q [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Jax's E [[STUN]] and continue [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     jax: {
       ko: [],
