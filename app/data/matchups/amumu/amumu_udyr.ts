@@ -9,8 +9,8 @@ export const amumu_udyr: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q로 우디르 E(기절)의 [[STUN]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효하고 [[STUN]]도 남아있음."],
-      en: ["Amumu's Q is affected by Udyr's E (stun) [[STUN]], but can still move if the dash phase activates.\nHowever, damage is applied and [[STUN]] remains active."],
+      ko: ["아무무 Q의 [[CC_BUFFER]]로 우디르 E의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Amumu's Q [[CC_BUFFER]] can ignore Udyr's E [[STUN]] and continue [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     udyr: {
       ko: [],

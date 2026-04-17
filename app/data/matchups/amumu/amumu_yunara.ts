@@ -9,8 +9,9 @@ export const amumu_yunara: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 유나라 E(초월)를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 유나라 E(초월)를 끊을 수 있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Yunara's E (Transcendence), but can follow her.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Yunara's E (Transcendence)."],
+      ko: ["아무무 Q의 [[STUN]]로 유나라 RE의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 유나라 RE의 [[DASH]]을 따라갈 수 있음.", 
+        "아무무 R의 [[STUN]]로 유나라 RE의 [[DASH]]을 끊을 수 있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Yunara's RE [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Yunara's RE [[DASH]].", "Amumu's R [[STUN]] can interrupt Yunara's RE [[DASH]]."],
     },
     yunara: {
       ko: [],

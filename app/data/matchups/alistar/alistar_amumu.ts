@@ -15,8 +15,10 @@ export const alistar_amumu: MatchupSummary = {
       en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Amumu's Q [[DASH]].", "Alistar's E [[STUN]] cannot interrupt Amumu's Q [[DASH]]. \n However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Amumu's Q and R [[STUN]]."],
     },
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 알리스타 W를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 알리스타 W를 끊을 수 있음.", "아무무 Q로 알리스타 Q, W의 [[AIRBORNE]], E의 [[STUN]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 알리스타 Q, W, E의 데미지는 유효하고, E의 [[STUN]]도 남아있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Alistar's W, but can follow him.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Alistar's W.", "Amumu's Q is affected by Alistar's Q and W [[AIRBORNE]] and E [[STUN]], but can still move if the dash phase activates.\nHowever, damage from Alistar's Q, W, and E is applied, and E's [[STUN]] remains active."],
+      ko: ["아무무 Q의 [[STUN]]로 알리스타 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 따라갈 수 있음.", 
+        "아무무 R의 [[STUN]]로 알리스타 W의 [[DASH]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Alistar's W [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow.", "Amumu's R [[STUN]] can interrupt Alistar's W [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Alistar's Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] and continue [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
 };

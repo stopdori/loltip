@@ -9,8 +9,9 @@ export const amumu_seraphine: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q, R의 [[STUN]]로 세라핀 R(시전 집중)을 끊을 수 없음.", "아무무 Q로 세라핀 E의 [[ROOT]] [[STUN]], R의 [[CHARM]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효하고 E의 [[ROOT]] [[STUN]], R의 [[CHARM]]도 남아있음."],
-      en: ["Amumu's Q and R [[STUN]] cannot interrupt Seraphine's R (channeling).", "Amumu's Q is affected by Seraphine's E [[ROOT]] [[STUN]] and R [[CHARM]], but can still move if the dash phase activates.\nHowever, damage is applied and E's [[ROOT]] [[STUN]] and R's [[CHARM]] remain active."],
+      ko: ["아무무 Q, R의 [[STUN]]로 세라핀 R의 [[SKILL_CHANNEL]]을 끊을 수 없음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 세라핀 E의 [[ROOT]], [[STUN]] / R의 [[CHARM]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[ROOT]], [[STUN]], [[CHARM]]은 남아있음."],
+      en: ["Amumu's Q and R [[STUN]] cannot interrupt Seraphine's R [[SKILL_CHANNEL]].", "Amumu's Q [[CC_BUFFER]] can ignore Seraphine's E [[ROOT]] [[STUN]] and R [[CHARM]] and continue [[DASH]]. \n However, the [[ROOT]], [[STUN]], and [[CHARM]] still apply."],
     },
     seraphine: {
       ko: [],

@@ -9,8 +9,11 @@ export const amumu_quinn: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 퀸 E를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 퀸 E를 끊을 수 있음.", "아무무 Q, R의 [[STUN]]로 퀸 R(시전 집중)을 끊을 수 있음.", "아무무 Q로 퀸 E의 [[KNOCKBACK]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Quinn's E, but can follow her.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Quinn's E.", "Amumu's Q and R [[STUN]] can interrupt Quinn's R (channeling).", "Amumu's Q is affected by Quinn's E [[KNOCKBACK]], but can still move if the dash phase activates.\nHowever, damage is applied."],
+      ko: ["아무무 Q의 [[STUN]]로 퀸 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "아무무 R의 [[STUN]]로 퀸 E의 [[DASH]]을 끊을 수 있음.", 
+        "아무무 Q, R의 [[STUN]]로 퀸 R의 [[SKILL_CHANNEL]], [[TRANSFORM]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 퀸 E의 [[KNOCKBACK]]을 무시하고 [[DASH]]할 수 있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Quinn's E [[DASH]]. \n However, the [[STUN]] still applies.", "Amumu's R [[STUN]] can interrupt Quinn's E [[DASH]].", "Amumu's Q and R [[STUN]] can interrupt Quinn's R [[SKILL_CHANNEL]] and [[TRANSFORM]].", "Amumu's Q [[CC_BUFFER]] can ignore Quinn's E [[KNOCKBACK]] and continue [[DASH]]."],
     },
     quinn: {
       ko: [],

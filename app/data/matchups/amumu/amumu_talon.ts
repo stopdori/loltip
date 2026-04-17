@@ -9,8 +9,9 @@ export const amumu_talon: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 탈론 Q(돌진)를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 탈론 Q(돌진)를 끊을 수 있음.", "아무무 Q, R의 [[STUN]]로 탈론 E(벽넘기)을 끊을 수 있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Talon's Q (dash), but can follow him.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Talon's Q (dash).", "Amumu's Q and R [[STUN]] can interrupt Talon's E (wall jump)."],
+      ko: ["아무무 Q의 [[STUN]]로 탈론 Q, E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 탈론 Q, E의 [[DASH]]을 몸에 닿을 때까지 따라갈 수 있음.", 
+        "아무무 R의 [[STUN]]로 탈론 Q, E의 [[DASH]]를 끊을 수 있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Talon's Q and E [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Talon's Q and E [[DASH]] until making contact.", "Amumu's R [[STUN]] can interrupt Talon's Q and E [[DASH]]."],
     },
     talon: {
       ko: [],

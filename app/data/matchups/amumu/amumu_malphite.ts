@@ -9,8 +9,9 @@ export const amumu_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 말파이트 R를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 Q로 말파이트 R의 [[AIRBORNE]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Malphite's R, but can follow him.\nHowever, [[STUN]] remains active.", "Amumu's Q is affected by Malphite's R [[AIRBORNE]], but can still move if the dash phase activates.\nHowever, damage is applied."],
+      ko: ["아무무 Q의 [[STUN]]로 말파이트 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 말파이트 R의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Malphite's R [[DASH]]. \n However, the [[STUN]] still applies.", "Amumu's Q [[CC_BUFFER]] can ignore Malphite's R [[AIRBORNE]] and continue [[DASH]]."],
     },
     malphite: {
       ko: [],

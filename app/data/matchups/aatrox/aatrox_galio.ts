@@ -9,8 +9,8 @@ export const aatrox_galio: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 갈리오 E(돌진단계)의 [[DASH]], R([[SKILL_CHANNEL]])을 끊을 수 있음."],
-      en: ["Aatrox's Q edge and W's [[GRAB]] effect can interrupt Galio's E (dash phase) and R (channeling)"],
+      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 갈리오 E의 [[DASH]] / W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Galio's E [[DASH]] and W and R [[SKILL_CHANNEL]]."],
     },
     galio: {
       ko: ["갈리오 E(후진단계)의 [[CC_BUFFER]]로 아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과를 무시할 수 있음."],

@@ -9,8 +9,9 @@ export const amumu_velkoz: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q, R의 [[STUN]]로 벨코즈 R([[SKILL_CHANNEL]])을 끊을 수 있음.", "아무무 Q로 벨코즈 E의 [[AIRBORNE]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효."],
-      en: ["Amumu's Q and R [[STUN]] can interrupt Vel'Koz's R (channeling).", "Amumu's Q is affected by Vel'Koz's E [[AIRBORNE]], but can still move if the dash phase activates.\nHowever, damage is applied."],
+      ko: ["아무무 Q, R의 [[STUN]]로 벨코즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 벨코즈 E의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음."],
+      en: ["Amumu's Q and R [[STUN]] can interrupt Vel'Koz's R [[SKILL_CHANNEL]].", "Amumu's Q [[CC_BUFFER]] can ignore Vel'Koz's E [[AIRBORNE]] and continue [[DASH]]."],
     },
     velkoz: {
       ko: [],

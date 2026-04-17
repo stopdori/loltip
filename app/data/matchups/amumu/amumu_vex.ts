@@ -9,8 +9,9 @@ export const amumu_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q, R의 [[STUN]]로 벡스 R2를 끊을 수 없음.", "아무무 Q로 벡스 P의 [[FEAR]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, P를 발동시킨 Q, W, E의 데미지는 유효하고 [[FEAR]]도 남아있음."],
-      en: ["Amumu's Q and R [[STUN]] cannot interrupt Vex's R2.", "Amumu's Q is affected by Vex's passive [[FEAR]], but can still move if the dash phase activates.\nHowever, damage from the Q, W, or E that triggered the passive is applied and [[FEAR]] remains active."],
+      ko: ["아무무 Q의 [[HOMING]] [[DASH]]으로 벡스 R2의 [[DASH]]을 따라갈 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 벡스 P의 [[FEAR]]를 무시하고 [[DASH]]할 수 있음. \n 단, [[FEAR]]는 남아있음."],
+      en: ["Amumu's Q [[HOMING]] [[DASH]] can follow Vex's R2 [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Vex's P [[FEAR]] and continue [[DASH]]. \n However, the [[FEAR]] still applies."],
     },
     vex: {
       ko: [],
