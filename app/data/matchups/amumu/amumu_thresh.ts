@@ -9,8 +9,10 @@ export const amumu_thresh: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 쓰레쉬 Q2, W를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 쓰레쉬 W, Q2를 끊을 수 있음.", "아무무 Q로 쓰레쉬 Q의 [[GRAB]], E의 [[AIRBORNE]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, Q, E데미지는 유효하고 Q의 [[STUN]]도 남아있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Thresh's Q2 or W, but can follow him.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Thresh's W and Q2.", "Amumu's Q is affected by Thresh's Q [[GRAB]] and E [[AIRBORNE]], but can still move if the dash phase activates.\nHowever, Q and E damage is applied and Q's [[STUN]] remains active."],
+      ko: ["아무무 Q의 [[STUN]]로 쓰레쉬 Q2, W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 쓰레쉬 Q2, W의 [[DASH]]을 따라갈 수 있음.", 
+        "아무무 R의 [[STUN]]로 쓰레쉬 Q2, W의 [[DASH]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 쓰레쉬 Q의 [[GRAB]], [[STUN]] / E의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Thresh's Q2 and W [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Thresh's Q2 and W [[DASH]].", "Amumu's R [[STUN]] can interrupt Thresh's Q2 and W [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Thresh's Q [[GRAB]] [[STUN]] and E [[AIRBORNE]] and continue [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     thresh: {
       ko: [],

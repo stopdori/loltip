@@ -9,8 +9,8 @@ export const amumu_renata: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q로 레나타 글라스크 Q의 [[ROOT]] [[STUN]], R의 [[BERSERK]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효하고 Q의 [[STUN]] R의 [[BERSERK]]도 남아있음."],
-      en: ["Amumu's Q is affected by Renata Glasc's Q [[ROOT]] [[STUN]] and R [[BERSERK]], but can still move if the dash phase activates.\nHowever, damage is applied and Q's [[STUN]] and R's [[BERSERK]] remain active."],
+      ko: ["아무무 Q의 [[CC_BUFFER]]로 레나타 글라스크 Q의 [[ROOT]], [[STUN]] / R의 [[BERSERK]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]], [[BERSERK]]은 남아있음."],
+      en: ["Amumu's Q [[CC_BUFFER]] can ignore Renata Glasc's Q [[ROOT]] [[STUN]] and R [[BERSERK]] and continue [[DASH]]. \n However, the [[STUN]] and [[BERSERK]] still apply."],
     },
     renata: {
       ko: [],

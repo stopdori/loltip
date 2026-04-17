@@ -9,8 +9,10 @@ export const amumu_leblanc: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 르블랑 W를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 르블랑 W를 끊을 수 있음.", "아무무 Q로 르블랑 E의 [[ROOT]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효하고 [[ROOT]]도 남아있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt LeBlanc's W, but can follow her.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt LeBlanc's W.", "Amumu's Q is affected by LeBlanc's E [[ROOT]], but can still move if the dash phase activates.\nHowever, damage is applied and [[ROOT]] remains active."],
+      ko: ["아무무 Q의 [[STUN]]로 르블랑 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 르블랑 W의 [[DASH]]을 따라갈 수 있음.", 
+        "아무무 R의 [[STUN]]로 르블랑 W의 [[DASH]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 르블랑 E의 [[ROOT]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[ROOT]]은 남아있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt LeBlanc's W [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow LeBlanc's W [[DASH]].", "Amumu's R [[STUN]] can interrupt LeBlanc's W [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore LeBlanc's E [[ROOT]] and continue [[DASH]]. \n However, the [[ROOT]] still applies."],
     },
     leblanc: {
       ko: [],

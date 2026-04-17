@@ -9,8 +9,8 @@ export const amumu_trundle: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q로 트런들 E(기둥)의 [[AIRBORNE]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음."],
-      en: ["Amumu's Q is affected by Trundle's E (pillar) [[AIRBORNE]], but can still move if the dash phase activates."],
+      ko: ["아무무 Q의 [[CC_BUFFER]]로 트런들 E([[TERRAIN]])의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음."],
+      en: ["Amumu's Q [[CC_BUFFER]] can ignore Trundle's E [[TERRAIN]] [[AIRBORNE]] and continue [[DASH]]."],
     },
     trundle: {
       ko: [],

@@ -9,8 +9,9 @@ export const amumu_nocturne: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q, R의 [[STUN]]로 녹턴 R2를 끊을 수 없음.", "아무무 Q로 녹턴 E의 [[FEAR]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효하고 [[FEAR]]도 남아있음."],
-      en: ["Amumu's Q and R [[STUN]] cannot interrupt Nocturne's R2.", "Amumu's Q is affected by Nocturne's E [[FEAR]], but can still move if the dash phase activates.\nHowever, damage is applied and [[FEAR]] remains active."],
+      ko: ["아무무 Q, R의 [[STUN]]로 녹턴 R2의 [[UNSTOPPABLE]] [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 녹턴 R2의 [[DASH]]을 따라갈 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 녹턴 E의 [[FEAR]]를 무시하고 [[DASH]]할 수 있음. \n 단, [[FEAR]]는 남아있음."],
+      en: ["Amumu's Q and R [[STUN]] cannot interrupt Nocturne's R2 [[UNSTOPPABLE]] [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Nocturne's R2 [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Nocturne's E [[FEAR]] and continue [[DASH]]. \n However, the [[FEAR]] still applies."],
     },
     nocturne: {
       ko: [],

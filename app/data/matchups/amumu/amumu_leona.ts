@@ -9,8 +9,10 @@ export const amumu_leona: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 레오나 E를 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 레오나 E를 끊을 수 있음.", "아무무 Q로 레오나 Q의 [[STUN]], E의 [[ROOT]], R의 [[STUN]]에 걸리지만 돌진 단계가 발동하면 이동할 수 있음.\n단, 데미지는 유효하고 [[STUN]], [[ROOT]]도 남아있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Leona's E, but can follow her.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Leona's E.", "Amumu's Q is affected by Leona's Q [[STUN]], E [[ROOT]], and R [[STUN]], but can still move if the dash phase activates.\nHowever, damage is applied and [[STUN]], [[ROOT]] remain active."],
+      ko: ["아무무 Q의 [[STUN]]로 레오나 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 레오나 E의 [[DASH]]을 따라갈 수 있음.", 
+        "아무무 R의 [[STUN]]로 레오나 E의 [[DASH]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 레오나 Q의 [[STUN]], E의 [[ROOT]], R의 [[STUN]] \n 단, [[STUN]], [[ROOT]]은 남아있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Leona's E [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Leona's E [[DASH]].", "Amumu's R [[STUN]] can interrupt Leona's E [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Leona's Q [[STUN]], E [[ROOT]], and R [[STUN]] and continue [[DASH]]. \n However, the [[STUN]] and [[ROOT]] still apply."],
     },
     leona: {
       ko: [],
