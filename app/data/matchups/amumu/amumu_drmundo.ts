@@ -9,8 +9,8 @@ export const amumu_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     drmundo: {
       ko: [],

@@ -9,8 +9,9 @@ export const amumu_kaisa: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 카이사 R을 끊을 수 없지만 따라갈 수 있음.\n단, [[STUN]]은 남아있음.", "아무무 R의 [[STUN]]로 카이사 R을 끊을 수 있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Kai'Sa's R, but can follow her.\nHowever, [[STUN]] remains active.", "Amumu's R [[STUN]] can interrupt Kai'Sa's R."],
+      ko: ["아무무 Q의 [[STUN]]로 카이사 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 카이사 R의 [[DASH]]을 따라갈 수 있음. (이론상)", 
+        "아무무 R의 [[STUN]]로 카이사 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Kai'Sa's R [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Kai'Sa's R [[DASH]]. (theoretically)", "Amumu's R [[STUN]] can interrupt Kai'Sa's R [[DASH]]."],
     },
     kaisa: {
       ko: [],

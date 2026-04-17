@@ -9,8 +9,9 @@ export const amumu_fiddlesticks: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q, R의 [[STUN]]로 피들스틱 W, R(시전 집중)을 끊을 수 있음.", "아무무 Q로 피들스틱 Q의 [[FEAR]]를 무시할 수 있음.\n단, [[FEAR]]는 남아있음."],
-      en: ["Amumu's Q and R [[STUN]] can interrupt Fiddlesticks's W and R (channeling).", "Amumu's Q can ignore Fiddlesticks's Q [[FEAR]] during the dash phase.\nHowever, [[FEAR]] remains active."],
+      ko: ["아무무 Q, R의 [[STUN]]로 피들스틱 W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "아무무 Q의 [[CC_BUFFER]]로 피들스틱 Q의 [[FEAR]], E의 [[SILENCE]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
+      en: ["Amumu's Q and R [[STUN]] can interrupt Fiddlesticks's W and R [[SKILL_CHANNEL]].", "Amumu's Q [[CC_BUFFER]] can ignore Fiddlesticks's Q [[FEAR]] and E [[SILENCE]] and continue [[DASH]]. \n However, the [[FEAR]] and [[SILENCE]] still apply."],
     },
     fiddlesticks: {
       ko: [],
