@@ -9,8 +9,9 @@ export const anivia_corki: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 코르키 W(발키리)의 [[DASH]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 코르키 W(발키리)의 [[DASH]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Corki's W (Valkyrie) movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Corki's W (Valkyrie) movement."],
+      ko: ["애니비아 Q의 [[STUN]]로 코르키 W(발키리)의 [[DASH]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 코르키 W(발키리)의 [[DASH]을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Corki's W (Valkyrie) [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Corki's W (Valkyrie) [[DASH]]."],
     },
     corki: {
       ko: [],

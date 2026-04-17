@@ -9,8 +9,8 @@ export const anivia_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 W(벽)의 [[AIRBORNE]]으로 부쉬 밖의 티모 P의 [[CAMOUFLAGE]]를 움직여서 해제 시킬수 있음.\n단, 부쉬 안의 티모가 P의 [[CAMOUFLAGE]] 상태를 애니비아 W(벽)으로 밀어서 부쉬 밖으로 쫓아내면 모습이 보임."],
-      en: ["Anivia's W (wall) [[AIRBORNE]] can break Teemo's P [[CAMOUFLAGE]] if he is standing still outside a bush, by displacing him.\nIf Teemo is [[CAMOUFLAGE]] inside a bush, pushing him out of the bush with Anivia's W (wall) will reveal him."],
+      ko: ["애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 부쉬 밖의 티모 P의 [[CAMOUFLAGE]]를 움직여서 해제 시킬수 있음. \n 단, 부쉬 안의 티모가 P의 [[CAMOUFLAGE]] 상태도 애니비아 W([[TERRAIN]])으로 밀어서 부쉬 밖으로 쫓아내면 모습이 보임."],
+      en: ["Anivia's W [[TERRAIN]] [[AIRBORNE]] can break Teemo's P [[CAMOUFLAGE]] if he is standing still outside a bush, by displacing him. \n If Teemo is [[CAMOUFLAGE]] inside a bush, pushing him out of the bush with Anivia's W [[TERRAIN]] will reveal him."],
     },
     teemo: {
       ko: [],

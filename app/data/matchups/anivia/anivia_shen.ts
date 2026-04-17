@@ -9,8 +9,10 @@ export const anivia_shen: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 쉔 E(도발)의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 쉔 E(도발)의 [[DASH]]을 끊을 수 있음.", "애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 쉔 R(시전 집중)을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Shen's E (Shadow Dash) [[DASH]]. However, the [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Shen's E (Shadow Dash) [[DASH]].", "Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Shen's R (channeling)."],
+      ko: ["애니비아 Q의 [[STUN]]로 쉔 E(도발)의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 쉔 E(도발)의 [[DASH]]을 끊을 수 있음.", 
+        "애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 쉔 R을 [[SKILL_CHANNEL]] 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Shen's E (Shadow Dash) [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Shen's E (Shadow Dash) [[DASH]].", "Anivia's Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Shen's R [[SKILL_CHANNEL]]."],
     },
     shen: {
       ko: [],

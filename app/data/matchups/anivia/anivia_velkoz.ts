@@ -9,8 +9,8 @@ export const anivia_velkoz: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 벨코즈 R([[SKILL_CHANNEL]])을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Vel'Koz's R (channeling)."],
+      ko: ["애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 벨코즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Vel'Koz's R [[SKILL_CHANNEL]]."],
     },
     velkoz: {
       ko: [],

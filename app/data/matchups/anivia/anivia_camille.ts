@@ -9,8 +9,10 @@ export const anivia_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 카밀 E(그렙/대기 단계)의 [[DASH]을 끊을 수 있음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 카밀 E(그렙, 대기, 돌진 단계)의 [[DASH]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] can interrupt Camille's E (grapple/wait phase) movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Camille's E (grapple, wait, and dash phases) movement."],
+      ko: ["애니비아 Q의 [[STUN]]로 카밀 E의 [[DASH]을 끊을 수 있음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 카밀 E의 [[DASH]을 끊을 수 있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 카밀 W를 시전 중일 때 뒤로 밀어내면 W의 [[AOE]]도 같이 뒤로 밀림."],
+      en: ["Anivia's Q [[STUN]] can interrupt Camille's E [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Camille's E [[DASH]].", "If Anivia's W [[TERRAIN]] [[AIRBORNE]] knocks Camille back while casting W, the W [[AOE]] also moves with her."],
     },
     camille: {
       ko: [],

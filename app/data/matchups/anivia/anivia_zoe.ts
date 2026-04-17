@@ -9,8 +9,8 @@ export const anivia_zoe: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 레넥톤 E1, E2의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 레넥톤 E1, E2의 [[DASH]]을 끊을 수 있음."],
-      en: [""],
+      ko: ["애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 조이 R의 [[BLINK]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Anivia's Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] cannot interrupt Zoe's R [[BLINK]]. \n However, [[STUN]] still applies."],
     },
     zoe: {
       ko: [],

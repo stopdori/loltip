@@ -9,8 +9,9 @@ export const anivia_jax: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 잭스 Q의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 잭스 Q의 [[DASH]]을 끊을 수 있음.", "애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 잭스 E([[SKILL_CHANNEL]])을 끊을 수 없음.\n단, Q의 [[STUN]]은 남아있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Jax's Q [[DASH]]. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Jax's Q [[DASH]].", "Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] cannot interrupt Jax's E (channeling).\nHowever, Q [[STUN]] still applies."],
+      ko: ["애니비아 Q의 [[STUN]]로 잭스 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 잭스 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Jax's Q [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Jax's Q [[DASH]]."],
     },
     jax: {
       ko: [],

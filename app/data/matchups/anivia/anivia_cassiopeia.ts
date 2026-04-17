@@ -9,8 +9,8 @@ export const anivia_cassiopeia: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: [],
-      en: [],
+      ko: ["애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 카시오페아 R를 시전 중일 때 뒤로 밀어내면 R [[AOE]]도 같이 뒤로 밀림."],
+      en: ["If Anivia's W [[TERRAIN]] [[AIRBORNE]] knocks Cassiopeia back while casting R, the R [[AOE]] also moves with her."],
     },
     cassiopeia: {
       ko: [],

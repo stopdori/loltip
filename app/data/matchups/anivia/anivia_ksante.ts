@@ -9,8 +9,10 @@ export const anivia_ksante: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 크산테 일반폼 W, E의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 크산테 E의 [[DASH]]을 끊을 수 있음.", "애니비아 W(벽)로 크산테 W를 경로를 막아 이동을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt K'Sante's normal form W or E [[DASH]]. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt K'Sante's E [[DASH]].", "Anivia's W (wall) can block K'Sante's W path to interrupt its movement."],
+      ko: ["애니비아 Q의 [[STUN]]로 크산테 일반폼 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 크산테 E의 [[DASH]]을 끊을 수 있음.", 
+        "애니비아 W([[TERRAIN]])로 크산테 W(일반폼, 변신폼)의 [[DASH]]을 경로를 막아 이동을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt K'Sante's normal form E [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt K'Sante's E [[DASH]].", "Anivia's W [[TERRAIN]] can block K'Sante's W (normal form, transformed form) [[DASH]] path to interrupt its movement."],
     },
     ksante: {
       ko: [],
