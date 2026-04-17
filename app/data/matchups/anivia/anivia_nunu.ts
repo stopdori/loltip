@@ -9,8 +9,8 @@ export const anivia_nunu: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 누누 W(눈덩이), R(시전 집중)을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Nunu's W (snowball) and R (channeling)."],
+      ko: ["애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 누누 W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Nunu's W and R [[SKILL_CHANNEL]]."],
     },
     nunu: {
       ko: [],

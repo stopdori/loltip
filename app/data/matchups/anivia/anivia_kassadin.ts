@@ -9,8 +9,8 @@ export const anivia_kassadin: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 카사딘 R의 [[BLINK]]을 끊을 수 없음."],
-      en: ["Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] cannot interrupt Kassadin's R movement."],
+      ko: [],
+      en: [],
     },
     kassadin: {
       ko: [],

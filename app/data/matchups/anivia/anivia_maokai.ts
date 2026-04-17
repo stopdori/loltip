@@ -9,8 +9,8 @@ export const anivia_maokai: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 W(벽)로 마오카이 E(묘목)의 이동 경로를 방해 할 수 있음."],
-      en: ["Anivia's W (wall) can obstruct Maokai's E (sapling) movement path."],
+      ko: ["애니비아 W([[TERRAIN]])로 마오카이 E(묘목)의 이동 경로를 방해 할 수 있음."],
+      en: ["Anivia's W [[TERRAIN]] can obstruct Maokai's E (sapling) movement path."],
     },
     maokai: {
       ko: [],

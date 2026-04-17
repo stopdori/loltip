@@ -9,8 +9,9 @@ export const anivia_evelynn: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 이블린 E의 [[DASH]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 이블린 E의 [[DASH]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Evelynn's E movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Evelynn's E movement."],
+      ko: ["애니비아 Q의 [[STUN]]로 이블린 E의 [[DASH]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 이블린 E의 [[DASH]을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Evelynn's E [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Evelynn's E [[DASH]]."],
     },
     evelynn: {
       ko: [],

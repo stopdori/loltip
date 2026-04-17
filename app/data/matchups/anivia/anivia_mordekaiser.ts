@@ -9,8 +9,8 @@ export const anivia_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 W(벽)의 [[AIRBORNE]]으로 모데 E의 [[GRAB]]에 끌려가는 아군의 이동을 끊을 수 있음."],
-      en: ["Anivia's W (wall) [[AIRBORNE]] can interrupt an ally being pulled by Mordekaiser's E [[GRAB]]."],
+      ko: ["애니비아 W(벽)의 [[AIRBORNE]]으로 모데 E의 [[GRAB]]에 끌려가는 아군의 이동을 끊을 수 있음. \n 즉, 구조가능 (이론상)."],
+      en: ["Anivia's W (wall) [[AIRBORNE]] can interrupt an ally being pulled by Mordekaiser's E [[GRAB]]. \n (theoretically)"],
     },
     mordekaiser: {
       ko: [],

@@ -9,8 +9,8 @@ export const anivia_nocturne: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 W(벽)의 [[AIRBORNE]]으로 녹턴 E([[SPELL_SHIELD]])를 낭비시킬 수 없음."],
-      en: [],
+      ko: ["애니비아 W(벽)의 [[AIRBORNE]]으로 녹턴 E의 [[SPELL_SHIELD]]를 낭비시킬 수 없음."],
+      en: ["Anivia's W (wall) [[AIRBORNE]] cannot waste Nocturne's E [[SPELL_SHIELD]]."],
     },
     nocturne: {
       ko: ["녹턴 Q로 애니비아를 맞히고 애니비아가 P(알)로 변해도 녹턴 Q의 디버프는 묻어있음.", "녹턴 R2로 애니비아에게 날아갈 때, 애니비아가 P(알)로 변해도 P(알)로 돌진."],

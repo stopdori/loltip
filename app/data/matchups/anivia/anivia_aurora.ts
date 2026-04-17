@@ -9,8 +9,10 @@ export const anivia_aurora: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 오로라 W, E, R의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 오로라 W, E(후진 단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Aurora's W, E, or R movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Aurora's W and E (retreat phase) movement."],
+      ko: ["애니비아 Q의 [[STUN]]로 오로라 W, E, R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 오로라 E를 시전 중일 때 뒤로 밀어내면 E의 [[AOE]]도 같이 뒤로 밀림."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Aurora's W, E, or R [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Aurora's W and E [[DASH]].", "If Anivia's W [[TERRAIN]] [[AIRBORNE]] knocks Aurora back while casting E, the E [[AOE]] also moves with her."],
     },
     aurora: {
       ko: [],

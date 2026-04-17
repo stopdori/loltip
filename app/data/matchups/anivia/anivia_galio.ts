@@ -9,8 +9,10 @@ export const anivia_galio: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 갈리오 E의 [[DASH]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 갈리오 E(후진, 돌진 단계)의 [[DASH]을 끊을 수 있음.", "애니비아 Q의 [[STUN]], W(벽)의 [[AIRBORNE]]으로 갈리오 W(도발), R(시전 집중)을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Galio's E movement. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Galio's E (retreat and dash phases) movement.", "Anivia's Q [[STUN]] and W (wall) [[AIRBORNE]] can interrupt Galio's W (taunt) and R (channeling)."],
+      ko: ["애니비아 Q의 [[STUN]]로 갈리오 E의 [[DASH]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 갈리오 E의 [[DASH]을 끊을 수 있음.", 
+        "애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 갈리오 W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Galio's E [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Galio's E [[DASH]].", "Anivia's Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Galio's W and R [[SKILL_CHANNEL]]."],
     },
     galio: {
       ko: [],

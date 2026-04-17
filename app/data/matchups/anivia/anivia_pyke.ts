@@ -9,8 +9,10 @@ export const anivia_pyke: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 파이크 E의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 파이크 E의 [[DASH]]을 끊을 수 있음.", "애니비아 W(벽)의 [[AIRBORNE]]으로 파이크 R의 범위있는 아군에게 사용하여 밀어내 살려줄 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Pyke's E [[DASH]]. However, [[STUN]] still applies.", "Anivia's W (wall) [[AIRBORNE]] can interrupt Pyke's E [[DASH]].", "Anivia's W (wall) [[AIRBORNE]] can knock away an ally in Pyke's R range, saving them."],
+      ko: ["애니비아 Q의 [[STUN]]로 파이크 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 파이크 E의 [[DASH]]을 끊을 수 있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 파이크 R의 범위있는 아군에게 사용하여 밀어내 살려줄 수 있음."],
+      en: ["Anivia's Q [[STUN]] cannot interrupt Pyke's E [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Pyke's E [[DASH]].", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can knock away an ally in Pyke's R range, saving them."],
     },
     pyke: {
       ko: ["파이크 R로 애니비아를 [[EXECUTE]] 했을 때, 애니비아가 P(알)로 변한다면,\n파이크 R의 [[EXECUTE]]이 발동하지 않아 현상금도 없고 추가 사용도 불가능."],
