@@ -9,7 +9,8 @@ export const annie_kaisa: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
+      ko: ["애니 R(티버)의 [[SUMMON]]으로 카이사 Q의 [[SINGLE]] [[PROJECTILE]]를 분산되게 만들 수 있음.", 
+        "애니 R(티버)의 [[SUMMON]]으로 카이사 W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
       en: [""],
     },
     kaisa: {

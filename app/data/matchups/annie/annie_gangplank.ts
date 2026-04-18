@@ -9,8 +9,8 @@ export const annie_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     gangplank: {
       ko: [],

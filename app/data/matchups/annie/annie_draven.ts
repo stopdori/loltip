@@ -9,8 +9,8 @@ export const annie_draven: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     draven: {
       ko: [],

@@ -9,7 +9,7 @@ export const annie_kassadin: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
+      ko: ["애니 P의 [[STUN]]로 카사딘 R의 [[BLINK]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
       en: [""],
     },
     kassadin: {

@@ -9,8 +9,8 @@ export const akshan_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     malphite: {
       ko: [],

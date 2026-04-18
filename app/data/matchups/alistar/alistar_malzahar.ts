@@ -14,7 +14,7 @@ export const alistar_malzahar: MatchupSummary = {
       en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Malzahar's R [[SKILL_CHANNEL]].", "Alistar's R [[CC_CLEANSE]] can cleanse Malzahar's Q [[SILENCE]] and R [[SUPPRESS]]."],
     },
     malzahar: {
-      ko: [],
+      ko: ["말자하 P의 [[CC_IMMUNE]]으로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]] E의 [[STUN]]을 무시할 수 있음. \n 단, 데미지는 감소되어 유효."],
       en: [],
     },
   },

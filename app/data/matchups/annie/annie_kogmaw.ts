@@ -9,7 +9,7 @@ export const annie_kogmaw: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
+      ko: ["애니 R(티버)의 [[SUMMON]]으로 코그모 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
       en: [""],
     },
     kogmaw: {

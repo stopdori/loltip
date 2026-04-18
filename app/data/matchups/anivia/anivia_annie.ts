@@ -13,7 +13,7 @@ export const anivia_annie: MatchupSummary = {
       en: ["If Anivia's W [[TERRAIN]] [[AIRBORNE]] knocks Annie back while casting W or R, the W, R [[AOE]] also moves with her."],
     },
     annie: {
-      ko: [],
+      ko: ["애니 P의 [[STUN]]로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [],
     },
   },

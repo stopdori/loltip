@@ -9,7 +9,7 @@ export const annie_lux: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
+      ko: ["애니 R(티버)의 [[SUMMON]]으로 럭스 Q의 [[PIERCE_ONCE]] [[PROJECTILE]]를 막을 수 있음."],
       en: [""],
     },
     lux: {

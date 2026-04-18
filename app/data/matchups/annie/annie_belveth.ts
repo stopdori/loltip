@@ -9,8 +9,9 @@ export const annie_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 P의 [[STUN]]로 벨베스 Q, R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니 P의 [[STUN]]로 벨베스 E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: [],
     },
     belveth: {
       ko: [],
