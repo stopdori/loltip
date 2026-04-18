@@ -9,8 +9,8 @@ export const annie_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     malphite: {
       ko: [],

@@ -9,7 +9,7 @@ export const ahri_malzahar: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 말자하 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. \n 단, 말자하 P의 [[CC_IMMUNE]]이 있다면 무효."],
+      ko: ["아리 E의 [[CHARM]]으로 말자하 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: ["Ahri's E [[CHARM]] can interrupt Malzahar's R [[SKILL_CHANNEL]]. \n Only valid when Malzahar's P [[CC_IMMUNE]] is not active."],
     },
     malzahar: {

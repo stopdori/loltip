@@ -9,7 +9,7 @@ export const annie_kennen: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
+      ko: ["애니 R(티버)의 [[SUMMON]]으로 케넨 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
       en: [""],
     },
     kennen: {

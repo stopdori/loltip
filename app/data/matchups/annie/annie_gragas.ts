@@ -9,7 +9,7 @@ export const annie_gragas: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
+      ko: ["애니 P의 [[STUN]]로 그라가스 E(배치기)의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
       en: [""],
     },
     gragas: {
