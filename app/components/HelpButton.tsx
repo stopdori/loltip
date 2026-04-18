@@ -9,51 +9,80 @@ type Props = {
   onOpenChange?: (v: boolean) => void;
 };
 
+const SLIDES = [
+  {
+    ko: "1. 비교할 챔피언 2개를 선택하세요.",
+    en: "1. Select two champions to compare.",
+    img: "/help/en_mobile/step1_mobile_en.webp",
+  },
+  {
+    ko: "2. 챔피언 탭을 선택해 정보를 확인하세요.",
+    en: "2. Select a champion tab to view their info.",
+    img: "/help/en_mobile/step2_mobile_en.webp",
+  },
+  {
+    ko: "3. 각 챔피언의 스킬 태그를 확인하세요.",
+    en: "3. Check each champion's skill tags.",
+    img: "/help/en_mobile/step3_mobile_en.webp",
+  },
+  {
+    ko: "4. 챔피언 요약과 팁을 읽어보세요.",
+    en: "4. Read the champion summary and tips.",
+    img: "/help/en_mobile/step4_mobile_en.webp",
+  },
+  {
+    ko: "5. 두 챔피언 간 특수한 상호작용을 확인하세요.",
+    en: "5. Check special interactions between the two champions.",
+    img: "/help/en_mobile/step5_mobile_en.webp",
+  },
+];
+
 export default function HelpButton({ lang, className, onOpenChange }: Props) {
   const [open, setOpen] = useState(false);
+  const [step, setStep] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleOpen = (v: boolean) => {
     setOpen(v);
     onOpenChange?.(v);
+    if (v) setStep(0);
   };
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 640);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   const t = useMemo(() => {
     return lang === "ko"
-      ? {
-          title: "사용 방법",
-          close: "닫기",
-          hint: "",
-          hide: "오늘 하루 그만보기",
-        }
-      : {
-          title: "How to use",
-          close: "Close",
-          hint: "ESC / click outside to close",
-          hide: "Don't show again today",
-        };
+      ? { title: "사용 방법", close: "닫기", hint: "" }
+      : { title: "How to use", close: "Close", hint: "ESC / click outside to close" };
   }, [lang]);
 
- 
-  /* 🔹 ESC 닫기 */
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") handleOpen(false);
+      if (e.key === "ArrowRight") setStep((s) => Math.min(s + 1, SLIDES.length - 1));
+      if (e.key === "ArrowLeft") setStep((s) => Math.max(s - 1, 0));
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
+  const slide = SLIDES[step];
+  const imgSrc = slide.img;
+
   return (
     <>
-      {/* ? 버튼 (수동 오픈은 항상 가능) */}
       <button
         type="button"
         onClick={() => handleOpen(true)}
         className={
           className ??
-"px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-700/60"
-
+          "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-700/60"
         }
         aria-label={t.title}
         title={t.title}
@@ -63,39 +92,61 @@ export default function HelpButton({ lang, className, onOpenChange }: Props) {
 
       {open && (
         <div className="fixed inset-0 z-50">
-          <div
-            className="absolute inset-0 bg-black/60"
-            onClick={() => handleOpen(false)}
-          />
+          <div className="absolute inset-0 bg-black/60" onClick={() => handleOpen(false)} />
 
-          <div className="absolute left-1/2 top-1/2 w-[min(520px,92vw)] -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-slate-900 p-5 ring-1 ring-slate-700 shadow-xl">
+          <div className="absolute left-1/2 top-1/2 w-[min(1000px,96vw)] max-h-[700px] overflow-y-auto -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-slate-900 p-5 ring-1 ring-slate-700 shadow-xl">
             {/* 헤더 */}
-            <div className="mb-3 flex items-center justify-between">
-              <h3 className="text-base font-semibold text-slate-100">
-                {t.title}
-              </h3>
-
-              <button
-                type="button"
-                onClick={() => handleOpen(false)}
-                className="rounded-lg px-2 py-1 text-sm text-slate-200 hover:bg-slate-800"
-              >
-                {t.close}
-              </button>
+            <div className="mb-3 text-center">
+              <h3 className="text-base font-semibold text-slate-100">{t.title}</h3>
             </div>
+
+            {/* 멘트 */}
+            <p className="mb-3 text-sm text-slate-200">{lang === "ko" ? slide.ko : slide.en}</p>
 
             {/* 이미지 */}
             <Image
-  src={lang === "ko" ? "/help/tutorial_ko.webp" : "/help/tutorial_en.webp"}
-  alt={lang === "ko" ? "LOLTIP 사용 방법" : "LOLTIP tutorial"}
-  width={520}
-  height={300}
-  className="mb-4 w-full rounded-xl ring-1 ring-white/10"
-/>
+              src={imgSrc}
+              alt={`step ${step + 1}`}
+              width={520}
+              height={400}
+              className="mb-4 w-full rounded-xl ring-1 ring-white/10 object-contain sm:hidden"
+              unoptimized
+            />
 
-            <div className="text-xs text-slate-400 mb-4">{t.hint}</div>
+            {/* 좌우 화살표 + 점 */}
+            <div className="flex items-center justify-between mb-3">
+              <button
+                type="button"
+                onClick={() => setStep((s) => Math.max(s - 1, 0))}
+                disabled={step === 0}
+                className="px-3 py-1.5 rounded-lg text-sm font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 disabled:opacity-30 disabled:cursor-not-allowed"
+              >
+                ◀
+              </button>
 
-            {/* ✅ 하단 버튼 영역 (가운데 정렬) */}
+              <div className="flex gap-2">
+                {SLIDES.map((_, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => setStep(i)}
+                    className={`w-2.5 h-2.5 rounded-full transition ${i === step ? "bg-yellow-400" : "bg-slate-600 hover:bg-slate-500"}`}
+                  />
+                ))}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setStep((s) => Math.min(s + 1, SLIDES.length - 1))}
+                disabled={step === SLIDES.length - 1}
+                className="px-3 py-1.5 rounded-lg text-sm font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 disabled:opacity-30 disabled:cursor-not-allowed"
+              >
+                ▶
+              </button>
+            </div>
+
+
+            {/* 하단 닫기 버튼 */}
             <div className="flex items-center justify-center">
               <button
                 type="button"

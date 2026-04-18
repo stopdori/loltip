@@ -218,8 +218,8 @@ setOpenTarget(null);
         !myChamp
           ? "text-slate-600 cursor-not-allowed"
           : mobileTab === "my"
-          ? "text-yellow-400 bg-slate-700/60"
-          : "text-slate-400"
+          ? "text-black bg-yellow-400"
+          : "text-yellow-400"
       }`}
     >
       {myChamp
@@ -234,8 +234,8 @@ setOpenTarget(null);
         !enemyChamp
           ? "text-slate-600 cursor-not-allowed"
           : mobileTab === "enemy"
-          ? "text-yellow-400 bg-slate-700/60"
-          : "text-slate-400"
+          ? "text-black bg-yellow-400"
+          : "text-yellow-400"
       }`}
     >
       {enemyChamp
