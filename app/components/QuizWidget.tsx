@@ -87,7 +87,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 block rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 overflow-hidden cursor-pointer hover:ring-yellow-400/60 transition-all"
+        className="flex-1 block rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 overflow-hidden cursor-pointer hover:ring-yellow-400/60 transition-all min-h-[120px]"
       >
         {/* 헤더 */}
         <div className="flex items-center justify-between mb-2">
