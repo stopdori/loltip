@@ -17,7 +17,7 @@ export const amumu_malzahar: MatchupSummary = {
     },
     malzahar: {
       ko: ["말자하 P의 [[CC_IMMUNE]]으로 아무무 Q, R의 [[STUN]]을 무시할 수 있음. \n 단, 데미지는 감소되어 유효."],
-      en: [],
+      en: ["Malzahar's P [[CC_IMMUNE]] can ignore Amumu's Q and R [[STUN]]. \n However, damage is still applied (reduced)."],
     },
   },
 };

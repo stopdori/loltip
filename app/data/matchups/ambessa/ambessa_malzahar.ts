@@ -16,7 +16,7 @@ export const ambessa_malzahar: MatchupSummary = {
     },
     malzahar: {
       ko: ["말자하 P의 [[CC_IMMUNE]]으로 암베사 R의 [[SUPPRESS]]을 무시할 수 있음. \n 단, 데미지는 감소되어 유효."],
-      en: [],
+      en: ["Malzahar's P [[CC_IMMUNE]] can ignore Ambessa's R [[SUPPRESS]]. \n However, damage is still applied (reduced)."],
     },
   },
 };

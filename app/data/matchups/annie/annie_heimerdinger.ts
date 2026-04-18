@@ -10,7 +10,7 @@ export const annie_heimerdinger: MatchupSummary = {
   highlightsByChamp: {
     annie: {
       ko: ["애니 R(티버)의 [[SUMMON]]으로 하이머딩거(하딩) W, RW의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: [],
+      en: ["Annie's R(Tibbers) [[SUMMON]] can block Heimerdinger's W and RW [[SINGLE]] [[PROJECTILE]]."],
     },
     heimerdinger: {
       ko: [],

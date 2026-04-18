@@ -11,7 +11,7 @@ export const annie_elise: MatchupSummary = {
     annie: {
       ko: ["애니 P의 [[STUN]]로 엘리스 거미폼 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
         "애니 R(티버)의 [[SUMMON]]으로 엘리스 인간폼 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: [""],
+      en: ["Annie's P [[STUN]] cannot interrupt Elise's Spider Form Q [[DASH]]. \n However, the [[STUN]] still applies.", "Annie's R(Tibbers) [[SUMMON]] can block Elise's Human Form E [[SINGLE]] [[PROJECTILE]]."],
     },
     elise: {
       ko: [],

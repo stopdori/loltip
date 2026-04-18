@@ -15,7 +15,7 @@ export const alistar_malzahar: MatchupSummary = {
     },
     malzahar: {
       ko: ["말자하 P의 [[CC_IMMUNE]]으로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]] E의 [[STUN]]을 무시할 수 있음. \n 단, 데미지는 감소되어 유효."],
-      en: [],
+      en: ["Malzahar's P [[CC_IMMUNE]] can ignore Alistar's Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]]. \n However, damage is still applied (reduced)."],
     },
   },
 };

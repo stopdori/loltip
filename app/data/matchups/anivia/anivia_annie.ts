@@ -14,7 +14,7 @@ export const anivia_annie: MatchupSummary = {
     },
     annie: {
       ko: ["애니 P의 [[STUN]]로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: [],
+      en: ["Annie's P [[STUN]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
     },
   },
 };
