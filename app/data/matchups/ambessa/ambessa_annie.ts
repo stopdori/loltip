@@ -14,7 +14,7 @@ export const ambessa_annie: MatchupSummary = {
     },
     annie: {
       ko: ["애니 P의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
-      en: [],
+      en: ["Annie's P [[STUN]] cannot interrupt Ambessa's P [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
 };

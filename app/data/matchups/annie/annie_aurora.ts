@@ -10,7 +10,7 @@ export const annie_aurora: MatchupSummary = {
   highlightsByChamp: {
     annie: {
       ko: ["애니 P의 [[STUN]]로 오로라 W, E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
-      en: [""],
+      en: ["Annie's P [[STUN]] cannot interrupt Aurora's W and E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     aurora: {
       ko: [],
