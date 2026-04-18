@@ -360,8 +360,8 @@ setOpenTarget(null);
         </p>
         <p className="text-slate-400 text-sm">
           {lang === "ko"
-            ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
-            : "Pick both champions to see matchup summary."}
+            ? "양쪽 챔피언을 선택하면 \n 상호작용 요약이 표시됨"
+            : "Pick both champions \n to see matchup summary."}
         </p>
       </div>
       {(myChamp || enemyChamp) && <QuizWidget lang={lang} />}
