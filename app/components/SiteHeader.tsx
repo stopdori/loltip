@@ -75,7 +75,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
         {/* 중앙: 모바일 로고 */}
         <h1
           onClick={() => router.push("/champ")}
-          className="sm:hidden absolute left-1/2 -translate-x-1/2 text-xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
+          className="sm:hidden absolute left-1/2 -translate-x-1/2 text-3xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
         >
           LOLTIP
         </h1>
@@ -94,19 +94,19 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
         <div className="flex items-center gap-1">
           <button
             onClick={() => router.replace(pathname, { locale: "ko" })}
-            className={`px-3 py-2 rounded-xl text-sm font-bold border ${
+            className={`px-2 py-2 rounded-xl text-sm font-bold border ${
               lang === "ko"
-                ? "bg-yellow-400 text-black border-yellow-300"
+                ? "bg-sky-500 text-black border-sky-400"
                 : "bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
             }`}
           >
-            한글
+            KO
           </button>
           <button
             onClick={() => router.replace(pathname, { locale: "en" })}
-            className={`px-3 py-2 rounded-xl text-sm font-bold border ${
+            className={`px-2 py-2 rounded-xl text-sm font-bold border ${
               lang === "en"
-                ? "bg-yellow-400 text-black border-yellow-300"
+                ? "bg-sky-500 text-black border-sky-400"
                 : "bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
             }`}
           >
