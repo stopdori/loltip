@@ -354,10 +354,15 @@ setOpenTarget(null);
     />
   ) : (
     <div className="space-y-4">
-      <div className={`${!(myChamp || enemyChamp) ? "max-w-[474px] sm:max-w-[648px] mx-auto" : "w-full"} rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-10 text-center text-slate-400`}>
-        {lang === "ko"
-          ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
-          : "Pick both champions to see matchup summary."}
+      <div className={`${!(myChamp || enemyChamp) ? "max-w-[474px] sm:max-w-[648px] mx-auto" : "w-full"} rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all min-h-[120px]`}>
+        <p className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-4">
+          {lang === "ko" ? "판정 세부사항" : "Interaction Details"}
+        </p>
+        <p className="text-slate-400 text-sm">
+          {lang === "ko"
+            ? "양쪽 챔피언을 선택하면 상호작용 요약이 표시됨"
+            : "Pick both champions to see matchup summary."}
+        </p>
       </div>
       {(myChamp || enemyChamp) && <QuizWidget lang={lang} />}
     </div>

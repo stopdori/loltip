@@ -47,7 +47,7 @@ export default function MatchupSummaryBox({
 
 
   return (
-  <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all">
+  <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all min-h-[120px]">
 
     <h3 className="mb-4 text-base font-bold text-yellow-400 tracking-wide uppercase">{lang === "ko" ? "판정 세부사항" : "Interaction Details"}</h3>
 
@@ -88,6 +88,15 @@ export default function MatchupSummaryBox({
           )}
         </ul>
       )}
+
+      {/* 내용 없음 */}
+      {result?.status === "ok" &&
+        (result.data.highlightsByChamp?.[myChampId]?.[lang] ?? []).length === 0 &&
+        (result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).length === 0 && (
+          <p className="text-slate-400 text-sm text-center">
+            {lang === "ko" ? "특별한 상호작용 없음." : "No notable interactions."}
+          </p>
+        )}
 
       {/* ❌ 매치업 파일 문제 */}
       {result?.status === "missing" && (
