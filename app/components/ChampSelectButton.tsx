@@ -40,8 +40,8 @@ export default function ChampSelectButton({
       className="
         group
         relative
-        w-[185px] sm:w-[230px]
-        min-h-[100px] sm:min-h-[180px]
+        w-[130px] sm:w-[230px]
+        min-h-[70px] sm:min-h-[180px]
         rounded-2xl
         bg-slate-800/60 hover:bg-slate-700/60
         transition
@@ -78,7 +78,7 @@ export default function ChampSelectButton({
         {selected ? title : lang === "en" ? "Select Champion" : "챔피언 선택"}
       </div>
 
-      <div className="relative w-[88px] h-[88px] sm:w-[100px] sm:h-[100px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
+      <div className="relative w-[72px] h-[72px] sm:w-[100px] sm:h-[100px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
         <Image
           src={imgSrc}
           alt={title}

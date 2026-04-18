@@ -50,7 +50,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
         .quiz-shimmer { animation: quiz-shimmer 3s ease-in-out infinite; }
       `}</style>
       {/* 네비게이션 바 */}
-      <div className="flex items-center justify-between gap-2">
+      <div className="relative flex items-center justify-between gap-2">
 
         {/* 좌측: 모바일 햄버거 */}
         <div className="relative sm:hidden" ref={menuRef}>
@@ -71,6 +71,14 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
             </div>
           )}
         </div>
+
+        {/* 중앙: 모바일 로고 */}
+        <h1
+          onClick={() => router.push("/champ")}
+          className="sm:hidden absolute left-1/2 -translate-x-1/2 text-xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
+        >
+          LOLTIP
+        </h1>
 
         {/* 좌측: 데스크탑 버튼 나열 */}
         <div className="hidden sm:flex items-center gap-1">
@@ -107,15 +115,15 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
         </div>
       </div>
 
-      {/* 로고 */}
-      <div className="mt-8 text-center">
+      {/* 로고 (데스크탑) */}
+      <div className="hidden sm:block mt-8 text-center">
         <h1
           onClick={() => router.push("/champ")}
           className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
         >
           LOLTIP
         </h1>
-        <p className="mt-2 text-slate-300">{subtitle}</p>
+        <p className="mt-2 text-slate-300 hidden md:block">{subtitle}</p>
         <p className="mt-1 text-xs text-slate-400">26.8 {lang === "ko" ? "패치 반영" : "patch"}</p>
       </div>
     </header>
