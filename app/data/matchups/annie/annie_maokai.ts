@@ -9,8 +9,8 @@ export const annie_maokai: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 R(티버)의 [[SUMMON]]으로 마오카이 E(묘목) [[TRAP]]을 제거할 수 있음."],
+      en: ["Annie's R(Tibbers) [[SUMMON]] can destroy Maokai's E(Sapling) [[TRAP]]."],
     },
     maokai: {
       ko: [],

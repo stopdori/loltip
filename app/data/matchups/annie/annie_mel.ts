@@ -9,12 +9,12 @@ export const annie_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["멜 W가 애니 Q 반사 가능."],
-      en: ["Mel’s W reflects Annie’s Q."],
-    },
-    mel: {
       ko: [],
       en: [],
+    },
+    mel: {
+      ko: ["멜 W([[REFLECT]])로 애니 Q의 [[PROJECTILE]]를 반사할 수 있음."],
+      en: ["Mel's W [[REFLECT]] can reflect Annie's Q [[PROJECTILE]]."],
     },
   },
 };

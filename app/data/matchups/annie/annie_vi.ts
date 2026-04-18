@@ -9,8 +9,9 @@ export const annie_vi: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 P의 [[STUN]]로 바이 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니 P의 [[STUN]]로 바이 Q의 [[SKILL_CHARGED]]을 끊을 수 있음."],
+      en: ["Annie's P [[STUN]] cannot interrupt Vi's Q [[DASH]]. \n However, the [[STUN]] still applies.", "Annie's P [[STUN]] can interrupt Vi's Q [[SKILL_CHARGED]]."],
     },
     vi: {
       ko: [],

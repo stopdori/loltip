@@ -9,8 +9,8 @@ export const annie_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 R(티버)의 [[SUMMON]]으로 티모 R(버섯)의 [[TRAP]]을 제거할 수 있음."],
+      en: ["Annie's R(Tibbers) [[SUMMON]] can destroy Teemo's R(Mushroom) [[TRAP]]."],
     },
     teemo: {
       ko: [],
