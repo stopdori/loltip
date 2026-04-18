@@ -129,13 +129,6 @@ useEffect(() => {
         onGlossaryOpenChange={setGlossaryOpen}
       />
 
-      {/* 빈 상태: CHAMP PICK 위에 QuizWidget */}
-      {!myChamp && !enemyChamp && (
-        <div className="max-w-[474px] sm:max-w-[648px] mx-auto px-3">
-          <QuizWidget lang={lang} />
-        </div>
-      )}
-
       {/* CHAMP PICK */}
 <section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 border-b border-white/10 supports-[backdrop-filter]:backdrop-blur">
   <div className="max-w-5xl mx-auto px-3 py-2">
@@ -167,6 +160,13 @@ useEffect(() => {
   </div>
 </section>
         
+      {/* QuizWidget: 챔피언 미선택 시 */}
+      {!myChamp && !enemyChamp && (
+        <div className="max-w-[474px] sm:max-w-[648px] mx-auto px-3">
+          <QuizWidget lang={lang} />
+        </div>
+      )}
+
       {/* MODAL */}
       <ChampSelectModal
         open={openTarget !== null}
@@ -344,7 +344,7 @@ setOpenTarget(null);
 </section>
 </>
 ) : null}
-<section className="max-w-[430px] sm:max-w-[980px] mx-auto w-full">
+<section className="mt-[4.5rem] md:mt-12 max-w-[430px] sm:max-w-[980px] mx-auto w-full">
   {myChamp && enemyChamp ? (
     <MatchupSummaryBox
       myChampId={myChamp.id}
@@ -364,7 +364,7 @@ setOpenTarget(null);
   )}
 </section>
 
-      {myChamp && enemyChamp && <div className="max-w-[430px] sm:max-w-[980px] mx-auto w-full"><QuizWidget lang={lang} /></div>}
+      {myChamp && enemyChamp && <div className="mt-[4.5rem] md:mt-12 max-w-[430px] sm:max-w-[980px] mx-auto w-full"><QuizWidget lang={lang} /></div>}
 
       <FeedbackButton lang={lang} hidden={openTarget !== null || helpOpen || noticeOpen || glossaryOpen} />
 

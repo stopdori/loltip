@@ -47,9 +47,9 @@ export default function MatchupSummaryBox({
 
 
   return (
-  <div className="rounded-3xl bg-slate-800/25 ring-2 ring-black/40 p-8">
+  <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all">
 
-    <h3 className="mb-4 text-lg font-extrabold text-slate-100">{lang === "ko" ? "판정 세부사항" : "Interaction Details"}</h3>
+    <h3 className="mb-4 text-base font-bold text-yellow-400 tracking-wide uppercase">{lang === "ko" ? "판정 세부사항" : "Interaction Details"}</h3>
 
  
       {/* ✅ 정상 */}
