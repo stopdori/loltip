@@ -138,9 +138,9 @@ export default function HelpButton({ lang, className, onOpenChange }: Props) {
               />
               {slide.overlays.map((o, i) => (
                 <div
-                  key={i}
+                  key={`${step}-${i}`}
                   className={`absolute rounded-xl ring-4 pointer-events-none ${o.ring ?? "ring-yellow-400"}`}
-                  style={{ top: o.top, left: o.left, width: o.width, height: o.height, animation: "blink-overlay 1.5s ease-in-out infinite" }}
+                  style={{ top: o.top, left: o.left, width: o.width, height: o.height, animation: "blink-overlay 1.5s ease-in-out infinite", animationDelay: "0s" }}
                 />
               ))}
             </div>
