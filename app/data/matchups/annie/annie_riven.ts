@@ -9,8 +9,8 @@ export const annie_riven: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 P의 [[STUN]]로 리븐 Q, E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Annie's P [[STUN]] cannot interrupt Riven's Q and E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     riven: {
       ko: [],

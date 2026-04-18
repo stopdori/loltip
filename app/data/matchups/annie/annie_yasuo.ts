@@ -9,12 +9,12 @@ export const annie_yasuo: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["야스오 W(장막)가 애니 Q 막을 수 있음."],
-      en: ["Yasuo’s W (Wind Wall) can block Annie’s Q."],
-    },
-    yasuo: {
       ko: [],
       en: [],
+    },
+    yasuo: {
+      ko: ["야스오 W([[WINDSHIELD]])로 애니 Q의 [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Yasuo's W [[WINDSHIELD]] can block Annie's Q [[PROJECTILE]]."],
     },
   },
 };

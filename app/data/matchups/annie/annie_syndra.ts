@@ -9,12 +9,12 @@ export const annie_syndra: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
-    },
-    syndra: {
       ko: [],
       en: [],
+    },
+    syndra: {
+      ko: ["신드라 W로 애니 R(티버)을 들어올릴 수 있음. \n 이때 티버의 태불망 효과를 받음."],
+      en: ["Syndra's W can pick up Annie's R(Tibbers). \n Tibbers will take the burn damage effect during this time."],
     },
   },
 };

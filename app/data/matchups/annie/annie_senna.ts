@@ -9,8 +9,8 @@ export const annie_senna: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 R(티버)의 [[SUMMON]]으로 세나 W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음. \n 단, W의 추가 [[AOE]]효과는 막을 수 없음."],
+      en: ["Annie's R(Tibbers) [[SUMMON]] can block Senna's W [[SINGLE]] [[PROJECTILE]]. \n However, W's additional [[AOE]] effect cannot be blocked."],
     },
     senna: {
       ko: [],

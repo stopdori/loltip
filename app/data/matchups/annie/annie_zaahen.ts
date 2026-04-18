@@ -9,8 +9,8 @@ export const annie_zaahen: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 P의 [[STUN]]로 자헨 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Annie's P [[STUN]] cannot interrupt Zaahen's E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     zaahen: {
       ko: [],

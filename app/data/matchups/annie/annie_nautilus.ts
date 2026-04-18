@@ -9,8 +9,8 @@ export const annie_nautilus: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 R(티버)의 [[SUMMON]]으로 노틸러스 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Annie's R(Tibbers) [[SUMMON]] can block Nautilus's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     nautilus: {
       ko: [],

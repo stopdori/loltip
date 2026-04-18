@@ -9,8 +9,8 @@ export const annie_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     vex: {
       ko: [],

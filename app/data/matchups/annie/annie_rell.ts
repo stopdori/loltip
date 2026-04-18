@@ -9,8 +9,8 @@ export const annie_rell: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: [""],
-      en: [""],
+      ko: ["애니 P의 [[STUN]]로 렐 W(붕괴)의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Annie's P [[STUN]] cannot interrupt Rell's W(Crash Down) [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     rell: {
       ko: [],
