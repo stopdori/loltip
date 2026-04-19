@@ -9,8 +9,8 @@ export const ashe_gnar: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: ["애쉬 R의 [[STUN]]로 나르 미니폼 E / 메가폼 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Ashe's R [[STUN]] cannot interrupt Gnar's Mini E or Mega E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     gnar: {
       ko: [],

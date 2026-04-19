@@ -13,8 +13,8 @@ export const ambessa_ashe: MatchupSummary = {
       en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Ashe's R [[STUN]]. \n However, the [[STUN]] still applies after [[UNSTOPPABLE]] ends."],
     },
     ashe: {
-      ko: [],
-      en: [],
+      ko: ["애쉬 R의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Ashe's R [[STUN]] cannot interrupt Ambessa's P [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
 };

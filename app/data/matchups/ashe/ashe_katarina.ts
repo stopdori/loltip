@@ -9,8 +9,8 @@ export const ashe_katarina: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: ["애쉬 R의 [[STUN]]로 카타리나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Ashe's R [[STUN]] can interrupt Katarina's R [[SKILL_CHANNEL]]."],
     },
     katarina: {
       ko: [],
