@@ -58,7 +58,7 @@ export default function MatchupSummaryBox({
         const fmt = (champ: typeof my) => {
           if (!champ) return "";
           const name = lang === "ko" ? champ.ko : champ.en;
-          const al = champ.aliases ?? [];
+          const al = lang === "ko" ? (champ.aliases?.ko ?? []) : (champ.aliases?.en ?? []);
           return al.length > 0 ? `${name}(${al.join(", ")})` : name;
         };
         return (
