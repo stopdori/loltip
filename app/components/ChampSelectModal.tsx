@@ -139,7 +139,8 @@ function normalize(str: string) {
 
 function buildSearchKeys(c: Champ) {
   const ko = c.ko ?? "";
-  const aliases = c.aliases ?? [];
+  const koAliases = c.aliases?.ko ?? [];
+  const enAliases = c.aliases?.en ?? [];
 
   const baseKeys = [
     ko,
@@ -150,17 +151,14 @@ function buildSearchKeys(c: Champ) {
     initialsToDubeol(hangulToInitials(ko)),
   ];
 
-  const aliasKeys = aliases.flatMap((a) => {
+  const koAliasKeys = koAliases.flatMap((a) => {
     const initials = hangulToInitials(a);
-    return [
-      a,
-      initials,
-      hangulToDubeol(a),
-      initialsToDubeol(initials),
-    ];
+    return [a, initials, hangulToDubeol(a), initialsToDubeol(initials)];
   });
 
-  return [...baseKeys, ...aliasKeys]
+  const enAliasKeys = enAliases.map((a) => a.toLowerCase());
+
+  return [...baseKeys, ...koAliasKeys, ...enAliasKeys]
     .map(normalize)
     .filter(Boolean);
 }
