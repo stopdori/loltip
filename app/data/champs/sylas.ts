@@ -5,8 +5,8 @@ const sylas: ChampData = {
   skills: {
     P: [],
     Q: ["SLOW"],
-    W: ["W_FLASH", "LIFESTEAL", "WALL_HOP"],
-    E: ["AIRBORNE", "WALL_HOP", "CC_BUFFER"],
+    W: ["W_FLASH", "LIFESTEAL", "DASH", "WALL_HOP"],
+    E: ["AIRBORNE", "DASH", "WALL_HOP", "CC_BUFFER"],
     R: ["R_FLASH"],
   },
 
@@ -28,7 +28,7 @@ const sylas: ChampData = {
   gimmick: {
     P: { phases: [
       { label: { ko: "P 버프스택", en: "P Buff Stack" }, tags: ["BUFF_INTERACT", "Q", "W", "E", "R"] },
-      { label: { ko: "P 온힛", en: "P 온힛" }, tags: ["DMG_MAGIC", "ON_HIT", "AOE", "STACK_CONSUME"] },
+      { label: { ko: "P 온힛", en: "P On-Hit" }, tags: ["DMG_MAGIC", "ON_HIT", "AOE", "STACK_CONSUME"] },
     ] },
 
     Q: { phases: [
@@ -50,29 +50,48 @@ const sylas: ChampData = {
 
   notes: {
     skill: {
-      note3: { 
+      note3: {
         ko: [
-          "",
-        ], en: [] },
+          "상대 궁극기를 잘 활용해서 \n 자신만의 무궁무진한 각을 만들 수 있음.",
+        ], en: [
+          "By mastering the opponent's ultimate, \n you can create endless opportunities of your own.",
+        ] },
       note1: {
 
         ko: [
-          "P",
-          "Q",
-          "W",
-          "E",
-          "R",
+          "P는 스킬을 사용하면 [[BA]]강화 [[BUFF]]스택. 최대 3회 \n [[AS_UP]]와 [[AOE]]피해 \n Q, W, E1, E2, R1, R2에 1스택씩.",
+
+          "Q는 사슬에 [[SLOW]]. 사슬 교차지점에 한 번 더 폭발.",
+
+          "W는 [[DASH]]해서 피해를주고 [[LIFESTEAL]].",
+
+          "E는 E1 [[DASH]], \n E2는 사슬을 날려서 맞으면 다시 [[DASH]].",
+
+          "R은 상대 궁극기를 강탈해서 사용할 수 있음. \n 각 챔피언별로 쿨타임 따로 존재",
         ],
 
-        en: []
+        en: [
+          "Using a skill grants [[BA]] empowerment [[BUFF]] stacks. Up to 3 \n [[AS_UP]] and [[AOE]] damage \n Q, W, E1, E2, R1, R2 each give 1 stack.",
+
+          "Q [[SLOW]]s with chains. Chains detonate again at the crossing point.",
+
+          "W [[DASH]]es to deal damage and [[LIFESTEAL]].",
+
+          "E1 is a [[DASH]], \n E2 throws chains that pull Sylas back in on hit.",
+
+          "R steals the opponent's ultimate to use. \n Each champion has its own separate cooldown.",
+        ]
 
       },
 
       note2: {
         ko: [
-        "[[Q_FLASH]], [[E_FLASH]] 안됨", "P는 평캔이 아니고, 공속증가임", "E는 E1, E2로 나뉘는데\nE2는 투척/돌진단계로 나뉨\n투척단계에 CC를 맞으면 무시하고 돌진단계를 발동\n돌진단계에 [[HARD_CC]]를 맞으면 끊길 수 있음", "R을 훔칠 때 사일러스가 [[HARD_CC]]에 걸리면 훔치기 취소.\n쿨타임은 소모됨.", "R은 챔피언별로 아래 박스에 정리"
+        "[[Q_FLASH]], [[E_FLASH]] 안됨", 
+        "E는 E1, E2로 나뉘는데\nE2는 투척/돌진단계로 나뉨\n투척단계에 CC를 맞으면 무시하고 돌진단계를 발동\n돌진단계에 [[HARD_CC]]를 맞으면 끊길 수 있음", 
+        "R을 훔칠 때 사일러스가 [[HARD_CC]]에 걸리면 훔치기 취소.\n쿨타임은 소모됨.", 
+        "R은 챔피언별로 아래 박스에 정리"
       ],
-        en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "P is not an AA cancel — it increases attack speed", "E splits into E1 and E2.\nE2 has a throw / dash phase.\nCC during the throw phase is ignored and the dash still triggers.\nHard CC during the dash can interrupt it", "R is detailed per champion in the box below"]
+        en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "E splits into E1 and E2.\nE2 has a throw / dash phase.\nCC during the throw phase is ignored and the dash still triggers.\nHard CC during the dash can interrupt it", "If Sylas is hit by [[HARD_CC]] while stealing, the steal is canceled.\nThe cooldown is still consumed.", "R is detailed per champion in the box below"]
         },
     },
     vision: { ko: [], en: [] },
