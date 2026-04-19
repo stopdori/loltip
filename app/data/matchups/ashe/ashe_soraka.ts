@@ -9,8 +9,8 @@ export const ashe_soraka: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     soraka: {
       ko: [],

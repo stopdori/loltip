@@ -9,8 +9,8 @@ export const ashe_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     drmundo: {
       ko: [],

@@ -9,8 +9,8 @@ export const ashe_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     mordekaiser: {
       ko: [],

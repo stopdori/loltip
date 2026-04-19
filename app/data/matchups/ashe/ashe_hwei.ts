@@ -9,8 +9,8 @@ export const ashe_hwei: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     hwei: {
       ko: [],

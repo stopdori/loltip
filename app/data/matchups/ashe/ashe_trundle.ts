@@ -9,8 +9,8 @@ export const ashe_trundle: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     trundle: {
       ko: [],

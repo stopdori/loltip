@@ -9,8 +9,8 @@ export const ashe_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     gangplank: {
       ko: [],

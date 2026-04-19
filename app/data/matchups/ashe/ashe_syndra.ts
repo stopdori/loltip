@@ -9,8 +9,8 @@ export const ashe_syndra: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     syndra: {
       ko: [],

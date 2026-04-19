@@ -9,8 +9,8 @@ export const ashe_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     yorick: {
       ko: [],

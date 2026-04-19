@@ -9,8 +9,8 @@ export const ashe_kennen: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kennen: {
       ko: [],

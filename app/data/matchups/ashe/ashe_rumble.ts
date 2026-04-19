@@ -9,8 +9,8 @@ export const ashe_rumble: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     rumble: {
       ko: [],

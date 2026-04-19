@@ -9,8 +9,8 @@ export const ashe_senna: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     senna: {
       ko: [],

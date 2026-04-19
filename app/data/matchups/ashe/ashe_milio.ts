@@ -9,8 +9,8 @@ export const ashe_milio: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     milio: {
       ko: [],

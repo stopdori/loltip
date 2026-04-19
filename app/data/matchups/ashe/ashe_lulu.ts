@@ -9,8 +9,8 @@ export const ashe_lulu: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     lulu: {
       ko: [],
