@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import TokenText from "./TokenText";
 import { getMatchupSummary, type MatchupLoadResult } from "../data/matchups/_index";
+import { CHAMPIONS } from "../data/champions";
 
 type Lang = "ko" | "en";
 
@@ -49,7 +50,24 @@ export default function MatchupSummaryBox({
   return (
   <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all min-h-[120px]">
 
-    <h3 className="mb-4 text-base font-bold text-yellow-400 tracking-wide uppercase">{lang === "ko" ? "판정 세부사항" : "Interaction Details"}</h3>
+    <div className="flex items-baseline justify-between mb-3">
+      <h3 className="text-base font-bold text-yellow-400 tracking-wide uppercase">{lang === "ko" ? "판정 세부사항" : "Interaction Details"}</h3>
+      {(() => {
+        const my = CHAMPIONS.find((c) => c.id === myChampId);
+        const enemy = CHAMPIONS.find((c) => c.id === enemyChampId);
+        const fmt = (champ: typeof my) => {
+          if (!champ) return "";
+          const name = lang === "ko" ? champ.ko : champ.en;
+          const al = champ.aliases ?? [];
+          return al.length > 0 ? `${name}(${al.join(", ")})` : name;
+        };
+        return (
+          <p className="text-xs text-slate-400">
+            {fmt(my)} vs {fmt(enemy)}
+          </p>
+        );
+      })()}
+    </div>
 
  
       {/* ✅ 정상 */}
