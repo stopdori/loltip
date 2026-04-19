@@ -403,8 +403,8 @@ VISION: {
   en: "Grants vision",
 },
 REVEALED: {
-  ko: "대상 챔피언만 보여줌 (주변 시야 없음)\n은신 전에 적중한 경우 → 보임\n은신 후에 적중한 경우 → 보이지 않음",
-  en: "Reveals only the target champion (no surrounding vision)\nReveals if hit before stealth\nDoes not reveal if hit after stealth",
+  ko: "대상 챔피언만 보여줌",
+  en: "Reveals only the target champion",
 },
 TRUE_SIGHT: {
   ko: "대상과 대상 주변의 약간의 시야를 제공함\n은신 상태와 무관하게 타겟에 디버프로 붙어 계속 보임",
