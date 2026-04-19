@@ -137,7 +137,7 @@ export default function HelpButton({ lang, className, onOpenChange }: Props) {
         onClick={() => handleOpen(true)}
         className={
           className ??
-          "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-700/60"
+          "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-700/60 quiz-shimmer"
         }
         aria-label={t.title}
         title={t.title}
@@ -177,7 +177,7 @@ export default function HelpButton({ lang, className, onOpenChange }: Props) {
                 <div
                   key={`${step}-${i}`}
                   className={`absolute rounded-xl ring-4 pointer-events-none ${o.ring ?? "ring-yellow-400"}`}
-                  style={{ top: o.top, left: o.left, width: o.width, height: o.height, animation: "blink-overlay 1.2s ease-in-out infinite", animationDelay: "0s" }}
+                  style={{ top: o.top, left: o.left, width: o.width, height: o.height, animation: "blink-overlay 1.2s ease-in-out infinite", animationDelay: `-${(Date.now() % 1200) / 1000}s` }}
                 />
               ))}
               <button
