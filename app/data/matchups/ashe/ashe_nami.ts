@@ -9,8 +9,8 @@ export const ashe_nami: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nami: {
       ko: [],

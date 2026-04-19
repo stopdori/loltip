@@ -9,8 +9,8 @@ export const ashe_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     teemo: {
       ko: [],

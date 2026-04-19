@@ -9,8 +9,8 @@ export const ashe_cassiopeia: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     cassiopeia: {
       ko: [],

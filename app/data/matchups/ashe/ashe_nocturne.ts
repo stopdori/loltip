@@ -9,8 +9,8 @@ export const ashe_nocturne: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nocturne: {
       ko: [],

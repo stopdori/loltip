@@ -9,8 +9,8 @@ export const ashe_zilean: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zilean: {
       ko: [],

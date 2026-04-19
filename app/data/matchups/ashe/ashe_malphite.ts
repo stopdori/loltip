@@ -9,8 +9,8 @@ export const ashe_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     malphite: {
       ko: [],

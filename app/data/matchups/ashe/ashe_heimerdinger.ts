@@ -9,8 +9,8 @@ export const ashe_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     heimerdinger: {
       ko: [],

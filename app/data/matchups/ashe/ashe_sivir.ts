@@ -9,8 +9,8 @@ export const ashe_sivir: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     sivir: {
       ko: [],
