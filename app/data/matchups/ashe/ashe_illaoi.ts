@@ -9,8 +9,8 @@ export const ashe_illaoi: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: ["애쉬 R의 [[STUN]]로 일라오이 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Ashe's R [[STUN]] cannot interrupt Illaoi's W [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     illaoi: {
       ko: [],

@@ -9,8 +9,8 @@ export const ashe_irelia: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: ["애쉬 R의 [[STUN]]로 이렐리아 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Ashe's R [[STUN]] cannot interrupt Irelia's Q [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     irelia: {
       ko: [],

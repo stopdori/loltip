@@ -9,8 +9,8 @@ export const ashe_sion: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: ["애쉬 R의 [[STUN]]로 사이온 Q의 [[SKILL_CHARGED]]을 끊을 수 있음."],
+      en: ["Ashe's R [[STUN]] can interrupt Sion's Q [[SKILL_CHARGED]]."],
     },
     sion: {
       ko: [],

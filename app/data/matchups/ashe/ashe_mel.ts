@@ -9,12 +9,12 @@ export const ashe_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: ["멜 W가 애쉬 W E R 반사 가능."],
-      en: ["Mel’s W reflects Ashe’s W E R."],
-    },
-    mel: {
       ko: [],
       en: [],
+    },
+    mel: {
+      ko: ["멜 W([[REFLECT]])로 애쉬 W, E, R을 반사할 수 있음."],
+      en: ["Mel's W ([[REFLECT]]) can reflect Ashe's W, E, and R."],
     },
   },
 };

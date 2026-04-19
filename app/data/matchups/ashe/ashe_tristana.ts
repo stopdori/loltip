@@ -9,8 +9,8 @@ export const ashe_tristana: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: ["애쉬 R의 [[STUN]]로 트리스타나 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Ashe's R [[STUN]] cannot interrupt Tristana's W [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     tristana: {
       ko: [],

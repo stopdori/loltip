@@ -9,8 +9,8 @@ export const ashe_yone: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: [""],
-      en: [""],
+      ko: ["애쉬 R의 [[STUN]]로 요네 Q3, E1의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Ashe's R [[STUN]] cannot interrupt Yone's Q3 or E1 [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     yone: {
       ko: [],
