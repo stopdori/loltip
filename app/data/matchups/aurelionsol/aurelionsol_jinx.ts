@@ -9,8 +9,8 @@ export const aurelionsol_jinx: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     jinx: {
       ko: [],

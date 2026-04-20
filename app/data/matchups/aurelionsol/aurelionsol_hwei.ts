@@ -9,8 +9,8 @@ export const aurelionsol_hwei: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     hwei: {
       ko: [],
