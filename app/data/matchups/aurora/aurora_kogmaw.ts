@@ -9,8 +9,8 @@ export const aurora_kogmaw: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kogmaw: {
       ko: [],

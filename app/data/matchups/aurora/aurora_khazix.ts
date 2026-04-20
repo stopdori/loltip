@@ -9,8 +9,8 @@ export const aurora_khazix: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     khazix: {
       ko: [],
