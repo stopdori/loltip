@@ -13,8 +13,10 @@ export const akali_aurelionsol: MatchupSummary = {
       en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Aurelion Sol's W (flight) [[DASH]]."],
     },
     aurelionsol: {
-      ko: [],
-      en: [],
+      ko: ["아우렐리온 솔 R의 [[STUN]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "아우렐리온 솔 [[EMPOWERED]] R(천상강림)의 [[AIRBORNE]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Akali's E1, E2, R1, R2 [[DASH]]. \n However, the [[STUN]] still applies.",
+        "Aurelion Sol's [[EMPOWERED]] R (Falling Star) [[AIRBORNE]] can interrupt Akali's E1, E2, R1, R2 [[DASH]]."],
     },
   },
 };
