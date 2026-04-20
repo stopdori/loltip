@@ -74,9 +74,11 @@ const ambessa: ChampData = {
 
       note2: {
         ko: [
-        "암베사 P로 [[WALL_HOP]] 불가.", "W는 0.5초의 시전시간이 있고 \n 그 사이에 공격을 당하면 강화된 피해를 가함."
+        "암베사 P로 [[WALL_HOP]] 불가.", 
+        "W는 0.5초의 시전시간이 있고 \n 그 사이에 공격을 당하면 강화된 피해를 가함.", 
+        "R은 판정이 상당히 강력한 [[SUPPRESS]]. \n [[CC_BUFFER]]도 무시하고 그 자리에서 [[SUPPRESS]]함."
       ],
-        en: ["[[WALL_HOP]] via Ambessa's P is not possible.", "W has a 0.5s cast time. \n If hit during that window, W deals empowered damage."]
+        en: ["[[WALL_HOP]] via Ambessa's P is not possible.", "W has a 0.5s cast time. \n If hit during that window, W deals empowered damage.", "R's [[SUPPRESS]] hitbox is notably powerful. \n It ignores [[CC_BUFFER]] and [[SUPPRESS]]es on the spot."]
         },
     },
     vision: { ko: [], en: [] },
