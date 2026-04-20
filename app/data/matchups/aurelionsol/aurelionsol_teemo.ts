@@ -9,8 +9,8 @@ export const aurelionsol_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     teemo: {
       ko: [],

@@ -9,8 +9,8 @@ export const aurelionsol_trundle: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     trundle: {
       ko: [],

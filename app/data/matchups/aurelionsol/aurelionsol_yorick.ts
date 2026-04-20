@@ -9,8 +9,8 @@ export const aurelionsol_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     yorick: {
       ko: [],

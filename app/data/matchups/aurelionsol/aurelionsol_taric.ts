@@ -9,8 +9,8 @@ export const aurelionsol_taric: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     taric: {
       ko: [],

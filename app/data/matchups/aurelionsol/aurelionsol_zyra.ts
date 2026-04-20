@@ -9,8 +9,8 @@ export const aurelionsol_zyra: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zyra: {
       ko: [],

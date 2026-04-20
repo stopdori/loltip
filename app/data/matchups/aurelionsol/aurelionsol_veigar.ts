@@ -9,8 +9,8 @@ export const aurelionsol_veigar: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     veigar: {
       ko: [],

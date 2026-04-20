@@ -9,8 +9,8 @@ export const aurelionsol_syndra: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     syndra: {
       ko: [],

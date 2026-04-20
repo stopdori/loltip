@@ -9,8 +9,8 @@ export const aurelionsol_twitch: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     twitch: {
       ko: [],

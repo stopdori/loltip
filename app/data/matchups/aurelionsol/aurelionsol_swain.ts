@@ -9,8 +9,8 @@ export const aurelionsol_swain: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     swain: {
       ko: [],
