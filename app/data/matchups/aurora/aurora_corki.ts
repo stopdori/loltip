@@ -9,8 +9,8 @@ export const aurora_corki: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     corki: {
       ko: [],

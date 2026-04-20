@@ -9,8 +9,8 @@ export const aurora_graves: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     graves: {
       ko: [],

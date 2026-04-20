@@ -9,8 +9,8 @@ export const aurora_karthus: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     karthus: {
       ko: [],

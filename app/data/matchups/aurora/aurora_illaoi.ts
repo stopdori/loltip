@@ -9,8 +9,8 @@ export const aurora_illaoi: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     illaoi: {
       ko: [],

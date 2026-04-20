@@ -9,8 +9,8 @@ export const aurora_kassadin: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kassadin: {
       ko: [],
