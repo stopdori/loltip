@@ -9,8 +9,8 @@ export const aurelionsol_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     heimerdinger: {
       ko: [],
