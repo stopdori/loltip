@@ -9,8 +9,8 @@ export const aurelionsol_rumble: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     rumble: {
       ko: [],
