@@ -9,8 +9,8 @@ export const aurelionsol_shaco: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     shaco: {
       ko: [],

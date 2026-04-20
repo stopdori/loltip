@@ -9,8 +9,8 @@ export const aurelionsol_senna: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     senna: {
       ko: [],
