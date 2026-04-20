@@ -9,8 +9,8 @@ export const aurora_kayle: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kayle: {
       ko: [],
