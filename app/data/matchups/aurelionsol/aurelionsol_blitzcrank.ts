@@ -9,8 +9,8 @@ export const aurelionsol_blitzcrank: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     blitzcrank: {
       ko: [],
