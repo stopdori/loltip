@@ -9,8 +9,10 @@ export const aurelionsol_vayne: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: ["아우렐리온 솔 R의 [[STUN]]으로 베인 Q(구르기)의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "아우렐리온 솔 R(천상강림)의 [[AIRBORNE]]으로 베인 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Vayne's Q (Tumble) [[DASH]]. \n However, the [[STUN]] still applies.",
+        "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Vayne's Q [[DASH]]."],
     },
     vayne: {
       ko: [],

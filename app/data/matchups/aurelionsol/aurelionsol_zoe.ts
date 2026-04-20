@@ -9,8 +9,8 @@ export const aurelionsol_zoe: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: ["아우렐리온 솔 R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 조이 R의 [[BLINK]]을 끊을 수 없음."],
+      en: ["Aurelion Sol's R [[STUN]] and R (Falling Star) [[AIRBORNE]] cannot interrupt Zoe's R [[BLINK]]."],
     },
     zoe: {
       ko: [],
