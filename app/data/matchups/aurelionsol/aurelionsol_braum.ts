@@ -9,8 +9,10 @@ export const aurelionsol_braum: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [],
-      en: [],
+      ko: ["아우렐리온 솔 R의 [[STUN]]으로 브라움 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "아우렐리온 솔 R(천상강림)의 [[AIRBORNE]]으로 브라움 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Braum's W [[DASH]]. \n However, the [[STUN]] still applies.",
+        "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Braum's W [[DASH]]."],
     },
     braum: {
       ko: ["브라움 E(방패)로 아우렐리온 솔 평타, Q(최초 한틱), E(최초 한틱), R을 막을([[DAMAGE_NULLIFY]]) 수 있음", "브라움 E(방패)로 아우렐리온 솔의 평타를 [[INTERCEPT_PROJECTILE]] 할 수 있음", "브라움 P의 [[STUN]], R의 [[AIRBORNE]]으로 아우렐리온 솔 W(비행)을 끊을 수 있음"],

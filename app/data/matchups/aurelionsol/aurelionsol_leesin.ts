@@ -9,8 +9,10 @@ export const aurelionsol_leesin: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: ["아우렐리온 솔 R의 [[STUN]]으로 리신 Q2, W(방호)의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "아우렐리온 솔 R(천상강림)의 [[AIRBORNE]]으로 리신 Q2, W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Lee Sin's Q2 and W (Safeguard) [[DASH]]. \n However, the [[STUN]] still applies.",
+        "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Lee Sin's Q2 and W [[DASH]]."],
     },
     leesin: {
       ko: [],

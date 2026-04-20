@@ -9,8 +9,10 @@ export const aurelionsol_zeri: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: ["아우렐리온 솔 R의 [[STUN]]으로 제리 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "아우렐리온 솔 R(천상강림)의 [[AIRBORNE]]으로 제리 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Zeri's E [[DASH]]. \n However, the [[STUN]] still applies.",
+        "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Zeri's E [[DASH]]."],
     },
     zeri: {
       ko: [],
