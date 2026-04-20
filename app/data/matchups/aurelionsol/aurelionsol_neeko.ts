@@ -9,8 +9,8 @@ export const aurelionsol_neeko: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     neeko: {
       ko: [],
