@@ -9,8 +9,8 @@ export const aphelios_aurelionsol: MatchupSummary = {
   },
   highlightsByChamp: {
     aphelios: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     aurelionsol: {
       ko: [],
