@@ -9,8 +9,8 @@ export const aurelionsol_nocturne: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nocturne: {
       ko: [],

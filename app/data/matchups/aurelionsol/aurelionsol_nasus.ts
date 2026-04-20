@@ -9,8 +9,8 @@ export const aurelionsol_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nasus: {
       ko: [],

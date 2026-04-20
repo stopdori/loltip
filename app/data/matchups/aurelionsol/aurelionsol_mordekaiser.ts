@@ -9,8 +9,8 @@ export const aurelionsol_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     mordekaiser: {
       ko: [],
