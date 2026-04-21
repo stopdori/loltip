@@ -9,8 +9,8 @@ export const aurora_rumble: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     rumble: {
       ko: [],

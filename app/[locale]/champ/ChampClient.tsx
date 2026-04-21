@@ -204,6 +204,17 @@ setOpenTarget(null);
 }}
         />
 
+      {bothSelected && (
+<section className="mt-[4.5rem] md:mt-12 max-w-[474px] sm:max-w-[980px] mx-auto px-3">
+  <MatchupSummaryBox
+    myChampId={myChamp!.id}
+    enemyChampId={enemyChamp!.id}
+    lang={lang}
+    highlight={highlight}
+  />
+</section>
+)}
+
       {/* COMPARE */}
 {(myChamp || enemyChamp) ? (
 <>
@@ -337,15 +348,8 @@ setOpenTarget(null);
 </section>
 </>
 ) : null}
+{!bothSelected && (
 <section className="mt-[4.5rem] md:mt-12 max-w-[474px] sm:max-w-[980px] mx-auto px-3">
-  {myChamp && enemyChamp ? (
-    <MatchupSummaryBox
-      myChampId={myChamp.id}
-      enemyChampId={enemyChamp.id}
-      lang={lang}
-      highlight={highlight}
-    />
-  ) : (
     <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all min-h-[120px]">
       <p className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-4">
         {lang === "ko" ? "판정 세부사항" : "Interaction Details"}
@@ -356,8 +360,8 @@ setOpenTarget(null);
           : "Pick both champions \n to see matchup summary."}
       </p>
     </div>
-  )}
 </section>
+)}
 
       {/* 퀴즈박스: 항상 표시 */}
       <div className="max-w-[474px] sm:max-w-[980px] mx-auto px-3">

@@ -9,11 +9,11 @@ export const aurora_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: ["멜 W가 오로라 Q 반사 가능."],
-      en: ["Mel’s W reflects Aurora’s Q."],
+      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 멜 E의 [[ROOT]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[ROOT]]은 남아있음."],
+      en: [],
     },
     mel: {
-      ko: [],
+      ko: ["멜 W([[REFLECT]])로 오로라 Q의 [[PROJECTILE]]를 반사할 수 있음."],
       en: [],
     },
   },
