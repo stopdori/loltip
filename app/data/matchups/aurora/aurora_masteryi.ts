@@ -9,8 +9,8 @@ export const aurora_masteryi: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     masteryi: {
       ko: [],

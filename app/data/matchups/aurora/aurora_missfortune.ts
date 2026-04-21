@@ -9,8 +9,8 @@ export const aurora_missfortune: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     missfortune: {
       ko: [],
