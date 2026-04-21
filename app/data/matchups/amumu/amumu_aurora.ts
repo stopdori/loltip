@@ -9,12 +9,12 @@ export const amumu_aurora: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 오로라 W, E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 오로라 W, E의 [[DASH]]을 따라갈 수 있음.", 
+      ko: ["아무무 Q의 [[STUN]]로 오로라 W, E, R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 오로라 W, E, R의 [[DASH]]을 따라갈 수 있음.", 
         "아무무 R의 [[STUN]]로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Aurora's W and E [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Aurora's W and E [[DASH]].", "Amumu's R [[STUN]] can interrupt Aurora's W and E [[DASH]]."],
+      en: ["Amumu's Q [[STUN]] cannot interrupt Aurora's W, E and R [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Aurora's W, E and R [[DASH]].", "Amumu's R [[STUN]] can interrupt Aurora's W and E [[DASH]]."],
     },
     aurora: {
-      ko: [],
+      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 아무무 Q, R의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },
