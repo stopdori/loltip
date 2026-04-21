@@ -9,8 +9,8 @@ export const aurora_nidalee: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nidalee: {
       ko: [],
