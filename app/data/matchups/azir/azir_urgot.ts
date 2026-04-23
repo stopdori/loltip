@@ -9,7 +9,7 @@ export const azir_urgot: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 우르곳 E(돌진 단계)의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     urgot: {

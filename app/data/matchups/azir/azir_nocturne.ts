@@ -9,8 +9,8 @@ export const azir_nocturne: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nocturne: {
       ko: [],

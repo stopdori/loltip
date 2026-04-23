@@ -10,11 +10,11 @@ export const ambessa_azir: MatchupSummary = {
   highlightsByChamp: {
     ambessa: {
       ko: ["암베사 R의 [[SUPPRESS]]으로 아지르 E의 [[DASH]]을 끊을 수 있음.", 
-        "암베사 R의 [[UNSTOPPABLE]]로 아지르 R의 [[KNOCKBACK]]을 무시할 수 있음."],
+        "암베사 R의 [[UNSTOPPABLE]]로 아지르 R의 [[KNOCKBACK]]을 무시할 수 있음. \n 아지르가 R을 선입력 해도 불가."],
       en: ["Ambessa's R [[SUPPRESS]] can interrupt Azir's E [[DASH]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Azir's R [[KNOCKBACK]]."],
     },
     azir: {
-      ko: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 암베사 P의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

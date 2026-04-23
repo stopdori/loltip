@@ -9,7 +9,7 @@ export const azir_samira: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 사미라 E의 [[DASH]], R의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
       en: [""],
     },
     samira: {

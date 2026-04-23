@@ -9,8 +9,9 @@ export const aurora_poppy: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]]로 뽀삐 E의 [[KNOCKBACK]] [[STUN]] / 짧게 누른 R의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, W의 [[KNOCKBACK]]으로 밀려나다가 [[DASH]] 발동.", 
-        "오로라 R의 [[UNSTOPPABLE]] [[DASH]]으로 뽀삐 W의 [[GROUNDED]] [[AURA]] / E의 [[KNOCKBACK]] [[STUN]] / R의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, 뽀삐 W의 [[GROUNDED]]에 [[DASH]]이 막히지 않음 않음."],
+      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]]로 뽀삐 E의 [[KNOCKBACK]] [[STUN]]을 조건부로 무시하고 [[DASH]]할 수 있음. \n 단, 뽀삐 E의 [[DASH]]에 닿기 바로 직전에 사용해야 함. \n 뽀삐 E의 벽꿍으로 [[STUN]]이 걸려도 [[DASH]] 발동. 심지어 얇은벽은 [[WALL_HOP]]도 할 수 있음. \n 단, [[STUN]]은 남아있음", 
+        "오로라 E(준비단계)의 [[CC_BUFFER]]로 뽀삐 R(짧게 누른)의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음.",
+        "오로라 R의 [[UNSTOPPABLE]] [[DASH]]으로 뽀삐 W의 [[ANTI_DASH]] [[AURA]] / E의 [[KNOCKBACK]] [[STUN]] / R의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, 뽀삐 W의 [[ANTI_DASH]]에 [[DASH]]이 막히지 않음 않음."],
       en: [""],
     },
     poppy: {

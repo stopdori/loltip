@@ -9,8 +9,8 @@ export const azir_renata: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     renata: {
       ko: [],

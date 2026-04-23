@@ -15,8 +15,9 @@ export const amumu_bard: MatchupSummary = {
       en: ["Amumu's Q [[STUN]] cannot interrupt Bard's E (tunnel) [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow all the way through. \n However, if Bard and Amumu make contact while following through the tunnel, Amumu stops [[DASH]].", "Amumu's R [[STUN]] can interrupt Bard's E (tunnel) [[DASH]]. \n However, [Bard] immediately exits to the nearest ground. \n Note: Sometimes it may appear that Bard is stopped inside the wall, but that's only on the local screen. In reality, Bard has exited.", "Amumu's Q [[CC_BUFFER]] can ignore Bard's Q [[STUN]]. \n However, the [[STUN]] still applies."],
     },
     bard: {
-      ko: ["바드 R(존야)로 아무무 Q를 끊을 수 있음.\n단, 아무무 Q의 피해와 [[STUN]]은 남아있음."],
-      en: ["Bard's R (Magical Journey stasis) can interrupt Amumu's Q.\nHowever, the damage and [[STUN]] from Amumu's Q remain active."],
+      ko: ["바드 Q의 [[STUN]]로 아무무 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "바드 R(존야)로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
+      en: [],
     },
   },
 };

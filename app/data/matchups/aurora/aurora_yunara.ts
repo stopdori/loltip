@@ -9,8 +9,8 @@ export const aurora_yunara: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     yunara: {
       ko: [],

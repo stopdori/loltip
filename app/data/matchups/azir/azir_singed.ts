@@ -9,8 +9,8 @@ export const azir_singed: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     singed: {
       ko: [],

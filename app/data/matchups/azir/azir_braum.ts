@@ -9,8 +9,8 @@ export const azir_braum: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [],
-      en: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 브라움 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Azir's R [[KNOCKBACK]] can interrupt Braum's W [[DASH]]."],
     },
     braum: {
       ko: ["브라움 E(방패)로 아지르 평타, Q, W(평타), E, R을 막을([[DAMAGE_NULLIFY]]) 수 있음.\n단, Q는 가로막힌 모든 병사의 데미지를 무효화", "브라움 E(방패)로 아지르의 Q, R을 [[INTERCEPT_PROJECTILE]] 할 수 있음. 단, R의 병사는 사라지지 않음\n아지르 평타는 투사체가 아니여서 [[INTERCEPT_PROJECTILE]] 수 없음", "브라움 E(방패)를 아지르 R이 다가오는 방향으로 들면 [[INTERCEPT_PROJECTILE]] 하는데, 이때 브라움은 밀려나지 않고 병사들은 사라지지 않으며 이동을 멈춤", "브라움 P의 [[STUN]]로 아지르 E를 끊을 수 없음. 단, [[STUN]]은 남아있음", "브라움 R의 [[AIRBORNE]]으로 아지르 E를 끊을 수 있음"],

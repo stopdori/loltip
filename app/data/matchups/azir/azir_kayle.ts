@@ -9,8 +9,8 @@ export const azir_kayle: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kayle: {
       ko: [],

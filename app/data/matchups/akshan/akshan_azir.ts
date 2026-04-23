@@ -13,7 +13,7 @@ export const akshan_azir: MatchupSummary = {
       en: ["Akshan's E can be used on Azir's R (wall)"],
     },
     azir: {
-      ko: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 아크샨 E, R의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
       en: [],
     },
   },

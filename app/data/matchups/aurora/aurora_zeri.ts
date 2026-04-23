@@ -9,8 +9,8 @@ export const aurora_zeri: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zeri: {
       ko: [],

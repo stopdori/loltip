@@ -9,7 +9,7 @@ export const azir_kled: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 클레드 승마폼 E [[DASH]] / 낙마폼 Q의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     kled: {

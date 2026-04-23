@@ -9,8 +9,8 @@ export const azir_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     gangplank: {
       ko: [],

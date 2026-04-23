@@ -13,7 +13,8 @@ export const akali_bard: MatchupSummary = {
       en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Bard's E (tunnel) [[DASH]]."],
     },
     bard: {
-      ko: [],
+      ko: ["바드 Q의 [[STUN]]로 아칼리 E1, E2 ,R1, R2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "바드 R(존야)로 아칼리 E1, E2, R1, R2 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

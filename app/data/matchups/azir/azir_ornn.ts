@@ -9,7 +9,7 @@ export const azir_ornn: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 오른 E, R2의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     ornn: {

@@ -14,7 +14,7 @@ export const anivia_bard: MatchupSummary = {
       en: ["Anivia's Q [[STUN]] cannot interrupt Bard's E (tunnel) [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Bard's E (wall traverse) [[DASH]]."],
     },
     bard: {
-      ko: [],
+      ko: ["바드 Q의 [[STUN]], R(존야)로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [],
     },
   },

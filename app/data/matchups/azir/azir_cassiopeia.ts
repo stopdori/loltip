@@ -9,8 +9,8 @@ export const azir_cassiopeia: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     cassiopeia: {
       ko: [],

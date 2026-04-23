@@ -9,7 +9,7 @@ export const azir_graves: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 그레이브즈 E, R의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     graves: {

@@ -9,8 +9,8 @@ export const bard_brand: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     brand: {
       ko: [],

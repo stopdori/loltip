@@ -9,7 +9,7 @@ export const azir_twistedfate: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 트위스티드 페이트 R2의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
       en: [""],
     },
     twistedfate: {

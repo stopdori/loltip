@@ -9,8 +9,8 @@ export const azir_yuumi: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 유미 W의 [[DASH]]을 끊을 수 있음."],
+      en: [],
     },
     yuumi: {
       ko: [],

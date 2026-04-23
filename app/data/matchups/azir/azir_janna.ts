@@ -9,8 +9,8 @@ export const azir_janna: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 잔나 R의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
+      en: [],
     },
     janna: {
       ko: [],

@@ -9,8 +9,8 @@ export const azir_neeko: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     neeko: {
       ko: [],

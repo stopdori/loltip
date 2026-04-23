@@ -9,8 +9,8 @@ export const azir_veigar: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     veigar: {
       ko: [],

@@ -9,8 +9,8 @@ export const azir_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     drmundo: {
       ko: [],

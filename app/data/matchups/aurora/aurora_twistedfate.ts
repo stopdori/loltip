@@ -9,7 +9,7 @@ export const aurora_twistedfate: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
+      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 트위스티드 페이트 W(골카)의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
       en: [""],
     },
     twistedfate: {

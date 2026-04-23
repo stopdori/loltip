@@ -61,7 +61,13 @@ const yone: ChampData = {
 
       note2: {
         ko: [
-        "[[R_FLASH]] 안됨", "P의 [[AD_UP]]는 치명타 초과분이 변환", "Q의 [[TIMING_CAST]]에 CC에 맞으면 모션만 발동하고 공격이 들어가지 않음. \n Q3는 무시하고 발동.", "Q [[AIRBORNE]]은 Q3타에 발동", "W에 [[SHIELD]]는 적중한 적 챔피언 수에 따라 증가", "E 발동 시에는 벽 못넘음\n돌아오는 E는 벽 넘음", "R을 시전할때 [[GRAB]], [[KNOCKBACK]]류에 영향을 받아서 궤적이 틀어질 수 있음."
+        "[[R_FLASH]] 안됨", 
+        "P의 [[AD_UP]]는 치명타 초과분이 변환", 
+        "Q의 [[TIMING_CAST]]에 CC에 맞으면 모션만 발동하고 공격이 들어가지 않음. \n Q3는 무시하고 발동.", 
+        "Q [[AIRBORNE]]은 Q3타에 발동", "W에 [[SHIELD]]는 적중한 적 챔피언 수에 따라 증가", 
+        "E1 발동 시에는 벽 못넘음\n돌아오는 E2는 벽 넘음", 
+        "E2는 [[UNSTOPPABLE]].", 
+        "R을 시전할때 [[GRAB]], [[KNOCKBACK]]류에 영향을 받아서 궤적이 틀어질 수 있음."
       ],
         en: ["[[R_FLASH]] not possible", "P [[AD_UP]] converts excess crit chance", "Q [[AIRBORNE]] triggers on the 3rd cast", "W shield scales with the number of enemy champions hit", "E [[CAST_COMMIT]] only applies on the return", "E cannot wall-hop on cast.\nThe returning E can wall-hop"]
         },

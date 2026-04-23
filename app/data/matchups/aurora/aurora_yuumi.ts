@@ -9,8 +9,8 @@ export const aurora_yuumi: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     yuumi: {
       ko: [],

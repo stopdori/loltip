@@ -14,7 +14,7 @@ export const aurora_azir: MatchupSummary = {
       en: [""],
     },
     azir: {
-      ko: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

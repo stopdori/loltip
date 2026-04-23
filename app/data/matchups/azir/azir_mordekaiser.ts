@@ -9,8 +9,8 @@ export const azir_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     mordekaiser: {
       ko: [],

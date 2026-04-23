@@ -14,7 +14,9 @@ export const ambessa_bard: MatchupSummary = {
       en: ["Ambessa's R [[SUPPRESS]] can interrupt Bard's E (tunnel) [[DASH]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Bard's Q [[STUN]]. \n However, the [[STUN]] still applies after [[UNSTOPPABLE]] ends.", "Ambessa's R [[UNSTOPPABLE]] can ignore Bard's R (Zhonya effect)!!!"],
     },
     bard: {
-      ko: [],
+      ko: ["바드 Q의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "바드 R(존야)로 암베사 Q1, Q2, W, E스킬 발동을 끊을 수 없음.", 
+        "바드 R(존야)로 암베사 P의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

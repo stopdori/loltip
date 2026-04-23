@@ -9,8 +9,8 @@ export const azir_swain: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     swain: {
       ko: [],

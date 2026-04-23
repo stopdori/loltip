@@ -9,8 +9,8 @@ export const azir_twitch: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     twitch: {
       ko: [],
