@@ -9,7 +9,7 @@ export const azir_khazix: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 카직스 E의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     khazix: {

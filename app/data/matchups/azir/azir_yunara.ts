@@ -9,7 +9,7 @@ export const azir_yunara: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 유나라 RE의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     yunara: {

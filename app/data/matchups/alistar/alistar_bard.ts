@@ -15,7 +15,9 @@ export const alistar_bard: MatchupSummary = {
       en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Bard's E (Tunnel) [[DASH]].", "Alistar's E [[STUN]] cannot interrupt Bard's E (Tunnel) [[DASH]]. \n However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Bard's Q [[SLOW]] and [[STUN]]. \n However, Bard's R (Stasis) cannot be cleansed."],
     },
     bard: {
-      ko: [],
+      ko: ["바드 Q의 [[STUN]]로 알리스타 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "바드 R(존야)로 알리스타 Q스킬 발동을 끊을 수 있음.",
+        "바드 R(존야)로 알리스타 W의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

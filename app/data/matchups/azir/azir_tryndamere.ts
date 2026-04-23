@@ -9,7 +9,7 @@ export const azir_tryndamere: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 트린다미어 E의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     tryndamere: {

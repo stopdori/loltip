@@ -9,8 +9,8 @@ export const aurora_tryndamere: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     tryndamere: {
       ko: [],

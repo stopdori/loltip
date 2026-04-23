@@ -9,8 +9,8 @@ export const azir_lissandra: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     lissandra: {
       ko: [],

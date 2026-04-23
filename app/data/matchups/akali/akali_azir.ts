@@ -13,7 +13,7 @@ export const akali_azir: MatchupSummary = {
       en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Azir's E [[DASH]]."],
     },
     azir: {
-      ko: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

@@ -9,8 +9,8 @@ export const azir_maokai: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     maokai: {
       ko: [],

@@ -9,8 +9,8 @@ export const aurora_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     smolder: {
       ko: [],

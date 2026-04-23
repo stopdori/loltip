@@ -14,7 +14,9 @@ export const aurora_bard: MatchupSummary = {
       en: [""],
     },
     bard: {
-      ko: [],
+      ko: ["바드 Q의 [[STUN]]로 오로라 W, E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "바드 R(존야)로 오로라 W, E의 [[DASH]]을 끊을 수 있음.", 
+        "바드 R(존야), 오로라 R의 [[UNSTOPPABLE]] [[DASH]]은 경우에 따라 다름. \n 바드 R(존야)이 떨어지기 바로 직전에 오로라가 R을 사용하면 존야효과를 무시. \n 너무 일찍 사용하면 존야에 걸림."],
       en: [],
     },
   },

@@ -9,7 +9,7 @@ export const azir_rell: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 렐 W(붕괴)의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     rell: {

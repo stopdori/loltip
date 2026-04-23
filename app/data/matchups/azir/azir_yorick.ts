@@ -9,8 +9,8 @@ export const azir_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     yorick: {
       ko: [],

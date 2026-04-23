@@ -9,8 +9,8 @@ export const azir_shyvana: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     shyvana: {
       ko: [],

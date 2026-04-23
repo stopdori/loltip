@@ -9,8 +9,8 @@ export const bard_blitzcrank: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     blitzcrank: {
       ko: [],

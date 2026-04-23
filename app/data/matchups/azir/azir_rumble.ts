@@ -9,8 +9,8 @@ export const azir_rumble: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     rumble: {
       ko: [],

@@ -9,8 +9,8 @@ export const azir_taric: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     taric: {
       ko: [],

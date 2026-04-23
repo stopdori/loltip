@@ -9,7 +9,7 @@ export const azir_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 케인 Q의 [[DASH]], E(벽이동)의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
       en: [""],
     },
     kayn: {

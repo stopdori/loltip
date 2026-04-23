@@ -9,11 +9,11 @@ export const aurora_naafiri: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: ["오로라 R의 [[UNTARGETTABLE]] [[BLINK]]으로 오로라에게 사용하는 나피리 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      ko: [],
       en: [],
     },
     naafiri: {
-      ko: [],
+      ko: ["나피리 R의 [[SKILL_CHANNEL]]은 오로라 R의 [[UNTARGETABLE]] [[BLINK]]에도 끊기지 않고 사용됨. \n 단, 데미지가 무효화될 수 있음. 무효화 방법은 [[UNTARGETABLE]] 상태일 때 접촉하면 무효."],
       en: [],
     },
   },

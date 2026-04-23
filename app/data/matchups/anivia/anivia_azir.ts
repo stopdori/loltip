@@ -14,7 +14,7 @@ export const anivia_azir: MatchupSummary = {
       en: ["Anivia's Q [[STUN]] cannot interrupt Azir's E [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Azir's E [[DASH]]."],
     },
     azir: {
-      ko: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 애니비아 R의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
       en: [],
     },
   },

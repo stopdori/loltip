@@ -9,8 +9,8 @@ export const azir_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     malphite: {
       ko: [],

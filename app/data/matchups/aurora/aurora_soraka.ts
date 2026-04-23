@@ -9,8 +9,8 @@ export const aurora_soraka: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
-      en: [""],
+      ko: ["오로라 Q, E는 소라카 E의 [[ROOT]]에 걸려도 사용할 수 있음."],
+      en: [],
     },
     soraka: {
       ko: [],

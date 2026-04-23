@@ -9,7 +9,8 @@ export const aurora_vi: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: [""],
+      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]]로 바이 Q의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, Q의 [[KNOCKBACK]]으로 밀려나다가 [[DASH]] 발동.", 
+        "오로라 R의 [[UNSTOPPABLE]] [[DASH]]으로 바이 Q의 [[AIRBORNE]], R의 [[KNOCKBACK]], [[AIRBORNE]], [[STUN]]을 무시하고 [[DASH]]할 수 있음."],
       en: [""],
     },
     vi: {

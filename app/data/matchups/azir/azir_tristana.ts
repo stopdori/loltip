@@ -9,7 +9,7 @@ export const azir_tristana: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 트리스타나 W(점프 단계)의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     tristana: {

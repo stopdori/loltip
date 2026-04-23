@@ -9,8 +9,8 @@ export const azir_trundle: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     trundle: {
       ko: [],

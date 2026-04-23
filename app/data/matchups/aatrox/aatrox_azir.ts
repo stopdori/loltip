@@ -13,7 +13,7 @@ export const aatrox_azir: MatchupSummary = {
       en: ["Aatrox's Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Azir's E [[DASH]]."],
     },
     azir: {
-      ko: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

@@ -15,7 +15,7 @@ export const amumu_azir: MatchupSummary = {
       en: ["Amumu's Q [[STUN]] cannot interrupt Azir's E [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Azir's E [[DASH]].", "Amumu's R [[STUN]] can interrupt Azir's E [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Azir's R [[KNOCKBACK]] and continue [[DASH]]."],
     },
     azir: {
-      ko: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

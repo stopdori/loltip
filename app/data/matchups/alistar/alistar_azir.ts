@@ -14,8 +14,8 @@ export const alistar_azir: MatchupSummary = {
       en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Azir's E [[DASH]].", "Alistar's E [[STUN]] cannot interrupt Azir's E [[DASH]]. \n However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Azir's Q [[SLOW]] and R [[KNOCKBACK]]."],
     },
     azir: {
-      ko: ["아지르 R로 알리스타 W를 막을 수 있음"],
-      en: ["Azir's R can block Alistar's W."],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 알리스타 W의 [[DASH]]를 막을 수 있음"],
+      en: [],
     },
   },
 };

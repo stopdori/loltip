@@ -15,8 +15,8 @@ export const aurelionsol_gwen: MatchupSummary = {
         "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Gwen's E [[DASH]]."],
     },
     gwen: {
-      ko: ["그웬 W(그면상)의 [[UNTARGETTABLE]]로 아우렐리온 솔 평타, Q, E, R, R(천상강림)을 범위 밖에서 맞지 않음. \n 단, [[EMPOWERED]] R(천상강림)의 충격파도 맞지 않음."],
-      en: ["Gwen's W (Hallowed Mist) [[UNTARGETTABLE]] prevents Aurelion Sol's basic attacks, Q, E, R, and R (Falling Star) from hitting when outside the zone. \n The [[EMPOWERED]] R (Falling Star) shockwave also does not hit."],
+      ko: ["그웬 W(그면상)의 [[UNTARGETABLE]]로 아우렐리온 솔 평타, Q, E, R, R(천상강림)을 범위 밖에서 맞지 않음. \n 단, [[EMPOWERED]] R(천상강림)의 충격파도 맞지 않음."],
+      en: ["Gwen's W (Hallowed Mist) [[UNTARGETABLE]] prevents Aurelion Sol's basic attacks, Q, E, R, and R (Falling Star) from hitting when outside the zone. \n The [[EMPOWERED]] R (Falling Star) shockwave also does not hit."],
     },
   },
 };

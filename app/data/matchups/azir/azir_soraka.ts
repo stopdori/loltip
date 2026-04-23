@@ -9,8 +9,8 @@ export const azir_soraka: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     soraka: {
       ko: [],

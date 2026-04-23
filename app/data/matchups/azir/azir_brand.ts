@@ -9,8 +9,8 @@ export const azir_brand: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     brand: {
       ko: [],

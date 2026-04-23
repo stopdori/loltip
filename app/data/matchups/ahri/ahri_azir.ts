@@ -13,8 +13,8 @@ export const ahri_azir: MatchupSummary = {
       en: ["Ahri's E can interrupt Azir's E"],
     },
     azir: {
-      ko: ["아지르 R의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Azir's R can interrupt Ahri's R"],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
+      en: [],
     },
   },
 };

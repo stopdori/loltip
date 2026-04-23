@@ -13,8 +13,8 @@ export const azir_belveth: MatchupSummary = {
       en: [""],
     },
     belveth: {
-      ko: [],
-      en: [],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 벨베스 Q의 [[DASH]], E의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
+      en: ["Azir's R [[KNOCKBACK]] can interrupt Bel'Veth's Q [[DASH]] and E [[SKILL_CHAANEL]]."],
     },
   },
 };

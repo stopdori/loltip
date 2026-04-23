@@ -15,7 +15,8 @@ export const aurelionsol_bard: MatchupSummary = {
         "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Bard's E (wall travel) [[DASH]]."],
     },
     bard: {
-      ko: [],
+      ko: ["바드 Q의 [[STUN]]로 아우렐리온 솔 Q, W의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "바드 R(존야)로 아우렐리온 솔 Q의 [[SKILL_CHANNEL]], W의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

@@ -9,8 +9,8 @@ export const azir_milio: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     milio: {
       ko: [],

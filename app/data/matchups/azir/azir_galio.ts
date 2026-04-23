@@ -9,7 +9,8 @@ export const azir_galio: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 갈리오 R의 [[SKILL_CHAANEL]]을 끊을 수 있음.", 
+        "아지르 R의 [[KNOCKBACK]]과 갈리오 E의 [[DASH]]은 판정이 다양함. \n 1. 갈리오 E의 후진 단계에 [[KNOCKBACK]]을 맞았을때. \n 1-1. 갈리오의 몸이 벽에서 벗어나고 [[DASH]]이 발동하면 무시하고 [[DASH]] \n 1-2. 갈리오의 몸이 벽에서 벗어나지 못하고 [[DASH]]이 발동하면, 벽에 막혀 [[DASH]]하지 못함. \n 1-3. 갈리오의 몸이 후진 단계에 적 챔피언과 겹쳐지면 [[KNOCKBACK]]과 상관없이 스킬이 적중하고 [[AIRBORNE]]. \n 2. 갈리오 E의 돌진 단계에 [[KNOCKBACK]]을 맞았을때. 갈리오의 스킬 무효화. 즉, [[DASH]] 불가."],
       en: [""],
     },
     galio: {
