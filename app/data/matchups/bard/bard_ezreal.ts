@@ -9,7 +9,8 @@ export const bard_ezreal: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: [
+        "바드 R(존야)로 이즈리얼 E의 대기 단계에 맞아도 [[BLINK]] 단계가 발동."],
       en: [""],
     },
     ezreal: {

@@ -9,7 +9,7 @@ export const bard_ryze: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: ["바드 R(존야)로 라이즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [""],
     },
     ryze: {

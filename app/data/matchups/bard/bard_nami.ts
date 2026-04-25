@@ -9,11 +9,11 @@ export const bard_nami: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: ["바드 E(터널)로 이동할 때 나미 Q(물감옥)로 벽이동을 끊을 수 있음. [[SUSPENDING]]도 남아있음."],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nami: {
-      ko: [],
+      ko: ["나미 Q의 [[SUSPENDING]]으로 바드 E(벽이동)의 [[DASH]]을 끊을 수 있음."],
       en: [],
     },
   },

@@ -13,7 +13,7 @@ export const akshan_belveth: MatchupSummary = {
       en: [""],
     },
     belveth: {
-      ko: [],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [],
     },
   },

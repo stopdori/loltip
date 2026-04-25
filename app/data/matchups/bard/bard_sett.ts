@@ -9,11 +9,11 @@ export const bard_sett: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     sett: {
-      ko: [],
+      ko: ["세트 R의 [[UNSTOPPABLE]] [[DASH]]으로 바드 R(존야)을 무시할 수 있음."],
       en: [],
     },
   },

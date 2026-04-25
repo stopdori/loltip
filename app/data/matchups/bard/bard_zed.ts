@@ -9,8 +9,8 @@ export const bard_zed: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: ["바드 R(존야)로 제드의 W, R의 그림자를 존야 상태로 만들 수 없음."],
     },
     zed: {
       ko: [],

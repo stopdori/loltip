@@ -9,8 +9,9 @@ export const bard_senna: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: ["바드 R(존야)을 세나 E의 위장 상태에 맞혀도 스킬이 해제되지 않음.", 
+        "바드 R(존야)을 세나 W가 맞은 대상에게 사용해도 세나 W가 발동."],
+      en: [],
     },
     senna: {
       ko: [],

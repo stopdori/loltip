@@ -9,11 +9,11 @@ export const bard_udyr: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     udyr: {
-      ko: [],
+      ko: ["우디르 [[EMPOWERED]] E의 [[CC_IMMUNE]]으로 바드 Q의 [[STUN]], R(존야)을 무시할 수 있음."],
       en: [],
     },
   },

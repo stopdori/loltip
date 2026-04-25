@@ -9,11 +9,11 @@ export const bard_xayah: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     xayah: {
-      ko: [],
+      ko: ["자야 R의 [[UNTARGETABLE]]로 바드 R(존야)을 무시할 수 있음."],
       en: [],
     },
   },

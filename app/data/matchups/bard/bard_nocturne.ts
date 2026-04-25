@@ -9,11 +9,11 @@ export const bard_nocturne: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nocturne: {
-      ko: [],
+      ko: ["녹턴 W의 [[SPELLSHIELD]]로 바드 R(존야)을 막을 수 있음."],
       en: [],
     },
   },

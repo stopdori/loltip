@@ -9,11 +9,11 @@ export const bard_morgana: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     morgana: {
-      ko: [],
+      ko: ["모르가나 E의 [[CC_IMMUNE]]으로 바드 R(존야)를 막을 수 있음."],
       en: [],
     },
   },

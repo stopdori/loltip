@@ -9,7 +9,7 @@ export const bard_jinx: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: ["바드 R(존야)로 징크스 E([[TRAP]])를 존야 상태로 만들 수 없음."],
       en: [""],
     },
     jinx: {

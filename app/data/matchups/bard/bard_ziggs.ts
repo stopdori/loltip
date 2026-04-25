@@ -9,8 +9,8 @@ export const bard_ziggs: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     ziggs: {
       ko: [],

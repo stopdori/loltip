@@ -13,7 +13,8 @@ export const aatrox_belveth: MatchupSummary = {
       en: ["Aatrox's Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Bel'Veth's Q [[DASH]] and W [[SKILL_CHANNEL]]."],
     },
     belveth: {
-      ko: ["벨베스 R의 [[CAST_COMMIT]]으로 아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]]에 걸려도 시전을 유지할 수 있음."],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음.", 
+        "벨베스 R의 [[CAST_COMMIT]]으로 아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]]으로 끊기지 않음."],
       en: ["Bel'Veth's R [[CAST_COMMIT]] can maintain its cast even when hit by Aatrox's Q [[AIRBORNE]] and W [[GRAB]]."],
     },
   },

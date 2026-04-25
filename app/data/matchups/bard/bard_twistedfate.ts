@@ -9,7 +9,7 @@ export const bard_twistedfate: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: ["바드 R(존야)로 트위스티드 페이트 R2의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [""],
     },
     twistedfate: {

@@ -13,7 +13,8 @@ export const akali_belveth: MatchupSummary = {
       en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Bel'Veth's Q and R [[DASH]]."],
     },
     belveth: {
-      ko: [],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 있음.", 
+        "벨베스 E의 [[HOMING]]으로 아칼리 W의 [[INVISIBILITY]]을 공격 할 수 있음."],
       en: [],
     },
   },
