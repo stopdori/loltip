@@ -9,7 +9,8 @@ export const bard_elise: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: ["바드 Q의 [[STUN]]로 엘리스 거미폼 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
+        "바드 R(존야)로 엘리스 거미폼 Q의 [[DASH]]을 끊을 수 있음. \n 단, Q는 적중함."],
       en: [""],
     },
     elise: {

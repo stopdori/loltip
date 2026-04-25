@@ -9,7 +9,7 @@ export const bard_rammus: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: ["바드 Q의 [[STUN]], R(존야)로 람머스 Q의 [[TRANSFORM]]을 끊을 수 있음."],
       en: [""],
     },
     rammus: {

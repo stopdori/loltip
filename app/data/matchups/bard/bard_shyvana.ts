@@ -9,8 +9,8 @@ export const bard_shyvana: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     shyvana: {
       ko: [],

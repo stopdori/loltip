@@ -9,7 +9,7 @@ export const bard_kayle: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: ["바드 R(존야)로 케일 R([[INVULNERABLE]])에 맞히면 존야 상태가 되고, R의 광역 피해도 발동함."],
       en: [""],
     },
     kayle: {

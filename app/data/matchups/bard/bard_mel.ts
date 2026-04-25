@@ -9,11 +9,12 @@ export const bard_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: ["멜 W가 바드 Q 반사 가능."],
-      en: ["Mel’s W reflects Bard’s Q."],
+      ko: [],
+      en: [],
     },
     mel: {
-      ko: [],
+      ko: ["멜 W([[REFLECT]])로 바드 평타, Q의 [[PROJECTILE]]를 반사할 수 있음.", 
+        "멜 W([[REFLECT]])로 바드 R(존야)를 반사할 수 없음."],
       en: [],
     },
   },

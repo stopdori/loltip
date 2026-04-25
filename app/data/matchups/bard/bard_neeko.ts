@@ -9,8 +9,8 @@ export const bard_neeko: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: ["바드 R(존야)로 니코 W의 [[CLONE]]을 존야 상태로 만들 수 없음."],
+      en: [],
     },
     neeko: {
       ko: [],

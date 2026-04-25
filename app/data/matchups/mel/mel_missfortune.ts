@@ -9,11 +9,11 @@ export const mel_missfortune: MatchupSummary = {
   },
   highlightsByChamp: {
     mel: {
-      ko: ["멜 W가 미스포츈 Q R 반사 가능."],
-      en: ["Mel’s W reflects {Champion}’s Q R"],
+      ko: [],
+      en: [],
     },
     missfortune: {
-      ko: [],
+      ko: ["멜 W([[REFLECT]])로 미스포츈 Q, R의 [[PROJECTILE]]를 반사할 수 있음."],
       en: [],
     },
   },

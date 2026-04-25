@@ -9,8 +9,8 @@ export const bard_zoe: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: ["바드 Q의 [[STUN]], R(존야)로 조이 R의 [[BLINK]]을 끊을 수 없음."],
+      en: [],
     },
     zoe: {
       ko: [],

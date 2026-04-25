@@ -9,8 +9,8 @@ export const bard_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: ["바드 R(존야)로 말파이트 R의 [[UNSTOPPABLE]] [[DASH]]을 끊을 수 없음."],
+      en: [],
     },
     malphite: {
       ko: [],

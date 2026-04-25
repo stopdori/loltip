@@ -9,8 +9,8 @@ export const bard_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: ["바드 R(존야)로 하이머딩거 Q(포탑)을 멈출 수 있음."],
+      en: [],
     },
     heimerdinger: {
       ko: [],

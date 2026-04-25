@@ -9,11 +9,11 @@ export const bard_sivir: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     sivir: {
-      ko: [],
+      ko: ["시비르 E([[SPELL_SHIELD]])로 바드 R(존야)을 무시할 수 있음."],
       en: [],
     },
   },

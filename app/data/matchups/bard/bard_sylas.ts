@@ -9,7 +9,7 @@ export const bard_sylas: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: ["바드 Q의 [[STUN]], R(존야)로 사일러스 W, E1, E2의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     sylas: {

@@ -30,7 +30,7 @@ const belveth: ChampData = {
     R: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS", "DMG_TRUE", "PROC"] },
       { label: { ko: "공허 빨판상어 소환", en: "Summon Void Remora" }, tags: ["ST_CONDITIONAL", "SUMMON", "DMG_PHYSICAL", "ALLY_TP_OK"] },
-      { label: { ko: "액티브", en: "Active"  }, tags: ["ST_CONDITIONAL", "BUFF_FORM", "CAST_COMMIT", "LOCKED", "AOE", "DMG_TRUE", "MOBILITY"] },
+      { label: { ko: "액티브", en: "Active"  }, tags: ["ST_CONDITIONAL", "BUFF_FORM", "TIMING_AFTERCAST", "LOCKED", "AOE", "DMG_TRUE", "MOBILITY"] },
     ] },
   },
 
@@ -54,7 +54,7 @@ const belveth: ChampData = {
           "W로 적 챔피언을 맞히면 \n 맞힌 방향의 Q 쿨타임 초기화.", 
           "E는 [[DMG_REDUCE]], [[LIFESTEAL]] \n 체력이 낮은대상 부터 공격",
           "R은 [[PASSIVE_BONUS]]로 \n 같은 대상을 두 대 때릴 때마다 [[DMG_TRUE]] 중첩. \n 1000번 때리면 500번 중첩.", 
-          "R은 킬관여 시 공허 산호가 떨어지고 \n R을 사용하면 벨베스가 본모습으로 변신하면서 \n 여러가지 버프와 주변에 광역 [[SLOW]], [[DMG_TRUE]]. \n R을 사용하는 도중에는 [[CAST_COMMIT]]. \n 본모습일 때 Q로 [[WALL_HOP]] 가능.",
+          "R은 킬관여 시 공허 산호가 떨어지고 \n R을 사용하면 벨베스가 본모습으로 변신하면서 \n 여러가지 버프와 주변에 광역 [[SLOW]], [[DMG_TRUE]]. \n R은 [[SKILL_CHANNEL]]이 아닌 [[TIMING_AFTERCAST]]이 긴것. \n 본모습일 때 Q로 [[WALL_HOP]] 가능.",
         ],
 
         en: [
@@ -71,10 +71,11 @@ const belveth: ChampData = {
 
       note2: {
         ko: [
-        "P [[STACKING]]은 적 챔피언, 에픽 킬 관여시 2스택. \n 대포, 정글몹 킬 관여 시 1스택. \n R로 공허산호 주울 때 1스택.\n 대상 주변에 보랏빛 띠가 생기면 조건 충족.", "R(본모습) 상태일 때 주변에서 죽는 미니언들은 \n 공허 빨판상어로 소환됨. \n 적군, 아군 미니언 모두 태어남. \n 빨판상어에 [[ALLY_TP_OK]] 가능.", "[[W_FLASH]] 안됨", "E 시전중에 CC맞으면 풀림"
+        "P [[STACKING]]은 적 챔피언, 에픽 킬 관여시 2스택. \n 대포, 정글몹 킬 관여 시 1스택. \n R로 공허산호 주울 때 1스택.\n 대상 주변에 보랏빛 띠가 생기면 조건 충족.", "E는 [[INVISIBILITY]]으로 보이지 않아도 공격할 수 있음.", "R(본모습) 상태일 때 주변에서 죽는 미니언들은 \n 공허 빨판상어로 소환됨. \n 적군, 아군 미니언 모두 태어남. \n 빨판상어에 [[ALLY_TP_OK]] 가능.", "[[W_FLASH]] 안됨", "E 시전중에 CC맞으면 풀림"
       ],
         en: [
           "P [[STACKING]] grants 2 stacks on champion/epic kills, 1 stack on cannon/jungle kills, and 1 stack when picking up Void Coral.\nA purple ring around a target means the condition is met.",
+          "E can attack targets even if they are [[INVISIBILITY]].",
           "Minions that die near Bel'Veth in R (true form) are reborn as Void Remoras — both allied and enemy minions.\n[[ALLY_TP_OK]] onto Remoras is possible.",
           "[[W_FLASH]] not possible",
           "E cancels if hit by CC during cast",

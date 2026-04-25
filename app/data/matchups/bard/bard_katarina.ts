@@ -9,7 +9,7 @@ export const bard_katarina: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [""],
+      ko: ["바드 Q의 [[STUN]], R(존야)로 카타리나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [""],
     },
     katarina: {
