@@ -15,7 +15,7 @@ function getMtime(filePath: string): Date {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.loltip.com";
+  const baseUrl = "https://loltip.com";
   const root = process.cwd();
 
   const urls: MetadataRoute.Sitemap = [];

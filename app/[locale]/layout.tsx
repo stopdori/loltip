@@ -8,7 +8,7 @@ import Script from "next/script";
 
 import type { Metadata } from "next";
 
-const BASE_URL = "https://www.loltip.com";
+const BASE_URL = "https://loltip.com";
 
 export async function generateMetadata({
   params,
