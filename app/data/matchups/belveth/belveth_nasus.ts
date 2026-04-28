@@ -9,8 +9,8 @@ export const belveth_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nasus: {
       ko: [],

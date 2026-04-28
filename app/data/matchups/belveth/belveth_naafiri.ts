@@ -9,7 +9,7 @@ export const belveth_naafiri: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 나피리 E, R의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [""],
     },
     naafiri: {

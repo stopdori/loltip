@@ -9,8 +9,8 @@ export const belveth_kogmaw: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kogmaw: {
       ko: [],

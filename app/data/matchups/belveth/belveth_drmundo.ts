@@ -9,8 +9,8 @@ export const belveth_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     drmundo: {
       ko: [],

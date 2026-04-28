@@ -9,8 +9,8 @@ export const belveth_zed: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zed: {
       ko: [],

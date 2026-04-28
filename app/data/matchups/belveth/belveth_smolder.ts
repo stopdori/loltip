@@ -9,7 +9,7 @@ export const belveth_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 스몰더 E(벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [""],
     },
     smolder: {

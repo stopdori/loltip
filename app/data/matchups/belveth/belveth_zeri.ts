@@ -9,8 +9,8 @@ export const belveth_zeri: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
-      en: [""],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 제리 E의 [[DASH]]을 끊을 수 있음."],
+      en: [],
     },
     zeri: {
       ko: [],

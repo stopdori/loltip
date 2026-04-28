@@ -9,7 +9,7 @@ export const belveth_corki: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 코르키 W의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     corki: {

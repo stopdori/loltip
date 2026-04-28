@@ -9,8 +9,8 @@ export const belveth_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     teemo: {
       ko: [],
