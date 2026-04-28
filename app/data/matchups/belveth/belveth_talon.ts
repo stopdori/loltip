@@ -9,7 +9,7 @@ export const belveth_talon: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 탈론 Q, E의 [[DASH]]을 끊을 수 있음."],
       en: [""],
     },
     talon: {

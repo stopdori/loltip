@@ -9,7 +9,7 @@ export const belveth_syndra: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
+      ko: ["벨베스 R은 즉시 발동에다 [[TIMING_AFTERCAST]]이 있는 것으로 신드라 EQ의 [[KNOCKBACK]], [[STUN]]로 끊기지 않음. \n 단, [[KNOCKBACK]], [[STUN]]은 남아있음."],
       en: [""],
     },
     syndra: {

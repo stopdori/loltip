@@ -9,8 +9,8 @@ export const belveth_lux: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
-      en: [""],
+      ko: ["벨베스 R은 즉시 발동에다 [[TIMING_AFTERCAST]]이 있는 것으로 럭스 Q의 [[ROOT]]으로 끊기지 않음. \n 단, [[ROOT]]은 남아있음."],
+      en: [],
     },
     lux: {
       ko: [],

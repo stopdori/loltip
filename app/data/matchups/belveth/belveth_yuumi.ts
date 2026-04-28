@@ -9,7 +9,7 @@ export const belveth_yuumi: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 유미 W의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [""],
     },
     yuumi: {

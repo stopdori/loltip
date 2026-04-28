@@ -76,9 +76,12 @@ const akali: ChampData = {
 
       note2: {
         ko: [
-        "스킬을 맞혔을 때 장판은 상대 중심으로 생김.", "W는 장막 안에서만 [[INVISIBILITY]]. \n\n [[REVEALED]]이 있는 스킬 (예 - 리신E) \n 스킬을 맞고 숨으면 보임. \n 맞기전에 숨으면 안보임. \n [[TRUE_SIGHT]](예 - 리신 Q)는 무조건 보임.", "E1은 [[TRUE_SIGHT]]. \n E1을 [[INVISIBILITY]] 대상에게 맞히면 보이고 \n E2로 도착하면 더 이상 모습이 보이지 않음. \n\n E2는 [[UNTARGETABLE]] 대상에게는 사용 불가.",
+        "스킬을 맞혔을 때 장판은 상대 중심으로 생김.", 
+        "W는 장막 안에서만 [[INVISIBILITY]]. \n\n [[REVEALED]]이 있는 스킬 (예 - 리신E) \n 스킬을 맞고 숨으면 보임. \n 맞기전에 숨으면 안보임. \n [[TRUE_SIGHT]](예 - 리신 Q)는 무조건 보임.", 
+        "[[E_FLASH]]는 E1에 가능 \n 1. E를 누르고 점멸을 빠르게 누르면 표창을 던지고 뒤로 [[DASH]]하고, 2. E를 누르고 점멸을 천천히 누르면 표창을 던지고 [[DASH]]하지 않음.",
+        "E1은 [[TRUE_SIGHT]]. \n E1을 [[INVISIBILITY]] 대상에게 맞히면 보이고 \n E2로 도착하면 더 이상 모습이 보이지 않음. \n\n E2는 [[UNTARGETABLE]] 대상에게는 사용 불가.",
       ],
-        en: ["The zone spawns centered on the enemy hit.", "W grants [[INVISIBILITY]] only inside the shroud.\n\nIf hit by a [[REVEALED]] ability (e.g. Lee Sin E) after hiding, you become visible.\nHiding before being hit keeps you hidden.\n[[TRUE_SIGHT]] (e.g. Lee Sin Q) always reveals you.", "E1 applies [[TRUE_SIGHT]].\nIf E1 hits an [[INVISIBILITY]] target, they become visible —\nbut once E2 arrives, they are no longer revealed.\n\nE2 cannot target [[UNTARGETABLE]] units."]
+        en: ["The zone spawns centered on the enemy hit.", "W grants [[INVISIBILITY]] only inside the shroud.\n\nIf hit by a [[REVEALED]] ability (e.g. Lee Sin E) after hiding, you become visible.\nHiding before being hit keeps you hidden.\n[[TRUE_SIGHT]] (e.g. Lee Sin Q) always reveals you.", "[[E_FLASH]] is possible on E1. \n 1. Press E then quickly press Flash: throws a shuriken and [[DASH]]es backward. \n 2. Press E then slowly press Flash: throws a shuriken without [[DASH]]ing.", "E1 applies [[TRUE_SIGHT]].\nIf E1 hits an [[INVISIBILITY]] target, they become visible —\nbut once E2 arrives, they are no longer revealed.\n\nE2 cannot target [[UNTARGETABLE]] units."]
         },
     },
     vision: { ko: [], en: [] },

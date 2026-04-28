@@ -9,7 +9,7 @@ export const belveth_katarina: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 카타리나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [""],
     },
     katarina: {

@@ -9,11 +9,11 @@ export const belveth_yasuo: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: ["야스오 W(장막)가 벨베스 W 막을 수 있다는 소문을 들음. 안되면 제보 바람."],
-      en: ["There are rumors that Yasuo's W (Wind Wall) can block Bel'Veth's W. Please report if this is not the case"],
+      ko: [],
+      en: [],
     },
     yasuo: {
-      ko: [],
+      ko: ["야스오 W([[WINDSHIELD]])로 벨베스 평타, Q, W, E, R을 막을 수 없음."],
       en: [],
     },
   },

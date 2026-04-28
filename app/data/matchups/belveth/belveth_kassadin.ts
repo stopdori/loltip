@@ -9,8 +9,8 @@ export const belveth_kassadin: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kassadin: {
       ko: [],

@@ -9,7 +9,7 @@ export const belveth_missfortune: MatchupSummary = {
   },
   highlightsByChamp: {
     belveth: {
-      ko: [""],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 미스포츈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: [""],
     },
     missfortune: {
