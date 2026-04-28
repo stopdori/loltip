@@ -5,14 +5,19 @@ import { type NextRequest, NextResponse } from "next/server";
 const intlMiddleware = createMiddleware(routing);
 
 export default function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  if (!pathname.startsWith("/ko") && !pathname.startsWith("/en")) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/ko" + pathname;
+    return NextResponse.redirect(url, 308);
+  }
+
   const response = intlMiddleware(request) ?? NextResponse.next();
-  response.headers.set("x-pathname", request.nextUrl.pathname);
+  response.headers.set("x-pathname", pathname);
   return response;
 }
 
 export const config = {
-  // 기존 라우트는 건드리지 않음 - locale prefix가 붙은 경로만 처리
-  matcher: [
-    "/(ko|en)/:path*",
-  ],
+  matcher: ["/((?!_next|api|.*\\..*).*)"],
 };
