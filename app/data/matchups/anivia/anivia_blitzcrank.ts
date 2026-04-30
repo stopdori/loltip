@@ -13,8 +13,8 @@ export const anivia_blitzcrank: MatchupSummary = {
       en: ["Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt an ally being pulled by Blitzcrank's Q [[GRAB]], effectively rescuing them. \n (theoretically)"],
     },
     blitzcrank: {
-      ko: [],
-      en: [],
+      ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Blitzcrank's Q [[GRAB]], E [[AIRBORNE]], and R [[SILENCE]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
     },
   },
 };

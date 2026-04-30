@@ -13,8 +13,8 @@ export const ambessa_brand: MatchupSummary = {
       en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Brand's Q [[STUN]]. \n However, the [[STUN]] still applies after [[UNSTOPPABLE]] ends."],
     },
     brand: {
-      ko: [],
-      en: [],
+      ko: ["브랜드 Q의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Brand's Q [[STUN]] cannot interrupt Ambessa's P [[DASH]]. \n However, the [[STUN]] effect still applies."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const annie_brand: MatchupSummary = {
       en: ["Annie's R(Tibbers) [[SUMMON]] can block Brand's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     brand: {
-      ko: [],
-      en: [],
+      ko: ["브랜드 R의 [[CHAIN]]는 애니 R의 [[SUMMON]]된 티버에도 튕길 수 있음."],
+      en: ["Brand's R [[CHAIN]] can also bounce off Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

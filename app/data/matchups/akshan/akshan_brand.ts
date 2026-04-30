@@ -9,12 +9,12 @@ export const akshan_brand: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: [""],
-      en: [""],
-    },
-    brand: {
       ko: [],
       en: [],
+    },
+    brand: {
+      ko: ["브랜드 Q의 [[STUN]]로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Brand's Q [[STUN]] can interrupt Akshan's E and R [[SKILL_CHANNEL]]."],
     },
   },
 };
