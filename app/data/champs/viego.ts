@@ -59,9 +59,9 @@ const viego: ChampData = {
 
       note2: {
         ko: [
-        "P로 챔피언을 지배했다면\n적에게 다가갈 때 [[MS_UP]]", "벽에 E쓰면 암흑시야여도 보임\n정글링할때 벽에 E를 쓰면\n상대가 내 위치를 알 수 있음.", "R2 설명에 [[UNSTOPPABLE]]가 없지만, 스킬로 날아갈 때 비에고 체력바 위에 [[UNSTOPPABLE]]가 생김. 도착하면 끝.", "R의 [[SLOW]]는 체력이 가장 낮은 적 챔피언에게만 적용", "R을 사용가능 할때, 사용하지 않고 영혼을 흡수하고 R을 사용하면, R의 쿨타임이 3초.", "R 스킬은 2단계로 나뉨 준비/순간이동.\n준비단계에서 비에고가 맞은 CC는 유효 하지만\n순간이동 단계가 발동되어 이동하는 것.\n순간이동 단계에는 CC 저항력 없음.\n순간이동했을 때 CC의 지속시간이 남아있다면 CC 효과 유효."
+        "P로 챔피언을 지배했다면\n적에게 다가갈 때 [[MS_UP]]", "벽에 E쓰면 암흑시야여도 보임\n정글링할때 벽에 E를 쓰면\n상대가 내 위치를 알 수 있음.", "R2 설명에 [[UNSTOPPABLE]]가 없지만, 스킬로 날아갈 때 비에고 체력바 위에 [[UNSTOPPABLE]]가 생김. 도착하면 끝.", "R의 [[SLOW]]는 체력이 가장 낮은 적 챔피언에게만 적용", "R을 사용가능 할때, 사용하지 않고 영혼을 흡수하고 R을 사용하면, R의 쿨타임이 3초.", "R 스킬은 2단계로 나뉨 준비/순간이동.\n준비단계에서 비에고가 맞은 CC는 유효 하지만\n[[BLINK]]단계가 발동되어 이동하는 것.\n[[BLINK]]단계에는 CC 저항력 없음.\n순간이동했을 때 CC의 지속시간이 남아있다면 CC 효과 유효."
       ],
-        en: ["P grants [[MS_UP]] when approaching an enemy after possessing a champion", "Using E near a wall reveals Viego's position even through fog of war — be careful when jungling", "R [[SLOW]] only applies to the enemy champion with the lowest HP"]
+        en: ["P grants [[MS_UP]] when approaching an enemy after possessing a champion", "Using E near a wall reveals Viego's position even through fog of war — be careful when jungling", "[[UNSTOPPABLE]] doesn't appear in R's description, but it shows above Viego's HP bar while flying. It ends upon arrival.", "R's [[SLOW]] only applies to the enemy champion with the lowest HP", "If R is available but you absorb a soul first and then use R, R's cooldown becomes 3 seconds.", "R has two phases: wind-up / blink.\nCC during the wind-up phase is valid, but the [[BLINK]] phase still triggers and Viego moves.\nThere is no CC immunity during the [[BLINK]] phase.\nIf CC duration remains when Viego blinks, the CC effect still applies."]
         },
     },
     vision: { ko: [], en: [] },

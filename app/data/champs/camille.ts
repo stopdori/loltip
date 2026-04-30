@@ -79,7 +79,7 @@ const camille: ChampData = {
 
       note2: {
         ko: [
-        "E스킬은 네단계로 나뉨 투척/그렙/대기/돌진 \n 투척단계에 카밀이 맞은 CC는 유효하지만 \n 그렙단계가 발동되어 벽으로 이동. \n 대기 단계까지 CC가 남아있다면 E가 해제됨. \n 그렙/대기 단계에는 CC류를 맞으면 E가 해제." ,"E는 웬만한 생성된 벽에도 사용 가능.", "R은 설명에 [[UNSTOPPABLE]]가 없지만, \n 점프해서 날아갈 때 체력바 위에 [[UNSTOPPABLE]]가 생김.", "R은 시전 한 대상을 범위에 가두고 [[SILENCE]]을 잠깐 걸고, 범위가 펼쳐질 때 근처에 있던 다른 적 챔피언은 범위 밖으로 [[KNOCKBACK]]시킴."
+        "E스킬은 네단계로 나뉨 투척/그렙/대기/돌진 \n 투척단계에 카밀이 맞은 CC는 유효하지만 \n 그렙단계가 발동되어 벽으로 이동. \n 대기단계까지 CC가 남아있다면 E가 해제됨. \n 그렙/대기단계에는 CC류를 맞으면 E가 해제." ,"E는 웬만한 생성된 벽에도 사용 가능.", "R은 설명에 [[UNSTOPPABLE]]가 없지만, \n 점프해서 날아갈 때 체력바 위에 [[UNSTOPPABLE]]가 생김.", "R은 시전 한 대상을 범위에 가두고 [[SILENCE]]을 잠깐 걸고, 범위가 펼쳐질 때 근처에 있던 다른 적 챔피언은 범위 밖으로 [[KNOCKBACK]]시킴."
       ],
         en: [
           "E has four phases: lunge / grapple / wait / dash.\nCC hit during the lunge phase is valid, but the grapple still triggers and Camille moves toward the wall.\nIf CC persists until the wait phase, E is canceled.\nCC during the grapple / wait phase cancels E.",
