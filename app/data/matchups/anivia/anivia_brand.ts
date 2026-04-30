@@ -13,8 +13,8 @@ export const anivia_brand: MatchupSummary = {
       en: [],
     },
     brand: {
-      ko: ["브랜드 R은 애니비아 P(알)에도 튕김."],
-      en: ["Brand's R also bounces off Anivia's P (egg)."],
+      ko: ["브랜드 Q의 [[STUN]]로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음.", "브랜드 R의 [[CHAIN]]는 애니비아 P(알)에도 문제없이 튕김."],
+      en: ["Brand's Q [[STUN]] can interrupt Anivia's R [[SKILL_CHANNEL]].", "Brand's R [[CHAIN]] also bounces off Anivia's P (egg)."],
     },
   },
 };
