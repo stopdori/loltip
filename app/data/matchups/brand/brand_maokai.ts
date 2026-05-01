@@ -9,8 +9,8 @@ export const brand_maokai: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     maokai: {
       ko: [],

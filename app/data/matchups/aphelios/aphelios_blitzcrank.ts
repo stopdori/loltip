@@ -9,8 +9,8 @@ export const aphelios_blitzcrank: MatchupSummary = {
   },
   highlightsByChamp: {
     aphelios: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     blitzcrank: {
       ko: [],
