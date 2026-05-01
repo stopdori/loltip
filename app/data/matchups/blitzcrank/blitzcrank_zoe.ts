@@ -9,8 +9,8 @@ export const blitzcrank_zoe: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["블리츠 Q(그랩)를 조이 R 돌아가는 위치에 사용하면 위협적임"],
-      en: ["Blitz Q is threatening when used in the Joy R return position"],
+      ko: ["블리츠크랭크 Q의 [[GRAB]]으로 조이 R의 [[BLINK]]을 끊을 수 없음. \n 단, 조이 R로 되돌아가는 위치에 [[GRAB]]을 사용하면 상당히 위협적임."],
+      en: [],
     },
     zoe: {
       ko: [],

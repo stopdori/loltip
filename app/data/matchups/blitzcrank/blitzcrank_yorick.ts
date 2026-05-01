@@ -9,8 +9,8 @@ export const blitzcrank_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     yorick: {
       ko: [],

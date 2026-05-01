@@ -13,7 +13,7 @@ export const blitzcrank_yasuo: MatchupSummary = {
       en: ["Yasuo’s W (Wind Wall) can block Blitzcrank’s Q."],
     },
     yasuo: {
-      ko: [],
+      ko: ["야스오 W([[WINDSHIELD]])로 블리츠크랭크 Q의 [[PROJECTILE]]를 막을 수 있음."],
       en: [],
     },
   },

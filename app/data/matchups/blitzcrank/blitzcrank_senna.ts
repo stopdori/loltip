@@ -9,8 +9,8 @@ export const blitzcrank_senna: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     senna: {
       ko: [],

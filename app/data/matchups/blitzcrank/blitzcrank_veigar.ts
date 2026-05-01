@@ -9,8 +9,8 @@ export const blitzcrank_veigar: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     veigar: {
       ko: [],

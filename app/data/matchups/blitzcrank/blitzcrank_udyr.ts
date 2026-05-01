@@ -9,8 +9,8 @@ export const blitzcrank_udyr: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     udyr: {
       ko: [],

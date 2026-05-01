@@ -9,8 +9,8 @@ export const blitzcrank_soraka: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     soraka: {
       ko: [],

@@ -9,8 +9,8 @@ export const blitzcrank_fiddlesticks: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["피들이 블리츠 Q(그랩)을 4번(장신구)으로 막을 수 있음"],
-      en: ["Fiddlesticks can block Blitzcrank's Q (Rocket Grab) with slot 4 (trinket)"],
+      ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]으로 피들스틱 W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: [],
     },
     fiddlesticks: {
       ko: [],

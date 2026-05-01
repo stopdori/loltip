@@ -9,8 +9,8 @@ export const blitzcrank_kassadin: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kassadin: {
       ko: [],

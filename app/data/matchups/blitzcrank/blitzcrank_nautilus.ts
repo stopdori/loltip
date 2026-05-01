@@ -9,8 +9,9 @@ export const blitzcrank_nautilus: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["노틸이 블랭 Q를 맞고, Q(닻줄)이 어떤대상(벽, 챔피언 등등)에 닿으면 그랩이 무시됨."],
-      en: ["If Nautilus is hit by Blitzcrank Q and his Q (Dredge Line) connects to a wall, the grab is negated."],
+      ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]]으로 노틸러스 Q(그렙단계)의 [[DASH]]을 끊을 수 있음.", 
+        "블리츠크랭크 R의 [[SILENCE]]으로 노틸러스 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음."],
+      en: [],
     },
     nautilus: {
       ko: [],

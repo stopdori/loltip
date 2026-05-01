@@ -9,8 +9,9 @@ export const blitzcrank_tristana: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["트리스타나 W(점프)는 선딜레이가 있음. 블랭 Q(그랩)를 맞는중에 W를 시전하면 그랩이 무시됨."],
-      en: ["Tristana W (jump) has a cast delay. If she casts W while being hit by Blitzcrank Q (grab), the grab is negated."],
+      ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]]으로 트리스타나 W의 [[DASH]]을 끊을 수 있음.", 
+        "블리츠크랭크 R의 [[SILENCE]]으로 트리스타나 W의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음."],
+      en: [],
     },
     tristana: {
       ko: [],
