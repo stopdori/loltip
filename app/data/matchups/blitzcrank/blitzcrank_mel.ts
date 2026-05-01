@@ -9,11 +9,11 @@ export const blitzcrank_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["멜 W가 블리츠 Q 반사 가능."],
-      en: ["Mel’s W reflects Blitzcrank’s Q."],
+      ko: [],
+      en: [],
     },
     mel: {
-      ko: [],
+      ko: ["멜 W([[REFLECT]])로 블리츠크랭크 Q의 [[PROJECTILE]]를 반사할 수 있음."],
       en: [],
     },
   },

@@ -9,8 +9,10 @@ export const blitzcrank_galio: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["갈리오 E(돌진)가 블리츠 Q(그랩)를 조건부로 무시 할수있음. 갈리오 E가 뒤로 이동할때 블리츠 그랩에 맞으면 무시하고 빠져나감."],
-      en: ["Galio E (dash) can conditionally negate Blitzcrank Q (grab). If Galio is hit by Blitzcrank’s grab while moving backward during E, he ignores the grab and escapes."],
+      ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]]으로 갈리오 E(돌진단계)의 [[DASH]]을 끊을 수 있음.", 
+        "블리츠크랭크 R의 [[SILENCE]]으로 갈리오 E의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음.", 
+        "블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]으로 갈리오 W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: [],
     },
     galio: {
       ko: [],
