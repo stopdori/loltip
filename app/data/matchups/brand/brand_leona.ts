@@ -9,8 +9,8 @@ export const brand_leona: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     leona: {
       ko: [],

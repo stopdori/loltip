@@ -9,8 +9,8 @@ export const aphelios_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     aphelios: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     belveth: {
       ko: [],
