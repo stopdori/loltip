@@ -53,9 +53,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       ...(description && { description }),
-      url: `https://www.loltip.com/matchup/${canonical}`,
+      url: `https://loltip.com/matchup/${canonical}`,
       type: "website",
-      images: [{ url: "https://www.loltip.com/og-image.png", width: 1200, height: 630 }],
+      images: [{ url: "https://loltip.com/og-image.png", width: 1200, height: 630 }],
     },
   };
 }
@@ -103,13 +103,13 @@ export default async function Page({ params, searchParams }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "홈", item: "https://www.loltip.com" },
-      { "@type": "ListItem", position: 2, name: "챔피언 목록", item: "https://www.loltip.com/champ" },
+      { "@type": "ListItem", position: 1, name: "홈", item: "https://loltip.com" },
+      { "@type": "ListItem", position: 2, name: "챔피언 목록", item: "https://loltip.com/champ" },
       {
         "@type": "ListItem",
         position: 3,
         name: `${champA.ko} vs ${champB.ko} 매치업`,
-        item: `https://www.loltip.com/matchup/${canonical}`,
+        item: `https://loltip.com/matchup/${canonical}`,
       },
     ],
   };

@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/*?side=', '/*?first=', '/*?me=', '/*?enemy='],
       },
     ],
-    sitemap: 'https://www.loltip.com/sitemap.xml',
-    host: 'https://www.loltip.com',
+    sitemap: 'https://loltip.com/sitemap.xml',
+    host: 'https://loltip.com',
   }
 }

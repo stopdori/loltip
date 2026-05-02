@@ -9,7 +9,7 @@ const nextConfig = {
       {
         source: "/:path*",
         has: [{ type: "host", value: "loltip.vercel.app" }],
-        destination: "https://www.loltip.com/:path*",
+        destination: "https://loltip.com/:path*",
         permanent: true,
       },
 
