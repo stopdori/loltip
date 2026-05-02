@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       ...(description && { description }),
-      url: `https://loltip.com/matchup/${canonical}`,
+      url: `https://loltip.com/${locale}/matchup/${canonical}`,
       type: "website",
       images: [{ url: "https://loltip.com/og-image.png", width: 1200, height: 630 }],
     },
