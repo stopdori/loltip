@@ -99,9 +99,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${champ.en} Champion Guide | LOLTIP`,
       description: `${champ.en} champion mechanics and matchup breakdown.`,
-      url: `https://www.loltip.com/champ/${champId}`,
+      url: `https://loltip.com/champ/${champId}`,
       type: "website",
-      images: [{ url: "https://www.loltip.com/og-image.png", width: 1200, height: 630 }],
+      images: [{ url: "https://loltip.com/og-image.png", width: 1200, height: 630 }],
     },
   };
 }
@@ -159,19 +159,19 @@ export default async function Page(props: Props) {
         "@type": "ListItem",
         position: 1,
         name: "홈",
-        item: "https://www.loltip.com",
+        item: "https://loltip.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "챔피언 목록",
-        item: "https://www.loltip.com/champ",
+        item: "https://loltip.com/champ",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: `${champInfo.en} Champion Guide`,
-        item: `https://www.loltip.com/champ/${champId}`,
+        item: `https://loltip.com/champ/${champId}`,
       },
     ],
   };
