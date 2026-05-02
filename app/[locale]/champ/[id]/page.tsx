@@ -79,7 +79,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
+  const { locale, id } = await params;
   const champId = id.toLowerCase();
 
   const champ = CHAMPIONS.find(c => c.id === champId);
@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${champ.en} Champion Guide – Skills, Mechanics & Matchups | LOLTIP`,
     description: `${champ.en} skill mechanics, CC interactions, and matchup tips for League of Legends. Learn what abilities ${champ.en} can interrupt, block, or counter.`,
     alternates: {
-      canonical: `https://www.loltip.com/champ/${champId}`,
+      canonical: `https://loltip.com/${locale}/champ/${champId}`,
     },
     openGraph: {
       title: `${champ.en} Champion Guide | LOLTIP`,
