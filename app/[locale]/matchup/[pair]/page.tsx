@@ -104,12 +104,12 @@ export default async function Page({ params, searchParams }: Props) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "홈", item: "https://loltip.com" },
-      { "@type": "ListItem", position: 2, name: "챔피언 목록", item: "https://loltip.com/champ" },
+      { "@type": "ListItem", position: 2, name: "챔피언 목록", item: `https://loltip.com/${locale}/champ` },
       {
         "@type": "ListItem",
         position: 3,
         name: `${champA.ko} vs ${champB.ko} 매치업`,
-        item: `https://loltip.com/matchup/${canonical}`,
+        item: `https://loltip.com/${locale}/matchup/${canonical}`,
       },
     ],
   };
