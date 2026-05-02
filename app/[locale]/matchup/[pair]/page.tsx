@@ -28,7 +28,7 @@ function stripTags(text: string, lang: Lang): string {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { pair } = await params;
+  const { locale, pair } = await params;
   const parts = pair.split("-vs-");
   if (parts.length !== 2) return {};
 
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     ...(description && { description }),
     alternates: {
-      canonical: `https://www.loltip.com/matchup/${canonical}`,
+      canonical: `https://loltip.com/${locale}/matchup/${canonical}`,
     },
     openGraph: {
       title,
