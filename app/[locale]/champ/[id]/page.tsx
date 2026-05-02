@@ -99,7 +99,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${champ.en} Champion Guide | LOLTIP`,
       description: `${champ.en} champion mechanics and matchup breakdown.`,
-      url: `https://loltip.com/champ/${champId}`,
+      url: `https://loltip.com/${locale}/champ/${champId}`,
       type: "website",
       images: [{ url: "https://loltip.com/og-image.png", width: 1200, height: 630 }],
     },
