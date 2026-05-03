@@ -14,8 +14,8 @@ export const ashe_belveth: MatchupSummary = {
       en: ["Ashe's R [[STUN]] cannot interrupt Bel'Veth's Q [[DASH]]. \n However, the [[STUN]] still applies.", "Ashe's R [[STUN]] can interrupt Bel'Veth's E [[SKILL_CHANNEL]]."],
     },
     belveth: {
-      ko: [],
-      en: [],
+      ko: ["벨베스 R은 즉시 발동에다 [[TIMING_AFTERCAST]]이 있는 것으로 애쉬 Q의 [[STUN]]로 끊기지 않음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Bel'Veth's R is instant with [[TIMING_AFTERCAST]], so it cannot be interrupted by Ashe's Q [[STUN]]. \n However, the [[STUN]] still applies."],
     },
   },
 };

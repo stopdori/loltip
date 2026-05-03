@@ -17,8 +17,10 @@ export const aurelionsol_belveth: MatchupSummary = {
         "Aurelion Sol's R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Bel'Veth's E [[SKILL_CHANNEL]]."],
     },
     belveth: {
-      ko: [],
-      en: [],
+      ko: ["벨베스 W의 [[AIRBORNE]]으로 아우렐리온 솔 Q, W의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "벨베스 R은 즉시 발동에다 [[TIMING_AFTERCAST]]이 있는 것으로 아우렐리온 솔 R의 [[STUN]], [[EMPOWERED]] R의 [[AIRBORNE]]으로 끊기지 않음. \n 단, [[STUN]], [[AIRBORNE]]은 남아있음."],
+      en: ["Bel'Veth's W [[AIRBORNE]] can interrupt Aurelion Sol's Q and W [[SKILL_CHANNEL]].",
+        "Bel'Veth's R is instant with [[TIMING_AFTERCAST]], so it cannot be interrupted by Aurelion Sol's R [[STUN]] or [[EMPOWERED]] R [[AIRBORNE]]. \n However, [[STUN]] and [[AIRBORNE]] still apply."],
     },
   },
 };

@@ -10,7 +10,7 @@ export const aurora_braum: MatchupSummary = {
   highlightsByChamp: {
     aurora: {
       ko: ["오로라 E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 브라움 P의 [[STUN]], R의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
-      en: [],
+      en: ["Aurora's E (ready phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Braum's P [[STUN]] and R [[AIRBORNE]] and continue [[DASH]]ing. \n However, the [[STUN]] still applies."],
     },
     braum: {
       ko: ["브라움 E(방패)로 오로라 평타, Q1, E, R을 막을([[DAMAGE_NULLIFY]]) 수 있음.\n단, Q1은 데미지가 들어오지 않지만 Q2는 데미지가 들어옴\n오로라 R은 중심 부분에 E(방패)를 들어야 [[DAMAGE_NULLIFY]]" ,"브라움 E(방패)로 오로라 평타, Q1, Q2를 [[INTERCEPT_PROJECTILE]] 할 수 있음.\n단, 오로라가 Q2를 사용할 수 있음", "브라움 P의 [[STUN]]로 오로라 W, E를 끊을 수 없음. 단, [[STUN]]은 남아있음", "브라움 R의 [[AIRBORNE]]으로 오로라 W, E(후진단계)를 끊을 수 있음."],

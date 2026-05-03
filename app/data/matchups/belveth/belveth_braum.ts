@@ -11,7 +11,8 @@ export const belveth_braum: MatchupSummary = {
     belveth: {
       ko: ["벨베스 W의 [[AIRBORNE]]으로 브라움 W의 [[DASH]]을 끊을 수 있음.", 
         "벨베스 R은 즉시 발동에다 [[TIMING_AFTERCAST]]이 있는 것으로 브라움 P의 [[STUN]]로 끊기지 않음. \n 단, [[STUN]]은 남아있음."],
-      en: [],
+      en: ["Bel'Veth's W [[AIRBORNE]] can interrupt Braum's W [[DASH]].",
+        "Bel'Veth's R is instant with [[TIMING_AFTERCAST]], so it cannot be interrupted by Braum's P [[STUN]]. \n However, the [[STUN]] still applies."],
     },
     braum: {
       ko: ["브라움 E(방패)로 벨베스 평타, Q, W, E(처음 한틱), R을 막을([[DAMAGE_NULLIFY]]) 수 있음", "브라움 P의 [[STUN]]로 벨베스 Q를 끊을 수 없음. 단, [[STUN]]은 남아있음", "브라움 R의 [[AIRBORNE]]으로 벨베스 Q를 끊을 수 있음"],
