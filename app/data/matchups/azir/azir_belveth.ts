@@ -9,8 +9,8 @@ export const azir_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: ["아지르 R의 [[KNOCKBACK]]으로 벨베스 Q의 [[DASH]], E의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
-      en: ["Azir's R [[KNOCKBACK]] can interrupt Bel'Veth's Q [[DASH]] and E [[SKILL_CHAANEL]]."],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 벨베스 Q의 [[DASH]], E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Azir's R [[KNOCKBACK]] can interrupt Bel'Veth's Q [[DASH]] and E [[SKILL_CHANNEL]]."],
     },
     belveth: {
       ko: ["벨베스 W의 [[AIRBORNE]]으로 아지르 E의 [[DASH]]을 끊을 수 있음.", 

@@ -9,8 +9,8 @@ export const brand_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 R의 [[CHAIN]]는 하이머딩거 Q, RQ의 [[SUMMON]]된 포탑에 튕길 수 있음."],
+      en: ["Brand's R [[CHAIN]] can bounce off Heimerdinger's Q and RQ [[SUMMON]]ed turrets."],
     },
     heimerdinger: {
       ko: [],

@@ -13,8 +13,8 @@ export const ahri_diana: MatchupSummary = {
       en: ["Ahri's E [[CHARM]] can interrupt Diana's E [[DASH]]."],
     },
     diana: {
-      ko: ["다이애나 R의 [[GARB]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Diana's R [[GARB]] can interrupt Ahri's R [[DASH]]."],
+      ko: ["다이애나 R의 [[GRAB]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["Diana's R [[GRAB]] can interrupt Ahri's R [[DASH]]."],
     },
   },
 };
