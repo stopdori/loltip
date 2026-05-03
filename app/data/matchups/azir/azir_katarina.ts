@@ -9,8 +9,8 @@ export const azir_katarina: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: ["아지르 R의 [[KNOCKBACK]]으로 카타리나 R의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
-      en: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 카타리나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Azir's R [[KNOCKBACK]] can interrupt Katarina's R [[SKILL_CHANNEL]]."],
     },
     katarina: {
       ko: [],

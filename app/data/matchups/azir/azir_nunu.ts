@@ -9,8 +9,8 @@ export const azir_nunu: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: ["아지르 R의 [[KNOCKBACK]]으로 누누 W, R의 [[SKILL_CHAANEL]]을 끊을 수 있음."],
-      en: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 누누 W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Azir's R [[KNOCKBACK]] can interrupt Nunu's W and R [[SKILL_CHANNEL]]."],
     },
     nunu: {
       ko: [],

@@ -9,9 +9,9 @@ export const azir_bard: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: ["아지르 R의 [[KNOCKBACK]]으로 바드 E(터널)의 [[SKILL_CHAANEL]] [[DASH]]을 끊을 수 있음.", 
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 바드 E(터널)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음.", 
         "아지르 R의 [[TERRAIN]] 판정은 바드 Q의 [[STUN]]을 발동시킬 수 있음."],
-      en: ["Azir's R [[KNOCKBACK]] can interrupt Bard's E(Tunnel) [[SKILL_CHAANEL]] [[DASH]].",
+      en: ["Azir's R [[KNOCKBACK]] can interrupt Bard's E(Tunnel) [[SKILL_CHANNEL]] [[DASH]].",
         "Azir's R [[TERRAIN]] can trigger Bard's Q [[STUN]]."],
     },
     bard: {

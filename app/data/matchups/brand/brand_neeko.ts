@@ -9,8 +9,8 @@ export const brand_neeko: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 R의 [[CHAIN]]는 니코 W의 [[SUMMON]]된 [[CLONE]]에 튕길 수 있음."],
+      en: ["Brand's R [[CHAIN]] can bounce off Neeko's W [[SUMMON]]ed [[CLONE]]."],
     },
     neeko: {
       ko: [],

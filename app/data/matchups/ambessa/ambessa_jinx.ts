@@ -13,9 +13,9 @@ export const ambessa_jinx: MatchupSummary = {
       en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Jinx's E [[ROOT]]. \n However, the [[ROOT]] still applies after [[UNSTOPPABLE]] ends."],
     },
     jinx: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 징크스 E([[TARP]])를 넘어서 이동 할 수 있음.", 
+      ko: ["암베사 R의 [[SUPPRESS]]으로 징크스 E([[TRAP]])를 넘어서 이동 할 수 있음.", 
         "암베사 P로 징크스 E(활성화 된 덫)를 넘을 수 없음."],
-      en: ["Ambessa's R [[SUPPRESS]] allows movement over Jinx's E ([[TARP]]).", "Ambessa's P cannot pass over Jinx's E (activated trap)."],
+      en: ["Ambessa's R [[SUPPRESS]] allows movement over Jinx's E ([[TRAP]]).", "Ambessa's P cannot pass over Jinx's E (activated trap)."],
     },
   },
 };
