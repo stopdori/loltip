@@ -76,7 +76,7 @@ export default async function Page({ params, searchParams }: Props) {
   // canonical 주소로 정규화
   const canonical = [a, b].sort().join("-vs-");
   if (pair !== canonical) {
-    redirect(`/matchup/${canonical}?first=${first ?? a}`);
+    redirect(`/${locale}/matchup/${canonical}?first=${first ?? a}`);
   }
 
   // first 파라미터로 나/상대 결정
