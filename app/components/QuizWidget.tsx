@@ -117,7 +117,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
             </span>
           </div>
           <a
-            href="/quiz"
+            href={`/${locale}/quiz`}
             onClick={(e) => e.stopPropagation()}
             className="text-base text-white hover:text-yellow-400 transition-colors"
           >

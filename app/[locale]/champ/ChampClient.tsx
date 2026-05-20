@@ -38,7 +38,7 @@ export default function Home({ forcedMe, forcedEnemy, highlight }: Props) {
   }
 
   // 아무도 없으면 챔피언 선택 초기화
-  router.replace(`/champ`);
+  router.replace(`/${locale}/champ`);
 }
 
 function clearEnemyChamp() {
@@ -47,7 +47,7 @@ function clearEnemyChamp() {
     return;
   }
 
-  router.replace(`/champ`);
+  router.replace(`/${locale}/champ`);
 }
 
 const [myChampId, setMyChampId] = useState<string | null>(forcedMe ?? null);
@@ -376,7 +376,7 @@ setOpenTarget(null);
 
 <footer className="pt-8 text-center text-xs text-slate-500">
   <a
-    href="/privacy"
+    href={`/${locale}/privacy`}
     className="hover:text-slate-300 underline underline-offset-2"
   >
     Privacy Policy
