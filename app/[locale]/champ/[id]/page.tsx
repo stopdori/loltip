@@ -118,7 +118,7 @@ export default async function Page(props: Props) {
 
   // URL이 소문자가 아니면 canonical URL로 리다이렉트
   if (id !== champId) {
-    redirect(`/champ/${champId}`);
+    redirect(`/${params.locale}/champ/${champId}`);
   }
 
   const champData = CHAMPS[champId as keyof typeof CHAMPS];
