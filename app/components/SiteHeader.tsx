@@ -74,7 +74,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
 
         {/* 중앙: 모바일 로고 */}
         <h1
-          onClick={() => router.push(`/${locale}/champ`)}
+          onClick={() => router.push(`/champ`)}
           className="sm:hidden absolute left-1/2 -translate-x-1/2 text-3xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
         >
           LOLTIP
@@ -118,7 +118,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
       {/* 로고 (데스크탑) */}
       <div className="hidden sm:block mt-8 text-center">
         <h1
-          onClick={() => router.push(`/${locale}/champ`)}
+          onClick={() => router.push(`/champ`)}
           className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
         >
           LOLTIP
