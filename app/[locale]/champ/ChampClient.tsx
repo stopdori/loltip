@@ -33,21 +33,21 @@ export default function Home({ forcedMe, forcedEnemy, highlight }: Props) {
   function clearMyChamp() {
   // 오른쪽만 남기기
   if (enemyChampId) {
-    router.replace(`/${locale}/champ/${enemyChampId}?side=enemy`);
+    router.replace(`/champ/${enemyChampId}?side=enemy`);
     return;
   }
 
   // 아무도 없으면 챔피언 선택 초기화
-  router.replace(`/${locale}/champ`);
+  router.replace(`/champ`);
 }
 
 function clearEnemyChamp() {
   if (myChampId) {
-    router.replace(`/${locale}/champ/${myChampId}?side=my`);
+    router.replace(`/champ/${myChampId}?side=my`);
     return;
   }
 
-  router.replace(`/${locale}/champ`);
+  router.replace(`/champ`);
 }
 
 const [myChampId, setMyChampId] = useState<string | null>(forcedMe ?? null);
@@ -184,19 +184,19 @@ const nextEnemy = openTarget === "enemy" ? c.id : enemyChampId;
 // 둘 다 있으면 → matchup
 if (nextMy && nextEnemy) {
   const pair = [nextMy, nextEnemy].sort().join("-vs-");
-router.push(`/${locale}/matchup/${pair}?first=${openTarget === "my" ? c.id : myChampId}`);
+router.push(`/matchup/${pair}?first=${openTarget === "my" ? c.id : myChampId}`);
   setOpenTarget(null);
   return;
 }
 
 // 하나만 있으면 → 단일 챔프
 if (nextMy && !nextEnemy) {
-  router.push(`/${locale}/champ/${nextMy}?side=my`);
+  router.push(`/champ/${nextMy}?side=my`);
   return;
 }
 
 if (!nextMy && nextEnemy) {
-  router.push(`/${locale}/champ/${nextEnemy}?side=enemy`);
+  router.push(`/champ/${nextEnemy}?side=enemy`);
   return;
 }
 setOpenTarget(null);
