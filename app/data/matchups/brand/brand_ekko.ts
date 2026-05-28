@@ -9,8 +9,8 @@ export const brand_ekko: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 Q의 [[STUN]]로 에코 E의 [[DASH]], [[BLINK]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: [],
     },
     ekko: {
       ko: [],

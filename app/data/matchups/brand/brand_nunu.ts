@@ -9,8 +9,8 @@ export const brand_nunu: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 Q의 [[STUN]]로 누누 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Brand's Q [[STUN]] can interrupt Nunu's W [[SKILL_CHANNEL]]."],
     },
     nunu: {
       ko: [],

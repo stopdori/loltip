@@ -9,8 +9,8 @@ export const brand_taliyah: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 Q의 [[STUN]]로 탈리야 R의 [[SKILL_CHANNEL]], [[TRANSFORM]]을 끊을 수 있음."],
+      en: ["Brand's Q [[STUN]] can interrupt Taliyah's R [[SKILL_CHANNEL]] and cancel her [[TRANSFORM]]."],
     },
     taliyah: {
       ko: [],

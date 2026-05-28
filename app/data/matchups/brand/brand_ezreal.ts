@@ -9,8 +9,8 @@ export const brand_ezreal: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 Q의 [[STUN]]로 이즈리얼 E의 [[BLINK]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: [],
     },
     ezreal: {
       ko: [],

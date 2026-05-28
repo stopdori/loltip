@@ -9,8 +9,8 @@ export const brand_reksai: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 Q의 [[STUN]]로 렉사이 매복폼 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Brand's Q [[STUN]] cannot interrupt Rek'Sai's Burrowed Form E [[DASH]]. \n However, the [[STUN]] remains."],
     },
     reksai: {
       ko: [],

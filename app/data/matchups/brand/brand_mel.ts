@@ -9,11 +9,11 @@ export const brand_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: ["멜 W가 브랜드 Q R 반사 가능."],
-      en: ["Mel’s W reflects Brand’s Q R."],
+      ko: [],
+      en: [],
     },
     mel: {
-      ko: [],
+      ko: ["멜 W([[REFLECT]])로 브랜드 Q, R의 [[PROJECTILE]]를 반사할 수 있음."],
       en: [],
     },
   },
