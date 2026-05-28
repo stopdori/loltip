@@ -9,8 +9,8 @@ export const brand_shyvana: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     shyvana: {
       ko: [],

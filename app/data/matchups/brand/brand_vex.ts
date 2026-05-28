@@ -9,8 +9,8 @@ export const brand_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     vex: {
       ko: [],

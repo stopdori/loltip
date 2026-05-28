@@ -9,8 +9,8 @@ export const brand_viktor: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     viktor: {
       ko: [],

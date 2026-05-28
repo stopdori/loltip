@@ -9,8 +9,8 @@ export const brand_trundle: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     trundle: {
       ko: [],

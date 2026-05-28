@@ -9,8 +9,8 @@ export const brand_renata: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     renata: {
       ko: [],

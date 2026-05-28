@@ -9,8 +9,8 @@ export const brand_senna: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     senna: {
       ko: [],

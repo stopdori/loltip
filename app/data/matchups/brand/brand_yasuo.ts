@@ -9,11 +9,11 @@ export const brand_yasuo: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: ["야스오 W(장막)가 브랜드 Q R 막을 수 있음."],
-      en: ["Yasuo’s W (Wind Wall) can block Brand’s Q R."],
+      ko: ["브랜드 Q의 [[STUN]]로 야스오 E의 [[DASH]]을 끊을 수 있음."],
+      en: [],
     },
     yasuo: {
-      ko: [],
+      ko: ["야스오 W([[WINDSHIELD]])로 브랜드 Q, R의 [[PROJECTILE]]를 막을 수 있음."],
       en: [],
     },
   },

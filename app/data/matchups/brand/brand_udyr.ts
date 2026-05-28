@@ -9,8 +9,8 @@ export const brand_udyr: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     udyr: {
       ko: [],

@@ -9,8 +9,8 @@ export const brand_tryndamere: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 Q의 [[STUN]]로 트린다미어 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["Brand's Q [[STUN]] cannot interrupt Tryndamere's E [[DASH]]. \n However, the [[STUN]] remains."],
     },
     tryndamere: {
       ko: [],

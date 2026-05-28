@@ -9,8 +9,8 @@ export const brand_zed: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zed: {
       ko: [],

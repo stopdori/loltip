@@ -9,8 +9,8 @@ export const brand_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     teemo: {
       ko: [],

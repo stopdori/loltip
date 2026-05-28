@@ -9,8 +9,8 @@ export const brand_taric: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     taric: {
       ko: [],

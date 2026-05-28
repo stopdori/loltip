@@ -9,8 +9,8 @@ export const brand_varus: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: ["브랜드 Q의 [[STUN]]로 바루스 Q의 [[SKILL_CHARGED]]을 끊을 수 있음."],
+      en: [],
     },
     varus: {
       ko: [],

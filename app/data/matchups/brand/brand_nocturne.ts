@@ -9,8 +9,8 @@ export const brand_nocturne: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nocturne: {
       ko: [],

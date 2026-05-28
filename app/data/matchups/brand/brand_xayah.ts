@@ -9,8 +9,8 @@ export const brand_xayah: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     xayah: {
       ko: [],

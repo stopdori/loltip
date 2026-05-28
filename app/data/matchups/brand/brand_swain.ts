@@ -9,8 +9,8 @@ export const brand_swain: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     swain: {
       ko: [],
