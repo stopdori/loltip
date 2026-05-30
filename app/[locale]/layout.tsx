@@ -49,6 +49,13 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
 
+      {/* Google AdSense */}
+      <Script
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7989124524767628"
+        strategy="afterInteractive"
+        crossOrigin="anonymous"
+      />
+
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-RM86YD8RCM"
