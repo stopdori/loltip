@@ -646,8 +646,8 @@ GRAB: {
 
 
 SUPPRESS: {
-  ko: "상대를 아무것도 할 수 없게 만듬\n스펠 사용도 불가능\n정화(스펠)로는 해제 불가\n수은 미카엘로 해제 가능",
-  en: "Prevents all actions and summoner spells \n(cannot be cleansed by Cleanse)",
+  ko: "상대를 아무것도 할 수 없게 만듬\n스펠 사용도 불가능\n정화(스펠)로는 해제 불가\n수은으로 해제 가능. \n 미카엘 불가능.",
+  en: "Renders the enemy completely helpless\nSummoner spells cannot be used\nCannot be cleansed by Cleanse (Spell)\nCan be removed by Quicksilver Sash (QSS)\nCannot be cleansed by Mikael's Blessing",
 },
 
 CHARM: {

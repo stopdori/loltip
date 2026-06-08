@@ -60,15 +60,15 @@ export default function FeedbackButton({ lang, hidden }: Props) {
 
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
 
-      alert(lang === "ko" ? "전송 완료!" : "Sent!");
+      alert(lang === "ko" ? "제보 해 주셔서 감사합니다!" : "Thank you for your report!");
       setMessage("");
       setOpen(false);
     } catch (e) {
       console.error(e);
       alert(
         lang === "ko"
-          ? "전송 실패. 잠시 후 다시 시도해줘."
-          : "Failed. Please try again."
+          ? "전송 실패. 잠시 후 다시 시도해주세요."
+          : "Failed. Please try again later."
       );
     }
   };
