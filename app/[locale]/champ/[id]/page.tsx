@@ -90,9 +90,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const title = locale === "ko"
+    ? `${champ.ko} 챔피언 공략 - 스킬 상성 및 매치업 | LOLTIP`
+    : `${champ.en} Champion Guide – Skills, Mechanics & Matchups | LOLTIP`;
+  const description = locale === "ko"
+    ? `${champ.ko} 스킬 상성, CC 상호작용, 매치업 정보를 확인하세요.`
+    : `${champ.en} skill mechanics, CC interactions, and matchup tips for League of Legends. Learn what abilities ${champ.en} can interrupt, block, or counter.`;
+
   return {
-    title: `${champ.en} Champion Guide – Skills, Mechanics & Matchups | LOLTIP`,
-    description: `${champ.en} skill mechanics, CC interactions, and matchup tips for League of Legends. Learn what abilities ${champ.en} can interrupt, block, or counter.`,
+    title,
+    description,
     alternates: {
       canonical: `https://loltip.com/${locale}/champ/${champId}`,
     },
