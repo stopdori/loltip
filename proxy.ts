@@ -7,6 +7,10 @@ const intlMiddleware = createMiddleware(routing);
 export default function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  if (pathname.startsWith("/champ-embed")) {
+    return NextResponse.next();
+  }
+
   if (!pathname.startsWith("/ko") && !pathname.startsWith("/en")) {
     const url = request.nextUrl.clone();
     url.pathname = "/ko" + pathname;

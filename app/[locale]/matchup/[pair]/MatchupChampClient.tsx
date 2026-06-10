@@ -6,5 +6,5 @@ export default function MatchupChampClient(props: React.ComponentProps<typeof Ch
   const [mounted, setMounted] = useState(false);
   useEffect(() => { setMounted(true); }, []);
   if (!mounted) return null;
-  return <ChampClient {...props} />;
+  return <ChampClient {...props} useIframe={true} />;
 }

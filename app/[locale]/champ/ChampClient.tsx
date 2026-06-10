@@ -22,9 +22,12 @@ type Props = {
   forcedMe?: string | null;
   forcedEnemy?: string | null;
   highlight?: string;
+  hideHeader?: boolean;
+  embedMode?: boolean;
+  useIframe?: boolean;
 };
 
-export default function Home({ forcedMe, forcedEnemy, highlight }: Props) {
+export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, embedMode, useIframe }: Props) {
   const locale = useLocale();
   const lang = locale as Lang;
 
@@ -96,6 +99,30 @@ useEffect(() => {
   setOpenTarget(null);
 }, [forcedMe, forcedEnemy]);
 
+  useEffect(() => {
+    if (!useIframe) return;
+    const handler = (e: MessageEvent) => {
+      if (e.data?.type !== 'champEmbedHeight') return;
+      const myEl = document.getElementById('iframe-my');
+      const enemyEl = document.getElementById('iframe-enemy');
+      if (!myEl || !enemyEl) return;
+      const myH = myEl.getAttribute('data-h') ? parseInt(myEl.getAttribute('data-h')!) : 0;
+      const enemyH = enemyEl.getAttribute('data-h') ? parseInt(enemyEl.getAttribute('data-h')!) : 0;
+      if (e.data.id === myChamp?.id) myEl.setAttribute('data-h', e.data.height);
+      if (e.data.id === enemyChamp?.id) enemyEl.setAttribute('data-h', e.data.height);
+      const maxH = Math.max(
+        e.data.id === myChamp?.id ? e.data.height : myH,
+        e.data.id === enemyChamp?.id ? e.data.height : enemyH
+      );
+      if (maxH > 0) {
+        if (myEl) myEl.style.height = maxH + 'px';
+        if (enemyEl) enemyEl.style.height = maxH + 'px';
+      }
+    };
+    window.addEventListener('message', handler);
+    return () => window.removeEventListener('message', handler);
+  }, [useIframe, myChamp, enemyChamp]);
+
   const [myUltCd, setMyUltCd] = useState<number | null>(null);
   const [enemyUltCd, setEnemyUltCd] = useState<number | null>(null);
   const [mobileTab, setMobileTab] = useState<"my" | "enemy">("my");
@@ -120,17 +147,19 @@ useEffect(() => {
     <div className="space-y-12">
 
 
-      <SiteHeader
-        subtitle={subtitle}
-        champSearchOpen={openTarget !== null}
-        helpOpen={helpOpen}
-        onHelpOpenChange={setHelpOpen}
-        onNoticeOpenChange={setNoticeOpen}
-        onGlossaryOpenChange={setGlossaryOpen}
-      />
+      {!hideHeader && (
+        <SiteHeader
+          subtitle={subtitle}
+          champSearchOpen={openTarget !== null}
+          helpOpen={helpOpen}
+          onHelpOpenChange={setHelpOpen}
+          onNoticeOpenChange={setNoticeOpen}
+          onGlossaryOpenChange={setGlossaryOpen}
+        />
+      )}
 
       {/* CHAMP PICK */}
-<section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 border-b border-white/10 supports-[backdrop-filter]:backdrop-blur">
+{!embedMode && <section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 border-b border-white/10 supports-[backdrop-filter]:backdrop-blur">
   <div className="max-w-5xl mx-auto px-3 py-2">
 
 
@@ -158,8 +187,8 @@ useEffect(() => {
 
     </div>
   </div>
-</section>
-        
+</section>}
+
       {/* MODAL */}
       <ChampSelectModal
         open={openTarget !== null}
@@ -204,7 +233,7 @@ setOpenTarget(null);
 }}
         />
 
-      {bothSelected && (
+      {bothSelected && !embedMode && (
 <section className="mt-[4.5rem] md:mt-12 max-w-[474px] sm:max-w-[980px] mx-auto px-3">
   <MatchupSummaryBox
     myChampId={myChamp!.id}
@@ -219,7 +248,7 @@ setOpenTarget(null);
 {(myChamp || enemyChamp) ? (
 <>
 {/* 모바일 탭바 */}
-{(myChamp || enemyChamp) && (
+{(myChamp || enemyChamp) && !embedMode && !useIframe && (
   <div className="sm:hidden flex w-full max-w-[430px] mx-auto rounded-xl bg-slate-800/40 ring-1 ring-white/10 overflow-hidden mb-2">
     <button
       type="button"
@@ -255,9 +284,39 @@ setOpenTarget(null);
     </button>
   </div>
 )}
+{useIframe ? (
+<>
+{useIframe && (
+  <div className="sm:hidden flex w-full max-w-[430px] mx-auto rounded-xl bg-slate-800/40 ring-1 ring-white/10 overflow-hidden mb-2">
+    <button onClick={() => setMobileTab("my")} className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "my" ? "text-black bg-yellow-400" : "text-yellow-400"}`}>{myChamp?.ko ?? "내 챔피언"}</button>
+    <button onClick={() => setMobileTab("enemy")} className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "enemy" ? "text-black bg-yellow-400" : "text-yellow-400"}`}>{enemyChamp?.ko ?? "상대 챔피언"}</button>
+  </div>
+)}
+<section className="relative grid grid-cols-1 sm:grid-cols-[430px_68px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
+  {myChamp && (
+    <iframe
+      id="iframe-my"
+      src={`/champ-embed/${myChamp.id}?side=my&locale=${locale}`}
+      style={{ width: "430px", border: "none", height: "800px" }}
+      scrolling="no"
+      className={`sm:col-start-1${mobileTab !== "my" ? " hidden sm:block" : ""}`}
+    />
+  )}
+  {enemyChamp && (
+    <iframe
+      id="iframe-enemy"
+      src={`/champ-embed/${enemyChamp.id}?side=enemy&locale=${locale}`}
+      style={{ width: "430px", border: "none", height: "800px" }}
+      scrolling="no"
+      className={`sm:col-start-3${mobileTab !== "enemy" ? " hidden sm:block" : ""}`}
+    />
+  )}
+</section>
+</>
+) : (
 <section className="relative grid grid-cols-1 sm:grid-cols-[430px_68px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
 
-      
+
         {/* MY */}
 {myChamp && (
 <div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-2 pb-3 ring-2 ring-black/40 min-w-0 sm:col-start-1 sm:flex ${myChamp && enemyChamp && mobileTab !== "my" ? "hidden sm:flex" : ""}`}>
@@ -346,9 +405,10 @@ setOpenTarget(null);
 )}
 
 </section>
+)}
 </>
 ) : null}
-{!bothSelected && (
+{!bothSelected && !embedMode && (
 <section className="mt-[4.5rem] md:mt-12 max-w-[474px] sm:max-w-[980px] mx-auto px-3">
     <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all min-h-[120px]">
       <p className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-4">
@@ -364,16 +424,23 @@ setOpenTarget(null);
 )}
 
       {/* 퀴즈박스: 항상 표시 */}
-      <div className="max-w-[474px] sm:max-w-[980px] mx-auto px-3">
-        <QuizWidget lang={lang} />
-      </div>
+      {!embedMode && (
+        <div className="max-w-[474px] sm:max-w-[980px] mx-auto px-3">
+          <QuizWidget lang={lang} />
+        </div>
+      )}
 
-      <FeedbackButton lang={lang} hidden={openTarget !== null || helpOpen || noticeOpen || glossaryOpen} />
+      {!embedMode && (
+        <FeedbackButton lang={lang} hidden={openTarget !== null || helpOpen || noticeOpen || glossaryOpen} />
+      )}
 
+{!embedMode && (
 <div className="pt-8">
   <AdSlot side="bottom" />
 </div>
+)}
 
+{!embedMode && (
 <footer className="pt-8 text-center text-xs text-slate-500">
   <a
     href={`/${locale}/privacy`}
@@ -382,6 +449,7 @@ setOpenTarget(null);
     Privacy Policy
   </a>
 </footer>
+)}
 
 
 </div>

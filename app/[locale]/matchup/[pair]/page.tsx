@@ -3,12 +3,12 @@ import { Fragment } from "react";
 import type { Metadata } from "next";
 
 import { CHAMPIONS } from "@/app/data/champions";
+import MatchupChampClient from "./MatchupChampClient";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import type { TagId } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import type { GimmickTagId } from "@/app/data/interactions/tags_gimmick";
-import MatchupChampClient from "./MatchupChampClient";
 
 type Lang = "ko" | "en";
 
