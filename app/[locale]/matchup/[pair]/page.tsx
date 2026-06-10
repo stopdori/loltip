@@ -38,10 +38,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonical = [a, b].sort().join("-vs-");
   const title = champA && champB
-    ? `${champA.ko} vs ${champB.ko} 매치업 - LOLTIP`
-    : "매치업 | LOLTIP";
+    ? locale === "ko"
+      ? `${champA.ko} vs ${champB.ko} 매치업 - LOLTIP`
+      : `${champA.en} vs ${champB.en} Matchup - LOLTIP`
+    : locale === "ko" ? "매치업 | LOLTIP" : "Matchup | LOLTIP";
   const description = champA && champB
-    ? `${champA.ko}와 ${champB.ko}의 스킬 상성, CC 판정, 저지불가 상호작용 정리`
+    ? locale === "ko"
+      ? `${champA.ko}와 ${champB.ko}의 스킬 상성, CC 판정, 저지불가 상호작용 정리`
+      : `${champA.en} vs ${champB.en} skill interactions and matchup tips for League of Legends.`
     : undefined;
 
   return {
