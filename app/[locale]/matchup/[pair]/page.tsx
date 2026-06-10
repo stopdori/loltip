@@ -8,7 +8,8 @@ import { TAG_LABEL } from "@/app/data/interactions/tags";
 import type { TagId } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import type { GimmickTagId } from "@/app/data/interactions/tags_gimmick";
-import ChampClient from "@/app/[locale]/champ/ChampClient";
+import dynamic from "next/dynamic";
+const ChampClient = dynamic(() => import("@/app/[locale]/champ/ChampClient"), { ssr: false });
 
 type Lang = "ko" | "en";
 
