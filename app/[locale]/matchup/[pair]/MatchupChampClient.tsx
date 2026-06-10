@@ -1,6 +1,10 @@
 "use client";
-import dynamic from "next/dynamic";
-const ChampClient = dynamic(() => import("@/app/[locale]/champ/ChampClient"), { ssr: false });
+import { useState, useEffect } from "react";
+import ChampClient from "@/app/[locale]/champ/ChampClient";
+
 export default function MatchupChampClient(props: React.ComponentProps<typeof ChampClient>) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
+  if (!mounted) return null;
   return <ChampClient {...props} />;
 }
