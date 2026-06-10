@@ -46,8 +46,21 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "LOLTIP",
+    alternateName: "loltip",
+    url: "https://loltip.com",
+  };
+
   return (
     <NextIntlClientProvider messages={messages}>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
 
       {/* Google AdSense */}
       <Script
