@@ -8,8 +8,7 @@ import { TAG_LABEL } from "@/app/data/interactions/tags";
 import type { TagId } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import type { GimmickTagId } from "@/app/data/interactions/tags_gimmick";
-import dynamic from "next/dynamic";
-const ChampClient = dynamic(() => import("@/app/[locale]/champ/ChampClient"), { ssr: false });
+import MatchupChampClient from "./MatchupChampClient";
 
 type Lang = "ko" | "en";
 
@@ -166,7 +165,7 @@ export default async function Page({ params, searchParams }: Props) {
         ))}
       </div>
 
-      <ChampClient
+      <MatchupChampClient
         key={`${forcedMe}-vs-${forcedEnemy}`}
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
