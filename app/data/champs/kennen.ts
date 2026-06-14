@@ -39,10 +39,14 @@ const kennen: ChampData = {
       note1: {
 
         ko: [
-          "P",
+          "P는 스킬 적중 시 표식. \n 3스택 시 [[STUN]] 및 [[ENERGY_RESTORE]].",
+
           "Q",
+
           "W",
+
           "E",
+
           "R",
         ],
 
