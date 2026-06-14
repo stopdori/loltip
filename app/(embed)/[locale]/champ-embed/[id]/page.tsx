@@ -6,6 +6,8 @@ import { Fragment } from "react";
 
 import type { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 type Props = {
   params: Promise<{ locale: string; id: string }>;
   searchParams: Promise<{ side?: string }>;
