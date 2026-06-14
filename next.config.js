@@ -39,6 +39,9 @@ const nextConfig = {
       { source: "/matchup/:pair", destination: "/ko/matchup/:pair",  permanent: false },
       { source: "/quiz",          destination: "/ko/quiz",           permanent: false },
       { source: "/privacy",       destination: "/ko/privacy",        permanent: false },
+
+      // /champ-embed/:id → /ko/champ-embed/:id (기본 locale로 리다이렉트)
+      { source: "/champ-embed/:id", destination: "/ko/champ-embed/:id", permanent: false },
     ];
   },
 };

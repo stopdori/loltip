@@ -296,7 +296,7 @@ setOpenTarget(null);
   {myChamp && (
     <iframe
       id="iframe-my"
-      src={`/champ-embed/${myChamp.id}?side=my&locale=${locale}`}
+      src={`/${locale}/champ-embed/${myChamp.id}?side=my`}
       style={{ width: "430px", border: "none", height: "800px" }}
       scrolling="no"
       className={`sm:col-start-1${mobileTab !== "my" ? " hidden sm:block" : ""}`}
@@ -305,7 +305,7 @@ setOpenTarget(null);
   {enemyChamp && (
     <iframe
       id="iframe-enemy"
-      src={`/champ-embed/${enemyChamp.id}?side=enemy&locale=${locale}`}
+      src={`/${locale}/champ-embed/${enemyChamp.id}?side=enemy`}
       style={{ width: "430px", border: "none", height: "800px" }}
       scrolling="no"
       className={`sm:col-start-3${mobileTab !== "enemy" ? " hidden sm:block" : ""}`}
