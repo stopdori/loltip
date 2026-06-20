@@ -3,9 +3,14 @@ import type { ChampData } from "../interactions/types";
 const kogmaw: ChampData = {
   id: "kogmaw",
   skills: {
-    P: ["MS_UP", "GHOSTING"],
-    Q: ["AS_UP", "AR_MR_SHRED"],
-    W: ["RANGE_UP", "BUFF_FORM"],
+    P: ["ST_CONDITIONAL", "GHOSTING", "MS_UP"],
+
+    Q: { phases: [
+      { label: { ko: "Q 패시브", en: "Q Passive" }, tags: ["AS_UP"] },
+      { label: { ko: "Q", en: "Q" }, tags: ["AR_MR_SHRED"] },
+    ] },
+    
+    W: ["BUFF_FORM", "RANGE_UP", "BA",],
     E: ["SLOW"],
     R: ["R_FLASH", "REVEALED"],
   },
@@ -15,16 +20,21 @@ const kogmaw: ChampData = {
     Q: [],
     W: [],
     E: [],
-    R: [],
+    R: ["REVEALED"],
   },
 
   gimmick: {
-    P: ["ST_CONDITIONAL", "DMG_TRUE"],
-    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE"],
-    W: ["BUFF_FORM", "DMG_MAGIC", "ON_HIT"],
+    P: ["ST_CONDITIONAL", "DMG_TRUE", "AOE"],
+
+    Q: { phases: [
+      { label: { ko: "Q 패시브", en: "Q Passive" }, tags: ["PASSIVE_BONUS", "AS_UP"] },
+      { label: { ko: "Q", en: "Q" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AR_MR_SHRED"] },
+    ] },
+    
+    W: ["BUFF_FORM", "RANGE_UP", "BA", "DMG_MAGIC", "ON_HIT"],
     E: { phases: [
       { label: { ko: "E 투사체", en: "E Projectile" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE"] },
-      { label: { ko: "E 장판", en: "E Zone" }, tags: ["ZONE"] },
+      { label: { ko: "E 장판", en: "E Zone" }, tags: ["ZONE", "SLOW"] },
     ] },
     
     R: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "BUFF_STACK"],
@@ -39,11 +49,15 @@ const kogmaw: ChampData = {
       note1: {
 
         ko: [
-          "P",
-          "Q",
-          "W",
-          "E",
-          "R",
+          "P는 코그모가 죽었을 때 \n [[GHOSTING]], [[MS_UP]] \n 잠시 뒤 폭발하여 코그모 레벨 비례 [[AOE]] [[DMG_TRUE]].",
+
+          "Q의 [[PASSIVE_BONUS]]는 [[AS_UP]]. \n Q는 적중하면 [[AR_MR_SHRED]].",
+
+          "W는 [[BA]] [[RANGE_UP]]. \n [[ON_HIT]] 최대 체력 비례 [[DMG_MAGIC]].",
+
+          "E는 [[ZONE]] [[DMG_MAGIC]]와 [[SLOW]].",
+
+          "R은 잃은 체력 비례 [[ZONE]] [[DMG_MAGIC]]와 [[REVEALED]]. \n 체력이 40% 미만인 적은 2배 피해. \n 사용하면 [[BUFF_STACK]]이 쌓이는데 쌓일 수록 마나소모량 증가.",
         ],
 
         en: []
@@ -52,9 +66,12 @@ const kogmaw: ChampData = {
 
       note2: {
         ko: [
-        "[[Q_FLASH]], [[E_FLASH]] 안됨", "Q의 [[AS_UP]]은 [[PASSIVE_BONUS]].", "W [[AA_RESET]] 안됨.", "E의 [[SLOW]]는 범위 위의 대상에게 지속 적용", "R은 사용하면 중첩이 쌓이는데\n중첩이 쌓일수록 마나소모량이 40씩 증가함.\n최대 400."
+        "[[Q_FLASH]], [[E_FLASH]] 안됨", 
+        "W [[AA_RESET]] 안됨.", 
+        "E의 [[SLOW]]는 범위 위의 대상에게 지속 적용", 
+        "R은 사용하면 [[BUFF_STACK]]. \n 스택이 쌓일수록 마나소모량이 40씩 증가함. \n 최대 소모량 400."
       ],
-        en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "Q's [[AS_UP]] is a passive effect", "E's [[SLOW]] continuously applies to targets standing in the area"]
+        en: []
         },
     },
     vision: { ko: [], en: [] },
