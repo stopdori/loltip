@@ -79,7 +79,7 @@ const leona: ChampData = {
 
       note2: {
         ko: [
-        "E 스킬은 2단계로 나뉨 찌르기/돌진. \n 찌르기단계에서 레오나가 맞은 CC는 유효 하지만\n돌진단계가 발동되어 앞으로 이동하는 것. \n 돌진단계에는 CC 저항력 없음."
+        "E 스킬은 2단계로 나뉨 찌르기/돌진. \n 찌르기단계에서 레오나가 맞은 CC는 유효 하지만 \n 돌진단계가 발동되어 앞으로 이동하는 것. \n 돌진단계에는 CC 저항력 없음."
       ],
         en: [
           "E has two phases: stab / dash. \n CC that hits Leona during the stab phase is registered, \n but the dash phase still activates and she moves forward. \n The dash phase has no CC resistance."
