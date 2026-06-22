@@ -102,6 +102,7 @@ export type TagId =
   | "SLOW"
   | "TAUNT"
   | "SLEEP"
+  | "DROWSY"
   | "ANTI_DASH"
   | "KNOCKBACK"
   | "AIRBORNE"
@@ -120,6 +121,7 @@ export type TagId =
   | "BUFF_FORM"
   | "TRANSFORM"  // 폼변환
   | "EVOLVED"    // 진화
+  | "IMMOBILIZING"
 
 
   | "THE_COPYPASTA";
@@ -177,6 +179,7 @@ UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
 BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
 TRANSFORM: { ko: "폼 변환", en: "Transform" },
 EVOLVED: { ko: "진화", en: "Evolved" },
+IMMOBILIZING: { ko: "이동불가", en: "Immobilizing" },
 
 
 /* =========================
@@ -263,6 +266,7 @@ AIRBORNE: { ko: "에어본", en: "Airborne" },
 SUSPENDING: { ko: "체공", en: "Suspending" },
 SUPPRESS: { ko: "제압", en: "Suppress" },
 SLEEP: { ko: "수면", en: "Sleep" },
+DROWSY: { ko: "졸림", en: "Drowsy" },
 FEAR: { ko: "공포", en: "Fear" },
 CHARM: { ko: "매혹", en: "Charm" },
 TAUNT: { ko: "도발", en: "Taunt" },
@@ -621,6 +625,10 @@ SLEEP: {
   ko: "아무런 행동을 할 수 없지만\n즉발적인 공격을 받으면 해제됨(지속피해 제외)\n(클린즈 계열로 해제 가능)",
   en: "Cannot act, but ends immediately \nwhen damaged (can be cleansed)",
 },
+DROWSY: {
+  ko: "수면에 빠지는 과정의 CC.",
+  en: "A CC state that leads into Sleep.",
+},
 ANTI_DASH: {
   ko: "돌진스킬을 방해하고 에어본과 기절을 검",
   en: "Stops dashes and can apply knock-up or stun",
@@ -683,7 +691,7 @@ BLIND: {
   en: "Basic attacks miss (can be cleansed)",
 },
 POLYMORPH: {
-  ko: "상대를 동물로 변이\n침묵, 무장해제, 고정둔화(60)\n고정둔화는 둔화저항을 무시함\n(단,둔화면역은 무시못함)",
+  ko: "동물로 만듦. \n 침묵, 무장해제, 고정 둔화(60) \n 고정 둔화는 둔화 저항을 무시함. \n (단, 둔화 면역은 무시 불가.)",
   en: "Transforms the target, \npreventing attacks and ability casts",
 },
 UNSTOPPABLE: {
@@ -704,6 +712,11 @@ TRANSFORM: {
 EVOLVED: {
   ko: "스킬이 영구적으로 강화됨",
   en: "Permanently enhances the ability",
+},
+
+IMMOBILIZING: {
+  ko: "이동 명령을 차단하는 CC. \n 기절, 속박, 에어본, 넉백, 그렙, 체공, 제압, 수면, 공포, 매혹, 도발, 광란",
+  en: "CC that prevents movement commands. \n Stun, Root, Airborne, Knockback, Grab, Suspension, Suppression, Sleep, Fear, Charm, Taunt, Berserk",
 },
 
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },

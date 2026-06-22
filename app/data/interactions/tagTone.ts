@@ -103,7 +103,9 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CANCEL: "teal",
   POLYMORPH: "teal",
   SLEEP: "teal",
+  DROWSY: "teal",
   INSEC_KICK: "teal",
+  IMMOBILIZING: "teal",
 
 
   THE_COPYPASTA: "teal",
