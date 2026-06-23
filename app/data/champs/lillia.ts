@@ -53,7 +53,7 @@ const lillia: ChampData = {
       note1: {
 
         ko: [
-          "P는 Q, W, E 스킬에 맞은 대상에게 \n 꿈가루 [[DEBUFF]]. \n [[DEBUFF]]가 지속되는 동안 최대 체력 비례 지속 [[DMG_MAGIC]]. \n [[DEBUFF]]가 걸린 대상이 \n 챔피언, 대형 몬스터, 에픽 몬스터 이면 지속 [[HEAL]].",
+          "P는 Q, W, E 스킬에 맞은 대상에게 \n 꿈가루 [[DEBUFF]]. \n [[DEBUFF]]가 지속되는 동안 대상의 최대 체력 비례 지속 [[DMG_MAGIC]]. \n [[DEBUFF]]가 걸린 대상이 \n 챔피언, 대형 몬스터, 에픽 몬스터 이면 지속 [[HEAL]].",
 
           "Q의 [[PASSIVE_BONUS]]는 \n Q, W, E, R 스킬 적중 시 [[MS_UP]] [[BUFF_STACK]]. 최대 4스택. \n \n Q 적중 시 Q의 [[BUFF_STACK]], P의 [[DEBUFF]], [[DMG_MAGIC]]. \n 가장자리에 맞으면 [[DMG_TRUE]] 추가.",
 
@@ -65,7 +65,7 @@ const lillia: ChampData = {
         ],
 
         en: [
-          "P inflicts [[DEBUFF]] (Dream Dust) on targets hit by Q, W, or E. \n While [[DEBUFF]] lasts, it deals [[DMG_MAGIC]] over time based on max health. \n If the [[DEBUFF]]ed target is \n a champion, large monster, or epic monster, it grants [[HEAL]] over time.",
+          "P inflicts [[DEBUFF]] (Dream Dust) on targets hit by Q, W, or E. \n While [[DEBUFF]] lasts, it deals [[DMG_MAGIC]] over time based on the target's max health. \n If the [[DEBUFF]]ed target is \n a champion, large monster, or epic monster, it grants [[HEAL]] over time.",
 
           "Q's [[PASSIVE_BONUS]] grants \n [[MS_UP]] [[BUFF_STACK]] when Q, W, E, or R hits. Max 4 stacks. \n \n On Q hit, gain Q's [[BUFF_STACK]], apply P's [[DEBUFF]], and deal [[DMG_MAGIC]]. \n Hitting the edge adds [[DMG_TRUE]].",
 

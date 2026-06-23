@@ -6,7 +6,7 @@ const lux: ChampData = {
     P: [],
     Q: ["Q_FLASH", "PIERCE_ONCE", "ROOT"],
     W: ["SHIELD"],
-    E: ["E_FLASH", "SLOW"],
+    E: ["E_FLASH", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "SLOW"],
     R: [],
   },
 
@@ -28,7 +28,7 @@ const lux: ChampData = {
     E: { phases: [
       { label: { ko: "E 투사체", en: "E Projectile" }, tags: ["TIMING_CAST", "PROJECTILE"] },
       { label: { ko: "E 장판", en: "E Zone" }, tags: ["ZONE", "SLOW", "SKILL_RECAST"] },
-      { label: { ko: "E 발동", en: "E Active" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ZONE", "SEPARATOR", "MARK"] },
+      { label: { ko: "E 발동", en: "E Active" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ZONE", "SLOW", "SEPARATOR", "MARK"] },
     ] },
     
     R: ["DMG_MAGIC", "SKILL_CHANNEL", "NON_PROJECTILE", "SEPARATOR", "MARK_CONSUME", "MARK"],
@@ -51,7 +51,7 @@ const lux: ChampData = {
 
           "W는 [[PROJECTILE]]에 닿은 아군 챔피언 [[SHIELD]].",
 
-          "E는 [[PROJECTILE]]를 날려 \n [[ZONE]]을 설치하고 지속시간 동안 지속 [[SLOW]]. \n 시간이 경과하거나 [[SKILL_RECAST]]하면 폭발 하여 [[MARK]], [[DMG_MAGIC]].",
+          "E는 [[PROJECTILE]]를 날려 \n [[ZONE]]을 설치하고 지속시간 동안 지속 [[SLOW]]. \n 시간이 경과하거나 [[SKILL_RECAST]]하면 \n 폭발 하여 [[SLOW]], [[MARK]], [[DMG_MAGIC]].",
 
           "R은 레이저를 발사하여 [[DMG_MAGIC]]. \n R이 [[MARK_CONSUME]] 하고 다시 [[MARK]] 적용.",
         ],
@@ -63,7 +63,7 @@ const lux: ChampData = {
 
           "W grants [[SHIELD]] to allied champions touched by the [[PROJECTILE]].",
 
-          "E fires a [[PROJECTILE]] \n that creates a [[ZONE]] applying persistent [[SLOW]] while it lasts. \n It explodes after a duration or on [[SKILL_RECAST]], applying [[MARK]] and [[DMG_MAGIC]].",
+          "E fires a [[PROJECTILE]] \n that creates a [[ZONE]] applying persistent [[SLOW]] while it lasts. \n It explodes after a duration or on [[SKILL_RECAST]], \n applying [[SLOW]], [[MARK]], and [[DMG_MAGIC]].",
 
           "R fires a laser for [[DMG_MAGIC]]. \n R [[MARK_CONSUME]]s the existing mark and reapplies [[MARK]].",
         ]
