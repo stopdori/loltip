@@ -44,8 +44,9 @@ const locke: ChampData = {
     skill: {
       note3: {
         ko: [
-          "Q로 포킹하다 E로 진입해서 W키고 극딜. \n 암살 성공하면 E [[CDR_RESET]]를 이용해서 탈출 또는 계속 딜.", "다른것보다 R을 최대한 많이 맞히는게 가장 중요함. \n [[EXECUTE]]이 아군 공격에도 발동하기 때문. \n R을 그냥쓰면 발동하는 시간이 오래걸림. \n Q [[SLOW]], 아군 스킬과 연계가 중요.",
+          "소규모 교전이 좋은편 \n Q [[MARK]]을 3스택 쌓고 [[MARK_CONSUME]] 시키는게 핵심.", "Q로 포킹하다 E로 진입해서 W키고 극딜. \n 암살 성공하면 E [[CDR_RESET]]를 이용해서 탈출 또는 계속 딜.", "다른것보다 R을 최대한 많이 맞히는게 가장 중요함. \n [[EXECUTE]]이 아군 공격에도 발동하기 때문. \n R을 그냥쓰면 발동하는 시간이 오래걸림. \n Q [[SLOW]], 아군 스킬과 연계가 중요.",
         ], en: [
+          "Small-scale skirmishes tend to favor Locke. \n The key is stacking Q [[MARK]] to 3 stacks and triggering [[MARK_CONSUME]].",
           "Poke with Q, then engage with E and turn on W to burst. \n If the assassination succeeds, use E [[CDR_RESET]] to escape or keep dealing damage.",
           "More than anything, landing as much of R as possible is the most important. \n Because [[EXECUTE]] can also be triggered by allied attacks. \n Casting R plainly takes a long time to trigger. \n Q [[SLOW]] and coordination with allied skills are crucial.",
         ] },
@@ -60,7 +61,7 @@ const locke: ChampData = {
 
           "E는 [[BLINK]]하여 [[AOE]] [[DMG_MAGIC]]. \n 다음 [[BA]]는 강화되어 [[DASH]] [[AOE]] [[DMG_MAGIC]]. \n [[MARK]]이 있다면 [[MARK_CONSUME]] [[DMG_MAGIC]]. \n 킬 관여 시 [[CDR_RESET]]. \n [[CC_BUFFER]]로 일부 CC 무시 가능.",
 
-          "R은 [[ZONE]] [[DMG_MAGIC]]와 [[SLOW]], [[DEBUFF]]. \n [[DEBUFF]]를 받는 동안 대상의 체력이 10%로 떨어지면 [[EXECUTE]]. \n 다른 대상들의 [[DEBUFF]] 지속시간 초기화. \n 지속시간이 끝나고 [[EXECUTE]]이 됐었다면 바닥에 유물 생성. \n 유물을 주우면 [[CDR]], 처형 기준치 0.5% 영구 증가.",
+          "R은 [[AOE]] [[DMG_MAGIC]]와 [[SLOW]], [[DEBUFF]]. \n [[DEBUFF]]는 대상의 체력이 10%로 떨어지면 [[EXECUTE]]. \n [[EXECUTE]]이 발동하면 \n 한 번 걸렸던 다른 대상들의 [[DEBUFF]] [[DURATION_RESET]]. \n \n 모든 대상의 [[DEBUFF]] 지속시간이 다 끝나고 \n [[EXECUTE]]이 됐었다면 바닥에 유물 생성. \n 획득 시 [[CDR]], [[EXECUTE]]된 대상 하나당 기준치 0.5% 영구 증가.",
         ],
 
         en: [
@@ -72,7 +73,7 @@ const locke: ChampData = {
 
           "E [[BLINK]]s and deals [[AOE]] [[DMG_MAGIC]]. \n The next [[BA]] is enhanced into a [[DASH]] [[AOE]] [[DMG_MAGIC]]. \n If [[MARK]] is present, deals [[MARK_CONSUME]] [[DMG_MAGIC]]. \n [[CDR_RESET]] on kill participation. \n [[CC_BUFFER]] allows ignoring some CC.",
 
-          "R creates a [[ZONE]] dealing [[DMG_MAGIC]] and applying [[SLOW]], [[DEBUFF]]. \n If a target's health drops to 10% while under [[DEBUFF]], it triggers [[EXECUTE]]. \n Resets the [[DEBUFF]] duration on other targets. \n If [[EXECUTE]] occurred before the duration ends, drops a relic on the ground. \n Picking up the relic permanently increases [[CDR]] and the execute threshold by 0.5%.",
+          "R deals [[AOE]] [[DMG_MAGIC]] and applies [[SLOW]], [[DEBUFF]]. \n [[DEBUFF]] triggers [[EXECUTE]] when the target's health drops to 10%. \n When [[EXECUTE]] triggers, \n it [[DURATION_RESET]]s the [[DEBUFF]] on other previously hit targets. \n \n If [[EXECUTE]] occurred before all targets' [[DEBUFF]] durations end, \n drops a relic on the ground. \n Picking it up permanently increases [[CDR]], and the execute threshold by 0.5% per [[EXECUTE]]d target.",
         ]
 
       },
@@ -81,11 +82,15 @@ const locke: ChampData = {
         ko: [
           "W는 CC에 걸렸을 때 사용불가. \n 단, W 도중에는 CC에 맞아도 [[CANCELLABLE]].",
           "E 스킬은 2단계로 나뉨 준비/순간이동.\n준비단계에서 로크가 맞은 CC는 유효 하지만\n[[BLINK]]단계가 발동되어 이동하는 것.\n[[BLINK]]단계에는 CC 저항력 없음.\n순간이동했을 때 CC의 지속시간이 남아있다면 CC 효과 유효.",
+          "E의 [[DASH]][[BA]]는 와드, 수정초, 솔방울 탄, 꿀열매에도 가능.", 
+          "상호작용 실험 \n 1. R의 [[DEBUFF]] 대상은 파이크 R의 [[EXECUTE]] 기준치가 높아질까? \n 결과 - 반영되지 않음. \n \n 2. R의 [[DEBUFF]] 대상은 킨드레드 R의 [[INVULNERABLE]]에 [[EXECUTE]] 될까? \n 결과 - 안됨."
 
         ],
         en: [
           "W cannot be cast while affected by CC. \n However, while W is active, it is [[CANCELLABLE]] even if hit by CC.",
           "The E skill is split into 2 phases: windup/teleport.\nDuring the windup phase, CC that hits Locke is still effective,\nbut the [[BLINK]] phase still triggers and moves him.\nThere is no CC resistance during the [[BLINK]] phase.\nIf the CC's duration remains after teleporting, the CC effect still applies.",
+          "E's [[DASH]][[BA]] also works on wards, crystal totems, pinecones, and honeyfruit.",
+          "Interaction tests \n 1. Does a target under R's [[DEBUFF]] raise Pyke R's [[EXECUTE]] threshold? \n Result - Not applied. \n \n 2. Can a target under R's [[DEBUFF]] be [[EXECUTE]]d through Kindred R's [[INVULNERABLE]]? \n Result - No.",
         ]
         },
     },
