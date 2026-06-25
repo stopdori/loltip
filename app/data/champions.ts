@@ -65,6 +65,7 @@ export const CHAMPIONS: Champ[] = [
   c("reksai", "렉사이", "Rek'Sai"),
   c("rell", "렐", "Rell"),
   c("rengar", "렝가", "Rengar"),
+  c("locke", "로크", "Locke"),
   c("lucian", "루시안", "Lucian", { ko: ["루샨"], en: [] }),
   c("lulu", "룰루", "Lulu", { ko: ["루루"], en: [] }),
   c("leblanc", "르블랑", "LeBlanc"),

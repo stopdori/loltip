@@ -72,6 +72,7 @@ import leesin from "./leesin";
 import leona from "./leona";
 import lillia from "./lillia";
 import lissandra from "./lissandra";
+import locke from "./locke";
 import lucian from "./lucian";
 import lulu from "./lulu";
 import lux from "./lux";
@@ -246,6 +247,7 @@ export const CHAMPS = {
   leona,
   lillia,
   lissandra,
+  locke,
   lucian,
   lulu,
   lux,

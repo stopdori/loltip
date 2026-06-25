@@ -77,6 +77,7 @@ const CHAMPS = [
   "leona",
   "lillia",
   "lissandra",
+  "locke",
   "lucian",
   "lulu",
   "lux",

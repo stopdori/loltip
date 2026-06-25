@@ -8,13 +8,13 @@ const files = fs
   .readdirSync(champsDir)
   .filter((f) => f.endsWith(".ts"))
   .map((f) => f.replace(".ts", ""))
-  .filter((name) => name !== "index");
+  .filter((name) => name !== "index" && name !== "_index");
 
 const imports = files
   .map((name) => `import ${name} from "../champs/${name}";`)
   .join("\n");
 
-const mapEntries = files.map((name) => `  ${name},`).join("\n");
+const mapEntries = files.map((name) => `  ${name}: ${name}.skills,`).join("\n");
 
 const content = `
 // ⚠️ 이 파일은 자동 생성됨 (genChampSkills.ts)

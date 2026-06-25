@@ -22,6 +22,7 @@ export type TagId =
   | "AS_DOWN"
   | "CDR"            // 쿨감
   | "CDR_RESET"      // 쿨초기화
+  | "DURATION_RESET" // 지속초기화
   | "AD_UP"          // 공격력 증가
   | "AD_DOWN"       // 공격력 감소
   | "AP_UP"
@@ -140,6 +141,7 @@ AS_UP: { ko: "공속↑", en: "AS ↑" },
 AS_DOWN: { ko: "공속↓", en: "AS ↓" },
 CDR: { ko: "쿨감", en: "CDR" },
 CDR_RESET: { ko: "쿨초", en: "CDR" },
+DURATION_RESET: { ko: "지속초기", en: "Duration Reset" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
@@ -366,6 +368,10 @@ CDR: {
 CDR_RESET: {
   ko: "쿨타임이 초기화됨",
   en: "Resets cooldown",
+},
+DURATION_RESET: {
+  ko: "스킬이나 디버프의 지속시간이 초기화됨.",
+  en: "Resets the duration of a skill or debuff.",
 },
 AS_DOWN: {  ko: "상대 공격속도 감소",  en: "Reduces attack speed",},
 AD_UP: { ko: "공격력 증가", en: "Increases attack damage" },

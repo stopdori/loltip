@@ -81,6 +81,7 @@ const targets = [
   "leona",
   "lillia",
   "lissandra",
+  "locke",
   "lucian",
   "lulu",
   "lux",

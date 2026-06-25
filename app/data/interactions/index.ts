@@ -78,6 +78,7 @@ import leesin from "../champs/leesin";
 import leona from "../champs/leona";
 import lillia from "../champs/lillia";
 import lissandra from "../champs/lissandra";
+import locke from "../champs/locke";
 import lucian from "../champs/lucian";
 import lulu from "../champs/lulu";
 import lux from "../champs/lux";
@@ -177,7 +178,6 @@ import zilean from "../champs/zilean";
 import zoe from "../champs/zoe";
 import zyra from "../champs/zyra";
 
-/* ✅ 핵심 수정 */
 export const CHAMP_SKILLS = {
   aatrox: aatrox.skills,
   ahri: ahri.skills,
@@ -253,6 +253,7 @@ export const CHAMP_SKILLS = {
   leona: leona.skills,
   lillia: lillia.skills,
   lissandra: lissandra.skills,
+  locke: locke.skills,
   lucian: lucian.skills,
   lulu: lulu.skills,
   lux: lux.skills,
