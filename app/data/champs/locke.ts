@@ -56,7 +56,7 @@ const locke: ChampData = {
           
           "Q는 지속시간 동안 [[PIERCE]] [[PROJECTILE]]를 최대 3개 발사. \n [[DMG_MAGIC]]와 [[MARK]], [[SLOW]]. \n Q3는 강화 [[SLOW]]. \n 던지지 않은 Q 갯수만큼 [[MANA_RESTORE]], [[CDR]]. \n \n [[BA]], E1, E [[DASH]][[BA]]를 맞히면 [[MARK_CONSUME]] [[DMG_MAGIC]]. \n [[MARK]] 중첩 갯수에 따라 [[MARK_CONSUME]] [[DMG_MAGIC]] 증가.",
 
-          "W를 사용하면 처음 2초 동안 강화 [[MS_UP]]. \n 이후 지속시간 동안 [[AS_UP]], [[MS_UP]]. \n 대신 로크의 체력이 12%만큼 지속 감소. \n 지속시간 종료 또는 중단하면 12%만큼 [[HEAL]]. \n \n W는 작성자가 정확히 이해를 못 했음. \n 이렇게 이해했음. 틀렸으면 제보 부탁.",
+          "W는 [[AS_UP]], [[MS_UP]]와 \n 종료 후 지속시간동안 받은 피해 비례 [[HEAL]]. \n 대신 로크 현재 체력의 12%만큼 지속 감소. \n 처음 2초 동안 강화된 [[MS_UP]]. \n \n W는 작성자가 정확히 이해를 못 했음. \n 이렇게 이해했음. 틀렸으면 제보 부탁.",
 
           "E는 [[BLINK]]하여 [[AOE]] [[DMG_MAGIC]]. \n 다음 [[BA]]는 강화되어 [[DASH]] [[AOE]] [[DMG_MAGIC]]. \n [[MARK]]이 있다면 [[MARK_CONSUME]] [[DMG_MAGIC]]. \n 킬 관여 시 [[CDR_RESET]]. \n [[CC_BUFFER]]로 일부 CC 무시 가능.",
 
@@ -68,7 +68,7 @@ const locke: ChampData = {
 
           "During its duration, Q fires up to 3 [[PIERCE]] [[PROJECTILE]]s. \n Deals [[DMG_MAGIC]] and applies [[MARK]], [[SLOW]]. \n The 3rd Q applies an enhanced [[SLOW]]. \n Restores [[MANA_RESTORE]] and [[CDR]] for each Q not thrown. \n \n Hitting with [[BA]], E1, or E [[DASH]][[BA]] triggers [[MARK_CONSUME]] [[DMG_MAGIC]]. \n [[MARK_CONSUME]] [[DMG_MAGIC]] increases with the number of stacked [[MARK]]s.",
 
-          "Casting W grants an enhanced [[MS_UP]] for the first 2 seconds. \n Afterward, grants [[AS_UP]] and [[MS_UP]] for the duration. \n In exchange, Locke's health continuously decreases by 12%. \n When the duration ends or is canceled, [[HEAL]] for 12%. \n \n The author wasn't able to fully understand W. \n This is the current understanding — please report if it's wrong.",
+          "W grants [[AS_UP]], [[MS_UP]], and \n after it ends, [[HEAL]] proportional to damage taken during its duration. \n In exchange, Locke's current health continuously decreases by 12%. \n Enhanced [[MS_UP]] during the first 2 seconds. \n \n The author wasn't able to fully understand W. \n This is the current understanding — please report if it's wrong.",
 
           "E [[BLINK]]s and deals [[AOE]] [[DMG_MAGIC]]. \n The next [[BA]] is enhanced into a [[DASH]] [[AOE]] [[DMG_MAGIC]]. \n If [[MARK]] is present, deals [[MARK_CONSUME]] [[DMG_MAGIC]]. \n [[CDR_RESET]] on kill participation. \n [[CC_BUFFER]] allows ignoring some CC.",
 
