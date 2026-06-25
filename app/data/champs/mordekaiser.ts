@@ -3,7 +3,7 @@ import type { ChampData } from "../interactions/types";
 const mordekaiser: ChampData = {
   id: "mordekaiser",
   skills: {
-    P: ["MS_UP"],
+    P: ["ON_HIT", "SEPARATOR", "ST_CONDITIONAL", "MS_UP"],
     Q: ["Q_FLASH"],
     W: ["SHIELD", "HEAL"],
     E: ["E_FLASH", "GRAB", "MR_PEN"],
@@ -43,10 +43,14 @@ const mordekaiser: ChampData = {
       note1: {
 
         ko: [
-          "P",
+          "P는 [[BA]]에 [[ON_HIT]] [[DMG_MAGIC]]. \n 적 챔피언, 대형, 에픽 몬스터 에게 [[BA]], Q, E 스킬을 맞히면 [[BUFF_STACK]].",
+
           "Q",
+
           "W",
+
           "E",
+
           "R",
         ],
 
