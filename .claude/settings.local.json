@@ -39,7 +39,9 @@
       "Bash(find C:\\\\Users\\\\stopdori\\\\loltip\\\\app\\\\data\\\\matchups\\\\aatrox *)",
       "Bash(xargs -I {} bash -c 'echo \"=== {} ===\" && grep \"en:\" {} | head -2')",
       "Bash(awk '{print $2}')",
-      "Bash(New-Item *)"
+      "Bash(New-Item *)",
+      "Bash(npx tsx *)",
+      "Bash(python -c \"import requests, PIL; print\\('ok'\\)\")"
     ]
   }
 }

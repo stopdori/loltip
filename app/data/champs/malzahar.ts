@@ -21,7 +21,7 @@ const malzahar: ChampData = {
   gimmick: {
     P: ["DMG_REDUCE", "CC_IMMUNE"],
 
-    Q: ["DMG_MAGIC", "TIMING_CAST", "AOE", "BUFF_STACK"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "AOE", "BUFF_STACK", "SEPARATOR", "ST_CONDITIONAL", "DURATION_RESET", "E"],
 
     W: { phases: [
       { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_BONUS", "BUFF_INTERACT", "Q", "E", "R"] },
@@ -31,7 +31,7 @@ const malzahar: ChampData = {
     E: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "MANA_RESTORE", "CHAIN"],
  
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "TIMING_CAST", "TARGETED", "SINGLE", "BUFF_STACK"] },
+      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "TIMING_CAST", "TARGETED", "SINGLE", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DURATION_RESET", "E"] },
       { label: { ko: "R 장판", en: "R Zone" }, tags: ["DMG_MAGIC", "ZONE"] },
     ] },
     

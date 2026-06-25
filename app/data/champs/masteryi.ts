@@ -4,7 +4,7 @@ const masteryi: ChampData = {
   id: "masteryi",
   skills: {
     P: [],
-    Q: ["Q_FLASH", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE"],
+    Q: ["Q_FLASH", "UNTARGETABLE", "TOWER_DODGE", "WALL_HOP"],
     W: ["DMG_REDUCE", "HEAL", "AA_RESET"],
     E: [],
     R: ["AS_UP", "MS_UP", "SLOW_IMMUNE", "BUFF_FORM"],
@@ -40,9 +40,13 @@ const masteryi: ChampData = {
 
         ko: [
           "P",
+          
           "Q",
+
           "W",
+
           "E",
+
           "R",
         ],
 
