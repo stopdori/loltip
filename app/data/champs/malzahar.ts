@@ -56,7 +56,7 @@ const malzahar: ChampData = {
 
           "W의 [[PASSIVE_BONUS]]는 Q, E, R 스킬을 사용하면 [[BUFF_STACK]]. \n 지속시간 없음. 최대 2스택. \n \n W는 공허충을 [[SUMMON]]. \n [[BUFF_STACK]]을 소모하여 [[SUMMON]] 마리수 추가.",
 
-          "E는 대상에게 [[DEBUFF]]를 걸고 지속 [[DMG_MAGIC]]. \n Q, R 스킬을 맞으면 지속시간 초기화. \n [[DEBUFF]] 지속동안 대상이 처치되면 [[MANA_RESTORE]]하고 \n 근처 다른 대상에게 [[CHAIN]]. ",
+          "E는 대상에게 [[DEBUFF]]를 걸고 지속 [[DMG_MAGIC]]. \n Q, R 스킬을 맞으면 [[DURATION_RESET]]. \n [[DEBUFF]] 지속동안 대상이 처치되면 [[MANA_RESTORE]]하고 \n 근처 다른 대상에게 [[CHAIN]]. ",
 
           "R은 대상을 [[SUPPRESS]]하여 [[DMG_MAGIC]]. \n 대상의 최대 체력 비례 [[DMG_MAGIC]]를 입히는 [[ZONE]]도 생성.",
         ],
@@ -68,7 +68,7 @@ const malzahar: ChampData = {
 
           "W's [[PASSIVE_BONUS]] gains a [[BUFF_STACK]] when casting Q, E, or R. \n No duration. Max 2 stacks. \n \n W [[SUMMON]]s voidlings. \n Consuming [[BUFF_STACK]] adds extra [[SUMMON]]ed voidlings.",
 
-          "E applies a [[DEBUFF]] and deals [[DMG_MAGIC]] over time. \n Duration refreshes if the target is hit by Q or R. \n If the target dies while [[DEBUFF]]ed, [[MANA_RESTORE]] and \n [[CHAIN]] to another nearby target. ",
+          "E applies a [[DEBUFF]] and deals [[DMG_MAGIC]] over time. \n [[DURATION_RESET]] if the target is hit by Q or R. \n If the target dies while [[DEBUFF]]ed, [[MANA_RESTORE]] and \n [[CHAIN]] to another nearby target. ",
 
           "R [[SUPPRESS]]es the target and deals [[DMG_MAGIC]]. \n Also creates a [[ZONE]] that deals [[DMG_MAGIC]] based on the target's max health.",
         ]

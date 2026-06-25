@@ -41,7 +41,7 @@ const braum: ChampData = {
           "P의 [[DEBUFF]]는 [[BA]], [[Q]]로 발동. \n 캐릭터 위에 얼음조각 칸이 4개 차면 피해와 [[STUN]].",
           "Q는 [[SLOW]]와 [[DEBUFF]] \n 4번째 타격이라면 [[STUN]].",
           "W는 아군에게 [[DASH]]하고 \n 브라움과 대상의 [[AR_MR_UP]]",
-          "E는 방패를 들어 \n 처음 [[DAMAGE_NULLIFY]] 시키고 \n [[INTERCEPT_PROJECTILE]] 또는 투사체의 데미지 감소. \n 디테일한 판정은 챔피언별로 하단 박스에 정리.",
+          "E는 방패를 들어 \n 처음 [[DAMAGE_NULLIFY]] 시키고 \n [[INTERCEPT_PROJECTILE]] 또는 투사체의 데미지 감소. \n 디테일한 판정은 챔피언별로 상호작용 박스에 정리.",
           "R은 처음 적중한 대상이 가장 [[AIRBORNE]]이 길고 \n 나머지는 0.6초 [[AIRBORNE]] \n 4초동안 유지되는 [[SLOW]] 장판도 생성.", "초필살기 \n 아군에게 W([[DASH]])로 날아가면서 \n ER을 하면 R 모션이 캔슬되어 도착하자마 R을 씀.",
         ],
 
@@ -49,7 +49,7 @@ const braum: ChampData = {
           "P's [[DEBUFF]] is triggered by [[BA]] and [[Q]].\nWhen 4 ice fragments stack on a target, it deals damage and [[STUN]]s.",
           "Q applies [[SLOW]] and [[DEBUFF]].\nIf it's the 4th stack, it [[STUN]]s instead.",
           "W [[DASH]]es to an ally and grants [[AR_MR_UP]] to both Braum and the target.",
-          "E raises the shield to [[DAMAGE_NULLIFY]] the first hit\nand [[INTERCEPT_PROJECTILE]] aimed at allies.\nSee the matchup section below for details.",
+          "E raises the shield to [[DAMAGE_NULLIFY]] the first hit\nand [[INTERCEPT_PROJECTILE]] aimed at allies.\nSee the interaction section for champion-specific details.",
           "R applies the longest [[AIRBORNE]] to the first target hit;\nall others receive 0.6s [[AIRBORNE]].\nAlso creates a [[SLOW]] zone that lasts 4 seconds.",
           "Special tech: while flying toward an ally with W ([[DASH]]),\ncasting E then R cancels the R animation,\ncasting R the moment Braum arrives.",
         ]
