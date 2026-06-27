@@ -35,7 +35,7 @@ const missfortune: ChampData = {
 
     E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "SLOW"],
 
-    R: ["DMG_PHYSICAL", "SKILL_CHANNEL", "PROJECTILE", "AOE", "CANCELLABLE"],
+    R: ["DMG_PHYSICAL", "SKILL_CHANNEL", "PROJECTILE", "PIERCE", "CANCELLABLE"],
   },
 
   notes: {
@@ -57,7 +57,7 @@ const missfortune: ChampData = {
 
           "E는 [[ZONE]] 지속 [[DMG_MAGIC]] [[SLOW]].",
 
-          "R은 [[SKILL_CHANNEL]] 스킬. \n 움직이거나 다른 행동을 하면 중단. \n 광역 [[AOE]] 지속 [[DMG_PHYSICAL]]. \n [[CRIT]] 적용 가능.",
+          "R은 [[SKILL_CHANNEL]] 스킬. \n 움직이거나 다른 행동을 하면 중단. \n 광역 [[VOLLEY]] [[PIERCE]] 지속 [[DMG_PHYSICAL]]. \n [[CRIT]] 적용 가능.",
         ],
 
         en: [
@@ -69,7 +69,7 @@ const missfortune: ChampData = {
 
           "E creates a [[ZONE]] that applies continuous [[DMG_MAGIC]] and [[SLOW]].",
 
-          "R is a [[SKILL_CHANNEL]] skill. \n Moving or taking other actions cancels it. \n Wide [[AOE]] continuous [[DMG_PHYSICAL]]. \n Can [[CRIT]].",
+          "R is a [[SKILL_CHANNEL]] skill. \n Moving or taking other actions cancels it. \n Wide [[VOLLEY]] [[PIERCE]] continuous [[DMG_PHYSICAL]]. \n Can [[CRIT]].",
         ]
 
       },
