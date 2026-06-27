@@ -27,6 +27,10 @@ function stripTags(text: string, lang: Lang): string {
   });
 }
 
+function hasKoContent(arr: string[] | undefined): boolean {
+  return (arr ?? []).some((s) => s !== "");
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, pair } = await params;
   const parts = pair.split("-vs-");
@@ -48,12 +52,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : `${champA.en} vs ${champB.en} skill interactions and matchup tips for League of Legends.`
     : undefined;
 
+  const matchup = await getMatchupSummary(a, b);
+  let noindex = false;
+  if (!matchup || matchup.status === "missing") {
+    noindex = true;
+  } else {
+    const { data } = matchup;
+    const summaryEmpty = !hasKoContent(data.summary?.ko);
+    const highlightsEmpty =
+      !hasKoContent(data.highlightsByChamp?.[a]?.ko) &&
+      !hasKoContent(data.highlightsByChamp?.[b]?.ko);
+    noindex = summaryEmpty && highlightsEmpty;
+  }
+
   return {
     title,
     ...(description && { description }),
     alternates: {
       canonical: `https://loltip.com/${locale}/matchup/${canonical}`,
     },
+    ...(noindex && { robots: { index: false, follow: false } }),
     openGraph: {
       title,
       ...(description && { description }),
