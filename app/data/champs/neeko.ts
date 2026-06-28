@@ -24,11 +24,14 @@ const neeko: ChampData = {
       { label: { ko: "", en: "" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE"] },
       { label: { ko: "", en: "" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "ZONE", "DOT"] },
     ] },
+
     W: { phases: [
       { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_BONUS", "ON_HIT", "NON_PROJECTILE", "PROC"] },
       { label: { ko: "W 액티브", en: "W Active" }, tags: ["SUMMON", "MOBILITY"] },
     ] },
+
     E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE" ,"PIERCE"],
+
     R: { phases: [
       { label: { ko: "준비단계", en: "Wind-up"  }, tags: ["BUFF_FORM", "SKILL_CHANNEL", "TIMING_CAST", "LOCKED"] },
       { label: { ko: "체공단계", en: "Airborne" }, tags: ["SKILL_CHANNEL", "TIMING_CAST", "LOCKED"] },
@@ -46,9 +49,13 @@ const neeko: ChampData = {
 
         ko: [
           "P",
+
           "Q",
+
           "W",
+
           "E",
+          
           "R",
         ],
 

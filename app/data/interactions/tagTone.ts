@@ -142,6 +142,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SIZE_UP: "lime",
 
   // ⚫ zinc (은신/시야제한/면역류)
+  STEALTH: "zinc",
   CAMOUFLAGE: "zinc",
   INVISIBILITY: "zinc",
   NEAR_SIGHT: "zinc",
