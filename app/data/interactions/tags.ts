@@ -23,9 +23,11 @@ export type TagId =
   | "CDR"            // 쿨감
   | "CDR_RESET"      // 쿨초기화
   | "DURATION_RESET" // 지속초기화
+  | "DURATION_EXT"  // 지속연장
   | "AD_UP"          // 공격력 증가
   | "AD_DOWN"       // 공격력 감소
   | "AP_UP"
+  | "SIZE_UP"
   | "CRIT"
   | "EXECUTE"
   | "PIERCE"
@@ -77,6 +79,7 @@ export type TagId =
   /* 피흡 */
   
   | "LIFESTEAL"
+  | "OMNIVAMP"
   | "HEAL"
   | "HP_REGEN"       // 체력재생
   | "SHIELD"
@@ -142,9 +145,11 @@ AS_DOWN: { ko: "공속↓", en: "AS ↓" },
 CDR: { ko: "쿨감", en: "CDR" },
 CDR_RESET: { ko: "쿨초", en: "CDR" },
 DURATION_RESET: { ko: "지속초기", en: "Duration Reset" },
+DURATION_EXT: { ko: "지속연장", en: "Duration Ext" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
+SIZE_UP: { ko: "크기↑", en: "Size ↑" },
 CRIT: { ko: "치명타", en: "Critical" },
 
 /* =========================
@@ -231,7 +236,8 @@ HEAL: { ko: "회복", en: "Heal" },
 HP_REGEN: { ko: "체젠", en: "HP Regen" },
 SHIELD: { ko: "쉴드", en: "Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
-LIFESTEAL: { ko: "피흡", en: "Lifesteal" },
+LIFESTEAL: { ko: "생흡", en: "Lifesteal" },
+OMNIVAMP: { ko: "모든피흡", en: "Omnivamp" },
 MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
 ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
 
@@ -373,10 +379,18 @@ DURATION_RESET: {
   ko: "스킬이나 디버프의 지속시간이 초기화됨.",
   en: "Resets the duration of a skill or debuff.",
 },
+DURATION_EXT: {
+  ko: "스킬이나 디버프의 지속시간이 연장됨.",
+  en: "Extends the duration of a skill or debuff.",
+},
 AS_DOWN: {  ko: "상대 공격속도 감소",  en: "Reduces attack speed",},
 AD_UP: { ko: "공격력 증가", en: "Increases attack damage" },
 AD_DOWN: { ko: "상대 공격력 감소", en: "Reduces attack damage" },
 AP_UP: {  ko: "주문력 증가",  en: "Increases ability power",},
+SIZE_UP: {
+  ko: "챔피언의 크기가 커짐.\n히트박스도 같이 커짐.",
+  en: "Increases the champion's size.\nAlso increases the hitbox.",
+},
 
 
 DMG_REDUCE: {
@@ -531,8 +545,12 @@ R_FLASH: {
 
 /* 피흡 */
 LIFESTEAL: {
-  ko: "피해량에 비례하여 생명력이 회복됨",
-  en: "Heals based on damage dealt",
+  ko: "기본 공격 피해량에 비례하여 생명력이 회복됨",
+  en: "Heals based on basic attack damage dealt",
+},
+OMNIVAMP: {
+  ko: "스킬 포함 모든 피해량에 비례하여 생명력이 회복됨.",
+  en: "Heals based on all damage dealt, including abilities.",
 },
 HEAL: {
   ko: "생명력 회복",

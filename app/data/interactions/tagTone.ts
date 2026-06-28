@@ -59,7 +59,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   RANGE_UP: "red",
   PIERCE: "red",
   BERSERK: "red",
-  LIFESTEAL: "lime",
+  LIFESTEAL: "red",
+  OMNIVAMP: "red",
   HP_REGEN: "lime",
 
   MS_DOWN: "amber_dark",
@@ -70,6 +71,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CDR: "indigo",
   CDR_RESET: "indigo",
   DURATION_RESET: "indigo",
+  DURATION_EXT: "indigo",
   MANA_RESTORE: "sky",
   ENERGY_RESTORE: "amber",
   SLOW_RESIST: "sky",
@@ -137,6 +139,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SHIELD: "white",
   MAX_HP_UP: "lime",
   REVIVE: "lime",
+  SIZE_UP: "lime",
 
   // ⚫ zinc (은신/시야제한/면역류)
   CAMOUFLAGE: "zinc",

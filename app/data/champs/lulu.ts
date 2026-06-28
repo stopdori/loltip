@@ -16,7 +16,7 @@ const lulu: ChampData = {
       { label: { ko: "E 상대", en: "E Enemy" }, tags: ["E_FLASH", "REVEALED"] },
     ] },
 
-    R: ["R_FLASH", "MAX_HP_UP", "AIRBORNE", "SLOW"],
+    R: ["R_FLASH", "SIZE_UP", "MAX_HP_UP", "AIRBORNE", "SLOW"],
   },
 
   vision: {
@@ -49,7 +49,7 @@ const lulu: ChampData = {
     ] },
 
       R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["TIMING_INSTANT", "TARGETED", "MAX_HP_UP"] },
+      { label: { ko: "R", en: "R" }, tags: ["TIMING_INSTANT", "TARGETED", "SIZE_UP", "MAX_HP_UP"] },
       { label: { ko: "R 주변효과", en: "R Slowing Aura" }, tags: ["AOE", "AIRBORNE", "SLOW"] },
     ] },
       
