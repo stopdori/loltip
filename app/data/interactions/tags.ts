@@ -32,6 +32,7 @@ export type TagId =
   | "EXECUTE"
   | "PIERCE"
   | "DMG_REDUCE"
+  | "MAGIC_DR"
   | "DODGE"
   | "TENACITY"
 
@@ -82,8 +83,10 @@ export type TagId =
   | "OMNIVAMP"
   | "HEAL"
   | "HP_REGEN"       // 체력재생
+  | "HP_REGEN_UP"    // 체력재생 증가
   | "SHIELD"
   | "MAX_HP_UP" // 최대체력 증가
+  | "HS_POWER"  // 회복/보호막 강화
 
   | "MANA_RESTORE"
   | "ENERGY_RESTORE"
@@ -176,6 +179,7 @@ EXECUTE: { ko: "처형", en: "Execute" },
 INVULNERABLE: { ko: "무적", en: "Invulnerable" },
 REVIVE: { ko: "부활", en: "Revive" },
 DMG_REDUCE: { ko: "피해감소", en: "Damage Reduction" },
+MAGIC_DR: { ko: "마피감소", en: "Magic DR" },
 TENACITY: { ko: "강인함", en: "Tenacity" },
 CC_CLEANSE: { ko: "CC해제", en: "Cleanse" },
 CC_IMMUNE: { ko: "CC면역", en: "CC Immune" },
@@ -234,8 +238,10 @@ INTERCEPT_PROJECTILE: { ko: "투사체 차단", en: "Projectile Delete" },
  * ========================= */
 HEAL: { ko: "회복", en: "Heal" },
 HP_REGEN: { ko: "체젠", en: "HP Regen" },
+HP_REGEN_UP: { ko: "체젠↑", en: "HP Regen↑" },
 SHIELD: { ko: "쉴드", en: "Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
+HS_POWER: { ko: "회쉴↑", en: "HS Power" },
 LIFESTEAL: { ko: "생흡", en: "Lifesteal" },
 OMNIVAMP: { ko: "모든피흡", en: "Omnivamp" },
 MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
@@ -396,6 +402,10 @@ SIZE_UP: {
 DMG_REDUCE: {
   ko: "스킬이 유지되는 동안 \n 받는 피해가 감소.",
   en: "Damage taken is reduced \n while the skill is active.",
+},
+MAGIC_DR: {
+  ko: "받는 마법 피해가 감소함.",
+  en: "Reduces incoming magic damage.",
 },
 DODGE: {
   ko: "평타를 무시함",
@@ -560,6 +570,10 @@ HP_REGEN: {
   ko: "체력이 지속적으로 재생됨",
   en: "Regenerates health over time",
 },
+HP_REGEN_UP: {
+  ko: "체력 재생량이 증가함.",
+  en: "Increases health regeneration.",
+},
 SHIELD: {
   ko: "보호막",
   en: "Grants a shield",
@@ -567,6 +581,10 @@ SHIELD: {
 MAX_HP_UP: {
   ko: "최대 체력 증가\n(치감 효과에 영향을 받지 않음)",
   en: "Increases maximum health. \n(Not affected by Grievous Wounds)",
+},
+HS_POWER: {
+  ko: "체력 회복 및 보호막 효과가 증가함.",
+  en: "Increases heal and shield power.",
 },
 
 MANA_RESTORE: {

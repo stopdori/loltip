@@ -43,6 +43,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 🔶 amber_deep (예전 amber-900/40)
   TENACITY: "amber_deep",
   DMG_REDUCE: "amber_deep",
+  MAGIC_DR: "amber_deep",
   DODGE: "amber_deep",
   WINDSHIELD: "amber_deep",
   PROTECTIVE_ZONE: "amber_deep",
@@ -136,6 +137,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🟢 lime (힐/체력/부활)
   HEAL: "lime",
+  HP_REGEN_UP: "lime",
+  HS_POWER: "lime",
   SHIELD: "white",
   MAX_HP_UP: "lime",
   REVIVE: "lime",
