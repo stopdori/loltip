@@ -7,7 +7,7 @@ const taliyah: ChampData = {
     Q: ["Q_FLASH", "SLOW"],
     W: ["W_FLASH", "AIRBORNE"],
     E: ["E_FLASH", "SLOW", "STUN"],
-    R: ["AIRBORNE", "WALL_HOP"],
+    R: ["WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"],
   },
 
   vision: {

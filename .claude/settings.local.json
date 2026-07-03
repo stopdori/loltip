@@ -41,7 +41,11 @@
       "Bash(awk '{print $2}')",
       "Bash(New-Item *)",
       "Bash(npx tsx *)",
-      "Bash(python -c \"import requests, PIL; print\\('ok'\\)\")"
+      "Bash(python -c \"import requests, PIL; print\\('ok'\\)\")",
+      "PowerShell(git reset *)",
+      "PowerShell(git add *)",
+      "PowerShell(git commit *)",
+      "PowerShell(git push *)"
     ]
   }
 }

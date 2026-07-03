@@ -5,7 +5,7 @@ const anivia: ChampData = {
   skills: {
     P: ["REVIVE"],
     Q: ["SLOW", "STUN"],
-    W: ["W_FLASH", "TERRAIN", "AIRBORNE"],
+    W: ["W_FLASH", "TERRAIN", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"],
     E: ["E_FLASH"],
     R: ["R_FLASH", "SLOW"],
   },

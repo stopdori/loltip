@@ -95,6 +95,8 @@ export type TagId =
   | "AR_UP"      // 방어력 증가
   | "MR_UP"      // 마법저항력 증가
   | "AR_MR_UP"   // 방마저 증가
+
+  
   | "AR_SHRED"   // 방깍
   | "MR_SHRED"      // 마깍
   | "AR_MR_SHRED"     // 방마깍
@@ -709,8 +711,8 @@ SILENCE: {
   en: "Prevents ability casts (can be cleansed)",
 },
 GROUNDED: {
-  ko: "이동스킬(돌진, 순간이동, 점멸, 아이템 벨트 등등)을 \n 사용하지 못하게 만드는 디버프",
-  en: "A debuff that prevents the target from using movement abilities \n (dashes, blinks, teleports, etc.)",
+  ko: "이동스킬(돌진, 순간이동, 점멸, 아이템 벨트 등등)을 \n 사용하지 못하게 만드는 디버프. \n (클린즈 계열로 해제하면 이동기 사용 가능)",
+  en: "A debuff that prevents the use of movement abilities \n (dashes, blinks, teleports, item movement speed effects, etc.). \n (Can use movement abilities again if cleansed)",
 },
 FEAR: {
   ko: "대상이 시전자 반대쪽으로 도망치게 만듦\n(클린즈 계열로 해제 가능)",
@@ -725,11 +727,11 @@ BERSERK: {
   en: "Attacks nearby units, prioritizing allies\n(can be cleansed)",
 },
 NEAR_SIGHT: {
-  ko: "시야가 축소됨",
-  en: "Reduces vision range",
+  ko: "시야가 축소됨. \n (정화를 제외한 클린즈 계열로 해제 가능)",
+  en: "Reduces vision range. \n (Can be cleansed by cleanse effects \n other than Summoner Spell Cleanse)",
 },
 BLIND: {
-  ko: "평타를 때려도 빗나가게 만듬\n(클린즈 계열로 해제 가능)",
+  ko: "평타를 때려도 빗나가게 만듬 \n (클린즈 계열로 해제 가능)",
   en: "Basic attacks miss (can be cleansed)",
 },
 POLYMORPH: {
