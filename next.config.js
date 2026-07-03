@@ -6,6 +6,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  outputFileTracingExcludes: {
+    "/sitemap": ["./app/data/matchups/**/*"],
+  },
   async redirects() {
     return [
       // vercel.app → www 본도메인
