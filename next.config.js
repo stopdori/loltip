@@ -19,30 +19,10 @@ const nextConfig = {
         permanent: true,
       },
 
-      // /champ?me=[id]&enemy=[id2] → /ko/matchup/[id]-vs-[id2]
-      {
-        source: "/champ",
-        has: [
-          { type: "query", key: "me", value: "(?<me>.+)" },
-          { type: "query", key: "enemy", value: "(?<enemy>.+)" },
-        ],
-        destination: "/ko/matchup/:me-vs-:enemy",
-        permanent: true,
-      },
-      // /champ?me=[id] → /ko/champ/[id]
-      {
-        source: "/champ",
-        has: [{ type: "query", key: "me", value: "(?<me>.+)" }],
-        missing: [{ type: "query", key: "enemy" }],
-        destination: "/ko/champ/:me",
-        permanent: true,
-      },
-
       // 기존 경로 → /ko/ 리다이렉트 (302)
+      // 주의: /champ, /champ/:id, /matchup/:pair, /champ?me=&enemy= 는
+      // 삭제된 구주소이므로 리다이렉트하지 않고 proxy.ts에서 410 Gone으로 응답함
       { source: "/",              destination: "/ko",                permanent: false },
-      { source: "/champ",         destination: "/ko/champ",          permanent: false },
-      { source: "/champ/:id",     destination: "/ko/champ/:id",      permanent: false },
-      { source: "/matchup/:pair", destination: "/ko/matchup/:pair",  permanent: false },
       { source: "/quiz",          destination: "/ko/quiz",           permanent: false },
       { source: "/privacy",       destination: "/ko/privacy",        permanent: false },
 
