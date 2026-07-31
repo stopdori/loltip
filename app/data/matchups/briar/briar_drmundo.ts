@@ -9,8 +9,8 @@ export const briar_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     drmundo: {
       ko: [],
