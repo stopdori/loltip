@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import TokenText from "./TokenText";
-import { getMatchupSummary, type MatchupLoadResult } from "../data/matchups/_index";
+import type { MatchupLoadResult } from "../data/matchups/_index";
 import { CHAMPIONS } from "../data/champions";
 
 type Lang = "ko" | "en";
@@ -34,7 +34,9 @@ export default function MatchupSummaryBox({
   const parsed = parseHighlight(highlight);
 
   useEffect(() => {
-    getMatchupSummary(myChampId, enemyChampId).then(setResult);
+    fetch(`/api/matchup?a=${encodeURIComponent(myChampId)}&b=${encodeURIComponent(enemyChampId)}`)
+      .then((res) => res.json())
+      .then(setResult);
   }, [myChampId, enemyChampId]);
 
   useEffect(() => {

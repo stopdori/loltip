@@ -4,7 +4,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "gen:champs": "ts-node scripts/genChampSkills.ts"
+    "gen:champs": "ts-node scripts/genChampSkills.ts",
+    "gen:matchup-json": "node scripts/gen-matchup-json.ts"
   },
   "dependencies": {
     "next": "^16.1.0",
