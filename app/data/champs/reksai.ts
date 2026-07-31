@@ -78,10 +78,14 @@ const reksai: ChampData = {
       note1: {
 
         ko: [
-          "P",
-          "Q",
+          "P는 [[BA]], 스킬 사용 시 25분노 \n W 매복폼으로 분노 소모하여 레벨 비례 [[HEAL]]. \n 분노는 5초동안 생성하지 않으면 20씩 소모.",
+
+          "돌출폼 \n \n ",
+
           "W",
+
           "E",
+          
           "R",
         ],
 
@@ -91,9 +95,17 @@ const reksai: ChampData = {
 
       note2: {
         ko: [
-        "일반폼에서 분노를 쌓고, 매복폼으로 분노를 소모하면서 [[HEAL]]", "W(매복) 상태에서는 렉사이의 시야가 줄어듦\n대신 상대 움직임을 진동으로 감지할 수 있음 ", "W(매복)에서 평타를 치면 W의 [[AIRBORNE]]으로 인해 대상과 대상주변이 [[AIRBORNE]] 됨.\nW를 눌러서 하는게 아님.", "일반폼 E는 분노 100일때 [[DMG_TRUE]].", "렉사이 R은 상대가 점멸로 피할 수 없음.",
+        "분노 획득은 미니언 대상 대폭감소.",
+        "W(매복) 상태에서는 렉사이의 시야가 줄어듦 \n 대신 상대 움직임을 진동으로 감지할 수 있음 ", 
+        "W(매복)에서 평타를 치면 W의 [[AIRBORNE]]으로 인해 대상과 대상주변이 [[AIRBORNE]] 됨.\nW를 눌러서 하는게 아님.", 
+        "일반폼 E는 분노 100일때 [[DMG_TRUE]].", "렉사이 R은 상대가 점멸로 피할 수 없음.",
       ],
-        en: ["Burrowed vision is reduced for Rek'Sai,\nbut enemy movement is detected as vibrations", "Basic attacking while burrowed launches W — it is not a separate button press.\nTargets hit and nearby enemies are [[AIRBORNE]]d", "Rek'Sai's R cannot be dodged with flash"]
+        en: [
+        "Rage generation is drastically reduced against minions.",
+        "Rek'Sai's vision is reduced while burrowed (W), \n but enemy movement can be detected through vibrations.",
+        "Basic attacking while burrowed (W) triggers W's [[AIRBORNE]], airborning the target and nearby enemies.\nThis is not triggered by pressing W.",
+        "Unburrowed E deals [[DMG_TRUE]] at 100 rage.", "Rek'Sai's R cannot be dodged with Flash.",
+      ]
         },
     },
     vision: { ko: [], en: [] },

@@ -23,7 +23,7 @@ const jax: ChampData = {
   },
 
   gimmick: {
-    P: ["BUFF_STACK"],
+    P: ["BUFF_STACK", "AS_UP"],
     Q: ["DMG_PHYSICAL", "TARGETED", "DASH", "WALL_HOP"],
     W: ["DMG_MAGIC", "ON_HIT"],
 

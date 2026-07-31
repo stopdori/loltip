@@ -6,7 +6,7 @@ const camille: ChampData = {
     P: ["SHIELD"],
     Q: ["AA_RESET", "MS_UP"],
     W: ["W_FLASH", "SEPARATOR", "ST_CONDITIONAL", "HEAL", "SLOW"],
-    E: ["DASH", "WALL_HOP", "CC_BUFFER", "AS_UP", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
+    E: ["DASH", "WALL_HOP", "CC_BUFFER", "AS_UP", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE", "STUN"],
     R: ["R_FLASH", "SILENCE", "DASH", "WALL_HOP", "UNTARGETABLE", "UNSTOPPABLE", "TOWER_DODGE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "KNOCKBACK"],
   },
 
@@ -33,7 +33,7 @@ const camille: ChampData = {
       { label: { ko: "투척단계", en: "Throw" }, tags: ["PROJECTILE", "CC_BUFFER"] },
       { label: { ko: "그렙단계", en: "Grab"  }, tags: ["SKILL_CHANNEL", "DASH"] },
       { label: { ko: "대기단계", en: "Hold"  }, tags: ["SKILL_CHANNEL", "SKILL_RECAST"] },
-      { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "DASH", "SEPARATOR", "ST_CONDITIONAL", "STUN"] },
+      { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "DASH", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE", "STUN"] },
     ] },
 
     R:{ phases: [

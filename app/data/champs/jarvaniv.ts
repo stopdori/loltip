@@ -80,11 +80,11 @@ const jarvaniv: ChampData = {
       note2: {
       ko: [ 
   
-        "EQ(깃창)은 2단계로 나뉨 준비/돌진.\n준비단계에서 자르반이 맞은 CC는 유효 하지만\n돌진단계가 발동되어 앞으로 이동하는 것.\n돌진단계에는 CC 저항력 없음.\n단, 정말 짧은시간 준비단계가 있음.", 
+        "EQ(깃창)은 2단계로 나뉨 준비/돌진. \n 준비단계에서 자르반이 맞은 CC는 유효 하지만 \n 돌진단계가 발동되어 앞으로 이동하는 것. \n 돌진단계에는 CC 저항력 없음. \n 단, 정말 짧은시간 준비단계가 있음.", 
         "EQ로 [[DASH]] 하는 도중에 점멸을 사용하면 \n 점멸 위치에 [[AIRBORNE]] 적용.",
-        "R은 자르반이 점프 했을때 상대가 \n [[DASH]], [[BLINK]] 점멸을 쓰면 피할 수 있음.", 
-        "R은 설명에 [[UNSTOPPABLE]]가 없지만 점프해서 날아갈 때 \n 체력바 위에 [[UNSTOPPABLE]]가 생김. \n 도착하면 끝.", 
-        "R1을 사용했을 때 \n R1을 사용하고 CC에 걸리면 \n R2를 사용 할 수 없음. \n 단, [[SLOW]], [[ROOT]] 제외." 
+        "R은 내려찍기 전에 상대가 \n [[DASH]], [[BLINK]] 점멸을 사용하면 피할 수도 있음.", 
+        "R은 설명에 [[UNSTOPPABLE]]가 없지만 \n [[DASH]] 중 체력바 위에 [[UNSTOPPABLE]]가 생김. \n 도착하면 끝.", 
+        "R1을 사용했을 때 자르반이 CC에 걸리면 \n R2로 [[TERRAIN]]을 해제할 수 없음. \n 단, [[SLOW]], [[ROOT]] 제외." 
   
     ], 
   
@@ -92,8 +92,8 @@ const jarvaniv: ChampData = {
         "EQ (Flag-Toss Combo) has two phases: wind-up / dash.\nCC that hits Jarvan IV during the wind-up phase applies, but the dash phase still activates and he moves forward.\nThere is no CC resistance during the dash phase.\nNote: the wind-up phase is very brief.",
         "Using Flash during the EQ [[DASH]] \n applies [[AIRBORNE]] at the Flash destination.",
         "If the target uses [[DASH]], [[BLINK]], or Flash while Jarvan is mid-air (R), they can escape.",
-        "R is not labeled [[UNSTOPPABLE]] in its description, \n but the [[UNSTOPPABLE]] icon appears above the health bar during the jump. \n It ends upon landing.",
-        "If Jarvan IV is hit by CC after casting R1, R2 cannot be activated. \n Exception: [[SLOW]] and [[ROOT]] do not prevent R2.",
+        "R is not labeled [[UNSTOPPABLE]] in its description, \n but the [[UNSTOPPABLE]] icon appears above the health bar during the [[DASH]]. \n It ends upon landing.",
+        "If Jarvan IV is hit by CC after casting R1, \n he cannot use R2 to remove the [[TERRAIN]]. \n Exception: [[SLOW]] and [[ROOT]] do not prevent this.",
       ]
       },
     },
