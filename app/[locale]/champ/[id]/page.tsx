@@ -165,19 +165,19 @@ export default async function Page(props: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "홈",
+        name: lang === "ko" ? "홈" : "Home",
         item: "https://loltip.com",
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "챔피언 목록",
+        name: lang === "ko" ? "챔피언 목록" : "Champion List",
         item: `https://loltip.com/${lang}/champ`,
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: `${champInfo.en} Champion Guide`,
+        name: lang === "ko" ? `${champInfo.ko} 챔피언 공략` : `${champInfo.en} Champion Guide`,
         item: `https://loltip.com/${lang}/champ/${champId}`,
       },
     ],

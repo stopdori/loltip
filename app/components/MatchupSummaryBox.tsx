@@ -104,13 +104,21 @@ export default function MatchupSummaryBox({
               );
             }
           )}
+
+          {/* 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 */}
+          {(result.data.common?.[lang] ?? []).map((text, idx) => (
+            <li key={`common-${idx}`} className="whitespace-pre-line">
+              <TokenText text={text} lang={lang} />
+            </li>
+          ))}
         </ul>
       )}
 
       {/* 내용 없음 */}
       {result?.status === "ok" &&
         (result.data.highlightsByChamp?.[myChampId]?.[lang] ?? []).length === 0 &&
-        (result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).length === 0 && (
+        (result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).length === 0 &&
+        (result.data.common?.[lang] ?? []).length === 0 && (
           <p className="text-slate-400 text-sm text-center">
             {lang === "ko" ? "특별한 상호작용 없음." : "No notable interactions."}
           </p>

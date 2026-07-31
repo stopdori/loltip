@@ -106,14 +106,21 @@ export default async function Page({ params, searchParams }: Props) {
   const matchup = await getMatchupSummary(a, b);
 
   // 판정 세부사항 수집 (SSR + JSON-LD용)
-  const highlights: { champId: string; champKo: string; items: string[] }[] = [];
+  const highlights: { champId: string; champName: string; items: string[] }[] = [];
   if (matchup?.status === "ok") {
     for (const champId of [forcedMe, forcedEnemy]) {
       const items = matchup.data.highlightsByChamp?.[champId]?.[lang] ?? [];
       if (items.length > 0) {
         const info = CHAMPIONS.find((c) => c.id === champId);
-        highlights.push({ champId, champKo: info?.ko ?? champId, items });
+        const champName = (lang === "ko" ? info?.ko : info?.en) ?? champId;
+        highlights.push({ champId, champName, items });
       }
+    }
+
+    // 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 (MatchupSummaryBox.tsx와 동일한 순서)
+    const commonItems = matchup.data.common?.[lang] ?? [];
+    if (commonItems.length > 0) {
+      highlights.push({ champId: "common", champName: lang === "ko" ? "공통" : "Common", items: commonItems });
     }
   }
 
@@ -122,25 +129,25 @@ export default async function Page({ params, searchParams }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "홈", item: "https://loltip.com" },
-      { "@type": "ListItem", position: 2, name: "챔피언 목록", item: `https://loltip.com/${locale}/champ` },
+      { "@type": "ListItem", position: 1, name: lang === "ko" ? "홈" : "Home", item: "https://loltip.com" },
+      { "@type": "ListItem", position: 2, name: lang === "ko" ? "챔피언 목록" : "Champion List", item: `https://loltip.com/${locale}/champ` },
       {
         "@type": "ListItem",
         position: 3,
-        name: `${champA.ko} vs ${champB.ko} 매치업`,
+        name: lang === "ko" ? `${champA.ko} vs ${champB.ko} 매치업` : `${champA.en} vs ${champB.en} Matchup`,
         item: `https://loltip.com/${locale}/matchup/${canonical}`,
       },
     ],
   };
 
   // JSON-LD FAQPage (판정 세부사항)
-  const faqEntities = highlights.flatMap(({ champKo, items }) =>
+  const faqEntities = highlights.flatMap(({ champName, items }) =>
     items.flatMap((text, i) => {
       const stripped = stripTags(text, lang);
       if (!stripped) return [];
       return [{
         "@type": "Question",
-        name: `${champKo} 판정 ${i + 1}번`,
+        name: lang === "ko" ? `${champName} 판정 ${i + 1}번` : `${champName} Interaction ${i + 1}`,
         acceptedAnswer: { "@type": "Answer", text: stripped },
       }];
     })
@@ -166,11 +173,17 @@ export default async function Page({ params, searchParams }: Props) {
 
       {/* 구글 크롤러용 SSR 콘텐츠 */}
       <div className="hidden">
-        <h1>{champA.ko} vs {champB.ko} 매치업</h1>
+        <h1>
+          {lang === "ko" ? (
+            <>{champA.ko} vs {champB.ko} 매치업</>
+          ) : (
+            <>{champA.en} vs {champB.en} Matchup</>
+          )}
+        </h1>
 
-        {highlights.map(({ champId, champKo, items }) => (
+        {highlights.map(({ champId, champName, items }) => (
           <div key={champId}>
-            <h2>{champKo} 판정</h2>
+            <h2>{champName} {lang === "ko" ? "판정" : "Interactions"}</h2>
             <ul>
               {items.map((text, i) => (
                 <li key={i}>{stripTags(text, lang)}</li>

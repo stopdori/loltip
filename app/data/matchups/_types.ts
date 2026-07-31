@@ -12,6 +12,11 @@ export type MatchupSummary = {
       en: string[];
     };
   };
+
+  common?: {
+    ko: string[];
+    en: string[];
+  };
 };
 
 export function hasKoContent(arr: string[] | undefined): boolean {
