@@ -25,4 +25,10 @@ export const ambessa_briar: MatchupSummary = {
         "Briar's R2 [[HOMING]] [[DASH]] can follow Ambessa's R [[DASH]]."],
     },
   },
+  common: {
+    ko: ["암베사 R의 [[SUPPRESS]]을 브라이어 R1의 [[CC_IMMUNE]]에 사용하면 \n 암베사가 브라이어에게 [[BLINK]] 하지만, 브라이어는 [[SUPPRESS]]과 데미지를 완전히 무시하고 행동을 이어서 진행. [[VIDEO:https://www.youtube.com/shorts/8jc0IeTeLos]]",
+      "암베사 R의 [[SUPPRESS]]을 브라이어 R2의 [[UNSTOPPABLE]] [[DASH]]에 사용하면 \n 암베사 R이 브라이어에게 적중한 지점에 [[BLINK]] 하지만, 브라이어는 [[SUPPRESS]]과 데미지를 완전히 무시하고 [[DASH]]. [[VIDEO:https://www.youtube.com/shorts/V-fGfjtDu5E]]",],
+    en: ["If Ambessa's R [[SUPPRESS]] is used on Briar's R1 [[CC_IMMUNE]], \n Ambessa [[BLINK]]s to Briar, but Briar completely ignores the [[SUPPRESS]] and damage and continues her action. [[VIDEO:https://www.youtube.com/shorts/8jc0IeTeLos]]",
+      "If Ambessa's R [[SUPPRESS]] is used on Briar's R2 [[UNSTOPPABLE]] [[DASH]], \n Ambessa's R [[BLINK]]s to the point where it hit Briar, but Briar completely ignores the [[SUPPRESS]] and damage and continues the [[DASH]]. [[VIDEO:https://www.youtube.com/shorts/V-fGfjtDu5E]]"],
+  },
 };

@@ -73,11 +73,19 @@ export default function MatchupSummaryBox({
 
  
       {/* ✅ 정상 */}
-      {result?.status === "ok" && (
-        <ul className="list-disc pl-5 space-y-2 text-sm text-slate-200">
-          {/* 내 챔피언 요약 먼저 */}
-          {(result.data.highlightsByChamp?.[myChampId]?.[lang] ?? []).map(
-            (text, idx) => {
+      {result?.status === "ok" && (() => {
+        const myItems = result.data.highlightsByChamp?.[myChampId]?.[lang] ?? [];
+        const enemyItems = result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? [];
+        const commonItems = result.data.common?.[lang] ?? [];
+
+        const showMyEnemyDivider = myItems.length > 0 && enemyItems.length > 0;
+        const showEnemyCommonDivider =
+          commonItems.length > 0 && (myItems.length > 0 || enemyItems.length > 0);
+
+        return (
+          <ul className="list-disc pl-5 space-y-2 text-sm text-slate-200">
+            {/* 내 챔피언 요약 먼저 */}
+            {myItems.map((text, idx) => {
               const isHighlighted = parsed?.champId === myChampId && parsed?.idx === idx;
               return (
                 <li
@@ -88,12 +96,16 @@ export default function MatchupSummaryBox({
                   <TokenText text={text} lang={lang} />
                 </li>
               );
-            }
-          )}
+            })}
 
-          {/* 상대 챔피언 요약 다음 */}
-          {(result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).map(
-            (text, idx) => {
+            {showMyEnemyDivider && (
+              <li className="list-none block -ml-5" aria-hidden="true">
+                <div className="my-3 h-px bg-gradient-to-r from-transparent via-slate-500/50 to-transparent" />
+              </li>
+            )}
+
+            {/* 상대 챔피언 요약 다음 */}
+            {enemyItems.map((text, idx) => {
               const isHighlighted = parsed?.champId === enemyChampId && parsed?.idx === idx;
               return (
                 <li
@@ -104,17 +116,23 @@ export default function MatchupSummaryBox({
                   <TokenText text={text} lang={lang} />
                 </li>
               );
-            }
-          )}
+            })}
 
-          {/* 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 */}
-          {(result.data.common?.[lang] ?? []).map((text, idx) => (
-            <li key={`common-${idx}`} className="whitespace-pre-line">
-              <TokenText text={text} lang={lang} />
-            </li>
-          ))}
-        </ul>
-      )}
+            {showEnemyCommonDivider && (
+              <li className="list-none block -ml-5" aria-hidden="true">
+                <div className="my-3 h-px bg-gradient-to-r from-transparent via-slate-500/50 to-transparent" />
+              </li>
+            )}
+
+            {/* 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 */}
+            {commonItems.map((text, idx) => (
+              <li key={`common-${idx}`} className="whitespace-pre-line">
+                <TokenText text={text} lang={lang} />
+              </li>
+            ))}
+          </ul>
+        );
+      })()}
 
       {/* 내용 없음 */}
       {result?.status === "ok" &&

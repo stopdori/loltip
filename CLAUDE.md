@@ -16,4 +16,20 @@
 **절차**
 1. `app/data/matchups/<champA>/<champA>_<champB>.ts` 파일 추가/수정
 2. `npm run gen:matchup-json` 실행 → `app/data/matchups/_compiled.json` 갱신 확인
+   (또는 `npm run watch:matchup`을 미리 켜두면 `.ts` 파일 저장 시 자동으로 재생성됨)
 3. `_compiled.json`도 함께 커밋 (자동 생성 파일이지만 git에 커밋되는 대상임 — gitignore 대상 아님)
+
+## 로컬 개발 환경 주의사항
+
+이 프로젝트는 로컬에서 `npm run dev`(개발 서버)와 `npm run watch:matchup`(매치업 파일 자동 감시,
+저장 시 `_compiled.json` 자동 재생성)이 **항상 켜져 있는 상태로 작업하는 경우가 많다.**
+
+- 클로드 코드가 로컬에서 `npm run build`, `npm run dev`, `next start` 등을 **직접 실행하기 전에는**,
+  먼저 bash로 포트 3000이 이미 사용 중인지 확인할 것(예: `netstat -ano | grep 3000` 또는 유사 명령).
+- 이미 실행 중인 서버가 있다면 직접 새 서버를 띄우지 말고 다음 중 하나로 진행할 것:
+  a) 격리된 워크트리(`git worktree`)에서 빌드/테스트를 진행한다.
+  b) 다른 포트를 사용한다 (`next dev -p 3080` 등).
+  c) 사용자에게 "로컬 서버가 켜져 있는 것 같은데, 확인 목적으로 이러이러한 작업을 진행해도 되는지" 먼저 물어본다.
+- `.next` 디렉토리의 락 파일(`.next/dev/lock`) 문제로 이전에 충돌이 발생한 적이 있다.
+  기존 dev 서버를 임의로 종료(kill)하지 말 것 — 사용자가 직접 켜둔 세션일 수 있다. 종료가 꼭 필요하면
+  먼저 사용자에게 확인받을 것.
