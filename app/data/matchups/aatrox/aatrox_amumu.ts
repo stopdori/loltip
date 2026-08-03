@@ -9,8 +9,8 @@ export const aatrox_amumu: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]]효과로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["Aatrox's Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Amumu's Q [[DASH]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]]효과로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Amumu's Q [[DASH]]."],
     },
     amumu: {
       ko: ["아무무 Q의 [[STUN]]로 아트록스 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 아트록스 E의 [[DASH]]을 따라갈 수 있음.", 

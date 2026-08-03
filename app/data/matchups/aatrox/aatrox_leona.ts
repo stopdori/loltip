@@ -9,8 +9,8 @@ export const aatrox_leona: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 레오나 E(돌진단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Leona's E [[DASH]] (charge phase)."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 레오나 E(돌진단계)의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[GRAB]] can interrupt Leona's E [[DASH]] (charge phase)."],
     },
     leona: {
       ko: ["레오나 E의 [[ROOT]]와 Q, R의 [[STUN]]로 아트록스 E의 [[DASH]]를 끊을 수 없음. \n 단, [[ROOT]], [[STUN]]은 남아있음"],

@@ -9,8 +9,8 @@ export const aatrox_xerath: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 제라스 Q의 [[SKILL_CHARGED]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Xerath's Q [[SKILL_CHARGED]] and R [[SKILL_CHANNEL]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 제라스 Q의 [[SKILL_CHARGED]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[GRAB]] can interrupt Xerath's Q [[SKILL_CHARGED]] and R [[SKILL_CHANNEL]]."],
     },
     xerath: {
       ko: [],

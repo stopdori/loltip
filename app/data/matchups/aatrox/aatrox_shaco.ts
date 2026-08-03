@@ -9,8 +9,8 @@ export const aatrox_shaco: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 W의 [[TRUE_SIGHT]]로 샤코 Q의 [[INVISIBILITY]]을 볼 수 있음."],
-      en: ["Aatrox's W [[TRUE_SIGHT]] reveals Shaco's Q [[INVISIBILITY]]."],
+      ko: ["W의 [[TRUE_SIGHT]]로 샤코 Q의 [[INVISIBILITY]]을 볼 수 있음."],
+      en: ["W [[TRUE_SIGHT]] reveals Shaco's Q [[INVISIBILITY]]."],
     },
     shaco: {
       ko: [],

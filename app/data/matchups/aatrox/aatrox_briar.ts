@@ -9,8 +9,8 @@ export const aatrox_briar: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q의 [[AIRBORNE]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음."],
-      en: ["Aatrox's Q [[AIRBORNE]] can interrupt Briar's Q and W [[DASH]]."],
+      ko: ["Q의 [[AIRBORNE]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] can interrupt Briar's Q and W [[DASH]]."],
     },
     briar: {
       ko: ["브라이어 Q의 [[STUN]]로 아트록스 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 

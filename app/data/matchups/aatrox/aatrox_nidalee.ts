@@ -9,8 +9,8 @@ export const aatrox_nidalee: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 니달리 쿠거폼 W의 [[DASH]]을 끊을 수 있음."],
-      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] can interrupt Nidalee's cougar form W [[DASH]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 니달리 쿠거폼 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[GRAB]] can interrupt Nidalee's cougar form W [[DASH]]."],
     },
     nidalee: {
       ko: [],

@@ -9,8 +9,8 @@ export const aatrox_janna: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["아트록스 Q의 [[AIRBORNE]], W [[GRAB]] 효과로 잔나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Aatrox's Q [[AIRBORNE]] and W [[GRAB]] effect can interrupt Janna's R [[SKILL_CHANNEL]]."],
+      ko: ["Q의 [[AIRBORNE]], W [[GRAB]] 효과로 잔나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[GRAB]] effect can interrupt Janna's R [[SKILL_CHANNEL]]."],
     },
     janna: {
       ko: ["잔나 Q, R의 [[AIRBORNE]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음."],
