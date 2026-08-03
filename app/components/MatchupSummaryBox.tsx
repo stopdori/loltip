@@ -72,34 +72,36 @@ export default function MatchupSummaryBox({
         const enemyItems = result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? [];
         const commonItems = result.data.common?.[lang] ?? [];
 
-        const showMyEnemyDivider = myItems.length > 0 && enemyItems.length > 0;
-        const showEnemyCommonDivider =
-          commonItems.length > 0 && (myItems.length > 0 || enemyItems.length > 0);
+        const showMyEnemyDivider = !!my && !!enemy;
+        const showEnemyCommonDivider = commonItems.length > 0 && (!!my || !!enemy);
 
-        const groupClass =
-          "list-disc pl-5 space-y-2 rounded-lg -mx-2 px-2 py-1 transition-colors duration-150 hover:bg-slate-900/60";
+        const groupWrapperClass =
+          "rounded-lg -mx-2 px-2 py-1 transition-colors duration-150 hover:bg-slate-900/60";
+        const listClass = "list-disc pl-5 space-y-2";
 
         return (
           <div className="text-sm text-slate-200">
             {/* 내 챔피언 요약 먼저 */}
-            {myItems.length > 0 && (
-              <>
+            {my && (
+              <div className={groupWrapperClass}>
                 <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(my)}</p>
-                <ul className={groupClass}>
-                  {myItems.map((text, idx) => {
-                    const isHighlighted = parsed?.champId === myChampId && parsed?.idx === idx;
-                    return (
-                      <li
-                        key={`my-${idx}`}
-                        ref={isHighlighted ? highlightRef : null}
-                        className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
-                      >
-                        <TokenText text={text} lang={lang} />
-                      </li>
-                    );
-                  })}
-                </ul>
-              </>
+                {myItems.length > 0 && (
+                  <ul className={listClass}>
+                    {myItems.map((text, idx) => {
+                      const isHighlighted = parsed?.champId === myChampId && parsed?.idx === idx;
+                      return (
+                        <li
+                          key={`my-${idx}`}
+                          ref={isHighlighted ? highlightRef : null}
+                          className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
+                        >
+                          <TokenText text={text} lang={lang} />
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
             )}
 
             {showMyEnemyDivider && (
@@ -107,24 +109,26 @@ export default function MatchupSummaryBox({
             )}
 
             {/* 상대 챔피언 요약 다음 */}
-            {enemyItems.length > 0 && (
-              <>
+            {enemy && (
+              <div className={groupWrapperClass}>
                 <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(enemy)}</p>
-                <ul className={groupClass}>
-                  {enemyItems.map((text, idx) => {
-                    const isHighlighted = parsed?.champId === enemyChampId && parsed?.idx === idx;
-                    return (
-                      <li
-                        key={`enemy-${idx}`}
-                        ref={isHighlighted ? highlightRef : null}
-                        className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
-                      >
-                        <TokenText text={text} lang={lang} />
-                      </li>
-                    );
-                  })}
-                </ul>
-              </>
+                {enemyItems.length > 0 && (
+                  <ul className={listClass}>
+                    {enemyItems.map((text, idx) => {
+                      const isHighlighted = parsed?.champId === enemyChampId && parsed?.idx === idx;
+                      return (
+                        <li
+                          key={`enemy-${idx}`}
+                          ref={isHighlighted ? highlightRef : null}
+                          className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
+                        >
+                          <TokenText text={text} lang={lang} />
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
             )}
 
             {showEnemyCommonDivider && (
@@ -133,16 +137,16 @@ export default function MatchupSummaryBox({
 
             {/* 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 */}
             {commonItems.length > 0 && (
-              <>
+              <div className={groupWrapperClass}>
                 <p className="text-sm font-semibold text-sky-300 mb-1">{lang === "ko" ? "공통" : "Common"}</p>
-                <ul className={groupClass}>
+                <ul className={listClass}>
                   {commonItems.map((text, idx) => (
                     <li key={`common-${idx}`} className="whitespace-pre-line">
                       <TokenText text={text} lang={lang} />
                     </li>
                   ))}
                 </ul>
-              </>
+              </div>
             )}
           </div>
         );
