@@ -33,6 +33,15 @@ export default function MatchupSummaryBox({
   const highlightRef = useRef<HTMLLIElement>(null);
   const parsed = parseHighlight(highlight);
 
+  const my = CHAMPIONS.find((c) => c.id === myChampId);
+  const enemy = CHAMPIONS.find((c) => c.id === enemyChampId);
+  const fmt = (champ: typeof my) => {
+    if (!champ) return "";
+    const name = lang === "ko" ? champ.ko : champ.en;
+    const al = lang === "ko" ? (champ.aliases?.ko ?? []) : (champ.aliases?.en ?? []);
+    return al.length > 0 ? `${name}(${al.join(", ")})` : name;
+  };
+
   useEffect(() => {
     fetch(`/api/matchup?a=${encodeURIComponent(myChampId)}&b=${encodeURIComponent(enemyChampId)}`)
       .then((res) => res.json())
@@ -50,25 +59,10 @@ export default function MatchupSummaryBox({
 
 
   return (
-  <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all min-h-[120px]">
+  <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 transition-all min-h-[120px]">
 
     <div className="flex items-baseline justify-between mb-3">
       <h3 className="text-base font-bold text-yellow-400 tracking-wide uppercase">{lang === "ko" ? "판정 세부사항" : "Interaction Details"}</h3>
-      {(() => {
-        const my = CHAMPIONS.find((c) => c.id === myChampId);
-        const enemy = CHAMPIONS.find((c) => c.id === enemyChampId);
-        const fmt = (champ: typeof my) => {
-          if (!champ) return "";
-          const name = lang === "ko" ? champ.ko : champ.en;
-          const al = lang === "ko" ? (champ.aliases?.ko ?? []) : (champ.aliases?.en ?? []);
-          return al.length > 0 ? `${name}(${al.join(", ")})` : name;
-        };
-        return (
-          <p className="text-xs text-slate-400">
-            {fmt(my)} vs {fmt(enemy)}
-          </p>
-        );
-      })()}
     </div>
 
  
@@ -82,55 +76,75 @@ export default function MatchupSummaryBox({
         const showEnemyCommonDivider =
           commonItems.length > 0 && (myItems.length > 0 || enemyItems.length > 0);
 
+        const groupClass =
+          "list-disc pl-5 space-y-2 rounded-lg -mx-2 px-2 py-1 transition-colors duration-150 hover:bg-slate-900/60";
+
         return (
-          <ul className="list-disc pl-5 space-y-2 text-sm text-slate-200">
+          <div className="text-sm text-slate-200">
             {/* 내 챔피언 요약 먼저 */}
-            {myItems.map((text, idx) => {
-              const isHighlighted = parsed?.champId === myChampId && parsed?.idx === idx;
-              return (
-                <li
-                  key={`my-${idx}`}
-                  ref={isHighlighted ? highlightRef : null}
-                  className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
-                >
-                  <TokenText text={text} lang={lang} />
-                </li>
-              );
-            })}
+            {myItems.length > 0 && (
+              <>
+                <p className="text-sm font-semibold text-amber-300 mb-1">{fmt(my)}</p>
+                <ul className={groupClass}>
+                  {myItems.map((text, idx) => {
+                    const isHighlighted = parsed?.champId === myChampId && parsed?.idx === idx;
+                    return (
+                      <li
+                        key={`my-${idx}`}
+                        ref={isHighlighted ? highlightRef : null}
+                        className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
+                      >
+                        <TokenText text={text} lang={lang} />
+                      </li>
+                    );
+                  })}
+                </ul>
+              </>
+            )}
 
             {showMyEnemyDivider && (
-              <li className="list-none block -ml-5" aria-hidden="true">
-                <div className="my-3 h-px bg-gradient-to-r from-transparent via-slate-500/50 to-transparent" />
-              </li>
+              <div className="my-3 h-px bg-gradient-to-r from-transparent via-slate-500/50 to-transparent" aria-hidden="true" />
             )}
 
             {/* 상대 챔피언 요약 다음 */}
-            {enemyItems.map((text, idx) => {
-              const isHighlighted = parsed?.champId === enemyChampId && parsed?.idx === idx;
-              return (
-                <li
-                  key={`enemy-${idx}`}
-                  ref={isHighlighted ? highlightRef : null}
-                  className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
-                >
-                  <TokenText text={text} lang={lang} />
-                </li>
-              );
-            })}
+            {enemyItems.length > 0 && (
+              <>
+                <p className="text-sm font-semibold text-amber-300 mb-1">{fmt(enemy)}</p>
+                <ul className={groupClass}>
+                  {enemyItems.map((text, idx) => {
+                    const isHighlighted = parsed?.champId === enemyChampId && parsed?.idx === idx;
+                    return (
+                      <li
+                        key={`enemy-${idx}`}
+                        ref={isHighlighted ? highlightRef : null}
+                        className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
+                      >
+                        <TokenText text={text} lang={lang} />
+                      </li>
+                    );
+                  })}
+                </ul>
+              </>
+            )}
 
             {showEnemyCommonDivider && (
-              <li className="list-none block -ml-5" aria-hidden="true">
-                <div className="my-3 h-px bg-gradient-to-r from-transparent via-slate-500/50 to-transparent" />
-              </li>
+              <div className="my-3 h-px bg-gradient-to-r from-transparent via-slate-500/50 to-transparent" aria-hidden="true" />
             )}
 
             {/* 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 */}
-            {commonItems.map((text, idx) => (
-              <li key={`common-${idx}`} className="whitespace-pre-line">
-                <TokenText text={text} lang={lang} />
-              </li>
-            ))}
-          </ul>
+            {commonItems.length > 0 && (
+              <>
+                <p className="text-sm font-semibold text-amber-300 mb-1">{lang === "ko" ? "공통" : "Common"}</p>
+                <ul className={groupClass}>
+                  {commonItems.map((text, idx) => (
+                    <li key={`common-${idx}`} className="whitespace-pre-line">
+                      <TokenText text={text} lang={lang} />
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
         );
       })()}
 
