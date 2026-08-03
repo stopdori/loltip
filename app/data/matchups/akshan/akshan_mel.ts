@@ -9,12 +9,12 @@ export const akshan_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["멜 W가 아크샨 Q R 반사 가능."],
-      en: ["Mel’s W reflects Akshan’s Q R."],
-    },
-    mel: {
       ko: [],
       en: [],
+    },
+    mel: {
+      ko: ["W의 [[REFLECT]]로 아크샨 Q, R의 [[PROJECTILE]]를 반사할 수 있음."],
+      en: ["W [[REFLECT]] can reflect Akshan's Q and R [[PROJECTILE]]."],
     },
   },
 };

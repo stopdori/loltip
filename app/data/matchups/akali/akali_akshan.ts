@@ -14,8 +14,8 @@ export const akali_akshan: MatchupSummary = {
       en: ["E2 [[HOMING]] [[DASH]] can follow Akshan's E [[DASH]]. \n However, it may knock Akshan off the hook depending on timing.", "E1 can reveal Akshan's W [[CAMOUFLAGE]]. \n However, using E2 to collide will hide Akshan again."],
     },
     akshan: {
-      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 아칼리 W(장막)의 [[INVISIBILITY]]을 볼 수 있음."],
-      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Akali's W (shroud) [[INVISIBILITY]]."],
+      ko: ["R의 [[TRUE_SIGHT]]로 아칼리 W(장막)의 [[INVISIBILITY]]을 볼 수 있음."],
+      en: ["R [[TRUE_SIGHT]] can reveal Akali's W (shroud) [[INVISIBILITY]]."],
     },
   },
 };

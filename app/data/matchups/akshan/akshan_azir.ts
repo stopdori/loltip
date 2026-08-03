@@ -9,8 +9,8 @@ export const akshan_azir: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 E를 아지르 R(벽)에 사용 가능"],
-      en: ["Akshan's E can be used on Azir's R (wall)"],
+      ko: ["E를 아지르 R(벽)에 사용 가능"],
+      en: ["E can be used on Azir's R (wall)"],
     },
     azir: {
       ko: ["아지르 R의 [[KNOCKBACK]]으로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],

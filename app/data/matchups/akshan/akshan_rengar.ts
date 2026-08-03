@@ -9,8 +9,8 @@ export const akshan_rengar: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 렝가 R의 [[CAMOUFLAGE]]을 볼 수 있음."],
-      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Rengar's R [[CAMOUFLAGE]]."],
+      ko: ["R의 [[TRUE_SIGHT]]로 렝가 R의 [[CAMOUFLAGE]]을 볼 수 있음."],
+      en: ["R [[TRUE_SIGHT]] can reveal Rengar's R [[CAMOUFLAGE]]."],
     },
     rengar: {
       ko: [],

@@ -9,8 +9,8 @@ export const akshan_khazix: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 카직스 R의 [[INVISIBILITY]]을 볼 수 있음."],
-      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Kha'Zix's R [[INVISIBILITY]]."],
+      ko: ["R의 [[TRUE_SIGHT]]로 카직스 R의 [[INVISIBILITY]]을 볼 수 있음."],
+      en: ["R [[TRUE_SIGHT]] can reveal Kha'Zix's R [[INVISIBILITY]]."],
     },
     khazix: {
       ko: [],

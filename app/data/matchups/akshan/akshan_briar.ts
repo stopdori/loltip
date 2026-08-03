@@ -9,8 +9,8 @@ export const akshan_briar: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 R의 [[PROJECTILE]]는 브라이어 R2의 [[DASH]]을 따라갈 수 있음."],
-      en: ["Akshan's R [[PROJECTILE]] can follow Briar's R2 [[DASH]]."],
+      ko: ["R의 [[PROJECTILE]]는 브라이어 R2의 [[DASH]]을 따라갈 수 있음."],
+      en: ["R [[PROJECTILE]] can follow Briar's R2 [[DASH]]."],
     },
     briar: {
       ko: ["브라이어 Q, E의 [[STUN]] / E의 [[KNOCKBACK]] / R의 [[FEAR]]로 아크샨 E의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음.",

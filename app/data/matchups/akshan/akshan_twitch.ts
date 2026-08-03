@@ -9,8 +9,8 @@ export const akshan_twitch: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 트위치 Q의 [[CAMOUFLAGE]]을 볼 수 있음."],
-      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Twitch's Q [[CAMOUFLAGE]]."],
+      ko: ["R의 [[TRUE_SIGHT]]로 트위치 Q의 [[CAMOUFLAGE]]을 볼 수 있음."],
+      en: ["R [[TRUE_SIGHT]] can reveal Twitch's Q [[CAMOUFLAGE]]."],
     },
     twitch: {
       ko: [],

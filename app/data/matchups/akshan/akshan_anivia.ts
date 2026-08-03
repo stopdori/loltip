@@ -9,8 +9,8 @@ export const akshan_anivia: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 E를 애니비아 W(얼음벽)에 사용 가능"],
-      en: ["Akshan's E can be used on Anivia's W (ice wall)"],
+      ko: ["E를 애니비아 W(얼음벽)에 사용 가능"],
+      en: ["E can be used on Anivia's W (ice wall)"],
     },
     anivia: {
       ko: ["애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],

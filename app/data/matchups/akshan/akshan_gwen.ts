@@ -9,12 +9,12 @@ export const akshan_gwen: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 R을 그웬에게 시전집중 할 때, 그웬이 W를 범위 밖에서 사용하면 아크샨 R이 취소 됨\n아크샨 R을 그웬에게 사용했을 때, 그웬이 W를 범위 밖에서 사용하면 그웬이 맞지 않음"],
-      en: ["When Akshan is channeling R targeting Gwen, if Gwen uses W outside the range, Akshan's R is cancelled\nWhen Akshan's R has been fired at Gwen, if Gwen uses W outside the range, Gwen will not be hit"],
+      ko: ["아크샨 R을 그웬에게 [[SKILL_CHANNEL]] 중일 때, \n 그웬이 W를 아크샨 범위 밖에서 사용하면 아크샨 R의 [[SKILL_CHANNEL]] 취소."],
+      en: ["While Akshan is [[SKILL_CHANNEL]]ing R on Gwen, \n if Gwen uses W outside Akshan's range, Akshan's R [[SKILL_CHANNEL]] is cancelled."],
     },
     gwen: {
-      ko: ["그웬 W로 아크샨 평타, Q, R을 범위 밖에서 맞지 않음\n그웬에게 사용한 평타, R은 날아가던 중 범위 안에 들어올 때 사라짐"],
-      en: ["Gwen's W can avoid Akshan's basic attacks, Q, and R from outside the range\nBasic attacks and R fired at Gwen disappear when entering the range while in flight"],
+      ko: ["그웬 W로 아크샨 평타, Q, R의 [[PROJECTILE]]를 범위 밖에서 맞지 않음. \n 즉, [[PROJECTILE]]가 날아가던 중 그웬 W의 범위 안에 들어갈 때 사라짐."],
+      en: ["Gwen's W avoids Akshan's basic attacks, Q, and R [[PROJECTILE]] from outside the range. \n In other words, the [[PROJECTILE]] disappears when it enters Gwen's W range while in flight."],
     },
   },
 };

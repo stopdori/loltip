@@ -9,8 +9,8 @@ export const akshan_vayne: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 베인 RQ의 [[INVISIBILITY]]을 볼 수 있음."],
-      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Vayne's RQ [[INVISIBILITY]]."],
+      ko: ["R의 [[TRUE_SIGHT]]로 베인 RQ의 [[INVISIBILITY]]을 볼 수 있음."],
+      en: ["R [[TRUE_SIGHT]] can reveal Vayne's RQ [[INVISIBILITY]]."],
     },
     vayne: {
       ko: [],

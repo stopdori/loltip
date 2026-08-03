@@ -9,8 +9,8 @@ export const akshan_shaco: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: ["아크샨 R의 [[TRUE_SIGHT]]로 샤코 Q의 [[INVISIBILITY]]을 볼 수 있음."],
-      en: ["Akshan's R [[TRUE_SIGHT]] can reveal Shaco's Q [[INVISIBILITY]]."],
+      ko: ["R의 [[TRUE_SIGHT]]로 샤코 Q의 [[INVISIBILITY]]을 볼 수 있음."],
+      en: ["R [[TRUE_SIGHT]] can reveal Shaco's Q [[INVISIBILITY]]."],
     },
     shaco: {
       ko: [],
