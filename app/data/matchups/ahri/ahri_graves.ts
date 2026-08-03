@@ -9,9 +9,8 @@ export const ahri_graves: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 그브 E의 [[DASH]]을 끊을 수 있음.",
-        "E의 [[CHARM]]으로 그브 R(후진단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Graves' E [[DASH]].", "E [[CHARM]] can interrupt Graves' R (backstep phase) [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 그브 E의 [[DASH]], R(후진단계)의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Graves' E [[DASH]] and R (backstep phase) [[DASH]]."],
     },
     graves: {
       ko: ["그브 W의 [[NEAR_SIGHT]]로 아리 W, R의 [[HOMING]]을 어렵게 만들 수 있음.",
