@@ -25,9 +25,10 @@ type Props = {
   hideHeader?: boolean;
   embedMode?: boolean;
   useIframe?: boolean;
+  forceCompact?: boolean;
 };
 
-export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, embedMode, useIframe }: Props) {
+export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, embedMode, useIframe, forceCompact }: Props) {
   const locale = useLocale();
   const lang = locale as Lang;
 
@@ -126,6 +127,19 @@ useEffect(() => {
   const [myUltCd, setMyUltCd] = useState<number | null>(null);
   const [enemyUltCd, setEnemyUltCd] = useState<number | null>(null);
   const [mobileTab, setMobileTab] = useState<"my" | "enemy">("my");
+
+  // iframe(useIframe=true)일 때만 필요: iframe은 자신만의 좁은 뷰포트를 가지므로
+  // iframe 내부의 sm: 미디어 쿼리가 부모 페이지의 실제 뷰포트를 반영하지 못한다.
+  // 그래서 이 컴포넌트(iframe이 아닌 실제 페이지)에서 뷰포트 폭을 한 번 판단해 iframe src에 넘겨준다.
+  // 초기 렌더링 시점 기준으로만 판단하고, 리사이즈에는 반응하지 않는다.
+  const [iframeViewportReady, setIframeViewportReady] = useState(false);
+  const [isMobileViewport, setIsMobileViewport] = useState(false);
+
+  useEffect(() => {
+    if (!useIframe) return;
+    setIsMobileViewport(window.innerWidth < 640);
+    setIframeViewportReady(true);
+  }, [useIframe]);
 
   const canCompare =
     !!myChamp && !!enemyChamp && myUltCd != null && enemyUltCd != null;
@@ -292,11 +306,12 @@ setOpenTarget(null);
     <button onClick={() => setMobileTab("enemy")} className={`flex-1 py-2 text-base font-bold text-center transition ${mobileTab === "enemy" ? "text-black bg-yellow-400" : "text-yellow-400"}`}>{enemyChamp?.ko ?? "상대 챔피언"}</button>
   </div>
 )}
+{iframeViewportReady && (
 <section className="relative grid grid-cols-1 sm:grid-cols-[430px_68px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
   {myChamp && (
     <iframe
       id="iframe-my"
-      src={`/${locale}/champ-embed/${myChamp.id}?side=my`}
+      src={`/${locale}/champ-embed/${myChamp.id}?side=my&compact=${isMobileViewport ? "1" : "0"}`}
       style={{ width: "430px", border: "none", height: "800px" }}
       scrolling="no"
       className={`sm:col-start-1${mobileTab !== "my" ? " hidden sm:block" : ""}`}
@@ -305,13 +320,14 @@ setOpenTarget(null);
   {enemyChamp && (
     <iframe
       id="iframe-enemy"
-      src={`/${locale}/champ-embed/${enemyChamp.id}?side=enemy`}
+      src={`/${locale}/champ-embed/${enemyChamp.id}?side=enemy&compact=${isMobileViewport ? "1" : "0"}`}
       style={{ width: "430px", border: "none", height: "800px" }}
       scrolling="no"
       className={`sm:col-start-3${mobileTab !== "enemy" ? " hidden sm:block" : ""}`}
     />
   )}
 </section>
+)}
 </>
 ) : (
 <section className="relative grid grid-cols-1 sm:grid-cols-[430px_68px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
@@ -348,7 +364,7 @@ setOpenTarget(null);
   </div>
 
   <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-2">
-    <SkillTagsPanel champId={myChamp?.id ?? null} lang={lang} />
+    <SkillTagsPanel champId={myChamp?.id ?? null} lang={lang} forceCompact={forceCompact} />
   </div>
 </div>
 
@@ -387,7 +403,7 @@ setOpenTarget(null);
   </div>
 
   <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-2">
-    <SkillTagsPanel champId={enemyChamp?.id ?? null} lang={lang} />
+    <SkillTagsPanel champId={enemyChamp?.id ?? null} lang={lang} forceCompact={forceCompact} />
   </div>
 </div>
 

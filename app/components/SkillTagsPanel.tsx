@@ -280,10 +280,18 @@ function toggleBtnFormClass(active: boolean) {
 export default function SkillTagsPanel({
   champId,
   lang,
+  forceCompact,
 }: {
   champId: string | null;
   lang: "ko" | "en";
+  /** undefined면 sm: 미디어 쿼리(뷰포트 기준)로 자동 판단, true/false면 그 값으로 강제 고정 (iframe 내부처럼 뷰포트 기준을 못 믿을 때 사용) */
+  forceCompact?: boolean;
 }) {
+  const compactRowPadding =
+    forceCompact === undefined ? "py-1 sm:py-2.5" : forceCompact ? "py-1" : "py-2.5";
+  const compactRowGap =
+    forceCompact === undefined ? "space-y-0.5 sm:space-y-1.5" : forceCompact ? "space-y-0.5" : "space-y-1.5";
+
   const [form, setForm] = useState<FormKey>("base");
   const [mode, setMode] = useState<"skill" | "vision" | "gimmick">("skill");
 
@@ -394,7 +402,7 @@ const renderNoteSection = (items: string[], title: string) => {
       };
 
       return (
-        <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
+        <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
@@ -445,7 +453,7 @@ const renderNoteSection = (items: string[], title: string) => {
       };
 
       return (
-        <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
+        <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
@@ -496,7 +504,7 @@ const renderNoteSection = (items: string[], title: string) => {
       };
 
       return (
-        <div className="flex items-start gap-x-4 py-1 sm:py-2.5">
+        <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
@@ -537,7 +545,7 @@ const renderNoteSection = (items: string[], title: string) => {
   }
 
   return (
-    <div className={`grid grid-cols-[24px_1fr] gap-x-4 ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"} py-1 sm:py-2.5 ${tags.includes("SEPARATOR_NEWLINE") ? "" : "min-h-[35px]"}`}>
+    <div className={`grid grid-cols-[24px_1fr] gap-x-4 ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"} ${compactRowPadding} ${tags.includes("SEPARATOR_NEWLINE") ? "" : "min-h-[35px]"}`}>
       <div className={`${skillKeyClass} ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"}`}>
         <SkillLabelWithTip
           labelText={label[k]}
@@ -683,7 +691,7 @@ return (
 
 
 
-    <div className="space-y-0.5 sm:space-y-1.5">
+    <div className={compactRowGap}>
       {renderRow("P")}
       {renderRow("Q")}
       {renderRow("W")}

@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 
 type Props = {
   params: Promise<{ locale: string; id: string }>;
-  searchParams: Promise<{ side?: string }>;
+  searchParams: Promise<{ side?: string; compact?: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -52,6 +52,8 @@ export default async function Page(props: Props) {
   if (!champInfo) notFound();
 
   const side = searchParams?.side ?? "my";
+  const compactParam = searchParams?.compact;
+  const forceCompact = compactParam === "1" ? true : compactParam === "0" ? false : undefined;
 
   const forcedMe = side === "my" ? champId : null;
   const forcedEnemy = side === "enemy" ? champId : null;
@@ -65,6 +67,7 @@ export default async function Page(props: Props) {
         forcedEnemy={forcedEnemy}
         hideHeader={true}
         embedMode={true}
+        forceCompact={forceCompact}
       />
       <script dangerouslySetInnerHTML={{ __html: `
   function sendHeight() {
