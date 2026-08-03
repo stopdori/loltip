@@ -84,7 +84,7 @@ export default function MatchupSummaryBox({
             {/* 내 챔피언 요약 먼저 */}
             {myItems.length > 0 && (
               <>
-                <p className="text-sm font-semibold text-amber-300 mb-1">{fmt(my)}</p>
+                <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(my)}</p>
                 <ul className={groupClass}>
                   {myItems.map((text, idx) => {
                     const isHighlighted = parsed?.champId === myChampId && parsed?.idx === idx;
@@ -109,7 +109,7 @@ export default function MatchupSummaryBox({
             {/* 상대 챔피언 요약 다음 */}
             {enemyItems.length > 0 && (
               <>
-                <p className="text-sm font-semibold text-amber-300 mb-1">{fmt(enemy)}</p>
+                <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(enemy)}</p>
                 <ul className={groupClass}>
                   {enemyItems.map((text, idx) => {
                     const isHighlighted = parsed?.champId === enemyChampId && parsed?.idx === idx;
@@ -134,7 +134,7 @@ export default function MatchupSummaryBox({
             {/* 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 */}
             {commonItems.length > 0 && (
               <>
-                <p className="text-sm font-semibold text-amber-300 mb-1">{lang === "ko" ? "공통" : "Common"}</p>
+                <p className="text-sm font-semibold text-sky-300 mb-1">{lang === "ko" ? "공통" : "Common"}</p>
                 <ul className={groupClass}>
                   {commonItems.map((text, idx) => (
                     <li key={`common-${idx}`} className="whitespace-pre-line">
