@@ -9,8 +9,8 @@ export const ahri_ambessa: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 암베사 P의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Ambessa's P [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 암베사 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Ambessa's P [[DASH]]."],
     },
     ambessa: {
       ko: ["암베사 R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[CHARM]]은 남아있음.",

@@ -9,8 +9,8 @@ export const ahri_gragas: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 그라가스 E(배치기)의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Gragas's E (body slam) [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 그라가스 E(배치기)의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Gragas's E (body slam) [[DASH]]."],
     },
     gragas: {
       ko: ["그라가스 E(배치기), R의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],

@@ -9,8 +9,8 @@ export const ahri_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. \n 단, Q의 [[COOLDOWN]]은 다시 [[CDR_RESET]]."],
-      en: ["Ahri's E [[CHARM]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q [[COOLDOWN]] is [[CDR_RESET]]."],
+      ko: ["E의 [[CHARM]]으로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. \n 단, Q의 [[COOLDOWN]]은 다시 [[CDR_RESET]]."],
+      en: ["E [[CHARM]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q [[COOLDOWN]] is [[CDR_RESET]]."],
     },
     volibear: {
       ko: [],

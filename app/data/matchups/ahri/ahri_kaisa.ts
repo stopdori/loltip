@@ -9,8 +9,8 @@ export const ahri_kaisa: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 카이사 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Kai'Sa's R [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 카이사 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Kai'Sa's R [[DASH]]."],
     },
     kaisa: {
       ko: [],

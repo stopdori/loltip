@@ -9,8 +9,8 @@ export const ahri_leona: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 레오나 E(돌진단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Leona's E (dash phase) [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 레오나 E(돌진단계)의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Leona's E (dash phase) [[DASH]]."],
     },
     leona: {
       ko: ["레오나 Q, R의 [[STUN]]과 E의 [[ROOT]]으로 아리 R을 끊을 수 없음. \n 단, [[ROOT]], [[STUN]]은 남아있음.",

@@ -9,8 +9,8 @@ export const ahri_fizz: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 피즈 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Fizz's Q [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 피즈 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Fizz's Q [[DASH]]."],
     },
     fizz: {
       ko: ["피즈 E의 [[UNTARGETABLE]]로 아리 Q, W, E, R의 [[PROJECTILE]]를 피할 수 있음.",

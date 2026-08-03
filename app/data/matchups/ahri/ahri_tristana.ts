@@ -9,8 +9,8 @@ export const ahri_tristana: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 트리스타나 W(점프단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Tristana's W (jump phase) [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 트리스타나 W(점프단계)의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Tristana's W (jump phase) [[DASH]]."],
     },
     tristana: {
       ko: ["트리스타나 W(준비단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]] 효과를 잠시 무시하고 다음 단계를 시전할 수 있음. \n 단, 트리스타나 W(점프단계)가 종료 후 [[CHARM]]은 남아있음."],

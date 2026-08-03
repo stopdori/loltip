@@ -9,8 +9,8 @@ export const ahri_twistedfate: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 트페 R2 의[[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Twisted Fate's R2 [[SKILL_CHANNEL]]."],
+      ko: ["E의 [[CHARM]]으로 트페 R2 의[[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Twisted Fate's R2 [[SKILL_CHANNEL]]."],
     },
     twistedfate: {
       ko: [],

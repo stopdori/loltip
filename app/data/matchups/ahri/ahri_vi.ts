@@ -9,8 +9,8 @@ export const ahri_vi: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]로 바이 Q의 [[SKILL_CHARGED]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Vi's Q [[SKILL_CHARGED]]."],
+      ko: ["E의 [[CHARM]]로 바이 Q의 [[SKILL_CHARGED]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Vi's Q [[SKILL_CHARGED]]."],
     },
     vi: {
       ko: [],

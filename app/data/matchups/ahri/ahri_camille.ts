@@ -9,8 +9,8 @@ export const ahri_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 카밀 E(그렙, 대기, 돌진단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Camille's E (grapple, wait, and dash phases) [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 카밀 E(그렙, 대기, 돌진단계)의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Camille's E (grapple, wait, and dash phases) [[DASH]]."],
     },
     camille: {
       ko: ["카밀 E의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 

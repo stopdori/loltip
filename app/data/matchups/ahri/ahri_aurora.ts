@@ -9,8 +9,8 @@ export const ahri_aurora: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Aurora's W and E [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Aurora's W and E [[DASH]]."],
     },
     aurora: {
       ko: ["오로라 E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]로 아리 E의 [[CHARM]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[CHARM]]은 남아있음."],

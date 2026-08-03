@@ -9,8 +9,8 @@ export const ahri_kalista: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 칼리스타 P의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Kalista's P [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 칼리스타 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Kalista's P [[DASH]]."],
     },
     kalista: {
       ko: ["칼리스타 R의 아군 그렙으로 아리 E의 [[CHARM]]에 걸린 계약자를 데려올 수 있음."],

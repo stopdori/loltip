@@ -9,8 +9,8 @@ export const ahri_jax: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 잭스 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Jax's Q [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 잭스 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Jax's Q [[DASH]]."],
     },
     jax: {
       ko: ["잭스 E의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음. 단, [[STUN]]은 남아있음."],

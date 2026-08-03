@@ -9,8 +9,8 @@ export const ahri_amumu: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Amumu's Q [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Amumu's Q [[DASH]]."],
     },
     amumu: {
       ko: ["아무무 Q(붕대)로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 아리 R의 [[DASH]]을 따라갈 수 있음.", 

@@ -9,8 +9,8 @@ export const ahri_jayce: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 제이스 해머폼 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Jayce's hammer form Q [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 제이스 해머폼 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Jayce's hammer form Q [[DASH]]."],
     },
     jayce: {
       ko: ["제이스 해머폼 E의 [[KNOCKBACK]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],

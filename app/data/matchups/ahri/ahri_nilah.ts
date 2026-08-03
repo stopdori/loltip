@@ -9,8 +9,8 @@ export const ahri_nilah: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 닐라 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E can interrupt Nilah's E"],
+      ko: ["E의 [[CHARM]]으로 닐라 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Nilah's E [[DASH]]."],
     },
     nilah: {
       ko: [],

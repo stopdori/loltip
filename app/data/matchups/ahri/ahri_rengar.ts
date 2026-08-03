@@ -9,8 +9,8 @@ export const ahri_rengar: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 렝가 P, R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Rengar's P and R [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 렝가 P, R의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Rengar's P and R [[DASH]]."],
     },
     rengar: {
       ko: [],

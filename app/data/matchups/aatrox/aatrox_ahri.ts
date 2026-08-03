@@ -13,8 +13,8 @@ export const aatrox_ahri: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Ahri's R [[DASH]]."],
     },
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Aatrox's E [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Aatrox's E [[DASH]]."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const ahri_zeri: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 제리 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Zeri's E [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 제리 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Zeri's E [[DASH]]."],
     },
     zeri: {
       ko: [],

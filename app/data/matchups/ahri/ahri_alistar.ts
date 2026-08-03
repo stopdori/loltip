@@ -9,8 +9,8 @@ export const ahri_alistar: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 알리스타 W의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Alistar's W [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 알리스타 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Alistar's W [[DASH]]."],
     },
     alistar: {
       ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 아리 R의 [[DASH]]을 끊을 수 있음.", 

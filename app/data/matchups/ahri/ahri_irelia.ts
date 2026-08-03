@@ -9,8 +9,8 @@ export const ahri_irelia: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 이렐리아 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Irelia's Q [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 이렐리아 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Irelia's Q [[DASH]]."],
     },
     irelia: {
       ko: ["이렐리아 W의 [[CAST_COMMIT]]으로 아리 E의 [[CHARM]]에 걸려도 시전을 유지할 수 있음.",

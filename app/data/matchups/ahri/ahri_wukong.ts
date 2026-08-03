@@ -9,8 +9,8 @@ export const ahri_wukong: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["아리 E의 [[CHARM]]으로 오공 W, E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Wukong's W and E [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 오공 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[CHARM]] can interrupt Wukong's W and E [[DASH]]."],
     },
     wukong: {
       ko: [],
