@@ -102,17 +102,20 @@ function TokenPill({
   );
 }
 
-function VideoLinkIcon({ url }: { url: string }) {
+function VideoLinkIcon({ url, lang }: { url: string; lang: "ko" | "en" }) {
+  const label = lang === "ko" ? "클립" : "Clip";
+  const title = lang === "ko" ? "관련 클립 보기" : "Watch related clip";
   return (
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="pointer-events-auto relative z-10 inline-flex align-middle ml-1 -mt-0.5 text-amber-400/80 hover:text-amber-300 transition-colors"
-      aria-label="관련 영상 보기"
-      title="관련 영상 보기"
+      className="pointer-events-auto relative z-10 inline-flex items-center gap-1 rounded-md bg-slate-700/70 px-2 py-0.5 text-xs font-semibold text-amber-300 ring-1 ring-white/10 hover:bg-slate-600/70 transition-colors align-middle ml-1 -mt-0.5"
+      aria-label={title}
+      title={title}
     >
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true">
+      {label}
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5" aria-hidden="true">
         <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.5 6.5 6 3.5-6 3.5v-7z" />
       </svg>
     </a>
@@ -132,9 +135,9 @@ export default function TokenText({
         const raw = part.match(/^\[\[(.+?)\]\]$/)?.[1];
         const token = raw?.trim() as TagId | undefined;
 
-        const videoUrl = raw?.trim().match(/^VIDEO:(.+)$/)?.[1]?.trim();
-        if (videoUrl) {
-          return <VideoLinkIcon key={idx} url={videoUrl} />;
+        const clipUrl = raw?.trim().match(/^CLIP:(.+)$/)?.[1]?.trim();
+        if (clipUrl) {
+          return <VideoLinkIcon key={idx} url={clipUrl} lang={lang} />;
         }
 
         const labelData = GIMMICK_TAG_LABEL[token as GimmickTagId] ?? TAG_LABEL[token as TagId];
