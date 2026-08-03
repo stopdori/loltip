@@ -9,8 +9,8 @@ export const akali_ziggs: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 직스 W의 [[DASH]]을 따라갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Ziggs's W [[DASH]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]] 직스 W의 [[DASH]]을 따라갈 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Ziggs's W [[DASH]]."],
     },
     ziggs: {
       ko: [],

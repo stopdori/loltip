@@ -9,8 +9,8 @@ export const akali_evelynn: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 이블린 [[EMPOWERED]] E의 [[DASH]], R의 [[BLINK]]을 따라 갈 수 있음.", "아칼리 E1의 [[TRUE_SIGHT]]로 이블린 P의 [[CAMOUFLAGE]]를 볼 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Evelynn's [[EMPOWERED]] E [[DASH]] and R [[BLINK]].", "Akali's E1 [[TRUE_SIGHT]] can reveal Evelynn's P [[CAMOUFLAGE]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]]으로 이블린 [[EMPOWERED]] E의 [[DASH]], R의 [[BLINK]]을 따라 갈 수 있음.", "E1의 [[TRUE_SIGHT]]로 이블린 P의 [[CAMOUFLAGE]]를 볼 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Evelynn's [[EMPOWERED]] E [[DASH]] and R [[BLINK]].", "E1 [[TRUE_SIGHT]] can reveal Evelynn's P [[CAMOUFLAGE]]."],
     },
     evelynn: {
       ko: [],

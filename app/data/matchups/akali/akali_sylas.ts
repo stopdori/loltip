@@ -9,8 +9,8 @@ export const akali_sylas: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 사일러스 W, E1, E2의 [[DASH]]을 따라갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Sylas's W, E1, and E2 [[DASH]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]] 사일러스 W, E1, E2의 [[DASH]]을 따라갈 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Sylas's W, E1, and E2 [[DASH]]."],
     },
     sylas: {
       ko: [],

@@ -9,8 +9,8 @@ export const akali_alistar: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[DASH]]으로 알리스타 W의 [[DASH]]을 따라 갈 수 있음."],
-      en: ["Akali's E2 [[DASH]] can follow Alistar's W [[DASH]]."],
+      ko: ["E2의 [[DASH]]으로 알리스타 W의 [[DASH]]을 따라 갈 수 있음."],
+      en: ["E2 [[DASH]] can follow Alistar's W [[DASH]]."],
     },
     alistar: {
       ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 있음.", 

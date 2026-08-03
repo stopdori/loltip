@@ -9,9 +9,9 @@ export const akali_akshan: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 아크샨 E의 [[DASH]]을 따라 갈 수 있음. \n 단, 판정에 따라 갈고리에서 떨어뜨릴 수도 있음.",
-        "아칼리 E1의 [[TRUE_SIGHT]]로 아크샨 W의 [[CAMOUFLAGE]]을 볼 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Akshan's E [[DASH]]. \n However, it may knock Akshan off the hook depending on timing.", "Akali's E1 can reveal Akshan's W [[CAMOUFLAGE]]. \n However, using E2 to collide will hide Akshan again."],
+      ko: ["E2의 [[HOMING]] [[DASH]]으로 아크샨 E의 [[DASH]]을 따라 갈 수 있음. \n 단, 판정에 따라 갈고리에서 떨어뜨릴 수도 있음.",
+        "E1의 [[TRUE_SIGHT]]로 아크샨 W의 [[CAMOUFLAGE]]을 볼 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Akshan's E [[DASH]]. \n However, it may knock Akshan off the hook depending on timing.", "E1 can reveal Akshan's W [[CAMOUFLAGE]]. \n However, using E2 to collide will hide Akshan again."],
     },
     akshan: {
       ko: ["아크샨 R의 [[TRUE_SIGHT]]로 아칼리 W(장막)의 [[INVISIBILITY]]을 볼 수 있음."],

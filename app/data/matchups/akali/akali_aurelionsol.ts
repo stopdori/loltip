@@ -9,8 +9,8 @@ export const akali_aurelionsol: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 아우렐리온 솔 W(비행)의 [[DASH]]을 따라 갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Aurelion Sol's W (flight) [[DASH]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]]으로 아우렐리온 솔 W(비행)의 [[DASH]]을 따라 갈 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Aurelion Sol's W (flight) [[DASH]]."],
     },
     aurelionsol: {
       ko: ["아우렐리온 솔 R의 [[STUN]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 

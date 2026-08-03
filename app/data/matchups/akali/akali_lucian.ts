@@ -9,8 +9,8 @@ export const akali_lucian: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 루시안 E의 [[DASH]]을 따라갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Lucian's E [[DASH]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]]으로 루시안 E의 [[DASH]]을 따라갈 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Lucian's E [[DASH]]."],
     },
     lucian: {
       ko: [],

@@ -9,8 +9,8 @@ export const akali_jarvaniv: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]]으로 자르반 EQ, R의 [[DASH]]을 따라 갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Jarvan IV's EQ and R [[DASH]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]]으로 자르반 EQ, R의 [[DASH]]을 따라 갈 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Jarvan IV's EQ and R [[DASH]]."],
     },
     jarvaniv: {
       ko: ["자르반 EQ로 아칼리 E, E2, R, R2를 끊을 수 있음"],

@@ -9,8 +9,8 @@ export const akali_zoe: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 조이 R의 [[BLINK]]을 따라갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Zoe's R [[BLINK]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]] 조이 R의 [[BLINK]]을 따라갈 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Zoe's R [[BLINK]]."],
     },
     zoe: {
       ko: [],

@@ -9,8 +9,8 @@ export const akali_tahmkench: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 탐켄치 W의 [[BLINK]]을 따라갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Tahm Kench's W [[BLINK]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]] 탐켄치 W의 [[BLINK]]을 따라갈 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Tahm Kench's W [[BLINK]]."],
     },
     tahmkench: {
       ko: ["탐켄치 R로 아칼리 E를 맞은 아군을 삼키면 아칼리가 E2를 사용할 수 없음.", "아칼리가 E2로 아군에게 날아올 때 탐켄치가 아군을 삼키면, 아칼리는 아군 챔피언이 있던 위치로 이동하고 데미지 무효화"],

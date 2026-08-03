@@ -9,8 +9,8 @@ export const akali_sett: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["아칼리 E2의 [[HOMING]] [[DASH]] 세트 R의 [[DASH]]을 따라갈 수 있음."],
-      en: ["Akali's E2 [[HOMING]] [[DASH]] can follow Sett's R [[DASH]]."],
+      ko: ["E2의 [[HOMING]] [[DASH]] 세트 R의 [[DASH]]을 따라갈 수 있음."],
+      en: ["E2 [[HOMING]] [[DASH]] can follow Sett's R [[DASH]]."],
     },
     sett: {
       ko: [],
