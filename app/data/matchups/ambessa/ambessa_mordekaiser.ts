@@ -9,9 +9,9 @@ export const ambessa_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[UNSTOPPABLE]]로 모데카이저 E의 [[GRAB]]을 무시할 수 있음.", 
-        "암베사 R의 [[UNSTOPPABLE]]로 모데카이저 R을 무시할 수 있음. \n 모데카이저가 망치를 앞으로 쭉 내밀고 서 있을 때 암베사 R을 사용. \n 즉, 이세계로 가지 않음. 모데 R의 쿨타임은 소모."],
-      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Mordekaiser's E [[GRAB]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Mordekaiser's R. \n Use Ambessa's R when Mordekaiser is standing with his hammer fully extended forward. \n This means Ambessa will not be sent to the Death Realm. Mordekaiser's R cooldown is still consumed."],
+      ko: ["R의 [[UNSTOPPABLE]]로 모데카이저 E의 [[GRAB]]을 무시할 수 있음.", 
+        "R의 [[UNSTOPPABLE]]로 모데카이저 R을 무시할 수 있음. \n 모데카이저가 망치를 앞으로 쭉 내밀고 서 있을 때 암베사 R을 사용. \n 즉, 이세계로 가지 않음. 모데 R의 쿨타임은 소모."],
+      en: ["R [[UNSTOPPABLE]] can ignore Mordekaiser's E [[GRAB]].", "R [[UNSTOPPABLE]] can ignore Mordekaiser's R. \n Use Ambessa's R when Mordekaiser is standing with his hammer fully extended forward. \n This means Ambessa will not be sent to the Death Realm. Mordekaiser's R cooldown is still consumed."],
     },
     mordekaiser: {
       ko: [],

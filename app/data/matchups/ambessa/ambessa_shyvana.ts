@@ -9,8 +9,8 @@ export const ambessa_shyvana: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[UNSTOPPABLE]]로 쉬바나 R의 [[FEAR]]를 무시할 수 있음."],
-      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Shyvana's R [[FEAR]]."],
+      ko: ["R의 [[UNSTOPPABLE]]로 쉬바나 R의 [[FEAR]]를 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Shyvana's R [[FEAR]]."],
     },
     shyvana: {
       ko: [],

@@ -9,8 +9,8 @@ export const ambessa_talon: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 탈론 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Talon's E [[DASH]]."],
+      ko: ["R의 [[SUPPRESS]]으로 탈론 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[SUPPRESS]] can interrupt Talon's E [[DASH]]."],
     },
     talon: {
       ko: [],

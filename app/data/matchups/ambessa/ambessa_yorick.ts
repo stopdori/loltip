@@ -9,8 +9,8 @@ export const ambessa_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[UNSTOPPABLE]]로 요릭 W([[TERRAIN]])의 [[AIRBORNE]]을 무시할 수 있음."],
-      en: ["Ambessa's R [[UNSTOPPABLE]] can ignore Yorick's W [[TERRAIN]] [[AIRBORNE]]."],
+      ko: ["R의 [[UNSTOPPABLE]]로 요릭 W([[TERRAIN]])의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Yorick's W [[TERRAIN]] [[AIRBORNE]]."],
     },
     yorick: {
       ko: [],

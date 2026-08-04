@@ -9,8 +9,8 @@ export const ambessa_jayce: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 제이스 해머폼 Q의 [[DASH]]을 끊을 수 있음.", "암베사 R의 [[UNSTOPPABLE]]로 제이스 해머폼 E의 [[KNOCKBACK]]을 무시할 수 있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Jayce's hammer form Q [[DASH]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Jayce's hammer form E [[KNOCKBACK]]."],
+      ko: ["R의 [[SUPPRESS]]으로 제이스 해머폼 Q의 [[DASH]]을 끊을 수 있음.", "R의 [[UNSTOPPABLE]]로 제이스 해머폼 E의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[SUPPRESS]] can interrupt Jayce's hammer form Q [[DASH]].", "R [[UNSTOPPABLE]] can ignore Jayce's hammer form E [[KNOCKBACK]]."],
     },
     jayce: {
       ko: [],

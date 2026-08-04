@@ -9,9 +9,9 @@ export const ambessa_warwick: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 워윅 Q의 [[DASH]](이론상), R의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
-        "암베사 R의 [[UNSTOPPABLE]]로 워윅 E의 [[FEAR]], R의 [[SUPPRESS]]를 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Warwick's Q [[DASH]] (theoretically) and R [[SKILL_CHANNEL]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Warwick's E [[FEAR]] and R [[SUPPRESS]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
+      ko: ["R의 [[SUPPRESS]]으로 워윅 Q의 [[DASH]](이론상), R의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "R의 [[UNSTOPPABLE]]로 워윅 E의 [[FEAR]], R의 [[SUPPRESS]]를 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
+      en: ["R [[SUPPRESS]] can interrupt Warwick's Q [[DASH]] (theoretically) and R [[SKILL_CHANNEL]].", "R [[UNSTOPPABLE]] can ignore Warwick's E [[FEAR]] and R [[SUPPRESS]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
     },
     warwick: {
       ko: [],

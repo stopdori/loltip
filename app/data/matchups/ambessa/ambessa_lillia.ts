@@ -9,9 +9,9 @@ export const ambessa_lillia: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 릴리아 W의 [[DASH]]을 끊을 수 있음.", 
-        "암베사 R의 [[UNSTOPPABLE]]로 릴리아 R의 [[SLEEP]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[SLEEP]]은 남아있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Lillia's W [[DASH]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Lillia's R [[SLEEP]]. \n However, the [[SLEEP]] still applies after [[UNSTOPPABLE]] ends."],
+      ko: ["R의 [[SUPPRESS]]으로 릴리아 W의 [[DASH]]을 끊을 수 있음.", 
+        "R의 [[UNSTOPPABLE]]로 릴리아 R의 [[SLEEP]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[SLEEP]]은 남아있음."],
+      en: ["R [[SUPPRESS]] can interrupt Lillia's W [[DASH]].", "R [[UNSTOPPABLE]] can ignore Lillia's R [[SLEEP]]. \n However, the [[SLEEP]] still applies after [[UNSTOPPABLE]] ends."],
     },
     lillia: {
       ko: [],

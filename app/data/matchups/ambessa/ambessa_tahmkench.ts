@@ -9,10 +9,10 @@ export const ambessa_tahmkench: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 탐켄치 W의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
-        "암베사 R의 [[UNSTOPPABLE]]로 탐켄치 Q의 [[STUN]], W의 [[AIRBORNE]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음.", 
-        "암베사 R의 [[UNSTOPPABLE]]로 탐켄치 R(3스택 삼키기)을 무시할 수 있음. \n 단, 암베사가 R을 미리 시전한 타이밍에 탐켄치가 R을 사용해야 무시. \n 탐켄치가 R이나 QR을 먼저 시전하면 절대 불가능."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Tahm Kench's W [[SKILL_CHANNEL]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Tahm Kench's Q [[STUN]] and W [[AIRBORNE]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends.", "Ambessa's R [[UNSTOPPABLE]] can ignore Tahm Kench's R (3-stack devour). \n However, Tahm Kench must use R at the timing when Ambessa has already cast R. \n If Tahm Kench casts R or QR first, it is absolutely impossible."],
+      ko: ["R의 [[SUPPRESS]]으로 탐켄치 W의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "R의 [[UNSTOPPABLE]]로 탐켄치 Q의 [[STUN]], W의 [[AIRBORNE]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음.", 
+        "R의 [[UNSTOPPABLE]]로 탐켄치 R(3스택 삼키기)을 무시할 수 있음. \n 단, 암베사가 R을 미리 시전한 타이밍에 탐켄치가 R을 사용해야 무시. \n 탐켄치가 R이나 QR을 먼저 시전하면 절대 불가능."],
+      en: ["R [[SUPPRESS]] can interrupt Tahm Kench's W [[SKILL_CHANNEL]].", "R [[UNSTOPPABLE]] can ignore Tahm Kench's Q [[STUN]] and W [[AIRBORNE]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends.", "R [[UNSTOPPABLE]] can ignore Tahm Kench's R (3-stack devour). \n However, Tahm Kench must use R at the timing when Ambessa has already cast R. \n If Tahm Kench casts R or QR first, it is absolutely impossible."],
     },
     tahmkench: {
       ko: ["암베사 R의 [[SUPPRESS]]당한 아군에게 탐켄치가 R을 사용하면, 먹을 수 있음."],

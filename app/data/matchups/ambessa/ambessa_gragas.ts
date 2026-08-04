@@ -9,8 +9,8 @@ export const ambessa_gragas: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 그라가스 E(배치기)의 [[DASH]]을 끊을 수 있음.", "암베사 R의 [[UNSTOPPABLE]]로 그라가스 E, R의 [[AIRBORNE]]을 무시할 수 있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Gragas's E (body slam) [[DASH]].", "Ambessa's R [[UNSTOPPABLE]] can ignore Gragas's E and R [[AIRBORNE]]."],
+      ko: ["R의 [[SUPPRESS]]으로 그라가스 E(배치기)의 [[DASH]]을 끊을 수 있음.", "R의 [[UNSTOPPABLE]]로 그라가스 E, R의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[SUPPRESS]] can interrupt Gragas's E (body slam) [[DASH]].", "R [[UNSTOPPABLE]] can ignore Gragas's E and R [[AIRBORNE]]."],
     },
     gragas: {
       ko: [],

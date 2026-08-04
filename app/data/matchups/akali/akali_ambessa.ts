@@ -13,8 +13,8 @@ export const akali_ambessa: MatchupSummary = {
       en: ["E2 [[HOMING]] [[DASH]] can follow Ambessa's P [[DASH]] and R [[BLINK]]."],
     },
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Akali's E1, E2, R1, and R2 [[DASH]]."],
+      ko: ["R의 [[SUPPRESS]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[SUPPRESS]] can interrupt Akali's E1, E2, R1, and R2 [[DASH]]."],
     },
   },
 };

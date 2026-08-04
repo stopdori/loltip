@@ -9,10 +9,10 @@ export const ambessa_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 벨베스 Q의 [[DASH]], E의 [[SKILL_CHANNEL]]을 끊을 수 있음.",
-        "암베사 R의 [[UNSTOPPABLE]]로 벨베스 W의 [[AIRBORNE]]을 무시할 수 있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Bel'Veth's Q [[DASH]] and E [[SKILL_CHANNEL]].",
-        "Ambessa's R [[UNSTOPPABLE]] can ignore Bel'Veth's W [[AIRBORNE]]."],
+      ko: ["R의 [[SUPPRESS]]으로 벨베스 Q의 [[DASH]], E의 [[SKILL_CHANNEL]]을 끊을 수 있음.",
+        "R의 [[UNSTOPPABLE]]로 벨베스 W의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[SUPPRESS]] can interrupt Bel'Veth's Q [[DASH]] and E [[SKILL_CHANNEL]].",
+        "R [[UNSTOPPABLE]] can ignore Bel'Veth's W [[AIRBORNE]]."],
     },
     belveth: {
       ko: ["벨베스 W의 [[AIRBORNE]]으로 암베사 P의 [[DASH]]을 끊을 수 있음.",

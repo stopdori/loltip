@@ -9,8 +9,8 @@ export const ambessa_zeri: MatchupSummary = {
   },
   highlightsByChamp: {
     ambessa: {
-      ko: ["암베사 R의 [[SUPPRESS]]으로 제리 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ambessa's R [[SUPPRESS]] can interrupt Zeri's E [[DASH]]."],
+      ko: ["R의 [[SUPPRESS]]으로 제리 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[SUPPRESS]] can interrupt Zeri's E [[DASH]]."],
     },
     zeri: {
       ko: [],
