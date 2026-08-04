@@ -9,8 +9,8 @@ export const alistar_neeko: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 니코 E의 [[ROOT]], R의 [[SUSPENDING]] [[STUN]]을 해제할 수 있음."],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Neeko's E [[ROOT]], R [[SUSPENDING]] [[STUN]]."],
+      ko: ["R의 [[CC_CLEANSE]]로 니코 E의 [[ROOT]], R의 [[SUSPENDING]] [[STUN]]을 해제할 수 있음."],
+      en: ["R [[CC_CLEANSE]] can cleanse Neeko's E [[ROOT]], R [[SUSPENDING]] [[STUN]]."],
     },
     neeko: {
       ko: [],

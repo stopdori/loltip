@@ -9,10 +9,10 @@ export const alistar_irelia: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 이렐리아 Q의 [[DASH]]을 끊을 수 있음. \n 난이도가 많이 어려움.", 
-        "알리스타 E의 [[STUN]]로 이렐리아 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "알리스타 R의 [[CC_CLEANSE]]로 이렐리아 E의 [[STUN]], R의 [[SLOW]]를 해제할 수 있음."],
-      en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Irelia's Q [[DASH]]. \n Very difficult to time.", "Alistar's E [[STUN]] cannot interrupt Irelia's Q [[DASH]]. \n However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Irelia's E [[STUN]] and R [[SLOW]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 이렐리아 Q의 [[DASH]]을 끊을 수 있음. \n 난이도가 많이 어려움.", 
+        "E의 [[STUN]]로 이렐리아 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[CC_CLEANSE]]로 이렐리아 E의 [[STUN]], R의 [[SLOW]]를 해제할 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Irelia's Q [[DASH]]. \n Very difficult to time.", "E [[STUN]] cannot interrupt Irelia's Q [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Irelia's E [[STUN]] and R [[SLOW]]."],
     },
     irelia: {
       ko: [],

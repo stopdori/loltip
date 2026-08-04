@@ -10,8 +10,8 @@ export const akshan_alistar: MatchupSummary = {
       en: [],
     },
     alistar: {
-      ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]로 아크샨 E, R의 [[SKILL_CHANNEL]] 끊을 수 있음."],
-      en: ["Alistar's Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] can interrupt Akshan's E and R [[SKILL_CHANNEL]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]로 아크샨 E, R의 [[SKILL_CHANNEL]] 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] can interrupt Akshan's E and R [[SKILL_CHANNEL]]."],
     },
   },
 };

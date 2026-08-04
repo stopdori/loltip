@@ -9,10 +9,10 @@ export const alistar_amumu: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음.", 
-        "알리스타 E의 [[STUN]]로 아무무 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "알리스타 R의 [[CC_CLEANSE]]로 아무무 Q, R의 [[STUN]]을 해제할 수 있음."],
-      en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Amumu's Q [[DASH]].", "Alistar's E [[STUN]] cannot interrupt Amumu's Q [[DASH]]. \n However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Amumu's Q and R [[STUN]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음.", 
+        "E의 [[STUN]]로 아무무 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[CC_CLEANSE]]로 아무무 Q, R의 [[STUN]]을 해제할 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Amumu's Q [[DASH]].", "E [[STUN]] cannot interrupt Amumu's Q [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Amumu's Q and R [[STUN]]."],
     },
     amumu: {
       ko: ["아무무 Q의 [[STUN]]로 알리스타 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 따라갈 수 있음.", 

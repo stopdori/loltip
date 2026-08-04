@@ -9,10 +9,10 @@ export const alistar_urgot: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 우르곳 E의 [[DASH]]을 끊을 수 있음.", 
-        "알리스타 E의 [[STUN]]로 우르곳 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "알리스타 R의 [[CC_CLEANSE]]로 우르곳 Q의 [[SLOW]], R의 [[SLOW]] [[SUPPRESS]] [[FEAR]]를 해제할 수 있음 \n 즉, 사슬에 끌려갈때 R을 사용하면 사실상 [[EXECUTE]]면역."],
-      en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Urgot's E [[DASH]].", "Alistar's E [[STUN]] cannot interrupt Urgot's E [[DASH]]. \n However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Urgot's Q [[SLOW]] and R [[SLOW]][[SUPPRESS]][[FEAR]]. \n Using R while being dragged grants effective [[EXECUTE]] immunity."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 우르곳 E의 [[DASH]]을 끊을 수 있음.", 
+        "E의 [[STUN]]로 우르곳 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[CC_CLEANSE]]로 우르곳 Q의 [[SLOW]], R의 [[SLOW]] [[SUPPRESS]] [[FEAR]]를 해제할 수 있음 \n 즉, 사슬에 끌려갈때 R을 사용하면 사실상 [[EXECUTE]]면역."],
+      en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Urgot's E [[DASH]].", "E [[STUN]] cannot interrupt Urgot's E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Urgot's Q [[SLOW]] and R [[SLOW]][[SUPPRESS]][[FEAR]]. \n Using R while being dragged grants effective [[EXECUTE]] immunity."],
     },
     urgot: {
       ko: [],

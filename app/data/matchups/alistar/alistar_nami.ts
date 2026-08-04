@@ -9,8 +9,8 @@ export const alistar_nami: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 나미 Q의 [[SUSPENDING]], E의 [[SLOW]], R의 [[AIRBORNE]] [[SLOW]]를 해제할 수 있음."],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Nami's Q [[SUSPENDING]], E [[SLOW]], and R [[AIRBORNE]][[SLOW]]."],
+      ko: ["R의 [[CC_CLEANSE]]로 나미 Q의 [[SUSPENDING]], E의 [[SLOW]], R의 [[AIRBORNE]] [[SLOW]]를 해제할 수 있음."],
+      en: ["R [[CC_CLEANSE]] can cleanse Nami's Q [[SUSPENDING]], E [[SLOW]], and R [[AIRBORNE]][[SLOW]]."],
     },
     nami: {
       ko: [],

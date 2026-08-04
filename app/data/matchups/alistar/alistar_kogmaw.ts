@@ -9,8 +9,8 @@ export const alistar_kogmaw: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 코그모 E의 지속[[SLOW]]는 해제해도 다시 걸림."],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Kog'Maw's E persistent [[SLOW]], but it will reapply after being cleansed."],
+      ko: ["R의 [[CC_CLEANSE]]로 코그모 E의 지속[[SLOW]]는 해제해도 다시 걸림."],
+      en: ["R [[CC_CLEANSE]] can cleanse Kog'Maw's E persistent [[SLOW]], but it will reapply after being cleansed."],
     },
     kogmaw: {
       ko: [],

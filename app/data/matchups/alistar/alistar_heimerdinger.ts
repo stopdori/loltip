@@ -9,8 +9,8 @@ export const alistar_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 하이머딩거 E의 [[SLOW]], [[STUN]]을 해제할 수 있음."],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Heimerdinger's E [[SLOW]] and [[STUN]]."],
+      ko: ["R의 [[CC_CLEANSE]]로 하이머딩거 E의 [[SLOW]], [[STUN]]을 해제할 수 있음."],
+      en: ["R [[CC_CLEANSE]] can cleanse Heimerdinger's E [[SLOW]] and [[STUN]]."],
     },
     heimerdinger: {
       ko: [],

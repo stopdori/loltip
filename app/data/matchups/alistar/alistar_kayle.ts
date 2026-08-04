@@ -9,8 +9,8 @@ export const alistar_kayle: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 케일 Q의 [[SLOW]]를 해제할 수 있음."],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Kayle's Q [[SLOW]]."],
+      ko: ["R의 [[CC_CLEANSE]]로 케일 Q의 [[SLOW]]를 해제할 수 있음."],
+      en: ["R [[CC_CLEANSE]] can cleanse Kayle's Q [[SLOW]]."],
     },
     kayle: {
       ko: [],

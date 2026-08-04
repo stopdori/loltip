@@ -14,10 +14,10 @@ export const aatrox_alistar: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Alistar's W [[DASH]].", "If Alistar uses his R after being hit by W, the W's [[TETHER]] remains."],
     },
     alistar: {
-      ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음.", 
-        "알리스타 E의 [[STUN]]로 아트록스 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "알리스타 R의 [[CC_CLEANSE]]로 아트록스 Q의 [[AIRBORNE]], W의 [[SLOW]] [[GRAB]]을 해제할 수 있음."],
-      en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Aatrox's E [[DASH]].", "Alistar's E [[STUN]] cannot interrupt Aatrox's E [[DASH]]. \n However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can remove Aatrox's Q [[AIRBORNE]] and W [[SLOW]] [[GRAB]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음.", 
+        "E의 [[STUN]]로 아트록스 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[CC_CLEANSE]]로 아트록스 Q의 [[AIRBORNE]], W의 [[SLOW]] [[GRAB]]을 해제할 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Aatrox's E [[DASH]].", "E [[STUN]] cannot interrupt Aatrox's E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can remove Aatrox's Q [[AIRBORNE]] and W [[SLOW]] [[GRAB]]."],
     },
   },
 };

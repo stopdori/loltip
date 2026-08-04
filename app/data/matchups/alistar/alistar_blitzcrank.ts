@@ -9,8 +9,8 @@ export const alistar_blitzcrank: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 블리츠 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]을 해제할 수 있음."],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Blitzcrank's Q [[GRAB]], E [[AIRBORNE]], and R [[SILENCE]]."],
+      ko: ["R의 [[CC_CLEANSE]]로 블리츠 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]을 해제할 수 있음."],
+      en: ["R [[CC_CLEANSE]] can cleanse Blitzcrank's Q [[GRAB]], E [[AIRBORNE]], and R [[SILENCE]]."],
     },
     blitzcrank: {
       ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]]으로 알리스타 W의 [[DASH]]을 끊을 수 있음.",

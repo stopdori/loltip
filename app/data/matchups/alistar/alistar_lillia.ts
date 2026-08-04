@@ -9,10 +9,10 @@ export const alistar_lillia: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 릴리아 W의 [[DASH]]을 끊을 수 있음.", 
-        "알리스타 E의 [[STUN]]로 릴리아 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "알리스타 R의 [[CC_CLEANSE]]로 릴리아 E의 [[SLOW]], R의 [[SLEEP]]을 해제할 수 있음."],
-      en: ["Alistar's Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Lillia's W [[DASH]].", "Alistar's E [[STUN]] cannot interrupt Lillia's W [[DASH]]. \n However, the [[STUN]] still applies.", "Alistar's R [[CC_CLEANSE]] can cleanse Lillia's E [[SLOW]] and R [[SLEEP]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[KNOCKBACK]]으로 릴리아 W의 [[DASH]]을 끊을 수 있음.", 
+        "E의 [[STUN]]로 릴리아 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[CC_CLEANSE]]로 릴리아 E의 [[SLOW]], R의 [[SLEEP]]을 해제할 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Lillia's W [[DASH]].", "E [[STUN]] cannot interrupt Lillia's W [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Lillia's E [[SLOW]] and R [[SLEEP]]."],
     },
     lillia: {
       ko: [],

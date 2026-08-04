@@ -9,8 +9,8 @@ export const alistar_milio: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 밀리오 Q의 [[SLOW]] [[KNOCKBACK]]을 해제할 수 있음. \n 단, [[SLOW]]는 두 번 걸려서 해제하기 쉽지 않음."],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Milio's Q [[SLOW]] [[AIRBORNE]]."],
+      ko: ["R의 [[CC_CLEANSE]]로 밀리오 Q의 [[SLOW]] [[KNOCKBACK]]을 해제할 수 있음. \n 단, [[SLOW]]는 두 번 걸려서 해제하기 쉽지 않음."],
+      en: ["R [[CC_CLEANSE]] can cleanse Milio's Q [[SLOW]] [[AIRBORNE]]."],
     },
     milio: {
       ko: [],

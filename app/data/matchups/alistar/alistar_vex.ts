@@ -9,8 +9,8 @@ export const alistar_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["알리스타 R의 [[CC_CLEANSE]]로 벡스 P의 [[FEAR]]를 해제할 수 있음."],
-      en: ["Alistar's R [[CC_CLEANSE]] can cleanse Vex's P [[FEAR]]."],
+      ko: ["R의 [[CC_CLEANSE]]로 벡스 P의 [[FEAR]]를 해제할 수 있음."],
+      en: ["R [[CC_CLEANSE]] can cleanse Vex's P [[FEAR]]."],
     },
     vex: {
       ko: [],
