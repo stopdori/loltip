@@ -16,7 +16,7 @@ export const aurora_urgot: MatchupSummary = {
     urgot: {
       ko: ["우르곳 E의 [[GRAB]], [[STUN]]로 오로라 W의 [[DASH]]을 끊을 수 있음.", 
         "우르곳 E의 [[GRAB]], [[STUN]]로 오로라 E의 [[DASH]]를 끊을 수 있음. \n 단, 오로라가 실수해야 끊을 수 있음.", 
-        "우르곳 R2의 [[SUPPRESS]] [EXECUTE]]으로 오로라 W, E, R의 [[DASH]]을 끊을 수 있음. \n 단, 오로라 R은 [[UNSTOPPABLE]] [[DASH]]이지만 끌려감."],
+        "우르곳 R2의 [[SUPPRESS]] [[EXECUTE]]으로 오로라 W, E, R의 [[DASH]]을 끊을 수 있음. \n 단, 오로라 R은 [[UNSTOPPABLE]] [[DASH]]이지만 끌려감."],
       en: [],
     },
   },

@@ -9,8 +9,8 @@ export const anivia_gragas: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 그라가스 E(배치기)의 [[DASH]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 그라가스 E(배치기)의 [[DASH]을 끊을 수 있음."],
+      ko: ["애니비아 Q의 [[STUN]]로 그라가스 E(배치기)의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 그라가스 E(배치기)의 [[DASH]]을 끊을 수 있음."],
       en: ["Anivia's Q [[STUN]] cannot interrupt Gragas's E (body slam) [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Gragas's E (body slam) [[DASH]]."],
     },
     gragas: {
