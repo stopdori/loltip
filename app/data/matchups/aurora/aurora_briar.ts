@@ -24,10 +24,10 @@ export const aurora_briar: MatchupSummary = {
         "Briar's E [[KNOCKBACK]] and R2 [[FEAR]] can interrupt Aurora's W and E [[DASH]].",
         "Briar's R2 [[HOMING]] [[DASH]] can follow Aurora's W, E [[DASH]] / R [[UNTARGETABLE]] [[DASH]]. \n However, [[HOMING]] ends upon colliding with Aurora."],
     },
+  },
 
-    common: {
-      ko: ["오로라 R (세계의 경계) 영역에서 오로라가 브라이어 E의 [[KNOCKBACK]], R의 [[FEAR]]로 경계 밖으로 밀려나면 \n 영역 반대편으로 이동."],
-      en: ["Within the zone of Aurora's R (Between Worlds), if Aurora is knocked outside the boundary by Briar's E [[KNOCKBACK]] or R [[FEAR]], \n she moves to the opposite side of the zone."],
-    },
+  common: {
+    ko: ["오로라 R (세계의 경계) 영역에서 오로라가 브라이어 E의 [[KNOCKBACK]], R의 [[FEAR]]로 경계 밖으로 밀려나면 \n 영역 반대편으로 이동."],
+    en: ["Within the zone of Aurora's R (Between Worlds), if Aurora is knocked outside the boundary by Briar's E [[KNOCKBACK]] or R [[FEAR]], \n she moves to the opposite side of the zone."],
   },
 };
