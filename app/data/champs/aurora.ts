@@ -7,7 +7,7 @@ const aurora: ChampData = {
     Q: ["Q_FLASH"],
     W: ["MS_UP", "INVISIBILITY", "WALL_HOP"],
     E: ["E_FLASH", "SLOW", "WALL_HOP", "CC_BUFFER"],
-    R: ["SLOW", "WALL_HOP", "UNSTOPPABLE", "SEPARATOR", "ST_CONDITIONAL", "UNTARGETABLE"],
+    R: ["SLOW", "WALL_HOP", "UNSTOPPABLE", "SEPARATOR", "ST_CONDITIONAL", "UNTARGETABLE", "DASH"],
   },
 
   vision: {
