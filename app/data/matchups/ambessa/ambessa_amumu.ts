@@ -14,9 +14,9 @@ export const ambessa_amumu: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Amumu's Q [[DASH]]. \n However, this also overrides Amumu's Q [[CC_BUFFER]].", "R [[UNSTOPPABLE]] can ignore Amumu's Q and R [[STUN]]. \n However, the [[STUN]] still applies after [[UNSTOPPABLE]] ends."],
     },
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 암베사 P의 [[DASH]]을 따라갈 수 있음.",
-      "아무무 R의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Ambessa's P [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Ambessa's P [[DASH]].", "Amumu's R [[STUN]] can interrupt Ambessa's P [[DASH]]."],
+      ko: ["Q의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 암베사 P의 [[DASH]]을 따라갈 수 있음.",
+      "R의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[STUN]] cannot interrupt Ambessa's P [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Ambessa's P [[DASH]].", "R [[STUN]] can interrupt Ambessa's P [[DASH]]."],
     },
   },
 };

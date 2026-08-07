@@ -9,10 +9,10 @@ export const amumu_hecarim: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q의 [[STUN]]로 헤카림 E, R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 헤카림 R의 [[DASH]]을 따라갈 수 있음.", 
-        "아무무 R의 [[STUN]]로 헤카림 E의 [[DASH]]를 끊을 수 있음.", 
-        "아무무 Q의 [[CC_BUFFER]]로 헤카림 E의 [[KNOCKBACK]], R의 [[FEAR]]를 무시할 수 있음. \n 단, [[FEAR]]는 남아있음."],
-      en: ["Amumu's Q [[STUN]] cannot interrupt Hecarim's E and R [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Hecarim's R [[DASH]].", "Amumu's R [[STUN]] can interrupt Hecarim's E [[DASH]].", "Amumu's Q [[CC_BUFFER]] can ignore Hecarim's E [[KNOCKBACK]] and R [[FEAR]] and continue [[DASH]]. \n However, the [[FEAR]] still applies."],
+      ko: ["Q의 [[STUN]]로 헤카림 E, R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 아무무 Q의 [[HOMING]] [[DASH]]으로 헤카림 R의 [[DASH]]을 따라갈 수 있음.", 
+        "R의 [[STUN]]로 헤카림 E의 [[DASH]]를 끊을 수 있음.", 
+        "Q의 [[CC_BUFFER]]로 헤카림 E의 [[KNOCKBACK]], R의 [[FEAR]]를 무시할 수 있음. \n 단, [[FEAR]]는 남아있음."],
+      en: ["Q [[STUN]] cannot interrupt Hecarim's E and R [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Hecarim's R [[DASH]].", "R [[STUN]] can interrupt Hecarim's E [[DASH]].", "Q [[CC_BUFFER]] can ignore Hecarim's E [[KNOCKBACK]] and R [[FEAR]] and continue [[DASH]]. \n However, the [[FEAR]] still applies."],
     },
     hecarim: {
       ko: [],

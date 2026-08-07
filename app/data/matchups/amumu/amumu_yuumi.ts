@@ -9,8 +9,8 @@ export const amumu_yuumi: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q, R의 [[STUN]]로 유미 W의 [[DASH]]을 끊을 수 있음."],
-      en: ["Amumu's Q and R [[STUN]] can interrupt Yuumi's W [[DASH]]."],
+      ko: ["Q, R의 [[STUN]]로 유미 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q and R [[STUN]] can interrupt Yuumi's W [[DASH]]."],
     },
     yuumi: {
       ko: ["유미 W는 아무무 Q, R의 [[STUN]]을 맞으면 W가 쿨타임이 될 수 있음."],

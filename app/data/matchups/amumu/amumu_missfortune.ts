@@ -9,8 +9,8 @@ export const amumu_missfortune: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["아무무 Q, R의 [[STUN]]로 미포 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Amumu's Q and R [[STUN]] can interrupt Miss Fortune's R [[SKILL_CHANNEL]]."],
+      ko: ["Q, R의 [[STUN]]로 미포 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q and R [[STUN]] can interrupt Miss Fortune's R [[SKILL_CHANNEL]]."],
     },
     missfortune: {
       ko: [],
