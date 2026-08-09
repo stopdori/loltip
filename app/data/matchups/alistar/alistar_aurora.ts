@@ -15,10 +15,12 @@ export const alistar_aurora: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Aurora's W and E [[DASH]].", "E [[STUN]] cannot interrupt Aurora's W and E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Aurora's E and R [[SLOW]]."],
     },
     aurora: {
-      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]]로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, W의 [[KNOCKBACK]]으로 밀려나다가 [[DASH]] 발동.", 
-        "오로라 R의 [[UNSTOPPABLE]] [[DASH]]으로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음.", 
-        "오로라 R의 범위 밖으로 알리스타 W를 맞아 밀려나면 [[UNTARGETABLE]] [[BLINK]] 발동."],
-      en: ["If Aurora is knocked outside their R's range by Alistar's W, the R effect triggers."],
+      ko: ["E(준비단계)의 [[CC_BUFFER]]로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, 알리스타 W의 [[KNOCKBACK]]으로 밀려나다가 [[DASH]] 발동.", 
+        "R의 [[UNSTOPPABLE]] [[DASH]]으로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음.", 
+        "R의 범위 밖으로 알리스타 W의 [[KNOCKBACK]]을 맞아 경계밖으로 밀려나면 [[UNTARGETABLE]] [[BLINK]] 발동."],
+      en: ["E (ready phase) [[CC_BUFFER]] can ignore Alistar's Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] and continue [[DASH]]. \n However, the [[DASH]] activates while being knocked back by Alistar's W [[KNOCKBACK]].",
+        "R [[UNSTOPPABLE]] [[DASH]] can ignore Alistar's Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] and continue [[DASH]]. \n However, the [[STUN]] still applies.",
+        "If Aurora is knocked outside her R's range by Alistar's W [[KNOCKBACK]], the [[UNTARGETABLE]] [[BLINK]] triggers."],
     },
   },
 };
