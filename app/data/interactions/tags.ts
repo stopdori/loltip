@@ -670,8 +670,8 @@ SLEEP: {
   en: "Cannot act, but ends immediately \nwhen damaged (can be cleansed)",
 },
 DROWSY: {
-  ko: "수면에 빠지는 과정의 CC.",
-  en: "A CC state that leads into Sleep.",
+  ko: "둔화 효과를 동반하며, 지속시간이 끝나면 수면 상태로 이어짐. \n 강인함의 영향을 받지 않고, CC 면역으로 저항 가능. \n 정화류로 해제 가능.",
+  en: "Applies a slow, and leads into Sleep when the duration ends. \n Not affected by Tenacity. Resisted by CC immunity. \n Can be removed by Cleanse effects.",
 },
 ANTI_DASH: {
   ko: "돌진스킬을 방해하고 에어본과 기절을 검",

@@ -9,6 +9,7 @@ export const briar_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
+      // 수정중
       ko: [""],
       en: [""],
     },
