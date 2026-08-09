@@ -9,9 +9,9 @@ export const anivia_tahmkench: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 탐켄치 W의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
-        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 탐켄치 R(삼키기)을 끊을 수 없음."],
-      en: ["Anivia's Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Tahm Kench's W [[SKILL_CHANNEL]].", "Anivia's W [[TERRAIN]] [[AIRBORNE]] cannot interrupt Tahm Kench's R (Devour)."],
+      ko: ["Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 탐켄치 W의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+        "W([[TERRAIN]])의 [[AIRBORNE]]으로 탐켄치 R(삼키기)을 끊을 수 없음."],
+      en: ["Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Tahm Kench's W [[SKILL_CHANNEL]].", "W [[TERRAIN]] [[AIRBORNE]] cannot interrupt Tahm Kench's R (Devour)."],
     },
     tahmkench: {
       ko: [],

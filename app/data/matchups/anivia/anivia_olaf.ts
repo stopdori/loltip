@@ -9,8 +9,8 @@ export const anivia_olaf: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 W([[TERRAIN]])로 올라프 Q(도끼)의 이동을 막을 수 없음. \n 단, Q(도끼)를 주우러 가는것을 방해 할 수 있음."],
-      en: ["Anivia's W [[TERRAIN]] cannot block Olaf's Q (axe) projectile. \n However, it can obstruct Olaf from walking to pick up the axe."],
+      ko: ["W([[TERRAIN]])로 올라프 Q(도끼)의 이동을 막을 수 없음. \n 단, Q(도끼)를 주우러 가는것을 방해 할 수 있음."],
+      en: ["W [[TERRAIN]] cannot block Olaf's Q (axe) projectile. \n However, it can obstruct Olaf from walking to pick up the axe."],
     },
     olaf: {
       ko: [],

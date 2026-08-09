@@ -9,8 +9,8 @@ export const anivia_ryze: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 라이즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Ryze's R [[SKILL_CHANNEL]]."],
+      ko: ["Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 라이즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Ryze's R [[SKILL_CHANNEL]]."],
     },
     ryze: {
       ko: [],

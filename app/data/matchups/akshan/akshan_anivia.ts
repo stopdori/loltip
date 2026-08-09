@@ -13,8 +13,8 @@ export const akshan_anivia: MatchupSummary = {
       en: ["E can be used on Anivia's W (ice wall)"],
     },
     anivia: {
-      ko: ["애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Akshan's E and R [[SKILL_CHANNEL]]."],
+      ko: ["W([[TERRAIN]])의 [[AIRBORNE]]으로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["W [[TERRAIN]] [[AIRBORNE]] can interrupt Akshan's E and R [[SKILL_CHANNEL]]."],
     },
   },
 };

@@ -9,9 +9,9 @@ export const anivia_briar: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]], W의 [[AIRBORNE]]으로 브라이어 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 브라이어 W의 [[DASH]]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] and W [[AIRBORNE]] cannot interrupt Briar's W [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Briar's W [[DASH]]."],
+      ko: ["Q의 [[STUN]], W의 [[AIRBORNE]]으로 브라이어 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "W([[TERRAIN]])의 [[AIRBORNE]]으로 브라이어 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[STUN]] and W [[AIRBORNE]] cannot interrupt Briar's W [[DASH]]. \n However, [[STUN]] still applies.", "W [[TERRAIN]] [[AIRBORNE]] can interrupt Briar's W [[DASH]]."],
     },
     briar: {
       ko: ["브라이어 Q, W의 [[DASH]]으로 애니비아 W의 [[TERRAIN]]을 [[WALL_HOP]]를 할 수 있음.",

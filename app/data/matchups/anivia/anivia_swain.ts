@@ -9,8 +9,8 @@ export const anivia_swain: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 스웨인 E의 [[GRAB]]에 끌려가는 아군의 이동을 끊을 수 있음. \n 즉, 구조가능 (이론상)."],
-      en: ["Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt an ally being pulled by Swain's E [[GRAB]]. \n (theoretically)"],
+      ko: ["W([[TERRAIN]])의 [[AIRBORNE]]으로 스웨인 E의 [[GRAB]]에 끌려가는 아군의 이동을 끊을 수 있음. \n 즉, 구조가능 (이론상)."],
+      en: ["W [[TERRAIN]] [[AIRBORNE]] can interrupt an ally being pulled by Swain's E [[GRAB]]. \n (theoretically)"],
     },
     swain: {
       ko: [],

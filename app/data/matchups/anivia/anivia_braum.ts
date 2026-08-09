@@ -9,9 +9,9 @@ export const anivia_braum: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 브라움 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 브라움 W의 [[DASH]]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Braum's W [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Braum's W [[DASH]]."],
+      ko: ["Q의 [[STUN]]로 브라움 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "W([[TERRAIN]])의 [[AIRBORNE]]으로 브라움 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[STUN]] cannot interrupt Braum's W [[DASH]]. \n However, [[STUN]] still applies.", "W [[TERRAIN]] [[AIRBORNE]] can interrupt Braum's W [[DASH]]."],
     },
     braum: {
       ko: ["브라움 E(방패)로 애니비아 평타, Q, E, R(처음 한틱)을 막을([[DAMAGE_NULLIFY]]) 수 있음.", "브라움 E(방패)로 애니비아 Q를 [[INTERCEPT_PROJECTILE]] 할 수 있음. 단, 애니비아 Q는 즉시 ''삭제''되어 데미지, [[STUN]]이 없음", "브라움 P의 [[STUN]], R의 [[AIRBORNE]]으로 애니비아 R([[SKILL_CHANNEL]])을 끊을 수 있음"],

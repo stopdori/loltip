@@ -9,12 +9,12 @@ export const anivia_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 벨베스 Q, R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
-        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 벨베스 Q의 [[DASH]]을 끊을 수 있음.",
-        "애니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 벨베스 E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Bel'Veth's Q or R [[DASH]]. \n However, the [[STUN]] still applies.",
-        "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Bel'Veth's Q [[DASH]].",
-        "Anivia's Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Bel'Veth's E [[SKILL_CHANNEL]]."],
+      ko: ["Q의 [[STUN]]로 벨베스 Q, R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
+        "W([[TERRAIN]])의 [[AIRBORNE]]으로 벨베스 Q의 [[DASH]]을 끊을 수 있음.",
+        "Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 벨베스 E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[STUN]] cannot interrupt Bel'Veth's Q or R [[DASH]]. \n However, the [[STUN]] still applies.",
+        "W [[TERRAIN]] [[AIRBORNE]] can interrupt Bel'Veth's Q [[DASH]].",
+        "Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Bel'Veth's E [[SKILL_CHANNEL]]."],
     },
     belveth: {
       ko: ["벨베스 W의 [[AIRBORNE]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음.",

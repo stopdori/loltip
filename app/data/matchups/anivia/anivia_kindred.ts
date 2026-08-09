@@ -9,9 +9,9 @@ export const anivia_kindred: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["애니비아 Q의 [[STUN]]로 킨드레드 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "애니비아 W([[TERRAIN]])의 [[AIRBORNE]]으로 킨드레드 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["Anivia's Q [[STUN]] cannot interrupt Kindred's Q [[DASH]]. \n However, [[STUN]] still applies.", "Anivia's W [[TERRAIN]] [[AIRBORNE]] can interrupt Kindred's Q [[DASH]]."],
+      ko: ["Q의 [[STUN]]로 킨드레드 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "W([[TERRAIN]])의 [[AIRBORNE]]으로 킨드레드 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[STUN]] cannot interrupt Kindred's Q [[DASH]]. \n However, [[STUN]] still applies.", "W [[TERRAIN]] [[AIRBORNE]] can interrupt Kindred's Q [[DASH]]."],
     },
     kindred: {
       ko: [],
