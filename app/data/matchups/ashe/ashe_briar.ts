@@ -9,8 +9,8 @@ export const ashe_briar: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: ["애쉬 R의 [[STUN]]로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
-      en: ["Ashe's R [[STUN]] cannot interrupt Briar's Q or W [[DASH]]. \n However, the [[STUN]] still applies."],
+      ko: ["R의 [[STUN]]로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["R [[STUN]] cannot interrupt Briar's Q or W [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     briar: {
       ko: ["브라이어 E의 [[CAST_COMMIT]]으로 애쉬 R의 [[STUN]]에 걸려도 시전을 유지할 수 있음.",

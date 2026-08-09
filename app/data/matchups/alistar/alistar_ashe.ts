@@ -13,8 +13,8 @@ export const alistar_ashe: MatchupSummary = {
       en: ["R [[CC_CLEANSE]] can cleanse Ashe's P [[SLOW]] and R [[STUN]]."],
     },
     ashe: {
-      ko: ["애쉬 R의 [[STUN]]로 알리스타 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
-      en: ["Ashe's R [[STUN]] cannot interrupt Alistar's W [[DASH]]. \n However, the [[STUN]] still applies."],
+      ko: ["R의 [[STUN]]로 알리스타 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["R [[STUN]] cannot interrupt Alistar's W [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
 };

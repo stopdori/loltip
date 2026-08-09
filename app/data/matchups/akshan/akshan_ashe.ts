@@ -13,8 +13,8 @@ export const akshan_ashe: MatchupSummary = {
       en: [],
     },
     ashe: {
-      ko: ["애쉬 R의 [[STUN]]로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Ashe's R [[STUN]] can interrupt Akshan's E and R [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]]로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[STUN]] can interrupt Akshan's E and R [[SKILL_CHANNEL]]."],
     },
   },
 };

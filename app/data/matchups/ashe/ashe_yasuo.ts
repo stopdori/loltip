@@ -9,12 +9,12 @@ export const ashe_yasuo: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: ["야스오 W(장막)가 애쉬 Q W E R 막을 수 있음."],
-      en: ["Yasuo’s W (Wind Wall) can block Ashe’s Q W E R."],
+      ko: ["R의 [[STUN]]로 야스오 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[STUN]] can interrupt Yasuo's E [[DASH]]."],
     },
     yasuo: {
-      ko: ["야스오 W([[WINDSHIELD]])로 애쉬 Q, W, R의 [[PROJECTILE]]를 막을 수 있음."],
-      en: ["Yasuo's W ([[WINDSHIELD]]) can block Ashe's Q, W, and R [[PROJECTILE]]."],
+      ko: ["야스오 W([[WINDSHIELD]])로 애쉬 평타, Q, W, R의 [[PROJECTILE]]를 막을 수 있음."],
+      en: ["Yasuo's W ([[WINDSHIELD]]) can block Ashe's basic attacks, Q, W, and R [[PROJECTILE]]."],
     },
   },
 };

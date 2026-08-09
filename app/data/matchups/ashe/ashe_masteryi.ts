@@ -9,8 +9,8 @@ export const ashe_masteryi: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: ["애쉬 R의 [[STUN]]로 마스터이 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Ashe's R [[STUN]] can interrupt Master Yi's W [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]]로 마스터이 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[STUN]] can interrupt Master Yi's W [[SKILL_CHANNEL]]."],
     },
     masteryi: {
       ko: [],

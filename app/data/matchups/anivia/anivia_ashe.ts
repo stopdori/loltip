@@ -13,8 +13,8 @@ export const anivia_ashe: MatchupSummary = {
       en: ["If W [[TERRAIN]] [[AIRBORNE]] knocks Ashe back while casting W, the W [[AOE]] also moves with her."],
     },
     ashe: {
-      ko: ["애쉬 R의 [[STUN]]로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Ashe's R [[STUN]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]]로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[STUN]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const ashe_jhin: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: ["애쉬 R의 [[STUN]]로 진 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Ashe's R [[STUN]] can interrupt Jhin's R [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]]로 진 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[STUN]] can interrupt Jhin's R [[SKILL_CHANNEL]]."],
     },
     jhin: {
       ko: [],
