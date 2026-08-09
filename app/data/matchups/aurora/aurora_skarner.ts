@@ -9,7 +9,7 @@ export const aurora_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: ["오로라 R의 [[UNSTOPPABLE]] [[DASH]]으로 스카너 E, R의 [[SUPPRESS]]을 무시하고 [[DASH]]할 수 있음."],
+      ko: ["R의 [[UNSTOPPABLE]] [[DASH]]으로 스카너 E, R의 [[SUPPRESS]]을 무시하고 [[DASH]]할 수 있음."],
       en: [""],
     },
     skarner: {

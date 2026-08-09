@@ -13,8 +13,8 @@ export const ashe_aurora: MatchupSummary = {
       en: ["R [[STUN]] cannot interrupt Aurora's W or E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     aurora: {
-      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 애쉬 R의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
-      en: ["Aurora's E (ready phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Ashe's R [[STUN]] and continue [[DASH]]ing. \n However, the [[STUN]] still applies."],
+      ko: ["E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 애쉬 R의 [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
+      en: ["E (ready phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Ashe's R [[STUN]] and continue [[DASH]]ing. \n However, the [[STUN]] still applies."],
     },
   },
 };

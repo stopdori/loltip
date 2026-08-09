@@ -9,7 +9,7 @@ export const aurora_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: ["오로라 W, E, R의 [[DASH]]으로 요릭 W([[TERRAIN]])을 넘을 수 있음. "],
+      ko: ["W, E, R의 [[DASH]]으로 요릭 W([[TERRAIN]])을 넘을 수 있음. "],
       en: [],
     },
     yorick: {

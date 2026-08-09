@@ -9,12 +9,12 @@ export const aurora_briar: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: ["오로라 W의 [[INVISIBILITY]]으로 브라이어 W([[BERSERK]])을 따돌릴 수 있음.",
-        "오로라 E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 브라이어 Q의 [[STUN]] / E의 [[KNOCKBACK]], [[STUN]] / R의 [[FEAR]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]], [[FEAR]]는 남아있음. \n 단, E의 [[KNOCKBACK]]은 밀려나다가 [[DASH]] 발동.",
-        "오로라 R의 [[UNSTOPPABLE]] [[DASH]]으로 브라이어 Q의 [[STUN]] / E의 [[KNOCKBACK]], [[STUN]] / R의 [[FEAR]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]], [[FEAR]]는 남아있음."],
-      en: ["Aurora's W [[INVISIBILITY]] can evade Briar's W ([[BERSERK]]).",
-        "Aurora's E (ready phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Briar's Q [[STUN]] / E [[KNOCKBACK]], [[STUN]] / R [[FEAR]] and continue [[DASH]]ing. \n However, the [[STUN]] and [[FEAR]] still apply. \n However, for E's [[KNOCKBACK]], the [[DASH]] activates while being knocked back.",
-        "Aurora's R [[UNSTOPPABLE]] [[DASH]] can ignore Briar's Q [[STUN]] / E [[KNOCKBACK]], [[STUN]] / R [[FEAR]] and continue [[DASH]]ing. \n However, the [[STUN]] and [[FEAR]] still apply."],
+      ko: ["W의 [[INVISIBILITY]]으로 브라이어 W([[BERSERK]])을 따돌릴 수 있음.",
+        "E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 브라이어 Q의 [[STUN]] / E의 [[KNOCKBACK]], [[STUN]] / R의 [[FEAR]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]], [[FEAR]]는 남아있음. \n 단, E의 [[KNOCKBACK]]은 밀려나다가 [[DASH]] 발동.",
+        "R의 [[UNSTOPPABLE]] [[DASH]]으로 브라이어 Q의 [[STUN]] / E의 [[KNOCKBACK]], [[STUN]] / R의 [[FEAR]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]], [[FEAR]]는 남아있음."],
+      en: ["W [[INVISIBILITY]] can evade Briar's W ([[BERSERK]]).",
+        "E (ready phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Briar's Q [[STUN]] / E [[KNOCKBACK]], [[STUN]] / R [[FEAR]] and continue [[DASH]]ing. \n However, the [[STUN]] and [[FEAR]] still apply. \n However, for E's [[KNOCKBACK]], the [[DASH]] activates while being knocked back.",
+        "R [[UNSTOPPABLE]] [[DASH]] can ignore Briar's Q [[STUN]] / E [[KNOCKBACK]], [[STUN]] / R [[FEAR]] and continue [[DASH]]ing. \n However, the [[STUN]] and [[FEAR]] still apply."],
     },
     briar: {
       ko: ["브라이어 Q의 [[STUN]]로 오로라 W, E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",

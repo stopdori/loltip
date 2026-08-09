@@ -9,9 +9,9 @@ export const aurora_sett: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: ["오로라 E(준비단계)의 [[CC_BUFFER]]로 세트 E의 [[GRAB]], [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, Q의 [[GRAB]]으로 끌려가다가 [[DASH]] 발동. \n 단, [[STUN]]은 남아있음. ", 
-        "오로라 R의 [[UNSTOPPABLE]] [[DASH]]으로 세트 E의 [[GRAB]], [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음.", 
-        "오로라 R의 [[UNSTOPPABLE]] [[DASH]]으로 세트 R의 [[SUPPRESS]]을 무시하고 [[DASH]]할 수 있음."],
+      ko: ["E(준비단계)의 [[CC_BUFFER]]로 세트 E의 [[GRAB]], [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, Q의 [[GRAB]]으로 끌려가다가 [[DASH]] 발동. \n 단, [[STUN]]은 남아있음. ", 
+        "R의 [[UNSTOPPABLE]] [[DASH]]으로 세트 E의 [[GRAB]], [[STUN]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[UNSTOPPABLE]] [[DASH]]으로 세트 R의 [[SUPPRESS]]을 무시하고 [[DASH]]할 수 있음."],
       en: [],
     },
     sett: {
