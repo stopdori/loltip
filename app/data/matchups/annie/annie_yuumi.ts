@@ -9,8 +9,8 @@ export const annie_yuumi: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["애니 P의 [[STUN]]로 유미 W의 [[DASH]]을 끊을 수 있음."],
-      en: ["Annie's P [[STUN]] can interrupt Yuumi's W [[DASH]]."],
+      ko: ["P의 [[STUN]]로 유미 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["P [[STUN]] can interrupt Yuumi's W [[DASH]]."],
     },
     yuumi: {
       ko: [],

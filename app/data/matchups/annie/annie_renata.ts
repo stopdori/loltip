@@ -9,8 +9,8 @@ export const annie_renata: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["애니 R(티버)의 [[SUMMON]]으로 레나타 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음. \n 단, 레나타가 Q2를 사용할 수 있음."],
-      en: ["Annie's R(Tibbers) [[SUMMON]] can block Renata's Q [[SINGLE]] [[PROJECTILE]]. \n However, Renata can still use Q2."],
+      ko: ["R(티버)의 [[SUMMON]]으로 레나타 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음. \n 단, 레나타가 Q2를 사용할 수 있음."],
+      en: ["R(Tibbers) [[SUMMON]] can block Renata's Q [[SINGLE]] [[PROJECTILE]]. \n However, Renata can still use Q2."],
     },
     renata: {
       ko: [],

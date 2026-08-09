@@ -13,8 +13,8 @@ export const ambessa_annie: MatchupSummary = {
       en: ["R [[UNSTOPPABLE]] can ignore Annie's P [[STUN]]. \n However, the [[STUN]] still applies after [[UNSTOPPABLE]] ends."],
     },
     annie: {
-      ko: ["애니 P의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
-      en: ["Annie's P [[STUN]] cannot interrupt Ambessa's P [[DASH]]. \n However, the [[STUN]] still applies."],
+      ko: ["P의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["P [[STUN]] cannot interrupt Ambessa's P [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
 };

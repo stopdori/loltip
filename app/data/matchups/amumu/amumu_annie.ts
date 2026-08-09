@@ -15,9 +15,9 @@ export const amumu_annie: MatchupSummary = {
       en: ["Q [[CC_BUFFER]] can ignore Annie's P [[STUN]] and continue [[DASH]]. \n However, Annie's P [[STUN]] can also override Amumu's Q [[CC_BUFFER]] and interrupt the [[DASH]].", "Q [[HOMING]] [[DASH]] can follow Annie's R (when Annie moves away from Tibbers, Tibbers teleports next to Annie). \n However, the [[STUN]] remains on R (Tibbers)."],
     },
     annie: {
-      ko: ["애니 P의 [[STUN]]로 아무무 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
-        "애니 R(티버)의 [[SUMMON]]으로 아무무 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["Annie's P [[STUN]] cannot interrupt Amumu's Q [[DASH]]. \n However, the [[STUN]] still applies.", "Annie's R(Tibbers) [[SUMMON]] can block Amumu's Q [[SINGLE]] [[PROJECTILE]]."],
+      ko: ["P의 [[STUN]]로 아무무 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
+        "R(티버)의 [[SUMMON]]으로 아무무 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["P [[STUN]] cannot interrupt Amumu's Q [[DASH]]. \n However, the [[STUN]] still applies.", "R(Tibbers) [[SUMMON]] can block Amumu's Q [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };

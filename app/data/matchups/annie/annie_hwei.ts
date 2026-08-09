@@ -9,8 +9,8 @@ export const annie_hwei: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["애니 R(티버)의 [[SUMMON]]으로 흐웨이 QQ, EQ, EW의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["Annie's R(Tibbers) [[SUMMON]] can block Hwei's QQ, EQ, and EW [[SINGLE]] [[PROJECTILE]]."],
+      ko: ["R(티버)의 [[SUMMON]]으로 흐웨이 QQ, EQ, EW의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["R(Tibbers) [[SUMMON]] can block Hwei's QQ, EQ, and EW [[SINGLE]] [[PROJECTILE]]."],
     },
     hwei: {
       ko: [],

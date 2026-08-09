@@ -9,9 +9,9 @@ export const annie_viego: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["애니 P의 [[STUN]]로 비에고 W의 [[DASH]] ,R의 [[BLINK]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "애니 P의 [[STUN]]로 비에고 W의 [[SKILL_CHARGED]]을 끊을 수 있음."],
-      en: ["Annie's P [[STUN]] cannot interrupt Viego's W [[DASH]] or R [[BLINK]]. \n However, the [[STUN]] still applies.", "Annie's P [[STUN]] can interrupt Viego's W [[SKILL_CHARGED]]."],
+      ko: ["P의 [[STUN]]로 비에고 W의 [[DASH]] ,R의 [[BLINK]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "P의 [[STUN]]로 비에고 W의 [[SKILL_CHARGED]]을 끊을 수 있음."],
+      en: ["P [[STUN]] cannot interrupt Viego's W [[DASH]] or R [[BLINK]]. \n However, the [[STUN]] still applies.", "P [[STUN]] can interrupt Viego's W [[SKILL_CHARGED]]."],
     },
     viego: {
       ko: [],

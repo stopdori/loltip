@@ -9,8 +9,8 @@ export const annie_blitzcrank: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["애니 R(티버)의 [[SUMMON]]으로 블리츠크랭크 Q의 [[PROJECTILE]]를 막을 수 있음."],
-      en: ["Annie's R(Tibbers) [[SUMMON]] can block Blitzcrank's Q [[PROJECTILE]]."],
+      ko: ["R(티버)의 [[SUMMON]]으로 블리츠크랭크 Q의 [[PROJECTILE]]를 막을 수 있음."],
+      en: ["R(Tibbers) [[SUMMON]] can block Blitzcrank's Q [[PROJECTILE]]."],
     },
     blitzcrank: {
       ko: [],
