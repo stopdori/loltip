@@ -13,9 +13,9 @@ export const ahri_aurelionsol: MatchupSummary = {
       en: ["E [[CHARM]] can interrupt Aurelion Sol's Q [[SKILL_CHANNEL]] and W [[DASH]]."],
     },
     aurelionsol: {
-      ko: ["아우렐리온 솔 R의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "아우렐리온 솔 [[EMPOWERED]] R(천상 강림)의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
-      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Ahri's R [[DASH]]. \n However, the [[STUN]] still applies.", "Aurelion Sol's [[EMPOWERED]] R (Falling Star) [[AIRBORNE]] can interrupt Ahri's R [[DASH]]."],
+      ko: ["R의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "[[EMPOWERED]] R(천상 강림)의 [[AIRBORNE]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[STUN]] cannot interrupt Ahri's R [[DASH]]. \n However, the [[STUN]] still applies.", "[[EMPOWERED]] R (Falling Star) [[AIRBORNE]] can interrupt Ahri's R [[DASH]]."],
     },
   },
 };

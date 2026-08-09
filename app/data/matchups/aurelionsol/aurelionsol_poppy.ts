@@ -9,12 +9,12 @@ export const aurelionsol_poppy: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: ["아우렐리온 솔 R의 [[STUN]]으로 뽀삐 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "아우렐리온 솔 R(천상강림)의 [[AIRBORNE]]으로 뽀삐 E의 [[DASH]]을 끊을 수 있음.", 
-        "아우렐리온 솔 R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 뽀삐 R의 [[SKILL_CHARGED]]을 끊을 수 있음."],
-      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Poppy's E [[DASH]]. \n However, the [[STUN]] still applies.",
-        "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Poppy's E [[DASH]].",
-        "Aurelion Sol's R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Poppy's R [[SKILL_CHARGED]]."],
+      ko: ["R의 [[STUN]]으로 뽀삐 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R(천상강림)의 [[AIRBORNE]]으로 뽀삐 E의 [[DASH]]을 끊을 수 있음.", 
+        "R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 뽀삐 R의 [[SKILL_CHARGED]]을 끊을 수 있음."],
+      en: ["R [[STUN]] cannot interrupt Poppy's E [[DASH]]. \n However, the [[STUN]] still applies.",
+        "R (Falling Star) [[AIRBORNE]] can interrupt Poppy's E [[DASH]].",
+        "R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Poppy's R [[SKILL_CHARGED]]."],
     },
     poppy: {
       ko: ["뽀삐 W의 [[ANTI_DASH]]로 아우렐리온 솔 W(비행)의 [[DASH]]을 막고 [[GROUNDED]] 디버프를 걸 수 있음."],

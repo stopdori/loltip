@@ -9,12 +9,12 @@ export const aurelionsol_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: ["아우렐리온 솔 R의 [[STUN]]으로 케인 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "아우렐리온 솔 R(천상강림)의 [[AIRBORNE]]으로 케인 Q의 [[DASH]]을 끊을 수 있음.", 
-        "아우렐리온 솔 R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 케인 E(벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Kayn's Q [[DASH]]. \n However, the [[STUN]] still applies.",
-        "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Kayn's Q [[DASH]].",
-        "Aurelion Sol's R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Kayn's E (wall travel) [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]]으로 케인 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R(천상강림)의 [[AIRBORNE]]으로 케인 Q의 [[DASH]]을 끊을 수 있음.", 
+        "R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 케인 E(벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[STUN]] cannot interrupt Kayn's Q [[DASH]]. \n However, the [[STUN]] still applies.",
+        "R (Falling Star) [[AIRBORNE]] can interrupt Kayn's Q [[DASH]].",
+        "R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Kayn's E (wall travel) [[SKILL_CHANNEL]]."],
     },
     kayn: {
       ko: [],

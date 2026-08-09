@@ -14,8 +14,8 @@ export const anivia_aurelionsol: MatchupSummary = {
       en: ["Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Aurelion Sol's Q and W [[SKILL_CHANNEL]].", "If W [[TERRAIN]] [[AIRBORNE]] knocks Aurelion Sol back while casting E or R, the E, R [[AOE]] also moves with him."],
     },
     aurelionsol: {
-      ko: ["아우렐리온 솔 R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Aurelion Sol's R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
     },
   },
 };

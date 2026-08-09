@@ -9,10 +9,10 @@ export const aurelionsol_sylas: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: ["아우렐리온 솔 R의 [[STUN]]으로 사일러스 W, E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "아우렐리온 솔 R(천상강림)의 [[AIRBORNE]]으로 사일러스 W, E1, E2의 [[DASH]]을 끊을 수 있음."],
-      en: ["Aurelion Sol's R [[STUN]] cannot interrupt Sylas's W, E1, and E2 [[DASH]]. \n However, the [[STUN]] still applies.",
-        "Aurelion Sol's R (Falling Star) [[AIRBORNE]] can interrupt Sylas's W, E1, and E2 [[DASH]]."],
+      ko: ["R의 [[STUN]]으로 사일러스 W, E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R(천상강림)의 [[AIRBORNE]]으로 사일러스 W, E1, E2의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[STUN]] cannot interrupt Sylas's W, E1, and E2 [[DASH]]. \n However, the [[STUN]] still applies.",
+        "R (Falling Star) [[AIRBORNE]] can interrupt Sylas's W, E1, and E2 [[DASH]]."],
     },
     sylas: {
       ko: ["사일러스 R로 아우렐리온 솔의 강화 R(천상강림)을 강탈하면, 일반 R을 강탈함. \n 즉, 천상강림을 강탈할 수 없음."],
