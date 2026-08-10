@@ -4,7 +4,7 @@ import { CHAMPS } from "@/app/data/champs/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import { CHAMP_FORMS } from "@/app/data/interactions/forms";
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Fragment } from "react";
 
 import type { Metadata } from "next";
@@ -125,7 +125,7 @@ export default async function Page(props: Props) {
 
   // URL이 소문자가 아니면 canonical URL로 리다이렉트
   if (id !== champId) {
-    redirect(`/${params.locale}/champ/${champId}`);
+    permanentRedirect(`/${params.locale}/champ/${champId}`);
   }
 
   const champData = CHAMPS[champId as keyof typeof CHAMPS];

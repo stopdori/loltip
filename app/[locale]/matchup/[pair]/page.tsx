@@ -1,4 +1,4 @@
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Fragment } from "react";
 import type { Metadata } from "next";
 
@@ -95,7 +95,7 @@ export default async function Page({ params, searchParams }: Props) {
   // canonical 주소로 정규화
   const canonical = [a, b].sort().join("-vs-");
   if (pair !== canonical) {
-    redirect(`/${locale}/matchup/${canonical}?first=${first ?? a}`);
+    permanentRedirect(`/${locale}/matchup/${canonical}?first=${first ?? a}`);
   }
 
   // first 파라미터로 나/상대 결정
