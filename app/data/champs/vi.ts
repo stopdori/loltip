@@ -4,7 +4,7 @@ const vi: ChampData = {
   id: "vi",
   skills: {
     P: ["SHIELD"],
-    Q: ["Q_FLASH", "AIRBORNE", "WALL_HOP"],
+    Q: ["Q_FLASH", "KNOCKBACK", "WALL_HOP"],
     W: ["AR_SHRED", "AS_UP"],
     E: ["AA_RESET"],
     R: ["R_FLASH", "REVEALED", "KNOCKBACK", "STUN", "WALL_HOP", "UNSTOPPABLE"],

@@ -11,7 +11,8 @@ export const aurora_xinzhao: MatchupSummary = {
     aurora: {
       ko: ["E(준비단계)의 [[CC_BUFFER]]로 신짜오 Q3의 [[AIRBORNE]], R의 [[KNOCKBACK]]을 무시하고 [[DASH]]할 수 있음. \n 단, 신짜오 R을 사용할때 오로라 E를 사용해야 R의 [[KNOCKBACK]]으로 밀려나다가 [[DASH]] 발동.", 
         "R의 [[UNSTOPPABLE]] [[DASH]]으로 신짜오 Q3의 [[AIRBORNE]], R의 [[KNOCKBACK]]을 무시하고 [[DASH]]할 수 있음."],
-      en: [""],
+      en: ["E (wind-up phase) [[CC_BUFFER]] can ignore Xin Zhao's Q3 [[AIRBORNE]] and R [[KNOCKBACK]] and continue [[DASH]]. \n However, Aurora's E must be used exactly as Xin Zhao casts R for the [[DASH]] to activate while being knocked back by R's [[KNOCKBACK]].",
+        "R [[UNSTOPPABLE]] [[DASH]] can ignore Xin Zhao's Q3 [[AIRBORNE]] and R [[KNOCKBACK]] and continue [[DASH]]."],
     },
     xinzhao: {
       ko: [],

@@ -14,7 +14,7 @@ export const ambessa_aurora: MatchupSummary = {
     },
     aurora: {
       ko: ["R의 [[UNSTOPPABLE]] [[DASH]]으로 암베사 R의 [[SUPPRESS]]을 무시할 수 있음. \n 단, 암베사 R이 적중조차 하지 않음."],
-      en: [],
+      en: ["R [[UNSTOPPABLE]] [[DASH]] can ignore Ambessa's R [[SUPPRESS]]. \n However, Ambessa's R does not even land a hit."],
     },
   },
 };

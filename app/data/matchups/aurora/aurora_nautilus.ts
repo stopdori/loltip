@@ -13,7 +13,10 @@ export const aurora_nautilus: MatchupSummary = {
         "R의 [[UNSTOPPABLE]] [[DASH]]으로 노틸러스 P의 [[ROOT]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[ROOT]]은 남아있음.",         
         "E(준비단계)의 [[CC_BUFFER]]로 노틸러스 Q의 [[GRAB]], R의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[ROOT]]은 남아있음. \n 단, Q의 [[GRAB]]으로 끌려가다가 [[DASH]] 발동.", 
         "R의 [[UNSTOPPABLE]] [[DASH]]으로 노틸러스 Q의 [[GRAB]], R의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[ROOT]]은 남아있음."],
-      en: [""],
+      en: ["E (wind-up phase, dash phase) is affected by Nautilus's P [[ROOT]] differently depending on the phase. \n If [[ROOT]]ed during the wind-up phase, the [[DASH]] does not activate. \n If [[ROOT]]ed during the dash phase, she ignores it and continues the [[DASH]]. However, the [[ROOT]] still applies.",
+        "R [[UNSTOPPABLE]] [[DASH]] can ignore Nautilus's P [[ROOT]] and continue [[DASH]]. \n However, the [[ROOT]] still applies.",
+        "E (wind-up phase) [[CC_BUFFER]] can ignore Nautilus's Q [[GRAB]] and R [[AIRBORNE]] and continue [[DASH]]. \n However, the [[ROOT]] still applies. \n However, the [[DASH]] activates while being pulled by Q's [[GRAB]].",
+        "R [[UNSTOPPABLE]] [[DASH]] can ignore Nautilus's Q [[GRAB]] and R [[AIRBORNE]] and continue [[DASH]]. \n However, the [[ROOT]] still applies."],
     },
     nautilus: {
       ko: [],

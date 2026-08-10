@@ -11,7 +11,8 @@ export const aurora_hecarim: MatchupSummary = {
     aurora: {
       ko: ["E(준비단계)의 [[CC_BUFFER]]로 헤카림 E의 [[KNOCKBACK]], R의 [[FEAR]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[FEAR]]는 남아있음. \n 단, E의 [[KNOCKBACK]]으로 밀려나다가 [[DASH]] 발동.", 
         "R의 [[UNSTOPPABLE]] [[DASH]]으로 헤카림 E의 [[KNOCKBACK]], R의 [[FEAR]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[FEAR]]는 남아있음."],
-      en: [""],
+      en: ["E (wind-up phase) [[CC_BUFFER]] can ignore Hecarim's E [[KNOCKBACK]] and R [[FEAR]] and continue [[DASH]]. \n However, the [[FEAR]] still applies. \n However, the [[DASH]] activates while being knocked back by E's [[KNOCKBACK]].",
+        "R [[UNSTOPPABLE]] [[DASH]] can ignore Hecarim's E [[KNOCKBACK]] and R [[FEAR]] and continue [[DASH]]. \n However, the [[FEAR]] still applies."],
     },
     hecarim: {
       ko: [],

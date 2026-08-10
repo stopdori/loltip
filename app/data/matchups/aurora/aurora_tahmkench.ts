@@ -10,11 +10,11 @@ export const aurora_tahmkench: MatchupSummary = {
   highlightsByChamp: {
     aurora: {
       ko: ["R의 [[UNSTOPPABLE]] [[DASH]]으로 탐켄치 Q의 [[STUN]], R의 [[SUPPRESS]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
-      en: [""],
+      en: ["R [[UNSTOPPABLE]] [[DASH]] can ignore Tahm Kench's Q [[STUN]] and R [[SUPPRESS]] and continue [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     tahmkench: {
       ko: ["탐켄치 Q의 [[STUN]], R의 [[SUPPRESS]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
-      en: [],
+      en: ["Tahm Kench's Q [[STUN]] and R [[SUPPRESS]] can interrupt Aurora's W and E [[DASH]]."],
     },
   },
 };

@@ -10,7 +10,7 @@ export const aurora_rell: MatchupSummary = {
   highlightsByChamp: {
     aurora: {
       ko: ["E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 렐 Q의 [[STUN]], W(붕괴)의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
-      en: [""],
+      en: ["E (wind-up phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Rell's Q [[STUN]] and W (Dismounted) [[AIRBORNE]] and continue [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     rell: {
       ko: [],

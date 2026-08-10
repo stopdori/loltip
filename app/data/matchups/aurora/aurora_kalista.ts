@@ -10,7 +10,7 @@ export const aurora_kalista: MatchupSummary = {
   highlightsByChamp: {
     aurora: {
       ko: ["E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 칼리스타 R2의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음."],
-      en: [""],
+      en: ["E (wind-up phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Kalista's R2 [[AIRBORNE]] and continue [[DASH]]."],
     },
     kalista: {
       ko: [],

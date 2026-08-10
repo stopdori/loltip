@@ -9,9 +9,10 @@ export const aurora_diana: MatchupSummary = {
   },
   highlightsByChamp: {
     aurora: {
-      ko: ["E(준비단계)의 [[CC_BUFFER]]로 다이애나 R의 [[GRAB]]을 무시하고 [[DASH]]할 수 있음. \n 단, W의 [[GRAB]]으로 끌려가다가 [[DASH]] 발동.", 
+      ko: ["E(준비단계)의 [[CC_BUFFER]]로 다이애나 R의 [[GRAB]]을 무시하고 [[DASH]]할 수 있음. \n 단, R의 [[GRAB]]으로 끌려가다가 [[DASH]] 발동.",
         "R의 [[UNSTOPPABLE]] [[DASH]]으로 다이애나 R의 [[GRAB]]을 무시하고 [[DASH]]할 수 있음."],
-      en: [""],
+      en: ["E (wind-up phase) [[CC_BUFFER]] can ignore Diana's R [[GRAB]] and continue [[DASH]]. \n However, the [[DASH]] activates while being pulled by R's [[GRAB]].",
+        "R [[UNSTOPPABLE]] [[DASH]] can ignore Diana's R [[GRAB]] and continue [[DASH]]."],
     },
     diana: {
       ko: [],

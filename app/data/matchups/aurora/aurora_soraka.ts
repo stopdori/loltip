@@ -10,7 +10,7 @@ export const aurora_soraka: MatchupSummary = {
   highlightsByChamp: {
     aurora: {
       ko: ["Q, E는 소라카 E의 [[ROOT]]에 걸려도 사용할 수 있음."],
-      en: [],
+      en: ["Q and E can still be used even while [[ROOT]]ed by Soraka's E."],
     },
     soraka: {
       ko: [],

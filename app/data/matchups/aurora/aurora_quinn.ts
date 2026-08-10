@@ -11,7 +11,8 @@ export const aurora_quinn: MatchupSummary = {
     aurora: {
       ko: ["E(준비단계)의 [[CC_BUFFER]]로 퀸 E의 [[KNOCKBACK]]을 무시하고 [[DASH]]할 수 있음. \n 단, E의 [[KNOCKBACK]]으로 밀려나다가 [[DASH]] 발동.", 
         "R의 [[UNSTOPPABLE]] [[DASH]]으로 퀸 E의 [[KNOCKBACK]]을 무시하고 [[DASH]]할 수 있음."],
-      en: [""],
+      en: ["E (wind-up phase) [[CC_BUFFER]] can ignore Quinn's E [[KNOCKBACK]] and continue [[DASH]]. \n However, the [[DASH]] activates while being knocked back by E's [[KNOCKBACK]].",
+        "R [[UNSTOPPABLE]] [[DASH]] can ignore Quinn's E [[KNOCKBACK]] and continue [[DASH]]."],
     },
     quinn: {
       ko: [],

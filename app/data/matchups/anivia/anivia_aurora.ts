@@ -16,7 +16,7 @@ export const anivia_aurora: MatchupSummary = {
     },
     aurora: {
       ko: ["E(준비단계)의 [[CC_BUFFER]], R의 [[UNSTOPPABLE]] [[DASH]]으로 애니비아 Q의 [[STUN]], W의 [[AIRBORNE]]을 무시하고 [[DASH]]할 수 있음. \n 단, [[STUN]]은 남아있음."],
-      en: [],
+      en: ["E (wind-up phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Anivia's Q [[STUN]] and W [[AIRBORNE]] and continue [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
 };
