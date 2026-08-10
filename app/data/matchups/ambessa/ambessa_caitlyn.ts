@@ -13,8 +13,8 @@ export const ambessa_caitlyn: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Caitlyn's E (net) [[DASH]] and R [[SKILL_CHANNEL]]."],
     },
     caitlyn: {
-      ko: [],
-      en: [],
+      ko: ["활성화된 W([[TRAP]])가 암베사 P의 [[DASH]] 경로에 있다면 [[ROOT]]에 걸리지만 무시하고 [[DASH]]. \n 단, [[ROOT]]와 헤드샷은 남아있음."],
+      en: ["If Caitlyn's activated W ([[TRAP]]) is in the path of Ambessa's P [[DASH]], she gets [[ROOT]]ed but can ignore it and [[DASH]] anyway. \n However, the [[ROOT]] and headshot still apply."],
     },
   },
 };

@@ -15,8 +15,8 @@ export const alistar_caitlyn: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Caitlyn's E [[DASH]].", "E [[STUN]] cannot interrupt Caitlyn's E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Caitlyn's W [[ROOT]] and E [[SLOW]]. \n However, Caitlyn's W headshot cannot be cleansed."],
     },
     caitlyn: {
-      ko: [],
-      en: [],
+      ko: ["활성화된 W([[TRAP]])가 알리스타 W의 [[DASH]] 경로에 있다면 [[ROOT]]에 걸리지만 무시하고 [[DASH]]. \n 단, [[ROOT]]와 헤드샷은 남아있음."],
+      en: ["If Caitlyn's activated W ([[TRAP]]) is in the path of Alistar's W [[DASH]], he gets [[ROOT]]ed but can ignore it and [[DASH]] anyway. \n However, the [[ROOT]] and headshot still apply."],
     },
   },
 };
