@@ -6,7 +6,7 @@ const aurelionsol: ChampData = {
     P: ["STACKING"],
     Q: [],
     W: ["MS_UP", "GHOSTING", "DASH", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
-    E: ["SLOW", "SEPARATOR", "ST_CONDITIONAL", "EXECUTE"],
+    E: ["SLOW", "DRAG", "SEPARATOR", "ST_CONDITIONAL", "EXECUTE"],
     R: { phases: [
       { label: { ko: "R", en: "R" }, tags: ["R_FLASH", "STUN"] },
       { label: { ko: "천상강림", en: "Falling Star" }, tags: ["R_FLASH", "AIRBORNE", "SLOW"] },
@@ -28,7 +28,7 @@ const aurelionsol: ChampData = {
       { label: { ko: "Q 폭발", en: "Q Burst" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE"] },
     ] },
     W: ["SKILL_CHANNEL", "TIMING_CAST", "DASH", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
-    E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DOT", "SLOW"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DOT", "SLOW", "DRAG"],
     R: { phases: [
       { label: { ko: "R", en: "The Skies Descend" }, tags: ["DMG_MAGIC", "PROJECTILE", "ZONE", "STUN"] },
       { label: { ko: "천상강림", en: "Falling Star" }, tags: ["DMG_MAGIC", "PROJECTILE", "ZONE", "AIRBORNE"] },
@@ -50,7 +50,7 @@ const aurelionsol: ChampData = {
           "P의 별가루 [[STACKING]]으로 스킬 강화.",
           "Q는 버튼을 누르면서 마우스를 움직여 사용. \n 적 챔피언에게 6각형 디버프가 생기고 \n 다 차면 폭발피해. \n 1초당 2의 별가루.",
           "W는 날아가는 도중 움직이면 내려짐. \n Q, E, R은 사용해도 내리지 않음. \n 킬 관여 시 [[CDR]].",
-          "E는 중앙 블랙홀에 조건부 [[EXECUTE]] \n 블랙홀에 챔피언이 닿으면 초당 별가루 1. \n E 범위에서 미니언, 몬스터가 죽으면 마리당 1. \n 막타치지 않아도 오름.",
+          "E는 [[AOE]] [[DRAG]], [[DMG_MAGIC]]. \n 중앙 블랙홀에 조건부 [[EXECUTE]]. \n 블랙홀에 챔피언이 닿으면 초당 별가루 1. \n E 범위에서 미니언, 몬스터가 죽으면 마리당 1. \n 막타치지 않아도 오름.",
           "R은 범위 [[STUN]] \n 강화 R(천상강림)은 중앙범위 [[AIRBORNE]] \n 넓은 범위 충격파는 [[SLOW]] \n\n 일반 R은 챔피언당 별가루 5. \n 강화 R은 없음.",
 
         ],
@@ -59,7 +59,7 @@ const aurelionsol: ChampData = {
           "Skills are empowered by P's Stardust [[STACKING]].",
           "Hold Q and move the mouse to aim. \n A hexagonal debuff builds on enemy champions \n and explodes when full. \n Grants 2 Stardust per second.",
           "Moving during W flight cancels it. \n Using Q, E, or R does not cancel flight. \n Kill participation while W is on cooldown reduces its cooldown.",
-          "E has a conditional [[EXECUTE]] in the center black hole. \n Champions touching the black hole grant 1 Stardust per second. \n Minions and monsters dying in E's range grant 1 Stardust each. \n No last hit required.",
+          "E [[AOE]] [[DRAG]]s and deals [[DMG_MAGIC]]. \n Conditional [[EXECUTE]] in the center black hole. \n Champions touching the black hole grant 1 Stardust per second. \n Minions and monsters dying in E's range grant 1 Stardust each. \n No last hit required.",
           "R applies area [[STUN]]. \n Empowered R (Falling Star) applies [[AIRBORNE]] in the center \n and [[SLOW]] in the wider shockwave. \n\n Normal R grants 5 Stardust per champion hit. \n Empowered R does not.",
         ]
 

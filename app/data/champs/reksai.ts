@@ -46,7 +46,7 @@ const reksai: ChampData = {
       Q: ["DMG_PHYSICAL", "AOE", "ON_HIT", "AS_UP"],
       W: ["TRANSFORM"],
       E: ["DMG_PHYSICAL", "TARGETED", "SEPARATOR", "ST_CONDITIONAL", "DMG_TRUE"],      
-      R: ["DMG_PHYSICAL", "TIMING_CAST", "DASH", "HOMING", "UNTARGETABLE", "UNSTOPPABLE"],
+      R: ["DMG_PHYSICAL", "TIMING_CAST", "DASH", "HOMING", "UNTARGETABLE", "TOWER_DODGE", "UNSTOPPABLE"],
     },
 
     alt: {
@@ -54,7 +54,7 @@ const reksai: ChampData = {
       Q: ["DMG_MAGIC", "PROJECTILE", "AOE", "MARK"],
       W: ["TRANSFORM"],
       E: ["DASH", "SEPARATOR", "SUMMON", "SEPARATOR", "ALLY_TP_OK"],
-      R: ["DMG_PHYSICAL", "TIMING_CAST", "DASH", "HOMING", "UNTARGETABLE", "UNSTOPPABLE"],
+      R: ["DMG_PHYSICAL", "TIMING_CAST", "DASH", "HOMING", "UNTARGETABLE", "TOWER_DODGE", "UNSTOPPABLE"],
 
     },
   },
