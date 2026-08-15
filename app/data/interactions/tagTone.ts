@@ -159,6 +159,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 💜 fuchsia (치감/그라운드/TP류)
   GW: "fuchsia",
+  BURN: "red",
   ANTI_DASH: "fuchsia",
   GROUNDED: "fuchsia",
   ALLY_TP_OK: "fuchsia",

@@ -104,7 +104,8 @@ export type TagId =
   | "MR_PEN"      //마관
   | "AR_MR_PEN"  // 방마관
   | "GW"           // 치감
-  
+  | "BURN"         // 부식
+
   | "HARD_CC"
   | "STUN"
   | "ROOT"
@@ -265,6 +266,7 @@ AR_PEN: { ko: "방관", en: "AR Penet" },
 MR_PEN: { ko: "마관", en: "AR Penet" },
 AR_MR_PEN: { ko: "방마관", en: "AR+MR Penet" },
 GW: { ko: "치감", en: "Grievous Wounds" },
+BURN: { ko: "부식", en: "Burn" },
 
 /* =========================
  * 9) CC
@@ -643,6 +645,10 @@ GW: {
   ko: "치유효과 감소",
   en: "Reduces healing effects",
 },
+BURN: {
+  ko: "체력이 점차 빠른 속도로 감소하는 상태. \n 회복으로 늦출 수는 있지만 결국 죽음에 다다름. \n 단, 처치 관여 시 죽음을 피할 수 있음. \n 한 번의 버프로 두 번 살아날 수 없음.",
+  en: "A state where health decreases at an accelerating rate. \n Healing can slow it down, but it ultimately leads to death. \n However, death can be avoided by getting a takedown. \n Cannot be revived twice from a single buff.",
+},
 
 
 
@@ -729,8 +735,8 @@ CANCEL: {
   en: "Interrupts channeling abilities",
 },
 BERSERK: {
-  ko: "주변 유닛을 공격함(자신의 아군 우선)\n(클린즈 계열로 해제 가능)",
-  en: "Attacks nearby units, prioritizing allies\n(can be cleansed)",
+  ko: "주변 유닛을 공격. \n 자신의 아군 우선 공격. \n 클린즈 계열로 해제 가능.",
+  en: "Attacks nearby units. \n Prioritizes allies. \n Can be cleansed.",
 },
 NEAR_SIGHT: {
   ko: "시야가 축소됨. \n (정화를 제외한 클린즈 계열로 해제 가능)",
