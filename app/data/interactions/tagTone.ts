@@ -239,6 +239,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   GLOBAL:  "indigo",
   SUMMON:  "indigo",
   DROP:          "indigo",
+  "X1.5":        "indigo",
   X2:            "indigo",
   X3:            "indigo",
   X4:            "indigo",

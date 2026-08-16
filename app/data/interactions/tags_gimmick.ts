@@ -47,6 +47,7 @@ export type GimmickTagId =
   | "GLOBAL"
   | "SUMMON"
   | "DROP"
+  | "X1.5"
   | "X2"
   | "X3"
   | "X4"
@@ -174,6 +175,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   GLOBAL:  { ko: "맵전체", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
   DROP:          { ko: "드롭",    en: "Drops"    },
+  "X1.5":        { ko: "x1.5",     en: "x1.5"    },
   X2:            { ko: "x2",       en: "x2"      },
   X3:            { ko: "x3",       en: "x3"      },
   X4:            { ko: "x4",       en: "x4"      },
@@ -265,6 +267,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   GLOBAL:      { ko: "사거리 또는 목표물이 맵 전체", en: "Range or target \n extends across the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
   DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
+  "X1.5":        { ko: "해당 효과가 1.5배로 발생함", en: "The effect occurs at 1.5x" },
   X2:            { ko: "해당 효과가 2회 발생함", en: "The effect occurs 2 times" },
   X3:            { ko: "해당 효과가 3회 발생함", en: "The effect occurs 3 times" },
   X4:            { ko: "해당 효과가 4회 발생함", en: "The effect occurs 4 times" },

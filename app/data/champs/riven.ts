@@ -74,10 +74,10 @@ const riven: ChampData = {
       note3: { 
         ko: [
           "ER로 R의 [[TIMING_CAST]]을 없애야 함.", 
-          "점멸 Q3 또는 점멸 W로 \n 상대 뒷라인을 한순간에 물어 터뜨려야함. \n R2는 대상의 잃은체력 비례 데미지어서 콤보 마지막에 써야함.",
+          "점멸 Q3 또는 점멸 W로 \n 상대 뒷라인을 한순간에 물어 터뜨려야 함. \n R2는 대상의 잃은 체력 비례 데미지로 \n 콤보 마지막에 써야 함.",
         ], en: [
           "Use E into R to remove R's [[TIMING_CAST]].",
-          "Use Flash Q3 or Flash W \n to instantly dive and burst the enemy backline. \n R2 deals damage based on missing HP, so save it for the end of the combo.",
+          "Use Flash Q3 or Flash W \n to instantly dive and burst the enemy backline. \n R2 deals damage based on the target's missing HP, \n so save it for the end of the combo.",
         ] },
       note1: {
 
@@ -85,7 +85,7 @@ const riven: ChampData = {
           "P는 스킬을 사용할 때마다 [[BUFF_STACK]]. 최대 3회. \n [[BUFF_STACK]]은 [[BA]] 공격 시 [[STACK_CONSUME]]하여 [[DMG_PHYSICAL]]. \n \n",
 
           "Q1, Q2는 [[DASH]]하여 [[AOE]] [[DMG_PHYSICAL]].", 
-          "Q3는 [[DASH]]하여 [[AOE]] [[DMG_PHYSICAL]], [[AIRBORNE]]. \n Q3만 [[WALL_HOP]] 가능. \n \n",
+          "Q3는 [[DASH]]하여 [[AOE]] [[DMG_PHYSICAL]], [[AIRBORNE]]. \n Q3 만 [[WALL_HOP]] 가능. \n \n",
 
           "W는 [[AOE]] [[DMG_PHYSICAL]], [[STUN]]. \n \n",
 
