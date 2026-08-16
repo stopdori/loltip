@@ -133,6 +133,7 @@ export type TagId =
   | "TRANSFORM"  // 폼변환
   | "EVOLVED"    // 진화
   | "IMMOBILIZING"
+  | "STASIS"
 
 
   | "THE_COPYPASTA";
@@ -195,6 +196,7 @@ BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
 TRANSFORM: { ko: "폼 변환", en: "Transform" },
 EVOLVED: { ko: "진화", en: "Evolved" },
 IMMOBILIZING: { ko: "이동불가", en: "Immobilizing" },
+STASIS: { ko: "경직", en: "Stasis" },
 
 
 /* =========================
@@ -771,8 +773,13 @@ EVOLVED: {
 },
 
 IMMOBILIZING: {
-  ko: "이동 명령을 차단하는 CC. \n 기절, 속박, 에어본, 넉백, 그렙, 체공, 제압, 수면, 공포, 매혹, 도발, 광란",
-  en: "CC that prevents movement commands. \n Stun, Root, Airborne, Knockback, Grab, Suspension, Suppression, Sleep, Fear, Charm, Taunt, Berserk",
+  ko: "이동 명령을 차단하는 CC. \n 기절, 속박, 에어본, 넉백, 그렙, 체공, 제압, 수면, 공포, 매혹, 도발, 광란, 경직",
+  en: "CC that prevents movement commands. \n Stun, Root, Airborne, Knockback, Grab, Suspension, Suppression, Sleep, Fear, Charm, Taunt, Berserk, Stasis",
+},
+
+STASIS: {
+  ko: "움직일 수 없는 상태. \n 대신, 무적 및 대상으로 지정할 수 없음.",
+  en: "Unable to move. \n Instead, becomes invulnerable and untargetable.",
 },
 
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },
