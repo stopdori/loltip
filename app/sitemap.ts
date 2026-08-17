@@ -93,6 +93,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
+    // 퀴즈
+    urls.push({
+      url: `${baseUrl}/${locale}/quiz`,
+      changeFrequency: "weekly",
+      priority: locale === "ko" ? 0.8 : 0.7,
+      lastModified: LAST_MODIFIED,
+    });
+
+    // 개인정보처리방침
+    urls.push({
+      url: `${baseUrl}/${locale}/privacy`,
+      changeFrequency: "yearly",
+      priority: locale === "ko" ? 0.3 : 0.3,
+      lastModified: LAST_MODIFIED,
+    });
+
     // KO 콘텐츠가 실제로 존재하는 매치업 페이지만 포함
     for (const pair of indexablePairs) {
       urls.push({

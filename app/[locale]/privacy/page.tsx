@@ -1,9 +1,22 @@
-// app/privacy/page.tsx
+// app/[locale]/privacy/page.tsx
 
-export const metadata = {
-  title: "Privacy Policy | LOLTIP",
-  description: "Privacy Policy for LOLTIP",
-};
+import type { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: "Privacy Policy | LOLTIP",
+    description: "Privacy Policy for LOLTIP",
+    alternates: {
+      canonical: `https://loltip.com/${locale}/privacy`,
+      languages: {
+        ko: "https://loltip.com/ko/privacy",
+        en: "https://loltip.com/en/privacy",
+        "x-default": "https://loltip.com/ko/privacy",
+      },
+    },
+  };
+}
 
 export default function PrivacyPage() {
   return (
