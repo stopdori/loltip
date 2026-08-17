@@ -102,6 +102,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: {
       canonical: `https://loltip.com/${locale}/champ/${champId}`,
+      languages: {
+        ko: `https://loltip.com/ko/champ/${champId}`,
+        en: `https://loltip.com/en/champ/${champId}`,
+        "x-default": `https://loltip.com/ko/champ/${champId}`,
+      },
     },
     openGraph: {
       title: `${champ.en} Champion Guide | LOLTIP`,

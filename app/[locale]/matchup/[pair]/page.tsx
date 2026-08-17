@@ -67,6 +67,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...(description && { description }),
     alternates: {
       canonical: `https://loltip.com/${locale}/matchup/${canonical}`,
+      languages: {
+        ko: `https://loltip.com/ko/matchup/${canonical}`,
+        en: `https://loltip.com/en/matchup/${canonical}`,
+        "x-default": `https://loltip.com/ko/matchup/${canonical}`,
+      },
     },
     ...(noindex && { robots: { index: false, follow: false } }),
     openGraph: {

@@ -10,6 +10,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: "리그 오브 레전드 모든 챔피언의 상성과 공략을 확인하세요.",
     alternates: {
       canonical: `https://loltip.com/${locale}/champ`,
+      languages: {
+        ko: "https://loltip.com/ko/champ",
+        en: "https://loltip.com/en/champ",
+        "x-default": "https://loltip.com/ko/champ",
+      },
     },
     openGraph: {
       title: "챔피언 목록 - LOLTIP",
