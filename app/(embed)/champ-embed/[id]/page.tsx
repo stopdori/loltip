@@ -1,7 +1,7 @@
 import ChampClient from "@/app/[locale]/champ/ChampClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Fragment } from "react";
 
 import type { Metadata } from "next";
@@ -40,7 +40,7 @@ export default async function Page(props: Props) {
   const champId = id.toLowerCase();
 
   if (id !== champId) {
-    redirect(`/champ-embed/${champId}`);
+    permanentRedirect(`/champ-embed/${champId}`);
   }
 
   const champData = CHAMPS[champId as keyof typeof CHAMPS];

@@ -28,7 +28,7 @@ const nextConfig = {
       { source: "/privacy",       destination: "/ko/privacy",        permanent: true },
 
       // /champ-embed/:id → /ko/champ-embed/:id (기본 locale로 리다이렉트)
-      { source: "/champ-embed/:id", destination: "/ko/champ-embed/:id", permanent: false },
+      { source: "/champ-embed/:id", destination: "/ko/champ-embed/:id", permanent: true },
     ];
   },
 };
