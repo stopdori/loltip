@@ -43,10 +43,15 @@ const seraphine: ChampData = {
       note1: {
 
         ko: [
-          "P",
-          "Q",
-          "W",
-          "E",
+          "P는 스킬을 사용할 때마다 메아리 [[BUFF_STACK]]. \n 3스택을 모으면 다음 Q, W, E스킬은 자동으로 한 번 더 발동.",
+          "주변 아군이 스킬을 사용할 때마다 세라핀에게 음표 [[BUFF_STACK]]. \n 음표당 세라핀의 [[BA]] 25 [[RANGE_UP]], [[DMG_MAGIC]]. \n 아군마다 최대 4개 제공.",
+
+          "Q는 해당 지점에 [[PROJECTILE]]를 발사. \n 도착하면 [[AOE]] [[DMG_MAGIC]]. \n 챔피언, 몬스터는 잃은 체력 비례 [[DMG_MAGIC]].",
+
+          "W는 주변 아군 [[SHIELD]]와 [[MS_UP]]. \n 세라핀은 [[SHIELD]]와 2.5배의 [[MS_UP]]. \n 두 [[MS_UP]] 효과는 점차 사라짐. \n \n 세라핀에게 [[SHIELD]]가 있는 상태에서 W를 사용한다면 \n 잃은 체력 비례 [[AOE]] [[HEAL]] 스킬을 추가로 자동으로 시전. \n 단, P의 메아리 효과로 W 스킬이 두 번 사용돼도 \n [[HEAL]] 스킬은 한 번만 발동.",
+
+          "E는 일직선으로 [[PROJECTILE]]를 발사. \n [[DMG_MAGIC]], 99% [[SLOW]]. \n 이미 [[SLOW]]된 대상은 [[ROOT]], ",
+
           "R",
         ],
 

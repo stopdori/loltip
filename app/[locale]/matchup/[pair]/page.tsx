@@ -93,9 +93,13 @@ export default async function Page({ params, searchParams }: Props) {
   if (!champA || !champB) notFound();
 
   // canonical 주소로 정규화
+  // 주의: ?first= 쿼리를 목적지에 포함하지 않음 - robots.txt의 disallow: '/*?first='와
+  // 충돌해 크롤러가 리다이렉트 목적지를 크롤링하지 못하는 문제가 있었음.
+  // 순서가 뒤바뀐 URL은 외부/수동 입력 등 드문 경로로만 유입되므로,
+  // 배치 선호(first) 없이 canonical 경로로만 리다이렉트해도 실사용 영향은 낮음.
   const canonical = [a, b].sort().join("-vs-");
   if (pair !== canonical) {
-    permanentRedirect(`/${locale}/matchup/${canonical}?first=${first ?? a}`);
+    permanentRedirect(`/${locale}/matchup/${canonical}`);
   }
 
   // first 파라미터로 나/상대 결정
