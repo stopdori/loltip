@@ -55,6 +55,7 @@ export type GimmickTagId =
   | "XN"
   | "CLONE"
   | "HOMING"
+  | "BEAM"
   | "SWARM"
   | "VOLLEY"
   | "VOLLEY_OVERLAP"
@@ -165,6 +166,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   BA: { ko: "평타", en: "Basic Attack" },
   MARK:          { ko: "표식",     en: "Mark"          },
   HOMING:        { ko: "호밍",     en: "Homing"        },
+  BEAM:          { ko: "광선",     en: "Beam"          },
   // 피해 범위
   SINGLE:  { ko: "단일",   en: "Single Target"   },
   PIERCE:        { ko: "관통",      en: "Pierce"        },
@@ -244,6 +246,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   TRAP:             { ko: "설치 후 적이 밟으면 발동되는 함정", en: "A trap that activates when an enemy steps on it" },
   CHAIN:            { ko: "조건 충족 시 추가 투사체 또는 효과가 연쇄 생성됨", en: "Generates additional projectiles or effects when a condition is met" },
   HOMING:           { ko: "시전 후 투사체나 캐릭터가 스스로 대상을 추적.", en: "Self-targeting projectile or character after cast." },
+  BEAM:             { ko: "발사하는 동시에 적중하는 형태의 투사체.", en: "A projectile that hits the moment it is fired." },
   PASSIVE_BONUS:    { ko: "스킬을 찍으면 별도의 패시브 효과가 추가됨", en: "Leveling this ability grants an additional persistent passive effect" },
   PASSIVE_INTERACT: { ko: "패시브와 다른 스킬이 서로 영향을 주고받음.", en: "The passive and other abilities interact with each other." },
   BUFF_INTERACT:    { ko: "버프가 다른 스킬과 서로 영향을 주고받음.", en: "A buff interacts with other abilities." },

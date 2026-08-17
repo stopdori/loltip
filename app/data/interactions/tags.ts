@@ -473,8 +473,8 @@ INVISIBILITY: {
   en: "Stealth class\nInvisible units cannot be revealed \nby enemy champions or Control Wards\nOnly revealed by True Sight.",
 },
 CAMOUFLAGE: {
-  ko: "은신류 - 상대 챔피언, 핑와에 발각 됨\n단, 절대시야에는 보이고, 드러냄 스킬에는 맞고 은신하면 보임",
-  en: "Stealth class\nRevealed by nearby enemy champions \nor Control Wards.",
+  ko: "은신류 \n 상대 챔피언, 핑와, 절대시야에 보임.",
+  en: "Stealth class \n Revealed by enemy champions, Control Wards, or True Sight.",
 },
 
 

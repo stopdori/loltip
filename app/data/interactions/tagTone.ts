@@ -222,6 +222,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   MARK_CONSUME:     "indigo",
   MARK:             "indigo",
   HOMING:           "indigo",
+  BEAM:             "indigo",
   // 스킬 키
   P: "white",
   Q: "white",

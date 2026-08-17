@@ -66,10 +66,12 @@ const samira: ChampData = {
  
   notes: {
     skill: {
-      note3: { 
+      note3: {
         ko: [
-          "",
-        ], en: [] },
+          "멀리서 [[BA]], Q로 스타일을 잘 쌓다가 \n EQW으로 한 번에 스타일 S 만들어서 R",
+        ], en: [
+          "Build up Style from range with [[BA]] and Q, \n then EQW to instantly max out Style to S rank and R",
+        ] },
       note1: {
 
         ko: [
@@ -107,6 +109,7 @@ const samira: ChampData = {
       note2: {
  
         ko: [
+        "스킬로 피해를 입히지 않으면 스타일이 사라짐.",
         "P의 [[AIRBORNE]] 추가 효과는 \n 그 자리에서 새로운 [[AIRBORNE]]을 적용하기 때문에 \n [[GRAB]], [[KNOCKBACK]] 대상 공격 시 이동이 멈출 수 있음.", 
         "[[W_FLASH]]은 가능. \n 하지만, W가 즉발스킬이라 최초 데미지는 들어가지 않음.", 
         "R은 미니언에게는 25%의 피해.",
@@ -114,6 +117,7 @@ const samira: ChampData = {
       ],
  
         en: [
+        "If Style deals no skill damage, it disappears.",
         "P's bonus [[AIRBORNE]] effect applies a new [[AIRBORNE]] in place, \n so attacking a [[GRAB]] or [[KNOCKBACK]] target can stop their movement.",
         "[[W_FLASH]] is possible. \n However, since W is an instant-cast skill, the initial hit's damage does not land.",
         "R deals 25% damage to minions.",
