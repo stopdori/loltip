@@ -17,8 +17,8 @@ const sejuani: ChampData = {
     E: ["E_FLASH", "STUN", "AA_RESET"],
  
     R: { phases: [
-      { label: { ko: "R 1/4 이내", en: "" }, tags: ["R_FLASH", "STUN", "REVEALED"] },
-      { label: { ko: "R 1/4 이후", en: "" }, tags: ["R_FLASH", "STUN", "REVEALED", "SEPARATOR", "SLOW", "ZONE"] },
+      { label: { ko: "R 1/4 이내", en: "R Within 1/4 Distance" }, tags: ["R_FLASH", "STUN", "REVEALED"] },
+      { label: { ko: "R 1/4 이후", en: "R Beyond 1/4 Distance" }, tags: ["R_FLASH", "STUN", "REVEALED", "SEPARATOR", "SLOW", "ZONE"] },
     ] },
   },
  
@@ -50,16 +50,16 @@ const sejuani: ChampData = {
     Q: ["DMG_MAGIC", "PIERCE_MINION", "DASH", "AIRBORNE"],
  
     W: { phases: [
-      { label: { ko: "W 1타 부채꼴", en: "W" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "SEPARATOR", "DEBUFF_STACK"] },
-      { label: { ko: "W 2타 직선", en: "W " }, tags: ["DMG_PHYSICAL", "ST_DELAYED", "AOE", "SEPARATOR", "DEBUFF_STACK"] },
+      { label: { ko: "W 1타 부채꼴", en: "W Hit 1 (Cone)" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "SEPARATOR", "DEBUFF_STACK"] },
+      { label: { ko: "W 2타 직선", en: "W Hit 2 (Line)" }, tags: ["DMG_PHYSICAL", "ST_DELAYED", "AOE", "SEPARATOR", "DEBUFF_STACK"] },
     ] },
  
     E: ["STACK_CONSUME", "DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "HOMING", "STUN"],
  
     R: { phases: [
       { label: { ko: "R 투사체", en: "R Projectile" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE", "STUN"] },
-      { label: { ko: "R 장판", en: "" }, tags: ["ST_CONDITIONAL", "ZONE", "SLOW"] },
-      { label: { ko: "R 장판 폭발", en: "" }, tags: ["ST_DELAYED", "DMG_MAGIC", "ZONE", "SLOW"] },
+      { label: { ko: "R 장판", en: "R Zone" }, tags: ["ST_CONDITIONAL", "ZONE", "SLOW"] },
+      { label: { ko: "R 장판 폭발", en: "R Zone Explosion" }, tags: ["ST_DELAYED", "DMG_MAGIC", "ZONE", "SLOW"] },
     ] },
  
   },

@@ -43,14 +43,14 @@ const senna: ChampData = {
     P: { phases: [
       { label: { ko: "표식", en: "Mark" }, tags: ["MARK_INTERACT", "Q", "W", "R"] },
       { label: { ko: "안개", en: "Soul" }, tags: ["DMG_PHYSICAL", "STACKING"] },
-      { label: { ko: "안개 스택 효과", en: "" }, tags: ["AD_UP", "RANGE_UP", "CRIT", "SEPARATOR", "ST_CONDITIONAL", "LIFESTEAL"] },
+      { label: { ko: "안개 스택 효과", en: "Soul Stack Bonus" }, tags: ["AD_UP", "RANGE_UP", "CRIT", "SEPARATOR", "ST_CONDITIONAL", "LIFESTEAL"] },
     ] },
  
     Q: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "AOE", "MARK", "SEPARATOR", "ST_CONDITIONAL", "MARK_CONSUME"],
  
     W: { phases: [
       { label: { ko: "W 투사체", en: "W Projectile" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "MARK", "SEPARATOR", "ST_CONDITIONAL", "MARK_CONSUME"] },
-      { label: { ko: "W 폭발", en: "" }, tags: ["ST_CONDITIONAL", "AOE", "MARK", "ROOT", "SEPARATOR", "ST_CONDITIONAL", "MARK_CONSUME"] },
+      { label: { ko: "W 폭발", en: "W Explosion" }, tags: ["ST_CONDITIONAL", "AOE", "MARK", "ROOT", "SEPARATOR", "ST_CONDITIONAL", "MARK_CONSUME"] },
     ] },
  
     E: ["BUFF_FORM", "TIMING_CAST", "AOE", "SEPARATOR", "MS_UP", "UNTARGETABLE", "CAMOUFLAGE"],

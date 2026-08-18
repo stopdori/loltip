@@ -20,7 +20,7 @@ const renata: ChampData = {
   gimmick: {
     P: { phases: [
       { label: { ko: "표식 부여평타", en: "Mark Basic Attack" }, tags: ["DMG_MAGIC", "ON_HIT", "MARK"] },
-      { label: { ko: "아군 평타", en: " Ally Basic Attack" }, tags: ["DMG_MAGIC", "ON_HIT", "MARK_CONSUME"] },
+      { label: { ko: "아군 평타", en: "Ally Basic Attack" }, tags: ["DMG_MAGIC", "ON_HIT", "MARK_CONSUME"] },
     ] },
     
     Q: { phases: [

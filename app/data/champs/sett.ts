@@ -27,7 +27,7 @@ const sett: ChampData = {
     Q: ["DMG_PHYSICAL", "ON_HIT", "MS_TO_ENEMY"],
 
     W: { phases: [
-      { label: { ko: "W 패시브", en: "" }, tags: ["PASSIVE_BONUS"] },
+      { label: { ko: "W 패시브", en: "W Passive" }, tags: ["PASSIVE_BONUS"] },
       { label: { ko: "W", en: "W" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "LOCKED", "SHIELD", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DMG_TRUE",] },
     ] },
 
