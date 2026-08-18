@@ -44,7 +44,7 @@ const bard: ChampData = {
         ko: [
           "P는 맵에 주기적으로 종 생성. ([[STACKING]]) \n 모으면 여러가지 효과 추가. \n 디테일한 것은 하단 TMI 참고.",
           "Q는 1회만 관통. \n 관통해서 벽이나 다른 적과 충돌하면 둘다 [[STUN]]",
-          "W [[DROP]]은 바닥에 설치 [[MS_UP]], [[HEAL]] \n 설치하고 5초동안 두면 점차 효과 증가. \n 상대팀이 밟으면 파괴.",
+          "W는 바닥에 [[DROP]] 설치. \n 밟으면 [[MS_UP]], [[HEAL]]. \n 설치하고 밟지 않으면 5초동안 효과 점차 증가. \n 상대팀이 밟으면 파괴.",
           "E는 벽에 통로를 뚫어 누구든 [[DASH]]할 수 있음. \n E를 설치하는 거리는 포탑사거리 정도.",
           "R은 광역 존야. \n 잘쓰면 케리아 못쓰면 개트롤."
         ],
@@ -52,7 +52,7 @@ const bard: ChampData = {
         en: [
           "P periodically spawns chimes across the map ([[STACKING]]).\nCollecting them grants various bonus effects.\nSee the notes below for details.",
           "Q pierces once.\nIf it hits a wall or another enemy after piercing, both targets are [[STUN]]ned.",
-          "W [[DROP]] places a shrine on the ground that provides [[MS_UP]] and [[HEAL]].\nLeaving it for 5 seconds gradually increases its power.\nEnemies can step on it to destroy it.",
+          "W [[DROP]] places a shrine on the ground.\nStepping on it grants [[MS_UP]] and [[HEAL]].\nIf left unstepped, its effect gradually increases over 5 seconds.\nEnemies can step on it to destroy it.",
           "E creates a tunnel through walls that anyone can [[DASH]] through.\nThe placement range is approximately one turret range.",
           "R is a targeted AoE Zhonya's.\nIn good hands it's a clutch play; misused, it's a teamfight-losing troll.",
         ]

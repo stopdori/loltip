@@ -17,6 +17,7 @@ export type TagId =
   | "REFLECT"
   | "INSEC_KICK"
   | "MS_UP"
+  | "MS_TO_ENEMY"
   | "MS_DOWN"
   | "AS_UP"          // 공속 증가
   | "AS_DOWN"
@@ -147,6 +148,7 @@ export const TAG_LABEL: Record<TagId, { ko: string; en: string }> = {
  * 1) 스탯 / 자원 변화
  * ========================= */
 MS_UP: { ko: "이속↑", en: "MS ↑" },
+MS_TO_ENEMY: { ko: "추격이속↑", en: "Approach MS" },
 MS_DOWN: { ko: "이속↓", en: "MS ↓" },
 AS_UP: { ko: "공속↑", en: "AS ↑" },
 AS_DOWN: { ko: "공속↓", en: "AS ↓" },
@@ -283,7 +285,7 @@ STUN: { ko: "기절", en: "Stun" },
 ROOT: { ko: "속박", en: "Root" },
 KNOCKBACK: { ko: "넉백", en: "Knockback" },
 GRAB: { ko: "그렙", en: "Grab" },
-DRAG: { ko: "끌어당김", en: "Kinematics" },
+DRAG: { ko: "끌어당김", en: "Drag" },
 AIRBORNE: { ko: "에어본", en: "Airborne" },
 SUSPENDING: { ko: "체공", en: "Suspending" },
 SUPPRESS: { ko: "제압", en: "Suppress" },
@@ -374,6 +376,10 @@ INSEC_KICK: {
 MS_UP: {
   ko: "이동속도 증가",
   en: "Increases movement speed",
+},
+MS_TO_ENEMY: {
+  ko: "적에게 접근할 때 이동속도가 증가하는 효과.",
+  en: "Gain movement speed when approaching enemies.",
 },
 MS_DOWN: {
   ko: "자신의 이동속도가 감소함",
@@ -778,8 +784,8 @@ IMMOBILIZING: {
 },
 
 STASIS: {
-  ko: "움직일 수 없는 상태. \n 대신, 무적 및 대상으로 지정할 수 없음.",
-  en: "Unable to move. \n Instead, becomes invulnerable and untargetable.",
+  ko: "움직일 수 없는 상태. \n 대신, 무적 및 대상으로 지정할 수 없음. \n 예) 존야, 가엔",
+  en: "Unable to move. \n Instead, becomes invulnerable and untargetable. \n e.g. Zhonya's, Guardian Angel",
 },
 
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },

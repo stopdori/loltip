@@ -4,7 +4,7 @@ const renata: ChampData = {
   skills: {
     P: ["MARK"],
     Q: ["ROOT", "SEPARATOR", "AIRBORNE", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
-    W: ["W_FLASH", "MS_UP", "SEPARATOR", "ST_CONDITIONAL", "BURN"],
+    W: ["W_FLASH", "MS_TO_ENEMY", "SEPARATOR", "ST_CONDITIONAL", "BURN"],
     E: ["SHIELD", "SLOW"],
     R: ["R_FLASH", "BERSERK"],
   },
@@ -28,7 +28,7 @@ const renata: ChampData = {
       { label: { ko: "Q2", en: "Q2" }, tags: ["DMG_MAGIC", "SEPARATOR", "ST_CONDITIONAL", "STUN"] },
     ] },
 
-    W: ["BUFF", "TARGETED", "SEPARATOR", "ST_CONDITIONAL", "MS_UP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DURATION_RESET", "SEPARATOR", "ST_CONDITIONAL", "BURN"],
+    W: ["BUFF", "TARGETED", "SEPARATOR", "ST_CONDITIONAL", "MS_TO_ENEMY", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DURATION_RESET", "SEPARATOR", "ST_CONDITIONAL", "BURN"],
 
     E: { phases: [
       { label: { ko: "E 아군", en: "E Ally" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "SHIELD"] },
@@ -55,7 +55,7 @@ const renata: ChampData = {
 
           "Q1은 [[PROJECTILE]]를 발사하여 [[ROOT]], [[DMG_MAGIC]]. \n 적중 했다면 Q2 사용 가능. \n \n Q2는 대상을 [[AIRBORNE]] 시키고 지정한 방향으로 [[KNOCKBACK]]. \n 이때 대상과 충돌한 유닛들은 [[DMG_MAGIC]]. \n 챔피언이라면 [[STUN]] 추가. \n \n 즉, 지정 대상은 계속 [[ROOT]], 부딪힌 챔피언은 [[STUN]].",
 
-          "W는 아군 챔피언에게 [[BUFF]]. \n [[BUFF]]는 [[AS_UP]], 적 챔피언에게 이동 시 [[MS_UP]]. \n 5초에 걸쳐 효과 증가. \n [[BUFF]] 대상이 처치 관여 시 [[DURATION_RESET]]. \n \n [[BUFF]] 대상이 죽으면 \n 체력 100%로 되살리고 [[BURN]] 상태 돌입. \n 대상이 처치 관여 시 \n 최대 체력의 20%가 되고 [[BURN]] 종료. [[HEAL]]이 아님.",
+          "W는 아군 챔피언에게 [[BUFF]]. \n [[BUFF]]는 [[AS_UP]], [[MS_TO_ENEMY]]. \n 5초에 걸쳐 효과 증가. \n [[BUFF]] 대상이 처치 관여 시 [[DURATION_RESET]]. \n \n [[BUFF]] 대상이 죽으면 \n 체력 100%로 되살리고 [[BURN]] 상태 돌입. \n 대상이 처치 관여 시 \n 최대 체력의 20%가 되고 [[BURN]] 종료. [[HEAL]]이 아님.",
 
           "E는 [[PROJECTILE]]를 발사. \n 적중한 아군은 [[SHIELD]]. \n 적중한 적군은 [[SLOW]], [[DMG_MAGIC]].",
 
@@ -67,7 +67,7 @@ const renata: ChampData = {
 
           "Q1 fires a [[PROJECTILE]] that [[ROOT]]s and deals [[DMG_MAGIC]]. \n If it hits, Q2 becomes available. \n \n Q2 [[AIRBORNE]]s the target and [[KNOCKBACK]]s them in the chosen direction. \n Units that collide with the target take [[DMG_MAGIC]]. \n Champions hit also get [[STUN]]ned. \n \n In short, the marked target stays [[ROOT]]ed, and the champion it collides with gets [[STUN]]ned.",
 
-          "W grants [[BUFF]] to an ally champion. \n The [[BUFF]] gives [[AS_UP]], and [[MS_UP]] when moving toward an enemy champion. \n The effect scales up over 5 seconds. \n Getting a takedown while [[BUFF]]ed triggers [[DURATION_RESET]]. \n \n If the [[BUFF]]ed target dies, \n it revives at 100% HP and enters [[BURN]]. \n If the target gets a takedown, \n it settles at 20% max HP and [[BURN]] ends. Not a [[HEAL]].",
+          "W grants [[BUFF]] to an ally champion. \n The [[BUFF]] gives [[AS_UP]] and [[MS_TO_ENEMY]]. \n The effect scales up over 5 seconds. \n Getting a takedown while [[BUFF]]ed triggers [[DURATION_RESET]]. \n \n If the [[BUFF]]ed target dies, \n it revives at 100% HP and enters [[BURN]]. \n If the target gets a takedown, \n it settles at 20% max HP and [[BURN]] ends. Not a [[HEAL]].",
 
           "E fires a [[PROJECTILE]]. \n Allies hit gain [[SHIELD]]. \n Enemies hit take [[SLOW]] and [[DMG_MAGIC]].",
 

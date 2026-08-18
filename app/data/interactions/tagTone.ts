@@ -68,6 +68,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🔵 sky (이동/회복/자원/저항)
   MS_UP: "sky",
+  MS_TO_ENEMY: "sky",
   AS_UP: "sky",
   CDR: "indigo",
   CDR_RESET: "indigo",

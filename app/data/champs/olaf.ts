@@ -13,7 +13,7 @@ const olaf: ChampData = {
 
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["AR_MR_UP"] },
-      { label: { ko: "R 액티브", en: "R Active" }, tags: ["BUFF_FORM", "AD_UP", "CC_CLEANSE", "CC_IMMUNE", "SEPARATOR", "ST_CONDITIONAL", "MS_UP"] },
+      { label: { ko: "R 액티브", en: "R Active" }, tags: ["BUFF_FORM", "AD_UP", "CC_CLEANSE", "CC_IMMUNE", "SEPARATOR", "ST_CONDITIONAL", "MS_TO_ENEMY"] },
      ] },
   },
 
@@ -36,7 +36,7 @@ const olaf: ChampData = {
     
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["PASSIVE_BONUS", "AR_MR_UP"] },
-      { label: { ko: "R 액티브", en: "R Active" }, tags: ["BUFF_FORM", "AD_UP", "CC_CLEANSE", "CC_IMMUNE", "SEPARATOR", "ST_CONDITIONAL", "MS_UP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "BA", "E", "DURATION_EXT"] },
+      { label: { ko: "R 액티브", en: "R Active" }, tags: ["BUFF_FORM", "AD_UP", "CC_CLEANSE", "CC_IMMUNE", "SEPARATOR", "ST_CONDITIONAL", "MS_TO_ENEMY", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "BA", "E", "DURATION_EXT"] },
      ] },
   },
 
@@ -63,7 +63,7 @@ const olaf: ChampData = {
 
           "E는 [[TARGETED]] [[DMG_TRUE]]. \n 처치 시 소모 값 회복. \n 마나 대신 체력을 소모. \n [[BA]] 공격 시 [[CDR]] 1초. \n 몬스터 [[BA]] 공격 시 [[CDR]] 2초.",
 
-          "R의 [[PASSIVE_BONUS]]는 [[AR_MR_UP]]. \n \n R은 지속시간 3초 [[AD_UP]], [[CC_CLEANSE]], 3초간 [[CC_IMMUNE]]. \n [[BA]], E로 챔피언 공격 시 지속시간 2.5초 연장. \n 처음 1초간 적 챔피언에게 다가갈 때 [[MS_UP]].",
+          "R의 [[PASSIVE_BONUS]]는 [[AR_MR_UP]]. \n \n R은 지속시간 3초 [[AD_UP]], [[CC_CLEANSE]], 3초간 [[CC_IMMUNE]]. \n [[BA]], E로 챔피언 공격 시 지속시간 2.5초 연장. \n 처음 1초간 [[MS_TO_ENEMY]].",
         ],
 
         en: [
@@ -71,7 +71,7 @@ const olaf: ChampData = {
           "Q throws an axe [[PROJECTILE]]. \n Deals [[DMG_PHYSICAL]], applies [[AR_SHRED]], and [[SLOW]] scaling with distance traveled. \n Creates a [[DROP]] at the landing location. \n Picking it up sets the cooldown to 2.5s. \n Picking it up with 2.5s remaining [[CDR_RESET]]s the cooldown.",
           "W grants [[AS_UP]] and a [[SHIELD]] scaling with missing HP.",
           "E is a [[TARGETED]] [[DMG_TRUE]]. \n Refunds the cost on kill. \n Costs HP instead of mana. \n [[BA]] on any target reduces cooldown by 1s. \n [[BA]] on monsters reduces cooldown by 2s.",
-          "R's [[PASSIVE_BONUS]] is [[AR_MR_UP]]. \n \n R grants [[AD_UP]] and [[CC_CLEANSE]] for 3s, and [[CC_IMMUNE]] for 3s. \n Attacking a champion with [[BA]] or E extends duration by 2.5s. \n Grants [[MS_UP]] when approaching enemy champions for the first 1s.",
+          "R's [[PASSIVE_BONUS]] is [[AR_MR_UP]]. \n \n R grants [[AD_UP]] and [[CC_CLEANSE]] for 3s, and [[CC_IMMUNE]] for 3s. \n Attacking a champion with [[BA]] or E extends duration by 2.5s. \n [[MS_TO_ENEMY]] for the first 1s.",
         ]
 
       },

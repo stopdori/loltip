@@ -78,7 +78,7 @@ const pantheon: ChampData = {
 
           "W는 대상에게 [[DASH]]. \n 대상의 최대 체력 비례 [[DMG_PHYSICAL]], [[BUFF_STACK]], [[STUN]]. \n \n [[EMPOWERED]] W는 [[BA]] 3대를 빠르게 공격 \n [[DMG_PHYSICAL]], [[BUFF_STACK]][[X3]]",
 
-          "E는 시전 방향으로 방패. \n 방패방향의 피해 [[INVULNERABLE]]. \n [[BUFF_STACK]], 지속 [[DMG_PHYSICAL]], 마지막에 강한 [[DMG_PHYSICAL]]. \n \n E [[EMPOWERED]]는 4초 [[AR_MR_UP]], 짧은 [[MS_UP]].",
+          "E는 시전 방향으로 방패. \n 방패방향의 피해 [[INVULNERABLE]]. \n [[BUFF_STACK]], 지속 [[DMG_PHYSICAL]], 마지막에 강한 [[DMG_PHYSICAL]]. \n \n E [[EMPOWERED]]는 4초 [[AR_MR_UP]], 짧고 강한 [[MS_UP]].",
 
           "R의 [[PASSIVE_BONUS]]는 [[AR_PEN]]. \n \n R은 판테온이 점프 준비 [[SKILL_CHANNEL]]. \n 점프하여 좁은 범위에 [[NON_PROJECTILE]] 창을 던져 [[DMG_PHYSICAL]], [[SLOW]]. \n 판테온이 강하하여 광역 [[AOE]] [[DMG_MAGIC]]. \n 범위 바깥쪽으로 갈수록 피해 감소. 최소 50% \n 강하할 때 P의 [[BUFF_STACK]] 즉시 최대 획득.",
         ],
@@ -90,7 +90,7 @@ const pantheon: ChampData = {
 
           "W [[DASH]]es to the target. \n Deals [[DMG_PHYSICAL]] based on the target's max HP, grants [[BUFF_STACK]], and [[STUN]]s. \n \n [[EMPOWERED]] W quickly attacks with 3 [[BA]]s, \n dealing [[DMG_PHYSICAL]] and granting [[BUFF_STACK]][[X3]]",
 
-          "E raises a shield in the cast direction. \n [[INVULNERABLE]] to damage from the shield's direction. \n Grants [[BUFF_STACK]], deals continuous [[DMG_PHYSICAL]], and a strong [[DMG_PHYSICAL]] at the end. \n \n [[EMPOWERED]] E grants 4 seconds of [[AR_MR_UP]] and a brief [[MS_UP]].",
+          "E raises a shield in the cast direction. \n [[INVULNERABLE]] to damage from the shield's direction. \n Grants [[BUFF_STACK]], deals continuous [[DMG_PHYSICAL]], and a strong [[DMG_PHYSICAL]] at the end. \n \n [[EMPOWERED]] E grants 4 seconds of [[AR_MR_UP]] and a brief but strong [[MS_UP]].",
 
           "R's [[PASSIVE_BONUS]] is [[AR_PEN]]. \n \n R makes Pantheon [[SKILL_CHANNEL]] to prepare a jump. \n He leaps and throws a [[NON_PROJECTILE]] spear in a narrow area, dealing [[DMG_PHYSICAL]] and [[SLOW]]. \n Pantheon then crashes down for [[AOE]] [[DMG_MAGIC]]. \n Damage decreases toward the edge of the area, to a minimum of 50%. \n Instantly gains max [[BUFF_STACK]] of P upon landing.",
         ]
