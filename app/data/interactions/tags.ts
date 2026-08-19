@@ -119,7 +119,7 @@ export type TagId =
   | "AIRBORNE"
   | "SUSPENDING"
   | "GRAB"
-  | "DRAG"
+  | "KINEMATICS"
   | "CHARM"
   | "SILENCE"
   | "GROUNDED"
@@ -285,7 +285,7 @@ STUN: { ko: "기절", en: "Stun" },
 ROOT: { ko: "속박", en: "Root" },
 KNOCKBACK: { ko: "넉백", en: "Knockback" },
 GRAB: { ko: "그렙", en: "Grab" },
-DRAG: { ko: "끌어당김", en: "Drag" },
+KINEMATICS: { ko: "견인", en: "Kinematics" },
 AIRBORNE: { ko: "에어본", en: "Airborne" },
 SUSPENDING: { ko: "체공", en: "Suspending" },
 SUPPRESS: { ko: "제압", en: "Suppress" },
@@ -711,7 +711,7 @@ GRAB: {
   ko: "에어본 + 잡아당김 - 최상급 CC\n(클린즈 계열로 해제 불가능)",
   en: "Pulls the target",
 },
-DRAG: {
+KINEMATICS: {
   ko: "행동은 막지 않고 위치만 지속적으로 끌어당김. \n 대시 중이거나, CC 면역 대상은 영향받지 않음.",
   en: "Continuously pulls the target's position without disabling their actions. \n Does not affect targets that are dashing or CC immune.",
 },

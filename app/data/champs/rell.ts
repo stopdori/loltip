@@ -15,7 +15,7 @@ const rell: ChampData = {
     ] },
 
     E: ["MS_UP"],
-    R: ["R_FLASH", "GRAB", "DRAG"],
+    R: ["R_FLASH", "GRAB", "KINEMATICS"],
   },
 
   vision: {
@@ -49,7 +49,7 @@ const rell: ChampData = {
       { label: { ko: "Q, 평타 강화", en: "Q & Improved Basic Attack" }, tags: ["DMG_MAGIC", "ON_HIT", "AOE"] },
     ] },
 
-    R: ["DMG_MAGIC", "TIMING_CAST", "AOE", "DOT", "GRAB", "DRAG"],
+    R: ["DMG_MAGIC", "TIMING_CAST", "AOE", "DOT", "GRAB", "KINEMATICS"],
   },
 
   notes: {
@@ -71,7 +71,7 @@ const rell: ChampData = {
 
           "E는 렐과 아군 1명에게 [[MS_UP]] [[BUFF]]. \n 아군이나 적군에게 다가갈 때 [[MS_UP]] 효과 증가. \n 다음 1대 [[BA]] 또는 Q [[EMPOWERED]]. \n [[EMPOWERED]] 효과는 [[AOE]] [[DMG_MAGIC]].",
 
-          "R은 [[AOE]] [[GRAB]]. \n 그리고 2초간 8번의 지속 [[DMG_MAGIC]]. \n 이때 주변 적들을 지속적으로 [[DRAG]].",
+          "R은 [[AOE]] [[GRAB]]. \n 그리고 2초간 8번의 지속 [[DMG_MAGIC]]. \n 이때 주변 적들을 지속적으로 [[KINEMATICS]].",
         ],
 
         en: [
@@ -83,7 +83,7 @@ const rell: ChampData = {
 
           "E [[BUFF]]s Rell and one ally with [[MS_UP]]. \n The [[MS_UP]] effect increases while approaching an ally or enemy. \n [[EMPOWERED]]s the next [[BA]] or Q. \n The [[EMPOWERED]] effect deals [[AOE]] [[DMG_MAGIC]].",
 
-          "R [[AOE]] [[GRAB]]s. \n Then deals [[DMG_MAGIC]] 8 times over 2 seconds. \n During this, continuously [[DRAG]]s nearby enemies.",
+          "R [[AOE]] [[GRAB]]s. \n Then deals [[DMG_MAGIC]] 8 times over 2 seconds. \n During this, continuously [[KINEMATICS]]s nearby enemies.",
         ]
 
       },

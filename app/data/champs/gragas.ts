@@ -7,7 +7,7 @@ const gragas: ChampData = {
     Q: ["Q_FLASH", "SLOW"],
     W: ["BUFF_FORM", "DMG_REDUCE"],
     E: ["E_FLASH", "KNOCKBACK", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
-    R: ["R_FLASH", "AIRBORNE"],
+    R: ["R_FLASH", "KNOCKBACK"],
   },
 
   vision: {
@@ -32,7 +32,7 @@ const gragas: ChampData = {
     ] },
     
     E: ["DMG_MAGIC", "AOE", "DASH", "KNOCKBACK", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
-    R: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE", "AIRBORNE"],
+    R: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE", "KNOCKBACK"],
   },
 
   notes: {
@@ -55,7 +55,7 @@ const gragas: ChampData = {
 
           "E(배치기)는 [[DASH]]하여 [[AOE]] [[DMG_MAGIC]]와 [[KNOCKBACK]]. \n 적중하면 [[CDR]]. \n E로 [[DASH]]하는 도중에 Q, R 사용 가능.",
 
-          "R은 [[AOE]] [[DMG_MAGIC]]와 [[AIRBORNE]].",
+          "R은 [[AOE]] [[DMG_MAGIC]]와 [[KNOCKBACK]].",
         ],
 
         en: [
@@ -63,7 +63,7 @@ const gragas: ChampData = {
           "Q places a barrel on the ground. \n [[DMG_MAGIC]] and [[SLOW]] increase with time. \n Detonates when the timer expires or on [[SKILL_RECAST]].",
           "W [[EMPOWERED]]s the next [[BA]] and grants [[DMG_REDUCE]] for 2.5 seconds. \n The hit deals [[ON_HIT]] and [[AOE]] [[DMG_MAGIC]] around the target.",
           "E (Body Slam) [[DASH]]es and deals [[AOE]] [[DMG_MAGIC]] and [[KNOCKBACK]]. \n Hitting an enemy grants [[CDR]]. \n Q and R can be cast during the [[DASH]].",
-          "R deals [[AOE]] [[DMG_MAGIC]] and [[AIRBORNE]].",
+          "R deals [[AOE]] [[DMG_MAGIC]] and [[KNOCKBACK]].",
         ]
 
       },
