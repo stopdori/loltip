@@ -9,8 +9,8 @@ export const annie_lux: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["R(티버)의 [[SUMMON]]으로 럭스 Q의 [[PIERCE_ONCE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["R(Tibbers) [[SUMMON]] can block Lux's Q [[PIERCE_ONCE]] [[PROJECTILE]]."],
+      ko: ["R로 [[SUMMON]]된 티버로 럭스 Q의 [[PIERCE_ONCE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["R [[SUMMON]]ed Tibbers can block Lux's Q [[PIERCE_ONCE]] [[PROJECTILE]]."],
     },
     lux: {
       ko: [],

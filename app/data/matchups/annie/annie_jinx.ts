@@ -9,8 +9,8 @@ export const annie_jinx: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["R(티버)의 [[SUMMON]]으로 징크스 W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["R(Tibbers) [[SUMMON]] can block Jinx's W [[SINGLE]] [[PROJECTILE]]."],
+      ko: ["R로 [[SUMMON]]된 티버로 징크스 W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["R [[SUMMON]]ed Tibbers can block Jinx's W [[SINGLE]] [[PROJECTILE]]."],
     },
     jinx: {
       ko: [],

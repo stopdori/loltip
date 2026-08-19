@@ -10,7 +10,7 @@ export const annie_ashe: MatchupSummary = {
   highlightsByChamp: {
     annie: {
       ko: ["R로 [[SUMMON]]된 티버로 애쉬 W의 [[SINGLE]] [[VOLLEY]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["R(Tibbers) [[SUMMON]] can block Ashe's W [[SINGLE]] [[VOLLEY]] [[PROJECTILE]]."],
+      en: ["R [[SUMMON]]ed Tibbers can block Ashe's W [[SINGLE]] [[VOLLEY]] [[PROJECTILE]]."],
     },
     ashe: {
       ko: [],

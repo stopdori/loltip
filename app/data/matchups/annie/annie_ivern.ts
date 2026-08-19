@@ -10,8 +10,8 @@ export const annie_ivern: MatchupSummary = {
   highlightsByChamp: {
     annie: {
       ko: ["P의 [[STUN]]로 아이번 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "R(티버)의 [[SUMMON]]으로 아이번 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["P [[STUN]] cannot interrupt Ivern's Q [[DASH]]. \n However, the [[STUN]] still applies.", "R(Tibbers) [[SUMMON]] can block Ivern's Q [[SINGLE]] [[PROJECTILE]]."],
+        "R로 [[SUMMON]]된 티버로 아이번 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["P [[STUN]] cannot interrupt Ivern's Q [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Ivern's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     ivern: {
       ko: [],

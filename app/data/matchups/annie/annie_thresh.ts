@@ -10,8 +10,8 @@ export const annie_thresh: MatchupSummary = {
   highlightsByChamp: {
     annie: {
       ko: ["P의 [[STUN]]로 쓰레쉬 Q2, W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
-        "R(티버)의 [[SUMMON]]으로 쓰레쉬 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["P [[STUN]] cannot interrupt Thresh's Q2 and W [[DASH]]. \n However, the [[STUN]] still applies.", "R(Tibbers) [[SUMMON]] can block Thresh's Q [[SINGLE]] [[PROJECTILE]]."],
+        "R로 [[SUMMON]]된 티버로 쓰레쉬 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["P [[STUN]] cannot interrupt Thresh's Q2 and W [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Thresh's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     thresh: {
       ko: [],

@@ -9,8 +9,8 @@ export const annie_kennen: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["R(티버)의 [[SUMMON]]으로 케넨 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["R(Tibbers) [[SUMMON]] can block Kennen's Q [[SINGLE]] [[PROJECTILE]]."],
+      ko: ["R로 [[SUMMON]]된 티버로 케넨 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["R [[SUMMON]]ed Tibbers can block Kennen's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     kennen: {
       ko: [],

@@ -15,7 +15,7 @@ export const ahri_annie: MatchupSummary = {
     annie: {
       ko: ["P의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음.", 
         "R로 [[SUMMON]]된 티버로 아리 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["P [[STUN]] cannot interrupt Ahri's R [[DASH]].", "R (Tibbers) [[SUMMON]] can block Ahri's E [[SINGLE]] [[PROJECTILE]]."],
+      en: ["P [[STUN]] cannot interrupt Ahri's R [[DASH]].", "R [[SUMMON]]ed Tibbers can block Ahri's E [[SINGLE]] [[PROJECTILE]]."],
     },
   },
 };

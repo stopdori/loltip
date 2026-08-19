@@ -9,8 +9,8 @@ export const annie_nautilus: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["R(티버)의 [[SUMMON]]으로 노틸러스 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["R(Tibbers) [[SUMMON]] can block Nautilus's Q [[SINGLE]] [[PROJECTILE]]."],
+      ko: ["R로 [[SUMMON]]된 티버로 노틸러스 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["R [[SUMMON]]ed Tibbers can block Nautilus's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     nautilus: {
       ko: [],

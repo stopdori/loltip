@@ -10,8 +10,8 @@ export const annie_leblanc: MatchupSummary = {
   highlightsByChamp: {
     annie: {
       ko: ["P의 [[STUN]]로 르블랑 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "R(티버)의 [[SUMMON]]으로 르블랑 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["P [[STUN]] cannot interrupt LeBlanc's W [[DASH]]. \n However, the [[STUN]] still applies.", "R(Tibbers) [[SUMMON]] can block LeBlanc's E [[SINGLE]] [[PROJECTILE]]."],
+        "R로 [[SUMMON]]된 티버로 르블랑 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["P [[STUN]] cannot interrupt LeBlanc's W [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block LeBlanc's E [[SINGLE]] [[PROJECTILE]]."],
     },
     leblanc: {
       ko: [],
