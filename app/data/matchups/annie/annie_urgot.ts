@@ -14,8 +14,8 @@ export const annie_urgot: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Urgot's E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers cannot block Urgot's R [[SINGLE]] [[PIERCE_MINION]] [[PROJECTILE]]."],
     },
     urgot: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[GRAB]]으로 애니 R로 [[SUMMON]]된 티버를 [[GRAB]] 할 수 있음."],
+      en: ["Urgot's E [[GRAB]] can grab Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const annie_syndra: MatchupSummary = {
       en: [],
     },
     syndra: {
-      ko: ["신드라 W로 애니 R(티버)을 들어올릴 수 있음. \n 이때 티버의 태불망 효과를 받음."],
-      en: ["Syndra's W can pick up Annie's R(Tibbers). \n Tibbers will take the burn damage effect during this time."],
+      ko: ["W로 애니 R로 [[SUMMON]]된 티버를 집어들 수 있음. \n 이때 티버의 태불망 효과로 주변에 피해를 줌."],
+      en: ["Syndra's W can pick up Annie's R [[SUMMON]]ed Tibbers. \n This triggers Tibbers's [[AOE]] burst of flame, dealing [[DMG_MAGIC]] to nearby enemies."],
     },
   },
 };

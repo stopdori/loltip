@@ -15,8 +15,8 @@ export const annie_ziggs: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Ziggs's W [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Ziggs's Q [[SINGLE]] [[PROJECTILE]]. \n However, Q's additional [[AOE]] damage cannot be blocked.", "R [[SUMMON]]ed Tibbers can destroy Ziggs's E [[TRAP]]."],
     },
     ziggs: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Ziggs's W [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

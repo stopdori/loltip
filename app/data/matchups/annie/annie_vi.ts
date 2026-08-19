@@ -14,8 +14,8 @@ export const annie_vi: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Vi's Q [[DASH]]. \n However, the [[STUN]] still applies.", "P [[STUN]] can interrupt Vi's Q [[SKILL_CHARGED]]."],
     },
     vi: {
-      ko: [],
-      en: [],
+      ko: ["Q, R의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Vi's Q and R [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

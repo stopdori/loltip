@@ -13,8 +13,8 @@ export const annie_wukong: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Wukong's W and E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     wukong: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Wukong's R [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

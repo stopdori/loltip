@@ -14,8 +14,8 @@ export const annie_reksai: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Rek'Sai's Burrowed Form E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Rek'Sai's Burrowed Form Q [[SINGLE]] [[PROJECTILE]]. \n However, Q's additional [[AOE]] damage cannot be blocked."],
     },
     reksai: {
-      ko: [],
-      en: [],
+      ko: ["매복폼 [[BA]], 또는 W의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Rek'Sai's Burrowed Form [[BA]] or W [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

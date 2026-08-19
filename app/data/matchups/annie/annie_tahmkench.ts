@@ -14,8 +14,8 @@ export const annie_tahmkench: MatchupSummary = {
       en: ["P [[STUN]] can interrupt Tahm Kench's W [[SKILL_CHANNEL]].", "R [[SUMMON]]ed Tibbers can block Tahm Kench's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     tahmkench: {
-      ko: [],
-      en: [],
+      ko: ["R (집어삼키기)의 [[SUPPRESS]]으로 애니 R로 [[SUMMON]]된 티버를 삼킬 수 없음."],
+      en: ["Tahm Kench's R (Devour) [[SUPPRESS]] cannot swallow Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

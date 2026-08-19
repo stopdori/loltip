@@ -13,8 +13,8 @@ export const annie_sion: MatchupSummary = {
       en: ["P [[STUN]] can interrupt Sion's Q [[SKILL_CHANNEL]]."],
     },
     sion: {
-      ko: [],
-      en: [],
+      ko: ["Q, R의 [[AIRBORNE]], E의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]], [[KNOCKBACK]] 할 수 있음."],
+      en: ["Sion's Q and R [[AIRBORNE]] and E [[KNOCKBACK]] can send Annie's R [[SUMMON]]ed Tibbers airborne or knock it back."],
     },
   },
 };

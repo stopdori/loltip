@@ -14,8 +14,8 @@ export const annie_kayn: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Kayn's Q [[DASH]]. \n However, the [[STUN]] still applies.", "P [[STUN]] can interrupt Kayn's E [[SKILL_CHANNEL]]."],
     },
     kayn: {
-      ko: [],
-      en: [],
+      ko: ["다르킨 W의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Kayn (Darkin) W [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

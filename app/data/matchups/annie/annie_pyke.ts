@@ -14,8 +14,8 @@ export const annie_pyke: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Pyke's E [[DASH]] or R [[BLINK]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Pyke's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     pyke: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[GRAB]]으로 애니 R로 [[SUMMON]]된 티버를 [[GRAB]] 할 수 있음."],
+      en: ["Pyke's Q [[GRAB]] can grab Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

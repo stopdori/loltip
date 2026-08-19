@@ -14,8 +14,8 @@ export const annie_viego: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Viego's W [[DASH]] or R [[BLINK]]. \n However, the [[STUN]] still applies.", "P [[STUN]] can interrupt Viego's W [[SKILL_CHARGED]]."],
     },
     viego: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Viego's R [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

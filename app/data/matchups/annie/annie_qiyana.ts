@@ -13,8 +13,8 @@ export const annie_qiyana: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Qiyana's W and E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     qiyana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Qiyana's R [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

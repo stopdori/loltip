@@ -14,8 +14,8 @@ export const annie_jayce: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Jayce's Hammer Form Q [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Jayce's Q and [[EMPOWERED]] Q [[SINGLE]] [[PROJECTILE]]. \n However, Q's additional [[AOE]] damage cannot be blocked."],
     },
     jayce: {
-      ko: [],
-      en: [],
+      ko: ["해머폼 E의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Jayce's Hammer Form E [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const annie_trundle: MatchupSummary = {
       en: [],
     },
     trundle: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Trundle's E [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

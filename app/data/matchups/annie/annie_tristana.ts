@@ -13,8 +13,8 @@ export const annie_tristana: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Tristana's W [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     tristana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Tristana's R [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

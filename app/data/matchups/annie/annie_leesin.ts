@@ -14,8 +14,8 @@ export const annie_leesin: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Lee Sin's Q2 and W [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Lee Sin's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     leesin: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Lee Sin's R [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

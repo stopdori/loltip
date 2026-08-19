@@ -13,8 +13,8 @@ export const annie_maokai: MatchupSummary = {
       en: ["R [[SUMMON]]ed Tibbers can destroy Maokai's E(Sapling) [[TRAP]]."],
     },
     maokai: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Maokai's Q [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

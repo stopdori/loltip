@@ -15,8 +15,8 @@ export const annie_zac: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Zac's E [[DASH]]. \n However, the [[STUN]] still applies.", "P [[STUN]] can interrupt Zac's E [[SKILL_CHARGED]].", "R [[SUMMON]]ed Tibbers can block Zac's Q [[SINGLE]] [[PROJECTILE]]. \n However, Q's additional effects cannot be blocked."],
     },
     zac: {
-      ko: [],
-      en: [],
+      ko: ["Q, E의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]], [[KNOCKBACK]] 할 수 있음."],
+      en: ["Zac's Q and E [[AIRBORNE]] and R [[KNOCKBACK]] can send Annie's R [[SUMMON]]ed Tibbers airborne or knock it back."],
     },
   },
 };

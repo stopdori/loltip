@@ -10,8 +10,8 @@ export const annie_zeri: MatchupSummary = {
   highlightsByChamp: {
     annie: {
       ko: ["P의 [[STUN]]로 제리 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "R로 [[SUMMON]]된 티버로 제리 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음. \n 단, [[EMPOWERED]] Q의 [[PIERCE]]피해는 막을 수 없음."],
-      en: ["P [[STUN]] cannot interrupt Zeri's E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Zeri's Q [[SINGLE]] [[PROJECTILE]]. \n However, [[EMPOWERED]] Q's [[PIERCE]] damage cannot be blocked."],
+        "R로 [[SUMMON]]된 티버로 제리 Q, W의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음. \n 단, [[EMPOWERED]] Q, [[EMPOWERED]] W의 [[PIERCE]]피해는 막을 수 없음."],
+      en: ["P [[STUN]] cannot interrupt Zeri's E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Zeri's Q and W [[SINGLE]] [[PROJECTILE]]. \n However, [[EMPOWERED]] Q's and [[EMPOWERED]] W's [[PIERCE]] damage cannot be blocked."],
     },
     zeri: {
       ko: [],

@@ -13,8 +13,8 @@ export const annie_jarvaniv: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Jarvan IV's EQ [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     jarvaniv: {
-      ko: [],
-      en: [],
+      ko: ["EQ의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Jarvan IV's EQ [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

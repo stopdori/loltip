@@ -13,8 +13,8 @@ export const annie_xinzhao: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Xin Zhao's E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     xinzhao: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]], [[KNOCKBACK]] 할 수 있음."],
+      en: ["Xin Zhao's Q [[AIRBORNE]] and R [[KNOCKBACK]] can send Annie's R [[SUMMON]]ed Tibbers airborne or knock it back."],
     },
   },
 };

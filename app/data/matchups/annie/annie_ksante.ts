@@ -13,8 +13,8 @@ export const annie_ksante: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt K'Sante's E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     ksante: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["K'Sante's W [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

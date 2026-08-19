@@ -13,8 +13,8 @@ export const annie_hecarim: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Hecarim's E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     hecarim: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Hecarim's E [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const annie_renata: MatchupSummary = {
       en: ["R [[SUMMON]]ed Tibbers can block Renata's Q [[SINGLE]] [[PROJECTILE]]. \n However, Renata can still use Q2."],
     },
     renata: {
-      ko: [],
-      en: [],
+      ko: ["Q2의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Renata's Q2 [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

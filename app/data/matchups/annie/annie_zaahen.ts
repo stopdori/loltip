@@ -13,8 +13,8 @@ export const annie_zaahen: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Zaahen's E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     zaahen: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[GRAB]]으로 애니 R로 [[SUMMON]]된 티버를 [[GRAB]] 할 수 있음."],
+      en: ["Zaahen's W [[GRAB]] can grab Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

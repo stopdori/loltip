@@ -13,8 +13,8 @@ export const annie_yone: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Yone's Q3 and E1 [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     yone: {
-      ko: [],
-      en: [],
+      ko: ["Q3, R의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Yone's Q3 and R [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

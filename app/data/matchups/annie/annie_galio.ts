@@ -14,8 +14,8 @@ export const annie_galio: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Galio's E [[DASH]]. \n However, the [[STUN]] still applies.", "P [[STUN]] can interrupt Galio's W and R [[SKILL_CHANNEL]]."],
     },
     galio: {
-      ko: [],
-      en: [],
+      ko: ["E, R의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Galio's E and R [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

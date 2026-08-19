@@ -14,8 +14,8 @@ export const annie_sejuani: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Sejuani's Q [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers cannot block Sejuani's R [[PIERCE_MINION]] [[PROJECTILE]]."],
     },
     sejuani: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Sejuani's Q [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

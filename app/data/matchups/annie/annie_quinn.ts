@@ -14,8 +14,8 @@ export const annie_quinn: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Quinn's E [[DASH]]. \n However, the [[STUN]] still applies.", "P [[STUN]] can interrupt Quinn's R [[TRANSFORM]]."],
     },
     quinn: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Quinn's E [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

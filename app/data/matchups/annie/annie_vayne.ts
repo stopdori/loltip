@@ -13,8 +13,8 @@ export const annie_vayne: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Vayne's Q(Tumble) [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     vayne: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Vayne's E [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const annie_nautilus: MatchupSummary = {
       en: ["R [[SUMMON]]ed Tibbers can block Nautilus's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     nautilus: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[GRAB]], R의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[GRAB]], [[AIRBORNE]] 할 수 있음."],
+      en: ["Nautilus's Q [[GRAB]] and R [[AIRBORNE]] can grab Annie's R [[SUMMON]]ed Tibbers or send it airborne."],
     },
   },
 };

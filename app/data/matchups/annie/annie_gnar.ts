@@ -14,8 +14,8 @@ export const annie_gnar: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Gnar's Mini Form E or Mega Form E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Gnar's Mini Form Q [[PROJECTILE]] or Mega Form Q [[SINGLE]] [[PROJECTILE]]. \n However, Mini Form Q's additional [[PIERCE]] and Mega Form Q's additional [[AOE]] damage cannot be blocked."],
     },
     gnar: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[KNOCKBACK]]으로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
+      en: ["Gnar's R [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const annie_yorick: MatchupSummary = {
       en: [],
     },
     yorick: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Yorick's W [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

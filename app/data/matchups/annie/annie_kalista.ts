@@ -14,8 +14,8 @@ export const annie_kalista: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Kalista's P [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Kalista's Q [[SINGLE]] [[ST_CONDITIONAL]] [[PIERCE]] [[PROJECTILE]]."],
     },
     kalista: {
-      ko: [],
-      en: [],
+      ko: ["R2의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Kalista's R2 [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };

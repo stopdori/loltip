@@ -13,8 +13,8 @@ export const annie_hwei: MatchupSummary = {
       en: ["R [[SUMMON]]ed Tibbers can block Hwei's QQ, EQ, and EW [[SINGLE]] [[PROJECTILE]]. \n However, Hwei's QQ explosion [[AOE]] damage cannot be blocked."],
     },
     hwei: {
-      ko: [],
-      en: [],
+      ko: ["EE의 [[GRAB]]으로 애니 R로 [[SUMMON]]된 티버를 [[GRAB]] 할 수 있음."],
+      en: ["Hwei's EE [[GRAB]] can grab Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

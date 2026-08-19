@@ -13,8 +13,8 @@ export const annie_riven: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Riven's Q and E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     riven: {
-      ko: [],
-      en: [],
+      ko: ["Q3의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
+      en: ["Riven's Q3 [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
     },
   },
 };
