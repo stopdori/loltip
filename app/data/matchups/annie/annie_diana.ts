@@ -13,8 +13,8 @@ export const annie_diana: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Diana's E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 애니 R로 [[SUMMON]]된 티버를 [[GRAB]] 할 수 있음."],
+      en: ["Diana's R [[GRAB]] can grab Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

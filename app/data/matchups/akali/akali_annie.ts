@@ -13,8 +13,8 @@ export const akali_annie: MatchupSummary = {
       en: [],
     },
     annie: {
-      ko: ["R의 티버 [[SUMMON]]으로 아칼리 E1의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["R Tibbers [[SUMMON]] can block Akali's E1 [[SINGLE]] [[PROJECTILE]]."],
+      ko: ["R로 [[SUMMON]]된 티버로 아칼리 E1의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음. \n 단, 아칼리가 E2를 사용할 수 있음."],
+      en: ["R Tibbers [[SUMMON]] can block Akali's E1 [[SINGLE]] [[PROJECTILE]]. \n However, Akali can use E2."],
     },
   },
 };

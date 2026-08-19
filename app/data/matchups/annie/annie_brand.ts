@@ -9,12 +9,12 @@ export const annie_brand: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["R(티버)의 [[SUMMON]]으로 브랜드 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      ko: ["R로 [[SUMMON]]된 티버로 브랜드 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
       en: ["R(Tibbers) [[SUMMON]] can block Brand's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     brand: {
-      ko: ["브랜드 R의 [[CHAIN]]는 애니 R의 [[SUMMON]]된 티버에도 튕길 수 있음."],
-      en: ["Brand's R [[CHAIN]] can also bounce off Annie's R [[SUMMON]]ed Tibbers."],
+      ko: ["브랜드 R의 [[CHAIN]]는 애니 R의 [[SUMMON]]된 티버에도 [[CHAIN]] 될 수 있음."],
+      en: ["Brand's R [[CHAIN]] can also [[CHAIN]] onto Annie's R [[SUMMON]]ed Tibbers."],
     },
   },
 };

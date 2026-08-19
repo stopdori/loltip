@@ -9,13 +9,12 @@ export const annie_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["P의 [[STUN]]로 문도박사 P의 [[CC_IMMUNE]]을 뺄 수 있음.", 
-        "R(티버)의 [[SUMMON]]으로 문도박사 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
-      en: ["P [[STUN]] can consume Dr. Mundo's P [[CC_IMMUNE]].", "R(Tibbers) [[SUMMON]] can block Dr. Mundo's Q [[SINGLE]] [[PROJECTILE]]."],
+      ko: ["R로 [[SUMMON]]된 티버로 문도박사 Q의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음."],
+      en: ["R(Tibbers) [[SUMMON]] can block Dr. Mundo's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     drmundo: {
-      ko: [],
-      en: [],
+      ko: ["P의 [[CC_IMMUNE]]으로 애니 P의 [[STUN]]을 무시할 수 있음.",],
+      en: ["Dr. Mundo's P [[CC_IMMUNE]] can ignore Annie's P [[STUN]]."],
     },
   },
 };
