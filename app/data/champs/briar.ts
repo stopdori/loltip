@@ -7,7 +7,7 @@ const briar: ChampData = {
     Q: ["W_FLASH", "AR_MR_SHRED", "DASH", "WALL_HOP"],
     W: ["AA_RESET", "SEPARATOR", "BUFF_FORM", "AS_UP", "MS_UP", "HEAL", "DASH", "WALL_HOP"],
     E: ["DMG_REDUCE", "KNOCKBACK", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
-    R: ["TRUE_SIGHT", "SEPARATOR", "ST_CONDITIONAL", "FEAR", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "AS_UP", "MS_UP", "AR_MR_UP", "LIFESTEAL", "DASH", "WALL_HOP", "CC_IMMUNE", "UNSTOPPABLE"],
+    R: ["DISRUPT", "TRUE_SIGHT", "SEPARATOR", "ST_CONDITIONAL", "FEAR", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "AS_UP", "MS_UP", "AR_MR_UP", "LIFESTEAL", "DASH", "WALL_HOP", "CC_IMMUNE", "UNSTOPPABLE"],
   },
 
   vision: {
@@ -30,7 +30,8 @@ const briar: ChampData = {
     E: ["DMG_MAGIC", "SKILL_CHARGED", "CAST_COMMIT", "AOE", "KNOCKBACK", "DEBUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
 
     R: { phases: [
-      { label: { ko: "R 투사체", en: "R Projectile" }, tags: ["LOCKED", "TIMING_CAST", "PROJECTILE", "PIERCE_MINION", "CC_IMMUNE"] },
+      { label: { ko: "R 투사체", en: "R Projectile" }, tags: ["TIMING_CAST", "PROJECTILE", "PIERCE_MINION", "DISRUPT"] },
+      { label: { ko: "준비", en: "Wind-up" }, tags: ["LOCKED", "SKILL_CHANNEL", "CC_IMMUNE"] },
       { label: { ko: "돌진", en: "Dash"  }, tags: ["ST_CONDITIONAL", "LOCKED", "TIMING_CAST", "DASH", "HOMING", "SEPARATOR_NEWLINE", "SEPARATOR", "DMG_PHYSICAL", "AOE", "UNSTOPPABLE", "ST_CONDITIONAL", "FEAR"] },
     ] },
   },
@@ -59,7 +60,7 @@ const briar: ChampData = {
 
           "E는 1초동안 [[DMG_REDUCE]], 최대 체력 비례 [[HEAL]]. \n CC에 맞아도 시전을 멈추지 않음 ([[CAST_COMMIT]]). \n \n E는 충전 시간 비례 [[AOE]] [[DMG_MAGIC]], [[SLOW]]. \n 완전 충전 시 [[KNOCKBACK]]. \n 벽에 부딪힌 적은 추가 [[DMG_MAGIC]]와 [[STUN]].",
 
-          "R은 브라이어가 온 맵에 울부짖음. \n 잠시 뒤 사거리가 정말 긴 [[PROJECTILE]] 발사. \n 시전하는 중에 [[CC_IMMUNE]]. \n \n 맞은 적 챔피언은 잠시 [[SILENCE]]. \n 대상 주변에 원이 생기고 [[UNSTOPPABLE]] [[DASH]]. \n [[AOE]] [[DMG_MAGIC]]와 대상을 제외한 적에게 [[FEAR]]. \n \n 이후 강화 핏빛 광분 상태 돌입. \n W의 [[AOE]] [[DMG_PHYSICAL]], [[AS_UP]], [[MS_UP]] \n 추가 [[AR_MR_UP]], [[MS_UP]], [[LIFESTEAL]]. \n 무제한 광분. \n E로 해제 가능.",
+          "R은 브라이어가 온 맵에 울부짖음. \n 잠시 뒤 사거리가 정말 긴 [[DISRUPT]] [[PROJECTILE]] 발사. \n 시전하는 중에 [[CC_IMMUNE]]. \n \n 맞은 적 챔피언은 잠시 [[SILENCE]]. \n 대상 주변에 원이 생기고 [[UNSTOPPABLE]] [[DASH]]. \n [[AOE]] [[DMG_MAGIC]]와 대상을 제외한 적에게 [[FEAR]]. \n \n 이후 강화 핏빛 광분 상태 돌입. \n W의 [[AOE]] [[DMG_PHYSICAL]], [[AS_UP]], [[MS_UP]] \n 추가 [[AR_MR_UP]], [[MS_UP]], [[LIFESTEAL]]. \n 무제한 광분. \n E로 해제 가능.",
         ],
 
         en: [
@@ -73,7 +74,7 @@ const briar: ChampData = {
 
           "E grants [[DMG_REDUCE]] and [[HEAL]]s based on max health for 1 second. \n Does not stop casting when hit by CC ([[CAST_COMMIT]]). \n \n E deals [[AOE]] [[DMG_MAGIC]] and [[SLOW]] based on charge time. \n Fully charged applies [[KNOCKBACK]]. \n Enemies knocked into a wall take bonus [[DMG_MAGIC]] and are [[STUN]]ned.",
 
-          "R makes Briar howl across the entire map. \n After a moment, fires a very long-range [[PROJECTILE]]. \n [[CC_IMMUNE]] during cast. \n \n The hit champion is briefly [[SILENCE]]d. \n A circle appears around the target and Briar [[DASH]]es [[UNSTOPPABLE]]y toward them. \n Deals [[AOE]] [[DMG_MAGIC]] and [[FEAR]]s all enemies except the target. \n \n Briar then enters enhanced Blood Frenzy. \n Retains W's [[AOE]] [[DMG_PHYSICAL]], [[AS_UP]], and [[MS_UP]], \n with bonus [[AR_MR_UP]], [[MS_UP]], and [[LIFESTEAL]]. \n Unlimited Frenzy duration. \n Can be cancelled with E.",
+          "R makes Briar howl across the entire map. \n After a moment, fires a very long-range [[DISRUPT]] [[PROJECTILE]]. \n [[CC_IMMUNE]] during cast. \n \n The hit champion is briefly [[SILENCE]]d. \n A circle appears around the target and Briar [[DASH]]es [[UNSTOPPABLE]]y toward them. \n Deals [[AOE]] [[DMG_MAGIC]] and [[FEAR]]s all enemies except the target. \n \n Briar then enters enhanced Blood Frenzy. \n Retains W's [[AOE]] [[DMG_PHYSICAL]], [[AS_UP]], and [[MS_UP]], \n with bonus [[AR_MR_UP]], [[MS_UP]], and [[LIFESTEAL]]. \n Unlimited Frenzy duration. \n Can be cancelled with E.",
         ]
 
       },

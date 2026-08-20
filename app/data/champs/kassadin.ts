@@ -4,7 +4,7 @@ const kassadin: ChampData = {
   id: "kassadin",
   skills: {
     P: ["DMG_REDUCE", "GHOSTING"],
-    Q: ["Q_FLASH", "SHIELD"],
+    Q: ["Q_FLASH", "SHIELD", "DISRUPT"],
     W: ["AA_RESET", "MANA_RESTORE"],
     E: ["E_FLASH", "SLOW"],
     R: ["R_FLASH", "BLINK", "WALL_HOP", "CC_BUFFER"],
@@ -19,8 +19,8 @@ const kassadin: ChampData = {
   },
 
   gimmick: {
-    P: [],
-    Q: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "DMG_REDUCE", "GHOSTING"],
+    P: ["DMG_REDUCE", "GHOSTING"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "DISRUPT"],
     W: ["DMG_MAGIC", "ON_HIT", "AA_RESET"],
     E: ["DMG_MAGIC", "TIMING_CAST", "AOE", "SLOW"],
     R: { phases: [
@@ -42,7 +42,7 @@ const kassadin: ChampData = {
         ko: [
           "P는 마법 [[DMG_REDUCE]]와 [[GHOSTING]].",
 
-          "Q는 [[TARGETED]] [[PROJECTILE]] [[DMG_MAGIC]]와 마법[[SHIELD]]. \n [[SKILL_CHANNEL]]을 끊을 수 있음.",
+          "Q는 [[TARGETED]] [[DISRUPT]] [[PROJECTILE]] 발사. \n [[DMG_MAGIC]]와 마법[[SHIELD]].",
 
           "W의 [[PASSIVE_BONUS]]는 [[BA]]에 [[ON_HIT]] [[DMG_MAGIC]].",
 
@@ -58,7 +58,7 @@ const kassadin: ChampData = {
         en: [
           "P reduces [[DMG_REDUCE]] from magic damage and grants [[GHOSTING]].",
 
-          "Q is a [[TARGETED]] [[PROJECTILE]] [[DMG_MAGIC]] that grants a magic [[SHIELD]]. \n Can interrupt [[SKILL_CHANNEL]].",
+          "Q fires a [[TARGETED]] [[DISRUPT]] [[PROJECTILE]]. \n Deals [[DMG_MAGIC]] and grants a magic [[SHIELD]].",
 
           "W's [[PASSIVE_BONUS]] deals [[ON_HIT]] [[DMG_MAGIC]] on [[BA]].",
 
@@ -75,11 +75,9 @@ const kassadin: ChampData = {
 
       note2: {
         ko: [
-        "Q에 [[SKILL_CHANNEL]] 캔슬 있음. 침묵 아님", 
-        "R 스킬은 2단계로 나뉨 준비/순간이동.\n준비단계에서 카사딘이 맞은 CC는 유효 하지만\n[[BLINK]]단계가 발동되어 이동하는 것.\n[[BLINK]]단계에는 CC 저항력 없음.\n순간이동했을 때 CC의 지속시간이 남아있다면 CC 효과 유효."
+       "R 스킬은 2단계로 나뉨 준비/순간이동.\n준비단계에서 카사딘이 맞은 CC는 유효 하지만\n[[BLINK]]단계가 발동되어 이동하는 것.\n[[BLINK]]단계에는 CC 저항력 없음.\n순간이동했을 때 CC의 지속시간이 남아있다면 CC 효과 유효."
       ],
         en: [
-          "Q has channel interruption (not silence)",
           "R has two phases: wind-up / blink.\nCC during the wind-up phase is valid, but the [[BLINK]] phase still triggers and Kassadin moves.\nThere is no CC immunity during the [[BLINK]] phase.\nIf CC duration remains when Kassadin blinks, the CC effect still applies.",
         ]
         },

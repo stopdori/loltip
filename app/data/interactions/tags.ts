@@ -122,6 +122,7 @@ export type TagId =
   | "KINEMATICS"
   | "CHARM"
   | "SILENCE"
+  | "DISRUPT"
   | "GROUNDED"
   | "FEAR"
   | "CANCEL"
@@ -278,6 +279,7 @@ BURN: { ko: "부식", en: "Burn" },
 SLOW: { ko: "둔화", en: "Slow" },
 TETHER: { ko: "사슬", en: "Tether" },
 SILENCE: { ko: "침묵", en: "Silence" },
+DISRUPT: { ko: "시전방해", en: "Disrupt" },
 CANCEL: { ko: "캔슬", en: "Channel Cancel" },
 
 HARD_CC: { ko: "하드CC", en: "Hard CC" },
@@ -729,6 +731,10 @@ CHARM: {
 SILENCE: {
   ko: "스킬을 사용하지 못하게 만듦\n(클린즈 계열로 해제 가능)",
   en: "Prevents ability casts (can be cleansed)",
+},
+DISRUPT: {
+  ko: "채널링, 충전형 스킬을 즉시 중단시킴. \n 지속 상태가 아니라 순간 효과이며, CC 면역으로 저항 가능.",
+  en: "Instantly interrupts channeled or charged abilities. \n Not a lingering status effect - resisted by CC immunity.",
 },
 GROUNDED: {
   ko: "이동스킬(돌진, 순간이동, 점멸, 아이템 벨트 등등)을 \n 사용하지 못하게 만드는 디버프. \n (클린즈 계열로 해제하면 이동기 사용 가능)",
