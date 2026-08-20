@@ -9,12 +9,14 @@ export const briar_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
-      ko: ["멜 W가 브라이어 R 반사 가능."],
-      en: ["Mel’s W reflects Briar’s R"],
+      ko: ["E의 [[CAST_COMMIT]]으로 멜 E의 [[ROOT]]에 걸려도 시전을 유지할 수 있음.", 
+        "R1의 [[CC_IMMUNE]], R2의 [[UNSTOPPABLE]]로 멜 E의 [[ROOT]]을 무시할 수 있음."],
+      en: ["Briar's E [[CAST_COMMIT]] allows maintaining the cast even if hit by Mel's E [[ROOT]].",
+        "Briar's R1 [[CC_IMMUNE]] and R2 [[UNSTOPPABLE]] can ignore Mel's E [[ROOT]]."],
     },
     mel: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[REFLECT]]로 브라이어 R의 [[PROJECTILE]]를 반사할 수 있음."],
+      en: ["Mel's W [[REFLECT]] can reflect Briar's R [[PROJECTILE]]."],
     },
   },
 };

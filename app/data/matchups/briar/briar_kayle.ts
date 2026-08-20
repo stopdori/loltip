@@ -9,8 +9,8 @@ export const briar_kayle: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kayle: {
       ko: [],

@@ -9,8 +9,8 @@ export const briar_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nasus: {
       ko: [],

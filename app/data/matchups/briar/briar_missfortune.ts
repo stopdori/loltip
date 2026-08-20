@@ -9,8 +9,8 @@ export const briar_missfortune: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     missfortune: {
       ko: [],

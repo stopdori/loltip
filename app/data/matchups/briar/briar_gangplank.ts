@@ -9,13 +9,12 @@ export const briar_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
-      // 수정중
-      ko: [""],
-      en: [""],
-    },
-    gangplank: {
       ko: [],
       en: [],
+    },
+    gangplank: {
+      ko: ["E로 [[SUMMON]]된 화약통을 브라이어 E의 [[KNOCKBACK]]으로 밀어낼 수 없음."],
+      en: ["The Powder Keg [[SUMMON]]ed by Gangplank's E cannot be pushed by Briar's E [[KNOCKBACK]]."],
     },
   },
 };
