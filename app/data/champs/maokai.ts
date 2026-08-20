@@ -4,7 +4,7 @@ const maokai: ChampData = {
   id: "maokai",
   skills: {
     P: ["ST_CONDITIONAL", "HEAL"],
-    Q: ["Q_FLASH", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"],
+    Q: ["Q_FLASH", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "KNOCKBACK"],
     W: ["W_FLASH", "ROOT", "UNTARGETABLE", "TOWER_DODGE", "DASH", "WALL_HOP"],
     E: ["E_FLASH", "TRAP", "HOMING", "SLOW"],
     R: ["ROOT", "SEPARATOR", "ST_CONDITIONAL", "MS_UP"],
@@ -22,7 +22,7 @@ const maokai: ChampData = {
     P: ["ON_HIT", "ST_CONDITIONAL", "HEAL"],
 
     Q: { phases: [
-      { label: { ko: "Q", en: "Q" }, tags: ["DMG_MAGIC", "TIMING_CAST", "AOE", "AIRBORNE", "SEPARATOR", "P", "CDR"] },
+      { label: { ko: "Q", en: "Q" }, tags: ["DMG_MAGIC", "TIMING_CAST", "AOE", "KNOCKBACK", "SEPARATOR", "P", "CDR"] },
       { label: { ko: "Q 투사체", en: "Q Projectile" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SLOW"] },
     ] },
     
@@ -49,7 +49,7 @@ const maokai: ChampData = {
         ko: [
           "P는 활성화 되면 다음 [[BA]]에 [[HEAL]]. \n 쿨타임이 있고 여러가지 [[CDR]] 조건이 있음.",
 
-          "Q는 [[PROJECTILE]]를 날려 [[DMG_MAGIC]] [[SLOW]]. \n 주변은 [[DMG_MAGIC]]와 [[AIRBORNE]]. \n 두 피해 모두 대상의 최대 체력 비례 [[DMG_MAGIC]].",
+          "Q는 [[PROJECTILE]]를 날려 [[DMG_MAGIC]] [[SLOW]]. \n 주변은 [[DMG_MAGIC]]와 [[KNOCKBACK]]. \n 두 피해 모두 대상의 최대 체력 비례 [[DMG_MAGIC]].",
 
           "W는 [[DASH]]하여 [[UNTARGETABLE]]와 [[TOWER_DODGE]]. \n 도착하면 대상에게 [[DMG_MAGIC]]와 [[ROOT]].",
 
@@ -61,7 +61,7 @@ const maokai: ChampData = {
         en: [
           "When P is active, the next [[BA]] grants [[HEAL]]. \n It has a cooldown with various [[CDR]] conditions.",
 
-          "Q launches a [[PROJECTILE]] that deals [[DMG_MAGIC]] and [[SLOW]]. \n The surrounding area deals [[DMG_MAGIC]] and [[AIRBORNE]]. \n Both deal [[DMG_MAGIC]] based on the target's max health.",
+          "Q launches a [[PROJECTILE]] that deals [[DMG_MAGIC]] and [[SLOW]]. \n The surrounding area deals [[DMG_MAGIC]] and [[KNOCKBACK]]. \n Both deal [[DMG_MAGIC]] based on the target's max health.",
 
           "W [[DASH]]es, granting [[UNTARGETABLE]] and [[TOWER_DODGE]]. \n On arrival, deals [[DMG_MAGIC]] and [[ROOT]] to the target.",
 
