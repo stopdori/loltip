@@ -90,21 +90,23 @@ const jayce: ChampData = {
           "P는 [[TRANSFORM]] 할 때 잠깐 [[MS_UP]]. \n 1레벨부터 [[TRANSFORM]] 가능. \n \n ",
 
           "캐논폼 \n \n Q는 [[AOE]] [[PROJECTILE]] 발사. \n \n W는 사용하면 [[BUFF_FORM]]. \n 지속되는 동안 3번의 [[BA]] 최대치로 [[AS_UP]]. \n [[AA_RESET]] 가능. \n \n E는 [[MS_UP]] [[ZONE]]을 설치. \n Q가 통과하면 [[EMPOWERED]]. \n \n R은 해머로 [[TRANSFORM]] 하고 추가 [[AR_MR_UP]]. \n \n ",
-          "해머폼 \n \n Q는 [[DASH]] [[AOE]] [[SLOW]]. \n \n W의 [[PASSIVE_BONUS]]는 [[BA]] 공격 시 [[MANA_RESTORE]]. \n \n W는 [[AURA]] [[DMG_MAGIC]]. \n \n E는 [[SINGLE]] [[TARGETED]] 체력비례 [[DMG_PHYSICAL]]와 [[KNOCKBACK]]. \n \n R은 캐논으로 [[TRANSFORM]] 하고 다음 [[BA]] 시 [[AR_MR_SHRED]]. \n 챔피언 아닌 대상에게도 소모. \n \n ",
+          "해머폼 \n \n [[BA]]는 [[ON_HIT]] [[MANA_RESTORE]]. \n Q는 [[DASH]] [[AOE]] [[SLOW]]. \n \n W의 [[PASSIVE_BONUS]]는 [[BA]] 공격 시 [[MANA_RESTORE]]. \n \n W는 [[AURA]] [[DMG_MAGIC]]. \n \n E는 [[SINGLE]] [[TARGETED]] 체력비례 [[DMG_PHYSICAL]]와 [[KNOCKBACK]]. \n \n R은 캐논으로 [[TRANSFORM]] 하고 다음 [[BA]] 시 [[AR_MR_SHRED]]. \n 챔피언 아닌 대상에게도 소모. \n \n ",
           
         ],
 
         en: [
           "P grants a brief [[MS_UP]] on [[TRANSFORM]]. \n [[TRANSFORM]] is available from level 1. \n \n ",
           "Cannon Form \n \n Q fires an [[AOE]] [[PROJECTILE]]. \n \n W activates [[BUFF_FORM]]. \n While active, up to 3 [[BA]]s benefit from max [[AS_UP]]. \n [[AA_RESET]] possible. \n \n E places an [[MS_UP]] [[ZONE]]. \n Q passing through it becomes [[EMPOWERED]]. \n \n R [[TRANSFORM]]s to hammer and grants additional [[AR_MR_UP]]. \n \n ",
-          "Hammer Form \n \n Q is a [[DASH]] [[AOE]] [[SLOW]]. \n \n W's [[PASSIVE_BONUS]] [[MANA_RESTORE]]s on [[BA]]. \n \n W deals [[AURA]] [[DMG_MAGIC]]. \n \n E deals [[SINGLE]] [[TARGETED]] max-HP-scaling [[DMG_PHYSICAL]] with [[KNOCKBACK]]. \n \n R [[TRANSFORM]]s to cannon and applies [[AR_MR_SHRED]] on the next [[BA]]. \n Also consumed on non-champion targets. \n \n ",
+          "Hammer Form \n \n [[BA]] [[ON_HIT]] [[MANA_RESTORE]]s. \n Q is a [[DASH]] [[AOE]] [[SLOW]]. \n \n W's [[PASSIVE_BONUS]] [[MANA_RESTORE]]s on [[BA]]. \n \n W deals [[AURA]] [[DMG_MAGIC]]. \n \n E deals [[SINGLE]] [[TARGETED]] max-HP-scaling [[DMG_PHYSICAL]] with [[KNOCKBACK]]. \n \n R [[TRANSFORM]]s to cannon and applies [[AR_MR_SHRED]] on the next [[BA]]. \n Also consumed on non-champion targets. \n \n ",
         ]
 
       },
 
       note2: {
         ko: [
-        "EQ보다 QE가 상대 입장에서 더 까다로움.", "[[Q_FLASH]] 할때 [[Q_FLASH]] E를 하면 [[EMPOWERED]] 가능.", "캐논폼 W의 [[AS_UP]]는 \n 해머폼으로 [[TRANSFORM]]해도 유지."
+        "캐논폼 EQ보다 QE가 상대 입장에서 더 까다로움.", 
+        "캐논폼 [[Q_FLASH]] 할때 [[Q_FLASH]] E를 하면 [[EMPOWERED]] 가능.", 
+        "캐논폼 W의 [[AS_UP]]는 \n 해머폼으로 [[TRANSFORM]]해도 유지."
       ],
         en: ["QE is harder to deal with from the opponent's perspective than EQ.", "Using E after [[Q_FLASH]] allows [[EMPOWERED]].", "Cannon form W's [[AS_UP]] \n persists even after [[TRANSFORM]]ing to hammer form."]
         },
