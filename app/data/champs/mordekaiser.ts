@@ -12,7 +12,7 @@ const mordekaiser: ChampData = {
       { label: { ko: "E 액티브", en: "E Active" }, tags: ["E_FLASH", "GRAB", "SEPARATOR", "BUFF_STACK", "P"] },
     ] },
 
-    R: ["R_FLASH", "NEAR_SIGHT", "TRUE_SIGHT", "SEPARATOR", "BUFF"],
+    R: ["R_FLASH", "NEAR_SIGHT", "TRUE_SIGHT", "SEPARATOR", "BUFF", "SEPARATOR", "ST_CONDITIONAL", "UNTARGETABLE"],
   },
 
   vision: {
@@ -42,7 +42,7 @@ const mordekaiser: ChampData = {
       { label: { ko: "E 액티브", en: "E Active" }, tags: ["DMG_MAGIC", "TIMING_CAST", "NON_PROJECTILE", "ZONE", "GRAB", "SEPARATOR", "BUFF_STACK", "P"] },
     ] },
     
-    R: ["TIMING_CAST", "NON_PROJECTILE", "SEPARATOR", "BUFF"],
+    R: ["TIMING_CAST", "NON_PROJECTILE", "SEPARATOR", "BUFF", "SEPARATOR", "ST_CONDITIONAL", "UNTARGETABLE"],
   },
 
   notes: {
@@ -66,7 +66,7 @@ const mordekaiser: ChampData = {
 
           "E의 [[PASSIVE_BONUS]]는 [[MR_PEN]] 획득. \n \n E는 [[ZONE]] [[DMG_MAGIC]] [[GRAB]]. \n 맞은 대상 하나당 P의 [[BUFF_STACK]] 1개 ",
 
-          "R은 상대방 하나를 지정해서 \n 격리된 공간으로 초대해서 7초간 1:1을 함. \n \n 이때, 상대의 능력치를 10% 훔침. \n (주문력, 공격력, 공속, 방어력, 마저, 체력, 크기) \n 즉, 상대는 10% 약해지고 모데는 10% 강해짐. \n \n 격리된 공간에서 적이 죽으면 (직접 처치 아니어도 됨) \n 대상이 부활할 때까지 훔친 능력치 유지.",
+          "R은 상대방 하나를 지정해서 \n 본인과 상대를 죽음의 세계로 추방해서 7초간 1:1을 함. \n \n 이때, 상대의 능력치를 10% 훔침. \n (주문력, 공격력, 공속, 방어력, 마저, 체력, 크기) \n 즉, 상대는 10% 약해지고 모데는 10% 강해짐. \n \n 죽음의 세계에서 적이 죽으면 (직접 처치 아니어도 됨) \n 대상이 부활할 때까지 훔친 능력치 유지.",
         ],
 
         en: [
@@ -78,7 +78,7 @@ const mordekaiser: ChampData = {
 
           "E's [[PASSIVE_BONUS]] grants [[MR_PEN]]. \n \n E is a [[ZONE]] [[DMG_MAGIC]] [[GRAB]]. \n Each target hit grants 1 [[BUFF_STACK]] for P.",
 
-          "R targets one enemy and \n invites them to an isolated realm for a 7-second 1v1. \n \n During this time, steals 10% of the target's stats. \n (AP, AD, attack speed, armor, MR, HP, size) \n The target becomes 10% weaker, Mordekaiser becomes 10% stronger. \n \n If the enemy dies in the realm (doesn't have to be a direct kill), \n stolen stats are retained until the target revives.",
+          "R targets one enemy and \n banishes both himself and the target to the Death Realm for a 7-second 1v1. \n \n During this time, steals 10% of the target's stats. \n (AP, AD, attack speed, armor, MR, HP, size) \n The target becomes 10% weaker, Mordekaiser becomes 10% stronger. \n \n If the enemy dies in the Death Realm (doesn't have to be a direct kill), \n stolen stats are retained until the target revives.",
         ]
 
       },
@@ -89,6 +89,7 @@ const mordekaiser: ChampData = {
         "R을 시전하는 [[TIMING_CAST]] 도중 \n 대상과의 거리가 모데의 이 세계 크기보다 멀어지면,\nR 시전이 취소되고 쿨타임을 소모하지 않음.", 
         "R을 시전하는 [[TIMING_CAST]] 도중 \n 대상이 [[STEALTH]]류로 숨어도 \n R의 [[TRUE_SIGHT]]로 모습이 보이고 이세계로 이동.", 
         "R로 다른세계로 이동했을 때 \n 밖에서 상대 미니언이 죽으면 경험치가 들어오지 않음.", 
+        "R로 죽음의 세계로 이동했을 때 \n 외부에서 바라보면 구슬 모양으로 위치가 보임. \n 초록구슬 (아군) \n 빨간구슬 (상대) \n 이때, 두 대상은 협곡에서는 [[UNTARGETABLE]] 상태.",
         "R의 디테일한 판정은 챔피언별로 상호작용 박스에 정리."
       ],
         en: [
@@ -96,6 +97,7 @@ const mordekaiser: ChampData = {
           "If during [[TIMING_CAST]] of R \n the target moves farther than the Death Realm's range,\nR is cancelled without consuming cooldown.",
           "Even if the target uses [[STEALTH]] \n during R's [[TIMING_CAST]], \n R's [[TRUE_SIGHT]] reveals them and they are pulled into the realm.",
           "While in the Death Realm, \n enemy minions that die outside do not grant experience.",
+          "When moved into the Death Realm via R, \n viewers outside see their position marked as an orb. \n Green orb (ally) \n Red orb (enemy) \n During this, both targets are [[UNTARGETABLE]] on the Rift.",
           "Detailed R interactions are organized in the champion-specific interaction boxes.",
         ]
         },

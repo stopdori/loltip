@@ -16,7 +16,7 @@ const ryze: ChampData = {
  
     E: ["E_FLASH", "MARK", "SEPARATOR", "ST_CONDITIONAL", "MARK", "CHAIN"],
  
-    R: ["BLINK", "WALL_HOP", "SEPARATOR", "TOWER_DODGE"],
+    R: ["BLINK", "WALL_HOP", "SEPARATOR", "UNTARGETABLE", "TOWER_DODGE"],
  
   },
  
@@ -53,7 +53,7 @@ const ryze: ChampData = {
      
     R: { phases: [
       { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL", "CAST_MOVE", "SEPARATOR", "ZONE", "X2"] },
-      { label: { ko: "R 순간이동", en: "R Blink" }, tags: ["TOWER_DODGE", "BLINK", "WALL_HOP"] },
+      { label: { ko: "R 순간이동", en: "R Blink" }, tags: ["UNTARGETABLE", "TOWER_DODGE", "BLINK", "WALL_HOP"] },
     ] },
     
  
@@ -89,7 +89,7 @@ const ryze: ChampData = {
           "Q는 [[PROJECTILE]] 발사하여 [[DMG_MAGIC]]. \n 대상에게 E의 [[MARK]]이 있다면 \n [[MARK_CONSUME]] 하여 50% 추가 [[DMG_MAGIC]]. \n 주변 [[MARK]] 대상에게 [[CHAIN]] 반복. \n 즉, EQ \n \n",
 
           "R의 [[PASSIVE_BONUS]]는 \n EQ의 [[DMG_MAGIC]] 증가.",
-          "R은 원하는 위치에 [[ZONE]] B를 생성. \n 동시에 라이즈 발 아래 [[ZONE]] A도 자동 생성. \n 잠시 후 발아래 있던 [[ZONE]] A 위에 있는 라이즈와 아군들이 \n 맵에서 잠시 사라지고 \n [[ZONE]] B로 모두 순간이동.",
+          "R은 원하는 위치에 [[ZONE]] B를 생성. \n 동시에 라이즈 발 아래 [[ZONE]] A도 자동 생성. \n 잠시 후 발아래 있던 [[ZONE]] A 위에 있는 라이즈와 아군들이 \n 맵에서 잠시 사라져 [[UNTARGETABLE]]이 되고 \n [[ZONE]] B로 모두 순간이동.",
         ],
 
         en: [
@@ -106,7 +106,7 @@ const ryze: ChampData = {
           "Q fires a [[PROJECTILE]], dealing [[DMG_MAGIC]]. \n If the target has E's [[MARK]], \n it [[MARK_CONSUME]]s for 50% bonus [[DMG_MAGIC]]. \n [[CHAIN]]s repeatedly to nearby [[MARK]]ed targets. \n i.e. E into Q \n \n",
 
           "R's [[PASSIVE_BONUS]] is that \n it increases E-into-Q [[DMG_MAGIC]].",
-          "R creates [[ZONE]] B at the chosen location. \n It also automatically creates [[ZONE]] A under Ryze at the same time. \n After a short delay, Ryze and allies standing on [[ZONE]] A \n briefly vanish from the map \n and all teleport to [[ZONE]] B.",
+          "R creates [[ZONE]] B at the chosen location. \n It also automatically creates [[ZONE]] A under Ryze at the same time. \n After a short delay, Ryze and allies standing on [[ZONE]] A \n briefly vanish from the map and become [[UNTARGETABLE]], \n and all teleport to [[ZONE]] B.",
         ]
 
       },
