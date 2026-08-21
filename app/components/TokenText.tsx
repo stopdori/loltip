@@ -110,7 +110,7 @@ function VideoLinkIcon({ url, lang }: { url: string; lang: "ko" | "en" }) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="pointer-events-auto relative z-10 inline-flex items-center gap-1 rounded-md bg-slate-700/70 px-2 py-0.5 text-xs font-semibold text-amber-300 ring-1 ring-white/10 hover:bg-slate-600/70 transition-colors align-middle ml-1 -mt-0.5"
+      className="pointer-events-auto relative z-10 inline-flex items-center gap-1 rounded-md bg-red-600 px-2 py-0.5 text-xs font-medium text-white/85 ring-1 ring-white/10 hover:bg-red-500 transition-colors align-middle ml-1 -mt-0.5"
       aria-label={title}
       title={title}
     >
