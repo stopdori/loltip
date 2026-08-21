@@ -7,6 +7,44 @@ import { CHAMPIONS } from "../data/champions";
 
 type Lang = "ko" | "en";
 
+// 문장 맨 앞에서만 [[TIP]]를 인식 (중간에 있으면 TokenText가 일반 텍스트로 처리)
+const TIP_PREFIX_RE = /^\[\[TIP\]\]\s*/;
+
+function splitTipPrefix(text: string) {
+  const isTip = TIP_PREFIX_RE.test(text);
+  return { isTip, text: isTip ? text.replace(TIP_PREFIX_RE, "") : text };
+}
+
+// 리스트 마커(불릿) 자리를 대체하는 전구 — badge와 완전히 분리된 별도 요소
+// list-disc 마커는 li의 콘텐츠 시작 위치(pl-5 안쪽 경계)보다 19px 왼쪽(text-sm 기준 측정값)에 렌더링되는데,
+// grid 레이아웃의 1열은 li 콘텐츠 시작 위치에서 시작하므로 그만큼 -ml로 당겨서 흰 점 자리와 맞춤
+function TipMarker() {
+  return (
+    <span aria-hidden="true" className="-ml-[19px] select-none leading-[1.5]">
+      💡
+    </span>
+  );
+}
+
+// 전구 바로 다음에 오는 순수 장식용 배지 (클릭 기능 없음, 판정 태그 색과 겹치지 않는 amber 계열)
+function TipTag() {
+  return (
+    <span
+      aria-hidden="true"
+      className="inline-flex select-none items-center rounded-full bg-amber-400/15 px-1.5 py-0.5 text-[11px] font-bold leading-none text-amber-300 ring-1 ring-amber-400/40"
+    >
+      LOLTip
+    </span>
+  );
+}
+
+// TIP 문장용 <li> className: 전구|배지|텍스트 3열 grid로 행잉 인덴트 구성
+// (텍스트 열이 1fr을 차지해, \n으로 인한 줄바꿈도 전구/배지가 아니라 텍스트 시작 위치에 맞춰짐)
+function tipLiClassName(isTip: boolean, extra: string) {
+  const tipGrid = isTip ? " list-none grid grid-cols-[auto_auto_1fr] items-start gap-x-1.5" : "";
+  return `whitespace-pre-line${tipGrid}${extra}`;
+}
+
 function parseHighlight(highlight: string | undefined) {
   if (!highlight) return null;
   const parts = highlight.split("-");
@@ -23,13 +61,17 @@ export default function MatchupSummaryBox({
   enemyChampId,
   lang,
   highlight,
+  previewResult,
 }: {
   myChampId: string;
   enemyChampId: string;
   lang: Lang;
   highlight?: string;
+  // 스타일/레이아웃 미리보기 전용(app/[locale]/dev-preview): 넘기면 /api/matchup fetch를
+  // 건너뛰고 이 값을 그대로 사용한다. 넘기지 않으면(기존 호출부 전부) 기존 동작 그대로 fetch함.
+  previewResult?: MatchupLoadResult;
 }) {
-  const [result, setResult] = useState<MatchupLoadResult | null>(null);
+  const [result, setResult] = useState<MatchupLoadResult | null>(previewResult ?? null);
   const highlightRef = useRef<HTMLLIElement>(null);
   const parsed = parseHighlight(highlight);
 
@@ -43,10 +85,11 @@ export default function MatchupSummaryBox({
   };
 
   useEffect(() => {
+    if (previewResult) return;
     fetch(`/api/matchup?a=${encodeURIComponent(myChampId)}&b=${encodeURIComponent(enemyChampId)}`)
       .then((res) => res.json())
       .then(setResult);
-  }, [myChampId, enemyChampId]);
+  }, [myChampId, enemyChampId, previewResult]);
 
   useEffect(() => {
     if (!parsed || !result) return;
@@ -87,15 +130,26 @@ export default function MatchupSummaryBox({
                 <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(my)}</p>
                 {myItems.length > 0 && (
                   <ul className={listClass}>
-                    {myItems.map((text, idx) => {
+                    {myItems.map((rawText, idx) => {
                       const isHighlighted = parsed?.champId === myChampId && parsed?.idx === idx;
+                      const { isTip, text } = splitTipPrefix(rawText);
                       return (
                         <li
                           key={`my-${idx}`}
                           ref={isHighlighted ? highlightRef : null}
-                          className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
+                          className={tipLiClassName(isTip, isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : "")}
                         >
-                          <TokenText text={text} lang={lang} />
+                          {isTip ? (
+                            <>
+                              <TipMarker />
+                              <TipTag />
+                              <span>
+                                <TokenText text={text} lang={lang} />
+                              </span>
+                            </>
+                          ) : (
+                            <TokenText text={text} lang={lang} />
+                          )}
                         </li>
                       );
                     })}
@@ -114,15 +168,26 @@ export default function MatchupSummaryBox({
                 <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(enemy)}</p>
                 {enemyItems.length > 0 && (
                   <ul className={listClass}>
-                    {enemyItems.map((text, idx) => {
+                    {enemyItems.map((rawText, idx) => {
                       const isHighlighted = parsed?.champId === enemyChampId && parsed?.idx === idx;
+                      const { isTip, text } = splitTipPrefix(rawText);
                       return (
                         <li
                           key={`enemy-${idx}`}
                           ref={isHighlighted ? highlightRef : null}
-                          className={`whitespace-pre-line${isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : ""}`}
+                          className={tipLiClassName(isTip, isHighlighted ? " border-2 border-yellow-400 rounded px-2 py-1" : "")}
                         >
-                          <TokenText text={text} lang={lang} />
+                          {isTip ? (
+                            <>
+                              <TipMarker />
+                              <TipTag />
+                              <span>
+                                <TokenText text={text} lang={lang} />
+                              </span>
+                            </>
+                          ) : (
+                            <TokenText text={text} lang={lang} />
+                          )}
                         </li>
                       );
                     })}
@@ -140,11 +205,24 @@ export default function MatchupSummaryBox({
               <div className={groupWrapperClass}>
                 <p className="text-sm font-semibold text-sky-300 mb-1">{lang === "ko" ? "공통" : "Common"}</p>
                 <ul className={listClass}>
-                  {commonItems.map((text, idx) => (
-                    <li key={`common-${idx}`} className="whitespace-pre-line">
-                      <TokenText text={text} lang={lang} />
-                    </li>
-                  ))}
+                  {commonItems.map((rawText, idx) => {
+                    const { isTip, text } = splitTipPrefix(rawText);
+                    return (
+                      <li key={`common-${idx}`} className={tipLiClassName(isTip, "")}>
+                        {isTip ? (
+                          <>
+                            <TipMarker />
+                            <TipTag />
+                            <span>
+                              <TokenText text={text} lang={lang} />
+                            </span>
+                          </>
+                        ) : (
+                          <TokenText text={text} lang={lang} />
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
