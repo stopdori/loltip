@@ -22,7 +22,7 @@ export const briar_jarvaniv: MatchupSummary = {
     },
     jarvaniv: {
       ko: ["자르반 R의 [[UNSTOPPABLE]] [[DASH]]로 브라이어 Q, E의 [[STUN]] / W의 [[KNOCKBACK]] / R2의 [[FEAR]]를 무시할 수 있음."],
-      en: ["Jarvan IV's R [[UNSTOPPABLE]] [[DASH]] can ignore Briar's Q and E [[STUN]], E [[KNOCKBACK]], and R2 [[FEAR]]."],
+      en: ["Jarvan IV's R [[UNSTOPPABLE]] [[DASH]] can ignore Briar's Q and E [[STUN]] / E [[KNOCKBACK]] / R2 [[FEAR]]."],
     },
   },
   common: {

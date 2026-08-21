@@ -17,8 +17,8 @@ export const briar_nocturne: MatchupSummary = {
         "R2 [[HOMING]] [[DASH]] can follow Nocturne's R2 [[UNSTOPPABLE]] [[DASH]]. \n However, the [[HOMING]] ends upon colliding with Nocturne."],
     },
     nocturne: {
-      ko: [],
-      en: [],
+      ko: ["녹턴 W의 [[SPELL_SHIELD]]로 브라이어 R1의 [[PROJECTILE]]를 완전히 무시할 수 있음."],
+      en: ["Nocturne's W [[SPELL_SHIELD]] can completely ignore Briar's R1 [[PROJECTILE]]."],
     },
   },
 };

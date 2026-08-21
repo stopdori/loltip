@@ -22,7 +22,8 @@ export const briar_mordekaiser: MatchupSummary = {
     },
   },
   common: {
-    ko: ["모데카이저가 R로 협곡에서 사라졌을 때 \n 브라이어가 R2의 [[DASH]]로 날아온다면 \n 협곡에서 바라본 모데카이저의 구슬 자리에 도착하고 [[HOMING]] 종료. [[CLIP:https://www.youtube.com/shorts/-YBnwcCG-DU]]"],
+    ko: ["특이한 판정 \n 브라이어 R1의 [[PROJECTILE]]를 발사했을 때 \n 모데카이저 R로 브라이어를 죽음의 세계 추방한다면 \n R1의 [[PROJECTILE]]는 적중해도 효과가 없음. [[CLIP:https://www.youtube.com/shorts/qI-HsuSca7Y]]", 
+      "브라이어 R1의 [[PROJECTILE]]를 모데카이저에게 맞혔을 때 \n 모데카이저가 R로 죽음의 세계로 이동한다면 \n 브라이어가 R2의 [[DASH]]으로 날아왔을 때 \n 협곡에서 바라본 모데카이저의 구슬 자리에 도착하고 [[HOMING]] 종료. [[CLIP:https://www.youtube.com/shorts/-YBnwcCG-DU]]"],
     en: ["When Mordekaiser vanishes from the Rift via R, \n if Briar's R2 [[DASH]] is already in flight, \n it arrives at the spot of Mordekaiser's orb as seen from the Rift, and the [[HOMING]] ends. [[CLIP:https://www.youtube.com/shorts/-YBnwcCG-DU]]"],
   },
 };

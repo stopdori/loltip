@@ -9,8 +9,8 @@ export const briar_olaf: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     olaf: {
       ko: [],

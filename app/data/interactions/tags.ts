@@ -125,7 +125,6 @@ export type TagId =
   | "DISRUPT"
   | "GROUNDED"
   | "FEAR"
-  | "CANCEL"
   | "BERSERK"
   | "NEAR_SIGHT"
   | "BLIND"
@@ -280,7 +279,6 @@ SLOW: { ko: "둔화", en: "Slow" },
 TETHER: { ko: "사슬", en: "Tether" },
 SILENCE: { ko: "침묵", en: "Silence" },
 DISRUPT: { ko: "시전방해", en: "Disrupt" },
-CANCEL: { ko: "캔슬", en: "Channel Cancel" },
 
 HARD_CC: { ko: "하드CC", en: "Hard CC" },
 STUN: { ko: "기절", en: "Stun" },
@@ -743,10 +741,6 @@ GROUNDED: {
 FEAR: {
   ko: "대상이 시전자 반대쪽으로 도망치게 만듦\n(클린즈 계열로 해제 가능)",
   en: "Forces the target to flee away from you \n(can be cleansed)",
-},
-CANCEL: {
-  ko: "지속스킬을 중단시킴",
-  en: "Interrupts channeling abilities",
 },
 BERSERK: {
   ko: "주변 유닛을 공격. \n 자신의 아군 우선 공격. \n 클린즈 계열로 해제 가능.",
