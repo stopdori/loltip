@@ -214,7 +214,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SKILL_CHANNEL:    { ko: "버튼 한 번으로 발동하고 시전을 유지하는 스킬\nCC에 맞으면 중단.", en: "Activates on a single press and maintains its effect over time.\nInterrupted by CC."},
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬", en: "Charges up while held\nCaster can move while charging" },
-  SKILL_VECTOR:     { ko: "시전 위치와 방향을 드래그로 지정하는 스킬.", en: "A skill where the cast location and direction are specified by dragging." },
+  SKILL_VECTOR:     { ko: "시전 위치에 좌클릭을 하고 \n 드래그로 방향을 지정하는 스킬. \n ( 단, 클릭을 떼면 안됨. ) \n ( 단, 스마트키는 키보드를 떼면 안됨. )", en: "A skill where you left-click the cast location \n and drag to set the direction. \n (However, you must not release the click.) \n (However, with Smart Cast, you must not release the key.)" },
   BUFF:             { ko: "자신 또는 아군에게 유리한 효과", en: "A beneficial effect applied to self or allies" },
   DEBUFF:           { ko: "적에게 불리한 효과", en: "A negative effect applied to enemies" },
   COOLDOWN:         { ko: "스킬을 다시 사용할 준비를 하는 상태.", en: "The state of waiting before the skill can be used again." },
