@@ -9,7 +9,7 @@ export const caitlyn_janna: MatchupSummary = {
   },
   highlightsByChamp: {
     caitlyn: {
-      ko: [""],
+      ko: ["활성화된 W([[TRAP]])의 [[ROOT]]으로 잔나 R의 [[SKILL_CHANNEL]]을 끊을 수 없음."],
       en: [""],
     },
     janna: {

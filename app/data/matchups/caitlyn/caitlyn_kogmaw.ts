@@ -9,8 +9,8 @@ export const caitlyn_kogmaw: MatchupSummary = {
   },
   highlightsByChamp: {
     caitlyn: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kogmaw: {
       ko: [],

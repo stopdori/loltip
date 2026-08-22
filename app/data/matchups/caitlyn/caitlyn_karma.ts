@@ -9,8 +9,8 @@ export const caitlyn_karma: MatchupSummary = {
   },
   highlightsByChamp: {
     caitlyn: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     karma: {
       ko: [],

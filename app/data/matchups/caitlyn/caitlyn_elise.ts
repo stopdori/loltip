@@ -9,8 +9,8 @@ export const caitlyn_elise: MatchupSummary = {
   },
   highlightsByChamp: {
     caitlyn: {
-      ko: [""],
-      en: [""],
+      ko: ["W([[TRAP]])의 [[ROOT]]으로 엘리스 거미폼 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]와 헤드샷은 남아있음."],
+      en: ["Caitlyn's W ([[TRAP]]) [[ROOT]] cannot interrupt Elise's Spider Form Q [[DASH]]. \n However, the [[ROOT]] and headshot still apply."],
     },
     elise: {
       ko: [],

@@ -9,8 +9,8 @@ export const caitlyn_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     caitlyn: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     heimerdinger: {
       ko: [],

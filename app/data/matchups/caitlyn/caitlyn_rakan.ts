@@ -9,8 +9,8 @@ export const caitlyn_rakan: MatchupSummary = {
   },
   highlightsByChamp: {
     caitlyn: {
-      ko: [""],
-      en: [""],
+      ko: ["W([[TRAP]])의 [[ROOT]]으로 라칸 W, E의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]과 헤드샷은 남아있음. \n 단, 라칸 W는 도약단계를 발동하지 않음."],
+      en: ["Caitlyn's W ([[TRAP]]) [[ROOT]] cannot interrupt Rakan's W and E [[DASH]]. \n However, the [[ROOT]] and headshot still apply. \n However, Rakan's W does not trigger its leap phase."],
     },
     rakan: {
       ko: [],

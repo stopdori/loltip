@@ -15,8 +15,8 @@ export const aatrox_caitlyn: MatchupSummary = {
         "E cannot be used while [[ROOT]]ed by Caitlyn's W."],
     },
     caitlyn: {
-      ko: ["W의 [[ROOT]]으로 아트록스 E의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]와 헤드샷은 남아있음."],
-      en: ["Caitlyn's W [[ROOT]] cannot interrupt Aatrox's E [[DASH]]. \n However, the [[ROOT]] and headshot still apply."],
+      ko: ["활성화된 W([[TRAP]])의 [[ROOT]]으로 아트록스 E의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]과 헤드샷은 남아있음."],
+      en: ["Caitlyn's activated W ([[TRAP]]) [[ROOT]] cannot interrupt Aatrox's E [[DASH]]. \n However, the [[ROOT]] and headshot still apply."],
     },
   },
 };

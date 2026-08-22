@@ -9,8 +9,8 @@ export const caitlyn_rammus: MatchupSummary = {
   },
   highlightsByChamp: {
     caitlyn: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     rammus: {
       ko: [],

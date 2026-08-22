@@ -17,8 +17,10 @@ export const aurelionsol_caitlyn: MatchupSummary = {
         "R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Caitlyn's R [[SKILL_CHANNEL]]."],
     },
     caitlyn: {
-      ko: [],
-      en: [],
+      ko: ["활성화된 W([[TRAP]])의 [[ROOT]]으로 아우렐리온 솔 Q의 [[SKILL_CHANNEL]]을 끊을 수 없음.",
+        "활성화된 W([[TRAP]])의 [[ROOT]]으로 아우렐리온 솔 W의 [[SKILL_CHANNEL]] [[DASH]] 을 끊을 수 있음."],
+      en: ["Caitlyn's activated W's ([[TRAP]]) [[ROOT]] cannot interrupt Aurelion Sol's Q [[SKILL_CHANNEL]].",
+        "Caitlyn's activated W's ([[TRAP]]) [[ROOT]] can interrupt Aurelion Sol's W [[SKILL_CHANNEL]] [[DASH]]."],
     },
   },
 };

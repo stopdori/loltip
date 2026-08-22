@@ -9,8 +9,8 @@ export const caitlyn_malzahar: MatchupSummary = {
   },
   highlightsByChamp: {
     caitlyn: {
-      ko: [""],
-      en: [""],
+      ko: ["활성화된 W([[TRAP]])의 [[ROOT]]으로 말자하 R의 [[SKILL_CHANNEL]]을 끊을 수 없음."],
+      en: ["Caitlyn's activated W's ([[TRAP]]) [[ROOT]] cannot interrupt Malzahar's R [[SKILL_CHANNEL]]."],
     },
     malzahar: {
       ko: [],

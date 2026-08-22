@@ -21,8 +21,8 @@ export const briar_caitlyn: MatchupSummary = {
         "R2 [[HOMING]] [[DASH]] can follow Caitlyn's E [[DASH]]. \n However, [[HOMING]] ends upon colliding with Caitlyn."],
     },
     caitlyn: {
-      ko: [],
-      en: [],
+      ko: ["W([[TRAP]])의 [[ROOT]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]과 헤드샷은 남아있음."],
+      en: ["Caitlyn's W ([[TRAP]]) [[ROOT]] cannot interrupt Briar's Q and W [[DASH]]. \n However, the [[ROOT]] and headshot still apply."],
     },
   },
 };

@@ -23,8 +23,8 @@ export const amumu_caitlyn: MatchupSummary = {
         "Q [[CC_BUFFER]] can ignore Caitlyn's W [[ROOT]] and continue [[DASH]]. \n However, it will not be interrupted even if stepping on W during a [[DASH]]."],
     },
     caitlyn: {
-      ko: ["활성화된 W([[TRAP]])가 아무무 Q의 [[DASH]] 경로에 있다면 [[ROOT]]에 걸리지만 무시하고 [[DASH]]. \n 단, [[ROOT]]와 헤드샷은 남아있음."],
-      en: ["If Caitlyn's activated W ([[TRAP]]) is in the path of Amumu's Q [[DASH]], he gets [[ROOT]]ed but can ignore it and [[DASH]] anyway. \n However, the [[ROOT]] and headshot still apply."],
+      ko: ["W([[TRAP]])의 [[ROOT]]으로 아무무 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]과 헤드샷은 남아있음."],
+      en: ["Caitlyn's W ([[TRAP]]) [[ROOT]] cannot interrupt Amumu's Q [[DASH]]. \n However, the [[ROOT]] and headshot still apply."],
     },
   },
 };
