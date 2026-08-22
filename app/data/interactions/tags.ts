@@ -29,6 +29,7 @@ export type TagId =
   | "AD_DOWN"       // 공격력 감소
   | "AP_UP"
   | "SIZE_UP"
+  | "SKILL_SIZE_UP"
   | "CRIT"
   | "EXECUTE"
   | "PIERCE"
@@ -160,6 +161,7 @@ AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
 SIZE_UP: { ko: "크기↑", en: "Size ↑" },
+SKILL_SIZE_UP: { ko: "스킬크기↑", en: "Skill Size ↑" },
 CRIT: { ko: "치명타", en: "Critical" },
 
 /* =========================
@@ -410,6 +412,10 @@ AP_UP: {  ko: "주문력 증가",  en: "Increases ability power",},
 SIZE_UP: {
   ko: "챔피언의 크기가 커짐.\n히트박스도 같이 커짐.",
   en: "Increases the champion's size.\nAlso increases the hitbox.",
+},
+SKILL_SIZE_UP: {
+  ko: "스킬의 판정 범위/크기가 커짐.",
+  en: "Increases the skill's hitbox/area size.",
 },
 
 
