@@ -46,7 +46,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   MAGIC_DR: "amber_deep",
   DODGE: "amber_deep",
   WINDSHIELD: "amber_deep",
-  PROTECTIVE_ZONE: "amber_deep",
+  BLOCKED: "amber_deep",
   TOWER_DODGE: "amber_deep",
   SPELL_SHIELD: "amber_deep",
   DAMAGE_NULLIFY: "amber_deep",

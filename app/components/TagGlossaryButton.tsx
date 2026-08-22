@@ -273,7 +273,7 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
     null,
     lang === "ko"
         ? "특수 개인스킬"  : "Specil Skills",
-        "[[REFLECT]]  [[WINDSHIELD]]  [[SPELL_SHIELD]]  [[PROTECTIVE_ZONE]]", "[[POLYMORPH]]  [[BERSERK]]", 
+        "[[REFLECT]]  [[WINDSHIELD]]  [[SPELL_SHIELD]]  [[BLOCKED]]", "[[POLYMORPH]]  [[BERSERK]]",
         "[[ANTI_DASH]]  [[GROUNDED]]",
     null,
     null,

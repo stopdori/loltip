@@ -65,7 +65,7 @@ export type TagId =
   | "SLOW_CLEANSE"  // 둔화해제
   | "GHOSTING"
   | "WINDSHIELD"
-  | "PROTECTIVE_ZONE"
+  | "BLOCKED"
 
   | "DAMAGE_NULLIFY"
   | "INTERCEPT_PROJECTILE"
@@ -230,7 +230,7 @@ HIT_INDICATOR:         { ko: "적중 반응",        en: "Hit Indicator"        
  * ========================= */
 REFLECT: { ko: "반사", en: "Reflect" },
 WINDSHIELD: { ko: "장막", en: "Projectile Block" },
-PROTECTIVE_ZONE: { ko: "보호 결계", en: "Protective Zone" },
+BLOCKED: { ko: "방어", en: "Blocked" },
 POLYMORPH: { ko: "변이", en: "Polymorph" },
 BERSERK: { ko: "광란", en: "Berserk" },
 ANTI_DASH: { ko: "돌진방해", en: "Anti-Dash" },
@@ -543,9 +543,9 @@ WINDSHIELD: {
   ko: "투사체를 막을 수 있음",
   en: "Blocks projectiles",
 },
-PROTECTIVE_ZONE: {
-  ko: "범위 안 아군이 기본 공격을 맞지 않음",
-  en: "Allies inside the zone dodge basic attacks",
+BLOCKED: {
+  ko: "기본 공격을 방어.",
+  en: "Blocks basic attacks.",
 },
 
 
