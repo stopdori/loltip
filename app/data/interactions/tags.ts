@@ -349,8 +349,8 @@ SHIELD_PIERCE: {
   en: "Bypasses shields and deals damage directly to health",
 },
 TERRAIN: {
-  ko: "벽 생성\n(생성될 때 대체로 에어본)",
-  en: "Creates a wall",
+  ko: "벽 생성. \n 생성될 때 대상이 밀려나면서 에어본.",
+  en: "Creates a wall. \n Knocks the target back and airborne when created.",
 },
 TETHER: {
   ko: "연결된 대상이 범위를 벗어나지 않으면\n스킬이 계속 유효하거나 추가 효과가 발동함",
