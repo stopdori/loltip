@@ -9,8 +9,8 @@ export const camille_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     camille: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNTARGETABLE]]로 갱플랭크 Q, E, R을 피할 수 있음."],
+      en: ["Camille's R [[UNTARGETABLE]] can dodge Gangplank's Q, E, and R."],
     },
     gangplank: {
       ko: [],

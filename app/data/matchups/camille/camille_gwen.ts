@@ -9,12 +9,18 @@ export const camille_gwen: MatchupSummary = {
   },
   highlightsByChamp: {
     camille: {
-      ko: ["카밀 R은 범위 밖에서 사용했을 때, 대부분은 적중하지만 정말 정말 드물게 그웬 W에 무효화될 때가 있음"],
-      en: ["Camille's R usually hits, but very rarely it can be nullified by Gwen's W."],
+      ko: ["E의 [[KNOCKBACK]] / R의 [[KNOCKBACK]], [[GRAB]]으로 그웬 E의 [[DASH]]을 끊을 수 있음.",
+        "R의 [[UNTARGETABLE]]로 그웬 Q, R을 피할 수 있음.",],
+      en: ["Camille's E [[KNOCKBACK]] / R [[KNOCKBACK]], [[GRAB]] can interrupt Gwen's E [[DASH]].",
+        "Camille's R [[UNTARGETABLE]] can dodge Gwen's Q and R."],
     },
     gwen: {
-      ko: ["그웬 W로 카밀 W를 범위 밖에서 맞지 않음",],
-      en: ["Gwen's W blocks Camille's W from outside the zone."],
+      ko: ["W의 [[AOE]] 밖에서 발동하는 [[UNTARGETABLE]]로 카밀 W를 무시할 수 있음.",
+        "W의 [[AOE]] 밖에서 발동하는 [[UNTARGETABLE]]로 카밀 R의 [[KNOCKBACK]]을 무시할 수 있음."
+      ],
+      en: ["Gwen's W (Hallowed Mist) [[UNTARGETABLE]] triggered outside the mist can ignore Camille's W.",
+        "Gwen's W (Hallowed Mist) [[UNTARGETABLE]] triggered outside the mist can ignore Camille's R [[KNOCKBACK]]."
+      ],
     },
   },
 };
