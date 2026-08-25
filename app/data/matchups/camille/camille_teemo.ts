@@ -9,8 +9,8 @@ export const camille_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     camille: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNTARGETABLE]]로 티모 평타, Q, R(발동, 폭발피해)을 피할 수 있음."],
+      en: ["Camille's R [[UNTARGETABLE]] can dodge Teemo's auto-attacks, Q, and R (activation, explosion damage)."],
     },
     teemo: {
       ko: [],

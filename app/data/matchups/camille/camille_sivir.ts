@@ -9,8 +9,8 @@ export const camille_sivir: MatchupSummary = {
   },
   highlightsByChamp: {
     camille: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNTARGETABLE]]로 시비르 평타, Q, W를 피할 수 있음."],
+      en: ["Camille's R [[UNTARGETABLE]] can dodge Sivir's auto-attacks, Q, and W."],
     },
     sivir: {
       ko: [],

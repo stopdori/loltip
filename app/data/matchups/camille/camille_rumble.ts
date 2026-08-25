@@ -9,8 +9,8 @@ export const camille_rumble: MatchupSummary = {
   },
   highlightsByChamp: {
     camille: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNTARGETABLE]]로 럼블 Q, E, R을 피할 수 있음."],
+      en: ["Camille's R [[UNTARGETABLE]] can dodge Rumble's Q, E, and R."],
     },
     rumble: {
       ko: [],
