@@ -28,7 +28,7 @@ export const briar_urgot: MatchupSummary = {
     },
   },
   common: {
-    ko: ["특이한 판정 - 상급 \n 우르곳 R2의 [[SUPPRESS]], [[GRAB]]으로 브라이어가 끌려갈 때 R1의 [[PROJECTILE]]가 적중하면 \n 끌려가던 브라이어가 [[SUPPRESS]]을 풀고 R2를 시전. \n 대상에게 [[UNSTOPPABLE]] [[DASH]]. [[CLIP:https://www.youtube.com/shorts/5H7g7yBA-Us]]"],
-    en: ["Unusual interaction - advanced \n If Briar gets hit by R1's [[PROJECTILE]] while being pulled by Urgot's R2 [[SUPPRESS]], [[GRAB]], \n Briar breaks free of the [[SUPPRESS]] and casts R2, \n [[UNSTOPPABLE]] [[DASH]]ing toward the target. [[CLIP:https://www.youtube.com/shorts/5H7g7yBA-Us]]"],
+    ko: ["[[TIP]]특이한 판정 - 최상급 \n 우르곳 R2의 [[SUPPRESS]], [[GRAB]]으로 브라이어가 끌려갈 때 R1의 [[PROJECTILE]]가 적중하면 \n 끌려가던 브라이어가 [[SUPPRESS]]을 풀고 R2를 시전. \n 대상에게 [[UNSTOPPABLE]] [[DASH]]. [[CLIP:https://www.youtube.com/shorts/5H7g7yBA-Us]]"],
+    en: ["[[TIP]]Unusual interaction - expert \n If Briar gets hit by R1's [[PROJECTILE]] while being pulled by Urgot's R2 [[SUPPRESS]], [[GRAB]], \n Briar breaks free of the [[SUPPRESS]] and casts R2, \n [[UNSTOPPABLE]] [[DASH]]ing toward the target. [[CLIP:https://www.youtube.com/shorts/5H7g7yBA-Us]]"],
   },
 };
