@@ -9,13 +9,20 @@ export const blitzcrank_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]]으로 카밀 E(그렙, 대기, 돌진단계)의 [[DASH]]을 끊을 수 있음.", 
-        "블리츠크랭크 R의 [[SILENCE]]이 카밀 E의 대기단계에 걸려 있다면 [[DASH]]을 끊을 수 있음."],
-      en: [""],
+      ko: ["Q의 [[GRAB]], E의 [[AIRBORNE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음.", 
+        "R의 [[SILENCE]]이 카밀 E1, E2의 [[DASH]]을 끊을 수 없음."],
+      en: ["Blitzcrank's Q [[GRAB]] and E [[AIRBORNE]] can interrupt Camille's E1 and E2 [[DASH]].",
+        "Blitzcrank's R [[SILENCE]] cannot interrupt Camille's E1 and E2 [[DASH]]."],
     },
     camille: {
-      ko: ["카밀 E(투척단계)의 [[CC_BUFFER]]로 블리츠크랭크 R의 [[SILENCE]] 효과를 잠시 무시하고 다음 단계를 시전할 수 있음. \n 단, 카밀 E의 그렙단계가 종료된 후 대기단계에 [[SILENCE]]이 남아있다면 종료됨."],
-      en: [],
+      ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 블리츠 크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음.",
+        "R의 [[UNTARGETABLE]]로 블리츠 크랭크 Q, E, R을 피할 수 있음.",
+        "R의 [[UNTARGETABLE]]로 블리츠 크랭크 E(강화 평타)를 피할 수 없음. [[CLIP:]]"
+      ],
+      en: ["Camille's E1 (Throw phase) [[CC_BUFFER]] can ignore Blitzcrank's Q [[GRAB]], E [[AIRBORNE]], and R [[SILENCE]] and continue into the E1 (Wall-dash phase) [[DASH]].",
+        "Camille's R [[UNTARGETABLE]] can dodge Blitzcrank's Q, E, and R.",
+        "Camille's R [[UNTARGETABLE]] cannot dodge Blitzcrank's E (empowered auto-attack). [[CLIP:]]"
+      ],
     },
   },
 };

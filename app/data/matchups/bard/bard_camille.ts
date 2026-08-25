@@ -9,14 +9,20 @@ export const bard_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: ["바드 Q의 [[STUN]]로 카밀 E(투척, 그렙, 돌진 단계)의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 카밀 E의 대기 단계에 [[STUN]]에 적중하거나 이전 단계에서 맞은 [[STUN]]이 남아있다면 돌진 단계를 할 수 없음.",
-        "바드 R(존야)로 카밀 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Bard's Q [[STUN]] cannot interrupt Camille's E [[DASH]] (throw, grab, or dash phases). \n However, the [[STUN]] remains. \n However, if [[STUN]] lands during the standby phase or a [[STUN]] from a previous phase remains, the dash phase cannot be executed.",
-        "Bard's R (Zhonya's) can interrupt Camille's E [[DASH]]."],
+      ko: ["Q의 [[STUN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음 \n 단, [[STUN]]은 남아있음.", 
+        "R(존야)의 [[STASIS]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      en: ["Bard's Q [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]] \n However, the [[STUN]] still applies.",
+        "Bard's R (like Zhonya's Hourglass) [[STASIS]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
     camille: {
-      ko: ["카밀 E(투척단계)의 [[CC_BUFFER]]로 바드 Q의 [[STUN]] 효과를 잠시 무시하고 다음 단계를 시전할 수 있음. \n 단, 카밀 E의 그렙단계가 종료된 후 대기단계에 [[STUN]]이 남아있다면 종료됨."],
-      en: ["Camille's E (throw phase) [[CC_BUFFER]] briefly ignores Bard's Q [[STUN]], allowing the next phase to proceed. \n However, if the [[STUN]] remains during the standby phase after Camille's E grab phase ends, it will be interrupted."],
+      ko: ["[[TIP]]E1( 투척 단계 )의 [[CC_BUFFER]]로 바드 R(존야)의 [[STASIS]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 없음.",
+        "E의 [[KNOCKBACK]] / R의 [[KNOCKBACK]], [[GRAB]]으로 바드 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음.",
+        "R의 [[UNTARGETABLE]], [[UNSTOPPABLE]]로 바드 평타, Q, R을 피할 수 있음. [[CLIP:]]",
+      ],
+      en: ["[[TIP]]Camille's E1 (Throw phase) [[CC_BUFFER]] cannot ignore Bard's R (like Zhonya's Hourglass) [[STASIS]] to continue into the E1 (Wall-dash phase) [[DASH]].",
+        "Camille's E [[KNOCKBACK]] / R [[KNOCKBACK]], [[GRAB]] can interrupt Bard's E (wall traversal) [[SKILL_CHANNEL]] [[DASH]].",
+        "Camille's R [[UNTARGETABLE]] and [[UNSTOPPABLE]] can dodge Bard's auto-attacks, Q, and R. [[CLIP:]]"
+      ],
     },
   },
 };
