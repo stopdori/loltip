@@ -9,15 +9,18 @@ export const ahri_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 카밀 E(그렙, 대기, 돌진단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Camille's E (grapple, wait, and dash phases) [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      en: ["Ahri's E [[CHARM]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
     camille: {
-      ko: ["카밀 E의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "카밀 E(투척단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]] 효과를 잠시 무시하고 다음 단계를 시전할 수 있음. \n 단, 카밀 E(그렙단계)가 종료 후 [[CHARM]]이 남아있다면 종료됨.",
-        "카밀 R의 [[KNOCKBACK]]으로 아리 R의 [[DASH]]을 끊을 수 있음.", 
-        "카밀 R의 [[UNTARGETABLE]], [[TOWER_DODGE]]로 아리 Q, W, E, R을 회피 할 수 있음."],
-      en: ["Camille's E [[STUN]] cannot interrupt Ahri's R [[DASH]]. However, the [[STUN]] still applies.", "Camille's E (throw phase) [[CC_BUFFER]] can briefly ignore Ahri's E [[CHARM]] to cast the next phase.\nHowever, after Camille's E (grapple phase) ends, any remaining [[CHARM]] expires.", "Camille's R [[KNOCKBACK]] can interrupt Ahri's R [[DASH]].", "Camille's R [[UNTARGETABLE]] [[TOWER_DODGE]] can dodge Ahri's Q, W, E, and R."],
+      ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 아리 E의 [[CHARM]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음. \n 단, [[CHARM]]이 E1( 대기 단계 )까지 남아있다면 카밀 E 해제.",
+        "E의 [[KNOCKBACK]] / R의 [[KNOCKBACK]], [[GRAB]]으로 아리 R의 [[DASH]]을 끊을 수 있음.",
+        "R의 [[UNTARGETABLE]]로 아리 평타, Q, W, E, R을 피할 수 있음."
+      ],
+      en: ["Camille's E1 (Throw phase) [[CC_BUFFER]] can ignore Ahri's E [[CHARM]] and continue into the E1 (Wall-dash phase) [[DASH]]. \n However, if the [[CHARM]] remains until the E1 (Hold phase), Camille's E is cancelled.",
+        "Camille's E [[KNOCKBACK]] / R [[KNOCKBACK]], [[GRAB]] can interrupt Ahri's R [[DASH]].",
+        "Camille's R [[UNTARGETABLE]] can dodge Ahri's auto-attacks, Q, W, E, and R."
+      ],
     },
   },
 };

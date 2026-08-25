@@ -15,8 +15,10 @@ export const aurora_camille: MatchupSummary = {
         "R [[UNSTOPPABLE]] [[DASH]] can ignore Camille's E [[STUN]] / R's [[SILENCE]] and [[KNOCKBACK]] and continue [[DASH]]."],
     },
     camille: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]] / R의 [[KNOCKBACK]], [[GRAB]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음.", 
+        "R의 [[UNTARGETABLE]]로 오로라 평타, Q1, Q2, W, E, R을 피할 수 있음. \n 단, 카밀에게 걸린 Q2는 [[UNTARGETABLE]] 상태일 때 오로라가 직접 발동해도 Q2의 [[PROJECTILE]]가 돌아가지 않음. \n 시간이 만료 됐을때 돌아가는 Q2의 [[PROJECTILE]]는 정상적으로 작동하지만 [[UNTARGETABLE]]로 피할 수 있음. [[CLIP:https://www.youtube.com/shorts/fV9_gvwcuOw]]"],
+      en: ["Camille's E [[KNOCKBACK]] / R [[KNOCKBACK]], [[GRAB]] can interrupt Aurora's W and E [[DASH]].",
+        "Camille's R [[UNTARGETABLE]] can dodge Aurora's auto-attacks, Q1, Q2, W, E, and R. \n However, if Q2 is already applied to Camille, even if Aurora manually triggers it while Camille is [[UNTARGETABLE]], Q2's [[PROJECTILE]] does not return. \n The [[PROJECTILE]] that returns when the duration expires works normally, but it can be dodged with [[UNTARGETABLE]]. [[CLIP:https://www.youtube.com/shorts/fV9_gvwcuOw]]"],
     },
   },
 };
