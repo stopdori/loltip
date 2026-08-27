@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { CHAMPIONS } from "@/app/data/champions";
 import MatchupChampClient from "./MatchupChampClient";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
-import { hasKoContent } from "@/app/data/matchups/_types";
+import { hasContent } from "@/app/data/matchups/_types";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import type { TagId } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
@@ -55,10 +55,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     noindex = true;
   } else {
     const { data } = matchup;
-    const summaryEmpty = !hasKoContent(data.summary?.ko);
+    const lang: Lang = locale === "en" ? "en" : "ko";
+    const summaryEmpty = !hasContent(data.summary?.[lang]);
     const highlightsEmpty =
-      !hasKoContent(data.highlightsByChamp?.[a]?.ko) &&
-      !hasKoContent(data.highlightsByChamp?.[b]?.ko);
+      !hasContent(data.highlightsByChamp?.[a]?.[lang]) &&
+      !hasContent(data.highlightsByChamp?.[b]?.[lang]);
     noindex = summaryEmpty && highlightsEmpty;
   }
 

@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
 import { CHAMPIONS } from "@/app/data/champions";
-import { hasKoContent, type MatchupSummary } from "@/app/data/matchups/_types";
+import { hasContent, type MatchupSummary } from "@/app/data/matchups/_types";
 
 const LOCALES = ["ko", "en"] as const;
 const LAST_MODIFIED = new Date("2025-03-01");
@@ -28,21 +28,25 @@ function parseMatchupFile(filePath: string): MatchupSummary | null {
   }
 }
 
-function hasIndexableKoContent(
+function hasIndexableContent(
   data: MatchupSummary,
   champA: string,
-  champB: string
+  champB: string,
+  lang: (typeof LOCALES)[number]
 ): boolean {
-  const summaryEmpty = !hasKoContent(data.summary?.ko);
+  const summaryEmpty = !hasContent(data.summary?.[lang]);
   const highlightsEmpty =
-    !hasKoContent(data.highlightsByChamp?.[champA]?.ko) &&
-    !hasKoContent(data.highlightsByChamp?.[champB]?.ko);
+    !hasContent(data.highlightsByChamp?.[champA]?.[lang]) &&
+    !hasContent(data.highlightsByChamp?.[champB]?.[lang]);
   return !(summaryEmpty && highlightsEmpty);
 }
 
-function getIndexableMatchupPairs(): string[] {
-  const pairs: string[] = [];
-  if (!fs.existsSync(MATCHUP_DIR)) return pairs;
+function getIndexableMatchupPairs(): Record<(typeof LOCALES)[number], string[]> {
+  const pairsByLocale: Record<(typeof LOCALES)[number], string[]> = {
+    ko: [],
+    en: [],
+  };
+  if (!fs.existsSync(MATCHUP_DIR)) return pairsByLocale;
 
   for (const folderEntry of fs.readdirSync(MATCHUP_DIR, { withFileTypes: true })) {
     if (!folderEntry.isDirectory()) continue;
@@ -59,20 +63,23 @@ function getIndexableMatchupPairs(): string[] {
       const data = parseMatchupFile(path.join(folderPath, fileEntry.name));
       if (!data) continue;
 
-      if (hasIndexableKoContent(data, champA, champB)) {
-        pairs.push(`${champA}-vs-${champB}`);
+      const pair = `${champA}-vs-${champB}`;
+      for (const locale of LOCALES) {
+        if (hasIndexableContent(data, champA, champB, locale)) {
+          pairsByLocale[locale].push(pair);
+        }
       }
     }
   }
 
-  return pairs;
+  return pairsByLocale;
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://loltip.com";
 
   const urls: MetadataRoute.Sitemap = [];
-  const indexablePairs = getIndexableMatchupPairs();
+  const indexablePairsByLocale = getIndexableMatchupPairs();
 
   for (const locale of LOCALES) {
     // 메인
@@ -109,8 +116,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
     });
 
-    // KO 콘텐츠가 실제로 존재하는 매치업 페이지만 포함
-    for (const pair of indexablePairs) {
+    // 해당 locale 콘텐츠가 실제로 존재하는 매치업 페이지만 포함
+    for (const pair of indexablePairsByLocale[locale]) {
       urls.push({
         url: `${baseUrl}/${locale}/matchup/${pair}`,
         changeFrequency: "weekly",

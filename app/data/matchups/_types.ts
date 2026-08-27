@@ -19,6 +19,6 @@ export type MatchupSummary = {
   };
 };
 
-export function hasKoContent(arr: string[] | undefined): boolean {
+export function hasContent(arr: string[] | undefined): boolean {
   return (arr ?? []).some((s) => s !== "");
 }
