@@ -9,9 +9,9 @@ export const annie_lillia: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["P의 [[STUN]]로 릴리아 W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+      ko: ["P의 [[STUN]]로 릴리아 W의 [[DASH]]을 끊을 수 없음. \n 단, W의 공격도 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
         "R로 [[SUMMON]]된 티버로 릴리아 E의 [[SINGLE]] [[PROJECTILE]]를 막을 수 있음. \n 단, Q의 추가 [[AOE]]피해는 막을 수 없음."],
-      en: ["P [[STUN]] cannot interrupt Lillia's W [[DASH]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Lillia's E [[SINGLE]] [[PROJECTILE]]. \n However, Q's additional [[AOE]] damage cannot be blocked."],
+      en: ["P [[STUN]] cannot interrupt Lillia's W [[DASH]]. \n However, W's damage instance cannot be interrupted either. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Lillia's E [[SINGLE]] [[PROJECTILE]]. \n However, Q's additional [[AOE]] damage cannot be blocked."],
     },
     lillia: {
       ko: [],

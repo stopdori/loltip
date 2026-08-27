@@ -9,8 +9,8 @@ export const akshan_lillia: MatchupSummary = {
   },
   highlightsByChamp: {
     akshan: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     lillia: {
       ko: [],
