@@ -9,8 +9,8 @@ export const chogath_milio: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     milio: {
       ko: [],

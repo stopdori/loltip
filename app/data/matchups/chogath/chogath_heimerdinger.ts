@@ -9,8 +9,8 @@ export const chogath_heimerdinger: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     heimerdinger: {
       ko: [],

@@ -9,8 +9,10 @@ export const chogath_talon: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]]으로 탈론 Q의 [[DASH]], E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음.", 
+        "W의 [[SILENCE]]으로 탈론 Q의 [[DASH]], E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음."],
+      en: ["Q [[AIRBORNE]] can interrupt Talon's Q [[DASH]] and E (wall movement) [[SKILL_CHANNEL]] [[DASH]].",
+        "W [[SILENCE]] cannot interrupt Talon's Q [[DASH]] and E (wall movement) [[SKILL_CHANNEL]] [[DASH]]. \n However, the [[SILENCE]] still applies."],
     },
     talon: {
       ko: [],

@@ -9,8 +9,8 @@ export const chogath_tahmkench: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]], W의 [[SILENCE]]으로 탐켄치 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[SILENCE]] can interrupt Tahm Kench's W [[SKILL_CHANNEL]]."],
     },
     tahmkench: {
       ko: [],

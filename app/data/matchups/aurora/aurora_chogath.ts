@@ -13,8 +13,10 @@ export const aurora_chogath: MatchupSummary = {
       en: ["E (wind-up phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Cho'Gath's Q [[AIRBORNE]] and W [[SILENCE]] and continue [[DASH]]. \n However, the [[SILENCE]] still applies."],
     },
     chogath: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음.", 
+        "W의 [[SILENCE]]으로 오로라 W, E의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음."],
+      en: ["Q [[AIRBORNE]] can interrupt Aurora's W and E [[DASH]].",
+        "W [[SILENCE]] cannot interrupt Aurora's W and E [[DASH]]. \n However, the [[SILENCE]] still applies."],
     },
   },
 };

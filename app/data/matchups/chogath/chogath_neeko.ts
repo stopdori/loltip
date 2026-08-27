@@ -9,8 +9,8 @@ export const chogath_neeko: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     neeko: {
       ko: [],

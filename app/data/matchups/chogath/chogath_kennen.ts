@@ -9,8 +9,8 @@ export const chogath_kennen: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kennen: {
       ko: [],

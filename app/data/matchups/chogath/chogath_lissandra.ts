@@ -9,8 +9,8 @@ export const chogath_lissandra: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     lissandra: {
       ko: [],

@@ -9,8 +9,10 @@ export const chogath_irelia: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]]으로 이렐리아 Q의 [[DASH]]을 끊을 수 있음.", 
+        "W의 [[SILENCE]]으로 이렐리아 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음."],
+      en: ["Q [[AIRBORNE]] can interrupt Irelia's Q [[DASH]].",
+        "W [[SILENCE]] cannot interrupt Irelia's Q [[DASH]]. \n However, the [[SILENCE]] still applies."],
     },
     irelia: {
       ko: [],

@@ -9,8 +9,10 @@ export const chogath_reksai: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]]으로 렉사이 매복폼 E의 [[DASH]]을 끊을 수 있음.", 
+        "W의 [[SILENCE]]으로 렉사이 매복폼 E의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음."],
+      en: ["Q [[AIRBORNE]] can interrupt Rek'Sai's Burrowed E [[DASH]].",
+        "W [[SILENCE]] cannot interrupt Rek'Sai's Burrowed E [[DASH]]. \n However, the [[SILENCE]] still applies."],
     },
     reksai: {
       ko: [],

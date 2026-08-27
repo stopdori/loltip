@@ -9,8 +9,8 @@ export const chogath_soraka: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     soraka: {
       ko: [],

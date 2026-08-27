@@ -13,8 +13,8 @@ export const anivia_chogath: MatchupSummary = {
       en: ["If W [[TERRAIN]] [[AIRBORNE]] knocks Cho'Gath back while casting W, the W [[AOE]] also moves with him."],
     },
     chogath: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], W의 [[SILENCE]]으로 애니비아 R의 [[SKILL_CHARGED]] [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[SILENCE]] can interrupt Anivia's R [[SKILL_CHARGED]] [[SKILL_CHANNEL]]."],
     },
   },
 };

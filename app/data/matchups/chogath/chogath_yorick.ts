@@ -9,8 +9,8 @@ export const chogath_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     yorick: {
       ko: [],
