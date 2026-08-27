@@ -117,7 +117,7 @@ export default async function Page({ params, searchParams }: Props) {
   const highlights: { champId: string; champName: string; items: string[] }[] = [];
   if (matchup?.status === "ok") {
     for (const champId of [forcedMe, forcedEnemy]) {
-      const items = matchup.data.highlightsByChamp?.[champId]?.[lang] ?? [];
+      const items = (matchup.data.highlightsByChamp?.[champId]?.[lang] ?? []).filter((s) => s !== "");
       if (items.length > 0) {
         const info = CHAMPIONS.find((c) => c.id === champId);
         const champName = (lang === "ko" ? info?.ko : info?.en) ?? champId;
@@ -126,7 +126,7 @@ export default async function Page({ params, searchParams }: Props) {
     }
 
     // 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 (MatchupSummaryBox.tsx와 동일한 순서)
-    const commonItems = matchup.data.common?.[lang] ?? [];
+    const commonItems = (matchup.data.common?.[lang] ?? []).filter((s) => s !== "");
     if (commonItems.length > 0) {
       highlights.push({ champId: "common", champName: lang === "ko" ? "공통" : "Common", items: commonItems });
     }

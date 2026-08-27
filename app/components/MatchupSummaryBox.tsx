@@ -111,9 +111,9 @@ export default function MatchupSummaryBox({
  
       {/* ✅ 정상 */}
       {result?.status === "ok" && (() => {
-        const myItems = result.data.highlightsByChamp?.[myChampId]?.[lang] ?? [];
-        const enemyItems = result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? [];
-        const commonItems = result.data.common?.[lang] ?? [];
+        const myItems = (result.data.highlightsByChamp?.[myChampId]?.[lang] ?? []).filter((s) => s !== "");
+        const enemyItems = (result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).filter((s) => s !== "");
+        const commonItems = (result.data.common?.[lang] ?? []).filter((s) => s !== "");
 
         const showMyEnemyDivider = !!my && !!enemy;
         const showEnemyCommonDivider = commonItems.length > 0 && (!!my || !!enemy);
@@ -232,9 +232,9 @@ export default function MatchupSummaryBox({
 
       {/* 내용 없음 */}
       {result?.status === "ok" &&
-        (result.data.highlightsByChamp?.[myChampId]?.[lang] ?? []).length === 0 &&
-        (result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).length === 0 &&
-        (result.data.common?.[lang] ?? []).length === 0 && (
+        (result.data.highlightsByChamp?.[myChampId]?.[lang] ?? []).filter((s) => s !== "").length === 0 &&
+        (result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).filter((s) => s !== "").length === 0 &&
+        (result.data.common?.[lang] ?? []).filter((s) => s !== "").length === 0 && (
           <p className="text-slate-400 text-sm text-center">
             {lang === "ko" ? "특별한 상호작용 없음." : "No notable interactions."}
           </p>
