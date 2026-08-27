@@ -56,11 +56,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   } else {
     const { data } = matchup;
     const lang: Lang = locale === "en" ? "en" : "ko";
-    const summaryEmpty = !hasContent(data.summary?.[lang]);
-    const highlightsEmpty =
+    noindex =
       !hasContent(data.highlightsByChamp?.[a]?.[lang]) &&
       !hasContent(data.highlightsByChamp?.[b]?.[lang]);
-    noindex = summaryEmpty && highlightsEmpty;
   }
 
   return {

@@ -34,11 +34,10 @@ function hasIndexableContent(
   champB: string,
   lang: (typeof LOCALES)[number]
 ): boolean {
-  const summaryEmpty = !hasContent(data.summary?.[lang]);
-  const highlightsEmpty =
-    !hasContent(data.highlightsByChamp?.[champA]?.[lang]) &&
-    !hasContent(data.highlightsByChamp?.[champB]?.[lang]);
-  return !(summaryEmpty && highlightsEmpty);
+  return (
+    hasContent(data.highlightsByChamp?.[champA]?.[lang]) ||
+    hasContent(data.highlightsByChamp?.[champB]?.[lang])
+  );
 }
 
 function getIndexableMatchupPairs(): Record<(typeof LOCALES)[number], string[]> {
