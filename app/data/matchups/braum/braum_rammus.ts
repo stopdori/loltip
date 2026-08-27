@@ -9,8 +9,8 @@ export const braum_rammus: MatchupSummary = {
   },
   highlightsByChamp: {
     braum: {
-      ko: [""],
-      en: [""],
+      ko: ["브라움 P의 [[STUN]], R의 [[AIRBORNE]]으로 람머스 Q의 [[TRANSFORM]]을 해제시킬 수 있음."],
+      en: ["Braum's P [[STUN]] and R [[AIRBORNE]] can interrupt Rammus's Q [[TRANSFORM]]."],
     },
     rammus: {
       ko: [],

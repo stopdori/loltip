@@ -9,8 +9,8 @@ export const chogath_rammus: MatchupSummary = {
   },
   highlightsByChamp: {
     chogath: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]], W의 [[SILENCE]]으로 람머스 Q의 [[TRANSFORM]]을 해제시킬 수 있음."],
+      en: ["Q [[AIRBORNE]] and W [[SILENCE]] can interrupt Rammus's Q [[TRANSFORM]]."],
     },
     rammus: {
       ko: [],

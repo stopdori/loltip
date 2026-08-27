@@ -9,8 +9,8 @@ export const azir_quinn: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: ["아지르 R의 [[KNOCKBACK]]으로 퀸 E의 [[DASH]], R의 [[TRANSFORM]]을 해제시킬 수 있음."],
-      en: [""],
+      ko: ["아지르 R의 [[KNOCKBACK]]으로 퀸 E의 [[DASH]], R의 [[SKILL_CHANNEL]], R의 [[TRANSFORM]]을 해제시킬 수 있음."],
+      en: ["R [[KNOCKBACK]] can interrupt Quinn's E [[DASH]], R [[SKILL_CHANNEL]], and R [[TRANSFORM]]."],
     },
     quinn: {
       ko: [],

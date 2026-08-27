@@ -9,9 +9,9 @@ export const cassiopeia_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: ["R의 [[STUN]]로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음.",
+      ko: ["R의 [[STUN]]로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음.\n 단, 볼리베어 Q는 [[CDR_RESET]].",
         "R의 [[STUN]]로 볼리베어 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
-      en: ["R [[STUN]] can cancel Volibear's Q [[TRANSFORM]].",
+      en: ["R [[STUN]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q is [[CDR_RESET]].",
         "R [[STUN]] cannot interrupt Volibear's Q [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     volibear: {

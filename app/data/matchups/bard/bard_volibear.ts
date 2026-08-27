@@ -9,8 +9,8 @@ export const bard_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: ["바드 Q의 [[STUN]], R(존야)로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음.  \n 단, 볼리베어 Q는 [[CDR_RESET]]."],
-      en: ["Bard's Q [[STUN]] and R (Zhonya's) can cancel Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q has [[CDR_RESET]]."],
+      ko: ["바드 Q의 [[STUN]], R(존야)의 [[STASIS]]으로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. \n 단, 볼리베어 Q는 [[CDR_RESET]]."],
+      en: ["Q [[STUN]] and R (like Zhonya's Hourglass) [[STASIS]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q is [[CDR_RESET]]."],
     },
     volibear: {
       ko: ["볼리베어 R의 [[UNSTOPPABLE]] [[DASH]]으로 바드 R(존야)을 무시할 수 있음."],
