@@ -9,12 +9,14 @@ export const alistar_cassiopeia: MatchupSummary = {
   },
   highlightsByChamp: {
     alistar: {
-      ko: ["R의 [[CC_CLEANSE]]로 카시오페아 R의 [[STUN]], [[SLOW]]을 해제할 수 있음. \n 단, 카시 W의 지속[[SLOW]]는 해제해도 다시 걸림."],
-      en: ["R [[CC_CLEANSE]] can cleanse Cassiopeia's R [[STUN]] and [[SLOW]]. \n However, Cassiopeia's W's persistent [[SLOW]] will reapply after being cleansed."],
+      ko: ["W는 [[DASH]] 판정으로 카시오페아 W의 [[GROUNDED]] 효과를 받을 때 사용할 수 없음.",
+        "R의 [[CC_CLEANSE]]로 카시오페아 R의 [[STUN]], [[SLOW]]을 해제할 수 있음. \n 단, 카시 W의 지속[[SLOW]]는 해제해도 다시 걸림."],
+      en: ["W [[DASH]] cannot be used while affected by Cassiopeia's W [[GROUNDED]].",
+        "R [[CC_CLEANSE]] can cleanse Cassiopeia's R [[STUN]] and [[SLOW]]. \n However, Cassiopeia's W's persistent [[SLOW]] will reapply after being cleansed."],
     },
     cassiopeia: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[STUN]]로 알리스타 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["R [[STUN]] cannot interrupt Alistar's Q [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
 };

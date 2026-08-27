@@ -13,8 +13,8 @@ export const anivia_cassiopeia: MatchupSummary = {
       en: ["If W [[TERRAIN]] [[AIRBORNE]] knocks Cassiopeia back while casting R, the R [[AOE]] also moves with her."],
     },
     cassiopeia: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[STUN]]로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[STUN]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
     },
   },
 };
