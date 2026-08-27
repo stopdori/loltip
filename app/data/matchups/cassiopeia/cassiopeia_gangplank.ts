@@ -9,8 +9,8 @@ export const cassiopeia_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     gangplank: {
       ko: [],

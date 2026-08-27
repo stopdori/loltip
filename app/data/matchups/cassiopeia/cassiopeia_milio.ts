@@ -9,12 +9,12 @@ export const cassiopeia_milio: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
-    },
-    milio: {
       ko: [],
       en: [],
+    },
+    milio: {
+      ko: ["R의 [[CC_CLEANSE]] 효과로 카시오페아 R의 [[STUN]]을 해제할 수 있음."],
+      en: ["R [[CC_CLEANSE]] can cleanse Cassiopeia's R [[STUN]]."],
     },
   },
 };

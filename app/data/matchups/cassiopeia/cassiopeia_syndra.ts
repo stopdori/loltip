@@ -9,8 +9,8 @@ export const cassiopeia_syndra: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     syndra: {
       ko: [],

@@ -9,8 +9,8 @@ export const cassiopeia_trundle: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     trundle: {
       ko: [],

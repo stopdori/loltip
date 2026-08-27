@@ -9,8 +9,8 @@ export const cassiopeia_vladimir: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     vladimir: {
       ko: [],

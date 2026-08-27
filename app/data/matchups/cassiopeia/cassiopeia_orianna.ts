@@ -9,8 +9,8 @@ export const cassiopeia_orianna: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     orianna: {
       ko: [],

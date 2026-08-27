@@ -9,8 +9,8 @@ export const cassiopeia_udyr: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[STUN]]로 우디르 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["R [[STUN]] cannot interrupt Udyr's E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     udyr: {
       ko: [],

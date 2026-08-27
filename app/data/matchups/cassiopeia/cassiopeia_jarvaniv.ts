@@ -9,12 +9,12 @@ export const cassiopeia_jarvaniv: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[STUN]]로 자르반 EQ의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      en: ["R [[STUN]] cannot interrupt Jarvan IV's EQ [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     jarvaniv: {
-      ko: [],
-      en: [],
+      ko: ["R은 [[DASH]] 판정으로 카시오페아 W의 [[GROUNDED]] 효과를 받을 때 사용할 수 없음. \n 단, EQ의 [[DASH]]은 사용할 수 있음."],
+      en: ["R [[DASH]] cannot be used while affected by Cassiopeia's W [[GROUNDED]]. \n However, EQ [[DASH]] can still be used."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const cassiopeia_yorick: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     yorick: {
       ko: [],

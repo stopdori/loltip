@@ -9,8 +9,8 @@ export const cassiopeia_lulu: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     lulu: {
       ko: [],

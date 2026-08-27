@@ -9,8 +9,8 @@ export const cassiopeia_veigar: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     veigar: {
       ko: [],

@@ -9,12 +9,12 @@ export const cassiopeia_ryze: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: ["카시오페아 W(독기의 늪)가 라이즈 R(공간 왜곡)을 끊지 못함"],
-      en: ["Cassiopeia's W (Miasma) doesn't cancel Ryze's R (Realm Warp)."],
+      ko: ["W의 [[GROUNDED]], R의 [[STUN]]로 라이즈 R의 [[SKILL_CHANNEL]] [[BLINK]]을 끊을 수 있음."],
+      en: ["W [[GROUNDED]] and R [[STUN]] can interrupt Ryze's R [[SKILL_CHANNEL]] [[BLINK]]."],
     },
     ryze: {
-      ko: [],
-      en: [],
+      ko: ["R은 [[BLINK]] 판정으로 카시오페아 W의 [[GROUNDED]] 효과를 받을 때 사용할 수 없음."],
+      en: ["R [[BLINK]] cannot be used while affected by Cassiopeia's W [[GROUNDED]]."],
     },
   },
 };

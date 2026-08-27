@@ -9,8 +9,8 @@ export const cassiopeia_garen: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     garen: {
       ko: [],

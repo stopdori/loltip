@@ -9,8 +9,8 @@ export const cassiopeia_renata: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     renata: {
       ko: [],

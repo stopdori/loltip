@@ -9,8 +9,8 @@ export const cassiopeia_seraphine: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     seraphine: {
       ko: [],

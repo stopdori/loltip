@@ -9,8 +9,8 @@ export const cassiopeia_hwei: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     hwei: {
       ko: [],

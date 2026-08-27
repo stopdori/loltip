@@ -9,8 +9,8 @@ export const cassiopeia_drmundo: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     drmundo: {
       ko: [],

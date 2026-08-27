@@ -9,8 +9,8 @@ export const cassiopeia_zyra: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zyra: {
       ko: [],

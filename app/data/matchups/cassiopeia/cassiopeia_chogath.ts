@@ -9,12 +9,16 @@ export const cassiopeia_chogath: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     chogath: {
       ko: [],
       en: [],
     },
+  },
+  common: {
+    ko: [],
+    en: [],
   },
 };

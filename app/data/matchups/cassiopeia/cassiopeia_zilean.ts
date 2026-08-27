@@ -9,8 +9,8 @@ export const cassiopeia_zilean: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zilean: {
       ko: [],

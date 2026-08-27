@@ -9,8 +9,8 @@ export const cassiopeia_jhin: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[STUN]]로 진 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[STUN]] can interrupt Jhin's R [[SKILL_CHANNEL]]."],
     },
     jhin: {
       ko: [],

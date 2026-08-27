@@ -9,8 +9,8 @@ export const cassiopeia_taric: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     taric: {
       ko: [],

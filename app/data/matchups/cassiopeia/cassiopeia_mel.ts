@@ -9,12 +9,12 @@ export const cassiopeia_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: ["멜 W가 카시오페아 W E 반사 가능."],
-      en: ["Mel’s W reflects Cassiopeia’s W E."],
-    },
-    mel: {
       ko: [],
       en: [],
+    },
+    mel: {
+      ko: ["W의 [[REFLECT]] 효과로 카시오페아 W, E를 반사할 수 있음."],
+      en: ["W [[REFLECT]] can reflect Cassiopeia's W and E."],
     },
   },
 };
