@@ -9,8 +9,8 @@ export const darius_yunara: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 유나라 RE의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Yunara's RE [[DASH]]."],
     },
     yunara: {
       ko: [],

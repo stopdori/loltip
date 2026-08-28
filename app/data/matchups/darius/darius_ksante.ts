@@ -9,8 +9,8 @@ export const darius_ksante: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 크산테 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt K'Sante's E [[DASH]]."],
     },
     ksante: {
       ko: [],

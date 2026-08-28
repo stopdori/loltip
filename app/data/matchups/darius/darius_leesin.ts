@@ -9,8 +9,8 @@ export const darius_leesin: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 리 신 Q2, W1의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Lee Sin's Q2 and W1 [[DASH]]."],
     },
     leesin: {
       ko: [],

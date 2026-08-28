@@ -9,8 +9,8 @@ export const darius_viego: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 비에고 W의 [[SKILL_CHARGED]], [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Viego's W [[SKILL_CHARGED]] [[DASH]]."],
     },
     viego: {
       ko: [],

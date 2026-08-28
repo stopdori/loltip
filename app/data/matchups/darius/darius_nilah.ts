@@ -9,8 +9,8 @@ export const darius_nilah: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 닐라 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Nilah's E [[DASH]]."],
     },
     nilah: {
       ko: [],

@@ -9,8 +9,8 @@ export const darius_jayce: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 제이스 해머폼 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Jayce's Hammer Form Q [[DASH]]."],
     },
     jayce: {
       ko: [],

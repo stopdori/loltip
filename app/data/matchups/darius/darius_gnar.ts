@@ -9,8 +9,8 @@ export const darius_gnar: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 나르 미니폼 / 메가폼 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Gnar's Mini form / Mega form E [[DASH]]."],
     },
     gnar: {
       ko: [],

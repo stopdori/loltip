@@ -9,8 +9,8 @@ export const darius_velkoz: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 벨코즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Vel'Koz's R [[SKILL_CHANNEL]]."],
     },
     velkoz: {
       ko: [],

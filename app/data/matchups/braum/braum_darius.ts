@@ -13,8 +13,8 @@ export const braum_darius: MatchupSummary = {
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Darius's basic attacks, Q, W and R"],
     },
     darius: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[GRAB]]으로 브라움 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Braum's E [[DASH]]."],
     },
   },
 };

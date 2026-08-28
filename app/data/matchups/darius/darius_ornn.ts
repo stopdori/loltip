@@ -9,8 +9,8 @@ export const darius_ornn: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 오른 E, R2의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Ornn's E and R2 [[DASH]]."],
     },
     ornn: {
       ko: [],

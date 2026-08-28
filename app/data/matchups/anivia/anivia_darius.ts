@@ -13,8 +13,8 @@ export const anivia_darius: MatchupSummary = {
       en: ["If W [[TERRAIN]] [[AIRBORNE]] knocks Darius back while casting Q, the Q [[AOE]] also moves with him."],
     },
     darius: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[GRAB]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
     },
   },
 };

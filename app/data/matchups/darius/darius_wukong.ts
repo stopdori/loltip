@@ -9,8 +9,8 @@ export const darius_wukong: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 오공 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Wukong's W and E [[DASH]]."],
     },
     wukong: {
       ko: [],

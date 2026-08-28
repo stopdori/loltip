@@ -9,8 +9,8 @@ export const darius_kindred: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 킨드레드 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Kindred's Q [[DASH]]."],
     },
     kindred: {
       ko: [],

@@ -15,8 +15,8 @@ export const aurora_darius: MatchupSummary = {
         "R [[UNSTOPPABLE]] [[DASH]] can ignore Darius's E [[GRAB]] and continue [[DASH]]."],
     },
     darius: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[GRAB]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Aurora's W and E [[DASH]]."],
     },
   },
 };

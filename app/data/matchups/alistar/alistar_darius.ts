@@ -13,8 +13,8 @@ export const alistar_darius: MatchupSummary = {
       en: ["R [[CC_CLEANSE]] can cleanse Darius's W [[SLOW]] and E [[SLOW]] [[GRAB]]."],
     },
     darius: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[GRAB]]으로 알리스타 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Alistar's W [[DASH]]."],
     },
   },
 };

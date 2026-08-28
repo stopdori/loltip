@@ -9,8 +9,8 @@ export const darius_leblanc: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 르블랑 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt LeBlanc's W [[DASH]]."],
     },
     leblanc: {
       ko: [],

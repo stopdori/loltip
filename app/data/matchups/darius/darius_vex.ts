@@ -9,8 +9,8 @@ export const darius_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     vex: {
       ko: [],

@@ -9,8 +9,8 @@ export const darius_malzahar: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 말자하 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Malzahar's R [[SKILL_CHANNEL]]."],
     },
     malzahar: {
       ko: [],

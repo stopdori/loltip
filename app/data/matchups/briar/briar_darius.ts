@@ -15,8 +15,8 @@ export const briar_darius: MatchupSummary = {
         "Briar's R1 [[CC_IMMUNE]] and R2 [[UNSTOPPABLE]] can ignore Darius's E [[GRAB]]."],
     },
     darius: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[GRAB]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Briar's Q and W [[DASH]]."],
     },
   },
 };

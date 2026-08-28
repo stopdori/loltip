@@ -9,8 +9,8 @@ export const darius_thresh: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 쓰레쉬 Q2, W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Thresh's Q2 and W [[DASH]]."],
     },
     thresh: {
       ko: [],

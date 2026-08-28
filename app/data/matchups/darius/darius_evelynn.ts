@@ -9,8 +9,8 @@ export const darius_evelynn: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[GRAB]]으로 이블린 [[EMPOWERED]] E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Evelynn's [[EMPOWERED]] E [[DASH]]."],
     },
     evelynn: {
       ko: [],

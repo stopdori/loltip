@@ -13,8 +13,8 @@ export const ambessa_darius: MatchupSummary = {
       en: ["R [[UNSTOPPABLE]] can ignore Darius's E [[GRAB]]."],
     },
     darius: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[GRAB]]으로 암베사 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Ambessa's P [[DASH]]."],
     },
   },
 };

@@ -14,8 +14,8 @@ export const amumu_darius: MatchupSummary = {
       en: ["Q and R [[STUN]] can interrupt Darius's R [[SKILL_CHANNEL]]. \n However, Darius's R does not go on cooldown when interrupted.", "Q [[CC_BUFFER]] can ignore Darius's E [[GRAB]] and continue [[DASH]]."],
     },
     darius: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[GRAB]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Amumu's Q [[DASH]]."],
     },
   },
 };
