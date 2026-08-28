@@ -13,8 +13,8 @@ export const aatrox_diana: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Diana's E [[DASH]]."],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Aatrox's E [[DASH]]."],
     },
   },
 };

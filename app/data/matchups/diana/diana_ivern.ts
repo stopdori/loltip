@@ -9,8 +9,8 @@ export const diana_ivern: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 아이번 Q2의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Ivern's Q2 [[DASH]]."],
     },
     ivern: {
       ko: [],

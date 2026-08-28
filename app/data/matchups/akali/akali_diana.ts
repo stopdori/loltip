@@ -13,8 +13,8 @@ export const akali_diana: MatchupSummary = {
       en: ["E2 [[HOMING]] [[DASH]] can follow Diana's E [[DASH]]."],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Akali's E1, E2, R1, and R2 [[DASH]]."],
     },
   },
 };

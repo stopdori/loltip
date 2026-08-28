@@ -9,8 +9,8 @@ export const diana_urgot: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 우르곳 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Urgot's E [[DASH]]."],
     },
     urgot: {
       ko: [],

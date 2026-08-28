@@ -9,8 +9,8 @@ export const diana_rammus: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 람머스 Q의 [[TRANSFORM]]을 해제시킬 수 있음."],
+      en: ["R [[GRAB]] can cancel Rammus's Q [[TRANSFORM]]."],
     },
     rammus: {
       ko: [],

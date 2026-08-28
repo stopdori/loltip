@@ -14,8 +14,8 @@ export const belveth_diana: MatchupSummary = {
       en: [""],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 벨베스 Q의 [[DASH]], E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Bel'Veth's Q [[DASH]] and E [[SKILL_CHANNEL]]."],
     },
   },
 };

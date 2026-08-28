@@ -9,8 +9,8 @@ export const diana_draven: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     draven: {
       ko: [],

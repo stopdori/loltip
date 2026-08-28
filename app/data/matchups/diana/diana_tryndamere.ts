@@ -9,8 +9,8 @@ export const diana_tryndamere: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 트린다미어 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Tryndamere's E [[DASH]]."],
     },
     tryndamere: {
       ko: [],

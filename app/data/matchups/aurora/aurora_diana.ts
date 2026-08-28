@@ -15,8 +15,8 @@ export const aurora_diana: MatchupSummary = {
         "R [[UNSTOPPABLE]] [[DASH]] can ignore Diana's R [[GRAB]] and continue [[DASH]]."],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Aurora's W and E [[DASH]]."],
     },
   },
 };

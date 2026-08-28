@@ -9,8 +9,8 @@ export const diana_nilah: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 닐라 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Nilah's E [[DASH]]."],
     },
     nilah: {
       ko: [],

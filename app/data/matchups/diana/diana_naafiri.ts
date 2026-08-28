@@ -9,8 +9,8 @@ export const diana_naafiri: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 나피리 E, R의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Naafiri's E and R [[DASH]] and R [[SKILL_CHANNEL]]."],
     },
     naafiri: {
       ko: [],

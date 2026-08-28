@@ -9,8 +9,8 @@ export const diana_warwick: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 워윅 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Warwick's R [[SKILL_CHANNEL]]."],
     },
     warwick: {
       ko: [],

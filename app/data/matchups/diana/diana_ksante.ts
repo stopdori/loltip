@@ -9,8 +9,8 @@ export const diana_ksante: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 크산테 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt K'Sante's E [[DASH]]."],
     },
     ksante: {
       ko: [],

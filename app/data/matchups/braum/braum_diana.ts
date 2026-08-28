@@ -13,8 +13,8 @@ export const braum_diana: MatchupSummary = {
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Diana's basic attacks, Q, W, E and R", "Braum's E(Shield) can [[INTERCEPT_PROJECTILE]] Diana's Q", "Braum's P [[STUN]] cannot interrupt Diana's E. However, the [[STUN]] still applies.", "Braum's R [[AIRBORNE]] can interrupt Diana's E"],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 브라움 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Braum's E [[DASH]]."],
     },
   },
 };

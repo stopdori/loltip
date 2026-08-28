@@ -15,8 +15,8 @@ export const anivia_diana: MatchupSummary = {
       en: ["Q [[STUN]] cannot interrupt Diana's E [[DASH]]. \n However, [[STUN]] still applies.", "W [[TERRAIN]] [[AIRBORNE]] can interrupt Diana's E [[DASH]].", "W [[TERRAIN]] [[AIRBORNE]] can interrupt an ally being pulled by Diana's R [[GRAB]]. \n (theoretically)"],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Anivia's R [[SKILL_CHANNEL]]."],
     },
   },
 };

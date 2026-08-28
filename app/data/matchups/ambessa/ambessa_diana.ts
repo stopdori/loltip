@@ -14,8 +14,8 @@ export const ambessa_diana: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Diana's E [[DASH]].", "R [[UNSTOPPABLE]] can ignore Diana's R [[GRAB]]."],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 암베사 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Ambessa's P [[DASH]]."],
     },
   },
 };

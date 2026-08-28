@@ -9,8 +9,8 @@ export const diana_tristana: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 트리스타나 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Tristana's W [[DASH]]."],
     },
     tristana: {
       ko: [],

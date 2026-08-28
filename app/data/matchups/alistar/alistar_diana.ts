@@ -15,8 +15,8 @@ export const alistar_diana: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Diana's E [[DASH]].", "E [[STUN]] cannot interrupt Diana's E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Diana's R [[SLOW]] and [[AIRBORNE]]."],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 알리스타 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Alistar's W [[DASH]]."],
     },
   },
 };

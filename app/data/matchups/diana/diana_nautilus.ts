@@ -9,8 +9,8 @@ export const diana_nautilus: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 노틸러스 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Nautilus's Q [[DASH]]."],
     },
     nautilus: {
       ko: [],

@@ -22,8 +22,8 @@ export const briar_diana: MatchupSummary = {
         "Briar's R2 [[HOMING]] [[DASH]] can follow Diana's E [[DASH]]. \n However, [[HOMING]] ends upon colliding with Diana."],
     },
     diana: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[GRAB]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Briar's Q and W [[DASH]]."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const diana_fizz: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 피즈 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Fizz's Q [[DASH]]."],
     },
     fizz: {
       ko: [],

@@ -9,8 +9,8 @@ export const diana_qiyana: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 키아나 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Qiyana's W and E [[DASH]]."],
     },
     qiyana: {
       ko: [],

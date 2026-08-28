@@ -9,8 +9,8 @@ export const diana_viego: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 비에고 W의 [[SKILL_CHARGED]], [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Viego's W [[SKILL_CHARGED]] [[DASH]]."],
     },
     viego: {
       ko: [],

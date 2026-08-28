@@ -9,8 +9,8 @@ export const diana_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[GRAB]]으로 스카너 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Skarner's E (wall movement) [[SKILL_CHANNEL]] [[DASH]]."],
     },
     skarner: {
       ko: [],
