@@ -14,8 +14,8 @@ export const belveth_janna: MatchupSummary = {
       en: [""],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 벨베스 Q의 [[DASH]], E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Bel'Veth's Q [[DASH]] and E [[SKILL_CHANNEL]]."],
     },
   },
 };

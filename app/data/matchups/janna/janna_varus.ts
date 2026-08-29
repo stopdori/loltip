@@ -9,8 +9,8 @@ export const janna_varus: MatchupSummary = {
   },
   highlightsByChamp: {
     janna: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 바루스 Q의 [[SKILL_CHARGED]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Varus's Q [[SKILL_CHARGED]]."],
     },
     varus: {
       ko: [],

@@ -17,8 +17,8 @@ export const briar_janna: MatchupSummary = {
         "Briar's R1 [[CC_IMMUNE]] and R2 [[UNSTOPPABLE]] can ignore Janna's Q [[AIRBORNE]] and R [[KNOCKBACK]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Briar's Q and W [[DASH]]."],
     },
   },
 };

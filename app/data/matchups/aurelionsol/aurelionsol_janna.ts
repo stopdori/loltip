@@ -13,8 +13,8 @@ export const aurelionsol_janna: MatchupSummary = {
       en: ["R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Janna's R [[SKILL_CHANNEL]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 아우렐리온 솔 Q의 [[SKILL_CHANNEL]], W의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Aurelion Sol's Q [[SKILL_CHANNEL]] and W [[SKILL_CHANNEL]] [[DASH]]."],
     },
   },
 };

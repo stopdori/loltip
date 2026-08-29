@@ -9,8 +9,8 @@ export const janna_twistedfate: MatchupSummary = {
   },
   highlightsByChamp: {
     janna: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 트위스티드 페이트 R2의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Twisted Fate's R2 [[SKILL_CHANNEL]]."],
     },
     twistedfate: {
       ko: [],

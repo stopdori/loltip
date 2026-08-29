@@ -9,8 +9,8 @@ export const janna_kindred: MatchupSummary = {
   },
   highlightsByChamp: {
     janna: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 킨드레드 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Kindred's Q [[DASH]]."],
     },
     kindred: {
       ko: [],

@@ -13,8 +13,8 @@ export const diana_janna: MatchupSummary = {
       en: ["R [[GRAB]] can interrupt Janna's R [[SKILL_CHANNEL]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 다이애나 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Diana's E [[DASH]]."],
     },
   },
 };

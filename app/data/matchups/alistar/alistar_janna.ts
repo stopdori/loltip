@@ -14,8 +14,8 @@ export const alistar_janna: MatchupSummary = {
       en: ["Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] can interrupt Janna's R [[SKILL_CHANNEL]].", "R [[CC_CLEANSE]] can cleanse Janna's Q [[AIRBORNE]], W [[SLOW]], and R [[KNOCKBACK]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 알리스타 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Alistar's W [[DASH]]."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const janna_leblanc: MatchupSummary = {
   },
   highlightsByChamp: {
     janna: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 르블랑 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt LeBlanc's W [[DASH]]."],
     },
     leblanc: {
       ko: [],

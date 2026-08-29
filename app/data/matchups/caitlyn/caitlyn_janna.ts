@@ -13,8 +13,8 @@ export const caitlyn_janna: MatchupSummary = {
       en: ["Caitlyn's activated W's ([[TRAP]]) [[ROOT]] cannot interrupt Janna's R [[SKILL_CHANNEL]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 케이틀린 E의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Caitlyn's E [[DASH]] and R [[SKILL_CHANNEL]]."],
     },
   },
 };

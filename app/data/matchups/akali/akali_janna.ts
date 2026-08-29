@@ -13,8 +13,8 @@ export const akali_janna: MatchupSummary = {
       en: [],
     },
     janna: {
-      ko: ["잔나 Q, R로 아칼리 E, E2, R, R2 를 끊을 수 있음"],
-      en: ["Janna's Q and R can interrupt Akali's E, E2, R and R2"],
+      ko: ["잔나 Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 아칼리 E, E2, R, R2 를 끊을 수 있음"],
+      en: ["Janna's Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Akali's E, E2, R and R2"],
     },
   },
 };

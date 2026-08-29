@@ -13,8 +13,8 @@ export const gnar_janna: MatchupSummary = {
       en: [""],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 나르 미니폼 / 메가폼 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Gnar's Mini form / Mega form E [[DASH]]."],
     },
   },
 };

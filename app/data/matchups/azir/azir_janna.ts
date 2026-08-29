@@ -13,8 +13,8 @@ export const azir_janna: MatchupSummary = {
       en: ["Azir's R [[KNOCKBACK]] can interrupt Janna's R [[SKILL_CHANNEL]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 아지르 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Azir's E [[DASH]]."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const amumu_janna: MatchupSummary = {
       en: ["Q and R [[STUN]] can interrupt Janna's R [[SKILL_CHANNEL]].", "Q [[CC_BUFFER]] can ignore Janna's Q [[AIRBORNE]] and R [[KNOCKBACK]] and continue [[DASH]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Amumu's Q [[DASH]]."],
     },
   },
 };

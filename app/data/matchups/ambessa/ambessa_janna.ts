@@ -14,8 +14,8 @@ export const ambessa_janna: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Janna's R [[SKILL_CHANNEL]].", "R [[UNSTOPPABLE]] can ignore Janna's Q and R [[AIRBORNE]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 암베사 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Ambessa's P [[DASH]]."],
     },
   },
 };

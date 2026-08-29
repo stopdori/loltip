@@ -9,8 +9,8 @@ export const janna_masteryi: MatchupSummary = {
   },
   highlightsByChamp: {
     janna: {
-      ko: [""],
-      en: [""],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 마스터 이 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Master Yi's W [[SKILL_CHANNEL]]."],
     },
     masteryi: {
       ko: [],

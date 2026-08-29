@@ -13,8 +13,8 @@ export const braum_janna: MatchupSummary = {
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] against Janna's basic attacks, Q and W.", "Braum's E(Shield) can [[INTERCEPT_PROJECTILE]] Janna's basic attacks, Q and W.\nHowever, Janna's Q is instantly destroyed, deals no damage, but [[AIRBORNE]] still applies.", "Braum's Q [[STUN]] and R [[AIRBORNE]] can interrupt Janna's R (channeling)."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 브라움 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Braum's E [[DASH]]."],
     },
   },
 };

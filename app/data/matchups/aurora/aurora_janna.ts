@@ -16,8 +16,8 @@ export const aurora_janna: MatchupSummary = {
         "R [[UNSTOPPABLE]] [[DASH]] can ignore Janna's Q [[AIRBORNE]] and R [[KNOCKBACK]] and continue [[DASH]]."],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Aurora's W and E [[DASH]]."],
     },
   },
 };

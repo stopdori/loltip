@@ -13,8 +13,8 @@ export const corki_janna: MatchupSummary = {
       en: [""],
     },
     janna: {
-      ko: [],
-      en: [],
+      ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 코르키 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Corki's W [[DASH]]."],
     },
   },
 };
