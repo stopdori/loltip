@@ -9,8 +9,8 @@ export const draven_rakan: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 라칸 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Rakan's W and E [[DASH]]."],
     },
     rakan: {
       ko: [],

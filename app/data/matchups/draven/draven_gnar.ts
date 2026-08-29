@@ -9,8 +9,8 @@ export const draven_gnar: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 나르 미니폼 / 메가폼 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Gnar's Mini form / Mega form E [[DASH]]."],
     },
     gnar: {
       ko: [],

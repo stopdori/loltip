@@ -9,8 +9,8 @@ export const draven_nautilus: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 노틸러스 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Nautilus's Q [[DASH]]."],
     },
     nautilus: {
       ko: [],

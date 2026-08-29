@@ -9,8 +9,8 @@ export const draven_leblanc: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 르블랑 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt LeBlanc's W [[DASH]]."],
     },
     leblanc: {
       ko: [],

@@ -17,8 +17,8 @@ export const briar_draven: MatchupSummary = {
       ],
     },
     draven: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Briar's Q and W [[DASH]]."],
     },
   },
 };

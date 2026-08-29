@@ -9,8 +9,8 @@ export const draven_jayce: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 제이스 해머폼 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Jayce's Hammer Form Q [[DASH]]."],
     },
     jayce: {
       ko: [],

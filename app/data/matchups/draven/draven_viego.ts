@@ -9,8 +9,8 @@ export const draven_viego: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 비에고 W의 [[SKILL_CHARGED]], [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Viego's W [[SKILL_CHARGED]] [[DASH]]."],
     },
     viego: {
       ko: [],

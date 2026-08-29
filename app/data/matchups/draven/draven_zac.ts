@@ -9,8 +9,8 @@ export const draven_zac: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 자크 E의 [[SKILL_CHANNEL]], [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Zac's E [[SKILL_CHANNEL]] [[DASH]]."],
     },
     zac: {
       ko: [],

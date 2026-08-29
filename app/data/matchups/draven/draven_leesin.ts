@@ -9,8 +9,8 @@ export const draven_leesin: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 리 신 Q2, W1의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Lee Sin's Q2 and W1 [[DASH]]."],
     },
     leesin: {
       ko: [],

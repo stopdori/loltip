@@ -9,8 +9,8 @@ export const draven_ornn: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 오른 E, R2의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Ornn's E and R2 [[DASH]]."],
     },
     ornn: {
       ko: [],

@@ -13,8 +13,8 @@ export const alistar_draven: MatchupSummary = {
       en: ["R [[CC_CLEANSE]] can cleanse Draven's E [[SLOW]] and [[AIRBORNE]]."],
     },
     draven: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]으로 알리스타 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Alistar's W [[DASH]]."],
     },
   },
 };

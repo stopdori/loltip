@@ -9,8 +9,8 @@ export const draven_jarvaniv: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 자르반 EQ의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Jarvan IV's EQ [[DASH]]."],
     },
     jarvaniv: {
       ko: [],

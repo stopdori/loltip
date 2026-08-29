@@ -9,8 +9,8 @@ export const draven_katarina: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 카타리나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Katarina's R [[SKILL_CHANNEL]]."],
     },
     katarina: {
       ko: [],

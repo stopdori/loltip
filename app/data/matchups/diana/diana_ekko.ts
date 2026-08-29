@@ -9,8 +9,8 @@ export const diana_ekko: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: ["R의 [[GRAB]]으로 에코 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["R [[GRAB]] can interrupt Ekko's Q [[DASH]]."],
+      ko: ["R의 [[GRAB]]으로 에코 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["R [[GRAB]] can interrupt Ekko's E [[DASH]]."],
     },
     ekko: {
       ko: [],

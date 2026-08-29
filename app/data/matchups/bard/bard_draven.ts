@@ -13,8 +13,8 @@ export const bard_draven: MatchupSummary = {
       en: [],
     },
     draven: {
-      ko: ["드레이븐이 Q(도끼)가 떨어지는 지점에서 바드 R(존야)을 맞으면, 도끼를 받을 수 있음."],
-      en: [],
+      ko: ["드레이븐이 Q(회전 도끼)를 받으려고 할 때, 바드 R(존야)의 [[STASIS]]에 걸린다면 \n Q를 받을 수 있음."],
+      en: ["If Draven gets hit by Bard's R (like Zhonya's Hourglass) [[STASIS]] while trying to pick up his Q (Spinning Axe), \n he can still pick it up."],
     },
   },
 };

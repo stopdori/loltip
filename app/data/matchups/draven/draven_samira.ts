@@ -9,8 +9,8 @@ export const draven_samira: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 사미라 E의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Samira's E [[DASH]] and R [[SKILL_CHANNEL]]."],
     },
     samira: {
       ko: [],

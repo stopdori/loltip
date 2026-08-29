@@ -13,8 +13,8 @@ export const braum_draven: MatchupSummary = {
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Draven's basic attacks, Q (basic attacks), E and R", "Braum's E(Shield) can [[INTERCEPT_PROJECTILE]] Draven's basic attacks, Q (basic attacks), E and R.\nHowever, Draven's E projectile is deleted on contact with Braum's E(Shield), but E's [[SLOW]] and [[KNOCKBACK]] still apply."],
     },
     draven: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]으로 브라움 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Braum's E [[DASH]]."],
     },
   },
 };

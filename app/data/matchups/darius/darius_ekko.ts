@@ -9,8 +9,8 @@ export const darius_ekko: MatchupSummary = {
   },
   highlightsByChamp: {
     darius: {
-      ko: ["E의 [[GRAB]]으로 에코 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[GRAB]] can interrupt Ekko's Q [[DASH]]."],
+      ko: ["E의 [[GRAB]]으로 에코 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[GRAB]] can interrupt Ekko's E [[DASH]]."],
     },
     ekko: {
       ko: [],

@@ -9,8 +9,8 @@ export const draven_renekton: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 레넥톤 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Renekton's E [[DASH]]."],
     },
     renekton: {
       ko: [],

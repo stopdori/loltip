@@ -13,8 +13,8 @@ export const aatrox_draven: MatchupSummary = {
       en: [],
     },
     draven: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]으로 아트록스 E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Aatrox's E [[DASH]]."],
     },
   },
 };

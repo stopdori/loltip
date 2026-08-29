@@ -9,8 +9,8 @@ export const draven_sejuani: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 세주아니 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Sejuani's Q [[DASH]]."],
     },
     sejuani: {
       ko: [],

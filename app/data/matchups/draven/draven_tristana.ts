@@ -9,8 +9,8 @@ export const draven_tristana: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 트리스타나 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Tristana's W [[DASH]]."],
     },
     tristana: {
       ko: [],

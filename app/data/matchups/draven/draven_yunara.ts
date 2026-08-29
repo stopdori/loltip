@@ -9,8 +9,8 @@ export const draven_yunara: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 유나라 RE의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Yunara's RE [[DASH]]."],
     },
     yunara: {
       ko: [],

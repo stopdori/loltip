@@ -13,8 +13,8 @@ export const amumu_draven: MatchupSummary = {
       en: ["Q [[CC_BUFFER]] can ignore Draven's E [[AIRBORNE]] and continue [[DASH]]."],
     },
     draven: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Amumu's Q [[DASH]]."],
     },
   },
 };

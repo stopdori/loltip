@@ -9,8 +9,8 @@ export const draven_tahmkench: MatchupSummary = {
   },
   highlightsByChamp: {
     draven: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]]으로 탐켄치 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Tahm Kench's W [[SKILL_CHANNEL]]."],
     },
     tahmkench: {
       ko: [],

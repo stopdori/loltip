@@ -13,8 +13,8 @@ export const ambessa_draven: MatchupSummary = {
       en: ["R [[UNSTOPPABLE]] can ignore Draven's E [[KNOCKBACK]]."],
     },
     draven: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]]으로 암베사 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] can interrupt Ambessa's P [[DASH]]."],
     },
   },
 };
