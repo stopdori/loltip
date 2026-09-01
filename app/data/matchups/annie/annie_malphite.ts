@@ -13,8 +13,12 @@ export const annie_malphite: MatchupSummary = {
       en: [],
     },
     malphite: {
-      ko: ["R의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음."],
-      en: ["Malphite's R [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne."],
+      ko: ["R의 [[AIRBORNE]]으로 애니 R로 [[SUMMON]]된 티버를 [[AIRBORNE]] 할 수 있음.", 
+        "R의 [[UNSTOPPABLE]]로 애니 Q의 [[STUN]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."
+      ],
+      en: ["Malphite's R [[AIRBORNE]] can send Annie's R [[SUMMON]]ed Tibbers airborne.",
+        "R [[UNSTOPPABLE]] can ignore Annie's Q [[STUN]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."
+      ],
     },
   },
 };

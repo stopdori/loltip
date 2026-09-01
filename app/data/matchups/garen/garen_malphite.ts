@@ -13,8 +13,8 @@ export const garen_malphite: MatchupSummary = {
       en: [""],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 가렌 Q의 [[SILENCE]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[SILENCE]]은 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Garen's Q [[SILENCE]]. \n However, [[SILENCE]] remains after [[UNSTOPPABLE]] ends."],
     },
   },
 };

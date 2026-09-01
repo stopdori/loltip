@@ -13,8 +13,8 @@ export const aatrox_malphite: MatchupSummary = {
       en: [],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Aatrox's Q [[AIRBORNE]] and W [[GRAB]]."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const kayn_malphite: MatchupSummary = {
       en: [""],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 다르킨 W의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Kayn (Darkin) W [[AIRBORNE]]."],
     },
   },
 };

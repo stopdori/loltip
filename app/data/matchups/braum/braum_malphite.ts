@@ -13,8 +13,8 @@ export const braum_malphite: MatchupSummary = {
       en: ["Braum's E (shield) can [[DAMAGE_NULLIFY]] Malphite's basic attacks, Q, W (basic attacks, shockwave), E, and R.\nNote: Malphite's E [[AS_DOWN]] and R [[AIRBORNE]] still apply.","Braum's E (shield) can [[INTERCEPT_PROJECTILE]] Malphite's Q.\nNote: Malphite's Q [[SLOW]] and Malphite's own [[MS_UP]] remain effective"],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 브라움 Q의 [[STUN]], R의 [[AIRBORNE]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Braum's Q [[STUN]] and R [[AIRBORNE]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
     },
   },
 };

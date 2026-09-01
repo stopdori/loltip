@@ -9,8 +9,8 @@ export const malphite_quinn: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 퀸 E의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Quinn's E [[KNOCKBACK]]."],
     },
     quinn: {
       ko: [],

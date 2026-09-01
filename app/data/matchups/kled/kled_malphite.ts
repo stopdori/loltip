@@ -13,8 +13,8 @@ export const kled_malphite: MatchupSummary = {
       en: [""],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 클레드 승마폼 Q의 [[GRAB]], R의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Kled's Mounted Form Q [[GRAB]] and R [[KNOCKBACK]]."],
     },
   },
 };

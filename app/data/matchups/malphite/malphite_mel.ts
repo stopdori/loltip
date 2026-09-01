@@ -9,12 +9,12 @@ export const malphite_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: ["멜 W가 말파이트 Q 반사 가능."],
-      en: ["Mel’s W reflects Malphite’s Q"],
+      ko: ["R의 [[UNSTOPPABLE]]로 멜 E의 [[ROOT]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[ROOT]]은 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Mel's E [[ROOT]]. \n However, [[ROOT]] remains after [[UNSTOPPABLE]] ends."],
     },
     mel: {
-      ko: [],
-      en: [],
+      ko: ["멜 W의 [[REFLECT]]로 말파이트 Q의 [[PROJECTILE]]를 반사할 수 있음."],
+      en: ["W [[REFLECT]] can reflect Malphite's Q [[PROJECTILE]]."],
     },
   },
 };

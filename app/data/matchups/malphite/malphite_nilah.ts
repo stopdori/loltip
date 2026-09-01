@@ -9,8 +9,8 @@ export const malphite_nilah: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 닐라 R의 [[GRAB]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Nilah's R [[GRAB]]."],
     },
     nilah: {
       ko: [],

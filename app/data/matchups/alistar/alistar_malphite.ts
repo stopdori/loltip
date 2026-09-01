@@ -13,8 +13,8 @@ export const alistar_malphite: MatchupSummary = {
       en: ["R [[CC_CLEANSE]] can cleanse Malphite's Q [[SLOW]] and R [[AIRBORNE]]."],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Alistar's Q [[AIRBORNE]], W [[KNOCKBACK]] and E [[STUN]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const fizz_malphite: MatchupSummary = {
       en: [""],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 피즈 R의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Fizz's R [[AIRBORNE]]."],
     },
   },
 };

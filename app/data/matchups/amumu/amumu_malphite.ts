@@ -14,8 +14,8 @@ export const amumu_malphite: MatchupSummary = {
       en: ["Q [[STUN]] cannot interrupt Malphite's R [[DASH]]. \n However, the [[STUN]] still applies.", "Q [[CC_BUFFER]] can ignore Malphite's R [[AIRBORNE]] and continue [[DASH]]."],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 아무무 Q, R의 [[STUN]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Amumu's Q and R [[STUN]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
     },
   },
 };

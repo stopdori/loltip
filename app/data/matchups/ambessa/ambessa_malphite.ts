@@ -13,8 +13,8 @@ export const ambessa_malphite: MatchupSummary = {
       en: ["R [[UNSTOPPABLE]] can ignore Malphite's R [[AIRBORNE]]. \n However, [[AIRBORNE]] still applies."],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 암베사 R의 [[SUPPRESS]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Ambessa's R [[SUPPRESS]]."],
     },
   },
 };

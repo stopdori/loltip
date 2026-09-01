@@ -17,8 +17,8 @@ export const briar_malphite: MatchupSummary = {
         "R2 [[HOMING]] [[DASH]] can follow Malphite's R [[UNSTOPPABLE]] [[DASH]]. \n However, the [[HOMING]] ends upon colliding with Malphite."],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 브라이어 Q의 [[STUN]], E의 [[KNOCKBACK]], R2의 [[FEAR]]를 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]], [[FEAR]]는 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Briar's Q [[STUN]], E [[KNOCKBACK]] and R2 [[FEAR]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
     },
   },
 };

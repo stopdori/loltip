@@ -9,8 +9,8 @@ export const malphite_wukong: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 오공 R의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Wukong's R [[AIRBORNE]]."],
     },
     wukong: {
       ko: [],

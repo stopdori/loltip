@@ -9,8 +9,8 @@ export const malphite_reksai: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 렉사이 매복폼 W의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Rek'Sai's Burrowed Form W [[AIRBORNE]]."],
     },
     reksai: {
       ko: [],

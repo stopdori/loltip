@@ -9,8 +9,8 @@ export const malphite_zaahen: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 자헨 W의 [[GRAB]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Zaahen's W [[GRAB]]."],
     },
     zaahen: {
       ko: [],

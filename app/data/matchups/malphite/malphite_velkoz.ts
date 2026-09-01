@@ -9,8 +9,8 @@ export const malphite_velkoz: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 벨코즈 E의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Vel'Koz's E [[AIRBORNE]]."],
     },
     velkoz: {
       ko: [],

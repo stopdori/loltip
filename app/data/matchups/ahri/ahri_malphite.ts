@@ -13,8 +13,8 @@ export const ahri_malphite: MatchupSummary = {
       en: [],
     },
     malphite: {
-      ko: ["말파이트 R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 무시할 수 있음. \n 단, [[CHARM]]은 남아있음."],
-      en: ["Malphite's R [[UNSTOPPABLE]] can ignore Ahri's E [[CHARM]]. \n However, the [[CHARM]] still applies."],
+      ko: ["R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[CHARM]]은 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Ahri's E [[CHARM]]. \n However, [[CHARM]] remains after [[UNSTOPPABLE]] ends."],
     },
   },
 };

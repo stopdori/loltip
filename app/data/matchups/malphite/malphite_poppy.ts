@@ -9,8 +9,8 @@ export const malphite_poppy: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 뽀삐 W의 [[ANTI_DASH]] / E의 [[KNOCKBACK]] / R의 [[AIRBORNE]], [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Poppy's W [[ANTI_DASH]] / E [[KNOCKBACK]] / R [[AIRBORNE]] and [[KNOCKBACK]]."],
     },
     poppy: {
       ko: [],

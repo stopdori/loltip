@@ -13,8 +13,8 @@ export const gragas_malphite: MatchupSummary = {
       en: ["No special notes"],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 그라가스 E, R의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Gragas's E and R [[KNOCKBACK]]."],
     },
   },
 };

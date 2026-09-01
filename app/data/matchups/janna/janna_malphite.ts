@@ -13,8 +13,8 @@ export const janna_malphite: MatchupSummary = {
       en: [""],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 잔나 Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Janna's Q [[AIRBORNE]] and R [[KNOCKBACK]]."],
     },
   },
 };

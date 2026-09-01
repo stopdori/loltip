@@ -13,8 +13,8 @@ export const jayce_malphite: MatchupSummary = {
       en: [""],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 제이스 해머폼 E의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Jayce's Hammer Form E [[KNOCKBACK]]."],
     },
   },
 };

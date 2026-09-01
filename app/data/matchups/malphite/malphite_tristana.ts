@@ -9,8 +9,8 @@ export const malphite_tristana: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 트리스타나 R의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Tristana's R [[KNOCKBACK]]."],
     },
     tristana: {
       ko: [],

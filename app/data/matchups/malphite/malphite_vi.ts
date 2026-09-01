@@ -9,8 +9,8 @@ export const malphite_vi: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 바이 Q의 [[KNOCKBACK]] / R의 [[AIRBORNE]], [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Vi's Q [[KNOCKBACK]] / R [[AIRBORNE]] and [[KNOCKBACK]]."],
     },
     vi: {
       ko: [],

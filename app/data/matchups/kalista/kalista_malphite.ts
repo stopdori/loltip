@@ -13,8 +13,8 @@ export const kalista_malphite: MatchupSummary = {
       en: [""],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 칼리스타 R2의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Kalista's R2 [[AIRBORNE]]."],
     },
   },
 };

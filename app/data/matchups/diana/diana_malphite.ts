@@ -13,8 +13,8 @@ export const diana_malphite: MatchupSummary = {
       en: [""],
     },
     malphite: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 다이애나 R의 [[GRAB]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Diana's R [[GRAB]]."],
     },
   },
 };
