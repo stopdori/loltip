@@ -2,8 +2,10 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-const HASTES = [0, 10, 20, 30, 40, 50, 60, 70, 80] as const;
+const HASTES = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] as const;
 const LEVELS = [6, 11, 16] as const;
+
+const MAX_HASTE = 100;
 
 type UltCooldownMap = Partial<Record<(typeof LEVELS)[number], number>>;
 
@@ -52,58 +54,6 @@ export default function UltCooldownBox({
 
   return (
     <div className="rounded-xl bg-slate-900/30 ring-1 ring-white/10 p-4 space-y-4 min-h-[96px]">
-      {/* 스킬가속 */}
-      <div className="flex items-start gap-0">
-        <span className="text-sm font-semibold text-slate-200 shrink-0 w-[60px]">
-          {hasteLabel}
-        </span>
-
-        <div className={`flex-1 ${disabledCls}`}>
-          <div className="flex items-center gap-3">
-            {/* ✅ 원래 높이(range 그대로) + 눈금만 겹치기 */}
-            <div className="relative w-full">
-  <input
-    type="range"
-    min={0}
-    max={80}
-    step={5}
-    value={haste}
-    onChange={(e) =>
-      setHaste(Number(e.target.value) as (typeof HASTES)[number])
-    }
-    className="w-full accent-sky-400"
-    disabled={!hasData}
-  />
-
-  {/* ✅ 눈금(20/40/60만) */}
-  <div className="pointer-events-none absolute left-0 right-0 top-11/30 -translate-y-1/2 flex justify-between px-[2px]">
-    {Array.from({ length: 5 }).map((_, i) => (
-      <span
-        key={i}
-        className={`h-2 w-[2px] rounded ${
-          i === 0 || i === 4 ? "bg-transparent" : "bg-black"
-        }`}
-      />
-    ))}
-  </div>
-
-  {/* ✅ 동그라미(숫자)만 오버레이 */}
-  <div
-    className="pointer-events-none absolute top-2/5 -translate-y-1/2"
-    style={{ left: `${(haste / 80) * 100}%` }}
-  >
-    <div className="w-6 h-6 -translate-x-1/2 rounded-full bg-slate-900 ring-2 ring-sky-400 flex items-center justify-center text-[11px] font-black text-sky-300">
-      {haste}
-    </div>
-  </div>
-</div>
-
-
-          
-          </div>
-        </div>
-      </div>
-
       {/* 궁 레벨 + 쿨타임 */}
       <div className="flex items-start gap-0">
         <span className="text-sm font-semibold text-slate-200 shrink-0 w-[60px]">
@@ -141,7 +91,7 @@ export default function UltCooldownBox({
 
 >
 
-      <div className="w-6 h-6 -translate-x-1/2 rounded-full bg-slate-900 ring-2 ring-yellow-300 flex items-center justify-center text-[11px] font-black text-yellow-200">
+      <div className="w-[30px] h-[30px] -translate-x-1/2 rounded-full bg-slate-900 ring-2 ring-yellow-300 flex items-center justify-center text-[16px] font-black text-yellow-200">
         {level}
       </div>
     </div>
@@ -153,18 +103,70 @@ export default function UltCooldownBox({
             {!hasData || !base ? (
               <span className="text-slate-400">--s</span>
             ) : haste === 0 ? (
-              <span className={`${cdClassName} text-[17px] font-black`}>{cd}s</span>
+              <span className={`${cdClassName} text-xl font-black`}>{cd}s</span>
             ) : (
               <>
                 <span className="text-slate-100 text-[12px] font-semibold">
                   {base}s
                 </span>
                 <span className="mx-1 text-slate-100">→</span>
-                <span className={`${cdClassName} text-[17px] font-black`}>{cd}s</span>
+                <span className={`${cdClassName} text-xl font-black`}>{cd}s</span>
 
               </>
             )}
           </span>
+        </div>
+      </div>
+
+      {/* 스킬가속 */}
+      <div className="flex items-start gap-0">
+        <span className="text-sm font-semibold text-slate-200 shrink-0 w-[60px]">
+          {hasteLabel}
+        </span>
+
+        <div className={`flex-1 ${disabledCls}`}>
+          <div className="flex items-center gap-3">
+            {/* ✅ 원래 높이(range 그대로) + 눈금만 겹치기 */}
+            <div className="relative w-full">
+  <input
+    type="range"
+    min={0}
+    max={MAX_HASTE}
+    step={5}
+    value={haste}
+    onChange={(e) =>
+      setHaste(Number(e.target.value) as (typeof HASTES)[number])
+    }
+    className="w-full accent-sky-400"
+    disabled={!hasData}
+  />
+
+  {/* ✅ 눈금(25/50/75만, 양끝은 숨김) */}
+  <div className="pointer-events-none absolute left-0 right-0 top-11/30 -translate-y-1/2 flex justify-between px-[2px]">
+    {Array.from({ length: 5 }).map((_, i) => (
+      <span
+        key={i}
+        className={`h-2 w-[2px] rounded ${
+          i === 0 || i === 4 ? "bg-transparent" : "bg-black"
+        }`}
+      />
+    ))}
+  </div>
+
+  {/* ✅ 동그라미(숫자)만 오버레이 */}
+  <div
+    className="pointer-events-none absolute top-2/5 -translate-y-1/2"
+    style={{ left: `${(haste / MAX_HASTE) * 100}%` }}
+  >
+    <div className="w-[30px] h-[30px] -translate-x-1/2 rounded-full bg-slate-900 ring-2 ring-sky-400 flex items-center justify-center text-[16px] font-black text-sky-300">
+      {haste}
+    </div>
+  </div>
+</div>
+
+
+
+          </div>
         </div>
       </div>
     </div>
