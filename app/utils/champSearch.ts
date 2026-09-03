@@ -127,27 +127,41 @@ export function normalize(str: string) {
  * 챔피언 하나에 대한 검색 키를 본명(ko/en/id + 초성/두벌식 변환값)과
  * 별칭(aliases.ko/aliases.en + 그 변환값)으로 분리해서 반환한다.
  * filterChampions가 "본명 매칭 우선, 별칭 매칭 후순위"로 정렬하는 데 쓰인다.
+ *
+ * lang === "ko": 한글 이름/초성/두벌식/한글 별칭 + 영문 이름/id/영문 별칭 전부 포함
+ *   (한국 사용자가 영문 챔피언명으로 검색하는 경우도 많아서 영어 매칭은 유지).
+ * lang === "en": 한글 관련 변환(hangulToInitials/hangulToDubeol/initialsToDubeol)을
+ *   전부 건너뛰고 영문 이름/id/영문 별칭만 매칭 대상으로 삼는다.
+ *   (예: EN 페이지에서 "at" 검색 시 이 값이 한글 초성으로 역변환("ㅁㅅ")되어
+ *   "마스터 이"(초성 ㅁㅅㅌㅇ)와 매칭되는 등, 의도치 않은 한글 매칭이 섞이는 걸 방지)
  */
-export function buildSearchKeys(c: Champ) {
+export function buildSearchKeys(c: Champ, lang: "ko" | "en") {
   const ko = c.ko ?? "";
   const koAliases = c.aliases?.ko ?? [];
   const enAliases = c.aliases?.en ?? [];
 
-  const baseKeys = [
-    ko,
-    c.en,
-    c.id,
-    hangulToInitials(ko),
-    hangulToDubeol(ko),
-    initialsToDubeol(hangulToInitials(ko)),
-  ]
+  const baseKeys = (
+    lang === "ko"
+      ? [
+          ko,
+          c.en,
+          c.id,
+          hangulToInitials(ko),
+          hangulToDubeol(ko),
+          initialsToDubeol(hangulToInitials(ko)),
+        ]
+      : [c.en, c.id]
+  )
     .map(normalize)
     .filter(Boolean);
 
-  const koAliasKeys = koAliases.flatMap((a) => {
-    const initials = hangulToInitials(a);
-    return [a, initials, hangulToDubeol(a), initialsToDubeol(initials)];
-  });
+  const koAliasKeys =
+    lang === "ko"
+      ? koAliases.flatMap((a) => {
+          const initials = hangulToInitials(a);
+          return [a, initials, hangulToDubeol(a), initialsToDubeol(initials)];
+        })
+      : [];
 
   const enAliasKeys = enAliases.map((a) => a.toLowerCase());
 
@@ -182,7 +196,8 @@ export function filterChampions(
   if (!key) return list;
 
   // 영어 키보드 입력을 한글 초성으로 역변환 (예: "dxft" → "ㅇㅌㄹㅅ")
-  const korKey = engToKorInitials(key);
+  // en 페이지에서는 한글 관련 매칭 자체를 쓰지 않으므로 역변환도 하지 않는다.
+  const korKey = lang === "ko" ? engToKorInitials(key) : null;
 
   const matchesPrefix = (keys: string[]) =>
     keys.some((k) => k.startsWith(key)) ||
@@ -202,7 +217,7 @@ export function filterChampions(
   const aliasSubstring: Champ[] = [];
 
   for (const c of list) {
-    const { baseKeys, aliasKeys } = buildSearchKeys(c);
+    const { baseKeys, aliasKeys } = buildSearchKeys(c, lang);
 
     if (matchesPrefix(baseKeys)) {
       baseNamePrefix.push(c);

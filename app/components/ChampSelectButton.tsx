@@ -37,57 +37,52 @@ export default function ChampSelectButton({
       onClick={onClick}
       role="button"
       tabIndex={0}
-      className="
-        group
-        relative
-        w-[130px] sm:w-[230px]
-        min-h-[70px] sm:min-h-[180px]
-        rounded-2xl
-        bg-slate-800/60 hover:bg-slate-700/60
-        transition
-        px-4 pt-2 pb-1 sm:pt-4 sm:pb-2
-        border border-white/10 hover:border-white/20
-        shadow-lg
-        flex flex-col items-center
-        cursor-pointer
-      "
+      className="group relative flex flex-col items-center cursor-pointer"
     >
+      {/* 챔피언 이름은 ChampMiniSearch 인풋 안에, 미선택 상태는 검색창의 돋보기
+          아이콘 + 아래 물음표 카드 아트로 이미 표시되므로 별도 텍스트 라벨은 두지 않음 */}
 
-      {/* 🔁 초기화 버튼 */}
-      <button
-        type="button"
-        onClick={handleClear}
-        className="
-          absolute top-2 right-2
-          w-7 h-7
-          rounded-full
-          bg-slate-900/80 hover:bg-yellow-400
-          text-slate-200 hover:text-black
-          border border-white/15
-          flex items-center justify-center
-          text-sm
-          transition
-          z-10
-        "
-        title="초기화"
+      {/* 바깥 카드 배경/테두리 없이 아이콘 자체만 남김. 크기는 원래 기준(72px/100px) 대비 1.5배 */}
+      <div
+        className={`relative w-[108px] h-[108px] sm:w-[150px] sm:h-[150px] rounded-xl overflow-hidden bg-slate-900/40 transition-transform duration-100 group-hover:scale-[1.03] ${
+          selected
+            ? "ring-2 ring-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]"
+            : "ring-1 ring-white/10"
+        }`}
       >
-        ⟳
-      </button>
-
-      <div className="h-6 sm:h-10 flex items-center justify-center text-xs sm:text-base font-semibold text-slate-300 text-center mb-1 sm:mb-2">
-        {selected ? title : lang === "en" ? "Select Champion" : "챔피언 선택"}
-      </div>
-
-      <div className="relative w-[72px] h-[72px] sm:w-[100px] sm:h-[100px] rounded-xl overflow-hidden bg-slate-900/40 border border-white/10">
         <Image
           src={imgSrc}
           alt={title}
           fill
           unoptimized
           priority
-          className="object-cover group-hover:scale-[1.03] transition"
-          sizes="120px"
+          className="object-cover"
+          sizes="180px"
         />
+
+        {/* 🔁 초기화 버튼: 아이콘 위 우측 상단 오버레이. 선택된 챔피언이 없으면
+            초기화할 대상 자체가 없으므로 렌더링하지 않음 */}
+        {selected && (
+          <button
+            type="button"
+            onClick={handleClear}
+            className="
+              absolute top-2 right-2
+              w-7 h-7
+              rounded-full
+              bg-black/60 hover:bg-yellow-400
+              text-yellow-400 hover:text-black
+              border border-white/20
+              flex items-center justify-center
+              text-sm
+              transition duration-100
+              z-10
+            "
+            title="초기화"
+          >
+            ⟳
+          </button>
+        )}
       </div>
       <div className="h-4 sm:h-10" />
     </div>

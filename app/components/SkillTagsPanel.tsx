@@ -312,8 +312,10 @@ function ToggleGroup({ children }: { children: ReactNode }) {
 }
 
 const toggleBtnBase = "px-2 py-1 rounded-lg text-[14px] font-bold transition";
-const toggleBtnOn = "bg-yellow-400 text-black";
-const toggleBtnOnForm = "bg-sky-500 text-black";
+// ChampSelectButton/UltCooldownBox와 동일한 "테두리+글로우" 강조 컨벤션
+// (배경 채우기 대신 ring + shadow로만 선택 상태를 표시)
+const toggleBtnOn = "ring-2 ring-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)] text-slate-200";
+const toggleBtnOnForm = "ring-2 ring-sky-400 shadow-[0_0_16px_rgba(56,189,248,0.5)] text-slate-200";
 const toggleBtnOff = "text-slate-200 hover:bg-slate-800/70";
 const toggleBtnDisabled = "bg-slate-800/30 text-slate-500 cursor-default";
 
