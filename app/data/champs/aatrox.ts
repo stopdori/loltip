@@ -7,7 +7,7 @@ const aatrox: ChampData = {
     Q: ["Q_FLASH", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"],
     W: { phases: [
       { label: { ko: "W", en: "W" }, tags: ["W_FLASH", "TETHER", "SLOW", "TRUE_SIGHT"] },
-      { label: { ko: "사슬효과 발동", en: "Tether" }, tags: ["AIRBORNE"] },
+      { label: { ko: "사슬효과 발동", en: "Tether" }, tags: ["GRAB"] },
     ] },
 
     E: { phases: [
@@ -35,7 +35,7 @@ const aatrox: ChampData = {
 
     W: { phases: [
       { label: { ko: "투사체", en: "Projectile" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "SINGLE", "TETHER", "SLOW"] },
-      { label: { ko: "사슬", en: "Tether" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL"] },
+      { label: { ko: "사슬", en: "Tether" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "GRAB"] },
 ] },
 
     E: { phases: [
@@ -60,7 +60,7 @@ const aatrox: ChampData = {
         ko: [
             "P는 쿨타임이 있음 \n 준비되면 [[EMPOWERED]] [[BA]]에 대상의 최대 체력 비례 [[DMG_MAGIC]]. \n 피해량 100% [[HEAL]].",
 
-            "Q는 [[AOE]] [[DMG_PHYSICAL]]. \n 추가로 두 번 [[SKILL_RECAST]] 가능. \n Q1, Q2는 끝 / Q3는 중앙에 맞히면 \n [[AIRBORNE]] 추가와 증가한 [[DMG_PHYSICAL]]. \n Q2, Q3를 사용하지 않고 지속시간 종료 시 Q [[CDR]].", 
+            "Q는 [[AOE]] [[DMG_PHYSICAL]]. \n 추가로 두 번 [[SKILL_RECAST]] 가능. \n Q1, Q2는 끝 / Q3는 중앙에 맞히면 \n [[GRAB]] 추가와 증가한 [[DMG_PHYSICAL]]. \n Q2, Q3를 사용하지 않고 지속시간 종료 시 Q [[CDR]].", 
 
             "W로 [[DMG_PHYSICAL]], [[SLOW]], [[TETHER]]을 걸고 \n 대상이 벗어나지 못하면 중앙쪽으로 [[GRAB]], [[DMG_PHYSICAL]].",
 
@@ -73,7 +73,7 @@ const aatrox: ChampData = {
         en: [
             "P has a cooldown. \n When ready, [[EMPOWERED]] [[BA]] deals [[DMG_MAGIC]] based on the target's max health. \n Heals for 100% of damage dealt [[HEAL]].",
 
-            "Q deals [[AOE]] [[DMG_PHYSICAL]]. \n Can [[SKILL_RECAST]] twice more. \n Q1, Q2 sweetspot at the edge / Q3 sweetspot at the center: \n bonus [[AIRBORNE]] and increased [[DMG_PHYSICAL]]. \n If Q2, Q3 expire unused, Q gets [[CDR]].",
+            "Q deals [[AOE]] [[DMG_PHYSICAL]]. \n Can [[SKILL_RECAST]] twice more. \n Q1, Q2 sweetspot at the edge / Q3 sweetspot at the center: \n bonus [[GRAB]] and increased [[DMG_PHYSICAL]]. \n If Q2, Q3 expire unused, Q gets [[CDR]].",
 
             "W applies [[DMG_PHYSICAL]], [[SLOW]], and [[TETHER]]. \n If the target doesn't escape, they're pulled to the center with [[GRAB]] and [[DMG_PHYSICAL]].",
 
