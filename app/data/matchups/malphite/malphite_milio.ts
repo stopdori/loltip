@@ -9,12 +9,12 @@ export const malphite_milio: MatchupSummary = {
   },
   highlightsByChamp: {
     malphite: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 밀리오 Q의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Milio's Q [[KNOCKBACK]]."],
     },
     milio: {
-      ko: ["R의 [[UNSTOPPABLE]]로 밀리오 Q의 [[KNOCKBACK]], E의 [[STUN]]을 무시할 수 있음."],
-      en: ["R [[UNSTOPPABLE]] can ignore Milio's Q [[KNOCKBACK]] and E [[STUN]]."],
+      ko: [],
+      en: [],
     },
   },
 };
