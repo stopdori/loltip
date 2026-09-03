@@ -125,14 +125,34 @@ useEffect(() => {
     return () => window.removeEventListener('message', handler);
   }, [useIframe, myChamp, enemyChamp]);
 
+  // embed(iframe 내부) 역할: 부모(/matchup 페이지)가 리사이즈될 때 보내주는
+  // 실제 뷰포트 판정값을 받아 로컬 override로 저장. forceCompact prop은
+  // iframe 최초 로드 시점 URL(compact=)에서 온 값이라 이후 리사이즈에는
+  // 반응하지 못하므로, 이 값이 도착하면 그걸 우선 사용한다.
+  const [liveForceCompact, setLiveForceCompact] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const handler = (e: MessageEvent) => {
+      if (e.data?.type !== "champViewportSync") return;
+      if (typeof e.data.isMobileViewport !== "boolean") return;
+      setLiveForceCompact(e.data.isMobileViewport);
+    };
+    window.addEventListener("message", handler);
+    return () => window.removeEventListener("message", handler);
+  }, []);
+
+  const effectiveForceCompact = liveForceCompact ?? forceCompact;
+
   const [myUltCd, setMyUltCd] = useState<number | null>(null);
   const [enemyUltCd, setEnemyUltCd] = useState<number | null>(null);
   const [mobileTab, setMobileTab] = useState<"my" | "enemy">("my");
 
   // iframe(useIframe=true)일 때만 필요: iframe은 자신만의 좁은 뷰포트를 가지므로
   // iframe 내부의 sm: 미디어 쿼리가 부모 페이지의 실제 뷰포트를 반영하지 못한다.
-  // 그래서 이 컴포넌트(iframe이 아닌 실제 페이지)에서 뷰포트 폭을 한 번 판단해 iframe src에 넘겨준다.
-  // 초기 렌더링 시점 기준으로만 판단하고, 리사이즈에는 반응하지 않는다.
+  // 그래서 이 컴포넌트(iframe이 아닌 실제 페이지)에서 뷰포트 폭을 판단해 iframe src에 넘겨준다.
+  // 최초 src에는 마운트 시점 값을 그대로 쓰고(그래야 첫 로드부터 올바른 compact로 뜬다),
+  // 이후 리사이즈로 폭이 바뀌면 src를 바꿔 iframe을 재로드시키는 대신(그러면 iframe 내부의
+  // 탭/폼 선택 등 상태가 다 날아감) postMessage로 이미 떠 있는 iframe들에게 최신값만 알려준다.
   const [iframeViewportReady, setIframeViewportReady] = useState(false);
   const [isMobileViewport, setIsMobileViewport] = useState(false);
 
@@ -140,6 +160,28 @@ useEffect(() => {
     if (!useIframe) return;
     setIsMobileViewport(window.innerWidth < 640);
     setIframeViewportReady(true);
+
+    let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+    const syncViewportToIframes = () => {
+      const next = window.innerWidth < 640;
+      setIsMobileViewport((prev) => (prev === next ? prev : next));
+
+      const msg = { type: "champViewportSync", isMobileViewport: next };
+      const myFrame = document.getElementById("iframe-my") as HTMLIFrameElement | null;
+      const enemyFrame = document.getElementById("iframe-enemy") as HTMLIFrameElement | null;
+      myFrame?.contentWindow?.postMessage(msg, "*");
+      enemyFrame?.contentWindow?.postMessage(msg, "*");
+    };
+    const onResize = () => {
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(syncViewportToIframes, 150);
+    };
+
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+      if (resizeTimer) clearTimeout(resizeTimer);
+    };
   }, [useIframe]);
 
   const canCompare =
@@ -360,13 +402,6 @@ setOpenTarget(null);
 <div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-2 pb-3 ring-2 ring-black/40 min-w-0 sm:col-start-1 sm:flex ${myChamp && enemyChamp && mobileTab !== "my" ? "hidden sm:flex" : ""}`}>
 
 
-{/* 챔피언 이름 표시 */}
-<div className="hidden sm:block mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
-     {myChamp
-     ? (lang === "ko" ? myChamp.ko : myChamp.en)
-     : (lang === "ko" ? "챔피언" : "Champion")}
- </div>
-
   <div
     className={`rounded-2xl ring-2 transition ${
       myIsSooner
@@ -386,7 +421,7 @@ setOpenTarget(null);
   </div>
 
   <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-2">
-    <SkillTagsPanel champId={myChamp?.id ?? null} lang={lang} forceCompact={forceCompact} />
+    <SkillTagsPanel champId={myChamp?.id ?? null} lang={lang} forceCompact={effectiveForceCompact} />
   </div>
 </div>
 
@@ -398,13 +433,6 @@ setOpenTarget(null);
         {/* ENEMY */}
         {enemyChamp && (
 <div className={`flex flex-col w-full max-w-[430px] mx-auto rounded-3xl bg-slate-800/30 p-2 pb-3 ring-2 ring-black/40 min-w-0 sm:col-start-3 sm:flex ${myChamp && enemyChamp && mobileTab !== "enemy" ? "hidden sm:flex" : ""}`}>
-
-{/* 챔피언 이름 표시 */}
- <div className="hidden sm:block mb-3 text-center text-lg font-bold text-slate-200 tracking-wide truncate">
-   {enemyChamp
-     ? (lang === "ko" ? enemyChamp.ko : enemyChamp.en)
-     : (lang === "ko" ? "챔피언" : "Champion")}
- </div>
 
   <div
     className={`rounded-2xl ring-2 transition ${
@@ -425,7 +453,7 @@ setOpenTarget(null);
   </div>
 
   <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-2">
-    <SkillTagsPanel champId={enemyChamp?.id ?? null} lang={lang} forceCompact={forceCompact} />
+    <SkillTagsPanel champId={enemyChamp?.id ?? null} lang={lang} forceCompact={effectiveForceCompact} />
   </div>
 </div>
 

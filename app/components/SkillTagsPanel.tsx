@@ -128,11 +128,16 @@ function SkillLabelWithTip({
   tip,
   champId,
   skillKey,
+  forceCompact,
 }: {
   labelText: string;
   tip?: string;
   champId: string | null;
   skillKey: SkillKey;
+  /** undefined면 직접 페이지(실제 vw를 신뢰 가능) → vw 기반 폭 계산.
+   *  true/false면 iframe(embed) 컨텍스트 → iframe 내부 vw는 부모 페이지의
+   *  실제 뷰포트를 반영 못 하므로 vw 대신 고정폭 두 단계로 대체. */
+  forceCompact?: boolean;
 }) {
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
@@ -227,6 +232,18 @@ function SkillLabelWithTip({
 
   if (!tip) return iconVisual;
 
+  // iframe(embed) 안에서는 100vw가 부모 페이지가 아니라 iframe 자신의
+  // 좁은 내부 뷰포트(최대 430px)를 기준으로 계산돼서, vw 기반 max-w를
+  // 쓰면 실제 기기 폭과 무관하게 항상 좁게 잡힌다(직접 페이지의 416px보다
+  // 훨씬 좁아짐). forceCompact가 boolean으로 넘어오면(=iframe 컨텍스트)
+  // vw 대신 고정폭 두 단계로 대체해서 직접 페이지와 폭을 통일한다.
+  const tooltipWidthClass =
+    forceCompact === true
+      ? "w-[280px]"
+      : forceCompact === false
+      ? "w-[416px]"
+      : "w-[416px] max-w-[calc((100vw-24px)*0.8)]";
+
   return (
     <span
       ref={anchorRef}
@@ -251,11 +268,11 @@ function SkillLabelWithTip({
         >
           <span
             ref={tipRef}
-            className="block w-[416px] max-w-[calc((100vw-24px)*0.8)]
+            className={`block ${tooltipWidthClass}
                        whitespace-pre-line break-normal text-left
                        leading-snug rounded-lg bg-black/95
                        px-3 py-2 text-[14px] font-semibold
-                       text-slate-100 ring-1.5 ring-white/10 shadow-lg"
+                       text-slate-100 ring-1.5 ring-white/10 shadow-lg`}
           >
             <div className="flex items-center gap-2 mb-2">
               {champId && (
@@ -433,7 +450,7 @@ const renderNoteSection = (items: string[], title: string) => {
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className="w-10 shrink-0">
-            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} />
           </div>
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
@@ -484,7 +501,7 @@ const renderNoteSection = (items: string[], title: string) => {
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className="w-10 shrink-0">
-            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} />
           </div>
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
@@ -535,7 +552,7 @@ const renderNoteSection = (items: string[], title: string) => {
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className="w-10 shrink-0">
-            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} />
           </div>
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
@@ -581,6 +598,7 @@ const renderNoteSection = (items: string[], title: string) => {
           tip={spellTip}
           champId={champId}
           skillKey={k}
+          forceCompact={forceCompact}
         />
       </div>
 
