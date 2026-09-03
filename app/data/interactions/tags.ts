@@ -130,6 +130,7 @@ export type TagId =
   | "NEAR_SIGHT"
   | "BLIND"
   | "POLYMORPH"
+  | "BANISH"
   | "UNSTOPPABLE"
   | "BUFF_FORM"
   | "TRANSFORM"  // 폼변환
@@ -234,6 +235,7 @@ REFLECT: { ko: "반사", en: "Reflect" },
 WINDSHIELD: { ko: "장막", en: "Projectile Block" },
 BLOCKED: { ko: "방어", en: "Blocked" },
 POLYMORPH: { ko: "변이", en: "Polymorph" },
+BANISH: { ko: "추방", en: "Banish" },
 BERSERK: { ko: "광란", en: "Berserk" },
 ANTI_DASH: { ko: "돌진방해", en: "Anti-Dash" },
 GROUNDED: { ko: "이동금지", en: "Grounded" },
@@ -763,6 +765,10 @@ BLIND: {
 POLYMORPH: {
   ko: "동물로 만듦. \n 침묵, 무장해제, 고정 둔화(60) \n 고정 둔화는 둔화 저항을 무시함. \n (단, 둔화 면역은 무시 불가.)",
   en: "Transforms the target, \npreventing attacks and ability casts",
+},
+BANISH: {
+  ko: "대상을 시전자와 함께 격리된 위상(죽음의 세계)으로 추방. \n 두 공간은 서로 상호작용 불가.",
+  en: "Banishes the target along with the caster into an isolated realm (Death Realm). \n The two spaces cannot interact with each other.",
 },
 UNSTOPPABLE: {
   ko: "CC 계열을 맞아도 시전자의 스킬이 유효함\n단, 저지불가 상태에서 적중한 CC가\n저지불가 종료 이후에도 남아있다면 CC효과 발동",
