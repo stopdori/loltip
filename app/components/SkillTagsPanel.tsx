@@ -9,7 +9,7 @@ import type { GimmickSkillData } from "../data/interactions/types";
 import { CHAMPS } from "../data/champs/_index";
 import { CHAMP_FORMS, hasForms, type FormKey } from "../data/interactions/forms";
 import { useChampSpells } from "@/app/lib/useChampSpells";
-import { stripHtml, toDdragonId } from "@/app/lib/ddragon";
+import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from "@/app/lib/ddragon";
 import { toneOfTag, TONE_CLASS, NOTE_TONE_CLASS } from "../data/interactions/tagTone";
 import TokenText from "./TokenText";
 
@@ -192,7 +192,40 @@ function SkillLabelWithTip({
     return () => document.removeEventListener("touchstart", close);
   }, [open]);
 
-  if (!tip) return <span>{labelText}</span>;
+  // P/Q/W/E/R 아이콘 + 반투명 워터마크 글자 오버레이
+  const watermarkTone =
+    skillKey === "R"
+      ? "text-yellow-400/85"
+      : skillKey === "P"
+      ? "text-slate-200/85"
+      : "text-sky-300/85";
+
+  const iconVisual = (
+    <span className="relative block w-10 h-10 rounded-lg overflow-hidden ring-1 ring-white/10 bg-slate-900/50">
+      {champId && (
+        <img
+          src={`/spells/${champId}/${skillKey}.webp`}
+          alt={skillKey}
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).style.display = "none";
+          }}
+        />
+      )}
+      <span
+        className={`pointer-events-none absolute inset-0 flex items-center justify-center text-xl font-black ${watermarkTone}`}
+        style={{
+          textShadow:
+            "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000, 1px 0 0 #000",
+        }}
+      >
+        {labelText}
+      </span>
+    </span>
+  );
+
+  if (!tip) return iconVisual;
 
   return (
     <span
@@ -205,7 +238,7 @@ function SkillLabelWithTip({
         open ? onLeave() : onEnter();
       }}
     >
-      <span>{labelText}</span>
+      {iconVisual}
 
       {open && (
         <span
@@ -218,7 +251,7 @@ function SkillLabelWithTip({
         >
           <span
             ref={tipRef}
-            className="block w-[520px] max-w-[calc(100vw-24px)]
+            className="block w-[416px] max-w-[calc((100vw-24px)*0.8)]
                        whitespace-pre-line break-normal text-left
                        leading-snug rounded-lg bg-black/95
                        px-3 py-2 text-[14px] font-semibold
@@ -344,13 +377,12 @@ const renderNoteSection = (items: string[], title: string) => {
       const p = ddragon?.passive;
       if (!p) return loadingText;
 
-      const body = stripHtml(p.description)
-        .replace(/\{\{[^}]+\}\}/g, "") // {{ ... }} 제거
+      const body = stripHtml(resolvePlaceholders(p.description, {}))
         .replace(/\s+\n/g, "\n")
         .replace(/[ \t]{2,}/g, " ")
         .trim();
 
-      return `P - ${p.name}\n${body}`;
+      return `P - ${applyTextOverrides(p.name)}\n${body}`;
     }
 
     // Q/W/E/R
@@ -358,13 +390,12 @@ const renderNoteSection = (items: string[], title: string) => {
     const s = ddragon?.spells?.[idx];
     if (!s) return loadingText;
 
-    const body = stripHtml(s.tooltip || s.description)
-      .replace(/\{\{[^}]+\}\}/g, "") // {{ ... }} 제거
+    const body = stripHtml(resolvePlaceholders(s.tooltip || s.description, s))
       .replace(/\s+\n/g, "\n")
       .replace(/[ \t]{2,}/g, " ")
       .trim();
 
-    return `${k} - ${s.name}\n${body}`;
+    return `${k} - ${applyTextOverrides(s.name)}\n${body}`;
   };
 
 
@@ -372,9 +403,7 @@ const renderNoteSection = (items: string[], title: string) => {
   const renderRow = (k: SkillKey) => {
   const spellTip = getSpellTip(k);
 
-  const skillKeyClass = `w-[24px] ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center flex justify-center ${
-    k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"
-  }`;
+  const skillKeyClass = "w-10 shrink-0 flex justify-center";
 
   // 기믹 탭: phase 구조 확인
   if (mode === "gimmick") {
@@ -403,7 +432,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
-          <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+          <div className="w-10 shrink-0">
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
           <div className="flex-1 space-y-2">
@@ -454,7 +483,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
-          <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+          <div className="w-10 shrink-0">
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
           <div className="flex-1 space-y-2">
@@ -505,7 +534,7 @@ const renderNoteSection = (items: string[], title: string) => {
 
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
-          <div className={`w-[24px] shrink-0 ${k === "W" ? "text-xl" : "text-2xl"} font-black text-center ${k === "R" ? "text-yellow-400" : k === "P" ? "text-slate-200" : "text-sky-300"}`}>
+          <div className="w-10 shrink-0">
             <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} />
           </div>
           <div className="flex-1 space-y-2">
@@ -545,8 +574,8 @@ const renderNoteSection = (items: string[], title: string) => {
   }
 
   return (
-    <div className={`grid grid-cols-[24px_1fr] gap-x-4 ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"} ${compactRowPadding} ${tags.includes("SEPARATOR_NEWLINE") ? "" : "min-h-[35px]"}`}>
-      <div className={`${skillKeyClass} ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"}`}>
+    <div className={`grid grid-cols-[40px_1fr] gap-x-4 ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"} ${compactRowPadding} ${tags.includes("SEPARATOR_NEWLINE") ? "" : "min-h-[35px]"}`}>
+      <div className={skillKeyClass}>
         <SkillLabelWithTip
           labelText={label[k]}
           tip={spellTip}
