@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import ChampSelectButton from "@/app/components/ChampSelectButton";
 import ChampSelectModal from "@/app/components/ChampSelectModal";
+import ChampMiniSearch from "@/app/components/ChampMiniSearch";
 import SkillTagsPanel from "@/app/components/SkillTagsPanel";
 import MatchupSummaryBox from "@/app/components/MatchupSummaryBox";
 import UltCooldownBox from "@/app/components/UltCooldownBox";
@@ -179,25 +180,46 @@ useEffect(() => {
 
     <div className="flex items-center justify-center gap-3 sm:gap-8 w-full max-w-[430px] sm:max-w-none mx-auto">
 
-      <ChampSelectButton
-  label={lang === "ko" ? "챔피언" : "Champion"}
-  lang={lang}
-  selected={myChamp}
-  onClick={() => setOpenTarget("my")}
-  onClear={clearMyChamp}
-/>
+      {/* ChampMiniSearch: 이 블록은 이미 !embedMode 섹션 안에 있으므로
+          "두 챔피언을 선택하는 화면"(embed 제외 전부: /champ, /champ/[id], /matchup)에
+          매치업 페이지 여부와 무관하게 일관되게 노출된다. */}
+      <div className="flex flex-col items-center w-[130px] sm:w-[230px]">
+        <ChampMiniSearch
+          lang={lang}
+          champions={CHAMPIONS}
+          side="my"
+          myChampId={myChampId}
+          enemyChampId={enemyChampId}
+        />
+        <ChampSelectButton
+          label={lang === "ko" ? "챔피언" : "Champion"}
+          lang={lang}
+          selected={myChamp}
+          onClick={() => setOpenTarget("my")}
+          onClear={clearMyChamp}
+        />
+      </div>
 
       <div className="text-sm font-extrabold text-slate-300 px-2">
         VS
       </div>
 
-      <ChampSelectButton
-  label={lang === "ko" ? "챔피언" : "Champion"}
-  lang={lang}
-  selected={enemyChamp}
-  onClick={() => setOpenTarget("enemy")}
-  onClear={clearEnemyChamp}
-/>
+      <div className="flex flex-col items-center w-[130px] sm:w-[230px]">
+        <ChampMiniSearch
+          lang={lang}
+          champions={CHAMPIONS}
+          side="enemy"
+          myChampId={myChampId}
+          enemyChampId={enemyChampId}
+        />
+        <ChampSelectButton
+          label={lang === "ko" ? "챔피언" : "Champion"}
+          lang={lang}
+          selected={enemyChamp}
+          onClick={() => setOpenTarget("enemy")}
+          onClear={clearEnemyChamp}
+        />
+      </div>
 
     </div>
   </div>
@@ -312,18 +334,18 @@ setOpenTarget(null);
     <iframe
       id="iframe-my"
       src={`/${locale}/champ-embed/${myChamp.id}?side=my&compact=${isMobileViewport ? "1" : "0"}`}
-      style={{ width: "430px", border: "none", height: "800px" }}
+      style={{ border: "none", height: "800px" }}
       scrolling="no"
-      className={`sm:col-start-1${mobileTab !== "my" ? " hidden sm:block" : ""}`}
+      className={`w-full max-w-[430px] mx-auto sm:col-start-1${mobileTab !== "my" ? " hidden sm:block" : ""}`}
     />
   )}
   {enemyChamp && (
     <iframe
       id="iframe-enemy"
       src={`/${locale}/champ-embed/${enemyChamp.id}?side=enemy&compact=${isMobileViewport ? "1" : "0"}`}
-      style={{ width: "430px", border: "none", height: "800px" }}
+      style={{ border: "none", height: "800px" }}
       scrolling="no"
-      className={`sm:col-start-3${mobileTab !== "enemy" ? " hidden sm:block" : ""}`}
+      className={`w-full max-w-[430px] mx-auto sm:col-start-3${mobileTab !== "enemy" ? " hidden sm:block" : ""}`}
     />
   )}
 </section>

@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import type { Champ } from "../data/champions";
+import { filterChampions } from "../utils/champSearch";
 
 type Props = {
   open: boolean;
@@ -12,158 +13,6 @@ type Props = {
   onClose: () => void;
   onPick: (champ: Champ) => void;
 };
-
-// ===== Hangul utils =====
-const CHOSEONG = [
-  "ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ",
-  "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ",
-] as const;
-
-const JUNGSEONG_KEY = [
-  "k", "o", "i", "O", "j", "p", "u", "P", "h", "hk", "ho", "hl",
-  "y", "n", "nj", "np", "nl", "b", "m", "ml", "l",
-] as const;
-
-const CHOSEONG_KEY = [
-  "r", "R", "s", "e", "E", "f", "a", "q", "Q", "t",
-  "T", "d", "w", "W", "c", "z", "x", "v", "g",
-] as const;
-
-const CHOSEONG_TO_KEY: Record<string, string> = Object.fromEntries(
-  CHOSEONG.map((jamo, i) => [jamo, CHOSEONG_KEY[i] ?? ""])
-);
-
-function initialsToDubeol(initials: string) {
-  return [...initials].map((ch) => CHOSEONG_TO_KEY[ch] ?? ch).join("");
-}
-
-// 두벌식 역매핑: 영문 자음 키 → 한글 초성 (소문자 기준, 첫 등장 우선)
-const DUBEOL_TO_CHOSEONG: Record<string, string> = {};
-CHOSEONG.forEach((jamo, i) => {
-  const key = (CHOSEONG_KEY[i] ?? "").toLowerCase();
-  if (key && !DUBEOL_TO_CHOSEONG[key]) DUBEOL_TO_CHOSEONG[key] = jamo;
-});
-
-// 영어 키보드 입력(두벌식 자음만)을 한글 초성 문자열로 변환
-// 모든 문자가 자음 키인 경우만 변환, 하나라도 아니면 null 반환
-function engToKorInitials(str: string): string | null {
-  let result = "";
-  for (const ch of str) {
-    const jamo = DUBEOL_TO_CHOSEONG[ch];
-    if (!jamo) return null;
-    result += jamo;
-  }
-  return result || null;
-}
-
-
-// 종성(받침) 인덱스 0은 없음("")
-const JONGSEONG_KEY = [
-  "",
-  "r",  "R",  "rt", "s",  "sw", "sg", "e",  "f",  "fr",
-  "fa", "fq", "ft", "fx", "fv", "fg", "a",  "q",  "qt",
-  "t",  "T",  "d",  "w",  "c",  "z",  "x",  "v",  "g",
-] as const;
-
-function isHangulSyllable(ch: string) {
-  const code = ch.charCodeAt(0);
-  return code >= 0xac00 && code <= 0xd7a3;
-}
-
-function hangulToInitials(str: string) {
-  let out = "";
-  for (const ch of str) {
-    if (!isHangulSyllable(ch)) continue;
-    const code = ch.charCodeAt(0) - 0xac00;
-    const ci = Math.floor(code / (21 * 28));
-    out += CHOSEONG[ci] ?? "";
-  }
-  return out;
-}
-
-// 한글(완성형) -> 두벌식 영문 타이핑 결과로 변환 (가렌 => rkfps)
-function hangulToDubeol(str: string) {
-  let out = "";
-  for (const ch of str) {
-    if (!isHangulSyllable(ch)) {
-      out += ch;
-      continue;
-    }
-    const code = ch.charCodeAt(0) - 0xac00;
-    const ci = Math.floor(code / (21 * 28));
-    const vi = Math.floor((code % (21 * 28)) / 28);
-    const fi = code % 28;
-
-    out += (CHOSEONG_KEY[ci] ?? "");
-    out += (JUNGSEONG_KEY[vi] ?? "");
-    out += (JONGSEONG_KEY[fi] ?? "");
-  }
-  return out;
-}
-
-const JAMO_EXPAND: Record<string, string> = {
-  // 겹받침(겹자음)
-  "ㄳ": "ㄱㅅ",
-  "ㄵ": "ㄴㅈ",
-  "ㄶ": "ㄴㅎ",
-  "ㄺ": "ㄹㄱ",
-  "ㄻ": "ㄹㅁ",
-  "ㄼ": "ㄹㅂ",
-  "ㄽ": "ㄹㅅ",
-  "ㄾ": "ㄹㅌ",
-  "ㄿ": "ㄹㅍ",
-  "ㅀ": "ㄹㅎ",
-  "ㅄ": "ㅂㅅ",
-
-  // (선택) 겹모음까지 같이 풀고 싶으면 유지
-  "ㅘ": "ㅗㅏ",
-  "ㅙ": "ㅗㅐ",
-  "ㅚ": "ㅗㅣ",
-  "ㅝ": "ㅜㅓ",
-  "ㅞ": "ㅜㅔ",
-  "ㅟ": "ㅜㅣ",
-  "ㅢ": "ㅡㅣ",
-};
-
-function expandCompositeJamo(str: string) {
-  return [...str].map((ch) => JAMO_EXPAND[ch] ?? ch).join("");
-}
-
-
-function normalize(str: string) {
-  return expandCompositeJamo(str)
-    .toLowerCase()
-    .replace(/\s+/g, "");
-}
-
-
-function buildSearchKeys(c: Champ) {
-  const ko = c.ko ?? "";
-  const koAliases = c.aliases?.ko ?? [];
-  const enAliases = c.aliases?.en ?? [];
-
-  const baseKeys = [
-    ko,
-    c.en,
-    c.id,
-    hangulToInitials(ko),
-    hangulToDubeol(ko),
-    initialsToDubeol(hangulToInitials(ko)),
-  ];
-
-  const koAliasKeys = koAliases.flatMap((a) => {
-    const initials = hangulToInitials(a);
-    return [a, initials, hangulToDubeol(a), initialsToDubeol(initials)];
-  });
-
-  const enAliasKeys = enAliases.map((a) => a.toLowerCase());
-
-  return [...baseKeys, ...koAliasKeys, ...enAliasKeys]
-    .map(normalize)
-    .filter(Boolean);
-}
-
-
 
 export default function ChampSelectModal({
   open,
@@ -187,34 +36,10 @@ export default function ChampSelectModal({
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
-  const collator = useMemo(() => {
-    return new Intl.Collator(lang === "ko" ? "ko" : "en", { sensitivity: "base" });
-  }, [lang]);
-
-  const filtered = useMemo(() => {
-    const key = normalize(q.trim());
-    // 영어 키보드 입력을 한글 초성으로 역변환 (예: "dxft" → "ㅇㅌㄹㅅ")
-    const korKey = key ? engToKorInitials(key) : null;
-
-    const list = champions
-      .slice()
-      .sort((a, b) =>
-        collator.compare(
-          lang === "ko" ? a.ko : a.en,
-          lang === "ko" ? b.ko : b.en
-        )
-      );
-
-    if (!key) return list;
-
-    return list.filter((c) => {
-      const keys = buildSearchKeys(c);
-      if (keys.some((k) => k.includes(key))) return true;
-      // 영어 자음 키 → 한글 초성 변환 후 재검색
-      if (korKey && keys.some((k) => k.includes(korKey))) return true;
-      return false;
-    });
-  }, [q, champions, lang, collator]);
+  const filtered = useMemo(
+    () => filterChampions(champions, q, lang),
+    [q, champions, lang]
+  );
 
   if (!open) return null;
 
