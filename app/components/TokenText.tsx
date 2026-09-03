@@ -61,6 +61,22 @@ function TokenPill({
     return () => document.removeEventListener("touchstart", close);
   }, [open]);
 
+  // 툴팁이 열린 채로 스크롤해서 앵커(태그 자체)가 화면 밖으로 완전히
+  // 벗어나면 자동으로 닫는다. open일 때만 observe하고, 닫히면 disconnect.
+  useEffect(() => {
+    if (!open) return;
+    const el = anchorRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) onLeave();
+      },
+      { threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [open]);
+
   return (
     <span
       ref={anchorRef}

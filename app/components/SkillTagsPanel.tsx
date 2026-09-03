@@ -79,6 +79,22 @@ function TagPill({
     return () => document.removeEventListener("touchstart", close);
   }, [open]);
 
+  // 툴팁이 열린 채로 스크롤해서 앵커가 화면 밖으로 완전히 벗어나면
+  // 자동으로 닫는다. open일 때만 observe하고, 닫히면 disconnect.
+  useEffect(() => {
+    if (!open) return;
+    const el = anchorRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) onLeave();
+      },
+      { threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [open]);
+
   return (
     <span
       ref={anchorRef}
@@ -195,6 +211,22 @@ function SkillLabelWithTip({
     };
     document.addEventListener("touchstart", close);
     return () => document.removeEventListener("touchstart", close);
+  }, [open]);
+
+  // 툴팁이 열린 채로 스크롤해서 앵커가 화면 밖으로 완전히 벗어나면
+  // 자동으로 닫는다. open일 때만 observe하고, 닫히면 disconnect.
+  useEffect(() => {
+    if (!open) return;
+    const el = anchorRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) onLeave();
+      },
+      { threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
   }, [open]);
 
   // P/Q/W/E/R 아이콘 + 반투명 워터마크 글자 오버레이
