@@ -9,8 +9,8 @@ export const hecarim_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 벡스 P의 [[FEAR]]를 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Vex's P [[FEAR]]."],
     },
     vex: {
       ko: [],

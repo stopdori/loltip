@@ -13,8 +13,8 @@ export const darius_hecarim: MatchupSummary = {
       en: ["E [[GRAB]] can interrupt Hecarim's E [[DASH]]."],
     },
     hecarim: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 다리우스 E의 [[GRAB]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Darius's E [[GRAB]]."],
     },
   },
 };

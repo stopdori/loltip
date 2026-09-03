@@ -9,8 +9,8 @@ export const hecarim_kaisa: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 카이사 R의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] and R's [[FEAR]] can interrupt Kai'Sa's R [[DASH]]."],
     },
     kaisa: {
       ko: [],

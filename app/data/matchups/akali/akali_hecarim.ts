@@ -13,8 +13,8 @@ export const akali_hecarim: MatchupSummary = {
       en: ["E2 [[HOMING]] [[DASH]] can follow Hecarim's E and R [[DASH]]."],
     },
     hecarim: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 아칼리 E, E2, R, R2 를 끊을 수 있음"],
+      en: ["E [[KNOCKBACK]] and R's [[FEAR]] can interrupt Akali's E, E2, R and R2"],
     },
   },
 };

@@ -9,8 +9,8 @@ export const hecarim_nidalee: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 니달리 쿠거폼 W의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] and R's [[FEAR]] can interrupt Nidalee's Cougar Form W [[DASH]]."],
     },
     nidalee: {
       ko: [],

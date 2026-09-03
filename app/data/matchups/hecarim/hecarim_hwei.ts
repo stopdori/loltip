@@ -9,8 +9,8 @@ export const hecarim_hwei: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 흐웨이 EQ의 [[FEAR]], EW의 [[ROOT]], EE의 [[GRAB]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[FEAR]], [[ROOT]]은 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Hwei's EQ [[FEAR]], EW [[ROOT]], and EE [[GRAB]]. \n However, [[FEAR]] and [[ROOT]] remain after [[UNSTOPPABLE]] ends."],
     },
     hwei: {
       ko: [],

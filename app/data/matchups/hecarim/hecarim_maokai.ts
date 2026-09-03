@@ -9,8 +9,8 @@ export const hecarim_maokai: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 마오카이 Q의 [[KNOCKBACK]] / W, R의 [[ROOT]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[ROOT]]은 남아있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Maokai's Q [[KNOCKBACK]] / W and R [[ROOT]]. \n However, [[ROOT]] remains after [[UNSTOPPABLE]] ends."],
     },
     maokai: {
       ko: [],

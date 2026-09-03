@@ -15,8 +15,8 @@ export const aurora_hecarim: MatchupSummary = {
         "R [[UNSTOPPABLE]] [[DASH]] can ignore Hecarim's E [[KNOCKBACK]] and R [[FEAR]] and continue [[DASH]]. \n However, the [[FEAR]] still applies."],
     },
     hecarim: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] and R's [[FEAR]] can interrupt Aurora's W and E [[DASH]]."],
     },
   },
 };

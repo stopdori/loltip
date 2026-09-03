@@ -21,8 +21,11 @@ export const briar_hecarim: MatchupSummary = {
         "R2 [[HOMING]] [[DASH]] can follow Hecarim's E [[DASH]] and R [[UNSTOPPABLE]] [[DASH]]. \n However, the [[HOMING]] ends upon colliding with Hecarim."],
     },
     hecarim: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음.", 
+        "R의 [[UNSTOPPABLE]]로 브라이어 Q의 [[STUN]], E의 [[KNOCKBACK]], R2의 [[FEAR]]를 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]], [[FEAR]]는 남아있음."
+      ],
+      en: ["E [[KNOCKBACK]] and R's [[FEAR]] can interrupt Briar's Q and W [[DASH]].",
+        "R [[UNSTOPPABLE]] can ignore Briar's Q [[STUN]], E [[KNOCKBACK]] and R2 [[FEAR]]. \n However, [[STUN]] and [[FEAR]] remain after [[UNSTOPPABLE]] ends."],
     },
   },
 };

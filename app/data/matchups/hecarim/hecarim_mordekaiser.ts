@@ -9,8 +9,8 @@ export const hecarim_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: ["헤카림 R의 [[UNSTOPPABLE]]로 모데카이저 R을 무시할 수 있음.\n즉, 이세계로 가지 않음. 모데 R 쿨타임 소모."],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 모데카이저 E의 [[GRAB]], R의 [[BANISH]]을 무시할 수 있음. \n 단, 무시에 성공하면 모데카이저 R의 [[COOLDOWN]]은 소모."],
+      en: ["R [[UNSTOPPABLE]] can ignore Mordekaiser's E [[GRAB]] and R [[BANISH]]. \n However, if it is ignored, Mordekaiser's R [[COOLDOWN]] is still consumed."],
     },
     mordekaiser: {
       ko: [],

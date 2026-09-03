@@ -14,8 +14,8 @@ export const ambessa_hecarim: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Hecarim's E [[DASH]].", "R [[UNSTOPPABLE]] can ignore Hecarim's E [[KNOCKBACK]] and R [[FEAR]]. \n However, the [[FEAR]] still applies after [[UNSTOPPABLE]] ends."],
     },
     hecarim: {
-      ko: [],
-      en: [],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 암베사 P의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] and R's [[FEAR]] can interrupt Ambessa's P [[DASH]]."],
     },
   },
 };

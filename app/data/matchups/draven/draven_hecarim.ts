@@ -13,8 +13,8 @@ export const draven_hecarim: MatchupSummary = {
       en: ["E [[KNOCKBACK]] can interrupt Hecarim's E [[DASH]]."],
     },
     hecarim: {
-      ko: [],
-      en: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 드레이븐 E의 [[KNOCKBACK]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Draven's E [[KNOCKBACK]]."],
     },
   },
 };

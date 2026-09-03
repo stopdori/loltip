@@ -9,8 +9,8 @@ export const hecarim_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: [""],
-      en: [""],
+      ko: ["R의 [[UNSTOPPABLE]]로 말파이트 R의 [[AIRBORNE]]을 무시할 수 있음."],
+      en: ["R [[UNSTOPPABLE]] can ignore Malphite's R [[AIRBORNE]]."],
     },
     malphite: {
       ko: ["R의 [[UNSTOPPABLE]]로 헤카림 E의 [[KNOCKBACK]], R의 [[FEAR]]를 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[FEAR]]는 남아있음."],

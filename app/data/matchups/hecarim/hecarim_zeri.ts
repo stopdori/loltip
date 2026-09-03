@@ -9,8 +9,8 @@ export const hecarim_zeri: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: [""],
-      en: [""],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 제리 E(일반, 벽이동)의 [[DASH]]을 끊을 수 있음."],
+      en: ["E [[KNOCKBACK]] and R's [[FEAR]] can interrupt Zeri's E and E (wall movement) [[DASH]]."],
     },
     zeri: {
       ko: [],

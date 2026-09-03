@@ -19,8 +19,11 @@ export const camille_hecarim: MatchupSummary = {
       ],
     },
     hecarim: {
-      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
-      en: ["Hecarim's E [[KNOCKBACK]] and R [[FEAR]] can interrupt Camille's E1 and E2 [[DASH]]."],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음.", 
+        "R의 [[UNSTOPPABLE]]로 카밀 E2 [[KNOCKBACK]], [[STUN]] / R의 [[SILENCE]], [[KNOCKBACK]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."
+      ],
+      en: ["E [[KNOCKBACK]] and R [[FEAR]] can interrupt Camille's E1 and E2 [[DASH]].",
+        "R [[UNSTOPPABLE]] can ignore Camille's E2 [[KNOCKBACK]] and [[STUN]] / R [[SILENCE]] and [[KNOCKBACK]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
     },
   },
 };

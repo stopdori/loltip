@@ -13,8 +13,12 @@ export const annie_hecarim: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Hecarim's E [[DASH]]. \n However, the [[STUN]] still applies."],
     },
     hecarim: {
-      ko: ["E의 [[KNOCKBACK]]로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]] 할 수 있음."],
-      en: ["Hecarim's E [[KNOCKBACK]] can knock back Annie's R [[SUMMON]]ed Tibbers."],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]로 애니 R로 [[SUMMON]]된 티버를 [[KNOCKBACK]], [[FEAR]] 할 수 있음.",
+        "R의 [[UNSTOPPABLE]]로 애니 P의 [[STUN]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."
+      ],
+      en: ["E [[KNOCKBACK]] and R [[FEAR]] can knock back and [[FEAR]] Annie's R [[SUMMON]]ed Tibbers.",
+        "R [[UNSTOPPABLE]] can ignore Annie's P [[STUN]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."
+      ],
     },
   },
 };
