@@ -7,7 +7,7 @@ const hecarim: ChampData = {
     Q: [],
     W: ["HEAL", "AURA"],
     E: ["DASH", "WALL_HOP", "MS_UP", "KNOCKBACK", "GHOSTING"],
-    R: ["DASH", "WALL_HOP", "FEAR", "UNSTOPPABLE"],
+    R: ["DASH", "WALL_HOP", "UNSTOPPABLE", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
   },
 
   vision: {
@@ -23,7 +23,10 @@ const hecarim: ChampData = {
     Q: ["DMG_PHYSICAL", "AOE", "BUFF_STACK"],
     W: ["BUFF_FORM", "DMG_MAGIC", "AURA"],
     E: ["BUFF_FORM", "DASH", "DMG_PHYSICAL", "TIMING_AFTERCAST", "ON_HIT"],
-    R: ["DMG_MAGIC", "DASH", "UNSTOPPABLE", "FEAR"],
+    R: { phases: [
+      { label: { ko: "R 충돌", en: "R Collision" }, tags: ["DMG_MAGIC", "DASH", "UNSTOPPABLE", "FEAR"] },
+      { label: { ko: "R 투사체", en: "R Projectile" }, tags: ["DMG_MAGIC", "PROJECTILE", "PIERCE"] },
+    ] },
   },
 
   notes: {
@@ -47,7 +50,7 @@ const hecarim: ChampData = {
 
           "E는 [[MS_UP]]와 [[GHOSTING]]와 [[BUFF]]가 생기고 \n 이동할수록 [[BUFF]]가 100까지 쌓임. \n [[BUFF]]가 쌓일수록 추가 [[MS_UP]]와 데미지 증가. \n 다음 [[BA]]가 [[EMPOWERED]]되어 적을 [[KNOCKBACK]].",
 
-          "R은 [[UNSTOPPABLE]] [[DASH]]. \n 경로에 [[DMG_MAGIC]]와 도착지점에 [[FEAR]] \n 이동거리에 따라 [[FEAR]] 시간 증가. \n \n [[DASH]] 중에 Q, W, E를 사용할 수 있음.",
+          "R은 [[UNSTOPPABLE]] [[DASH]]. \n 헤카림을 뒤따르는 5개의 유령 [[PROJECTILE]] 발사. \n[[PROJECTILE]]는 [[PIERCE]] [[DMG_MAGIC]]. \n 헤카림 도착지점에 [[AOE]] [[DMG_MAGIC]] [[FEAR]]. \n 이동거리에 따라 [[FEAR]] 시간 증가. \n \n [[DASH]] 중에 Q, W, E를 사용할 수 있음.",
         ],
 
         en: [
@@ -59,7 +62,7 @@ const hecarim: ChampData = {
 
           "E: Grants [[MS_UP]], [[GHOSTING]], and a [[BUFF]] that stacks up to 100 as Hecarim moves. \n More stacks = additional [[MS_UP]] and increased damage. \n Empowers the next [[BA]] to [[KNOCKBACK]] the target.",
 
-          "R: [[UNSTOPPABLE]] [[DASH]]. \n Deals [[DMG_MAGIC]] along the path and applies [[FEAR]] at the destination. \n [[FEAR]] duration scales with travel distance. \n \n Q, W, and E can be used during the [[DASH]].",
+          "R: [[UNSTOPPABLE]] [[DASH]]. \n Fires 5 ghost [[PROJECTILE]]s that follow Hecarim. \n The [[PROJECTILE]]s deal [[PIERCE]] [[DMG_MAGIC]]. \n Deals [[AOE]] [[DMG_MAGIC]] and applies [[FEAR]] at Hecarim's destination. \n [[FEAR]] duration scales with travel distance. \n \n Q, W, and E can be used during the [[DASH]].",
         ]
 
       },
