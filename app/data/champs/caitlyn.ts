@@ -54,16 +54,20 @@ const caitlyn: ChampData = {
 
         ko: [
           "P는 [[BA]]를 때릴 때마다 [[BUFF_STACK]].\n 수풀에서는 2개씩 참. \n 5스택 마다 헤드샷.",
+
           "Q는 처음대상 이후 감소된 피해. \n W([[TRAP]])에 걸린 대상에겐 항상 100% Q딜이 들어감",
-          "W([[TRAP]])는 찍을수록 \n 최대 [[RECHARGE]]개수와 설치개수 증가. 3/4/5 \n \n W를 밟은 상대는 [[REVEALED]]. \n 평타 사거리가 두배로 늘어나고 \n 헤드샷 한 대 때릴 수 있음.",
+
+          "W([[TRAP]])는 찍을수록 \n 최대 [[RECHARGE]]개수와 설치개수 증가. 3/4/5 \n \n W를 밟은 상대는 [[REVEALED]]. \n 평타 사거리가 두배로 늘어나고 \n 헤드샷 한 대 때릴 수 있음. \n [[ROOT]]은 대체로 [[DASH]]을 끊을 수 있지만 \n 케이틀린 W의 [[ROOT]]은 웬만한 [[DASH]]을 끊을 수 없음.",
+
           "E는 투망을 앞으로 쏘고 뒤로 [[DASH]] \n 일반적인 돌진기와 다르게 반대로 써야 함. \n 투망에 맞은 대상에게 사거리가 두배로 늘어나고 \n 헤드샷을 한 대 쏠 수 있음.",
+          
           "R은 조준하는 대상에게 [[TRUE_SIGHT]]. \n 탄환은 [[CRIT]]와 [[CRIT]]데미지에 비례 \n 탄환을 같은 팀이 막아줄 수 있음.",
         ],
 
         en: [
           "P stacks [[BUFF_STACK]] with each [[BA]].\nAuto-attacks from a bush charge 2 stacks.\nEvery 5 stacks triggers a Headshot.",
           "Q damage decreases per additional target pierced.\nHowever, targets trapped by W ([[TRAP]]) always take 100% Q damage.",
-          "Leveling up W ([[TRAP]]) increases the max [[RECHARGE]] and placed trap count (3/4/5).\nTargets who step on a trap are [[REVEALED]].\nAuto-attack range doubles and a Headshot can be fired.",
+          "Leveling up W ([[TRAP]]) increases the max [[RECHARGE]] and placed trap count (3/4/5).\nTargets who step on a trap are [[REVEALED]].\nAuto-attack range doubles and a Headshot can be fired.\n[[ROOT]] can usually interrupt a [[DASH]],\nbut Caitlyn's W [[ROOT]] cannot interrupt most [[DASH]]es.",
           "E fires a net forward and [[DASH]]es backward.\nUnlike most dash skills, it needs to be used in reverse.\nTargets hit by the net grant doubled auto-attack range and a free Headshot.",
           "R applies [[TRUE_SIGHT]] to the target while aiming.\nThe bullet's damage scales with [[CRIT]] and critical damage.\nAllied champions can block the bullet.",
         ]
