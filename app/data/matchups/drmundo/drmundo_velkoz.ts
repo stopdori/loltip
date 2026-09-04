@@ -9,8 +9,8 @@ export const drmundo_velkoz: MatchupSummary = {
   },
   highlightsByChamp: {
     drmundo: {
-      ko: [""],
-      en: [""],
+      ko: ["P의 [[CC_IMMUNE]] 효과로 벨코즈 E의 [[AIRBORNE]]을 한 번 무시할 수 있음. \n 이때, 문도 P의 화학 통 [[DROP]]."],
+      en: ["P's [[CC_IMMUNE]] effect can ignore Vel'Koz's E [[AIRBORNE]] once.\nAt this time, P also [[DROP]]s a canister."],
     },
     velkoz: {
       ko: [],

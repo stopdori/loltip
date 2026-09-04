@@ -9,8 +9,8 @@ export const drmundo_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     drmundo: {
-      ko: ["문도박사 P의 [[CC_IMMUNE]]으로 모데카이저 R을 무시할 수 있음.\n즉, 이세계로 가지 않음. 모데 R 쿨타임 소모."],
-      en: [""],
+      ko: ["P의 [[CC_IMMUNE]] 효과로 모데카이저 E의 [[GRAB]], R의 [[BANISH]]을 한 번 무시할 수 있음. \n 이때, 문도 P의 화학 통 [[DROP]]. \n 단, 모데카이저 R의 [[COOLDOWN]] 소모."],
+      en: ["P's [[CC_IMMUNE]] effect can ignore Mordekaiser's E [[GRAB]] and R [[BANISH]] once.\nAt this time, P also [[DROP]]s a canister.\nHowever, Mordekaiser's R still goes on [[COOLDOWN]]."],
     },
     mordekaiser: {
       ko: [],

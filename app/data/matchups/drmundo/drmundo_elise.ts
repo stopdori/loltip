@@ -9,8 +9,8 @@ export const drmundo_elise: MatchupSummary = {
   },
   highlightsByChamp: {
     drmundo: {
-      ko: [""],
-      en: [""],
+      ko: ["P의 [[CC_IMMUNE]] 효과로 엘리스 인간폼 E의 [[STUN]]을 한 번 무시할 수 있음. \n 이때, 문도 P의 화학 통 [[DROP]]."],
+      en: ["P's [[CC_IMMUNE]] effect can ignore Elise's human form E [[STUN]] once.\nAt this time, P also [[DROP]]s a canister."],
     },
     elise: {
       ko: [],

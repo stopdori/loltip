@@ -9,8 +9,8 @@ export const drmundo_garen: MatchupSummary = {
   },
   highlightsByChamp: {
     drmundo: {
-      ko: [""],
-      en: [""],
+      ko: ["P의 [[CC_IMMUNE]] 효과로 가렌 Q의 [[SILENCE]] 효과를 무시할 수 없음."],
+      en: ["P's [[CC_IMMUNE]] effect cannot ignore Garen's Q [[SILENCE]] effect."],
     },
     garen: {
       ko: [],
