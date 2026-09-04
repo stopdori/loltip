@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, Link } from "@/i18n/navigation";
 import NoticeButton from "./NoticeButton";
 import HelpButton from "./HelpButton";
 import TagGlossaryButton from "./TagGlossaryButton";
@@ -18,6 +19,48 @@ type Props = {
   onNoticeOpenChange?: (v: boolean) => void;
   onGlossaryOpenChange?: (v: boolean) => void;
 };
+
+// 언어 전환 버튼 스타일/마크업 (실제 <a href>로 렌더링 — 크롤러가 ko/en 상호 발견 가능)
+// query가 없으면(Suspense fallback) 쿼리 없이, 있으면 현재 쿼리스트링을 유지한 채로 이동.
+function LangButtons({ lang, pathname, query }: { lang: Lang; pathname: string; query?: Record<string, string> }) {
+  const href = query && Object.keys(query).length > 0 ? { pathname, query } : pathname;
+  return (
+    <>
+      <Link
+        href={href}
+        locale="ko"
+        replace
+        className={`px-2 py-2 rounded-xl text-sm font-bold border ${
+          lang === "ko"
+            ? "bg-sky-500 text-black border-sky-400"
+            : "bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
+        }`}
+      >
+        KO
+      </Link>
+      <Link
+        href={href}
+        locale="en"
+        replace
+        className={`px-2 py-2 rounded-xl text-sm font-bold border ${
+          lang === "en"
+            ? "bg-sky-500 text-black border-sky-400"
+            : "bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
+        }`}
+      >
+        EN
+      </Link>
+    </>
+  );
+}
+
+// useSearchParams()는 정적 생성 페이지에서 Suspense 경계 없이 쓰면 빌드가 깨지므로
+// 쿼리를 읽는 부분만 이 서브컴포넌트로 분리해 아래에서 <Suspense>로 감싼다.
+function LangButtonsWithQuery({ lang, pathname }: { lang: Lang; pathname: string }) {
+  const searchParams = useSearchParams();
+  const query = Object.fromEntries(searchParams.entries());
+  return <LangButtons lang={lang} pathname={pathname} query={query} />;
+}
 
 export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false, onHelpOpenChange, onNoticeOpenChange, onGlossaryOpenChange }: Props) {
   const locale = useLocale();
@@ -90,28 +133,11 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
           </a>
         </div>
 
-        {/* 우측: 언어 선택 */}
+        {/* 우측: 언어 선택 (실제 <a href> — 크롤 가능, 쿼리스트링 유지) */}
         <div className="flex items-center gap-1">
-          <button
-            onClick={() => router.replace(pathname, { locale: "ko" })}
-            className={`px-2 py-2 rounded-xl text-sm font-bold border ${
-              lang === "ko"
-                ? "bg-sky-500 text-black border-sky-400"
-                : "bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
-            }`}
-          >
-            KO
-          </button>
-          <button
-            onClick={() => router.replace(pathname, { locale: "en" })}
-            className={`px-2 py-2 rounded-xl text-sm font-bold border ${
-              lang === "en"
-                ? "bg-sky-500 text-black border-sky-400"
-                : "bg-slate-800/60 border-white/10 hover:bg-slate-800/80"
-            }`}
-          >
-            EN
-          </button>
+          <Suspense fallback={<LangButtons lang={lang} pathname={pathname} />}>
+            <LangButtonsWithQuery lang={lang} pathname={pathname} />
+          </Suspense>
         </div>
       </div>
 
