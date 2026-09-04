@@ -22,8 +22,11 @@ const nextConfig = {
       // 기존 경로 → /ko/ 리다이렉트
       // 주의: /champ, /champ/:id, /matchup/:pair, /champ?me=&enemy= 는
       // 삭제된 구주소이므로 리다이렉트하지 않고 proxy.ts에서 410 Gone으로 응답함
-      // "/"는 구글이 표준 URL을 /ko로 명확히 인식하도록 301(permanent)로 설정
-      { source: "/",              destination: "/ko",                permanent: true },
+      // "/"는 최종 목적지(/ko/champ)로 바로 리다이렉트함 - 예전엔 "/ko"를 거쳐서
+      // app/[locale]/page.tsx의 permanentRedirect가 다시 "/ko/champ"로 한 번 더
+      // 리다이렉트하는 2홉 체인이었음(URL 감사에서 발견). "/ko", "/en" 단독 접속은
+      // 여전히 app/[locale]/page.tsx가 처리하므로 그쪽은 건드리지 않음.
+      { source: "/",              destination: "/ko/champ",          permanent: true },
       { source: "/quiz",          destination: "/ko/quiz",           permanent: true },
       { source: "/privacy",       destination: "/ko/privacy",        permanent: true },
 
