@@ -58,7 +58,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const lang: Lang = locale === "en" ? "en" : "ko";
     noindex =
       !hasContent(data.highlightsByChamp?.[a]?.[lang]) &&
-      !hasContent(data.highlightsByChamp?.[b]?.[lang]);
+      !hasContent(data.highlightsByChamp?.[b]?.[lang]) &&
+      !hasContent(data.common?.[lang]);
   }
 
   return {

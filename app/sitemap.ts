@@ -36,7 +36,8 @@ function hasIndexableContent(
 ): boolean {
   return (
     hasContent(data.highlightsByChamp?.[champA]?.[lang]) ||
-    hasContent(data.highlightsByChamp?.[champB]?.[lang])
+    hasContent(data.highlightsByChamp?.[champB]?.[lang]) ||
+    hasContent(data.common?.[lang])
   );
 }
 
