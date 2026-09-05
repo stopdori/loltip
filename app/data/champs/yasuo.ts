@@ -50,7 +50,7 @@ const yasuo: ChampData = {
 
           "W는 [[WINDSHIELD]] \n 적의 [[PROJECTILE]]를 막을 수 있음. \n [[BEAM]]([[NON_PROJECTILE]]) 공격, 포탑 공격은 막을 수 없음. \n \n",
 
-          "E는 대상을 지나치는 [[SKILL_CHANNEL]] [[DASH]]. \n [[DMG_MAGIC]]와 [[BUFF_STACK]]. \n [[BUFF_STACK]]은 최대 4회 중첩. \n [[BUFF_STACK]]당 [[DMG_MAGIC]] 증가. \n \n 대상당 [[COOLDOWN]] 따로 적용. \n \n",
+          "E는 대상을 지나치는 [[SKILL_CHANNEL]] [[DASH]]. \n [[DMG_MAGIC]]와 [[BUFF_STACK]]. \n [[BUFF_STACK]]은 최대 4회 중첩. \n [[BUFF_STACK]]당 [[DMG_MAGIC]] 증가. \n [[ON_TARGET_CD]]. \n \n",
 
           "R은 [[AIRBORNE]] 대상에게만 사용 가능. \n 사용하면 대상 뒤로 [[BLINK]]. \n [[BLINK]] 지점에 [[AIRBORNE]] 대상이 여럿이면 [[AOE]]로 적용 가능. \n 걸려있던 [[AIRBORNE]] [[DURATION_EXT]]과 [[DMG_PHYSICAL]], [[BUFF]]. \n [[BUFF]]는 [[CRIT]] 피해가 대상 추가 방어력의 60% 무시. \n \n 이때 기류가 최대로 충전. \n 대신 Q의 [[BUFF_STACK]]은 모두 사라짐. \n \n",
         ],

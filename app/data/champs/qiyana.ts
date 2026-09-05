@@ -63,7 +63,7 @@ const qiyana: ChampData = {
         ko: [
           "키아나는 흐름상 W부터 설명하는게 좋아서 W부터 설명. \n \n W로 3가지 원소를 바꿔 다룰 수 있음. \n 수풀(숲), 강(물), 땅(땅)에 사용하면 [[DASH]]. \n 해당 속성을 획득하고 Q [[CDR_RESET]]. \n \n W의 [[PASSIVE_BONUS]]는 속성을 가지고 있는 지형에서 [[MS_UP]].",
 
-          "P는 [[BA]] 또는 스킬에 [[DMG_PHYSICAL]] 추가. \n 대상당 [[COOLDOWN]]이 따로 존재. \n W로 다른 속성을 획득하면 모든 대상 P [[CDR_RESET]].",
+          "P는 [[BA]] 또는 스킬에 [[DMG_PHYSICAL]] 추가. \n [[ON_TARGET_CD]]. \n W로 다른 속성을 획득하면 모든 대상 P [[CDR_RESET]].",
 
           "Q는 좁은 [[AOE]] [[DMG_PHYSICAL]]. \n \n 원소를 획득하면 Q 스킬이 변화. \n [[PROJECTILE]]가 되고, 적중 시 파편화로 뒤쪽 추가 적중. (리산드라 Q) \n \n 1. 숲Q는 키아나가 [[INVISIBILITY]]이 되고 \n [[PROJECTILE]]가 키아나만 적용되는 [[ZONE]] [[MS_UP]]. \n 벗어나면 사라짐. \n \n 2. 물Q는 적중 시 [[ROOT]]과 잠깐의 [[SLOW]]. \n \n 3. 땅Q는 체력이 50% 이하인 대상에게 추가 [[DMG_PHYSICAL]].",
 
@@ -75,7 +75,7 @@ const qiyana: ChampData = {
         en: [
           "Since Qiyana flows better explained starting with W, W comes first. \n \n W lets her switch between 3 elements. \n Using it on brush, river, or terrain grants [[DASH]]. \n She gains that element and Q gets [[CDR_RESET]]. \n \n W's [[PASSIVE_BONUS]] is [[MS_UP]] while standing on terrain with an element.",
 
-          "P adds [[DMG_PHYSICAL]] to [[BA]]s or abilities. \n Has a separate [[COOLDOWN]] per target. \n Gaining a different element from W triggers [[CDR_RESET]] for P on all targets.",
+          "P adds [[DMG_PHYSICAL]] to [[BA]]s or abilities. \n Has a separate [[ON_TARGET_CD]] per target. \n Gaining a different element from W triggers [[CDR_RESET]] for P on all targets.",
 
           "Q deals [[DMG_PHYSICAL]] in a narrow [[AOE]]. \n \n Gaining an element changes the Q ability. \n It becomes a [[PROJECTILE]] and fragments on hit for an extra hit behind (Lissandra Q). \n \n 1. Brush Q makes Qiyana [[INVISIBILITY]] \n and creates a [[ZONE]] [[MS_UP]] that only applies to the [[PROJECTILE]]'s path for Qiyana. \n Disappears if she leaves it. \n \n 2. River Q applies [[ROOT]] and a brief [[SLOW]] on hit. \n \n 3. Terrain Q deals bonus [[DMG_PHYSICAL]] to targets below 50% HP.",
 

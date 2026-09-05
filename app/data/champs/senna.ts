@@ -74,7 +74,7 @@ const senna: ChampData = {
         ko: [
           "세나는 레벨업 [[AD_UP]]가 없음. \n [[CRIT]] 피해량은 200%가 아닌 160%.", 
           "P는 챔피언을 [[BA]] 공격 시 [[ON_HIT]] [[DMG_PHYSICAL]]와 \n 대상은 [[SLOW]] 세나는 [[MS_UP]]. \n \n", 
-          "안개 [[STACKING]] \n 1. [[BA]] 또는 스킬로 두 번 연속 공격하면 \n 추가 [[DMG_PHYSICAL]]와 [[STACKING]]. \n 챔피언별로 [[COOLDOWN]]. \n \n 2. 세나 주변 적 유닛이 처치되면 \n 확률적으로 안개가 떨어짐. \n 공격하면 [[STACKING]]. \n \n [[STACKING]] 효과는 \n 1개당 0.75 [[AD_UP]]. \n 20개당 [[BA]] [[RANGE_UP]], [[CRIT]] 확률 10% 증가. \n \n", 
+          "안개 [[STACKING]] \n 1. [[BA]] 또는 스킬로 두 번 연속 공격하면 \n 추가 [[DMG_PHYSICAL]]와 [[STACKING]]. \n 챔피언 [[ON_TARGET_CD]]. \n \n 2. 세나 주변 적 유닛이 처치되면 \n 확률적으로 안개가 떨어짐. \n 공격하면 [[STACKING]]. \n \n [[STACKING]] 효과는 \n 1개당 0.75 [[AD_UP]]. \n 20개당 [[BA]] [[RANGE_UP]], [[CRIT]] 확률 10% 증가. \n \n", 
 
           "Q는 아군, 적군에게 사용할 수 있음. \n 대상에게 [[PIERCE]]하는 [[BEAM]] 발사. \n 적군은 [[DMG_PHYSICAL]]와 [[SLOW]]. \n 아군과 세나는 [[HEAL]].",
 
@@ -90,7 +90,7 @@ const senna: ChampData = {
 
           "P's [[BA]] against champions deals [[ON_HIT]] [[DMG_PHYSICAL]], \n [[SLOW]]s the target, and grants Senna [[MS_UP]]. \n \n",
 
-          "Mist [[STACKING]] \n 1. Hitting the same target twice in a row with [[BA]] or a skill \n deals bonus [[DMG_PHYSICAL]] and grants [[STACKING]]. \n Has a [[COOLDOWN]] per champion. \n \n 2. When a nearby enemy unit dies, \n a mist has a chance to drop. \n Attacking it grants [[STACKING]]. \n \n [[STACKING]] effect: \n 0.75 [[AD_UP]] per stack. \n Every 20 stacks grants [[BA]] [[RANGE_UP]] and +10% [[CRIT]] chance. \n \n",
+          "Mist [[STACKING]] \n 1. Hitting the same target twice in a row with [[BA]] or a skill \n deals bonus [[DMG_PHYSICAL]] and grants [[STACKING]]. \n Has a [[ON_TARGET_CD]] per champion. \n \n 2. When a nearby enemy unit dies, \n a mist has a chance to drop. \n Attacking it grants [[STACKING]]. \n \n [[STACKING]] effect: \n 0.75 [[AD_UP]] per stack. \n Every 20 stacks grants [[BA]] [[RANGE_UP]] and +10% [[CRIT]] chance. \n \n",
 
           "Q can be used on allies or enemies. \n Fires a [[PIERCE]]ing [[BEAM]] at the target. \n Enemies take [[DMG_PHYSICAL]] and [[SLOW]]. \n Allies and Senna gain [[HEAL]].",
 

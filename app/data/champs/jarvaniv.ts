@@ -47,7 +47,7 @@ const jarvaniv: ChampData = {
 
         ko: [
 
-          "P는 [[BA]]에 챔피언 현재체력 % [[DMG_PHYSICAL]] \n 첫 한 대씩 적용. \n 챔피언 개별의 [[COOLDOWN]]이 존재.",
+          "P는 [[BA]]에 챔피언 현재체력 % [[DMG_PHYSICAL]] \n 첫 한 대씩 적용. \n 챔피언 [[ON_TARGET_CD]].",
 
           "Q는 [[AR_SHRED]]. \n E(깃발)에 맞히면 [[DASH]]하여 경로 [[AIRBORNE]].",
 
@@ -62,7 +62,7 @@ const jarvaniv: ChampData = {
         ],
 
         en: [
-          "P: Each [[BA]] deals % of the target's current HP as [[DMG_PHYSICAL]]. \n Applies once per champion. \n Each champion has its own individual [[COOLDOWN]].",
+          "P: Each [[BA]] deals % of the target's current HP as [[DMG_PHYSICAL]]. \n Applies once per champion. \n Each champion has its own individual [[ON_TARGET_CD]].",
 
           "Q: Applies [[AR_SHRED]]. \n Hitting the E (flag) causes Jarvan to [[DASH]] forward, [[AIRBORNE]]ing enemies along the path.",
 
