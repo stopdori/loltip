@@ -1,7 +1,7 @@
 // app/[locale]/tags/TagsClient.tsx
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import { useLocale } from "next-intl";
 import SiteHeader from "@/app/components/SiteHeader";
 import TagPill from "@/app/components/TagPill";
@@ -19,20 +19,26 @@ type Tab = "basic" | "vision" | "gimmick";
 // 프로덕션 빌드에는 영향 없음 (다음 조건 자체가 트리쇼킹되어 사라짐).
 // ---------------------------------------------------------------------------
 if (process.env.NODE_ENV === "development") {
-  const categorizedTagKeys = new Set<string>(TAG_CATEGORIES.flatMap((c) => c.keys));
+  // "기본 태그" 탭(TAG_CATEGORIES)만으로는 POSITION_*/HIT_* 9개가 빠지는데,
+  // 이 태그들은 "시야·은신" 탭(VISION_STEALTH_CATEGORY)에만 있는 게 의도된
+  // 설계다. 따라서 두 목록의 합집합을 실제 커버리지로 보고 비교한다.
+  const categorizedTagKeys = new Set<string>([
+    ...TAG_CATEGORIES.flatMap((c) => c.keys),
+    ...VISION_STEALTH_CATEGORY.keys,
+  ]);
   const actualTagKeys = new Set<string>(Object.keys(TAG_LABEL));
   const missingFromCategories = [...actualTagKeys].filter((k) => !categorizedTagKeys.has(k));
   const staleInCategories = [...categorizedTagKeys].filter((k) => !actualTagKeys.has(k));
 
   if (missingFromCategories.length > 0) {
     console.warn(
-      "[tagCategories.ts] TAG_LABEL에는 있지만 TAG_CATEGORIES에는 없는 태그(추가 필요):",
+      "[tagCategories.ts] TAG_LABEL에는 있지만 TAG_CATEGORIES+VISION_STEALTH_CATEGORY에는 없는 태그(추가 필요):",
       missingFromCategories
     );
   }
   if (staleInCategories.length > 0) {
     console.warn(
-      "[tagCategories.ts] TAG_CATEGORIES에는 있지만 TAG_LABEL에는 없는 태그(삭제된 태그, 정리 필요):",
+      "[tagCategories.ts] TAG_CATEGORIES+VISION_STEALTH_CATEGORY에는 있지만 TAG_LABEL에는 없는 태그(삭제된 태그, 정리 필요):",
       staleInCategories
     );
   }
@@ -76,8 +82,7 @@ export default function TagsClient() {
 
   const [tab, setTab] = useState<Tab>("basic");
   const [query, setQuery] = useState("");
-  const [highlightKey, setHighlightKey] = useState<string | null>(null);
-  const highlightTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [selectedTag, setSelectedTag] = useState<SearchHit | null>(null);
 
   const title = lang === "ko" ? "태그 레퍼런스" : "Tag Reference";
   const subtitle = lang === "ko" ? "모든 상호작용 태그 사전" : "Full interaction tag glossary";
@@ -103,67 +108,126 @@ export default function TagsClient() {
     return searchIndex.filter((hit) => hit.label.toLowerCase().includes(q)).slice(0, 30);
   }, [query, searchIndex]);
 
-  const goToTag = (hit: SearchHit) => {
-    setTab(hit.kind === "gimmick" ? "gimmick" : "basic");
+  // 드롭다운에서 태그를 고르면 탐색(탭 전환/스크롤) 없이 검색창 바로 아래
+  // 상세 카드 하나만 띄운다 — 순수 조회(lookup)로 끝나는 흐름.
+  const selectTag = (hit: SearchHit) => {
+    setSelectedTag(hit);
     setQuery("");
-
-    // 탭 전환으로 DOM이 다시 그려질 시간을 준 다음 스크롤 + 하이라이트
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        const el = document.getElementById(`tag-${hit.kind}-${hit.key}`);
-        if (!el) return;
-        el.scrollIntoView({ behavior: "smooth", block: "center" });
-        if (highlightTimer.current) clearTimeout(highlightTimer.current);
-        setHighlightKey(`${hit.kind}-${hit.key}`);
-        highlightTimer.current = setTimeout(() => setHighlightKey(null), 1500);
-      });
-    });
   };
 
-  useEffect(() => {
-    return () => {
-      if (highlightTimer.current) clearTimeout(highlightTimer.current);
-    };
-  }, []);
-
-  const renderCategoryList = (
-    categories: { title: { ko: string; en: string }; keys: string[] }[],
-    kind: "tag" | "gimmick"
-  ) => {
+  // 태그 키 배열 하나를 pill 한 줄로 렌더링 (renderCategoryCard의 기본 나열,
+  // subGroups가 있을 때는 줄마다 이걸 반복 호출).
+  const renderTagRow = (keys: string[], kind: "tag" | "gimmick") => {
     const labelMap = kind === "tag" ? TAG_LABEL : GIMMICK_TAG_LABEL;
     const descMap = kind === "tag" ? TAG_DESC : GIMMICK_TAG_DESC;
 
     return (
-      <div className="space-y-8">
-        {categories.map((cat) => (
-          <section key={cat.title.ko}>
-            <h2 className="text-lg font-bold text-yellow-400 mb-3">{cat.title[lang]}</h2>
-            <div className="flex flex-wrap gap-2">
-              {cat.keys.map((key) => {
-                const label = (labelMap as Record<string, { ko: string; en: string }>)[key];
-                if (!label) return null;
-                const desc = (descMap as Partial<Record<string, { ko: string; en: string }>>)[key];
-                const domId = `tag-${kind}-${key}`;
-                const isHighlighted = highlightKey === `${kind}-${key}`;
-                return (
-                  <div
-                    key={key}
-                    id={domId}
-                    className={`rounded-md transition-colors duration-300 ${
-                      isHighlighted ? "bg-yellow-400/40 ring-2 ring-yellow-300" : ""
-                    }`}
-                  >
-                    <TagPill
-                      text={label[lang]}
-                      tip={desc?.[lang]}
-                      tone={toneOfTag(key as TagId | GimmickTagId)}
-                    />
-                  </div>
-                );
-              })}
+      <div className="flex flex-wrap gap-2">
+        {keys.map((key) => {
+          const label = (labelMap as Record<string, { ko: string; en: string }>)[key];
+          if (!label) return null;
+          const desc = (descMap as Partial<Record<string, { ko: string; en: string }>>)[key];
+          const domId = `tag-${kind}-${key}`;
+          return (
+            <div key={key} id={domId}>
+              <TagPill
+                text={label[lang]}
+                tip={desc?.[lang]}
+                tone={toneOfTag(key as TagId | GimmickTagId)}
+                onClick={() => selectTag({ kind, key, label: `${label.ko} ${label.en}` })}
+              />
             </div>
-          </section>
-        ))}
+          );
+        })}
+      </div>
+    );
+  };
+
+  // 카테고리 하나를 카드로 렌더링 (제목 + 그 카테고리에 속한 태그 pill 전부,
+  // 생략 없이 전체 나열). subGroups가 있으면 줄 단위로 나눠서 그린다.
+  const renderCategoryCard = (
+    cat: { title: { ko: string; en: string }; keys: string[]; subGroups?: string[][] },
+    kind: "tag" | "gimmick"
+  ) => {
+    return (
+      <section
+        key={cat.title.ko}
+        className="rounded-xl bg-slate-800/60 ring-1 ring-white/10 p-4"
+      >
+        <h2 className="text-lg font-bold text-yellow-400 mb-3">{cat.title[lang]}</h2>
+        {cat.subGroups ? (
+          <div className="space-y-2">
+            {cat.subGroups.map((row, i) => (
+              <div key={i}>{renderTagRow(row, kind)}</div>
+            ))}
+          </div>
+        ) : (
+          renderTagRow(cat.keys, kind)
+        )}
+      </section>
+    );
+  };
+
+  // 검색에서 고른 태그 하나만을 위한 상세 카드. 탐색(탭 전환/스크롤) 없이
+  // 검색창 바로 아래에서 조회만 끝내는 용도.
+  const renderTagDetailCard = () => {
+    if (!selectedTag) return null;
+    const labelMap = selectedTag.kind === "tag" ? TAG_LABEL : GIMMICK_TAG_LABEL;
+    const descMap = selectedTag.kind === "tag" ? TAG_DESC : GIMMICK_TAG_DESC;
+    const label = (labelMap as Record<string, { ko: string; en: string }>)[selectedTag.key];
+    if (!label) return null;
+    const desc = (descMap as Partial<Record<string, { ko: string; en: string }>>)[selectedTag.key];
+    const descText = desc?.[lang];
+
+    return (
+      <div className="relative max-w-md mx-auto rounded-xl bg-slate-800/60 ring-1 ring-white/10 p-4">
+        <button
+          type="button"
+          onClick={() => setSelectedTag(null)}
+          aria-label={lang === "ko" ? "닫기" : "Close"}
+          className="absolute top-2 right-2 w-7 h-7 flex items-center justify-center rounded-lg text-slate-400 hover:bg-slate-700/60 hover:text-slate-200"
+        >
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
+            <line x1="5" y1="5" x2="19" y2="19" />
+            <line x1="19" y1="5" x2="5" y2="19" />
+          </svg>
+        </button>
+        <div className="mb-3">
+          <TagPill
+            text={label[lang]}
+            tone={toneOfTag(selectedTag.key as TagId | GimmickTagId)}
+          />
+        </div>
+        {descText ? (
+          <p className="whitespace-pre-line text-sm text-slate-200 leading-relaxed">{descText}</p>
+        ) : (
+          <p className="text-sm text-slate-500">{lang === "ko" ? "설명 없음" : "No description"}</p>
+        )}
+      </div>
+    );
+  };
+
+  // 카테고리 카드들을 반응형 그리드(모바일 1열 / sm 이상 2열)로 배치.
+  // 카테고리가 하나뿐인 탭(시야·은신)은 그리드 없이 카드 하나만 보여준다.
+  const renderCategoryList = (
+    categories: { title: { ko: string; en: string }; keys: string[]; subGroups?: string[][] }[],
+    kind: "tag" | "gimmick"
+  ) => {
+    if (categories.length <= 1) {
+      return <div className="space-y-4">{categories.map((cat) => renderCategoryCard(cat, kind))}</div>;
+    }
+    return (
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+        {categories.map((cat) => renderCategoryCard(cat, kind))}
       </div>
     );
   };
@@ -201,7 +265,7 @@ export default function TagsClient() {
                     <button
                       key={`${hit.kind}-${hit.key}`}
                       type="button"
-                      onClick={() => goToTag(hit)}
+                      onClick={() => selectTag(hit)}
                       className="w-full text-left px-4 py-2 text-sm text-slate-200 hover:bg-slate-800/80 flex items-center justify-between gap-2"
                     >
                       <span>{label?.[lang]}</span>
@@ -215,6 +279,9 @@ export default function TagsClient() {
             </div>
           )}
         </div>
+
+        {/* 검색에서 고른 태그 상세 카드 */}
+        {renderTagDetailCard()}
 
         {/* 탭 */}
         <div className="flex justify-center">

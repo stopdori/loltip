@@ -16,6 +16,9 @@ import type { GimmickTagId } from "./tags_gimmick";
 export type CategoryGroup<T extends string> = {
   title: { ko: string; en: string };
   keys: T[];
+  // 카드 안에서 태그를 줄 단위로 더 세분해서 보여주고 싶을 때만 채운다.
+  // 채우면 keys 전체를 이 줄들로 나눠 그린다 (subGroups의 합집합은 keys와 일치해야 함).
+  subGroups?: T[][];
 };
 
 // tags.ts의 TagId 유니언/TAG_LABEL/TAG_DESC에 실제로 있는 10개 카테고리
@@ -43,7 +46,11 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   },
   {
     title: { ko: "6) 시야 / 은신", en: "6) Vision / Stealth" },
-    keys: ["VISION", "REVEALED", "TRUE_SIGHT", "POSITION_REVEAL", "POSITION_INDICATOR", "POSITION_SOUND", "POSITION_EFFECT", "POSITION_EFFECT_SOUND", "HIT_SOUND", "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "STEALTH", "INVISIBILITY", "CAMOUFLAGE"],
+    keys: ["VISION", "REVEALED", "TRUE_SIGHT", "STEALTH", "INVISIBILITY", "CAMOUFLAGE"],
+    subGroups: [
+      ["VISION", "REVEALED", "TRUE_SIGHT"],
+      ["STEALTH", "INVISIBILITY", "CAMOUFLAGE"],
+    ],
   },
   {
     title: { ko: "7) 회복 / 자원", en: "7) Healing / Resources" },
@@ -63,9 +70,18 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   },
 ];
 
-// "시야·은신" 탭에서 그대로 재사용하는 카테고리 (TAG_CATEGORIES[5]와 동일 배열,
-// 별도 정의 아님 — 표시 위치만 다르게 쓰기 위한 참조).
-export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = TAG_CATEGORIES[5];
+// "시야·은신" 탭 전용 독립 정의. TAG_CATEGORIES의 "6) 시야 / 은신"은 카드에
+// 노출할 핵심 6개만 추리고 나머지(POSITION_*/HIT_* 9개)는 여기에만 있다 —
+// 더 이상 배열을 공유하지 않는다.
+export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
+  title: { ko: "시야 · 은신 전체", en: "Vision · Stealth (All)" },
+  keys: [
+    "VISION", "REVEALED", "TRUE_SIGHT", "POSITION_REVEAL", "POSITION_INDICATOR",
+    "POSITION_SOUND", "POSITION_EFFECT", "POSITION_EFFECT_SOUND", "HIT_SOUND",
+    "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "STEALTH", "INVISIBILITY",
+    "CAMOUFLAGE",
+  ],
+};
 
 // tags_gimmick.ts의 GIMMICK_TAG_LABEL 안에 실제로 있는 주석 구획 기준.
 // (union 타입과 LABEL 객체의 구획이 서로 달라서 LABEL 객체 기준으로 정리함)

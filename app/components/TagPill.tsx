@@ -16,10 +16,12 @@ export default function TagPill({
   text,
   tip,
   tone = "default",
+  onClick,
 }: {
   text: string;
   tip?: string;
   tone?: keyof typeof TONE_CLASS;
+  onClick?: () => void;
 }) {
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
@@ -87,7 +89,12 @@ export default function TagPill({
       open ? onLeave() : onEnter();
     }}
   >
-    <span className={`${base} ${toneCls}`}>{text}</span>
+    <span
+      className={`${base} ${toneCls} ${onClick ? "cursor-pointer" : ""}`}
+      onClick={onClick}
+    >
+      {text}
+    </span>
 
       {open && tip && (
         <span
