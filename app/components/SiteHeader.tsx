@@ -5,18 +5,14 @@ import { useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import { usePathname, useRouter, Link } from "@/i18n/navigation";
 import NoticeButton from "./NoticeButton";
-import HelpButton from "./HelpButton";
 
 type Lang = "ko" | "en";
 
 type Props = {
   subtitle: string;
   champSearchOpen?: boolean;
-  helpOpen?: boolean;
-  onHelpOpenChange?: (v: boolean) => void;
   noticeOpen?: boolean;
   onNoticeOpenChange?: (v: boolean) => void;
-  onGlossaryOpenChange?: (v: boolean) => void;
 };
 
 // 언어 전환 버튼 스타일/마크업 (실제 <a href>로 렌더링 — 크롤러가 ko/en 상호 발견 가능)
@@ -61,7 +57,7 @@ function LangButtonsWithQuery({ lang, pathname }: { lang: Lang; pathname: string
   return <LangButtons lang={lang} pathname={pathname} query={query} />;
 }
 
-export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false, onHelpOpenChange, onNoticeOpenChange, onGlossaryOpenChange }: Props) {
+export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChange }: Props) {
   const locale = useLocale();
   const lang = locale as Lang;
   const router = useRouter();
@@ -112,8 +108,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
               >
                 LT
               </button>
-              <NoticeButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} hidden={!!champSearchOpen || helpOpen} onOpenChange={onNoticeOpenChange} />
-              <HelpButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} onOpenChange={onHelpOpenChange} />
+              <NoticeButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} hidden={!!champSearchOpen} onOpenChange={onNoticeOpenChange} />
               <a href={`/${locale}/tags`} className={btnFull}>
                 {lang === "ko" ? "태그" : "Tags"}
               </a>
@@ -142,7 +137,6 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
             LT
           </button>
           <NoticeButton lang={lang} hidden={!!champSearchOpen} onOpenChange={onNoticeOpenChange} />
-          <HelpButton lang={lang} />
           <a href={`/${locale}/tags`} className={btnBase}>
             {lang === "ko" ? "태그" : "Tags"}
           </a>

@@ -89,9 +89,7 @@ useEffect(() => {
 }, [enemyChamp]);
 
   const [openTarget, setOpenTarget] = useState<"my" | "enemy" | null>(null);
-  const [helpOpen, setHelpOpen] = useState(false);
   const [noticeOpen, setNoticeOpen] = useState(false);
-  const [glossaryOpen, setGlossaryOpen] = useState(false);
 
   useEffect(() => {
     console.log('openTarget:', openTarget);
@@ -229,10 +227,7 @@ useEffect(() => {
         <SiteHeader
           subtitle={subtitle}
           champSearchOpen={openTarget !== null}
-          helpOpen={helpOpen}
-          onHelpOpenChange={setHelpOpen}
           onNoticeOpenChange={setNoticeOpen}
-          onGlossaryOpenChange={setGlossaryOpen}
         />
       )}
 
@@ -530,7 +525,7 @@ setOpenTarget(null);
       )}
 
       {!embedMode && (
-        <FeedbackButton lang={lang} hidden={openTarget !== null || helpOpen || noticeOpen || glossaryOpen} />
+        <FeedbackButton lang={lang} hidden={openTarget !== null || noticeOpen} />
       )}
 
 {!embedMode && (
