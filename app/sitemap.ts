@@ -108,6 +108,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
     });
 
+    // 태그 레퍼런스
+    urls.push({
+      url: `${baseUrl}/${locale}/tags`,
+      changeFrequency: "monthly",
+      priority: locale === "ko" ? 0.6 : 0.5,
+      lastModified: LAST_MODIFIED,
+    });
+
     // 개인정보처리방침
     urls.push({
       url: `${baseUrl}/${locale}/privacy`,

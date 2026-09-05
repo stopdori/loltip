@@ -6,7 +6,6 @@ import { useSearchParams } from "next/navigation";
 import { usePathname, useRouter, Link } from "@/i18n/navigation";
 import NoticeButton from "./NoticeButton";
 import HelpButton from "./HelpButton";
-import TagGlossaryButton from "./TagGlossaryButton";
 
 type Lang = "ko" | "en";
 
@@ -81,6 +80,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
 
   const btnBase = "px-3 py-2 rounded-xl text-sm font-bold border bg-slate-800/60 border-white/10 hover:bg-slate-800/80";
   const btnFull = `w-full ${btnBase} text-center`;
+  const btnIcon = "w-8 h-8 flex items-center justify-center rounded-xl text-xs font-extrabold text-yellow-400 bg-slate-800/60 ring-1 ring-white/10 hover:bg-slate-800/80";
 
   return (
     <header className="max-w-6xl mx-auto px-4">
@@ -105,9 +105,18 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
           </button>
           {menuOpen && (
             <div className="absolute left-0 top-full mt-1 z-50 flex flex-col gap-1 rounded-2xl bg-slate-900 ring-1 ring-white/10 shadow-xl p-2 min-w-[140px]">
+              <button
+                onClick={() => router.push(`/champ`)}
+                aria-label={lang === "ko" ? "홈으로 이동" : "Go to home"}
+                className={btnIcon}
+              >
+                LT
+              </button>
               <NoticeButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} hidden={!!champSearchOpen || helpOpen} onOpenChange={onNoticeOpenChange} />
               <HelpButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} onOpenChange={onHelpOpenChange} />
-              <TagGlossaryButton lang={lang} className={btnFull} onOpenChange={onGlossaryOpenChange} />
+              <a href={`/${locale}/tags`} className={btnFull}>
+                {lang === "ko" ? "태그" : "Tags"}
+              </a>
               <a href={`/${locale}/quiz`} className={`${btnFull} quiz-shimmer`}>
                 {lang === "ko" ? "퀴즈" : "Quiz"}
               </a>
@@ -125,9 +134,18 @@ export default function SiteHeader({ subtitle, champSearchOpen, helpOpen = false
 
         {/* 좌측: 데스크탑 버튼 나열 */}
         <div className="hidden sm:flex items-center gap-1">
+          <button
+            onClick={() => router.push(`/champ`)}
+            aria-label={lang === "ko" ? "홈으로 이동" : "Go to home"}
+            className={btnIcon}
+          >
+            LT
+          </button>
           <NoticeButton lang={lang} hidden={!!champSearchOpen} onOpenChange={onNoticeOpenChange} />
           <HelpButton lang={lang} />
-          <TagGlossaryButton lang={lang} onOpenChange={onGlossaryOpenChange} />
+          <a href={`/${locale}/tags`} className={btnBase}>
+            {lang === "ko" ? "태그" : "Tags"}
+          </a>
           <a href={`/${locale}/quiz`} className={`${btnBase} quiz-shimmer`}>
             {lang === "ko" ? "퀴즈" : "Quiz"}
           </a>
