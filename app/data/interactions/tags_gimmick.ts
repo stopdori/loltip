@@ -118,7 +118,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   BUFF:          { ko: "버프",    en: "Buff"      },
   DEBUFF:        { ko: "디버프",  en: "Debuff"    },
   COOLDOWN:      { ko: "쿨타임",  en: "Cooldown"  },
-  ON_TARGET_CD:  { ko: "대상쿨탐", en: "Target CD" },
+  ON_TARGET_CD:  { ko: "대상별 쿨타임", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
   RECHARGE:      { ko: "충전",  en: "Recharge" },
