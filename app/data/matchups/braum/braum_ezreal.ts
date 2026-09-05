@@ -13,7 +13,7 @@ export const braum_ezreal: MatchupSummary = {
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Ezreal's basic attacks, Q, E, and R.\nEzreal's W nullifies basic attack and skill damage when triggered on Braum, but W's own damage applies without reduction.", "Braum's E(Shield) can [[INTERCEPT_PROJECTILE]] Ezreal's basic attacks, Q, W, E, and R.\nHowever, Ezreal's R projectile is destroyed upon hitting the shield.", "Braum's P [[STUN]] and R [[AIRBORNE]] cannot interrupt Ezreal's E(Arcane Shift) or R(channeling). However, [[STUN]] and [[AIRBORNE]] still apply."],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 브라움 P의 [[STUN]], R의 [[AIRBORNE]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },

@@ -48,7 +48,7 @@ const jinx: ChampData = {
         ko: [
           "P는 3초 안에 챔피언, 에픽, 구조물 파괴에 관여하면 \n [[AS_UP]], [[MS_UP]]. \n [[AS_UP]]는 중첩 가능. \n \n ",
 
-          "Q는 총을 바꿈. \n \n 미니건은 [[BA]] 시 [[AS_UP]] [[BUFF]] 최대 3스택. \n \n 로켓은 징크스의 [[AS_DOWN]]이지만 [[RANGE_UP]]. \n [[BA]] 시 마나를 소모하여 [[AOE]] 공격. \n \n ",
+          "Q는 총을 바꿈. \n \n 미니건은 [[BA]] 시 [[AS_UP]] [[BUFF]] 최대 3스택. \n \n 로켓은 징크스의 [[CRIPPLE]]이지만 [[RANGE_UP]]. \n [[BA]] 시 마나를 소모하여 [[AOE]] 공격. \n \n ",
 
           "W는 맞히면 [[SLOW]]와 [[REVEALED]].",
 
@@ -60,7 +60,7 @@ const jinx: ChampData = {
         en: [
           "P grants [[AS_UP]] and [[MS_UP]] \n when involved in killing a champion, epic monster, or structure within 3 seconds. \n [[AS_UP]] can stack. \n \n ",
 
-          "Q swaps weapons. \n \n Minigun stacks up to 3 [[BUFF]] of [[AS_UP]] per [[BA]]. \n \n Rocket reduces Jinx's [[AS_DOWN]] but increases [[RANGE_UP]]. \n [[BA]] consumes mana and deals [[AOE]] damage. \n \n ",
+          "Q swaps weapons. \n \n Minigun stacks up to 3 [[BUFF]] of [[AS_UP]] per [[BA]]. \n \n Rocket reduces Jinx's [[CRIPPLE]] but increases [[RANGE_UP]]. \n [[BA]] consumes mana and deals [[AOE]] damage. \n \n ",
 
           "W applies [[SLOW]] and [[REVEALED]] on hit.",
 

@@ -13,7 +13,7 @@ export const amumu_ezreal: MatchupSummary = {
       en: ["Q [[STUN]] cannot interrupt Ezreal's E [[BLINK]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Ezreal's E [[BLINK]]."],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 아무무 Q, R의 [[STUN]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },

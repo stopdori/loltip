@@ -13,7 +13,7 @@ export const aphelios_ezreal: MatchupSummary = {
       en: [""],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 아펠리오스 중력포(보라) Q의 [[ROOT]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[ROOT]]은 남아있음."],
       en: [],
     },
   },

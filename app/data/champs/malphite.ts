@@ -6,7 +6,7 @@ const malphite: ChampData = {
     P: ["ST_CONDITIONAL", "SHIELD"],
     Q: ["Q_FLASH", "SLOW", "MS_UP"],
     W: ["AA_RESET"],
-    E: ["E_FLASH", "AS_DOWN"],
+    E: ["E_FLASH", "CRIPPLE"],
     R: ["AIRBORNE", "DASH", "UNSTOPPABLE", "WALL_HOP"],
   },
 
@@ -29,7 +29,7 @@ const malphite: ChampData = {
       { label: { ko: "W 충격파", en: "W Cone" }, tags: ["DMG_PHYSICAL", "AOE"] },
     ] },
 
-    E: ["DMG_MAGIC", "TIMING_CAST", "AOE", "AS_DOWN"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "AOE", "CRIPPLE"],
 
     R: ["DMG_MAGIC", "AOE", "DASH", "UNSTOPPABLE", "AIRBORNE"],
   },
@@ -51,7 +51,7 @@ const malphite: ChampData = {
 
           "W의 [[PASSIVE_BONUS]]는 방어력 비례 [[AR_UP]]. \n \n W는 다음 [[BA]]를 강화하여 [[ON_HIT]] [[DMG_PHYSICAL]]. \n 이후 원뿔 모양의 충격파로 [[AOE]] [[DMG_PHYSICAL]]. \n [[AA_RESET]] 가능.",
 
-          "E는 [[AOE]] [[DMG_MAGIC]]와 [[AS_DOWN]] [[DEBUFF]].",
+          "E는 [[AOE]] [[DMG_MAGIC]]와 [[CRIPPLE]] [[DEBUFF]].",
 
           "R은 [[UNSTOPPABLE]] [[DASH]]. \n 도착 지점에 [[AOE]] [[DMG_MAGIC]]와 [[AIRBORNE]].",
         ],
@@ -63,7 +63,7 @@ const malphite: ChampData = {
 
           "W's [[PASSIVE_BONUS]] grants [[AR_UP]] proportional to armor. \n \n W empowers the next [[BA]] for [[ON_HIT]] [[DMG_PHYSICAL]]. \n It then releases a cone-shaped shockwave for [[AOE]] [[DMG_PHYSICAL]]. \n Can [[AA_RESET]].",
 
-          "E deals [[AOE]] [[DMG_MAGIC]] and applies an [[AS_DOWN]] [[DEBUFF]].",
+          "E deals [[AOE]] [[DMG_MAGIC]] and applies a [[CRIPPLE]] [[DEBUFF]].",
 
           "R is an [[UNSTOPPABLE]] [[DASH]]. \n On arrival, deals [[AOE]] [[DMG_MAGIC]] and applies [[AIRBORNE]].",
         ]

@@ -5,7 +5,7 @@ const fiora: ChampData = {
   skills: {
     P: ["MARK", "SEPARATOR", "ST_CONDITIONAL", "MS_UP", "HEAL"],
     Q: ["DASH", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
-    W: ["INVULNERABLE", "CC_IMMUNE", "AS_DOWN", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
+    W: ["INVULNERABLE", "CC_IMMUNE", "CRIPPLE", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
     E: ["AA_RESET", "AS_UP", "SLOW", "CRIT"],
     R: ["R_FLASH", "MARK", "MS_UP", "SEPARATOR", "ST_CONDITIONAL", "HEAL"],
   },

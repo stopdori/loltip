@@ -77,13 +77,13 @@ const heimerdinger: ChampData = {
         "[[W_FLASH]], [[E_FLASH]] 안됨",
         "Q는 충전 범위, 비활성화 거리는 \n Q포탑 사거리 2배 정도.",
         "딩거 몸 주변에 부품이 회전하는데 \n 회전하는 개수당 Q 사용가능 개수. \n [[EMPOWERED]]Q는 부품을 사용하지 않음.",
-        "R은 Q의 [[COOLDOWN]]을 초기화 시키고 \n W, E는 초기화 시키지 않음."
+        "R은 Q를 [[CDR_RESET]] 시키고 \n W, E는 해당 없음."
       ],
         en: [
           "[[W_FLASH]], [[E_FLASH]] not possible",
           "Q's charge range and deactivation distance \n are roughly twice the turret's attack range.",
           "The number of charges orbiting Heimerdinger \n equals the number of Q turrets available to place. \n [[EMPOWERED]] Q does not consume a charge.",
-          "R resets Q's [[COOLDOWN]] \n but does not reset W or E.",
+          "R [[CDR_RESET]]s Q \n but does not affect W or E.",
         ]
         },
     },

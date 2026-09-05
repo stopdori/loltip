@@ -13,7 +13,7 @@ export const aatrox_ezreal: MatchupSummary = {
       en: [],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 아트록스 Q의 [[AIRBORNE]], W의 [[GRAB]]을 무시하고 [[BLINK]] 할 수 있음."],
       en: [],
     },
   },

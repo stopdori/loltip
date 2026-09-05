@@ -13,7 +13,7 @@ export const darius_ezreal: MatchupSummary = {
       en: [""],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 다리우스 E의 [[GRAB]]을 무시하고 [[BLINK]] 할 수 있음."],
       en: [],
     },
   },

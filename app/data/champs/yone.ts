@@ -7,7 +7,7 @@ const yone: ChampData = {
     Q: ["Q_FLASH", "AIRBORNE", "WALL_HOP"],
     W: ["W_FLASH", "SHIELD"],
     E: ["E_FLASH", "MS_UP", "WALL_HOP"],
-    R: ["AIRBORNE", "WALL_HOP"],
+    R: ["STUN", "KNOCKBACK", "WALL_HOP"],
   },
 
   vision: {
@@ -36,7 +36,7 @@ const yone: ChampData = {
       { label: { ko: "복귀", en: "Recast" }, tags: ["ST_CONDITIONAL", "DMG_TRUE", "TIMING_CAST", "DASH" , "UNSTOPPABLE"] },
     ] },
     
-    R: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "AOE", "AIRBORNE"],
+    R: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "AOE", "STUN", "KNOCKBACK"],
   },
 
   notes: {
@@ -67,7 +67,7 @@ const yone: ChampData = {
         "Q [[AIRBORNE]]은 Q3타에 발동", "W에 [[SHIELD]]는 적중한 적 챔피언 수에 따라 증가", 
         "E1 발동 시에는 벽 못넘음\n돌아오는 E2는 벽 넘음", 
         "E2는 [[UNSTOPPABLE]].", 
-        "R을 시전할때 [[GRAB]], [[KNOCKBACK]]류에 영향을 받아서 궤적이 틀어질 수 있음."
+        "R을 시전할때 요네가 [[GRAB]], [[KNOCKBACK]]류에 영향을 받아서 궤적이 틀어질 수 있음."
       ],
         en: ["[[R_FLASH]] not possible", "P [[AD_UP]] converts excess crit chance", "Q [[AIRBORNE]] triggers on the 3rd cast", "W shield scales with the number of enemy champions hit", "E [[CAST_COMMIT]] only applies on the return", "E cannot wall-hop on cast.\nThe returning E can wall-hop"]
         },

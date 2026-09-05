@@ -257,8 +257,8 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
 
       lang === "ko" ? "디버프류" : "Debuff",
       lang === "ko"
-        ? "기본 디버프  :  [[SLOW]] [[AS_DOWN]] [[AD_DOWN]]"
-        : "Debuff  :  [[SLOW]] [[AS_DOWN]] [[AD_DOWN]]",
+        ? "기본 디버프  :  [[SLOW]] [[CRIPPLE]] [[AD_DOWN]]"
+        : "Debuff  :  [[SLOW]] [[CRIPPLE]] [[AD_DOWN]]",
       lang === "ko"
         ? "특수 디버프  :  [[NEAR_SIGHT]]  [[BLIND]]  [[GW]]" 
         : "Special Debuff  :  [[NEAR_SIGHT]]  [[BLIND]]  [[GW]]",
@@ -287,7 +287,7 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
     null,
     
 
-      "[[HARD_CC]]",
+      "[[IMMOBILIZING]]",
 
       lang === "ko"
         ? "클린즈 가능  :  [[STUN]]  [[ROOT]]  [[SUSPENDING]]  [[SLEEP]]  [[FEAR]]  [[CHARM]]  [[TAUNT]]"

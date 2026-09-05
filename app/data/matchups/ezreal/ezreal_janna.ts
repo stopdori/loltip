@@ -9,7 +9,7 @@ export const ezreal_janna: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
+      ko: ["E의 [[CC_BUFFER]]로 잔나 Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]을 무시하고 [[BLINK]] 할 수 있음."],
       en: [""],
     },
     janna: {

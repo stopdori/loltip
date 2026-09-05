@@ -37,8 +37,9 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🔶 amber_dark (예전 amber-700/40)
   SLOW: "amber_dark",
-  AS_DOWN: "amber_dark",
   AD_DOWN: "amber_dark",
+  CRIPPLE: "amber_dark",
+  DISARM: "amber_dark",
 
   // 🔶 amber_deep (예전 amber-900/40)
   TENACITY: "amber_deep",
@@ -96,7 +97,6 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   HIT_INDICATOR:         "sky_soft",
 
   // 🟩 teal (CC/제어)
-  HARD_CC: "teal",
   STUN: "teal",
   ROOT: "teal",
   AIRBORNE: "teal",
@@ -219,6 +219,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   BUFF:             "indigo",
   DEBUFF:           "fuchsia",
   COOLDOWN:         "indigo",
+  ON_TARGET_CD:     "indigo",
   BUFF_INTERACT:    "white",
   DEBUFF_INTERACT:  "indigo",
   MARK_INTERACT:    "indigo",

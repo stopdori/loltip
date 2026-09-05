@@ -15,7 +15,7 @@ export const briar_ezreal: MatchupSummary = {
         "Briar's R2 [[HOMING]] [[DASH]] can follow Ezreal's E [[BLINK]]. \n However, [[HOMING]] ends upon colliding with Ezreal."],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 브라이어 Q의 [[STUN]], R의 [[FEAR]]를 무시하고 [[BLINK]] 할 수 있음. \n 단, [[STUN]], [[FEAR]]는 남아있음."],
       en: [],
     },
   },

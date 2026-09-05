@@ -13,7 +13,7 @@ export const caitlyn_ezreal: MatchupSummary = {
       en: ["Caitlyn's W ([[TRAP]]) [[ROOT]] cannot interrupt Ezreal's E [[BLINK]]. \n However, the [[ROOT]] and headshot still apply."],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 케이틀린 W의 [[ROOT]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[ROOT]]은 남아있음."],
       en: [],
     },
   },

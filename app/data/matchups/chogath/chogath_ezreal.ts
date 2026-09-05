@@ -15,7 +15,7 @@ export const chogath_ezreal: MatchupSummary = {
         "W [[SILENCE]] cannot interrupt Ezreal's E [[BLINK]]. \n However, the [[SILENCE]] still applies."],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 초가스 Q의 [[AIRBORNE]], W의 [[SILENCE]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

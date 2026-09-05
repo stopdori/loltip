@@ -13,7 +13,7 @@ export const azir_ezreal: MatchupSummary = {
       en: [],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 아지르 R의 [[KNOCKBACK]]을 무시하고 [[BLINK]] 할 수 있음."],
       en: [],
     },
   },

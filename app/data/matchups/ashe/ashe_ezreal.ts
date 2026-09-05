@@ -13,7 +13,7 @@ export const ashe_ezreal: MatchupSummary = {
       en: ["R [[STUN]] cannot interrupt Ezreal's E [[BLINK]]. \n However, the [[STUN]] still applies."],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 애쉬 R의 [[STUN]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },

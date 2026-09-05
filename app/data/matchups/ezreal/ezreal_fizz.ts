@@ -9,7 +9,7 @@ export const ezreal_fizz: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
+      ko: ["E의 [[CC_BUFFER]]로 피즈 R의 [[AIRBORNE]], [[KNOCKBACK]]을 무시하고 [[BLINK]] 할 수 있음."],
       en: [""],
     },
     fizz: {

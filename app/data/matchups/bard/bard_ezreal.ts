@@ -9,12 +9,11 @@ export const bard_ezreal: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: [
-        "바드 R(존야)로 이즈리얼 E의 대기 단계에 맞아도 [[BLINK]] 단계가 발동."],
-      en: [""],
+      ko: [],
+      en: [],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 바드 Q의 [[STUN]], R(존야)의 [[STASIS]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[STUN]]은 남아있음. \n 단, [[STASIS]]은 발동하고 [[BLINK]]."],
       en: [],
     },
   },

@@ -11,6 +11,8 @@ export type TagId =
   | "SHIELD_PIERCE"
   | "TERRAIN"
   | "SUPPRESS" // 제압
+  | "CRIPPLE"  // 공격속도 감소
+  | "DISARM"   // 공격 무력화
   | "TETHER"
   | "REVIVE"        // 부활
   | "INVULNERABLE"  // 무적
@@ -20,7 +22,6 @@ export type TagId =
   | "MS_TO_ENEMY"
   | "MS_DOWN"
   | "AS_UP"          // 공속 증가
-  | "AS_DOWN"
   | "CDR"            // 쿨감
   | "CDR_RESET"      // 쿨초기화
   | "DURATION_RESET" // 지속초기화
@@ -108,7 +109,6 @@ export type TagId =
   | "GW"           // 치감
   | "BURN"         // 부식
 
-  | "HARD_CC"
   | "STUN"
   | "ROOT"
   | "SLOW"
@@ -153,7 +153,6 @@ MS_UP: { ko: "이속↑", en: "MS ↑" },
 MS_TO_ENEMY: { ko: "추격이속↑", en: "Approach MS" },
 MS_DOWN: { ko: "이속↓", en: "MS ↓" },
 AS_UP: { ko: "공속↑", en: "AS ↑" },
-AS_DOWN: { ko: "공속↓", en: "AS ↓" },
 CDR: { ko: "쿨감", en: "CDR" },
 CDR_RESET: { ko: "쿨초", en: "CDR" },
 DURATION_RESET: { ko: "지속초기", en: "Duration Reset" },
@@ -284,7 +283,6 @@ TETHER: { ko: "사슬", en: "Tether" },
 SILENCE: { ko: "침묵", en: "Silence" },
 DISRUPT: { ko: "시전방해", en: "Disrupt" },
 
-HARD_CC: { ko: "하드CC", en: "Hard CC" },
 STUN: { ko: "기절", en: "Stun" },
 ROOT: { ko: "속박", en: "Root" },
 KNOCKBACK: { ko: "넉백", en: "Knockback" },
@@ -293,6 +291,8 @@ KINEMATICS: { ko: "견인", en: "Kinematics" },
 AIRBORNE: { ko: "에어본", en: "Airborne" },
 SUSPENDING: { ko: "체공", en: "Suspending" },
 SUPPRESS: { ko: "제압", en: "Suppress" },
+CRIPPLE: { ko: "공속둔화", en: "Cripple" },
+DISARM: { ko: "무장해제", en: "Disarm" },
 SLEEP: { ko: "수면", en: "Sleep" },
 DROWSY: { ko: "졸림", en: "Drowsy" },
 FEAR: { ko: "공포", en: "Fear" },
@@ -407,7 +407,6 @@ DURATION_EXT: {
   ko: "스킬이나 디버프의 지속시간이 연장됨.",
   en: "Extends the duration of a skill or debuff.",
 },
-AS_DOWN: {  ko: "상대 공격속도 감소",  en: "Reduces attack speed",},
 AD_UP: { ko: "공격력 증가", en: "Increases attack damage" },
 AD_DOWN: { ko: "상대 공격력 감소", en: "Reduces attack damage" },
 AP_UP: {  ko: "주문력 증가",  en: "Increases ability power",},
@@ -434,7 +433,7 @@ DODGE: {
   en: "Dodges basic attacks",
 },
 TENACITY: {
-  ko: "기절, 속박, 둔화, 도발, 공포, 매혹, 침묵, 실명, 수면, 변이\n지속시간 감소",
+  ko: "기절, 속박, 둔화, 도발, 공포, 매혹, 침묵, 실명, 수면, 변이, 이동불가, 광란, 약화, 무장해제\n지속시간 감소",
   en: "Reduces crowd control duration",
 },
 CRIT: {
@@ -668,11 +667,6 @@ BURN: {
 
 
 
-HARD_CC: {
-  ko: "챔피언이 본인의 의지로 움직일 수 없게 만드는 제어기\n기절, 속박, 그렙, 넉백, 에어본, 체공, 제압, 수면, 공포, 매혹, 도발",
-  en: "Stun, Root, Grab, Knockback, Knockup,\nSuspension, Sleep, Fear, Charm, Taunt",
-},
-
 STUN: {
   ko: "아무런 행동을 할 수 없음\n(클린즈 계열로 해제 가능)",
   en: "Cannot act (can be cleansed)",
@@ -729,6 +723,14 @@ SUPPRESS: {
   ko: "상대를 아무것도 할 수 없게 만듬\n스펠 사용도 불가능\n정화(스펠)로는 해제 불가\n수은으로 해제 가능. \n 미카엘 불가능.",
   en: "Renders the enemy completely helpless\nSummoner spells cannot be used\nCannot be cleansed by Cleanse (Spell)\nCan be removed by Quicksilver Sash (QSS)\nCannot be cleansed by Mikael's Blessing",
 },
+CRIPPLE: {
+  ko: "상대의 공격속도를 감소시킴. \n 강인함의 영향을 받고, 클린즈 계열로 해제 가능. \n (실명과 함께 킬 관여 인정에서 예외로 처리됨)",
+  en: "Reduces the target's attack speed. \n Affected by Tenacity and can be cleansed. \n (Along with Blind, an exception for assist credit)",
+},
+DISARM: {
+  ko: "기본 공격을 사용하지 못하게 만듦 (스킬은 사용 가능). \n 강인함의 영향을 받고, 클린즈 계열로 해제 가능. \n (실명과 마찬가지로 미카엘의 축복으로는 해제되지 않음)",
+  en: "Prevents basic attacks (abilities can still be used). \n Affected by Tenacity and can be cleansed. \n (Like Blind, not removable by Mikael's Blessing)",
+},
 
 CHARM: {
   ko: "대상을 내 쪽으로 걸어오게 만듦\n(클린즈 계열로 해제 가능)\n단, 시전자가 죽으면 매혹이 해제됨",
@@ -747,8 +749,8 @@ GROUNDED: {
   en: "A debuff that prevents the use of movement abilities \n (dashes, blinks, teleports, item movement speed effects, etc.). \n (Can use movement abilities again if cleansed)",
 },
 FEAR: {
-  ko: "대상이 시전자 반대쪽으로 도망치게 만듦\n(클린즈 계열로 해제 가능)",
-  en: "Forces the target to flee away from you \n(can be cleansed)",
+  ko: "대상이 시전자 반대쪽으로 도망치게 만듦\n(클린즈 계열로 해제 가능)\n단, 시전자가 죽으면 공포가 해제됨",
+  en: "Forces the target to flee away from you \n(can be cleansed)\nHowever, if the caster dies, the fear is removed",
 },
 BERSERK: {
   ko: "주변 유닛을 공격. \n 자신의 아군 우선 공격. \n 클린즈 계열로 해제 가능.",

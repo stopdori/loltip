@@ -9,7 +9,7 @@ export const ezreal_galio: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
+      ko: ["E의 [[CC_BUFFER]]로 갈리오 W의 [[TAUNT]] / E, R의 [[AIRBORNE]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[TAUNT]]은 남아있음."],
       en: [""],
     },
     galio: {

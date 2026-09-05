@@ -72,12 +72,12 @@ const rakan: ChampData = {
       note2: {
         ko: [
         "[[W_FLASH]], [[R_FLASH]] 불가.", 
-        "W는 두단계로 나뉨. \n 돌진/도약단계 \n 돌진단계에 [[HARD_CC]]를 맞으면 도약단계가 발동하지 않음.", 
+        "W는 두단계로 나뉨. \n 돌진/도약단계 \n 돌진단계에 [[IMMOBILIZING]]를 맞으면 도약단계가 발동하지 않음.",
         "자야, 라칸 시너지 \n 1. 귀환 [[SKILL_CHANNEL]] 중인 대상에게 다가가서 귀환을 누르면 \n 앞서 진행한 귀환게이지를 공유받음. \n \n 2. 자야 W 효과를 라칸이 공유받음 \n [[MS_UP]]는 자야가 공격해야 라칸도 증가 \n \n 3. 라칸 E의 사용 범위가 자야에게는 2배."
       ],
         en: [
           "[[W_FLASH]] and [[R_FLASH]] are not possible.",
-          "W is split into two phases. \n Dash phase / leap phase. \n If hit by [[HARD_CC]] during the dash phase, the leap phase will not activate.",
+          "W is split into two phases. \n Dash phase / leap phase. \n If hit by [[IMMOBILIZING]] during the dash phase, the leap phase will not activate.",
           "Xayah & Rakan synergy \n 1. Walking up to an ally who is [[SKILL_CHANNEL]]ing recall and pressing recall \n shares their existing recall progress. \n \n 2. Rakan shares Xayah's W effect. \n The [[MS_UP]] only increases for Rakan when Xayah attacks. \n \n 3. Rakan's E usable range is doubled when targeting Xayah.",
         ]
         },

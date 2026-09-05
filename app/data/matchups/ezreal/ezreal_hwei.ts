@@ -9,7 +9,7 @@ export const ezreal_hwei: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
+      ko: ["E의 [[CC_BUFFER]]로 흐웨이 EQ의 [[FEAR]], EW의 [[ROOT]], EE의 [[GRAB]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[FEAR]], [[ROOT]]은 남아있음."],
       en: [""],
     },
     hwei: {

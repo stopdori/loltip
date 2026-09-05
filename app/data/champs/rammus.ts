@@ -42,7 +42,7 @@ const rammus: ChampData = {
         ko: [
           "P는 방마저 비례 [[AD_UP]]. \n \n",
 
-          "Q는 공 모양으로 [[TRANSFORM]] [[MS_UP]]. \n 이후 6초간 점진적으로 [[MS_UP]] 레벨 비례 추가. \n 부딪히면 [[DMG_MAGIC]], [[KNOCKBACK]], 람머스 주변 [[AOE]] [[SLOW]]. \n \n 람머스가 [[HARD_CC]]에 맞거나 \n W를 사용하면 [[TRANSFORM]] 해제. \n Q [[SKILL_RECAST]]하여 [[CANCELLABLE]]. \n \n",
+          "Q는 공 모양으로 [[TRANSFORM]] [[MS_UP]]. \n 이후 6초간 점진적으로 [[MS_UP]] 레벨 비례 추가. \n 부딪히면 [[DMG_MAGIC]], [[KNOCKBACK]], 람머스 주변 [[AOE]] [[SLOW]]. \n \n 람머스가 [[IMMOBILIZING]]에 맞거나 \n W를 사용하면 [[TRANSFORM]] 해제. \n Q [[SKILL_RECAST]]하여 [[CANCELLABLE]]. \n \n",
 
           "W는 [[AR_MR_UP]]. \n 람머스를 [[BA]] 공격하는 대상에게 [[DMG_MAGIC]] 반사. \n W [[SKILL_RECAST]]하여 [[CANCELLABLE]]. \n \n",
 
@@ -54,7 +54,7 @@ const rammus: ChampData = {
         en: [
           "P grants [[AD_UP]] scaling with armor and MR. \n \n",
 
-          "Q [[TRANSFORM]]s Rammus into ball form with [[MS_UP]]. \n Over the next 6 seconds, gains additional [[MS_UP]] scaling with rank. \n On collision, deals [[DMG_MAGIC]], [[KNOCKBACK]]s, and applies [[AOE]] [[SLOW]] around Rammus. \n \n [[TRANSFORM]] ends if Rammus is hit by [[HARD_CC]] \n or uses W. \n [[CANCELLABLE]] by recasting Q ([[SKILL_RECAST]]). \n \n",
+          "Q [[TRANSFORM]]s Rammus into ball form with [[MS_UP]]. \n Over the next 6 seconds, gains additional [[MS_UP]] scaling with rank. \n On collision, deals [[DMG_MAGIC]], [[KNOCKBACK]]s, and applies [[AOE]] [[SLOW]] around Rammus. \n \n [[TRANSFORM]] ends if Rammus is hit by [[IMMOBILIZING]] \n or uses W. \n [[CANCELLABLE]] by recasting Q ([[SKILL_RECAST]]). \n \n",
 
           "W grants [[AR_MR_UP]]. \n Reflects [[DMG_MAGIC]] to anyone who [[BA]]s Rammus. \n [[CANCELLABLE]] by recasting W ([[SKILL_RECAST]]). \n \n",
 

@@ -5,7 +5,7 @@ const nasus: ChampData = {
   skills: {
     P: ["LIFESTEAL"],
     Q: ["AA_RESET", "SEPARATOR", "ST_CONDITIONAL", "STACKING"],
-    W: ["W_FLASH", "SLOW", "AS_DOWN"],
+    W: ["W_FLASH", "SLOW", "CRIPPLE"],
     E: ["E_FLASH", "AR_SHRED"],
     R: ["BUFF_FORM", "SIZE_UP", "MAX_HP_UP", "AR_MR_UP"],
   },
@@ -52,7 +52,7 @@ const nasus: ChampData = {
 
           "Q는 다음 [[BA]] 강화. \n [[RANGE_UP]], [[DMG_PHYSICAL]] + 스택당 [[DMG_PHYSICAL]].",
 
-          "W는 적에게 5초동안 점점 강화되는 [[SLOW]], [[AS_DOWN]]. \n [[AS_DOWN]]는 [[SLOW]] 수치의 75% ",
+          "W는 적에게 5초동안 점점 강화되는 [[SLOW]], [[CRIPPLE]]. \n [[CRIPPLE]]는 [[SLOW]] 수치의 75% ",
 
           "E는 [[AOE]] 최초 강한 [[DMG_MAGIC]]. \n [[ZONE]] 지속 [[DMG_MAGIC]], [[AR_SHRED]].",
           
@@ -62,7 +62,7 @@ const nasus: ChampData = {
         en: [
           "P grants [[LIFESTEAL]] on [[BA]].",
           "Q empowers the next [[BA]]. \n Gains [[RANGE_UP]] and [[DMG_PHYSICAL]], plus bonus [[DMG_PHYSICAL]] per stack.",
-          "W applies a gradually increasing [[SLOW]] and [[AS_DOWN]] for 5 seconds. \n [[AS_DOWN]] is 75% of the [[SLOW]] value.",
+          "W applies a gradually increasing [[SLOW]] and [[CRIPPLE]] for 5 seconds. \n [[CRIPPLE]] is 75% of the [[SLOW]] value.",
           "E deals initial strong [[AOE]] [[DMG_MAGIC]]. \n The [[ZONE]] applies ongoing [[DMG_MAGIC]] and [[AR_SHRED]].",
           "R grants [[MAX_HP_UP]] and [[AR_MR_UP]] for 15 seconds. \n Reduces Q's cooldown by 50%. \n Creates an [[AURA]] around Nasus. \n Deals ongoing [[DMG_MAGIC]] based on the target's max health.",
         ]

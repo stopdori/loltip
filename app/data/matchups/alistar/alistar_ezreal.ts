@@ -13,7 +13,7 @@ export const alistar_ezreal: MatchupSummary = {
       en: ["Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] cannot interrupt Ezreal's E [[BLINK]]. \n However, E's [[STUN]] still applies."],
     },
     ezreal: {
-      ko: [],
+      ko: ["E의 [[CC_BUFFER]]로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },

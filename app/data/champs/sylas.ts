@@ -86,12 +86,15 @@ const sylas: ChampData = {
 
       note2: {
         ko: [
-        "[[Q_FLASH]], [[E_FLASH]] 안됨", 
-        "E는 E1, E2로 나뉘는데\nE2는 투척/돌진단계로 나뉨\n투척단계에 CC를 맞으면 무시하고 돌진단계를 발동\n돌진단계에 [[HARD_CC]]를 맞으면 끊길 수 있음", 
-        "R을 훔칠 때 사일러스가 [[HARD_CC]]에 걸리면 훔치기 취소.\n쿨타임은 소모됨.", 
+        "[[Q_FLASH]], [[E_FLASH]] 불가.", 
+
+        "E는 E1, E2로 나뉘는데 \n E2는 투척/돌진단계로 나뉨 \n 투척단계에 [[IMMOBILIZING]]를 맞으면 무시하고 돌진단계를 발동 \n 돌진단계에 맞으면 [[DASH]]이 끊길 수 있음.",
+
+        "R로 궁극기를 훔칠 때 사일러스가 [[IMMOBILIZING]]에 걸리면. \n [[COOLDOWN]]은 소모되고 궁극기를 훔치지 못함.",
+
         "R은 챔피언별로 아래 박스에 정리"
       ],
-        en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "E splits into E1 and E2.\nE2 has a throw / dash phase.\nCC during the throw phase is ignored and the dash still triggers.\nHard CC during the dash can interrupt it", "If Sylas is hit by [[HARD_CC]] while stealing, the steal is canceled.\nThe cooldown is still consumed.", "R is detailed per champion in the box below"]
+        en: ["[[Q_FLASH]] and [[E_FLASH]] not possible", "E splits into E1 and E2. \n E2 has a throw / dash phase. \n Being hit by [[IMMOBILIZING]] during the throw phase is ignored and the dash phase still triggers. \n If hit during the dash phase, the [[DASH]] can be interrupted.", "If Sylas is hit by [[IMMOBILIZING]] while stealing an ultimate with R, \n the [[COOLDOWN]] is consumed and the ultimate cannot be stolen.", "R is detailed per champion in the box below"]
         },
     },
     vision: { ko: [], en: [] },

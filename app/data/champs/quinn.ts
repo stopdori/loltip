@@ -77,7 +77,7 @@ const quinn: ChampData = {
 
           "E는 대상에게 [[DASH]]하고 반대 방향으로 [[DASH]]. \n 동시에 [[DMG_PHYSICAL]], [[KNOCKBACK]], [[SLOW]], [[MARK]].",
 
-          "R은 [[SKILL_CHANNEL]] [[TRANSFORM]] 하여 [[MS_UP]]. \n 피해를 입으면 [[MS_UP]] 효과 3초간 사라짐. \n (미니언 제외) \n [[HARD_CC]], [[SILENCE]]에 걸리면 R [[TRANSFORM]] 종료. (R2 효과 없음) \n \n R을 [[SKILL_RECAST]] 하거나 [[BA]], Q, E를 사용하면 \n [[TRANSFORM]] 종료하고 [[AOE]] [[DMG_PHYSICAL]].",
+          "R은 [[SKILL_CHANNEL]] [[TRANSFORM]] 하여 [[MS_UP]]. \n 피해를 입으면 [[MS_UP]] 효과 3초간 사라짐. \n (미니언 제외) \n [[IMMOBILIZING]], [[SILENCE]]에 걸리면 R [[TRANSFORM]] 종료. (R2 효과 없음) \n \n R을 [[SKILL_RECAST]] 하거나 [[BA]], Q, E를 사용하면 \n [[TRANSFORM]] 종료하고 [[AOE]] [[DMG_PHYSICAL]].",
         ],
 
         en: [
@@ -89,7 +89,7 @@ const quinn: ChampData = {
 
           "E [[DASH]]es to the target then [[DASH]]es back in the opposite direction. \n Simultaneously deals [[DMG_PHYSICAL]], [[KNOCKBACK]], [[SLOW]], and [[MARK]].",
 
-          "R [[SKILL_CHANNEL]]s into a [[TRANSFORM]] granting [[MS_UP]]. \n Taking damage removes the [[MS_UP]] effect for 3 seconds. \n (excluding minions) \n Getting hit by [[HARD_CC]] or [[SILENCE]] ends R's [[TRANSFORM]]. (no R2 effect) \n \n [[SKILL_RECAST]]ing R or using [[BA]], Q, or E \n ends the [[TRANSFORM]] and deals [[AOE]] [[DMG_PHYSICAL]].",
+          "R [[SKILL_CHANNEL]]s into a [[TRANSFORM]] granting [[MS_UP]]. \n Taking damage removes the [[MS_UP]] effect for 3 seconds. \n (excluding minions) \n Getting hit by [[IMMOBILIZING]] or [[SILENCE]] ends R's [[TRANSFORM]]. (no R2 effect) \n \n [[SKILL_RECAST]]ing R or using [[BA]], Q, or E \n ends the [[TRANSFORM]] and deals [[AOE]] [[DMG_PHYSICAL]].",
         ]
 
       },

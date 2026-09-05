@@ -8,7 +8,7 @@ const taliyah: ChampData = {
     W: ["W_FLASH", "KNOCKBACK"],
     E: ["E_FLASH", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
     R: { phases: [
-      { label: { ko: "R1", en: "R1" }, tags: ["TERRAIN", "SKILL_RECAST", "SEPARATOR", "ST_CONDITIONAL", "KNOCKBACK"] },
+      { label: { ko: "R1", en: "R1" }, tags: ["TERRAIN", "SKILL_RECAST", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"] },
       { label: { ko: "R2", en: "R2" }, tags: ["DASH", "WALL_HOP", "SKILL_RECAST"] },
     ] },
   },
@@ -37,7 +37,7 @@ const taliyah: ChampData = {
     ] },
 
     R: { phases: [
-      { label: { ko: "R1", en: "R1" }, tags: ["TIMING_CAST", "PROJECTILE", "TERRAIN", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST", "SEPARATOR", "ST_CONDITIONAL", "KNOCKBACK"] },
+      { label: { ko: "R1", en: "R1" }, tags: ["TIMING_CAST", "PROJECTILE", "TERRAIN", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"] },
       { label: { ko: "R2", en: "R2" }, tags: ["SKILL_CHANNEL", "DASH", "SKILL_RECAST"] },
     ] },
   },

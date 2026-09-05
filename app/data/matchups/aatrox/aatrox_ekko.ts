@@ -13,7 +13,7 @@ export const aatrox_ekko: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Ekko's E roll [[DASH]]."],
     },
     ekko: {
-      ko: [],
+      ko: ["W의 [[STUN]]로 아트록스 E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },

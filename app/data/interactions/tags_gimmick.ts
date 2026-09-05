@@ -88,6 +88,7 @@ export type GimmickTagId =
   | "BUFF"
   | "DEBUFF"
   | "COOLDOWN"
+  | "ON_TARGET_CD"
   | "EMPOWERED"
   | "RANGE_UP"
   | "RECHARGE"
@@ -119,6 +120,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   BUFF:          { ko: "버프",    en: "Buff"      },
   DEBUFF:        { ko: "디버프",  en: "Debuff"    },
   COOLDOWN:      { ko: "쿨타임",  en: "Cooldown"  },
+  ON_TARGET_CD:  { ko: "대상쿨탐", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   RANGE_UP:      { ko: "사거리↑", en: "Range↑" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
@@ -218,6 +220,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   BUFF:             { ko: "자신 또는 아군에게 유리한 효과", en: "A beneficial effect applied to self or allies" },
   DEBUFF:           { ko: "적에게 불리한 효과", en: "A negative effect applied to enemies" },
   COOLDOWN:         { ko: "스킬을 다시 사용할 준비를 하는 상태.", en: "The state of waiting before the skill can be used again." },
+  ON_TARGET_CD:     { ko: "대상별 쿨타임. 동일한 스킬이라도 대상마다 쿨타임이 독립적으로 적용됨. \n 한 대상에게 사용해도 다른 대상에게는 바로 사용 가능.", en: "The skill's cooldown applies independently per target. \n Using it on one target does not affect its availability on others." },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
   RANGE_UP:         { ko: "스킬 또는 공격의 사거리가 증가함", en: "Increases attack range" },
   SKILL_RECAST:     { ko: "쿨타임이 돌기 전에 스킬을 다시 사용할 수 있음", en: "The ability can be used again before its cooldown begins" },
