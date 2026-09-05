@@ -90,9 +90,7 @@ export type GimmickTagId =
   | "COOLDOWN"
   | "ON_TARGET_CD"
   | "EMPOWERED"
-  | "RANGE_UP"
   | "RECHARGE"
-  | "MARK"
   | "PROC"
 
   | "BUFF_STACK"
@@ -122,7 +120,6 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   COOLDOWN:      { ko: "쿨타임",  en: "Cooldown"  },
   ON_TARGET_CD:  { ko: "대상쿨탐", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
-  RANGE_UP:      { ko: "사거리↑", en: "Range↑" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
   RECHARGE:      { ko: "충전",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
@@ -166,7 +163,6 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   E: { ko: "E", en: "E" },
   R: { ko: "R", en: "R" },
   BA: { ko: "평타", en: "Basic Attack" },
-  MARK:          { ko: "표식",     en: "Mark"          },
   HOMING:        { ko: "호밍",     en: "Homing"        },
   BEAM:          { ko: "광선",     en: "Beam"          },
   // 피해 범위
@@ -222,7 +218,6 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   COOLDOWN:         { ko: "스킬을 다시 사용할 준비를 하는 상태.", en: "The state of waiting before the skill can be used again." },
   ON_TARGET_CD:     { ko: "대상별 쿨타임. 동일한 스킬이라도 대상마다 쿨타임이 독립적으로 적용됨. \n 한 대상에게 사용해도 다른 대상에게는 바로 사용 가능.", en: "The skill's cooldown applies independently per target. \n Using it on one target does not affect its availability on others." },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
-  RANGE_UP:         { ko: "스킬 또는 공격의 사거리가 증가함", en: "Increases attack range" },
   SKILL_RECAST:     { ko: "쿨타임이 돌기 전에 스킬을 다시 사용할 수 있음", en: "The ability can be used again before its cooldown begins" },
   RECHARGE:         { ko: "스킬을 여러 개 충전해두고 사용할 수 있음\n최대 충전이 아니면 쿨타임이 돔.", en: "Multiple charges of the skill can be stored and used\nCooldown applies if not at maximum charges." },
   STACKING:         { ko: "조건을 충족할 때마다 \n 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced \n each time the conditions are met" },
@@ -262,7 +257,6 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   E: { ko: "E", en: "E" },
   R: { ko: "R", en: "R" },
   BA: { ko: "기본 공격", en: "Basic Attack" },
-  MARK:             { ko: "적에게 표식을 남기며 \n 표식이 있는 대상에게 추가 효과가 발동됨", en: "Marks an enemy and triggers \n a bonus effect on marked targets" },
   // 피해 범위
   SINGLE:      { ko: "단일 대상에게만 적용되는 스킬", en: "Affects only a single target" },
   PIERCE:        { ko: "투사체가 대상을 관통하여 뒤의 적에게도 적중", en: "Projectile passes through targets" },

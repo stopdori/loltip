@@ -10,6 +10,7 @@ export type TagId =
   | "SHIELD_BREAK"
   | "SHIELD_PIERCE"
   | "TERRAIN"
+  | "MARK"
   | "SUPPRESS" // 제압
   | "CRIPPLE"  // 공격속도 감소
   | "DISARM"   // 공격 무력화
@@ -29,11 +30,11 @@ export type TagId =
   | "AD_UP"          // 공격력 증가
   | "AD_DOWN"       // 공격력 감소
   | "AP_UP"
+  | "RANGE_UP"
   | "SIZE_UP"
   | "SKILL_SIZE_UP"
   | "CRIT"
   | "EXECUTE"
-  | "PIERCE"
   | "DMG_REDUCE"
   | "MAGIC_DR"
   | "DODGE"
@@ -160,6 +161,7 @@ DURATION_EXT: { ko: "지속연장", en: "Duration Ext" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
+RANGE_UP:      { ko: "사거리↑", en: "Range↑" },
 SIZE_UP: { ko: "크기↑", en: "Size ↑" },
 SKILL_SIZE_UP: { ko: "스킬크기↑", en: "Skill Size ↑" },
 CRIT: { ko: "치명타", en: "Critical" },
@@ -170,6 +172,7 @@ CRIT: { ko: "치명타", en: "Critical" },
 ALLY_TP_OK: { ko: "아군텔", en: "Ally TP" },
 WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
 TERRAIN: { ko: "벽", en: "TERRAIN" },
+MARK:          { ko: "표식",     en: "Mark"          },
 GHOSTING: { ko: "유체화", en: "Ghosting" },
 
 /* =========================
@@ -179,7 +182,6 @@ AA_RESET: { ko: "평캔", en: "AA Reset" },
 UNTARGETABLE: { ko: "타겟불가", en: "Untargetable" },
 TOWER_DODGE: { ko: "타워회피", en: "Turret Dodge" },
 DODGE: { ko: "회피", en: "Dodge" },
-PIERCE: { ko: "관통", en: "Piercing" },
 EXECUTE: { ko: "처형", en: "Execute" },
 
 /* =========================
@@ -354,6 +356,7 @@ TERRAIN: {
   ko: "벽 생성. \n 생성될 때 대상이 밀려나면서 에어본.",
   en: "Creates a wall. \n Knocks the target back and airborne when created.",
 },
+MARK: { ko: "적에게 표식을 남기며 \n 표식이 있는 대상에게 추가 효과가 발동됨", en: "Marks an enemy and triggers \n a bonus effect on marked targets" },
 TETHER: {
   ko: "연결된 대상이 범위를 벗어나지 않으면\n스킬이 계속 유효하거나 추가 효과가 발동함",
   en: "If the linked target does not leave the range,\nthe skill remains active or \nits additional effects will trigger.",
@@ -410,6 +413,7 @@ DURATION_EXT: {
 AD_UP: { ko: "공격력 증가", en: "Increases attack damage" },
 AD_DOWN: { ko: "상대 공격력 감소", en: "Reduces attack damage" },
 AP_UP: {  ko: "주문력 증가",  en: "Increases ability power",},
+RANGE_UP: { ko: "스킬 또는 공격의 사거리가 증가함", en: "Increases attack range" },
 SIZE_UP: {
   ko: "챔피언의 크기가 커짐.\n히트박스도 같이 커짐.",
   en: "Increases the champion's size.\nAlso increases the hitbox.",
@@ -445,11 +449,6 @@ EXECUTE: {
   en: "Instantly kills targets below a health threshold",
 },
 
-
-PIERCE: {
-  ko: "대상을 관통하여 뒤에 있는 적에게도 적중함",
-  en: "Pierces through targets and can \nhit enemies behind them",
-},
 
 
 

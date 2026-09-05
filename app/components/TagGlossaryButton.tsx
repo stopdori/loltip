@@ -126,18 +126,6 @@ function renderWithTokens(text: string, lang: "ko" | "en") {
         const raw = part.match(/^\[\[(.+?)\]\]$/)?.[1];
         const token = raw?.trim() as TagId | undefined;
 
-        if (token && TAG_LABEL[token as TagId]) {
-          const tone = toneOfTag(token as TagId);
-          return (
-            <TagPill
-              key={idx}
-              text={TAG_LABEL[token as TagId][lang]}
-              tip={TAG_DESC?.[token as TagId]?.[lang]}
-              tone={tone}
-            />
-          );
-        }
-
         if (token && GIMMICK_TAG_LABEL[token as GimmickTagId]) {
           const tone = toneOfTag(token as GimmickTagId);
           return (
@@ -145,6 +133,18 @@ function renderWithTokens(text: string, lang: "ko" | "en") {
               key={idx}
               text={GIMMICK_TAG_LABEL[token as GimmickTagId][lang]}
               tip={GIMMICK_TAG_DESC?.[token as GimmickTagId]?.[lang]}
+              tone={tone}
+            />
+          );
+        }
+
+        if (token && TAG_LABEL[token as TagId]) {
+          const tone = toneOfTag(token as TagId);
+          return (
+            <TagPill
+              key={idx}
+              text={TAG_LABEL[token as TagId][lang]}
+              tip={TAG_DESC?.[token as TagId]?.[lang]}
               tone={tone}
             />
           );

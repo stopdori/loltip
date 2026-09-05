@@ -237,7 +237,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   EMPOWERED: "indigo",
   // 피해 범위
   SINGLE:  "indigo",
-  // PIERCE: "red" — TagId에 이미 정의됨
+  // PIERCE: "red" — 위쪽 red 섹션에 이미 정의됨 (GimmickTagId 소속)
   PIERCE_MINION: "indigo",
   PIERCE_ONCE:   "indigo",
   AOE:     "indigo",
