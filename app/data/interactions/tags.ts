@@ -44,6 +44,7 @@ export type TagId =
   | "SILENCE"
   | "FEAR"
   | "BERSERK"
+  | "FORCED_ACTION"
   | "NEAR_SIGHT"
   | "BLIND"
   | "POLYMORPH"
@@ -185,6 +186,7 @@ CHARM: { ko: "매혹", en: "Charm" },
 SILENCE: { ko: "침묵", en: "Silence" },
 FEAR: { ko: "공포", en: "Fear" },
 BERSERK: { ko: "광란", en: "Berserk" },
+FORCED_ACTION: { ko: "강제행동", en: "Forced Action" },
 NEAR_SIGHT: { ko: "시야감소", en: "Nearsight" },
 BLIND: { ko: "실명", en: "Blind" },
 POLYMORPH: { ko: "변이", en: "Polymorph" },
@@ -430,6 +432,10 @@ FEAR: {
 BERSERK: {
   ko: "주변 유닛을 공격. \n 자신의 아군 우선 공격. \n 클린즈 계열로 해제 가능.",
   en: "Attacks nearby units. \n Prioritizes allies. \n Can be cleansed.",
+},
+FORCED_ACTION: {
+  ko: "대상에게 특정 행동(공격, 도주, 이동 등)을 강제하는 CC. \n 광란을 제외하면 시전자가 죽을 시 조기 해제됨.",
+  en: "Forces the target into a specific action (attack, flee, move, etc). \n Ends prematurely if the caster dies, except Berserk.",
 },
 NEAR_SIGHT: {
   ko: "시야가 축소됨. \n (정화를 제외한 클린즈 계열로 해제 가능)",

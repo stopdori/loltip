@@ -9,6 +9,7 @@ import { TAG_LABEL, TAG_DESC, type TagId } from "@/app/data/interactions";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "@/app/data/interactions/tags_gimmick";
 import { TAG_CATEGORIES, VISION_STEALTH_CATEGORY, GIMMICK_CATEGORIES } from "@/app/data/interactions/tagCategories";
 import { toneOfTag } from "@/app/data/interactions/tagTone";
+import { STAT_ICONS } from "@/app/data/interactions/statIcons";
 
 type Lang = "ko" | "en";
 type Tab = "basic" | "vision" | "gimmick";
@@ -128,6 +129,7 @@ export default function TagsClient() {
           if (!label) return null;
           const desc = (descMap as Partial<Record<string, { ko: string; en: string }>>)[key];
           const domId = `tag-${kind}-${key}`;
+          const statIcon = STAT_ICONS[key as TagId | GimmickTagId];
           return (
             <div key={key} id={domId}>
               <TagPill
@@ -135,6 +137,8 @@ export default function TagsClient() {
                 tip={desc?.[lang]}
                 tone={toneOfTag(key as TagId | GimmickTagId)}
                 onClick={() => selectTag({ kind, key, label: `${label.ko} ${label.en}` })}
+                icon={statIcon?.icon}
+                direction={statIcon?.direction}
               />
             </div>
           );
@@ -178,6 +182,7 @@ export default function TagsClient() {
     if (!label) return null;
     const desc = (descMap as Partial<Record<string, { ko: string; en: string }>>)[selectedTag.key];
     const descText = desc?.[lang];
+    const statIcon = STAT_ICONS[selectedTag.key as TagId | GimmickTagId];
 
     return (
       <div className="relative max-w-md mx-auto rounded-xl bg-slate-800/60 ring-1 ring-white/10 p-4">
@@ -205,6 +210,8 @@ export default function TagsClient() {
           <TagPill
             text={label[lang]}
             tone={toneOfTag(selectedTag.key as TagId | GimmickTagId)}
+            icon={statIcon?.icon}
+            direction={statIcon?.direction}
           />
         </div>
         {descText ? (

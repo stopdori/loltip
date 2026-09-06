@@ -11,6 +11,7 @@ import { CHAMP_FORMS, hasForms, type FormKey } from "../data/interactions/forms"
 import { useChampSpells } from "@/app/lib/useChampSpells";
 import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from "@/app/lib/ddragon";
 import { toneOfTag, TONE_CLASS, NOTE_TONE_CLASS } from "../data/interactions/tagTone";
+import { STAT_ICONS } from "../data/interactions/statIcons";
 import TokenText from "./TokenText";
 
 
@@ -24,11 +25,17 @@ function TagPill({
   tip,
   tone = "default",
   className,
+  icon,
+  direction,
 }: {
   text: string;
   tip?: string;
   className?: string;
   tone?: Tone;
+  /** 있으면 텍스트 대신 이 경로의 이미지를 렌더링한다 */
+  icon?: string;
+  /** icon과 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
+  direction?: "up" | "down";
 }) {
   const anchorRef = useRef<HTMLSpanElement>(null);
   const tipRef = useRef<HTMLSpanElement>(null);
@@ -107,7 +114,17 @@ function TagPill({
         open ? onLeave() : onEnter();
       }}
     >
-      <span className={cls}>{text}</span>
+      <span className={cls}>
+        {icon ? (
+          <span className="inline-flex items-center gap-[3px]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={icon} alt={text} className="h-[14px] w-[14px] shrink-0" />
+            {direction && <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>}
+          </span>
+        ) : (
+          text
+        )}
+      </span>
 
       {open && tip && (
         <span
@@ -478,7 +495,17 @@ const renderNoteSection = (items: string[], title: string) => {
         const desc =
           GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
           TAG_DESC?.[t as TagId]?.[lang];
-        return <TagPill key={i} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+        const statIcon = STAT_ICONS[t];
+        return (
+          <TagPill
+            key={i}
+            text={labelData[lang]}
+            tone={toneOfTag(t)}
+            tip={desc}
+            icon={statIcon?.icon}
+            direction={statIcon?.direction}
+          />
+        );
       };
 
       return (
@@ -529,7 +556,17 @@ const renderNoteSection = (items: string[], title: string) => {
         const desc =
           GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
           TAG_DESC?.[t as TagId]?.[lang];
-        return <TagPill key={i} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+        const statIcon = STAT_ICONS[t];
+        return (
+          <TagPill
+            key={i}
+            text={labelData[lang]}
+            tone={toneOfTag(t)}
+            tip={desc}
+            icon={statIcon?.icon}
+            direction={statIcon?.direction}
+          />
+        );
       };
 
       return (
@@ -580,7 +617,17 @@ const renderNoteSection = (items: string[], title: string) => {
         const desc =
           GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ??
           TAG_DESC?.[t as TagId]?.[lang];
-        return <TagPill key={i} text={labelData[lang]} tone={toneOfTag(t)} tip={desc} />;
+        const statIcon = STAT_ICONS[t];
+        return (
+          <TagPill
+            key={i}
+            text={labelData[lang]}
+            tone={toneOfTag(t)}
+            tip={desc}
+            icon={statIcon?.icon}
+            direction={statIcon?.direction}
+          />
+        );
       };
 
       return (
@@ -645,12 +692,15 @@ const renderNoteSection = (items: string[], title: string) => {
             const rLabel = TAG_LABEL[t as TagId];
             const labelData = gLabel ?? rLabel;
             if (!labelData) return null;
+            const statIcon = STAT_ICONS[t];
             return (
               <TagPill
                 key={i}
                 text={labelData[lang]}
                 tone={toneOfTag(t)}
                 tip={GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ?? TAG_DESC?.[t as TagId]?.[lang]}
+                icon={statIcon?.icon}
+                direction={statIcon?.direction}
               />
             );
           })

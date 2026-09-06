@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { TAG_LABEL, TAG_DESC, type TagId } from "../data/interactions";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
 import { toneOfTag, NOTE_TONE_CLASS } from "../data/interactions/tagTone";
+import { STAT_ICONS } from "../data/interactions/statIcons";
 import type { Tone } from "../data/interactions/tagTone";
 
 function clamp(n: number, min: number, max: number) {
@@ -15,10 +16,16 @@ function TokenPill({
   label,
   tip,
   tone,
+  icon,
+  direction,
 }: {
   label: string;
   tip?: string;
   tone: Tone;
+  /** 있으면 텍스트 대신 이 경로의 이미지를 렌더링한다 */
+  icon?: string;
+  /** icon과 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
+  direction?: "up" | "down";
 }) {
   const anchorRef = useRef<HTMLSpanElement>(null);
   const tipRef = useRef<HTMLSpanElement>(null);
@@ -90,7 +97,15 @@ function TokenPill({
       }}
     >
       <span className={`inline cursor-help hover:opacity-90 ${NOTE_TONE_CLASS[tone]}`}>
-        {label}
+        {icon ? (
+          <span className="inline-flex items-center gap-[3px] align-text-bottom">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={icon} alt={label} className="inline-block h-[14px] w-[14px]" />
+            {direction && <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>}
+          </span>
+        ) : (
+          label
+        )}
       </span>
 
       {open && tip && (
@@ -163,9 +178,17 @@ export default function TokenText({
           const label = labelData[lang];
           const tip = GIMMICK_TAG_DESC?.[token as GimmickTagId]?.[lang]
                    ?? TAG_DESC?.[token as TagId]?.[lang];
+          const statIcon = STAT_ICONS[token as TagId | GimmickTagId];
 
           return (
-            <TokenPill key={idx} label={label} tip={tip} tone={tone} />
+            <TokenPill
+              key={idx}
+              label={label}
+              tip={tip}
+              tone={tone}
+              icon={statIcon?.icon}
+              direction={statIcon?.direction}
+            />
           );
         }
 

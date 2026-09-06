@@ -17,11 +17,17 @@ export default function TagPill({
   tip,
   tone = "default",
   onClick,
+  icon,
+  direction,
 }: {
   text: string;
   tip?: string;
   tone?: keyof typeof TONE_CLASS;
   onClick?: () => void;
+  /** 있으면 텍스트 대신 이 경로의 이미지를 렌더링한다 ("/stat-icons/icon-xxx.png" 등) */
+  icon?: string;
+  /** icon과 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
+  direction?: "up" | "down";
 }) {
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
@@ -90,10 +96,20 @@ export default function TagPill({
     }}
   >
     <span
-      className={`${base} ${toneCls} ${onClick ? "cursor-pointer" : ""}`}
+      className={`${base} ${toneCls} ${onClick ? "cursor-pointer" : ""} ${icon ? "gap-[3px]" : ""}`}
       onClick={onClick}
     >
-      {text}
+      {icon ? (
+        <>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={icon} alt={text} className="h-[14px] w-[14px] shrink-0" />
+          {direction && (
+            <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>
+          )}
+        </>
+      ) : (
+        text
+      )}
     </span>
 
       {open && tip && (
