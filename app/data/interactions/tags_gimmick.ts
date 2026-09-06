@@ -77,16 +77,18 @@ export type GimmickTagId =
   | "CAST_MOVE"
   | "CAST_IMMOBILE"
   | "CC_BUFFER"
-  // 이동
-  | "MOBILITY"
-  | "DASH"
-  | "BLINK"
   // 중단 여부
   | "CANCELLABLE"
   | "LOCKED"
   // 기타
   | "BUFF"
+  | "BUFF_A"
+  | "BUFF_B"
+  | "BUFF_C"
   | "DEBUFF"
+  | "DEBUFF_A"
+  | "DEBUFF_B"
+  | "DEBUFF_C"
   | "COOLDOWN"
   | "ON_TARGET_CD"
   | "EMPOWERED"
@@ -94,7 +96,13 @@ export type GimmickTagId =
   | "PROC"
 
   | "BUFF_STACK"
+  | "BUFF_STACK_A"
+  | "BUFF_STACK_B"
+  | "BUFF_STACK_C"
   | "DEBUFF_STACK"
+  | "DEBUFF_STACK_A"
+  | "DEBUFF_STACK_B"
+  | "DEBUFF_STACK_C"
   | "STACK_CONSUME"
   // 스킬 타이밍
   | "SKILL_RECAST"
@@ -116,7 +124,13 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   SKILL_VECTOR:      { ko: "벡터",     en: "Vector"     },
   SKILL_STEERABLE:   { ko: "조종가능", en: "Steerable" },
   BUFF:          { ko: "버프",    en: "Buff"      },
+  BUFF_A: { ko: "버프A", en: "Buff A" },
+  BUFF_B: { ko: "버프B", en: "Buff B" },
+  BUFF_C: { ko: "버프C", en: "Buff C" },
   DEBUFF:        { ko: "디버프",  en: "Debuff"    },
+  DEBUFF_A: { ko: "디버프A", en: "Debuff A" },
+  DEBUFF_B: { ko: "디버프B", en: "Debuff B" },
+  DEBUFF_C: { ko: "디버프C", en: "Debuff C" },
   COOLDOWN:      { ko: "쿨타임",  en: "Cooldown"  },
   ON_TARGET_CD:  { ko: "대상별 쿨타임", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
@@ -125,7 +139,13 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   STACKING:      { ko: "스태킹",  en: "Stacking" },
   PROC:          { ko: "스택발동", en: "Proc" },
   BUFF_STACK:    { ko: "버프스택",   en: "Buff Stack"   },
+  BUFF_STACK_A: { ko: "버프스택A", en: "Buff Stack A" },
+  BUFF_STACK_B: { ko: "버프스택B", en: "Buff Stack B" },
+  BUFF_STACK_C: { ko: "버프스택C", en: "Buff Stack C" },
   DEBUFF_STACK:  { ko: "디버프 스택", en: "Debuff Stack" },
+  DEBUFF_STACK_A: { ko: "디버프스택A", en: "Debuff Stack A" },
+  DEBUFF_STACK_B: { ko: "디버프스택B", en: "Debuff Stack B" },
+  DEBUFF_STACK_C: { ko: "디버프스택C", en: "Debuff Stack C" },
   STACK_CONSUME: { ko: "스택소모",   en: "Stack Consume" },
 
   // 타이밍
@@ -198,10 +218,6 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   CAST_MOVE:     { ko: "이동가능", en: "Can Move"      },
   CAST_IMMOBILE: { ko: "이동불가", en: "Immobile"      },
   CC_BUFFER:    { ko: "CC버퍼", en: "CC Buffer"   },
-  // 이동
-  MOBILITY: { ko: "이동기",    en: "Mobility" },
-  DASH:     { ko: "돌진",     en: "Dash"     },
-  BLINK:    { ko: "순간이동", en: "Blink"    },
   SEPARATOR: { ko: "/", en: "/" },
   SEPARATOR_NEWLINE: { ko: "↵", en: "↵" },
 };
@@ -214,7 +230,13 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬", en: "Charges up while held\nCaster can move while charging" },
   SKILL_VECTOR:     { ko: "시전 위치에 좌클릭을 하고 \n 드래그로 방향을 지정하는 스킬. \n ( 단, 클릭을 떼면 안됨. ) \n ( 단, 스마트키는 키보드를 떼면 안됨. )", en: "A skill where you left-click the cast location \n and drag to set the direction. \n (However, you must not release the click.) \n (However, with Smart Cast, you must not release the key.)" },
   BUFF:             { ko: "자신 또는 아군에게 유리한 효과", en: "A beneficial effect applied to self or allies" },
+  BUFF_A: { ko: "자신 또는 아군에게 유리한 효과 (A). \n 한 스킬/챔피언 안에 서로 다른 버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A beneficial effect applied to self or allies (A). \n Used to distinguish when a kit has 2+ distinct simultaneous buffs." },
+  BUFF_B: { ko: "자신 또는 아군에게 유리한 효과 (B). \n 한 스킬/챔피언 안에 서로 다른 버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A beneficial effect applied to self or allies (B). \n Used to distinguish when a kit has 2+ distinct simultaneous buffs." },
+  BUFF_C: { ko: "자신 또는 아군에게 유리한 효과 (C). \n 한 스킬/챔피언 안에 서로 다른 버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A beneficial effect applied to self or allies (C). \n Used to distinguish when a kit has 2+ distinct simultaneous buffs." },
   DEBUFF:           { ko: "적에게 불리한 효과", en: "A negative effect applied to enemies" },
+  DEBUFF_A: { ko: "적에게 불리한 효과 (A). \n 한 스킬/챔피언 안에 서로 다른 디버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A negative effect applied to enemies (A). \n Used to distinguish when a kit has 2+ distinct simultaneous debuffs." },
+  DEBUFF_B: { ko: "적에게 불리한 효과 (B). \n 한 스킬/챔피언 안에 서로 다른 디버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A negative effect applied to enemies (B). \n Used to distinguish when a kit has 2+ distinct simultaneous debuffs." },
+  DEBUFF_C: { ko: "적에게 불리한 효과 (C). \n 한 스킬/챔피언 안에 서로 다른 디버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A negative effect applied to enemies (C). \n Used to distinguish when a kit has 2+ distinct simultaneous debuffs." },
   COOLDOWN:         { ko: "스킬을 다시 사용할 준비를 하는 상태.", en: "The state of waiting before the skill can be used again." },
   ON_TARGET_CD:     { ko: "대상별 쿨타임. 동일한 스킬이라도 대상마다 쿨타임이 독립적으로 적용됨. \n 한 대상에게 사용해도 다른 대상에게는 바로 사용 가능.", en: "The skill's cooldown applies independently per target. \n Using it on one target does not affect its availability on others." },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
@@ -223,7 +245,13 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   STACKING:         { ko: "조건을 충족할 때마다 \n 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced \n each time the conditions are met" },
   PROC:             { ko: "상대 또는 자신에게 스택을 쌓고 \n N번째 적중 시 추가 효과가 발동됨", en: "Stacks build up on the target or yourself, \n and an additional effect is triggered on the $N$-th hit." },
   BUFF_STACK:       { ko: "자신에게 스택을 쌓아 추가 효과가 생김", en: "Applies stacks to self, granting additional effects" },
+  BUFF_STACK_A: { ko: "자신에게 스택을 쌓아 추가 효과가 생김 (A). \n 서로 다른 스택형 버프가 여러 개 있을 때 구분용.", en: "Applies stacks to self, granting additional effects (A). \n Used to distinguish multiple distinct stack-based buffs." },
+  BUFF_STACK_B: { ko: "자신에게 스택을 쌓아 추가 효과가 생김 (B). \n 서로 다른 스택형 버프가 여러 개 있을 때 구분용.", en: "Applies stacks to self, granting additional effects (B). \n Used to distinguish multiple distinct stack-based buffs." },
+  BUFF_STACK_C: { ko: "자신에게 스택을 쌓아 추가 효과가 생김 (C). \n 서로 다른 스택형 버프가 여러 개 있을 때 구분용.", en: "Applies stacks to self, granting additional effects (C). \n Used to distinguish multiple distinct stack-based buffs." },
   DEBUFF_STACK:     { ko: "상대에게 스택을 쌓아 추가 효과가 생김", en: "Applies stacks to enemies, granting additional effects" },
+  DEBUFF_STACK_A: { ko: "상대에게 스택을 쌓아 추가 효과가 생김 (A). \n 서로 다른 스택형 디버프가 여러 개 있을 때 구분용.", en: "Applies stacks to enemies, granting additional effects (A). \n Used to distinguish multiple distinct stack-based debuffs." },
+  DEBUFF_STACK_B: { ko: "상대에게 스택을 쌓아 추가 효과가 생김 (B). \n 서로 다른 스택형 디버프가 여러 개 있을 때 구분용.", en: "Applies stacks to enemies, granting additional effects (B). \n Used to distinguish multiple distinct stack-based debuffs." },
+  DEBUFF_STACK_C: { ko: "상대에게 스택을 쌓아 추가 효과가 생김 (C). \n 서로 다른 스택형 디버프가 여러 개 있을 때 구분용.", en: "Applies stacks to enemies, granting additional effects (C). \n Used to distinguish multiple distinct stack-based debuffs." },
   STACK_CONSUME:    { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함.", en: "Consumes accumulated buff stacks to trigger or empower an effect." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
   TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림", en: "Has a cast delay before activating." },
@@ -292,9 +320,5 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   CAST_CANCEL:   { ko: "시전 중 CC에 걸리면 스킬이 취소됨\n쿨타임만 소모됨", en: "The skill is canceled if hit by CC during the cast\nOnly the cooldown is consumed" },
   CAST_MOVE:     { ko: "시전 중 이동할 수 있음", en: "Caster can move freely during cast" },
   CAST_IMMOBILE: { ko: "시전 중 이동할 수 없음", en: "Caster cannot move during cast" },
-  CC_BUFFER:    { ko: "일부 단계에서 CC를 무시하고 다음단계를 발동함.\n단, CC는 남아있음.\n주로 이동기에 사용.", en: "CC is ignored only during specific phases.\nCommonly seen on mobility abilities." },
-  // 이동
-  MOBILITY: { ko: "이동 능력의 상위 분류. \n 이동기 금지 상태에서 사용 불가.", en: "The overarching category of movement abilities. \n Cannot be used while grounded." },
-  DASH: { ko: "목표 지점까지 경로를 따라 실제로 이동하는 스킬. \n 이동기의 하위 분류.", en: "Moves the caster along a path to the target location. \n A subcategory of Mobility." },
-  BLINK: { ko: "거리를 순간적으로 건너뛰는 이동. \n 이동기의 하위 분류.", en: "Instantly crosses a distance without traversing the space between. \n A subcategory of Mobility." }
+  CC_BUFFER:    { ko: "일부 단계에서 CC를 무시하고 다음단계를 발동함.\n단, CC는 남아있음.\n주로 이동기에 사용.", en: "CC is ignored only during specific phases.\nCommonly seen on mobility abilities." }
 };

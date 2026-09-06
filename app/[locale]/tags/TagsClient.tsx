@@ -20,6 +20,10 @@ type Tab = "basic" | "vision" | "gimmick";
 // GIMMICK_TAG_LABEL의 키 집합이 어긋나면 콘솔에 경고를 띄운다.
 // 프로덕션 빌드에는 영향 없음 (다음 조건 자체가 트리쇼킹되어 사라짐).
 // ---------------------------------------------------------------------------
+// 태그 자체는 실존하지만(SEPARATOR류) 의도적으로 카테고리 화면에는
+// 노출하지 않는 태그. 정합성 체크의 "누락" 경고 대상에서 제외한다.
+const EXCLUDED_FROM_DISPLAY: Set<string> = new Set(["SEPARATOR", "SEPARATOR_NEWLINE"]);
+
 if (process.env.NODE_ENV === "development") {
   // "기본 태그" 탭(TAG_CATEGORIES)만으로는 POSITION_*/HIT_* 9개가 빠지는데,
   // 이 태그들은 "시야·은신" 탭(VISION_STEALTH_CATEGORY)에만 있는 게 의도된
@@ -47,7 +51,9 @@ if (process.env.NODE_ENV === "development") {
 
   const categorizedGimmickKeys = new Set<string>(GIMMICK_CATEGORIES.flatMap((c) => c.keys));
   const actualGimmickKeys = new Set<string>(Object.keys(GIMMICK_TAG_LABEL));
-  const missingFromGimmickCategories = [...actualGimmickKeys].filter((k) => !categorizedGimmickKeys.has(k));
+  const missingFromGimmickCategories = [...actualGimmickKeys].filter(
+    (k) => !categorizedGimmickKeys.has(k) && !EXCLUDED_FROM_DISPLAY.has(k)
+  );
   const staleInGimmickCategories = [...categorizedGimmickKeys].filter((k) => !actualGimmickKeys.has(k));
 
   if (missingFromGimmickCategories.length > 0) {
@@ -62,6 +68,32 @@ if (process.env.NODE_ENV === "development") {
       staleInGimmickCategories
     );
   }
+
+  // subGroups를 쓰는 카테고리는 "subGroups 키 합집합 === keys 최상위 배열"이어야
+  // 한다(순서 무관, 집합 일치). SEPARATOR/SEPARATOR_NEWLINE은 줄 안 구분선 표시용으로만
+  // subGroups에 등장할 수 있으므로, 합집합 계산 시 미리 제외하고 비교한다.
+  const checkSubGroupsUnion = (
+    sourceLabel: string,
+    categories: { title: { ko: string }; keys: string[]; subGroups?: { keys: string[] }[] }[]
+  ) => {
+    for (const cat of categories) {
+      if (!cat.subGroups) continue;
+      const union = new Set(
+        cat.subGroups.flatMap((g) => g.keys).filter((k) => !EXCLUDED_FROM_DISPLAY.has(k))
+      );
+      const keysSet = new Set(cat.keys);
+      const missing = cat.keys.filter((k) => !union.has(k));
+      const extra = [...union].filter((k) => !keysSet.has(k));
+      if (missing.length > 0 || extra.length > 0) {
+        console.warn(
+          `[tagCategories.ts] ${sourceLabel} "${cat.title.ko}"의 subGroups 합집합이 keys와 불일치합니다:`,
+          { missing, extra }
+        );
+      }
+    }
+  };
+  checkSubGroupsUnion("TAG_CATEGORIES", TAG_CATEGORIES);
+  checkSubGroupsUnion("GIMMICK_CATEGORIES", GIMMICK_CATEGORIES);
 }
 
 // ---------------------------------------------------------------------------
@@ -125,7 +157,17 @@ export default function TagsClient() {
 
     return (
       <div className="flex flex-wrap gap-2">
-        {keys.map((key) => {
+        {keys.map((key, i) => {
+          // SEPARATOR/SEPARATOR_NEWLINE은 SkillTagsPanel.tsx의 renderTagPill과
+          // 동일하게, pill(TagPill)로 감싸지 않고 배경/테두리 없는 평문
+          // 텍스트로만 그린다 (GIMMICK_TAG_LABEL 조회 자체를 하지 않음).
+          if (key === "SEPARATOR") {
+            return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+          }
+          if (key === "SEPARATOR_NEWLINE") {
+            return <div key={i} className="w-full h-1" />;
+          }
+
           const label = (labelMap as Record<string, { ko: string; en: string }>)[key];
           if (!label) return null;
           const desc = (descMap as Partial<Record<string, { ko: string; en: string }>>)[key];
@@ -140,6 +182,7 @@ export default function TagsClient() {
                 onClick={() => selectTag({ kind, key, label: `${label.ko} ${label.en}` })}
                 icons={statIcon?.icons}
                 direction={statIcon?.direction}
+                size={statIcon?.size}
                 lang={lang}
               />
             </div>
@@ -152,7 +195,11 @@ export default function TagsClient() {
   // 카테고리 하나를 카드로 렌더링 (제목 + 그 카테고리에 속한 태그 pill 전부,
   // 생략 없이 전체 나열). subGroups가 있으면 줄 단위로 나눠서 그린다.
   const renderCategoryCard = (
-    cat: { title: { ko: string; en: string }; keys: string[]; subGroups?: string[][] },
+    cat: {
+      title: { ko: string; en: string };
+      keys: string[];
+      subGroups?: { title?: { ko: string; en: string }; keys: string[] }[];
+    },
     kind: "tag" | "gimmick"
   ) => {
     return (
@@ -164,7 +211,12 @@ export default function TagsClient() {
         {cat.subGroups ? (
           <div className="space-y-2">
             {cat.subGroups.map((row, i) => (
-              <div key={i}>{renderTagRow(row, kind)}</div>
+              <div key={i}>
+                {row.title ? (
+                  <h3 className="text-xs text-slate-400 mb-1">{row.title[lang]}</h3>
+                ) : null}
+                {renderTagRow(row.keys, kind)}
+              </div>
             ))}
           </div>
         ) : (
@@ -214,6 +266,7 @@ export default function TagsClient() {
             tone={toneOfTag(selectedTag.key as TagId | GimmickTagId)}
             icons={statIcon?.icons}
             direction={statIcon?.direction}
+            size={statIcon?.size}
           />
         </div>
         {descText ? (
@@ -238,7 +291,11 @@ export default function TagsClient() {
   // 카테고리 카드들을 반응형 그리드(모바일 1열 / sm 이상 2열)로 배치.
   // 카테고리가 하나뿐인 탭(시야·은신)은 그리드 없이 카드 하나만 보여준다.
   const renderCategoryList = (
-    categories: { title: { ko: string; en: string }; keys: string[]; subGroups?: string[][] }[],
+    categories: {
+      title: { ko: string; en: string };
+      keys: string[];
+      subGroups?: { title?: { ko: string; en: string }; keys: string[] }[];
+    }[],
     kind: "tag" | "gimmick"
   ) => {
     if (categories.length <= 1) {

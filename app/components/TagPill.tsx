@@ -20,6 +20,7 @@ export default function TagPill({
   onClick,
   icons,
   direction,
+  size = 17,
   lang = "ko",
 }: {
   text: string;
@@ -30,6 +31,8 @@ export default function TagPill({
   icons?: string[];
   /** icons와 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
   direction?: "up" | "down";
+  /** 아이콘 렌더링 크기(px). 기본 14px */
+  size?: number;
   /** tip 안의 [[TAG]] 토큰을 라벨로 바꿀 때 쓸 언어 */
   lang?: "ko" | "en";
 }) {
@@ -105,7 +108,7 @@ export default function TagPill({
     >
       {icons?.map((src, i) => (
         // eslint-disable-next-line @next/next/no-img-element
-        <img key={i} src={src} alt="" className="h-[14px] w-[14px] shrink-0" />
+        <img key={i} src={src} alt="" className="shrink-0 object-contain" style={{ height: size, width: size }} />
       ))}
       {text}
       {!!icons?.length && direction && (

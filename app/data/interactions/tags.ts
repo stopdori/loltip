@@ -123,6 +123,9 @@ export type TagId =
   | "TERRAIN"
   | "MARK"
   | "TETHER"
+  | "MOBILITY"
+  | "DASH"
+  | "BLINK"
 
   /* 9) 특수 / 변신 */
   | "BUFF_FORM"
@@ -259,12 +262,15 @@ MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
 ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
 
   /* 8) 이동 / 위치 / 상호작용 */
-ALLY_TP_OK: { ko: "아군텔", en: "Ally TP" },
+ALLY_TP_OK: { ko: "텔가능", en: "Ally TP" },
 WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
 GHOSTING: { ko: "유체화", en: "Ghosting" },
 TERRAIN: { ko: "벽", en: "TERRAIN" },
 MARK:          { ko: "표식",     en: "Mark"          },
 TETHER: { ko: "사슬", en: "Tether" },
+MOBILITY: { ko: "이동기",    en: "Mobility" },
+DASH:     { ko: "돌진",     en: "Dash"     },
+BLINK:    { ko: "순간이동", en: "Blink"    },
 
   /* 9) 특수 / 변신 */
 BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
@@ -707,6 +713,9 @@ TETHER: {
   ko: "연결된 대상이 범위를 벗어나지 않으면\n스킬이 계속 유효하거나 추가 효과가 발동함",
   en: "If the linked target does not leave the range,\nthe skill remains active or \nits additional effects will trigger.",
 },
+MOBILITY: { ko: "이동 능력의 상위 분류. \n 이동기 금지 상태에서 사용 불가.", en: "The overarching category of movement abilities. \n Cannot be used while grounded." },
+DASH: { ko: "목표 지점까지 경로를 따라 실제로 이동하는 스킬. \n 이동기의 하위 분류.", en: "Moves the caster along a path to the target location. \n A subcategory of Mobility." },
+BLINK: { ko: "거리를 순간적으로 건너뛰는 이동. \n 이동기의 하위 분류.", en: "Instantly crosses a distance without traversing the space between. \n A subcategory of Mobility." },
 
   /* 9) 특수 / 변신 */
 BUFF_FORM: {

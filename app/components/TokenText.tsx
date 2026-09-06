@@ -19,6 +19,7 @@ function TokenPill({
   tone,
   icons,
   direction,
+  size = 17,
 }: {
   label: string;
   tip?: string;
@@ -27,6 +28,8 @@ function TokenPill({
   icons?: string[];
   /** icons와 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
   direction?: "up" | "down";
+  /** 아이콘 렌더링 크기(px). 기본 14px */
+  size?: number;
 }) {
   const anchorRef = useRef<HTMLSpanElement>(null);
   const tipRef = useRef<HTMLSpanElement>(null);
@@ -100,7 +103,7 @@ function TokenPill({
       <span className={`inline-flex items-center gap-[4px] cursor-help hover:opacity-90 ${NOTE_TONE_CLASS[tone]}`}>
         {icons?.map((src, i) => (
           // eslint-disable-next-line @next/next/no-img-element
-          <img key={i} src={src} alt="" className="inline-block h-[14px] w-[14px]" />
+          <img key={i} src={src} alt="" className="inline-block object-contain" style={{ height: size, width: size }} />
         ))}
         {label}
         {!!icons?.length && direction && (
@@ -181,6 +184,7 @@ export default function TokenText({
               tone={seg.tone}
               icons={statIcon?.icons}
               direction={statIcon?.direction}
+              size={statIcon?.size}
             />
           );
         }

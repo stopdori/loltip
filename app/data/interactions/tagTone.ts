@@ -55,10 +55,10 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🔴 red (공격/치명/광란/흡혈)
   AD_UP: "red",
-  AP_UP: "red",
+  AP_UP: "sky",
   CRIT: "red",
   EXECUTE: "red",
-  RANGE_UP: "red",
+  RANGE_UP: "indigo",
   PIERCE: "red",
   BERSERK: "red",
   LIFESTEAL: "red",
@@ -147,7 +147,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SHIELD: "white",
   MAX_HP_UP: "lime",
   REVIVE: "lime",
-  SIZE_UP: "lime",
+  SIZE_UP: "indigo",
 
   // ⚫ zinc (은신/시야제한/면역류)
   STEALTH: "zinc",

@@ -28,6 +28,7 @@ function TagPill({
   className,
   icons,
   direction,
+  size = 17,
   lang = "ko",
 }: {
   text: string;
@@ -38,6 +39,8 @@ function TagPill({
   icons?: string[];
   /** icons와 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
   direction?: "up" | "down";
+  /** 아이콘 렌더링 크기(px). 기본 14px */
+  size?: number;
   /** tip 안의 [[TAG]] 토큰을 라벨로 바꿀 때 쓸 언어 */
   lang?: "ko" | "en";
 }) {
@@ -50,10 +53,10 @@ function TagPill({
     tone === "note"
       ? "inline-flex items-center cursor-help hover:opacity-90"
       : "flex items-center justify-center rounded-md font-semibold ring-1 align-top";
-  const size = tone === "note" ? "" : "px-1 py-[3px] text-[12px]";
+  const sizeCls = tone === "note" ? "" : "px-1 py-[3px] text-[12px]";
   const toneCls = TONE_CLASS[tone] ?? TONE_CLASS.default;
   const gapCls = icons?.length ? "gap-[4px]" : "";
-  const cls = `${base} ${size} ${toneCls} ${gapCls} ${className ?? ""}`;
+  const cls = `${base} ${sizeCls} ${toneCls} ${gapCls} ${className ?? ""}`;
 
   const measure = () => {
     const a = anchorRef.current?.getBoundingClientRect();
@@ -122,7 +125,7 @@ function TagPill({
       <span className={cls}>
         {icons?.map((src, i) => (
           // eslint-disable-next-line @next/next/no-img-element
-          <img key={i} src={src} alt="" className="h-[14px] w-[14px] shrink-0" />
+          <img key={i} src={src} alt="" className="shrink-0 object-contain" style={{ height: size, width: size }} />
         ))}
         {text}
         {!!icons?.length && direction && (
@@ -516,6 +519,7 @@ const renderNoteSection = (items: string[], title: string) => {
             tip={desc}
             icons={statIcon?.icons}
             direction={statIcon?.direction}
+            size={statIcon?.size}
             lang={lang}
           />
         );
@@ -578,6 +582,7 @@ const renderNoteSection = (items: string[], title: string) => {
             tip={desc}
             icons={statIcon?.icons}
             direction={statIcon?.direction}
+            size={statIcon?.size}
             lang={lang}
           />
         );
@@ -640,6 +645,7 @@ const renderNoteSection = (items: string[], title: string) => {
             tip={desc}
             icons={statIcon?.icons}
             direction={statIcon?.direction}
+            size={statIcon?.size}
             lang={lang}
           />
         );
@@ -716,6 +722,7 @@ const renderNoteSection = (items: string[], title: string) => {
                 tip={GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ?? TAG_DESC?.[t as TagId]?.[lang]}
                 icons={statIcon?.icons}
                 direction={statIcon?.direction}
+                size={statIcon?.size}
                 lang={lang}
               />
             );
