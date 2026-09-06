@@ -12,6 +12,7 @@ import { useChampSpells } from "@/app/lib/useChampSpells";
 import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from "@/app/lib/ddragon";
 import { toneOfTag, TONE_CLASS, NOTE_TONE_CLASS } from "../data/interactions/tagTone";
 import { STAT_ICONS } from "../data/interactions/statIcons";
+import { parseTagTokens } from "../data/interactions/parseTagTokens";
 import TokenText from "./TokenText";
 
 
@@ -25,17 +26,20 @@ function TagPill({
   tip,
   tone = "default",
   className,
-  icon,
+  icons,
   direction,
+  lang = "ko",
 }: {
   text: string;
   tip?: string;
   className?: string;
   tone?: Tone;
-  /** 있으면 텍스트 대신 이 경로의 이미지를 렌더링한다 */
-  icon?: string;
-  /** icon과 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
+  /** 있으면 텍스트 앞에 이 경로들의 이미지를 순서대로 렌더링한다 */
+  icons?: string[];
+  /** icons와 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
   direction?: "up" | "down";
+  /** tip 안의 [[TAG]] 토큰을 라벨로 바꿀 때 쓸 언어 */
+  lang?: "ko" | "en";
 }) {
   const anchorRef = useRef<HTMLSpanElement>(null);
   const tipRef = useRef<HTMLSpanElement>(null);
@@ -44,11 +48,12 @@ function TagPill({
 
   const base =
     tone === "note"
-      ? "inline cursor-help hover:opacity-90"
+      ? "inline-flex items-center cursor-help hover:opacity-90"
       : "flex items-center justify-center rounded-md font-semibold ring-1 align-top";
   const size = tone === "note" ? "" : "px-1 py-[3px] text-[12px]";
   const toneCls = TONE_CLASS[tone] ?? TONE_CLASS.default;
-  const cls = `${base} ${size} ${toneCls} ${className ?? ""}`;
+  const gapCls = icons?.length ? "gap-[4px]" : "";
+  const cls = `${base} ${size} ${toneCls} ${gapCls} ${className ?? ""}`;
 
   const measure = () => {
     const a = anchorRef.current?.getBoundingClientRect();
@@ -115,14 +120,13 @@ function TagPill({
       }}
     >
       <span className={cls}>
-        {icon ? (
-          <span className="inline-flex items-center gap-[3px]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={icon} alt={text} className="h-[14px] w-[14px] shrink-0" />
-            {direction && <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>}
-          </span>
-        ) : (
-          text
+        {icons?.map((src, i) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img key={i} src={src} alt="" className="h-[14px] w-[14px] shrink-0" />
+        ))}
+        {text}
+        {!!icons?.length && direction && (
+          <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>
         )}
       </span>
 
@@ -139,7 +143,15 @@ function TagPill({
             ref={tipRef}
             className="inline-block w-max max-w-[min(520px,calc(100vw-16px))] whitespace-pre break-keep text-center leading-snug rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold text-slate-100 ring-1.5 ring-white/10 shadow-lg"
           >
-            {tip}
+            {parseTagTokens(tip, lang).map((seg, i) =>
+              seg.tone ? (
+                <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>
+                  {seg.text}
+                </span>
+              ) : (
+                <span key={i}>{seg.text}</span>
+              )
+            )}
           </span>
           <span
             className="block h-0 w-0 border-x-[6px] border-t-[6px] border-x-transparent border-t-black/95"
@@ -502,8 +514,9 @@ const renderNoteSection = (items: string[], title: string) => {
             text={labelData[lang]}
             tone={toneOfTag(t)}
             tip={desc}
-            icon={statIcon?.icon}
+            icons={statIcon?.icons}
             direction={statIcon?.direction}
+            lang={lang}
           />
         );
       };
@@ -563,8 +576,9 @@ const renderNoteSection = (items: string[], title: string) => {
             text={labelData[lang]}
             tone={toneOfTag(t)}
             tip={desc}
-            icon={statIcon?.icon}
+            icons={statIcon?.icons}
             direction={statIcon?.direction}
+            lang={lang}
           />
         );
       };
@@ -624,8 +638,9 @@ const renderNoteSection = (items: string[], title: string) => {
             text={labelData[lang]}
             tone={toneOfTag(t)}
             tip={desc}
-            icon={statIcon?.icon}
+            icons={statIcon?.icons}
             direction={statIcon?.direction}
+            lang={lang}
           />
         );
       };
@@ -699,8 +714,9 @@ const renderNoteSection = (items: string[], title: string) => {
                 text={labelData[lang]}
                 tone={toneOfTag(t)}
                 tip={GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ?? TAG_DESC?.[t as TagId]?.[lang]}
-                icon={statIcon?.icon}
+                icons={statIcon?.icons}
                 direction={statIcon?.direction}
+                lang={lang}
               />
             );
           })

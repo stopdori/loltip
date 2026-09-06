@@ -148,7 +148,7 @@ AS_UP: { ko: "공속↑", en: "AS ↑" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
 RANGE_UP:      { ko: "사거리↑", en: "Range↑" },
-SIZE_UP: { ko: "크기↑", en: "Size ↑" },
+SIZE_UP: { ko: "챔프크기↑", en: "Champ Size ↑" },
 SKILL_SIZE_UP: { ko: "스킬크기↑", en: "Skill Size ↑" },
 CRIT: { ko: "치명타", en: "Critical" },
 CDR: { ko: "쿨감", en: "CDR" },
@@ -202,7 +202,7 @@ SLOW_IMMUNE: { ko: "둔화면역", en: "Slow Immune" },
 SLOW_CLEANSE: { ko: "둔화해제", en: "Slow Cleanse" },
 DISRUPT: { ko: "시전방해", en: "Disrupt" },
 GROUNDED: { ko: "이동금지", en: "Grounded" },
-ANTI_DASH: { ko: "돌진방해", en: "Anti-Dash" },
+ANTI_DASH: { ko: "돌진차단", en: "Anti-Dash" },
 KINEMATICS: { ko: "견인", en: "Kinematics" },
 
   /* 4) 전투 메커니즘 */
@@ -495,8 +495,8 @@ GROUNDED: {
   en: "A debuff that prevents the use of movement abilities \n (dashes, blinks, teleports, item movement speed effects, etc.). \n (Can use movement abilities again if cleansed)",
 },
 ANTI_DASH: {
-  ko: "돌진스킬을 방해하고 에어본과 기절을 검",
-  en: "Stops dashes and can apply knock-up or stun",
+  ko: "돌진을 시전하는 대상에게 마법 피해와 [[AIRBORNE]](0.5초)를 가하고, \n 돌진이 끊긴 대상은 [[GROUNDED]] + 25% [[SLOW]](2초)가 적용됨. \n (뽀삐 W 고유 메커니즘)",
+  en: "Deals magic damage and [[AIRBORNE]] (0.5s) to dashing units, \n interrupted targets are also [[GROUNDED]] and [[SLOW]]ed by 25% (2s). \n (Poppy W's unique mechanic)",
 },
 KINEMATICS: {
   ko: "행동은 막지 않고 위치만 지속적으로 끌어당김. \n 대시 중이거나, CC 면역 대상은 영향받지 않음.",

@@ -8,8 +8,9 @@ import TagPill from "@/app/components/TagPill";
 import { TAG_LABEL, TAG_DESC, type TagId } from "@/app/data/interactions";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "@/app/data/interactions/tags_gimmick";
 import { TAG_CATEGORIES, VISION_STEALTH_CATEGORY, GIMMICK_CATEGORIES } from "@/app/data/interactions/tagCategories";
-import { toneOfTag } from "@/app/data/interactions/tagTone";
+import { toneOfTag, NOTE_TONE_CLASS } from "@/app/data/interactions/tagTone";
 import { STAT_ICONS } from "@/app/data/interactions/statIcons";
+import { parseTagTokens } from "@/app/data/interactions/parseTagTokens";
 
 type Lang = "ko" | "en";
 type Tab = "basic" | "vision" | "gimmick";
@@ -137,8 +138,9 @@ export default function TagsClient() {
                 tip={desc?.[lang]}
                 tone={toneOfTag(key as TagId | GimmickTagId)}
                 onClick={() => selectTag({ kind, key, label: `${label.ko} ${label.en}` })}
-                icon={statIcon?.icon}
+                icons={statIcon?.icons}
                 direction={statIcon?.direction}
+                lang={lang}
               />
             </div>
           );
@@ -210,12 +212,22 @@ export default function TagsClient() {
           <TagPill
             text={label[lang]}
             tone={toneOfTag(selectedTag.key as TagId | GimmickTagId)}
-            icon={statIcon?.icon}
+            icons={statIcon?.icons}
             direction={statIcon?.direction}
           />
         </div>
         {descText ? (
-          <p className="whitespace-pre-line text-sm text-slate-200 leading-relaxed">{descText}</p>
+          <p className="whitespace-pre-line text-sm text-slate-200 leading-relaxed">
+            {parseTagTokens(descText, lang).map((seg, i) =>
+              seg.tone ? (
+                <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>
+                  {seg.text}
+                </span>
+              ) : (
+                <span key={i}>{seg.text}</span>
+              )
+            )}
+          </p>
         ) : (
           <p className="text-sm text-slate-500">{lang === "ko" ? "설명 없음" : "No description"}</p>
         )}

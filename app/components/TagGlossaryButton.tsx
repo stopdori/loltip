@@ -24,6 +24,7 @@ function renderWithTokens(text: string, lang: "ko" | "en") {
               text={GIMMICK_TAG_LABEL[token as GimmickTagId][lang]}
               tip={GIMMICK_TAG_DESC?.[token as GimmickTagId]?.[lang]}
               tone={tone}
+              lang={lang}
             />
           );
         }
@@ -36,6 +37,7 @@ function renderWithTokens(text: string, lang: "ko" | "en") {
               text={TAG_LABEL[token as TagId][lang]}
               tip={TAG_DESC?.[token as TagId]?.[lang]}
               tone={tone}
+              lang={lang}
             />
           );
         }

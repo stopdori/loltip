@@ -2,7 +2,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { TONE_CLASS } from "../data/interactions/tagTone";
+import { TONE_CLASS, NOTE_TONE_CLASS } from "../data/interactions/tagTone";
+import { parseTagTokens } from "../data/interactions/parseTagTokens";
 
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
@@ -17,17 +18,20 @@ export default function TagPill({
   tip,
   tone = "default",
   onClick,
-  icon,
+  icons,
   direction,
+  lang = "ko",
 }: {
   text: string;
   tip?: string;
   tone?: keyof typeof TONE_CLASS;
   onClick?: () => void;
-  /** 있으면 텍스트 대신 이 경로의 이미지를 렌더링한다 ("/stat-icons/icon-xxx.png" 등) */
-  icon?: string;
-  /** icon과 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
+  /** 있으면 텍스트 앞에 이 경로들의 이미지를 순서대로 작게 붙여서 함께 표시한다 ("/stat-icons/icon-xxx.png" 등) */
+  icons?: string[];
+  /** icons와 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
   direction?: "up" | "down";
+  /** tip 안의 [[TAG]] 토큰을 라벨로 바꿀 때 쓸 언어 */
+  lang?: "ko" | "en";
 }) {
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
@@ -96,19 +100,16 @@ export default function TagPill({
     }}
   >
     <span
-      className={`${base} ${toneCls} ${onClick ? "cursor-pointer" : ""} ${icon ? "gap-[3px]" : ""}`}
+      className={`${base} ${toneCls} ${onClick ? "cursor-pointer" : ""} ${icons?.length ? "gap-[4px]" : ""}`}
       onClick={onClick}
     >
-      {icon ? (
-        <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={icon} alt={text} className="h-[14px] w-[14px] shrink-0" />
-          {direction && (
-            <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>
-          )}
-        </>
-      ) : (
-        text
+      {icons?.map((src, i) => (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img key={i} src={src} alt="" className="h-[14px] w-[14px] shrink-0" />
+      ))}
+      {text}
+      {!!icons?.length && direction && (
+        <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>
       )}
     </span>
 
@@ -128,7 +129,15 @@ export default function TagPill({
                        rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold
                        text-slate-100 ring-1.5 ring-white/10 shadow-lg"
           >
-            {tip}
+            {parseTagTokens(tip, lang).map((seg, i) =>
+              seg.tone ? (
+                <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>
+                  {seg.text}
+                </span>
+              ) : (
+                <span key={i}>{seg.text}</span>
+              )
+            )}
           </span>
 
           <span

@@ -2,10 +2,11 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { TAG_LABEL, TAG_DESC, type TagId } from "../data/interactions";
-import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
-import { toneOfTag, NOTE_TONE_CLASS } from "../data/interactions/tagTone";
+import { TAG_DESC, type TagId } from "../data/interactions";
+import { GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
+import { NOTE_TONE_CLASS } from "../data/interactions/tagTone";
 import { STAT_ICONS } from "../data/interactions/statIcons";
+import { parseTagTokens } from "../data/interactions/parseTagTokens";
 import type { Tone } from "../data/interactions/tagTone";
 
 function clamp(n: number, min: number, max: number) {
@@ -16,15 +17,15 @@ function TokenPill({
   label,
   tip,
   tone,
-  icon,
+  icons,
   direction,
 }: {
   label: string;
   tip?: string;
   tone: Tone;
-  /** 있으면 텍스트 대신 이 경로의 이미지를 렌더링한다 */
-  icon?: string;
-  /** icon과 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
+  /** 있으면 텍스트 앞에 이 경로들의 이미지를 순서대로 렌더링한다 */
+  icons?: string[];
+  /** icons와 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
   direction?: "up" | "down";
 }) {
   const anchorRef = useRef<HTMLSpanElement>(null);
@@ -96,15 +97,14 @@ function TokenPill({
         open ? onLeave() : onEnter();
       }}
     >
-      <span className={`inline cursor-help hover:opacity-90 ${NOTE_TONE_CLASS[tone]}`}>
-        {icon ? (
-          <span className="inline-flex items-center gap-[3px] align-text-bottom">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={icon} alt={label} className="inline-block h-[14px] w-[14px]" />
-            {direction && <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>}
-          </span>
-        ) : (
-          label
+      <span className={`inline-flex items-center gap-[4px] cursor-help hover:opacity-90 ${NOTE_TONE_CLASS[tone]}`}>
+        {icons?.map((src, i) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img key={i} src={src} alt="" className="inline-block h-[14px] w-[14px]" />
+        ))}
+        {label}
+        {!!icons?.length && direction && (
+          <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>
         )}
       </span>
 
@@ -162,62 +162,49 @@ export default function TokenText({
 }) {
   return (
     <>
-      {text.split(/(\[\[.*?\]\])/g).map((part, idx) => {
-        const raw = part.match(/^\[\[(.+?)\]\]$/)?.[1];
-        const token = raw?.trim() as TagId | undefined;
-
-        const clipUrl = raw?.trim().match(/^CLIP:(.+)$/)?.[1]?.trim();
+      {parseTagTokens(text, lang).map((seg, idx) => {
+        const clipUrl = seg.raw?.match(/^CLIP:(.+)$/)?.[1]?.trim();
         if (clipUrl) {
           return <VideoLinkIcon key={idx} url={clipUrl} lang={lang} />;
         }
 
-        const labelData = GIMMICK_TAG_LABEL[token as GimmickTagId] ?? TAG_LABEL[token as TagId];
-
-        if (token && labelData) {
-          const tone = toneOfTag(token as TagId | GimmickTagId);
-          const label = labelData[lang];
-          const tip = GIMMICK_TAG_DESC?.[token as GimmickTagId]?.[lang]
-                   ?? TAG_DESC?.[token as TagId]?.[lang];
-          const statIcon = STAT_ICONS[token as TagId | GimmickTagId];
+        if (seg.tagId && seg.tone) {
+          const tip = GIMMICK_TAG_DESC?.[seg.tagId as GimmickTagId]?.[lang]
+                   ?? TAG_DESC?.[seg.tagId as TagId]?.[lang];
+          const statIcon = STAT_ICONS[seg.tagId];
 
           return (
             <TokenPill
               key={idx}
-              label={label}
+              label={seg.text}
               tip={tip}
-              tone={tone}
-              icon={statIcon?.icon}
+              tone={seg.tone}
+              icons={statIcon?.icons}
               direction={statIcon?.direction}
             />
           );
         }
 
-
-return (
-  <span key={idx}>
-    {part.split(/(https?:\/\/[^\s\],]+)/g)
-.map((seg, j) => {
-      if (/^https?:\/\//.test(seg)) {
         return (
-          <a
-            key={`${idx}-u-${j}`}
-            href={seg}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pointer-events-auto relative z-10 inline-flex items-center rounded-md bg-slate-700/70 px-2 py-0.5 text-xs font-semibold text-sky-300 ring-1 ring-white/10 hover:bg-slate-600/70"
-
-
-          >
-            {lang === "ko" ? "링크" : "Link"}
-          </a>
+          <span key={idx}>
+            {seg.text.split(/(https?:\/\/[^\s\],]+)/g).map((sub, j) => {
+              if (/^https?:\/\//.test(sub)) {
+                return (
+                  <a
+                    key={`${idx}-u-${j}`}
+                    href={sub}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pointer-events-auto relative z-10 inline-flex items-center rounded-md bg-slate-700/70 px-2 py-0.5 text-xs font-semibold text-sky-300 ring-1 ring-white/10 hover:bg-slate-600/70"
+                  >
+                    {lang === "ko" ? "링크" : "Link"}
+                  </a>
+                );
+              }
+              return <span key={`${idx}-t-${j}`}>{sub}</span>;
+            })}
+          </span>
         );
-      }
-      return <span key={`${idx}-t-${j}`}>{seg}</span>;
-    })}
-  </span>
-);
-
-
       })}
     </>
   );
