@@ -22,6 +22,7 @@ export default function TagPill({
   direction,
   size = 17,
   lang = "ko",
+  showIconInAnchor = true,
 }: {
   text: string;
   tip?: string;
@@ -35,6 +36,8 @@ export default function TagPill({
   size?: number;
   /** tip 안의 [[TAG]] 토큰을 라벨로 바꿀 때 쓸 언어 */
   lang?: "ko" | "en";
+  /** true(기본값)면 앵커(항상 보이는 pill)에도 icons를 표시한다. false면 앵커엔 텍스트+화살표만 남기고, 팝업 안에만 아이콘을 표시한다 */
+  showIconInAnchor?: boolean;
 }) {
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
@@ -103,15 +106,16 @@ export default function TagPill({
     }}
   >
     <span
-      className={`${base} ${toneCls} ${onClick ? "cursor-pointer" : ""} ${icons?.length ? "gap-[4px]" : ""}`}
+      className={`${base} ${toneCls} ${onClick ? "cursor-pointer" : ""} ${(showIconInAnchor && icons?.length) || direction ? "gap-[4px]" : ""}`}
       onClick={onClick}
     >
-      {icons?.map((src, i) => (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img key={i} src={src} alt="" className="shrink-0 object-contain" style={{ height: size, width: size }} />
-      ))}
+      {showIconInAnchor &&
+        icons?.map((src, i) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img key={i} src={src} alt="" className="shrink-0 object-contain" style={{ height: size, width: size }} />
+        ))}
       {text}
-      {!!icons?.length && direction && (
+      {direction && (
         <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>
       )}
     </span>
@@ -132,6 +136,10 @@ export default function TagPill({
                        rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold
                        text-slate-100 ring-1.5 ring-white/10 shadow-lg"
           >
+            {icons?.map((src, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={i} src={src} alt="" className="inline-block align-middle mr-1 object-contain" style={{ height: 16, width: 16 }} />
+            ))}
             {parseTagTokens(tip, lang).map((seg, i) =>
               seg.tone ? (
                 <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>

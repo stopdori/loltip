@@ -55,7 +55,7 @@ function TagPill({
       : "flex items-center justify-center rounded-md font-semibold ring-1 align-top";
   const sizeCls = tone === "note" ? "" : "px-1 py-[3px] text-[12px]";
   const toneCls = TONE_CLASS[tone] ?? TONE_CLASS.default;
-  const gapCls = icons?.length ? "gap-[4px]" : "";
+  const gapCls = (tone !== "note" && icons?.length) || direction ? "gap-[4px]" : "";
   const cls = `${base} ${sizeCls} ${toneCls} ${gapCls} ${className ?? ""}`;
 
   const measure = () => {
@@ -123,12 +123,13 @@ function TagPill({
       }}
     >
       <span className={cls}>
-        {icons?.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img key={i} src={src} alt="" className="shrink-0 object-contain" style={{ height: size, width: size }} />
-        ))}
+        {tone !== "note" &&
+          icons?.map((src, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={i} src={src} alt="" className="shrink-0 object-contain" style={{ height: size, width: size }} />
+          ))}
         {text}
-        {!!icons?.length && direction && (
+        {direction && (
           <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>
         )}
       </span>
@@ -146,6 +147,10 @@ function TagPill({
             ref={tipRef}
             className="inline-block w-max max-w-[min(520px,calc(100vw-16px))] whitespace-pre break-keep text-center leading-snug rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold text-slate-100 ring-1.5 ring-white/10 shadow-lg"
           >
+            {icons?.map((src, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={i} src={src} alt="" className="inline-block align-middle mr-1 object-contain" style={{ height: 16, width: 16 }} />
+            ))}
             {parseTagTokens(tip, lang).map((seg, i) =>
               seg.tone ? (
                 <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>
