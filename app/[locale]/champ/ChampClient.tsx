@@ -296,7 +296,13 @@ useEffect(() => {
       <ChampSelectModal
         open={openTarget !== null}
         lang={lang}
-        champions={CHAMPIONS}
+        // 반대쪽에 이미 선택된 챔피언은 후보에서 제외 - 같은 챔피언을 양쪽에
+        // 선택해 자기 자신 매치업(예: ambessa-vs-ambessa)이 생기는 걸 막기 위함.
+        // openTarget과 같은 쪽(own) 챔피언은 제외 대상이 아니므로, 이미 골라둔
+        // 자기 챔피언을 다시 검색해 재선택하는 건 그대로 가능.
+        champions={CHAMPIONS.filter(
+          (c) => c.id !== (openTarget === "my" ? enemyChampId : myChampId)
+        )}
         title={
           openTarget === "my"
             ? lang === "ko"

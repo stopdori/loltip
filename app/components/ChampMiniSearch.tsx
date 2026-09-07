@@ -42,11 +42,20 @@ export default function ChampMiniSearch({
   // 선택된 챔피언이 없고 포커스도 안 된 빈 상태에서만 안내 텍스트를 보여준다.
   const showPlaceholder = !focused && !q.trim() && !ownChampName;
 
+  // 반대쪽(내가 my면 상대, my가 아니면 나)에 이미 선택된 챔피언은 후보에서 제외한다.
+  // 같은 챔피언을 양쪽에 선택해 ambessa-vs-ambessa 같은 자기 자신 매치업이
+  // 생기는 것을 UI 단계에서 막기 위함. own(=자기 자신) 쪽 현재 선택값은
+  // 제외 대상이 아니므로, 이미 골라둔 자기 챔피언을 다시 검색해 재선택하는 건 그대로 가능.
+  const opponentChampId = side === "my" ? enemyChampId : myChampId;
+
   // q가 비어있으면 filterChampions가 필터 없이 lang 기준 정렬된 전체 목록을
   // 그대로 반환하므로(ko: 가렌부터, en: Aatrox부터), 별도 분기 없이 재사용한다.
   const results = useMemo(() => {
-    return filterChampions(champions, q, lang).slice(0, MAX_RESULTS);
-  }, [q, champions, lang]);
+    const candidates = opponentChampId
+      ? champions.filter((c) => c.id !== opponentChampId)
+      : champions;
+    return filterChampions(candidates, q, lang).slice(0, MAX_RESULTS);
+  }, [q, champions, lang, opponentChampId]);
 
   // 바깥 클릭 / ESC 닫기
   useEffect(() => {

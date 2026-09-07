@@ -97,6 +97,14 @@ export default async function Page({ params, searchParams }: Props) {
   const champB = CHAMPIONS.find((c) => c.id === b);
   if (!champA || !champB) notFound();
 
+  // 같은 챔피언을 양쪽에 선택한 조합(예: ambessa-vs-ambessa)은 콘텐츠가
+  // 나중에라도 생길 수 없는, 원천적으로 존재하지 않는 조합이므로 존재하지
+  // 않는 챔피언 id와 동일하게 404 처리한다. generateMetadata는 별도로
+  // notFound()를 호출하지 않아도 되는데, Page에서 notFound()가 호출되면
+  // Next.js가 최종 응답에 noindex,nofollow를 포함한 404 메타를 알아서
+  // 덮어씌우기 때문 (기존 "존재하지 않는 챔피언 id" 케이스로 실측 확인됨).
+  if (a === b) notFound();
+
   // canonical 주소로 정규화
   // 주의: ?first= 쿼리를 목적지에 포함하지 않음 - robots.txt의 disallow: '/*?first='와
   // 충돌해 크롤러가 리다이렉트 목적지를 크롤링하지 못하는 문제가 있었음.
