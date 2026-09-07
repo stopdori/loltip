@@ -295,23 +295,23 @@ MS_UP: {
   en: "Increases movement speed",
 },
 MS_TO_ENEMY: {
-  ko: "적에게 접근할 때 이동속도가 증가하는 효과.",
+  ko: "적에게 접근할 때 이동속도가 증가하는 효과",
   en: "Gain movement speed when approaching enemies.",
 },
 AS_UP: { ko: "공격속도 증가", en: "Increases attack speed" },
 AD_UP: { ko: "공격력 증가", en: "Increases attack damage" },
 AP_UP: {  ko: "주문력 증가",  en: "Increases ability power",},
-RANGE_UP: { ko: "스킬 또는 공격의 사거리가 증가함", en: "Increases attack range" },
+RANGE_UP: { ko: "스킬 또는 공격의 사거리 증가", en: "Increases attack range" },
 SIZE_UP: {
-  ko: "챔피언의 크기가 커짐.\n히트박스도 같이 커짐.",
+  ko: "챔피언 크기, 히트박스 크기 증가",
   en: "Increases the champion's size.\nAlso increases the hitbox.",
 },
 SKILL_SIZE_UP: {
-  ko: "스킬의 판정 범위/크기가 커짐.",
+  ko: "스킬 판정 범위, 크기 증가",
   en: "Increases the skill's hitbox/area size.",
 },
 CRIT: {
-  ko: "일반 피해의 200% 피해.",
+  ko: "일반 피해의 200% 피해",
   en: "Deals 200% of normal damage.",
 },
 CDR: {
@@ -319,15 +319,15 @@ CDR: {
   en: "Reduces cooldown",
 },
 CDR_RESET: {
-  ko: "쿨타임이 초기화됨",
+  ko: "쿨타임 초기화",
   en: "Resets cooldown",
 },
 DURATION_RESET: {
-  ko: "스킬이나 디버프의 지속시간이 초기화됨.",
+  ko: "스킬, 디버프 지속시간 초기화",
   en: "Resets the duration of a skill or debuff.",
 },
 DURATION_EXT: {
-  ko: "스킬이나 디버프의 지속시간이 연장됨.",
+  ko: "스킬, 디버프 지속시간 연장",
   en: "Extends the duration of a skill or debuff.",
 },
 AR_UP: {
@@ -339,26 +339,27 @@ MR_UP: {
   en: "Increases magic resistance",
 },
 AR_MR_UP: {
-  ko: "방어력, 마법저항력 증가",
+  ko: "방어력, 마법 저항력 증가",
   en: "Increases armor and magic resistance",
 },
 
   /* 2) 스탯 디버프 */
 MS_DOWN: {
-  ko: "자신의 이동속도가 감소함",
+  ko: "자신의 이동속도 감소",
   en: "Decreases own movement speed",
 },
 AD_DOWN: { ko: "상대 공격력 감소", en: "Reduces attack damage" },
+
 AR_SHRED: {
-  ko: "상대 방어력 감소",
+  ko: "상대의 방어력 감소",
   en: "Reduces armor",
 },
 MR_SHRED: {
-  ko: "상대 마법저항력 감소",
+  ko: "상대의 마법 저항력 감소",
   en: "Reduces magic resist",
 },
 AR_MR_SHRED: {
-  ko: "상대 방어력, 마법저항력 감소",
+  ko: "상대의 방어력, 마법 저항력 감소",
   en: "Reduces armor and magic resist",
 },
 AR_PEN: { 
@@ -366,103 +367,126 @@ AR_PEN: {
   en: "Armor Penetration" 
 },
 MR_PEN: { 
-    ko: "상대의 마법저항력을 관통", 
+    ko: "상대의 마법 저항력을 관통", 
     en: "Magic resist penetration" 
 },
 AR_MR_PEN: { 
-    ko: "상대의 방어력, 마법저항력을 관통", 
+    ko: "상대의 방어력, 마법 저항력을 관통", 
     en: "Armor and magic penetration" 
 },
 GW: {
   ko: "치유효과 감소",
   en: "Reduces healing effects",
 },
-BURN: {
-  ko: "체력이 점차 빠른 속도로 감소하는 상태. \n 회복으로 늦출 수는 있지만 결국 죽음에 다다름. \n 단, 처치 관여 시 죽음을 피할 수 있음. \n 한 번의 버프로 두 번 살아날 수 없음.",
-  en: "A state where health decreases at an accelerating rate. \n Healing can slow it down, but it ultimately leads to death. \n However, death can be avoided by getting a takedown. \n Cannot be revived twice from a single buff.",
+
+  /* 3) 이동불가 CC 종류 */
+
+IMMOBILIZING: {
+  ko: "이동 명령을 차단하는 CC. \n [[AIRBORNE]], [[KNOCKBACK]], [[GRAB]], [[SUSPENDING]] \n [[STUN]], [[ROOT]], [[SUPPRESS]], [[SLEEP]], [[STASIS]] \n [[FORCED_ACTION]], [[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]",
+  en: "CC that prevents movement commands. \n [[AIRBORNE]], [[KNOCKBACK]], [[GRAB]], [[SUSPENDING]] \n [[STUN]], [[ROOT]], [[SUPPRESS]], [[SLEEP]], [[STASIS]] \n [[FORCED_ACTION]], [[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]",
 },
 
-  /* 3) 군중제어 / CC */
+// 에어본 CC 종류
+
+AIRBORNE: {
+  ko: "공중에 띄움 \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
+  en: "Knocks the target airborne \n (cannot be cleansed)",
+},
+KNOCKBACK: {
+  ko: "[[AIRBORNE]] 시키고 상대를 밀어냄. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
+  en: "Knocks the target [[AIRBORNE]] and pushes them back \n (cannot be cleansed)",
+},
+GRAB: {
+  ko: "[[AIRBORNE]] 시키고 상대를 잡아당김. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
+  en: "Knocks the target [[AIRBORNE]] and pulls them in \n (cannot be cleansed)",
+},
+SUSPENDING: {
+  ko: "[[AIRBORNE]] 상태가 인정되는 [[STUN]]의 변형. \n 야스오 R, 사미라 P 적용 가능. \n ([[TENACITY]]의 영향을 받고, [[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "A [[STUN]] variant that also counts as [[AIRBORNE]]. \n Applied by Yasuo R and Samira P. \n (Affected by [[TENACITY]], can be cleansed)",
+},
+
+//기타 이동불가 CC 종류
+
 STUN: {
-  ko: "아무런 행동을 할 수 없음\n(클린즈 계열로 해제 가능)",
+  ko: "아무런 행동을 할 수 없음 \n ([[CC_CLEANSE]] 계열로 해제 가능)",
   en: "Cannot act (can be cleansed)",
 },
 ROOT: {
-  ko: "이동이 불가능함\n(클린즈 계열로 해제 가능)",
+  ko: "이동 불가능 \n ([[CC_CLEANSE]] 계열로 해제 가능)",
   en: "Cannot move (can be cleansed)",
 },
-SLOW: {
-  ko: "상대 이동속도 감소\n(클린즈 계열로 해제 가능)",
-  en: "Movement speed reduced (can be cleansed)",
-},
-TAUNT: {
-  ko: "상대가 나를 강제로 기본공격만 하게 만듦\n(클린즈 계열로 해제 가능)\n단 시전자가 죽으면 도발이 해제됨",
-  en: "Forces the target to basic attack you \n(can be cleansed)\nHowever, if the caster dies, the taunt is removed",
+SUPPRESS: {
+  ko: "상대를 아무것도 할 수 없게 만듦 \n 스펠 사용도 불가능 \n 정화(스펠)로는 해제 불가 \n 수은으로 해제 가능. \n 미카엘 불가능.",
+  en: "Renders the enemy completely helpless\nSummoner spells cannot be used\nCannot be cleansed by Cleanse (Spell)\nCan be removed by Quicksilver Sash (QSS)\nCannot be cleansed by Mikael's Blessing",
 },
 SLEEP: {
-  ko: "아무런 행동을 할 수 없지만\n즉발적인 공격을 받으면 해제됨(지속피해 제외)\n(클린즈 계열로 해제 가능)",
-  en: "Cannot act, but ends immediately \nwhen damaged (can be cleansed)",
+  ko: "아무런 행동을 할 수 없음. \n 즉발적인 공격을 받으면 해제. \n 단, 지속피해는 해제되지 않음. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "Cannot act. \n Ends immediately when hit by direct damage. \n However, damage over time does not end it. \n (can be cleansed)",
 },
-DROWSY: {
-  ko: "둔화 효과를 동반하며, 지속시간이 끝나면 수면 상태로 이어짐. \n 강인함의 영향을 받지 않고, CC 면역으로 저항 가능. \n 정화류로 해제 가능.",
-  en: "Applies a slow, and leads into Sleep when the duration ends. \n Not affected by Tenacity. Resisted by CC immunity. \n Can be removed by Cleanse effects.",
+STASIS: {
+  ko: "움직일 수 없는 상태. \n 대신, 무적 및 대상으로 지정할 수 없음. \n 예) 존야, 가엔",
+  en: "Unable to move. \n Instead, becomes invulnerable and untargetable. \n e.g. Zhonya's, Guardian Angel",
 },
-KNOCKBACK: {
-  ko: "에어본 + 밀어냄 - 최상급 CC\n(클린즈 계열로 해제 불가능)",
-  en: "Knocks the target back",
-},
-AIRBORNE: {
-  ko: "공중에 띄움 - 최상급 CC\n(클린즈 계열로 해제 불가능)\n그랩, 넉백, 체공, 에어본",
-  en: "Knocks the target airborne — top-tier CC \n(cannot be cleansed)\nGrab, Knockback, Suspending, Airborne",
-},
-SUSPENDING: {
-  ko: "공중에 띄워서 거는 기절\n야스오 궁 가능\n(강인함의 영향을 받고, 클린즈 계열로 해제 가능)",
-  en: "A stun that also knocks up Affected \nby Tenacity and can be removed by Cleanse\nYasuo can follow up with his ult",
-},
-GRAB: {
-  ko: "에어본 + 잡아당김 - 최상급 CC\n(클린즈 계열로 해제 불가능)",
-  en: "Pulls the target",
+
+// 강제행동(이동불가) CC 종류
+
+FORCED_ACTION: {
+  ko: "강제로 대상을 특정 행동을 하게 만듦. \n [[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]] \n 시전자가 죽으면 해제 ([[BERSERK]] 제외).",
+  en: "CC that forces the target into a specific action: [[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]. \n Ends early if the caster dies, except [[BERSERK]].",
 },
 CHARM: {
-  ko: "대상을 내 쪽으로 걸어오게 만듦\n(클린즈 계열로 해제 가능)\n단, 시전자가 죽으면 매혹이 해제됨",
+  ko: "강제로 대상을 시전자에게 다가오게 만듦. \n 단, 시전자가 죽으면 [[CHARM]] 해제. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
   en: "Forces the target to walk toward you \n(can be cleansed)\nHowever, if the caster dies, the charm is removed",
 },
-SILENCE: {
-  ko: "스킬을 사용하지 못하게 만듦\n(클린즈 계열로 해제 가능)",
-  en: "Prevents ability casts (can be cleansed)",
+TAUNT: {
+  ko: "상대가 시전자를 강제로 기본공격만 하도록 만듦. \n 단, 시전자가 죽으면 도발도 해제. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "Forces the target to basic attack you \n(can be cleansed)\nHowever, if the caster dies, the taunt is removed",
 },
 FEAR: {
-  ko: "대상이 시전자 반대쪽으로 도망치게 만듦\n(클린즈 계열로 해제 가능)\n단, 시전자가 죽으면 공포가 해제됨",
+  ko: "강제로 대상을 시전자 반대 방향으로 도망치게 만듦. \n 단, 시전자가 죽으면 [[FEAR]] 해제. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
   en: "Forces the target to flee away from you \n(can be cleansed)\nHowever, if the caster dies, the fear is removed",
 },
 BERSERK: {
-  ko: "주변 유닛을 공격. \n 자신의 아군 우선 공격. \n 클린즈 계열로 해제 가능.",
+  ko: "강제로 대상에게 주변 유닛을 공격하도록 만듦. \n 단, 대상의 아군 우선 공격. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
   en: "Attacks nearby units. \n Prioritizes allies. \n Can be cleansed.",
 },
-FORCED_ACTION: {
-  ko: "대상에게 특정 행동(공격, 도주, 이동 등)을 강제하는 CC. \n 광란을 제외하면 시전자가 죽을 시 조기 해제됨.",
-  en: "Forces the target into a specific action (attack, flee, move, etc). \n Ends prematurely if the caster dies, except Berserk.",
+
+//기타 CC종류
+
+SILENCE: {
+  ko: "스킬을 사용하지 못하게 만듦. \n [[SKILL_CHANNEL]], [[SKILL_CHARGED]] 스킬을 끊을 수 있음. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "Prevents ability casts. \n Can interrupt [[SKILL_CHANNEL]] or [[SKILL_CHARGED]] abilities. \n (can be cleansed)",
 },
+DISRUPT: {
+  ko: "[[SKILL_CHANNEL]], [[SKILL_CHARGED]] 스킬을 끊을 수 있음. \n 지속 상태가 아니라 순간 효과. \n ([[CC_IMMUNE]]으로 저항 가능)",
+  en: "Instantly interrupts channeled or charged abilities. \n Not a lingering status effect - resisted by CC immunity.",
+},
+
+SLOW: {
+  ko: "상대 이동속도 감소 \n ([[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "Movement speed reduced (can be cleansed)",
+},
+DROWSY: {
+  ko: "지속시간이 끝나면 [[SLEEP]] 상태로 이어짐. \n 둔화 효과를 동반. \n [[TENACITY]]의 영향을 받지 않고, [[CC_IMMUNE]]으로 저항 가능. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "Applies a slow, and leads into Sleep when the duration ends. \n Not affected by Tenacity. Resisted by CC immunity. \n Can be removed by Cleanse effects.",
+},
+
 NEAR_SIGHT: {
-  ko: "시야가 축소됨. \n (정화를 제외한 클린즈 계열로 해제 가능)",
-  en: "Reduces vision range. \n (Can be cleansed by cleanse effects \n other than Summoner Spell Cleanse)",
+  ko: "시야 반경 축소. \n 아군/와드 등 공유 시야도 함께 사라짐. \n [[TRUE_SIGHT]]도 공유 시야여서 볼 수 없음. \n (정화를 제외한 [[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "Reduces vision range. \n Also removes shared vision from allies/wards. \n Even [[TRUE_SIGHT]] can't see through this, since it's shared vision too. \n (Can be cleansed by cleanse effects other than Summoner Spell Cleanse)",
 },
 BLIND: {
-  ko: "평타를 때려도 빗나가게 만듬 \n (클린즈 계열로 해제 가능)",
+  ko: "[[BA]]를 때려도 빗나가게 만듦. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
   en: "Basic attacks miss (can be cleansed)",
 },
 POLYMORPH: {
-  ko: "동물로 만듦. \n 침묵, 무장해제, 고정 둔화(60) \n 고정 둔화는 둔화 저항을 무시함. \n (단, 둔화 면역은 무시 불가.)",
-  en: "Transforms the target, \npreventing attacks and ability casts",
+  ko: "동물로 만듦. \n [[SILENCE]], [[DISARM]], 고정 수치 [[SLOW]](60). \n 단, 고정 [[SLOW]]는 [[SLOW_RESIST]]을 무시. \n (단, [[SLOW_IMMUNE]]은 무시 불가.)",
+  en: "Transforms the target into a critter, applying [[SILENCE]], [[DISARM]], and a fixed 60% [[SLOW]]. \n This fixed slow ignores [[SLOW_RESIST]]. \n (However, it cannot ignore [[SLOW_IMMUNE]].)",
 },
-SUPPRESS: {
-  ko: "상대를 아무것도 할 수 없게 만듬\n스펠 사용도 불가능\n정화(스펠)로는 해제 불가\n수은으로 해제 가능. \n 미카엘 불가능.",
-  en: "Renders the enemy completely helpless\nSummoner spells cannot be used\nCannot be cleansed by Cleanse (Spell)\nCan be removed by Quicksilver Sash (QSS)\nCannot be cleansed by Mikael's Blessing",
-},
-IMMOBILIZING: {
-  ko: "이동 명령을 차단하는 CC. \n 기절, 속박, 에어본, 넉백, 그렙, 체공, 제압, 수면, 공포, 매혹, 도발, 광란, 경직",
-  en: "CC that prevents movement commands. \n Stun, Root, Airborne, Knockback, Grab, Suspension, Suppression, Sleep, Fear, Charm, Taunt, Berserk, Stasis",
-},
+
+
+
+
 CRIPPLE: {
   ko: "상대의 공격속도를 감소시킴. \n 강인함의 영향을 받고, 클린즈 계열로 해제 가능. \n (실명과 함께 킬 관여 인정에서 예외로 처리됨)",
   en: "Reduces the target's attack speed. \n Affected by Tenacity and can be cleansed. \n (Along with Blind, an exception for assist credit)",
@@ -492,10 +516,7 @@ SLOW_CLEANSE: {
   ko: "둔화 효과를 해제함",
   en: "Removes slow effects",
 },
-DISRUPT: {
-  ko: "채널링, 충전형 스킬을 즉시 중단시킴. \n 지속 상태가 아니라 순간 효과이며, CC 면역으로 저항 가능.",
-  en: "Instantly interrupts channeled or charged abilities. \n Not a lingering status effect - resisted by CC immunity.",
-},
+
 GROUNDED: {
   ko: "이동스킬(돌진, 순간이동, 점멸, 아이템 벨트 등등)을 \n 사용하지 못하게 만드는 디버프. \n (클린즈 계열로 해제하면 이동기 사용 가능)",
   en: "A debuff that prevents the use of movement abilities \n (dashes, blinks, teleports, item movement speed effects, etc.). \n (Can use movement abilities again if cleansed)",
@@ -505,8 +526,8 @@ ANTI_DASH: {
   en: "Deals magic damage and [[AIRBORNE]] (0.5s) to dashing units, \n interrupted targets are also [[GROUNDED]] and [[SLOW]]ed by 25% (2s). \n (Poppy W's unique mechanic)",
 },
 KINEMATICS: {
-  ko: "행동은 막지 않고 위치만 지속적으로 끌어당김. \n 대시 중이거나, CC 면역 대상은 영향받지 않음.",
-  en: "Continuously pulls the target's position without disabling their actions. \n Does not affect targets that are dashing or CC immune.",
+  ko: "행동은 막지 않고 위치만 지속적으로 끌어당김. \n 예) 아우솔 E, 렐 R \n [[DASH]] 중이거나, [[CC_IMMUNE]] 대상은 영향받지 않음.",
+  en: "Continuously pulls the target's position without disabling their actions. \n e.g. Aurelion Sol E, Rell R \n Does not affect targets that are dashing or CC immune.",
 },
 
   /* 4) 전투 메커니즘 */
@@ -574,10 +595,6 @@ MAGIC_DR: {
   ko: "받는 마법 피해가 감소함.",
   en: "Reduces incoming magic damage.",
 },
-STASIS: {
-  ko: "움직일 수 없는 상태. \n 대신, 무적 및 대상으로 지정할 수 없음. \n 예) 존야, 가엔",
-  en: "Unable to move. \n Instead, becomes invulnerable and untargetable. \n e.g. Zhonya's, Guardian Angel",
-},
 UNSTOPPABLE: {
   ko: "CC 계열을 맞아도 시전자의 스킬이 유효함\n단, 저지불가 상태에서 적중한 CC가\n저지불가 종료 이후에도 남아있다면 CC효과 발동",
   en: "It cannot be blocked by CC\nHowever, if CC hits during an unstoppable state \nand the duration remains after the state ends, \nthe CC takes effect",
@@ -585,6 +602,10 @@ UNSTOPPABLE: {
 BANISH: {
   ko: "대상을 시전자와 함께 격리된 위상(죽음의 세계)으로 추방. \n 두 공간은 서로 상호작용 불가.",
   en: "Banishes the target along with the caster into an isolated realm (Death Realm). \n The two spaces cannot interact with each other.",
+},
+BURN: {
+  ko: "체력이 10% 씩 [[DMG_TRUE]]로 줄어들다 결국 죽음에 이르는 디버프. \n 회복은 이 과정을 늦출 뿐 막을 수 없음. \n 죽기 전에 처치 관여 시 체력이 20%로 됨. (회복이 아님) \n 단, 한번의 버프로 두 번 살아날 수 없음.",
+  en: "A debuff that drains health in 10% [[DMG_TRUE]] increments until death. \n Healing only slows this process, it cannot stop it. \n Getting a takedown before dying sets health to 20% (this is not a heal). \n This effect can only trigger once per application of the buff.",
 },
 
   /* 6) 시야 / 은신 */

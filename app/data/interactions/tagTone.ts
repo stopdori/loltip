@@ -77,7 +77,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   DURATION_EXT: "indigo",
   SKILL_SIZE_UP: "indigo",
   MANA_RESTORE: "sky",
-  ENERGY_RESTORE: "amber",
+  ENERGY_RESTORE: "sky",
   SLOW_RESIST: "sky",
   SLOW_IMMUNE: "sky",
   SLOW_CLEANSE: "sky",

@@ -30,7 +30,7 @@ export type CategoryGroup<T extends string> = {
 export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   {
     title: { ko: "1) 스탯", en: "1) Stats" },
-    keys: ["MS_UP", "MS_TO_ENEMY", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "TENACITY", "HEAL", "HP_REGEN", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
+    keys: ["MS_UP", "MS_TO_ENEMY", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "TENACITY", "HEAL", "HP_REGEN", "REVIVE", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
     subGroups: [
       { title: { ko: "공격", en: "Attack" }, keys: ["AD_UP", "AP_UP", "CRIT"] },
       { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "SEPARATOR", "AD_DOWN", "MS_DOWN"] },
@@ -45,22 +45,23 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
     ],
   },
   {
-    title: { ko: "3) 군중제어 / CC", en: "3) Crowd Control" },
-    keys: ["STUN", "ROOT", "SLOW", "TAUNT", "SLEEP", "DROWSY", "KNOCKBACK", "AIRBORNE", "SUSPENDING", "GRAB", "CHARM", "SILENCE", "FEAR", "BERSERK", "FORCED_ACTION", "NEAR_SIGHT", "BLIND", "SUPPRESS", "IMMOBILIZING", "CRIPPLE", "DISARM", "CC_IMMUNE", "CC_CLEANSE", "SLOW_RESIST", "SLOW_IMMUNE", "SLOW_CLEANSE", "DISRUPT", "GROUNDED", "KINEMATICS", "BANISH", "ANTI_DASH", "POLYMORPH"],
+    title: { ko: "2) 군중제어 / CC", en: "2) Crowd Control" },
+    keys: ["STUN", "ROOT", "SLOW", "TAUNT", "SLEEP", "STASIS", "DROWSY", "KNOCKBACK", "AIRBORNE", "SUSPENDING", "GRAB", "CHARM", "SILENCE", "FEAR", "BERSERK", "FORCED_ACTION", "NEAR_SIGHT", "BLIND", "SUPPRESS", "IMMOBILIZING", "CRIPPLE", "DISARM", "UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE", "SLOW_RESIST", "SLOW_IMMUNE", "SLOW_CLEANSE", "DISRUPT", "GROUNDED", "KINEMATICS", "BANISH", "ANTI_DASH", "POLYMORPH"],
     subGroups: [
-      { title: { ko: "이동 불가", en: "Immobilizing" }, keys: ["IMMOBILIZING", "STUN", "ROOT", "AIRBORNE", "KNOCKBACK", "GRAB", "SUSPENDING", "SUPPRESS", "SLEEP", "STASIS"] },
+      { title: { ko: "이동 불가", en: "Immobilizing" }, keys: ["IMMOBILIZING", "AIRBORNE", "KNOCKBACK", "GRAB", "SEPARATOR", "SUSPENDING"] }, 
+      { keys: ["STUN", "ROOT", "SUPPRESS", "SLEEP", "STASIS"] },
       { keys: ["FORCED_ACTION", "CHARM", "TAUNT", "FEAR", "BERSERK"] },
-      { title: { ko: "기타", en: "" }, keys: ["SILENCE", "DISRUPT", "DROWSY", "KINEMATICS"] },
-      { keys: ["DISARM", "CRIPPLE", "SLOW",] },
+      { title: { ko: "기타", en: "" }, keys: ["SILENCE", "DISRUPT"] },
+      { keys: ["DROWSY", "SLOW", "CRIPPLE", "DISARM"] }, 
       { keys: ["BLIND", "NEAR_SIGHT"] }, 
-      { title: { ko: "CC 관련", en: "" }, keys: ["UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE"] }, 
+      { title: { ko: "CC 면역, 해제 관련", en: "" }, keys: ["UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE"] }, 
       { keys: ["SLOW_RESIST", "SLOW_IMMUNE", "SLOW_CLEANSE"] },
-      { title: { ko: "특별 챔피언 CC", en: "Champion-Unique" }, keys: ["BANISH", "ANTI_DASH", "POLYMORPH", "GROUNDED"] },
+      { title: { ko: "특별 챔피언 CC", en: "Champion-Unique" }, keys: ["POLYMORPH", "BANISH", "ANTI_DASH", "GROUNDED", "KINEMATICS"] },
     ],
   },
   {
-    title: { ko: "4) 전투 메커니즘", en: "4) Combat Mechanics" },
-    keys: ["AA_RESET", "UNTARGETABLE", "TOWER_DODGE", "DODGE", "EXECUTE", "SHIELD_BREAK", "SHIELD_PIERCE", "BLOCKED", "REFLECT", "WINDSHIELD", "SPELL_SHIELD", "DAMAGE_NULLIFY", "INTERCEPT_PROJECTILE", "BURN", "UNSTOPPABLE", "TERRAIN", "WALL_HOP", "ALLY_TP_OK", "TETHER", "MARK", "GHOSTING", "MOBILITY", "DASH", "BLINK", "Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "INSEC_KICK"],
+    title: { ko: "3) 전투 메커니즘", en: "3) Combat Mechanics" },
+    keys: ["AA_RESET", "UNTARGETABLE", "TOWER_DODGE", "DODGE", "EXECUTE", "SHIELD_BREAK", "SHIELD_PIERCE", "BLOCKED", "REFLECT", "WINDSHIELD", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR", "DAMAGE_NULLIFY", "INTERCEPT_PROJECTILE", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA", "TERRAIN", "INVULNERABLE", "WALL_HOP", "ALLY_TP_OK", "TETHER", "MARK", "GHOSTING", "MOBILITY", "DASH", "BLINK", "Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "INSEC_KICK"],
     subGroups: [
       { title: { ko: "투사체", en: "Projectile" }, keys: ["WINDSHIELD", "REFLECT", "SEPARATOR", "INTERCEPT_PROJECTILE", "DAMAGE_NULLIFY"] },
       { title: { ko: "이동 스킬", en: "Mobility" }, keys: ["MOBILITY", "DASH", "BLINK", "SEPARATOR", "WALL_HOP"] },
@@ -72,20 +73,12 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
     ],
   },
   {
-    title: { ko: "5) 생존 / 방어", en: "5) Survival / Defense" },
-    keys: [],
-  },
-  {
-    title: { ko: "6) 시야 / 은신", en: "6) Vision / Stealth" },
+    title: { ko: "4) 시야 / 은신", en: "4) Vision / Stealth" },
     keys: ["VISION", "REVEALED", "TRUE_SIGHT", "STEALTH", "INVISIBILITY", "CAMOUFLAGE"],
     subGroups: [
       { keys: ["VISION", "REVEALED", "TRUE_SIGHT"] },
       { keys: ["STEALTH", "INVISIBILITY", "CAMOUFLAGE"] },
     ],
-  },
-  {
-    title: { ko: "9) 특수 / 변신", en: "9) Special / Transform" },
-    keys: [],
   },
 ];
 

@@ -41,6 +41,7 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   HP_REGEN_UP: { icons: ["/stat-icons/icon-hpregen.png"] },
   HS_POWER: { icons: ["/stat-icons/icon-hpregen.png"] },
   MANA_RESTORE: { icons: ["/stat-icons/icon-manaregen.png"] },
+  ENERGY_RESTORE: { icons: ["/stat-icons/icon-energyregen.png"] },
   LIFESTEAL: { icons: ["/stat-icons/icon-lifesteal.png"] },
   OMNIVAMP: { icons: ["/stat-icons/icon-omnivamp.png"] },
   TENACITY: { icons: ["/stat-icons/icon-tenacity.png"] },
@@ -54,7 +55,6 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   SLOW: { icons: ["/stat-icons/icon-ms.png"] },
   CRIPPLE: { icons: ["/stat-icons/icon-as.png"] },
   SILENCE: { icons: ["/cc-icons/icon-polymorph-silence.png"] },
-  POLYMORPH: { icons: ["/cc-icons/icon-polymorph-silence.png"] },
   DISRUPT: { icons: ["/cc-icons/icon-polymorph-silence.png"] },
   SUPPRESS: { icons: ["/cc-icons/icon-suppress.png"] },
   FEAR: { icons: ["/cc-icons/icon-fear.png"] },
@@ -69,11 +69,14 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   BERSERK: { icons: ["/cc-icons/icon-berserk-taunt.png"] },
   TAUNT: { icons: ["/cc-icons/icon-berserk-taunt.png"] },
   ROOT: { icons: ["/cc-icons/icon-root-grounded.png"] },
-  GROUNDED: { icons: ["/cc-icons/icon-root-grounded.png"] },
+  GROUNDED: { icons: ["/cc-icons/icon-grounded.png"] },
   CC_IMMUNE: { icons: ["/cc-icons/icon-ccimmune-unstoppable.png"] },
   UNSTOPPABLE: { icons: ["/cc-icons/icon-ccimmune-unstoppable.png"] },
+  CC_CLEANSE: { icons: ["/cc-icons/icon-cccleanse.png"] },
   DROWSY: { icons: ["/cc-icons/icon-drowsy.png"] },
   SLEEP: { icons: ["/cc-icons/icon-sleep.png"] },
+  STASIS: { icons: ["/cc-icons/icon-stasis.png"] },
+  KINEMATICS: { icons: ["/cc-icons/icon-kinematics.png"] },
+  FORCED_ACTION: { icons: ["/cc-icons/icon-forcedaction.png"] },
   SKILL_CHANNEL: { icons: ["/cc-icons/icon-channel.png"] }, // GimmickTagId
-  // FORCED_ACTION은 개별 상태가 아니라 상위 분류 개념이라 아이콘 매핑 없음(텍스트로만 표시)
 };
