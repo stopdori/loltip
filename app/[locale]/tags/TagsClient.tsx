@@ -1,16 +1,17 @@
 // app/[locale]/tags/TagsClient.tsx
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import SiteHeader from "@/app/components/SiteHeader";
 import TagPill from "@/app/components/TagPill";
 import { TAG_LABEL, TAG_DESC, type TagId } from "@/app/data/interactions";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "@/app/data/interactions/tags_gimmick";
 import { TAG_CATEGORIES, VISION_STEALTH_CATEGORY, GIMMICK_CATEGORIES } from "@/app/data/interactions/tagCategories";
-import { toneOfTag, NOTE_TONE_CLASS } from "@/app/data/interactions/tagTone";
+import { toneOfTag, NOTE_TONE_CLASS, type Tone } from "@/app/data/interactions/tagTone";
 import { STAT_ICONS } from "@/app/data/interactions/statIcons";
 import { parseTagTokens } from "@/app/data/interactions/parseTagTokens";
+import { CC_INTERACTIONS, type Removal } from "@/app/data/interactions/ccInteractions";
 
 type Lang = "ko" | "en";
 type Tab = "basic" | "vision" | "gimmick";
@@ -109,6 +110,131 @@ type SearchHit = {
   kind: "tag" | "gimmick";
   label: string;
 };
+
+function clamp(n: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, n));
+}
+
+/**
+ * renderTagDetailCard의 설명 텍스트 안에 등장하는 [[TAG]] 토큰 전용.
+ * TagPill.tsx의 호버 위치 계산(getBoundingClientRect → fixed 포지션 말풍선)
+ * 로직을 그대로 재사용하되, 앵커는 배경/테두리 없는 순수 색깔 텍스트이고
+ * 클릭 핸들러가 전혀 없다 — 이 카드 안에서만 쓰는 로컬 컴포넌트.
+ */
+function InlineTagToken({
+  text,
+  tone,
+  tagId,
+  lang,
+}: {
+  text: string;
+  tone: Tone;
+  tagId: TagId | GimmickTagId;
+  lang: "ko" | "en";
+}) {
+  const anchorRef = useRef<HTMLSpanElement | null>(null);
+  const tipRef = useRef<HTMLSpanElement | null>(null);
+  const [open, setOpen] = useState(false);
+  const [pos, setPos] = useState<{ left: number; top: number; arrowLeft: number } | null>(null);
+
+  const desc =
+    (GIMMICK_TAG_DESC as Partial<Record<string, { ko: string; en: string }>>)[tagId] ??
+    (TAG_DESC as Partial<Record<string, { ko: string; en: string }>>)[tagId];
+  const tip = desc?.[lang];
+  const statIcon = STAT_ICONS[tagId];
+
+  const measure = () => {
+    const a = anchorRef.current?.getBoundingClientRect();
+    const t = tipRef.current?.getBoundingClientRect();
+    if (!a || !t) return;
+    const vw = window.innerWidth;
+    const margin = 12;
+    const anchorCenterX = a.left + a.width / 2;
+    const left = clamp(anchorCenterX, margin + t.width / 2, vw - margin - t.width / 2);
+    const top = a.top - 10;
+    const arrowLeft = clamp(anchorCenterX - (left - t.width / 2), 10, t.width - 10);
+    setPos({ left, top, arrowLeft });
+  };
+
+  const onEnter = () => {
+    if (!tip) return;
+    setOpen(true);
+    requestAnimationFrame(() => {
+      measure();
+      requestAnimationFrame(measure);
+    });
+  };
+
+  const onLeave = () => {
+    setOpen(false);
+    setPos(null);
+  };
+
+  useEffect(() => {
+    if (!open) return;
+    const close = (e: TouchEvent) => {
+      if (!anchorRef.current?.contains(e.target as Node)) onLeave();
+    };
+    document.addEventListener("touchstart", close);
+    return () => document.removeEventListener("touchstart", close);
+  }, [open]);
+
+  return (
+    <span
+      ref={anchorRef}
+      className="relative inline"
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}
+      onTouchStart={(e) => {
+        if (!tip) return;
+        e.preventDefault();
+        open ? onLeave() : onEnter();
+      }}
+    >
+      <span className={`cursor-help ${NOTE_TONE_CLASS[tone]}`}>{text}</span>
+
+      {open && tip && (
+        <span
+          className="pointer-events-none fixed z-[9999]"
+          style={{
+            left: pos?.left ?? 0,
+            top: pos?.top ?? 0,
+            transform: "translate(-50%, -100%)",
+          }}
+        >
+          <span
+            ref={tipRef}
+            className="block w-max max-w-[min(520px,calc(100vw-24px))]
+                       whitespace-pre break-keep text-center leading-snug
+                       rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold
+                       text-slate-100 ring-1.5 ring-white/10 shadow-lg"
+          >
+            {statIcon?.icons?.map((src, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={i} src={src} alt="" className="inline-block align-middle mr-1 object-contain" style={{ height: 16, width: 16 }} />
+            ))}
+            {/* 설명 안에 또 다른 [[TAG]]가 있어도, 여기서는 정적 색깔
+                텍스트로만 표시한다(호버/클릭 없음 — 무한 중첩 방지). */}
+            {parseTagTokens(tip, lang).map((seg, i) =>
+              seg.tone ? (
+                <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>
+                  {seg.text}
+                </span>
+              ) : (
+                <span key={i}>{seg.text}</span>
+              )
+            )}
+          </span>
+
+          <span
+            className="block h-0 w-0 border-x-[6px] border-t-[6px] border-x-transparent border-t-black/95"
+            style={{ marginLeft: (pos?.arrowLeft ?? 0) - 6 }}
+          />
+        </span>
+      )}
+    </span>
+  );
+}
 
 export default function TagsClient() {
   const locale = useLocale();
@@ -226,6 +352,84 @@ export default function TagsClient() {
     );
   };
 
+  // CC_INTERACTIONS 라벨+값 한 줄 (라벨: text-slate-400 text-xs, 값: 조건별 색상).
+  const renderCCInteractionRow = (label: string, value: React.ReactNode) => (
+    <div className="flex items-center justify-between gap-3">
+      <span className="text-slate-400 text-xs">{label}</span>
+      <span className="text-xs font-semibold">{value}</span>
+    </div>
+  );
+
+  // 해당 태그가 CC_INTERACTIONS에 데이터를 갖고 있을 때만 상세 카드 설명
+  // 아래에 표시하는 보조 상호작용 섹션(채널링/대시 차단, 강인함, 해제 수단 등).
+  // 데이터가 없으면 null을 반환해 섹션 자체를 렌더링하지 않는다.
+  const renderCCInteractionSection = (key: TagId) => {
+    const info = CC_INTERACTIONS[key];
+    if (!info) return null;
+
+    const YES = lang === "ko" ? "가능" : "Yes";
+    const NO = lang === "ko" ? "불가능" : "No";
+    const BLOCKED = lang === "ko" ? "차단됨" : "Blocked";
+    const NO_EFFECT = lang === "ko" ? "영향없음" : "No effect";
+    const APPLIES = lang === "ko" ? "적용" : "Applies";
+    const NOT_APPLIED = lang === "ko" ? "미적용" : "Doesn't apply";
+    const NA = lang === "ko" ? "해당없음" : "N/A";
+
+    const boolCls = (v: boolean) => (v ? "text-emerald-400" : "text-slate-400");
+
+    const removalText: Record<Removal, string> = {
+      CLEANSE_FAMILY: lang === "ko" ? "클린즈 계열" : "Cleanse-family",
+      QSS_ONLY: lang === "ko" ? "QSS만 가능" : "QSS only",
+      NONE: lang === "ko" ? "해제 불가능" : "Cannot be removed",
+      NOT_APPLICABLE: NA,
+    };
+    const removalCls: Record<Removal, string> = {
+      CLEANSE_FAMILY: "text-emerald-400",
+      QSS_ONLY: "text-amber-400",
+      NONE: "text-rose-400",
+      NOT_APPLICABLE: "text-slate-400",
+    };
+
+    return (
+      <div className="mt-3 pt-3 border-t border-white/10 space-y-1.5 md:mt-0 md:pt-0 md:border-t-0 md:border-l md:border-white/10 md:pl-4 md:w-56 md:flex-shrink-0">
+        {renderCCInteractionRow(
+          lang === "ko" ? "채널링 차단" : "Interrupts Channel",
+          <span className={boolCls(info.interruptsChannel)}>{info.interruptsChannel ? YES : NO}</span>
+        )}
+        {renderCCInteractionRow(
+          lang === "ko" ? "대시 차단" : "Interrupts Dash",
+          <span className={boolCls(info.interruptsDash)}>{info.interruptsDash ? YES : NO}</span>
+        )}
+        {renderCCInteractionRow(
+          lang === "ko" ? "이동 소환사 주문 차단" : "Blocks Movement Spells",
+          <span className={boolCls(info.blocksMovementSpells)}>{info.blocksMovementSpells ? BLOCKED : NO_EFFECT}</span>
+        )}
+        {renderCCInteractionRow(
+          lang === "ko" ? "소환사 주문 전체 차단" : "Blocks All Spells",
+          <span className={boolCls(info.blocksAllSpells)}>{info.blocksAllSpells ? BLOCKED : NO_EFFECT}</span>
+        )}
+        {renderCCInteractionRow(
+          lang === "ko" ? "강인함 적용" : "Tenacity",
+          <span className={info.tenacity === "NOT_APPLICABLE" ? "text-slate-400" : boolCls(info.tenacity)}>
+            {info.tenacity === "NOT_APPLICABLE" ? NA : info.tenacity ? APPLIES : NOT_APPLIED}
+          </span>
+        )}
+        {renderCCInteractionRow(
+          lang === "ko" ? "해제 수단" : "Removal",
+          <span className={removalCls[info.removal]}>{removalText[info.removal]}</span>
+        )}
+        {info.endsIfCasterDies !== undefined &&
+          renderCCInteractionRow(
+            lang === "ko" ? "시전자 사망 시 조기 해제" : "Ends if Caster Dies",
+            <span className={boolCls(info.endsIfCasterDies)}>
+              {info.endsIfCasterDies ? (lang === "ko" ? "예" : "Yes") : (lang === "ko" ? "아니오" : "No")}
+            </span>
+          )}
+        {info.note && <p className="text-[11px] text-slate-500 pt-1">{info.note[lang]}</p>}
+      </div>
+    );
+  };
+
   // 검색에서 고른 태그 하나만을 위한 상세 카드. 탐색(탭 전환/스크롤) 없이
   // 검색창 바로 아래에서 조회만 끝내는 용도.
   const renderTagDetailCard = () => {
@@ -239,12 +443,12 @@ export default function TagsClient() {
     const statIcon = STAT_ICONS[selectedTag.key as TagId | GimmickTagId];
 
     return (
-      <div className="relative max-w-md mx-auto rounded-xl bg-slate-800/60 ring-1 ring-white/10 p-4">
+      <div className="relative max-w-md md:max-w-2xl mx-auto rounded-xl bg-slate-800/60 ring-1 ring-white/10 p-4">
         <button
           type="button"
           onClick={() => setSelectedTag(null)}
           aria-label={lang === "ko" ? "닫기" : "Close"}
-          className="absolute top-2 right-2 w-7 h-7 flex items-center justify-center rounded-lg text-slate-400 hover:bg-slate-700/60 hover:text-slate-200"
+          className="absolute -top-3 -right-3 w-7 h-7 flex items-center justify-center rounded-full bg-slate-900 ring-1 ring-white/10 text-slate-400 hover:bg-slate-700 hover:text-slate-200"
         >
           <svg
             width="15"
@@ -260,30 +464,37 @@ export default function TagsClient() {
             <line x1="19" y1="5" x2="5" y2="19" />
           </svg>
         </button>
-        <div className="mb-3">
-          <TagPill
-            text={label[lang]}
-            tone={toneOfTag(selectedTag.key as TagId | GimmickTagId)}
-            icons={statIcon?.icons}
-            direction={statIcon?.direction}
-            size={statIcon?.size}
-          />
-        </div>
-        {descText ? (
-          <p className="whitespace-pre-line text-sm text-slate-200 leading-relaxed">
-            {parseTagTokens(descText, lang).map((seg, i) =>
-              seg.tone ? (
-                <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>
-                  {seg.text}
-                </span>
-              ) : (
-                <span key={i}>{seg.text}</span>
-              )
+        <div className="flex flex-col md:flex-row md:gap-4">
+          <div className="md:flex-1 md:min-w-0">
+            <div className="mb-3">
+              <TagPill
+                text={label[lang]}
+                tone={toneOfTag(selectedTag.key as TagId | GimmickTagId)}
+                icons={statIcon?.icons}
+                direction={statIcon?.direction}
+                size={statIcon?.size}
+              />
+            </div>
+            {descText ? (
+              <p className="whitespace-pre-line text-sm text-slate-200 leading-relaxed">
+                {parseTagTokens(descText, lang).map((seg, i) =>
+                  seg.tone && seg.tagId ? (
+                    <InlineTagToken key={i} text={seg.text} tone={seg.tone} tagId={seg.tagId} lang={lang} />
+                  ) : seg.tone ? (
+                    <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>
+                      {seg.text}
+                    </span>
+                  ) : (
+                    <span key={i}>{seg.text}</span>
+                  )
+                )}
+              </p>
+            ) : (
+              <p className="text-sm text-slate-500">{lang === "ko" ? "설명 없음" : "No description"}</p>
             )}
-          </p>
-        ) : (
-          <p className="text-sm text-slate-500">{lang === "ko" ? "설명 없음" : "No description"}</p>
-        )}
+          </div>
+          {selectedTag.kind === "tag" && renderCCInteractionSection(selectedTag.key as TagId)}
+        </div>
       </div>
     );
   };

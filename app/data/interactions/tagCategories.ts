@@ -30,7 +30,7 @@ export type CategoryGroup<T extends string> = {
 export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   {
     title: { ko: "1) 스탯", en: "1) Stats" },
-    keys: ["MS_UP", "MS_TO_ENEMY", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "TENACITY", "HEAL", "HP_REGEN", "REVIVE", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
+    keys: ["MS_UP", "MS_TO_ENEMY", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "HP_REGEN", "REVIVE", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
     subGroups: [
       { title: { ko: "공격", en: "Attack" }, keys: ["AD_UP", "AP_UP", "CRIT"] },
       { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "SEPARATOR", "AD_DOWN", "MS_DOWN"] },
@@ -38,7 +38,7 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
       { title: { ko: "체력 / 쉴드", en: "" }, keys: ["MAX_HP_UP", "HEAL", "SHIELD", "HP_REGEN", "REVIVE"] },
       { keys: ["HS_POWER", "HP_REGEN_UP", "SEPARATOR", "GW"] },
       { title: { ko: "흡혈 / 자원회복", en: "Vamp / Resource Restore" }, keys: ["LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"] },
-      { title: { ko: "방어 / 마저", en: "" }, keys: ["AR_UP", "MR_UP", "AR_MR_UP", "SEPARATOR", "TENACITY"] },
+      { title: { ko: "방어 / 마저", en: "" }, keys: ["AR_UP", "MR_UP", "AR_MR_UP"] },
       { keys: ["AR_SHRED", "MR_SHRED", "AR_MR_SHRED"] }, 
       { keys: ["AR_PEN", "MR_PEN", "AR_MR_PEN"] },
       { title: { ko: "쿨타임", en: "Cooldown" }, keys: ["CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT"] },
@@ -46,15 +46,15 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   },
   {
     title: { ko: "2) 군중제어 / CC", en: "2) Crowd Control" },
-    keys: ["STUN", "ROOT", "SLOW", "TAUNT", "SLEEP", "STASIS", "DROWSY", "KNOCKBACK", "AIRBORNE", "SUSPENDING", "GRAB", "CHARM", "SILENCE", "FEAR", "BERSERK", "FORCED_ACTION", "NEAR_SIGHT", "BLIND", "SUPPRESS", "IMMOBILIZING", "CRIPPLE", "DISARM", "UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE", "SLOW_RESIST", "SLOW_IMMUNE", "SLOW_CLEANSE", "DISRUPT", "GROUNDED", "KINEMATICS", "BANISH", "ANTI_DASH", "POLYMORPH"],
+    keys: ["STUN", "ROOT", "SLOW", "TAUNT", "SLEEP", "STASIS", "DROWSY", "KNOCKBACK", "KNOCKDOWN", "AIRBORNE", "SUSPENDING", "GRAB", "CHARM", "SILENCE", "FEAR", "BERSERK", "FORCED_ACTION", "NEAR_SIGHT", "BLIND", "SUPPRESS", "IMMOBILIZING", "CRIPPLE", "DISARM", "UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE", "SLOW_RESIST", "SLOW_IMMUNE", "SLOW_CLEANSE", "DISRUPT", "GROUNDED", "KINEMATICS", "BANISH", "ANTI_DASH", "POLYMORPH", "TENACITY"],
     subGroups: [
       { title: { ko: "이동 불가", en: "Immobilizing" }, keys: ["IMMOBILIZING", "AIRBORNE", "KNOCKBACK", "GRAB", "SEPARATOR", "SUSPENDING"] }, 
       { keys: ["STUN", "ROOT", "SUPPRESS", "SLEEP", "STASIS"] },
       { keys: ["FORCED_ACTION", "CHARM", "TAUNT", "FEAR", "BERSERK"] },
-      { title: { ko: "기타", en: "" }, keys: ["SILENCE", "DISRUPT"] },
+      { title: { ko: "기타", en: "" }, keys: ["SILENCE", "DISRUPT", "KNOCKDOWN"] },
       { keys: ["DROWSY", "SLOW", "CRIPPLE", "DISARM"] }, 
       { keys: ["BLIND", "NEAR_SIGHT"] }, 
-      { title: { ko: "CC 면역, 해제 관련", en: "" }, keys: ["UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE"] }, 
+      { title: { ko: "CC 면역, 해제 관련", en: "" }, keys: ["UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE", "SEPARATOR", "TENACITY"] }, 
       { keys: ["SLOW_RESIST", "SLOW_IMMUNE", "SLOW_CLEANSE"] },
       { title: { ko: "특별 챔피언 CC", en: "Champion-Unique" }, keys: ["POLYMORPH", "BANISH", "ANTI_DASH", "GROUNDED", "KINEMATICS"] },
     ],

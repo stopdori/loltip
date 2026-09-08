@@ -37,6 +37,7 @@ export type TagId =
   | "SLEEP"
   | "DROWSY"
   | "KNOCKBACK"
+  | "KNOCKDOWN"
   | "AIRBORNE"
   | "SUSPENDING"
   | "GRAB"
@@ -182,6 +183,7 @@ TAUNT: { ko: "도발", en: "Taunt" },
 SLEEP: { ko: "수면", en: "Sleep" },
 DROWSY: { ko: "졸림", en: "Drowsy" },
 KNOCKBACK: { ko: "넉백", en: "Knockback" },
+KNOCKDOWN: { ko: "넉다운", en: "Knockdown" },
 AIRBORNE: { ko: "에어본", en: "Airborne" },
 SUSPENDING: { ko: "체공", en: "Suspending" },
 GRAB: { ko: "그렙", en: "Grab" },
@@ -396,6 +398,10 @@ KNOCKBACK: {
   ko: "[[AIRBORNE]] 시키고 상대를 밀어냄. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
   en: "Knocks the target [[AIRBORNE]] and pushes them back \n (cannot be cleansed)",
 },
+KNOCKDOWN: {
+  ko: "돌진(대시)이나 공중이탈 상태를 강제로 끊고 그 자리에 착지시킴. \n [[AIRBORNE]], [[STASIS]]와 함께, 대시를 끊을 수 있는 단 세 가지 CC 중 하나. \n 강제행동([[FORCED_ACTION]]) 계열 스킬이라고 자동으로 이 효과를 갖는 건 아니며, 스킬마다 개별적으로 부여됨(예: 아리 매혹).",
+  en: "Interrupts a dash or airborne displacement and places the target on the ground. \n One of only three CC types, alongside [[AIRBORNE]] and [[STASIS]], that can interrupt a dash. \n Not automatically granted by [[FORCED_ACTION]] abilities — it's applied per-ability (e.g. Ahri's Charm).",
+},
 GRAB: {
   ko: "[[AIRBORNE]] 시키고 상대를 잡아당김. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
   en: "Knocks the target [[AIRBORNE]] and pulls them in \n (cannot be cleansed)",
@@ -496,8 +502,8 @@ DISARM: {
   en: "Prevents basic attacks (abilities can still be used). \n Affected by Tenacity and can be cleansed. \n (Like Blind, not removable by Mikael's Blessing)",
 },
 TENACITY: {
-  ko: "기절, 속박, 둔화, 도발, 공포, 매혹, 침묵, 실명, 수면, 변이, 이동불가, 광란, 약화, 무장해제\n지속시간 감소",
-  en: "Reduces crowd control duration",
+  ko: "아래 효과들의 지속시간 감소. \n [[STUN]], [[SUSPENDING]], [[ROOT]], [[SLOW]], [[SLEEP]], [[SILENCE]], [[BLIND]], [[DISARM]] \n [[FORCED_ACTION]]([[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]), [[POLYMORPH]], [[CRIPPLE]] \n \n 아래 효과들의 지속시간에는 영향이 없음. \n [[AIRBORNE]], [[KNOCKBACK]], [[GRAB]], [[DROWSY]], [[NEAR_SIGHT]], [[STASIS]], [[SUPPRESS]]",
+  en: "Reduces the duration of the following: \n [[STUN]], [[SUSPENDING]], [[ROOT]], [[SLOW]], [[SLEEP]], [[SILENCE]], [[BLIND]], [[DISARM]] \n [[FORCED_ACTION]] ([[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]), [[POLYMORPH]], [[CRIPPLE]] \n \n Does not affect the duration of the following: \n [[AIRBORNE]], [[KNOCKBACK]], [[GRAB]], [[DROWSY]], [[NEAR_SIGHT]], [[STASIS]], [[SUPPRESS]]",
 },
 CC_IMMUNE: {
   ko: "CC가 걸리지 않음",

@@ -24,9 +24,9 @@ export const briar_tahmkench: MatchupSummary = {
     },
   },
   common: {
-    ko: ["특이한 판정 - 상급 \n 탐켄치 R의 [[SUPPRESS]]으로 브라이어가 삼켜졌을 때 R1의 [[PROJECTILE]]가 적중하면 \n 브라이어가 뱃속에서 나올 때 R2를 시전. \n 대상에게 [[UNSTOPPABLE]] [[DASH]]. [[CLIP:https://www.youtube.com/shorts/Vs4UZa080h0]]",
+    ko: ["특이한 판정 - 상급 \n 탐켄치 R의 [[SUPPRESS]]으로 브라이어가 삼켜졌을 때 R1의 [[PROJECTILE]]가 적중하면 \n 브라이어가 뱃속에서 나올 때 R2를 시전. \n 대상에게 [[UNSTOPPABLE]] [[DASH]]. [[CLIP:https://www.youtube.com/watch?v=YyGVNedtrUs]]",
         "특이한 판정 - 상급 \n 브라이어 E의 [[CAST_COMMIT]]으로 탐켄치 R의 [[SUPPRESS]]에 걸려도 시전을 유지할 수 있음. \n 단, 뱃속의 브라이어가 E를 발사할 수 있음. \n 탐켄치가 적군이라면 밀려남. [[CLIP:https://www.youtube.com/shorts/_q5MQmJtV6c]]"],
-      en: ["Unusual interaction - advanced \n If Briar is swallowed by Tahm Kench's R [[SUPPRESS]] and gets hit by R1's [[PROJECTILE]], \n Briar casts R2 as she comes out of his stomach, \n [[UNSTOPPABLE]] [[DASH]]ing toward the target. [[CLIP:https://www.youtube.com/shorts/Vs4UZa080h0]]",
+      en: ["Unusual interaction - advanced \n If Briar is swallowed by Tahm Kench's R [[SUPPRESS]] and gets hit by R1's [[PROJECTILE]], \n Briar casts R2 as she comes out of his stomach, \n [[UNSTOPPABLE]] [[DASH]]ing toward the target. [[CLIP:https://www.youtube.com/watch?v=YyGVNedtrUs]]",
         "Unusual interaction - advanced \n Briar's E [[CAST_COMMIT]] allows maintaining the cast even when caught by Tahm Kench's R [[SUPPRESS]]. \n However, Briar can still fire E from inside his stomach. \n If Tahm Kench is an enemy, he gets knocked back. [[CLIP:https://www.youtube.com/shorts/_q5MQmJtV6c]]"],
   },
 };
