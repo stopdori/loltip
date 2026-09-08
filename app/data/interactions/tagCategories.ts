@@ -61,7 +61,7 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   },
   {
     title: { ko: "3) 전투 메커니즘", en: "3) Combat Mechanics" },
-    keys: ["AA_RESET", "UNTARGETABLE", "TOWER_DODGE", "DODGE", "EXECUTE", "SHIELD_BREAK", "SHIELD_PIERCE", "BLOCKED", "REFLECT", "WINDSHIELD", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR", "DAMAGE_NULLIFY", "INTERCEPT_PROJECTILE", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA", "TERRAIN", "INVULNERABLE", "WALL_HOP", "ALLY_TP_OK", "TETHER", "MARK", "GHOSTING", "MOBILITY", "DASH", "BLINK", "Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "INSEC_KICK"],
+    keys: ["AA_RESET", "UNTARGETABLE", "TOWER_DODGE", "DODGE", "EXECUTE", "SHIELD_BREAK", "SHIELD_PIERCE", "BLOCKED", "REFLECT", "WINDSHIELD", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR", "DAMAGE_NULLIFY", "INTERCEPT_PROJECTILE", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA", "TERRAIN", "WALL_COLLISION", "INVULNERABLE", "WALL_HOP", "ALLY_TP_OK", "TETHER", "MARK", "GHOSTING", "MOBILITY", "DASH", "BLINK", "Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "INSEC_KICK"],
     subGroups: [
       { title: { ko: "투사체", en: "Projectile" }, keys: ["WINDSHIELD", "REFLECT", "SEPARATOR", "INTERCEPT_PROJECTILE", "DAMAGE_NULLIFY"] },
       { title: { ko: "이동 스킬", en: "Mobility" }, keys: ["MOBILITY", "DASH", "BLINK", "SEPARATOR", "WALL_HOP"] },
@@ -69,7 +69,7 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
       { title: { ko: "기타 메커니즘", en: "" }, keys: ["AA_RESET", "GHOSTING", "EXECUTE", "UNTARGETABLE", "TERRAIN", "INVULNERABLE"]}, 
       { keys: ["TOWER_DODGE", "BLOCKED", "DODGE", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR"]}, 
       { keys: ["SHIELD_BREAK", "SHIELD_PIERCE"] },      
-      { keys: ["ALLY_TP_OK", "TETHER", "MARK", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA"] },
+      { keys: ["ALLY_TP_OK", "TETHER", "MARK", "WALL_COLLISION", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA"] },
     ],
   },
   {
@@ -101,7 +101,7 @@ export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
 export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   {
     title: { ko: "1) 스킬 형태", en: "1) Skill Form" },
-    keys: ["SKILL_ACTIVE", "SKILL_TOGGLE", "SKILL_CHANNEL", "SKILL_CHARGED", "SKILL_VECTOR", "SKILL_STEERABLE", "SKILL_RECAST"],
+    keys: ["SKILL_ACTIVE", "SKILL_TOGGLE", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SKILL_VECTOR", "SKILL_STEERABLE", "SKILL_RECAST"],
   },
   {
     title: { ko: "2) 기타 (상태 / 자원)", en: "2) Misc (State / Resource)" },

@@ -122,6 +122,7 @@ export type TagId =
   | "WALL_HOP"
   | "GHOSTING"
   | "TERRAIN"
+  | "WALL_COLLISION"
   | "MARK"
   | "TETHER"
   | "MOBILITY"
@@ -268,6 +269,7 @@ ALLY_TP_OK: { ko: "텔가능", en: "Ally TP" },
 WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
 GHOSTING: { ko: "유체화", en: "Ghosting" },
 TERRAIN: { ko: "벽", en: "TERRAIN" },
+WALL_COLLISION: { ko: "벽충돌", en: "Wall Collision" },
 MARK:          { ko: "표식",     en: "Mark"          },
 TETHER: { ko: "사슬", en: "Tether" },
 MOBILITY: { ko: "이동기",    en: "Mobility" },
@@ -528,7 +530,7 @@ GROUNDED: {
   en: "A debuff that prevents the use of movement abilities \n (dashes, blinks, teleports, item movement speed effects, etc.). \n (Can use movement abilities again if cleansed)",
 },
 ANTI_DASH: {
-  ko: "돌진을 시전하는 대상에게 마법 피해와 [[AIRBORNE]](0.5초)를 가하고, \n 돌진이 끊긴 대상은 [[GROUNDED]] + 25% [[SLOW]](2초)가 적용됨. \n (뽀삐 W 고유 메커니즘)",
+  ko: "[[DASH]]을 시전하는 대상에게 [[DMG_MAGIC]]와 [[AIRBORNE]]. \n [[DASH]]이 끊긴 대상은 [[GROUNDED]]와 [[SLOW]]. \n (뽀삐 W 고유 메커니즘)",
   en: "Deals magic damage and [[AIRBORNE]] (0.5s) to dashing units, \n interrupted targets are also [[GROUNDED]] and [[SLOW]]ed by 25% (2s). \n (Poppy W's unique mechanic)",
 },
 KINEMATICS: {
@@ -734,6 +736,10 @@ GHOSTING: {
 TERRAIN: {
   ko: "벽 생성. \n 생성될 때 대상이 밀려나면서 에어본.",
   en: "Creates a wall. \n Knocks the target back and airborne when created.",
+},
+WALL_COLLISION: {
+  ko: "돌진·강제이동 중인 대상이 벽(지형)에 부딪히면 추가 효과(피해/CC 등)가 발동함. \n 예) 뽀삐 E, 세주아니 Q.",
+  en: "If a target being dashed/forcibly moved collides with terrain, a bonus effect (damage/CC etc.) triggers. \n e.g. Poppy E, Sejuani Q.",
 },
 MARK: { ko: "적에게 표식을 남기며 \n 표식이 있는 대상에게 추가 효과가 발동됨", en: "Marks an enemy and triggers \n a bonus effect on marked targets" },
 TETHER: {

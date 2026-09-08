@@ -10,170 +10,33 @@ import { CHAMPS } from "../data/champs/_index";
 import { CHAMP_FORMS, hasForms, type FormKey } from "../data/interactions/forms";
 import { useChampSpells } from "@/app/lib/useChampSpells";
 import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from "@/app/lib/ddragon";
-import { toneOfTag, TONE_CLASS, NOTE_TONE_CLASS } from "../data/interactions/tagTone";
+import { toneOfTag } from "../data/interactions/tagTone";
 import { STAT_ICONS } from "../data/interactions/statIcons";
-import { parseTagTokens } from "../data/interactions/parseTagTokens";
 import TokenText from "./TokenText";
-
-
-
-
-import type { Tone } from "../data/interactions/tagTone";
-
-
-function TagPill({
-  text,
-  tip,
-  tone = "default",
-  className,
-  icons,
-  direction,
-  size = 17,
-  lang = "ko",
-}: {
-  text: string;
-  tip?: string;
-  className?: string;
-  tone?: Tone;
-  /** 있으면 텍스트 앞에 이 경로들의 이미지를 순서대로 렌더링한다 */
-  icons?: string[];
-  /** icons와 함께 쓰여, 아이콘 옆에 ↑/↓ 화살표를 추가로 표시한다 */
-  direction?: "up" | "down";
-  /** 아이콘 렌더링 크기(px). 기본 14px */
-  size?: number;
-  /** tip 안의 [[TAG]] 토큰을 라벨로 바꿀 때 쓸 언어 */
-  lang?: "ko" | "en";
-}) {
-  const anchorRef = useRef<HTMLSpanElement>(null);
-  const tipRef = useRef<HTMLSpanElement>(null);
-  const [open, setOpen] = useState(false);
-  const [pos, setPos] = useState<{ left: number; top: number; arrowLeft: number } | null>(null);
-
-  const base =
-    tone === "note"
-      ? "inline-flex items-center cursor-help hover:opacity-90"
-      : "flex items-center justify-center rounded-md font-semibold ring-1 align-top";
-  const sizeCls = tone === "note" ? "" : "px-1 py-[3px] text-[12px]";
-  const toneCls = TONE_CLASS[tone] ?? TONE_CLASS.default;
-  const gapCls = (tone !== "note" && icons?.length) || direction ? "gap-[4px]" : "";
-  const cls = `${base} ${sizeCls} ${toneCls} ${gapCls} ${className ?? ""}`;
-
-  const measure = () => {
-    const a = anchorRef.current?.getBoundingClientRect();
-    const t = tipRef.current?.getBoundingClientRect();
-    if (!a || !t) return;
-    const vw = window.innerWidth;
-    const margin = 8;
-    const anchorCenterX = a.left + a.width / 2;
-    const left = clamp(anchorCenterX, margin + t.width / 2, vw - margin - t.width / 2);
-    const top = a.top - 10;
-    const arrowLeft = clamp(anchorCenterX - (left - t.width / 2), 10, t.width - 10);
-    setPos({ left, top, arrowLeft });
-  };
-
-  const onEnter = () => {
-    if (!tip) return;
-    setOpen(true);
-    requestAnimationFrame(() => {
-      measure();
-      requestAnimationFrame(measure);
-    });
-  };
-
-  const onLeave = () => {
-    setOpen(false);
-    setPos(null);
-  };
-
-  useEffect(() => {
-    if (!open) return;
-    const close = (e: TouchEvent) => {
-      if (!anchorRef.current?.contains(e.target as Node)) onLeave();
-    };
-    document.addEventListener("touchstart", close);
-    return () => document.removeEventListener("touchstart", close);
-  }, [open]);
-
-  // 툴팁이 열린 채로 스크롤해서 앵커가 화면 밖으로 완전히 벗어나면
-  // 자동으로 닫는다. open일 때만 observe하고, 닫히면 disconnect.
-  useEffect(() => {
-    if (!open) return;
-    const el = anchorRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) onLeave();
-      },
-      { threshold: 0 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [open]);
-
-  return (
-    <span
-      ref={anchorRef}
-      className="relative inline-flex group"
-      onMouseEnter={onEnter}
-      onMouseLeave={onLeave}
-      onTouchStart={(e) => {
-        if (!tip) return;
-        e.preventDefault();
-        open ? onLeave() : onEnter();
-      }}
-    >
-      <span className={cls}>
-        {tone !== "note" &&
-          icons?.map((src, i) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img key={i} src={src} alt="" className="shrink-0 object-contain" style={{ height: size, width: size }} />
-          ))}
-        {text}
-        {direction && (
-          <span aria-hidden="true">{direction === "up" ? "↑" : "↓"}</span>
-        )}
-      </span>
-
-      {open && tip && (
-        <span
-          className="pointer-events-none fixed z-[9999]"
-          style={{
-            left: pos?.left ?? 0,
-            top: pos?.top ?? 0,
-            transform: "translate(-50%, -100%)",
-          }}
-        >
-          <span
-            ref={tipRef}
-            className="inline-block w-max max-w-[min(520px,calc(100vw-16px))] whitespace-pre break-keep text-center leading-snug rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold text-slate-100 ring-1.5 ring-white/10 shadow-lg"
-          >
-            {icons?.map((src, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img key={i} src={src} alt="" className="inline-block align-middle mr-1 object-contain" style={{ height: 16, width: 16 }} />
-            ))}
-            {parseTagTokens(tip, lang).map((seg, i) =>
-              seg.tone ? (
-                <span key={i} className={NOTE_TONE_CLASS[seg.tone]}>
-                  {seg.text}
-                </span>
-              ) : (
-                <span key={i}>{seg.text}</span>
-              )
-            )}
-          </span>
-          <span
-            className="block h-0 w-0 border-x-[6px] border-t-[6px] border-x-transparent border-t-black/95"
-            style={{ marginLeft: (pos?.arrowLeft ?? 0) - 6 }}
-          />
-        </span>
-      )}
-    </span>
-  );
-}
-
+import TagPill from "./TagPill";
 
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
+}
+
+// SEPARATOR_NEWLINE을 구분자로 삼아 태그 배열을 "줄 그룹" 배열로 나눈다
+// (SEPARATOR_NEWLINE 자체는 결과에 포함되지 않는다 — 순수 구분자 역할).
+// 스페이서 엘리먼트 + 음수 마진으로 줄바꿈 간격을 흉내내던 방식을 대체한다:
+// 그룹마다 독립된 flex flex-wrap 컨테이너로 그리고 바깥에서 flex-col +
+// gap-y로 쌓으면, 그룹 내부 자연 줄바꿈과 그룹 간 간격이 같은 gap-y 값
+// 하나로만 결정되어 브라우저 편차 없이 항상 정확히 일치한다.
+function splitIntoLineGroups(
+  tags: (TagId | GimmickTagId)[]
+): (TagId | GimmickTagId)[][] {
+  const groups: (TagId | GimmickTagId)[][] = [[]];
+  for (const t of tags) {
+    if (t === "SEPARATOR_NEWLINE") {
+      groups.push([]);
+    } else {
+      groups[groups.length - 1].push(t);
+    }
+  }
+  return groups.filter((g) => g.length > 0);
 }
 
 function SkillLabelWithTip({
@@ -507,7 +370,6 @@ const renderNoteSection = (items: string[], title: string) => {
 
       const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
         if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={i} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -526,6 +388,7 @@ const renderNoteSection = (items: string[], title: string) => {
             direction={statIcon?.direction}
             size={statIcon?.size}
             lang={lang}
+            tagId={t}
           />
         );
       };
@@ -541,9 +404,13 @@ const renderNoteSection = (items: string[], title: string) => {
                 <div className="text-xs font-semibold text-slate-400">
                   {phase.label[lang]}
                 </div>
-                <div className="flex flex-wrap gap-x-1.5 gap-y-1">
+                <div className="flex flex-col gap-y-2">
                   {phase.tags.length > 0 ? (
-                    phase.tags.map(renderTagPill)
+                    splitIntoLineGroups(phase.tags).map((group, gi) => (
+                      <div key={gi} className="flex flex-wrap items-start gap-x-1.5 gap-y-2">
+                        {group.map((t, i) => renderTagPill(t, i))}
+                      </div>
+                    ))
                   ) : (
                     <span className="text-sm text-slate-500">-</span>
                   )}
@@ -570,7 +437,6 @@ const renderNoteSection = (items: string[], title: string) => {
 
       const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
         if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={i} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -589,6 +455,7 @@ const renderNoteSection = (items: string[], title: string) => {
             direction={statIcon?.direction}
             size={statIcon?.size}
             lang={lang}
+            tagId={t}
           />
         );
       };
@@ -604,9 +471,13 @@ const renderNoteSection = (items: string[], title: string) => {
                 <div className="text-xs font-semibold text-slate-400">
                   {phase.label[lang]}
                 </div>
-                <div className="flex flex-wrap gap-x-1.5 gap-y-1">
+                <div className="flex flex-col gap-y-2">
                   {phase.tags.length > 0 ? (
-                    phase.tags.map(renderTagPill)
+                    splitIntoLineGroups(phase.tags).map((group, gi) => (
+                      <div key={gi} className="flex flex-wrap items-start gap-x-1.5 gap-y-2">
+                        {group.map((t, i) => renderTagPill(t, i))}
+                      </div>
+                    ))
                   ) : (
                     <span className="text-sm text-slate-500">-</span>
                   )}
@@ -633,7 +504,6 @@ const renderNoteSection = (items: string[], title: string) => {
 
       const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
         if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
-        if (t === "SEPARATOR_NEWLINE") return <div key={i} className="w-full h-1" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -652,6 +522,7 @@ const renderNoteSection = (items: string[], title: string) => {
             direction={statIcon?.direction}
             size={statIcon?.size}
             lang={lang}
+            tagId={t}
           />
         );
       };
@@ -667,9 +538,13 @@ const renderNoteSection = (items: string[], title: string) => {
                 <div className="text-xs font-semibold text-slate-400">
                   {phase.label[lang]}
                 </div>
-                <div className="flex flex-wrap gap-x-1.5 gap-y-1">
+                <div className="flex flex-col gap-y-2">
                   {phase.tags.length > 0 ? (
-                    phase.tags.map(renderTagPill)
+                    splitIntoLineGroups(phase.tags).map((group, gi) => (
+                      <div key={gi} className="flex flex-wrap items-start gap-x-1.5 gap-y-2">
+                        {group.map((t, i) => renderTagPill(t, i))}
+                      </div>
+                    ))
                   ) : (
                     <span className="text-sm text-slate-500">-</span>
                   )}
@@ -697,8 +572,32 @@ const renderNoteSection = (items: string[], title: string) => {
       : (source?.[k] ?? []);
   }
 
+  const lineGroups = splitIntoLineGroups(tags);
+
+  const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
+    if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+    const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
+    const rLabel = TAG_LABEL[t as TagId];
+    const labelData = gLabel ?? rLabel;
+    if (!labelData) return null;
+    const statIcon = STAT_ICONS[t];
+    return (
+      <TagPill
+        key={i}
+        text={labelData[lang]}
+        tone={toneOfTag(t)}
+        tip={GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ?? TAG_DESC?.[t as TagId]?.[lang]}
+        icons={statIcon?.icons}
+        direction={statIcon?.direction}
+        size={statIcon?.size}
+        lang={lang}
+        tagId={t}
+      />
+    );
+  };
+
   return (
-    <div className={`grid grid-cols-[40px_1fr] gap-x-4 ${tags.includes("SEPARATOR_NEWLINE") ? "items-start" : "items-center"} ${compactRowPadding} ${tags.includes("SEPARATOR_NEWLINE") ? "" : "min-h-[35px]"}`}>
+    <div className={`grid grid-cols-[40px_1fr] gap-x-4 items-start ${compactRowPadding}`}>
       <div className={skillKeyClass}>
         <SkillLabelWithTip
           labelText={label[k]}
@@ -709,29 +608,18 @@ const renderNoteSection = (items: string[], title: string) => {
         />
       </div>
 
-      <div className={`flex flex-wrap items-start gap-x-1.5 ${tags.includes("SEPARATOR_NEWLINE") ? "gap-y-1" : "gap-y-2"}${tags.includes("SEPARATOR_NEWLINE") ? " mt-1" : ""}`}>
+      {/* pt-2(8px): 아이콘(w-10 h-10=40px) 세로 중심(20px)에 첫 번째 줄
+          그룹의 첫 줄 세로 중심을 맞추기 위한 고정 오프셋. 박스형 TagPill
+          높이 H = py-[3px]*2(6px) + text-[12px]의 line-height(1.5 → 18px)
+          = 24px. (40-24)/2 = 8px. flex-col 바깥 컨테이너에만 주고, 안쪽
+          각 줄 그룹에는 주지 않는다(중복 적용 방지). */}
+      <div className="flex flex-col gap-y-2 pt-2">
         {tags.length > 0 ? (
-          tags.map((t, i) => {
-            if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
-            if (t === "SEPARATOR_NEWLINE") return <div key={i} className="w-full h-1" />;
-            const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
-            const rLabel = TAG_LABEL[t as TagId];
-            const labelData = gLabel ?? rLabel;
-            if (!labelData) return null;
-            const statIcon = STAT_ICONS[t];
-            return (
-              <TagPill
-                key={i}
-                text={labelData[lang]}
-                tone={toneOfTag(t)}
-                tip={GIMMICK_TAG_DESC?.[t as GimmickTagId]?.[lang] ?? TAG_DESC?.[t as TagId]?.[lang]}
-                icons={statIcon?.icons}
-                direction={statIcon?.direction}
-                size={statIcon?.size}
-                lang={lang}
-              />
-            );
-          })
+          lineGroups.map((group, gi) => (
+            <div key={gi} className="flex flex-wrap items-start gap-x-1.5 gap-y-2">
+              {group.map((t, i) => renderTagPill(t, i))}
+            </div>
+          ))
         ) : (
           <span className="text-sm text-slate-500">-</span>
         )}

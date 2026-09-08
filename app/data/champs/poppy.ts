@@ -6,7 +6,7 @@ const poppy: ChampData = {
     P: ["ON_HIT", "DROP", "SEPARATOR", "ST_CONDITIONAL", "SHIELD"],
     Q: ["Q_FLASH", "SLOW", "SEPARATOR", "ZONE", "SLOW"],
     W: ["MS_UP", "SEPARATOR", "AURA", "ANTI_DASH", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE", "SLOW", "GROUNDED"],
-    E: ["E_FLASH", "KNOCKBACK", "DASH", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
+    E: ["E_FLASH", "KNOCKBACK", "DASH", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "WALL_COLLISION", "STUN"],
     R: { phases: [
       { label: { ko: "R 길게", en: "R Charged" }, tags: ["UNTARGETABLE", "KNOCKBACK"] },
       { label: { ko: "R 짧게", en: "R Tap" }, tags: ["R_FLASH", "AIRBORNE"] },
@@ -35,7 +35,7 @@ const poppy: ChampData = {
 
     W: { phases: [
       { label: { ko: "W 패시브", en: "W Passive" }, tags: ["AR_MR_UP"] },
-      { label: { ko: "W 액티브", en: "W Active" }, tags: ["MS_UP", "SEPARATOR", "AURA", "ANTI_DASH", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DMG_MAGIC", "AIRBORNE", "SLOW", "GROUNDED"] },
+      { label: { ko: "W 액티브", en: "W Active" }, tags: ["MS_UP", "SEPARATOR", "AURA", "ANTI_DASH", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "KNOCKDOWN", "DMG_MAGIC", "AIRBORNE", "SLOW", "GROUNDED"] },
     ] },
 
     E: ["DMG_PHYSICAL", "TARGETED", "DASH", "KNOCKBACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DMG_PHYSICAL", "STUN"],
@@ -62,7 +62,7 @@ const poppy: ChampData = {
 
           "Q는 대상의 최대 체력 비례 [[AOE]] [[DMG_PHYSICAL]]와 [[SLOW]] [[ZONE]] 생성. \n [[ZONE]]은 잠시 뒤 폭발하여 한번 더 같은 피해. \n \n",
 
-          "W의 [[PASSIVE_BONUS]]는 [[AR_MR_UP]] %로 증가. \n 체력 40% 이하일 때 효과 2배. \n \n W는 [[MS_UP]]와 [[ANTI_DASH]] [[AURA]] 생성. \n [[DASH]]이 막힌 대상은 [[GROUNDED]], [[SLOW]], [[DMG_MAGIC]]. \n \n 디테일한 판정은 챔피언별로 상호작용 박스에 정리. \n \n",
+          "W의 [[PASSIVE_BONUS]]는 [[AR_MR_UP]] %로 증가. \n 체력 40% 이하일 때 효과 2배. \n \n W는 [[MS_UP]]와 [[ANTI_DASH]] [[AURA]] 생성. \n [[DASH]]이 막힌 대상은 [[AIRBORNE]], [[GROUNDED]], [[SLOW]], [[DMG_MAGIC]]. \n \n 디테일한 판정은 챔피언별로 상호작용 박스에 정리. \n \n",
 
           "E는 [[TARGETED]] 대상에게 [[DASH]]하여 [[DMG_PHYSICAL]], [[KNOCKBACK]]. \n [[KNOCKBACK]]이 벽에 닿으면 [[STUN]], [[DMG_PHYSICAL]] 추가. \n \n",
 

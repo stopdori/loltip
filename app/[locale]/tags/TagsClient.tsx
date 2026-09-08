@@ -11,7 +11,7 @@ import { TAG_CATEGORIES, VISION_STEALTH_CATEGORY, GIMMICK_CATEGORIES } from "@/a
 import { toneOfTag, NOTE_TONE_CLASS, type Tone } from "@/app/data/interactions/tagTone";
 import { STAT_ICONS } from "@/app/data/interactions/statIcons";
 import { parseTagTokens } from "@/app/data/interactions/parseTagTokens";
-import { CC_INTERACTIONS, type Removal } from "@/app/data/interactions/ccInteractions";
+import { CC_INTERACTIONS, CHANNEL_INTERRUPTED_BY, MOVEMENT_CHANNEL_INTERRUPTED_BY, type Removal } from "@/app/data/interactions/ccInteractions";
 
 type Lang = "ko" | "en";
 type Tab = "basic" | "vision" | "gimmick";
@@ -205,7 +205,7 @@ function InlineTagToken({
           <span
             ref={tipRef}
             className="block w-max max-w-[min(520px,calc(100vw-24px))]
-                       whitespace-pre break-keep text-center leading-snug
+                       whitespace-pre-wrap break-keep text-center leading-snug
                        rounded-lg bg-black/95 px-3 py-2 text-[14px] font-semibold
                        text-slate-100 ring-1.5 ring-white/10 shadow-lg"
           >
@@ -310,6 +310,7 @@ export default function TagsClient() {
                 direction={statIcon?.direction}
                 size={statIcon?.size}
                 lang={lang}
+                tagId={key as TagId | GimmickTagId}
               />
             </div>
           );
@@ -430,6 +431,43 @@ export default function TagsClient() {
     );
   };
 
+  // SKILL_CHANNEL/SKILL_CHARGED/SKILL_CHANNEL_MOVEMENT를 선택했을 때만
+  // 표시하는 보조 섹션. 이 태그들은 CC_INTERACTIONS에 없어
+  // (renderCCInteractionSection이 null을 반환) 사이드 패널이 비어 있었는데,
+  // TagPill.tsx 호버 툴팁과 동일하게 "그 태그를 끊을 수 있는 CC 목록"을
+  // 여기서도 보여준다. SKILL_CHANNEL_MOVEMENT만 별도로 MOVEMENT_CHANNEL_
+  // INTERRUPTED_BY(일반 채널 차단 CC 전체 + ROOT/GROUNDED)를 쓴다.
+  // 목록이 최대 17개로 많아서 renderCCInteractionRow처럼 줄 단위로 나열하면
+  // 세로로 너무 길어지므로, TagPill.tsx 툴팁과 동일하게 쉼표 구분 + 자연
+  // 줄바꿈 문단으로 그린다.
+  const renderChannelInterruptSection = () => {
+    if (!selectedTag) return null;
+    if (
+      selectedTag.key !== "SKILL_CHANNEL" &&
+      selectedTag.key !== "SKILL_CHARGED" &&
+      selectedTag.key !== "SKILL_CHANNEL_MOVEMENT"
+    ) return null;
+
+    const list =
+      selectedTag.key === "SKILL_CHANNEL_MOVEMENT" ? MOVEMENT_CHANNEL_INTERRUPTED_BY : CHANNEL_INTERRUPTED_BY;
+
+    return (
+      <div className="mt-3 pt-3 border-t border-white/10 space-y-1.5 md:mt-0 md:pt-0 md:border-t-0 md:border-l md:border-white/10 md:pl-4 md:w-56 md:flex-shrink-0">
+        <div className="text-slate-400 text-xs">
+          {lang === "ko" ? "방해 가능" : "Interrupted by"}
+        </div>
+        <p className="text-xs font-semibold leading-relaxed">
+          {list.map((tag, i) => (
+            <span key={tag}>
+              <InlineTagToken text={TAG_LABEL[tag][lang]} tone={toneOfTag(tag)} tagId={tag} lang={lang} />
+              {i < list.length - 1 ? ", " : ""}
+            </span>
+          ))}
+        </p>
+      </div>
+    );
+  };
+
   // 검색에서 고른 태그 하나만을 위한 상세 카드. 탐색(탭 전환/스크롤) 없이
   // 검색창 바로 아래에서 조회만 끝내는 용도.
   const renderTagDetailCard = () => {
@@ -473,6 +511,7 @@ export default function TagsClient() {
                 icons={statIcon?.icons}
                 direction={statIcon?.direction}
                 size={statIcon?.size}
+                tagId={selectedTag.key as TagId | GimmickTagId}
               />
             </div>
             {descText ? (
@@ -494,6 +533,7 @@ export default function TagsClient() {
             )}
           </div>
           {selectedTag.kind === "tag" && renderCCInteractionSection(selectedTag.key as TagId)}
+          {selectedTag.kind === "gimmick" && renderChannelInterruptSection()}
         </div>
       </div>
     );

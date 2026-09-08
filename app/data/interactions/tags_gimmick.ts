@@ -27,6 +27,7 @@ export type GimmickTagId =
   | "SKILL_ACTIVE"
   | "SKILL_TOGGLE"
   | "SKILL_CHANNEL"
+  | "SKILL_CHANNEL_MOVEMENT"
   | "SKILL_CHARGED"
   | "SKILL_VECTOR"
   | "SKILL_STEERABLE"
@@ -120,6 +121,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   SKILL_ACTIVE:      { ko: "액티브",   en: "Active"     },
   SKILL_TOGGLE:      { ko: "토글",     en: "Toggle"     },
   SKILL_CHANNEL:     { ko: "채널링",   en: "Channel"    },
+  SKILL_CHANNEL_MOVEMENT: { ko: "이동형 채널", en: "Movement Channel" },
   SKILL_CHARGED:     { ko: "차징",     en: "Charged"    },
   SKILL_VECTOR:      { ko: "벡터",     en: "Vector"     },
   SKILL_STEERABLE:   { ko: "조종가능", en: "Steerable" },
@@ -225,9 +227,10 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
 export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: string }>> = {
   SKILL_ACTIVE:      { ko: "버튼 한 번으로 발동되는 스킬", en: "Ability that activates immediately on a single press" },
   SKILL_STEERABLE:   { ko: "시전 중 마우스 방향으로 조종할 수 있음", en: "Can be steered toward the mouse cursor during cast" },
-  SKILL_CHANNEL:    { ko: "버튼 한 번으로 발동하고 시전을 유지하는 스킬\nCC에 맞으면 중단.", en: "Activates on a single press and maintains its effect over time.\nInterrupted by CC."},
+  SKILL_CHANNEL:    { ko: "버튼 한 번으로 발동하고 시전을 유지하는 스킬 \n 관련있는 CC에 맞으면 끊김.", en: "Activates on a single press and maintains its cast.\nInterrupted if hit by a relevant CC."},
+  SKILL_CHANNEL_MOVEMENT: { ko: "이동이 결부된 채널링(예: 라이즈 R). \n 일반 채널을 끊는 CC 외에도 속박/그라운드 계열에 의해 추가로 끊김.", en: "A channel that involves the caster moving (e.g. Ryze R).\nInterrupted by everything that interrupts a normal channel, plus Root/Grounded-type effects." },
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
-  SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬", en: "Charges up while held\nCaster can move while charging" },
+  SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬, \n 경우에 따라 움직일 수 있음.", en: "Charges up while held\nCaster can move while charging" },
   SKILL_VECTOR:     { ko: "시전 위치에 좌클릭을 하고 \n 드래그로 방향을 지정하는 스킬. \n ( 단, 클릭을 떼면 안됨. ) \n ( 단, 스마트키는 키보드를 떼면 안됨. )", en: "A skill where you left-click the cast location \n and drag to set the direction. \n (However, you must not release the click.) \n (However, with Smart Cast, you must not release the key.)" },
   BUFF:             { ko: "자신 또는 아군에게 유리한 효과", en: "A beneficial effect applied to self or allies" },
   BUFF_A: { ko: "자신 또는 아군에게 유리한 효과 (A). \n 한 스킬/챔피언 안에 서로 다른 버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A beneficial effect applied to self or allies (A). \n Used to distinguish when a kit has 2+ distinct simultaneous buffs." },

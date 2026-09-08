@@ -180,6 +180,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 스킬 형태
   SKILL_ACTIVE:      "indigo",
   SKILL_CHANNEL:     "indigo",
+  SKILL_CHANNEL_MOVEMENT: "indigo",
   SKILL_TOGGLE:      "indigo",
   SKILL_CHARGED:     "indigo",
   SKILL_VECTOR:      "indigo",
