@@ -109,7 +109,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "3) 타이밍", en: "3) Timing" },
-    keys: ["TIMING_INSTANT", "TIMING_CAST", "TIMING_AFTERCAST", "ST_IMPACT", "ST_DELAYED", "ST_CONDITIONAL"],
+    keys: ["TIMING_INSTANT", "TIMING_CAST", "TIMING_AFTERCAST", "ST_IMPACT", "ST_DELAYED", "ST_CONDITIONAL", "ON_TAKEDOWN"],
   },
   {
     title: { ko: "4) 중단 여부", en: "4) Interruptibility" },
@@ -129,14 +129,18 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "8) 피해 범위", en: "8) Damage Range" },
-    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "DROP", "X1.5", "X2", "X3", "X4", "X5", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
+    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "DROP", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
   },
   {
     title: { ko: "9) 피해 종류", en: "9) Damage Type" },
     keys: ["DMG_PHYSICAL", "DMG_MAGIC", "DMG_TRUE", "DOT_DMG_TRUE", "DOT", "ON_HIT"],
   },
   {
-    title: { ko: "10) 시전 행동", en: "10) Cast Behavior" },
+    title: { ko: "10) 능력치 비례", en: "10) Stat Scaling" },
+    keys: ["SELF_MAXHP_SCALE", "SELF_BONUS_HP_SCALE", "SELF_MISSING_HP_SCALE", "TARGET_MAXHP_SCALE", "TARGET_CURRENT_HP_SCALE", "TARGET_MISSING_HP_SCALE", "AD_SCALE", "AP_SCALE", "LEVEL_SCALE"],
+  },
+  {
+    title: { ko: "11) 시전 행동", en: "11) Cast Behavior" },
     keys: ["CAST_COMMIT", "CAST_CANCEL", "CAST_MOVE", "CAST_IMMOBILE", "CC_BUFFER"],
   },
 ];

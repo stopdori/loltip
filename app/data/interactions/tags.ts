@@ -401,8 +401,8 @@ KNOCKBACK: {
   en: "Knocks the target [[AIRBORNE]] and pushes them back \n (cannot be cleansed)",
 },
 KNOCKDOWN: {
-  ko: "돌진(대시)이나 공중이탈 상태를 강제로 끊고 그 자리에 착지시킴. \n [[AIRBORNE]], [[STASIS]]와 함께, 대시를 끊을 수 있는 단 세 가지 CC 중 하나. \n 강제행동([[FORCED_ACTION]]) 계열 스킬이라고 자동으로 이 효과를 갖는 건 아니며, 스킬마다 개별적으로 부여됨(예: 아리 매혹).",
-  en: "Interrupts a dash or airborne displacement and places the target on the ground. \n One of only three CC types, alongside [[AIRBORNE]] and [[STASIS]], that can interrupt a dash. \n Not automatically granted by [[FORCED_ACTION]] abilities — it's applied per-ability (e.g. Ahri's Charm).",
+  ko: "[[DASH]]이나 [[KNOCKBACK]], [[GRAB]] 상태를 강제로 끊고 그 자리에 착지시킴. \n [[AIRBORNE]], [[STASIS]]과 같음.",
+  en: "Forcibly cancels [[DASH]], [[KNOCKBACK]], or [[GRAB]] and lands the target in place. \n Same as [[AIRBORNE]] and [[STASIS]].",
 },
 GRAB: {
   ko: "[[AIRBORNE]] 시키고 상대를 잡아당김. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
@@ -752,8 +752,8 @@ BLINK: { ko: "거리를 순간적으로 건너뛰는 이동. \n 이동기의 하
 
   /* 9) 특수 / 변신 */
 BUFF_FORM: {
-  ko: "버프 형태의 스킬\nCC를 맞아도 취소되지 않음",
-  en: "This ability applies a self-buff and cannot be canceled by CC\nCC effects still apply normally",
+  ko: "자신에게 거는 버프.",
+  en: "A buff applied to the caster.",
 },
 TRANSFORM: {
   ko: "폼을 변환하여 스킬 구성이 바뀜",

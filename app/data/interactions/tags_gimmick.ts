@@ -23,6 +23,17 @@ export type GimmickTagId =
   | "DMG_MAGIC"
   | "DMG_TRUE"
   | "DOT_DMG_TRUE"
+  // 능력치 비례 기준 (피해/치유/실드/슬로우 등이 "누구의 어떤 체력" 또는
+  // "어떤 능력치"에 비례하는지)
+  | "SELF_MAXHP_SCALE"
+  | "SELF_BONUS_HP_SCALE"
+  | "SELF_MISSING_HP_SCALE"
+  | "TARGET_MAXHP_SCALE"
+  | "TARGET_CURRENT_HP_SCALE"
+  | "TARGET_MISSING_HP_SCALE"
+  | "AD_SCALE"
+  | "AP_SCALE"
+  | "LEVEL_SCALE"
   // 스킬 형태
   | "SKILL_ACTIVE"
   | "SKILL_TOGGLE"
@@ -53,6 +64,11 @@ export type GimmickTagId =
   | "X3"
   | "X4"
   | "X5"
+  | "X6"
+  | "X7"
+  | "X8"
+  | "X9"
+  | "X10"
   | "XN"
   | "CLONE"
   | "HOMING"
@@ -110,6 +126,7 @@ export type GimmickTagId =
   | "ST_IMPACT"
   | "ST_DELAYED"
   | "ST_CONDITIONAL"
+  | "ON_TAKEDOWN"
 
   | "SEPARATOR"
   | "SEPARATOR_NEWLINE"
@@ -157,6 +174,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ST_IMPACT:      { ko: "즉시발동", en: "Impact" },
   ST_DELAYED:     { ko: "지연발동", en: "Delayed" },
   ST_CONDITIONAL: { ko: "조건발동", en: "Conditional" },
+  ON_TAKEDOWN: { ko: "처치 관여", en: "On Takedown" },
   // 중단 여부
   CANCELLABLE: { ko: "취소가능", en: "Cancellable" },
   LOCKED:      { ko: "취소불가", en: "Locked"      },
@@ -202,6 +220,11 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   X3:            { ko: "x3",       en: "x3"      },
   X4:            { ko: "x4",       en: "x4"      },
   X5:            { ko: "x5",       en: "x5"      },
+  X6:            { ko: "x6",       en: "x6"      },
+  X7:            { ko: "x7",       en: "x7"      },
+  X8:            { ko: "x8",       en: "x8"      },
+  X9:            { ko: "x9",       en: "x9"      },
+  X10:           { ko: "x10",      en: "x10"     },
   XN:            { ko: "xN",       en: "xN"      },
   CLONE:   { ko: "분신",     en: "Clone"   },
   SWARM:   { ko: "분산",     en: "Swarm"   },
@@ -214,6 +237,16 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DOT_DMG_TRUE: { ko: "지속고피", en: "True DoT" },
   DOT:          { ko: "지속피해", en: "DoT"             },
   ON_HIT:       { ko: "온힛",    en: "On-Hit"          },
+  // 능력치 비례 기준
+  SELF_MAXHP_SCALE:        { ko: "최대체력", en: "Max HP" },
+  SELF_BONUS_HP_SCALE:     { ko: "추가체력", en: "Bonus HP" },
+  SELF_MISSING_HP_SCALE:   { ko: "잃은체력", en: "Missing HP" },
+  TARGET_MAXHP_SCALE:      { ko: "대상 최대체력", en: "Target Max HP" },
+  TARGET_CURRENT_HP_SCALE: { ko: "대상 현재체력", en: "Target Current HP" },
+  TARGET_MISSING_HP_SCALE: { ko: "대상 잃은체력", en: "Target Missing HP" },
+  AD_SCALE: { ko: "공격력", en: "Attack Damage" },
+  AP_SCALE: { ko: "주문력", en: "Ability Power" },
+  LEVEL_SCALE: { ko: "레벨비례", en: "Base On Level" },
   // 시전 행동
   CAST_COMMIT:   { ko: "시전강행",  en: "Cast Commit"  },
   CAST_CANCEL:   { ko: "시전취소",  en: "Cast Cancel"  },
@@ -243,7 +276,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   COOLDOWN:         { ko: "스킬을 다시 사용할 준비를 하는 상태.", en: "The state of waiting before the skill can be used again." },
   ON_TARGET_CD:     { ko: "대상별 쿨타임. 동일한 스킬이라도 대상마다 쿨타임이 독립적으로 적용됨. \n 한 대상에게 사용해도 다른 대상에게는 바로 사용 가능.", en: "The skill's cooldown applies independently per target. \n Using it on one target does not affect its availability on others." },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
-  SKILL_RECAST:     { ko: "쿨타임이 돌기 전에 스킬을 다시 사용할 수 있음", en: "The ability can be used again before its cooldown begins" },
+  SKILL_RECAST:     { ko: "일정 시간 이내에 스킬을 재사용할 수 있음.", en: "The ability can be recast within a limited time window." },
   RECHARGE:         { ko: "스킬을 여러 개 충전해두고 사용할 수 있음\n최대 충전이 아니면 쿨타임이 돔.", en: "Multiple charges of the skill can be stored and used\nCooldown applies if not at maximum charges." },
   STACKING:         { ko: "조건을 충족할 때마다 \n 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced \n each time the conditions are met" },
   PROC:             { ko: "상대 또는 자신에게 스택을 쌓고 \n N번째 적중 시 추가 효과가 발동됨", en: "Stacks build up on the target or yourself, \n and an additional effect is triggered on the $N$-th hit." },
@@ -262,6 +295,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   ST_IMPACT:      { ko: "스킬이 즉시 발동됨", en: "The skill activates immediately." },
   ST_DELAYED:     { ko: "스킬이 발동까지 일정 시간이 걸림", en: "The skill takes time before it activates" },
   ST_CONDITIONAL: { ko: "특정 조건이 충족될 때 발동됨", en: "Activates only when a specific condition is met" },
+  ON_TAKEDOWN: { ko: "적 챔피언 처치 또는 어시스트에 관여하면 \n 발동하거나 추가 효과.", en: "Triggers or grants a bonus effect on a champion takedown (kill or assist)" },
   CANCELLABLE:      { ko: "시전 중 직접 중단할 수 있음", en: "Can be manually cancelled during cast" },
   LOCKED:           { ko: "시전 중 직접 중단할 수 없음\n끝까지 완료되어야 함", en: "Cannot be manually cancelled\nMust complete fully" },
   TARGETED:         { ko: "대상을 직접 지정하여 시전하는 스킬\n단, 무적/타겟불가 상태에는 적중하지 않음", en: "Targets an enemy directly\nDoes not hit invulnerable or untargetable units" },
@@ -298,12 +332,17 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   GLOBAL:      { ko: "사거리 또는 목표물이 맵 전체", en: "Range or target \n extends across the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
   DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
-  "X1.5":        { ko: "해당 효과가 1.5배로 발생함", en: "The effect occurs at 1.5x" },
-  X2:            { ko: "해당 효과가 2회 발생함", en: "The effect occurs 2 times" },
-  X3:            { ko: "해당 효과가 3회 발생함", en: "The effect occurs 3 times" },
-  X4:            { ko: "해당 효과가 4회 발생함", en: "The effect occurs 4 times" },
-  X5:            { ko: "해당 효과가 5회 발생함", en: "The effect occurs 5 times" },
-  XN:            { ko: "특정 조건이나 스택에 따라 발생 횟수가 달라짐", en: "The number of occurrences varies based on stacks or conditions" },
+  "X1.5":        { ko: "해당 효과가 1.5배 발생함", en: "The effect occurs at 1.5x" },
+  X2:            { ko: "해당 효과가 2회, 또는 2배 발생함", en: "The effect occurs 2 times, or at 2x" },
+  X3:            { ko: "해당 효과가 3회, 또는 3배 발생함", en: "The effect occurs 3 times, or at 3x" },
+  X4:            { ko: "해당 효과가 4회, 또는 4배 발생함", en: "The effect occurs 4 times, or at 4x" },
+  X5:            { ko: "해당 효과가 5회, 또는 5배 발생함", en: "The effect occurs 5 times, or at 5x" },
+  X6:            { ko: "해당 효과가 6회, 또는 6배 발생함", en: "The effect occurs 6 times, or at 6x" },
+  X7:            { ko: "해당 효과가 7회, 또는 7배 발생함", en: "The effect occurs 7 times, or at 7x" },
+  X8:            { ko: "해당 효과가 8회, 또는 8배 발생함", en: "The effect occurs 8 times, or at 8x" },
+  X9:            { ko: "해당 효과가 9회, 또는 9배 발생함", en: "The effect occurs 9 times, or at 9x" },
+  X10:           { ko: "해당 효과가 10회, 또는 10배 발생함", en: "The effect occurs 10 times, or at 10x" },
+  XN:            { ko: "특정 조건이나 스택에 따라 발생 횟수, 배수가 달라짐", en: "The number of occurrences varies based on stacks or conditions" },
   CLONE:   { ko: "자신의 외형을 모방한 분신", en: "A clone that mimics the champion's appearance" },
   SWARM:   { ko: "스킬이 근처 적에게 나뉘어 각각 단일 적중", en: "Splits among nearby enemies,\n each hitting a single target"},
   VOLLEY:  { ko: "여러 투사체를 한번에 발사. \n 한개만 피해.", en: "Fires multiple projectiles at once. \n Only one projectile can hit each enemy." },
@@ -318,6 +357,16 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DOT_DMG_TRUE: { ko: "시간에 걸쳐 지속적으로 입히는 \n 고정 피해.", en: "True damage dealt continuously over time." },
   DOT:          { ko: "일정 시간 동안 지속적으로 피해를 줌", en: "Deals damage repeatedly over a duration" },
   ON_HIT:       { ko: "기본 공격 적중 시 추가 피해가 발생함", en: "Deals bonus damage on basic attack hit" },
+  // 능력치 비례 기준
+  SELF_MAXHP_SCALE:        { ko: "이 효과가 시전자 자신의 최대 체력에 비례한다", en: "This effect scales with the caster's own max Health" },
+  SELF_BONUS_HP_SCALE:     { ko: "이 효과가 시전자 자신의 추가(보너스) 체력에 비례한다 \n 아이템/버프 등으로 늘어난 부분만 해당, 기본 체력은 제외", en: "This effect scales with the caster's own bonus Health \n Only Health gained from items/buffs — base Health doesn't count" },
+  SELF_MISSING_HP_SCALE:   { ko: "이 효과가 시전자 자신이 잃은 체력(최대 체력 - 현재 체력)에 비례한다", en: "This effect scales with the caster's own missing Health (max Health minus current Health)" },
+  TARGET_MAXHP_SCALE:      { ko: "이 효과가 대상의 최대 체력에 비례한다", en: "This effect scales with the target's max Health" },
+  TARGET_CURRENT_HP_SCALE: { ko: "이 효과가 대상의 현재(남은) 체력에 비례한다", en: "This effect scales with the target's current (remaining) Health" },
+  TARGET_MISSING_HP_SCALE: { ko: "이 효과가 대상이 잃은 체력(최대 체력 - 현재 체력)에 비례한다", en: "This effect scales with the target's missing Health (max Health minus current Health)" },
+  AD_SCALE: { ko: "이 효과가 공격력(주로 추가 공격력)에 비례한다", en: "This effect scales with Attack Damage (usually bonus AD)" },
+  AP_SCALE: { ko: "이 효과가 주문력에 비례한다", en: "This effect scales with Ability Power" },
+  LEVEL_SCALE: { ko: "이 효과가 스킬 랭크가 아니라 챔피언 레벨에 비례한다", en: "This effect scales with champion level, not ability rank" },
   // 시전 행동
   CAST_COMMIT:   { ko: "시전 중 CC에 걸려도 스킬이 끊기지 않고 유지됨.\nCC 효과는 시전 도중에도 정상 작동.", en: "The skill is not interrupted and persists even if hit by CC during the cast.\nCC effects function normally during the casting process." },
   CAST_CANCEL:   { ko: "시전 중 CC에 걸리면 스킬이 취소됨\n쿨타임만 소모됨", en: "The skill is canceled if hit by CC during the cast\nOnly the cooldown is consumed" },

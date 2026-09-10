@@ -200,6 +200,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ST_IMPACT:      "indigo",
   ST_DELAYED:     "indigo",
   ST_CONDITIONAL: "indigo",
+  ON_TAKEDOWN: "indigo",
   // 중단 여부
   CANCELLABLE: "indigo",
   LOCKED:      "indigo",
@@ -251,6 +252,11 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   X3:            "indigo",
   X4:            "indigo",
   X5:            "indigo",
+  X6:            "indigo",
+  X7:            "indigo",
+  X8:            "indigo",
+  X9:            "indigo",
+  X10:           "indigo",
   XN:            "indigo",
   CLONE:   "indigo",
   SWARM:   "indigo",
@@ -263,6 +269,21 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   DOT_DMG_TRUE: "white",
   DOT:          "indigo",
   ON_HIT:       "indigo",
+  // 능력치 비례 기준 — 자신 쪽 체력 3개는 체력 스탯 태그 MAX_HP_UP
+  // ("최대체력↑")과 같은 색(lime), 대상 쪽 체력 3개는 판정 방식/타이밍 등
+  // 대부분의 gimmick 태그가 기본으로 쓰는 indigo로 통일했다. AD_SCALE/
+  // AP_SCALE도 같은 원칙으로, 각각 원본 스탯 태그 AD_UP(red)/AP_UP(sky)과
+  // 동일한 색을 재사용해서 시각적으로 짝지었다.
+  SELF_MAXHP_SCALE:        "lime",
+  SELF_BONUS_HP_SCALE:     "lime",
+  SELF_MISSING_HP_SCALE:   "lime",
+  TARGET_MAXHP_SCALE:      "indigo",
+  TARGET_CURRENT_HP_SCALE: "indigo",
+  TARGET_MISSING_HP_SCALE: "indigo",
+  AD_SCALE: "red",
+  AP_SCALE: "sky",
+  // LEVEL_SCALE은 짝지을 만한 원본 스탯 태그가 없어 기본값 indigo 사용.
+  LEVEL_SCALE: "indigo",
   // 시전 행동
   CAST_COMMIT:   "indigo",
   CAST_CANCEL:   "indigo",

@@ -158,7 +158,7 @@ function formatCoeff(coeff: number | number[]): string {
 // 숫자로 못 바꾸는 조각은 그대로 둔다(안전 폴백).
 function applyArithmetic(valueStr: string, opExpr?: string): string {
   if (!opExpr) return valueStr;
-  const m = opExpr.match(/^([*/+-])\s*([0-9.]+)$/);
+  const m = opExpr.match(/^([*/+-])\s*(-?[0-9.]+)$/);
   if (!m) return valueStr;
   const op = m[1];
   const operand = Number(m[2]);
@@ -193,6 +193,9 @@ function applyArithmetic(valueStr: string, opExpr?: string): string {
  * (0~1 비율값을 %로 변환해서 보여줄 때 라이엇이 흔히 쓰는 표기).
  *
  * 우선순위:
+ * 0. overrides[key](대소문자 무시)가 있으면 그 문자열을 그대로 반환.
+ *    사람이 위키 등을 보고 직접 확정한 최종값이라는 전제이므로, 원본
+ *    플레이스홀더에 *100 같은 산술식이 붙어 있었더라도 적용하지 않는다.
  * 1. {{ eN }} → effectBurn[N]
  * 2. {{ aN }} / {{ fN }} (등 vars 키와 일치) → vars[].coeff
  * 3. "수치가 아닌" 것으로 알려진 이름(예: spellmodifierdescriptionappend —
@@ -206,6 +209,7 @@ function applyArithmetic(valueStr: string, opExpr?: string): string {
  *    보장하지 않는다(실제 내부 인덱스와 등장 순서가 다를 수 있음 — 특히
  *    이름 기반 플레이스홀더를 여러 개 쓰는 복잡한 궁극기에서 부정확할 수 있음).
  *    같은 이름이 tooltip에 여러 번 나오면 같은 값으로 일관되게 채운다.
+ *    이 휴리스틱이 틀리는 스킬은 0번 override로 바로잡는다.
  */
 
 // 수치 값이 아니라 조건부 텍스트 훅으로 쓰이는, 값이 거의 항상 비어있는
@@ -214,21 +218,31 @@ const NON_NUMERIC_PLACEHOLDER = /spellmodifierdescription/i;
 
 export function resolvePlaceholders(
   raw: string,
-  spell: { effectBurn?: (string | null)[]; vars?: DDragonVar[] }
+  spell: { effectBurn?: (string | null)[]; vars?: DDragonVar[] },
+  overrides?: Record<string, string>
 ): string {
   const text = applyTextOverrides(raw);
   const effectBurn = spell.effectBurn ?? [];
   const vars = spell.vars ?? [];
+  const overridesLower = overrides
+    ? new Map(Object.entries(overrides).map(([k, v]) => [k.toLowerCase(), v]))
+    : null;
 
   let nextPositionalIndex = 1; // effectBurn[0]은 항상 null
   const positionalCache = new Map<string, string>();
 
-  // 플레이스홀더 안에 *100 같은 산술식이 붙는 경우까지 포함해서 매칭
+  // 플레이스홀더 안에 *100, *-100 같은 산술식(음수 피연산자 포함)이 붙는
+  // 경우까지 포함해서 매칭
   return text.replace(
-    /\{\{\s*([a-zA-Z0-9_]+)\s*([*/+-]\s*[0-9.]+)?\s*\}\}/g,
+    /\{\{\s*([a-zA-Z0-9_]+)\s*([*/+-]\s*-?[0-9.]+)?\s*\}\}/g,
     (_match, rawKey: string, rawOp: string | undefined) => {
       const key = rawKey;
       const op = rawOp?.replace(/\s+/g, "");
+
+      // 0. override(사람이 확정한 최종값) → 산술식 무시하고 그대로 반환
+      if (overridesLower?.has(key.toLowerCase())) {
+        return overridesLower.get(key.toLowerCase())!;
+      }
 
       // 1. {{ eN }} → effectBurn[N]
       const eMatch = key.match(/^e(\d+)$/i);

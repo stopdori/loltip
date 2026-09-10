@@ -45,6 +45,7 @@ function SkillLabelWithTip({
   champId,
   skillKey,
   forceCompact,
+  lang,
 }: {
   labelText: string;
   tip?: string;
@@ -54,6 +55,9 @@ function SkillLabelWithTip({
    *  true/false면 iframe(embed) 컨텍스트 → iframe 내부 vw는 부모 페이지의
    *  실제 뷰포트를 반영 못 하므로 vw 대신 고정폭 두 단계로 대체. */
   forceCompact?: boolean;
+  /** tip을 TokenText로 렌더링할 때 쓸 언어. 하드코딩된 skillTooltip 문장에
+   *  [[TAG]] 토큰이 들어갈 수 있어 태그 툴팁까지 연결하려면 필요하다. */
+  lang: "ko" | "en";
 }) {
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
@@ -220,7 +224,7 @@ function SkillLabelWithTip({
               )}
             </div>
 
-            {tip}
+            <TokenText text={tip} lang={lang} />
           </span>
 
           <span
@@ -323,12 +327,31 @@ const renderNoteSection = (items: string[], title: string) => {
     if (!ddragonId) return undefined;
     if (k !== "P" && k !== "Q" && k !== "W" && k !== "E" && k !== "R") return undefined;
 
+    // 챔피언 파일에 하드코딩된 문장이 있으면 최우선(DDragon 로딩을 기다릴
+    // 필요 없이 즉시 표시). 없으면 아래 기존 DDragon 실시간 로직으로 폴백.
+    const hardcoded = champ?.skillTooltip?.[k]?.[lang];
+
+    // R 문장 안의 궁극기 쿨타임을 champ.ultCooldown(레벨 6/11/16) 숫자로
+    // 문자 그대로 중복 입력하지 않기 위한 {{ultCooldown}} 플레이스홀더.
+    // ultCooldown 필드가 유일한 원본이고, 문장은 언제 다듬어도 숫자가
+    // 어긋나지 않는다("140/120/100" 형식으로 조립해서 치환).
+    const resolveSkillTooltipPlaceholders = (text: string) => {
+      if (!text.includes("{{")) return text;
+      const uc = champ?.ultCooldown;
+      const ultCooldownStr = uc ? ([6, 11, 16] as const).map((lv) => uc[lv] ?? "?").join("/") : "";
+      return text.replace(/\{\{\s*ultCooldown\s*\}\}/g, ultCooldownStr);
+    };
+
     // P(패시브)
     if (k === "P") {
       const p = ddragon?.passive;
+      if (hardcoded) {
+        const header = p ? `P - ${applyTextOverrides(p.name)}` : "P";
+        return `${header}\n${resolveSkillTooltipPlaceholders(hardcoded)}`;
+      }
       if (!p) return loadingText;
 
-      const body = stripHtml(resolvePlaceholders(p.description, {}))
+      const body = stripHtml(resolvePlaceholders(p.description, {}, champ?.placeholderOverrides?.P))
         .replace(/\s+\n/g, "\n")
         .replace(/[ \t]{2,}/g, " ")
         .trim();
@@ -339,9 +362,13 @@ const renderNoteSection = (items: string[], title: string) => {
     // Q/W/E/R
     const idx = k === "Q" ? 0 : k === "W" ? 1 : k === "E" ? 2 : 3;
     const s = ddragon?.spells?.[idx];
+    if (hardcoded) {
+      const header = s ? `${k} - ${applyTextOverrides(s.name)}` : k;
+      return `${header}\n${resolveSkillTooltipPlaceholders(hardcoded)}`;
+    }
     if (!s) return loadingText;
 
-    const body = stripHtml(resolvePlaceholders(s.tooltip || s.description, s))
+    const body = stripHtml(resolvePlaceholders(s.tooltip || s.description, s, champ?.placeholderOverrides?.[k]))
       .replace(/\s+\n/g, "\n")
       .replace(/[ \t]{2,}/g, " ")
       .trim();
@@ -396,7 +423,7 @@ const renderNoteSection = (items: string[], title: string) => {
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className="w-10 shrink-0">
-            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} />
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} lang={lang} />
           </div>
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
@@ -463,7 +490,7 @@ const renderNoteSection = (items: string[], title: string) => {
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className="w-10 shrink-0">
-            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} />
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} lang={lang} />
           </div>
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
@@ -530,7 +557,7 @@ const renderNoteSection = (items: string[], title: string) => {
       return (
         <div className={`flex items-start gap-x-4 ${compactRowPadding}`}>
           <div className="w-10 shrink-0">
-            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} />
+            <SkillLabelWithTip labelText={label[k]} tip={spellTip} champId={champId} skillKey={k} forceCompact={forceCompact} lang={lang} />
           </div>
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
@@ -605,6 +632,7 @@ const renderNoteSection = (items: string[], title: string) => {
           champId={champId}
           skillKey={k}
           forceCompact={forceCompact}
+          lang={lang}
         />
       </div>
 
