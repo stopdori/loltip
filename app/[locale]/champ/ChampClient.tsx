@@ -343,7 +343,7 @@ setOpenTarget(null);
         />
 
       {bothSelected && !embedMode && (
-<section className="mt-6 sm:mt-12 max-w-[474px] sm:max-w-[980px] mx-auto px-0 sm:px-3">
+<section className="mt-6 sm:mt-12 max-w-[430px] sm:max-w-[960px] mx-auto">
   <MatchupSummaryBox
     myChampId={myChamp!.id}
     enemyChampId={enemyChamp!.id}
@@ -509,7 +509,7 @@ setOpenTarget(null);
 </>
 ) : null}
 {!bothSelected && !embedMode && (
-<section className="mt-6 sm:mt-12 max-w-[474px] sm:max-w-[980px] mx-auto px-0 sm:px-3">
+<section className="mt-6 sm:mt-12 max-w-[430px] sm:max-w-[960px] mx-auto">
     <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all min-h-[120px]">
       <p className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-4">
         {lang === "ko" ? "판정 세부사항" : "Interaction Details"}
@@ -525,7 +525,7 @@ setOpenTarget(null);
 
       {/* 퀴즈박스: 항상 표시 */}
       {!embedMode && (
-        <div className="max-w-[474px] sm:max-w-[980px] mx-auto px-0 sm:px-3">
+        <div className="max-w-[430px] sm:max-w-[960px] mx-auto">
           <QuizWidget lang={lang} />
         </div>
       )}

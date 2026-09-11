@@ -50,6 +50,7 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   HS_POWER: { icons: ["/stat-icons/icon-hpregen.png"] },
   MANA_RESTORE: { icons: ["/stat-icons/icon-manaregen.png"] },
   ENERGY_RESTORE: { icons: ["/stat-icons/icon-energyregen.png"] },
+  MAX_ENERGY_UP: { icons: ["/stat-icons/icon-energyregen.png"] },
   LIFESTEAL: { icons: ["/stat-icons/icon-lifesteal.png"] },
   OMNIVAMP: { icons: ["/stat-icons/icon-omnivamp.png"] },
   TENACITY: { icons: ["/stat-icons/icon-tenacity.png"] },

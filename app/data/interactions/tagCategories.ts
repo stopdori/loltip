@@ -30,12 +30,12 @@ export type CategoryGroup<T extends string> = {
 export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   {
     title: { ko: "1) 스탯", en: "1) Stats" },
-    keys: ["MS_UP", "MS_TO_ENEMY", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "HP_REGEN", "REVIVE", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
+    keys: ["MS_UP", "MS_TO_ENEMY", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "HP_REGEN", "REVIVE", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
     subGroups: [
       { title: { ko: "공격", en: "Attack" }, keys: ["AD_UP", "AP_UP", "CRIT"] },
       { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "SEPARATOR", "AD_DOWN", "MS_DOWN"] },
       { title: { ko: "크기", en: "Size" }, keys: ["RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP"] },
-      { title: { ko: "체력 / 쉴드", en: "" }, keys: ["MAX_HP_UP", "HEAL", "SHIELD", "HP_REGEN", "REVIVE"] },
+      { title: { ko: "체력 / 쉴드", en: "" }, keys: ["MAX_HP_UP", "MAX_ENERGY_UP", "HEAL", "SHIELD", "HP_REGEN", "REVIVE"] },
       { keys: ["HS_POWER", "HP_REGEN_UP", "SEPARATOR", "GW"] },
       { title: { ko: "흡혈 / 자원회복", en: "Vamp / Resource Restore" }, keys: ["LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"] },
       { title: { ko: "방어 / 마저", en: "" }, keys: ["AR_UP", "MR_UP", "AR_MR_UP"] },
@@ -90,7 +90,7 @@ export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
   keys: [
     "VISION", "REVEALED", "TRUE_SIGHT", "POSITION_REVEAL", "POSITION_INDICATOR",
     "POSITION_SOUND", "POSITION_EFFECT", "POSITION_EFFECT_SOUND", "HIT_SOUND",
-    "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "STEALTH", "INVISIBILITY",
+    "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "SHIMMER", "STEALTH", "INVISIBILITY",
     "CAMOUFLAGE",
   ],
 };
@@ -105,7 +105,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "2) 기타 (상태 / 자원)", en: "2) Misc (State / Resource)" },
-    keys: ["BUFF", "BUFF_A", "BUFF_B", "BUFF_C", "DEBUFF", "DEBUFF_A", "DEBUFF_B", "DEBUFF_C", "COOLDOWN", "ON_TARGET_CD", "EMPOWERED", "RECHARGE", "STACKING", "PROC", "BUFF_STACK", "BUFF_STACK_A", "BUFF_STACK_B", "BUFF_STACK_C", "DEBUFF_STACK", "DEBUFF_STACK_A", "DEBUFF_STACK_B", "DEBUFF_STACK_C", "STACK_CONSUME"],
+    keys: ["BUFF", "BUFF_A", "BUFF_B", "BUFF_C", "DEBUFF", "DEBUFF_A", "DEBUFF_B", "DEBUFF_C", "COOLDOWN", "ON_TARGET_CD", "EMPOWERED", "RECHARGE", "STACKING", "PROC", "BUFF_STACK", "BUFF_STACK_A", "BUFF_STACK_B", "BUFF_STACK_C", "DEBUFF_STACK", "DEBUFF_STACK_A", "DEBUFF_STACK_B", "DEBUFF_STACK_C", "STACK_CONSUME", "STACK_CONSUME_A", "STACK_CONSUME_B", "STACK_CONSUME_C"],
   },
   {
     title: { ko: "3) 타이밍", en: "3) Timing" },
@@ -142,5 +142,9 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   {
     title: { ko: "11) 시전 행동", en: "11) Cast Behavior" },
     keys: ["CAST_COMMIT", "CAST_CANCEL", "CAST_MOVE", "CAST_IMMOBILE", "CC_BUFFER"],
+  },
+  {
+    title: { ko: "12) 이진 상태 표시", en: "12) Binary State" },
+    keys: ["EXISTS", "NOT_EXISTS"],
   },
 ];

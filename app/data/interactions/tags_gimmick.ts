@@ -121,12 +121,18 @@ export type GimmickTagId =
   | "DEBUFF_STACK_B"
   | "DEBUFF_STACK_C"
   | "STACK_CONSUME"
+  | "STACK_CONSUME_A"
+  | "STACK_CONSUME_B"
+  | "STACK_CONSUME_C"
   // 스킬 타이밍
   | "SKILL_RECAST"
   | "ST_IMPACT"
   | "ST_DELAYED"
   | "ST_CONDITIONAL"
   | "ON_TAKEDOWN"
+  // 이진 상태 표시
+  | "EXISTS"
+  | "NOT_EXISTS"
 
   | "SEPARATOR"
   | "SEPARATOR_NEWLINE"
@@ -166,6 +172,9 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DEBUFF_STACK_B: { ko: "디버프스택B", en: "Debuff Stack B" },
   DEBUFF_STACK_C: { ko: "디버프스택C", en: "Debuff Stack C" },
   STACK_CONSUME: { ko: "스택소모",   en: "Stack Consume" },
+  STACK_CONSUME_A: { ko: "스택소모A", en: "Stack Consume A" },
+  STACK_CONSUME_B: { ko: "스택소모B", en: "Stack Consume B" },
+  STACK_CONSUME_C: { ko: "스택소모C", en: "Stack Consume C" },
 
   // 타이밍
   TIMING_INSTANT:   { ko: "즉발",     en: "Instant"    },
@@ -175,6 +184,9 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ST_DELAYED:     { ko: "지연발동", en: "Delayed" },
   ST_CONDITIONAL: { ko: "조건발동", en: "Conditional" },
   ON_TAKEDOWN: { ko: "처치 관여", en: "On Takedown" },
+  // 이진 상태 표시
+  EXISTS: { ko: "있음", en: "Exists" },
+  NOT_EXISTS: { ko: "없음", en: "None" },
   // 중단 여부
   CANCELLABLE: { ko: "취소가능", en: "Cancellable" },
   LOCKED:      { ko: "취소불가", en: "Locked"      },
@@ -238,12 +250,12 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DOT:          { ko: "지속피해", en: "DoT"             },
   ON_HIT:       { ko: "온힛",    en: "On-Hit"          },
   // 능력치 비례 기준
-  SELF_MAXHP_SCALE:        { ko: "최대체력", en: "Max HP" },
-  SELF_BONUS_HP_SCALE:     { ko: "추가체력", en: "Bonus HP" },
-  SELF_MISSING_HP_SCALE:   { ko: "잃은체력", en: "Missing HP" },
-  TARGET_MAXHP_SCALE:      { ko: "대상 최대체력", en: "Target Max HP" },
-  TARGET_CURRENT_HP_SCALE: { ko: "대상 현재체력", en: "Target Current HP" },
-  TARGET_MISSING_HP_SCALE: { ko: "대상 잃은체력", en: "Target Missing HP" },
+  SELF_MAXHP_SCALE:        { ko: "최대 체력", en: "Max HP" },
+  SELF_BONUS_HP_SCALE:     { ko: "추가 체력", en: "Bonus HP" },
+  SELF_MISSING_HP_SCALE:   { ko: "잃은 체력", en: "Missing HP" },
+  TARGET_MAXHP_SCALE:      { ko: "대상의 최대 체력", en: "Target's Max HP" },
+  TARGET_CURRENT_HP_SCALE: { ko: "대상의 현재 체력", en: "Target's Current HP" },
+  TARGET_MISSING_HP_SCALE: { ko: "대상의 잃은 체력", en: "Target's Missing HP" },
   AD_SCALE: { ko: "공격력", en: "Attack Damage" },
   AP_SCALE: { ko: "주문력", en: "Ability Power" },
   LEVEL_SCALE: { ko: "레벨비례", en: "Base On Level" },
@@ -289,6 +301,9 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DEBUFF_STACK_B: { ko: "상대에게 스택을 쌓아 추가 효과가 생김 (B). \n 서로 다른 스택형 디버프가 여러 개 있을 때 구분용.", en: "Applies stacks to enemies, granting additional effects (B). \n Used to distinguish multiple distinct stack-based debuffs." },
   DEBUFF_STACK_C: { ko: "상대에게 스택을 쌓아 추가 효과가 생김 (C). \n 서로 다른 스택형 디버프가 여러 개 있을 때 구분용.", en: "Applies stacks to enemies, granting additional effects (C). \n Used to distinguish multiple distinct stack-based debuffs." },
   STACK_CONSUME:    { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함.", en: "Consumes accumulated buff stacks to trigger or empower an effect." },
+  STACK_CONSUME_A: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (A). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (A). \n Used to distinguish multiple distinct stack-consume effects." },
+  STACK_CONSUME_B: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (B). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (B). \n Used to distinguish multiple distinct stack-consume effects." },
+  STACK_CONSUME_C: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (C). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (C). \n Used to distinguish multiple distinct stack-consume effects." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
   TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림", en: "Has a cast delay before activating." },
   TIMING_AFTERCAST: { ko: "발동 후 다음 행동까지 시간이 걸림.", en: "Takes time between activation and the next action." },
@@ -296,6 +311,9 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   ST_DELAYED:     { ko: "스킬이 발동까지 일정 시간이 걸림", en: "The skill takes time before it activates" },
   ST_CONDITIONAL: { ko: "특정 조건이 충족될 때 발동됨", en: "Activates only when a specific condition is met" },
   ON_TAKEDOWN: { ko: "적 챔피언 처치 또는 어시스트에 관여하면 \n 발동하거나 추가 효과.", en: "Triggers or grants a bonus effect on a champion takedown (kill or assist)" },
+  // 이진 상태 표시
+  EXISTS: { ko: "해당 속성/효과가 있음을 나타낸다", en: "Indicates that the property/effect is present" },
+  NOT_EXISTS: { ko: "해당 속성/효과가 없음을 나타낸다", en: "Indicates that the property/effect is absent" },
   CANCELLABLE:      { ko: "시전 중 직접 중단할 수 있음", en: "Can be manually cancelled during cast" },
   LOCKED:           { ko: "시전 중 직접 중단할 수 없음\n끝까지 완료되어야 함", en: "Cannot be manually cancelled\nMust complete fully" },
   TARGETED:         { ko: "대상을 직접 지정하여 시전하는 스킬\n단, 무적/타겟불가 상태에는 적중하지 않음", en: "Targets an enemy directly\nDoes not hit invulnerable or untargetable units" },

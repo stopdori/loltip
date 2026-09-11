@@ -101,6 +101,7 @@ export type TagId =
   | "HIT_EFFECT"
   | "HIT_EFFECT_SOUND"
   | "HIT_INDICATOR"
+  | "SHIMMER"
   | "STEALTH"
   | "INVISIBILITY"
   | "CAMOUFLAGE"
@@ -111,6 +112,7 @@ export type TagId =
   | "HP_REGEN_UP"    // 체력재생 증가
   | "SHIELD"
   | "MAX_HP_UP" // 최대체력 증가
+  | "MAX_ENERGY_UP" // 최대기력 증가
   | "HS_POWER"  // 회복/보호막 강화
   | "LIFESTEAL"
   | "OMNIVAMP"
@@ -248,6 +250,7 @@ HIT_SOUND:             { ko: "적중 소리",        en: "Hit Sound"            
 HIT_EFFECT:            { ko: "적중 이펙트",      en: "Hit Effect"           },
 HIT_EFFECT_SOUND:      { ko: "적중 소리+이펙트", en: "Hit Effect+Sound"     },
 HIT_INDICATOR:         { ko: "적중 반응",        en: "Hit Indicator"        },
+SHIMMER: { ko: "아른거림", en: "Shimmer" },
 STEALTH: { ko: "은신", en: "Stealth" },
 INVISIBILITY: { ko: "투명", en: "Invisibility" },
 CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
@@ -258,6 +261,7 @@ HP_REGEN: { ko: "체젠", en: "HP Regen" },
 HP_REGEN_UP: { ko: "체젠↑", en: "HP Regen↑" },
 SHIELD: { ko: "쉴드", en: "Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
+MAX_ENERGY_UP: { ko: "최대기력↑", en: "Max Energy Increase" },
 HS_POWER: { ko: "회쉴↑", en: "HS Power" },
 LIFESTEAL: { ko: "생흡", en: "Lifesteal" },
 OMNIVAMP: { ko: "모든피흡", en: "Omnivamp" },
@@ -665,6 +669,10 @@ HIT_INDICATOR: {
   ko: "소리나 이펙트 없이도 스킬 상태 변화나 \n버프/디버프 반응으로\n적의 존재를 간접적으로 알 수 있음.",
   en: "Indirectly detects enemy presence \nthrough skill state changes or buff/debuff reactions, \nwithout sound or visual effects.",
 },
+SHIMMER: {
+  ko: "[[STEALTH]] 상태에서 피해를 받으면 잠시 실루엣 드러남. \n 트리거당 0.6초간 위치만 노출. \n [[UNTARGETABLE]]에 [[STEALTH]]도 풀리지 않는다.",
+  en: "Taking damage while [[STEALTH]] briefly reveals a silhouette. \n Each trigger only exposes the location for 0.6 seconds. \n [[UNTARGETABLE]] does not break [[STEALTH]] either.",
+},
 STEALTH: {
   ko: "투명화와 위장으로 나뉨\n절대시야에는 보이고, \n 드러냄 스킬에는 맞고 은신하면 보임",
   en: "Invisibility and Camouflage",
@@ -698,6 +706,10 @@ SHIELD: {
 MAX_HP_UP: {
   ko: "최대 체력 증가\n(치감 효과에 영향을 받지 않음)",
   en: "Increases maximum health. \n(Not affected by Grievous Wounds)",
+},
+MAX_ENERGY_UP: {
+  ko: "최대 기력 증가",
+  en: "Increases maximum energy.",
 },
 HS_POWER: {
   ko: "체력 회복 및 보호막 효과가 증가함.",

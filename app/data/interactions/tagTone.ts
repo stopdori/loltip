@@ -78,6 +78,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SKILL_SIZE_UP: "indigo",
   MANA_RESTORE: "sky",
   ENERGY_RESTORE: "sky",
+  // MAX_ENERGY_UP은 ENERGY_RESTORE와 같은 기력 계열 태그라 동일 tone(sky) 재사용
+  MAX_ENERGY_UP: "sky",
   SLOW_RESIST: "sky",
   SLOW_IMMUNE: "sky",
   SLOW_CLEANSE: "sky",
@@ -95,6 +97,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   HIT_EFFECT:            "sky_soft",
   HIT_EFFECT_SOUND:      "sky_soft",
   HIT_INDICATOR:         "sky_soft",
+  SHIMMER: "sky_soft",
 
   // 🟩 teal (CC/제어)
   STUN: "teal",
@@ -201,6 +204,11 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ST_DELAYED:     "indigo",
   ST_CONDITIONAL: "indigo",
   ON_TAKEDOWN: "indigo",
+  // 이진 상태 표시 — EXISTS는 체력/힐/부활 계열과 같은 lime(초록) 재사용.
+  // NOT_EXISTS는 팔레트에 "slate" Tone이 따로 없어서, 실제로 slate 색상을
+  // 쓰는 "default" 톤(bg-slate-700/70 text-slate-100 ring-slate-600)을 재사용.
+  EXISTS: "lime",
+  NOT_EXISTS: "default",
   // 중단 여부
   CANCELLABLE: "indigo",
   LOCKED:      "indigo",
