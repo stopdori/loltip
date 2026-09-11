@@ -34,15 +34,15 @@ const akali: ChampData = {
 
   gimmick: {
     P: { phases: [
-      { label: { ko: "P 장판", en: "" }, tags: ["ST_CONDITIONAL", "ZONE", "SEPARATOR", "ST_CONDITIONAL", "EMPOWERED", "BA"] },
-      { label: { ko: "P 강화 평타", en: "" }, tags: ["DMG_MAGIC", "RANGE_UP", "ON_HIT"] },
+      { label: { ko: "P 장판", en: "P Zone" }, tags: ["ST_CONDITIONAL", "ZONE", "SEPARATOR", "ST_CONDITIONAL", "EMPOWERED", "BA"] },
+      { label: { ko: "P 강화 평타", en: "P Empowered Attack" }, tags: ["DMG_MAGIC", "RANGE_UP", "ON_HIT"] },
     ] },
     
     Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "SLOW"],
 
     W: { phases: [
-      { label: { ko: "W 버프", en: "" }, tags: ["BUFF_FORM", "MS_UP", "MAX_ENERGY_UP"] },
-      { label: { ko: "W 연막", en: "" }, tags: ["ZONE", "SEPARATOR", "ST_CONDITIONAL", "INVISIBILITY"]},
+      { label: { ko: "W 버프", en: "W Buff" }, tags: ["BUFF_FORM", "MS_UP", "MAX_ENERGY_UP"] },
+      { label: { ko: "W 연막", en: "W Shroud" }, tags: ["ZONE", "SEPARATOR", "ST_CONDITIONAL", "INVISIBILITY"]},
     ] },
 
     E: { phases: [
