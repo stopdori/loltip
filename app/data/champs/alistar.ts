@@ -30,7 +30,7 @@ const alistar: ChampData = {
 
     E: { phases: [
       { label: { ko: "E 버프", en: "E Buff" }, tags: ["BUFF_FORM", "GHOSTING"] },
-      { label: { ko: "E 범위 피해", en: "E AoE Damage" }, tags: ["DMG_MAGIC", "AOE", "SEPARATOR", "ST_CONDITIONAL", "BUFF_STACK_B"] },
+      { label: { ko: "E 범위 피해", en: "E AoE Damage" }, tags: ["DOT", "DMG_MAGIC", "AOE", "SEPARATOR", "ST_CONDITIONAL", "BUFF_STACK_B"] },
       { label: { ko: "E 온힛", en: "E On-Hit"  }, tags: ["STACK_CONSUME_B", "DMG_MAGIC", "ON_HIT", "STUN", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "BUFF_STACK_A"]},
     ] },
 

@@ -9,7 +9,7 @@
 // 하고, TagPill.tsx의 툴팁처럼 "정적 표시 전용"으로 쓰고 싶은 곳은
 // text/tone만 참고해서 자체적으로 작게 렌더링하면 된다.
 
-import { TAG_LABEL, type TagId } from "./tags";
+import { TAG_LABEL, NOTE_LABEL, type TagId } from "./tags";
 import { GIMMICK_TAG_LABEL, type GimmickTagId } from "./tags_gimmick";
 import { toneOfTag, type Tone } from "./tagTone";
 
@@ -41,7 +41,12 @@ export function parseTagTokens(text: string, lang: "ko" | "en"): TagTokenSegment
 
     const raw = rawMatch[1].trim();
     const token = raw as TagId | GimmickTagId;
-    const labelData = GIMMICK_TAG_LABEL[token as GimmickTagId] ?? TAG_LABEL[token as TagId];
+    // 노트/스킬툴팁 인라인 전용 라벨(NOTE_LABEL)이 있으면 그걸 우선 쓰고,
+    // 없으면 기존과 동일하게 GIMMICK_TAG_LABEL → TAG_LABEL 순으로 폴백한다.
+    // TagPill.tsx의 pill 자체 표시는 이 함수를 거치지 않고 TAG_LABEL/
+    // GIMMICK_TAG_LABEL을 직접 조회하므로 NOTE_LABEL의 영향을 받지 않는다.
+    const labelData =
+      NOTE_LABEL[token] ?? GIMMICK_TAG_LABEL[token as GimmickTagId] ?? TAG_LABEL[token as TagId];
 
     if (labelData) {
       return {

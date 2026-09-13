@@ -101,7 +101,7 @@ export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
 export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   {
     title: { ko: "1) 스킬 형태", en: "1) Skill Form" },
-    keys: ["SKILL_ACTIVE", "SKILL_TOGGLE", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SKILL_VECTOR", "SKILL_STEERABLE", "SKILL_RECAST"],
+    keys: ["SKILL_ACTIVE", "SKILL_TOGGLE", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SKILL_VECTOR", "SKILL_STEERABLE", "SKILL_RECAST", "RECAST_CANCEL", "RECAST_DETONATE", "RECAST_REPOSITION"],
   },
   {
     title: { ko: "2) 기타 (상태 / 자원)", en: "2) Misc (State / Resource)" },
@@ -129,7 +129,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "8) 피해 범위", en: "8) Damage Range" },
-    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "DROP", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
+    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "DROP", "DETONATE", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
   },
   {
     title: { ko: "9) 피해 종류", en: "9) Damage Type" },

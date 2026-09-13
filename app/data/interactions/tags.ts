@@ -1,3 +1,5 @@
+import type { GimmickTagId } from "./tags_gimmick";
+
 export type TagId =
   /* 1) 스탯 버프 */
   | "MS_UP"
@@ -269,7 +271,7 @@ MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
 ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
 
   /* 8) 이동 / 위치 / 상호작용 */
-ALLY_TP_OK: { ko: "텔가능", en: "Ally TP" },
+ALLY_TP_OK: { ko: "텔포대상", en: "TP Target" },
 WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
 GHOSTING: { ko: "유체화", en: "Ghosting" },
 TERRAIN: { ko: "벽", en: "TERRAIN" },
@@ -294,6 +296,16 @@ R_FLASH: { ko: "R플", en: "RF" },
 INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
 
 }
+
+// 노트/스킬툴팁 인라인 [[TAG]] 렌더링(parseTagTokens.ts) 시 TAG_LABEL/
+// GIMMICK_TAG_LABEL 대신 우선 사용할 라벨. 여기 등록 안 된 태그는 기존
+// TAG_LABEL(pill과 동일)로 폴백한다. pill 라벨은 짧고 고정돼야 하지만,
+// 문장 속에서는 더 자연스러운 표현이 필요할 때만 여기에 하나씩 추가한다
+// (전체 태그를 한 번에 채우지 않음). TagPill.tsx의 pill 자체 표시는
+// 이 테이블을 조회하지 않고 계속 TAG_LABEL/GIMMICK_TAG_LABEL만 쓴다.
+export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: string }>> = {
+  DURATION_RESET: { ko: "지속시간 초기화", en: "Duration Reset" },
+};
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
 
@@ -746,7 +758,7 @@ GHOSTING: {
   en: "Can move through units",
 },
 TERRAIN: {
-  ko: "벽 생성. \n 생성될 때 대상이 밀려나면서 에어본.",
+  ko: "벽 생성. \n 생성될 때 대상이 밀려나면서 [[AIRBORNE]].",
   en: "Creates a wall. \n Knocks the target back and airborne when created.",
 },
 WALL_COLLISION: {

@@ -59,6 +59,7 @@ export type GimmickTagId =
   | "GLOBAL"
   | "SUMMON"
   | "DROP"
+  | "DETONATE"
   | "X1.5"
   | "X2"
   | "X3"
@@ -126,6 +127,9 @@ export type GimmickTagId =
   | "STACK_CONSUME_C"
   // 스킬 타이밍
   | "SKILL_RECAST"
+  | "RECAST_CANCEL"
+  | "RECAST_DETONATE"
+  | "RECAST_REPOSITION"
   | "ST_IMPACT"
   | "ST_DELAYED"
   | "ST_CONDITIONAL"
@@ -160,6 +164,9 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ON_TARGET_CD:  { ko: "대상별 쿨타임", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
+  RECAST_CANCEL:     { ko: "해제", en: "Cancel"     },
+  RECAST_DETONATE:   { ko: "기폭", en: "Detonate"   },
+  RECAST_REPOSITION: { ko: "치환", en: "Reposition" },
   RECHARGE:      { ko: "충전",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
   PROC:          { ko: "스택발동", en: "Proc" },
@@ -227,6 +234,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   GLOBAL:  { ko: "맵전체", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
   DROP:          { ko: "드롭",    en: "Drops"    },
+  DETONATE:      { ko: "폭발",    en: "Detonate" },
   "X1.5":        { ko: "x1.5",     en: "x1.5"    },
   X2:            { ko: "x2",       en: "x2"      },
   X3:            { ko: "x3",       en: "x3"      },
@@ -247,7 +255,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DMG_MAGIC:    { ko: "마법피해", en: "Magic Damage"    },
   DMG_TRUE:     { ko: "고정피해", en: "True Damage"     },
   DOT_DMG_TRUE: { ko: "지속고피", en: "True DoT" },
-  DOT:          { ko: "지속피해", en: "DoT"             },
+  DOT:          { ko: "지속", en: "DoT"             },
   ON_HIT:       { ko: "온힛",    en: "On-Hit"          },
   // 능력치 비례 기준
   SELF_MAXHP_SCALE:        { ko: "최대 체력", en: "Max HP" },
@@ -273,7 +281,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SKILL_ACTIVE:      { ko: "버튼 한 번으로 발동되는 스킬", en: "Ability that activates immediately on a single press" },
   SKILL_STEERABLE:   { ko: "시전 중 마우스 방향으로 조종할 수 있음", en: "Can be steered toward the mouse cursor during cast" },
   SKILL_CHANNEL:    { ko: "버튼 한 번으로 발동하고 시전을 유지하는 스킬 \n 관련있는 CC에 맞으면 끊김.", en: "Activates on a single press and maintains its cast.\nInterrupted if hit by a relevant CC."},
-  SKILL_CHANNEL_MOVEMENT: { ko: "이동이 결부된 채널링(예: 라이즈 R). \n 일반 채널을 끊는 CC 외에도 속박/그라운드 계열에 의해 추가로 끊김.", en: "A channel that involves the caster moving (e.g. Ryze R).\nInterrupted by everything that interrupts a normal channel, plus Root/Grounded-type effects." },
+  SKILL_CHANNEL_MOVEMENT: { ko: "이동이 포함된 채널링(예: 라이즈 R). \n 일반 채널링을 끊는 CC 외에도 [[ROOT]]/[[GROUNDED]] 계열에 의해 추가로 끊김.", en: "A channel that involves the caster moving (e.g. Ryze R).\nInterrupted by everything that interrupts a normal channel, plus Root/Grounded-type effects." },
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬, \n 경우에 따라 움직일 수 있음.", en: "Charges up while held\nCaster can move while charging" },
   SKILL_VECTOR:     { ko: "시전 위치에 좌클릭을 하고 \n 드래그로 방향을 지정하는 스킬. \n ( 단, 클릭을 떼면 안됨. ) \n ( 단, 스마트키는 키보드를 떼면 안됨. )", en: "A skill where you left-click the cast location \n and drag to set the direction. \n (However, you must not release the click.) \n (However, with Smart Cast, you must not release the key.)" },
@@ -288,7 +296,10 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   COOLDOWN:         { ko: "스킬을 다시 사용할 준비를 하는 상태.", en: "The state of waiting before the skill can be used again." },
   ON_TARGET_CD:     { ko: "대상별 쿨타임. 동일한 스킬이라도 대상마다 쿨타임이 독립적으로 적용됨. \n 한 대상에게 사용해도 다른 대상에게는 바로 사용 가능.", en: "The skill's cooldown applies independently per target. \n Using it on one target does not affect its availability on others." },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
-  SKILL_RECAST:     { ko: "일정 시간 이내에 스킬을 재사용할 수 있음.", en: "The ability can be recast within a limited time window." },
+  SKILL_RECAST:     { ko: "일정 시간 이내에 스킬 버튼을 다시 누를 수 있음.", en: "The skill button can be pressed again within a set time window." },
+  RECAST_CANCEL:     { ko: "스킬 버튼을 다시 눌러 진행 중이던 효과를 조기 종료시킨다", en: "Pressing the skill button again cancels the ongoing effect early." },
+  RECAST_DETONATE:   { ko: "스킬 버튼을 다시 눌러 진행 중이던 효과를 즉시 발동시킨다", en: "Pressing the skill button again immediately detonates the ongoing effect." },
+  RECAST_REPOSITION: { ko: "스킬 버튼을 다시 눌러 위치를 맞바꾸거나 원래 있던 위치로 되돌아간다", en: "Pressing the skill button again swaps positions or returns to the original location." },
   RECHARGE:         { ko: "스킬을 여러 개 충전해두고 사용할 수 있음\n최대 충전이 아니면 쿨타임이 돔.", en: "Multiple charges of the skill can be stored and used\nCooldown applies if not at maximum charges." },
   STACKING:         { ko: "조건을 충족할 때마다 \n 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced \n each time the conditions are met" },
   PROC:             { ko: "상대 또는 자신에게 스택을 쌓고 \n N번째 적중 시 추가 효과가 발동됨", en: "Stacks build up on the target or yourself, \n and an additional effect is triggered on the $N$-th hit." },
@@ -350,6 +361,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   GLOBAL:      { ko: "사거리 또는 목표물이 맵 전체", en: "Range or target \n extends across the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
   DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
+  DETONATE:      { ko: "대상에게 적중하면 자동으로 폭발하여 범위 피해 등을 입힌다", en: "Automatically detonates on hit, dealing area damage or similar effects." },
   "X1.5":        { ko: "해당 효과가 1.5배 발생함", en: "The effect occurs at 1.5x" },
   X2:            { ko: "해당 효과가 2회, 또는 2배 발생함", en: "The effect occurs 2 times, or at 2x" },
   X3:            { ko: "해당 효과가 3회, 또는 3배 발생함", en: "The effect occurs 3 times, or at 3x" },
@@ -373,7 +385,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DMG_MAGIC:    { ko: "마법 저항력에 의해 감소되는 피해", en: "Damage mitigated by magic resistance" },
   DMG_TRUE:     { ko: "저항력에 감소되지 않는 피해\n단, 실드와 무적에는 막힘", en: "Ignores resistances\nStill blocked by shields and invulnerability" },
   DOT_DMG_TRUE: { ko: "시간에 걸쳐 지속적으로 입히는 \n 고정 피해.", en: "True damage dealt continuously over time." },
-  DOT:          { ko: "일정 시간 동안 지속적으로 피해를 줌", en: "Deals damage repeatedly over a duration" },
+  DOT:          { ko: "일정 간격(틱)으로 나뉘어 피해.", en: "Deals damage in periodic ticks." },
   ON_HIT:       { ko: "기본 공격 적중 시 추가 피해가 발생함", en: "Deals bonus damage on basic attack hit" },
   // 능력치 비례 기준
   SELF_MAXHP_SCALE:        { ko: "이 효과가 시전자 자신의 최대 체력에 비례한다", en: "This effect scales with the caster's own max Health" },

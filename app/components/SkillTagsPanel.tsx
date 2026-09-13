@@ -676,7 +676,7 @@ if (champ?.notes) {
         noteContent = (
           <>
             {renderNoteSection(n3, lang === "ko" ? "대충 한타 운용법" : "Rough Teamfight Guide")}
-            {renderNoteSection(n1, lang === "ko" ? "챔피언 요약" : "Overview")}
+            {renderNoteSection(n1, lang === "ko" ? "스킬 요약" : "Overview")}
             {renderNoteSection(n2, lang === "ko" ? "TMI" : "TMI")}
           </>
         );
