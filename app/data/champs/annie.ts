@@ -28,14 +28,14 @@ const annie: ChampData = {
     W: ["DMG_MAGIC", "TIMING_CAST", "AOE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "STACK_CONSUME", "STUN"],
 
     E: { phases: [
-      { label: { ko: "E 보호막", en: "E Shields" }, tags: ["TARGETED"] },
+      { label: { ko: "E 보호막", en: "E Shields" }, tags: ["TARGETED", "MS_UP", "SHIELD"] },
       { label: { ko: "E 반사피해", en: "E Thorns"  }, tags: ["ST_CONDITIONAL", "DMG_MAGIC"] },
     ] },
 
     R: { phases: [
-      { label: { ko: "패시브", en: "Passive" }, tags: ["MR_PEN"] },
-      { label: { ko: "티버 소환", en: "Tibbers Summon" }, tags: ["PASSIVE_BONUS", "DMG_MAGIC", "TIMING_CAST", "AOE", "SUMMON", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "STACK_CONSUME", "STUN"] },
-      { label: { ko: "티버", en: "Tibbers"  }, tags: ["DMG_MAGIC", "AOE", "DOT"] },
+      { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS", "MR_PEN"] },
+      { label: { ko: "티버 소환", en: "Tibbers Summon" }, tags: ["DMG_MAGIC", "TIMING_CAST", "AOE", "SUMMON", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "STACK_CONSUME", "STUN", "SEPARATOR", "ALLY_TP_OK"] },
+      { label: { ko: "티버", en: "Tibbers"  }, tags: ["DOT", "DMG_MAGIC", "AOE"] },
     ] },
   },
 

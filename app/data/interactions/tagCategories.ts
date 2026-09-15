@@ -90,7 +90,7 @@ export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
   keys: [
     "VISION", "REVEALED", "TRUE_SIGHT", "POSITION_REVEAL", "POSITION_INDICATOR",
     "POSITION_SOUND", "POSITION_EFFECT", "POSITION_EFFECT_SOUND", "HIT_SOUND",
-    "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "SHIMMER", "STEALTH", "INVISIBILITY",
+    "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "SHIMMER", "OVERHEAD_VISION", "UNOBSTRUCTED_VISION", "STEALTH", "INVISIBILITY",
     "CAMOUFLAGE",
   ],
 };
@@ -129,7 +129,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "8) 피해 범위", en: "8) Damage Range" },
-    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "DROP", "DETONATE", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
+    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "DROP", "DETONATE", "X0.5", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
   },
   {
     title: { ko: "9) 피해 종류", en: "9) Damage Type" },

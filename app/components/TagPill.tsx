@@ -67,9 +67,17 @@ export default function TagPill({
   // 주변 평문과 동일한 line-height 규칙을 따르게 하기 위함. 아이콘/화살표
   // 사이 간격도 flex gap 대신 각 요소의 margin으로 준다(아래 아이콘 mr-[1px],
   // 화살표 ml-[1px]).
+  // min-w-[42px]: "Q플"/"W플"/"E플"/"R플"처럼 "라틴 알파벳 1글자 + 한글
+  // 1글자" 형태의 짧은 라벨은 앞 글자가 W냐 Q/E/R이냐에 따라 실제 렌더링
+  // 폭이 달라 보인다(W가 라틴 알파벳 중 가장 넓은 글자라 20~40% 더 넓게
+  // 그려짐 — 한글 음절 자체는 폭이 고정이라 차이는 순전히 앞 글자 탓).
+  // 42px는 이 중 가장 넓은 "W플"(px-2 포함 약 39px 추정)을 여유 있게
+  // 덮는 값으로, 그보다 짧은 라벨(Q플/E플/R플 등)만 끌어올리고 긴
+  // 라벨(예: "이동금지")은 이미 min을 넘어서 있어 영향이 없다. note
+  // 모드는 대상이 아니므로 박스 모드에서만 적용.
   const base = isNote
     ? "cursor-help hover:opacity-90"
-    : `flex items-center justify-center rounded-md font-semibold ring-1 align-top py-[3px] text-[12px] ${hasAnchorIcon ? "pl-1 pr-2" : "px-2"}`;
+    : `flex items-center justify-center rounded-md font-semibold ring-1 align-top py-[3px] text-[12px] min-w-[42px] ${hasAnchorIcon ? "pl-1 pr-2" : "px-2"}`;
   const toneCls = isNote ? NOTE_TONE_CLASS[noteTextTone] : (TONE_CLASS[tone] ?? TONE_CLASS.default);
   // gap은 박스 모드(flex)에서만 의미가 있다 — note 모드는 margin 방식으로 대체.
   const gapCls = !isNote && ((showIconInAnchor && icons?.length) || direction) ? "gap-[1px]" : "";

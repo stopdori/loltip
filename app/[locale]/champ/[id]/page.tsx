@@ -18,13 +18,22 @@ function getFormBlocks(champId: string, skills: ChampSkill): FormBlock[] {
   if (!("base" in skills)) {
     return [{ formKo: "", block: skills }];
   }
+  // CHAMP_FORMS는 배열 기반(순서: base→[0], alt→[1], alt2→[2], alt3→[3],
+  // alt4→[4])이지만, 여기서 조립하는 skills는 base/alt/alt2/alt3/alt4
+  // 고정 키 구조다(types.ts 참고, 최대 5폼).
   const labels = CHAMP_FORMS[champId];
   const blocks: FormBlock[] = [
-    { formKo: labels?.base.ko ?? "기본", block: skills.base },
-    { formKo: labels?.alt.ko ?? "변신폼", block: skills.alt },
+    { formKo: labels?.[0]?.ko ?? "기본", block: skills.base },
+    { formKo: labels?.[1]?.ko ?? "변신폼", block: skills.alt },
   ];
   if (skills.alt2) {
-    blocks.push({ formKo: labels?.alt2?.ko ?? "변신폼2", block: skills.alt2 });
+    blocks.push({ formKo: labels?.[2]?.ko ?? "변신폼2", block: skills.alt2 });
+  }
+  if (skills.alt3) {
+    blocks.push({ formKo: labels?.[3]?.ko ?? "변신폼3", block: skills.alt3 });
+  }
+  if (skills.alt4) {
+    blocks.push({ formKo: labels?.[4]?.ko ?? "변신폼4", block: skills.alt4 });
   }
   return blocks;
 }

@@ -98,6 +98,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   HIT_EFFECT_SOUND:      "sky_soft",
   HIT_INDICATOR:         "sky_soft",
   SHIMMER: "sky_soft",
+  OVERHEAD_VISION: "sky_soft",
+  UNOBSTRUCTED_VISION: "sky_soft",
 
   // 🟩 teal (CC/제어)
   STUN: "teal",
@@ -260,6 +262,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SUMMON:  "indigo",
   DROP:          "indigo",
   DETONATE:      "indigo",
+  "X0.5":        "indigo",
   "X1.5":        "indigo",
   X2:            "indigo",
   X3:            "indigo",

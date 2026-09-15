@@ -60,6 +60,7 @@ export type GimmickTagId =
   | "SUMMON"
   | "DROP"
   | "DETONATE"
+  | "X0.5"
   | "X1.5"
   | "X2"
   | "X3"
@@ -223,7 +224,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   R: { ko: "R", en: "R" },
   BA: { ko: "평타", en: "Basic Attack" },
   HOMING:        { ko: "호밍",     en: "Homing"        },
-  BEAM:          { ko: "광선",     en: "Beam"          },
+  BEAM:          { ko: "레이저",     en: "Beam"          },
   // 피해 범위
   SINGLE:  { ko: "단일",   en: "Single Target"   },
   PIERCE:        { ko: "관통",      en: "Pierce"        },
@@ -231,10 +232,11 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   PIERCE_ONCE:   { ko: "1회 관통",   en: "Pierce Once"  },
   AOE:     { ko: "범위",   en: "AoE"  },
   AURA:    { ko: "오라",   en: "Aura"            },
-  GLOBAL:  { ko: "맵전체", en: "Global"          },
+  GLOBAL:  { ko: "맵 전체", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
   DROP:          { ko: "드롭",    en: "Drops"    },
   DETONATE:      { ko: "폭발",    en: "Detonate" },
+  "X0.5":        { ko: "x0.5",     en: "x0.5"    },
   "X1.5":        { ko: "x1.5",     en: "x1.5"    },
   X2:            { ko: "x2",       en: "x2"      },
   X3:            { ko: "x3",       en: "x3"      },
@@ -362,6 +364,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
   DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
   DETONATE:      { ko: "대상에게 적중하면 자동으로 폭발하여 범위 피해 등을 입힌다", en: "Automatically detonates on hit, dealing area damage or similar effects." },
+  "X0.5":        { ko: "해당 효과가 0.5배 발생함", en: "The effect occurs at 0.5x" },
   "X1.5":        { ko: "해당 효과가 1.5배 발생함", en: "The effect occurs at 1.5x" },
   X2:            { ko: "해당 효과가 2회, 또는 2배 발생함", en: "The effect occurs 2 times, or at 2x" },
   X3:            { ko: "해당 효과가 3회, 또는 3배 발생함", en: "The effect occurs 3 times, or at 3x" },

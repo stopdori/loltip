@@ -161,6 +161,9 @@ logs/YYYY-MM-DD_HHmm_<작업명>.txt에 저장한다 (logs/는 .gitignore
 사용자가 복붙한 내용이 이 숫자와 크게 다르면(예: 절반 이하) 중간에
 텍스트가 누락됐다는 걸 바로 알아챌 수 있게 하는 것이다.
 
+- 데이터 소스 특수 예외(DDragon이 구조적으로 데이터를 못 주는 경우의
+  Community Dragon 사용 규칙)는 docs/data-sources.md 참고.
+
 ## 챔피언 skillTooltip 작성 규칙
 
 - skillTooltip(P/Q/W/E/R 아이콘 호버 툴팁)을 채울 때, DDragon 자동 fetch

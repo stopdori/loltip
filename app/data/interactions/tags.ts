@@ -104,6 +104,8 @@ export type TagId =
   | "HIT_EFFECT_SOUND"
   | "HIT_INDICATOR"
   | "SHIMMER"
+  | "OVERHEAD_VISION"
+  | "UNOBSTRUCTED_VISION"
   | "STEALTH"
   | "INVISIBILITY"
   | "CAMOUFLAGE"
@@ -253,6 +255,8 @@ HIT_EFFECT:            { ko: "적중 이펙트",      en: "Hit Effect"          
 HIT_EFFECT_SOUND:      { ko: "적중 소리+이펙트", en: "Hit Effect+Sound"     },
 HIT_INDICATOR:         { ko: "적중 반응",        en: "Hit Indicator"        },
 SHIMMER: { ko: "아른거림", en: "Shimmer" },
+OVERHEAD_VISION: { ko: "공중 시야", en: "Overhead Vision" },
+UNOBSTRUCTED_VISION: { ko: "너머시야", en: "Unobstructed Vision" },
 STEALTH: { ko: "은신", en: "Stealth" },
 INVISIBILITY: { ko: "투명", en: "Invisibility" },
 CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
@@ -684,6 +688,14 @@ HIT_INDICATOR: {
 SHIMMER: {
   ko: "[[STEALTH]] 상태에서 피해를 받으면 잠시 실루엣 드러남. \n 트리거당 0.6초간 위치만 노출. \n [[UNTARGETABLE]]에 [[STEALTH]]도 풀리지 않는다.",
   en: "Taking damage while [[STEALTH]] briefly reveals a silhouette. \n Each trigger only exposes the location for 0.6 seconds. \n [[UNTARGETABLE]] does not break [[STEALTH]] either.",
+},
+OVERHEAD_VISION: {
+  ko: "이동 경로를 따라 지형과 수풀에 막히지 않고 시야를 제공한다. \n 단, 일반 시야와 동일해 [[STEALTH]] 상태는 뚫지 못한다.",
+  en: "Grants sight along its travel path, unobstructed by terrain or brush. \n However, it grants only standard sight and does not reveal [[STEALTH]]ed units.",
+},
+UNOBSTRUCTED_VISION: {
+  ko: "벽(지형)은 뚫고 볼 수 있지만, 수풀 안은 여전히 보지 못한다. \n [[NEAR_SIGHT]] 상태에서는 이 효과가 완전히 사라진다.",
+  en: "Can see through terrain, but still cannot see into brush. \n This effect is entirely negated while [[NEAR_SIGHT]]ed.",
 },
 STEALTH: {
   ko: "투명화와 위장으로 나뉨\n절대시야에는 보이고, \n 드러냄 스킬에는 맞고 은신하면 보임",

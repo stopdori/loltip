@@ -27,7 +27,7 @@ const hwei: ChampData = {
       P: [],
       Q: ["Q_FLASH", "FEAR"],
       W: ["W_FLASH", "ROOT"],
-      E: ["E_FLASH", "AIRBORNE", "SLOW"],
+      E: ["E_FLASH", "GRAB", "SLOW"],
       R: ["R_FLASH", "SLOW"],
     },
   },
@@ -84,7 +84,7 @@ const hwei: ChampData = {
       { label: { ko: "EW 투사체", en: "EW Projectile" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "PROJECTILE", "HOMING", "SINGLE", "DEBUFF_STACK", "ROOT"] },
     ] },
 
-      E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DEBUFF_STACK", "ST_DELAYED", "AIRBORNE"],
+      E: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "DEBUFF_STACK", "ST_DELAYED", "GRAB"],
       R: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "AOE", "DEBUFF_STACK", "ST_DELAYED"],
     },
   },
@@ -154,6 +154,89 @@ const hwei: ChampData = {
     6: 140,
     11: 115,
     16: 80,
+  },
+
+  // 스킬 아이콘 호버 툴팁 하드코딩 문장. DDragon 자동 fetch는 Q/W/E가
+  // 테마 전환용 스킬이라 하위 9개 스킬(QQ/QW/QE, WQ/WW/WE, EQ/EW/EE)의
+  // 수치가 비어있어(cooldownBurn만 있고 effectBurn/vars가 전부 "0") 그대로
+  // 쓸 수 없었고, 전량 공식 위키(wiki.leagueoflegends.com) 수치로 작성함.
+  // 스킬 한국어 명칭은 Community Dragon ko_KR 데이터(champions/910.json)
+  // spellbookOverride 배열 기준.
+  // 2026-09-15: base/alt/alt2(화풍) 폼별로 쪼갬. 이전엔 Q/W/E 한 칸에
+  // 하위 3스킬(QQ/QW/QE 등) 설명을 전부 욱여넣었는데, 실제 화면에서
+  // 사용자가 보는 슬롯 위치(예: Q폼에서 E슬롯 = QE)와 안 맞고 문장이
+  // 길어 iframe에서 말풍선이 잘리는 문제가 있어 폼별로 나눔(사용자 지적).
+  // P/R은 폼과 무관하게 같은 스킬이라 세 폼에 동일 문장을 반복 기입
+  // (skills/gimmick의 기존 컨벤션과 동일).
+  skillTooltip: {
+    base: {
+      P: {
+        ko: "흐웨이가 [[DMG_MAGIC]]를 입히는 스킬로 적 챔피언을 맞히면 4초 동안 [[MARK]]를 남깁니다. \n [[MARK]]가 남아있는 동안 다른 피해 스킬로 같은 대상을 다시 맞히면 [[MARK_CONSUME]]되며, 0.85초 뒤 그 자리에서 [[AOE]] [[DETONATE]]하여 주변 적에게 [[LEVEL_SCALE]] 40~285(+35% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입힙니다.",
+        en: "",
+      },
+      Q: {
+        ko: "파멸의 화염: [[NON_TARGETED]] [[PROJECTILE]]를 날려 처음 맞은 적이나 최대 사거리에서 [[AOE]] 폭발하며 50/80/110/140/170(+80% [[AP_SCALE]])의 [[DMG_MAGIC]]와 대상 [[TARGET_MAXHP_SCALE]] 3~7%(몬스터 최대 250)에 해당하는 추가 피해를 입힙니다. \n \n 10/9/8/7/6초의 [[COOLDOWN]].",
+        en: "",
+      },
+      W: {
+        ko: "절단의 번개: [[NON_TARGETED]]로 지정한 위치에 1초 뒤 낙뢰가 떨어져 [[AOE]] 60/85/110/135/160(+30% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입히며, 고립되었거나 CC에 걸린 대상에게는 [[TARGET_MISSING_HP_SCALE]]에 비례해 최대 200~560(+60~105% [[AP_SCALE]])까지 피해가 증가합니다. \n \n 10/9/8/7/6초의 [[COOLDOWN]].",
+        en: "",
+      },
+      E: {
+        ko: "녹아내린 균열: [[NON_TARGETED]]로 지정한 선을 따라 1.4초에 걸쳐 [[X7]] [[DMG_MAGIC]] 폭발(회당 20/35/50/65/80(+30% [[AP_SCALE]]))이 일어나고, 2.5초 동안 유지되는 [[ZONE]]을 남겨 0.25초마다 [[DOT]] [[DMG_MAGIC]](총 50/87.5/125/162.5/200(+60% [[AP_SCALE]]))과 35% [[SLOW]]를 적용합니다. \n \n 10/9/8/7/6초의 [[COOLDOWN]].",
+        en: "",
+      },
+      R: {
+        ko: "R을 사용하면 흐웨이가 구체를 발사해 처음 맞은 적 챔피언에게 [[PROJECTILE]]이 달라붙습니다. 이후 3초 동안 대상에게 0.25초마다 2.5/5/7.5(+1.25% [[AP_SCALE]])의 [[DMG_MAGIC]] [[DOT]]를 입히고 [[DEBUFF_STACK]]을 쌓아(최대 12스택, 스택당 10%) 최대 120%까지 [[SLOW]]시킵니다. \n 지속시간이 끝나거나 대상이 사망하면 [[AOE]] [[DETONATE]]하여 주변 적에게 200/325/450(+80% [[AP_SCALE]])의 추가 [[DMG_MAGIC]]를 입히고, 적중한 대상을 3초 동안 [[TRUE_SIGHT]]로 드러냅니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
+        en: "",
+      },
+    },
+
+    alt: {
+      P: {
+        ko: "흐웨이가 [[DMG_MAGIC]]를 입히는 스킬로 적 챔피언을 맞히면 4초 동안 [[MARK]]를 남깁니다. \n [[MARK]]가 남아있는 동안 다른 피해 스킬로 같은 대상을 다시 맞히면 [[MARK_CONSUME]]되며, 0.85초 뒤 그 자리에서 [[AOE]] [[DETONATE]]하여 주변 적에게 [[LEVEL_SCALE]] 40~285(+35% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입힙니다.",
+        en: "",
+      },
+      Q: {
+        ko: "쏜살같은 물살: [[NON_TARGETED]]로 4/4.5/5/5.5/6초 동안 유지되는 [[ZONE]] 물살을 만들어, 그 안에 있는 아군에게 30/32.5/35/37.5/40%(+[[AP_SCALE]] 100당 3%)의 [[MS_UP]]와 [[GHOSTING]]을 계속 재부여합니다. \n \n 18/17.5/17/16.5/16초의 [[COOLDOWN]].",
+        en: "",
+      },
+      W: {
+        ko: "반사의 웅덩이: [[NON_TARGETED]]로 [[ZONE]] 물웅덩이를 3초간 만들어 그 안에 머무르는 아군에게 [[SHIELD]]를 부여합니다. 처음 50/70/90/110/130(+30% [[AP_SCALE]])에서 시작해 시간이 지날수록 최대 100/140/180/220/260(+60% [[AP_SCALE]])까지 증가하며, 아군은 자신의 85%만큼 받습니다. \n \n 18/17.5/17/16.5/16초의 [[COOLDOWN]].",
+        en: "",
+      },
+      E: {
+        ko: "요동치는 빛: 이후 [[X3]]회의 [[BA]] 또는 스킬 적중에 20/30/40/50/60(+15% [[AP_SCALE]])의 추가 [[DMG_MAGIC]](미니언·몬스터 대상은 절반)과 45/50/55/60/65의 [[MANA_RESTORE]]를 주는 [[EMPOWERED]] 상태가 됩니다(9초 내 소모). \n \n 18/17.5/17/16.5/16초의 [[COOLDOWN]].",
+        en: "",
+      },
+      R: {
+        ko: "R을 사용하면 흐웨이가 구체를 발사해 처음 맞은 적 챔피언에게 [[PROJECTILE]]이 달라붙습니다. 이후 3초 동안 대상에게 0.25초마다 2.5/5/7.5(+1.25% [[AP_SCALE]])의 [[DMG_MAGIC]] [[DOT]]를 입히고 [[DEBUFF_STACK]]을 쌓아(최대 12스택, 스택당 10%) 최대 120%까지 [[SLOW]]시킵니다. \n 지속시간이 끝나거나 대상이 사망하면 [[AOE]] [[DETONATE]]하여 주변 적에게 200/325/450(+80% [[AP_SCALE]])의 추가 [[DMG_MAGIC]]를 입히고, 적중한 대상을 3초 동안 [[TRUE_SIGHT]]로 드러냅니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
+        en: "",
+      },
+    },
+
+    alt2: {
+      P: {
+        ko: "흐웨이가 [[DMG_MAGIC]]를 입히는 스킬로 적 챔피언을 맞히면 4초 동안 [[MARK]]를 남깁니다. \n [[MARK]]가 남아있는 동안 다른 피해 스킬로 같은 대상을 다시 맞히면 [[MARK_CONSUME]]되며, 0.85초 뒤 그 자리에서 [[AOE]] [[DETONATE]]하여 주변 적에게 [[LEVEL_SCALE]] 40~285(+35% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입힙니다.",
+        en: "",
+      },
+      Q: {
+        ko: "암울한 형상: [[NON_TARGETED]] [[PROJECTILE]]를 날려 처음 맞은 적을 짧게 쓰러뜨리고 1/1.125/1.25/1.375/1.5초 동안 [[FEAR]] 상태로 만들며 70/110/150/190/230(+65% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입힙니다. 동시에 70~99%의 [[SLOW]]가 적용되며 흐웨이와 가까울수록 강해집니다. \n \n 12/11.5/11/10.5/10초의 [[COOLDOWN]].",
+        en: "",
+      },
+      W: {
+        ko: "심연의 응시: [[NON_TARGETED]]로 눈알을 던져 주변에 [[VISION]]을 밝히고, 가장 가까운 적을 향해 자동으로 날아가 명중 시 1.2/1.4/1.6/1.8/2초 동안 [[ROOT]]시키고 2.5초 동안 [[TRUE_SIGHT]]로 드러내며 70/110/150/190/230(+65% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입힙니다. \n \n 12/11.5/11/10.5/10초의 [[COOLDOWN]].",
+        en: "",
+      },
+      E: {
+        ko: "파괴의 아귀: [[NON_TARGETED]]로 지정 지역에 턱을 만들어 0.6초 뒤 다물리며, 범위 안의 적을 중앙으로 당겨 70/110/150/190/230(+65% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입히고 1.25초에 걸쳐 40/47.5/55/62.5/70%에서 점점 약해지는 [[SLOW]]를 적용합니다. \n \n 12/11.5/11/10.5/10초의 [[COOLDOWN]].",
+        en: "",
+      },
+      R: {
+        ko: "R을 사용하면 흐웨이가 구체를 발사해 처음 맞은 적 챔피언에게 [[PROJECTILE]]이 달라붙습니다. 이후 3초 동안 대상에게 0.25초마다 2.5/5/7.5(+1.25% [[AP_SCALE]])의 [[DMG_MAGIC]] [[DOT]]를 입히고 [[DEBUFF_STACK]]을 쌓아(최대 12스택, 스택당 10%) 최대 120%까지 [[SLOW]]시킵니다. \n 지속시간이 끝나거나 대상이 사망하면 [[AOE]] [[DETONATE]]하여 주변 적에게 200/325/450(+80% [[AP_SCALE]])의 추가 [[DMG_MAGIC]]를 입히고, 적중한 대상을 3초 동안 [[TRUE_SIGHT]]로 드러냅니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
+        en: "",
+      },
+    },
   },
 };
 

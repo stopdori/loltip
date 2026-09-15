@@ -16,10 +16,15 @@ type SkillBlock = Partial<Record<SkillKey, SkillSkillData>>;
 
 export type SingleForm = SkillBlock;
 
+// 최대 5폼(base/alt/alt2/alt3/alt4)까지 지원. 아펠리오스(무기 5개)처럼
+// alt3/alt4까지 쓰는 챔피언을 위한 확장 — 기존 13개 챔피언 파일은
+// base/alt(/alt2)만 쓰므로 이 확장으로 영향받지 않는다.
 export type MultiForms = {
   base: SkillBlock;
   alt: SkillBlock;
   alt2?: SkillBlock;
+  alt3?: SkillBlock;
+  alt4?: SkillBlock;
 };
 
 export type ChampSkill = SingleForm | MultiForms;
@@ -35,15 +40,30 @@ export type GimmickSkillData =
 
 type GimmickSkillBlock = Partial<Record<SkillKey, GimmickSkillData>>;
 
+// MultiForms와 동일하게 alt3/alt4까지 확장(위 주석 참고). alt/alt2의
+// 기존 optional 여부는 그대로 유지 — 이번 확장은 5폼 지원을 위한
+// alt3/alt4 추가뿐, 기존 필드의 필수/선택 여부는 바꾸지 않는다.
 type ChampGimmick =
   | GimmickSkillBlock
-  | { base: GimmickSkillBlock; alt?: GimmickSkillBlock; alt2?: GimmickSkillBlock };
+  | {
+      base: GimmickSkillBlock;
+      alt?: GimmickSkillBlock;
+      alt2?: GimmickSkillBlock;
+      alt3?: GimmickSkillBlock;
+      alt4?: GimmickSkillBlock;
+    };
 
 type VisionSkillBlock = Partial<Record<SkillKey, GimmickSkillData>>;
 
 type ChampVision =
   | VisionSkillBlock
-  | { base: VisionSkillBlock; alt?: VisionSkillBlock; alt2?: VisionSkillBlock };
+  | {
+      base: VisionSkillBlock;
+      alt?: VisionSkillBlock;
+      alt2?: VisionSkillBlock;
+      alt3?: VisionSkillBlock;
+      alt4?: VisionSkillBlock;
+    };
 
 export type NoteBlock = { ko: string[]; en: string[] };
 
@@ -76,11 +96,33 @@ export type PlaceholderOverrides = Partial<Record<SkillKey, Record<string, strin
  * 직접 하드코딩할 때 쓴다. 여기 값이 있으면 그 문장을 그대로 쓰고,
  * 없으면(또는 해당 언어가 비어있으면) 지금처럼 Data Dragon 실시간 fetch +
  * resolvePlaceholders(placeholderOverrides 적용) 결과로 폴백한다.
- * 아직 다단계(phases) 구조는 지원하지 않는다 — 필요해지면 그때 확장.
  * [[TAG]] 토큰을 문장 안에 넣으면 TokenText로 렌더링되어 태그 툴팁이 뜬다.
+ *
+ * 흐웨이처럼 폼(화풍)마다 Q/W/E 슬롯이 가리키는 실제 서브스킬이 달라지는
+ * 챔피언을 위해, skills/vision/gimmick과 동일한 MultiForms 모양(base/alt/
+ * alt2/alt3/alt4)도 허용한다 — 폼별로 슬롯 하나당 문장 하나씩(예: base.Q는
+ * QQ, alt.Q는 WQ, alt2.Q는 EQ). 이렇게 하면 사용자가 실제로 보는 아이콘
+ * 위치(예: Q폼에서 E 슬롯 = QE)에서 바로 그 서브스킬 설명만 짧게 뜨고,
+ * 안 맞는 콤보 설명까지 한 문장에 다 욱여넣어 툴팁이 과도하게 길어지는
+ * 문제를 피한다. 아펠리오스처럼 무기별로 갈라 쓰기보다 폼 공통 설명이
+ * 더 적합한 챔피언은 기존처럼 플랫(Partial<Record<SkillKey,...>>)하게
+ * 써도 되며, 폼별 값이 없는 슬롯은 플랫 쪽으로 자동 폴백한다
+ * (SkillTagsPanel.tsx getSpellTip 참고).
+ * P/R처럼 폼과 무관하게 항상 같은 스킬이면, 각 폼 블록에 동일한 문장을
+ * 그대로 중복해서 채운다(skills/gimmick의 기존 컨벤션과 동일).
+ * 아직 다단계(phases) 구조는 지원하지 않는다 — 필요해지면 그때 확장.
  */
 export type SkillTooltipText = { ko: string; en: string };
-export type SkillTooltips = Partial<Record<SkillKey, SkillTooltipText>>;
+type SkillTooltipBlock = Partial<Record<SkillKey, SkillTooltipText>>;
+export type SkillTooltips =
+  | SkillTooltipBlock
+  | {
+      base: SkillTooltipBlock;
+      alt?: SkillTooltipBlock;
+      alt2?: SkillTooltipBlock;
+      alt3?: SkillTooltipBlock;
+      alt4?: SkillTooltipBlock;
+    };
 
 export interface ChampData {
   id: string;
