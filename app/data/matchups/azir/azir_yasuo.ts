@@ -13,7 +13,7 @@ export const azir_yasuo: MatchupSummary = {
       en: [],
     },
     yasuo: {
-      ko: ["야스오 W([[WINDSHIELD]])로 아지르 Q를 막을 수 있음."],
+      ko: ["야스오 W의 [[WINDSHIELD]]으로 아지르 Q의 병사 [[DASH]], R의 병사 [[DASH]]을 막을 수 있음. \n 단, W의 모래 병사는 막힌 위치에서 정지."],
       en: [],
     },
   },
