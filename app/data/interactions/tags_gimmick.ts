@@ -129,7 +129,7 @@ export type GimmickTagId =
   // 스킬 타이밍
   | "SKILL_RECAST"
   | "RECAST_CANCEL"
-  | "RECAST_DETONATE"
+  | "RECAST_TRIGGER"
   | "RECAST_REPOSITION"
   | "ST_IMPACT"
   | "ST_DELAYED"
@@ -166,7 +166,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
   RECAST_CANCEL:     { ko: "해제", en: "Cancel"     },
-  RECAST_DETONATE:   { ko: "기폭", en: "Detonate"   },
+  RECAST_TRIGGER:    { ko: "발동", en: "Trigger"   },
   RECAST_REPOSITION: { ko: "치환", en: "Reposition" },
   RECHARGE:      { ko: "충전",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
@@ -300,7 +300,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
   SKILL_RECAST:     { ko: "일정 시간 이내에 스킬 버튼을 다시 누를 수 있음.", en: "The skill button can be pressed again within a set time window." },
   RECAST_CANCEL:     { ko: "스킬 버튼을 다시 눌러 진행 중이던 효과를 조기 종료시킨다", en: "Pressing the skill button again cancels the ongoing effect early." },
-  RECAST_DETONATE:   { ko: "스킬 버튼을 다시 눌러 진행 중이던 효과를 즉시 발동시킨다", en: "Pressing the skill button again immediately detonates the ongoing effect." },
+  RECAST_TRIGGER:    { ko: "스킬 버튼을 다시 눌러 진행 중이던 효과를 즉시 발동시킨다", en: "Pressing the skill button again immediately triggers the ongoing effect." },
   RECAST_REPOSITION: { ko: "스킬 버튼을 다시 눌러 위치를 맞바꾸거나 원래 있던 위치로 되돌아간다", en: "Pressing the skill button again swaps positions or returns to the original location." },
   RECHARGE:         { ko: "스킬을 여러 개 충전해두고 사용할 수 있음\n최대 충전이 아니면 쿨타임이 돔.", en: "Multiple charges of the skill can be stored and used\nCooldown applies if not at maximum charges." },
   STACKING:         { ko: "조건을 충족할 때마다 \n 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced \n each time the conditions are met" },

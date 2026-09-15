@@ -193,7 +193,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SKILL_STEERABLE:   "indigo",
   SKILL_RECAST:  "indigo",
   RECAST_CANCEL:     "indigo",
-  RECAST_DETONATE:   "indigo",
+  RECAST_TRIGGER:    "indigo",
   RECAST_REPOSITION: "indigo",
   RECHARGE:      "indigo",
   STACKING:      "indigo",

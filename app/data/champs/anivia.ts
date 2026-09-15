@@ -22,7 +22,7 @@ const anivia: ChampData = {
     P: ["COOLDOWN", "SEPARATOR", "TRANSFORM", "REVIVE", "AR_MR_UP"],
 
     Q: { phases: [
-      { label: { ko: "Q1", en: "Q1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "SLOW", "SEPARATOR", "MARK", "SEPARATOR_NEWLINE", "SEPARATOR", "SKILL_RECAST", "RECAST_DETONATE"] },
+      { label: { ko: "Q1", en: "Q1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "SLOW", "SEPARATOR", "MARK", "SEPARATOR_NEWLINE", "SEPARATOR", "SKILL_RECAST", "RECAST_TRIGGER"] },
       { label: { ko: "Q2 폭발", en: "Q2 Detonate"  }, tags: ["DMG_MAGIC", "AOE", "SLOW", "STUN", "SEPARATOR", "MARK"] },
     ] },
 
@@ -43,9 +43,10 @@ const anivia: ChampData = {
       note1: {
 
         ko: [
-          "P는 체력이 0이되면 얼음알로 [[TRANSFORM]] 되어 [[REVIVE]]. \n 하늘에서 내려오는 빛이 알에 닿으면 \n 다시 애니비아로 [[TRANSFORM]]. \n \n",
+          "P는 체력이 0이되면 \n 체력이 가득 차고 얼음 알로 [[TRANSFORM]]. \n 하늘에서 내려오는 빛이 알에 닿으면 \n 다시 애니비아로 [[REVIVE]]([[TRANSFORM]]). \n \n",
 
-          "Q는 얼음 구체 [[PROJECTILE]] 발사. \n 닿으면 [[DMG_MAGIC]], [[SLOW]], [[MARK]]. \n [[SKILL_RECAST]] 또는 최대 사거리 도달 시 폭발하여 \n 추가 [[DMG_MAGIC]], [[STUN]], [[MARK]]와 [[SLOW]] [[DURATION_RESET]]. \n \n",
+          "Q1은 얼음 구체 [[PROJECTILE]] 발사. \n 닿으면 [[DMG_MAGIC]], [[SLOW]], [[MARK]].", 
+          "Q2는 [[SKILL_RECAST]]으로 [[DETONATE]] [[RECAST_TRIGGER]]. \n 또는 최대 사거리 도달 시 자동으로 [[DETONATE]]. \n 추가 [[DMG_MAGIC]], [[STUN]], [[MARK]]과 [[SLOW]] [[DURATION_RESET]]. \n \n",
 
           "W([[TERRAIN]])는 가로로 긴 얼음 벽 생성. \n \n",
 
@@ -56,9 +57,10 @@ const anivia: ChampData = {
         ],
 
         en: [
-          "P [[TRANSFORM]]s Anivia into an ice Egg and [[REVIVE]]s when her health hits 0. \n When the descending light touches the Egg, \n she [[TRANSFORM]]s back into Anivia. \n \n",
+          "When P's health hits 0, \n it fills back up and [[TRANSFORM]]s into an ice Egg. \n When light descending from the sky touches the Egg, \n she [[REVIVE]]s ([[TRANSFORM]]s) back into Anivia. \n \n",
 
-          "Q fires a [[PROJECTILE]] orb of ice. \n On hit, deals [[DMG_MAGIC]], [[SLOW]], and [[MARK]]. \n [[SKILL_RECAST]] or reaching max range detonates it, \n dealing additional [[DMG_MAGIC]], [[STUN]], [[MARK]], and [[DURATION_RESET]]ing the [[SLOW]]. \n \n",
+          "Q fires a [[PROJECTILE]] orb of ice. \n On hit: [[DMG_MAGIC]], [[SLOW]], and [[MARK]].",
+          "[[RECAST_TRIGGER]]s a [[DETONATE]] via Q's [[SKILL_RECAST]]. \n Or automatically [[DETONATE]]s on reaching max range. \n Deals additional [[DMG_MAGIC]] and [[STUN]], plus [[MARK]] and [[DURATION_RESET]]ing the [[SLOW]]. \n \n",
 
           "W ([[TERRAIN]]) creates a long horizontal wall of ice. \n \n",
 

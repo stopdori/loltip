@@ -101,7 +101,7 @@ export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
 export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   {
     title: { ko: "1) 스킬 형태", en: "1) Skill Form" },
-    keys: ["SKILL_ACTIVE", "SKILL_TOGGLE", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SKILL_VECTOR", "SKILL_STEERABLE", "SKILL_RECAST", "RECAST_CANCEL", "RECAST_DETONATE", "RECAST_REPOSITION"],
+    keys: ["SKILL_ACTIVE", "SKILL_TOGGLE", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SKILL_VECTOR", "SKILL_STEERABLE", "SKILL_RECAST", "RECAST_CANCEL", "RECAST_TRIGGER", "RECAST_REPOSITION"],
   },
   {
     title: { ko: "2) 기타 (상태 / 자원)", en: "2) Misc (State / Resource)" },

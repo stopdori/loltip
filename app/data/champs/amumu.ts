@@ -48,7 +48,7 @@ const amumu: ChampData = {
 
         "[[BA]], W, R로 챔피언을 공격하면 [[MARK]]. \n 효과는 [[DMG_MAGIC]]를 받으면 [[DMG_TRUE]] 10% 추가. \n 여러명 동시 적용 가능.",
 
-        "Q는 붕대 [[PROJECTILE]]를 발사. \n 적중하면 [[HOMING]] [[DASH]] 하여 [[DMG_MAGIC]], [[STUN]]. \n 최대 2회 [[RECHARGE]].",
+        "Q는 붕대 [[PROJECTILE]]를 발사. \n 적중하면 [[HOMING]] [[DASH]] 하여 [[DMG_MAGIC]], [[STUN]]. \n [[CC_BUFFER]]로 일부 CC 무시 가능. \n 최대 2회 [[RECHARGE]].",
 
         "W는 [[SKILL_TOGGLE]] 스킬로 \n 0.5초 마다 [[AOE]] [[DMG_MAGIC]].",
 
@@ -60,7 +60,7 @@ const amumu: ChampData = {
         en: [
         "Attacking a champion with [[BA]], W, or R applies [[MARK]]. \n Effect: when the target takes [[DMG_MAGIC]], it takes an additional 10% [[DMG_TRUE]]. \n Can be applied to multiple targets simultaneously.",
 
-        "Q fires a bandage [[PROJECTILE]]. \n On hit, [[HOMING]] [[DASH]]es to them, dealing [[DMG_MAGIC]] and [[STUN]]. \n Has 2 max [[RECHARGE]] charges.",
+        "Q fires a bandage [[PROJECTILE]]. \n On hit, [[HOMING]] [[DASH]]es to them, dealing [[DMG_MAGIC]] and [[STUN]]. \n [[CC_BUFFER]] lets it ignore some CC. \n Has 2 max [[RECHARGE]] charges.",
 
         "W is a [[SKILL_TOGGLE]] skill \n that deals [[AOE]] [[DMG_MAGIC]] every 0.5 seconds.",
 
