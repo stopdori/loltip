@@ -32,7 +32,7 @@ const lissandra: ChampData = {
       { label: { ko: "Q 파편", en: "Q Shatter" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "PROJECTILE", "PIERCE", "SLOW"] },
     ] },
 
-    W: ["DMG_MAGIC", "AOE", "ROOT"],
+    W: ["DMG_MAGIC", "AOE", "ROOT", "KNOCKDOWN"],
 
     E: { phases: [
       { label: { ko: "E1", en: "E1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "ZONE", "SKILL_RECAST"] },

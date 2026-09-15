@@ -297,6 +297,12 @@ function ToggleGroup({ children }: { children: ReactNode }) {
   );
 }
 
+// "시야" 탭 데이터가 아직 미완성이라 사이트 전체(모든 챔피언 공통)에서
+// 비활성화해둔 상태. 데이터가 준비되면 이 값만 true로 뒤집으면
+// 탭 클릭/스타일/"준비중" 툴팁이 전부 원래대로 복구된다(다른 곳은
+// 건드릴 필요 없음 — 아래 탭 버튼 렌더링에서 이 상수 하나만 참조).
+const VISION_TAB_ENABLED = false;
+
 const toggleBtnBase = "px-2 py-1 rounded-lg text-[14px] font-bold transition";
 // ChampSelectButton/UltCooldownBox와 동일한 "테두리+글로우" 강조 컨벤션
 // (배경 채우기 대신 ring + shadow로만 선택 상태를 표시)
@@ -838,7 +844,7 @@ return (
   <div className="space-y-2">
     {/* 🔹 탭 + 폼 토글 영역 */}
 <div className="flex flex-col gap-2.5">
-  {/* 1줄: 스킬 / 시야 / 기믹 */}
+  {/* 1줄: 스킬 / 기믹 / 시야 */}
   <div className="w-fit">
   <ToggleGroup>
     <button
@@ -850,17 +856,30 @@ return (
     </button>
     <button
       type="button"
-      onClick={() => setMode("vision")}
-      className={toggleBtnClass(mode === "vision")}
-    >
-      {lang === "ko" ? "시야" : "Vision"}
-    </button>
-    <button
-      type="button"
       onClick={() => setMode("gimmick")}
       className={toggleBtnClass(mode === "gimmick")}
     >
       {lang === "ko" ? "기믹" : "Gimmick"}
+    </button>
+    <button
+      type="button"
+      onClick={() => {
+        if (VISION_TAB_ENABLED) setMode("vision");
+      }}
+      className={`group relative ${
+        VISION_TAB_ENABLED ? toggleBtnClass(mode === "vision") : `${toggleBtnBase} ${toggleBtnDisabled}`
+      }`}
+    >
+      {lang === "ko" ? "시야" : "Vision"}
+      {!VISION_TAB_ENABLED && (
+        <span
+          className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 hidden -translate-x-1/2
+                     whitespace-nowrap rounded-md bg-black/90 px-2 py-1 text-[11px] font-semibold
+                     text-slate-100 ring-1 ring-white/10 shadow-lg group-hover:block"
+        >
+          {lang === "ko" ? "준비중" : "Coming Soon"}
+        </span>
+      )}
     </button>
   </ToggleGroup>
   </div>

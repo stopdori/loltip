@@ -406,31 +406,31 @@ GW: {
   /* 3) 이동불가 CC 종류 */
 
 IMMOBILIZING: {
-  ko: "이동 명령을 차단하는 CC. \n [[AIRBORNE]], [[KNOCKBACK]], [[GRAB]], [[SUSPENDING]] \n [[STUN]], [[ROOT]], [[SUPPRESS]], [[SLEEP]], [[STASIS]] \n [[FORCED_ACTION]], [[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]",
-  en: "CC that prevents movement commands. \n [[AIRBORNE]], [[KNOCKBACK]], [[GRAB]], [[SUSPENDING]] \n [[STUN]], [[ROOT]], [[SUPPRESS]], [[SLEEP]], [[STASIS]] \n [[FORCED_ACTION]], [[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]",
+  ko: "이동 명령을 차단하는 CC로 [[DASH]] 종류를 끊음. \n [[AIRBORNE]], [[KNOCKBACK]], [[GRAB]], [[SUSPENDING]] \n [[STUN]], [[ROOT]], [[SUPPRESS]], [[SLEEP]], [[STASIS]] \n [[FORCED_ACTION]], [[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]",
+  en: "CC that blocks movement commands, interrupting [[DASH]]-type actions. \n [[AIRBORNE]], [[KNOCKBACK]], [[GRAB]], [[SUSPENDING]] \n [[STUN]], [[ROOT]], [[SUPPRESS]], [[SLEEP]], [[STASIS]] \n [[FORCED_ACTION]], [[CHARM]], [[TAUNT]], [[FEAR]], [[BERSERK]]",
 },
 
 // 에어본 CC 종류
 
 AIRBORNE: {
-  ko: "공중에 띄움 \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
-  en: "Knocks the target airborne \n (cannot be cleansed)",
+  ko: "공중에 띄움. \n [[IMMOBILIZING]] 효과로 [[DASH]] 종류를 끊음. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
+  en: "Knocks the target airborne. \n Its [[IMMOBILIZING]] effect interrupts [[DASH]]-type actions. \n (Cannot be cleansed via [[CC_CLEANSE]])",
 },
 KNOCKBACK: {
-  ko: "[[AIRBORNE]] 시키고 상대를 밀어냄. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
-  en: "Knocks the target [[AIRBORNE]] and pushes them back \n (cannot be cleansed)",
+  ko: "[[AIRBORNE]] 시키고 상대를 밀어냄. \n [[IMMOBILIZING]] 효과로 [[DASH]] 종류를 끊음. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
+  en: "Knocks the target [[AIRBORNE]] and pushes them back. \n Its [[IMMOBILIZING]] effect interrupts [[DASH]]-type actions. \n (Cannot be cleansed via [[CC_CLEANSE]])",
 },
 KNOCKDOWN: {
   ko: "[[DASH]]이나 [[KNOCKBACK]], [[GRAB]] 상태를 강제로 끊고 그 자리에 착지시킴. \n [[AIRBORNE]], [[STASIS]]과 같음.",
   en: "Forcibly cancels [[DASH]], [[KNOCKBACK]], or [[GRAB]] and lands the target in place. \n Same as [[AIRBORNE]] and [[STASIS]].",
 },
 GRAB: {
-  ko: "[[AIRBORNE]] 시키고 상대를 잡아당김. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
-  en: "Knocks the target [[AIRBORNE]] and pulls them in \n (cannot be cleansed)",
+  ko: "[[AIRBORNE]] 시키고 상대를 잡아당김. \n [[IMMOBILIZING]] 효과로 [[DASH]] 종류를 끊음. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",
+  en: "Knocks the target [[AIRBORNE]] and pulls them in. \n Its [[IMMOBILIZING]] effect interrupts [[DASH]]-type actions. \n (Cannot be cleansed via [[CC_CLEANSE]])",
 },
 SUSPENDING: {
-  ko: "[[AIRBORNE]] 상태가 인정되는 [[STUN]]의 변형. \n 야스오 R, 사미라 P 적용 가능. \n ([[TENACITY]]의 영향을 받고, [[CC_CLEANSE]] 계열로 해제 가능)",
-  en: "A [[STUN]] variant that also counts as [[AIRBORNE]]. \n Applied by Yasuo R and Samira P. \n (Affected by [[TENACITY]], can be cleansed)",
+  ko: "[[AIRBORNE]] 상태가 인정되는 [[STUN]]의 변형. \n [[IMMOBILIZING]] 효과로 [[DASH]] 종류를 끊음. \n 야스오 R, 사미라 P 적용 가능. \n ([[TENACITY]]의 영향을 받고, [[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "A [[STUN]] variant that also counts as [[AIRBORNE]]. \n Its [[IMMOBILIZING]] effect interrupts [[DASH]]-type actions. \n Applied by Yasuo R and Samira P. \n (Affected by [[TENACITY]], can be cleansed via [[CC_CLEANSE]])",
 },
 
 //기타 이동불가 CC 종류

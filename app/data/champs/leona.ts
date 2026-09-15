@@ -32,7 +32,7 @@ const leona: ChampData = {
     ] },
 
     E: { phases: [
-      { label: { ko: "찌르기단계", en: "Stab" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "MARK", "CC_BUFFER"] },
+      { label: { ko: "찌르기단계", en: "Stab" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "MARK", "SEPARATOR_NEWLINE", "SEPARATOR", "ROOT", "KNOCKDOWN", "SEPARATOR", "CC_BUFFER"] },
       { label: { ko: "돌진단계",   en: "Dash" }, tags: ["ST_CONDITIONAL", "DASH"] },
     ] },
 

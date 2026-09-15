@@ -20,7 +20,7 @@ const morgana: ChampData = {
 
   gimmick: {
     P: ["ST_CONDITIONAL", "LIFESTEAL"],
-    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "ROOT"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "ROOT", "KNOCKDOWN"],
     W: ["DMG_MAGIC", "TIMING_CAST", "ZONE"],
     E: ["TARGETED", "SHIELD"],
     R: { phases: [

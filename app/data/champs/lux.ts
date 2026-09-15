@@ -21,7 +21,7 @@ const lux: ChampData = {
   gimmick: {
     P: ["MARK_INTERACT", "Q", "E", "R", "SEPARATOR", "ST_CONDITIONAL", "DMG_MAGIC"],
 
-    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE_ONCE", "ROOT", "SEPARATOR", "MARK"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE_ONCE", "ROOT", "KNOCKDOWN", "SEPARATOR", "MARK"],
 
     W: ["PROJECTILE", "SHIELD"],
 

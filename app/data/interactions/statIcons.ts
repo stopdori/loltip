@@ -72,6 +72,8 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   SUSPENDING: { icons: ["/cc-icons/icon-airborne.png"] },
   GRAB: { icons: ["/cc-icons/icon-airborne.png"] },
   KNOCKBACK: { icons: ["/cc-icons/icon-airborne.png"] },
+  // AIRBORNE 아이콘을 상하 반전한 정적 이미지 파일을 그대로 재사용
+  KNOCKDOWN: { icons: ["/cc-icons/icon-knockdown.png"] },
   BLIND: { icons: ["/cc-icons/icon-blind-nearsight.png"] },
   NEAR_SIGHT: { icons: ["/cc-icons/icon-blind-nearsight.png"] },
   CHARM: { icons: ["/cc-icons/icon-charm.png"] },

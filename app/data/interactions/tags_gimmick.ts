@@ -109,6 +109,7 @@ export type GimmickTagId =
   | "DEBUFF_B"
   | "DEBUFF_C"
   | "COOLDOWN"
+  | "ACTIVATION_CONDITION"
   | "ON_TARGET_CD"
   | "EMPOWERED"
   | "RECHARGE"
@@ -162,6 +163,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DEBUFF_B: { ko: "디버프B", en: "Debuff B" },
   DEBUFF_C: { ko: "디버프C", en: "Debuff C" },
   COOLDOWN:      { ko: "쿨타임",  en: "Cooldown"  },
+  ACTIVATION_CONDITION: { ko: "활성화", en: "Activation" },
   ON_TARGET_CD:  { ko: "대상별 쿨타임", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
@@ -296,6 +298,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DEBUFF_B: { ko: "적에게 불리한 효과 (B). \n 한 스킬/챔피언 안에 서로 다른 디버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A negative effect applied to enemies (B). \n Used to distinguish when a kit has 2+ distinct simultaneous debuffs." },
   DEBUFF_C: { ko: "적에게 불리한 효과 (C). \n 한 스킬/챔피언 안에 서로 다른 디버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A negative effect applied to enemies (C). \n Used to distinguish when a kit has 2+ distinct simultaneous debuffs." },
   COOLDOWN:         { ko: "스킬을 다시 사용할 준비를 하는 상태.", en: "The state of waiting before the skill can be used again." },
+  ACTIVATION_CONDITION: { ko: "특정 자원이나 조건이 충족돼야 시전할 수 있다.", en: "Can only be cast once a specific resource or condition is met." },
   ON_TARGET_CD:     { ko: "대상별 쿨타임. 동일한 스킬이라도 대상마다 쿨타임이 독립적으로 적용됨. \n 한 대상에게 사용해도 다른 대상에게는 바로 사용 가능.", en: "The skill's cooldown applies independently per target. \n Using it on one target does not affect its availability on others." },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
   SKILL_RECAST:     { ko: "일정 시간 이내에 스킬 버튼을 다시 누를 수 있음.", en: "The skill button can be pressed again within a set time window." },

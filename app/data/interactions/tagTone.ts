@@ -235,6 +235,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   BUFF:             "indigo",
   DEBUFF:           "fuchsia",
   COOLDOWN:         "indigo",
+  ACTIVATION_CONDITION: "indigo",
   ON_TARGET_CD:     "indigo",
   BUFF_INTERACT:    "white",
   DEBUFF_INTERACT:  "indigo",

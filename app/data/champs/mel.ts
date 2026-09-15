@@ -28,7 +28,7 @@ const mel: ChampData = {
 
     W: ["REFLECT", "DMG_MAGIC", "PROJECTILE", "SEPARATOR", "BUFF_STACK", "DEBUFF_STACK"],
 
-    E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SEPARATOR", "BUFF_STACK", "DEBUFF_STACK"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "ROOT", "KNOCKDOWN", "SEPARATOR", "BUFF_STACK", "DEBUFF_STACK"],
 
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["PASSIVE_BONUS"] },

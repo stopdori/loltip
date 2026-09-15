@@ -50,7 +50,7 @@ const ashe: ChampData = {
           "P는 [[BA]], W에 [[SLOW]]. \n [[CRIT]] 확률은 추가 [[DMG_PHYSICAL]]%로 전환되어 적용. \n 예) 치명타 확률 25% = 추가 [[DMG_PHYSICAL]] 25% \n [[CRIT]]가 발동하면 실제 데미지는 그대로지만 \n [[SLOW]] 효과는 두 배. \n \n",
 
           "Q의 [[PASSIVE_BONUS]]는 [[BA]] 공격 시 [[BUFF_STACK]] 1개 획득.", 
-          "Q는 [[BUFF_STACK]] 4개 보유 시 사용 가능. \n [[STACK_CONSUME]] 하여 [[AS_UP]]. \n [[BA]]가 연발 사격으로 변하고 \n 첫 공격은 6발, 이후 5발씩 화살([[PROJECTILE]]) 발사. \n 화살당 [[DMG_PHYSICAL]] 추가. \n \n",
+          "Q는 [[BUFF_STACK]] 4개 보유 시 [[ACTIVATION_CONDITION]]. \n [[STACK_CONSUME]] 하여 [[AS_UP]]. \n [[BA]]가 연발 사격으로 변하고 \n 첫 공격은 6발, 이후 5발씩 화살([[PROJECTILE]]) 발사. \n 화살당 [[DMG_PHYSICAL]] 추가. \n \n",
 
           "W는 여러 발의 화살을 부채꼴로 발사. \n [[DMG_PHYSICAL]]와 P의 [[SLOW]]. \n 화살의 데미지는 한 대상당 한 번. \n \n",
 
@@ -64,7 +64,7 @@ const ashe: ChampData = {
           "P's [[SLOW]] applies on [[BA]] and W. \n [[CRIT]] chance is instead converted into bonus [[DMG_PHYSICAL]]%. \n e.g. 25% crit chance = +25% bonus [[DMG_PHYSICAL]] \n When a hit would have [[CRIT]]ed, the actual damage stays the same, \n but the [[SLOW]] effect is doubled. \n \n",
 
           "Q's [[PASSIVE_BONUS]]: landing a [[BA]] grants 1 [[BUFF_STACK]].",
-          "Q becomes usable while holding 4 [[BUFF_STACK]]s. \n [[STACK_CONSUME]]s them for [[AS_UP]]. \n [[BA]]s turn into a volley of arrows ([[PROJECTILE]]) — \n the first volley fires 6 arrows, then 5 each after. \n Each arrow deals bonus [[DMG_PHYSICAL]]. \n \n",
+          "Q meets its [[ACTIVATION_CONDITION]] while holding 4 [[BUFF_STACK]]s. \n [[STACK_CONSUME]]s them for [[AS_UP]]. \n [[BA]]s turn into a volley of arrows ([[PROJECTILE]]) — \n the first volley fires 6 arrows, then 5 each after. \n Each arrow deals bonus [[DMG_PHYSICAL]]. \n \n",
 
           "W fires multiple arrows in a cone. \n Deals [[DMG_PHYSICAL]] and applies P's [[SLOW]]. \n Each target only takes damage from one arrow. \n \n",
 
@@ -108,8 +108,8 @@ const ashe: ChampData = {
       en: "Ashe's basic attacks and ability hits apply [[SLOW]] (Frost) to the target for 2 seconds (20~30%, [[LEVEL_SCALE]]). \n Her [[CRIT]] chance is always converted into bonus [[DMG_PHYSICAL]] of 0~100% on every basic attack instead of an actual critical strike. \n Whenever a hit would have [[CRIT]]ed, the [[SLOW]] is instead doubled to 40~60% ([[LEVEL_SCALE]]), decaying back to normal over 1 second.",
     },
     Q: {
-      ko: "평타를 적중시킬 때마다 4초간 지속되는 [[BUFF_STACK]] 1개를 획득. \n (최대 4개, 적중 시 [[DURATION_RESET]]) \n 4개가 모이면 이 스킬을 시전할 수 있다. \n \n 시전하면 [[STACK_CONSUME]]하여 6초간 [[EMPOWERED]] 상태가 되어 20/30/40/50/60%의 [[AS_UP]]를 얻고, 평타가 화살 5발을 동시에 발사하는 연사로 바뀐다(화살 1발당 22/23/24/25/26% [[AD_SCALE]]의 [[DMG_PHYSICAL]], 총합 110/115/120/125/130% [[AD_SCALE]] — 첫 연사는 화살이 1발 더 나가 총 132~156% [[AD_SCALE]]). \n 연사의 화살 각각에 [[LIFESTEAL]]이 개별 적용되지만, [[ON_HIT]] 효과는 연사당 한 번만 적용된다.",
-      en: "Landing a basic attack grants 1 stack of [[BUFF_STACK]] lasting 4 seconds. \n (Max 4 stacks, [[DURATION_RESET]] on each hit) \n Once 4 stacks are gathered, this skill can be cast. \n \n Casting it [[STACK_CONSUME]]s them, granting [[EMPOWERED]] for 6 seconds — gaining 20/30/40/50/60% [[AS_UP]] and turning her basic attacks into a volley of 5 arrows fired at once (22/23/24/25/26% [[AD_SCALE]] [[DMG_PHYSICAL]] per arrow, totaling 110/115/120/125/130% [[AD_SCALE]] — the first volley fires one extra arrow for a total of 132~156% [[AD_SCALE]]). \n [[LIFESTEAL]] applies individually to each arrow in the volley, but [[ON_HIT]] effects trigger only once per volley.",
+      ko: "평타를 적중시킬 때마다 4초간 지속되는 [[BUFF_STACK]] 1개를 획득. \n (최대 4개, 적중 시 [[DURATION_RESET]]) \n 4개가 모이면 이 스킬이 [[ACTIVATION_CONDITION]] 된다. \n \n 시전하면 [[STACK_CONSUME]]하여 6초간 [[EMPOWERED]] 상태가 되어 20/30/40/50/60%의 [[AS_UP]]를 얻고, 평타가 화살 5발을 동시에 발사하는 연사로 바뀐다(화살 1발당 22/23/24/25/26% [[AD_SCALE]]의 [[DMG_PHYSICAL]], 총합 110/115/120/125/130% [[AD_SCALE]] — 첫 연사는 화살이 1발 더 나가 총 132~156% [[AD_SCALE]]). \n 연사의 화살 각각에 [[LIFESTEAL]]이 개별 적용되지만, [[ON_HIT]] 효과는 연사당 한 번만 적용된다.",
+      en: "Landing a basic attack grants 1 stack of [[BUFF_STACK]] lasting 4 seconds. \n (Max 4 stacks, [[DURATION_RESET]] on each hit) \n Once 4 stacks are gathered, this skill meets its [[ACTIVATION_CONDITION]]. \n \n Casting it [[STACK_CONSUME]]s them, granting [[EMPOWERED]] for 6 seconds — gaining 20/30/40/50/60% [[AS_UP]] and turning her basic attacks into a volley of 5 arrows fired at once (22/23/24/25/26% [[AD_SCALE]] [[DMG_PHYSICAL]] per arrow, totaling 110/115/120/125/130% [[AD_SCALE]] — the first volley fires one extra arrow for a total of 132~156% [[AD_SCALE]]). \n [[LIFESTEAL]] applies individually to each arrow in the volley, but [[ON_HIT]] effects trigger only once per volley.",
     },
     W: {
       ko: "애쉬가 부채꼴 범위로 화살 7/8/9/10/11발을 발사해, 적중한 적에게 60/95/130/165/200(+100% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힌다(한 대상은 처음 맞은 화살의 피해만 적용). \n 적중한 적 챔피언에게는 패시브의 치명타 강화 [[SLOW]](40~60%)를 즉시 적용한다. \n \n 18/14.5/11/7.5/4초의 [[COOLDOWN]].",
