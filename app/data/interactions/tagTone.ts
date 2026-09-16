@@ -236,6 +236,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   DEBUFF:           "fuchsia",
   COOLDOWN:         "indigo",
   ACTIVATION_CONDITION: "indigo",
+  OUT_OF_COMBAT: "indigo",
   ON_TARGET_CD:     "indigo",
   BUFF_INTERACT:    "white",
   DEBUFF_INTERACT:  "indigo",
@@ -299,6 +300,14 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   TARGET_MISSING_HP_SCALE: "indigo",
   AD_SCALE: "red",
   AP_SCALE: "sky",
+  AS_SCALE: "sky",
+  MS_SCALE: "sky",
+  // HP_SCALE은 MAX_HP_UP(lime), MANA_SCALE/ENERGY_SCALE은 MANA_RESTORE/
+  // ENERGY_RESTORE(둘 다 sky, 자원 회복 계열로 이미 톤이 통일돼 있음)와
+  // 각각 동일한 색으로 짝지었다.
+  HP_SCALE: "lime",
+  MANA_SCALE: "sky",
+  ENERGY_SCALE: "sky",
   // LEVEL_SCALE은 짝지을 만한 원본 스탯 태그가 없어 기본값 indigo 사용.
   LEVEL_SCALE: "indigo",
   // 시전 행동

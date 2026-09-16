@@ -309,6 +309,7 @@ INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
 // 이 테이블을 조회하지 않고 계속 TAG_LABEL/GIMMICK_TAG_LABEL만 쓴다.
 export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: string }>> = {
   DURATION_RESET: { ko: "지속시간 초기화", en: "Duration Reset" },
+  DURATION_EXT: { ko: "지속시간 연장", en: "Duration Extension" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
@@ -580,7 +581,7 @@ EXECUTE: {
   en: "Instantly kills targets below a health threshold",
 },
 SHIELD_BREAK: {
-  ko: "상대의 보호막을 파괴. \n 스킬 데미지가 있다면 파괴후 데미지 적용.",
+  ko: "상대의 보호막을 파괴. \n 스킬 데미지가 있다면 파괴 후 데미지 적용.",
   en: "Breaks the target's shield. \n If the skill deals damage, \n it is applied after the shield is destroyed.",
 },
 SHIELD_PIERCE: {

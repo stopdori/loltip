@@ -28,7 +28,7 @@ const azir: ChampData = {
     
     W: { phases: [ 
       { label: { ko: "W 액티브", en: "W Active" }, tags: ["SUMMON", "RECHARGE"] },
-      { label: { ko: "W 모래 병사", en: "Arise" }, tags: ["DMG_MAGIC", "PIERCE", "ON_HIT"] }, 
+      { label: { ko: "W 모래 병사", en: "W Arise" }, tags: ["DMG_MAGIC", "PIERCE", "ON_HIT"] }, 
     ] }, 
 
     E: ["ST_CONDITIONAL", "DMG_MAGIC", "PIERCE_MINION", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "W", "CDR_RESET"], 

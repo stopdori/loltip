@@ -253,7 +253,7 @@ function SkillLabelWithTip({
           <span
             ref={tipRef}
             className={`block ${tooltipWidthClass}
-                       whitespace-pre-line break-normal text-left
+                       whitespace-pre-line break-keep text-left
                        leading-snug rounded-lg bg-black/95
                        px-3 py-2 text-[14px] font-semibold
                        text-slate-100 ring-1.5 ring-white/10 shadow-lg`}

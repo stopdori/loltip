@@ -33,6 +33,11 @@ export type GimmickTagId =
   | "TARGET_MISSING_HP_SCALE"
   | "AD_SCALE"
   | "AP_SCALE"
+  | "AS_SCALE"
+  | "MS_SCALE"
+  | "HP_SCALE"
+  | "MANA_SCALE"
+  | "ENERGY_SCALE"
   | "LEVEL_SCALE"
   // 스킬 형태
   | "SKILL_ACTIVE"
@@ -110,6 +115,7 @@ export type GimmickTagId =
   | "DEBUFF_C"
   | "COOLDOWN"
   | "ACTIVATION_CONDITION"
+  | "OUT_OF_COMBAT"
   | "ON_TARGET_CD"
   | "EMPOWERED"
   | "RECHARGE"
@@ -164,6 +170,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DEBUFF_C: { ko: "디버프C", en: "Debuff C" },
   COOLDOWN:      { ko: "쿨타임",  en: "Cooldown"  },
   ACTIVATION_CONDITION: { ko: "활성화", en: "Activation" },
+  OUT_OF_COMBAT: { ko: "비전투", en: "Out of Combat" },
   ON_TARGET_CD:  { ko: "대상별 쿨타임", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
@@ -270,6 +277,11 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   TARGET_MISSING_HP_SCALE: { ko: "대상의 잃은 체력", en: "Target's Missing HP" },
   AD_SCALE: { ko: "공격력", en: "Attack Damage" },
   AP_SCALE: { ko: "주문력", en: "Ability Power" },
+  AS_SCALE: { ko: "공격속도", en: "Attack Speed" },
+  MS_SCALE: { ko: "이동속도", en: "Move Speed" },
+  HP_SCALE: { ko: "최대체력", en: "Max HP" },
+  MANA_SCALE: { ko: "최대마나", en: "Max Mana" },
+  ENERGY_SCALE: { ko: "기력", en: "Energy" },
   LEVEL_SCALE: { ko: "레벨비례", en: "Base On Level" },
   // 시전 행동
   CAST_COMMIT:   { ko: "시전강행",  en: "Cast Commit"  },
@@ -299,6 +311,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DEBUFF_C: { ko: "적에게 불리한 효과 (C). \n 한 스킬/챔피언 안에 서로 다른 디버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A negative effect applied to enemies (C). \n Used to distinguish when a kit has 2+ distinct simultaneous debuffs." },
   COOLDOWN:         { ko: "스킬을 다시 사용할 준비를 하는 상태.", en: "The state of waiting before the skill can be used again." },
   ACTIVATION_CONDITION: { ko: "특정 자원이나 조건이 충족돼야 시전할 수 있다.", en: "Can only be cast once a specific resource or condition is met." },
+  OUT_OF_COMBAT: { ko: "마지막으로 피해를 입히거나 받은 지 일정 시간이 지나 전투 중이 아닐 때 발동/적용된다(정확한 시간은 스킬마다 다름). \n 아군 회복/버프는 전투로 치지 않는다.", en: "Triggers/applies once a set time has passed since last dealing or taking damage, i.e. out of combat (the exact time varies per skill). \n Healing/buffing allies does not count as combat." },
   ON_TARGET_CD:     { ko: "대상별 쿨타임. 동일한 스킬이라도 대상마다 쿨타임이 독립적으로 적용됨. \n 한 대상에게 사용해도 다른 대상에게는 바로 사용 가능.", en: "The skill's cooldown applies independently per target. \n Using it on one target does not affect its availability on others." },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
   SKILL_RECAST:     { ko: "일정 시간 이내에 스킬 버튼을 다시 누를 수 있음.", en: "The skill button can be pressed again within a set time window." },
@@ -400,9 +413,14 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   TARGET_MAXHP_SCALE:      { ko: "이 효과가 대상의 최대 체력에 비례한다", en: "This effect scales with the target's max Health" },
   TARGET_CURRENT_HP_SCALE: { ko: "이 효과가 대상의 현재(남은) 체력에 비례한다", en: "This effect scales with the target's current (remaining) Health" },
   TARGET_MISSING_HP_SCALE: { ko: "이 효과가 대상이 잃은 체력(최대 체력 - 현재 체력)에 비례한다", en: "This effect scales with the target's missing Health (max Health minus current Health)" },
-  AD_SCALE: { ko: "이 효과가 공격력(주로 추가 공격력)에 비례한다", en: "This effect scales with Attack Damage (usually bonus AD)" },
-  AP_SCALE: { ko: "이 효과가 주문력에 비례한다", en: "This effect scales with Ability Power" },
-  LEVEL_SCALE: { ko: "이 효과가 스킬 랭크가 아니라 챔피언 레벨에 비례한다", en: "This effect scales with champion level, not ability rank" },
+  AD_SCALE: { ko: "공격력에 비례한다", en: "Scales with Attack Damage" },
+  AP_SCALE: { ko: "주문력에 비례한다", en: "Scales with Ability Power" },
+  AS_SCALE: { ko: "공격속도에 비례한다", en: "Scales with Attack Speed" },
+  MS_SCALE: { ko: "이동속도에 비례한다", en: "Scales with Move Speed" },
+  HP_SCALE: { ko: "최대 체력에 비례한다.", en: "Scales with max Health." },
+  MANA_SCALE: { ko: "최대 마나에 비례한다", en: "Scales with max Mana" },
+  ENERGY_SCALE: { ko: "최대 기력에 비례한다", en: "Scales with max Energy" },
+  LEVEL_SCALE: { ko: "챔피언 레벨에 비례한다", en: "Scales with champion level" },
   // 시전 행동
   CAST_COMMIT:   { ko: "시전 중 CC에 걸려도 스킬이 끊기지 않고 유지됨.\nCC 효과는 시전 도중에도 정상 작동.", en: "The skill is not interrupted and persists even if hit by CC during the cast.\nCC effects function normally during the casting process." },
   CAST_CANCEL:   { ko: "시전 중 CC에 걸리면 스킬이 취소됨\n쿨타임만 소모됨", en: "The skill is canceled if hit by CC during the cast\nOnly the cooldown is consumed" },
