@@ -6,10 +6,7 @@ import { CHAMPIONS } from "@/app/data/champions";
 import MatchupChampClient from "./MatchupChampClient";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
 import { hasContent } from "@/app/data/matchups/_types";
-import { TAG_LABEL } from "@/app/data/interactions/tags";
-import type { TagId } from "@/app/data/interactions/tags";
-import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
-import type { GimmickTagId } from "@/app/data/interactions/tags_gimmick";
+import { parseTagTokens } from "@/app/data/interactions/parseTagTokens";
 
 type Lang = "ko" | "en";
 
@@ -18,14 +15,13 @@ type Props = {
   searchParams: Promise<{ first?: string; highlight?: string }>;
 };
 
+// SSR hidden div(구글용 콘텐츠)에서 [[TAG]] 토큰을 화면(TokenText.tsx →
+// MatchupSummaryBox.tsx)과 동일한 라벨로 치환한다. parseTagTokens는
+// NOTE_LABEL을 GIMMICK_TAG_LABEL/TAG_LABEL보다 우선 조회하므로(예:
+// DURATION_RESET이 NOTE_LABEL에선 "지속시간 초기화", TAG_LABEL 필에선
+// "지속초기"로 다름), 이 함수를 감싸서 화면과 우선순위를 완전히 일치시킨다.
 function stripTags(text: string, lang: Lang): string {
-  return text.replace(/\[\[([^\]]+)\]\]/g, (_, tagId) => {
-    return (
-      GIMMICK_TAG_LABEL[tagId as GimmickTagId]?.[lang] ??
-      TAG_LABEL[tagId as TagId]?.[lang] ??
-      tagId
-    );
-  });
+  return parseTagTokens(text, lang).map((seg) => seg.text).join("");
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
