@@ -4,6 +4,7 @@ import { CHAMPS } from "@/app/data/champs/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import { CHAMP_FORMS } from "@/app/data/interactions/forms";
+import { parseTagTokens } from "@/app/data/interactions/parseTagTokens";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Fragment } from "react";
 
@@ -82,6 +83,16 @@ function buildSkillFaqJsonLd(champName: string, champId: string, skills: ChampSk
 
 type Lang = "ko" | "en";
 
+// SSR hidden div(구글용 콘텐츠)에서 [[TAG]] 토큰을 화면(TokenText.tsx)과
+// 동일한 라벨로 치환한다. parseTagTokens는 NOTE_LABEL을 GIMMICK_TAG_LABEL/
+// TAG_LABEL보다 우선 조회하므로(예: DURATION_RESET이 노트 문장에선 "지속시간
+// 초기화", pill에선 "지속초기"로 다름), matchup 페이지의 stripTags()를 그대로
+// 재사용하지 않고 이 함수를 감싼다 — 그쪽은 NOTE_LABEL을 조회하지 않아서
+// 화면과 다른(축약된) 문구가 나가는 회귀가 생긴다.
+function stripTags(text: string, lang: Lang): string {
+  return parseTagTokens(text, lang).map((seg) => seg.text).join("");
+}
+
 type Props = {
   params: Promise<{ locale: string; id: string }>;
   searchParams: Promise<{ side?: string }>;
@@ -148,15 +159,20 @@ export default async function Page(props: Props) {
   const champInfo = CHAMPIONS.find(c => c.id === champId);
   if (!champInfo) notFound();
 
-  const notes = (() => {
+  // 화면(SkillTagsPanel.tsx)의 "대충 한타 운용법/스킬 요약/TMI" 3개 섹션
+  // 구조를 그대로 SSR에 반영한다 — 절삭 없이 섹션별 전체 항목 포함.
+  const noteSections: { title: string; items: string[] }[] = (() => {
     if (!champData.notes) return [];
-    if ('ko' in champData.notes) return (champData.notes as { ko: string[]; en: string[] })[lang] ?? [];
+    if ('ko' in champData.notes) {
+      const items = (champData.notes as { ko: string[]; en: string[] })[lang] ?? [];
+      return items.length > 0 ? [{ title: lang === "ko" ? "노트" : "Notes", items }] : [];
+    }
     const cn = champData.notes;
     return [
-      ...(cn.skill?.note3?.[lang] ?? []),
-      ...(cn.skill?.note1?.[lang] ?? []),
-      ...(cn.skill?.note2?.[lang] ?? []),
-    ];
+      { title: lang === "ko" ? "대충 한타 운용법" : "Rough Teamfight Guide", items: cn.skill?.note3?.[lang] ?? [] },
+      { title: lang === "ko" ? "스킬 요약" : "Overview", items: cn.skill?.note1?.[lang] ?? [] },
+      { title: lang === "ko" ? "TMI" : "TMI", items: cn.skill?.note2?.[lang] ?? [] },
+    ].filter((section) => section.items.length > 0);
   })();
 
   const side = searchParams?.side ?? "my";
@@ -244,12 +260,16 @@ export default async function Page(props: Props) {
           </div>
         ))}
 
-        <h2>Champion Notes</h2>
-        <ul>
-          {notes.slice(0, 3).map((note, i) => (
-            <li key={i}>{note}</li>
-          ))}
-        </ul>
+        {noteSections.map(({ title, items }) => (
+          <div key={title}>
+            <h2>{title}</h2>
+            <ul>
+              {items.map((note, i) => (
+                <li key={i}>{stripTags(note, lang)}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
       <ChampClient
