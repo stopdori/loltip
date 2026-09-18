@@ -9,8 +9,10 @@ export const ahri_galio: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 갈리오 E의 [[DASH]] / W, R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Galio's E [[DASH]] and W and R [[SKILL_CHANNEL]]."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 갈리오 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "E의 [[CHARM]]으로 갈리오 W의 [[SKILL_CHARGED]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]  \n 단, 갈리오 W는 중단될 때 시전."],
+      en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Galio's E [[DASH]]. [[EXIST]]",
+        "E [[CHARM]] can interrupt Galio's W [[SKILL_CHARGED]] and R [[SKILL_CHANNEL]]. [[EXIST]] \n However, Galio's W still fires when interrupted."],
     },
     galio: {
       ko: ["갈리오 E(후진단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]] 효과를 잠시 무시하고 다음 단계를 시전할 수 있음. \n 단, 갈리오 E(돌진단계)가 종료 후 [[CHARM]]은 남아있음.",

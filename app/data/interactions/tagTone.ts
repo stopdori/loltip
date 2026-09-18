@@ -210,11 +210,10 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ST_DELAYED:     "indigo",
   ST_CONDITIONAL: "indigo",
   ON_TAKEDOWN: "indigo",
-  // 이진 상태 표시 — EXISTS는 체력/힐/부활 계열과 같은 lime(초록) 재사용.
-  // NOT_EXISTS는 팔레트에 "slate" Tone이 따로 없어서, 실제로 slate 색상을
-  // 쓰는 "default" 톤(bg-slate-700/70 text-slate-100 ring-slate-600)을 재사용.
-  EXISTS: "lime",
-  NOT_EXISTS: "default",
+  // 이진 상태 표시 — EXIST는 MS_UP과 같은 sky(이동/존재) 재사용.
+  // NOT_EXIST는 red(bg-red-900/60, 어두운 검붉은색) 재사용 — "불가능/부재" 느낌.
+  EXIST: "sky",
+  NOT_EXIST: "red",
   // 중단 여부
   CANCELLABLE: "indigo",
   LOCKED:      "indigo",
@@ -316,10 +315,10 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CAST_MOVE:     "indigo",
   CAST_IMMOBILE: "indigo",
   CC_BUFFER:    "zinc",
-  // 이동
-  MOBILITY: "zinc",
-  DASH:     "zinc",
-  BLINK:    "zinc",
+  // 이동 — MS_UP과 같은 sky 재사용
+  MOBILITY: "sky",
+  DASH:     "sky",
+  BLINK:    "sky",
 } satisfies Partial<Record<TagId | GimmickTagId, Tone>>;
 
 // ✅ tag가 등록 안 되어있으면 default

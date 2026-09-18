@@ -143,8 +143,8 @@ export type GimmickTagId =
   | "ST_CONDITIONAL"
   | "ON_TAKEDOWN"
   // 이진 상태 표시
-  | "EXISTS"
-  | "NOT_EXISTS"
+  | "EXIST"
+  | "NOT_EXIST"
 
   | "SEPARATOR"
   | "SEPARATOR_NEWLINE"
@@ -202,8 +202,8 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ST_CONDITIONAL: { ko: "조건발동", en: "Conditional" },
   ON_TAKEDOWN: { ko: "처치 관여", en: "On Takedown" },
   // 이진 상태 표시
-  EXISTS: { ko: "있음", en: "Exists" },
-  NOT_EXISTS: { ko: "없음", en: "None" },
+  EXIST: { ko: "O", en: "O" },
+  NOT_EXIST: { ko: "X", en: "X" },
   // 중단 여부
   CANCELLABLE: { ko: "취소가능", en: "Cancellable" },
   LOCKED:      { ko: "취소불가", en: "Locked"      },
@@ -341,8 +341,8 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   ST_CONDITIONAL: { ko: "특정 조건이 충족될 때 발동됨", en: "Activates only when a specific condition is met" },
   ON_TAKEDOWN: { ko: "적 챔피언 처치 또는 어시스트에 관여하면 \n 발동하거나 추가 효과.", en: "Triggers or grants a bonus effect on a champion takedown (kill or assist)" },
   // 이진 상태 표시
-  EXISTS: { ko: "해당 속성/효과가 있음을 나타낸다", en: "Indicates that the property/effect is present" },
-  NOT_EXISTS: { ko: "해당 속성/효과가 없음을 나타낸다", en: "Indicates that the property/effect is absent" },
+  EXIST: { ko: "", en: "" },
+  NOT_EXIST: { ko: "", en: "" },
   CANCELLABLE:      { ko: "시전 중 직접 중단할 수 있음", en: "Can be manually cancelled during cast" },
   LOCKED:           { ko: "시전 중 직접 중단할 수 없음\n끝까지 완료되어야 함", en: "Cannot be manually cancelled\nMust complete fully" },
   TARGETED:         { ko: "대상을 직접 지정하여 시전하는 스킬\n단, 무적/타겟불가 상태에는 적중하지 않음", en: "Targets an enemy directly\nDoes not hit invulnerable or untargetable units" },

@@ -9,8 +9,10 @@ export const ahri_zac: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 자크 E의 [[SKILL_CHANNEL]], [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Zac's E [[SKILL_CHANNEL]] and [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 자크 E의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]", 
+        "E([[CHARM]])의 [[KNOCKDOWN]]으로 자크 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E [[CHARM]] can interrupt Zac's E [[SKILL_CHANNEL]]. [[EXIST]]",
+        "E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Zac's E [[DASH]]. [[EXIST]]"],
     },
     zac: {
       ko: [],

@@ -9,8 +9,8 @@ export const ahri_hecarim: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [],
-      en: [],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 헤카림 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Hecarim's E [[DASH]]. [[EXIST]]"],
     },
     hecarim: {
       ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]로 아리 R의 [[DASH]]을 끊을 수 있음.",

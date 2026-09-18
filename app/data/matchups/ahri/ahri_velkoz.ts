@@ -9,8 +9,8 @@ export const ahri_velkoz: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 벨코즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Vel'Koz's R [[SKILL_CHANNEL]]."],
+      ko: ["E의 [[CHARM]]으로 벨코즈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E [[CHARM]] can interrupt Vel'Koz's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     velkoz: {
       ko: [],

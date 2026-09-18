@@ -9,8 +9,8 @@ export const ahri_briar: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Briar's Q and W [[DASH]]."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E [[CHARM]] can interrupt Briar's Q and W [[DASH]]. [[EXIST]]"],
     },
     briar: {
       ko: ["브라이어 Q의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",

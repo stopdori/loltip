@@ -9,8 +9,8 @@ export const ahri_urgot: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 우르곳 E(돌진단계)의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Urgot's E (dash phase) [[DASH]]."],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 우르곳 E(돌진 단계)의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Urgot's E (dash phase) [[DASH]]. [[EXIST]]"],
     },
     urgot: {
       ko: ["우르곳 E(준비단계)의 [[CC_BUFFER]]로 아리 E의 [[CHARM]] 효과를 잠시 무시하고 다음 단계를 시전할 수 있음. \n 단, 우르곳 E(돌진단계)가 종료 후 [[CHARM]]은 남아있음."],

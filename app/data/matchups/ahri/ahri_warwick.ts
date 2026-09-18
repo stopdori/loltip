@@ -9,8 +9,8 @@ export const ahri_warwick: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 워윅 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Warwick's R [[SKILL_CHANNEL]]."],
+      ko: ["E의 [[CHARM]]으로 워윅 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E [[CHARM]] can interrupt Warwick's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     warwick: {
       ko: [],

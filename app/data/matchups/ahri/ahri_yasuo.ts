@@ -9,7 +9,7 @@ export const ahri_yasuo: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [],
+      ko: ["E의 [[CHARM]]으로 야스오 E의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: [],
     },
     yasuo: {

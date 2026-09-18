@@ -9,8 +9,8 @@ export const ahri_ksante: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 크산테 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt K'Sante's E [[DASH]]."],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 크산테 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt K'Sante's E [[DASH]]. [[EXIST]]"],
     },
     ksante: {
       ko: ["크산테 Q3의 [[AIRBORNE]], R의 [[SUPPRESS]]로 아리 R의 [[DASH]]을 끊을 수 있음.",

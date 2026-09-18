@@ -9,8 +9,8 @@ export const ahri_ekko: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 에코 E(구르기)의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Ekko's E (roll) [[DASH]]."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 에코 E(구르기)의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Ekko's E (roll) [[DASH]]. [[EXIST]]"],
     },
     ekko: {
       ko: ["에코 W의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 

@@ -9,8 +9,8 @@ export const ahri_bard: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 바드 E(터널)의 [[DASH]]를 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Bard's E (tunnel) [[DASH]].\nBard is immediately ejected to the nearest ground next to the wall."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 바드 E(벽이동)의 [[DASH]]를 끊을 수 있음. [[EXIST]] \n 단, 즉시 벽에서 가장 가까운 땅으로 이동."],
+      en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Bard's E (wall traversal) [[DASH]]. [[EXIST]] \n However, Bard is immediately ejected to the nearest ground next to the wall."],
     },
     bard: {
       ko: ["바드 Q의 [[STUN]]로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 

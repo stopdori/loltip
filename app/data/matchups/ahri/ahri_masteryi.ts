@@ -9,7 +9,7 @@ export const ahri_masteryi: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 마이 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+      ko: ["E의 [[CHARM]]으로 마스터 이 W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: ["E [[CHARM]] can interrupt Master Yi's W [[SKILL_CHANNEL]]."],
     },
     masteryi: {

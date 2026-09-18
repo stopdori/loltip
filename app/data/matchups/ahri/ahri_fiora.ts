@@ -9,8 +9,8 @@ export const ahri_fiora: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 피오라 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Fiora's Q [[DASH]]."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 피오라 Q의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Fiora's Q [[DASH]]. [[EXIST]]"],
     },
     fiora: {
       ko: ["피오라 W(응수)의 [[CC_IMMUNE]]으로 아리 E의 [[CHARM]]을 무시하고 [[STUN]]을 걸 수 있음."],

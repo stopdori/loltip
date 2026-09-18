@@ -9,8 +9,10 @@ export const ahri_pyke: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 파이크 Q의 [[SKILL_CHARGED]], E의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Pyke's Q [[SKILL_CHARGED]] and E [[DASH]]."],
+      ko: ["E의 [[CHARM]]으로 파이크 Q의 [[SKILL_CHARGED]]을 끊을 수 있음. [[EXIST]]", 
+        "E([[CHARM]])의 [[KNOCKDOWN]]으로 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E [[CHARM]] can interrupt Pyke's Q [[SKILL_CHARGED]]. [[EXIST]]",
+        "E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Pyke's E [[DASH]]. [[EXIST]]"],
     },
     pyke: {
       ko: [],

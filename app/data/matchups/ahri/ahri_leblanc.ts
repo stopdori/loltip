@@ -9,8 +9,8 @@ export const ahri_leblanc: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 르블랑 W의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt LeBlanc's W [[DASH]]."],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 르블랑 W의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt LeBlanc's W [[DASH]]. [[EXIST]]"],
     },
     leblanc: {
       ko: ["르블랑 E의 [[ROOT]]로 아리 R의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]은 남아있음."],

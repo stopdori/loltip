@@ -9,8 +9,8 @@ export const ahri_xinzhao: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 신짜오 E의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Xin Zhao's E [[DASH]]."],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 신짜오 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Xin Zhao's E [[DASH]]. [[EXIST]]"],
     },
     xinzhao: {
       ko: [],

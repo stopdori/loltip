@@ -145,6 +145,6 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "12) 이진 상태 표시", en: "12) Binary State" },
-    keys: ["EXISTS", "NOT_EXISTS"],
+    keys: ["EXIST", "NOT_EXIST"],
   },
 ];

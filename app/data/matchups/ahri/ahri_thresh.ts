@@ -9,8 +9,8 @@ export const ahri_thresh: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: [],
-      en: [],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 쓰레쉬 Q2, W의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Thresh's Q2 and W [[DASH]]. [[EXIST]]"],
     },
     thresh: {
       ko: [],

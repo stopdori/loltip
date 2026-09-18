@@ -9,9 +9,9 @@ export const ahri_caitlyn: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 케이틀린 E의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음.", 
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 케이틀린 E의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]",
         "R은 케이틀린 W의 [[ROOT]]에 걸리면 사용할 수 없음."],
-      en: ["E [[CHARM]] can interrupt Caitlyn's E (net) [[DASH]] and R [[SKILL_CHANNEL]].",
+      en: ["E [[CHARM]] can interrupt Caitlyn's E (net) [[DASH]] and R [[SKILL_CHANNEL]]. [[EXIST]]",
         "R cannot be used while [[ROOT]]ed by Caitlyn's W."],
     },
     caitlyn: {

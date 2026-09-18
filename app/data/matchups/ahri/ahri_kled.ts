@@ -9,8 +9,8 @@ export const ahri_kled: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 클레드 승마폼 E, 낙마폼 Q의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Kled's mounted form E and dismounted form Q [[DASH]]."],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 클레드 승마폼 E, 낙마폼 Q의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Kled's mounted form E and dismounted form Q [[DASH]]. [[EXIST]]"],
     },
     kled: {
       ko: ["클레드 Q의 [[GRAB]]으로 아리 R의 [[DASH]]을 끊을 수 있음."],

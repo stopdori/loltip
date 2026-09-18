@@ -9,8 +9,8 @@ export const ahri_illaoi: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 일라오이 W의 [[DASH]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Illaoi's W [[DASH]]."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 일라오이 W의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Illaoi's W [[DASH]]. [[EXIST]]"],
     },
     illaoi: {
       ko: ["일라오이 R의 [[UNSTOPPABLE]]로 아리 E의 [[CHARM]]을 무시할 수 있음. \n 단, [[CHARM]]은 남아있음."],

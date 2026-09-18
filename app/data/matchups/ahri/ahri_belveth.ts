@@ -9,8 +9,10 @@ export const ahri_belveth: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 벨베스 Q의 [[DASH]], W의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Bel'Veth's Q [[DASH]] and W [[SKILL_CHANNEL]]."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 벨베스 Q의 [[DASH]]를 끊을 수 있음. [[EXIST]]",
+        "E의 [[CHARM]]으로 벨베스 E의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Bel'Veth's Q [[DASH]]. [[EXIST]]",
+        "E [[CHARM]] can interrupt Bel'Veth's E [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     belveth: {
       ko: ["벨베스 W의 [[AIRBORNE]]으로 아리 E의 [[CHARM]]을 끊을 수 있음.",

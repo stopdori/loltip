@@ -9,8 +9,8 @@ export const ahri_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
-      en: ["Ahri's E [[CHARM]] can interrupt Camille's E1 and E2 [[DASH]]."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Camille's E1 and E2 [[DASH]]. [[EXIST]]"],
     },
     camille: {
       ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 아리 E의 [[CHARM]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음. \n 단, [[CHARM]]이 E1( 대기 단계 )까지 남아있다면 카밀 E 해제.",

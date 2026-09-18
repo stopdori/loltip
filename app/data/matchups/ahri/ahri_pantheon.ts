@@ -9,8 +9,10 @@ export const ahri_pantheon: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 판테온 W의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["E [[CHARM]] can interrupt Pantheon's W [[DASH]] and R [[SKILL_CHANNEL]]."],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 판테온 W의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "E의 [[CHARM]]으로 판테온 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Pantheon's W [[DASH]]. [[EXIST]]",
+        "E [[CHARM]] can interrupt Pantheon's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     pantheon: {
       ko: [],
