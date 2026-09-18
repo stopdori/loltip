@@ -15,8 +15,8 @@ export const alistar_evelynn: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Evelynn's [[EMPOWERED]] E [[DASH]].", "E [[STUN]] cannot interrupt Evelynn's E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Evelynn's W [[CHARM]]."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 알리스타 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Alistar's W [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

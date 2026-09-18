@@ -21,8 +21,8 @@ export const briar_evelynn: MatchupSummary = {
         "Briar's R2 [[HOMING]] [[DASH]] can follow Evelynn's [[EMPOWERED]] E [[DASH]] and R [[UNTARGETABLE]] [[BLINK]]. \n However, [[HOMING]] ends upon colliding with Evelynn."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Briar's Q and W [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

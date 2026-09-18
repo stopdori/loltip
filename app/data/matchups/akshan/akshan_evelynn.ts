@@ -13,8 +13,8 @@ export const akshan_evelynn: MatchupSummary = {
       en: ["R [[TRUE_SIGHT]] can reveal Evelynn's P [[CAMOUFLAGE]]."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 아크샨 E, R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["W [[CHARM]] can interrupt Akshan's E and R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
   },
 };

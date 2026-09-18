@@ -9,8 +9,8 @@ export const evelynn_warwick: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 워윅 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]] \n 단, 워윅 W는 중단될 때 시전."],
+      en: ["W [[CHARM]] can interrupt Warwick's R [[SKILL_CHANNEL]]. [[EXIST]] \n However, Warwick's W still fires when interrupted."],
     },
     warwick: {
       ko: [],

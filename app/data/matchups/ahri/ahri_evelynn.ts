@@ -13,7 +13,7 @@ export const ahri_evelynn: MatchupSummary = {
       en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Evelynn's [[EMPOWERED]] E [[DASH]]. [[EXIST]]"],
     },
     evelynn: {
-      ko: ["이블린 W의 [[CHARM]]으로 아리 R의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]]."],
+      ko: ["이블린 W의 [[CHARM]]으로 아리 R의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]]. \n 단, [[CHARM]]은 남아있음."],
       en: ["Evelynn's W [[CHARM]] cannot interrupt Ahri's R [[DASH]]. [[NOT_EXIST]]."],
     },
   },

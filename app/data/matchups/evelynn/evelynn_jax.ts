@@ -9,8 +9,8 @@ export const evelynn_jax: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 잭스 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Jax's Q [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
     jax: {
       ko: [],

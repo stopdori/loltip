@@ -15,8 +15,8 @@ export const amumu_evelynn: MatchupSummary = {
       en: ["Q [[STUN]] cannot interrupt Evelynn's E [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Evelynn's E [[DASH]].", "R [[STUN]] can interrupt Evelynn's E [[DASH]].", "Q [[CC_BUFFER]] can ignore Evelynn's W [[CHARM]] and continue [[DASH]]. \n However, the [[CHARM]] still applies."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 아무무 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Amumu's Q [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

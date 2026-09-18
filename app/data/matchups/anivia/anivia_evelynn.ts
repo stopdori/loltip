@@ -14,8 +14,8 @@ export const anivia_evelynn: MatchupSummary = {
       en: ["Q [[STUN]] cannot interrupt Evelynn's E [[DASH]]. \n However, [[STUN]] still applies.", "W [[TERRAIN]] [[AIRBORNE]] can interrupt Evelynn's E [[DASH]]."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["W [[CHARM]] can interrupt Anivia's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
   },
 };

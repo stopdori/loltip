@@ -13,8 +13,8 @@ export const diana_evelynn: MatchupSummary = {
       en: ["R [[GRAB]] can interrupt Evelynn's [[EMPOWERED]] E [[DASH]]."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 다이애나 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Diana's E [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const evelynn_mordekaiser: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: ["이블린 R의 [[UNTARGETABLE]]로 모데카이저 R을 취소 시킬 수 있음.\n단, 모데카이저 R이 소모되지 않음."],
-      en: [""],
+      ko: ["이블린 R의 [[UNTARGETABLE]]로 모데카이저 R을 취소 시킬 수 있음. \n 단, 모데카이저 R은 [[COOLDOWN]]이 소모되지 않음."],
+      en: ["Evelynn's R [[UNTARGETABLE]] can cancel Mordekaiser's R. \n However, Mordekaiser's R [[COOLDOWN]] is not consumed."],
     },
     mordekaiser: {
       ko: [],

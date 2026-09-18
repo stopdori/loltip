@@ -9,8 +9,8 @@ export const evelynn_graves: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 그레이브즈 E, R의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Graves' E and R [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
     graves: {
       ko: [],

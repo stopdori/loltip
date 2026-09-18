@@ -13,8 +13,8 @@ export const aatrox_evelynn: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W's [[GRAB]] effect can interrupt Evelynn's E [[DASH]]."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 아트록스 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[CHARM]] cannot interrupt Aatrox's E [[DASH]]. [[NOT_EXIST]]"],
     },
   },
 };

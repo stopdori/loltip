@@ -13,8 +13,8 @@ export const braum_evelynn: MatchupSummary = {
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] against Evelynn's basic attacks, Q (first hit), E, and R"],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 브라움 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Braum's W [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

@@ -9,8 +9,8 @@ export const evelynn_leblanc: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 르블랑 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt LeBlanc's W [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
     leblanc: {
       ko: [],

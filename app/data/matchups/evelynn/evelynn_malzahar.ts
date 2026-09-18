@@ -9,8 +9,8 @@ export const evelynn_malzahar: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 말자하 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["W [[CHARM]] can interrupt Malzahar's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     malzahar: {
       ko: [],

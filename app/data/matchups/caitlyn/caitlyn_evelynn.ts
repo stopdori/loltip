@@ -13,8 +13,8 @@ export const caitlyn_evelynn: MatchupSummary = {
       en: ["Caitlyn's W ([[TRAP]]) [[ROOT]] cannot interrupt Evelynn's [[EMPOWERED]] E [[DASH]]. \n However, the [[ROOT]] and headshot still apply."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 케이틀린 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Caitlyn's E [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

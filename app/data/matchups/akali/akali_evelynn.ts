@@ -15,8 +15,8 @@ export const akali_evelynn: MatchupSummary = {
         "E1 [[TRUE_SIGHT]] can reveal Evelynn's P [[CAMOUFLAGE]]."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음. \n 단, 아칼리 E2, R1, R2와 부딪히면 데미지는 유효."],
+      en: ["W [[CHARM]] cannot interrupt Akali's E1, E2, R1, and R2 [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies. \n However, colliding with Akali's E2, R1, or R2 still deals damage."],
     },
   },
 };

@@ -17,8 +17,8 @@ export const camille_evelynn: MatchupSummary = {
       "Camille's R [[UNTARGETABLE]] can dodge Evelynn's Q, E, and R."],
     },
     evelynn: {
-      ko: ["W의 [[CHARM]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
-      en: ["Evelynn's W [[CHARM]] can interrupt Camille's E1 and E2 [[DASH]]."],
+      ko: ["W의 [[CHARM]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[CHARM]] cannot interrupt Camille's E1 and E2 [[DASH]]. [[NOT_EXIST]]"],
     },
   },
 };

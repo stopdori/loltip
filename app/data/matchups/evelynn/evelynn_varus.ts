@@ -9,8 +9,8 @@ export const evelynn_varus: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 바루스 Q의 [[SKILL_CHARGED]]을 끊을 수 있음. [[EXIST]] \n 단, 바루스 Q는 중단될 때 시전."],
+      en: ["W [[CHARM]] can interrupt Varus's Q [[SKILL_CHARGED]]. [[EXIST]] \n However, Varus's Q still fires when interrupted."],
     },
     varus: {
       ko: [],

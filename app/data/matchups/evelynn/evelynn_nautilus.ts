@@ -9,8 +9,8 @@ export const evelynn_nautilus: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 노틸러스 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[CHARM]] cannot interrupt Nautilus's Q [[DASH]]. [[NOT_EXIST]]"],
     },
     nautilus: {
       ko: [],

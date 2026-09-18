@@ -9,8 +9,8 @@ export const evelynn_janna: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 잔나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["W [[CHARM]] can interrupt Janna's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     janna: {
       ko: ["Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]으로 이블린 [[EMPOWERED]] E의 [[DASH]]을 끊을 수 있음."],

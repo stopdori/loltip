@@ -14,8 +14,8 @@ export const ambessa_evelynn: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Evelynn's E [[DASH]].", "R [[UNSTOPPABLE]] can ignore Evelynn's W [[CHARM]]. \n However, the [[CHARM]] still applies after [[UNSTOPPABLE]] ends."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 암베사 P의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Ambessa's P [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

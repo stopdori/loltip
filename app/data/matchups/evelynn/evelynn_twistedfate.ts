@@ -9,8 +9,8 @@ export const evelynn_twistedfate: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 트위스티드 페이트 R2의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["W [[CHARM]] can interrupt Twisted Fate's R2 [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     twistedfate: {
       ko: [],

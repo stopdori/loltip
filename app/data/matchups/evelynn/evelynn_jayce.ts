@@ -9,8 +9,8 @@ export const evelynn_jayce: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[CHARM]]으로 제이스 해머폼 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["W [[CHARM]] cannot interrupt Jayce's hammer form Q [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
     jayce: {
       ko: [],

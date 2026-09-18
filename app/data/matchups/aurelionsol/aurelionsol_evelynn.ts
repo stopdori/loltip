@@ -15,8 +15,8 @@ export const aurelionsol_evelynn: MatchupSummary = {
         "R (Falling Star) [[AIRBORNE]] can interrupt Evelynn's [[EMPOWERED]] E [[DASH]]."],
     },
     evelynn: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[CHARM]]으로 아우렐리온 솔 Q, W(일반, 벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]] \n 단, 아우렐리온 솔 W(벽이동)는 즉시 벽에서 가장 가까운 땅으로 이동."],
+      en: ["W [[CHARM]] can interrupt Aurelion Sol's Q and W (normal, wall traversal) [[SKILL_CHANNEL]]. [[EXIST]] \n However, Aurelion Sol's W (wall traversal) is immediately ejected to the nearest ground next to the wall."],
     },
   },
 };
