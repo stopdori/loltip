@@ -6,7 +6,7 @@ import { CHAMPIONS } from "@/app/data/champions";
 import MatchupChampClient from "./MatchupChampClient";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
 import { hasContent } from "@/app/data/matchups/_types";
-import { parseTagTokens } from "@/app/data/interactions/parseTagTokens";
+import { stripTagTokens } from "@/app/utils/stripTagTokens";
 
 type Lang = "ko" | "en";
 
@@ -14,15 +14,6 @@ type Props = {
   params: Promise<{ locale: string; pair: string }>;
   searchParams: Promise<{ highlight?: string }>;
 };
-
-// SSR hidden div(구글용 콘텐츠)에서 [[TAG]] 토큰을 화면(TokenText.tsx →
-// MatchupSummaryBox.tsx)과 동일한 라벨로 치환한다. parseTagTokens는
-// NOTE_LABEL을 GIMMICK_TAG_LABEL/TAG_LABEL보다 우선 조회하므로(예:
-// DURATION_RESET이 NOTE_LABEL에선 "지속시간 초기화", TAG_LABEL 필에선
-// "지속초기"로 다름), 이 함수를 감싸서 화면과 우선순위를 완전히 일치시킨다.
-function stripTags(text: string, lang: Lang): string {
-  return parseTagTokens(text, lang).map((seg) => seg.text).join("");
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, pair } = await params;
@@ -156,7 +147,7 @@ export default async function Page({ params, searchParams }: Props) {
   // JSON-LD FAQPage (판정 세부사항)
   const faqEntities = highlights.flatMap(({ champName, items }) =>
     items.flatMap((text, i) => {
-      const stripped = stripTags(text, lang);
+      const stripped = stripTagTokens(text, lang);
       if (!stripped) return [];
       return [{
         "@type": "Question",
@@ -199,7 +190,7 @@ export default async function Page({ params, searchParams }: Props) {
             <h2>{champName} {lang === "ko" ? "판정" : "Interactions"}</h2>
             <ul>
               {items.map((text, i) => (
-                <li key={i}>{stripTags(text, lang)}</li>
+                <li key={i}>{stripTagTokens(text, lang)}</li>
               ))}
             </ul>
           </div>
