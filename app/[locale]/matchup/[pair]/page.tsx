@@ -12,7 +12,7 @@ type Lang = "ko" | "en";
 
 type Props = {
   params: Promise<{ locale: string; pair: string }>;
-  searchParams: Promise<{ first?: string; highlight?: string }>;
+  searchParams: Promise<{ highlight?: string }>;
 };
 
 // SSR hidden div(구글용 콘텐츠)에서 [[TAG]] 토큰을 화면(TokenText.tsx →
@@ -83,7 +83,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params, searchParams }: Props) {
   const { locale, pair } = await params;
   const lang = locale as Lang;
-  const { first, highlight } = await searchParams;
+  const { highlight } = await searchParams;
 
   const parts = pair.split("-vs-");
   if (parts.length !== 2) notFound();
@@ -102,18 +102,18 @@ export default async function Page({ params, searchParams }: Props) {
   if (a === b) notFound();
 
   // canonical 주소로 정규화
-  // 주의: ?first= 쿼리를 목적지에 포함하지 않음 - robots.txt의 disallow: '/*?first='와
-  // 충돌해 크롤러가 리다이렉트 목적지를 크롤링하지 못하는 문제가 있었음.
-  // 순서가 뒤바뀐 URL은 외부/수동 입력 등 드문 경로로만 유입되므로,
-  // 배치 선호(first) 없이 canonical 경로로만 리다이렉트해도 실사용 영향은 낮음.
+  // 순서가 뒤바뀐 URL은 외부/수동 입력 등 드문 경로로만 유입되므로 canonical 경로로만 리다이렉트.
   const canonical = [a, b].sort().join("-vs-");
   if (pair !== canonical) {
     permanentRedirect(`/${locale}/matchup/${canonical}`);
   }
 
-  // first 파라미터로 나/상대 결정
-  const forcedMe = first === b ? b : a;
-  const forcedEnemy = first === b ? a : b;
+  // 서버는 항상 알파벳순(canonical) 순서로만 렌더링한다. 예전에 공유된 ?first= 링크가
+  // 들어와도 이 파라미터는 더 이상 읽지 않고 무시한다(에러 없이 알파벳순으로 표시).
+  // 픽커에서 방금 고른 좌/우 순서는 클라이언트 세션 메모리 힌트로
+  // MatchupChampClient가 마운트 시 반영한다(app/utils/matchupOrderHint.ts).
+  const forcedMe = a;
+  const forcedEnemy = b;
 
   // 매치업 데이터 로딩
   const matchup = await getMatchupSummary(a, b);
@@ -207,7 +207,7 @@ export default async function Page({ params, searchParams }: Props) {
       </div>
 
       <MatchupChampClient
-        key={`${forcedMe}-vs-${forcedEnemy}`}
+        key={canonical}
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
         highlight={highlight}

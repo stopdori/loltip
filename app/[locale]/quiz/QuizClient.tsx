@@ -19,7 +19,7 @@ export default function QuizClient() {
 
   function handleAnswer(champ1: string, champ2: string, highlight: string) {
     const pair = [champ1, champ2].sort().join("-vs-");
-    const url = `/${locale}/matchup/${pair}?first=${champ1}&highlight=${highlight}`;
+    const url = `/${locale}/matchup/${pair}?highlight=${highlight}`;
     window.open(url, "_blank");
   }
 

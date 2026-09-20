@@ -82,7 +82,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
 
   const item = quizData[idx];
   const pair = [item.link.champ1, item.link.champ2].sort().join("-vs-");
-  const url = `/${locale}/matchup/${pair}?first=${item.link.champ1}&highlight=${item.link.highlight}`;
+  const url = `/${locale}/matchup/${pair}?highlight=${item.link.highlight}`;
   return (
     <div className={`flex items-center gap-1 transition-opacity duration-300 ${mounted ? "opacity-100" : "opacity-0"}`}>
       <a

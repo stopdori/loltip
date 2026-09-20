@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "@/i18n/navigation";
 import type { Champ } from "@/app/data/champions";
 import { filterChampions } from "@/app/utils/champSearch";
+import { saveMatchupOrderHint } from "@/app/utils/matchupOrderHint";
 
 type Lang = "ko" | "en";
 
@@ -89,9 +90,10 @@ export default function ChampMiniSearch({
     if (nextMy && nextEnemy) {
       // 기존 URL 정규화 규칙과 동일: id 사전식 정렬 후 "-vs-" 결합
       const pair = [nextMy, nextEnemy].sort().join("-vs-");
-      // ChampSelectModal의 onPick과 동일하게: 어느 쪽에서 고르든 항상 왼쪽(my)
-      // 챔피언 id를 first=에 고정해서 좌우가 꼬이지 않도록 함
-      router.push(`/matchup/${pair}?first=${nextMy}`);
+      // ChampSelectModal의 onPick과 동일하게: 어느 쪽에서 고르든 왼쪽(my) 챔피언을
+      // 세션 메모리 힌트로 남겨서 매치업 페이지가 그 좌우 순서로 뜨도록 함(URL에는 쿼리 없음)
+      saveMatchupOrderHint(nextMy, nextEnemy);
+      router.push(`/matchup/${pair}`);
       return;
     }
     if (nextMy && !nextEnemy) {

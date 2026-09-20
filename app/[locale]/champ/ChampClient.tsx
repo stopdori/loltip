@@ -16,6 +16,7 @@ import FeedbackButton from "@/app/components/FeedbackButton";
 import QuizWidget from "@/app/components/QuizWidget";
 import SiteHeader from "@/app/components/SiteHeader";
 import AdSlot from "@/app/components/AdSlot";
+import { saveMatchupOrderHint } from "@/app/utils/matchupOrderHint";
 
 type Lang = "ko" | "en";
 
@@ -322,7 +323,9 @@ const nextEnemy = openTarget === "enemy" ? c.id : enemyChampId;
 // 둘 다 있으면 → matchup
 if (nextMy && nextEnemy) {
   const pair = [nextMy, nextEnemy].sort().join("-vs-");
-router.push(`/matchup/${pair}?first=${openTarget === "my" ? c.id : myChampId}`);
+  // 좌/우 순서는 URL 쿼리 대신 세션 메모리 힌트로 전달(app/utils/matchupOrderHint.ts)
+  saveMatchupOrderHint(nextMy, nextEnemy);
+  router.push(`/matchup/${pair}`);
   setOpenTarget(null);
   return;
 }
