@@ -17,6 +17,7 @@ import QuizWidget from "@/app/components/QuizWidget";
 import SiteHeader from "@/app/components/SiteHeader";
 import AdSlot from "@/app/components/AdSlot";
 import { saveMatchupOrderHint } from "@/app/utils/matchupOrderHint";
+import { saveChampSideHint } from "@/app/utils/champSideHint";
 
 type Lang = "ko" | "en";
 
@@ -39,7 +40,8 @@ export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, emb
   function clearMyChamp() {
   // 오른쪽만 남기기
   if (enemyChampId) {
-    router.replace(`/champ/${enemyChampId}?side=enemy`);
+    saveChampSideHint(enemyChampId, "enemy");
+    router.replace(`/champ/${enemyChampId}`);
     return;
   }
 
@@ -49,7 +51,8 @@ export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, emb
 
 function clearEnemyChamp() {
   if (myChampId) {
-    router.replace(`/champ/${myChampId}?side=my`);
+    saveChampSideHint(myChampId, "my");
+    router.replace(`/champ/${myChampId}`);
     return;
   }
 
@@ -332,12 +335,14 @@ if (nextMy && nextEnemy) {
 
 // 하나만 있으면 → 단일 챔프
 if (nextMy && !nextEnemy) {
-  router.push(`/champ/${nextMy}?side=my`);
+  saveChampSideHint(nextMy, "my");
+  router.push(`/champ/${nextMy}`);
   return;
 }
 
 if (!nextMy && nextEnemy) {
-  router.push(`/champ/${nextEnemy}?side=enemy`);
+  saveChampSideHint(nextEnemy, "enemy");
+  router.push(`/champ/${nextEnemy}`);
   return;
 }
 setOpenTarget(null);

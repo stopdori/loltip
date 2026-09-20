@@ -6,6 +6,7 @@ import { useRouter } from "@/i18n/navigation";
 import type { Champ } from "@/app/data/champions";
 import { filterChampions } from "@/app/utils/champSearch";
 import { saveMatchupOrderHint } from "@/app/utils/matchupOrderHint";
+import { saveChampSideHint } from "@/app/utils/champSideHint";
 
 type Lang = "ko" | "en";
 
@@ -96,12 +97,15 @@ export default function ChampMiniSearch({
       router.push(`/matchup/${pair}`);
       return;
     }
+    // 한 명만 있을 때의 좌/우 위치는 URL 쿼리 대신 세션 메모리 힌트로 전달(app/utils/champSideHint.ts)
     if (nextMy && !nextEnemy) {
-      router.push(`/champ/${nextMy}?side=my`);
+      saveChampSideHint(nextMy, "my");
+      router.push(`/champ/${nextMy}`);
       return;
     }
     if (!nextMy && nextEnemy) {
-      router.push(`/champ/${nextEnemy}?side=enemy`);
+      saveChampSideHint(nextEnemy, "enemy");
+      router.push(`/champ/${nextEnemy}`);
     }
   }
 

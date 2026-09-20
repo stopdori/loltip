@@ -1,4 +1,4 @@
-import ChampClient from "../ChampClient";
+import ChampPageClient from "./ChampPageClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
@@ -95,7 +95,7 @@ function stripTags(text: string, lang: Lang): string {
 
 type Props = {
   params: Promise<{ locale: string; id: string }>;
-  searchParams: Promise<{ side?: string }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -175,11 +175,14 @@ export default async function Page(props: Props) {
     ].filter((section) => section.items.length > 0);
   })();
 
-  const side = searchParams?.side ?? "my";
-
-  const forcedMe = side === "my" ? champId : null;
-  const forcedEnemy = side === "enemy" ? champId : null;
-  const renderKey = `${forcedMe ?? "none"}-${forcedEnemy ?? "none"}`;
+  // 서버는 항상 기본(왼쪽)으로만 렌더링한다. 예전에 공유된 ?side=enemy 링크가 들어와도
+  // 이 파라미터는 더 이상 쓰지 않고 무시한다(에러 없이 왼쪽 표시). 픽커에서 정해진 좌/우 위치는
+  // 클라이언트 세션 메모리 힌트로 ChampPageClient가 마운트 시 반영한다(app/utils/champSideHint.ts).
+  // searchParams는 값을 쓰지 않지만, 이 페이지의 렌더링 모드(동적)가 바뀌지 않도록 읽기만 유지한다.
+  void searchParams;
+  const forcedMe = champId;
+  const forcedEnemy = null;
+  const renderKey = champId;
 
   const skillFaqJsonLd = buildSkillFaqJsonLd(
     lang === "ko" ? champInfo.ko : champInfo.en,
@@ -272,7 +275,7 @@ export default async function Page(props: Props) {
         ))}
       </div>
 
-      <ChampClient
+      <ChampPageClient
         key={renderKey}
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
