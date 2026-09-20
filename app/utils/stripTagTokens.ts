@@ -14,15 +14,25 @@
 // 3) CLIP을 제거한 문장에만 공백을 정리한다 — 마커 바로 앞의 공백(스페이스/탭)을 걷어내고,
 //    문장 끝이면 끝 공백/개행도 제거, 뒤에 글자가 바로 이어지면 공백 하나만 남긴다.
 //    CLIP이 없는 문장은 정리 없이 기존 결과와 정확히 동일하게 반환한다(회귀 방지).
+// 4) 문장 맨 앞의 [[TIP]] → 마커와 뒤따르는 공백만 제거하고 문장은 그대로 유지한다.
+//    화면(MatchupSummaryBox.tsx)에서 [[TIP]]은 "LOLTip" 배지+전구로 바뀌는데, 둘 다
+//    aria-hidden인 순수 장식이라 텍스트 콘텐츠가 아니다 — SSR 본문/JSON-LD FAQ 답변에는
+//    문장만 남긴다. 화면과 똑같이 "맨 앞에서만" 인식하며(중간에 있으면 화면에서도 원문
+//    그대로 나오므로 여기서도 건드리지 않는다), 정규식은 MatchupSummaryBox.tsx의
+//    TIP_PREFIX_RE와 동일해야 한다(그쪽을 바꾸면 이쪽도 같이 바꿀 것).
+//    (사전에 없는 오타 토큰, 예: [[SUTN]]은 화면에서도 원문 그대로 보여 작성자가 발견할 수
+//    있으므로 SSR에서도 일부러 제거하지 않는다.)
 
 import { parseTagTokens } from "@/app/data/interactions/parseTagTokens";
+
+const TIP_PREFIX_RE = /^\[\[TIP\]\]\s*/;
 
 export function stripTagTokens(text: string, lang: "ko" | "en"): string {
   let out = "";
   let removedClip = false;
   let pendingSpace = false;
 
-  for (const seg of parseTagTokens(text, lang)) {
+  for (const seg of parseTagTokens(text.replace(TIP_PREFIX_RE, ""), lang)) {
     if (seg.raw?.startsWith("CLIP:")) {
       removedClip = true;
       pendingSpace = pendingSpace || /[ \t]+$/.test(out);
