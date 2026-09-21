@@ -221,7 +221,9 @@ export default async function Page(props: Props) {
         />
       )}
       <div className="hidden">
-        <h1>{champInfo.en} Champion Guide</h1>
+        {/* 로케일별 제목 — generateMetadata의 title 패턴("{챔피언} 챔피언 공략 …" / "{Champion} Champion Guide …")과 일치.
+            예전엔 KO 페이지에도 영문("Brand Champion Guide")이 고정으로 나갔다. */}
+        <h1>{lang === "ko" ? `${champInfo.ko} 챔피언 공략` : `${champInfo.en} Champion Guide`}</h1>
 
         <h2>Ultimate Cooldown</h2>
         <p>

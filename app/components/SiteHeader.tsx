@@ -119,13 +119,16 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
           )}
         </div>
 
-        {/* 중앙: 모바일 로고 */}
-        <h1
-          onClick={() => router.push(`/champ`)}
+        {/* 중앙: 모바일 로고 — 브랜드 로고는 h1이 아니라 크롤 가능한 링크(<a href>)다.
+            (예전엔 <h1 onClick>이라 모든 페이지에 h1이 2개(모바일+데스크톱)씩 깔리고 링크도 아니었음.
+             각 페이지의 h1은 그 페이지 주제 제목이 맡는다.) */}
+        <Link
+          href="/champ"
+          prefetch={false}
           className="sm:hidden absolute left-1/2 -translate-x-1/2 text-3xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
         >
           LOLTIP
-        </h1>
+        </Link>
 
         {/* 좌측: 데스크탑 버튼 나열 */}
         <div className="hidden sm:flex items-center gap-1">
@@ -155,12 +158,13 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
 
       {/* 로고 (데스크탑) */}
       <div className="hidden sm:block mt-8 text-center">
-        <h1
-          onClick={() => router.push(`/champ`)}
+        <Link
+          href="/champ"
+          prefetch={false}
           className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
         >
           LOLTIP
-        </h1>
+        </Link>
         <p className="mt-2 text-slate-300 hidden md:block">{subtitle}</p>
         <p className="mt-1 text-xs text-slate-400">26.17 {lang === "ko" ? "패치 반영" : "patch"}</p>
       </div>

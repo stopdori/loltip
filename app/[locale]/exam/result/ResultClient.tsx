@@ -66,6 +66,9 @@ export default function ResultClient() {
         subtitle={lang === "ko" ? "챔피언 상호작용 지식을 테스트해보세요" : "Test your champion interaction knowledge"}
       />
 
+      {/* 이 화면엔 보이는 제목 자리가 없어 시각 변화 없는 sr-only h1을 둔다(로고가 h1에서 내려와 h1이 0개가 되는 것 방지) */}
+      <h1 className="sr-only">{lang === "ko" ? "롤 능력고사 결과" : "LoL Matchup Exam Result"}</h1>
+
       {/* 결과 카드 */}
       <div className="max-w-md mx-auto space-y-6">
         <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 p-8 text-center space-y-4">

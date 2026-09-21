@@ -19,12 +19,14 @@ export default function ChampGrid({ lang }: { lang: "ko" | "en" }) {
       aria-labelledby="all-champions-heading"
       className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-2 sm:px-5 py-4"
     >
-      <h2
+      {/* /champ(챔피언 목록) 페이지의 주제 제목이라 h1 — 로고(SiteHeader)가 h1에서 내려오면서 이 페이지엔
+          다른 h1이 없다. ChampGrid는 /champ에서만 쓰인다. */}
+      <h1
         id="all-champions-heading"
         className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-4"
       >
         {lang === "ko" ? "전체 챔피언" : "All Champions"}
-      </h2>
+      </h1>
 
       <ul className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 sm:gap-3">
         {champions.map((c) => {

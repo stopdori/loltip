@@ -79,6 +79,9 @@ export default function QuizClient() {
         subtitle={lang === "ko" ? "챔피언 상호작용 지식을 테스트해보세요" : "Test your champion interaction knowledge"}
       />
 
+      {/* 이 화면엔 보이는 제목 자리가 없어 시각 변화 없는 sr-only h1을 둔다(로고가 h1에서 내려와 h1이 0개가 되는 것 방지) */}
+      <h1 className="sr-only">{lang === "ko" ? "롤 능력고사" : "LoL Matchup Exam"}</h1>
+
       {/* 진행바 */}
       <div className="max-w-2xl mx-auto space-y-1">
         <div className="flex justify-between text-xs text-slate-400">

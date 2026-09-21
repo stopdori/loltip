@@ -31,7 +31,7 @@ export default function QuizClient() {
 
       {/* Page title */}
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-slate-100">{title}</h2>
+        <h1 className="text-2xl font-bold text-slate-100">{title}</h1>
       </div>
 
       {/* Quiz list */}

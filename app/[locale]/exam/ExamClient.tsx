@@ -22,7 +22,7 @@ export default function ExamClient() {
 
       {/* 제목 */}
       <div className="text-center space-y-1">
-        <h2 className="text-2xl font-bold text-slate-100">{title}</h2>
+        <h1 className="text-2xl font-bold text-slate-100">{title}</h1>
         <p className="text-slate-400 text-sm">
           {lang === "ko"
             ? `총 ${questions.length > 0 ? questions.length : "?"}문항 · 100점 만점`
