@@ -7,6 +7,7 @@ import MatchupChampClient from "./MatchupChampClient";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
 import { hasContent } from "@/app/data/matchups/_types";
 import { stripTagTokens } from "@/app/utils/stripTagTokens";
+import MatchupChampLinks from "@/app/components/MatchupChampLinks";
 
 type Lang = "ko" | "en";
 
@@ -202,6 +203,15 @@ export default async function Page({ params, searchParams }: Props) {
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
         highlight={highlight}
+        extraSection={
+          <MatchupChampLinks
+            lang={lang}
+            champs={[
+              { id: a, name: lang === "ko" ? champA.ko : champA.en },
+              { id: b, name: lang === "ko" ? champB.ko : champB.en },
+            ]}
+          />
+        }
       />
     </Fragment>
   );
