@@ -5,6 +5,8 @@ import { TAG_LABEL } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import { CHAMP_FORMS } from "@/app/data/interactions/forms";
 import { stripTagTokens } from "@/app/utils/stripTagTokens";
+import { listIndexableMatchupsForChamp } from "@/app/data/matchups/_index";
+import ChampMatchupList from "@/app/components/ChampMatchupList";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Fragment } from "react";
 
@@ -269,6 +271,15 @@ export default async function Page(props: Props) {
         key={renderKey}
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
+        extraSection={
+          // 이 챔피언이 등장하는 매치업 중 "현재 로케일에서 색인 대상인 것만" 링크(noindex 페이지로 링크 금지).
+          // 판정은 generateMetadata/sitemap과 같은 공용 함수, 데이터는 매치업 페이지와 같은 _compiled.json.
+          <ChampMatchupList
+            lang={lang === "en" ? "en" : "ko"}
+            champName={lang === "ko" ? champInfo.ko : champInfo.en}
+            entries={listIndexableMatchupsForChamp(champId, lang === "en" ? "en" : "ko")}
+          />
+        }
       />
     </Fragment>
   );

@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { CHAMPIONS } from "@/app/data/champions";
 import MatchupChampClient from "./MatchupChampClient";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
-import { hasContent } from "@/app/data/matchups/_types";
+import { isMatchupIndexable } from "@/app/data/matchups/_types";
 import { stripTagTokens } from "@/app/utils/stripTagTokens";
 import MatchupChampLinks from "@/app/components/MatchupChampLinks";
 
@@ -44,10 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   } else {
     const { data } = matchup;
     const lang: Lang = locale === "en" ? "en" : "ko";
-    noindex =
-      !hasContent(data.highlightsByChamp?.[a]?.[lang]) &&
-      !hasContent(data.highlightsByChamp?.[b]?.[lang]) &&
-      !hasContent(data.common?.[lang]);
+    noindex = !isMatchupIndexable(data, a, b, lang);
   }
 
   return {

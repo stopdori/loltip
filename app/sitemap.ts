@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
 import { CHAMPIONS } from "@/app/data/champions";
-import { hasContent, type MatchupSummary } from "@/app/data/matchups/_types";
+import { isMatchupIndexable, type MatchupSummary } from "@/app/data/matchups/_types";
 
 const LOCALES = ["ko", "en"] as const;
 const LAST_MODIFIED = new Date("2025-03-01");
@@ -26,19 +26,6 @@ function parseMatchupFile(filePath: string): MatchupSummary | null {
   } catch {
     return null;
   }
-}
-
-function hasIndexableContent(
-  data: MatchupSummary,
-  champA: string,
-  champB: string,
-  lang: (typeof LOCALES)[number]
-): boolean {
-  return (
-    hasContent(data.highlightsByChamp?.[champA]?.[lang]) ||
-    hasContent(data.highlightsByChamp?.[champB]?.[lang]) ||
-    hasContent(data.common?.[lang])
-  );
 }
 
 function getIndexableMatchupPairs(): Record<(typeof LOCALES)[number], string[]> {
@@ -65,7 +52,7 @@ function getIndexableMatchupPairs(): Record<(typeof LOCALES)[number], string[]> 
 
       const pair = `${champA}-vs-${champB}`;
       for (const locale of LOCALES) {
-        if (hasIndexableContent(data, champA, champB, locale)) {
+        if (isMatchupIndexable(data, champA, champB, locale)) {
           pairsByLocale[locale].push(pair);
         }
       }
