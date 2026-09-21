@@ -415,9 +415,14 @@ setOpenTarget(null);
     <button onClick={() => setMobileTab("enemy")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "enemy" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`}>{enemyChamp?.ko ?? "상대 챔피언"}</button>
   </div>
 )}
-{iframeViewportReady && (
-<section className="relative grid grid-cols-1 sm:grid-cols-[430px_68px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
-  {myChamp && (
+{/* iframe을 담는 section은 iframeViewportReady와 무관하게 항상 렌더링한다(SSR 포함).
+    실제 <iframe>은 아래에서 ready 후에만 삽입되는데(compact= 쿼리가 뷰포트 폭에 의존해 서버가 모름),
+    section 자체가 SSR에 없으면 iframe이 마운트 후 갑자기 나타나며 아래 요소(퀴즈/링크/푸터)를
+    한꺼번에 밀어내 큰 뷰포트에서 CLS가 커진다. sm 이상에서 min-h-[800px]로 자리를 미리 예약해
+    아래 요소가 처음부터 화면 밖에 있게 한다(예약값이 정확할 필요는 없다 — 800과 1000이 같은 효과).
+    모바일은 원래 CLS가 0이라 ready 전에는 hidden으로 두어 기존과 완전히 동일하게 자리를 안 잡는다. */}
+<section className={`relative ${iframeViewportReady ? "grid" : "hidden sm:grid"} grid-cols-1 sm:grid-cols-[430px_68px_430px] sm:min-h-[800px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start`}>
+  {iframeViewportReady && myChamp && (
     <iframe
       id="iframe-my"
       src={`/${locale}/champ-embed/${myChamp.id}?side=my&compact=${initialCompact ? "1" : "0"}`}
@@ -426,7 +431,7 @@ setOpenTarget(null);
       className={`w-full max-w-[430px] mx-auto sm:col-start-1${mobileTab !== "my" ? " hidden sm:block" : ""}`}
     />
   )}
-  {enemyChamp && (
+  {iframeViewportReady && enemyChamp && (
     <iframe
       id="iframe-enemy"
       src={`/${locale}/champ-embed/${enemyChamp.id}?side=enemy&compact=${initialCompact ? "1" : "0"}`}
@@ -436,7 +441,6 @@ setOpenTarget(null);
     />
   )}
 </section>
-)}
 </>
 ) : (
 <section className="relative grid grid-cols-1 sm:grid-cols-[430px_68px_430px] gap-4 w-full max-w-[980px] mx-auto justify-center items-start">
