@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import ChampClient from "./ChampClient";
+import ChampGrid from "@/app/components/ChampGrid";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -26,6 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function Page() {
-  return <ChampClient />;
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  // 전체 챔피언 링크 그리드는 서버 컴포넌트라 173개 <a href>가 SSR HTML에 항상 포함된다.
+  return <ChampClient extraSection={<ChampGrid lang={locale === "en" ? "en" : "ko"} />} />;
 }

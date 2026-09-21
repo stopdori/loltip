@@ -29,9 +29,12 @@ type Props = {
   embedMode?: boolean;
   useIframe?: boolean;
   forceCompact?: boolean;
+  // 퀴즈 박스 아래, 광고/푸터 위에 추가로 렌더링할 섹션(서버 컴포넌트 그대로 넘길 수 있음).
+  // 현재는 /champ 페이지의 "전체 챔피언" 링크 그리드(ChampGrid)에만 쓴다.
+  extraSection?: React.ReactNode;
 };
 
-export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, embedMode, useIframe, forceCompact }: Props) {
+export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, embedMode, useIframe, forceCompact, extraSection }: Props) {
   const locale = useLocale();
   const lang = locale as Lang;
 
@@ -536,6 +539,10 @@ setOpenTarget(null);
         <div className="max-w-[430px] sm:max-w-[960px] mx-auto">
           <QuizWidget lang={lang} />
         </div>
+      )}
+
+      {!embedMode && extraSection && (
+        <div className="max-w-[430px] sm:max-w-[960px] mx-auto">{extraSection}</div>
       )}
 
       {!embedMode && (
