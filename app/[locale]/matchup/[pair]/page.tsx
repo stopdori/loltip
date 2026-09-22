@@ -38,25 +38,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : undefined;
 
   const matchup = await getMatchupSummary(a, b);
-  let noindex = false;
-  if (!matchup || matchup.status === "missing") {
-    noindex = true;
-  } else {
-    const { data } = matchup;
-    const lang: Lang = locale === "en" ? "en" : "ko";
-    noindex = !isMatchupIndexable(data, a, b, lang);
-  }
+  const data = matchup?.status === "ok" ? matchup.data : null;
+  // 로케일별 색인 여부를 같은 데이터로 한 번씩 판정한다(추가 I/O 없음).
+  const indexableKo = !!data && isMatchupIndexable(data, a, b, "ko");
+  const indexableEn = !!data && isMatchupIndexable(data, a, b, "en");
+  const lang: Lang = locale === "en" ? "en" : "ko";
+  const noindex = !(lang === "ko" ? indexableKo : indexableEn);
+  // hreflang(x-default 포함)은 양쪽 로케일이 모두 색인 대상일 때만 내보낸다.
+  // 한쪽만 색인 대상이면 색인 페이지가 noindex 페이지를 대체 언어 버전으로 선언하게 되고,
+  // noindex 쪽은 그 참조를 되돌려줄 수 없어 상호 참조(reciprocal)가 깨진다.
+  // (KO에만 판정이 채워진 쌍이 다수라 실제로 발생하던 상태. EN 번역이 채워지면 자동으로 다시 붙는다.)
+  const bothIndexable = indexableKo && indexableEn;
 
   return {
     title,
     ...(description && { description }),
     alternates: {
       canonical: `https://loltip.com/${locale}/matchup/${canonical}`,
-      languages: {
-        ko: `https://loltip.com/ko/matchup/${canonical}`,
-        en: `https://loltip.com/en/matchup/${canonical}`,
-        "x-default": `https://loltip.com/ko/matchup/${canonical}`,
-      },
+      ...(bothIndexable && {
+        languages: {
+          ko: `https://loltip.com/ko/matchup/${canonical}`,
+          en: `https://loltip.com/en/matchup/${canonical}`,
+          "x-default": `https://loltip.com/ko/matchup/${canonical}`,
+        },
+      }),
     },
     ...(noindex && { robots: { index: false, follow: false } }),
     openGraph: {
