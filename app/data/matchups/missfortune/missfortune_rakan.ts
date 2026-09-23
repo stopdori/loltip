@@ -13,7 +13,7 @@ export const missfortune_rakan: MatchupSummary = {
       en: [""],
     },
     rakan: {
-      ko: [],
+      ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 미스포츈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [],
     },
   },

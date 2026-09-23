@@ -9,7 +9,7 @@ export const rakan_yuumi: MatchupSummary = {
   },
   highlightsByChamp: {
     rakan: {
-      ko: [""],
+      ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 유미 W의 [[DASH]], 유미(탈착) R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [""],
     },
     yuumi: {

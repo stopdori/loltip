@@ -21,7 +21,8 @@ export const briar_rakan: MatchupSummary = {
         "R2 [[HOMING]] [[DASH]] can follow Rakan's W and E [[DASH]]. \n However, the [[HOMING]] ends upon colliding with Rakan."],
     },
     rakan: {
-      ko: [],
+      ko: ["W의 [[AIRBORNE]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "R의 [[CHARM]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
       en: [],
     },
   },

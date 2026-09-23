@@ -13,8 +13,8 @@ export const akshan_rakan: MatchupSummary = {
       en: [""],
     },
     rakan: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 아크샨 E의 [[SKILL_CHANNEL]] [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["R [[CHARM]] can interrupt Akshan's E [[SKILL_CHANNEL]] [[DASH]] and R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
   },
 };

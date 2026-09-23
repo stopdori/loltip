@@ -9,11 +9,11 @@ export const rakan_yasuo: MatchupSummary = {
   },
   highlightsByChamp: {
     rakan: {
-      ko: ["야스오 W(장막)는 라칸의 Q를 막을 수 있음."],
-      en: ["Yasuo’s W (Wind Wall) can block Rakan's Q."],
+      ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 야스오 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: [],
     },
     yasuo: {
-      ko: [],
+      ko: ["야스오 W의 [[WINDSHIELD]]으로 라칸의 Q의 [[PROJECTILE]]를 막을 수 있음."],
       en: [],
     },
   },

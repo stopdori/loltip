@@ -14,8 +14,9 @@ export const ambessa_rakan: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Rakan's W and E [[DASH]].", "R [[UNSTOPPABLE]] can ignore Rakan's W [[AIRBORNE]] and R [[CHARM]]. \n However, the [[CHARM]] still applies after [[UNSTOPPABLE]] ends."],
     },
     rakan: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[AIRBORNE]]으로 암베사 P의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "R의 [[CHARM]]으로 암베사 P의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["R [[CHARM]] cannot interrupt Ambessa's P [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

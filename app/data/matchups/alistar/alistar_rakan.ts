@@ -15,8 +15,9 @@ export const alistar_rakan: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and W [[KNOCKBACK]] can interrupt Rakan's W and E [[DASH]].", "E [[STUN]] cannot interrupt Rakan's W or E [[DASH]]. \n However, the [[STUN]] still applies.", "R [[CC_CLEANSE]] can cleanse Rakan's W [[AIRBORNE]] and R [[CHARM]]."],
     },
     rakan: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[AIRBORNE]]으로 알리스타 W의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "R의 [[CHARM]]으로 알리스타 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["R [[CHARM]] cannot interrupt Alistar's W [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

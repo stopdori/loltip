@@ -13,7 +13,7 @@ export const nunu_rakan: MatchupSummary = {
       en: [""],
     },
     rakan: {
-      ko: [],
+      ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 누누와 월럼프 W의 [[SKILL_CHANNEL]] [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]] \n 단, 누누와 월럼프 W는 중단될 때 눈덩이 [[PROJECTILE]] 발사."],
       en: [],
     },
   },

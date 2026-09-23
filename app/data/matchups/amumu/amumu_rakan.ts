@@ -15,8 +15,9 @@ export const amumu_rakan: MatchupSummary = {
       en: ["Q [[STUN]] cannot interrupt Rakan's W and E [[DASH]]. \n However, the [[STUN]] still applies. \n However, Amumu's Q [[HOMING]] [[DASH]] can follow Rakan's W and E [[DASH]].", "R [[STUN]] can interrupt Rakan's W and E [[DASH]].", "Q [[CC_BUFFER]] can ignore Rakan's W [[AIRBORNE]] and R [[CHARM]] and continue [[DASH]]. \n However, the [[CHARM]] still applies."],
     },
     rakan: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[AIRBORNE]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "R의 [[CHARM]]으로 아무무 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
+      en: ["R [[CHARM]] cannot interrupt Amumu's Q [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };

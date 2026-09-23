@@ -19,7 +19,8 @@ export const camille_rakan: MatchupSummary = {
       ],
     },
     rakan: {
-      ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["W의 [[AIRBORNE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "R의 [[CHARM]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
       en: ["Rakan's W [[AIRBORNE]] and R [[CHARM]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },

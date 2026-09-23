@@ -15,8 +15,8 @@ export const aurelionsol_rakan: MatchupSummary = {
         "R (Falling Star) [[AIRBORNE]] can interrupt Rakan's W and E [[DASH]]."],
     },
     rakan: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 아우렐리온 솔 Q의 [[SKILL_CHANNEL]], W의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["R [[CHARM]] can interrupt Aurelion Sol's Q [[SKILL_CHANNEL]] and W [[SKILL_CHANNEL]] [[DASH]]. [[EXIST]]"],
     },
   },
 };

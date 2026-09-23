@@ -9,7 +9,7 @@ export const rakan_xerath: MatchupSummary = {
   },
   highlightsByChamp: {
     rakan: {
-      ko: [""],
+      ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 제라스 Q의 [[SKILL_CHARGED]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [""],
     },
     xerath: {
