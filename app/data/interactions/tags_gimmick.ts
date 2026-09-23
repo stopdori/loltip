@@ -404,7 +404,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DMG_MAGIC:    { ko: "마법 저항력에 의해 감소되는 피해", en: "Damage mitigated by magic resistance" },
   DMG_TRUE:     { ko: "저항력에 감소되지 않는 피해\n단, 실드와 무적에는 막힘", en: "Ignores resistances\nStill blocked by shields and invulnerability" },
   DOT_DMG_TRUE: { ko: "시간에 걸쳐 지속적으로 입히는 \n 고정 피해.", en: "True damage dealt continuously over time." },
-  DOT:          { ko: "일정 간격(틱)으로 나뉘어 피해.", en: "Deals damage in periodic ticks." },
+  DOT:          { ko: "일정 간격(틱)으로 나뉘어 적용.", en: "Applied in periodic ticks." },
   ON_HIT:       { ko: "기본 공격 적중 시 추가 피해가 발생함", en: "Deals bonus damage on basic attack hit" },
   // 능력치 비례 기준
   SELF_MAXHP_SCALE:        { ko: "이 효과가 시전자 자신의 최대 체력에 비례한다", en: "This effect scales with the caster's own max Health" },
