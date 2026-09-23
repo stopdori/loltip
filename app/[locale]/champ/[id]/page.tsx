@@ -108,6 +108,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = locale === "ko"
     ? `${champ.ko} 스킬 상성, CC 상호작용, 매치업 정보를 확인하세요.`
     : `${champ.en} skill mechanics, CC interactions, and matchup tips for League of Legends. Learn what abilities ${champ.en} can interrupt, block, or counter.`;
+  // og/twitter 설명도 로케일에 맞게 — 예전엔 KO 페이지에도 영문이 고정으로 나갔다.
+  const socialDescription = locale === "ko"
+    ? `${champ.ko} 챔피언 메커니즘과 매치업 정리.`
+    : `${champ.en} champion mechanics and matchup breakdown.`;
+
 
   return {
     title,
@@ -122,10 +127,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     openGraph: {
       title: `${champ.en} Champion Guide | LOLTIP`,
-      description: `${champ.en} champion mechanics and matchup breakdown.`,
+      description: socialDescription,
       url: `https://loltip.com/${locale}/champ/${champId}`,
       type: "website",
       images: [{ url: "https://loltip.com/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+      description: socialDescription,
     },
   };
 }

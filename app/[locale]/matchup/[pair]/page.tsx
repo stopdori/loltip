@@ -7,6 +7,7 @@ import MatchupChampClient from "./MatchupChampClient";
 import { getMatchupSummary } from "@/app/data/matchups/_index";
 import { isMatchupIndexable } from "@/app/data/matchups/_types";
 import { stripTagTokens } from "@/app/utils/stripTagTokens";
+import { buildMatchupDescription } from "@/app/utils/matchupDescription";
 import MatchupChampLinks from "@/app/components/MatchupChampLinks";
 
 type Lang = "ko" | "en";
@@ -31,11 +32,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `${champA.ko} vs ${champB.ko} 매치업 - LOLTIP`
       : `${champA.en} vs ${champB.en} Matchup - LOLTIP`
     : locale === "ko" ? "매치업 | LOLTIP" : "Matchup | LOLTIP";
-  const description = champA && champB
-    ? locale === "ko"
-      ? `${champA.ko}와 ${champB.ko}의 스킬 상성, CC 판정, 저지불가 상호작용 정리`
-      : `${champA.en} vs ${champB.en} skill interactions and matchup tips for League of Legends.`
-    : undefined;
 
   const matchup = await getMatchupSummary(a, b);
   const data = matchup?.status === "ok" ? matchup.data : null;
@@ -49,10 +45,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // noindex 쪽은 그 참조를 되돌려줄 수 없어 상호 참조(reciprocal)가 깨진다.
   // (KO에만 판정이 채워진 쌍이 다수라 실제로 발생하던 상태. EN 번역이 채워지면 자동으로 다시 붙는다.)
   const bothIndexable = indexableKo && indexableEn;
+  // 실제 판정 문장으로 페이지마다 다른 디스크립션을 만든다(description/og/twitter 공용).
+  const description = buildMatchupDescription(data, a, b, lang);
 
   return {
     title,
-    ...(description && { description }),
+    description,
     alternates: {
       canonical: `https://loltip.com/${locale}/matchup/${canonical}`,
       ...(bothIndexable && {
@@ -66,10 +64,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...(noindex && { robots: { index: false, follow: false } }),
     openGraph: {
       title,
-      ...(description && { description }),
+      description,
       url: `https://loltip.com/${locale}/matchup/${canonical}`,
       type: "website",
       images: [{ url: "https://loltip.com/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+      description,
     },
   };
 }
