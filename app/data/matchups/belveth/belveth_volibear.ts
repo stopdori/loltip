@@ -15,8 +15,14 @@ export const belveth_volibear: MatchupSummary = {
         "Bel'Veth's R activates instantly and has [[TIMING_AFTERCAST]], so it cannot be interrupted by Volibear's Q [[STUN]]. \n However, the [[STUN]] remains."],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 벨베스 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+        "Q의 [[STUN]]로 벨베스 E의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]", 
+      "R의 [[UNSTOPPABLE]]로 벨베스 W의 [[AIRBORNE]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
       en: [],
     },
   },
+  common: {
+    ko: [],
+    en: [],
+  },  
 };

@@ -14,8 +14,14 @@ export const ambessa_volibear: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q is [[CDR_RESET]].", "R [[UNSTOPPABLE]] can ignore Volibear's Q [[STUN]]. \n However, [[STUN]] remains after [[UNSTOPPABLE]] ends."],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 암베사 P의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[UNSTOPPABLE]]로 암베사 R의 [[SUPPRESS]]을 무시할 수 있음. [[EXIST]]."
+      ],
       en: [],
     },
+  },
+  common: {
+    ko: ["[[TIP]]암베사 R의 [[SUPPRESS]]을 볼리베어 R의 [[UNSTOPPABLE]]에 사용하면 \n 암베사가 볼리베어에게 [[BLINK]] 하지만, 볼리베어는 암베사 R을 완전히 무시. (CC, 데미지 모두)"],
+    en: [],
   },
 };

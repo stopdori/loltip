@@ -13,7 +13,7 @@ export const ashe_volibear: MatchupSummary = {
       en: ["R [[STUN]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q is [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 애쉬 R의 [[STUN]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
       en: [],
     },
   },

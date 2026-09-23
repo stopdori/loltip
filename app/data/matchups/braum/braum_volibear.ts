@@ -13,7 +13,8 @@ export const braum_volibear: MatchupSummary = {
       en: ["Braum's P [[STUN]] and R [[AIRBORNE]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q is [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 브라움 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[UNSTOPPABLE]]로 브라움 P의 [[STUN]], R의 [[AIRBORNE]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 P의 [[STUN]]은 남아있음."],
       en: [],
     },
   },

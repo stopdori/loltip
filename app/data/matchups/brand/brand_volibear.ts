@@ -13,7 +13,7 @@ export const brand_volibear: MatchupSummary = {
       en: ["Brand's Q [[STUN]] can cancel Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q has [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 브랜드 Q의 [[STUN]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
       en: [],
     },
   },

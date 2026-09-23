@@ -13,7 +13,7 @@ export const annie_volibear: MatchupSummary = {
       en: ["P [[STUN]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 애니 P의 [[STUN]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 [[STUN]]은 남아있음."],
       en: [],
     },
   },

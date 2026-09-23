@@ -13,7 +13,7 @@ export const illaoi_volibear: MatchupSummary = {
       en: [""],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 일라오이 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },

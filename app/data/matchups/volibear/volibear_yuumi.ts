@@ -9,7 +9,7 @@ export const volibear_yuumi: MatchupSummary = {
   },
   highlightsByChamp: {
     volibear: {
-      ko: [""],
+      ko: ["Q의 [[STUN]]로 유미 W의 [[DASH]], R(탈착)의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [""],
     },
     yuumi: {

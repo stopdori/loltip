@@ -13,7 +13,7 @@ export const gwen_volibear: MatchupSummary = {
       en: [""],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 그웬 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },

@@ -13,7 +13,8 @@ export const bard_volibear: MatchupSummary = {
       en: ["Q [[STUN]] and R (like Zhonya's Hourglass) [[STASIS]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q is [[CDR_RESET]]."],
     },
     volibear: {
-      ko: ["볼리베어 R의 [[UNSTOPPABLE]] [[DASH]]으로 바드 R(존야)을 무시할 수 있음."],
+      ko: ["Q의 [[STUN]]로 바드 E(벽이동)의 [[DASH]]을 끊을 수 없음. [[EXIST]] \n 단, [[STUN]]은 남아있음.", 
+      "R의 [[UNSTOPPABLE]]로 바드 Q의 [[STUN]], R(존야)의 [[STASIS]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 Q의 [[STUN]]은 남아있음."],
       en: ["Volibear's R [[UNSTOPPABLE]] [[DASH]] can bypass Bard's R (Zhonya's)."],
     },
   },

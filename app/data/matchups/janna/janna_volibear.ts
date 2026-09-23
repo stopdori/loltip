@@ -13,7 +13,8 @@ export const janna_volibear: MatchupSummary = {
       en: ["Q [[AIRBORNE]] and R's [[KNOCKBACK]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 잔나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]", 
+      "R의 [[UNSTOPPABLE]]로 잔나 Q의 [[AIRBORNE]], R의 [[KNOCKBACK]]을 무시할 수 있음. [[EXIST]]"],
       en: [],
     },
   },

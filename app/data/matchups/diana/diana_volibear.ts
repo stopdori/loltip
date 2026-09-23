@@ -13,7 +13,8 @@ export const diana_volibear: MatchupSummary = {
       en: ["R [[GRAB]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 다이애나 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+      "R의 [[UNSTOPPABLE]]로 다이애나 R의 [[GRAB]]을 무시할 수 있음. [[EXIST]]"],
       en: [],
     },
   },

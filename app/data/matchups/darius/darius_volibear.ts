@@ -13,7 +13,7 @@ export const darius_volibear: MatchupSummary = {
       en: ["E [[GRAB]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 다리우스 E의 [[GRAB]]을 무시할 수 있음. [[EXIST]]"],
       en: [],
     },
   },

@@ -23,7 +23,8 @@ export const briar_volibear: MatchupSummary = {
         "R2 [[HOMING]] [[DASH]] can follow Volibear's Q [[DASH]] and R [[UNSTOPPABLE]] [[DASH]]. \n However, the [[HOMING]] ends upon colliding with Volibear."],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[UNSTOPPABLE]]로 브라이어 Q의 [[STUN]], E의 [[KNOCKBACK]], R2의 [[FEAR]]를 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 Q의 [[STUN]], R2의 [[FEAR]]는 남아있음."],
       en: [],
     },
   },

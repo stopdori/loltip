@@ -9,11 +9,11 @@ export const mordekaiser_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     mordekaiser: {
-      ko: [""],
+      ko: ["E의 [[GRAB]]으로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. [[EXIST]] \n 단, 볼리베어 Q는 [[CDR_RESET]]."],
       en: [""],
     },
     volibear: {
-      ko: ["볼리베어 R의 [[UNSTOPPABLE]]로 모데카이저 R을 무시할 수 있음.\n즉, 이세계로 가지 않음. 모데 R 쿨타임 소모."],
+      ko: ["R의 [[UNSTOPPABLE]]로 모데카이저 E의 [[GRAB]], R의 [[BANISH]]을 무시할 수 있음. [[EXIST]] \n 즉, 모데카이저 R의 죽음의 세계로 가지 않음. R의 [[COOLDOWN]]은 소모."],
       en: [],
     },
   },

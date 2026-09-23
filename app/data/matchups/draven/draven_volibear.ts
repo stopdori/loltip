@@ -13,7 +13,7 @@ export const draven_volibear: MatchupSummary = {
       en: ["E [[KNOCKBACK]] can interrupt Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["R의 [[UNSTOPPABLE]]로 드레이븐 E의 [[KNOCKBACK]]을 무시할 수 있음. [[EXIST]]"],
       en: [],
     },
   },

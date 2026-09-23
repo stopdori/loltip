@@ -13,7 +13,7 @@ export const katarina_volibear: MatchupSummary = {
       en: [""],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 카타리나 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [],
     },
   },

@@ -9,7 +9,7 @@ export const kassadin_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     kassadin: {
-      ko: [""],
+      ko: ["Q의 [[DISRUPT]]로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 없음. [[NOT_EXIST]]"],
       en: [""],
     },
     volibear: {

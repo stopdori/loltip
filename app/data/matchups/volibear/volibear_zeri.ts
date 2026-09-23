@@ -9,7 +9,7 @@ export const volibear_zeri: MatchupSummary = {
   },
   highlightsByChamp: {
     volibear: {
-      ko: [""],
+      ko: ["Q의 [[STUN]]로 제리 E(일반, 벽이동)의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음."],
       en: [""],
     },
     zeri: {

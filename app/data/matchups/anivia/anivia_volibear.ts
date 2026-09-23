@@ -13,7 +13,8 @@ export const anivia_volibear: MatchupSummary = {
       en: ["Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can cancel Volibear's Q [[TRANSFORM]]. \n However, Volibear's Q [[CDR_RESET]]."],
     },
     volibear: {
-      ko: [],
+      ko: ["Q의 [[STUN]]로 에니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]", 
+      "R의 [[UNSTOPPABLE]]로 에니비아 Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 Q의 [[STUN]]은 남아있음."],
       en: [],
     },
   },

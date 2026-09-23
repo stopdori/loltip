@@ -21,7 +21,9 @@ export const camille_volibear: MatchupSummary = {
       ],
     },
     volibear: {
-      ko: ["Q의 [[STUN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      ko: ["Q의 [[STUN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+        "R의 [[UNSTOPPABLE]]로 카밀 E2의 [[KNOCKBACK]], [[STUN]] / R의 [[DISRUPT]], [[KNOCKBACK]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 E2의 [[STUN]]은 남아있음.", 
+        "R의 [[UNSTOPPABLE]]로 카밀 R의 [[GRAB]]을 무시할 수 없음. [[NOT_EXIST]] \n 단, [[GRAB]]의 형태가 아니라 [[ZONE]]을 경계로 넘어갈 수 없는 형태."],
       en: ["Volibear's Q [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
