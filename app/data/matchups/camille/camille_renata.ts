@@ -18,7 +18,7 @@ export const camille_renata: MatchupSummary = {
     },
     renata: {
       ko: ["Q의 [[ROOT]], [[AIRBORNE]] / R의 [[BERSERK]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음.",
-        "Q의 [[STUN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+        "Q의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
       en: ["Renata Glasc's Q [[ROOT]], [[AIRBORNE]] / R [[BERSERK]] can interrupt Camille's E1 and E2 [[DASH]].",
         "Renata Glasc's Q [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."],
     },

@@ -9,7 +9,7 @@ export const camille_sion: MatchupSummary = {
   },
   highlightsByChamp: {
     camille: {
-      ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 사이온 Q, R의 [[AIRBORNE]], [[SUTN]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음. \n 단, [[STUN]]이 E1( 대기 단계 )까지 남아있다면 카밀 E가 해제될 수 있음.", 
+      ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 사이온 Q, R의 [[AIRBORNE]], [[STUN]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음. \n 단, [[STUN]]이 E1( 대기 단계 )까지 남아있다면 카밀 E가 해제될 수 있음.", 
         "E의 [[KNOCKBACK]], [[STUN]] / R의 [[DISRUPT]]로 사이온 Q의 [[SKILL_CHARGED]]을 끊을 수 있음.", 
         "R의 [[UNTARGETABLE]]로 사이온 Q, W(폭발 피해), E, R을 피할 수 있음. \n 단, 카밀 R을 사이온 R([[DASH]] 중인)에 사용하면 피할 수 없음."
       ],

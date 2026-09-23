@@ -9,7 +9,7 @@ export const aurelionsol_thresh: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: ["R의 [[STUN]]으로 쓰레쉬 Q2, W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
+      ko: ["R의 [[STUN]]로 쓰레쉬 Q2, W의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
         "R(천상강림)의 [[AIRBORNE]]으로 쓰레쉬 Q2, W의 [[DASH]]을 끊을 수 있음."],
       en: ["R [[STUN]] cannot interrupt Thresh's Q2 and W [[DASH]]. \n However, the [[STUN]] still applies.",
         "R (Falling Star) [[AIRBORNE]] can interrupt Thresh's Q2 and W [[DASH]]."],

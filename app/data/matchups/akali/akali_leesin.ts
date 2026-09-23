@@ -9,7 +9,7 @@ export const akali_leesin: MatchupSummary = {
   },
   highlightsByChamp: {
     akali: {
-      ko: ["E2의 [[HOMING]] [[DASH]]으로 리신 Q2, W(방호)의 [[DASH]]를 따라갈 수 있음."],
+      ko: ["E2의 [[HOMING]] [[DASH]]으로 리신 Q2, W(방호)의 [[DASH]]을 따라갈 수 있음."],
       en: ["E2 [[HOMING]] [[DASH]] can follow Lee Sin's Q2 and W (ward hop) [[DASH]]."],
     },
     leesin: {

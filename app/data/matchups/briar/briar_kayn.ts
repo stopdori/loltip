@@ -9,7 +9,7 @@ export const briar_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     briar: {
-      ko: ["Q의 [[STUN]]로 케인, 그암, 다르킨 Q의 돌진단계의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 회전단계까지 문제없이 시전.",
+      ko: ["Q의 [[STUN]]로 케인, 그암, 다르킨 Q의 돌진단계의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 회전 단계까지 문제없이 시전.",
         "Q의 [[STUN]] / E의 [[KNOCKBACK]] / R의 [[FEAR]]로 케인, 그암, 다르킨 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음.",
         "E의 [[CAST_COMMIT]]으로 다르킨 W의 [[AIRBORNE]]에 걸려도 시전을 유지할 수 있음.", 
         "R1의 [[CC_IMMUNE]], R2의 [[UNSTOPPABLE]]로 다르킨 W의 [[AIRBORNE]]을 무시할 수 있음.",

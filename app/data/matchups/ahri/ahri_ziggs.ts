@@ -9,7 +9,7 @@ export const ahri_ziggs: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 직스 W의 [[DASH]]를 끊을 수 있음. [[EXIST]]"],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 직스 W의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Ziggs's W [[DASH]]. [[EXIST]]"],
     },
     ziggs: {

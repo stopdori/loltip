@@ -9,7 +9,7 @@ export const camille_ivern: MatchupSummary = {
   },
   highlightsByChamp: {
     camille: {
-      ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 아이번 Q의 [[ROOT]], R로 [[SUMMON]]된 데이지의 3번째 [[BA]] [[AIRBORNE]] 을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음. \n 단, [[ROOT]]이 E1( 대기 단계 )까지 남아있다면 카밀 E가 해제될 수 있음.", 
+      ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 아이번 Q의 [[ROOT]], R로 [[SUMMON]]된 데이지의 3번째 [[BA]] [[AIRBORNE]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음. \n 단, [[ROOT]]이 E1( 대기 단계 )까지 남아있다면 카밀 E가 해제될 수 있음.", 
         "E의 [[KNOCKBACK]] / R의 [[KNOCKBACK]], [[GRAB]]으로 아이번 Q의 [[DASH]]을 끊을 수 있음.",
         "R의 [[UNTARGETABLE]]로 아이번 평타 / Q / R로 [[SUMMON]]된 데이지 3번째 [[BA]] [[AIRBORNE]]을 피할 수 있음."
       ],

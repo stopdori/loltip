@@ -13,7 +13,7 @@ export const fizz_poppy: MatchupSummary = {
       en: [""],
     },
     poppy: {
-      ko: ["뽀삐 W의 [[GROUNDED]]로 피즈 Q의 [[DASH]]를 막을 수 있음.", "뽀삐 W의 [[GROUNDED]]로 피즈 E의 [[DASH]]를 막을 수 없음.\n[[UNTARGETABLE]] 때문으로 추정.", "뽀삐 W의 [[GROUNDED]] 디버프를 피즈가 걸리면 Q, E 스킬을 사용 할 수 없음."],
+      ko: ["뽀삐 W의 [[GROUNDED]]로 피즈 Q의 [[DASH]]을 막을 수 있음.", "뽀삐 W의 [[GROUNDED]]로 피즈 E의 [[DASH]]을 막을 수 없음.\n[[UNTARGETABLE]] 때문으로 추정.", "뽀삐 W의 [[GROUNDED]] 디버프를 피즈가 걸리면 Q, E 스킬을 사용 할 수 없음."],
       en: [],
     },
   },

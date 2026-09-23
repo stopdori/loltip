@@ -9,7 +9,7 @@ export const gragas_ornn: MatchupSummary = {
   },
   highlightsByChamp: {
     gragas: {
-      ko: ["그라가스 E, R의 [[KNOCKBACK]]으로 오른 E, R2의 [[DASH]]를 끊을 수 있음."],
+      ko: ["그라가스 E, R의 [[KNOCKBACK]]으로 오른 E, R2의 [[DASH]]을 끊을 수 있음."],
       en: ["Gragas's E and R [[KNOCKBACK]] can interrupt Ornn's E and R2 [[DASH]]."],
     },
     ornn: {

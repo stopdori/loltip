@@ -9,7 +9,7 @@ export const ahri_diana: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 다이애나 E의 [[DASH]]를 끊을 수 있음. [[EXIST]]"],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 다이애나 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Diana's E [[DASH]]. [[EXIST]]"],
     },
     diana: {

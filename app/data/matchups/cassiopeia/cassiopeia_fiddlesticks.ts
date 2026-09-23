@@ -10,7 +10,7 @@ export const cassiopeia_fiddlesticks: MatchupSummary = {
   highlightsByChamp: {
     cassiopeia: {
       ko: ["R의 [[STUN]]로 피들스틱 W의 [[SKILL_CHANNEL]]을 끊을 수 있음.",
-        "W의 [[GROUNDED]], R의 [[STUN]]으로 피들스틱 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
+        "W의 [[GROUNDED]], R의 [[STUN]]로 피들스틱 R의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
       en: ["R [[STUN]] can interrupt Fiddlesticks' W [[SKILL_CHANNEL]].",
         "W [[GROUNDED]] and R [[STUN]] can interrupt Fiddlesticks' R [[SKILL_CHANNEL]]."],
     },

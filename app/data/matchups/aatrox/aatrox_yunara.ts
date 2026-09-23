@@ -9,7 +9,7 @@ export const aatrox_yunara: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 유나라 RE의 [[DASH]]를 끊을 수 있음."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 유나라 RE의 [[DASH]]을 끊을 수 있음."],
       en: ["Q [[AIRBORNE]] and W [[GRAB]] can interrupt Yunara's RE [[DASH]]."],
     },
     yunara: {

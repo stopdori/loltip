@@ -20,7 +20,7 @@ export const camille_sejuani: MatchupSummary = {
     },
     sejuani: {
       ko: ["Q의 [[AIRBORNE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음.",
-        "E, R의 [[STUN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."
+        "E, R의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."
       ],
       en: ["Sejuani's Q [[AIRBORNE]] can interrupt Camille's E1 and E2 [[DASH]].",
         "Sejuani's E and R [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."

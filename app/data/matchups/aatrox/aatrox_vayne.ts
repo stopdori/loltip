@@ -9,7 +9,7 @@ export const aatrox_vayne: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 베인 Q(구르기)의 [[DASH]]를 끊을 수 있음."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 베인 Q(구르기)의 [[DASH]]을 끊을 수 있음."],
       en: ["Q [[AIRBORNE]] and W [[GRAB]] can interrupt Vayne's Q [[DASH]] (Tumble)."],
     },
     vayne: {

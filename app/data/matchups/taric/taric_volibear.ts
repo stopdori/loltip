@@ -9,7 +9,7 @@ export const taric_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     taric: {
-      ko: ["E의 [[STUN]]으로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. [[EXIST]] \n 단, 볼리베어 Q는 [[CDR_RESET]]."],
+      ko: ["E의 [[STUN]]로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. [[EXIST]] \n 단, 볼리베어 Q는 [[CDR_RESET]]."],
       en: [""],
     },
     volibear: {

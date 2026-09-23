@@ -19,7 +19,7 @@ export const camille_viktor: MatchupSummary = {
       ],
     },
     viktor: {
-      ko: ["[[TIP]] 빅토르 W는 [[ST_CONDITIONAL]] [[STUN]]인데, [[STUN]]은 일반적으로 [[DASH]]류를 끊을 수 없음. \n 하지만 빅토르 W는 특이하게도 [[DASH]]류를 끊을 수 있음. \n 따라서, W의 [[STUN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[CLIP:https://www.youtube.com/shorts/wyLXB61QXi4]]"],
+      ko: ["[[TIP]] 빅토르 W는 [[ST_CONDITIONAL]] [[STUN]]인데, [[STUN]]은 일반적으로 [[DASH]]류를 끊을 수 없음. \n 하지만 빅토르 W는 특이하게도 [[DASH]]류를 끊을 수 있음. \n 따라서, W의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[CLIP:https://www.youtube.com/shorts/wyLXB61QXi4]]"],
       en: ["[[TIP]] Viktor's W is a [[ST_CONDITIONAL]] [[STUN]], and [[STUN]] normally cannot interrupt [[DASH]]-type skills. \n However, Viktor's W is unusual in that it can interrupt [[DASH]]-type skills. \n Therefore, Viktor's W [[STUN]] can interrupt Camille's E1 and E2 [[DASH]]. [[CLIP:https://www.youtube.com/shorts/wyLXB61QXi4]]"],
     },
   },

@@ -9,7 +9,7 @@ export const ahri_yone: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 요네 Q3, E1의 [[DASH]]을 끊을 수 있음. [[EXIST]] \n 단, Q3의 [[PROJECTILE]]은 계속 날아감."],
+      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 요네 Q3, E1의 [[DASH]]을 끊을 수 있음. [[EXIST]] \n 단, Q3의 [[PROJECTILE]]은 끊기지 않음."],
       en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Yone's Q3 and E1 [[DASH]]. [[EXIST]] \n However, Q3's [[PROJECTILE]] continues flying."],
     },
     yone: {
