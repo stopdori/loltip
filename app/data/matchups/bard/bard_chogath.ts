@@ -13,10 +13,10 @@ export const bard_chogath: MatchupSummary = {
       en: [],
     },
     chogath: {
-      ko: ["Q의 [[AIRBORNE]]으로 바드 E(벽이동)의 [[DASH]]을 끊을 수 있음.", 
-        "W의 [[SILENCE]]으로 바드 E(벽이동)의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음."],
-      en: ["Q [[AIRBORNE]] can interrupt Bard's E (wall-travel) [[DASH]].",
-        "W [[SILENCE]] cannot interrupt Bard's E (wall-travel) [[DASH]]. \n However, the [[SILENCE]] still applies."],
+      ko: ["Q의 [[AIRBORNE]]으로 바드 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음.", 
+        "W의 [[SILENCE]]으로 바드 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음."],
+      en: ["Q [[AIRBORNE]] can interrupt Bard's E (wall-travel) [[SKILL_CHANNEL]] [[DASH]].",
+        "W [[SILENCE]] cannot interrupt Bard's E (wall-travel) [[SKILL_CHANNEL]] [[DASH]]. \n However, the [[SILENCE]] still applies."],
     },
   },
 };
