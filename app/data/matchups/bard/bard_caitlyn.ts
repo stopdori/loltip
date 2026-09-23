@@ -22,7 +22,7 @@ export const bard_caitlyn: MatchupSummary = {
     },
   },
   common: {
-    ko: ["특이한 판정 \n 바드 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]] 도중에 활성화된 케이틀린 W([[TRAP]])를 밟아도 [[DASH]]이 끊기지 않음. [[CLIP:https://www.youtube.com/shorts/u9AJ4bM5MKc]]"],
-    en: ["Unusual interaction \n Stepping on Caitlyn's activated W ([[TRAP]]) during Bard's E (Wall-hop) [[SKILL_CHANNEL]] [[DASH]] does not interrupt the [[DASH]]. [[CLIP:https://www.youtube.com/shorts/u9AJ4bM5MKc]]"],
+    ko: ["특이한 판정 \n 바드 E(벽이동)의 [[DASH]] 도중에 활성화된 케이틀린 W([[TRAP]])를 밟아도 [[DASH]]이 끊기지 않음. [[CLIP:https://www.youtube.com/shorts/u9AJ4bM5MKc]]"],
+    en: ["Unusual interaction \n Stepping on Caitlyn's activated W ([[TRAP]]) during Bard's E (Wall-hop) [[DASH]] does not interrupt the [[DASH]]. [[CLIP:https://www.youtube.com/shorts/u9AJ4bM5MKc]]"],
   },
 };

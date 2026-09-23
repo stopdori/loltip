@@ -13,7 +13,8 @@ export const akali_lissandra: MatchupSummary = {
       en: ["E2 [[HOMING]] [[DASH]] can follow Lissandra's E2 [[BLINK]]."],
     },
     lissandra: {
-      ko: [],
+      ko: ["W의 [[ROOT]]로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+        "R [[STUN]]의 [[KNOCKDOWN]]으로 아칼리 E1, E2, R1, R2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: [],
     },
   },

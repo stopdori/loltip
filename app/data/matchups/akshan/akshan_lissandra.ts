@@ -13,7 +13,7 @@ export const akshan_lissandra: MatchupSummary = {
       en: [""],
     },
     lissandra: {
-      ko: [],
+      ko: ["리산드라 W의 [[ROOT]], R의 [[STUN]]로 아크샨 E의 [[SKILL_CHANNEL]] [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [],
     },
   },

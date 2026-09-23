@@ -9,7 +9,7 @@ export const ahri_bard: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 바드 E(벽이동)의 [[DASH]]를 끊을 수 있음. [[EXIST]] \n 단, 즉시 벽에서 가장 가까운 땅으로 이동."],
+      ko: ["E([[CHARM]]) [[KNOCKDOWN]]으로 바드 E(벽이동)의 [[DASH]]을 끊을 수 있음. [[EXIST]] \n 단, 즉시 벽에서 가장 가까운 땅으로 이동."],
       en: ["E ([[CHARM]]) [[KNOCKDOWN]] can interrupt Bard's E (wall traversal) [[DASH]]. [[EXIST]] \n However, Bard is immediately ejected to the nearest ground next to the wall."],
     },
     bard: {

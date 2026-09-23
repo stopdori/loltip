@@ -13,7 +13,9 @@ export const belveth_lissandra: MatchupSummary = {
       en: [""],
     },
     lissandra: {
-      ko: [],
+      ko: ["W의 [[ROOT]]으로 벨베스 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[ROOT]]는 남아있음. [[NOT_EXIST]]", 
+        "R [[STUN]]의 [[KNOCKDOWN]]으로 벨베스 Q의 [[DASH]], E의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]", 
+      "벨베스 W의 [[AIRBORNE]]을 맞았을 때, 리산드라 E2를 사용할 수 없음."],
       en: [],
     },
   },
