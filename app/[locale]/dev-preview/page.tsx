@@ -106,7 +106,7 @@ export default function DevPreviewPage() {
               myChampId={MY_ID}
               enemyChampId={ENEMY_ID}
               lang="ko"
-              previewResult={previewResult}
+              initialResult={previewResult}
             />
           </section>
           <section>
@@ -115,7 +115,7 @@ export default function DevPreviewPage() {
               myChampId={MY_ID}
               enemyChampId={ENEMY_ID}
               lang="en"
-              previewResult={previewResult}
+              initialResult={previewResult}
             />
           </section>
         </div>

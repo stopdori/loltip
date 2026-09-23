@@ -8,6 +8,7 @@ import ChampSelectModal from "@/app/components/ChampSelectModal";
 import ChampMiniSearch from "@/app/components/ChampMiniSearch";
 import SkillTagsPanel from "@/app/components/SkillTagsPanel";
 import MatchupSummaryBox from "@/app/components/MatchupSummaryBox";
+import type { MatchupLoadResult } from "@/app/data/matchups/_index";
 import UltCooldownBox from "@/app/components/UltCooldownBox";
 
 import { CHAMPIONS, type Champ } from "@/app/data/champions";
@@ -32,9 +33,16 @@ type Props = {
   // 퀴즈 박스 아래, 광고/푸터 위에 추가로 렌더링할 섹션(서버 컴포넌트 그대로 넘길 수 있음).
   // 현재는 /champ 페이지의 "전체 챔피언" 링크 그리드(ChampGrid)에만 쓴다.
   extraSection?: React.ReactNode;
+  // 매치업 페이지(서버)가 이미 읽은 판정 데이터. 넘기면 MatchupSummaryBox가 fetch 없이
+  // 첫 렌더부터 그리므로 판정 박스가 SSR HTML에 들어간다. 넘기지 않는 경로(/champ,
+  // /champ/[id], champ-embed)는 기존대로 클라이언트에서 fetch한다.
+  matchupResult?: MatchupLoadResult;
+  // 매치업 페이지에서만 쓰는 화면용 제목(h1) 슬롯 — 판정 박스 바로 위에 렌더링된다.
+  // 다른 경로에서 판정 박스가 뜰 때 h1이 중복되지 않도록 page.tsx가 있을 때만 넘긴다.
+  summaryHeading?: React.ReactNode;
 };
 
-export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, embedMode, useIframe, forceCompact, extraSection }: Props) {
+export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, embedMode, useIframe, forceCompact, extraSection, matchupResult, summaryHeading }: Props) {
   const locale = useLocale();
   const lang = locale as Lang;
 
@@ -352,14 +360,17 @@ setOpenTarget(null);
 
 }}
         />
-
       {bothSelected && !embedMode && (
 <section className="mt-6 sm:mt-12 max-w-[430px] sm:max-w-[960px] mx-auto">
+  {/* 서버 컴포넌트(page.tsx)에서 넘어온 엘리먼트는 배열 자식이 되면 React가 key 경고를 낸다.
+      extraSection과 같은 방식으로 래퍼의 단일 자식으로 렌더링한다. */}
+  {summaryHeading && <div>{summaryHeading}</div>}
   <MatchupSummaryBox
     myChampId={myChamp!.id}
     enemyChampId={enemyChamp!.id}
     lang={lang}
     highlight={highlight}
+    initialResult={matchupResult}
   />
 </section>
 )}

@@ -61,17 +61,19 @@ export default function MatchupSummaryBox({
   enemyChampId,
   lang,
   highlight,
-  previewResult,
+  initialResult,
 }: {
   myChampId: string;
   enemyChampId: string;
   lang: Lang;
   highlight?: string;
-  // 스타일/레이아웃 미리보기 전용(app/[locale]/dev-preview): 넘기면 /api/matchup fetch를
-  // 건너뛰고 이 값을 그대로 사용한다. 넘기지 않으면(기존 호출부 전부) 기존 동작 그대로 fetch함.
-  previewResult?: MatchupLoadResult;
+  // 서버가 이미 읽은 매치업 결과를 첫 렌더부터 쓰기 위한 초기값. 넘기면 /api/matchup fetch를
+  // 건너뛰고 이 값을 그대로 사용하므로, 판정 박스가 SSR HTML에 그대로 들어간다.
+  // 넘기지 않으면(/champ, /champ/[id] 등) 기존처럼 클라이언트에서 fetch한다.
+  // 매치업 페이지(SSR 주입)와 dev-preview(하드코딩 더미)가 함께 쓴다.
+  initialResult?: MatchupLoadResult;
 }) {
-  const [result, setResult] = useState<MatchupLoadResult | null>(previewResult ?? null);
+  const [result, setResult] = useState<MatchupLoadResult | null>(initialResult ?? null);
   const highlightRef = useRef<HTMLLIElement>(null);
   const parsed = parseHighlight(highlight);
 
@@ -85,11 +87,11 @@ export default function MatchupSummaryBox({
   };
 
   useEffect(() => {
-    if (previewResult) return;
+    if (initialResult) return;
     fetch(`/api/matchup?a=${encodeURIComponent(myChampId)}&b=${encodeURIComponent(enemyChampId)}`)
       .then((res) => res.json())
       .then(setResult);
-  }, [myChampId, enemyChampId, previewResult]);
+  }, [myChampId, enemyChampId, initialResult]);
 
   useEffect(() => {
     if (!parsed || !result) return;

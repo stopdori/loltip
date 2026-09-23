@@ -181,14 +181,6 @@ export default async function Page({ params, searchParams }: Props) {
 
       {/* 구글 크롤러용 SSR 콘텐츠 */}
       <div className="hidden">
-        <h1>
-          {lang === "ko" ? (
-            <>{champA.ko} vs {champB.ko} 매치업</>
-          ) : (
-            <>{champA.en} vs {champB.en} Matchup</>
-          )}
-        </h1>
-
         {highlights.map(({ champId, champName, items }) => (
           <div key={champId}>
             <h2>{champName} {lang === "ko" ? "판정" : "Interactions"}</h2>
@@ -206,6 +198,16 @@ export default async function Page({ params, searchParams }: Props) {
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
         highlight={highlight}
+        // 서버가 이미 읽은 판정 데이터를 넘겨 판정 박스를 SSR에 포함시킨다(클라이언트 fetch 없음).
+        matchupResult={matchup ?? undefined}
+        // 화면에 보이는 h1 — 매치업 페이지에서만 넘기므로 다른 경로에서 h1이 중복되지 않는다.
+        summaryHeading={
+          <h1 className="mb-3 text-lg sm:text-xl font-bold text-slate-100">
+            {lang === "ko"
+              ? `${champA.ko} vs ${champB.ko} 매치업`
+              : `${champA.en} vs ${champB.en} Matchup`}
+          </h1>
+        }
         extraSection={
           <MatchupChampLinks
             lang={lang}
