@@ -9,8 +9,8 @@ export const ekko_gangplank: MatchupSummary = {
   },
   highlightsByChamp: {
     ekko: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     gangplank: {
       ko: [],

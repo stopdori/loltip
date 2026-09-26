@@ -13,7 +13,7 @@ export const draven_ekko: MatchupSummary = {
       en: ["E [[KNOCKBACK]] can interrupt Ekko's E [[DASH]]."],
     },
     ekko: {
-      ko: [],
+      ko: ["E(경직 단계)의 [[CC_BUFFER]]로 드레이븐 E의 [[KNOCKBACK]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[BLINK]] 종료 후 [[KNOCKBACK]]([[AIRBORNE]])은 남아있음."],
       en: [],
     },
   },

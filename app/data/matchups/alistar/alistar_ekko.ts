@@ -21,7 +21,7 @@ export const alistar_ekko: MatchupSummary = {
     ekko: {
       ko: ["E(순간이동 단계)의 [[HOMING]] [[BLINK]]으로 알리스타 W의 [[DASH]]을 따라갈 수 있음. [[EXIST]]", 
         "W의 [[STUN]]로 알리스타 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
-        "E(경직 단계)의 [[CC_BUFFER]]로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[BLINK]] 종료 후 [[AIRBORNE]], [[KNOCKBACK]], [[STUN]]은 남아있음."],
+        "E(경직 단계)의 [[CC_BUFFER]]로 알리스타 Q의 [[AIRBORNE]], W의 [[KNOCKBACK]], E의 [[STUN]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[BLINK]] 종료 후 [[AIRBORNE]], [[KNOCKBACK]]([[AIRBORNE]]), [[STUN]]은 남아있음."],
       en: [],
     },
   },

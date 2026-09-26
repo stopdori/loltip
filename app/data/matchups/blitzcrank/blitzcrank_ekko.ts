@@ -14,7 +14,7 @@ export const blitzcrank_ekko: MatchupSummary = {
       en: [""],
     },
     ekko: {
-      ko: [],
+      ko: ["E(경직 단계)의 [[CC_BUFFER]]로 블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[BLINK]] 종료 후 Q([[GRAB]]), E의 [[AIRBORNE]] / R의 [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

@@ -17,7 +17,9 @@ export const camille_ekko: MatchupSummary = {
         "Camille's R [[UNTARGETABLE]] can dodge Ekko's Q and R."],
     },
     ekko: {
-      ko: ["W의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      ko: ["E(순간이동 단계)의 [[HOMING]] [[BLINK]]으로 카밀 E1, E2의 [[DASH]]을 따라갈 수 있음. [[EXIST]]", 
+        "W의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+        "E(경직 단계)의 [[CC_BUFFER]]로 카밀 E2의 [[KNOCKBACK]], [[STUN]] / R의 [[KNOCKBACK]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[BLINK]] 종료 후 E2의 [[KNOCKBACK]]([[AIRBORNE]]), [[STUN]] / R의 [[GRAB]], [[KNOCKBACK]]([[AIRBORNE]])은 남아있음."],
       en: ["Ekko's W [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },
