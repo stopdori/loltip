@@ -9,8 +9,8 @@ export const lissandra_twitch: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     twitch: {
       ko: [],

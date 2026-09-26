@@ -13,7 +13,7 @@ export const heimerdinger_lissandra: MatchupSummary = {
       en: [""],
     },
     lissandra: {
-      ko: [],
+      ko: ["하이머딩거 E, RE의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: [],
     },
   },

@@ -13,7 +13,7 @@ export const annie_lissandra: MatchupSummary = {
       en: ["R [[SUMMON]]ed Tibbers can block Lissandra's Q [[SINGLE]] [[PROJECTILE]]. \n However, Q's additional [[AOE]] damage cannot be blocked."],
     },
     lissandra: {
-      ko: [],
+      ko: ["애니 P의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: [],
     },
   },

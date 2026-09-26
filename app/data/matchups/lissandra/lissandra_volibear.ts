@@ -9,7 +9,10 @@ export const lissandra_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: ["W의 [[ROOT]], R의 [[STUN]]로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. [[EXIST]] \n 단, 볼리베어 Q는 [[CDR_RESET]]."],
+      ko: ["W의 [[ROOT]]으로 볼리베어 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+        "R [[STUN]]의 [[KNOCKDOWN]]으로 볼리베어 Q의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+      "W의 [[ROOT]], R의 [[STUN]]로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. [[EXIST]] \n 단, 볼리베어 Q는 [[CDR_RESET]].", 
+      "볼리베어 Q의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: [""],
     },
     volibear: {

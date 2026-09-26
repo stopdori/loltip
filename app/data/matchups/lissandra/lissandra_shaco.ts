@@ -9,7 +9,7 @@ export const lissandra_shaco: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: [""],
+      ko: ["샤코 W, R의 [[FEAR]]를 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: [""],
     },
     shaco: {

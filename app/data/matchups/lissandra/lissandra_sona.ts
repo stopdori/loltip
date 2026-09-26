@@ -9,7 +9,7 @@ export const lissandra_sona: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: [""],
+      ko: ["소나 R의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: [""],
     },
     sona: {

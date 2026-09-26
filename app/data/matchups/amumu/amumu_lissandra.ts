@@ -13,7 +13,9 @@ export const amumu_lissandra: MatchupSummary = {
       en: ["Q [[CC_BUFFER]] can ignore Lissandra's W [[ROOT]] and R [[STUN]] and continue [[DASH]]. \n However, the [[ROOT]] and [[STUN]] still apply. \n However, if Lissandra's R activates during Amumu's Q [[DASH]], the [[DASH]] may be interrupted."],
     },
     lissandra: {
-      ko: [],
+      ko: ["W의 [[ROOT]]으로 아무무 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+        "R [[STUN]]의 [[KNOCKDOWN]]으로 아무무 Q의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+      "아무무 Q, R의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: [],
     },
   },

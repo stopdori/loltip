@@ -9,11 +9,11 @@ export const lissandra_seraphine: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: ["세라핀 R이 리산드라 P로 생성된 챔피언들로 사거리 증가가 가능함."],
-      en: ["Seraphine's R range can be extended by champions created by Lissandra's P"],
+      ko: ["세라핀 E의 [[ROOT]], [[STUN]] / R의 [[CHARM]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
+      en: [],
     },
     seraphine: {
-      ko: [],
+      ko: ["[[TIP]] - 특이한 판정 (상급) \n 리산드라 P로 생성된 얼음 노예로 세라핀 R의 [[RANGE_UP]] 효과 발동."],
       en: [],
     },
   },

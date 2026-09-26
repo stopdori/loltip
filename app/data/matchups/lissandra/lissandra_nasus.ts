@@ -9,8 +9,8 @@ export const lissandra_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nasus: {
       ko: [],

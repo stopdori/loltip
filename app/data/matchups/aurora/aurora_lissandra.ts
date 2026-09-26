@@ -15,7 +15,8 @@ export const aurora_lissandra: MatchupSummary = {
         "R [[UNSTOPPABLE]] [[DASH]] can ignore Lissandra's W [[ROOT]] and R [[STUN]] and continue [[DASH]]. \n However, the [[ROOT]] and [[STUN]] still apply."],
     },
     lissandra: {
-      ko: [],
+      ko: ["W의 [[ROOT]]으로 오로라 W, E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+        "R [[STUN]]의 [[KNOCKDOWN]]으로 오로라 W, E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: [],
     },
   },

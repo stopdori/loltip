@@ -9,7 +9,7 @@ export const lissandra_shyvana: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: [""],
+      ko: ["쉬바나 R의 [[FEAR]]를 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: [""],
     },
     shyvana: {

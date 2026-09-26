@@ -13,8 +13,10 @@ export const gragas_lissandra: MatchupSummary = {
       en: [],
     },
     lissandra: {
-      ko: ["리산드라 W로 그라가스 E를 끊을 수 있음"],
-      en: ["Lissandra's W can interrupt Gragas's E"],
+      ko: ["W의 [[ROOT]]으로 그라가스 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+        "R [[STUN]]의 [[KNOCKDOWN]]으로 그라가스 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+      "그라가스 E, R의 [[KNOCKBACK]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
+      en: [],
     },
   },
 };

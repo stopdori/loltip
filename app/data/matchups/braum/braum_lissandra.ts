@@ -13,7 +13,9 @@ export const braum_lissandra: MatchupSummary = {
       en: ["Braum's E (shield) can [[DAMAGE_NULLIFY]] Lissandra's basic attacks, P, Q, W, E, and R.\nNote: For Lissandra's R, Braum must hold the shield facing outward (away from the center).\nThis applies whether R is cast on Lissandra herself, on Braum, or on a Braum ally.","Braum's E (shield) can [[INTERCEPT_PROJECTILE]] Lissandra's basic attacks, Q, and E.\nNote: Lissandra's Q is immediately ''deleted'' — the spreading projectiles behind it also disappear.\nNote: Lissandra's E is immediately ''deleted'' — Lissandra cannot use E2 afterward."],
     },
     lissandra: {
-      ko: [],
+      ko: ["W의 [[ROOT]]으로 브라움 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+        "R [[STUN]]의 [[KNOCKDOWN]]으로 브라움 W의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+      "브라움 P의 [[STUN]], R의 [[AIRBORNE]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: [],
     },
   },

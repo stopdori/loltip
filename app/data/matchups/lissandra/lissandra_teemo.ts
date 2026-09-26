@@ -9,8 +9,8 @@ export const lissandra_teemo: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     teemo: {
       ko: [],
