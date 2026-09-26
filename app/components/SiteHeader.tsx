@@ -166,7 +166,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
           LOLTIP
         </Link>
         <p className="mt-2 text-slate-300 hidden md:block">{subtitle}</p>
-        <p className="mt-1 text-xs text-slate-400">26.17 {lang === "ko" ? "패치 반영" : "patch"}</p>
+        <p className="mt-1 text-xs text-slate-400">26.19 {lang === "ko" ? "패치 반영" : "patch"}</p>
       </div>
     </header>
   );
