@@ -80,6 +80,7 @@ export type TagId =
   | "SPELL_SHIELD"
   | "DAMAGE_NULLIFY"
   | "INTERCEPT_PROJECTILE"
+  | "RIPOSTE"
 
   /* 5) 생존 / 방어 */
   | "INVULNERABLE"  // 무적
@@ -231,6 +232,7 @@ WINDSHIELD: { ko: "장막", en: "Projectile Block" },
 SPELL_SHIELD: { ko: "주문방어", en: "Spell Shield" },
 DAMAGE_NULLIFY: { ko: "피해 무효화", en: "Damage Nullify" },
 INTERCEPT_PROJECTILE: { ko: "투사체 차단", en: "Projectile Delete" },
+RIPOSTE: { ko: "응수", en: "Riposte" },
 
   /* 5) 생존 / 방어 */
 INVULNERABLE: { ko: "무적", en: "Invulnerable" },
@@ -606,6 +608,10 @@ SPELL_SHIELD: {
 },
 DAMAGE_NULLIFY: { ko: "브라움에게 가해지는 첫 피해를 무효", en: "Nullifies damage dealt to Braum." },
 INTERCEPT_PROJECTILE: { ko: "브라움이 아군에게 날아가는 것을 대신 맞아줌\n이때 투사체가 사라질 수 도 있음", en: "Braum leaps to an ally to take the hit for them\nAt this time, the projectile may be destroyed." },
+RIPOSTE: {
+  ko: "짧은 시간 모든 피해와 [[IMMOBILIZING]] 효과를 무효화. \n 이때 하드CC를 막아내면 직후 효과가 [[STUN]]으로 강화됨(아니면 슬로우). \n 피오라 W 전용.",
+  en: "Negates all incoming damage and [[IMMOBILIZING]] effects for a short duration. \n If a hard-CC effect is negated, the follow-up is upgraded to a [[STUN]] instead of a slow. \n Fiora W only.",
+},
 
   /* 5) 생존 / 방어 */
 INVULNERABLE: {
