@@ -12,17 +12,10 @@ import { waGwa } from "@/app/utils/koreanParticle";
 
 const MAX_LEN = { ko: 80, en: 155 } as const;
 
-// 디스크립션 전용 전처리: [[EXIST]]/[[NOT_EXIST]]는 화면에선 O/X 기호로 렌더링되는데,
-// 검색 결과 요약문에 기호만 덩그러니 남으면 뜻을 알 수 없으므로 원문 단계에서 없앤다.
-// 보통 "…할 수 있음. [[EXIST]]" 형태로 문장 끝에 붙고, 뒤에 마침표가 하나 더 오는 경우도 있어 같이 지운다.
-// 토큰 자리를 공백으로 바꾸는 이유: 뒤따르는 줄바꿈까지 함께 지우면 다음 문장이 앞 문장에 붙어버린다("있음.단,").
-function dropExistTokens(raw: string): string {
-  return raw.replace(/\[\[(?:EXIST|NOT_EXIST)\]\]\s*\.?/g, " ");
-}
-
 // 판정 항목 하나를 "완결된 문장" 배열로 쪼갠다. \n(줄바꿈)은 공백으로 펴고, 마침표 뒤에서 끊는다.
+// [[EXIST]]/[[NOT_EXIST]](O/X 기호) 제거는 stripTagTokens가 공용으로 처리한다.
 function toSentences(raw: string, lang: "ko" | "en"): string[] {
-  const text = stripTagTokens(dropExistTokens(raw), lang)
+  const text = stripTagTokens(raw, lang)
     .replace(/\s*\n\s*/g, " ")
     .replace(/\s+/g, " ")
     .trim();

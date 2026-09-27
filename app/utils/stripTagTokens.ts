@@ -22,17 +22,31 @@
 //    TIP_PREFIX_RE와 동일해야 한다(그쪽을 바꾸면 이쪽도 같이 바꿀 것).
 //    (사전에 없는 오타 토큰, 예: [[SUTN]]은 화면에서도 원문 그대로 보여 작성자가 발견할 수
 //    있으므로 SSR에서도 일부러 제거하지 않는다.)
+// 5) [[EXIST]]/[[NOT_EXIST]] → 토큰과 바로 뒤 마침표 하나를 제거한다. 화면에선 O/X 기호로
+//    렌더링되는데, 텍스트만 남는 SSR 본문/JSON-LD/meta description에선 기호만 덩그러니 남아
+//    뜻을 알 수 없다. 보통 "…할 수 있음. [[EXIST]]" 형태로 줄 끝에 붙는다.
+//    토큰 앞뒤의 스페이스/탭만 같이 걷어내고 줄바꿈(\n)은 남겨서 다음 줄이 앞 줄에 붙지 않게 한다.
+//    양옆이 모두 글자인 줄 중간 위치라면 단어가 붙지 않도록 공백 하나로 바꾼다.
 
 import { parseTagTokens } from "@/app/data/interactions/parseTagTokens";
 
 const TIP_PREFIX_RE = /^\[\[TIP\]\]\s*/;
+const EXIST_TOKEN_RE = /[ \t]*\[\[(?:EXIST|NOT_EXIST)\]\][ \t]*\.?[ \t]*/g;
+
+function dropExistTokens(text: string): string {
+  return text.replace(EXIST_TOKEN_RE, (m: string, offset: number, str: string) => {
+    const prev = str[offset - 1];
+    const next = str[offset + m.length];
+    return prev && next && !/\s/.test(prev) && !/\s/.test(next) ? " " : "";
+  });
+}
 
 export function stripTagTokens(text: string, lang: "ko" | "en"): string {
   let out = "";
   let removedClip = false;
   let pendingSpace = false;
 
-  for (const seg of parseTagTokens(text.replace(TIP_PREFIX_RE, ""), lang)) {
+  for (const seg of parseTagTokens(dropExistTokens(text.replace(TIP_PREFIX_RE, "")), lang)) {
     if (seg.raw?.startsWith("CLIP:")) {
       removedClip = true;
       pendingSpace = pendingSpace || /[ \t]+$/.test(out);
