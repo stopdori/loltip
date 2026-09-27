@@ -7,13 +7,14 @@ import Image from "next/image";
 import SiteHeader from "@/app/components/SiteHeader";
 import { getExamQuestions } from "../data";
 import { DIFFICULTY_POINTS, EXAM_VERSION } from "../data/config";
-import tiers from "../data/tiers";
+import tiers, { getExamTier } from "../data/tiers";
 import { loadExamProgress, saveExamProgress, encodeAnswers, type ExamProgress } from "../useExamProgress";
 
 type Lang = "ko" | "en";
 
 const TIER_COLORS: Record<string, string> = {
-  iron:        "text-slate-400",
+  unranked:    "text-slate-500",
+  iron:       "text-slate-400",
   bronze:      "text-amber-700",
   silver:      "text-slate-300",
   gold:        "text-yellow-400",
@@ -25,11 +26,29 @@ const TIER_COLORS: Record<string, string> = {
   challenger:  "text-cyan-300",
 };
 
-const MASTER_INDEX = tiers.findIndex((t) => t.tier === "master");
-
-// 결과 연출의 모든 시간 값에 곱하는 배율 (클수록 느려짐). 4/3 = 기본 속도의 75%.
+// 결과 연출의 시간 값에 곱하는 배율 (클수록 느려짐). 4/3 = 기본 속도의 75%.
+// 단, 아래 SLOW_STEP_MS / FINAL_STEP_MS는 배율을 적용하지 않는 고정값이다.
 const REVEAL_TIME_SCALE = 4 / 3;
 const revealMs = (ms: number) => Math.round(ms * REVEAL_TIME_SCALE);
+
+// 승급 연출 한 단계 간격
+// - 아래 세 단계(다이아→마스터, 마스터→그마, 그마→챌린저)는 최종 티어와 상관없이 항상 이 고정값
+// - 그 외 티어는 최종 티어로 넘어가는 마지막 한 단계만 FINAL_STEP_MS, 나머지는 일반 단계(220ms × 배율)
+const SLOW_STEP_MS: Partial<Record<string, number>> = {
+  master: 650,
+  grandmaster: 770,
+  challenger: 870,
+};
+const FINAL_STEP_MS = 650;
+const NORMAL_STEP_MS = 220;
+
+// tierIndex → tierIndex + 1 로 올라가는 단계의 대기 시간(ms)
+function climbStepDelay(nextIndex: number, finalIndex: number): number {
+  const slow = SLOW_STEP_MS[tiers[nextIndex].tier];
+  if (slow !== undefined) return slow;
+  if (nextIndex === finalIndex) return FINAL_STEP_MS;
+  return revealMs(NORMAL_STEP_MS);
+}
 
 type Session = {
   progress: ExamProgress | null;
@@ -95,12 +114,7 @@ function ResultContent() {
     return { score: earned, totalPoints: total };
   }, [questions, userAnswers]);
 
-  const percentage = totalPoints > 0 ? Math.round((score / totalPoints) * 100) : 0;
-
-  const finalTier = useMemo(() => {
-    const sorted = [...tiers].sort((a, b) => b.min - a.min);
-    return sorted.find((t) => percentage >= t.min) ?? tiers[0];
-  }, [percentage]);
+  const finalTier = useMemo(() => getExamTier(score, totalPoints), [score, totalPoints]);
 
   const finalIndex = tiers.findIndex((t) => t.tier === finalTier.tier);
 
@@ -130,30 +144,43 @@ function ResultContent() {
     return () => clearTimeout(t);
   }, [phase]);
 
-  // 티어를 한 단계씩 올린다 (마스터 이상은 느리게)
+  // 티어를 언랭(0)부터 한 단계씩 올린다. 최종 티어가 언랭(0점)이면 바로 done → 확대 효과와 함께 표시
   useEffect(() => {
     if (phase !== "climbing") return;
     if (tierIndex >= finalIndex) {
       setPhase("done");
       return;
     }
-    const enteringSlowZone = tierIndex + 1 >= MASTER_INDEX;
-    const delay = revealMs(enteringSlowZone ? 650 : 220);
+    const delay = climbStepDelay(tierIndex + 1, finalIndex);
     const t = setTimeout(() => setTierIndex((i) => Math.min(i + 1, finalIndex)), delay);
     return () => clearTimeout(t);
   }, [phase, tierIndex, finalIndex]);
 
-  // 점수 카운트업
+  // 승급 연출 전체 시간(언랭 → 최종 티어까지 모든 단계 간격의 합). 최종 티어가 언랭이면 0
+  const climbTotalMs = useMemo(() => {
+    let sum = 0;
+    for (let i = 1; i <= finalIndex; i++) sum += climbStepDelay(i, finalIndex);
+    return sum;
+  }, [finalIndex]);
+
+  // 점수 카운트업: 승급 연출과 같은 총 시간 동안 경과 시간 비율로 올려서, 최종 티어가 표시되는 순간 최종 점수에 도착
+  // (0점/언랭은 climbTotalMs가 0이라 카운트업 없이 0)
   useEffect(() => {
-    if (phase !== "climbing") return;
-    const steps = 20;
-    let i = 0;
-    const interval = setInterval(() => {
-      i++;
-      setDisplayScore(Math.round((score * i) / steps));
-      if (i >= steps) clearInterval(interval);
-    }, revealMs(90));
-    return () => clearInterval(interval);
+    if (phase !== "climbing" || climbTotalMs <= 0) return;
+    const start = performance.now();
+    let raf = 0;
+    const tick = (now: number) => {
+      const progress = Math.min(1, (now - start) / climbTotalMs);
+      setDisplayScore(Math.round(score * progress));
+      if (progress < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [phase, score, climbTotalMs]);
+
+  // 연출이 끝나면(스킵 포함, 어떤 경우든) 점수는 반드시 최종 점수로 채운다 — 타이머 오차로 카운트업이 덜 끝났어도 보정
+  useEffect(() => {
+    if (phase === "done") setDisplayScore(score);
   }, [phase, score]);
 
   // 연출이 끝나면(스킵 포함) revealed를 저장

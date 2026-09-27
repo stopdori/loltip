@@ -10,6 +10,13 @@ import { loadExamProgress, clearExamProgress, encodeAnswers, type ExamProgress }
 
 type Lang = "ko" | "en";
 
+// 메인 버튼 영역 공용 스타일 — 풀던 중/제출 완료/처음 상태가 같은 모양을 쓰도록 한 곳에서 관리
+// 노란 주 버튼(풀러가기 / 이어서 풀기 / 내 결과 보기)
+const PRIMARY_BUTTON_CLASS =
+  "px-8 py-3 rounded-xl bg-yellow-400 text-black font-bold text-base hover:brightness-110 active:scale-95 transition";
+// 밑줄 텍스트 링크(처음부터 다시 풀기 / 챔피언 가이드로 돌아가기)
+const TEXT_LINK_CLASS = "text-sm text-slate-400 hover:text-slate-200 underline underline-offset-2 transition";
+
 export default function ExamClient() {
   const locale = useLocale();
   const lang = locale as Lang;
@@ -41,8 +48,9 @@ export default function ExamClient() {
         : "Restart from the beginning? Your current progress will be deleted."
     );
     if (!confirmed) return;
+    // 완료 상태의 handleRetake와 같은 동작: 기록을 지우고 바로 1번 문항부터 풀이 화면으로
     clearExamProgress();
-    setProgress(null);
+    router.push(`/${locale}/exam/paper`);
   }
 
   function handleRetake() {
@@ -76,22 +84,19 @@ export default function ExamClient() {
           <>
             <a
               href={`/${locale}/exam/result?v=${EXAM_VERSION}&a=${encodeAnswers(progress!.answers)}`}
-              className="px-8 py-3 rounded-xl bg-yellow-400 text-black font-bold text-base hover:brightness-110 active:scale-95 transition"
+              className={PRIMARY_BUTTON_CLASS}
             >
               {lang === "ko" ? "내 결과 보기" : "View My Result"}
             </a>
-            <button
-              onClick={handleRetake}
-              className="px-5 py-2 rounded-xl bg-slate-700 ring-1 ring-white/10 text-slate-200 text-sm font-semibold hover:bg-slate-600 active:scale-95 transition"
-            >
-              {lang === "ko" ? "다시 풀기" : "Retake"}
+            <button onClick={handleRetake} className={TEXT_LINK_CLASS}>
+              {lang === "ko" ? "처음부터 다시 풀기" : "Retake"}
             </button>
           </>
         ) : resumable ? (
           <>
             <a
               href={`/${locale}/exam/paper`}
-              className="px-8 py-3 rounded-xl bg-yellow-400 text-black font-bold text-base hover:brightness-110 active:scale-95 transition"
+              className={PRIMARY_BUTTON_CLASS}
             >
               {lang === "ko"
                 ? `이어서 풀기 (${progress!.current + 1}/${total})`
@@ -99,15 +104,15 @@ export default function ExamClient() {
             </a>
             <button
               onClick={handleRestart}
-              className="text-sm text-slate-400 hover:text-slate-200 underline underline-offset-2 transition"
+              className={TEXT_LINK_CLASS}
             >
-              {lang === "ko" ? "처음부터 다시" : "Start over"}
+              {lang === "ko" ? "처음부터 다시 풀기" : "Retake"}
             </button>
           </>
         ) : (
           <a
             href={`/${locale}/exam/paper`}
-            className="px-8 py-3 rounded-xl bg-yellow-400 text-black font-bold text-base hover:brightness-110 active:scale-95 transition"
+            className={PRIMARY_BUTTON_CLASS}
           >
             {lang === "ko" ? "풀러가기 →" : "Start Exam →"}
           </a>
@@ -118,7 +123,7 @@ export default function ExamClient() {
       <div className="text-center">
         <a
           href={`/${locale}/champ`}
-          className="text-sm text-slate-400 hover:text-slate-200 underline underline-offset-2 transition"
+          className={TEXT_LINK_CLASS}
         >
           {lang === "ko" ? "← 챔피언 가이드로 돌아가기" : "← Back to Champion Guide"}
         </a>

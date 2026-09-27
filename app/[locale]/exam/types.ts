@@ -11,9 +11,9 @@ export type ExamQuestion = {
 };
 
 export type ExamTier = {
-  min: number;
   label: { ko: string; en: string };
   tier:
+    | "unranked"
     | "iron"
     | "bronze"
     | "silver"

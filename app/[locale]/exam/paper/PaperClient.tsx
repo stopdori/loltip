@@ -135,7 +135,7 @@ export default function PaperClient() {
               onClick={handleRestart}
               className="text-xs text-slate-500 hover:text-slate-300 underline underline-offset-2 transition"
             >
-              {lang === "ko" ? "처음부터" : "Restart"}
+              {lang === "ko" ? "처음부터 다시 풀기" : "Retake"}
             </button>
           </div>
           <button
