@@ -11,15 +11,15 @@ export const camille_mordekaiser: MatchupSummary = {
     camille: {
       ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 모데카이저 E의 [[GRAB]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음.", 
       "R의 [[UNTARGETABLE]]로 모데카이저 Q, E, R을 피할 수 있음.", 
-    "[[TIP]]R의 [[UNTARGETABLE]], [[UNSTOPPABLE]]로 모데카이저 R을 무시할 수 있음. \n 즉, 죽음의 세계로 가지 않음. \n 모데 R은 [[COOLDOWN]] 소모.", ],
-      en: ["Camille's E1 (Throw phase) [[CC_BUFFER]] can ignore Mordekaiser's E [[GRAB]] and continue into the E1 (Wall-dash phase) [[DASH]].",
-        "Camille's R [[UNTARGETABLE]] can dodge Mordekaiser's Q, E, and R.",
-        "[[TIP]]Camille's R [[UNTARGETABLE]] and [[UNSTOPPABLE]] can ignore Mordekaiser's R. \n In other words, she is not pulled into the Death Realm. \n Mordekaiser's R still consumes its [[COOLDOWN]]."
+    "R의 [[UNTARGETABLE]]로 모데카이저 R을 취소 시킬 수 있음. [[EXIST]] \n 단, 모데카이저 R의 [[COOLDOWN]]은 소모되지 않음.", ],
+      en: ["E1 (Throw phase) [[CC_BUFFER]] can ignore Mordekaiser's E [[GRAB]] and continue into the E1 (Wall-dash phase) [[DASH]].",
+        "R [[UNTARGETABLE]] can dodge Mordekaiser's Q, E, and R.",
+        "[[TIP]]R [[UNTARGETABLE]] and [[UNSTOPPABLE]] can ignore Mordekaiser's R. \n In other words, she is not pulled into the Death Realm. \n Mordekaiser's R does not consume its [[COOLDOWN]]. [[NOT_EXIST]]"
       ],
     },
     mordekaiser: {
       ko: ["E의 [[GRAB]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
-      en: ["Mordekaiser's E [[GRAB]] can interrupt Camille's E1 and E2 [[DASH]]."],
+      en: ["E [[GRAB]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },
   common: {
