@@ -19,6 +19,12 @@
   }
 }
 
+/* 롤 능력고사(/exam 하위) 전용 — 문항마다 페이지 높이가 바뀌어도 스크롤바 유무로 좌우가 밀리지 않도록 자리 확보.
+   app/[locale]/exam/layout.tsx가 마운트 중에만 html에 이 클래스를 붙인다. */
+html.exam-scrollbar-stable {
+  scrollbar-gutter: stable;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

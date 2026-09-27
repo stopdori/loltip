@@ -30,7 +30,7 @@ type Props = {
   embedMode?: boolean;
   useIframe?: boolean;
   forceCompact?: boolean;
-  // 퀴즈 박스 아래, 광고/푸터 위에 추가로 렌더링할 섹션(서버 컴포넌트 그대로 넘길 수 있음).
+  // 하단 광고 아래, 푸터 바로 위에 추가로 렌더링할 섹션(서버 컴포넌트 그대로 넘길 수 있음).
   // 현재는 /champ 페이지의 "전체 챔피언" 링크 그리드(ChampGrid)에만 쓴다.
   extraSection?: React.ReactNode;
   // 매치업 페이지(서버)가 이미 읽은 판정 데이터. 넘기면 MatchupSummaryBox가 fetch 없이
@@ -556,10 +556,6 @@ setOpenTarget(null);
         </div>
       )}
 
-      {!embedMode && extraSection && (
-        <div className="max-w-[430px] sm:max-w-[960px] mx-auto">{extraSection}</div>
-      )}
-
       {!embedMode && (
         <FeedbackButton lang={lang} hidden={openTarget !== null || noticeOpen} />
       )}
@@ -569,6 +565,10 @@ setOpenTarget(null);
   <AdSlot side="bottom" />
 </div>
 )}
+
+      {!embedMode && extraSection && (
+        <div className="pt-36 sm:pt-48 max-w-[430px] sm:max-w-[960px] mx-auto">{extraSection}</div>
+      )}
 
 {!embedMode && (
 <footer className="pt-8 text-center text-xs text-slate-500">

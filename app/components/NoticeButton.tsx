@@ -25,7 +25,7 @@ export default function NoticeButton({ lang, className, hidden, onOpenChange }: 
 
   const t = useMemo(() => {
     return lang === "ko"
-      ? { label: "공지사항", title: "공지사항" }
+      ? { label: "공지", title: "공지사항" }
       : { label: "Notice", title: "Notices" };
   }, [lang]);
 

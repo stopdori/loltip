@@ -28,33 +28,26 @@ export default function ChampGrid({ lang }: { lang: "ko" | "en" }) {
         {lang === "ko" ? "전체 챔피언" : "All Champions"}
       </h1>
 
-      <ul className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 sm:gap-3">
+      <ul className="grid grid-cols-[repeat(auto-fill,minmax(32px,1fr))] gap-1">
         {champions.map((c) => {
           const name = lang === "ko" ? c.ko : c.en;
           return (
-            <li key={c.id}>
+            <li key={c.id} className="flex justify-center">
               {/* 173개가 한꺼번에 뷰포트에 들어오면 프리패치가 몰리므로 끈다(링크 자체는 그대로 크롤 가능) */}
               <Link
                 href={`/champ/${c.id}`}
                 prefetch={false}
                 title={name}
-                className="block rounded-xl bg-slate-800/50 hover:bg-slate-700/60 transition p-1.5 sm:p-2 border border-white/10 hover:border-white/20"
+                className="relative block w-8 h-8 rounded overflow-hidden hover:ring-2 hover:ring-yellow-400/70 transition"
               >
-                {/* aspect-square 래퍼가 이미지 로딩 전에 자리를 미리 잡아서 레이아웃 시프트가 없다 */}
-                <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-white/10 bg-slate-950/30">
-                  {/* alt="": 바로 아래 표시 텍스트가 같은 이름이라 스크린리더가 두 번 읽지 않도록 장식 이미지로 처리
-                      (링크의 접근성 이름/크롤러가 읽는 텍스트는 아래 표시 텍스트와 title이 담당) */}
-                  <Image
-                    src={`/champs/${c.id}.webp`}
-                    alt=""
-                    fill
-                    sizes="(min-width: 1024px) 88px, (min-width: 768px) 100px, (min-width: 640px) 120px, 25vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="mt-1.5 sm:mt-2 text-[11px] sm:text-xs text-center truncate">
-                  {name}
-                </div>
+                {/* 표시 텍스트가 없으므로 alt가 링크의 접근성 이름/크롤러가 읽는 앵커 텍스트 역할을 한다 */}
+                <Image
+                  src={`/champs/${c.id}.webp`}
+                  alt={name}
+                  fill
+                  sizes="32px"
+                  className="object-cover"
+                />
               </Link>
             </li>
           );

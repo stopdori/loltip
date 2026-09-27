@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ReviewClient from "./ReviewClient";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -6,6 +7,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function ExplainPage() {
-  return <div />;
+export default function Page() {
+  return <ReviewClient />;
 }

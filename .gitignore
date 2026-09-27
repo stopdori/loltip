@@ -42,9 +42,6 @@ next-env.d.ts
 
 .vercel
 
-# exam feature (work in progress)
-/app/[locale]/exam/
-
 # claude code local settings
 .claude/settings.local.json
 

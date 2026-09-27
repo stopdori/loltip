@@ -91,8 +91,9 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
       {/* 네비게이션 바 */}
       <div className="relative flex items-center justify-between gap-2">
 
-        {/* 좌측: 모바일 햄버거 */}
-        <div className="relative sm:hidden" ref={menuRef}>
+        {/* 좌측: 모바일 햄버거 — 버튼이 5개(LT/공지사항/태그/퀴즈/롤력고사 예정)로 늘어나도
+            가운데 로고와 겹치지 않도록 전환 기준을 800px로 잡는다. */}
+        <div className="relative min-[800px]:hidden" ref={menuRef}>
           <button
             onClick={() => setMenuOpen((v) => !v)}
             className={btnBase}
@@ -119,19 +120,26 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
           )}
         </div>
 
-        {/* 중앙: 모바일 로고 — 브랜드 로고는 h1이 아니라 크롤 가능한 링크(<a href>)다.
+        {/* 중앙: 로고 — 브랜드 로고는 h1이 아니라 크롤 가능한 링크(<a href>)다.
             (예전엔 <h1 onClick>이라 모든 페이지에 h1이 2개(모바일+데스크톱)씩 깔리고 링크도 아니었음.
-             각 페이지의 h1은 그 페이지 주제 제목이 맡는다.) */}
-        <Link
-          href="/champ"
-          prefetch={false}
-          className="sm:hidden absolute left-1/2 -translate-x-1/2 text-3xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
-        >
-          LOLTIP
-        </Link>
+             각 페이지의 h1은 그 페이지 주제 제목이 맡는다.) 버튼 줄과 같은 위치에 항상 절대 중앙 배치.
+            26.19는 로고 Link 바깥의 absolute span으로 붙여서 로고 자체의 가운데 정렬 폭 계산에 영향을 주지 않는다. */}
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <Link
+            href="/champ"
+            prefetch={false}
+            className="text-3xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
+          >
+            LOLTIP
+          </Link>
+          {/* 로고와 같은 폰트 크기/굵기의 컨테이너 안에 인라인으로 넣어 로고 글자 기준선에 자동 정렬 */}
+          <span className="absolute left-full top-0 ml-1.5 text-3xl font-extrabold whitespace-nowrap">
+            <span className="text-xs font-normal text-slate-400">26.19</span>
+          </span>
+        </div>
 
         {/* 좌측: 데스크탑 버튼 나열 */}
-        <div className="hidden sm:flex items-center gap-1">
+        <div className="hidden min-[800px]:flex items-center gap-1">
           <button
             onClick={() => router.push(`/champ`)}
             aria-label={lang === "ko" ? "홈으로 이동" : "Go to home"}
@@ -155,19 +163,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
           </Suspense>
         </div>
       </div>
-
-      {/* 로고 (데스크탑) */}
-      <div className="hidden sm:block mt-8 text-center">
-        <Link
-          href="/champ"
-          prefetch={false}
-          className="inline-block text-5xl font-extrabold text-yellow-400 hover:brightness-110 cursor-pointer"
-        >
-          LOLTIP
-        </Link>
-        <p className="mt-2 text-slate-300 hidden md:block">{subtitle}</p>
-        <p className="mt-1 text-xs text-slate-400">26.19 {lang === "ko" ? "패치 반영" : "patch"}</p>
-      </div>
+      {/* subtitle은 페이지별 prop 시그니처를 유지하기 위해 남겨두되 화면엔 그리지 않는다. */}
     </header>
   );
 }

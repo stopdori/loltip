@@ -11,8 +11,7 @@ import { waGwa } from "@/app/utils/koreanParticle";
 // 현재 로케일에서 색인 대상인 매치업만 들어 있다(noindex 페이지로 링크 금지). 여기서는 거르지도, 바꾸지도 않고
 // 표시 방식(작은 아이콘)과 정렬만 정한다. 링크 대상은 챔프 페이지가 아니라 매치업 페이지다.
 //
-// 아이콘만 보이고 텍스트가 없으므로 alt/title/aria-label에 상대 챔피언 이름을 반드시 넣는다
-// (ChampGrid는 옆에 이름 텍스트가 있어서 alt=""였지만 여기는 다르다).
+// 아이콘만 보이고 텍스트가 없으므로 alt/title/aria-label에 상대 챔피언 이름을 반드시 넣는다.
 // 정렬: ChampGrid와 같은 filterChampions(언어별 collator — ko 가나다, en 알파벳)를 재사용한다.
 export default function ChampMatchupList({
   lang,
