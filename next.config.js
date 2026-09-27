@@ -9,6 +9,10 @@ const nextConfig = {
   outputFileTracingExcludes: {
     "/sitemap": ["./app/data/matchups/**/*"],
   },
+  // 롤 능력고사 공유 카드 라우트는 폰트·엠블럼을 fs로 읽으므로 배포 번들에 명시적으로 포함
+  outputFileTracingIncludes: {
+    "/api/exam-og": ["./assets/exam-og/**/*"],
+  },
   async redirects() {
     return [
       // vercel.app → www 본도메인
