@@ -10,11 +10,11 @@ export const lissandra_seraphine: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["세라핀 E의 [[ROOT]], [[STUN]] / R의 [[CHARM]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [],
+      en: ["When hit by Seraphine's E [[ROOT]] or [[STUN]] / R [[CHARM]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     seraphine: {
       ko: ["[[TIP]] - 특이한 판정 (상급) \n 리산드라 P로 생성된 얼음 노예로 세라핀 R의 [[RANGE_UP]] 효과 발동."],
-      en: [],
+      en: ["[[TIP]] - Unusual interaction (Advanced) \n The Frozen Thralls created by Lissandra's P trigger the [[RANGE_UP]] effect of Seraphine's R."],
     },
   },
 };

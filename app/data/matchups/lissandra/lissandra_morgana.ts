@@ -10,7 +10,7 @@ export const lissandra_morgana: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["모르가나 Q의 [[ROOT]], R의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["When hit by Morgana's Q [[ROOT]] or R [[STUN]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     morgana: {
       ko: [],

@@ -10,7 +10,7 @@ export const lissandra_malphite: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["말파이트 R의 [[AIRBORNE]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["When hit by Malphite's R [[AIRBORNE]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     malphite: {
       ko: ["R의 [[UNSTOPPABLE]]로 리산드라 W의 [[ROOT]], R의 [[STUN]]을 무시할 수 있음. \n 단, [[UNSTOPPABLE]] 종료 후 [[ROOT]], [[STUN]]은 남아있음."],

@@ -14,7 +14,7 @@ export const garen_lissandra: MatchupSummary = {
     },
     lissandra: {
       ko: ["가렌 Q의 [[SILENCE]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [],
+      en: ["When hit by Garen's Q [[SILENCE]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
   },
 };

@@ -15,7 +15,8 @@ export const khazix_lissandra: MatchupSummary = {
     lissandra: {
       ko: ["W의 [[ROOT]]으로 카직스 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 카직스 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
-      en: [],
+      en: ["W [[ROOT]] cannot interrupt Kha'Zix's E [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Kha'Zix's E [[DASH]]. [[EXIST]]"],
     },
   },
 };

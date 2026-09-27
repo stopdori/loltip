@@ -12,7 +12,9 @@ export const lissandra_qiyana: MatchupSummary = {
       ko: ["W의 [[ROOT]]으로 키아나 W, E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 키아나 W, E의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
       "키아나 물Q의 [[ROOT]] / R의 [[KNOCKBACK]], [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Qiyana's W and E [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Qiyana's W and E [[DASH]]. [[EXIST]]", 
+        "When hit by Qiyana's Water Q [[ROOT]] / R [[KNOCKBACK]] or [[STUN]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     qiyana: {
       ko: [],

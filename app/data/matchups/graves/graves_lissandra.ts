@@ -15,7 +15,8 @@ export const graves_lissandra: MatchupSummary = {
     lissandra: {
       ko: ["W의 [[ROOT]]으로 그레이브즈 E, R의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 그레이브즈 E, R의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
-      en: [],
+      en: ["W [[ROOT]] cannot interrupt Graves's E and R [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Graves's E and R [[DASH]]. [[EXIST]]"],
     },
   },
 };

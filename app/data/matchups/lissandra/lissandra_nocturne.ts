@@ -10,7 +10,7 @@ export const lissandra_nocturne: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["녹턴 E의 [[FEAR]]를 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["When hit by Nocturne's E [[FEAR]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     nocturne: {
       ko: [],

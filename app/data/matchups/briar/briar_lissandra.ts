@@ -14,13 +14,15 @@ export const briar_lissandra: MatchupSummary = {
         "R2의 [[HOMING]] [[DASH]]으로 리산드라 E의 [[BLINK]]을 따라갈 수 있음. \n 단, 리산드라와 충돌하면 [[HOMING]] 종료. [[NOT_EXIST]]"],
       en: ["Briar's E [[CAST_COMMIT]] allows maintaining the cast even if hit by Lissandra's W [[ROOT]] or R [[STUN]].",
         "Briar's R1 [[CC_IMMUNE]] and R2 [[UNSTOPPABLE]] can ignore Lissandra's W [[ROOT]] and R [[STUN]].",
-        "R2 [[HOMING]] [[DASH]] can follow Lissandra's E [[BLINK]]. \n However, the [[HOMING]] ends upon colliding with Lissandra."],
+        "R2 [[HOMING]] [[DASH]] can follow Lissandra's E [[BLINK]]. \n However, the [[HOMING]] ends upon colliding with Lissandra. [[NOT_EXIST]]"],
     },
     lissandra: {
       ko: ["W의 [[ROOT]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
       "브라이어 Q의 [[STUN]], R2의 [[FEAR]]를 맞았을 때, 리산드라 E2를 사용할 수 없음."],
-      en: [],
+      en: ["W [[ROOT]] cannot interrupt Briar's Q and W [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Briar's Q and W [[DASH]]. [[EXIST]]", 
+        "When hit by Briar's Q [[STUN]] or R2 [[FEAR]], Lissandra cannot use E2."],
     },
   },
 };

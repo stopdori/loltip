@@ -11,7 +11,8 @@ export const lissandra_missfortune: MatchupSummary = {
     lissandra: {
       ko: ["W의 [[ROOT]]으로 미스포츈 R의 [[SKILL_CHANNEL]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 미스포츈 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Miss Fortune's R [[SKILL_CHANNEL]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Miss Fortune's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     missfortune: {
       ko: [],

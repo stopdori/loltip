@@ -12,7 +12,9 @@ export const lissandra_naafiri: MatchupSummary = {
       ko: ["W의 [[ROOT]]으로 나피리 E, R의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 나피리 E, R의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
         "W의 [[ROOT]], R의 [[STUN]]로 나피리 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Naafiri's E and R [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Naafiri's E and R [[DASH]]. [[EXIST]]", 
+        "W [[ROOT]] and R [[STUN]] can interrupt Naafiri's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     naafiri: {
       ko: [],

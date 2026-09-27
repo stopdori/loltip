@@ -10,7 +10,7 @@ export const lissandra_trundle: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["트런들 E([[TERRAIN]])의 [[AIRBORNE]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["When hit by Trundle's E ([[TERRAIN]]) [[AIRBORNE]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     trundle: {
       ko: [],

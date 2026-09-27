@@ -10,7 +10,7 @@ export const lissandra_lulu: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["룰루 W의 [[POLYMORPH]], R의 [[AIRBORNE]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["When hit by Lulu's W [[POLYMORPH]] or R [[AIRBORNE]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     lulu: {
       ko: [],

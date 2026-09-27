@@ -13,7 +13,10 @@ export const lissandra_vi: MatchupSummary = {
         "W의 [[ROOT]]으로 바이 Q의 [[SKILL_CHARGED]]을 끊을 수 있음. [[EXIST]]", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 바이 Q의 [[DASH]], Q의 [[SKILL_CHARGED]]을 끊을 수 있음. [[EXIST]]", 
       "바이 Q, R의 [[KNOCKBACK]] / R의 [[AIRBORNE]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Vi's Q [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "W [[ROOT]] can interrupt Vi's Q [[SKILL_CHARGED]]. [[EXIST]]", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Vi's Q [[DASH]] and Q [[SKILL_CHARGED]]. [[EXIST]]", 
+        "When hit by Vi's Q or R [[KNOCKBACK]] / R [[AIRBORNE]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     vi: {
       ko: [],

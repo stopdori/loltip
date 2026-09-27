@@ -10,7 +10,7 @@ export const lissandra_zilean: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["질리언 Q의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["When hit by Zilean's Q [[STUN]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     zilean: {
       ko: [],

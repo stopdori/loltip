@@ -10,7 +10,7 @@ export const lissandra_smolder: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["W의 [[ROOT]], R의 [[STUN]]로 스몰더 E의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음. [[EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] and R [[STUN]] can interrupt Smolder's E [[SKILL_CHANNEL]] [[DASH]]. [[EXIST]]"],
     },
     smolder: {
       ko: [],

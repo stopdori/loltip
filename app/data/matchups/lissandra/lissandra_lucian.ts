@@ -11,7 +11,8 @@ export const lissandra_lucian: MatchupSummary = {
     lissandra: {
       ko: ["W의 [[ROOT]]으로 루시안 E의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 루시안 E의 [[DASH]], R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Lucian's E [[DASH]] and R [[SKILL_CHANNEL]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Lucian's E [[DASH]] and R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
     lucian: {
       ko: [],

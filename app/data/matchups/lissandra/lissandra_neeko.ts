@@ -10,7 +10,7 @@ export const lissandra_neeko: MatchupSummary = {
   highlightsByChamp: {
     lissandra: {
       ko: ["니코 E의 [[ROOT]] / R의 [[AIRBORNE]], [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["When hit by Neeko's E [[ROOT]] / R [[AIRBORNE]] or [[STUN]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     neeko: {
       ko: [],

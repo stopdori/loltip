@@ -15,7 +15,8 @@ export const illaoi_lissandra: MatchupSummary = {
     lissandra: {
       ko: ["W의 [[ROOT]]으로 일라오이 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 일라오이 W의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
-      en: [],
+      en: ["W [[ROOT]] cannot interrupt Illaoi's W [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Illaoi's W [[DASH]]. [[EXIST]]"],
     },
   },
 };

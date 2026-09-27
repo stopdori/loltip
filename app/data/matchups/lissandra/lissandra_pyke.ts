@@ -12,7 +12,9 @@ export const lissandra_pyke: MatchupSummary = {
       ko: ["W의 [[ROOT]]으로 파이크 Q의 [[SKILL_CHARGED]], E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 파이크 Q의 [[SKILL_CHARGED]], E의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
       "파이크 Q의 [[GRAB]], E의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Pyke's Q [[SKILL_CHARGED]] and E [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Pyke's Q [[SKILL_CHARGED]] and E [[DASH]]. [[EXIST]]", 
+        "When hit by Pyke's Q [[GRAB]] or E [[STUN]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     pyke: {
       ko: [],

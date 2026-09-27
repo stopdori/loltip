@@ -9,9 +9,10 @@ export const lissandra_talon: MatchupSummary = {
   },
   highlightsByChamp: {
     lissandra: {
-      ko: ["W의 [[ROOT]]으로 탈론 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+      ko: ["W의 [[ROOT]]으로 탈론 E(벽이동)의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 탈론 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Talon's E (wall movement) [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Talon's E [[DASH]]. [[EXIST]]"],
     },
     talon: {
       ko: [],

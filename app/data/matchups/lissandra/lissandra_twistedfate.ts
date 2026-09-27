@@ -11,7 +11,8 @@ export const lissandra_twistedfate: MatchupSummary = {
     lissandra: {
       ko: ["W의 [[ROOT]], R의 [[STUN]]로 트위스티드 페이트 R2의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]", 
       "트위스티드 페이트 W(골카)의 [[STUN]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] and R [[STUN]] can interrupt Twisted Fate's R2 [[SKILL_CHANNEL]]. [[EXIST]]", 
+        "When hit by Twisted Fate's W (Gold Card) [[STUN]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     twistedfate: {
       ko: [],

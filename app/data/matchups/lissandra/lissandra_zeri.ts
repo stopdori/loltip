@@ -11,7 +11,8 @@ export const lissandra_zeri: MatchupSummary = {
     lissandra: {
       ko: ["W의 [[ROOT]]으로 제리 E(일반, 벽이동)의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 제리 E(일반, 벽이동)의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Zeri's E (normal, wall traversal) [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Zeri's E (normal, wall traversal) [[DASH]]. [[EXIST]]"],
     },
     zeri: {
       ko: [],

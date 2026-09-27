@@ -16,7 +16,9 @@ export const ambessa_lissandra: MatchupSummary = {
       ko: ["W의 [[ROOT]]으로 암베사 P의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 암베사 P의 [[DASH]], E의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]", 
       "암베사 R의 [[SUPPRESS]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [],
+      en: ["W [[ROOT]] cannot interrupt Ambessa's P [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Ambessa's P [[DASH]] and E [[SKILL_CHANNEL]]. [[EXIST]]", 
+        "When hit by Ambessa's R [[SUPPRESS]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
   },
 };

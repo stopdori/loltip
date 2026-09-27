@@ -12,7 +12,9 @@ export const lissandra_ornn: MatchupSummary = {
       ko: ["W의 [[ROOT]]으로 오른 E, R2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 오른 E, R2의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
       "오른 P, Q([[TERRAIN]]), R의 [[AIRBORNE]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Ornn's E and R2 [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Ornn's E and R2 [[DASH]]. [[EXIST]]", 
+        "When hit by Ornn's P, Q ([[TERRAIN]]), or R [[AIRBORNE]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     ornn: {
       ko: [],

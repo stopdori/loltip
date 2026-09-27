@@ -12,7 +12,9 @@ export const lissandra_varus: MatchupSummary = {
       ko: ["W의 [[ROOT]]으로 바루스 Q의 [[SKILL_CHARGED]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
         "R [[STUN]]의 [[KNOCKDOWN]]으로 바루스 Q의 [[SKILL_CHARGED]]을 끊을 수 있음. [[EXIST]]", 
       "바루스 R의 [[ROOT]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
-      en: [""],
+      en: ["W [[ROOT]] cannot interrupt Varus's Q [[SKILL_CHARGED]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.", 
+        "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Varus's Q [[SKILL_CHARGED]]. [[EXIST]]", 
+        "When hit by Varus's R [[ROOT]], Lissandra cannot use E2. [[NOT_EXIST]]"],
     },
     varus: {
       ko: [],
