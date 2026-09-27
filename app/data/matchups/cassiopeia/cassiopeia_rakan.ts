@@ -9,9 +9,9 @@ export const cassiopeia_rakan: MatchupSummary = {
   },
   highlightsByChamp: {
     cassiopeia: {
-      ko: ["R의 [[STUN]]로 라칸 W, E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."
+      ko: ["R의 [[STUN]]로 라칸 W, E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"
       ],
-      en: ["R [[STUN]] cannot interrupt Rakan's W and E [[DASH]]. \n However, the [[STUN]] still applies."],
+      en: ["R [[STUN]] can interrupt Rakan's W and E [[DASH]]. [[EXIST]]"],
     },
     rakan: {
       ko: ["W, E는 [[DASH]] 판정으로 카시오페아 W의 [[GROUNDED]] 효과를 받을 때 사용할 수 없음."],

@@ -9,13 +9,12 @@ export const anivia_rakan: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["Q의 [[STUN]]로 라칸 W, E의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.", 
-        "W([[TERRAIN]])의 [[AIRBORNE]]으로 라칸 W, E의 [[DASH]]을 끊을 수 있음."],
-      en: ["Q [[STUN]] cannot interrupt Rakan's W or E [[DASH]]. \n However, [[STUN]] still applies.", "W [[TERRAIN]] [[AIRBORNE]] can interrupt Rakan's W or E [[DASH]]."],
+      ko: ["Q의 [[STUN]], W([[TERRAIN]])의 [[AIRBORNE]]으로 라칸 W, E의 [[DASH]]을 끊을 수 있음."],
+      en: ["Q [[STUN]] and W ([[TERRAIN]]) [[AIRBORNE]] can interrupt Rakan's W and E [[DASH]]."],
     },
     rakan: {
       ko: ["W의 [[AIRBORNE]], R의 [[CHARM]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
-      en: ["R [[CHARM]] can interrupt Anivia's R [[SKILL_CHANNEL]]. [[EXIST]]"],
+      en: ["W [[AIRBORNE]] and R [[CHARM]] can interrupt Anivia's R [[SKILL_CHANNEL]]. [[EXIST]]"],
     },
   },
 };

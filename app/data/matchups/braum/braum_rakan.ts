@@ -9,13 +9,13 @@ export const braum_rakan: MatchupSummary = {
   },
   highlightsByChamp: {
     braum: {
-      ko: [""],
-      en: [""],
+      ko: ["P의 [[STUN]], R의 [[AIRBORNE]]으로 라칸 W, E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["P [[STUN]] and R [[AIRBORNE]] can interrupt Rakan's W and E [[DASH]]. [[EXIST]]"],
     },
     rakan: {
-      ko: ["W의 [[AIRBORNE]]으로 브라움 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+      ko: ["W의 [[AIRBORNE]]으로 브라움 E의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
         "R의 [[CHARM]]으로 브라움 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
-      en: [],
+      en: ["W [[AIRBORNE]] can interrupt Braum's E [[DASH]]. [[EXIST]]", "R [[CHARM]] cannot interrupt Braum's E [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
     },
   },
 };
