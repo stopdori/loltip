@@ -54,13 +54,14 @@ function TipMarker() {
 }
 
 // 전구 바로 다음에 오는 순수 장식용 배지 (클릭 기능 없음, 판정 태그 색과 겹치지 않는 amber 계열)
+// grid가 items-start라 배지(약 15px)가 줄(20px) 맨 위에 붙어 첫 줄 글자보다 위로 치우치므로,
+// 마커 칸과 같은 방식으로 첫 줄 높이(h-[1lh]) 칸 안에서 세로 가운데 정렬한다.
 function TipTag() {
   return (
-    <span
-      aria-hidden="true"
-      className="inline-flex select-none items-center rounded-full bg-amber-400/15 px-1.5 py-0.5 text-[11px] font-bold leading-none text-amber-300 ring-1 ring-amber-400/40"
-    >
-      LOLTip
+    <span aria-hidden="true" className="flex h-[1lh] select-none items-center">
+      <span className="inline-flex items-center rounded-full bg-amber-400/15 px-1.5 py-0.5 text-[11px] font-bold leading-none text-amber-300 ring-1 ring-amber-400/40">
+        LOLTip
+      </span>
     </span>
   );
 }
