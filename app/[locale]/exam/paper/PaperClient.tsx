@@ -11,7 +11,7 @@ import { loadExamProgress, saveExamProgress, clearExamProgress, encodeAnswers } 
 
 type Lang = "ko" | "en";
 
-export default function QuizClient() {
+export default function PaperClient() {
   const locale = useLocale();
   const lang = locale as Lang;
   const router = useRouter();

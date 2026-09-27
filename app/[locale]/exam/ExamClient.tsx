@@ -53,7 +53,7 @@ export default function ExamClient() {
     );
     if (!confirmed) return;
     clearExamProgress();
-    router.push(`/${locale}/exam/quiz`);
+    router.push(`/${locale}/exam/paper`);
   }
 
   return (
@@ -90,7 +90,7 @@ export default function ExamClient() {
         ) : resumable ? (
           <>
             <a
-              href={`/${locale}/exam/quiz`}
+              href={`/${locale}/exam/paper`}
               className="px-8 py-3 rounded-xl bg-yellow-400 text-black font-bold text-base hover:brightness-110 active:scale-95 transition"
             >
               {lang === "ko"
@@ -106,7 +106,7 @@ export default function ExamClient() {
           </>
         ) : (
           <a
-            href={`/${locale}/exam/quiz`}
+            href={`/${locale}/exam/paper`}
             className="px-8 py-3 rounded-xl bg-yellow-400 text-black font-bold text-base hover:brightness-110 active:scale-95 transition"
           >
             {lang === "ko" ? "풀러가기 →" : "Start Exam →"}
