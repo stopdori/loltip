@@ -55,8 +55,6 @@ function hasBadWord(text: string) {
 
 export async function POST(req: Request) {
   try {
-    console.log("WEBHOOK:", process.env.DISCORD_WEBHOOK_URL);
-
     const url = process.env.DISCORD_WEBHOOK_URL;
     if (!url) {
       return NextResponse.json(
@@ -68,7 +66,8 @@ export async function POST(req: Request) {
     const body = await req.json().catch(() => ({}));
 
     const message = (body?.message ?? "").toString().trim();
-    const page = (body?.page ?? "").toString().trim();
+    // FeedbackButton은 현재 페이지 주소를 `url` 필드로 보낸다.
+    const page = (body?.url ?? "").toString().trim();
     const champMy = (body?.myChamp ?? "").toString().trim();
     const champEnemy = (body?.enemyChamp ?? "").toString().trim();
 

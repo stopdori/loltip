@@ -103,6 +103,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
     });
 
+    // 사이트 소개
+    urls.push({
+      url: `${baseUrl}/${locale}/about`,
+      changeFrequency: "yearly",
+      priority: locale === "ko" ? 0.4 : 0.3,
+      lastModified: LAST_MODIFIED,
+    });
+
     // 개인정보처리방침
     urls.push({
       url: `${baseUrl}/${locale}/privacy`,

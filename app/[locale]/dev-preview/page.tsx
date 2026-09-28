@@ -6,6 +6,7 @@
 // 실제 매치업 데이터 파일(app/data/matchups/**)에 테스트 문장을 임시로 넣었다 빼는 방식은
 // 다른 작업 내용을 실수로 손상시킬 위험이 있으므로, 스타일/레이아웃 확인은 항상 이 페이지를 쓸 것.
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import MatchupSummaryBox from "@/app/components/MatchupSummaryBox";
 import type { MatchupLoadResult } from "@/app/data/matchups/_index";
 
@@ -87,6 +88,9 @@ const previewResult: MatchupLoadResult = {
 };
 
 export default function DevPreviewPage() {
+  // 로컬 개발(next dev)에서만 연다. 프로덕션 빌드(Vercel 포함)에서는 404.
+  if (process.env.NODE_ENV === "production") notFound();
+
   return (
     <div className="min-h-screen bg-slate-950 px-4 py-10 text-slate-200">
       <div className="mx-auto max-w-5xl">

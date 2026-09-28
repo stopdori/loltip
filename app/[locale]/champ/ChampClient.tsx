@@ -570,16 +570,6 @@ setOpenTarget(null);
         <div className="pt-36 sm:pt-48 max-w-[430px] sm:max-w-[960px] mx-auto">{extraSection}</div>
       )}
 
-{!embedMode && (
-<footer className="pt-8 text-center text-xs text-slate-500">
-  <a
-    href={`/${locale}/privacy`}
-    className="hover:text-slate-300 underline underline-offset-2"
-  >
-    Privacy Policy
-  </a>
-</footer>
-)}
 
 
 </div>

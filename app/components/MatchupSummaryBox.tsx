@@ -226,8 +226,15 @@ export default function MatchupSummaryBox({
         const enemyItems = (result.data.highlightsByChamp?.[enemyChampId]?.[lang] ?? []).filter((s) => s !== "");
         const commonItems = (result.data.common?.[lang] ?? []).filter((s) => s !== "");
 
-        const showMyEnemyDivider = !!my && !!enemy;
-        const showEnemyCommonDivider = commonItems.length > 0 && (!!my || !!enemy);
+        // 판정 문장이 없는 챔피언은 이름만 남지 않게 블록 자체를 숨기고, 구분선은 실제로 보이는 블록 사이에만 둔다.
+        // 세 블록이 모두 비면 아래 "내용 없음" 안내 한 줄만 보인다.
+        const showMy = !!my && myItems.length > 0;
+        const showEnemy = !!enemy && enemyItems.length > 0;
+        const showCommon = commonItems.length > 0;
+        if (!showMy && !showEnemy && !showCommon) return null;
+
+        const showMyEnemyDivider = showMy && showEnemy;
+        const showEnemyCommonDivider = showCommon && (showMy || showEnemy);
 
         const groupWrapperClass =
           "rounded-lg -mx-2 px-2 py-1 transition-colors duration-150 hover:bg-slate-900/60";
@@ -236,7 +243,7 @@ export default function MatchupSummaryBox({
         return (
           <div className="text-sm text-slate-200">
             {/* 내 챔피언 요약 먼저 */}
-            {my && (
+            {showMy && (
               <div className={groupWrapperClass}>
                 <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(my)}</p>
                 {myItems.length > 0 && (
@@ -263,7 +270,7 @@ export default function MatchupSummaryBox({
             )}
 
             {/* 상대 챔피언 요약 다음 */}
-            {enemy && (
+            {showEnemy && (
               <div className={groupWrapperClass}>
                 <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(enemy)}</p>
                 {enemyItems.length > 0 && (

@@ -5,10 +5,12 @@ import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import AdSlot from "@/app/components/AdSlot";
 import Script from "next/script";
+import { CONTACT_EMAIL } from "@/app/data/siteInfo";
 
 import type { Metadata } from "next";
 
 const BASE_URL = "https://loltip.com";
+const footerLinkClass = "hover:text-slate-200 underline underline-offset-2";
 
 export async function generateMetadata({
   params,
@@ -104,6 +106,19 @@ page_path: window.location.pathname,
       </div>
 
       <footer className="mt-16 pb-10 text-center text-xs text-slate-400/70 leading-relaxed">
+        <nav className="mb-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-slate-400">
+          <a href={`/${locale}/about`} className={footerLinkClass}>
+            {locale === "ko" ? "사이트 소개" : "About"}
+          </a>
+          <span aria-hidden="true">·</span>
+          <a href={`/${locale}/privacy`} className={footerLinkClass}>
+            {locale === "ko" ? "개인정보처리방침" : "Privacy Policy"}
+          </a>
+          <span aria-hidden="true">·</span>
+          <a href={`mailto:${CONTACT_EMAIL}`} className={footerLinkClass}>
+            {locale === "ko" ? `문의: ${CONTACT_EMAIL}` : `Contact: ${CONTACT_EMAIL}`}
+          </a>
+        </nav>
         <p>Riot Games is not endorsed by or affiliated with this project.</p>
         <p>League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc.</p>
       </footer>
