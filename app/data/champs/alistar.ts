@@ -68,7 +68,7 @@ const alistar: ChampData = {
         "W는 [[INSEC_KICK]] 불가. \n 점멸 + W만 가능.", 
         "R에 [[TENACITY]] 없음. (오해 많이함.) \n R의 [[CC_CLEANSE]]로 범위 지속적인 CC를 해제하면 \n 바로 다시 걸림. \n 예) 코그모 E의 [[SLOW]].", 
         "E의 [[BUFF_STACK]]은 \n 알리 밑에 쇠사슬 시각 효과로 볼 수 있음.", 
-        "R로 [[AIRBORNE]]류를 해제하면 \n 이동은 불가능하지만 스킬은 사용 가능. \n 단, W는 버그인지 모르겠는데 스킬 사용은 되지만 효과가 없음. \n 알리가 [[DASH]] 하지도 않고, 대상이 밀려나지 않고, 데미지도 들어가지 않음."
+        "R로 [[AIRBORNE]]류를 해제하면 \n 이동은 불가능하지만 스킬은 사용 가능. \n 단, W는 스킬 사용은 되지만 효과가 적용되지 않음. (버그 여부 미확인) \n 알리가 [[DASH]] 하지도 않고, 대상이 밀려나지 않고, 데미지도 들어가지 않음."
       ],
 
         en: [
@@ -76,7 +76,7 @@ const alistar: ChampData = {
         "W cannot be used for [[INSEC_KICK]]. \n Only Flash + W works for that.",
         "R has no [[TENACITY]]. (Commonly misunderstood.) \n Removing a persistent-zone CC with R's [[CC_CLEANSE]] \n gets it reapplied immediately. \n e.g. Kog'Maw E's [[SLOW]].",
         "E's [[BUFF_STACK]] \n can be seen as a chain visual effect beneath Alistar.",
-        "Removing [[AIRBORNE]]-type CC with R \n prevents movement but still allows skill use. \n However, W seems bugged — the skill activates but has no effect: \n Alistar doesn't [[DASH]], the target isn't knocked back, and no damage is dealt.",
+        "Removing [[AIRBORNE]]-type CC with R \n prevents movement but still allows skill use. \n However, W can be cast but its effects are not applied. (Unconfirmed whether it's a bug.) \n Alistar doesn't [[DASH]], the target isn't knocked back, and no damage is dealt.",
         ]
         },
     },
