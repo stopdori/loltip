@@ -39,9 +39,9 @@ const akshan: ChampData = {
     ] },
     
     E: { phases: [
-      { label: { ko: "E 갈고리 발사", en: "E Hook Release" }, tags: ["PROJECTILE", "SEPARATOR", "ST_CONDITIONAL", "SKILL_CHANNEL", "DASH"] },
-      { label: { ko: "E 회전", en: "E Spin" }, tags: ["SKILL_CHANNEL", "DASH", "SEPARATOR", "SKILL_RECAST", "CANCELLABLE"] },
-      { label: { ko: "E 회전", en: "E Spin" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "DEBUFF_STACK"] },
+      { label: { ko: "E 갈고리 발사", en: "E Hookshot" }, tags: ["PROJECTILE"] },
+      { label: { ko: "E 회전", en: "E Spin" }, tags: ["SKILL_CHANNEL_MOVEMENT", "DASH", "SEPARATOR", "SKILL_RECAST", "CANCELLABLE"] },
+      { label: { ko: "E 공격", en: "E Attack" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "DEBUFF_STACK"] },
     ] },
 
     R: { phases: [
@@ -138,7 +138,7 @@ const akshan: ChampData = {
     },
     R: {
       ko: "아크샨이 적 챔피언을 조준하여 최대 2.5초 동안 충전하며 최대 5/6/7개의 총알을 저장합니다. \n [[SKILL_RECAST]]하면 저장된 총알을 모두 발사하여, 처음 적중한 챔피언·미니언·건물에게 총알당 최소 25/35/45(+15% [[AD_SCALE]])에서 \n [[TARGET_MISSING_HP_SCALE]]에 비례해 최대 75/105/135(+45% [[AD_SCALE]])까지의 [[DMG_PHYSICAL]]를 입힙니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
-      en: "Akshan locks onto an enemy champion and channels for up to 2.5 seconds, storing up to 5/6/7 bullets. \n [[SKILL_RECAST]] fires all stored bullets at the first enemy champion, minion, or structure hit, each dealing at least 25/35/45 (+15% [[AD_SCALE]]) [[DMG_PHYSICAL]], increased up to 75/105/135 (+45% [[AD_SCALE]]) based on the target's missing Health. \n \n {{ultCooldown}} second [[COOLDOWN]].",
+      en: "Akshan locks onto an enemy champion and channels for up to 2.5 seconds, storing up to 5/6/7 bullets. \n [[SKILL_RECAST]] fires all stored bullets at the first enemy champion, minion, or structure hit, each dealing from at least 25/35/45 (+15% [[AD_SCALE]]) \n up to 75/105/135 (+45% [[AD_SCALE]]) [[DMG_PHYSICAL]] based on [[TARGET_MISSING_HP_SCALE]]. \n \n {{ultCooldown}} second [[COOLDOWN]].",
     },
   },
 };
