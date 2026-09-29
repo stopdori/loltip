@@ -30,10 +30,10 @@ export type CategoryGroup<T extends string> = {
 export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   {
     title: { ko: "1) 스탯", en: "1) Stats" },
-    keys: ["MS_UP", "MS_TO_ENEMY", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "HP_REGEN", "REVIVE", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
+    keys: ["MS_UP", "MS_TO_ENEMY", "MS_POWER", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "HP_REGEN", "REVIVE", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
     subGroups: [
       { title: { ko: "공격", en: "Attack" }, keys: ["AD_UP", "AP_UP", "CRIT"] },
-      { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "SEPARATOR", "AD_DOWN", "MS_DOWN"] },
+      { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "MS_POWER", "SEPARATOR", "AD_DOWN", "MS_DOWN"] },
       { title: { ko: "크기", en: "Size" }, keys: ["RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP"] },
       { title: { ko: "체력 / 쉴드", en: "" }, keys: ["MAX_HP_UP", "MAX_ENERGY_UP", "HEAL", "SHIELD", "HP_REGEN", "REVIVE"] },
       { keys: ["HS_POWER", "HP_REGEN_UP", "SEPARATOR", "GW"] },
@@ -109,7 +109,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "3) 타이밍", en: "3) Timing" },
-    keys: ["TIMING_INSTANT", "TIMING_CAST", "TIMING_AFTERCAST", "ST_IMPACT", "ST_DELAYED", "ST_CONDITIONAL", "ON_TAKEDOWN"],
+    keys: ["TIMING_INSTANT", "TIMING_CAST", "TIMING_AFTERCAST", "ST_IMPACT", "ST_DELAYED", "ST_CONDITIONAL", "ON_TAKEDOWN", "ON_KILL", "ON_CHAMP_HIT"],
   },
   {
     title: { ko: "4) 중단 여부", en: "4) Interruptibility" },

@@ -70,6 +70,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 🔵 sky (이동/회복/자원/저항)
   MS_UP: "sky",
   MS_TO_ENEMY: "sky",
+  MS_POWER: "sky",
   AS_UP: "sky",
   CDR: "indigo",
   CDR_RESET: "indigo",
@@ -204,7 +205,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   PROC:          "white",
   DEBUFF_STACK:  "indigo",
   BUFF_STACK:    "indigo",
-  STACK_CONSUME: "white",
+  STACK_CONSUME: "indigo",
   // 타이밍
   TIMING_INSTANT:   "indigo",
   TIMING_CAST:      "indigo",
@@ -213,6 +214,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ST_DELAYED:     "indigo",
   ST_CONDITIONAL: "indigo",
   ON_TAKEDOWN: "indigo",
+  ON_KILL: "indigo",
+  ON_CHAMP_HIT: "indigo",
   // 이진 상태 표시 — EXIST는 MS_UP과 같은 sky(이동/존재) 재사용.
   // NOT_EXIST는 red(bg-red-900/60, 어두운 검붉은색) 재사용 — "불가능/부재" 느낌.
   EXIST: "sky",

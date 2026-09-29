@@ -37,6 +37,7 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   MS_UP: { icons: ["/stat-icons/icon-ms.png"] },
   MS_DOWN: { icons: ["/stat-icons/icon-ms.png"] },
   MS_TO_ENEMY: { icons: ["/stat-icons/icon-ms.png"] },
+  MS_POWER: { icons: ["/stat-icons/icon-ms.png"] },
   AS_UP: { icons: ["/stat-icons/icon-as.png"] },
   CRIT: { icons: ["/stat-icons/icon-crit.png"] },
   AR_UP: { icons: ["/stat-icons/icon-armor.png"] },

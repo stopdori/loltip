@@ -147,6 +147,8 @@ export type GimmickTagId =
   | "ST_DELAYED"
   | "ST_CONDITIONAL"
   | "ON_TAKEDOWN"
+  | "ON_KILL"
+  | "ON_CHAMP_HIT"
   // 이진 상태 표시
   | "EXIST"
   | "NOT_EXIST"
@@ -206,6 +208,8 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ST_DELAYED:     { ko: "지연발동", en: "Delayed" },
   ST_CONDITIONAL: { ko: "조건발동", en: "Conditional" },
   ON_TAKEDOWN: { ko: "처치 관여", en: "On Takedown" },
+  ON_KILL: { ko: "처치 시", en: "On Kill" },
+  ON_CHAMP_HIT: { ko: "챔프 적중", en: "Champion Hit" },
   // 이진 상태 표시
   EXIST: { ko: "O", en: "O" },
   NOT_EXIST: { ko: "X", en: "X" },
@@ -350,6 +354,8 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   ST_DELAYED:     { ko: "스킬이 발동까지 일정 시간이 걸림", en: "The skill takes time before it activates" },
   ST_CONDITIONAL: { ko: "특정 조건이 충족될 때 발동됨", en: "Activates only when a specific condition is met" },
   ON_TAKEDOWN: { ko: "적 챔피언 처치 또는 어시스트에 관여하면 \n 발동하거나 추가 효과.", en: "Triggers or grants a bonus effect on a champion takedown (kill or assist)" },
+  ON_KILL: { ko: "대상을 직접 처치(막타)하면 \n 발동하거나 추가 효과. \n (어시스트는 해당 없음)", en: "Triggers or grants a bonus effect when you kill the target yourself (last hit). \n (Assists don't count)" },
+  ON_CHAMP_HIT: { ko: "적 챔피언에게 적중하면 \n 발동하거나 추가 효과.", en: "Triggers or grants a bonus effect when it hits an enemy champion. \n (Hitting minions or monsters doesn't count)" },
   // 이진 상태 표시
   EXIST: { ko: "", en: "" },
   NOT_EXIST: { ko: "", en: "" },

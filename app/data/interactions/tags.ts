@@ -4,6 +4,7 @@ export type TagId =
   /* 1) 스탯 버프 */
   | "MS_UP"
   | "MS_TO_ENEMY"
+  | "MS_POWER"  // 이동속도 증가 효과 강화
   | "AS_UP"          // 공속 증가
   | "AD_UP"          // 공격력 증가
   | "AP_UP"
@@ -157,6 +158,7 @@ export const TAG_LABEL: Record<TagId, { ko: string; en: string }> = {
   /* 1) 스탯 버프 */
 MS_UP: { ko: "이속↑", en: "MS ↑" },
 MS_TO_ENEMY: { ko: "추격이속↑", en: "Approach MS" },
+MS_POWER: { ko: "이속효과↑", en: "MS Power" },
 AS_UP: { ko: "공속↑", en: "AS ↑" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
 AP_UP: { ko: "주문력↑", en: "AP Buff" },
@@ -314,6 +316,7 @@ INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
 export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: string }>> = {
   DURATION_RESET: { ko: "지속시간 초기화", en: "Duration Reset" },
   DURATION_EXT: { ko: "지속시간 연장", en: "Duration Extension" },
+  ON_CHAMP_HIT: { ko: "챔피언 적중 시", en: "On Champion Hit" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
@@ -326,6 +329,10 @@ MS_UP: {
 MS_TO_ENEMY: {
   ko: "적에게 접근할 때 이동속도가 증가하는 효과",
   en: "Gain movement speed when approaching enemies.",
+},
+MS_POWER: {
+  ko: "이동속도 증가 효과가 강화됨.",
+  en: "Increases the effectiveness of movement speed bonuses.",
 },
 AS_UP: { ko: "공격속도 증가", en: "Increases attack speed" },
 AD_UP: { ko: "공격력 증가", en: "Increases attack damage" },
