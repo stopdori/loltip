@@ -95,6 +95,7 @@ export type TagId =
   | "VISION"
   | "REVEALED"
   | "TRUE_SIGHT"
+  | "BUSH"
   | "POSITION_REVEAL"
   | "POSITION_INDICATOR"
   | "POSITION_SOUND"
@@ -247,6 +248,7 @@ BANISH: { ko: "추방", en: "Banish" },
 VISION: { ko: "시야", en: "Vision" },
 REVEALED: { ko: "드러냄", en: "Revealed" },
 TRUE_SIGHT: { ko: "절대시야", en: "True Sight" },
+BUSH: { ko: "수풀", en: "Brush" },
 POSITION_REVEAL: { ko: "위치노출", en: "Position Reveal" },
 POSITION_INDICATOR:    { ko: "위치 단서",        en: "Position Indicator"   },
 POSITION_SOUND:        { ko: "위치 소리",        en: "Position Sound"       },
@@ -281,7 +283,7 @@ ALLY_TP_OK: { ko: "텔포대상", en: "TP Target" },
 WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
 GHOSTING: { ko: "유체화", en: "Ghosting" },
 TERRAIN: { ko: "벽", en: "TERRAIN" },
-WALL_COLLISION: { ko: "벽충돌", en: "Wall Collision" },
+WALL_COLLISION: { ko: "벽 충돌", en: "Wall Collision" },
 MARK:          { ko: "표식",     en: "Mark"          },
 TETHER: { ko: "사슬", en: "Tether" },
 MOBILITY: { ko: "이동기",    en: "Mobility" },
@@ -655,6 +657,10 @@ REVEALED: {
 TRUE_SIGHT: {
   ko: "대상과 대상 주변의 약간의 시야를 제공함\n은신 상태와 무관하게 타겟에 디버프로 붙어 계속 보임",
   en: "Reveals the target and grants a small amount of surrounding vision\nApplies a debuff that persists regardless of stealth",
+},
+BUSH: {
+  ko: "수풀 안의 유닛은 그곳에 시야가 없는 적에게 보이지 않음. \n [[STEALTH]]가 아니어서 모든 종류의 시야로 드러남. \n 수풀 안에서 대상 지정 공격·스킬을 쓰면 주변 300 반경이 2초간 드러남.",
+  en: "Units inside brush are hidden from enemies without sight of it. \n It is not [[STEALTH]], so any form of sight reveals them. \n Using targeted attacks or abilities from brush reveals a 300 radius around the champion for 2 seconds.",
 },
 POSITION_REVEAL: {
   ko: "상대시야 밖에서 시전자가 스킬을 사용했을 때\n스킬 효과, 시야 제공으로 인해 사용자의 위치가 적에게 드러남",

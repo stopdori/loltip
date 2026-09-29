@@ -74,9 +74,9 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   },
   {
     title: { ko: "4) 시야 / 은신", en: "4) Vision / Stealth" },
-    keys: ["VISION", "REVEALED", "TRUE_SIGHT", "STEALTH", "INVISIBILITY", "CAMOUFLAGE"],
+    keys: ["VISION", "REVEALED", "TRUE_SIGHT", "BUSH", "STEALTH", "INVISIBILITY", "CAMOUFLAGE"],
     subGroups: [
-      { keys: ["VISION", "REVEALED", "TRUE_SIGHT"] },
+      { keys: ["VISION", "REVEALED", "TRUE_SIGHT", "BUSH"] },
       { keys: ["STEALTH", "INVISIBILITY", "CAMOUFLAGE"] },
     ],
   },
@@ -88,7 +88,7 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
 export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
   title: { ko: "시야 · 은신 전체", en: "Vision · Stealth (All)" },
   keys: [
-    "VISION", "REVEALED", "TRUE_SIGHT", "POSITION_REVEAL", "POSITION_INDICATOR",
+    "VISION", "REVEALED", "TRUE_SIGHT", "BUSH", "POSITION_REVEAL", "POSITION_INDICATOR",
     "POSITION_SOUND", "POSITION_EFFECT", "POSITION_EFFECT_SOUND", "HIT_SOUND",
     "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "SHIMMER", "OVERHEAD_VISION", "UNOBSTRUCTED_VISION", "STEALTH", "INVISIBILITY",
     "CAMOUFLAGE",

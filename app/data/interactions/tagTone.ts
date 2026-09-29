@@ -89,6 +89,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   VISION: "sky_soft",
   REVEALED: "sky_soft",
   TRUE_SIGHT: "sky_soft",
+  BUSH: "sky_soft",
   POSITION_REVEAL:  "sky_soft",
   POSITION_SOUND:        "sky_soft",
   POSITION_EFFECT:       "sky_soft",
@@ -179,6 +180,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 🪨 stone (벽/특수/리셋)
   TERRAIN: "stone",
   WALL_HOP: "zinc",
+  WALL_COLLISION: "indigo",
   SHIELD_BREAK: "stone",
   AA_RESET: "indigo",
   UNTARGETABLE: "zinc",
@@ -251,7 +253,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   W: "white",
   E: "white",
   R: "white",
-  BA: "white",
+  BA: "indigo",
   EMPOWERED: "indigo",
   // 피해 범위
   SINGLE:  "indigo",
