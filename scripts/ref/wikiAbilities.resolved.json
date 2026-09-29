@@ -1,0 +1,1651 @@
+{
+  "ddragonVersion": "16.19.1",
+  "entries": [
+    {
+      "champion": "Akali",
+      "ability": "Shuriken Flip",
+      "qualifier": "second cast",
+      "list": "DASH",
+      "champId": "akali",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Akali",
+      "ability": "Shuriken Flip",
+      "qualifier": "first cast, reverse",
+      "list": "DASH",
+      "champId": "akali",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Akali",
+      "ability": "Perfect Execution",
+      "qualifier": "first cast",
+      "list": "DASH",
+      "champId": "akali",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Akali",
+      "ability": "Perfect Execution",
+      "qualifier": "second cast",
+      "list": "DASH",
+      "champId": "akali",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Amumu",
+      "ability": "Bandage Toss",
+      "qualifier": "when hitting a unit",
+      "list": "DASH",
+      "champId": "amumu",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Aurora",
+      "ability": "Between Worlds",
+      "qualifier": "initial cast / when colliding with the border",
+      "list": "DASH",
+      "champId": "aurora",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Aurora",
+      "ability": "Across the Veil",
+      "list": "DASH",
+      "champId": "aurora",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Aurora",
+      "ability": "The Weirding",
+      "qualifier": "reverse",
+      "list": "DASH",
+      "champId": "aurora",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Bard",
+      "ability": "Magical Journey",
+      "qualifier": "when clicked",
+      "list": "DASH",
+      "champId": "bard",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Briar",
+      "ability": "Certain Death",
+      "qualifier": "second cast",
+      "list": "DASH",
+      "champId": "briar",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Briar",
+      "ability": "Blood Frenzy",
+      "list": "DASH",
+      "champId": "briar",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Briar",
+      "ability": "Head Rush",
+      "list": "DASH",
+      "champId": "briar",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ekko",
+      "ability": "Chronobreak",
+      "list": "DASH",
+      "champId": "ekko",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ekko",
+      "ability": "Phase Dive",
+      "list": "DASH",
+      "champId": "ekko",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ivern",
+      "ability": "Rootcaller",
+      "qualifier": "when clicking a rooted target",
+      "list": "DASH",
+      "champId": "ivern",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Jarvan IV",
+      "ability": "Dragon Strike",
+      "qualifier": "when colliding with Demacian Standard",
+      "list": "DASH",
+      "champId": "jarvaniv",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Jarvan IV",
+      "ability": "Cataclysm",
+      "list": "DASH",
+      "champId": "jarvaniv",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kalista",
+      "ability": "Fate's Call",
+      "qualifier": "Oathsworn pull-in / selected dash",
+      "list": "DASH",
+      "champId": "kalista",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kalista",
+      "ability": "Martial Poise",
+      "list": "DASH",
+      "champId": "kalista",
+      "slot": "P",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kled",
+      "ability": "Jousting",
+      "qualifier": "first and second cast",
+      "list": "DASH",
+      "champId": "kled",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kled",
+      "ability": "Chaaaaaaaarge!!!",
+      "list": "DASH",
+      "champId": "kled",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kled",
+      "ability": "Pocket Pistol",
+      "qualifier": "reverse",
+      "list": "DASH",
+      "champId": "kled",
+      "slot": null,
+      "method": null,
+      "reason": "Data Dragon·파일 모두 불일치"
+    },
+    {
+      "champion": "Lee Sin",
+      "ability": "Resonating Strike",
+      "list": "DASH",
+      "champId": "leesin",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Lee Sin",
+      "ability": "Safeguard",
+      "list": "DASH",
+      "champId": "leesin",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Leona",
+      "ability": "Zenith Blade",
+      "list": "DASH",
+      "champId": "leona",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Nautilus",
+      "ability": "Dredge Line",
+      "qualifier": "when hitting a unit / terrain",
+      "list": "DASH",
+      "champId": "nautilus",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rek'Sai",
+      "ability": "Tunnel",
+      "qualifier": "creating / clicking an existing tunnel",
+      "list": "DASH",
+      "champId": "reksai",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rek'Sai",
+      "ability": "Void Rush",
+      "list": "DASH",
+      "champId": "reksai",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Sylas",
+      "ability": "Abduct",
+      "qualifier": "when hitting a unit",
+      "list": "DASH",
+      "champId": "sylas",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Sylas",
+      "ability": "Abscond",
+      "list": "DASH",
+      "champId": "sylas",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Sylas",
+      "ability": "Kingslayer",
+      "list": "DASH",
+      "champId": "sylas",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Thresh",
+      "ability": "Deathly Leap",
+      "list": "DASH",
+      "champId": "thresh",
+      "slot": null,
+      "method": null,
+      "reason": "Data Dragon·파일 모두 불일치"
+    },
+    {
+      "champion": "Thresh",
+      "ability": "Dark Passage",
+      "qualifier": "when clicked",
+      "list": "DASH",
+      "champId": "thresh",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Vex",
+      "ability": "Shadow Surge",
+      "qualifier": "second cast",
+      "list": "DASH",
+      "champId": "vex",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Warwick",
+      "ability": "Jaws of the Beast",
+      "qualifier": "when held",
+      "list": "DASH",
+      "champId": "warwick",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Warwick",
+      "ability": "Infinite Duress",
+      "list": "DASH",
+      "champId": "warwick",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Yone",
+      "ability": "Soul Unbound",
+      "qualifier": "first and second cast",
+      "list": "DASH",
+      "champId": "yone",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Yone",
+      "ability": "Mortal Steel",
+      "list": "DASH",
+      "champId": "yone",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ziggs",
+      "ability": "Satchel Charge",
+      "list": "DASH",
+      "champId": "ziggs",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Aatrox",
+      "ability": "Umbral Dash",
+      "list": "DASH",
+      "champId": "aatrox",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Akshan",
+      "ability": "Heroic Swing",
+      "qualifier": "second and third cast",
+      "list": "DASH",
+      "champId": "akshan",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Aurelion Sol",
+      "ability": "Astral Flight",
+      "list": "DASH",
+      "champId": "aurelionsol",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Bel'Veth",
+      "ability": "Void Surge",
+      "list": "DASH",
+      "champId": "belveth",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Bel'Veth",
+      "ability": "Endless Banquet",
+      "list": "DASH",
+      "champId": "belveth",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Camille",
+      "ability": "Hookshot",
+      "list": "DASH",
+      "champId": "camille",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Camille",
+      "ability": "Wall Dive",
+      "list": "DASH",
+      "champId": "camille",
+      "slot": null,
+      "method": null,
+      "reason": "Data Dragon·파일 모두 불일치"
+    },
+    {
+      "champion": "Camille",
+      "ability": "The Hextech Ultimatum",
+      "list": "DASH",
+      "champId": "camille",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Caitlyn",
+      "ability": "90 Caliber Net",
+      "qualifier": "reverse",
+      "list": "DASH",
+      "champId": "caitlyn",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Fiora",
+      "ability": "Lunge",
+      "list": "DASH",
+      "champId": "fiora",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Gragas",
+      "ability": "Body Slam",
+      "list": "DASH",
+      "champId": "gragas",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Graves",
+      "ability": "Collateral Damage",
+      "qualifier": "reverse",
+      "list": "DASH",
+      "champId": "graves",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Graves",
+      "ability": "Quickdraw",
+      "list": "DASH",
+      "champId": "graves",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kayn",
+      "ability": "Reaping Slash",
+      "list": "DASH",
+      "champId": "kayn",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kayn",
+      "ability": "Umbral Trespass",
+      "qualifier": "first cast / recast",
+      "list": "DASH",
+      "champId": "kayn",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "K'Sante",
+      "ability": "Path Maker",
+      "list": "DASH",
+      "champId": "ksante",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "K'Sante",
+      "ability": "Footwork",
+      "qualifier": "incl. ally cast",
+      "list": "DASH",
+      "champId": "ksante",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Lucian",
+      "ability": "Relentless Pursuit",
+      "list": "DASH",
+      "champId": "lucian",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Naafiri",
+      "ability": "Eviscerate",
+      "list": "DASH",
+      "champId": "naafiri",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Naafiri",
+      "ability": "Hounds' Pursuit",
+      "list": "DASH",
+      "champId": "naafiri",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ornn",
+      "ability": "Searing Charge",
+      "list": "DASH",
+      "champId": "ornn",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ornn",
+      "ability": "Call of the Forge God",
+      "qualifier": "recast",
+      "list": "DASH",
+      "champId": "ornn",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Pyke",
+      "ability": "Phantom Undertow",
+      "list": "DASH",
+      "champId": "pyke",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Renekton",
+      "ability": "Slice and Dice",
+      "list": "DASH",
+      "champId": "renekton",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Riven",
+      "ability": "Broken Wings",
+      "list": "DASH",
+      "champId": "riven",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Riven",
+      "ability": "Valor",
+      "list": "DASH",
+      "champId": "riven",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Urgot",
+      "ability": "Disdain",
+      "list": "DASH",
+      "champId": "urgot",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Vayne",
+      "ability": "Tumble",
+      "list": "DASH",
+      "champId": "vayne",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Vi",
+      "ability": "Vault Breaker",
+      "list": "DASH",
+      "champId": "vi",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Vi",
+      "ability": "Cease and Desist",
+      "list": "DASH",
+      "champId": "vi",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Viego",
+      "ability": "Spectral Maw",
+      "list": "DASH",
+      "champId": "viego",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Wukong",
+      "ability": "Warrior Trickster",
+      "list": "DASH",
+      "champId": "wukong",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Wukong",
+      "ability": "Nimbus Strike",
+      "list": "DASH",
+      "champId": "wukong",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Yunara",
+      "ability": "Untouchable Shadow",
+      "list": "DASH",
+      "champId": "yunara",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Zeri",
+      "ability": "Spark Surge",
+      "list": "DASH",
+      "champId": "zeri",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ahri",
+      "ability": "Spirit Rush",
+      "list": "DASH",
+      "champId": "ahri",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ambessa",
+      "ability": "Drakehound's Step",
+      "list": "DASH",
+      "champId": "ambessa",
+      "slot": "P",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Corki",
+      "ability": "Valkyrie",
+      "list": "DASH",
+      "champId": "corki",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Fizz",
+      "ability": "Playful",
+      "list": "DASH",
+      "champId": "fizz",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Fizz",
+      "ability": "Trickster",
+      "list": "DASH",
+      "champId": "fizz",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Fizz",
+      "ability": "Urchin Strike",
+      "list": "DASH",
+      "champId": "fizz",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Galio",
+      "ability": "Justice Punch",
+      "list": "DASH",
+      "champId": "galio",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Galio",
+      "ability": "Hero's Entrance",
+      "list": "DASH",
+      "champId": "galio",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Gnar",
+      "ability": "Hop",
+      "list": "DASH",
+      "champId": "gnar",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Gnar",
+      "ability": "Crunch",
+      "qualifier": "Mega Gnar",
+      "list": "DASH",
+      "champId": "gnar",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Gwen",
+      "ability": "Skip 'n Slash",
+      "list": "DASH",
+      "champId": "gwen",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Hecarim",
+      "ability": "Onslaught of Shadows",
+      "list": "DASH",
+      "champId": "hecarim",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Hecarim",
+      "ability": "Devastating Charge",
+      "list": "DASH",
+      "champId": "hecarim",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kai'Sa",
+      "ability": "Killer Instinct",
+      "list": "DASH",
+      "champId": "kaisa",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kindred",
+      "ability": "Dance of Arrows",
+      "list": "DASH",
+      "champId": "kindred",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kha'Zix",
+      "ability": "Leap",
+      "list": "DASH",
+      "champId": "khazix",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "LeBlanc",
+      "ability": "Distortion",
+      "list": "DASH",
+      "champId": "leblanc",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "LeBlanc",
+      "ability": "Mimic Distortion",
+      "list": "DASH",
+      "champId": "leblanc",
+      "slot": null,
+      "method": null,
+      "reason": "Data Dragon·파일 모두 불일치"
+    },
+    {
+      "champion": "Lillia",
+      "ability": "Watch Out! Eep!",
+      "list": "DASH",
+      "champId": "lillia",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Malphite",
+      "ability": "Unstoppable Force",
+      "list": "DASH",
+      "champId": "malphite",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Nidalee",
+      "ability": "Pounce",
+      "list": "DASH",
+      "champId": "nidalee",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Qiyana",
+      "ability": "Terrashape",
+      "list": "DASH",
+      "champId": "qiyana",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Qiyana",
+      "ability": "Audacity",
+      "list": "DASH",
+      "champId": "qiyana",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rammus",
+      "ability": "Soaring Slam",
+      "list": "DASH",
+      "champId": "rammus",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Sejuani",
+      "ability": "Arctic Assault",
+      "list": "DASH",
+      "champId": "sejuani",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Shen",
+      "ability": "Shadow Dash",
+      "list": "DASH",
+      "champId": "shen",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Shyvana",
+      "ability": "Dragon's Descent",
+      "list": "DASH",
+      "champId": "shyvana",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Taliyah",
+      "ability": "Weaver's Wall",
+      "qualifier": "second cast while channeling",
+      "list": "DASH",
+      "champId": "taliyah",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Tristana",
+      "ability": "Rocket Jump",
+      "list": "DASH",
+      "champId": "tristana",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Tryndamere",
+      "ability": "Spinning Slash",
+      "list": "DASH",
+      "champId": "tryndamere",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rakan",
+      "ability": "Grand Entrance",
+      "list": "DASH",
+      "champId": "rakan",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rakan",
+      "ability": "Battle Dance",
+      "list": "DASH",
+      "champId": "rakan",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rell",
+      "ability": "Ferromancy: Crash Down",
+      "list": "DASH",
+      "champId": "rell",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rell",
+      "ability": "Ferromancy: Mount Up",
+      "list": "DASH",
+      "champId": "rell",
+      "slot": "W",
+      "method": "file"
+    },
+    {
+      "champion": "Volibear",
+      "ability": "Stormbringer",
+      "list": "DASH",
+      "champId": "volibear",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Volibear",
+      "ability": "Thundering Smash",
+      "list": "DASH",
+      "champId": "volibear",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Zaahen",
+      "ability": "Aureate Rush",
+      "list": "DASH",
+      "champId": "zaahen",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Zaahen",
+      "ability": "Grim Deliverance",
+      "list": "DASH",
+      "champId": "zaahen",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Zac",
+      "ability": "Elastic Slingshot",
+      "list": "DASH",
+      "champId": "zac",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Alistar",
+      "ability": "Headbutt",
+      "list": "DASH",
+      "champId": "alistar",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Azir",
+      "ability": "Shifting Sands",
+      "qualifier": "only after using Arise!",
+      "list": "DASH",
+      "champId": "azir",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Braum",
+      "ability": "Stand Behind Me",
+      "list": "DASH",
+      "champId": "braum",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Diana",
+      "ability": "Lunar Rush",
+      "list": "DASH",
+      "champId": "diana",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Elise",
+      "ability": "Venomous Bite",
+      "list": "DASH",
+      "champId": "elise",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Evelynn",
+      "ability": "Empowered Whiplash",
+      "list": "DASH",
+      "champId": "evelynn",
+      "slot": null,
+      "method": null,
+      "reason": "Data Dragon·파일 모두 불일치"
+    },
+    {
+      "champion": "Illaoi",
+      "ability": "Harsh Lesson",
+      "list": "DASH",
+      "champId": "illaoi",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Irelia",
+      "ability": "Bladesurge",
+      "list": "DASH",
+      "champId": "irelia",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Jax",
+      "ability": "Leap Strike",
+      "list": "DASH",
+      "champId": "jax",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Jayce",
+      "ability": "To the Skies!",
+      "list": "DASH",
+      "champId": "jayce",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Locke",
+      "ability": "Ashen Pursuit",
+      "list": "DASH",
+      "champId": "locke",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Maokai",
+      "ability": "Twisted Advance",
+      "list": "DASH",
+      "champId": "maokai",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Nilah",
+      "ability": "Slipstream",
+      "list": "DASH",
+      "champId": "nilah",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Nocturne",
+      "ability": "Paranoia",
+      "list": "DASH",
+      "champId": "nocturne",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Pantheon",
+      "ability": "Shield Vault",
+      "list": "DASH",
+      "champId": "pantheon",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Poppy",
+      "ability": "Heroic Charge",
+      "list": "DASH",
+      "champId": "poppy",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Quinn",
+      "ability": "Vault",
+      "list": "DASH",
+      "champId": "quinn",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rengar",
+      "ability": "Unseen Predator",
+      "list": "DASH",
+      "champId": "rengar",
+      "slot": "P",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Samira",
+      "ability": "Daredevil Impulse",
+      "list": "DASH",
+      "champId": "samira",
+      "slot": "P",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Samira",
+      "ability": "Wild Rush",
+      "list": "DASH",
+      "champId": "samira",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Sett",
+      "ability": "The Show Stopper",
+      "list": "DASH",
+      "champId": "sett",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Talon",
+      "ability": "Noxian Diplomacy",
+      "list": "DASH",
+      "champId": "talon",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Talon",
+      "ability": "Assassin's Path",
+      "list": "DASH",
+      "champId": "talon",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Udyr",
+      "ability": "Blazing Stampede",
+      "list": "DASH",
+      "champId": "udyr",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Xin Zhao",
+      "ability": "Audacious Charge",
+      "list": "DASH",
+      "champId": "xinzhao",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Yasuo",
+      "ability": "Sweeping Blade",
+      "list": "DASH",
+      "champId": "yasuo",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Yuumi",
+      "ability": "You and Me!",
+      "list": "DASH",
+      "champId": "yuumi",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Zed",
+      "ability": "Death Mark",
+      "list": "DASH",
+      "champId": "zed",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Akshan",
+      "ability": "Comeuppance",
+      "list": "CHANNEL",
+      "champId": "akshan",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Caitlyn",
+      "ability": "Ace in the Hole",
+      "list": "CHANNEL",
+      "champId": "caitlyn",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Fiddlesticks",
+      "ability": "Bountiful Harvest",
+      "list": "CHANNEL",
+      "champId": "fiddlesticks",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Gragas",
+      "ability": "Drunken Rage",
+      "list": "CHANNEL",
+      "champId": "gragas",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ivern",
+      "ability": "Friend of the Forest",
+      "list": "CHANNEL",
+      "champId": "ivern",
+      "slot": "P",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Janna",
+      "ability": "Monsoon",
+      "list": "CHANNEL",
+      "champId": "janna",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Jhin",
+      "ability": "Curtain Call",
+      "list": "CHANNEL",
+      "champId": "jhin",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Karthus",
+      "ability": "Requiem",
+      "list": "CHANNEL",
+      "champId": "karthus",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Katarina",
+      "ability": "Death Lotus",
+      "list": "CHANNEL",
+      "champId": "katarina",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Lucian",
+      "ability": "The Culling",
+      "list": "CHANNEL",
+      "champId": "lucian",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Malzahar",
+      "ability": "Nether Grasp",
+      "list": "CHANNEL",
+      "champId": "malzahar",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Master Yi",
+      "ability": "Meditate",
+      "list": "CHANNEL",
+      "champId": "masteryi",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Miss Fortune",
+      "ability": "Bullet Time",
+      "list": "CHANNEL",
+      "champId": "missfortune",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Nunu",
+      "ability": "Absolute Zero",
+      "list": "CHANNEL",
+      "champId": "nunu",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Quinn",
+      "ability": "Behind Enemy Lines",
+      "list": "CHANNEL",
+      "champId": "quinn",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rammus",
+      "ability": "Powerball",
+      "list": "CHANNEL",
+      "champId": "rammus",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Vel'Koz",
+      "ability": "Life Form Disintegration Ray",
+      "list": "CHANNEL",
+      "champId": "velkoz",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Warwick",
+      "ability": "Infinite Duress",
+      "list": "CHANNEL",
+      "champId": "warwick",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Xerath",
+      "ability": "Rite of the Arcane",
+      "list": "CHANNEL",
+      "champId": "xerath",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Yuumi",
+      "ability": "Prowling Projectile",
+      "list": "CHANNEL",
+      "champId": "yuumi",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Yuumi",
+      "ability": "Final Chapter",
+      "list": "CHANNEL",
+      "champId": "yuumi",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Fiddlesticks",
+      "ability": "Crowstorm",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "fiddlesticks",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Galio",
+      "ability": "Hero's Entrance",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "galio",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kayn",
+      "ability": "Umbral Trespass",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "kayn",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Naafiri",
+      "ability": "Hounds' Pursuit",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "naafiri",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Nunu",
+      "ability": "Biggest Snowball Ever!",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "nunu",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Pantheon",
+      "ability": "Grand Starfall",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "pantheon",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Shen",
+      "ability": "Stand United",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "shen",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Sion",
+      "ability": "Unstoppable Onslaught",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "sion",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Tahm Kench",
+      "ability": "Abyssal Dive",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "tahmkench",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Taliyah",
+      "ability": "Weaver's Wall",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "taliyah",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Twisted Fate",
+      "ability": "Gate",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "twistedfate",
+      "slot": null,
+      "method": null,
+      "reason": "Data Dragon·파일 모두 불일치"
+    },
+    {
+      "champion": "Ryze",
+      "ability": "Realm Warp",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "ryze",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Vi",
+      "ability": "Vault Breaker",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "vi",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Warwick",
+      "ability": "Jaws of the Beast",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "warwick",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Yuumi",
+      "ability": "You and Me!",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "yuumi",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Zac",
+      "ability": "Elastic Slingshot",
+      "list": "CHANNEL_MOVEMENT",
+      "champId": "zac",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ornn",
+      "ability": "Living Forge",
+      "list": "CHANNEL_OBJECTIVE",
+      "champId": "ornn",
+      "slot": "P",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Zilean",
+      "ability": "Time in a Bottle",
+      "list": "CHANNEL_OBJECTIVE",
+      "champId": "zilean",
+      "slot": "P",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Briar",
+      "ability": "Chilling Scream",
+      "list": "CHANNEL_UNINTERRUPTIBLE",
+      "champId": "briar",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Irelia",
+      "ability": "Defiant Dance",
+      "list": "CHANNEL_UNINTERRUPTIBLE",
+      "champId": "irelia",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "K'Sante",
+      "ability": "Path Maker",
+      "list": "CHANNEL_UNINTERRUPTIBLE",
+      "champId": "ksante",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Pantheon",
+      "ability": "Aegis Assault",
+      "qualifier": "incl. empowered",
+      "list": "CHANNEL_UNINTERRUPTIBLE",
+      "champId": "pantheon",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Urgot",
+      "ability": "Fear Beyond Death",
+      "qualifier": "Mercy (recast)",
+      "list": "CHANNEL_UNINTERRUPTIBLE",
+      "champId": "urgot",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Aurelion Sol",
+      "ability": "Breath of Light",
+      "list": "CHARGED",
+      "champId": "aurelionsol",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Briar",
+      "ability": "Chilling Scream",
+      "list": "CHARGED",
+      "champId": "briar",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Galio",
+      "ability": "Shield of Durand",
+      "list": "CHARGED",
+      "champId": "galio",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Irelia",
+      "ability": "Defiant Dance",
+      "list": "CHARGED",
+      "champId": "irelia",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "K'Sante",
+      "ability": "Path Maker",
+      "list": "CHARGED",
+      "champId": "ksante",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Pantheon",
+      "ability": "Comet Spear",
+      "list": "CHARGED",
+      "champId": "pantheon",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Poppy",
+      "ability": "Keeper's Verdict",
+      "list": "CHARGED",
+      "champId": "poppy",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Pyke",
+      "ability": "Bone Skewer",
+      "list": "CHARGED",
+      "champId": "pyke",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Sion",
+      "ability": "Decimating Smash",
+      "list": "CHARGED",
+      "champId": "sion",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Varus",
+      "ability": "Piercing Arrow",
+      "list": "CHARGED",
+      "champId": "varus",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Vi",
+      "ability": "Vault Breaker",
+      "list": "CHARGED",
+      "champId": "vi",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Viego",
+      "ability": "Spectral Maw",
+      "list": "CHARGED",
+      "champId": "viego",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Vladimir",
+      "ability": "Tides of Blood",
+      "list": "CHARGED",
+      "champId": "vladimir",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Warwick",
+      "ability": "Jaws of the Beast",
+      "list": "CHARGED",
+      "champId": "warwick",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Xerath",
+      "ability": "Arcanopulse",
+      "list": "CHARGED",
+      "champId": "xerath",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Zac",
+      "ability": "Elastic Slingshot",
+      "list": "CHARGED",
+      "champId": "zac",
+      "slot": "E",
+      "method": "ddragon"
+    }
+  ]
+}

@@ -33,12 +33,17 @@ export type GimmickTagId =
   | "TARGET_MISSING_HP_SCALE"
   | "AD_SCALE"
   | "AP_SCALE"
+  | "AR_SCALE"
+  | "MR_SCALE"
+  | "AR_MR_SCALE"
   | "AS_SCALE"
   | "MS_SCALE"
   | "HP_SCALE"
   | "MANA_SCALE"
   | "ENERGY_SCALE"
   | "LEVEL_SCALE"
+  | "SKILL_LEVEL_SCALE"
+  | "DISTANCE_SCALE"
   // 스킬 형태
   | "SKILL_ACTIVE"
   | "SKILL_TOGGLE"
@@ -156,7 +161,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   SKILL_ACTIVE:      { ko: "액티브",   en: "Active"     },
   SKILL_TOGGLE:      { ko: "토글",     en: "Toggle"     },
   SKILL_CHANNEL:     { ko: "채널링",   en: "Channel"    },
-  SKILL_CHANNEL_MOVEMENT: { ko: "이동형 채널", en: "Movement Channel" },
+  SKILL_CHANNEL_MOVEMENT: { ko: "이동채널", en: "MV Channel" },
   SKILL_CHARGED:     { ko: "차징",     en: "Charged"    },
   SKILL_VECTOR:      { ko: "벡터",     en: "Vector"     },
   SKILL_STEERABLE:   { ko: "조종가능", en: "Steerable" },
@@ -277,12 +282,17 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   TARGET_MISSING_HP_SCALE: { ko: "대상의 잃은 체력", en: "Target's Missing HP" },
   AD_SCALE: { ko: "공격력", en: "Attack Damage" },
   AP_SCALE: { ko: "주문력", en: "Ability Power" },
+  AR_SCALE: { ko: "방어력", en: "Armor" },
+  MR_SCALE: { ko: "마법저항력", en: "Magic Resist" },
+  AR_MR_SCALE: { ko: "방마저", en: "AR+MR" },
   AS_SCALE: { ko: "공격속도", en: "Attack Speed" },
   MS_SCALE: { ko: "이동속도", en: "Move Speed" },
   HP_SCALE: { ko: "최대체력", en: "Max HP" },
   MANA_SCALE: { ko: "최대마나", en: "Max Mana" },
   ENERGY_SCALE: { ko: "기력", en: "Energy" },
-  LEVEL_SCALE: { ko: "레벨비례", en: "Base On Level" },
+  LEVEL_SCALE: { ko: "레벨", en: "Level" },
+  SKILL_LEVEL_SCALE: { ko: "스킬 레벨", en: "Skill Level" },
+  DISTANCE_SCALE: { ko: "거리", en: "Distance" },
   // 시전 행동
   CAST_COMMIT:   { ko: "시전강행",  en: "Cast Commit"  },
   CAST_CANCEL:   { ko: "시전취소",  en: "Cast Cancel"  },
@@ -297,7 +307,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SKILL_ACTIVE:      { ko: "버튼 한 번으로 발동되는 스킬", en: "Ability that activates immediately on a single press" },
   SKILL_STEERABLE:   { ko: "시전 중 마우스 방향으로 조종할 수 있음", en: "Can be steered toward the mouse cursor during cast" },
   SKILL_CHANNEL:    { ko: "버튼 한 번으로 발동하고 시전을 유지하는 스킬 \n 관련있는 CC에 맞으면 끊김.", en: "Activates on a single press and maintains its cast.\nInterrupted if hit by a relevant CC."},
-  SKILL_CHANNEL_MOVEMENT: { ko: "이동이 포함된 채널링(예: 라이즈 R). \n 일반 채널링을 끊는 CC 외에도 [[ROOT]]/[[GROUNDED]] 계열에 의해 추가로 끊김.", en: "A channel that involves the caster moving (e.g. Ryze R).\nInterrupted by everything that interrupts a normal channel, plus Root/Grounded-type effects." },
+  SKILL_CHANNEL_MOVEMENT: { ko: "이동계열 채널링. \n 채널링을 방해하는 CC 외에도 \n [[ROOT]] / [[GROUNDED]] 계열에 의해 추가로 방해.", en: "A channel that involves the caster moving (e.g. Ryze R).\nInterrupted by everything that interrupts a normal channel, plus Root/Grounded-type effects." },
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬, \n 경우에 따라 움직일 수 있음.", en: "Charges up while held\nCaster can move while charging" },
   SKILL_VECTOR:     { ko: "시전 위치에 좌클릭을 하고 \n 드래그로 방향을 지정하는 스킬. \n ( 단, 클릭을 떼면 안됨. ) \n ( 단, 스마트키는 키보드를 떼면 안됨. )", en: "A skill where you left-click the cast location \n and drag to set the direction. \n (However, you must not release the click.) \n (However, with Smart Cast, you must not release the key.)" },
@@ -415,12 +425,17 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   TARGET_MISSING_HP_SCALE: { ko: "이 효과가 대상이 잃은 체력(최대 체력 - 현재 체력)에 비례한다", en: "This effect scales with the target's missing Health (max Health minus current Health)" },
   AD_SCALE: { ko: "공격력에 비례한다", en: "Scales with Attack Damage" },
   AP_SCALE: { ko: "주문력에 비례한다", en: "Scales with Ability Power" },
+  AR_SCALE: { ko: "방어력에 비례한다", en: "Scales with Armor" },
+  MR_SCALE: { ko: "마법저항력에 비례한다", en: "Scales with Magic Resist" },
+  AR_MR_SCALE: { ko: "방어력과 마법저항력에 비례한다", en: "Scales with Armor and Magic Resist" },
   AS_SCALE: { ko: "공격속도에 비례한다", en: "Scales with Attack Speed" },
   MS_SCALE: { ko: "이동속도에 비례한다", en: "Scales with Move Speed" },
   HP_SCALE: { ko: "최대 체력에 비례한다.", en: "Scales with max Health." },
   MANA_SCALE: { ko: "최대 마나에 비례한다", en: "Scales with max Mana" },
   ENERGY_SCALE: { ko: "최대 기력에 비례한다", en: "Scales with max Energy" },
   LEVEL_SCALE: { ko: "챔피언 레벨에 비례한다", en: "Scales with champion level" },
+  SKILL_LEVEL_SCALE: { ko: "스킬 레벨에 비례한다", en: "Scales with skill level" },
+  DISTANCE_SCALE: { ko: "이동하거나 날아간 거리에 비례한다", en: "Scales with distance traveled" },
   // 시전 행동
   CAST_COMMIT:   { ko: "시전 중 CC에 걸려도 스킬이 끊기지 않고 유지됨.\nCC 효과는 시전 도중에도 정상 작동.", en: "The skill is not interrupted and persists even if hit by CC during the cast.\nCC effects function normally during the casting process." },
   CAST_CANCEL:   { ko: "시전 중 CC에 걸리면 스킬이 취소됨\n쿨타임만 소모됨", en: "The skill is canceled if hit by CC during the cast\nOnly the cooldown is consumed" },

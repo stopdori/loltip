@@ -200,8 +200,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   STACKING:      "indigo",
   EVOLVED:       "red",
   PROC:          "white",
-  DEBUFF_STACK:  "white",
-  BUFF_STACK:    "white",
+  DEBUFF_STACK:  "indigo",
+  BUFF_STACK:    "indigo",
   STACK_CONSUME: "white",
   // 타이밍
   TIMING_INSTANT:   "indigo",
@@ -300,6 +300,10 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   TARGET_MISSING_HP_SCALE: "indigo",
   AD_SCALE: "red",
   AP_SCALE: "sky",
+  // AR/MR/AR_MR_SCALE은 원본 스탯 태그 AR_UP/MR_UP/AR_MR_UP(amber_deep)과 짝지음.
+  AR_SCALE: "amber_deep",
+  MR_SCALE: "amber_deep",
+  AR_MR_SCALE: "amber_deep",
   AS_SCALE: "sky",
   MS_SCALE: "sky",
   // HP_SCALE은 MAX_HP_UP(lime), MANA_SCALE/ENERGY_SCALE은 MANA_RESTORE/
@@ -310,6 +314,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ENERGY_SCALE: "sky",
   // LEVEL_SCALE은 짝지을 만한 원본 스탯 태그가 없어 기본값 indigo 사용.
   LEVEL_SCALE: "indigo",
+  SKILL_LEVEL_SCALE: "indigo",
+  DISTANCE_SCALE: "indigo",
   // 시전 행동
   CAST_COMMIT:   "indigo",
   CAST_CANCEL:   "indigo",

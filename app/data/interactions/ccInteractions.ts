@@ -66,3 +66,17 @@ export const CHANNEL_INTERRUPTED_BY: TagId[] = (
 export const MOVEMENT_CHANNEL_INTERRUPTED_BY: TagId[] = (
   Object.entries(CC_INTERACTIONS) as [TagId, CCInteraction][]
 ).filter(([, info]) => info.interruptsChannel === true || info.interruptsMovementChannel === true).map(([key]) => key);
+
+// CC_INTERACTIONS 중 대시를 끊는(interruptsDash: true) 태그만 뽑아낸 파생
+// 데이터. CHANNEL_INTERRUPTED_BY와 같은 방식으로 자동 갱신된다.
+export const DASH_INTERRUPTED_BY: TagId[] = (
+  Object.entries(CC_INTERACTIONS) as [TagId, CCInteraction][]
+).filter(([, info]) => info.interruptsDash === true).map(([key]) => key);
+
+// 그룹 태그 → 구성원 태그 펼치기용. tags.ts의 IMMOBILIZING / FORCED_ACTION
+// 설명에 나열된 구성원과 동일하게 유지할 것. (interruptOverrides.ts의
+// also/except에 그룹 태그를 쓸 때 resolveInterrupt.ts가 이걸로 펼친다.)
+export const CC_GROUPS: Partial<Record<TagId, TagId[]>> = {
+  IMMOBILIZING: ["AIRBORNE", "KNOCKBACK", "GRAB", "SUSPENDING", "STUN", "ROOT", "SUPPRESS", "SLEEP", "STASIS", "CHARM", "TAUNT", "FEAR", "BERSERK"],
+  FORCED_ACTION: ["CHARM", "TAUNT", "FEAR", "BERSERK"],
+};

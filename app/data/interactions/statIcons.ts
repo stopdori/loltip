@@ -26,6 +26,9 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   // "능력치 비례" gimmick 태그 — 원본 스탯 태그(AD_UP/AP_UP)와 같은 아이콘 재사용
   AD_SCALE: { icons: ["/stat-icons/icon-ad.png"] },
   AP_SCALE: { icons: ["/stat-icons/icon-ap.png"] },
+  AR_SCALE: { icons: ["/stat-icons/icon-armor.png"] },
+  MR_SCALE: { icons: ["/stat-icons/icon-mr.png"] },
+  AR_MR_SCALE: { icons: ["/stat-icons/icon-armor.png", "/stat-icons/icon-mr.png"] },
   AS_SCALE: { icons: ["/stat-icons/icon-as.png"] },
   MS_SCALE: { icons: ["/stat-icons/icon-ms.png"] },
   HP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
