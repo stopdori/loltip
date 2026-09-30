@@ -1646,6 +1646,92 @@
       "champId": "zac",
       "slot": "E",
       "method": "ddragon"
+    },
+    {
+      "champion": "Darius",
+      "ability": "Noxian Guillotine",
+      "list": "LUNGE",
+      "champId": "darius",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Galio",
+      "ability": "Justice Punch",
+      "qualifier": "backwards windup",
+      "list": "LUNGE",
+      "champId": "galio",
+      "slot": "E",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Garen",
+      "ability": "Decisive Strike",
+      "list": "LUNGE",
+      "champId": "garen",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kalista",
+      "ability": "Fate's Call",
+      "qualifier": "Oathsworn when landing at max range from the impact",
+      "list": "LUNGE",
+      "champId": "kalista",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Kled",
+      "ability": "Dismount",
+      "list": "LUNGE",
+      "champId": "kled",
+      "slot": null,
+      "method": null,
+      "reason": "Data Dragon·파일 모두 불일치"
+    },
+    {
+      "champion": "Neeko",
+      "ability": "Inherent Glamour",
+      "qualifier": "when transforming into a trap, ward, jungle plant or monster",
+      "list": "LUNGE",
+      "champId": "neeko",
+      "slot": "P",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Ornn",
+      "ability": "Bellows Breath",
+      "list": "LUNGE",
+      "champId": "ornn",
+      "slot": "W",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Rell",
+      "ability": "Shattering Strike",
+      "list": "LUNGE",
+      "champId": "rell",
+      "slot": "Q",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Sion",
+      "ability": "Unstoppable Onslaught",
+      "qualifier": "recast",
+      "list": "LUNGE",
+      "champId": "sion",
+      "slot": "R",
+      "method": "ddragon"
+    },
+    {
+      "champion": "Warwick",
+      "ability": "Jaws of the Beast",
+      "qualifier": "before holding down the key",
+      "list": "LUNGE",
+      "champId": "warwick",
+      "slot": "Q",
+      "method": "ddragon"
     }
   ]
 }

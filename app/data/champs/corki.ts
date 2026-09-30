@@ -101,7 +101,7 @@ const corki: ChampData = {
       en: "Corki flies ([[DASH]]), burning his path for 2.5 seconds ([[ZONE]]). \n Enemies in the path take 150/225/300/375/450 (+200% bonus [[AD_SCALE]]) (+150% [[AP_SCALE]]) [[DMG_MAGIC]] over the duration. \n \n 20/18/16/14/12 second [[COOLDOWN]].",
     },
     E: {
-      ko: "코르키가 전방에 개틀링 건을 발사하여 4초 동안 80/130/180/230/280(+240% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입히고 마법 저항력과 방어력을 최대 12/14/16/18/20만큼 감소시킵니다([[AR_MR_SHRED]]). \n \n 12초의 [[COOLDOWN]].",
+      ko: "코르키가 전방에 개틀링 건을 발사하여 4초 동안 80/130/180/230/280(+240% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입히고 최대 12/14/16/18/20의 [[AR_MR_SHRED]]를 적용합니다. \n \n 12초의 [[COOLDOWN]].",
       en: "Corki fires a gatling gun in front of him for 4 seconds, dealing 80/130/180/230/280 (+240% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] and reducing magic resistance and armor by up to 12/14/16/18/20 ([[AR_MR_SHRED]]). \n \n 12 second [[COOLDOWN]].",
     },
     R: {

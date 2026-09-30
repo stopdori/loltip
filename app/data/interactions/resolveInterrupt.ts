@@ -8,6 +8,7 @@
 // phaseTags는 챔피언 파일 gimmick 필드의 phase 태그를 넘긴다. skills 필드는
 // 끊김 계산에 쓰지 않는다. interruptOverrides의 phase 값도 gimmick 필드의
 // phase ko 라벨 기준.
+// LUNGE는 돌진 판정이 아니므로 기본 끊김 규칙 없음.
 
 import type { TagId } from "./tags";
 import type { GimmickTagId } from "./tags_gimmick";

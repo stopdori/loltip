@@ -18,7 +18,8 @@ export type Tone =
   | "rose" // 방깎(물리)
   | "lime" // 체력/힐/부활
   | "zinc" // 은신/시야제한/면역류
-  | "fuchsia" // 치감/그라운드/특수
+  | "fuchsia" // 치감/그라운드/특수, 디버프 계열
+  | "emerald" // 버프 계열(디버프 fuchsia와 대비)
   | "stone" // 벽/특수/리셋
   | "indigo" // 저지불가/시전보장 계열
   | "white"; // 고정피해
@@ -64,6 +65,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   LIFESTEAL: "red",
   OMNIVAMP: "red",
   HP_REGEN: "lime",
+  GREY_HEALTH: "zinc",
 
   MS_DOWN: "amber_dark",
 
@@ -203,9 +205,16 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   STACKING:      "indigo",
   EVOLVED:       "red",
   PROC:          "white",
-  DEBUFF_STACK:  "indigo",
-  BUFF_STACK:    "indigo",
+  DEBUFF_STACK:  "fuchsia",
+  DEBUFF_STACK_A: "fuchsia",
+  DEBUFF_STACK_B: "fuchsia",
+  DEBUFF_STACK_C: "fuchsia",
+  BUFF_STACK:    "lime",
+  BUFF_STACK_A:  "lime",
+  BUFF_STACK_B:  "lime",
+  BUFF_STACK_C:  "lime",
   STACK_CONSUME: "indigo",
+  PER_STACK: "indigo",
   // 타이밍
   TIMING_INSTANT:   "indigo",
   TIMING_CAST:      "indigo",
@@ -237,14 +246,20 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   CHAIN:            "indigo",
   PASSIVE_BONUS:    "indigo",
   PASSIVE_INTERACT: "white",
-  BUFF:             "indigo",
+  BUFF:             "lime",
+  BUFF_A:           "lime",
+  BUFF_B:           "lime",
+  BUFF_C:           "lime",
   DEBUFF:           "fuchsia",
+  DEBUFF_A:         "fuchsia",
+  DEBUFF_B:         "fuchsia",
+  DEBUFF_C:         "fuchsia",
   COOLDOWN:         "indigo",
   ACTIVATION_CONDITION: "indigo",
   OUT_OF_COMBAT: "indigo",
   ON_TARGET_CD:     "indigo",
-  BUFF_INTERACT:    "white",
-  DEBUFF_INTERACT:  "indigo",
+  BUFF_INTERACT:    "lime",
+  DEBUFF_INTERACT:  "fuchsia",
   MARK_INTERACT:    "indigo",
   MARK_CONSUME:     "indigo",
   MARK:             "indigo",
@@ -331,6 +346,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   MOBILITY: "sky",
   DASH:     "sky",
   BLINK:    "sky",
+  LUNGE:    "sky",
 } satisfies Partial<Record<TagId | GimmickTagId, Tone>>;
 
 // ✅ tag가 등록 안 되어있으면 default
@@ -357,6 +373,7 @@ export const TONE_CLASS: Record<Tone, string> = {
   lime: "bg-lime-400/30 text-lime-100 ring-lime-400/40",
   zinc: "bg-zinc-800/70 text-zinc-200 ring-zinc-600/50",
   fuchsia: "bg-fuchsia-500/15 text-fuchsia-200 ring-fuchsia-400/30",
+  emerald: "bg-emerald-500/15 text-emerald-200 ring-emerald-400/30",
   stone: "bg-stone-500/20 text-stone-200 ring-stone-400/40",
   indigo: "bg-indigo-500/20 text-indigo-200 ring-indigo-400/40",
   white:  "bg-white/15 text-white ring-white/30",
@@ -383,6 +400,7 @@ export const NOTE_TONE_CLASS: Record<Tone, string> = {
   lime: "text-lime-300",
   zinc: "text-zinc-500",
   fuchsia: "text-fuchsia-300",
+  emerald: "text-emerald-300",
   stone: "text-stone-300",
   indigo: "text-indigo-300",
   white:  "text-white",

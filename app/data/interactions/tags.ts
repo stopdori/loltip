@@ -116,6 +116,7 @@ export type TagId =
   /* 7) 회복 / 자원 */
   | "HEAL"
   | "HP_REGEN"       // 체력재생
+  | "GREY_HEALTH"    // 회색 체력
   | "HP_REGEN_UP"    // 체력재생 증가
   | "SHIELD"
   | "MAX_HP_UP" // 최대체력 증가
@@ -137,6 +138,7 @@ export type TagId =
   | "MOBILITY"
   | "DASH"
   | "BLINK"
+  | "LUNGE"
 
   /* 9) 특수 / 변신 */
   | "BUFF_FORM"
@@ -270,6 +272,7 @@ CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
   /* 7) 회복 / 자원 */
 HEAL: { ko: "회복", en: "Heal" },
 HP_REGEN: { ko: "체젠", en: "HP Regen" },
+GREY_HEALTH: { ko: "회색체력", en: "Grey Health" },
 HP_REGEN_UP: { ko: "체젠↑", en: "HP Regen↑" },
 SHIELD: { ko: "쉴드", en: "Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
@@ -291,6 +294,7 @@ TETHER: { ko: "사슬", en: "Tether" },
 MOBILITY: { ko: "이동기",    en: "Mobility" },
 DASH:     { ko: "돌진",     en: "Dash"     },
 BLINK:    { ko: "순간이동", en: "Blink"    },
+LUNGE:    { ko: "도약", en: "Lunge" },
 
   /* 9) 특수 / 변신 */
 BUFF_FORM: { ko: "자가버프", en: "Buff Form" },
@@ -739,6 +743,10 @@ HP_REGEN: {
   ko: "체력이 지속적으로 재생됨",
   en: "Regenerates health over time",
 },
+GREY_HEALTH: {
+  ko: "최근 받은 피해 중 일부가 체력바에 회색으로 저장됨. \n 저장된 양은 스킬 효과로 되찾을 수 있음 (회복, 보호막 전환 등).",
+  en: "A portion of recently taken damage is stored as grey on the health bar. \n The stored amount can be recovered through the ability (heal, shield conversion, etc. — varies by champion). \n Health-based effects do not count grey health. \n e.g. Dr. Mundo W, Tahm Kench E",
+},
 HP_REGEN_UP: {
   ko: "체력 재생량이 증가함.",
   en: "Increases health regeneration.",
@@ -805,6 +813,10 @@ TETHER: {
 MOBILITY: { ko: "이동 능력의 상위 분류. \n 이동기 금지 상태에서 사용 불가.", en: "The overarching category of movement abilities. \n Cannot be used while grounded." },
 DASH: { ko: "목표 지점까지 경로를 따라 실제로 이동하는 스킬. \n 이동기의 하위 분류.", en: "Moves the caster along a path to the target location. \n A subcategory of Mobility." },
 BLINK: { ko: "거리를 순간적으로 건너뛰는 이동. \n 이동기의 하위 분류.", en: "Instantly crosses a distance without traversing the space between. \n A subcategory of Mobility." },
+LUNGE: {
+  ko: "돌진처럼 보이지만 돌진 판정이 아닌 이동. \n [[DASH]]에 반응하는 효과(뽀삐 W, 벡스 P)가 발동하지 않음.",
+  en: "Movement that looks like a dash but is not treated as one. \n Effects that react to a [[DASH]] (Poppy W, Vex P, etc.) do not trigger. \n e.g. Darius R, Garen Q",
+},
 
   /* 9) 특수 / 변신 */
 BUFF_FORM: {

@@ -138,6 +138,7 @@ export type GimmickTagId =
   | "STACK_CONSUME_A"
   | "STACK_CONSUME_B"
   | "STACK_CONSUME_C"
+  | "PER_STACK"
   // 스킬 타이밍
   | "SKILL_RECAST"
   | "RECAST_CANCEL"
@@ -199,6 +200,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   STACK_CONSUME_A: { ko: "스택소모A", en: "Stack Consume A" },
   STACK_CONSUME_B: { ko: "스택소모B", en: "Stack Consume B" },
   STACK_CONSUME_C: { ko: "스택소모C", en: "Stack Consume C" },
+  PER_STACK: { ko: "스택당", en: "Per Stack" },
 
   // 타이밍
   TIMING_INSTANT:   { ko: "즉발",     en: "Instant"    },
@@ -209,7 +211,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ST_CONDITIONAL: { ko: "조건발동", en: "Conditional" },
   ON_TAKEDOWN: { ko: "처치 관여", en: "On Takedown" },
   ON_KILL: { ko: "처치 시", en: "On Kill" },
-  ON_CHAMP_HIT: { ko: "챔프 적중", en: "Champion Hit" },
+  ON_CHAMP_HIT: { ko: "챔프적중", en: "Champion Hit" },
   // 이진 상태 표시
   EXIST: { ko: "O", en: "O" },
   NOT_EXIST: { ko: "X", en: "X" },
@@ -347,6 +349,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   STACK_CONSUME_A: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (A). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (A). \n Used to distinguish multiple distinct stack-consume effects." },
   STACK_CONSUME_B: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (B). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (B). \n Used to distinguish multiple distinct stack-consume effects." },
   STACK_CONSUME_C: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (C). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (C). \n Used to distinguish multiple distinct stack-consume effects." },
+  PER_STACK: { ko: "스택당 효과 증가.", en: "Effect increases per stack." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
   TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림", en: "Has a cast delay before activating." },
   TIMING_AFTERCAST: { ko: "발동 후 다음 행동까지 시간이 걸림.", en: "Takes time between activation and the next action." },

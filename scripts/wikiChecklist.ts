@@ -115,11 +115,11 @@ for (const w of WIKI_ABILITIES) {
 fs.writeFileSync("scripts/ref/wikiAbilities.resolved.json", JSON.stringify({ ddragonVersion: version, entries: resolved }, null, 2) + "\n", "utf8");
 
 // ---------- 검사 ----------
-const SHOW = ["DASH", "BLINK", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "CAST_COMMIT"];
+const SHOW = ["DASH", "BLINK", "LUNGE", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "CAST_COMMIT"];
 const CHANNEL_LISTS: WikiList[] = ["CHANNEL", "CHANNEL_MOVEMENT", "CHANNEL_OBJECTIVE", "CHANNEL_UNINTERRUPTIBLE", "CHARGED"];
 const CHANNEL_TAGS = ["SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED"];
 
-type Item = { champ: string; slot: Slot; labels: string; ability: string; qualifier?: string; kind: "A" | "B" | "C" | "D"; todo: string; current: string };
+type Item = { champ: string; slot: Slot; labels: string; ability: string; qualifier?: string; kind: "A" | "B" | "C" | "D" | "E"; todo: string; current: string };
 const items: Item[] = [];
 
 const fmtLabels = (ps: PhaseInfo[]) => {
@@ -132,6 +132,9 @@ const fmtCurrent = (ps: PhaseInfo[]) =>
     const name = p.label !== null ? `${p.form ? p.form + "." : ""}"${p.label}"` : p.form ? `${p.form}.(배열)` : "(배열)";
     return `${name} ${hit.length ? hit.join(", ") : "-"}`;
   }).join(" / ");
+
+type LungeItem = { champ: string; slot: Slot; ability: string; qualifier?: string; both: boolean; phases: { name: string; tags: string[]; hasDash: boolean; hasLunge: boolean; verdict: string }[] };
+const lungeItems: LungeItem[] = [];
 
 // 같은 챔피언·슬롯·목록·능력은 qualifier를 합쳐 한 건으로
 const groups = new Map<string, { r: Resolved; quals: string[] }>();
@@ -167,6 +170,19 @@ for (const { r, quals } of groups.values()) {
     case "CHANNEL_OBJECTIVE":
       if (!CHANNEL_TAGS.some((t) => tags.has(t))) push("C", "채널 태그 없음(참고: 오브젝트 채널)");
       break;
+    case "LUNGE": {
+      // E. LUNGE 확인: 슬롯의 gimmick phase를 전부 보여주고 phase별 DASH 여부 표시
+      const both = resolved.some((x) => x.champId === r.champId && x.ability === r.ability && x.list === "DASH");
+      const phases = ps.map((p) => {
+        const name = p.label !== null ? `${p.form ? p.form + "." : ""}"${p.label}"` : p.form ? `${p.form}.(배열)` : "(배열)";
+        const hasDash = p.tags.includes("DASH");
+        return { name, tags: p.tags, hasDash, hasLunge: p.tags.includes("LUNGE"), verdict: !hasDash ? "" : both ? "DASH·LUNGE 둘 다 해당 — phase 분리 확인" : "DASH → LUNGE 후보" };
+      });
+      lungeItems.push({ champ: r.champId!, slot: r.slot!, ability: r.ability, qualifier: quals.join("; ") || undefined, both, phases });
+      const dashPhases = phases.filter((p) => p.hasDash);
+      push("E", dashPhases.length ? dashPhases.map((p) => `${p.name}: ${p.verdict}`).join(" / ") : both ? "DASH·LUNGE 둘 다 해당 — phase 분리 확인(현재 DASH 없음)" : "LUNGE 확인(DASH 태그 없음)");
+      break;
+    }
   }
 }
 
@@ -195,7 +211,7 @@ const unmatched = resolved.filter((r) => !r.slot);
 const count = (k: Item["kind"]) => items.filter((i) => i.kind === k).length;
 const champsWithIssues = [...new Set(items.map((i) => i.champ))].sort();
 const slotOrder = (s: Slot) => SLOTS.indexOf(s);
-const kindOrder = { A: 0, B: 1, C: 2, D: 3 };
+const kindOrder = { A: 0, B: 1, C: 2, D: 3, E: 4 };
 
 const md: string[] = [];
 md.push(`# 위키 기준 돌진·채널링 체크리스트 (${stamp})`, "");
@@ -203,12 +219,20 @@ md.push(`기준: 챔피언 파일 gimmick 필드(폼·phase 전체) / Data Drago
 md.push("## 1) 요약", "");
 md.push("| 구분 | 개수 |", "|---|---|");
 md.push(`| A. DASH 누락 | ${count("A")} |`, `| B. DASH 확인 필요 | ${count("B")} |`, `| C. 채널 누락 | ${count("C")} |`, `| D. 채널 확인 필요 | ${count("D")} |`);
+md.push(`| E. LUNGE 확인 | ${count("E")} |`);
 md.push(`| UNMATCHED | ${unmatched.length} |`, `| 문제 있는 챔피언 | ${champsWithIssues.length} |`, "");
 md.push("## 2) 챔피언별 체크리스트", "");
 for (const c of champsWithIssues) {
   md.push(`### ${c}`);
   for (const i of items.filter((i) => i.champ === c).sort((a, b) => slotOrder(a.slot) - slotOrder(b.slot) || kindOrder[a.kind] - kindOrder[b.kind]))
     md.push(`- [ ] ${i.slot}(${i.labels}) ${i.ability}${i.qualifier ? ` (${i.qualifier})` : ""} — ${i.kind} — ${i.todo} — 현재 태그: ${i.current}`);
+  md.push("");
+}
+md.push("## E. LUNGE 확인 (phase 전체)", "");
+for (const l of [...lungeItems].sort((a, b) => a.champ.localeCompare(b.champ))) {
+  md.push(`### ${l.champ} ${l.slot} — ${l.ability}${l.qualifier ? ` (${l.qualifier})` : ""}${l.both ? " — DASH 목록에도 있음" : ""}`);
+  if (!l.phases.length) md.push("- (gimmick에 슬롯 없음)");
+  for (const p of l.phases) md.push(`- [ ] ${p.name} — DASH ${p.hasDash ? "O" : "X"}${p.hasLunge ? " / LUNGE O" : ""}${p.verdict ? ` — ${p.verdict}` : ""} — 태그: ${p.tags.join(", ")}`);
   md.push("");
 }
 md.push("## 3) UNMATCHED", "", "| 챔피언 | 능력 | qualifier | 목록 | 사유 |", "|---|---|---|---|---|");
@@ -219,7 +243,7 @@ md.push("", "---", "위키 목록 기준 후보이며 판단은 사용자가 한
 const outFile = `logs/wiki_checklist_${stamp}.md`;
 fs.writeFileSync(outFile, md.join("\n") + "\n", "utf8");
 console.log(outFile);
-console.log(`A ${count("A")} / B ${count("B")} / C ${count("C")} / D ${count("D")} / UNMATCHED ${unmatched.length} / 챔피언 ${champsWithIssues.length}`);
+console.log(`A ${count("A")} / B ${count("B")} / C ${count("C")} / D ${count("D")} / E ${count("E")} / UNMATCHED ${unmatched.length} / 챔피언 ${champsWithIssues.length}`);
 console.log(`file 매핑: ${resolved.filter((r) => r.method === "file").map((r) => `${r.champion} ${r.ability}→${r.slot}`).join(", ")}`);
 console.log("UNMATCHED:");
 for (const u of unmatched) console.log(`  ${u.champion} | ${u.ability} | ${u.qualifier ?? ""} | ${u.list} | ${u.reason}`);
@@ -227,4 +251,9 @@ for (const k of ["A", "B", "C", "D"] as const) {
   console.log(`--- ${k} (앞 10) ---`);
   for (const i of items.filter((i) => i.kind === k).sort((a, b) => a.champ.localeCompare(b.champ) || slotOrder(a.slot) - slotOrder(b.slot)).slice(0, 10))
     console.log(`  ${i.champ} ${i.slot}(${i.labels}) ${i.ability}${i.qualifier ? ` (${i.qualifier})` : ""} — ${i.todo} — ${i.current}`);
+}
+console.log("--- E (LUNGE) ---");
+for (const l of [...lungeItems].sort((a, b) => a.champ.localeCompare(b.champ))) {
+  console.log(`  ${l.champ} ${l.slot} ${l.ability}${l.qualifier ? ` (${l.qualifier})` : ""}${l.both ? " [DASH 목록에도 있음]" : ""}`);
+  for (const p of l.phases) console.log(`      ${p.name} — DASH ${p.hasDash ? "O" : "X"}${p.verdict ? ` — ${p.verdict}` : ""} — ${p.tags.join(", ")}`);
 }

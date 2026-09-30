@@ -2,7 +2,7 @@
 // LoL 위키 Dash / Channel 문서의 능력 목록(참조 데이터). 챔피언 파일 gimmick 태그
 // 대조용(scripts/wikiChecklist.ts). 영문 이름은 위키 표기 그대로, qualifier는 괄호 안 조건.
 
-export type WikiList = "DASH" | "CHANNEL" | "CHANNEL_MOVEMENT" | "CHANNEL_OBJECTIVE" | "CHANNEL_UNINTERRUPTIBLE" | "CHARGED";
+export type WikiList = "DASH" | "CHANNEL" | "CHANNEL_MOVEMENT" | "CHANNEL_OBJECTIVE" | "CHANNEL_UNINTERRUPTIBLE" | "CHARGED" | "LUNGE";
 export type WikiAbility = { champion: string; ability: string; qualifier?: string; list: WikiList };
 
 const rows = (list: WikiList, text: string): WikiAbility[] =>
@@ -224,5 +224,18 @@ Vladimir | Tides of Blood |
 Warwick | Jaws of the Beast |
 Xerath | Arcanopulse |
 Zac | Elastic Slingshot |
+`),
+  // 런지: 돌진처럼 보이지만 돌진 판정이 아닌 이동
+  ...rows("LUNGE", `
+Darius | Noxian Guillotine |
+Galio | Justice Punch | backwards windup
+Garen | Decisive Strike |
+Kalista | Fate's Call | Oathsworn when landing at max range from the impact
+Kled | Dismount |
+Neeko | Inherent Glamour | when transforming into a trap, ward, jungle plant or monster
+Ornn | Bellows Breath |
+Rell | Shattering Strike |
+Sion | Unstoppable Onslaught | recast
+Warwick | Jaws of the Beast | before holding down the key
 `),
 ];

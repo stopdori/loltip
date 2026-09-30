@@ -60,8 +60,8 @@ export default function TagPill({
   const noteTextTone = tagId ? toneOfTag(tagId) : "default";
 
   // 앵커(항상 보이는 pill)에 아이콘이 실제로 뜨는지 — 박스 모드에서 아이콘이
-  // 있을 때만 좌측 패딩을 줄여서(px-2 → pl-1) 아이콘 앞 여백을 좁힌다.
-  // 텍스트만 있는 pill의 기존 px-2 여백감은 그대로 유지.
+  // 있을 때만 좌측 패딩을 줄여서(px-1 → pl-0.5) 아이콘 앞 여백을 좁힌다.
+  // 텍스트만 있는 pill의 기존 px-1 여백감은 그대로 유지.
   const hasAnchorIcon = !!(showIconInAnchor && icons?.length);
   // note 모드는 순수 인라인 흐름으로 그린다(inline-flex 아님) — 문단 속에서
   // 주변 평문과 동일한 line-height 규칙을 따르게 하기 위함. 아이콘/화살표
@@ -77,7 +77,7 @@ export default function TagPill({
   // 모드는 대상이 아니므로 박스 모드에서만 적용.
   const base = isNote
     ? "cursor-help hover:opacity-90"
-    : `flex items-center justify-center rounded-md font-semibold ring-1 align-top py-[3px] text-[12px] min-w-[42px] ${hasAnchorIcon ? "pl-1 pr-2" : "px-2"}`;
+    : `flex items-center justify-center rounded-md font-semibold ring-1 align-top py-[3px] text-[12px] min-w-[42px] ${hasAnchorIcon ? "pl-0.5 pr-1" : "px-1"}`;
   const toneCls = isNote ? NOTE_TONE_CLASS[noteTextTone] : (TONE_CLASS[tone] ?? TONE_CLASS.default);
   // gap은 박스 모드(flex)에서만 의미가 있다 — note 모드는 margin 방식으로 대체.
   const gapCls = !isNote && ((showIconInAnchor && icons?.length) || direction) ? "gap-[1px]" : "";
