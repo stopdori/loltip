@@ -41,13 +41,7 @@ const renata: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "Q로 상대 견제하면서 \n 아군에게 W, E 잘 써주기.",
-          "R을 얼마나 잘 쓰냐에 따라 한타가 완전 뒤바뀜.",
-        ], en: [
-          "Poke the enemy with Q while landing W and E on allies well.",
-          "How well you land R can completely swing a teamfight.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

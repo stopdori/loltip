@@ -60,15 +60,7 @@ const lulu: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "포지션을 맨 뒤쪽에 자리 잡고 \n 아군 원딜을 지켜주는 느낌으로 플레이. \n E로 원딜에게 픽스를 붙여주는 게 \n DPS가 상당히 높아짐.", 
-          "W 스킬은 최대한 아끼고 \n 상대 브루저가 원딜을 물려고 할 때. \n [[POLYMORPH]]로 한 타임 시간 벌어주기. ", 
-          " R로 광역 [[AIRBORNE]]과 [[SLOW]] 잘 이용하기.",
-        ], en: [
-          "Position yourself at the very back \n and play as if protecting your ADC. \n Attaching Pix to your ADC with E \n significantly raises their DPS.",
-          "Save your W as much as possible \n and when the enemy bruiser tries to engage your ADC, \n buy time with [[POLYMORPH]]. ",
-          " Make good use of R's [[AIRBORNE]] and [[SLOW]] in teamfights.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

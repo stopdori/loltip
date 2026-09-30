@@ -38,11 +38,7 @@ const garen: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "가렌 그냥 모르겠음. \n 고수분들 제보 부탁드림.",
-        ], en: [
-          "Not sure about Garen. \n Tips from Garen experts welcome.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

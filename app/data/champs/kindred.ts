@@ -38,11 +38,7 @@ const kindred: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "원딜인데 핑퐁하는 원딜 느낌.",
-        ], en: [
-          "Feels like an ADC that ping-pongs around.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

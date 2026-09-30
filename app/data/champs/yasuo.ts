@@ -28,7 +28,7 @@ const yasuo: ChampData = {
     
     W: ["WINDSHIELD", "TIMING_CAST", "ZONE"],
 
-    E: ["DMG_MAGIC", "TARGETED", "SKILL_CHANNEL", "DASH", "BUFF_STACK", "DEBUFF_STACK"],
+    E: ["DMG_MAGIC", "TARGETED", "DASH", "BUFF_STACK", "DEBUFF_STACK"],
 
     R: ["ST_CONDITIONAL", "BLINK", "DMG_PHYSICAL", "AOE"],
   },
@@ -36,9 +36,7 @@ const yasuo: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

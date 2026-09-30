@@ -9,8 +9,8 @@ export const ekko_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     ekko: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nasus: {
       ko: [],

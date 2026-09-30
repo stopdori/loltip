@@ -36,16 +36,14 @@ const twistedfate: ChampData = {
 
     R: { phases: [
       { label: { ko: "R1", en: "R1" }, tags: ["GLOBAL", "DEBUFF_STACK", "SKILL_RECAST"] },
-      { label: { ko: "R2", en: "R2" }, tags: ["SKILL_CHANNEL", "LOCKED", "BLINK"] },
+      { label: { ko: "R2", en: "R2" }, tags: ["SKILL_CHANNEL_MOVEMENT", "LOCKED", "BLINK"] },
     ] },
   },
 
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

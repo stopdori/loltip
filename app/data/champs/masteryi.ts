@@ -33,11 +33,7 @@ const masteryi: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "한타에서 마음속으로 3초를 세고 진입하자.",
-        ], en: [
-          "In team fights, count to 3 in your head before engaging.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -37,7 +37,7 @@ const yuumi: ChampData = {
     W: { phases: [
       { label: { ko: "단짝 패시브", en: "Best Friend Passive" }, tags: ["ST_CONDITIONAL", "ON_HIT"] },
       { label: { ko: "W", en: "W" }, tags: ["TARGETED", "DASH"] },
-      { label: { ko: "밀착", en: "Attached" }, tags: ["BUFF_FORM", "UNTARGETABLE"] },
+      { label: { ko: "밀착", en: "Attached" }, tags: ["BUFF_FORM", "UNTARGETABLE", "SKILL_CHANNEL_MOVEMENT"] },
     ] },
 
     E: ["BUFF_STACK"],
@@ -51,9 +51,7 @@ const yuumi: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

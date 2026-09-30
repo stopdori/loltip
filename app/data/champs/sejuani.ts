@@ -69,13 +69,7 @@ const sejuani: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "Q로 [[DASH]] 하면서 R로 기습 이니시가 강력함",
-          "W로 대치하다가 R로 뒷라인 잘 맞추기",
-        ], en: [
-          "[[DASH]]ing in with Q then following up with R for a surprise engage is strong",
-          "Trade with W, then land R on their backline",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

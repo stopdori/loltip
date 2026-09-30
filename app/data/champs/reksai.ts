@@ -62,11 +62,7 @@ const reksai: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "매복폼 E로 진입해서 광역 [[AIRBORNE]]. \n 싸우다 땅굴로 탈출하거나 \n R로 어그로 핑퐁 또는 상대 마무리 하기.",
-        ], en: [
-          "Engage with Burrowed Form's E for a wide-area [[AIRBORNE]]. \n Escape through a tunnel mid-fight, \n or use R to bounce aggro or finish off the target.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

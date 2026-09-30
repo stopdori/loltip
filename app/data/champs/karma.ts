@@ -51,9 +51,7 @@ const karma: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "만트라 E의 한타벨류가 정말 좋음. \n Q, W로 방해하면서 P의 [[CDR]]으로 \n 만트라 E를 많이 돌려야 함.",
-        ], en: ["Mantra E has exceptional teamfight value.\n Harass with Q and W while using P's [[CDR]]\n to cycle Mantra E as often as possible."] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

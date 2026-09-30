@@ -60,12 +60,7 @@ const gnar: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "미니나르에서 분노 관리를 잘 해야 함.", "미니나르 E로 상대 앞라인을 밟으면서 \n 메가나르로 변신하고 \n 뒷라인에 R로 긁어서 벽꿍하면 그냥 한타 끝.",
-        ], en: [
-          "Managing rage in mini form is key.",
-          "Hop over the enemy frontline with mini E, \n transform into Mega Gnar, \n then sweep the backline with R into a wall stun to end the teamfight.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

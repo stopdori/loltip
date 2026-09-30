@@ -46,13 +46,7 @@ const pyke: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "소규모 교전, 난전에 정말 강함. \n 대신 한타가 정말 약함.",
-          "Q로 [[GRAB]]만 하고 눈치 잘 보다가 \n E로 광역 [[STUN]], R [[EXECUTE]] 등등으로 잘 해야함. \n 난이도 정말 어려움."
-        ], en: [
-          "Really strong in small skirmishes and chaotic fights. \n But quite weak in teamfights.",
-          "You need to only [[GRAB]] with Q while reading the situation, \n then follow up well with E's [[STUN]] and R's [[EXECUTE]]. \n Very high difficulty.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

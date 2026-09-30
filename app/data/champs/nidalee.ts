@@ -68,13 +68,7 @@ const nidalee: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "난전이 정말 강함. \n 3데스 하면 진다는 느낌으로 스노우볼을 잘 굴려야 함.",
-          "한타 대치는 인간폼이 좋음. \n Q, W로 시야 뚫어주면서 포킹하면서 E로 [[HEAL]]. \n 확실한 킬각에 쿠거폼 교전."
-        ], en: [
-          "Skirmishes are her strongest suit. \n Play like one death too many loses the game — snowball hard.",
-          "Human form is better for teamfight standoffs. \n Poke with Q and W for vision while sustaining with E [[HEAL]]. \n Switch to cougar form only when a clear kill is available.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

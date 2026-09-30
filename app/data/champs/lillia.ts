@@ -45,11 +45,7 @@ const lillia: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "E로 포킹하면서 자리 잡다가. \n [[Q_FLASH]]로 여려명을 맞히고 \n 다수 R을 시전하여 한타 캐리.",
-        ], en: [
-          "Poke with E to set up position, \n then hit multiple targets with [[Q_FLASH]] \n and cast multiple R's to carry the teamfight.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

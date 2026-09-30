@@ -57,12 +57,7 @@ const renekton: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "[[EMPOWERED]] W가 정말 중요함.", "R을 쓰고 분노를 100근처로 채우고 \n 상대 뒷라인에 [[EMPOWERED]] E2를 긁고 \n 하나를 [[EMPOWERED]] W, Q로 끔살",
-        ], en: [
-          "[[EMPOWERED]] W is really important.",
-          "Cast R, build Fury up to near 100, \n graze the enemy backline with [[EMPOWERED]] E2, \n then delete one target with [[EMPOWERED]] W and Q.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

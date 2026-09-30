@@ -36,13 +36,7 @@ const jarvaniv: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "별명은 미드갱의 악마 \n 그만큼 뚜벅이 미드를 잘 잡음.", "EQ R 또는 [[R_FLASH]]로 기습 이니시가 정말 강함.", "R로 들어가서 상대를 가두고 \n W로 [[SHIELD]]와 [[SLOW]]를 걸고 EQ로 빠져나와서 \n [[BA]] 챔피언당 한 대씩"
-        ], en: [
-          "Nicknamed the Demon of Mid Ganks — \n lives up to it by easily catching immobile mid laners.",
-          "EQ→R or [[R_FLASH]] ambush initiations are incredibly powerful.",
-          "Dive in with R to trap enemies, \n apply [[SHIELD]] and [[SLOW]] with W, escape with EQ, \n then [[BA]] each champion once.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

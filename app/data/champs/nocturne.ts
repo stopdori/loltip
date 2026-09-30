@@ -59,13 +59,7 @@ const nocturne: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "1:1이 정말 강함.",
-          "R2로 날아가면 되돌릴 수 없음. \n 정말 신중하게 상대 뒷라인에 날아가야 함.",
-        ], en: [
-          "Extremely strong in 1v1 situations.",
-          "Once you fly with R2, there's no going back. \n Be very deliberate about diving into the enemy backline.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [
@@ -114,9 +108,9 @@ const nocturne: ChampData = {
   },
 
   ultCooldown: {
-    6: 140,
-    11: 115,
-    16: 90,
+    6: 160,
+    11: 130,
+    16: 100,
   },
 
 };

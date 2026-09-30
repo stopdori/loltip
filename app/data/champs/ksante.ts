@@ -56,7 +56,7 @@ const ksante: ChampData = {
       { label: { ko: "Q3", en: "Q3" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "MARK", "STUN", "GRAB"] },
     ] },
 
-      W: ["DMG_PHYSICAL", "SKILL_CHARGED", "ST_DELAYED", "AOE", "DASH", "KNOCKBACK", "STUN", "MARK", "UNSTOPPABLE"],
+      W: ["DMG_PHYSICAL", "SKILL_CHARGED", "ST_DELAYED", "AOE", "DASH", "KNOCKBACK", "STUN", "MARK", "UNSTOPPABLE", "CAST_COMMIT"],
       E: ["NON_TARGETED", "DASH", "SEPARATOR", "ST_CONDITIONAL", "TARGETED", "DASH"],
       R: ["DMG_PHYSICAL", "TARGETED", "TIMING_CAST", "MARK", "ROOT", "AIRBORNE", "STUN", "SEPARATOR_NEWLINE", "WALL_HOP", "BLINK", "UNSTOPPABLE", "SEPARATOR_NEWLINE", "SEPARATOR", "TRANSFORM", "BUFF"],
     },
@@ -68,7 +68,7 @@ const ksante: ChampData = {
       { label: { ko: "Q3", en: "Q3" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "MARK", "STUN", "GRAB"] },
     ] },
 
-      W: ["DMG_PHYSICAL", "DMG_TRUE", "SKILL_CHARGED", "ST_DELAYED", "AOE", "DASH", "KNOCKBACK", "STUN", "MARK", "UNSTOPPABLE"],
+      W: ["DMG_PHYSICAL", "DMG_TRUE", "SKILL_CHARGED", "ST_DELAYED", "AOE", "DASH", "KNOCKBACK", "STUN", "MARK", "UNSTOPPABLE", "CAST_COMMIT"],
       E: ["NON_TARGETED", "DASH", "SEPARATOR", "ST_CONDITIONAL", "TARGETED", "DASH"],
       R: ["BUFF", "LOCKED"],
     },
@@ -77,11 +77,7 @@ const ksante: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "정답 : 유튜브로 기산테 보기.",
-        ], en: [
-          "Answer: Watch Kiin's K'Sante gameplay on YouTube.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

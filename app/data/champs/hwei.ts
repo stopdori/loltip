@@ -92,13 +92,8 @@ const hwei: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "Q 계열로 포킹을 하다 \n E 계열로 이동을 제한하고 \n R을 묻혀 광역피해.", "R을 맞히면 QE, EE로 최대한 P의 [[DEBUFF]]를 많이 터뜨려 \n [[AOE]] [[DMG_MAGIC]]를 많이 넣는게 좋음.",
-        ],
-        en: [
-          "Poke with Q skills, \n then limit movement with E skills \n and land R for area damage.",
-          "After landing R, use QE and EE to trigger as many P [[DEBUFF]] explosions as possible \n for maximum [[AOE]] [[DMG_MAGIC]].",
-        ] },
+        ko: [],
+        en: [] },
       note1: {
 
         ko: [

@@ -52,11 +52,7 @@ const kayle: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "앞 라인부터 침착하게 녹여나가는 느낌으로 카이팅 \n R을 정말 잘 써야 함. \n 케일 본인에게 쓰는 게 좋을 때가 많음.",
-        ], en: [
-          "Kite calmly through the frontline. \n R usage is crucial — \n casting it on Kayle herself is often the right call.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

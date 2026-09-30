@@ -64,11 +64,7 @@ const senna: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "생존을 신경쓰면서 Q, R로 아군 도와주면서 \n 상대 앞라인 열심히 때리기.",
-        ], en: [
-          "Focus on survival while helping allies with Q and R, \n and poke the enemy frontline hard.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

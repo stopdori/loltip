@@ -55,11 +55,7 @@ const rell: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "승마폼으로 앞선에서 각보다가 \n [[Q_FLASH]] 또는 W, R로 기습 이니시.",
-        ], en: [
-          "Sit up front in mounted form looking for an angle, \n then engage with [[Q_FLASH]] or a surprise W or R.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

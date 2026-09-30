@@ -43,32 +43,22 @@ const pantheon: ChampData = {
     ] },
 
     E: { phases: [
-      { label: { ko: "E / E 강화", en: "E / E Empowered" }, tags: ["BUFF_FORM", "DMG_PHYSICAL", "AOE", "DOT", "CANCELLABLE", "BUFF_STACK"] },
+      { label: { ko: "E / E 강화", en: "E / E Empowered" }, tags: ["BUFF_FORM", "DMG_PHYSICAL", "AOE", "DOT", "CANCELLABLE", "BUFF_STACK", "SKILL_CHANNEL", "CAST_COMMIT"] },
       { label: { ko: "E 방패타격", en: "E Slams" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "AOE"] },
     ] },
     
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["PASSIVE_BONUS", "AR_PEN"] },
-      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL", "LOCKED"] },
+      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL_MOVEMENT", "LOCKED"] },
       { label: { ko: "R 창", en: "R Spear" }, tags: ["DMG_PHYSICAL", "NON_PROJECTILE", "AOE", "SLOW"] },
-      { label: { ko: "R 착지", en: "R Crashes Down" }, tags: ["DMG_PHYSICAL", "LOCKED", "MOBILITY", "BUFF_STACK", "X5"] },
+      { label: { ko: "R 착지", en: "R Crashes Down" }, tags: ["DMG_PHYSICAL", "LOCKED", "CC_IMMUNE", "SEPARATOR", "BUFF_STACK", "X5"] },
     ] },
   },
 
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "소규모 교전이 상당히 강력함. \n W의 [[STUN]]로 하나 점찍어 잡는게 정말 좋음.", 
-          "R은 준 [[GLOBAL]] 스킬로 \n 사이드 도는 상대를 잘 잘라먹을 수 있음.",
-          "한타에서 R로 진입해서 E의 [[INVULNERABLE]]으로 어그로 끌기.",
-          "앞라인에서 짧은 Q로 살짝씩 견제만 하다가 \n 삐져나온 한명 W의 [[STUN]]로 끊어먹기."
-        ], en: [
-          "Quite strong in small skirmishes. \n W's [[STUN]] is great for picking off a single target.",
-          "R is a near-[[GLOBAL]] ability, \n great for cutting off enemies rotating to the side.",
-          "Engage with R in teamfights and use E's [[INVULNERABLE]] to draw aggro.",
-          "Poke lightly with short Q from the frontline, \n then pick off anyone who overextends with W's [[STUN]].",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -56,11 +56,7 @@ const viktor: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "빅토르 잘하는 법 = 죽지 않으면서 성장하는 것",
-        ], en: [
-          "How to play Viktor well = grow without dying.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

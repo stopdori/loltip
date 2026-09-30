@@ -42,8 +42,8 @@ const naafiri: ChampData = {
     ] },
 
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "SLOW", "DASH", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST"] },
-      { label: { ko: "R 재사용", en: "R Recast" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "SLOW", "DASH", "WALL_HOP", "SHIELD"] },
+      { label: { ko: "R", en: "R" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "SKILL_CHANNEL_MOVEMENT", "SLOW", "SEPARATOR_NEWLINE", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST"] },
+      { label: { ko: "R 재사용", en: "R Recast" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "TARGETED", "SKILL_CHANNEL_MOVEMENT", "SLOW", "SHIELD", "SEPARATOR_NEWLINE", "SEPARATOR", "DASH", "WALL_HOP"] },
     ] },
     
   },
@@ -51,15 +51,7 @@ const naafiri: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "W가 정말 중요함. \n W를 먼저 쓰고 폭딜을 할지 \n W를 나중에 써서 어그로 핑퐁으로 쓸지 잘 고민해야 함.",
-          "앞선에서 Q로 살짝살짝 포킹만 하다 \n W로 어그로 핑퐁을 해주기",
-          "뒷라인에 R로 돌진하여 괴롭히다 \n W, E로 어그로 핑퐁.",
-        ], en: [
-          "W is extremely important. \n Decide whether to use W first for burst damage, \n or save W later to bounce aggro between Hounds.",
-          "In lane, lightly poke with Q, \n then use W to bounce aggro between Hounds.",
-          "Dive into the backline with R to pressure enemies, \n then use W and E to bounce aggro.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

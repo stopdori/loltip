@@ -66,15 +66,7 @@ const rumble: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "열기를 50 ~ 149로 관리.",
-          "한타전에 반박자 빠른 R로 \n 상대 진영을 가르고 시작하는게 제일 베스트.",
-          "대치중에 E로 포킹하다가 한 대상이 E를 연속으로 맞으면 \n 과감하게 R을 깔고 Q를 키고 들이대면 살살녹음.",
-        ], en: [
-          "Manage Heat between 50 and 149.",
-          "Starting the teamfight by splitting the enemy team with a slightly early R \n is the best approach.",
-          "If a target gets hit by E multiple times while poking during a standoff, \n boldly drop R, turn on Q, and dive in — they'll melt.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -40,13 +40,7 @@ const malzahar: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "멀리서 Q로 포킹 하면서 W로 시야를 뚫어주다가 \n 앞라인부터 같이보기",
-          "삐죽 튀어나온 몸이약한 적을 \n R로 [[SUPPRESS]]하여 잘라먹기."
-        ], en: [
-          "Poke from afar with Q while clearing vision with W, \n then group up starting from the frontline",
-          "Pick off squishy enemies who overextend \n by [[SUPPRESS]]ing them with R."
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

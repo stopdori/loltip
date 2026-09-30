@@ -10,6 +10,7 @@ export const ekko_fizz: MatchupSummary = {
   highlightsByChamp: {
     ekko: {
       ko: ["E(순간이동 단계)의 [[HOMING]] [[BLINK]]으로 피즈 Q의 [[DASH]]을 따라갈 수 있음. [[EXIST]]", 
+        "E(순간이동 단계)의 [[HOMING]] [[BLINK]]으로 피즈 E의 [[UNTARGETABLE]] [[DASH]]을 따라갈 수 없음. [[NOT_EXIST]]", 
         "W의 [[STUN]]로 피즈 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
         "E(경직 단계)의 [[CC_BUFFER]]로 피즈 R의 [[AIRBORNE]], [[KNOCKBACK]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[BLINK]] 종료 후 [[AIRBORNE]], [[KNOCKBACK]]([[AIRBORNE]])은 남아있음."],
       en: [""],

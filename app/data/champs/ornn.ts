@@ -46,13 +46,7 @@ const ornn: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "R로 먼저 이니시 하는게 정말 위협적임.",
-          "앞선에서 Q로 견제만 하다 \n E 벽꿍으로 [[AOE]] [[AIRBORNE]].",
-        ], en: [
-          "Initiating with R first is very threatening.",
-          "Poke from the front line with Q, \n then land E's Shockwave for [[AOE]] [[AIRBORNE]].",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

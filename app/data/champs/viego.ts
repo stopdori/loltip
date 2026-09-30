@@ -26,7 +26,8 @@ const viego: ChampData = {
       { label: { ko: "Q 액티브", en: "Q Active" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "DEBUFF_STACK"] },
     ] },
     
-    W: ["DMG_MAGIC", "SKILL_CHARGED", "DEBUFF_STACK"],
+    W: ["DMG_MAGIC", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SEPARATOR", "DASH", "SEPARATOR", "DEBUFF_STACK"],
+    
     E: ["ZONE", "BUFF_STACK", "CAMOUFLAGE"],
     
     R: { phases: [
@@ -40,9 +41,7 @@ const viego: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

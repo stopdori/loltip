@@ -33,12 +33,7 @@ const kennen: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "AP 케넨 \n 정면 싸움보다 상대의 옆이나 뒤에서 등장해야 좋음. \n E로 [[MS_UP]] 하고 \n  몸으로 부딪히면서 R로 비비면 캐리. \n 마무리로 W까지 딱.", "AD 케넨 \n 그냥 사이드가는 원딜이라 생각. \n 한타에서도 원딜처럼 하는게 좋은듯."
-        ], en: [
-          "AP Kennen \n Better to flank from the side or behind rather than fighting head-on. \n Use E for [[MS_UP]], \n  dive in with your body while channeling R — that's the carry play. \n Finish with W.",
-          "AD Kennen \n Think of it as just a side-laning ADC. \n Playing like an ADC in teamfights seems to work best.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -40,9 +40,7 @@ const jinx: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "무조건 카이팅 \n 로켓, W로 카이팅, E로 진입방해 하면서 \n 앞라인을 꾸준하게 때리다 \n 막타 하나 터지면 슈퍼캐리.",
-        ], en: ["Always kite. \n Kite with Rocket and W, use E to block enemies, \n keep poking the frontline, \n and finishing one off turns the fight around."] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

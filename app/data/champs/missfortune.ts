@@ -41,11 +41,7 @@ const missfortune: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "R을 쏘기 전에 E로 [[SLOW]]를 걸어야 좋음.", "R을 잘 쏘면 굉장한 데미지가 나옴. \n 아군 스킬에 잘 연계해서 R을",
-        ], en: [
-          "Apply [[SLOW]] with E before firing R.", "A well-placed R deals enormous damage. \n Combo it with allied skills to land R.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

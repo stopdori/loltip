@@ -36,7 +36,7 @@ const galio: ChampData = {
     ] },
 
     R: { phases: [
-      { label: { ko: "시전집중", en: "Channeling" }, tags: ["SKILL_CHANNEL", "TARGETED"] },
+      { label: { ko: "시전집중", en: "Channeling" }, tags: ["SKILL_CHANNEL_MOVEMENT", "TARGETED"] },
       { label: { ko: "착지", en: "Hero Landing" }, tags: ["DMG_MAGIC", "TIMING_AFTERCAST", "BLINK", "AIRBORNE", "SEPARATOR", "ST_CONDITIONAL", "CC_IMMUNE"] },
     ] },
   },
@@ -44,13 +44,7 @@ const galio: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "앞선에서 Q로 포킹하다가 \n E로 들어가서 W로 광역 [[TAUNT]] \n R로 아군 지켜주기.",
-          "아군 챔피언중에 잘 파고드는 친구에게 \n R 연계로 한타 자리 부수기.",
-        ], en: [
-          "Poke from the frontline with Q, \n engage with E into a wide [[TAUNT]] with W, \n then use R to protect your allies.",
-          "Combo R onto an ally who dives deep \n to blow up the enemy team fight positioning.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

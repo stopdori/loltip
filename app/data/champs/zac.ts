@@ -32,8 +32,8 @@ const zac: ChampData = {
     W: ["DMG_MAGIC", "AOE", "DROP"],
 
     E: { phases: [
-      { label: { ko: "E", en: "E" }, tags: ["SKILL_CHARGED", "CANCELLABLE"] },
-      { label: { ko: "돌진", en: "Dash" }, tags: ["DASH", "AOE", "DMG_MAGIC", "DROP"] },
+      { label: { ko: "E 차징", en: "E" }, tags: ["SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "CANCELLABLE"] },
+      { label: { ko: "E 돌진", en: "Dash" }, tags: ["DMG_MAGIC", "AOE", "DROP", "SEPARATOR", "DASH", "WALL_HOP"] },
     ] },
     
     R: ["DMG_MAGIC", "TIMING_CAST", "AOE", "DROP"],
@@ -42,9 +42,7 @@ const zac: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

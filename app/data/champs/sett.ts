@@ -43,13 +43,7 @@ const sett: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "W가 정말 알파이자 오메가. \n 신중하게 딱 한 번 쓴다는 마인드.",
-          "앞 라인에서 왔다 갔다 각 보다가 \n 상대 앞 라인 탱커를 R로 [[SUPPRESS]]하여 \n 상대 뒷 라인에 메다꽂으면 캐리. \n \n 곧바로 얻어맞으면서 싸우다가 \n W의 투지를 풀로 채우고 \n E로 [[AOE]] [[GRAB]]하여 [[STUN]]을 걸고 \n 풀스택 W를 상대 뒷 라인에 갈겨 삭제하면 캐리.",
-        ], en: [
-          "W is truly the alpha and omega. \n Treat it as one careful, well-timed cast.",
-          "Look for an angle while weaving in and out of the front line, \n then [[SUPPRESS]] the enemy front-line tank with R \n and slam them into the enemy back line to carry. \n \n Or, trade blows to fill W's Grit to max, \n [[AOE]] [[GRAB]] with E to land a [[STUN]], \n then unload a fully-stacked W onto the enemy back line to wipe them out and carry.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

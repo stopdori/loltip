@@ -9,7 +9,7 @@ export const ekko_karthus: MatchupSummary = {
   },
   highlightsByChamp: {
     ekko: {
-      ko: [""],
+      ko: ["W의 [[STUN]]로 카서스 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [""],
     },
     karthus: {

@@ -39,11 +39,7 @@ const maokai: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "마오카이 궁은 전술 핵 버튼임. \n 성급히 사용하면 억제력이 없어져서 구도가 불리해짐. \n 타이밍 정말 신중하게 사용해야 함.",
-        ], en: [
-          "Maokai's ult is a strategic nuke button. \n Using it carelessly removes your deterrence and puts you at a disadvantage. \n Timing must be used very carefully.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

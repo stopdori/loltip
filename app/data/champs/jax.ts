@@ -41,11 +41,7 @@ const jax: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "잭스 어려움; 고수분들 제보 부탁드림."
-        ], en: [
-          "Jax is difficult — Jax mains, please share any tips!",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

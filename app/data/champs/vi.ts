@@ -20,7 +20,7 @@ const vi: ChampData = {
 
   gimmick: {
     P: ["PASSIVE_BONUS"],
-    Q: ["DMG_PHYSICAL", "SKILL_CHARGED", "DASH", "SINGLE", "DEBUFF_STACK"],
+    Q: ["DMG_PHYSICAL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR", "DEBUFF_STACK"],
     W: ["PASSIVE_BONUS", "DEBUFF_INTERACT", "BA", "Q", "E"],
 
     E: { phases: [
@@ -38,9 +38,7 @@ const vi: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

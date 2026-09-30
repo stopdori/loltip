@@ -42,13 +42,7 @@ const leona: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "소규모 한타 모두 좋은 챔프",
-          "아군을 지킬 것인가 상대 뒷라인을 물것인가 전략을 잘 짜야 함.",
-        ], en: [
-          "A champion that's good in both skirmishes and full-scale teamfights.",
-          "Plan carefully whether to protect your allies or dive the enemy backline.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

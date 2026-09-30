@@ -37,11 +37,7 @@ const lux: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "W로 아군 [[SHIELD]] 주면서 \n 멀리서 E, Q 던지면서 포킹. \n R로 킬캐치."
-        ], en: [
-          "Give allies [[SHIELD]] with W \n while poking from afar with E and Q. \n Use R to catch kills."
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

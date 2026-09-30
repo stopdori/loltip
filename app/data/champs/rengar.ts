@@ -61,11 +61,7 @@ const rengar: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "렝가 잘 할줄 모름 \n 고수분들 제보 부탁드립니다.",
-        ], en: [
-          "I don't really know how to play Rengar well \n Experienced players, please send tips.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -43,15 +43,7 @@ const olaf: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "정면 등장보다 측면, 후면 등장이 위협적임.",
-          "Q를 던지고 잘 주우면서 싸워야 함.",
-          "R을 시전하고 죽을 각오로 싸워야 함.",
-        ], en: [
-          "Flanking or approaching from the rear is more threatening than a frontal engage.",
-          "You need to throw Q and pick it up efficiently while fighting.",
-          "After using R, commit and fight as if your life depends on it.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

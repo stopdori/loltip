@@ -31,7 +31,7 @@ const fiddlesticks: ChampData = {
     W: ["DMG_MAGIC", "SKILL_CHANNEL", "SWARM", "DOT", "CANCELLABLE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "CDR", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
     E: ["DMG_MAGIC", "AOE", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "SILENCE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
     R: { phases: [
-      { label: { ko: "시전집중",     en: "Channeling" }, tags: ["SKILL_CHANNEL", "LOCKED"] },
+      { label: { ko: "시전집중",     en: "Channeling" }, tags: ["SKILL_CHANNEL_MOVEMENT", "LOCKED"] },
       { label: { ko: "순간이동", en: "Blink"   }, tags: ["BUFF_FORM", "BLINK", "DMG_MAGIC", "AOE", "DOT", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "FEAR"] },
     ] },
   },
@@ -39,12 +39,7 @@ const fiddlesticks: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "[[FEAR]]에 살고 [[FEAR]]에 죽는다. \n 시야밖에 숨어있다. 아군이 빨아들일 때 R로 등장. \n = 슈퍼캐리.", "상대팀은 피들 위치를 찾아야하고 \n 항상 상상속의 피들 점프각을 조심해야 함."
-        ], en: [
-          "Live by [[FEAR]], die by [[FEAR]]. \n Hide outside vision. Appear with R when allies bait the enemy in. \n = Super carry.",
-          "The enemy team must always search for Fiddlesticks' position \n and constantly watch out for the imagined R jump angle.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

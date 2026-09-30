@@ -52,7 +52,7 @@ const ryze: ChampData = {
     ] },
      
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL", "CAST_MOVE", "SEPARATOR", "ZONE", "X2"] },
+      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL_MOVEMENT", "CAST_MOVE", "SEPARATOR", "ZONE", "X2"] },
       { label: { ko: "R 순간이동", en: "R Blink" }, tags: ["UNTARGETABLE", "TOWER_DODGE", "BLINK", "WALL_HOP"] },
     ] },
     
@@ -64,15 +64,7 @@ const ryze: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "사용자에 따라 무궁무진한 전략이 있음.",
-          "최대 극딜 콤보는 Q, W, Q, E, Q",
-          "도망칠 때는 EW, Q로 [[MS_UP]]가 중요.",
-        ], en: [
-          "There are endless strategies depending on the player.",
-          "The max burst combo is Q, W, Q, E, Q",
-          "When escaping, [[MS_UP]] from E into W and Q is important.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

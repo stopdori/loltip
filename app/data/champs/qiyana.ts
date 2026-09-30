@@ -53,11 +53,7 @@ const qiyana: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "키아나 어려움. \n 고수분들 제보 부탁.",
-        ], en: [
-          "Qiyana is hard. \n Tips from experienced players are welcome.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

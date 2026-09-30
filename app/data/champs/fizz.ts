@@ -40,12 +40,7 @@ const fizz: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "소규모 교전이 강함.", "R로 딜러라인에 미끼를 부착하고 \n [[E_FLASH]] WQ로 암살하면서 빠져나오기. \n 또는 W [[Q_FLASH]]로 누킹하고 E로 빠지기. "
-        ], en: [
-          "Strong in small skirmishes.",
-          "Attach the bait to the enemy carry with R, \n then assassinate with [[E_FLASH]] WQ and escape. \n Or nuke with W [[Q_FLASH]] and disengage with E.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

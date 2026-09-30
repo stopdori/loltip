@@ -38,12 +38,7 @@ const gragas: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "Q로 포킹하다 R로 진영붕괴하고 앞라인 잘라먹기. \n 또는 E로 아군 지키면서 앞라인 같이 밀기.", "Q를 깔아놓고 W로 술 마시고 \n [[E_FLASH]] R, [[BA]]로 상대딜러 Q 위로 토스하고 터뜨리기.",
-        ], en: [
-          "Poke with Q, then disrupt enemy formation with R and pick off the frontline. \n Or protect allies with E while pushing the frontline together.",
-          "Place Q, drink with W, \n then [[E_FLASH]] R or [[BA]] to toss the enemy carry onto Q and detonate.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -39,17 +39,7 @@ const fiora: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "사이드가 정말 강함. \n 1:1은 안진다는 마인드로 하다 \n 상대가 몰려 오면 드리블 Like 호날두 ㄱㄱ",
-          "한타는 선진입이 생각보다 별로고 2선 진입이 괜찮음.",
-          "R을 상대 핵심 딜러진에 걸고 물고 늘어지기 \n W로 CC 잘 흡수하기.",
-          "피오라 고수의 제보를 기다림."
-        ], en: [
-          "Extremely strong in the sidelane. \n Play with the mindset of never losing 1v1, \n and when enemies collapse, dribble past them like Ronaldo.",
-          "In teamfights, diving in first is less ideal than expected — second-line flanking works better.",
-          "Cast R on the enemy carry and stick to them. \n Use W to absorb CC.",
-          "Waiting for tips from Fiora experts.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -38,9 +38,7 @@ const ezreal: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "스킬을 꾸준히 맞혀서 \n P의 [[BUFF]]를 5스택 유지하기.", "Q로 포킹하다 불꽃 카이팅. \n 상대 딜러라인에 R 뿌리기.",
-        ], en: ["Keep landing skills to maintain 5 stacks of P's [[BUFF]].", "Poke with Q while kiting with Mystic Shot. \n Fire R at the enemy carry line."] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

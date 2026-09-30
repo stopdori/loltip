@@ -33,11 +33,7 @@ const katarina: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "난전에 강함.", "Q로 포킹하다 늦게 진입해서 \n 상대 딜러라인에 E, 평, R로 한번에 누킹",
-        ], en: [
-          "Strong in chaotic fights.", "Poke with Q, then engage late \n and nuke the enemy damage dealers with E, AA, and R.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

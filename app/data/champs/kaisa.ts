@@ -58,9 +58,7 @@ const kaisa: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "W로 포킹 하다가 \n 앞라인부터 패기 \n 상대 뒷라인 CC걸리면 \n 뒤로 날아가서 쓸어담기.",
-        ], en: ["Poke with W,\n then engage the frontline.\n If the enemy backline gets CC'd,\n fly in from behind to clean up."] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

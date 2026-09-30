@@ -49,11 +49,7 @@ const ivern: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "부쉬를 아군에게 깔아줘서 \n W [[BUFF]]를 아군에게 최대한 걸어주고 \n Q, E로 서포팅 하면서 \n 데이지를 상대 딜러 라인에 붙여서 괴롭게 하기. ",
-        ], en: [
-          "Place bushes for allies to maximize W [[BUFF]] uptime, \n support with Q and E, \n and stick Daisy on the enemy damage dealers to harass them.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

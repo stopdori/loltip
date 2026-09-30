@@ -40,11 +40,7 @@ const nasus: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "앞라인에서 잘 맞아주다가 \n 공속 기반 챔프에게 W를 걸기.",
-        ], en: [
-          "Absorb damage at the frontline, \n then apply W to attack speed-reliant champions.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

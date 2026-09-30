@@ -39,13 +39,7 @@ const nautilus: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "한타 이니시 담당. \n 정말 신중하게 Q, R을 사용해야 함. \n 적중하는 순간 대부분 한타 시작. \n 불리한 구도인지 유리한 구도인지 잘 생각해야 함.", 
-          "R은 되도록 상대 핵심 딜러에 꽂아야 함."
-        ], en: [
-          "Responsible for teamfight initiation. \n Use Q and R very carefully. \n The moment they land, a fight almost always breaks out. \n Think hard about whether the situation is in your favor.",
-          "Try to aim R at the enemy's key damage dealer.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

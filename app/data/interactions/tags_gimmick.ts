@@ -68,6 +68,7 @@ export type GimmickTagId =
   // 피해 범위
   | "GLOBAL"
   | "SUMMON"
+  | "OF_SUMMON"
   | "DROP"
   | "DETONATE"
   | "X0.5"
@@ -139,6 +140,7 @@ export type GimmickTagId =
   | "STACK_CONSUME_B"
   | "STACK_CONSUME_C"
   | "PER_STACK"
+  | "EFFECT_UP"
   // 스킬 타이밍
   | "SKILL_RECAST"
   | "RECAST_CANCEL"
@@ -201,6 +203,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   STACK_CONSUME_B: { ko: "스택소모B", en: "Stack Consume B" },
   STACK_CONSUME_C: { ko: "스택소모C", en: "Stack Consume C" },
   PER_STACK: { ko: "스택당", en: "Per Stack" },
+  EFFECT_UP: { ko: "효과증가", en: "Effect ↑" },
 
   // 타이밍
   TIMING_INSTANT:   { ko: "즉발",     en: "Instant"    },
@@ -254,6 +257,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   AURA:    { ko: "오라",   en: "Aura"            },
   GLOBAL:  { ko: "맵 전체", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
+  OF_SUMMON: { ko: "소환수의", en: "Summon's" },
   DROP:          { ko: "드롭",    en: "Drops"    },
   DETONATE:      { ko: "폭발",    en: "Detonate" },
   "X0.5":        { ko: "x0.5",     en: "x0.5"    },
@@ -350,6 +354,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   STACK_CONSUME_B: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (B). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (B). \n Used to distinguish multiple distinct stack-consume effects." },
   STACK_CONSUME_C: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (C). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (C). \n Used to distinguish multiple distinct stack-consume effects." },
   PER_STACK: { ko: "스택당 효과 증가.", en: "Effect increases per stack." },
+  EFFECT_UP: { ko: "효과가 증가함.", en: "Increases the effect." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
   TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림", en: "Has a cast delay before activating." },
   TIMING_AFTERCAST: { ko: "발동 후 다음 행동까지 시간이 걸림.", en: "Takes time between activation and the next action." },
@@ -397,6 +402,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   AURA:        { ko: "주변 아군 또는 적에게 지속적으로 영향을 주는 범위 효과. \n CC에 맞아도 풀리지 않음.", en: "A persistent area effect that continuously affects nearby allies or enemies.\nCannot be dispelled by CC." },
   GLOBAL:      { ko: "사거리 또는 목표물이 맵 전체", en: "Range or target \n extends across the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
+  OF_SUMMON: { ko: "효과가 챔피언이 아니라 소환수에게 적용.", en: "The effects that follow apply to the summoned unit, not the champion." },
   DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
   DETONATE:      { ko: "대상에게 적중하면 자동으로 폭발하여 범위 피해 등을 입힌다", en: "Automatically detonates on hit, dealing area damage or similar effects." },
   "X0.5":        { ko: "해당 효과가 0.5배 발생함", en: "The effect occurs at 0.5x" },
@@ -426,12 +432,12 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   DOT:          { ko: "일정 간격(틱)으로 나뉘어 적용.", en: "Applied in periodic ticks." },
   ON_HIT:       { ko: "기본 공격 적중 시 추가 피해가 발생함", en: "Deals bonus damage on basic attack hit" },
   // 능력치 비례 기준
-  SELF_MAXHP_SCALE:        { ko: "이 효과가 시전자 자신의 최대 체력에 비례한다", en: "This effect scales with the caster's own max Health" },
-  SELF_BONUS_HP_SCALE:     { ko: "이 효과가 시전자 자신의 추가(보너스) 체력에 비례한다 \n 아이템/버프 등으로 늘어난 부분만 해당, 기본 체력은 제외", en: "This effect scales with the caster's own bonus Health \n Only Health gained from items/buffs — base Health doesn't count" },
-  SELF_MISSING_HP_SCALE:   { ko: "이 효과가 시전자 자신이 잃은 체력(최대 체력 - 현재 체력)에 비례한다", en: "This effect scales with the caster's own missing Health (max Health minus current Health)" },
-  TARGET_MAXHP_SCALE:      { ko: "이 효과가 대상의 최대 체력에 비례한다", en: "This effect scales with the target's max Health" },
-  TARGET_CURRENT_HP_SCALE: { ko: "이 효과가 대상의 현재(남은) 체력에 비례한다", en: "This effect scales with the target's current (remaining) Health" },
-  TARGET_MISSING_HP_SCALE: { ko: "이 효과가 대상이 잃은 체력(최대 체력 - 현재 체력)에 비례한다", en: "This effect scales with the target's missing Health (max Health minus current Health)" },
+  SELF_MAXHP_SCALE:        { ko: "자신의 최대 체력에 비례", en: "Scales with own max Health" },
+  SELF_BONUS_HP_SCALE:     { ko: "자신의 추가(보너스) 체력에 비례 \n 아이템 / 버프 등으로 늘어난 것만 해당.", en: "Scales with own bonus Health \n Only Health gained from items / buffs counts." },
+  SELF_MISSING_HP_SCALE:   { ko: "자신의 잃은 체력에 비례", en: "Scales with own missing Health" },
+  TARGET_MAXHP_SCALE:      { ko: "대상의 최대 체력에 비례", en: "Scales with the target's max Health" },
+  TARGET_CURRENT_HP_SCALE: { ko: "대상의 현재 남은 체력에 비례", en: "Scales with the target's current remaining Health" },
+  TARGET_MISSING_HP_SCALE: { ko: "대상이 잃은 체력에 비례", en: "Scales with the target's missing Health" },
   AD_SCALE: { ko: "공격력에 비례한다", en: "Scales with Attack Damage" },
   AP_SCALE: { ko: "주문력에 비례한다", en: "Scales with Ability Power" },
   AR_SCALE: { ko: "방어력에 비례한다", en: "Scales with Armor" },

@@ -33,11 +33,7 @@ const lucian: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "일반적인 원딜과 크게 다르지 않지만 \n 지속딜 보다 폭딜이 강한 원딜. \n 폭딜 넣고 잠깐 거리를 벌리는 게 좋음.",
-        ], en: [
-          "Not very different from a typical ADC, \n but burst damage is stronger than sustained damage. \n It's good to burst then create some distance briefly.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

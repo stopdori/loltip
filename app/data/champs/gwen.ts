@@ -29,12 +29,8 @@ const gwen: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "R로 [[SLOW]]를 걸고 \n E, W로 어그로 핑퐁 하면서 [[BA]]를 때려 \n Q스택을 쌓아 Q의 [[DMG_TRUE]], P의 데미지로 싸우는 느낌.",
-        ],
-        en: [
-          "Use [[SLOW]] from R to stick to the target, \n weave in [[BA]]s while bouncing aggro with E and W, \n then stack Q to deal [[DMG_TRUE]] and P damage.",
-        ] },
+        ko: [],
+        en: [] },
       note1: {
 
         ko: [

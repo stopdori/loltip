@@ -33,13 +33,7 @@ const morgana: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "Q, W로 포킹하면서 각 보기",
-          "E의 [[CC_IMMUNE]]으로 아군을 보호하면서 \n R로 어그로끌기.",
-        ], en: [
-          "Poke with Q and W while farming.",
-          "Protect allies with E's [[CC_IMMUNE]] \n while drawing aggro with R.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

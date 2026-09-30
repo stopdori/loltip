@@ -38,12 +38,8 @@ const heimerdinger: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "Q 포탑을 깔아서 자리를 잡고 W, E 포킹. \n R [[EMPOWERED]]는 어떤스킬에 쓸지 상황에 따라 다름.",
-        ],
-        en: [
-          "Place Q turrets to hold position and poke with W and E. \n Which skill to use R [[EMPOWERED]] on depends on the situation.",
-        ] },
+        ko: [],
+        en: [] },
       note1: {
 
         ko: [

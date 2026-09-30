@@ -25,7 +25,7 @@ const vex: ChampData = {
     ] },
 
     Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE"],
-    W: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
+    W: ["DMG_MAGIC", "TIMING_AFTERCAST", "AOE"],
     
     E: { phases: [
       { label: { ko: "E 투사체", en: "E Projectile" }, tags: ["TIMING_CAST", "PROJECTILE"] },
@@ -42,9 +42,7 @@ const vex: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

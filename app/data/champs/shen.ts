@@ -37,7 +37,7 @@ const shen: ChampData = {
     ] },
 
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL", "TARGETED", "SHIELD", "SEPARATOR", "ST_CONDITIONAL", "BLINK"] },
+      { label: { ko: "R", en: "R" }, tags: ["SKILL_CHANNEL_MOVEMENT", "TARGETED", "SHIELD", "SEPARATOR", "ST_CONDITIONAL", "BLINK"] },
       { label: { ko: "검 순간이동", en: "Blade Teleport" }, tags: ["ST_CONDITIONAL", "SUMMON"] },
     ] },
     
@@ -46,11 +46,7 @@ const shen: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "쉔 고수분들 제보 부탁드림.",
-        ], en: [
-          "Feedback from experienced Shen players is welcome.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

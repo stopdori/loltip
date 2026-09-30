@@ -48,13 +48,7 @@ const mordekaiser: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "앞선에서 Q, E로 각 보다가, R로 하나 납치",
-          "R을 전략적으로 잘 써야함. \n 잘큰 대상을 데려가서 시간을 끌거나 \n 1:1에 취약한 대상을 데려가서 쉽게 처치하기.",
-        ], en: [
-          "Poke with Q and E in the frontline, then kidnap one with R.",
-          "Use R strategically. \n Take a fed target to buy time for your team, \n or take a target weak in 1v1 to eliminate easily.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [
@@ -85,7 +79,7 @@ const mordekaiser: ChampData = {
 
       note2: {
         ko: [
-        "R의 죽음의 세계는 \n 모데카이저와 대상의 중간지점을 중심으로 펼쳐짐.",
+        "R의 죽음의 세계는 \n 대상을 중심으로 펼쳐짐.",
         "R을 시전하는 [[TIMING_CAST]] 도중 \n 대상과의 거리가 모데의 이 세계 크기보다 멀어지면,\nR 시전이 취소되고 쿨타임을 소모하지 않음.", 
         "R을 시전하는 [[TIMING_CAST]] 도중 \n 대상이 [[STEALTH]]류로 숨어도 \n R의 [[TRUE_SIGHT]]로 모습이 보이고 이세계로 이동.", 
         "R로 다른세계로 이동했을 때 \n 밖에서 상대 미니언이 죽으면 경험치가 들어오지 않음.", 
@@ -93,7 +87,7 @@ const mordekaiser: ChampData = {
         "R의 디테일한 판정은 챔피언별로 상호작용 박스에 정리."
       ],
         en: [
-          "The Death Realm from R \n is centered on the midpoint between Mordekaiser and the target.",
+          "The Death Realm from R \n is centered on the target.",
           "If during [[TIMING_CAST]] of R \n the target moves farther than the Death Realm's range,\nR is cancelled without consuming cooldown.",
           "Even if the target uses [[STEALTH]] \n during R's [[TIMING_CAST]], \n R's [[TRUE_SIGHT]] reveals them and they are pulled into the realm.",
           "While in the Death Realm, \n enemy minions that die outside do not grant experience.",

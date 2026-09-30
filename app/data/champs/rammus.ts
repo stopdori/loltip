@@ -30,13 +30,7 @@ const rammus: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "라인전 개입력이 정말 강함.",
-          "앞에서 맞아주다가 Q, R로 기습 이니시 하고 \n W, E로 상대 뒷라인 물기.",
-        ], en: [
-          "Very strong laning phase impact.",
-          "Soak up damage in front, then surprise-engage with Q and R, \n and use W and E to bite the enemy backline.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

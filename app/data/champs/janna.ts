@@ -37,11 +37,7 @@ const janna: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "되도록 아군 AD챔프에게 E로 [[SHIELD]]를 주고 \n Q, W 로 상대 진입을 방해 하면서 \n R로 광역 [[KNOCKBACK]]과 [[HEAL]].",
-        ], en: [
-          "Prioritize using E to [[SHIELD]] your AD carry. \n Use Q and W to block enemy engage, \n and R for AOE [[KNOCKBACK]] and [[HEAL]].",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

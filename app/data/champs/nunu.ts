@@ -27,7 +27,7 @@ const nunu: ChampData = {
     ] },
     
     W: { phases: [
-      { label: { ko: "W", en: "W" }, tags: ["SKILL_CHANNEL", "SKILL_STEERABLE"] },
+      { label: { ko: "W", en: "W" }, tags: ["SKILL_CHANNEL_MOVEMENT", "SKILL_STEERABLE"] },
       { label: { ko: "W 재시전", en: "W Recast" }, tags: ["PROJECTILE"] },
       { label: { ko: "W 눈덩이", en: "W Snowball" }, tags: ["DMG_MAGIC", "AOE", "AIRBORNE"] },
     ] },
@@ -45,11 +45,7 @@ const nunu: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "잘하는 법 모르겠음. \n 고수분들 제보 부탁.",
-        ], en: [
-          "Not sure how to play this well. \n Tips from experienced players welcome.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

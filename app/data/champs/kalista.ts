@@ -42,9 +42,7 @@ const kalista: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "E로 처치하여 [[CDR_RESET]] 중요함.", "탱커 잘잡음. \n 앞라인부터 쭉쭉 카이팅으로 녹여 나가면 좋음.",
-        ], en: ["Killing with E for [[CDR_RESET]] is important.", "Great at taking down tanks.\n Kiting through the frontline one by one is ideal."] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

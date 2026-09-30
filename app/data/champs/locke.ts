@@ -43,13 +43,7 @@ const locke: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "소규모 교전이 좋은편 \n Q [[MARK]]을 3스택 쌓고 [[MARK_CONSUME]] 시키는게 핵심.", "Q로 포킹하다 E로 진입해서 W키고 극딜. \n 암살 성공하면 E [[CDR_RESET]]를 이용해서 탈출 또는 계속 딜.", "다른것보다 R을 최대한 많이 맞히는게 가장 중요함. \n [[EXECUTE]]이 아군 공격에도 발동하기 때문. \n R을 그냥쓰면 발동하는 시간이 오래걸림. \n Q [[SLOW]], 아군 스킬과 연계가 중요.",
-        ], en: [
-          "Small-scale skirmishes tend to favor Locke. \n The key is stacking Q [[MARK]] to 3 stacks and triggering [[MARK_CONSUME]].",
-          "Poke with Q, then engage with E and turn on W to burst. \n If the assassination succeeds, use E [[CDR_RESET]] to escape or keep dealing damage.",
-          "More than anything, landing as much of R as possible is the most important. \n Because [[EXECUTE]] can also be triggered by allied attacks. \n Casting R plainly takes a long time to trigger. \n Q [[SLOW]] and coordination with allied skills are crucial.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

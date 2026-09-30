@@ -41,13 +41,8 @@ const irelia: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "사이드가 강함", "이렐리아 고수분들 제보 부탁드림."
-        ],
-        en: [
-          "Strong in side lanes.",
-          "Irelia mains, please share any tips!",
-        ] },
+        ko: [],
+        en: [] },
       note1: {
 
         ko: [

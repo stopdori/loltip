@@ -41,11 +41,7 @@ const graves: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "우리팀 딜러들과 같이 앞라인부터 패면서 \n 상대 뒷라인에 W와 R을 잘 던져보기.",
-        ], en: [
-          "Fight alongside your team's carries through the frontline \n while throwing W and R into the enemy backline.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

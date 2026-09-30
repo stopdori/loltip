@@ -23,7 +23,7 @@ const tahmkench: ChampData = {
     Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE", "DEBUFF_STACK", "PROC"],
 
     W: { phases: [
-      { label: { ko: "W", en: "W" }, tags: ["SKILL_CHANNEL", "MOBILITY"] },
+      { label: { ko: "W", en: "W" }, tags: ["SKILL_CHANNEL_MOVEMENT", "MOBILITY"] },
       { label: { ko: "W 이동", en: "W Mobility" }, tags: ["ST_DELAYED", "DMG_MAGIC", "AOE", "BLINK"] },
     ] },
     
@@ -38,9 +38,7 @@ const tahmkench: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

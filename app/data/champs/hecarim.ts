@@ -32,12 +32,8 @@ const hecarim: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "상대 앞라인에 Q를 대충 긇어서 Q 스택을 쌓다가. \n R로 상대 딜러라인에 [[UNSTOPPABLE]] [[DASH]]으로 날아가면서 \n E를 키고 Q를 긁으면서 R로 광역 [[FEAR]]를 걸고 \n E의 [[EMPOWERED]][[BA]]의 [[KNOCKBACK]]으로 딜러 납치.",
-        ],
-        en: [
-          "Graze Q on the enemy frontline to stack Q charges. \n Then use R's [[UNSTOPPABLE]] [[DASH]] to fly into the enemy backline, \n activate E and keep grazing Q while R spreads [[FEAR]] in an area, \n then kidnap a carry with E's [[EMPOWERED]] [[BA]] [[KNOCKBACK]].",
-        ] },
+        ko: [],
+        en: [] },
       note1: {
 
         ko: [

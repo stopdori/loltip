@@ -34,9 +34,22 @@ export const CHAMP_FORMS: Record<string, ChampForm[]> = {
     { ko: "쿠거폼", en: "Cougar" },
   ],
 
+  // ✅ 엘리스 (2폼 — R로 인간/거미 전환). 인간폼 Q/W/E/R은 기존 로컬
+  // 아이콘(/spells/elise/*.webp)이 그대로 인간 형태 스킬이라 skillIcons
+  // 불필요. 거미폼 Q/W/E는 DDragon에 개별 아이콘이 없어(16.19.1 기준
+  // EliseSpiderQCast/EliseSpiderW/EliseSpiderEInitial.png 전부 403, 챔피언
+  // JSON에도 인간 형태 4개만 존재) CDragon 예외 사용(docs/data-sources.md).
+  // 거미폼 R(인간 형태로 복귀) 전용 아이콘은 CDragon icons2d에도 없어서
+  // (eliser.png 하나뿐) R 슬롯은 기존 아이콘 유지. P는 두 폼 공통 아이콘.
+  // 탭 아이콘: 인간폼 = 인간 Q(DDragon), 거미폼 = R "거미 형태"(DDragon,
+  // 거미 그림). 버전 고정 URL이라 깨지면(404) 최신 버전 번호로 교체.
   elise: [
-    { ko: "인간폼", en: "Human" },
-    { ko: "거미폼", en: "Spider" },
+    { ko: "인간폼", en: "Human", icon: "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/spell/EliseHumanQ.png" },
+    { ko: "거미폼", en: "Spider", icon: "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/spell/EliseR.png", skillIcons: {
+      Q: "https://raw.communitydragon.org/latest/game/assets/characters/elise/hud/icons2d/elisespiderq.png",
+      W: "https://raw.communitydragon.org/latest/game/assets/characters/elise/hud/icons2d/elisespiderw.png",
+      E: "https://raw.communitydragon.org/latest/game/assets/characters/elise/hud/icons2d/elisespidere.png",
+    } },
   ],
 
   gnar: [

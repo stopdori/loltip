@@ -32,11 +32,7 @@ const milio: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "정말 최후방에 위치해서 \n 원딜에게 들어오는 대상을 Q로 방해하고 \n R로 [[CC_CLEANSE]] 해주면서 \n 지속적인 [[BUFF]], [[HEAL]], [[SHIELD]]로 서포팅에 집중.",
-        ], en: [
-          "Stay at the very backline, \n disrupt enemies diving the ADC with Q, \n [[CC_CLEANSE]] with R, \n and focus on supporting with sustained [[BUFF]], [[HEAL]], and [[SHIELD]].",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

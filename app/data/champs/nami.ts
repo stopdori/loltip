@@ -42,13 +42,7 @@ const nami: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "아군에게 W, E로 서포팅 하면서 \n Q, R로 들어오는 상대편 방해.",
-          "R로 이니시는 [[PROJECTILE]] 속도가 느려서 생각보다 좀 별로."
-        ], en: [
-          "Support allies with W and E, \n while disrupting incoming enemies with Q and R.",
-          "Initiating with R is less effective than expected due to its slow [[PROJECTILE]] speed.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

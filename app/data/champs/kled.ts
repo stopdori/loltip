@@ -66,11 +66,7 @@ const kled: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "클레드 고수분들 제보 부탁드립니다.",
-        ], en: [
-          "Kled experts, please report any corrections.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

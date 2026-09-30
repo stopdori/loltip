@@ -59,13 +59,7 @@ const quinn: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "소규모 교전이 정말 강함.",
-          "고수분들 제보 부탁드림.",
-        ], en: [
-          "Really strong in small skirmishes.",
-          "Tips from experienced players are welcome.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

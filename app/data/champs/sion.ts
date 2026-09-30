@@ -27,15 +27,13 @@ const sion: ChampData = {
     ] },
     
     E: ["DMG_MAGIC", "TIMING_CAST", "PIERCE_MINION"],
-    R: ["DMG_PHYSICAL", "SKILL_CHANNEL", "TIMING_CAST", "AOE", "MOBILITY", "CANCELLABLE", "SKILL_RECAST", "CC_IMMUNE"],
+    R: ["DMG_PHYSICAL", "SKILL_CHANNEL_MOVEMENT", "TIMING_CAST", "AOE", "MOBILITY", "CANCELLABLE", "SKILL_RECAST", "CC_IMMUNE"],
   },
 
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

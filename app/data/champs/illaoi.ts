@@ -42,14 +42,8 @@ const illaoi: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "사이드가 정말 강함. \n 1대 다수와 싸울때 빛남 \n 한타는 별로...",
-          "일라오이 고수분들 제보 부탁드림.",
-        ],
-        en: [
-          "Extremely strong in side lanes. \n Shines in 1v many situations. \n Struggles in teamfights...",
-          "Illaoi mains, please share any tips!",
-        ] },
+        ko: [],
+        en: [] },
       note1: {
 
         ko: [

@@ -32,11 +32,7 @@ const kassadin: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "소규모 교전이 좋음.", "앞에서 Q, E 포킹 하다가 \n R 스택 쌓아서 뒷라인 침투.",
-        ], en: [
-          "Better for small skirmishes.", "Poke with Q and E from the front, \n then stack R to dive the backline.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

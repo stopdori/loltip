@@ -31,8 +31,8 @@ const soraka: ChampData = {
     ] },
 
     E: { phases: [
-      { label: { ko: "E", en: "E" }, tags: ["DMG_MAGIC", "TIMING_CAST", "ZONE"] },
-      { label: { ko: "E", en: "E" }, tags: ["ST_DELAYED", "DMG_MAGIC", "ZONE"] },
+      { label: { ko: "E", en: "E" }, tags: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "SEPARATOR", "SILENCE"] },
+      { label: { ko: "E 속박", en: "E Root" }, tags: ["ST_DELAYED", "DMG_MAGIC", "ZONE", "ROOT"] },
     ] },
     
     R: ["GLOBAL"],
@@ -41,9 +41,7 @@ const soraka: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

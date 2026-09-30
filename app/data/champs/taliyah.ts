@@ -38,20 +38,14 @@ const taliyah: ChampData = {
 
     R: { phases: [
       { label: { ko: "R1", en: "R1" }, tags: ["TIMING_CAST", "PROJECTILE", "TERRAIN", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"] },
-      { label: { ko: "R2", en: "R2" }, tags: ["SKILL_CHANNEL", "DASH", "SKILL_RECAST"] },
+      { label: { ko: "R2", en: "R2" }, tags: ["SKILL_CHANNEL_MOVEMENT", "DASH", "SKILL_RECAST"] },
     ] },
   },
 
   notes: {
     skill: {
       note3: {
-        ko: [
-          "무궁무진한 운용방법이 있음.",
-          "궁극의 카이팅이 정말 강력함.",
-        ], en: [
-          "There are endless ways to use her kit.",
-          "Her ultimate kiting potential is extremely strong.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

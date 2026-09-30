@@ -9,8 +9,8 @@ export const ekko_kayle: MatchupSummary = {
   },
   highlightsByChamp: {
     ekko: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     kayle: {
       ko: [],

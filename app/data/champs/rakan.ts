@@ -36,11 +36,7 @@ const rakan: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "앞선에서 Q로 포킹하면서 대치 하다가 \n [[R_FLASH]] 또는 RW로 기습 이니시.",
-        ], en: [
-          "Poke with Q from the frontline while stand off, \n then surprise engage with [[R_FLASH]] or R into W.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -67,11 +67,7 @@ const samira: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "멀리서 [[BA]], Q로 스타일을 잘 쌓다가 \n EQW으로 한 번에 스타일 S 만들어서 R",
-        ], en: [
-          "Build up Style from range with [[BA]] and Q, \n then EQW to instantly max out Style to S rank and R",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

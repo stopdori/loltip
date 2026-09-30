@@ -48,11 +48,7 @@ const shaco: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "잘 하는법을 모르겠음 \n 고수분들 제보 부탁드립니다.",
-        ], en: [
-          "Not sure how to play this well. \n Tips from skilled players are welcome.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

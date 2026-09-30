@@ -37,11 +37,7 @@ const malphite: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "앞에서 눈치보다가 최대한 많은 대상을 R로 박으면 캐리. \n 또는 상대 뒷라인에 R로 박으면 캐리.",
-        ], en: [
-          "Carry by waiting it out in the front line and landing R on as many targets as possible. \n Or carry by landing R on the enemy backline.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

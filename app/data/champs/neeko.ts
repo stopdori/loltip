@@ -42,13 +42,7 @@ const neeko: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "Q, E 포킹 던지면서 W로 시야 밝히다가 \n R을 최대한 많이 맞히기.",
-          "변신으로 혼란스럽게 하다 \n W, R, 플, 벨트 콤보로 한타 대박내기.",
-        ], en: [
-          "Poke with Q and E while using W for vision, \n then land R on as many enemies as possible.",
-          "Confuse enemies with disguise, \n then burst teamfights with W, R, Flash, Rocketbelt combo.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

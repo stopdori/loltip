@@ -40,13 +40,7 @@ const leblanc: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "W로 왔다갔다 하면서 Q, E로 포킹.",
-          "앞 라인에 E로 [[ROOT]]를 걸면서 방해하거나 \n 뒷라인 암살하기."
-        ], en: [
-          "Poke with Q and E while weaving in and out with W.",
-          "Disrupt the front line with E [[ROOT]], or \n assassinate the backline."
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

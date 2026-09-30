@@ -39,12 +39,7 @@ const gangplank: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "R로 [[SLOW]] 걸고. 기습 화약통으로 딜러라인 박살내기.", "자리잡고 화약통으로 앞라인 같이 밀어내기. \n [[AR_PEN]]과 [[DMG_TRUE]]로 탱커를 나름 잘 팸."
-        ], en: [
-          "Apply [[SLOW]] with R, then burst the enemy carry with a surprise keg chain.",
-          "Hold position and push the frontline back with kegs. \n [[AR_PEN]] and [[DMG_TRUE]] make tanks surprisingly easy to pressure.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

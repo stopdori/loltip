@@ -51,11 +51,7 @@ const sylas: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "상대 궁극기를 잘 활용해서 \n 자신만의 무궁무진한 각을 만들 수 있음.",
-        ], en: [
-          "By mastering the opponent's ultimate, \n you can create endless opportunities of your own.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

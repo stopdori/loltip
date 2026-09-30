@@ -40,7 +40,7 @@ const lissandra: ChampData = {
     ] },
     
     R: { phases: [
-      { label: { ko: "R 상대", en: "R Enemy" }, tags: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "ZONE", "SLOW"] },
+      { label: { ko: "R 상대", en: "R Enemy" }, tags: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "ZONE", "SLOW", "STUN"] },
       { label: { ko: "R 자신", en: "R Self Cast" }, tags: ["TARGETED", "UNTARGETABLE", "TOWER_DODGE", "HEAL", "SEPARATOR_NEWLINE", "SEPARATOR", "DMG_MAGIC", "ZONE", "SLOW"] },
     ] },
   },
@@ -48,13 +48,7 @@ const lissandra: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "소규모 교전이 상당히 좋음 \n R로 하나 얼려서 확실하게 자르기.",
-          "E 갈퀴를 지형지물에 잘 숨겨서 깔고 \n [[BLINK]]하여 W로 [[AOE]] [[ROOT]]. \n Q 던지고 R을 자신에게 써서 어그로 핑퐁 = 한타 캐리."
-        ], en: [
-          "Quite strong in small skirmishes \n Freeze one target with R to secure a clean pick.",
-          "Hide the E claw well in terrain \n then [[BLINK]] in and [[AOE]] [[ROOT]] with W. \n Throw Q and cast R on yourself to ping-pong aggro = carry the teamfight."
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

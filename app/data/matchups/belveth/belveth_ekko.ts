@@ -21,4 +21,8 @@ export const belveth_ekko: MatchupSummary = {
       en: [],
     },
   },
+  common: {
+    ko: [],
+    en: [],
+  },
 };

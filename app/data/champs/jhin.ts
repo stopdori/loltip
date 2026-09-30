@@ -29,9 +29,7 @@ const jhin: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "W, E로 상대 진입을 잘 막으면서 카이팅", "카이팅 잘 하면서 W의 [[ROOT]]을 잘 걸어 \n 변수 상황을 많이 만드는게 좋음.", "체력이 많은 대상보다 낮은 대상 위주로 먼저 패야 좋음."
-        ], en: ["Kite while using W and E to block enemy advances", "Kite well while landing W's [[ROOT]] \n to create many variable situations.", "It's better to focus on lower-health targets before high-health ones."] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

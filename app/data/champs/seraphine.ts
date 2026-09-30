@@ -39,15 +39,7 @@ const seraphine: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "유지력 = 소나, 세라핀 \n 교전을 길게 가져가면 정말 좋음.",
-          "Q, E로 포킹하면서 W의 [[AOE]] [[HEAL]]으로 아군 캐어.",
-          "[[R_FLASH]] 기습 이니시가 정말 강력함.",
-        ], en: [
-          "Sustain = Sona, Seraphine \n Great in extended fights.",
-          "Poke with Q, E while using W's [[AOE]] [[HEAL]] to take care of allies.",
-          "[[R_FLASH]] surprise engage is extremely powerful.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

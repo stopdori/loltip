@@ -23,7 +23,7 @@ const warwick: ChampData = {
 
     Q: { phases: [
       { label: { ko: "Q 짧게", en: "Q" }, tags: ["DMG_MAGIC", "SKILL_CHARGED", "TARGETED", "ON_HIT"] },
-      { label: { ko: "Q 길게", en: "Q Hold" }, tags: ["DMG_MAGIC", "SKILL_CHARGED", "TARGETED", "ON_HIT", "DASH", "CC_IMMUNE"] },
+      { label: { ko: "Q 길게", en: "Q Hold" }, tags: ["DMG_MAGIC", "SKILL_CHARGED", "TARGETED", "ON_HIT", "CC_IMMUNE", "SEPARATOR_NEWLINE", "SEPARATOR", "HOMING", "DASH", "WALL_HOP"] },
     ] },
     
     W: { phases: [
@@ -45,9 +45,7 @@ const warwick: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "",
-        ], en: [] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

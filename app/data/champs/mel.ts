@@ -39,11 +39,7 @@ const mel: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "멀리서 Q, E로 포킹하다가 \n 상대의 초필살 [[PROJECTILE]]를 [[REFLECT]]시키면 한타 캐리.",
-        ], en: [
-          "Poke from range with Q and E, \n then [[REFLECT]] an enemy ultimate [[PROJECTILE]] to carry teamfights.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

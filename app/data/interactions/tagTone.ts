@@ -215,6 +215,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   BUFF_STACK_C:  "lime",
   STACK_CONSUME: "indigo",
   PER_STACK: "indigo",
+  EFFECT_UP: "indigo",
   // 타이밍
   TIMING_INSTANT:   "indigo",
   TIMING_CAST:      "indigo",
@@ -282,6 +283,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   AURA:    "indigo",
   GLOBAL:  "indigo",
   SUMMON:  "indigo",
+  OF_SUMMON: "indigo",
   DROP:          "indigo",
   DETONATE:      "indigo",
   "X0.5":        "indigo",

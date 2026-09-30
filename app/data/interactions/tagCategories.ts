@@ -105,7 +105,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "2) 기타 (상태 / 자원)", en: "2) Misc (State / Resource)" },
-    keys: ["BUFF", "BUFF_A", "BUFF_B", "BUFF_C", "DEBUFF", "DEBUFF_A", "DEBUFF_B", "DEBUFF_C", "COOLDOWN", "ACTIVATION_CONDITION", "OUT_OF_COMBAT", "ON_TARGET_CD", "EMPOWERED", "RECHARGE", "STACKING", "PROC", "BUFF_STACK", "BUFF_STACK_A", "BUFF_STACK_B", "BUFF_STACK_C", "DEBUFF_STACK", "DEBUFF_STACK_A", "DEBUFF_STACK_B", "DEBUFF_STACK_C", "STACK_CONSUME", "STACK_CONSUME_A", "STACK_CONSUME_B", "STACK_CONSUME_C", "PER_STACK"],
+    keys: ["BUFF", "BUFF_A", "BUFF_B", "BUFF_C", "DEBUFF", "DEBUFF_A", "DEBUFF_B", "DEBUFF_C", "COOLDOWN", "ACTIVATION_CONDITION", "OUT_OF_COMBAT", "ON_TARGET_CD", "EMPOWERED", "RECHARGE", "STACKING", "PROC", "BUFF_STACK", "BUFF_STACK_A", "BUFF_STACK_B", "BUFF_STACK_C", "DEBUFF_STACK", "DEBUFF_STACK_A", "DEBUFF_STACK_B", "DEBUFF_STACK_C", "STACK_CONSUME", "STACK_CONSUME_A", "STACK_CONSUME_B", "STACK_CONSUME_C", "PER_STACK", "EFFECT_UP"],
   },
   {
     title: { ko: "3) 타이밍", en: "3) Timing" },
@@ -129,7 +129,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "8) 피해 범위", en: "8) Damage Range" },
-    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "DROP", "DETONATE", "X0.5", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
+    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "OF_SUMMON", "DROP", "DETONATE", "X0.5", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
   },
   {
     title: { ko: "9) 피해 종류", en: "9) Damage Type" },

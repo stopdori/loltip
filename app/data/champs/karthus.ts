@@ -33,11 +33,7 @@ const karthus: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "묫자리를 잘 찾아야함. \n W, Q 앞라인부터 카이팅 하다 \n 상대 한가운데 들어가서 묫자리 잡기.",
-        ], en: [
-          "Find a good spot to die. \n Kite with W and Q from the frontline, \n then position yourself in the middle of the enemy team.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

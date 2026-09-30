@@ -61,43 +61,39 @@ const kayn: ChampData = {
     base: {
       P: ["STACKING"],
       Q: { phases: [
-        { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "AOE", "DASH"] },
-        { label: { ko: "회전단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
+        { label: { ko: "돌진 단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "AOE", "DASH"] },
+        { label: { ko: "회전 단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
       ] },
       W: ["DMG_PHYSICAL", "TIMING_CAST", "TIMING_AFTERCAST", "AOE"],
       E: ["BUFF_FORM", "MOBILITY"],
-      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "DASH"],
+      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE"],
     },
     alt: {
       P: ["BUFF_STACK"],
       Q: { phases: [
-        { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "AOE", "DASH"] },
-        { label: { ko: "회전단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
+        { label: { ko: "돌진 단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "AOE", "DASH"] },
+        { label: { ko: "회전 단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
       ] },
       W: ["DMG_PHYSICAL", "AOE"],
       E: ["BUFF_FORM", "MOBILITY"],
-      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "DASH", "BUFF_STACK"],
+      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE"],
     },
     alt2: {
       P: [],
       Q: { phases: [
-        { label: { ko: "돌진단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "AOE", "DASH"] },
-        { label: { ko: "회전단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
+        { label: { ko: "돌진 단계", en: "Dash"  }, tags: ["DMG_PHYSICAL", "AOE", "DASH"] },
+        { label: { ko: "회전 단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
       ] },
       W: ["DMG_PHYSICAL", "TIMING_CAST", "TIMING_AFTERCAST", "AOE"],
       E: ["BUFF_FORM", "MOBILITY"],
-      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "DASH"],
+      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE"],
     },
   },
 
   notes: {
     skill: {
       note3: {
-        ko: [
-          "W로 포킹하다가 Q로 진입하고 R로 시간끌다 Q, E 등으로 탈출 또는 킬각잡기.",
-        ], en: [
-          "Poke with W, engage with Q, stall with R, then escape or find a kill opportunity with Q or E.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [
@@ -130,10 +126,10 @@ const kayn: ChampData = {
         ko: [
         "진화 전 케인은 정말 약함", 
         "진화 게이지\n 상대 챔피언을 공격하면 \n 원거리(그림자 암살자) / 근거리(다르킨) \n 변신 게이지가 차오름.", 
-        "케인 (일반폼) \n Q는 두단계로 나뉨. 돌진단계/회전단계\n돌진단계 중에 [[AIRBORNE]]류, [[CHARM]], [[FEAR]], [[SUPPRESS]], [[SLEEP]]을 맞으면 회전단계를 하지 않음. \n (이 밖에 회전단계 멈추게 하는 거 있으면 제보 부탁.)", 
+        "케인 (일반폼) \n Q는 두 단계로 나뉨. 돌진 단계 / 회전 단계 \n 돌진 단계 중에 [[AIRBORNE]]류, [[CHARM]], [[FEAR]], [[SUPPRESS]], [[SLEEP]]을 맞으면 회전 단계를 하지 않음. \n (이 밖에 회전 단계 멈추게 하는 거 있으면 제보 부탁.)", 
         "R은 시야가 보여야 쓸 수 있음.", 
-        "그림자 암살자(그암) \n P는 전투 시작시 3초동안 버프가 생기는데 데미지가 최대 40프로까지 증가함. \n Q 동일. \n W의 [[TIMING_CAST]] 동안 움직일 수 있고, [[TIMING_AFTERCAST]]이 사라짐.\nE는 쿨타임 감소, 향상된 [[MS_UP]], [[SLOW_IMMUNE]].\nR의 진입 사거리, 빠져나오는 사거리 증가.\n빠져 나올때 P버프 다시 적용.", 
-        "다르킨\nP(패시브)에 [[LIFESTEAL]]이있어서 모든스킬이 [[LIFESTEAL]]이 가능.\nQ에 최대체력 데미지 추가. \n W에 [[AIRBORNE]] 추가. \n E 동일. \n R은 최대체력 추가 피해, 피해량 비례 체력회복",
+        "그림자 암살자(그암) \n P는 전투 시작시 3초동안 버프가 생기는데 데미지가 최대 40프로까지 증가함. \n Q 동일. \n W의 [[TIMING_CAST]] 동안 움직일 수 있고, [[TIMING_AFTERCAST]]이 사라짐. \n E는 쿨타임 감소, 향상된 [[MS_UP]], [[SLOW_IMMUNE]]. \n R의 진입 사거리, 빠져나오는 사거리 증가. \n 빠져 나올때 P버프 다시 적용.", 
+        "다르킨 \n P(패시브)에 [[LIFESTEAL]]이있어서 모든스킬이 [[LIFESTEAL]]이 가능. \n Q에 최대체력 데미지 추가. \n W에 [[AIRBORNE]] 추가. \n E 동일. \n R은 최대체력 추가 피해, 피해량 비례 체력회복",
       ],
         en: [
           "Kayn is very weak before evolving",

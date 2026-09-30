@@ -43,11 +43,7 @@ const nilah: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "R을 많이 맞히면 캐리인듯? \n 솔직히 잘 모르겠음.",
-        ], en: [
-          "Land R on as many targets as possible and you'll carry? \n Honestly, not entirely sure.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

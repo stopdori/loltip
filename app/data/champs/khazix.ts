@@ -63,15 +63,7 @@ const khazix: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "한타보다 소규모 교전이 상당히 좋음.", 
-          "한타에서는 뒤나 옆으로 도는게 좋음.", 
-          "정면에서는 W로 포킹하다가 \n R로 모습을 감추고 [[BUFF]] [[BA]], Q로 폭딜. \n 뒷라인 고립된 대상을 잘 노려야 함."
-        ], en: [
-          "Small skirmishes are noticeably better than teamfights.",
-          "In teamfights, it's good to flank from behind or the side.",
-          "From the front, poke with W, then go invisible with R, [[BUFF]] [[BA]], and burst with Q. \n You need to look for isolated targets in the backline."
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

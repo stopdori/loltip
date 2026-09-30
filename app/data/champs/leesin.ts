@@ -61,17 +61,7 @@ const leesin: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "소규모 전투가 정말 좋음.",
-          "뒷라인 딜러 [[INSEC_KICK]]으로 배달하기.",
-          "아군 뒷라인 물러오는 상대를 R로 [[KNOCKBACK]]해서 지켜주기.",
-          "앞라인 탱커 R로 [[KNOCKBACK]]해서 뒷라인에 당구."
-        ], en: [
-          "Really strong in small skirmishes.",
-          "Deliver the backline carry with an [[INSEC_KICK]].",
-          "Protect your retreating backline by [[KNOCKBACK]]ing the chasing enemy with R.",
-          "[[KNOCKBACK]] the enemy frontline tank with R to billiard them into the backline."
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [
@@ -102,13 +92,12 @@ const leesin: ChampData = {
 
       note2: {
         ko: [
-        "[[Q_FLASH]] 안됨",
         "Q1의 [[TRUE_SIGHT]]는 Q2를 사용하면 사라짐.",
-        "E1으로 은신 챔피언을 드러낼 수 있음. \n 단, 은신하기 전에 맞혀야 보임.",
+        "Q2의 [[HOMING]] [[DASH]]은 \n 충돌 하면 [[HOMING]]이 종료 되고 잠시 후 데미지가 들어가는 구조. \n 그래서 상대가 리신의 [[HOMING]] 판정이 끝날 때 점멸을 정말 잘 쓰면 \n [[HOMING]] [[DASH]]이 종료 되고 데미지도 들어가지 않음.", 
+        "E1으로 [[STEALTH]] 챔피언을 드러낼 수 있음. \n 단, 상대가 [[STEALTH]]하기 전에 맞혀야 보임.",
         "R에 부딪히는 대상은 미니언, 몬스터, 에픽몬스터 모두 포함."
       ],
         en: [
-          "[[Q_FLASH]] not possible",
           "Q1's [[TRUE_SIGHT]] disappears when Q2 is used.",
           "E1 can reveal stealthed champions. \n However, they must be hit before entering stealth.",
           "Targets hit by the R billiard collision include minions, monsters, and epic monsters."

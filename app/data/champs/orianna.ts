@@ -36,15 +36,7 @@ const orianna: ChampData = {
   notes: {
     skill: {
       note3: { 
-        ko: [
-          "구체의 시야를 이용해서 시야를 뚫어줘야 함.",
-          "오리아나 궁은 전술 핵 버튼임. \n 성급히 사용하면 억제력이 없어져서 구도가 불리해짐. \n 타이밍 정말 신중하게 사용해야 함.",
-          "소규모 교전에서는 R을 자주 써도 괜찮음.",
-        ], en: [
-          "Use the ball's vision to push through fog of war.",
-          "Orianna's ult is a tactical nuke button. \n Using it hastily removes your deterrence and puts you at a disadvantage. \n The timing must be used very carefully.",
-          "It's fine to use R more freely in small-scale skirmishes.",
-        ] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

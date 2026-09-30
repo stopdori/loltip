@@ -81,9 +81,7 @@ const jayce: ChampData = {
   notes: {
     skill: {
       note3: {
-        ko: [
-          "캐논폼 들고 QE 포킹, 카이팅 하다 \n 정말 중요할 때 해머로 내려찍고 E의 [[KNOCKBACK]]으로 \n 거리 벌려서 다시 캐논 카이팅 ", "정말 어려운 챔프같음 고수님들 제보 부탁드림."
-        ], en: ["Poke and kite in cannon form with QE, \n then switch to hammer and slam at key moments, \n use E's [[KNOCKBACK]] to create distance and return to cannon kiting", "Seems like a very difficult champion — input from skilled players welcome."] },
+        ko: [], en: [] },
       note1: {
 
         ko: [

@@ -9,7 +9,8 @@ export const ekko_kaisa: MatchupSummary = {
   },
   highlightsByChamp: {
     ekko: {
-      ko: [""],
+      ko: ["E(순간이동 단계)의 [[HOMING]] [[BLINK]]으로 카이사 R의 [[DASH]]을 따라갈 수 있음. [[EXIST]] \n 단, 에코가 끝까지 따라가지 않고 충돌하면 정지.", 
+        "W의 [[STUN]]로 카이사 R의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음."],
       en: [""],
     },
     kaisa: {
