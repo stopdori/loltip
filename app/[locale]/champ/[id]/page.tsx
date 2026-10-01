@@ -14,60 +14,84 @@ import type { ChampSkill, SkillKey, SkillSkillData } from "@/app/data/interactio
 
 const SKILL_KEYS: SkillKey[] = ["P", "Q", "W", "E", "R"];
 
-type FormBlock = { formKo: string; block: Partial<Record<SkillKey, SkillSkillData>> };
+type FormLabel = { ko: string; en: string };
+type FormBlock = { form: FormLabel | null; block: Partial<Record<SkillKey, SkillSkillData>> };
+
+const FALLBACK_FORM_LABELS: FormLabel[] = [
+  { ko: "기본", en: "Base Form" },
+  { ko: "변신폼", en: "Alt Form" },
+  { ko: "변신폼2", en: "Alt Form 2" },
+  { ko: "변신폼3", en: "Alt Form 3" },
+  { ko: "변신폼4", en: "Alt Form 4" },
+];
 
 function getFormBlocks(champId: string, skills: ChampSkill): FormBlock[] {
   if (!("base" in skills)) {
-    return [{ formKo: "", block: skills }];
+    return [{ form: null, block: skills }];
   }
   // CHAMP_FORMS는 배열 기반(순서: base→[0], alt→[1], alt2→[2], alt3→[3],
   // alt4→[4])이지만, 여기서 조립하는 skills는 base/alt/alt2/alt3/alt4
   // 고정 키 구조다(types.ts 참고, 최대 5폼).
   const labels = CHAMP_FORMS[champId];
+  const formAt = (i: number): FormLabel => {
+    const l = labels?.[i];
+    return l ? { ko: l.ko, en: l.en } : FALLBACK_FORM_LABELS[i];
+  };
   const blocks: FormBlock[] = [
-    { formKo: labels?.[0]?.ko ?? "기본", block: skills.base },
-    { formKo: labels?.[1]?.ko ?? "변신폼", block: skills.alt },
+    { form: formAt(0), block: skills.base },
+    { form: formAt(1), block: skills.alt },
   ];
-  if (skills.alt2) {
-    blocks.push({ formKo: labels?.[2]?.ko ?? "변신폼2", block: skills.alt2 });
-  }
-  if (skills.alt3) {
-    blocks.push({ formKo: labels?.[3]?.ko ?? "변신폼3", block: skills.alt3 });
-  }
-  if (skills.alt4) {
-    blocks.push({ formKo: labels?.[4]?.ko ?? "변신폼4", block: skills.alt4 });
-  }
+  if (skills.alt2) blocks.push({ form: formAt(2), block: skills.alt2 });
+  if (skills.alt3) blocks.push({ form: formAt(3), block: skills.alt3 });
+  if (skills.alt4) blocks.push({ form: formAt(4), block: skills.alt4 });
   return blocks;
+}
+
+// 화면 배치용 구분 토큰(SEPARATOR "/", SEPARATOR_NEWLINE "↵")은 텍스트 요약에 넣지 않는다.
+const LAYOUT_TOKENS = new Set(["SEPARATOR", "SEPARATOR_NEWLINE"]);
+
+function tagLabels(tags: string[], lang: Lang): string {
+  return tags
+    .filter((t) => !LAYOUT_TOKENS.has(t))
+    .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.[lang] ?? GIMMICK_TAG_LABEL[t as keyof typeof GIMMICK_TAG_LABEL]?.[lang])
+    .filter(Boolean)
+    .join(", ");
+}
+
+// 단계(phases)가 있는 스킬은 "R1 투사체: …; R2 돌진: …"처럼 단계 라벨별로 나눠 쓴다.
+function skillSummary(raw: SkillSkillData, lang: Lang): string {
+  if (Array.isArray(raw)) return tagLabels(raw, lang);
+  return raw.phases
+    .flatMap((p) => {
+      if (!p) return [];
+      const labels = tagLabels(p.tags, lang);
+      return labels ? [`${p.label[lang]}: ${labels}`] : [];
+    })
+    .join("; ");
 }
 
 function buildSkillFaqJsonLd(champName: string, champId: string, skills: ChampSkill, lang: Lang) {
   const forms = getFormBlocks(champId, skills);
 
-  const entities = forms.flatMap(({ formKo, block }) =>
+  const entities = forms.flatMap(({ form, block }) =>
     SKILL_KEYS.flatMap((key) => {
       const raw = block[key];
       if (!raw) return [];
-      const tags = Array.isArray(raw)
-        ? raw
-        : raw.phases.flatMap((p) => (p ? p.tags : []));
-      if (tags.length === 0) return [];
+      const summary = skillSummary(raw, lang);
+      if (!summary) return [];
 
-      const labels = tags
-        .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.[lang] ?? GIMMICK_TAG_LABEL[t as keyof typeof GIMMICK_TAG_LABEL]?.[lang])
-        .filter(Boolean)
-        .join(", ");
-      if (!labels) return [];
-
+      const formName = form?.[lang];
       const name = lang === "ko"
-        ? (formKo ? `${champName} ${formKo} ${key}스킬의 특징은 무엇인가요?` : `${champName} ${key}스킬의 특징은 무엇인가요?`)
-        : (formKo ? `What are the features of ${champName} ${formKo} ${key} skill?` : `What are the features of ${champName}'s ${key} skill?`);
+        ? (formName ? `${champName} ${formName} ${key}스킬의 특징은 무엇인가요?` : `${champName} ${key}스킬의 특징은 무엇인가요?`)
+        : (formName ? `What are the features of ${champName} ${formName} ${key} skill?` : `What are the features of ${champName}'s ${key} skill?`);
 
+      const prefix = formName ? `${formName} ` : "";
       return [{
         "@type": "Question",
         name,
         acceptedAnswer: {
           "@type": "Answer",
-          text: lang === "ko" ? `${key}스킬: ${labels}` : `${key} skill: ${labels}`,
+          text: lang === "ko" ? `${prefix}${key}스킬: ${summary}` : `${prefix}${key} skill: ${summary}`,
         },
       }];
     })

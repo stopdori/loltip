@@ -64,10 +64,11 @@ export default async function LocaleLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
 
-      {/* Google AdSense */}
-      <Script
+      {/* Google AdSense — next/script는 data-nscript 속성을 붙여 AdSense가 콘솔 경고를 내므로 일반 <script async>로 넣는다.
+          React 19는 async src 스크립트를 <head>로 끌어올려 렌더링한다. */}
+      <script
+        async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7989124524767628"
-        strategy="afterInteractive"
         crossOrigin="anonymous"
       />
 
