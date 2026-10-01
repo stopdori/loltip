@@ -14,7 +14,6 @@ type Lang = "ko" | "en";
 
 type Props = {
   params: Promise<{ locale: string; pair: string }>;
-  searchParams: Promise<{ highlight?: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -61,7 +60,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
       }),
     },
-    ...(noindex && { robots: { index: false, follow: false } }),
+    // 색인 대상이 아니어도 페이지 안의 링크(챔프/다른 매치업)는 따라가게 follow는 허용한다.
+    ...(noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title,
       description,
@@ -75,10 +75,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function Page({ params, searchParams }: Props) {
+export default async function Page({ params }: Props) {
   const { locale, pair } = await params;
   const lang = locale as Lang;
-  const { highlight } = await searchParams;
+  // 판정 문장 강조(#highlight= / 예전 ?highlight=)는 MatchupSummaryBox가 마운트 후 URL에서 직접 읽는다.
 
   const parts = pair.split("-vs-");
   if (parts.length !== 2) notFound();
@@ -197,7 +197,6 @@ export default async function Page({ params, searchParams }: Props) {
         key={canonical}
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
-        highlight={highlight}
         // 서버가 이미 읽은 판정 데이터를 넘겨 판정 박스를 SSR에 포함시킨다(클라이언트 fetch 없음).
         matchupResult={matchup ?? undefined}
         // 화면에 보이는 h1 — 매치업 페이지에서만 넘기므로 다른 경로에서 h1이 중복되지 않는다.

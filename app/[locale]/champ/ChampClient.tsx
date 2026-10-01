@@ -25,7 +25,6 @@ type Lang = "ko" | "en";
 type Props = {
   forcedMe?: string | null;
   forcedEnemy?: string | null;
-  highlight?: string;
   hideHeader?: boolean;
   embedMode?: boolean;
   useIframe?: boolean;
@@ -42,7 +41,7 @@ type Props = {
   summaryHeading?: React.ReactNode;
 };
 
-export default function Home({ forcedMe, forcedEnemy, highlight, hideHeader, embedMode, useIframe, forceCompact, extraSection, matchupResult, summaryHeading }: Props) {
+export default function Home({ forcedMe, forcedEnemy, hideHeader, embedMode, useIframe, forceCompact, extraSection, matchupResult, summaryHeading }: Props) {
   const locale = useLocale();
   const lang = locale as Lang;
 
@@ -369,7 +368,6 @@ setOpenTarget(null);
     myChampId={myChamp!.id}
     enemyChampId={enemyChamp!.id}
     lang={lang}
-    highlight={highlight}
     initialResult={matchupResult}
   />
 </section>
@@ -422,8 +420,8 @@ setOpenTarget(null);
 <>
 {useIframe && (
   <div className="sm:hidden flex gap-1.5 w-full max-w-[430px] mx-auto mb-2">
-    <button onClick={() => setMobileTab("my")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "my" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`}>{myChamp?.ko ?? "내 챔피언"}</button>
-    <button onClick={() => setMobileTab("enemy")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "enemy" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`}>{enemyChamp?.ko ?? "상대 챔피언"}</button>
+    <button onClick={() => setMobileTab("my")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "my" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`}>{myChamp ? (lang === "ko" ? myChamp.ko : myChamp.en) : (lang === "ko" ? "내 챔피언" : "My Champion")}</button>
+    <button onClick={() => setMobileTab("enemy")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "enemy" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`}>{enemyChamp ? (lang === "ko" ? enemyChamp.ko : enemyChamp.en) : (lang === "ko" ? "상대 챔피언" : "Enemy Champion")}</button>
   </div>
 )}
 {/* iframe을 담는 section은 iframeViewportReady와 무관하게 항상 렌더링한다(SSR 포함).

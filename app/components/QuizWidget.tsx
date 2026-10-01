@@ -77,7 +77,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
 
   const item = idx !== null ? quizData[idx] : null;
   const pair = item ? [item.link.champ1, item.link.champ2].sort().join("-vs-") : null;
-  const url = item && pair ? `/${locale}/matchup/${pair}?highlight=${item.link.highlight}` : null;
+  const url = item && pair ? `/${locale}/matchup/${pair}#highlight=${item.link.highlight}` : null;
   return (
     <div className={`flex items-center gap-1 transition-opacity duration-300 ${mounted ? "opacity-100" : "opacity-0"}`}>
       {/* 박스 전체 클릭(매치업으로 이동)은 바깥 <a>로 감싸지 않고, 아래 오버레이 <a>(stretched link)로
@@ -94,7 +94,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
               <button
                 type="button"
                 onClick={prev}
-                aria-label="이전 퀴즈"
+                aria-label={lang === "ko" ? "이전 퀴즈" : "Previous quiz"}
                 className="text-white/60 hover:text-white transition-colors leading-none"
                 style={{ fontSize: "16px" }}
               >
@@ -103,7 +103,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
               <button
                 type="button"
                 onClick={next}
-                aria-label="다음 퀴즈"
+                aria-label={lang === "ko" ? "다음 퀴즈" : "Next quiz"}
                 className="text-white/60 hover:text-white transition-colors leading-none"
                 style={{ fontSize: "16px" }}
               >

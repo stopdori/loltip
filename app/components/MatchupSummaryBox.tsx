@@ -169,13 +169,11 @@ export default function MatchupSummaryBox({
   myChampId,
   enemyChampId,
   lang,
-  highlight,
   initialResult,
 }: {
   myChampId: string;
   enemyChampId: string;
   lang: Lang;
-  highlight?: string;
   // 서버가 이미 읽은 매치업 결과를 첫 렌더부터 쓰기 위한 초기값. 넘기면 /api/matchup fetch를
   // 건너뛰고 이 값을 그대로 사용하므로, 판정 박스가 SSR HTML에 그대로 들어간다.
   // 넘기지 않으면(/champ, /champ/[id] 등) 기존처럼 클라이언트에서 fetch한다.
@@ -184,7 +182,22 @@ export default function MatchupSummaryBox({
 }) {
   const [result, setResult] = useState<MatchupLoadResult | null>(initialResult ?? null);
   const highlightRef = useRef<HTMLLIElement>(null);
+  // 강조할 판정 문장은 URL에서 마운트 후에 읽는다 — 해시(#highlight=xxx) 우선, 없으면 예전에 퍼진
+  // ?highlight=xxx 쿼리(하위호환). 해시는 서버로 전달되지 않으므로 SSR HTML에는 강조가 들어가지 않고,
+  // 첫 렌더는 서버와 같게(강조 없음) 두었다가 마운트 직후 적용해 하이드레이션 불일치를 피한다.
+  const [highlight, setHighlight] = useState<string | undefined>(undefined);
   const parsed = parseHighlight(highlight);
+
+  useEffect(() => {
+    const read = () => {
+      const fromHash = new URLSearchParams(window.location.hash.slice(1)).get("highlight");
+      const fromQuery = new URLSearchParams(window.location.search).get("highlight");
+      setHighlight(fromHash ?? fromQuery ?? undefined);
+    };
+    read();
+    window.addEventListener("hashchange", read);
+    return () => window.removeEventListener("hashchange", read);
+  }, []);
 
   const my = CHAMPIONS.find((c) => c.id === myChampId);
   const enemy = CHAMPIONS.find((c) => c.id === enemyChampId);

@@ -78,7 +78,7 @@ export default function ChampSelectButton({
               transition duration-100
               z-10
             "
-            title="초기화"
+            title={lang === "ko" ? "초기화" : "Reset"}
           >
             ⟳
           </button>

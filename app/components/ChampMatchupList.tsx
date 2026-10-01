@@ -41,13 +41,17 @@ export default function ChampMatchupList({
       aria-labelledby="champ-matchups-heading"
       className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-2 sm:px-5 py-4"
     >
-      <h2
-        id="champ-matchups-heading"
-        className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-3"
-      >
-        {title}
+      {/* 개수는 h2 밖 형제 요소로 둔다 — h2 안에 붙어 있으면 텍스트 추출 시 "Briar164"처럼 제목과 붙어 읽힌다.
+          baseline 정렬 flex로 예전(h2 안 인라인 span + ml-2)과 같은 모양을 유지한다. */}
+      <div className="mb-3 flex items-baseline">
+        <h2
+          id="champ-matchups-heading"
+          className="text-base font-bold text-yellow-400 tracking-wide uppercase"
+        >
+          {title}
+        </h2>
         <span className="ml-2 text-xs font-semibold text-slate-400 normal-case">{opponents.length}</span>
-      </h2>
+      </div>
 
       <ul className="flex flex-wrap gap-1.5 sm:gap-2">
         {opponents.map((c) => {
