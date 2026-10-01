@@ -9,8 +9,8 @@ export const gragas_malphite: MatchupSummary = {
   },
   highlightsByChamp: {
     gragas: {
-      ko: ["특이사항 없음"],
-      en: ["No special notes"],
+      ko: [],
+      en: [],
     },
     malphite: {
       ko: ["R의 [[UNSTOPPABLE]]로 그라가스 E, R의 [[KNOCKBACK]]을 무시할 수 있음."],

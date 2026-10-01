@@ -9,8 +9,8 @@ export const gragas_nasus: MatchupSummary = {
   },
   highlightsByChamp: {
     gragas: {
-      ko: ["특이사항 없음"],
-      en: ["No special notes"],
+      ko: [],
+      en: [],
     },
     nasus: {
       ko: [],
