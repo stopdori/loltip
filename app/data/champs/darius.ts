@@ -119,7 +119,7 @@ const darius: ChampData = {
       en: "Darius hefts his axe and swings it around him, dealing 50/80/110/140/170 (+100/110/120/130/140% [[AD_SCALE]]) [[DMG_PHYSICAL]] with the blade and 35% of that damage with the handle. \n Enemies hit by the handle do not gain bleed stacks. \n \n Darius [[HEAL]]s for 17% of his [[SELF_MISSING_HP_SCALE]] per enemy champion and large jungle monster hit by the blade, up to a maximum of 51%. \n \n 9/8/7/6/5 second [[COOLDOWN]].",
     },
     W: {
-      ko: "다리우스의 다음 [[BA]]는 40/45/50/55/60% [[AD_SCALE]]의 추가 [[DMG_PHYSICAL]]를 입히고, 1초 동안 90% [[SLOW]]시킵니다. \n \n 이 스킬로 대상을 처치하면 소모한 마나를 되돌려받고([[MANA_RESTORE]]), 재사용 대기시간이 50% 감소합니다(50% [[CDR]]). \n \n 이 스킬은 피해를 입힐 때 효과가 발동합니다. \n \n 5초의 [[COOLDOWN]].",
+      ko: "다리우스의 다음 [[BA]]는 40/45/50/55/60% [[AD_SCALE]]의 추가 [[DMG_PHYSICAL]]를 입히고, 1초 동안 90% [[SLOW]]시킵니다. \n \n 이 스킬로 대상을 처치하면 소모한 마나를 되돌려받고([[MANA_RESTORE]]), 재사용 대기시간이 50% 감소합니다. ([[CDR]]) \n \n 이 스킬은 피해를 입힐 때 효과가 발동합니다. \n \n 5초의 [[COOLDOWN]].",
       en: "Darius's next [[BA]] deals an additional 40/45/50/55/60% [[AD_SCALE]] [[DMG_PHYSICAL]] and [[SLOW]]s by 90% for 1 second. \n \n If this skill kills the target, the mana cost is refunded ([[MANA_RESTORE]]) and the cooldown is reduced by 50% (50% [[CDR]]). \n \n This skill applies its effect on dealing damage. \n \n 5 second [[COOLDOWN]].",
     },
     E: {

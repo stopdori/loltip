@@ -63,7 +63,7 @@ const drmundo: ChampData = {
           "종료 또는 [[SKILL_RECAST]] 시 [[DETONATE]]. \n 주변 [[AOE]] [[SELF_BONUS_HP_SCALE]] 비례 [[DMG_MAGIC]]. \n [[ON_CHAMP_HIT]] [[GREY_HEALTH]]의 100%를 [[HEAL]]. \n 맞지 않으면 50%만큼 [[HEAL]]. \n \n",
 
           "E의 [[PASSIVE_BONUS]]는 \n [[SELF_MAXHP_SCALE]] 비례 [[AD_UP]].", 
-          "E는 다음 [[BA]] [[EMPOWERED]]. \n [[SELF_BONUS_HP_SCALE]] 비례 [[DMG_PHYSICAL]]. \n [[SELF_MISSING_HP_SCALE]] 비례 위력 증가. \n 대상이 처치되면 뒤로 [[KNOCKBACK]] 되면서 동일한 피해. \n \n",
+          "E는 다음 [[BA]] [[EMPOWERED]]. \n [[SELF_BONUS_HP_SCALE]] 비례 [[DMG_PHYSICAL]]. \n [[SELF_MISSING_HP_SCALE]] 비례 위력 증가. \n [[ON_KILL]] 뒤로 [[KNOCKBACK]] 되면서 동일한 피해. \n \n",
 
           "R은 10초동안 [[BUFF]]획득. \n [[BUFF]]는 [[SELF_MISSING_HP_SCALE]] 비례 즉시 [[MAX_HP_UP]], \n [[MS_UP]]와 [[SELF_MAXHP_SCALE]] 비례 [[HP_REGEN]].", 
           "3렙궁은 범위내 적 챔피언 하나당 \n [[SELF_MAXHP_SCALE]], [[HP_REGEN]] 효과 5%씩 증가.",
@@ -75,7 +75,7 @@ const drmundo: ChampData = {
           "W deals [[AOE]] [[DMG_MAGIC]] around Mundo for 3 seconds. \n Stores 80~95% of damage taken during the first 0.75 seconds \n and 25% during the remaining 2.25 seconds as [[GREY_HEALTH]].",
           "[[DETONATE]]s on expiry or [[SKILL_RECAST]]. \n [[AOE]] [[DMG_MAGIC]] around Mundo based on [[SELF_BONUS_HP_SCALE]]. \n [[ON_CHAMP_HIT]]: [[HEAL]]s 100% of [[GREY_HEALTH]]. \n If it misses, [[HEAL]]s 50%. \n \n",
           "E's [[PASSIVE_BONUS]] grants \n [[AD_UP]] based on [[SELF_MAXHP_SCALE]].",
-          "E makes the next [[BA]] [[EMPOWERED]]. \n [[DMG_PHYSICAL]] based on [[SELF_BONUS_HP_SCALE]]. \n Power increases based on [[SELF_MISSING_HP_SCALE]]. \n If the target is killed, it is [[KNOCKBACK]]ed backward, dealing the same damage. \n \n",
+          "E makes the next [[BA]] [[EMPOWERED]]. \n [[DMG_PHYSICAL]] based on [[SELF_BONUS_HP_SCALE]]. \n Power increases based on [[SELF_MISSING_HP_SCALE]]. \n [[ON_KILL]], the target is [[KNOCKBACK]]ed backward, dealing the same damage. \n \n",
           "R grants a [[BUFF]] for 10 seconds. \n The [[BUFF]] gives instant [[MAX_HP_UP]] based on [[SELF_MISSING_HP_SCALE]], \n [[MS_UP]], and [[HP_REGEN]] based on [[SELF_MAXHP_SCALE]].",
           "At rank 3, for each enemy champion in range, \n the [[SELF_MAXHP_SCALE]] and [[HP_REGEN]] effects increase by 5%.",
         ]

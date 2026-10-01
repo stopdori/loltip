@@ -35,7 +35,7 @@ const fiora: ChampData = {
     ] },
 
     E: { phases: [
-      { label: { ko: "E 버프", en: "E Buff" }, tags: ["BUFF", "AS_UP"] },
+      { label: { ko: "E 버프", en: "E Buff" }, tags: ["AA_RESET", "BUFF", "AS_UP"] },
       { label: { ko: "E 1타", en: "E 1st Hit" }, tags: ["ON_HIT", "SLOW", "SEPARATOR", "BUFF"] },
       { label: { ko: "E 2타", en: "E 2nd Hit" }, tags: ["ON_HIT", "CRIT"] },
     ] },
@@ -121,8 +121,8 @@ const fiora: ChampData = {
       en: "Fiora detects an enemy champion's Vital ([[MARK]]). \n Vitals appear in one of the four cardinal directions relative to the enemy champion. \n \n Hitting the Vital with a [[BA]] or skill deals additional [[DMG_TRUE]] equal to 3% (+4% per 100 bonus AD) of [[TARGET_MAXHP_SCALE]], grants Fiora 20/30/40/50% (based on R's [[SKILL_LEVEL_SCALE]]) [[MS_UP]] decaying over 1.85 seconds, and [[HEAL]]s her for 35~100 (based on [[LEVEL_SCALE]]). \n \n A new Vital is revealed after 15 seconds, when she moves far from the target, or when Fiora strikes the Vital.",
     },
     Q: {
-      ko: "피오라가 한 방향으로 [[DASH]]하며 가장 가까운 적이나 와드, 구조물을 공격해 70/80/90/100/110(+90/95/100/105/110% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힙니다. \n 이 공격은 범위 안의 적의 상태(급소, 거리, 처치 가능)에 따라 우선순위가 달라집니다. \n \n 피오라가 적을 공격하면 이 스킬의 재사용 대기시간이 50% 감소합니다. \n \n 이 스킬은 [[ON_HIT]] 효과가 적용됩니다. \n \n 13/11.25/9.5/7.75/6초의 [[COOLDOWN]].",
-      en: "Fiora [[DASH]]es in a direction and strikes the nearest enemy, ward, or structure, dealing 70/80/90/100/110 (+90/95/100/105/110% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]]. \n The strike's priority depends on the state of enemies in range (Vitals, distance, killable). \n \n If Fiora hits an enemy, this skill's cooldown is reduced by 50%. \n \n This skill applies [[ON_HIT]] effects. \n \n 13/11.25/9.5/7.75/6 second [[COOLDOWN]].",
+      ko: "피오라가 한 방향으로 [[DASH]]하며 가장 가까운 적이나 와드, 구조물을 공격해 70/80/90/100/110(+90/95/100/105/110% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힙니다. \n 이 공격은 범위 안의 적의 상태(급소, 거리, 처치 가능)에 따라 우선순위가 달라집니다. \n \n 피오라가 적을 공격하면 이 스킬의 재사용 대기시간이 50% 감소합니다. ([[CDR]]) \n \n 이 스킬은 [[ON_HIT]] 효과가 적용됩니다. \n \n 13/11.25/9.5/7.75/6초의 [[COOLDOWN]].",
+      en: "Fiora [[DASH]]es in a direction and strikes the nearest enemy, ward, or structure, dealing 70/80/90/100/110 (+90/95/100/105/110% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]]. \n The strike's priority depends on the state of enemies in range (Vitals, distance, killable). \n \n If Fiora hits an enemy, this skill's cooldown is reduced by 50%. ([[CDR]]) \n \n This skill applies [[ON_HIT]] effects. \n \n 13/11.25/9.5/7.75/6 second [[COOLDOWN]].",
     },
     W: {
       ko: "피오라가 0.75초 동안 받는 모든 공격과 [[IMMOBILIZING]] 효과, 해로운 효과를 막아낸 다음([[RIPOSTE]]) 검을 찌릅니다. \n 검은 처음 적중한 챔피언에게 110/150/190/230/270(+100% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입히고 \n 2초 동안 25% [[SLOW]], 25% [[CRIPPLE]]를 적용합니다. \n \n 피오라가 [[IMMOBILIZING]] 효과를 막아낼 경우 \n 찔린 적은 [[SLOW]] 대신 [[STUN]]합니다. \n \n 24/22/20/18/16초의 [[COOLDOWN]].",

@@ -101,7 +101,7 @@ const ezreal: ChampData = {
       en: "Each time Ezreal hits a skill, he gains 10% [[AS_UP]] for 6 seconds. \n (Stacks up to 5 times, [[BUFF_STACK]])",
     },
     Q: {
-      ko: "이즈리얼이 에너지 화살을 발사하여 처음 적중한 적에게 20/45/70/95/120(+130% [[AD_SCALE]])(+40% [[AP_SCALE]])의 [[DMG_PHYSICAL]]를 입히고, \n 이즈리얼의 스킬 재사용 대기시간을 1.5초 감소시킵니다. [[CDR]] \n 이 스킬은 [[ON_HIT]] 효과가 적용됩니다. \n \n 5.5/5.25/5/4.75/4.5초의 [[COOLDOWN]].",
+      ko: "이즈리얼이 에너지 화살을 발사하여 처음 적중한 적에게 20/45/70/95/120(+130% [[AD_SCALE]])(+40% [[AP_SCALE]])의 [[DMG_PHYSICAL]]를 입히고, \n 이즈리얼의 스킬 재사용 대기시간을 1.5초 감소시킵니다. ([[CDR]]) \n 이 스킬은 [[ON_HIT]] 효과가 적용됩니다. \n \n 5.5/5.25/5/4.75/4.5초의 [[COOLDOWN]].",
       en: "Ezreal fires an energy bolt, dealing 20/45/70/95/120 (+130% [[AD_SCALE]]) (+40% [[AP_SCALE]]) [[DMG_PHYSICAL]] to the first enemy hit, \n and reducing his skill cooldowns by 1.5 seconds. [[CDR]] \n This skill applies [[ON_HIT]] effects. \n \n 5.5/5.25/5/4.75/4.5 second [[COOLDOWN]].",
     },
     W: {
