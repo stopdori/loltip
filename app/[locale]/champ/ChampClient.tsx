@@ -372,6 +372,13 @@ setOpenTarget(null);
   />
 </section>
 )}
+{/* 단일 챔프 페이지(/champ/[id])의 화면 h1 — 매치업 페이지 h1과 같은 자리에 둔다.
+    summaryHeading은 champ/[id]·matchup/[pair] page.tsx만 넘기므로 /champ 목록에는 영향 없음. */}
+{!bothSelected && !embedMode && summaryHeading && (
+<section className="mt-6 sm:mt-12 max-w-[430px] sm:max-w-[960px] mx-auto">
+  <div>{summaryHeading}</div>
+</section>
+)}
 
       {/* COMPARE */}
 {(myChamp || enemyChamp) ? (

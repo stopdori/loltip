@@ -4,7 +4,6 @@ import { CHAMPS } from "@/app/data/champs/_index";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import { CHAMP_FORMS } from "@/app/data/interactions/forms";
-import { stripTagTokens } from "@/app/utils/stripTagTokens";
 import { listIndexableMatchupsForChamp } from "@/app/data/matchups/_index";
 import ChampMatchupList from "@/app/components/ChampMatchupList";
 import { notFound, permanentRedirect } from "next/navigation";
@@ -159,22 +158,6 @@ export default async function Page(props: Props) {
   const champInfo = CHAMPIONS.find(c => c.id === champId);
   if (!champInfo) notFound();
 
-  // 화면(SkillTagsPanel.tsx)의 "대충 한타 운용법/스킬 요약/TMI" 3개 섹션
-  // 구조를 그대로 SSR에 반영한다 — 절삭 없이 섹션별 전체 항목 포함.
-  const noteSections: { title: string; items: string[] }[] = (() => {
-    if (!champData.notes) return [];
-    if ('ko' in champData.notes) {
-      const items = (champData.notes as { ko: string[]; en: string[] })[lang] ?? [];
-      return items.length > 0 ? [{ title: lang === "ko" ? "노트" : "Notes", items }] : [];
-    }
-    const cn = champData.notes;
-    return [
-      { title: lang === "ko" ? "대충 한타 운용법" : "Rough Teamfight Guide", items: cn.skill?.note3?.[lang] ?? [] },
-      { title: lang === "ko" ? "스킬 요약" : "Overview", items: cn.skill?.note1?.[lang] ?? [] },
-      { title: lang === "ko" ? "TMI" : "TMI", items: cn.skill?.note2?.[lang] ?? [] },
-    ].filter((section) => section.items.length > 0);
-  })();
-
   // 서버는 항상 기본(왼쪽)으로만 렌더링한다. 예전에 공유된 ?side=enemy 링크가 들어와도
   // 이 파라미터는 더 이상 쓰지 않고 무시한다(에러 없이 왼쪽 표시). 픽커에서 정해진 좌/우 위치는
   // 클라이언트 세션 메모리 힌트로 ChampPageClient가 마운트 시 반영한다(app/utils/champSideHint.ts).
@@ -228,59 +211,17 @@ export default async function Page(props: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(skillFaqJsonLd) }}
         />
       )}
-      <div className="hidden">
-        {/* 로케일별 제목 — generateMetadata의 title 패턴("{챔피언} 챔피언 공략 …" / "{Champion} Champion Guide …")과 일치.
-            예전엔 KO 페이지에도 영문("Brand Champion Guide")이 고정으로 나갔다. */}
-        <h1>{lang === "ko" ? `${champInfo.ko} 챔피언 공략` : `${champInfo.en} Champion Guide`}</h1>
-
-        <h2>Ultimate Cooldown</h2>
-        <p>
-          Level 6: {champData.ultCooldown?.[6]}s,
-          Level 11: {champData.ultCooldown?.[11]}s,
-          Level 16: {champData.ultCooldown?.[16]}s
-        </p>
-
-        <h2>Skill Mechanics</h2>
-        {getFormBlocks(champId, champData.skills).map(({ formKo, block }) => (
-          <div key={formKo || "flat"}>
-            {formKo && <h3>{formKo}</h3>}
-            <ul>
-              {SKILL_KEYS.map((key) => {
-                const raw = block[key];
-                if (!raw) return null;
-                const tags = Array.isArray(raw)
-                  ? raw
-                  : raw.phases.flatMap((p) => (p ? p.tags : []));
-                if (tags.length === 0) return null;
-                const labelStr = tags
-                  .map((t) => TAG_LABEL[t as keyof typeof TAG_LABEL]?.[lang] ?? GIMMICK_TAG_LABEL[t as keyof typeof GIMMICK_TAG_LABEL]?.[lang] ?? t)
-                  .join(", ");
-                return (
-                  <li key={key}>
-                    {formKo ? `${formKo} ${key}` : key}: {labelStr}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        ))}
-
-        {noteSections.map(({ title, items }) => (
-          <div key={title}>
-            <h2>{title}</h2>
-            <ul>
-              {items.map((note, i) => (
-                <li key={i}>{stripTagTokens(note, lang)}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
       <ChampPageClient
         key={renderKey}
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
+        // 화면에 보이는 h1 — generateMetadata의 title 패턴("{챔피언} 챔피언 공략 …" / "{Champion} Champion Guide …")과 일치.
+        // 매치업 페이지 h1과 같은 자리·스타일(ChampClient의 summaryHeading 슬롯)로 렌더링된다.
+        summaryHeading={
+          <h1 className="mb-3 text-lg sm:text-xl font-bold text-slate-100">
+            {lang === "ko" ? `${champInfo.ko} 챔피언 공략` : `${champInfo.en} Champion Guide`}
+          </h1>
+        }
         extraSection={
           // 이 챔피언이 등장하는 매치업 중 "현재 로케일에서 색인 대상인 것만" 링크(noindex 페이지로 링크 금지).
           // 판정은 generateMetadata/sitemap과 같은 공용 함수, 데이터는 매치업 페이지와 같은 _compiled.json.

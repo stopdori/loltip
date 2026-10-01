@@ -113,7 +113,7 @@ export default async function Page({ params }: Props) {
   // 매치업 데이터 로딩
   const matchup = await getMatchupSummary(a, b);
 
-  // 판정 세부사항 수집 (SSR + JSON-LD용)
+  // 판정 세부사항 수집 (JSON-LD용 — 화면 판정 박스는 MatchupSummaryBox가 SSR로 렌더링)
   const highlights: { champId: string; champName: string; items: string[] }[] = [];
   if (matchup?.status === "ok") {
     for (const champId of [forcedMe, forcedEnemy]) {
@@ -178,20 +178,6 @@ export default async function Page({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
-
-      {/* 구글 크롤러용 SSR 콘텐츠 */}
-      <div className="hidden">
-        {highlights.map(({ champId, champName, items }) => (
-          <div key={champId}>
-            <h2>{champName} {lang === "ko" ? "판정" : "Interactions"}</h2>
-            <ul>
-              {items.map((text, i) => (
-                <li key={i}>{stripTagTokens(text, lang)}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
 
       <MatchupChampClient
         key={canonical}
