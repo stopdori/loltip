@@ -21,7 +21,7 @@ const braum: ChampData = {
   gimmick: {
     P: { phases: [
       { label: { ko: "P 디버프 스택", en: "P Debuff Stack" }, tags: ["ON_HIT", "DEBUFF_STACK"] },
-      { label: { ko: "P 기절", en: "P Stun" }, tags: ["STACK_CONSUME", "DMG_MAGIC", "STUN"] },
+      { label: { ko: "P 기절", en: "P Stun" }, tags: ["STACK_CONSUME", "DMG_MAGIC", "STUN", "SEPARATOR", "ON_TARGET_CD"] },
       { label: { ko: "P 디버프 스택 중첩 불가상태, 평타 강화", en: "P Stack Lockout, Empowered Attack" }, tags: ["DMG_MAGIC", "ON_HIT"] },
     ] },
     

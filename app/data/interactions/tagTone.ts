@@ -215,6 +215,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   BUFF_STACK_C:  "lime",
   STACK_CONSUME: "indigo",
   PER_STACK: "indigo",
+  PER_HIT: "indigo",
   EFFECT_UP: "indigo",
   // 타이밍
   TIMING_INSTANT:   "indigo",
@@ -272,6 +273,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   W: "white",
   E: "white",
   R: "white",
+  ALL_SKILLS: "white",
   BA: "indigo",
   EMPOWERED: "indigo",
   // 피해 범위

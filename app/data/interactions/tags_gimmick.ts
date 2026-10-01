@@ -18,6 +18,7 @@ export type GimmickTagId =
   | "W"
   | "E"
   | "R"
+  | "ALL_SKILLS"
   // 피해 종류
   | "DMG_PHYSICAL"
   | "DMG_MAGIC"
@@ -140,6 +141,7 @@ export type GimmickTagId =
   | "STACK_CONSUME_B"
   | "STACK_CONSUME_C"
   | "PER_STACK"
+  | "PER_HIT"
   | "EFFECT_UP"
   // 스킬 타이밍
   | "SKILL_RECAST"
@@ -180,7 +182,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   DEBUFF_C: { ko: "디버프C", en: "Debuff C" },
   COOLDOWN:      { ko: "쿨타임",  en: "Cooldown"  },
   ACTIVATION_CONDITION: { ko: "활성화", en: "Activation" },
-  OUT_OF_COMBAT: { ko: "비전투", en: "Out of Combat" },
+  OUT_OF_COMBAT: { ko: "비 전투", en: "Out of Combat" },
   ON_TARGET_CD:  { ko: "대상별 쿨타임", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
@@ -203,6 +205,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   STACK_CONSUME_B: { ko: "스택소모B", en: "Stack Consume B" },
   STACK_CONSUME_C: { ko: "스택소모C", en: "Stack Consume C" },
   PER_STACK: { ko: "스택당", en: "Per Stack" },
+  PER_HIT: { ko: "적중당", en: "Per Hit" },
   EFFECT_UP: { ko: "효과증가", en: "Effect ↑" },
 
   // 타이밍
@@ -245,6 +248,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   W: { ko: "W", en: "W" },
   E: { ko: "E", en: "E" },
   R: { ko: "R", en: "R" },
+  ALL_SKILLS: { ko: "모든스킬", en: "All Skills" },
   BA: { ko: "평타", en: "Basic Attack" },
   HOMING:        { ko: "호밍",     en: "Homing"        },
   BEAM:          { ko: "레이저",     en: "Beam"          },
@@ -320,7 +324,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SKILL_CHANNEL_MOVEMENT: { ko: "이동계열 채널링. \n 채널링을 방해하는 CC 외에도 \n [[ROOT]] / [[GROUNDED]] 계열에 의해 추가로 방해.", en: "A channel that involves the caster moving (e.g. Ryze R).\nInterrupted by everything that interrupts a normal channel, plus Root/Grounded-type effects." },
   SKILL_TOGGLE:     { ko: "버튼을 눌러 켜고 끄는 방식\nCC에 걸리면 끌 수 없음", en: "Ability toggled on and off\nCannot be deactivated while CC'd" },
   SKILL_CHARGED:    { ko: "누르고 있어야 효과가 증가하거나 발동하는 스킬, \n 경우에 따라 움직일 수 있음.", en: "Charges up while held\nCaster can move while charging" },
-  SKILL_VECTOR:     { ko: "시전 위치에 좌클릭을 하고 \n 드래그로 방향을 지정하는 스킬. \n ( 단, 클릭을 떼면 안됨. ) \n ( 단, 스마트키는 키보드를 떼면 안됨. )", en: "A skill where you left-click the cast location \n and drag to set the direction. \n (However, you must not release the click.) \n (However, with Smart Cast, you must not release the key.)" },
+  SKILL_VECTOR:     { ko: "시전 위치에 좌클릭을 하고 \n 드래그로 방향을 지정하는 스킬.", en: "A skill where you left-click the cast location \n and drag to set the direction." },
   BUFF:             { ko: "자신 또는 아군에게 유리한 효과", en: "A beneficial effect applied to self or allies" },
   BUFF_A: { ko: "자신 또는 아군에게 유리한 효과 (A). \n 한 스킬/챔피언 안에 서로 다른 버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A beneficial effect applied to self or allies (A). \n Used to distinguish when a kit has 2+ distinct simultaneous buffs." },
   BUFF_B: { ko: "자신 또는 아군에게 유리한 효과 (B). \n 한 스킬/챔피언 안에 서로 다른 버프가 2개 이상 있어 구분이 필요할 때 쓴다.", en: "A beneficial effect applied to self or allies (B). \n Used to distinguish when a kit has 2+ distinct simultaneous buffs." },
@@ -354,6 +358,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   STACK_CONSUME_B: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (B). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (B). \n Used to distinguish multiple distinct stack-consume effects." },
   STACK_CONSUME_C: { ko: "쌓인 버프 스택을 소모하여 효과를 발동하거나 강화함 (C). \n 서로 다른 스택 소모 효과가 여러 개 있을 때 구분용.", en: "Consumes accumulated buff stacks to trigger or empower an effect (C). \n Used to distinguish multiple distinct stack-consume effects." },
   PER_STACK: { ko: "스택당 효과 증가.", en: "Effect increases per stack." },
+  PER_HIT: { ko: "적중당 효과 증가.", en: "Effect increases per hit." },
   EFFECT_UP: { ko: "효과가 증가함.", en: "Increases the effect." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
   TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림", en: "Has a cast delay before activating." },
@@ -392,6 +397,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   W: { ko: "W", en: "W" },
   E: { ko: "E", en: "E" },
   R: { ko: "R", en: "R" },
+  ALL_SKILLS: { ko: "모든스킬", en: "All Skills" },
   BA: { ko: "기본 공격", en: "Basic Attack" },
   // 피해 범위
   SINGLE:      { ko: "단일 대상에게만 적용되는 스킬", en: "Affects only a single target" },
