@@ -1,7 +1,7 @@
 // app/components/SkillTagsPanel.tsx
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useId, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 
 import { TAG_LABEL, TAG_DESC, type SkillKey, type TagId } from "../data/interactions";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
@@ -14,9 +14,69 @@ import { toneOfTag } from "../data/interactions/tagTone";
 import { STAT_ICONS } from "../data/interactions/statIcons";
 import TokenText from "./TokenText";
 import TagPill from "./TagPill";
+import TipDebugOverlay from "./TipDebugOverlay";
+import { tipLog } from "@/app/lib/tipDebug";
 
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
+}
+
+// 스킬 말풍선 "클릭 고정" 상태는 한 번에 하나만 존재해야 하고, 내 챔피언/
+// 상대 챔피언 패널처럼 서로 다른 SkillTagsPanel 인스턴스에 걸쳐 공유돼야
+// 한다. React state를 부모로 끌어올리는 대신 모듈 스코프 싱글턴 +
+// useSyncExternalStore로 구독하는 방식을 쓴다(값을 소유한 부모 컴포넌트가
+// 없어서 props로 전달할 마땅한 경로가 없기 때문).
+let pinnedSkillTipId: string | null = null;
+const pinnedSkillTipListeners = new Set<() => void>();
+function setPinnedSkillTipId(id: string | null, reason: string) {
+  tipLog(`SKILL global-pin ${pinnedSkillTipId ?? "none"} -> ${id ?? "none"} (${reason})`);
+  pinnedSkillTipId = id;
+  pinnedSkillTipListeners.forEach((listener) => listener());
+}
+function subscribePinnedSkillTip(listener: () => void) {
+  pinnedSkillTipListeners.add(listener);
+  return () => pinnedSkillTipListeners.delete(listener);
+}
+function getPinnedSkillTipSnapshot() {
+  return pinnedSkillTipId;
+}
+function getPinnedSkillTipServerSnapshot() {
+  return false;
+}
+
+// "바깥 탭/클릭"인지 판정하는 공용 헬퍼. 태그 알약 말풍선(TagPill)은
+// createPortal로 document.body에 그려지기 때문에 더 이상 스킬 말풍선의
+// anchorRef 자손이 아니다 — data-tooltip-layer 속성이 붙은 말풍선 레이어
+// (현재는 "tag" 하나뿐) 안쪽을 탭한 것도 "스킬 아이콘 안쪽"과 동일하게
+// 취급해야 중첩된 태그 알약을 조작할 때 스킬 말풍선이 같이 닫히지 않는다.
+function isInsideTooltipSystem(target: EventTarget | null, anchorEl: HTMLElement | null): boolean {
+  if (!(target instanceof Node)) return false;
+  if (anchorEl?.contains(target)) return true;
+  if (!(target instanceof Element)) return false;
+  // 말풍선 레이어 안쪽이거나, (다른) 스킬 아이콘이면 바깥이 아니다.
+  // 다른 스킬 아이콘 탭은 그 아이콘이 전역 고정을 가져가며 자연스럽게 이동시킨다.
+  return target.closest("[data-tooltip-layer], [data-skill-icon]") != null;
+}
+
+// 상단에 sticky/fixed로 붙어 현재 실제로 화면 위쪽을 가리고 있는 바(예:
+// 모바일에서의 챔피언 선택 바)의 높이를 구한다. 특정 컴포넌트에 결합되지
+// 않도록 "지금 top:0에 붙어 있는" 엘리먼트를 런타임에 클래스명으로 찾는다
+// (해당 요소가 없으면 0을 반환 — 안전한 기본값).
+function getStickyTopBarHeight(): number {
+  if (typeof document === "undefined") return 0;
+  let maxBottom = 0;
+  document
+    .querySelectorAll<HTMLElement>('.sticky.top-0, [class*="fixed"][class*="top-0"]')
+    .forEach((el) => {
+      const style = getComputedStyle(el);
+      if (style.position !== "sticky" && style.position !== "fixed") return;
+      const rect = el.getBoundingClientRect();
+      // rect.top <= 0인 경우만 "지금 실제로 상단에 붙어서 가리고 있는" 상태로 간주.
+      if (rect.top <= 0 && rect.bottom > 0) {
+        maxBottom = Math.max(maxBottom, rect.bottom);
+      }
+    });
+  return maxBottom;
 }
 
 // CHAMP_FORMS는 배열 기반(0~4번 인덱스, 몇 개든 가능)이지만, 챔피언
@@ -84,6 +144,18 @@ function SkillLabelWithTip({
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
 
+  // 이 아이콘 인스턴스를 다른 모든 SkillLabelWithTip 인스턴스(다른 스킬,
+  // 다른 챔피언 패널 포함)와 구분하는 고유 id. "동시에 하나만 고정" 규칙을
+  // 지키기 위해 전역 pinnedSkillTipId와 비교한다.
+  const instanceId = useId();
+  const isPinned = useSyncExternalStore(
+    subscribePinnedSkillTip,
+    () => getPinnedSkillTipSnapshot() === instanceId,
+    getPinnedSkillTipServerSnapshot
+  );
+  // 진단 로그(?tipdebug=1)에서 어느 아이콘인지 식별하기 위한 라벨.
+  const dbg = `SKILL ${champId}:${skillKey}${instanceId}`;
+
   const [open, setOpen] = useState(false);
   const [pos, setPos] = useState<{
     left: number;
@@ -94,6 +166,17 @@ function SkillLabelWithTip({
      *  뒤집어("below") 띄운다. */
     placement: "above" | "below";
   } | null>(null);
+
+  // 호버(open)든 클릭 고정(isPinned)이든 둘 중 하나라도 참이면 말풍선을 그린다.
+  const visible = open || isPinned;
+
+  // 고정 중 스크롤 추적(measure 재호출) 시 위/아래 배치를 고정 순간 값으로
+  // 잠근다. 잠그지 않으면 화면 위쪽에 가까워질 때 above→below로 뒤집혀
+  // 말풍선이 아이콘 반대편으로 튀고, 그 때문에 "잘리면 닫힘" 규칙도 발동하지 않는다.
+  const lockedPlacementRef = useRef<"above" | "below" | null>(null);
+  // 고정 상태의 스크롤 닫힘 관찰자. 고정 순간 한 번만 만들고 해제 시 정리한다
+  // (pos가 바뀔 때마다 재생성하면 "고정 순간" 기준이 매 프레임 재판정되어 버림).
+  const pinObserverRef = useRef<IntersectionObserver | null>(null);
 
   const measure = () => {
     const a = anchorRef.current?.getBoundingClientRect();
@@ -117,7 +200,8 @@ function SkillLabelWithTip({
     const spaceAbove = a.top - margin;
     const spaceBelow = vh - a.bottom - margin;
     const placement: "above" | "below" =
-      spaceAbove >= t.height + 10 || spaceAbove >= spaceBelow ? "above" : "below";
+      lockedPlacementRef.current ??
+      (spaceAbove >= t.height + 10 || spaceAbove >= spaceBelow ? "above" : "below");
 
     const top = placement === "above" ? a.top - 10 : a.bottom + 10;
 
@@ -130,7 +214,8 @@ function SkillLabelWithTip({
     setPos({ left, top, arrowLeft, placement });
   };
 
-  const onEnter = () => {
+  const onEnter = (reason: string) => {
+    tipLog(`${dbg} open=true (${reason}) pinned=${isPinned}`);
     setOpen(true);
     requestAnimationFrame(() => {
       measure();
@@ -138,29 +223,199 @@ function SkillLabelWithTip({
     });
   };
 
-  const onLeave = () => {
+  const onLeave = (reason: string) => {
+    tipLog(`${dbg} open=false (${reason}) pinned=${isPinned}${isPinned ? "" : " pos=null"}`);
     setOpen(false);
-    setPos(null);
+    // 고정된 상태라면 마우스가 나가도 pos를 지우지 않는다 — visible이
+    // isPinned로 여전히 true라서 계속 그려져야 하기 때문.
+    if (!isPinned) setPos(null);
   };
 
-  useEffect(() => {
-    if (!open) return;
-    const close = (e: TouchEvent) => {
-      if (!anchorRef.current?.contains(e.target as Node)) onLeave();
-    };
-    document.addEventListener("touchstart", close);
-    return () => document.removeEventListener("touchstart", close);
-  }, [open]);
+  // 이 인스턴스가 "아직" 고정 주인일 때만 해제한다. 다른 아이콘이 같은 이벤트에서
+  // 먼저 고정을 가져간 경우(React 핸들러가 document 리스너보다 먼저 실행됨)
+  // 그 새 고정을 지워버리는 경쟁 상태를 막기 위함.
+  const unpinIfMine = (reason: string) => {
+    if (getPinnedSkillTipSnapshot() === instanceId) setPinnedSkillTipId(null, `${dbg} ${reason}`);
+    else tipLog(`${dbg} unpin skipped, not owner (${reason})`);
+  };
 
-  // 툴팁이 열린 채로 스크롤해서 앵커가 화면 밖으로 완전히 벗어나면
-  // 자동으로 닫는다. open일 때만 observe하고, 닫히면 disconnect.
+  // 고정 순간의 말풍선 가시성으로 닫힘 규칙을 한 번만 정하고 관찰을 시작한다.
+  const setupPinCloseObserver = () => {
+    pinObserverRef.current?.disconnect();
+    pinObserverRef.current = null;
+    const anchorEl = anchorRef.current;
+    const tipEl = tipRef.current;
+    if (!anchorEl) return;
+
+    const headerH = getStickyTopBarHeight();
+    const rootMargin = headerH > 0 ? `-${headerH}px 0px 0px 0px` : "0px";
+
+    let fullyVisible = false;
+    if (tipEl) {
+      const r = tipEl.getBoundingClientRect();
+      fullyVisible =
+        r.top >= headerH && r.left >= 0 && r.right <= window.innerWidth && r.bottom <= window.innerHeight;
+    }
+
+    // 전부 보였으면 말풍선을, 처음부터 잘려 있었으면 아이콘을 관찰한다.
+    // fullyVisible 모드는 threshold 1.0이 핵심이지만, 서브픽셀 위치 때문에
+    // 비율이 0.9999 같은 값으로 한 번 내려간 뒤 더 이상 콜백이 안 오는 경우를
+    // 막으려고 1 아래 구간에도 촘촘히 threshold를 두고, 실제 잘림 여부는
+    // rootBounds와의 기하 비교(1px 허용)로 판정한다.
+    const target = fullyVisible && tipEl ? tipEl : anchorEl;
+    const threshold = fullyVisible ? [0, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 1] : 0;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        let shouldClose: boolean;
+        if (fullyVisible) {
+          const r = entry.boundingClientRect;
+          const root = entry.rootBounds;
+          shouldClose = root
+            ? r.top < root.top - 1 || r.bottom > root.bottom + 1 || r.left < root.left - 1 || r.right > root.right + 1
+            : entry.intersectionRatio < 1;
+        } else {
+          shouldClose = !entry.isIntersecting;
+        }
+        tipLog(
+          `${dbg} pin-IO ${fullyVisible ? "tip" : "icon"} ratio=${entry.intersectionRatio.toFixed(3)} close=${shouldClose}`
+        );
+        if (shouldClose) unpinIfMine("intersection");
+      },
+      { threshold, rootMargin }
+    );
+    observer.observe(target);
+    pinObserverRef.current = observer;
+    tipLog(`${dbg} pin-IO setup mode=${fullyVisible ? "tip@1.0" : "icon@0"} headerH=${headerH}`);
+  };
+
+  // 고정 시작. 호버 상태(open)는 건드리지 않는다 — 터치에선 호버가 없고,
+  // open까지 켜면 탭으로 고정 해제해도 open 때문에 말풍선이 남는다.
+  const pin = (reason: string) => {
+    lockedPlacementRef.current = null; // 고정 순간엔 배치를 새로 계산
+    setPinnedSkillTipId(instanceId, `${dbg} ${reason}`);
+    requestAnimationFrame(() => {
+      measure();
+      requestAnimationFrame(() => {
+        measure();
+        // measure()의 setPos가 DOM에 반영된 다음 프레임에 실제 배치를 읽어
+        // 고정 기간 동안 잠그고, 그 위치 기준으로 닫힘 관찰자를 만든다.
+        requestAnimationFrame(() => {
+          if (getPinnedSkillTipSnapshot() !== instanceId) return; // 그새 해제됨
+          const t = tipRef.current?.getBoundingClientRect();
+          const a = anchorRef.current?.getBoundingClientRect();
+          if (t && a) lockedPlacementRef.current = t.top < a.top ? "above" : "below";
+          setupPinCloseObserver();
+        });
+      });
+    });
+  };
+
+  // 말풍선(스킬/태그 레이어) 내부에서 발생해 React 트리를 타고 앵커까지 버블된
+  // 이벤트는 "아이콘 클릭"이 아니므로 고정 토글하지 않는다. (태그 말풍선은
+  // portal이라 DOM상 자손이 아니어도 React 이벤트는 앵커까지 버블된다.)
+  const isFromTooltipLayer = (target: EventTarget) =>
+    target instanceof Element && target.closest("[data-tooltip-layer]") != null;
+
+  // 아이콘 클릭: 고정 토글. 다른 아이콘이 고정돼 있었다면 전역 상태라 자동으로
+  // 이 아이콘으로 옮겨진다 — "동시에 하나만 고정".
+  const handleClick = (e: React.MouseEvent) => {
+    if (isFromTooltipLayer(e.target)) {
+      tipLog(`${dbg} icon-click ignored (from tooltip layer)`);
+      return;
+    }
+    if (isPinned) setPinnedSkillTipId(null, `${dbg} icon-click-toggle`);
+    else pin("icon-click-pin");
+  };
+
+  // 바깥 판정은 pointerdown(capture) 하나로 통합 — 마우스/터치/펜 공통이고,
+  // 모바일 합성 mouse 이벤트(mousedown)에 의존하지 않는다. 말풍선 층 안쪽이거나
+  // 스킬 아이콘이면 바깥이 아니다. 고정 해제는 "지금 고정 주인이 자기일 때만".
+  useEffect(() => {
+    if (!open && !isPinned) return;
+    const onPointerDown = (e: PointerEvent) => {
+      if (isInsideTooltipSystem(e.target, anchorRef.current)) return;
+      if (open) onLeave("outside-pointerdown");
+      if (isPinned) unpinIfMine("outside-pointerdown");
+    };
+    document.addEventListener("pointerdown", onPointerDown, true);
+    return () => document.removeEventListener("pointerdown", onPointerDown, true);
+  }, [open, isPinned]);
+
+  // Esc: 태그 말풍선이 열려 있으면 이번 Esc는 양보(TagPill 자체 리스너가 그것만
+  // 닫음)하고, 태그 말풍선이 없을 때의 Esc에서 스킬 말풍선 고정을 해제한다.
+  // 두 리스너는 같은 keydown을 받지만 상태 반영은 이벤트 이후라 둘 다 "아직 열린"
+  // DOM을 보고 판단하므로 순서와 무관하게 한 번에 한 층만 닫힌다.
+  useEffect(() => {
+    if (!isPinned) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      if (document.querySelector('[data-tooltip-layer="tag"]')) {
+        tipLog(`${dbg} esc yielded to open tag tooltip`);
+        return;
+      }
+      unpinIfMine("esc");
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [isPinned]);
+
+  // 고정 중일 때만: 스크롤(캡처 — 내부 스크롤 컨테이너 포함)/리사이즈 시
+  // rAF로 묶어서 아이콘 위치 기준으로 pos를 다시 계산해 말풍선이 따라가게 한다.
+  // 닫힘 관찰자는 실제 레이아웃을 브라우저가 계속 추적하므로 재생성하지 않는다.
+  useEffect(() => {
+    if (!isPinned) return;
+    let rafId: number | null = null;
+    const schedule = () => {
+      if (rafId != null) return;
+      rafId = requestAnimationFrame(() => {
+        rafId = null;
+        measure();
+      });
+    };
+    window.addEventListener("scroll", schedule, { capture: true, passive: true });
+    window.addEventListener("resize", schedule, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", schedule, { capture: true });
+      window.removeEventListener("resize", schedule);
+      if (rafId != null) cancelAnimationFrame(rafId);
+    };
+    // measure는 매 렌더 새로 만들어지지만 ref만 읽으므로 최신 값 보장됨.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPinned]);
+
+  // 고정 해제(어떤 경로든: 재클릭/바깥/Esc/스크롤 닫힘/다른 아이콘으로 이동) 및
+  // 언마운트 시 관찰자·배치 잠금 정리. 호버 중이 아니면 stale pos도 비운다.
+  const wasPinnedRef = useRef(false);
+  useEffect(() => {
+    if (isPinned) {
+      wasPinnedRef.current = true;
+      return;
+    }
+    if (wasPinnedRef.current) {
+      wasPinnedRef.current = false;
+      const owner = getPinnedSkillTipSnapshot();
+      tipLog(
+        `${dbg} unpinned${owner ? " (pin-moved to " + owner + ")" : ""} open=${open}${open ? "" : " pos=null"}`
+      );
+    }
+    pinObserverRef.current?.disconnect();
+    pinObserverRef.current = null;
+    lockedPlacementRef.current = null;
+    if (!open) setPos(null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPinned]);
+  useEffect(() => () => pinObserverRef.current?.disconnect(), []);
+
+  // 호버로 열린 채로 스크롤해서 앵커가 화면 밖으로 완전히 벗어나면
+  // 자동으로 닫는다. (고정 상태의 스크롤 닫힘은 아래 별도 effect가 담당.)
   useEffect(() => {
     if (!open) return;
     const el = anchorRef.current;
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!entry.isIntersecting) onLeave();
+        if (!entry.isIntersecting) onLeave("hover-intersection");
       },
       { threshold: 0 }
     );
@@ -220,19 +475,34 @@ function SkillLabelWithTip({
   return (
     <span
       ref={anchorRef}
-      className="relative inline-flex cursor-help"
-      onMouseEnter={onEnter}
-      onMouseLeave={onLeave}
-      onTouchStart={(e) => {
-        e.preventDefault();
-        open ? onLeave() : onEnter();
+      // cursor-pointer: iOS Safari는 cursor:pointer가 없는 비대화형 요소의 탭에
+      // click을 위임하지 않는 경우가 있어서 고정 토글(onClick)이 안 올 수 있다.
+      className="relative inline-flex cursor-pointer"
+      data-skill-icon=""
+      aria-expanded={visible}
+      // 호버는 실제 마우스일 때만. React의 touchstart는 passive라 preventDefault가
+      // 안 먹고, 모바일은 탭 뒤 합성 mouseenter를 보내 "유령 호버(open=true)"가
+      // 남던 문제가 있었다 — pointer 이벤트 + pointerType 필터로 차단한다.
+      onPointerEnter={(e) => {
+        if (e.pointerType !== "mouse") {
+          tipLog(`${dbg} pointerenter ignored (${e.pointerType})`);
+          return;
+        }
+        onEnter("pointerenter-mouse");
       }}
+      onPointerLeave={(e) => {
+        if (e.pointerType !== "mouse") return;
+        onLeave("pointerleave-mouse");
+      }}
+      // 고정 토글은 click 하나로만 — 탭/마우스 모두 click은 한 번만 오므로 이중 토글 없음.
+      onClick={handleClick}
     >
       {iconVisual}
 
-      {open && (
+      {visible && (
         <span
-          className="pointer-events-none fixed z-[9999]"
+          data-tooltip-layer="skill"
+          className={`${isPinned ? "pointer-events-auto" : "pointer-events-none"} fixed z-[9999]`}
           style={{
             left: pos?.left ?? 0,
             top: pos?.top ?? 0,
@@ -842,6 +1112,8 @@ const formLabel = champId && hasForms(champId) ? CHAMP_FORMS[champId] : null;
 
 return (
   <div className="space-y-2">
+    {/* ?tipdebug=1 일 때만 렌더링되는 말풍선 진단 오버레이(아니면 null) */}
+    <TipDebugOverlay />
     {/* 🔹 탭 + 폼 토글 영역 */}
 <div className="flex flex-col gap-2.5">
   {/* 1줄: 스킬 / 기믹 / 시야 */}

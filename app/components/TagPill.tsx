@@ -2,6 +2,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
+import { tipLog } from "@/app/lib/tipDebug";
 import { TONE_CLASS, NOTE_TONE_CLASS, toneOfTag, type Tone } from "../data/interactions/tagTone";
 import { parseTagTokens } from "../data/interactions/parseTagTokens";
 import { TAG_LABEL, type TagId } from "../data/interactions/tags";
@@ -52,7 +54,12 @@ export default function TagPill({
   const tipRef = useRef<HTMLSpanElement | null>(null);
 
   const [open, setOpen] = useState(false);
-  const [pos, setPos] = useState<{ left: number; top: number; arrowLeft: number } | null>(null);
+  const [pos, setPos] = useState<{
+    left: number;
+    top: number;
+    arrowLeft: number;
+    placement: "above" | "below";
+  } | null>(null);
 
   // note 모드: 박스 없이 텍스트만(문단 속 인라인 토큰). 색상은 tagId 고유 톤을 따른다 —
   // tone="note" 자체는 "회색 단색"이 아니라 "박스 없음"을 뜻하는 렌더링 모드 선택자다.
@@ -76,7 +83,7 @@ export default function TagPill({
   // 라벨(예: "이동금지")은 이미 min을 넘어서 있어 영향이 없다. note
   // 모드는 대상이 아니므로 박스 모드에서만 적용.
   const base = isNote
-    ? "cursor-help hover:opacity-90"
+    ? "hover:opacity-90"
     : `flex items-center justify-center rounded-md font-semibold ring-1 align-top py-[3px] text-[12px] min-w-[42px] ${hasAnchorIcon ? "pl-0.5 pr-1" : "px-1"}`;
   const toneCls = isNote ? NOTE_TONE_CLASS[noteTextTone] : (TONE_CLASS[tone] ?? TONE_CLASS.default);
   // gap은 박스 모드(flex)에서만 의미가 있다 — note 모드는 margin 방식으로 대체.
@@ -88,24 +95,32 @@ export default function TagPill({
     if (!a || !t) return;
 
     const vw = window.innerWidth;
+    const vh = window.innerHeight;
     const margin = 8;
 
     const anchorCenterX = a.left + a.width / 2;
 
-    // 화면 기준으로 툴팁 center를 clamp
+    // 화면 기준으로 툴팁 center를 clamp (가장자리에서만 안쪽으로 보정)
     const left = clamp(anchorCenterX, margin + t.width / 2, vw - margin - t.width / 2);
 
-    // anchor 위쪽으로 띄우기
-    const top = a.top - 10;
+    // 기본은 알약 바로 위. 위쪽이 화면 가장자리에 닿아 잘릴 때만 아래로 뒤집는다.
+    const fitsAbove = a.top - 10 - t.height >= margin;
+    const fitsBelow = a.bottom + 10 + t.height <= vh - margin;
+    const placement: "above" | "below" = fitsAbove || !fitsBelow ? "above" : "below";
+    const top = placement === "above" ? a.top - 10 : a.bottom + 10;
 
     // 화살표 위치도 툴팁 내부에서 clamp
     const arrowLeft = clamp(anchorCenterX - (left - t.width / 2), 10, t.width - 10);
 
-    setPos({ left, top, arrowLeft });
+    setPos({ left, top, arrowLeft, placement });
   };
 
-  const onEnter = () => {
+  // 진단 로그(?tipdebug=1)용 라벨.
+  const dbg = `TAG ${tagId ?? text}`;
+
+  const onEnter = (reason: string) => {
     if (!tip) return;
+    tipLog(`${dbg} open=true (${reason})`);
     setOpen(true);
     requestAnimationFrame(() => {
       measure();
@@ -113,18 +128,86 @@ export default function TagPill({
     });
   };
 
-  const onLeave = () => {
+  const onLeave = (reason: string) => {
+    if (open) tipLog(`${dbg} open=false (${reason})`);
     setOpen(false);
     setPos(null);
   };
 
+  // 바깥 판정은 pointerdown(capture) 하나로(마우스/터치 공통). 툴팁 박스는
+  // createPortal로 document.body에 그려져 anchorRef의 DOM 자손이 아니므로
+  // tipRef 쪽도 함께 확인한다. 기준은 "자기 알약/자기 말풍선 안쪽이면 바깥 아님"
+  // — 스킬 말풍선 안의 다른 곳을 탭하면 태그 말풍선만 닫혀야 하므로 스킬 층
+  // 전체를 안쪽으로 보지 않는다. 진단 오버레이(debug 층) 조작은 예외로 무시.
   useEffect(() => {
     if (!open) return;
-    const close = (e: TouchEvent) => {
-      if (!anchorRef.current?.contains(e.target as Node)) onLeave();
+    const onPointerDown = (e: PointerEvent) => {
+      const target = e.target;
+      if (!(target instanceof Node)) return;
+      if (anchorRef.current?.contains(target) || tipRef.current?.contains(target)) return;
+      if (target instanceof Element && target.closest('[data-tooltip-layer="debug"]')) return;
+      onLeave("outside-pointerdown");
     };
-    document.addEventListener("touchstart", close);
-    return () => document.removeEventListener("touchstart", close);
+    document.addEventListener("pointerdown", onPointerDown, true);
+    return () => document.removeEventListener("pointerdown", onPointerDown, true);
+  }, [open]);
+
+  // 클릭 직전 pointerdown의 종류. click 이벤트의 pointerType은 브라우저마다
+  // 지원이 달라서(구형 Safari는 MouseEvent) pointerdown에서 기록해 둔다.
+  const lastPointerTypeRef = useRef<string>("");
+
+  // 열림 토글은 click 하나로만(탭/클릭 모두 한 번씩만 옴 → 이중 토글 없음).
+  // 단 실제 마우스는 호버로 이미 열려 있으므로, 클릭이 그걸 닫아버리지 않게
+  // "열기"로만 동작한다.
+  const handleClick = (e: React.MouseEvent) => {
+    if (!tip) return;
+    // portal로 그린 자기 말풍선 안쪽 클릭은 React 트리를 타고 여기까지 버블된다.
+    if (e.target instanceof Element && e.target.closest('[data-tooltip-layer="tag"]')) {
+      tipLog(`${dbg} click ignored (inside own tooltip)`);
+      return;
+    }
+    if (lastPointerTypeRef.current === "mouse") {
+      if (!open) onEnter("click-open-mouse");
+      return;
+    }
+    if (open) onLeave("click-toggle");
+    else onEnter("click-toggle");
+  };
+
+  // Esc로 닫기. 스킬 말풍선 안에 중첩된 경우, 스킬 말풍선 쪽 Esc 핸들러가
+  // (SkillTagsPanel.tsx) data-tooltip-layer="tag"가 열려 있는 동안은 자기
+  // 자신을 닫지 않고 양보하므로, 이 리스너가 먼저 소비해서 "Esc 한 번 =
+  // 태그 말풍선만 닫힘"이 된다.
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onLeave("esc");
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [open]);
+
+  // 열려 있는 동안 스크롤/리사이즈 시 알약 위치를 따라간다. 고정된 스킬
+  // 말풍선 안의 알약은 스킬 말풍선과 함께 움직이므로, 따라가지 않으면 태그
+  // 말풍선만 제자리에 남아 알약과 떨어져 보인다.
+  useEffect(() => {
+    if (!open) return;
+    let rafId: number | null = null;
+    const schedule = () => {
+      if (rafId != null) return;
+      rafId = requestAnimationFrame(() => {
+        rafId = null;
+        measure();
+      });
+    };
+    window.addEventListener("scroll", schedule, { capture: true, passive: true });
+    window.addEventListener("resize", schedule, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", schedule, { capture: true });
+      window.removeEventListener("resize", schedule);
+      if (rafId != null) cancelAnimationFrame(rafId);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
   // 툴팁이 열린 채로 스크롤해서 앵커가 화면 밖으로 완전히 벗어나면
@@ -135,7 +218,7 @@ export default function TagPill({
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!entry.isIntersecting) onLeave();
+        if (!entry.isIntersecting) onLeave("intersection");
       },
       { threshold: 0 }
     );
@@ -146,19 +229,24 @@ export default function TagPill({
   return (
   <span
     ref={anchorRef}
-    className={`relative ${isNote ? "inline" : "flex"}`}
-    onMouseEnter={onEnter}
-    onMouseLeave={onLeave}
-    onTouchStart={(e) => {
-      // note 모드는 기존 TokenPill/로컬 TagPill과 동일하게 tip 없으면 무시,
-      // 박스 모드는 기존 TagPill.tsx와 동일하게 tip 유무와 무관하게 처리한다.
-      if (isNote && !tip) return;
-      e.preventDefault();
-      open ? onLeave() : onEnter();
+    // cursor-pointer: iOS Safari가 탭을 click으로 위임하도록 보장(tip이 있을 때만).
+    className={`relative ${isNote ? "inline" : "flex"} ${tip ? "cursor-pointer" : ""}`}
+    // 호버는 실제 마우스일 때만 — 모바일 합성 mouseenter로 인한 유령 호버 차단.
+    onPointerEnter={(e) => {
+      if (e.pointerType !== "mouse") return;
+      onEnter("pointerenter-mouse");
     }}
+    onPointerLeave={(e) => {
+      if (e.pointerType !== "mouse") return;
+      onLeave("pointerleave-mouse");
+    }}
+    onPointerDown={(e) => {
+      lastPointerTypeRef.current = e.pointerType;
+    }}
+    onClick={handleClick}
   >
     <span
-      className={`${base} ${toneCls} ${onClick ? "cursor-pointer" : ""} ${gapCls}`}
+      className={`${base} ${toneCls} ${onClick || tip ? "cursor-pointer" : ""} ${gapCls}`}
       onClick={onClick}
     >
       {showIconInAnchor &&
@@ -178,15 +266,25 @@ export default function TagPill({
       )}
     </span>
 
-      {open && tip && (
+      {open && tip && typeof document !== "undefined" && createPortal(
         <span
-          className="pointer-events-none fixed z-[9999]"
+          data-tooltip-layer="tag"
+          // pointer-events-auto: 말풍선 위 탭이 아래 요소로 통과하지 않고 "태그
+          // 레이어 안쪽"으로 판정되게 한다(모바일 중첩 닫힘 규칙의 전제). 알약과
+          // 10px 떨어져 있어 호버 시엔 알약을 벗어나는 순간 닫히므로 걸리지 않는다.
+          className="pointer-events-auto fixed z-[10000]"
           style={{
             left: pos?.left ?? 0,
             top: pos?.top ?? 0,
-            transform: "translate(-50%, -100%)",
+            transform: pos?.placement === "below" ? "translate(-50%, 0)" : "translate(-50%, -100%)",
           }}
         >
+          {pos?.placement === "below" && (
+            <span
+              className="block h-0 w-0 border-x-[6px] border-b-[6px] border-x-transparent border-b-black/95"
+              style={{ marginLeft: (pos?.arrowLeft ?? 0) - 6 }}
+            />
+          )}
           <span
             ref={tipRef}
             className="block w-max max-w-[min(421px,calc(100vw-16px))]
@@ -224,11 +322,14 @@ export default function TagPill({
             )}
           </span>
 
-          <span
-            className="block h-0 w-0 border-x-[6px] border-t-[6px] border-x-transparent border-t-black/95"
-            style={{ marginLeft: (pos?.arrowLeft ?? 0) - 6 }}
-          />
-        </span>
+          {pos?.placement !== "below" && (
+            <span
+              className="block h-0 w-0 border-x-[6px] border-t-[6px] border-x-transparent border-t-black/95"
+              style={{ marginLeft: (pos?.arrowLeft ?? 0) - 6 }}
+            />
+          )}
+        </span>,
+        document.body
       )}
     </span>
   );
