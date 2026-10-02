@@ -9,8 +9,8 @@ export const ezreal_sivir: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     sivir: {
       ko: [],

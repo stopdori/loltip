@@ -9,8 +9,8 @@ export const ezreal_zed: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zed: {
       ko: [],

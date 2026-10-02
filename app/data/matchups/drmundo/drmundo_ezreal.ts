@@ -9,8 +9,8 @@ export const drmundo_ezreal: MatchupSummary = {
   },
   highlightsByChamp: {
     drmundo: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     ezreal: {
       ko: [],

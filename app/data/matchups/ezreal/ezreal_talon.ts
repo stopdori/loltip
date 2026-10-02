@@ -9,8 +9,8 @@ export const ezreal_talon: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     talon: {
       ko: [],

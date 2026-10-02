@@ -9,11 +9,11 @@ export const ezreal_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: ["멜 W가 이즈리얼 Q W E R 반사 가능."],
-      en: ["Mel’s W reflects Ezreal’s Q W E R."],
+      ko: ["E(비전 이동)의 [[CC_BUFFER]]로 멜 E의 [[ROOT]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[ROOT]]은 남아있음."],
+      en: [],
     },
     mel: {
-      ko: [],
+      ko: ["멜 W의 [[REFLECT]]로 이즈리얼 평타, Q, W, E, R의 [[PROJECTILE]]를 반사할 수 있음."],
       en: [],
     },
   },

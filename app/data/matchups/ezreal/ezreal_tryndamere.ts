@@ -9,8 +9,8 @@ export const ezreal_tryndamere: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     tryndamere: {
       ko: [],

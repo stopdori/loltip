@@ -9,7 +9,7 @@ export const ezreal_sion: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
+      ko: ["E(비전 이동)의 [[CC_BUFFER]]로 사이온 Q, R의 [[AIRBORNE]], [[STUN]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[AIRBORNE]], [[STUN]]은 남아있음."],
       en: [""],
     },
     sion: {

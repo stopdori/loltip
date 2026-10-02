@@ -13,7 +13,7 @@ export const ezreal_yasuo: MatchupSummary = {
       en: ["Yasuo’s W (Wind Wall) can block Ezreal’s Q W E R."],
     },
     yasuo: {
-      ko: [],
+      ko: ["야스오 W의 [[WINDSHIELD]]으로 이즈리얼 평타, Q, W, E, R의 [[PROJECTILE]]를 막을 수 있음. ([[PROJECTILE]] 삭제)"],
       en: [],
     },
   },

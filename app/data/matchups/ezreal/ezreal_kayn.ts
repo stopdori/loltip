@@ -9,7 +9,7 @@ export const ezreal_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
+      ko: ["E(비전 이동)의 [[CC_BUFFER]]로 다르킨 W의 [[AIRBORNE]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[AIRBORNE]]은 남아있음."],
       en: [""],
     },
     kayn: {

@@ -13,7 +13,7 @@ export const ambessa_ezreal: MatchupSummary = {
       en: [],
     },
     ezreal: {
-      ko: ["E의 [[CC_BUFFER]]로 암베사 R의 [[SUPPRESS]]을 무시할 수 없음. \n 즉, [[SUPPRESS]] 당하는 즉시 그자리 위치 고정."],
+      ko: ["E(비전 이동)의 [[CC_BUFFER]]로 암베사 R의 [[SUPPRESS]]을 무시할 수 없음. [[NOT_EXIST]] \n [[SUPPRESS]] 당하는 즉시 그 자리 위치 고정."],
       en: [],
     },
   },

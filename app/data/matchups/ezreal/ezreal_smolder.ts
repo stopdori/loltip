@@ -9,8 +9,8 @@ export const ezreal_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     smolder: {
       ko: [],

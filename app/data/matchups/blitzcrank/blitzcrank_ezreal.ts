@@ -13,7 +13,7 @@ export const blitzcrank_ezreal: MatchupSummary = {
       en: [],
     },
     ezreal: {
-      ko: ["E의 [[CC_BUFFER]]로 블리츠 크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[SILENCE]]은 남아있음."],
+      ko: ["E(비전 이동)의 [[CC_BUFFER]]로 블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[AIRBORNE]]([[GRAB]] 효과 변경 포함), [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

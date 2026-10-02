@@ -9,8 +9,8 @@ export const ezreal_illaoi: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     illaoi: {
       ko: [],

@@ -9,8 +9,8 @@ export const ezreal_samira: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     samira: {
       ko: [],

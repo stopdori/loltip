@@ -9,8 +9,8 @@ export const ezreal_vladimir: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     vladimir: {
       ko: [],

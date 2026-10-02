@@ -129,7 +129,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "8) 피해 범위", en: "8) Damage Range" },
-    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "OF_SUMMON", "DROP", "DETONATE", "X0.5", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
+    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "OF_SUMMON", "DROP", "DETONATE", "ATTACH", "X0.5", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
   },
   {
     title: { ko: "9) 피해 종류", en: "9) Damage Type" },

@@ -13,7 +13,7 @@ export const evelynn_ezreal: MatchupSummary = {
       en: [""],
     },
     ezreal: {
-      ko: ["E의 [[CC_BUFFER]]로 이블린 W의 [[CHARM]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[CHARM]]은 남아있음."],
+      ko: ["E(비전 이동)의 [[CC_BUFFER]]로 이블린 W의 [[CHARM]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[CHARM]]은 남아있음."],
       en: [],
     },
   },

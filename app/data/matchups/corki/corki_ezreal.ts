@@ -9,8 +9,8 @@ export const corki_ezreal: MatchupSummary = {
   },
   highlightsByChamp: {
     corki: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     ezreal: {
       ko: [],

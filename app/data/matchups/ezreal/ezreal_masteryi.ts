@@ -9,8 +9,8 @@ export const ezreal_masteryi: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     masteryi: {
       ko: [],

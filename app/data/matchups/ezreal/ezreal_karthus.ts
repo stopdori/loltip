@@ -9,8 +9,8 @@ export const ezreal_karthus: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     karthus: {
       ko: [],

@@ -72,6 +72,7 @@ export type GimmickTagId =
   | "OF_SUMMON"
   | "DROP"
   | "DETONATE"
+  | "ATTACH"
   | "X0.5"
   | "X1.5"
   | "X2"
@@ -264,6 +265,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   OF_SUMMON: { ko: "소환수의", en: "Summon's" },
   DROP:          { ko: "드롭",    en: "Drops"    },
   DETONATE:      { ko: "폭발",    en: "Detonate" },
+  ATTACH:        { ko: "부착",    en: "Attach"   },
   "X0.5":        { ko: "x0.5",     en: "x0.5"    },
   "X1.5":        { ko: "x1.5",     en: "x1.5"    },
   X2:            { ko: "x2",       en: "x2"      },
@@ -411,6 +413,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   OF_SUMMON: { ko: "효과가 챔피언이 아니라 소환수에게 적용.", en: "The effects that follow apply to the summoned unit, not the champion." },
   DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
   DETONATE:      { ko: "대상에게 적중하면 자동으로 폭발하여 범위 피해 등을 입힌다", en: "Automatically detonates on hit, dealing area damage or similar effects." },
+  ATTACH:        { ko: "적중한 챔피언 몸에 달라붙어 따라다님. \n 예) 피즈 R, 질리언 Q", en: "Sticks to the champion it hits and follows them. \n e.g. Fizz R, Zilean Q" },
   "X0.5":        { ko: "해당 효과가 0.5배 발생함", en: "The effect occurs at 0.5x" },
   "X1.5":        { ko: "해당 효과가 1.5배 발생함", en: "The effect occurs at 1.5x" },
   X2:            { ko: "해당 효과가 2회, 또는 2배 발생함", en: "The effect occurs 2 times, or at 2x" },

@@ -14,7 +14,7 @@ export const annie_ezreal: MatchupSummary = {
       en: ["P [[STUN]] cannot interrupt Ezreal's E [[BLINK]]. \n However, the [[STUN]] still applies.", "R [[SUMMON]]ed Tibbers can block Ezreal's Q [[SINGLE]] [[PROJECTILE]]."],
     },
     ezreal: {
-      ko: ["E의 [[CC_BUFFER]]로 애니 P의 [[STUN]]을 무시하고 [[BLINK]] 할 수 있음. \n 단, [[STUN]]은 남아있음."],
+      ko: ["E(비전 이동)의 [[CC_BUFFER]]로 애니 P의 [[STUN]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[STUN]]은 남아있음."],
       en: [],
     },
   },

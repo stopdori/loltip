@@ -9,8 +9,8 @@ export const ezreal_graves: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     graves: {
       ko: [],

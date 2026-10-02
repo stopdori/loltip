@@ -9,8 +9,8 @@ export const ezreal_nidalee: MatchupSummary = {
   },
   highlightsByChamp: {
     ezreal: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     nidalee: {
       ko: [],
