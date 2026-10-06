@@ -84,9 +84,20 @@ export const CHAMP_FORMS: Record<string, ChampForm[]> = {
     { ko: "변신", en: "All Out" },
   ],
 
+  // ✅ 렉사이 (2폼 — W로 돌출/매복 전환). 돌출폼 Q/W/E는 기존 로컬
+  // 아이콘(/spells/reksai/*.webp, DDragon RekSaiQ/W/E = CDragon *_q1/w1/e1)이
+  // 그대로라 skillIcons 불필요. 매복폼 Q/W/E는 DDragon에 개별 아이콘이 없어
+  // (16.19.1 기준 RekSaiQBurrowed 등 403, 챔피언 JSON에도 돌출 4개만 존재)
+  // CDragon 예외 사용(docs/data-sources.md). P/R은 두 폼 공통 아이콘.
+  // 탭 아이콘: 돌출폼 = 매복 상태 W "돌출"(CDragon w2), 매복폼 = 돌출 상태
+  // W "매복"(DDragon RekSaiW) — 각 폼으로 들어가는 스킬 아이콘.
   reksai: [
-    { ko: "돌출", en: "Base" },
-    { ko: "매복", en: "Burrowed" },
+    { ko: "돌출", en: "Base", icon: "https://raw.communitydragon.org/latest/game/assets/characters/reksai/hud/icons2d/reksai_w2.png" },
+    { ko: "매복", en: "Burrowed", icon: "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/spell/RekSaiW.png", skillIcons: {
+      Q: "https://raw.communitydragon.org/latest/game/assets/characters/reksai/hud/icons2d/reksai_q2.png",
+      W: "https://raw.communitydragon.org/latest/game/assets/characters/reksai/hud/icons2d/reksai_w2.png",
+      E: "https://raw.communitydragon.org/latest/game/assets/characters/reksai/hud/icons2d/reksai_e2.png",
+    } },
   ],
 
   shyvana: [

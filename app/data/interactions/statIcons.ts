@@ -99,4 +99,5 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   KINEMATICS: { icons: ["/cc-icons/icon-kinematics.png"] },
   FORCED_ACTION: { icons: ["/cc-icons/icon-forcedaction.png"] },
   SKILL_CHANNEL: { icons: ["/cc-icons/icon-channel.png"] }, // GimmickTagId
+  SKILL_CHANNEL_MOVEMENT: { icons: ["/cc-icons/icon-channel.png"] }, // GimmickTagId
 };

@@ -321,6 +321,7 @@ export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: 
   DURATION_RESET: { ko: "지속시간 초기화", en: "Duration Reset" },
   DURATION_EXT: { ko: "지속시간 연장", en: "Duration Extension" },
   ON_CHAMP_HIT: { ko: "챔피언 적중 시", en: "On Champion Hit" },
+  SKILL_CHANNEL_MOVEMENT: { ko: "이동 채널링", en: "Movement Channel" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
