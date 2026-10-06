@@ -13,8 +13,10 @@ export const cassiopeia_mel: MatchupSummary = {
       en: [],
     },
     mel: {
-      ko: ["W의 [[REFLECT]] 효과로 카시오페아 W, E를 반사할 수 있음."],
-      en: ["W [[REFLECT]] can reflect Cassiopeia's W and E."],
+      ko: ["W의 [[REFLECT]]로 카시오페아 평타, W, E의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]]", 
+        "W의 [[REFLECT]]로 카시오페아 Q, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] can [[REFLECT]] Cassiopeia's basic attacks, W, and E [[PROJECTILE]]. [[EXIST]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Cassiopeia's Q or R. [[NOT_EXIST]]"],
     },
   },
 };

@@ -9,8 +9,8 @@ export const mel_taric: MatchupSummary = {
   },
   highlightsByChamp: {
     mel: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[REFLECT]]로 타릭 평타, E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] cannot [[REFLECT]] Taric's basic attacks, E, or R. [[NOT_EXIST]]"],
     },
     taric: {
       ko: [],

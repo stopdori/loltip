@@ -9,8 +9,8 @@ export const mel_sett: MatchupSummary = {
   },
   highlightsByChamp: {
     mel: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[REFLECT]]로 세트 평타, Q, W, E, R(직접, [[AOE]] 피해)을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] cannot [[REFLECT]] Sett's basic attacks, Q, W, E, or R (direct, [[AOE]] damage). [[NOT_EXIST]]"],
     },
     sett: {
       ko: [],

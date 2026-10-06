@@ -9,8 +9,12 @@ export const mel_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     mel: {
-      ko: ["멜 W가 스카너 Q 반사 가능."],
-      en: ["Mel’s W reflects Skarner’s Q."],
+      ko: ["W의 [[REFLECT]]로 스카너 Q2의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]]", 
+        "W의 [[REFLECT]]로 스카너 평타(일반, Q1 [[EMPOWERED]]), W([[AOE]] 피해), E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]", 
+      "E의 [[ROOT]]으로 스카너 E(일반, 벽 이동)의 [[SKILL_CHANNEL_MOVEMENT]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["W [[REFLECT]] can [[REFLECT]] Skarner's Q2 [[PROJECTILE]]. [[EXIST]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Skarner's basic attacks (normal, Q1 [[EMPOWERED]]), W ([[AOE]] damage), E, or R. [[NOT_EXIST]]", 
+        "E [[ROOT]] can interrupt Skarner's E (normal, wall traversal) [[SKILL_CHANNEL_MOVEMENT]]. [[EXIST]]"],
     },
     skarner: {
       ko: [],

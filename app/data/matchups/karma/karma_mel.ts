@@ -9,12 +9,14 @@ export const karma_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     karma: {
-      ko: ["멜 W가 카르마 Q 반사 가능."],
-      en: ["Mel’s W reflects Karma’s Q"],
-    },
-    mel: {
       ko: [],
       en: [],
+    },
+    mel: {
+      ko: ["W의 [[REFLECT]]로 카르마 평타, Q, RQ의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]]", 
+        "W의 [[REFLECT]]로 카르마 W, RW를 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] can [[REFLECT]] Karma's basic attacks, Q, and RQ [[PROJECTILE]]. [[EXIST]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Karma's W or RW. [[NOT_EXIST]]"],
     },
   },
 };

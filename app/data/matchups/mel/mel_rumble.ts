@@ -9,8 +9,10 @@ export const mel_rumble: MatchupSummary = {
   },
   highlightsByChamp: {
     mel: {
-      ko: ["멜 W가 럼블 E 반사 가능."],
-      en: ["Mel’s W reflects Rumble’s E"],
+      ko: ["W의 [[REFLECT]]로 럼블 E(일반, [[EMPOWERED]])의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]]", 
+        "W의 [[REFLECT]]로 럼블 평타(일반, 과열), Q(일반, [[EMPOWERED]]), R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] can [[REFLECT]] Rumble's E (normal, [[EMPOWERED]]) [[PROJECTILE]]. [[EXIST]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Rumble's basic attacks (normal, overheated), Q (normal, [[EMPOWERED]]), or R. [[NOT_EXIST]]"],
     },
     rumble: {
       ko: [],

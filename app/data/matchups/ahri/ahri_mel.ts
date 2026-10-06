@@ -13,10 +13,11 @@ export const ahri_mel: MatchupSummary = {
       en: [],
     },
     mel: {
-      ko: ["멜 W의 [[REFLECT]]로 아리 Q, W, E, R의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음.",
-        "멜 R의 [[CAST_COMMIT]]으로 아리 E의 [[CHARM]]에 걸려도 시전을 유지할 수 있음.",
+      ko: ["W의 [[REFLECT]]로 아리 평타, Q, W, E, R의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]]", 
+        "E의 [[ROOT]]으로 아리 R의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음."
       ],
-      en: ["Mel's W [[REFLECT]] can [[REFLECT]] Ahri's Q, W, E, and R [[PROJECTILE]].", "Mel's R [[CAST_COMMIT]] can maintain its cast even when hit by Ahri's E [[CHARM]]."],
+      en: ["W [[REFLECT]] can [[REFLECT]] Ahri's basic attacks, Q, W, E, and R [[PROJECTILE]]. [[EXIST]]", 
+        "E [[ROOT]] cannot interrupt Ahri's R [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies."],
     },
   },
 };

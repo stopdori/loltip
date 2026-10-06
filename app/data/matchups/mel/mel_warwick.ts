@@ -9,8 +9,8 @@ export const mel_warwick: MatchupSummary = {
   },
   highlightsByChamp: {
     mel: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[REFLECT]]로 워윅 평타, Q, W, E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] cannot [[REFLECT]] Warwick's basic attacks, Q, W, E, or R. [[NOT_EXIST]]"],
     },
     warwick: {
       ko: [],

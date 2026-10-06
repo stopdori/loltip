@@ -13,8 +13,10 @@ export const blitzcrank_mel: MatchupSummary = {
       en: [],
     },
     mel: {
-      ko: ["멜 W([[REFLECT]])로 블리츠크랭크 Q의 [[PROJECTILE]]를 반사할 수 있음."],
-      en: [],
+      ko: ["W의 [[REFLECT]]로 블리츠크랭크 Q의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]]", 
+        "W의 [[REFLECT]]로 블리츠크랭크 E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] can [[REFLECT]] Blitzcrank's Q [[PROJECTILE]]. [[EXIST]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Blitzcrank's E or R. [[NOT_EXIST]]"],
     },
   },
 };

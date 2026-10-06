@@ -13,8 +13,8 @@ export const garen_mel: MatchupSummary = {
       en: [""],
     },
     mel: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[REFLECT]]로 가렌 평타, Q, E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] cannot [[REFLECT]] Garen's basic attacks, Q, E, or R. [[NOT_EXIST]]"],
     },
   },
 };

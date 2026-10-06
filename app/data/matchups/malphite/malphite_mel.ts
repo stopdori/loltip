@@ -13,8 +13,10 @@ export const malphite_mel: MatchupSummary = {
       en: ["R [[UNSTOPPABLE]] can ignore Mel's E [[ROOT]]. \n However, [[ROOT]] remains after [[UNSTOPPABLE]] ends."],
     },
     mel: {
-      ko: ["멜 W의 [[REFLECT]]로 말파이트 Q의 [[PROJECTILE]]를 반사할 수 있음."],
-      en: ["W [[REFLECT]] can reflect Malphite's Q [[PROJECTILE]]."],
+      ko: ["W의 [[REFLECT]]로 말파이트 Q의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]]", 
+        "W의 [[REFLECT]]로 말파이트 평타, W(평타, 충격파), E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] can [[REFLECT]] Malphite's Q [[PROJECTILE]]. [[EXIST]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Malphite's basic attacks, W (basic attack, shockwave), E, or R. [[NOT_EXIST]]"],
     },
   },
 };

@@ -9,12 +9,14 @@ export const kayle_mel: MatchupSummary = {
   },
   highlightsByChamp: {
     kayle: {
-      ko: ["멜 W가 케일 Q 반사 가능."],
-      en: ["Mel’s W reflects Kayle’s Q."],
-    },
-    mel: {
       ko: [],
       en: [],
+    },
+    mel: {
+      ko: ["W의 [[REFLECT]]로 케일 Q의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]]", 
+        "W의 [[REFLECT]]로 케일 평타(일반, 6레벨, 11레벨, 16레벨), E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] can [[REFLECT]] Kayle's Q [[PROJECTILE]]. [[EXIST]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Kayle's basic attacks (normal, level 6, level 11, level 16), E, or R. [[NOT_EXIST]]"],
     },
   },
 };

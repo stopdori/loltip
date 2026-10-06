@@ -15,8 +15,12 @@ export const briar_mel: MatchupSummary = {
         "Briar's R1 [[CC_IMMUNE]] and R2 [[UNSTOPPABLE]] can ignore Mel's E [[ROOT]]."],
     },
     mel: {
-      ko: ["W의 [[REFLECT]]로 브라이어 R의 [[PROJECTILE]]를 반사할 수 있음."],
-      en: ["Mel's W [[REFLECT]] can reflect Briar's R [[PROJECTILE]]."],
+      ko: ["W의 [[REFLECT]]로 브라이어 E, R1의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]] \n 단, 브라이어 E는 간혹가다 버그로 서로에게 영향이 있는 것으로 보임. [[CLIP:https://www.youtube.com/shorts/RUUypXFBqLU]]", 
+        "W의 [[REFLECT]]로 브라이어 평타, Q, W(평타, [[AOE]] 피해), R2을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]", 
+      "E의 [[ROOT]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음."],
+      en: ["W [[REFLECT]] can [[REFLECT]] Briar's E and R1 [[PROJECTILE]]. [[EXIST]] \n However, Briar's E occasionally seems to interact oddly with it due to a bug. [[CLIP:https://www.youtube.com/shorts/RUUypXFBqLU]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Briar's basic attacks, Q, W (basic attacks, [[AOE]] damage), or R2. [[NOT_EXIST]]", 
+        "E [[ROOT]] cannot interrupt Briar's Q and W [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies."],
     },
   },
 };

@@ -13,8 +13,8 @@ export const ashe_mel: MatchupSummary = {
       en: [],
     },
     mel: {
-      ko: ["멜 W([[REFLECT]])로 애쉬 W, E, R을 반사할 수 있음."],
-      en: ["Mel's W ([[REFLECT]]) can reflect Ashe's W, E, and R."],
+      ko: ["W의 [[REFLECT]]로 애쉬 평타, Q(평타), W, E(매), R을 [[REFLECT]]할 수 있음. [[EXIST]]"],
+      en: ["W [[REFLECT]] can [[REFLECT]] Ashe's basic attacks, Q (basic attacks), W, E (Hawkshot), and R. [[EXIST]]"],
     },
   },
 };

@@ -9,8 +9,8 @@ export const mel_trundle: MatchupSummary = {
   },
   highlightsByChamp: {
     mel: {
-      ko: [""],
-      en: [""],
+      ko: ["W의 [[REFLECT]]로 트런들 평타, Q, W, E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]"],
+      en: ["W [[REFLECT]] cannot [[REFLECT]] Trundle's basic attacks, Q, W, E, or R. [[NOT_EXIST]]"],
     },
     trundle: {
       ko: [],

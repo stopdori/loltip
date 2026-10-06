@@ -15,10 +15,12 @@ export const camille_mel: MatchupSummary = {
         "Camille's R [[UNTARGETABLE]] can dodge Mel's auto-attacks, Q, W (reflected projectile-type skills), E, and R. Clip shows R only.[[CLIP:https://www.youtube.com/shorts/Ltf4fktTP3I]]"],
     },
     mel: {
-      ko: ["[[TIP]]W의 [[REFLECT]]로 카밀 E의 [[PROJECTILE]](갈고리 투척)를 막을 수 있음. \n 단, 반사는 불가능. [[CLIP:https://www.youtube.com/shorts/EH5rpn117ZY]]",
-        "E의 [[ROOT]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
-      en: ["[[TIP]]Mel's W [[REFLECT]] can block Camille's E [[PROJECTILE]] (grapple throw). \n However, reflecting it is not possible. [[CLIP:https://www.youtube.com/shorts/EH5rpn117ZY]]",
-        "Mel's E [[ROOT]] can interrupt Camille's E1 and E2 [[DASH]]."],
+      ko: ["[[TIP]]W의 [[REFLECT]]로 카밀 E의 [[PROJECTILE]](갈고리 투척)를 막을 수 있음. [[EXIST]] \n 단, [[REFLECT]]는 불가능. [[CLIP:https://www.youtube.com/shorts/EH5rpn117ZY]]",
+        "W의 [[REFLECT]]로 카밀 평타, Q1, Q2, W, E2, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]", 
+        "E의 [[ROOT]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음."],
+      en: ["[[TIP]]W [[REFLECT]] can block Camille's E [[PROJECTILE]] (grapple throw). [[EXIST]] \n However, [[REFLECT]]ing it is not possible. [[CLIP:https://www.youtube.com/shorts/EH5rpn117ZY]]", 
+        "W [[REFLECT]] cannot [[REFLECT]] Camille's basic attacks, Q1, Q2, W, E2, or R. [[NOT_EXIST]]", 
+        "E [[ROOT]] cannot interrupt Camille's E1 and E2 [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies."],
     },
   },
 };

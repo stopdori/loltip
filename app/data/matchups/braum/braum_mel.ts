@@ -13,8 +13,12 @@ export const braum_mel: MatchupSummary = {
       en: ["Braum's E (shield) can [[DAMAGE_NULLIFY]] Mel's basic attacks (first hit), Q (first hit), W (reflected Braum Q/R), E (first tick), and R.","Braum's E (shield) can [[INTERCEPT_PROJECTILE]] Mel's basic attacks, Q, W ([[REFLECT]]ed Braum Q/R), and E.\nNote: [[REFLECT]]ed Braum Q retains [[SLOW]], Braum P, and Mel P (1 Dominance stack).\nNote: [[REFLECT]]ed Braum R retains [[AIRBORNE]] and Mel P (1 Dominance stack).\nNote: Mel's E is immediately ''deleted'' — no [[ROOT]], and only minimum Dominance stacks (4) are applied.","Braum's P [[STUN]] and R [[AIRBORNE]] cannot interrupt Mel's R"],
     },
     mel: {
-      ko: ["멜 W([[REFLECT]])로 브라움 Q, R [[REFLECT]] 가능.\n단, 멜 W([[REFLECT]])로 브라움 Q를 [[REFLECT]]하면 브라움 P가 묻어있고 압도 1스택을 줌\n단, 멜 W([[REFLECT]])로 브라움 R을 [[REFLECT]]하면 압도 1스택을 줌.", "멜 E의 [[ROOT]]으로 브라움 W 이동을 끊을 수 있음."],
-      en: ["Mel's W ([[REFLECT]]) can reflect Braum's Q and R.\nNote: Reflecting Braum's Q grants Braum's P and 1 Dominance stack.\nNote: Reflecting Braum's R grants 1 Dominance stack.","Mel's E [[ROOT]] can interrupt Braum's W movement."],
+      ko: ["W의 [[REFLECT]]로 브라움 Q, R의 [[PROJECTILE]]를 [[REFLECT]]할 수 있음. [[EXIST]] \n 단, Q를 [[REFLECT]] 했을 때 브라움 P는 \n 멜에게는 남아있지 않고, [[REFLECT]]가 적중한 대상에게는 남아있음.", 
+        "W의 [[REFLECT]]로 브라움 평타를 [[REFLECT]]할 수 없음. [[NOT_EXIST]]",  
+        "E의 [[ROOT]]으로 브라움 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음."],
+      en: ["W [[REFLECT]] can [[REFLECT]] Braum's Q and R [[PROJECTILE]]. [[EXIST]] \n However, when Q is [[REFLECT]]ed, Braum's P \n does not remain on Mel, but remains on the target hit by the [[REFLECT]].", 
+        "W [[REFLECT]] cannot [[REFLECT]] Braum's basic attacks. [[NOT_EXIST]]", 
+        "E [[ROOT]] cannot interrupt Braum's W [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies."],
     },
   },
 };

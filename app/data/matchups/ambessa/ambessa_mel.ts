@@ -13,8 +13,11 @@ export const ambessa_mel: MatchupSummary = {
       en: ["R [[UNSTOPPABLE]] can ignore Mel's E [[ROOT]]. \n However, the [[ROOT]] still applies after [[UNSTOPPABLE]] ends."],
     },
     mel: {
-      ko: [],
-      en: [],
+      ko: ["W의 [[REFLECT]]로 암베사 평타, Q1, Q2, W, E, R을 [[REFLECT]]할 수 없음. [[NOT_EXIST]]", 
+        "E의 [[ROOT]]으로 암베사 P의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음."
+      ],
+      en: ["W [[REFLECT]] cannot [[REFLECT]] Ambessa's basic attacks, Q1, Q2, W, E, or R. [[NOT_EXIST]]", 
+        "E [[ROOT]] cannot interrupt Ambessa's P [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies."],
     },
   },
 };
