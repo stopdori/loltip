@@ -9,8 +9,8 @@ export const ahri_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E([[CHARM]])의 [[KNOCKDOWN]]으로 케인 / 그암 / 다르킨 Q(돌진 단계)의 [[DASH]], E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음. [[EXIST]]. \n 단, Q의 돌진 단계에 맞히면, 베기 단계가 발동하지 않음. \n 단, E는 즉시 벽에서 가장 가까운 땅으로 이동."],
-      en: ["E ([[CHARM]])'s [[KNOCKDOWN]] can interrupt Kayn's Q (dash phase) and E (wall traversal) [[SKILL_CHANNEL]] [[DASH]]. [[EXIST]] \n However, Kayn's E is immediately ejected to the nearest ground next to the wall.", "If E [[CHARM]] hits Kayn during Q's dash phase, Kayn will not execute the slash phase."],
+      ko: ["E의 [[CHARM]]으로 (케인 / 그암 / 다르킨) Q(돌진 단계)의 [[DASH]], E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]] \n 단, Q는 [[CHARM]]의 [[KNOCKDOWN]]으로 [[DASH]]을 끊는 것. \n 단, Q는 돌진 단계에 맞히면, 베기 단계가 발동하지 않음."],
+      en: ["E [[CHARM]] can interrupt (Kayn / Shadow Assassin / Darkin) Q (dash phase) [[DASH]] and E [[IGNORE_TERRAIN]]. [[EXIST]] \n However, Q's [[DASH]] is interrupted by the [[CHARM]]'s [[KNOCKDOWN]]. \n However, if Q is hit during its dash phase, the slash phase does not activate."],
     },
     kayn: {
       ko: [],

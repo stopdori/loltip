@@ -61,10 +61,10 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   },
   {
     title: { ko: "3) 전투 메커니즘", en: "3) Combat Mechanics" },
-    keys: ["AA_RESET", "UNTARGETABLE", "TOWER_DODGE", "DODGE", "EXECUTE", "SHIELD_BREAK", "SHIELD_PIERCE", "BLOCKED", "REFLECT", "WINDSHIELD", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR", "DAMAGE_NULLIFY", "INTERCEPT_PROJECTILE", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA", "TERRAIN", "WALL_COLLISION", "INVULNERABLE", "WALL_HOP", "ALLY_TP_OK", "TETHER", "MARK", "GHOSTING", "MOBILITY", "DASH", "BLINK", "LUNGE", "Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "INSEC_KICK"],
+    keys: ["AA_RESET", "UNTARGETABLE", "TOWER_DODGE", "DODGE", "EXECUTE", "SHIELD_BREAK", "SHIELD_PIERCE", "BLOCKED", "REFLECT", "WINDSHIELD", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR", "DAMAGE_NULLIFY", "INTERCEPT_PROJECTILE", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA", "TERRAIN", "WALL_COLLISION", "INVULNERABLE", "WALL_HOP", "IGNORE_TERRAIN", "ALLY_TP_OK", "TETHER", "MARK", "GHOSTING", "MOBILITY", "DASH", "BLINK", "LUNGE", "Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "INSEC_KICK"],
     subGroups: [
       { title: { ko: "투사체", en: "Projectile" }, keys: ["WINDSHIELD", "REFLECT", "SEPARATOR", "INTERCEPT_PROJECTILE", "DAMAGE_NULLIFY"] },
-      { title: { ko: "이동 스킬", en: "Mobility" }, keys: ["MOBILITY", "DASH", "BLINK", "LUNGE", "SEPARATOR", "WALL_HOP"] },
+      { title: { ko: "이동 스킬", en: "Mobility" }, keys: ["MOBILITY", "DASH", "BLINK", "LUNGE", "SEPARATOR", "WALL_HOP", "IGNORE_TERRAIN"] },
       { title: { ko: "점멸 연계", en: "Flash Combos" }, keys: ["Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "SEPARATOR", "INSEC_KICK"] },
       { title: { ko: "기타 메커니즘", en: "" }, keys: ["AA_RESET", "GHOSTING", "EXECUTE", "UNTARGETABLE", "TERRAIN", "INVULNERABLE"]}, 
       { keys: ["TOWER_DODGE", "BLOCKED", "DODGE", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR"]}, 

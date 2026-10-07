@@ -12,7 +12,7 @@ export type InterruptOverride = {
   champ: string;             // app/data/champs/ 파일명과 같은 id
   slot: "P" | "Q" | "W" | "E" | "R";
   phase?: string;            // 필요할 때만
-  kind: "DASH" | "SKILL_CHANNEL" | "SKILL_CHANNEL_MOVEMENT";
+  kind: "DASH" | "SKILL_CHANNEL" | "SKILL_CHANNEL_MOVEMENT" | "IGNORE_TERRAIN";
   charged?: boolean;         // 충전형 여부
   also?: CCRef[];            // 기본 규칙 외에 추가로 끊는 CC
   except?: CCRef[];          // 기본 규칙상 끊겨야 하지만 안 끊기는 CC
@@ -36,7 +36,7 @@ export const INTERRUPT_OVERRIDES: InterruptOverride[] = [
   { champ: "yuumi",   slot: "W", phase: "W", kind: "DASH", also: ["IMMOBILIZING", "POLYMORPH"], source: "Wiki: Dash" },
 
   // 2) 이동형 채널링
-  { champ: "fiddlesticks", slot: "R", phase: "시전집중", kind: "SKILL_CHANNEL_MOVEMENT", source: "Wiki: Channel" },
+  { champ: "fiddlesticks", slot: "R", phase: "R 시전집중", kind: "SKILL_CHANNEL_MOVEMENT", source: "Wiki: Channel" },
   { champ: "galio",        slot: "R", phase: "시전집중", kind: "SKILL_CHANNEL_MOVEMENT", source: "Wiki: Channel" },
   { champ: "kayn",         slot: "R", kind: "SKILL_CHANNEL_MOVEMENT", source: "Wiki: Channel" },
   { champ: "naafiri",      slot: "R", phase: "R", kind: "SKILL_CHANNEL_MOVEMENT", source: "Wiki: Channel" },
@@ -51,7 +51,7 @@ export const INTERRUPT_OVERRIDES: InterruptOverride[] = [
   { champ: "vi",           slot: "Q", kind: "SKILL_CHANNEL_MOVEMENT", charged: true, source: "Wiki: Channel" },
   { champ: "warwick",      slot: "Q", phase: "Q 길게", kind: "SKILL_CHANNEL_MOVEMENT", charged: true, source: "Wiki: Channel" },
   { champ: "yuumi",        slot: "W", phase: "밀착", kind: "SKILL_CHANNEL_MOVEMENT", source: "Wiki: Channel" },
-  { champ: "zac",          slot: "E", phase: "E", kind: "SKILL_CHANNEL_MOVEMENT", charged: true, source: "Wiki: Channel" },
+  { champ: "zac",          slot: "E", phase: "E 차징", kind: "SKILL_CHANNEL_MOVEMENT", charged: true, source: "Wiki: Channel" },
 
   // 3) CC로 끊기지 않는 채널링
   { champ: "briar",  slot: "E", kind: "SKILL_CHANNEL", charged: true, uninterruptible: true, source: "Wiki: Channel" },
@@ -73,4 +73,11 @@ export const INTERRUPT_OVERRIDES: InterruptOverride[] = [
     source: "In-game test (Maokai R root interrupts the charge); not listed in wiki movement channels" },
   { champ: "vladimir",    slot: "E", kind: "SKILL_CHANNEL", charged: true, source: "Wiki: Channel" },
   { champ: "xerath",      slot: "Q", phase: "Q 충전", kind: "SKILL_CHANNEL", charged: true, source: "Wiki: Channel" },
+
+  // 5) 지형 통과([[IGNORE_TERRAIN]]) — 기본 규칙은 이동불가(IMMOBILIZING)에 끊김.
+  //    스몰더 E는 기본 규칙 그대로라 등록하지 않음.
+  { champ: "kayn",    slot: "E", kind: "IGNORE_TERRAIN", also: ["POLYMORPH"], except: ["SLEEP"],
+    note: { ko: "변이에도 끊김. 수면에는 끊기지 않음(위키상 버그)", en: "Also interrupted by polymorph. Not interrupted by sleep (bug per wiki)" }, source: "Wiki: Kayn (Shadow Step)" },
+  { champ: "skarner", slot: "E", phase: "E", kind: "IGNORE_TERRAIN", also: ["GROUNDED", "SILENCE", "POLYMORPH"],
+    note: { ko: "이동 방해·시전 방해 CC(침묵 등)에도 끊김", en: "Also interrupted by grounded and cast-inhibiting CC (silence, etc.)" }, source: "Wiki: Skarner (Ixtal's Impact)" },
 ];

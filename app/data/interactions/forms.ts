@@ -100,11 +100,6 @@ export const CHAMP_FORMS: Record<string, ChampForm[]> = {
     } },
   ],
 
-  shyvana: [
-    { ko: "기본형", en: "Human" },
-    { ko: "용형상", en: "Dragon" },
-  ],
-
   udyr: [
     { ko: "기본", en: "Base" },
     { ko: "각성", en: "Awakened" },

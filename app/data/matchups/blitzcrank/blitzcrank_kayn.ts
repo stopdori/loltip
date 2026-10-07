@@ -9,10 +9,10 @@ export const blitzcrank_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]]으로 케인 Q의 [[DASH]]을 끊을 수 있음.", 
-        "블리츠크랭크 R의 [[SILENCE]]으로 케인 Q의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음.", 
-        "블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]으로 E(벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: [""],
+      ko: ["Q의 [[GRAB]], E의 [[AIRBORNE]]으로 케인 Q(돌진 단계)의 [[DASH]], E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]", 
+        "R의 [[SILENCE]]으로 케인 Q(돌진 단계)의 [[DASH]], E의 [[IGNORE_TERRAIN]]를 끊을 수 없음. [[NOT_EXIST]] \n 단, [[SILENCE]]은 남아있음."],
+      en: ["Q [[GRAB]] and E [[AIRBORNE]] can interrupt Kayn's Q (dash phase) [[DASH]] and E [[IGNORE_TERRAIN]]. [[EXIST]]", 
+        "R [[SILENCE]] cannot interrupt Kayn's Q (dash phase) [[DASH]] or E [[IGNORE_TERRAIN]]. [[NOT_EXIST]] \n However, the [[SILENCE]] still applies."],
     },
     kayn: {
       ko: [],

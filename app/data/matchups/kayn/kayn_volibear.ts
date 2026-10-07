@@ -13,10 +13,12 @@ export const kayn_volibear: MatchupSummary = {
       en: [""],
     },
     volibear: {
-      ko: ["Q의 [[STUN]]로 케인 / 그암 / 다르킨 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
-        "Q의 [[STUN]]로 케인 / 그암 / 다르킨 E(일반, 벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음. [[EXIST]]", 
-      "R의 [[UNSTOPPABLE]]로 다르킨 W의 [[AIRBORNE]]을 무시할 수 있음. [[EXIST]]"],
-      en: [],
+      ko: ["Q의 [[STUN]]로 (케인 / 그암 / 다르킨) Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+        "Q의 [[STUN]]로 (케인 / 그암 / 다르킨) E(일반, 벽이동)의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]", 
+        "R의 [[UNSTOPPABLE]]로 다르킨 W의 [[AIRBORNE]]을 무시할 수 있음. [[EXIST]]"],
+      en: ["Q [[STUN]] cannot interrupt (Kayn / Shadow Assassin / Darkin) Q [[DASH]]. [[NOT_EXIST]] \n However, the [[STUN]] still applies.", 
+        "Q [[STUN]] can interrupt (Kayn / Shadow Assassin / Darkin) E (normal, wall travel) [[IGNORE_TERRAIN]]. [[EXIST]]", 
+        "R [[UNSTOPPABLE]] can ignore Darkin W [[AIRBORNE]]. [[EXIST]]"],
     },
   },
 };

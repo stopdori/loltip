@@ -130,6 +130,7 @@ export type TagId =
   /* 8) 이동 / 위치 / 상호작용 */
   | "ALLY_TP_OK"
   | "WALL_HOP"
+  | "IGNORE_TERRAIN"
   | "GHOSTING"
   | "TERRAIN"
   | "WALL_COLLISION"
@@ -286,6 +287,7 @@ ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
   /* 8) 이동 / 위치 / 상호작용 */
 ALLY_TP_OK: { ko: "텔포대상", en: "TP Target" },
 WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
+IGNORE_TERRAIN: { ko: "지형 통과", en: "Ignore Terrain" },
 GHOSTING: { ko: "유체화", en: "Ghosting" },
 TERRAIN: { ko: "벽", en: "TERRAIN" },
 WALL_COLLISION: { ko: "벽 충돌", en: "Wall Collision" },
@@ -293,7 +295,7 @@ MARK:          { ko: "표식",     en: "Mark"          },
 TETHER: { ko: "사슬", en: "Tether" },
 MOBILITY: { ko: "이동기",    en: "Mobility" },
 DASH:     { ko: "돌진",     en: "Dash"     },
-BLINK:    { ko: "순간이동", en: "Blink"    },
+BLINK:    { ko: "블링크", en: "Blink"    },
 LUNGE:    { ko: "도약", en: "Lunge" },
 
   /* 9) 특수 / 변신 */
@@ -563,7 +565,7 @@ SLOW_CLEANSE: {
 },
 
 GROUNDED: {
-  ko: "이동스킬(돌진, 순간이동, 점멸, 아이템 벨트 등등)을 \n 사용하지 못하게 만드는 디버프. \n (클린즈 계열로 해제하면 이동기 사용 가능)",
+  ko: "이동스킬(돌진, 블링크, 점멸, 아이템 벨트 등등)을 \n 사용하지 못하게 만드는 디버프. \n (클린즈 계열로 해제하면 이동기 사용 가능)",
   en: "A debuff that prevents the use of movement abilities \n (dashes, blinks, teleports, item movement speed effects, etc.). \n (Can use movement abilities again if cleansed)",
 },
 ANTI_DASH: {
@@ -793,6 +795,10 @@ ALLY_TP_OK: {
 WALL_HOP: {
   ko: "벽을 넘을 수 있음",
   en: "Can hop over walls",
+},
+IGNORE_TERRAIN: {
+  ko: "일정 시간 지형 충돌을 무시하고 벽을 자유롭게 지나다님. \n [[DASH]]이 아니며, [[IMMOBILIZING]] 효과에 걸리면 즉시 종료. \n 예) 케인 E, 스몰더 E, 스카너 E",
+  en: "Ignores terrain collision for a duration, moving freely through walls. \n Not a [[DASH]]; ends immediately when hit by an [[IMMOBILIZING]] effect. \n e.g. Kayn E, Smolder E, Skarner E",
 },
 GHOSTING: {
   ko: "유닛을 통과할 수 있게 됨",

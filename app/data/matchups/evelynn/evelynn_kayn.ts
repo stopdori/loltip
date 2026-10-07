@@ -9,8 +9,10 @@ export const evelynn_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     evelynn: {
-      ko: ["W의 [[CHARM]]으로 케인 / 다르킨 / 그암 Q의 [[DASH]], E의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음."],
-      en: ["W [[CHARM]] cannot interrupt Kayn's / Darkin's / Shadow Assassin's Q [[DASH]] and E [[SKILL_CHANNEL]] [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies."],
+      ko: ["W의 [[CHARM]]으로 (케인 / 그암 / 다르킨) Q(돌진 단계)의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[CHARM]]은 남아있음.", 
+        "W의 [[CHARM]]으로 (케인 / 그암 / 다르킨) E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["W [[CHARM]] cannot interrupt (Kayn / Shadow Assassin / Darkin) Q (dash phase) [[DASH]]. [[NOT_EXIST]] \n However, the [[CHARM]] still applies.", 
+        "W [[CHARM]] can interrupt (Kayn / Shadow Assassin / Darkin) E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     kayn: {
       ko: [],

@@ -9,8 +9,8 @@ export const diana_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: ["R의 [[GRAB]]으로 케인, 그암, 다르킨 Q의 [[DASH]], E(벽이동)의 [[SKILL_CHARGED]] [[DASH]]을 끊을 수 있음."],
-      en: ["R [[GRAB]] can interrupt Kayn's (base, Shadow Assassin, Darkin) Q [[DASH]] and E (wall movement) [[SKILL_CHARGED]] [[DASH]]."],
+      ko: ["R의 [[GRAB]]으로 (케인 / 그암 / 다르킨) Q의 [[DASH]], E(벽이동)의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["R [[GRAB]] can interrupt (Kayn / Shadow Assassin / Darkin) Q [[DASH]] and E (wall travel) [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     kayn: {
       ko: [],

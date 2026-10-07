@@ -183,6 +183,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 🪨 stone (벽/특수/리셋)
   TERRAIN: "stone",
   WALL_HOP: "zinc",
+  IGNORE_TERRAIN: "sky",
   WALL_COLLISION: "indigo",
   SHIELD_BREAK: "stone",
   AA_RESET: "indigo",

@@ -9,9 +9,14 @@ export const anivia_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     anivia: {
-      ko: ["Q의 [[STUN]]로 케인(일반, 그암, 다르킨) Q의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음. \n 단, 케인 R은 맞지도 않음.", 
-        "W의 [[AIRBORNE]]로 케인 Q의 [[DASH]], E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Q [[STUN]] cannot interrupt Kayn's (base, Shadow Assassin, Rhaast) Q [[DASH]]. \n However, [[STUN]] still applies. \n Note: Kayn's R cannot be hit by Anivia's Q at all.", "W [[AIRBORNE]] can interrupt Kayn's Q [[DASH]] and E [[SKILL_CHANNEL]]."],
+      ko: ["Q의 [[STUN]]로 (케인 / 그암 / 다르킨) Q(돌진 단계)의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+
+        "Q의 [[STUN]], W의 [[AIRBORNE]]으로 (케인 / 그암 / 다르킨) E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]", 
+
+        "W의 [[AIRBORNE]]으로 (케인 / 그암 / 다르킨) Q(돌진 단계)의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["Q [[STUN]] cannot interrupt (Kayn / Shadow Assassin / Darkin) Q (dash phase) [[DASH]]. [[NOT_EXIST]] \n However, the [[STUN]] still applies.", 
+        "Q [[STUN]] and W [[AIRBORNE]] can interrupt (Kayn / Shadow Assassin / Darkin) Q (dash phase) [[DASH]] and E [[IGNORE_TERRAIN]]. [[EXIST]]", 
+        "W [[AIRBORNE]] can interrupt (Kayn / Shadow Assassin / Darkin) Q (dash phase) [[DASH]]. [[EXIST]]"],
     },
     kayn: {
       ko: [],

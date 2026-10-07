@@ -9,8 +9,8 @@ export const gragas_kayn: MatchupSummary = {
   },
   highlightsByChamp: {
     gragas: {
-      ko: ["그라가스 E, R로 케인 E를 끓을 수 있음"],
-      en: ["Gragas's E, R can interrupt Kayn's E"],
+      ko: ["E, R의 [[KNOCKBACK]]으로 (케인 / 그암 / 다르킨) Q(돌진 단계)의 [[DASH]], E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["E and R [[KNOCKBACK]] can interrupt (Kayn / Shadow Assassin / Darkin) Q (dash phase) [[DASH]] and E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     kayn: {
       ko: [],
