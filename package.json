@@ -6,7 +6,8 @@
     "lint": "eslint",
     "gen:champs": "ts-node scripts/genChampSkills.ts",
     "gen:matchup-json": "node scripts/gen-matchup-json.ts",
-    "watch:matchup": "node scripts/watch-matchup.ts"
+    "watch:matchup": "node scripts/watch-matchup.ts",
+    "gen:lastmod": "node scripts/gen-lastmod.mjs"
   },
   "dependencies": {
     "next": "^16.1.0",

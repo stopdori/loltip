@@ -5,8 +5,28 @@ import { CHAMPIONS } from "@/app/data/champions";
 import { isMatchupIndexable, type MatchupSummary } from "@/app/data/matchups/_types";
 
 const LOCALES = ["ko", "en"] as const;
-const LAST_MODIFIED = new Date("2025-03-01");
 const MATCHUP_DIR = path.join(process.cwd(), "app/data/matchups");
+// 페이지별 마지막 커밋일 매니페스트 (scripts/gen-lastmod.mjs가 로컬 git log로 생성)
+const LASTMOD_PATH = path.join(process.cwd(), "app/data/_lastmod.json");
+
+type LastmodManifest = {
+  pages: Record<string, string>;
+  champs: Record<string, string>;
+  matchups: Record<string, string>;
+};
+
+function loadLastmod(): LastmodManifest {
+  try {
+    return JSON.parse(fs.readFileSync(LASTMOD_PATH, "utf8")) as LastmodManifest;
+  } catch {
+    return { pages: {}, champs: {}, matchups: {} };
+  }
+}
+
+// 매니페스트에 없는 항목은 lastModified를 생략 (가짜 날짜를 넣지 않음)
+function lastmodOf(date: string | undefined): { lastModified?: string } {
+  return date ? { lastModified: date } : {};
+}
 
 function extractObjectLiteral(src: string): string | null {
   const trimmed = src.trimEnd();
@@ -67,6 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const urls: MetadataRoute.Sitemap = [];
   const indexablePairsByLocale = getIndexableMatchupPairs();
+  const lastmod = loadLastmod();
 
   for (const locale of LOCALES) {
     // 메인
@@ -74,7 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${locale}/champ`,
       changeFrequency: "daily",
       priority: locale === "ko" ? 1 : 0.9,
-      lastModified: LAST_MODIFIED,
+      ...lastmodOf(lastmod.pages.champ),
     });
 
     // 단일 챔피언 페이지
@@ -83,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}/${locale}/champ/${champ.id}`,
         changeFrequency: "weekly",
         priority: locale === "ko" ? 0.8 : 0.7,
-        lastModified: LAST_MODIFIED,
+        ...lastmodOf(lastmod.champs[champ.id]),
       });
     }
 
@@ -92,7 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${locale}/quiz`,
       changeFrequency: "weekly",
       priority: locale === "ko" ? 0.8 : 0.7,
-      lastModified: LAST_MODIFIED,
+      ...lastmodOf(lastmod.pages.quiz),
     });
 
     // 태그 레퍼런스
@@ -100,7 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${locale}/tags`,
       changeFrequency: "monthly",
       priority: locale === "ko" ? 0.6 : 0.5,
-      lastModified: LAST_MODIFIED,
+      ...lastmodOf(lastmod.pages.tags),
     });
 
     // 사이트 소개
@@ -108,7 +129,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${locale}/about`,
       changeFrequency: "yearly",
       priority: locale === "ko" ? 0.4 : 0.3,
-      lastModified: LAST_MODIFIED,
+      ...lastmodOf(lastmod.pages.about),
     });
 
     // 개인정보처리방침
@@ -116,7 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${locale}/privacy`,
       changeFrequency: "yearly",
       priority: locale === "ko" ? 0.3 : 0.3,
-      lastModified: LAST_MODIFIED,
+      ...lastmodOf(lastmod.pages.privacy),
     });
 
     // 해당 locale 콘텐츠가 실제로 존재하는 매치업 페이지만 포함
@@ -125,7 +146,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}/${locale}/matchup/${pair}`,
         changeFrequency: "weekly",
         priority: locale === "ko" ? 0.7 : 0.6,
-        lastModified: LAST_MODIFIED,
+        ...lastmodOf(lastmod.matchups[pair]),
       });
     }
   }

@@ -62,6 +62,23 @@
 작업이 끝난 것으로 간주한다. 5번을 생략하면 WIP 파일의 수정사항이
 유실된 것처럼 보이는 문제가 생기므로 절대 건너뛰지 않는다.
 
+## sitemap lastmod 매니페스트(_lastmod.json) 갱신 규칙
+
+`app/data/champs/*.ts`, `app/data/matchups/**/*.ts` 또는 기타 페이지 소스
+(`app/[locale]/{champ,quiz,tags,about,privacy}/` 의 page/Client 파일, `app/data/quiz.ts`)를
+커밋할 때는 대상 파일을 stage한 뒤 `npm run gen:lastmod`를 실행하고,
+`app/data/_lastmod.json`을 같은 커밋에 포함한다.
+
+- `scripts/gen-lastmod.mjs`는 git log로 파일별 마지막 커밋일을 계산하고, **stage된 파일은
+  오늘 날짜로** 기록한다. 그래서 반드시 "대상 파일 stage → gen:lastmod → 매니페스트 stage →
+  커밋" 순서로 진행한다(stage 전에 돌리면 이번 수정이 반영되지 않는다).
+- unstaged/untracked WIP 변경은 무시되므로 WIP 파일이 디스크에 있어도 상관없다.
+- 매치업 부분 커밋 워크플로우에서는 gen:matchup-json 다음 단계에서 실행한다
+  (4번에서 커밋 대상 .ts와 _compiled.json을 git add한 직후 gen:lastmod 실행 →
+  `_lastmod.json`도 git add → commit).
+- `app/sitemap.ts`가 이 매니페스트로 lastModified를 정하며, 매니페스트에 없는 항목은
+  lastModified를 생략한다(가짜 날짜를 넣지 않음).
+
 ## 스타일/레이아웃 테스트는 dev-preview 페이지를 사용할 것
 
 스타일/레이아웃 테스트가 필요할 때는 `/ko/dev-preview` 페이지(`app/[locale]/dev-preview/page.tsx`)를
