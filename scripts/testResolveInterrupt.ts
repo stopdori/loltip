@@ -36,6 +36,10 @@ const cases: Case[] = [
   { name: '["SKILL_CHANNEL_MOVEMENT"] + sion R', input: { phaseTags: ["SKILL_CHANNEL_MOVEMENT"], override: ov("sion", "R") }, empty: true },
   { name: '["DASH","UNSTOPPABLE"]', input: { phaseTags: ["DASH", "UNSTOPPABLE"] }, empty: true },
   { name: '["BLINK"]', input: { phaseTags: ["BLINK"] }, empty: true },
+  // 지형 통과: 기본은 이동불가에만 끊김, 챔피언별 추가 조건은 override
+  { name: '["IGNORE_TERRAIN"]만 (스몰더 E)', input: { phaseTags: ["IGNORE_TERRAIN"] }, include: ["STUN", "ROOT", "AIRBORNE"], exclude: ["GROUNDED", "SILENCE", "POLYMORPH"] },
+  { name: '["IGNORE_TERRAIN"] + kayn E', input: { phaseTags: ["IGNORE_TERRAIN"], override: ov("kayn", "E") }, include: ["STUN", "POLYMORPH"], exclude: ["SLEEP", "GROUNDED"] },
+  { name: '["IGNORE_TERRAIN"] + skarner E', input: { phaseTags: ["IGNORE_TERRAIN"], override: ov("skarner", "E", "E") }, include: ["STUN", "GROUNDED", "SILENCE", "DISRUPT"], exclude: ["KNOCKDOWN"] },
 ];
 
 let failed = 0;
