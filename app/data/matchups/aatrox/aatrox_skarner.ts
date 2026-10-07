@@ -9,8 +9,8 @@ export const aatrox_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     aatrox: {
-      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]]효과로 스카너 E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Q [[AIRBORNE]] and W [[GRAB]] can interrupt Skarner's E [[SKILL_CHANNEL]]."],
+      ko: ["Q의 [[AIRBORNE]], W의 [[GRAB]] 효과로 스카너 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["Q [[AIRBORNE]] and W [[GRAB]] can interrupt Skarner's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     skarner: {
       ko: [],

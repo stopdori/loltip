@@ -9,18 +9,18 @@ export const camille_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     camille: {
-      ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 스카너 E의 [[SUPPRESS]] [[STUN]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음. \n 단, [[STUN]]이 E1( 대기 단계 )까지 남아있다면 카밀 E가 해제될 수 있음.", 
-        "E1( 투척 단계 )의 [[CC_BUFFER]]로도 스카너 R의 [[SUPPRESS]]을 무시할 수 없음.", 
-      "E의 [[KNOCKBACK]], [[STUN]] / R의 [[DISRUPT]]로 스카너 E의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음.", 
-      "R의 [[UNTARGETABLE]]로 스카너 Q1, Q2, W(폭발 피해), E, R을 피할 수 있음."],
-      en: ["Camille's E1 (Throw phase) [[CC_BUFFER]] can ignore Skarner's E [[SUPPRESS]] [[STUN]] and continue into the E1 (Wall-dash phase) [[DASH]]. \n However, if the [[STUN]] remains until the E1 (Hold phase), Camille's E may be cancelled.",
-        "Camille's E1 (Throw phase) [[CC_BUFFER]] cannot ignore Skarner's R [[SUPPRESS]] either.",
-        "Camille's E [[KNOCKBACK]], [[STUN]] / R [[DISRUPT]] can interrupt Skarner's E [[SKILL_CHANNEL]] [[DASH]].",
-        "Camille's R [[UNTARGETABLE]] can dodge Skarner's Q1, Q2, W (explosion damage), E, and R."],
+      ko: ["E1( 투척 단계 )의 [[CC_BUFFER]]로 스카너 E의 [[SUPPRESS]] [[STUN]]을 무시하고 E1( 벽돌진 단계 )의 [[DASH]]을 할 수 있음. [[EXIST]] \n 단, [[STUN]]이 E1( 대기 단계 )까지 남아있다면 카밀 E가 해제될 수 있음.", 
+        "E1( 투척 단계 )의 [[CC_BUFFER]]로도 스카너 R의 [[SUPPRESS]]을 무시할 수 없음. [[NOT_EXIST]]", 
+        "E의 [[KNOCKBACK]], [[STUN]] / R의 [[DISRUPT]]로 스카너 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]", 
+        "R의 [[UNTARGETABLE]]로 스카너 Q1, Q2, W(폭발 피해), E, R을 피할 수 있음. [[EXIST]]"],
+      en: ["E1 (throw phase) [[CC_BUFFER]] can ignore Skarner's E [[SUPPRESS]] [[STUN]] and perform the E1 (wall-dash phase) [[DASH]]. [[EXIST]] \n However, if the [[STUN]] lasts until the E1 (wait phase), Camille's E may be cancelled.", 
+        "Even E1 (throw phase) [[CC_BUFFER]] cannot ignore Skarner's R [[SUPPRESS]]. [[NOT_EXIST]]", 
+        "E [[KNOCKBACK]], [[STUN]] / R [[DISRUPT]] can interrupt Skarner's E [[IGNORE_TERRAIN]]. [[EXIST]]", 
+        "R [[UNTARGETABLE]] can dodge Skarner's Q1, Q2, W (explosion damage), E, and R. [[EXIST]]"],
     },
     skarner: {
-      ko: ["E, R의 [[SUPPRESS]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
-      en: ["Skarner's E and R [[SUPPRESS]] can interrupt Camille's E1 and E2 [[DASH]]."],
+      ko: ["E, R의 [[SUPPRESS]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      en: ["E and R [[SUPPRESS]] can interrupt Camille's E1 and E2 [[DASH]]. [[EXIST]]"],
     },
   },
   common: {

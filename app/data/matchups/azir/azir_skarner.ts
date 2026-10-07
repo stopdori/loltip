@@ -9,8 +9,8 @@ export const azir_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     azir: {
-      ko: ["아지르 R의 [[KNOCKBACK]]으로 스카너 E(벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Azir's R [[KNOCKBACK]] can interrupt Skarner's E (wall travel) [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[KNOCKBACK]]으로 스카너 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["R [[KNOCKBACK]] can interrupt Skarner's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     skarner: {
       ko: [],

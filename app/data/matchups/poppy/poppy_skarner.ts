@@ -9,8 +9,11 @@ export const poppy_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     poppy: {
-      ko: ["뽀삐 W의 [[ANTI_DASH]]로 스카너 E를 막을 수 없음."],
-      en: [""],
+      ko: ["W의 [[ANTI_DASH]]으로 스카너 E의 [[IGNORE_TERRAIN]]를 막을 수 없음. [[NOT_EXIST]]", 
+        "E의 [[KNOCKBACK]], [[STUN]] / R(짧은,긴)의 [[AIRBORNE]], [[KNOCKBACK]]으로 스카너 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+
+      en: ["W [[ANTI_DASH]] cannot block Skarner's E [[IGNORE_TERRAIN]]. [[NOT_EXIST]]", 
+        "E [[KNOCKBACK]], [[STUN]] / R (short, long) [[AIRBORNE]], [[KNOCKBACK]] can interrupt Skarner's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     skarner: {
       ko: [],

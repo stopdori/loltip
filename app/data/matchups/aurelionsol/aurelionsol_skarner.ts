@@ -9,8 +9,8 @@ export const aurelionsol_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: ["R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 스카너 E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Skarner's E [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 스카너 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["R [[STUN]] and R (The Skies Descend) [[AIRBORNE]] can interrupt Skarner's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     skarner: {
       ko: [],

@@ -13,9 +13,10 @@ export const skarner_volibear: MatchupSummary = {
       en: [""],
     },
     volibear: {
-      ko: ["Q의 [[STUN]]로 스카너 E(일반, 벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음. [[EXIST]]", 
-      "R의 [[UNSTOPPABLE]]로 스카너 E, R의 [[SUPPRESS]]을 무시할 수 있음. [[EXIST]]"],
-      en: [],
+      ko: ["Q의 [[STUN]]로 스카너 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]", 
+        "R의 [[UNSTOPPABLE]]로 스카너 E, R의 [[SUPPRESS]]을 무시할 수 있음. [[EXIST]]"],
+      en: ["Q [[STUN]] can interrupt Skarner's E [[IGNORE_TERRAIN]]. [[EXIST]]", 
+        "R [[UNSTOPPABLE]] can ignore Skarner's E and R [[SUPPRESS]]. [[EXIST]]"],
     },
   },
 };
