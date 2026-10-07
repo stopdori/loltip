@@ -797,8 +797,8 @@ WALL_HOP: {
   en: "Can hop over walls",
 },
 IGNORE_TERRAIN: {
-  ko: "일정 시간 지형 충돌을 무시하고 벽을 자유롭게 지나다님. \n [[DASH]]이 아니며, [[IMMOBILIZING]] 효과에 걸리면 즉시 종료. \n 예) 케인 E, 스몰더 E, 스카너 E",
-  en: "Ignores terrain collision for a duration, moving freely through walls. \n Not a [[DASH]]; ends immediately when hit by an [[IMMOBILIZING]] effect. \n e.g. Kayn E, Smolder E, Skarner E",
+  ko: "일정 시간 지형 충돌을 무시하고 벽을 자유롭게 지나다님. \n [[DASH]]이 아니며, [[IMMOBILIZING]], [[POLYMORPH]] 효과에 걸리면 즉시 종료. \n 예) 케인 E, 스몰더 E, 스카너 E",
+  en: "Ignores terrain collision for a duration, moving freely through walls. \n Not a [[DASH]]; ends immediately when hit by an [[IMMOBILIZING]] or [[POLYMORPH]] effect. \n e.g. Kayn E, Smolder E, Skarner E",
 },
 GHOSTING: {
   ko: "유닛을 통과할 수 있게 됨",

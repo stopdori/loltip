@@ -9,8 +9,8 @@ export const annie_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     annie: {
-      ko: ["P의 [[STUN]]로 스몰더 E(벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["P [[STUN]] can interrupt Smolder's E(Wall Ride) [[SKILL_CHANNEL]]."],
+      ko: ["P의 [[STUN]]로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["P [[STUN]] can interrupt Smolder's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     smolder: {
       ko: [],

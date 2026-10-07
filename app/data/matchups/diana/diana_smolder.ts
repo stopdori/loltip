@@ -9,8 +9,8 @@ export const diana_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     diana: {
-      ko: ["R의 [[GRAB]]으로 스몰더 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음."],
-      en: ["R [[GRAB]] can interrupt Smolder's E (wall movement) [[SKILL_CHANNEL]] [[DASH]]."],
+      ko: ["R의 [[GRAB]]으로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["R [[GRAB]] can interrupt Smolder's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     smolder: {
       ko: [],

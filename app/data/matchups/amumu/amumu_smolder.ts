@@ -9,8 +9,8 @@ export const amumu_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     amumu: {
-      ko: ["Q, R의 [[STUN]]로 스몰더 E의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["Q and R [[STUN]] can interrupt Smolder's E [[SKILL_CHANNEL]]."],
+      ko: ["Q, R의 [[STUN]]로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["Q and R [[STUN]] can interrupt Smolder's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     smolder: {
       ko: [],

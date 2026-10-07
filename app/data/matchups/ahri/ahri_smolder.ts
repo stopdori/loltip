@@ -9,8 +9,8 @@ export const ahri_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     ahri: {
-      ko: ["E의 [[CHARM]]으로 스몰더 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음. \n 단, 즉시 벽에서 가장 가까운 땅으로 이동."],
-      en: ["E [[CHARM]] can interrupt Smolder's E (wall traversal) [[SKILL_CHANNEL]] [[DASH]]. \n However, he is immediately ejected to the nearest ground next to the wall."],
+      ko: ["E의 [[CHARM]]으로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]] \n 단, 즉시 벽에서 가장 가까운 땅으로 이동."],
+      en: ["E [[CHARM]] can interrupt Smolder's E [[IGNORE_TERRAIN]]. [[EXIST]] \n However, Smolder is immediately moved to the nearest ground outside the wall."],
     },
     smolder: {
       ko: [],

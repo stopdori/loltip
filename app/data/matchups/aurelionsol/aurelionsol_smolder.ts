@@ -9,8 +9,8 @@ export const aurelionsol_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     aurelionsol: {
-      ko: ["R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 스몰더 E(벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["R [[STUN]] and R (Falling Star) [[AIRBORNE]] can interrupt Smolder's E (wall travel) [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]], R(천상강림)의 [[AIRBORNE]]으로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["R [[STUN]] and R (The Skies Descend) [[AIRBORNE]] can interrupt Smolder's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     smolder: {
       ko: [],

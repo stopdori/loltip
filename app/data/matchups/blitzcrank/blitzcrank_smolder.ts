@@ -9,8 +9,10 @@ export const blitzcrank_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     blitzcrank: {
-      ko: ["블리츠크랭크 Q의 [[GRAB]], E의 [[AIRBORNE]], R의 [[SILENCE]]으로 스몰더 E의 [[SKILL_CHARGED]]을 끊을 수 있음."],
-      en: [""],
+      ko: ["Q의 [[GRAB]], E의 [[AIRBORNE]]으로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]", 
+        "R의 [[SILENCE]]으로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 없음. [[NOT_EXIST]]"],
+      en: ["Q [[GRAB]] and E [[AIRBORNE]] can interrupt Smolder's E [[IGNORE_TERRAIN]]. [[EXIST]]", 
+        "R [[SILENCE]] cannot interrupt Smolder's E [[IGNORE_TERRAIN]]. [[NOT_EXIST]]"],
     },
     smolder: {
       ko: [],

@@ -9,8 +9,8 @@ export const smolder_yasuo: MatchupSummary = {
   },
   highlightsByChamp: {
     smolder: {
-      ko: ["야스오 W(장막)는 스몰더의 Q, W, E, R을 막을 수 있음."],
-      en: ["Yasuo’s W (Wind Wall) can block Smolder's Q, W, E, and R."],
+      ko: ["야스오 W(장막)는 스몰더의 Q, W, E, R을 막을 수 있음. [[EXIST]]"],
+      en: ["Yasuo's W (Wind Wall) can block Smolder's Q, W, E, and R. [[EXIST]]"],
     },
     yasuo: {
       ko: [],

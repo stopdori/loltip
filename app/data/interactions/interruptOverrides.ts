@@ -76,9 +76,9 @@ export const INTERRUPT_OVERRIDES: InterruptOverride[] = [
 
   // 5) 지형 통과([[IGNORE_TERRAIN]]) — 기본 규칙은 이동불가(IMMOBILIZING)에 끊김.
   //    스몰더 E는 기본 규칙 그대로라 등록하지 않음.
-  { champ: "kayn",    slot: "E", kind: "IGNORE_TERRAIN", also: ["POLYMORPH"], except: ["SLEEP"],
-    note: { ko: "변이에도 끊김. 수면에는 끊기지 않음(위키상 버그)", en: "Also interrupted by polymorph. Not interrupted by sleep (bug per wiki)" }, source: "Wiki: Kayn (Shadow Step)" },
-  { champ: "skarner", slot: "E", phase: "E", kind: "IGNORE_TERRAIN", also: ["GROUNDED", "SILENCE", "POLYMORPH", "DISRUPT"],
+  { champ: "kayn",    slot: "E", kind: "IGNORE_TERRAIN", except: ["SLEEP"],
+    note: { ko: "수면에는 끊기지 않음(위키상 버그)", en: "Not interrupted by sleep (bug per wiki)" }, source: "Wiki: Kayn (Shadow Step)" },
+  { champ: "skarner", slot: "E", phase: "E", kind: "IGNORE_TERRAIN", also: ["GROUNDED", "SILENCE", "DISRUPT"],
     note: { ko: "이동 방해·시전 방해 CC(침묵, 방해 등)에도 끊김", en: "Also interrupted by grounded and cast-inhibiting CC (silence, disrupt, etc.)" },
     source: "Wiki: Skarner (Ixtal's Impact) / Kassadin Null Sphere V14.22 patch note (interrupts Ixtal's Impact) / Viktor Arcane Storm notes; in-game test (Viktor R, Kassadin Q)" },
 ];

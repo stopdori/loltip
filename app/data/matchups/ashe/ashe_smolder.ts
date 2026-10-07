@@ -9,8 +9,8 @@ export const ashe_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     ashe: {
-      ko: ["R의 [[STUN]]로 스몰더 E(벽이동)의 [[SKILL_CHANNEL]]을 끊을 수 있음."],
-      en: ["R [[STUN]] can interrupt Smolder's E (Wall Travel) [[SKILL_CHANNEL]]."],
+      ko: ["R의 [[STUN]]로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["R [[STUN]] can interrupt Smolder's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     smolder: {
       ko: [],

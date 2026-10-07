@@ -9,8 +9,8 @@ export const hecarim_smolder: MatchupSummary = {
   },
   highlightsByChamp: {
     hecarim: {
-      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 스몰더 E(벽이동)의 [[SKILL_CHANNEL]] [[DASH]]을 끊을 수 있음."],
-      en: ["E [[KNOCKBACK]] and R's [[FEAR]] can interrupt Smolder's E (wall movement) [[SKILL_CHANNEL]] [[DASH]]."],
+      ko: ["E의 [[KNOCKBACK]], R의 [[FEAR]]으로 스몰더 E의 [[IGNORE_TERRAIN]]를 끊을 수 있음. [[EXIST]]"],
+      en: ["E [[KNOCKBACK]] and R [[FEAR]] can interrupt Smolder's E [[IGNORE_TERRAIN]]. [[EXIST]]"],
     },
     smolder: {
       ko: [],

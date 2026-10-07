@@ -82,6 +82,7 @@ export const CC_GROUPS: Partial<Record<TagId, TagId[]>> = {
 };
 
 // [[IGNORE_TERRAIN]](지형 통과: 케인 E, 스몰더 E, 스카너 E)은 이동불가(IMMOBILIZING)
-// 효과에 걸리면 끝난다(위키 각 챔피언 문서 기준). 챔피언별 추가 조건(변이, 이동 방해,
-// 침묵 등)은 interruptOverrides.ts에서 덧붙인다.
-export const IGNORE_TERRAIN_INTERRUPTED_BY: TagId[] = [...(CC_GROUPS.IMMOBILIZING ?? [])];
+// 효과와 변이(POLYMORPH)에 걸리면 끝난다(위키 각 챔피언 문서 + 인게임 실험: 변이는
+// 케인·스몰더·스카너 E 모두 끊김 확인). 챔피언별 추가 조건(이동 방해, 침묵 등)은
+// interruptOverrides.ts에서 덧붙인다.
+export const IGNORE_TERRAIN_INTERRUPTED_BY: TagId[] = [...(CC_GROUPS.IMMOBILIZING ?? []), "POLYMORPH"];
