@@ -123,7 +123,7 @@ const aurora: ChampData = {
     },
     W: {
       ko: "오로라가 지정 방향으로 [[DASH]]하여 정령계로 진입해 1~1.6초([[LEVEL_SCALE]]) 동안 [[INVISIBILITY]] 상태가 되며, 4초간 [[GHOSTING]] 상태로 20~40%([[LEVEL_SCALE]])의 [[MS_UP]]를 얻는다. \n 최근(3초 이내) 챔피언 [[ON_TAKEDOWN]] 시 [[CDR_RESET]]. \n \n 22/21/20/19/18초의 [[COOLDOWN]].",
-      en: "Aurora [[DASH]]es in a chosen direction into the Spirit Realm, becoming [[INVISIBILITY|invisible]] for 1~1.6 seconds ([[LEVEL_SCALE]]) and gaining [[GHOSTING]] with 20~40% ([[LEVEL_SCALE]]) [[MS_UP]] for 4 seconds. \n A recent (within 3 seconds) champion [[ON_TAKEDOWN]] triggers [[CDR_RESET]]. \n \n 22/21/20/19/18 second [[COOLDOWN]].",
+      en: "Aurora [[DASH]]es in a chosen direction into the Spirit Realm, becoming [[INVISIBILITY]] for 1~1.6 seconds ([[LEVEL_SCALE]]) and gaining [[GHOSTING]] with 20~40% ([[LEVEL_SCALE]]) [[MS_UP]] for 4 seconds. \n A recent (within 3 seconds) champion [[ON_TAKEDOWN]] triggers [[CDR_RESET]]. \n \n 22/21/20/19/18 second [[COOLDOWN]].",
     },
     E: {
       ko: "오로라가 직선으로 정령 마법을 시전해 적에게 70/110/150/190/230(+70% [[AP_SCALE]])의 [[AOE]] [[DMG_MAGIC]]를 입히고 80%의 [[SLOW]]를 걸며(1초, 첫 0.15초 이후부터 감소), P의 [[DEBUFF_STACK]] 1개를 부여하고, 시전 후 반대 방향으로 250만큼 [[DASH]]한다. \n \n 15/14/13/12/11초의 [[COOLDOWN]].",

@@ -9,7 +9,7 @@ export const ekko_seraphine: MatchupSummary = {
   },
   highlightsByChamp: {
     ekko: {
-      ko: ["E(경직 단계)의 [[CC_BUFFER]]로 세라핀 E의 [[ROOT]], [[SUTN]] / R의 [[CHARM]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[BLINK]] 종료 후 [[ROOT]], [[SUTN]], [[CHARM]]은 남아있음."],
+      ko: ["E(경직 단계)의 [[CC_BUFFER]]로 세라핀 E의 [[ROOT]], [[STUN]] / R의 [[CHARM]]을 무시하고 [[BLINK]] 할 수 있음. [[EXIST]] \n 단, [[BLINK]] 종료 후 [[ROOT]], [[STUN]], [[CHARM]]은 남아있음."],
       en: [""],
     },
     seraphine: {

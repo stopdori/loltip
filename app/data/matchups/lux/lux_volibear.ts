@@ -13,7 +13,7 @@ export const lux_volibear: MatchupSummary = {
       en: [""],
     },
     volibear: {
-      ko: ["R의 [[UNSTOPPABLE]]로 럭스 Q의 [[ROOT]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 [[ROOT]은 남아있음."],
+      ko: ["R의 [[UNSTOPPABLE]]로 럭스 Q의 [[ROOT]]을 무시할 수 있음. [[EXIST]] \n 단, [[UNSTOPPABLE]] 종료 후 [[ROOT]]은 남아있음."],
       en: [],
     },
   },
