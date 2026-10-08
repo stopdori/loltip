@@ -35,14 +35,21 @@ const koName = new Map(CHAMPIONS.map((c: { id: string; ko: string }) => [c.id, c
 const CC_KEYS = new Set([...Object.keys(CC_INTERACTIONS), ...Object.keys(CC_GROUPS)]);
 
 // 슬롯별로 끊는 CC 합집합(그 슬롯 gimmick phase 중 하나라도 끊기면 "끊김")
+// 문장에 "E1"/"E2"처럼 단계 번호가 붙으면 phase 라벨이 그 번호로 시작하는 phase만 모은 합집합을 쓴다
+// (예: 카밀 "E1 벽 돌진 단계"·"E1 대기 단계" → "E1", "E2 돌진 단계" → "E2"). 맞는 phase가 없으면 슬롯 합집합.
 function interruptSets(id: string) {
   const champ = (CHAMPS as Record<string, ChampData>)[id];
   const map = new Map<string, Set<string>>();
+  const add = (key: string, r: string[]) => {
+    const set = map.get(key) ?? new Set<string>();
+    r.forEach((t) => set.add(t));
+    map.set(key, set);
+  };
   for (const p of getGimmickPhases(champ)) {
-    const r = resolveInterruptedBy({ phaseTags: p.tags as never, override: findOverride(id, p.slot, p.phase) }).interruptedBy;
-    const set = map.get(p.slot) ?? new Set<string>();
-    r.forEach((t: string) => set.add(t));
-    map.set(p.slot, set);
+    const r = resolveInterruptedBy({ phaseTags: p.tags as never, override: findOverride(id, p.slot, p.phase) }).interruptedBy as string[];
+    add(p.slot, r);
+    const step = p.phase?.match(new RegExp(`^${p.slot}(\\d)`))?.[1];
+    if (step) add(`${p.slot}${step}`, r);
   }
   return map;
 }
@@ -77,13 +84,13 @@ for (const f of files) {
       if (cut < 0) { unsure.push(`- ${f} ${side}[${i}] — 상대 이름을 못 찾음: ${first}`); return; }
       const left = first.slice(0, cut), right = first.slice(cut).split(/끊을|끊기/)[0];
       const cc = [...left.matchAll(/\[\[([A-Z_]+)\]\]/g)].map((x) => x[1]).filter((t) => CC_KEYS.has(t));
-      const slots = [...new Set([...right.matchAll(/(?:^|[\s,/)])([PQWER])\d?(?=[\s(의,/]|$)/g)].map((x) => x[1]))];
+      const slots = [...new Set([...right.matchAll(/(?:^|[\s,/)])([PQWER]\d?)(?=[\s(의,/]|$)/g)].map((x) => x[1]))];
       if (!cc.length || !slots.length) { unsure.push(`- ${f} ${side}[${i}] — CC ${cc.join(",") || "없음"} / 슬롯 ${slots.join(",") || "없음"}: ${first}`); return; }
       checked++;
       const ccx = expand(cc);
       for (const slot of slots) {
-        if (isCalcExcluded(def, slot)) { excluded.push(`- ${f} ${side}[${i}] [${slot}] 계산 제외 스킬\n    ${first}`); continue; }
-        const set = sets.get(slot) ?? new Set<string>();
+        if (isCalcExcluded(def, slot[0])) { excluded.push(`- ${f} ${side}[${i}] [${slot}] 계산 제외 스킬\n    ${first}`); continue; }
+        const set = sets.get(slot) ?? sets.get(slot[0]) ?? new Set<string>();
         const hit = ccx.filter((t) => set.has(t));
         const ok = verdict ? hit.length > 0 : hit.length === 0;
         if (!ok) {
@@ -103,7 +110,7 @@ const stamp = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate
 const out = [
   `# ${target} 매치업 끊김 문장 대조 (${stamp})`,
   `파일 ${files.length}개 / 판정한 문장 ${checked}개 / 어긋남 ${mismatch.length}건 / 자동 판정 불가 ${unsure.length}건`,
-  "※ 슬롯 단위로 판정(그 슬롯 phase 중 하나라도 끊기면 '끊김'). '돌진 단계'처럼 phase를 지정한 문장은 수동 확인 필요.", "",
+  "※ 슬롯 단위로 판정(그 슬롯 phase 중 하나라도 끊기면 '끊김'). 'E1'/'E2'처럼 번호가 붙으면 그 번호로 시작하는 phase만으로 판정. '돌진 단계'처럼 말로 phase를 지정한 문장은 수동 확인 필요.", "",
   "## 어긋남", ...(mismatch.length ? mismatch : ["(없음)"]), "",
   "## 자동 판정 불가", ...(unsure.length ? unsure : ["(없음)"]), "",
   "## 계산 제외 스킬이라 건너뜀", ...(excluded.length ? excluded : ["(없음)"]),

@@ -17,7 +17,9 @@ export const camille_shyvana: MatchupSummary = {
       ],
     },
     shyvana: {
-      ko: ["R의 [[FEAR]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["R의 [[FEAR]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        
+      "R의 [[FEAR]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]]는 남아있음."],
       en: ["Shyvana's R [[FEAR]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },

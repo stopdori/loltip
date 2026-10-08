@@ -17,7 +17,7 @@ export const camille_jinx: MatchupSummary = {
       ],
     },
     jinx: {
-      ko: ["활성화된 E([[TRAP]])의 [[ROOT]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["활성화된 E([[TRAP]] [[ROOT]])의 [[KNOCKDOWN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: ["Jinx's activated E ([[TRAP]]) [[ROOT]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },

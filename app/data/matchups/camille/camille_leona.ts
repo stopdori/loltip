@@ -17,8 +17,9 @@ export const camille_leona: MatchupSummary = {
         "Camille's R [[UNTARGETABLE]] can dodge Leona's W (explosion damage), E, and R."],
     },
     leona: {
-      ko: ["Q, R의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
-        "E의 [[ROOT]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["Q, R의 [[STUN]] / E의 [[ROOT]]으로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+
+        "Q, R의 [[STUN]] / E의 [[ROOT]]으로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]], [[ROOT]]은 남아있음."],
       en: ["Leona's Q and R [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies.",
         "Leona's E [[ROOT]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },

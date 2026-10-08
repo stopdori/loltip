@@ -19,7 +19,9 @@ export const camille_varus: MatchupSummary = {
       ],
     },
     varus: {
-      ko: ["R의 [[ROOT]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["R의 [[ROOT]]으로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+
+        "RE의 [[ROOT]]으로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음."],
       en: ["Varus's R [[ROOT]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },

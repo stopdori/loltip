@@ -18,7 +18,10 @@ export const camille_neeko: MatchupSummary = {
     },
     neeko: {
       ko: ["E의 [[ROOT]], R의 [[AIRBORNE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음.",
-        "R의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."
+
+        "R의 [[STUN]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+        
+        "R의 [[STUN]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음."
       ],
       en: ["Neeko's E [[ROOT]] and R [[AIRBORNE]] can interrupt Camille's E1 and E2 [[DASH]].",
         "Neeko's R [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."

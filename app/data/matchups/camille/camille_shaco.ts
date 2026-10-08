@@ -18,7 +18,10 @@ export const camille_shaco: MatchupSummary = {
     },
     shaco: {
       ko: ["Q의 [[CC_BUFFER]]로 카밀 E의 [[KNOCKBACK]] / R의 [[KNOCKBACK]], [[GRAB]]을 무시하고 Q의 [[BLINK]]을 할 수 있음. \n 단, 카밀 R의 [[ZONE]] 범위 밖으로 Q의 [[BLINK]] 하면, 강제로 [[ZONE]] [[AOE]] 안으로 [[GRAB]]되어 돌아올 수 있음.",
-        "W, R의 [[FEAR]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+        
+        "W, R의 [[FEAR]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+
+      "W, R의 [[FEAR]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]]는 남아있음."],
       en: ["Shaco's Q [[CC_BUFFER]] can ignore Camille's E [[KNOCKBACK]] / R [[KNOCKBACK]], [[GRAB]] and continue the Q [[BLINK]]. \n However, if the Q [[BLINK]] moves outside of Camille's R [[ZONE]] range, Shaco can be forcibly [[GRAB]]bed back into the [[ZONE]] [[AOE]].",
         "Shaco's W and R [[FEAR]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },

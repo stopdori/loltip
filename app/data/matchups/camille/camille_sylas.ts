@@ -19,7 +19,7 @@ export const camille_sylas: MatchupSummary = {
       ],
     },
     sylas: {
-      ko: ["E2의 [[AIRBORNE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["E2의 [[AIRBORNE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: ["Sylas's E2 [[AIRBORNE]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },

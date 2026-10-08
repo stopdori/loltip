@@ -21,7 +21,11 @@ export const camille_viego: MatchupSummary = {
       ],
     },
     viego: {
-      ko: ["W의 [[STUN]], R의 [[KNOCKBACK]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      ko: ["W의 [[STUN]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        
+        "W의 [[STUN]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]]",
+
+        "R의 [[KNOCKBACK]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: ["Viego's W [[STUN]] and R [[KNOCKBACK]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },

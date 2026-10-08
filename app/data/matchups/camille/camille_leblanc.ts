@@ -18,7 +18,8 @@ export const camille_leblanc: MatchupSummary = {
         "Camille's R [[UNTARGETABLE]] can dodge LeBlanc's auto-attacks, Q, W, and E. \n However, if hit by LeBlanc's E [[PROJECTILE]], the triggered [[TETHER]] effect cannot be dodged."],
     },
     leblanc: {
-      ko: ["E의 [[ROOT]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["E의 [[ROOT]]으로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "E의 [[ROOT]]으로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[EXIST]] \n 단, [[ROOT]]은 남아있음."],
       en: ["LeBlanc's E [[ROOT]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },

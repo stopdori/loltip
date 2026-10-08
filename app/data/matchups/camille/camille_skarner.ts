@@ -19,7 +19,7 @@ export const camille_skarner: MatchupSummary = {
         "R [[UNTARGETABLE]] can dodge Skarner's Q1, Q2, W (explosion damage), E, and R. [[EXIST]]"],
     },
     skarner: {
-      ko: ["E, R의 [[SUPPRESS]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
+      ko: ["E([[SUPPRESS]])의 [[KNOCKBACK]], R([[SUPPRESS]])의 [[POSITION_LOCK]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: ["E and R [[SUPPRESS]] can interrupt Camille's E1 and E2 [[DASH]]. [[EXIST]]"],
     },
   },

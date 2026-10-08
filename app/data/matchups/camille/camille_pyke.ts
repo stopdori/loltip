@@ -22,7 +22,10 @@ export const camille_pyke: MatchupSummary = {
     },
     pyke: {
       ko: ["Q의 [[GRAB]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음.",
-        "E의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+
+        "E의 [[STUN]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+        
+        "E의 [[STUN]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음."],
       en: ["Pyke's Q [[GRAB]] can interrupt Camille's E1 and E2 [[DASH]].",
         "Pyke's E [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."],
     },

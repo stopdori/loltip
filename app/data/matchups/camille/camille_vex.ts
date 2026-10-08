@@ -19,7 +19,7 @@ export const camille_vex: MatchupSummary = {
       ],
     },
     vex: {
-      ko: ["P의 [[FEAR]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["P([[FEAR]])의 [[KNOCKDOWN]]으로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: ["Vex's P [[FEAR]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },

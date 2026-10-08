@@ -9,7 +9,9 @@ export const brand_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     brand: {
-      ko: ["Q의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음."],
+      ko: ["Q의 [[STUN]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+        
+        "Q의 [[STUN]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]]"],
       en: ["Brand's Q [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]."],
     },
     camille: {

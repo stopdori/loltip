@@ -19,8 +19,11 @@ export const camille_riven: MatchupSummary = {
       ],
     },
     riven: {
-      ko: ["Q3의 [[AIRBORNE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음.",
-        "W의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."
+      ko: ["Q3의 [[AIRBORNE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+
+        "W의 [[STUN]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+
+        "W의 [[STUN]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음."
       ],
       en: ["Riven's Q3 [[AIRBORNE]] can interrupt Camille's E1 and E2 [[DASH]].",
         "Riven's W [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."

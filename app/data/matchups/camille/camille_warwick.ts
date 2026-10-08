@@ -21,7 +21,11 @@ export const camille_warwick: MatchupSummary = {
       ],
     },
     warwick: {
-      ko: ["W의 [[FEAR]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["E의 [[FEAR]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        
+      "E의 [[FEAR]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]]는 남아있음.", 
+        
+        "R([[SUPPRESS]])의 [[KNOCKDOWN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: ["Warwick's W [[FEAR]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },

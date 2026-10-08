@@ -19,10 +19,13 @@ export const camille_gnar: MatchupSummary = {
       ],
     },
     gnar: {
-      ko: ["메가폼 W의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
-        "메가폼 R의 [[KNOCKBACK]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["메가폼 W의 [[STUN]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+
+        "메가폼 W의 [[STUN]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.",
+
+        "메가폼 R의 [[KNOCKBACK]], [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
       en: ["Gnar's Mega Form W [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies.",
-        "Gnar's Mega Form R [[KNOCKBACK]] can interrupt Camille's E1 and E2 [[DASH]]."],
+        "Gnar's Mega Form R [[KNOCKBACK]], [[STUN]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },
 };

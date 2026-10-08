@@ -17,8 +17,12 @@ export const camille_lissandra: MatchupSummary = {
       ],
     },
     lissandra: {
-      ko: ["W의 [[ROOT]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+      ko: ["W의 [[ROOT]]으로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+
+        "W의 [[ROOT]]으로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음.", 
+
         "R [[STUN]]의 [[KNOCKDOWN]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]] [[CLIP:https://www.youtube.com/shorts/BaIgsc8Wa3w]]", 
+        
       "카밀 E2의 [[KNOCKBACK]], [[STUN]] / R의 [[DISRUPT]], [[KNOCKBACK]]을 맞았을 때, 리산드라 E2를 사용할 수 없음. [[NOT_EXIST]]"],
       en: ["W [[ROOT]] cannot interrupt Camille's E1 and E2 [[DASH]]. [[NOT_EXIST]] \n However, the [[ROOT]] still applies.",
         "R [[STUN]]'s [[KNOCKDOWN]] can interrupt Camille's E1 and E2 [[DASH]]. [[EXIST]] [[CLIP:https://www.youtube.com/shorts/BaIgsc8Wa3w]]",

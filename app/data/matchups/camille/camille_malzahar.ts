@@ -19,8 +19,9 @@ export const camille_malzahar: MatchupSummary = {
       ],
     },
     malzahar: {
-      ko: ["Q의 [[SILENCE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음.",
-        "R의 [[SUPPRESS]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."
+      ko: ["Q의 [[SILENCE]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[SILENCE]]은 남아있음.", 
+
+        "R([[SUPPRESS]])의 [[POSITION_LOCK]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음. [[EXIST]]"
       ],
       en: ["Malzahar's Q [[SILENCE]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[SILENCE]] still applies.",
         "Malzahar's R [[SUPPRESS]] can interrupt Camille's E1 and E2 [[DASH]]."

@@ -9,7 +9,9 @@ export const aphelios_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     aphelios: {
-      ko: ["중력포(보라) Q의 [[ROOT]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+      ko: ["중력포(보라) Q의 [[ROOT]]으로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]", 
+        "중력포(보라) Q의 [[ROOT]]으로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[ROOT]]은 남아있음."
+      ],
       en: ["Aphelios's Gravitum (Purple) Q [[ROOT]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
     camille: {

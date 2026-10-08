@@ -17,7 +17,9 @@ export const camille_elise: MatchupSummary = {
         "Camille's R [[UNTARGETABLE]] can dodge Elise's Human Form basic attacks, Q, W, E / Spider Form Q."],
     },
     elise: {
-      ko: ["인간폼 E의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음."],
+      ko: ["인간폼 E의 [[STUN]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+        
+        "인간폼 E의 [[STUN]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음."],
       en: ["Elise's Human Form E [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies."],
     },
   },

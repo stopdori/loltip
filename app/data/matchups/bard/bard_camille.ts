@@ -9,8 +9,12 @@ export const bard_camille: MatchupSummary = {
   },
   highlightsByChamp: {
     bard: {
-      ko: ["Q의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음 \n 단, [[STUN]]은 남아있음.", 
+      ko: ["Q의 [[STUN]]로 카밀 E1의 [[DASH]]을 끊을 수 있음. [[EXIST]]",
+
+        "Q의 [[STUN]]로 카밀 E2의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[STUN]]은 남아있음.", 
+
         "R(존야)의 [[STASIS]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+        
       en: ["Bard's Q [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]] \n However, the [[STUN]] still applies.",
         "Bard's R (like Zhonya's Hourglass) [[STASIS]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
