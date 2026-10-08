@@ -20,9 +20,9 @@ export const camille_rell: MatchupSummary = {
     },
     rell: {
       ko: ["렐 Q의 [[STUN]]로 카밀 E1, E2의 [[DASH]]을 끊을 수 없음. \n 단, [[STUN]]은 남아있음.",
-        "승마폼 W의 [[AIRBORNE]] / 낙마폼 E [[BA]]의 [[GRAB]] / R의 [[GRAB]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
+        "승마폼 W의 [[AIRBORNE]] / 낙마폼 W [[BA]] [[EMPOWERED]]의 [[GRAB]] / R의 [[GRAB]]으로 카밀 E1, E2의 [[DASH]]을 끊을 수 있음."],
       en: ["Rell's Q [[STUN]] cannot interrupt Camille's E1 and E2 [[DASH]]. \n However, the [[STUN]] still applies.",
-        "Rell's Mounted form W [[AIRBORNE]] / Dismounted form E [[BA]] [[GRAB]] / R [[GRAB]] can interrupt Camille's E1 and E2 [[DASH]]."],
+        "Rell's Mounted form W [[AIRBORNE]] / Dismounted form W [[BA]] [[EMPOWERED]] [[GRAB]] / R [[GRAB]] can interrupt Camille's E1 and E2 [[DASH]]."],
     },
   },
 };
