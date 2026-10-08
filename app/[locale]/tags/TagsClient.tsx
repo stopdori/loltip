@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import SiteHeader from "@/app/components/SiteHeader";
 import TagPill from "@/app/components/TagPill";
-import { TAG_LABEL, TAG_DESC, type TagId } from "@/app/data/interactions";
+import { TAG_LABEL, TAG_DESC, type TagId } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "@/app/data/interactions/tags_gimmick";
 import { TAG_CATEGORIES, VISION_STEALTH_CATEGORY, GIMMICK_CATEGORIES } from "@/app/data/interactions/tagCategories";
 import { toneOfTag, NOTE_TONE_CLASS, type Tone } from "@/app/data/interactions/tagTone";

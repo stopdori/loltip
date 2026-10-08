@@ -1,6 +1,7 @@
 import ChampClient from "@/app/[locale]/champ/ChampClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
+import { getChampClientData } from "@/app/data/champs/clientData";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Fragment } from "react";
 
@@ -68,6 +69,7 @@ export default async function Page(props: Props) {
         hideHeader={true}
         embedMode={true}
         forceCompact={forceCompact}
+        champData={{ [champId]: getChampClientData(champId) }}
       />
       <script dangerouslySetInnerHTML={{ __html: `
   function sendHeight() {

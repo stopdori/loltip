@@ -8,11 +8,11 @@ import ChampSelectModal from "@/app/components/ChampSelectModal";
 import ChampMiniSearch from "@/app/components/ChampMiniSearch";
 import SkillTagsPanel from "@/app/components/SkillTagsPanel";
 import MatchupSummaryBox from "@/app/components/MatchupSummaryBox";
-import type { MatchupLoadResult } from "@/app/data/matchups/_index";
+import type { MatchupClientResult } from "@/app/data/matchups/_index";
 import UltCooldownBox from "@/app/components/UltCooldownBox";
 
 import { CHAMPIONS, type Champ } from "@/app/data/champions";
-import { CHAMPS } from "@/app/data/champs/_index";
+import type { ChampClientData } from "@/app/data/champs/clientData";
 import FeedbackButton from "@/app/components/FeedbackButton";
 import QuizWidget from "@/app/components/QuizWidget";
 import SiteHeader from "@/app/components/SiteHeader";
@@ -35,13 +35,17 @@ type Props = {
   // 매치업 페이지(서버)가 이미 읽은 판정 데이터. 넘기면 MatchupSummaryBox가 fetch 없이
   // 첫 렌더부터 그리므로 판정 박스가 SSR HTML에 들어간다. 넘기지 않는 경로(/champ,
   // /champ/[id], champ-embed)는 기존대로 클라이언트에서 fetch한다.
-  matchupResult?: MatchupLoadResult;
+  matchupResult?: MatchupClientResult;
   // 매치업 페이지에서만 쓰는 화면용 제목(h1) 슬롯 — 판정 박스 바로 위에 렌더링된다.
   // 다른 경로에서 판정 박스가 뜰 때 h1이 중복되지 않도록 page.tsx가 있을 때만 넘긴다.
   summaryHeading?: React.ReactNode;
+  // 스킬 패널(SkillTagsPanel/UltCooldownBox)에 쓸 챔피언 데이터 — 서버 페이지(champ/[id], champ-embed)가
+  // 화면에 그릴 챔피언 것만 { [champId]: data } 형태로 넘긴다. 전체 CHAMPS를 클라이언트 번들에 넣지 않기 위함.
+  // 매치업 페이지는 스킬 패널을 iframe(champ-embed)으로 그리므로 넘기지 않는다.
+  champData?: Record<string, ChampClientData | null>;
 };
 
-export default function Home({ forcedMe, forcedEnemy, hideHeader, embedMode, useIframe, forceCompact, extraSection, matchupResult, summaryHeading }: Props) {
+export default function Home({ forcedMe, forcedEnemy, hideHeader, embedMode, useIframe, forceCompact, extraSection, matchupResult, summaryHeading, champData }: Props) {
   const locale = useLocale();
   const lang = locale as Lang;
 
@@ -478,7 +482,7 @@ setOpenTarget(null);
       lang={lang}
       ultCooldown={
         myChamp
-          ? CHAMPS[myChamp.id as keyof typeof CHAMPS]?.ultCooldown
+          ? champData?.[myChamp.id]?.ultCooldown
           : undefined
       }
       onCdChange={setMyUltCd}
@@ -486,7 +490,7 @@ setOpenTarget(null);
   </div>
 
   <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-0.5 sm:p-2">
-    <SkillTagsPanel champId={myChamp?.id ?? null} lang={lang} forceCompact={effectiveForceCompact} />
+    <SkillTagsPanel champId={myChamp?.id ?? null} champData={myChamp ? champData?.[myChamp.id] ?? null : null} lang={lang} forceCompact={effectiveForceCompact} />
   </div>
 </div>
 
@@ -510,7 +514,7 @@ setOpenTarget(null);
       lang={lang}
       ultCooldown={
         enemyChamp
-          ? CHAMPS[enemyChamp.id as keyof typeof CHAMPS]?.ultCooldown
+          ? champData?.[enemyChamp.id]?.ultCooldown
           : undefined
       }
       onCdChange={setEnemyUltCd}
@@ -518,7 +522,7 @@ setOpenTarget(null);
   </div>
 
   <div className="mt-4 flex-1 rounded-2xl bg-slate-900/30 ring-1 ring-white/10 p-0.5 sm:p-2">
-    <SkillTagsPanel champId={enemyChamp?.id ?? null} lang={lang} forceCompact={effectiveForceCompact} />
+    <SkillTagsPanel champId={enemyChamp?.id ?? null} champData={enemyChamp ? champData?.[enemyChamp.id] ?? null : null} lang={lang} forceCompact={effectiveForceCompact} />
   </div>
 </div>
 

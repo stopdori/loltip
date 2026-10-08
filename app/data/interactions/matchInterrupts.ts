@@ -5,6 +5,8 @@
 // 양쪽 모두 gimmick 필드만 사용한다(skills 필드는 요약용이라 쓰지 않음).
 // 계산 제외 스킬(INTERRUPT_CALC_EXCLUDED, 예: 사일러스 R)은 내 쪽·상대 쪽 모두 건너뛴다.
 
+// 서버 전용 모듈 — 클라이언트 컴포넌트에서 import하면 빌드 에러로 막는다(데이터 노출 방지).
+import "server-only";
 import type { TagId } from "./tags";
 import type { ChampData } from "./types";
 import { resolveInterruptedBy, findOverride, isCalcExcluded } from "./resolveInterrupt";

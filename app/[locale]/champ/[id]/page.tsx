@@ -1,6 +1,7 @@
 import ChampPageClient from "./ChampPageClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
+import { getChampClientData } from "@/app/data/champs/clientData";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import { CHAMP_FORMS } from "@/app/data/interactions/forms";
@@ -239,6 +240,8 @@ export default async function Page(props: Props) {
         key={renderKey}
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
+        // 스킬 패널에 쓸 이 챔피언 데이터만 클라이언트로 넘긴다(전체 CHAMPS는 서버에만 둠)
+        champData={{ [champId]: getChampClientData(champId) }}
         // 화면에 보이는 h1 — generateMetadata의 title 패턴("{챔피언} 챔피언 공략 …" / "{Champion} Champion Guide …")과 일치.
         // 매치업 페이지 h1과 같은 자리·스타일(ChampClient의 summaryHeading 슬롯)로 렌더링된다.
         summaryHeading={

@@ -4,6 +4,8 @@
 // skills 필드는 요약용이라 쓰지 않는다. 자신·아군 대상 CC는
 // ccApplyOverrides.ts에 등록된 것만 제외한다.
 
+// 서버 전용 모듈 — 클라이언트 컴포넌트에서 import하면 빌드 에러로 막는다(데이터 노출 방지).
+import "server-only";
 import type { TagId } from "./tags";
 import type { GimmickTagId } from "./tags_gimmick";
 import type { ChampData, SkillKey } from "./types";

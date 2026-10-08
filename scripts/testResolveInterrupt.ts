@@ -8,6 +8,8 @@ import { registerHooks } from "node:module";
 // 바로 실행할 수 있게 해석 실패 시 ".ts"를 붙여 다시 시도한다.
 registerHooks({
   resolve(specifier, context, nextResolve) {
+    // app 쪽 서버 전용 모듈의 import "server-only"는 Next 빌드용 가드라 Node 스크립트에선 빈 모듈로 대체
+    if (specifier === "server-only") return { url: "data:text/javascript,", shortCircuit: true };
     try {
       return nextResolve(specifier, context);
     } catch (e) {

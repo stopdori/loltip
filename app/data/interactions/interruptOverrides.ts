@@ -4,6 +4,8 @@
 // 태그(DASH/SKILL_CHANNEL 등)는 그대로 유지하고, 이 파일은 예외만 담당.
 // 출처: LoL 위키 Dash / Channel 문서.
 
+// 서버 전용 모듈 — 클라이언트 컴포넌트에서 import하면 빌드 에러로 막는다(데이터 노출 방지).
+import "server-only";
 import type { TagId } from "./tags";
 
 type CCRef = TagId; // IMMOBILIZING 같은 그룹 태그 포함

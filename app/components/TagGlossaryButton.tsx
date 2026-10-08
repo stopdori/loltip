@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { TAG_LABEL, TAG_DESC, type TagId } from "../data/interactions";
+import { TAG_LABEL, TAG_DESC, type TagId } from "../data/interactions/tags";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
 import { toneOfTag } from "../data/interactions/tagTone";
 import TagPill from "./TagPill";

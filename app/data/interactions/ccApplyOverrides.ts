@@ -5,6 +5,8 @@
 // 챔피언 파일의 태그는 그대로 두고, 여기서 "적에게는 안 걸림"만 표시한다.
 // phase가 없으면 해당 슬롯(form 지정 시 그 폼)의 전체 phase에 적용.
 
+// 서버 전용 모듈 — 클라이언트 컴포넌트에서 import하면 빌드 에러로 막는다(데이터 노출 방지).
+import "server-only";
 import type { TagId } from "./tags";
 import type { SkillKey } from "./types";
 

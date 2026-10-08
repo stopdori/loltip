@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 import { CHAMPIONS } from "@/app/data/champions";
 import MatchupChampClient from "./MatchupChampClient";
-import { getMatchupSummary } from "@/app/data/matchups/_index";
+import { getMatchupSummary, toMatchupClientResult } from "@/app/data/matchups/_index";
 import { isMatchupIndexable } from "@/app/data/matchups/_types";
 import { stripTagTokens } from "@/app/utils/stripTagTokens";
 import { buildMatchupDescription } from "@/app/utils/matchupDescription";
@@ -184,7 +184,8 @@ export default async function Page({ params }: Props) {
         forcedMe={forcedMe}
         forcedEnemy={forcedEnemy}
         // 서버가 이미 읽은 판정 데이터를 넘겨 판정 박스를 SSR에 포함시킨다(클라이언트 fetch 없음).
-        matchupResult={matchup ?? undefined}
+        // 클라이언트 prop에는 현재 locale 문장만 담는다.
+        matchupResult={matchup ? toMatchupClientResult(matchup, lang) : undefined}
         // 화면에 보이는 h1 — 매치업 페이지에서만 넘기므로 다른 경로에서 h1이 중복되지 않는다.
         summaryHeading={
           <h1 className="mb-3 text-lg sm:text-xl font-bold text-slate-100">

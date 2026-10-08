@@ -1,7 +1,7 @@
 // app/components/TokenText.tsx
 "use client";
 
-import { TAG_DESC, type TagId } from "../data/interactions";
+import { TAG_DESC, type TagId } from "../data/interactions/tags";
 import { GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
 import { STAT_ICONS } from "../data/interactions/statIcons";
 import { parseTagTokens } from "../data/interactions/parseTagTokens";

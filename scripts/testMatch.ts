@@ -6,6 +6,8 @@ import { registerHooks } from "node:module";
 // 확장자 없는 상대 import("./tags")를 Node에서 바로 실행할 수 있게 ".ts"로 재시도
 registerHooks({
   resolve(specifier, context, nextResolve) {
+    // app 쪽 서버 전용 모듈의 import "server-only"는 Next 빌드용 가드라 Node 스크립트에선 빈 모듈로 대체
+    if (specifier === "server-only") return { url: "data:text/javascript,", shortCircuit: true };
     try {
       return nextResolve(specifier, context);
     } catch (e) {

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode, type Ref } from "react";
 import TokenText from "./TokenText";
-import type { MatchupLoadResult } from "../data/matchups/_index";
+import type { MatchupClientResult } from "../data/matchups/_index";
 import { CHAMPIONS } from "../data/champions";
 import { GIMMICK_TAG_LABEL } from "../data/interactions/tags_gimmick";
 import { NOTE_TONE_CLASS, toneOfTag } from "../data/interactions/tagTone";
@@ -178,9 +178,9 @@ export default function MatchupSummaryBox({
   // 건너뛰고 이 값을 그대로 사용하므로, 판정 박스가 SSR HTML에 그대로 들어간다.
   // 넘기지 않으면(/champ, /champ/[id] 등) 기존처럼 클라이언트에서 fetch한다.
   // 매치업 페이지(SSR 주입)와 dev-preview(하드코딩 더미)가 함께 쓴다.
-  initialResult?: MatchupLoadResult;
+  initialResult?: MatchupClientResult;
 }) {
-  const [result, setResult] = useState<MatchupLoadResult | null>(initialResult ?? null);
+  const [result, setResult] = useState<MatchupClientResult | null>(initialResult ?? null);
   const highlightRef = useRef<HTMLLIElement>(null);
   // 강조할 판정 문장은 URL에서 마운트 후에 읽는다 — 해시(#highlight=xxx) 우선, 없으면 예전에 퍼진
   // ?highlight=xxx 쿼리(하위호환). 해시는 서버로 전달되지 않으므로 SSR HTML에는 강조가 들어가지 않고,
@@ -210,10 +210,10 @@ export default function MatchupSummaryBox({
 
   useEffect(() => {
     if (initialResult) return;
-    fetch(`/api/matchup?a=${encodeURIComponent(myChampId)}&b=${encodeURIComponent(enemyChampId)}`)
+    fetch(`/api/matchup?a=${encodeURIComponent(myChampId)}&b=${encodeURIComponent(enemyChampId)}&locale=${lang}`)
       .then((res) => res.json())
       .then(setResult);
-  }, [myChampId, enemyChampId, initialResult]);
+  }, [myChampId, enemyChampId, initialResult, lang]);
 
   useEffect(() => {
     if (!parsed || !result) return;

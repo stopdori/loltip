@@ -3,10 +3,11 @@
 
 import { useEffect, useId, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 
-import { TAG_LABEL, TAG_DESC, type SkillKey, type TagId } from "../data/interactions";
+import { TAG_LABEL, TAG_DESC, type TagId } from "../data/interactions/tags";
+import type { SkillKey } from "../data/interactions/types";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
 import type { GimmickSkillData } from "../data/interactions/types";
-import { CHAMPS } from "../data/champs/_index";
+import type { ChampClientData } from "../data/champs/clientData";
 import { CHAMP_FORMS, hasForms } from "../data/interactions/forms";
 import { useChampSpells } from "@/app/lib/useChampSpells";
 import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from "@/app/lib/ddragon";
@@ -655,10 +656,13 @@ function FormTabIcon({
 
 export default function SkillTagsPanel({
   champId,
+  champData,
   lang,
   forceCompact,
 }: {
   champId: string | null;
+  /** 서버 페이지가 getChampClientData()로 골라 내려준 이 챔피언 데이터(전체 CHAMPS는 클라이언트에 두지 않음) */
+  champData: ChampClientData | null;
   lang: "ko" | "en";
   /** undefined면 sm: 미디어 쿼리(뷰포트 기준)로 자동 판단, true/false면 그 값으로 강제 고정 (iframe 내부처럼 뷰포트 기준을 못 믿을 때 사용) */
   forceCompact?: boolean;
@@ -681,7 +685,7 @@ export default function SkillTagsPanel({
   }, [champId]);
 
 
-  const champ = champId ? CHAMPS[champId as keyof typeof CHAMPS] : null;
+  const champ = champId ? champData : null;
 
 const renderNoteSection = (items: string[], title: string) => {
   if (items.length === 0) return null;
@@ -936,8 +940,8 @@ const renderNoteSection = (items: string[], title: string) => {
   // 시야 탭: phase 구조 확인
   if (mode === "vision") {
     const visionData: GimmickSkillData | undefined = hasForms(champId ?? "")
-      ? (champ?.vision as any)?.[form]?.[k]
-      : (champ?.vision as any)?.[k];
+      ? ((champ as any)?.vision as any)?.[form]?.[k]
+      : ((champ as any)?.vision as any)?.[k];
 
     if (visionData && !Array.isArray(visionData) && "phases" in visionData) {
       const phases = visionData.phases.filter(Boolean) as Array<{

@@ -2,6 +2,8 @@
 //
 // ⚠️ 서버 전용 모듈. fs로 _compiled.json을 읽기 때문에 브라우저(클라이언트 컴포넌트)에서
 // 직접 import하면 안 됨 — 클라이언트에서는 /api/matchup을 통해 조회할 것 (MatchupSummaryBox.tsx 참고).
+// import "server-only": 클라이언트 컴포넌트에서 import하면 빌드 에러로 막는다(데이터 노출 방지).
+import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { isMatchupIndexable, type MatchupSummary } from "./_types";
@@ -9,6 +11,31 @@ import { isMatchupIndexable, type MatchupSummary } from "./_types";
 export type MatchupLoadResult =
   | { status: "ok"; data: MatchupSummary }
   | { status: "missing"; key: string };
+
+type MatchupLang = "ko" | "en";
+
+// 클라이언트로 내려보내는 형태(매치업 페이지 prop, /api/matchup 응답) — 요청 locale 문장만 남긴다.
+// 화면(MatchupSummaryBox)은 highlightsByChamp[챔피언][lang]과 common[lang]만 쓰므로 summary는 넘기지 않는다.
+export type MatchupClientData = {
+  champs: [string, string];
+  highlightsByChamp: Record<string, Partial<Record<MatchupLang, string[]>>>;
+  common?: Partial<Record<MatchupLang, string[]>>;
+};
+
+export type MatchupClientResult =
+  | { status: "ok"; data: MatchupClientData }
+  | { status: "missing"; key: string };
+
+export function toMatchupClientResult(result: MatchupLoadResult, lang: MatchupLang): MatchupClientResult {
+  if (result.status !== "ok") return result;
+  const { champs, highlightsByChamp, common } = result.data;
+  const data: MatchupClientData = { champs, highlightsByChamp: {} };
+  for (const [champId, byLang] of Object.entries(highlightsByChamp)) {
+    data.highlightsByChamp[champId] = { [lang]: byLang[lang] ?? [] };
+  }
+  if (common) data.common = { [lang]: common[lang] ?? [] };
+  return { status: "ok", data };
+}
 
 const COMPILED_PATH = path.join(process.cwd(), "app/data/matchups/_compiled.json");
 

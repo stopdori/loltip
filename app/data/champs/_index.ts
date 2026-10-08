@@ -1,3 +1,5 @@
+// 서버 전용 모듈 — 클라이언트 컴포넌트에서 import하면 빌드 에러로 막는다(데이터 노출 방지).
+import "server-only";
 import aatrox from "./aatrox";
 import ahri from "./ahri";
 import akali from "./akali";
