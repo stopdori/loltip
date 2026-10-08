@@ -6,7 +6,7 @@ const skarner: ChampData = {
     P: [],
     Q: ["Q_FLASH", "AS_UP", "SLOW", "AA_RESET"],
     W: ["W_FLASH", "SLOW", "SHIELD"],
-    E: ["SUPPRESS", "STUN", "WALL_HOP"],
+    E: ["SUPPRESS", "STUN", "IGNORE_TERRAIN"],
     R: ["SUPPRESS"],
   },
 
@@ -27,7 +27,7 @@ const skarner: ChampData = {
     ] },
     W: ["DMG_MAGIC", "TIMING_CAST", "AOE"],
     E: { phases: [
-      { label: { ko: "E", en: "E" }, tags: ["SKILL_CHANNEL", "SINGLE", "MOBILITY", "CANCELLABLE", "SKILL_RECAST",] },
+      { label: { ko: "E", en: "E" }, tags: ["IGNORE_TERRAIN", "SINGLE", "MOBILITY", "CANCELLABLE", "SKILL_RECAST", "SUPPRESS", "KNOCKBACK",] },
       { label: { ko: "E 벽꿍", en: "E Terrain Crush" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "SINGLE", "MOBILITY"] },
     ] },
     

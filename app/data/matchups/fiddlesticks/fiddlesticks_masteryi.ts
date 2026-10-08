@@ -9,7 +9,7 @@ export const fiddlesticks_masteryi: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: [""],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 마스터 이 W의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [""],
     },
     masteryi: {

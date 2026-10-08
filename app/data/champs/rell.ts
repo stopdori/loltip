@@ -35,7 +35,7 @@ const rell: ChampData = {
       { label: { ko: "P 평타 강화", en: "P Improved Basic Attack" }, tags: ["DMG_MAGIC", "ON_HIT"] },
     ] },
 
-    Q: ["DMG_MAGIC", "TIMING_CAST", "AOE", "STUN", "SHIELD_BREAK"],
+    Q: ["DMG_MAGIC", "TIMING_CAST", "AOE", "STUN", "SHIELD_BREAK", "LUNGE"],
 
     W: { phases: [
       { label: { ko: "철마술 - 붕괴 (중갑폼 폼변환)", en: "Ferromancy: Crash Down (→ Armored Form)" }, tags: ["TRANSFORM", "DMG_MAGIC", "TIMING_CAST", "SHIELD", "SEPARATOR", "AIRBORNE", "DASH", "WALL_HOP"] },

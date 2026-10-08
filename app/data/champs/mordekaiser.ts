@@ -101,8 +101,8 @@ const mordekaiser: ChampData = {
   },
 
   ultCooldown: {
-    6: 140,
-    11: 120,
+    6: 120,
+    11: 110,
     16: 100,
   },
 

@@ -13,7 +13,7 @@ export const alistar_fiddlesticks: MatchupSummary = {
       en: ["Q [[AIRBORNE]], W [[KNOCKBACK]], and E [[STUN]] can interrupt Fiddlesticks's W and R [[SKILL_CHANNEL]]."],
     },
     fiddlesticks: {
-      ko: [],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 알리스타 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

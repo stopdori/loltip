@@ -35,7 +35,7 @@ const poppy: ChampData = {
 
     W: { phases: [
       { label: { ko: "W 패시브", en: "W Passive" }, tags: ["AR_MR_UP", "SEPARATOR", "ST_CONDITIONAL", "AR_MR_UP", "X2"] },
-      { label: { ko: "W 액티브", en: "W Active" }, tags: ["MS_UP", "SEPARATOR", "AURA", "ANTI_DASH", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "KNOCKDOWN", "DMG_MAGIC", "AIRBORNE", "SLOW", "GROUNDED"] },
+      { label: { ko: "W 액티브", en: "W Active" }, tags: ["MS_UP", "SEPARATOR", "AURA", "ANTI_DASH", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DMG_MAGIC", "AIRBORNE", "SLOW", "GROUNDED"] },
     ] },
 
     E: ["DMG_PHYSICAL", "TARGETED", "KNOCKBACK", "DASH", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "WALL_COLLISION", "DMG_PHYSICAL", "STUN"],

@@ -40,7 +40,7 @@ const kled: ChampData = {
 
   gimmick: {
     base: {
-      P: ["ST_CONDITIONAL", "TRANSFORM", "UNTARGETABLE", "TOWER_DODGE"],
+      P: ["ST_CONDITIONAL", "TRANSFORM", "UNTARGETABLE", "TOWER_DODGE", "LUNGE"],
       Q: { phases: [
       { label: { ko: "Q", en: "Q" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "TETHER"] },
       { label: { ko: "Q 사슬", en: "Q Tether" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "GRAB", "SLOW"] },
@@ -51,11 +51,11 @@ const kled: ChampData = {
       { label: { ko: "E2", en: "E2" }, tags: ["ST_CONDITIONAL", "TARGETED", "HOMING", "SINGLE", "DASH"] },
     ] },
 
-      R: ["SKILL_CHANNEL", "MOBILITY", "LOCKED", "HOMING", "UNSTOPPABLE", "SEPARATOR", "ST_CONDITIONAL", "KNOCKBACK"],
+      R: ["SKILL_CHANNEL", "MOBILITY", "LOCKED", "HOMING", "UNSTOPPABLE", "SEPARATOR", "ST_CONDITIONAL", "KNOCKBACK", "DASH"],
     },
 
     alt: {
-      P: [],
+      P: ["LUNGE"],
       Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "RECHARGE"],
       W: ["DMG_PHYSICAL", "ON_HIT"],
       E: [],

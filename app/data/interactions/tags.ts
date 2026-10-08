@@ -41,6 +41,7 @@ export type TagId =
   | "DROWSY"
   | "KNOCKBACK"
   | "KNOCKDOWN"
+  | "POSITION_LOCK"
   | "AIRBORNE"
   | "SUSPENDING"
   | "GRAB"
@@ -198,6 +199,7 @@ SLEEP: { ko: "수면", en: "Sleep" },
 DROWSY: { ko: "졸림", en: "Drowsy" },
 KNOCKBACK: { ko: "넉백", en: "Knockback" },
 KNOCKDOWN: { ko: "넉다운", en: "Knockdown" },
+POSITION_LOCK: { ko: "위치고정", en: "Position Lock" },
 AIRBORNE: { ko: "에어본", en: "Airborne" },
 SUSPENDING: { ko: "체공", en: "Suspending" },
 GRAB: { ko: "그렙", en: "Grab" },
@@ -442,6 +444,10 @@ KNOCKBACK: {
 KNOCKDOWN: {
   ko: "[[DASH]]이나 [[KNOCKBACK]], [[GRAB]] 상태를 강제로 끊고 그 자리에 착지시킴. \n [[AIRBORNE]], [[STASIS]]과 같음.",
   en: "Forcibly cancels [[DASH]], [[KNOCKBACK]], or [[GRAB]] and lands the target in place. \n Same as [[AIRBORNE]] and [[STASIS]].",
+},
+POSITION_LOCK: {
+  ko: "대상의 위치를 그 자리에 고정시킴. \n 진행 중인 [[DASH]]도 끊음. \n 예) 암베사 R, 크산테 R",
+  en: "Locks the target in place. \n Also interrupts an ongoing [[DASH]]. \n e.g. Ambessa R, K'Sante R",
 },
 GRAB: {
   ko: "[[AIRBORNE]] 시키고 상대를 잡아당김. \n [[IMMOBILIZING]] 효과로 [[DASH]] 종류를 끊음. \n ([[CC_CLEANSE]] 계열로 해제 불가능)",

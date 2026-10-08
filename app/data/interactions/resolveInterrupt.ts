@@ -20,7 +20,12 @@ import {
   IGNORE_TERRAIN_INTERRUPTED_BY,
   MOVEMENT_CHANNEL_INTERRUPTED_BY,
 } from "./ccInteractions";
-import { INTERRUPT_OVERRIDES, type InterruptOverride } from "./interruptOverrides";
+import { INTERRUPT_OVERRIDES, INTERRUPT_CALC_EXCLUDED, type InterruptOverride } from "./interruptOverrides";
+
+// 끊김 계산에서 제외하는 스킬인지(예: 사일러스 R). 제외 목록은 interruptOverrides.ts 참고
+export function isCalcExcluded(champ: string, slot: string): boolean {
+  return INTERRUPT_CALC_EXCLUDED.some((x) => x.champ === champ && x.slot === slot);
+}
 
 type PhaseTag = TagId | GimmickTagId;
 

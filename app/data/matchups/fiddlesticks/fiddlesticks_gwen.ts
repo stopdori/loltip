@@ -9,7 +9,7 @@ export const fiddlesticks_gwen: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: [""],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 그웬 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
       en: [""],
     },
     gwen: {

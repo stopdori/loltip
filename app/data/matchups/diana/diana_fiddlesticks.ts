@@ -13,7 +13,7 @@ export const diana_fiddlesticks: MatchupSummary = {
       en: ["R [[GRAB]] can interrupt Fiddlesticks's W and R [[SKILL_CHANNEL]]."],
     },
     fiddlesticks: {
-      ko: [],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 다이애나 E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

@@ -10,7 +10,7 @@ const smolder: ChampData = {
     ] },
 
     W: ["W_FLASH", "SLOW"],
-    E: ["E_FLASH", "MS_UP", "WALL_HOP"],
+    E: ["E_FLASH", "MS_UP", "IGNORE_TERRAIN"],
     R: ["SLOW", "HEAL"],
   },
 
@@ -38,7 +38,7 @@ const smolder: ChampData = {
       { label: { ko: "W 범위피해", en: "W AOE" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "DMG_MAGIC", "AOE"] },
     ] },
     
-    E: ["DMG_PHYSICAL", "DMG_MAGIC", "SKILL_CHANNEL", "SINGLE", "MOBILITY"],
+    E: ["DMG_PHYSICAL", "DMG_MAGIC", "IGNORE_TERRAIN", "SINGLE", "MOBILITY"],
     R: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE"],
   },
 

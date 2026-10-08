@@ -38,7 +38,7 @@ const viktor: ChampData = {
       { label: { ko: "버프 스택", en: "Buff Stack" }, tags: ["STACK_CONSUME", "ON_HIT", "NON_PROJECTILE", "DMG_MAGIC"] },
     ] },
 
-    W: ["TIMING_CAST", "ZONE", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
+    W: ["TIMING_CAST", "ZONE", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "STUN", "KNOCKDOWN"],
 
     E: { phases: [
       { label: { ko: "일반 E", en: "Base E" }, tags: ["DMG_MAGIC", "SKILL_VECTOR", "PROJECTILE", "PIERCE"] },
@@ -47,7 +47,7 @@ const viktor: ChampData = {
     ] },
 
     R: { phases: [
-      { label: { ko: "일반 R", en: "Base R" }, tags: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "HOMING", "DOT"] },
+      { label: { ko: "일반 R", en: "Base R" }, tags: ["DMG_MAGIC", "TIMING_CAST", "ZONE", "HOMING", "DOT", "DISRUPT"] },
       { label: { ko: "W 진화", en: "W Evolved" }, tags: ["SLOW"] },
       { label: { ko: "R 진화", en: "R Evolved" }, tags: ["ST_CONDITIONAL", "SKILL_SIZE_UP", "DURATION_EXT"] },
     ] },

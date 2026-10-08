@@ -49,7 +49,7 @@ const ekko: ChampData = {
     ] },
 
     R: { phases: [
-      { label: { ko: "R",   en: "R" }, tags: ["TIMING_CAST", "UNTARGETABLE", "HEAL", "SEPARATOR", "BLINK", "WALL_HOP"] },
+      { label: { ko: "R",   en: "R" }, tags: ["TIMING_CAST", "UNTARGETABLE", "HEAL", "SEPARATOR", "DASH", "WALL_HOP"] },
       { label: { ko: "R 회복효과",   en: "R Heal Effect" }, tags: ["ST_CONDITIONAL", "SELF_MISSING_HP_SCALE", "HS_POWER"] },
       { label: { ko: "R 폭발",     en: "R Explosion" }, tags: ["ST_DELAYED", "SEPARATOR", "DMG_MAGIC", "AOE", "DEBUFF_STACK"] },
     ] },

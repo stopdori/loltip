@@ -9,8 +9,8 @@ export const fiddlesticks_vex: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     vex: {
       ko: [],

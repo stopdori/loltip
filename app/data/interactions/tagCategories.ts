@@ -46,12 +46,12 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   },
   {
     title: { ko: "2) 군중제어 / CC", en: "2) Crowd Control" },
-    keys: ["STUN", "ROOT", "SLOW", "TAUNT", "SLEEP", "STASIS", "DROWSY", "KNOCKBACK", "KNOCKDOWN", "AIRBORNE", "SUSPENDING", "GRAB", "CHARM", "SILENCE", "FEAR", "BERSERK", "FORCED_ACTION", "NEAR_SIGHT", "BLIND", "SUPPRESS", "IMMOBILIZING", "CRIPPLE", "DISARM", "UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE", "SLOW_RESIST", "SLOW_IMMUNE", "SLOW_CLEANSE", "DISRUPT", "GROUNDED", "KINEMATICS", "BANISH", "ANTI_DASH", "POLYMORPH", "TENACITY"],
+    keys: ["STUN", "ROOT", "SLOW", "TAUNT", "SLEEP", "STASIS", "DROWSY", "KNOCKBACK", "KNOCKDOWN", "POSITION_LOCK", "AIRBORNE", "SUSPENDING", "GRAB", "CHARM", "SILENCE", "FEAR", "BERSERK", "FORCED_ACTION", "NEAR_SIGHT", "BLIND", "SUPPRESS", "IMMOBILIZING", "CRIPPLE", "DISARM", "UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE", "SLOW_RESIST", "SLOW_IMMUNE", "SLOW_CLEANSE", "DISRUPT", "GROUNDED", "KINEMATICS", "BANISH", "ANTI_DASH", "POLYMORPH", "TENACITY"],
     subGroups: [
       { title: { ko: "이동 불가", en: "Immobilizing" }, keys: ["IMMOBILIZING", "AIRBORNE", "KNOCKBACK", "GRAB", "SEPARATOR", "SUSPENDING"] }, 
       { keys: ["STUN", "ROOT", "SUPPRESS", "SLEEP", "STASIS"] },
       { keys: ["FORCED_ACTION", "CHARM", "TAUNT", "FEAR", "BERSERK"] },
-      { title: { ko: "기타", en: "" }, keys: ["SILENCE", "DISRUPT", "KNOCKDOWN"] },
+      { title: { ko: "기타", en: "" }, keys: ["SILENCE", "DISRUPT", "KNOCKDOWN", "POSITION_LOCK"] },
       { keys: ["DROWSY", "SLOW", "CRIPPLE", "DISARM"] }, 
       { keys: ["BLIND", "NEAR_SIGHT"] }, 
       { title: { ko: "CC 면역, 해제 관련", en: "" }, keys: ["UNSTOPPABLE", "CC_IMMUNE", "CC_CLEANSE", "SEPARATOR", "TENACITY"] }, 

@@ -54,7 +54,7 @@ const sejuani: ChampData = {
       { label: { ko: "W 2타 직선", en: "W Hit 2 (Line)" }, tags: ["DMG_PHYSICAL", "ST_DELAYED", "AOE", "SEPARATOR", "DEBUFF_STACK"] },
     ] },
  
-    E: ["STACK_CONSUME", "DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "HOMING", "STUN"],
+    E: ["STACK_CONSUME", "DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "HOMING", "STUN", "KNOCKDOWN"],
  
     R: { phases: [
       { label: { ko: "R 투사체", en: "R Projectile" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE", "STUN"] },

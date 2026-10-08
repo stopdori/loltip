@@ -14,7 +14,7 @@ export const amumu_fiddlesticks: MatchupSummary = {
       en: ["Q and R [[STUN]] can interrupt Fiddlesticks's W and R [[SKILL_CHANNEL]].", "Q [[CC_BUFFER]] can ignore Fiddlesticks's Q [[FEAR]] and E [[SILENCE]] and continue [[DASH]]. \n However, the [[FEAR]] and [[SILENCE]] still apply."],
     },
     fiddlesticks: {
-      ko: [],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 아무무 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

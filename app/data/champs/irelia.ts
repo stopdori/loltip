@@ -20,7 +20,7 @@ const irelia: ChampData = {
 
   gimmick: {
     P: ["DMG_MAGIC"],
-    Q: ["DMG_PHYSICAL", "TARGETED", "ON_HIT", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "MARK_CONSUME", "CDR_RESET", "Q"],
+    Q: ["DMG_PHYSICAL", "TARGETED", "ON_HIT", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "MARK_CONSUME", "CDR_RESET", "Q", "DASH"],
 
     W: { phases: [
       { label: { ko: "W 차징", en: "R Charging" }, tags: ["SKILL_CHARGED", "CAST_COMMIT", "CANCELLABLE", "TIMING_AFTERCAST", ] },

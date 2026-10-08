@@ -24,7 +24,7 @@ const ziggs: ChampData = {
 
     W: { phases: [
       { label: { ko: "투사체", en: "Projectile" }, tags: ["TIMING_CAST", "PROJECTILE", "SKILL_RECAST"] },
-      { label: { ko: "장판", en: "Zone" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ZONE", "AIRBORNE"] },
+      { label: { ko: "장판", en: "Zone" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ZONE", "AIRBORNE", "DASH"] },
       { label: { ko: "포탑 처형", en: "Turret Execute" }, tags: ["ST_CONDITIONAL", "EXECUTE"] },
     ] },
 

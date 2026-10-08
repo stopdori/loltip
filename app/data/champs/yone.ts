@@ -36,7 +36,7 @@ const yone: ChampData = {
       { label: { ko: "복귀", en: "Recast" }, tags: ["ST_CONDITIONAL", "DMG_TRUE", "TIMING_CAST", "DASH" , "UNSTOPPABLE"] },
     ] },
     
-    R: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "AOE", "STUN", "KNOCKBACK"],
+    R: ["DMG_PHYSICAL", "DMG_MAGIC", "TIMING_CAST", "AOE", "STUN", "KNOCKBACK", "SEPARATOR", "BLINK", "WALL_HOP"],
   },
 
   notes: {

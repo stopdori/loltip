@@ -14,7 +14,7 @@ export const ambessa_fiddlesticks: MatchupSummary = {
       en: ["R [[SUPPRESS]] can interrupt Fiddlesticks's W [[SKILL_CHANNEL]] and R [[SKILL_CHANNEL]].", "R [[UNSTOPPABLE]] can ignore Fiddlesticks's Q [[FEAR]]. \n However, the [[FEAR]] still applies after [[UNSTOPPABLE]] ends."],
     },
     fiddlesticks: {
-      ko: [],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 암베사 P의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

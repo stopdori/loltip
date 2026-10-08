@@ -21,7 +21,7 @@ const volibear: ChampData = {
   gimmick: {
     P: [],
     Q: { phases: [
-      { label: { ko: "추격단계", en: "Chase"  }, tags: ["TRANSFORM"] },
+      { label: { ko: "추격단계", en: "Chase"  }, tags: ["TRANSFORM", "DASH"] },
       { label: { ko: "공격단계", en: "Strike" }, tags: ["DMG_PHYSICAL", "ON_HIT"] },
     ] },
 

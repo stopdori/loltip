@@ -4,7 +4,7 @@ const zac: ChampData = {
   id: "zac",
   skills: {
     P: ["REVIVE", "ALLY_TP_OK"],
-    Q: ["SLOW", "AIRBORNE", "TETHER"],
+    Q: ["SLOW", "TETHER", "GRAB"],
     W: [],
     E: ["AIRBORNE", "WALL_HOP"],
     R: ["R_FLASH", "KNOCKBACK", "SLOW"],
@@ -26,7 +26,7 @@ const zac: ChampData = {
     
     Q: { phases: [
       { label: { ko: "Q", en: "Q" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SINGLE", "TETHER", "DROP"] },
-      { label: { ko: "탄성 충돌", en: "Stretching Strikes" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "AOE", "DROP", "ROOT", "AIRBORNE"] },
+      { label: { ko: "탄성 충돌", en: "Stretching Strikes" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "DROP", "GRAB", ] },
     ] },
   
     W: ["DMG_MAGIC", "AOE", "DROP"],

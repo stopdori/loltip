@@ -3,19 +3,24 @@
 // 내 챔피언의 끊길 수 있는 스킬(phase)과 상대 챔피언이 거는 CC를 맞대어,
 // 상대의 어떤 스킬(phase)이 내 스킬을 끊을 수 있는지 계산한다.
 // 양쪽 모두 gimmick 필드만 사용한다(skills 필드는 요약용이라 쓰지 않음).
+// 계산 제외 스킬(INTERRUPT_CALC_EXCLUDED, 예: 사일러스 R)은 내 쪽·상대 쪽 모두 건너뛴다.
 
 import type { TagId } from "./tags";
 import type { ChampData } from "./types";
-import { resolveInterruptedBy, findOverride } from "./resolveInterrupt";
+import { resolveInterruptedBy, findOverride, isCalcExcluded } from "./resolveInterrupt";
 import { getGimmickPhases, getEnemyCC, sortCC } from "./enemyCC";
 
 export type InterruptHit = { enemySlot: string; enemyPhase?: string; cc: TagId[] };
 export type InterruptMatch = { mySlot: string; myPhase?: string; interruptedBy: TagId[]; hits: InterruptHit[] };
 
+// "base.R" → "R"
+const slotOf = (formSlot: string) => formSlot.slice(-1);
+
 export function matchInterrupts(myChamp: ChampData, enemyChamp: ChampData): InterruptMatch[] {
-  const enemyCC = getEnemyCC(enemyChamp);
+  const enemyCC = getEnemyCC(enemyChamp).filter((en) => !isCalcExcluded(enemyChamp.id, slotOf(en.formSlot)));
   const out: InterruptMatch[] = [];
   for (const e of getGimmickPhases(myChamp)) {
+    if (isCalcExcluded(myChamp.id, e.slot)) continue;
     const { interruptedBy } = resolveInterruptedBy({ phaseTags: e.tags, override: findOverride(myChamp.id, e.slot, e.phase) });
     if (!interruptedBy.length) continue;
     const set = new Set(interruptedBy);

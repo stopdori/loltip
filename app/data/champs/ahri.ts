@@ -34,7 +34,7 @@ const ahri: ChampData = {
       { label: { ko: "W 투사체", en: ""  }, tags: ["DMG_MAGIC", "PROJECTILE", "HOMING"] },
     ] },
 
-    E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "CHARM"],
+    E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "CHARM", "KNOCKDOWN"],
 
     R: { phases: [
       { label: { ko: "R 버프", en: "" }, tags: ["BUFF_FORM", "SEPARATOR", "ON_TAKEDOWN", "SKILL_RECAST", "DURATION_EXT"] },

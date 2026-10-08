@@ -9,7 +9,9 @@ export const fiddlesticks_volibear: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: ["P, Q의 [[FEAR]]로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. [[EXIST]] \n 단, 볼리베어 Q는 [[CDR_RESET]]."],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 볼리베어 Q의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음.", 
+        "Q(패시브, 액티브)의 [[FEAR]]로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 있음. [[EXIST]] \n 단, 볼리베어 Q는 [[CDR_RESET]].", 
+      "E의 [[SILENCE]]으로 볼리베어 Q의 [[TRANSFORM]]을 해제시킬 수 없음. [[NOT_EXIST]]"],
       en: [""],
     },
     volibear: {

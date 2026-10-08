@@ -31,7 +31,7 @@ const talon: ChampData = {
       { label: { ko: "W 호밍백", en: "W Homing Back" }, tags: ["ST_DELAYED", "DMG_PHYSICAL", "PROJECTILE", "HOMING", "PIERCE", "DEBUFF_STACK"] },
     ] },
     
-    E: ["ST_CONDITIONAL"],
+    E: ["ST_CONDITIONAL", "DASH"],
 
     R: { phases: [
       { label: { ko: "R1", en: "R1" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "PIERCE", "DEBUFF_STACK"] },

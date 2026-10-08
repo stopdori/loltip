@@ -19,7 +19,7 @@ export const briar_fiddlesticks: MatchupSummary = {
         "Briar's R2 [[HOMING]] [[DASH]] can follow Fiddlesticks's R [[BLINK]]. \n However, [[HOMING]] ends upon colliding with Fiddlesticks."],
     },
     fiddlesticks: {
-      ko: [],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 브라이어 Q, W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

@@ -110,6 +110,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ROOT: "teal",
   AIRBORNE: "teal",
   KNOCKDOWN: "teal",
+  POSITION_LOCK: "teal",
   SUSPENDING: "teal",
   KNOCKBACK: "teal",
   GRAB: "teal",

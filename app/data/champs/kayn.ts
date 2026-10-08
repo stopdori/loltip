@@ -9,7 +9,7 @@ const kayn: ChampData = {
       P: [],
       Q: ["WALL_HOP", "DASH"],                // 인간 Q는 Q플 X
       W: ["SLOW"],
-      E: ["WALL_HOP", "HEAL", "MS_UP", "MOBILITY"],
+      E: ["IGNORE_TERRAIN", "HEAL", "MS_UP", "MOBILITY"],
       R: ["R_FLASH", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE", "DASH"],
     },
 
@@ -18,7 +18,7 @@ const kayn: ChampData = {
       P: [],
       Q: ["WALL_HOP"],      // 변신 Q는 Q플 가능
       W: ["SLOW"],
-      E: ["WALL_HOP", "HEAL", "MS_UP", "MOBILITY", "SLOW_IMMUNE"],
+      E: ["IGNORE_TERRAIN", "HEAL", "MS_UP", "MOBILITY", "SLOW_IMMUNE"],
       R: ["R_FLASH", "WALL_HOP", "UNTARGETABLE", "TOWER_DODGE"],
     },
 
@@ -27,7 +27,7 @@ const kayn: ChampData = {
       P: ["LIFESTEAL"],
       Q: ["WALL_HOP"],      // 변신 Q는 Q플 가능
       W: ["AIRBORNE"],
-      E: ["WALL_HOP", "HEAL", "MS_UP", "MOBILITY"],
+      E: ["IGNORE_TERRAIN", "HEAL", "MS_UP", "MOBILITY"],
       R: ["R_FLASH", "WALL_HOP", "HEAL", "UNTARGETABLE", "TOWER_DODGE"],
     },
 
@@ -65,8 +65,8 @@ const kayn: ChampData = {
         { label: { ko: "회전 단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
       ] },
       W: ["DMG_PHYSICAL", "TIMING_CAST", "TIMING_AFTERCAST", "AOE"],
-      E: ["BUFF_FORM", "MOBILITY"],
-      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE"],
+      E: ["BUFF_FORM", "MOBILITY", "IGNORE_TERRAIN"],
+      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE", "DASH"],
     },
     alt: {
       P: ["BUFF_STACK"],
@@ -75,8 +75,8 @@ const kayn: ChampData = {
         { label: { ko: "회전 단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
       ] },
       W: ["DMG_PHYSICAL", "AOE"],
-      E: ["BUFF_FORM", "MOBILITY"],
-      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE"],
+      E: ["BUFF_FORM", "MOBILITY", "IGNORE_TERRAIN"],
+      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE", "DASH"],
     },
     alt2: {
       P: [],
@@ -85,8 +85,8 @@ const kayn: ChampData = {
         { label: { ko: "회전 단계", en: "Slash" }, tags: ["DMG_PHYSICAL", "AOE"] },
       ] },
       W: ["DMG_PHYSICAL", "TIMING_CAST", "TIMING_AFTERCAST", "AOE"],
-      E: ["BUFF_FORM", "MOBILITY"],
-      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE"],
+      E: ["BUFF_FORM", "MOBILITY", "IGNORE_TERRAIN"],
+      R: ["DMG_PHYSICAL", "TARGETED", "SINGLE", "MARK", "SKILL_CHANNEL_MOVEMENT", "UNTARGETABLE", "DASH"],
     },
   },
 

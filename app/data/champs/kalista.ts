@@ -35,7 +35,7 @@ const kalista: ChampData = {
 
     R:    { phases: [
       { label: { ko: "R1", en: "R1" }, tags: ["ST_CONDITIONAL"] },
-      { label: { ko: "R2", en: "R2" }, tags: ["ST_DELAYED", "DASH", "AIRBORNE", "UNTARGETABLE", "TOWER_DODGE", "INVULNERABLE"] },
+      { label: { ko: "R2", en: "R2" }, tags: ["ST_DELAYED", "LUNGE", "AIRBORNE", "UNTARGETABLE", "TOWER_DODGE", "INVULNERABLE"] },
     ] },
   },
 

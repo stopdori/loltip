@@ -23,7 +23,7 @@ const garen: ChampData = {
 
     Q: { phases: [
       { label: { ko: "Q", en: "Q" }, tags: ["AA_RESET", "CC_CLEANSE"] },
-      { label: { ko: "Q 타격", en: "Q Strike" }, tags: ["DMG_PHYSICAL", "ON_HIT", "SILENCE"] },
+      { label: { ko: "Q 타격", en: "Q Strike" }, tags: ["DMG_PHYSICAL", "ON_HIT", "SILENCE", "LUNGE"] },
     ] },
 
     W: { phases: [

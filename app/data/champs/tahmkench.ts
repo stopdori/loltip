@@ -32,7 +32,7 @@ const tahmkench: ChampData = {
       { label: { ko: "E 액티브", en: "E Active" }, tags: ["TIMING_CAST"] },
     ] },
 
-    R: ["ST_CONDITIONAL", "TIMING_CAST", "TARGETED", "PROC"],
+    R: ["ST_CONDITIONAL", "TIMING_CAST", "TARGETED", "PROC", "SUPPRESS", "GRAB"],
   },
 
   notes: {

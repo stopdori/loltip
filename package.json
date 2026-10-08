@@ -7,7 +7,8 @@
     "gen:champs": "ts-node scripts/genChampSkills.ts",
     "gen:matchup-json": "node scripts/gen-matchup-json.ts",
     "watch:matchup": "node scripts/watch-matchup.ts",
-    "gen:lastmod": "node scripts/gen-lastmod.mjs"
+    "gen:lastmod": "node scripts/gen-lastmod.mjs",
+    "gen:interrupt-ref": "node scripts/genInterruptRef.ts"
   },
   "dependencies": {
     "next": "^16.1.0",

@@ -20,7 +20,7 @@ const vex: ChampData = {
 
   gimmick: {
     P: { phases: [
-      { label: { ko: "P 파멸", en: "P Doom" }, tags: ["ST_CONDITIONAL", "EMPOWERED", "Q", "W", "E"] },
+      { label: { ko: "P 파멸", en: "P Doom" }, tags: ["ST_CONDITIONAL", "EMPOWERED", "Q", "W", "E", "KNOCKDOWN"] },
       { label: { ko: "P 우울", en: "P Groom" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "ON_HIT"] },
     ] },
 

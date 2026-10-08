@@ -9,7 +9,7 @@ export const fiddlesticks_skarner: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: [""],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 스카너 E의 [[IGNORE_TERRAIN]]을 끊을 수 있음. [[EXIST]]"],
       en: [""],
     },
     skarner: {

@@ -40,7 +40,7 @@ const urgot: ChampData = {
     
     R: { phases: [
       { label: { ko: "R1", en: "R1" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "SKILL_RECAST", "MARK"] },
-      { label: { ko: "R2", en: "R2" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "PROJECTILE", "HOMING", "EXECUTE", "SKILL_CHANNEL", "CAST_COMMIT"] },
+      { label: { ko: "R2", en: "R2" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "PROJECTILE", "HOMING", "EXECUTE", "SKILL_CHANNEL", "CAST_COMMIT", "SUPPRESS", "GRAB"] },
     ] },
     
     

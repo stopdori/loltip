@@ -21,7 +21,7 @@ const wukong: ChampData = {
   gimmick: {
     P: ["BUFF_INTERACT", "BA", "Q", "W", "E", "R"],
     Q: ["DMG_PHYSICAL", "ON_HIT", "BUFF_STACK"],
-    W: ["CLONE", "CAMOUFLAGE", "BUFF_STACK"],
+    W: ["CLONE", "CAMOUFLAGE", "BUFF_STACK", "DASH"],
     E: ["DMG_MAGIC", "TARGETED", "SWARM", "DASH", "BUFF_STACK"],
     R: ["DMG_PHYSICAL", "SKILL_TOGGLE", "AOE", "DOT", "BUFF_STACK"],
   },

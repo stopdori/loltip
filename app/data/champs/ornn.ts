@@ -27,19 +27,19 @@ const ornn: ChampData = {
     Q: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "PIERCE", "TERRAIN", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"],
     
     W: { phases: [
-      { label: { ko: "W", en: "W" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "DOT", "MOBILITY", "UNSTOPPABLE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "MARK"] },
+      { label: { ko: "W", en: "W" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "DOT", "MOBILITY", "UNSTOPPABLE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "MARK", "LUNGE"] },
       { label: { ko: "표식 (불안정 상태)", en: "MARK (Brittle)" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC"] },
       { label: { ko: "표식 평타 (불안정 상태)", en: "Mark On-Hit (Brittle)" }, tags: ["ST_CONDITIONAL", "ON_HIT", "DMG_MAGIC", "KNOCKBACK"] },
     ] },
     
     E: { phases: [
-      { label: { ko: "E 돌진", en: "E Dash" }, tags: ["DMG_PHYSICAL", "SKILL_CHANNEL", "TIMING_AFTERCAST", "AOE", "DASH"] },
+      { label: { ko: "E 돌진", en: "E Dash" }, tags: ["DMG_PHYSICAL", "TIMING_AFTERCAST", "AOE", "DASH"] },
       { label: { ko: "E 벽꿍", en: "E Shockwave" }, tags: ["ST_CONDITIONAL", "DMG_PHYSICAL", "AOE", "AIRBORNE"] },
     ] },
 
     R: { phases: [
       { label: { ko: "R1", en: "R1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "MARK", "SLOW"] },
-      { label: { ko: "R2", en: "R2" }, tags: ["DMG_MAGIC", "TIMING_AFTERCAST", "PROJECTILE", "PIERCE", "MARK", "AIRBORNE"] },
+      { label: { ko: "R2", en: "R2" }, tags: ["DMG_MAGIC", "TIMING_AFTERCAST", "PROJECTILE", "PIERCE", "MARK", "AIRBORNE", "DASH"] },
     ] },
   },
 

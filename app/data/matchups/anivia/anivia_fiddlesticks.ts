@@ -13,7 +13,7 @@ export const anivia_fiddlesticks: MatchupSummary = {
       en: ["Q [[STUN]] and W [[TERRAIN]] [[AIRBORNE]] can interrupt Fiddlesticks's W and R [[SKILL_CHANNEL]]."],
     },
     fiddlesticks: {
-      ko: [],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 애니비아 R의 [[SKILL_CHANNEL]]을 끊을 수 있음. [[EXIST]]"],
       en: [],
     },
   },

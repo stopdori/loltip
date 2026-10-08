@@ -19,7 +19,7 @@ const neeko: ChampData = {
   },
 
   gimmick: {
-    P: [],
+    P: ["LUNGE"],
     Q: { phases: [
       { label: { ko: "Q 투사체", en: "Q Projectile" }, tags: ["TIMING_CAST", "PROJECTILE"] },
       { label: { ko: "Q 폭발", en: "Q Explosive" }, tags: ["DMG_MAGIC", "ZONE", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DMG_MAGIC", "ZONE", "SEPARATOR", "ST_CONDITIONAL", "DMG_MAGIC", "ZONE"] },

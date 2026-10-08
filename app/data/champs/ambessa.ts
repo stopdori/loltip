@@ -47,7 +47,7 @@ const ambessa: ChampData = {
 
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["PASSIVE_BONUS", "AR_PEN", "SEPARATOR", "ST_CONDITIONAL", "OMNIVAMP"] },
-      { label: { ko: "R 액티브", en: "R Active" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "LOCKED", "SINGLE", "SEPARATOR", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "BLINK", "WALL_HOP", "UNSTOPPABLE", "SUPPRESS", "STUN"] },
+      { label: { ko: "R 액티브", en: "R Active" }, tags: ["DMG_PHYSICAL", "TIMING_CAST", "LOCKED", "SINGLE", "SEPARATOR", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "BLINK", "WALL_HOP", "UNSTOPPABLE", "SUPPRESS", "POSITION_LOCK", "STUN"] },
     ] },
     
   },

@@ -27,7 +27,7 @@ const karthus: ChampData = {
       { label: { ko: "액티브", en: "Active" }, tags: ["DMG_MAGIC", "SKILL_TOGGLE", "AURA", "DOT"] },
     ] },
     
-    R: ["DMG_MAGIC", "GLOBAL", "LOCKED"],
+    R: ["DMG_MAGIC", "SKILL_CHANNEL", "GLOBAL", "LOCKED"],
   },
 
   notes: {

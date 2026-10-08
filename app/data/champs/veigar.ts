@@ -25,7 +25,7 @@ const veigar: ChampData = {
 
     E: { phases: [
       { label: { ko: "E", en: "E" }, tags: ["TIMING_CAST", "ZONE", "ST_DELAYED"] },
-      { label: { ko: "E 스턴", en: "E Stun" }, tags: ["ST_CONDITIONAL", "STUN"] },
+      { label: { ko: "E 스턴", en: "E Stun" }, tags: ["ST_CONDITIONAL", "STUN", "KNOCKDOWN"] },
     ] },
     
     R: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE"],

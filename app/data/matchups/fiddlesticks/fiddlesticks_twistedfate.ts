@@ -9,7 +9,7 @@ export const fiddlesticks_twistedfate: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: [""],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 트위스티드 페이트 R2의 [[SKILL_CHANNEL_MOVEMENT]]을 끊을 수 있음. [[EXIST]]"],
       en: [""],
     },
     twistedfate: {

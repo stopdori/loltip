@@ -77,7 +77,7 @@ const hwei: ChampData = {
 
     alt2: {
       P: ["DMG_MAGIC", "ZONE", "PROC"],
-      Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "DEBUFF_STACK", "FEAR"],
+      Q: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "DEBUFF_STACK", "FEAR", "KNOCKDOWN", "SLOW"],
 
       W:{ phases: [
       { label: { ko: "EW 장판", en: "EW Zone" }, tags: ["TIMING_CAST", "PROJECTILE", "ZONE", "ST_DELAYED"] },

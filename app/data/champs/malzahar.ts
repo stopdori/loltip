@@ -31,7 +31,7 @@ const malzahar: ChampData = {
     E: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "MANA_RESTORE", "CHAIN"],
  
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "TIMING_CAST", "TARGETED", "SINGLE", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DURATION_RESET", "E"] },
+      { label: { ko: "R", en: "R" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "TIMING_CAST", "TARGETED", "SINGLE", "KNOCKDOWN", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DURATION_RESET", "E"] },
       { label: { ko: "R 장판", en: "R Zone" }, tags: ["DMG_MAGIC", "ZONE"] },
     ] },
     

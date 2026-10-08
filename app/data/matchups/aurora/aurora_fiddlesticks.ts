@@ -13,7 +13,7 @@ export const aurora_fiddlesticks: MatchupSummary = {
       en: ["E (wind-up phase) [[CC_BUFFER]] and R [[UNSTOPPABLE]] [[DASH]] can ignore Fiddlesticks's Q [[FEAR]] and continue [[DASH]]. \n However, the [[FEAR]] still applies."],
     },
     fiddlesticks: {
-      ko: [],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 오로라 W, E의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

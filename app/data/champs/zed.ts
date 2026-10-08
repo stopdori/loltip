@@ -30,7 +30,7 @@ const zed: ChampData = {
     E: ["DMG_PHYSICAL", "AOE"],
 
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["UNTARGETABLE", "CLONE", "SKILL_RECAST"] },
+      { label: { ko: "R", en: "R" }, tags: ["UNTARGETABLE", "CLONE", "SKILL_RECAST", "BLINK"] },
       { label: { ko: "데미지", en: "DMG" }, tags: ["ST_DELAYED", "DMG_PHYSICAL"] },
     ] },
     

@@ -39,8 +39,8 @@ const camille: ChampData = {
 
     E: { phases: [
       { label: { ko: "E1 투척 단계", en: "E1 Throw Phase" }, tags: ["PROJECTILE", "CC_BUFFER"] },
-      { label: { ko: "E1 벽 돌진 단계", en: "E1 Wall-dash Phase" }, tags: ["SKILL_CHANNEL", "DASH"] },
-      { label: { ko: "E1 대기 단계", en: "E1 Hold Phase" }, tags: ["SKILL_CHANNEL", "SKILL_RECAST"] },
+      { label: { ko: "E1 벽 돌진 단계", en: "E1 Wall-dash Phase" }, tags: ["DASH"] },
+      { label: { ko: "E1 대기 단계", en: "E1 Hold Phase" }, tags: ["SKILL_RECAST"] },
       { label: { ko: "E2 돌진 단계", en: "E2 Dash Phase" }, tags: ["DMG_PHYSICAL", "AS_UP", "KNOCKBACK", "STUN", "SEPARATOR_NEWLINE", "SEPARATOR", "DASH", "WALL_HOP"] },
     ] },
 

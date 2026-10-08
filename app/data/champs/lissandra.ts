@@ -32,7 +32,7 @@ const lissandra: ChampData = {
       { label: { ko: "Q 파편", en: "Q Shatter" }, tags: ["ST_CONDITIONAL", "DMG_MAGIC", "PROJECTILE", "PIERCE", "SLOW"] },
     ] },
 
-    W: ["DMG_MAGIC", "AOE", "ROOT", "KNOCKDOWN"],
+    W: ["DMG_MAGIC", "AOE", "ROOT"],
 
     E: { phases: [
       { label: { ko: "E1", en: "E1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "ZONE", "SKILL_RECAST"] },
@@ -40,7 +40,7 @@ const lissandra: ChampData = {
     ] },
     
     R: { phases: [
-      { label: { ko: "R 상대", en: "R Enemy" }, tags: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "ZONE", "SLOW", "STUN"] },
+      { label: { ko: "R 상대", en: "R Enemy" }, tags: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "ZONE", "SLOW", "STUN", "KNOCKDOWN"] },
       { label: { ko: "R 자신", en: "R Self Cast" }, tags: ["TARGETED", "UNTARGETABLE", "TOWER_DODGE", "HEAL", "SEPARATOR_NEWLINE", "SEPARATOR", "DMG_MAGIC", "ZONE", "SLOW"] },
     ] },
   },

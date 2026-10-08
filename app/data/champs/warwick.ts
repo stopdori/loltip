@@ -22,8 +22,8 @@ const warwick: ChampData = {
     P: ["DMG_MAGIC", "ON_HIT"],
 
     Q: { phases: [
-      { label: { ko: "Q 짧게", en: "Q" }, tags: ["DMG_MAGIC", "SKILL_CHARGED", "TARGETED", "ON_HIT"] },
-      { label: { ko: "Q 길게", en: "Q Hold" }, tags: ["DMG_MAGIC", "SKILL_CHARGED", "TARGETED", "ON_HIT", "CC_IMMUNE", "SEPARATOR_NEWLINE", "SEPARATOR", "HOMING", "DASH", "WALL_HOP"] },
+      { label: { ko: "Q 짧게", en: "Q" }, tags: ["DMG_MAGIC", "TARGETED", "ON_HIT", "LUNGE"] },
+      { label: { ko: "Q 길게", en: "Q Hold" }, tags: ["DMG_MAGIC", "SKILL_CHARGED", "SKILL_CHANNEL", "TARGETED", "ON_HIT", "SEPARATOR_NEWLINE", "SEPARATOR", "HOMING", "DASH", "WALL_HOP"] },
     ] },
     
     W: { phases: [
@@ -38,7 +38,7 @@ const warwick: ChampData = {
     
     R: { phases: [
       { label: { ko: "도약단계", en: "Leap"   }, tags: ["TIMING_CAST", "DASH", "CC_IMMUNE"] },
-      { label: { ko: "공격단계", en: "Strike" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "ON_HIT", "LOCKED"] },
+      { label: { ko: "공격단계", en: "Strike" }, tags: ["DMG_MAGIC", "SKILL_CHANNEL", "ON_HIT", "LOCKED", "KNOCKDOWN"] },
     ] },
   },
 

@@ -34,7 +34,7 @@ const sett: ChampData = {
     E: ["DMG_PHYSICAL", "AOE", "GRAB", "SLOW", "SEPARATOR", "ST_CONDITIONAL", "STUN"],
 
     R: { phases: [
-      { label: { ko: "R", en: "R" }, tags: ["TARGETED", "SUPPRESS", "DASH", "UNSTOPPABLE"] },
+      { label: { ko: "R", en: "R" }, tags: ["TARGETED", "SUPPRESS", "KNOCKBACK", "DASH", "UNSTOPPABLE"] },
       { label: { ko: "R 폭발", en: "R Explosion" }, tags: ["DMG_PHYSICAL", "AOE", "SLOW"] },
     ] },
     

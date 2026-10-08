@@ -9,7 +9,7 @@ export const fiddlesticks_rakan: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: [""],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 라칸 W, E의 [[DASH]]을 끊을 수 있음. [[EXIST]]"],
       en: [""],
     },
     rakan: {

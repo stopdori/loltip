@@ -9,8 +9,8 @@ export const fiddlesticks_zyra: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     zyra: {
       ko: [],

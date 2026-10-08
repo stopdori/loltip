@@ -13,7 +13,7 @@ export const braum_fiddlesticks: MatchupSummary = {
       en: ["Braum's E(Shield) can [[DAMAGE_NULLIFY]] Fiddlesticks's basic attacks, Q, W (first tick), E, and R (first tick).\nHowever, [[FEAR]] from Q and R (appearing from outside vision) still applies.", "Braum's E(Shield) can [[INTERCEPT_PROJECTILE]] Fiddlesticks's basic attacks and Q.\nHowever, Q's [[FEAR]] still applies.", "Braum's P [[STUN]] and R [[AIRBORNE]] can interrupt Fiddlesticks's R (channeling)."],
     },
     fiddlesticks: {
-      ko: [],
+      ko: ["Q(패시브, 액티브)의 [[FEAR]] / E의 [[SILENCE]]으로 브라움 W의 [[DASH]]을 끊을 수 없음. [[NOT_EXIST]] \n 단, [[FEAR]], [[SILENCE]]은 남아있음."],
       en: [],
     },
   },

@@ -73,7 +73,7 @@ function okTags(o: Override): string[] {
 }
 // kind별 관련 태그(이게 하나도 없으면 MISSING_TAG)
 function relatedTags(o: Override): string[] {
-  if (o.kind === "DASH" || o.kind === "IGNORE_TERRAIN") return [o.kind];
+  if (o.kind === "DASH" || o.kind === "IGNORE_TERRAIN" || o.kind === "TRANSFORM") return [o.kind];
   return ["SKILL_CHANNEL", "SKILL_CHARGED", "SKILL_CHANNEL_MOVEMENT"];
 }
 

@@ -9,8 +9,8 @@ export const fiddlesticks_sona: MatchupSummary = {
   },
   highlightsByChamp: {
     fiddlesticks: {
-      ko: [""],
-      en: [""],
+      ko: [],
+      en: [],
     },
     sona: {
       ko: [],

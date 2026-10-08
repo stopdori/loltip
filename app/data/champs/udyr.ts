@@ -51,7 +51,7 @@ const udyr: ChampData = {
     ] },
 
       W: [],
-      E: [],
+      E: ["DASH"],
       
       R: { phases: [
       { label: { ko: "Q", en: "Q" }, tags: ["BUFF_STACK"] },
@@ -64,7 +64,7 @@ const udyr: ChampData = {
       P: [],
       Q: [],
       W: [],
-      E: [],
+      E: ["DASH"],
       R: [],
     },
   },
