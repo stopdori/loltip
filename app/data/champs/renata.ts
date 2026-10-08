@@ -25,7 +25,7 @@ const renata: ChampData = {
     
     Q: { phases: [
       { label: { ko: "Q1", en: "Q1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST"] },
-      { label: { ko: "Q2", en: "Q2" }, tags: ["DMG_MAGIC", "SEPARATOR", "ST_CONDITIONAL", "STUN"] },
+      { label: { ko: "Q2", en: "Q2" }, tags: ["DMG_MAGIC", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE", "STUN"] },
     ] },
 
     W: ["BUFF", "TARGETED", "SEPARATOR", "ST_CONDITIONAL", "MS_TO_ENEMY", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DURATION_RESET", "SEPARATOR", "ST_CONDITIONAL", "BURN"],

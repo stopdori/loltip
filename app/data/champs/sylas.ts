@@ -36,10 +36,11 @@ const sylas: ChampData = {
       { label: { ko: "Q 폭발", en: "Q Explodes" }, tags: ["DMG_MAGIC", "ZONE"] },
     ] },
     
-    W: ["DMG_MAGIC", "TARGETED", "DASH", "BUFF_STACK"],
+    W: ["DMG_MAGIC", "TARGETED", "BUFF_STACK", "SEPARATOR", "DASH", "WALL_HOP"],
+    
     E: { phases: [
-      { label: { ko: "E1", en: "E1" }, tags: ["BUFF_STACK"] },
-      { label: { ko: "E2", en: "E2" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "DASH", "BUFF_STACK"] },
+      { label: { ko: "E1", en: "E1" }, tags: ["BUFF_STACK", "SEPARATOR", "DASH", "WALL_HOP"] },
+      { label: { ko: "E2", en: "E2" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "BUFF_STACK", "SEPARATOR", "DASH", "WALL_HOP"] },
     ] },
     
     R: { phases: [

@@ -41,8 +41,8 @@ const samira: ChampData = {
   gimmick: {
  
     P: { phases: [
-      { label: { ko: "스타일", en: "Style" }, tags: ["BUFF_INTERACT", "BA", "Q", "W", "E"] },
-      { label: { ko: "스타일 효과", en: "Style Effect" }, tags: ["MS_UP"] },
+      { label: { ko: "P 스타일", en: "" }, tags: ["BUFF_STACK", "SEPARATOR", "PER_STACK", "MS_UP"] },
+      { label: { ko: "P 돌진 에어본", en: "" }, tags: ["ST_CONDITIONAL", "AIRBORNE", "SEPARATOR", "DASH", "WALL_HOP"] },
     ] },
 
     Q: { phases: [
