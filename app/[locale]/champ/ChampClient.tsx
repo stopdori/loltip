@@ -12,7 +12,7 @@ import type { MatchupClientResult } from "@/app/data/matchups/_index";
 import UltCooldownBox from "@/app/components/UltCooldownBox";
 
 import { CHAMPIONS, type Champ } from "@/app/data/champions";
-import type { ChampClientData } from "@/app/data/champs/clientData";
+import type { ChampClientData } from "@/app/data/champClientData";
 import FeedbackButton from "@/app/components/FeedbackButton";
 import QuizWidget from "@/app/components/QuizWidget";
 import SiteHeader from "@/app/components/SiteHeader";

@@ -7,7 +7,7 @@ import { TAG_LABEL, TAG_DESC, type TagId } from "../data/interactions/tags";
 import type { SkillKey } from "../data/interactions/types";
 import { GIMMICK_TAG_LABEL, GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
 import type { GimmickSkillData } from "../data/interactions/types";
-import type { ChampClientData } from "../data/champs/clientData";
+import type { ChampClientData } from "../data/champClientData";
 import { CHAMP_FORMS, hasForms } from "../data/interactions/forms";
 import { useChampSpells } from "@/app/lib/useChampSpells";
 import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from "@/app/lib/ddragon";

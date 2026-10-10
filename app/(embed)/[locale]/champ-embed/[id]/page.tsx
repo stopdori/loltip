@@ -1,7 +1,7 @@
 import ChampClient from "@/app/[locale]/champ/ChampClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
-import { getChampClientData } from "@/app/data/champs/clientData";
+import { getChampClientData } from "@/app/data/champClientData";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Fragment } from "react";
 

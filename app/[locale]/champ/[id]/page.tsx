@@ -1,7 +1,7 @@
 import ChampPageClient from "./ChampPageClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
-import { getChampClientData } from "@/app/data/champs/clientData";
+import { getChampClientData } from "@/app/data/champClientData";
 import { TAG_LABEL } from "@/app/data/interactions/tags";
 import { GIMMICK_TAG_LABEL } from "@/app/data/interactions/tags_gimmick";
 import { CHAMP_FORMS } from "@/app/data/interactions/forms";
