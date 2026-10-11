@@ -29,7 +29,7 @@ const akshan: ChampData = {
     ] },
 
     Q: { phases: [
-      { label: { ko: "가는 Q", en: "Outbound Q" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "PIERCE", "DEBUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "RANGE_UP"] },
+      { label: { ko: "가는 Q", en: "Initial Q" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "PIERCE", "DEBUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "RANGE_UP"] },
       { label: { ko: "오는 Q", en: "Return Q" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "PIERCE", "DEBUFF_STACK"] },
     ] },
     
@@ -40,7 +40,8 @@ const akshan: ChampData = {
     
     E: { phases: [
       { label: { ko: "E 갈고리 발사", en: "E Hookshot" }, tags: ["PROJECTILE"] },
-      { label: { ko: "E 회전", en: "E Spin" }, tags: ["SKILL_CHANNEL_MOVEMENT", "DASH", "SEPARATOR", "SKILL_RECAST", "CANCELLABLE"] },
+      { label: { ko: "E 준비 단계", en: "E Wind-up Phase" }, tags: ["SKILL_CHANNEL_MOVEMENT"] },
+      { label: { ko: "E 회전", en: "E Spin" }, tags: ["SKILL_CHANNEL_MOVEMENT", "DASH", "SEPARATOR", "RECAST_CANCEL", "CANCELLABLE"] },
       { label: { ko: "E 공격", en: "E Attack" }, tags: ["DMG_PHYSICAL", "PROJECTILE", "DEBUFF_STACK"] },
     ] },
 
@@ -92,12 +93,12 @@ const akshan: ChampData = {
       note2: {
         ko: [
         "P의 [[MS_UP]] 효과는 공격속도에 비례하여 추가증가.", 
-        "E는 갈고리에서 E [[SKILL_RECAST]]로 내려야 딜로스 적음.",
+        "E는 갈고리에서 E [[RECAST_CANCEL]]로 내려야 딜로스 적음.",
         "R로 [[SKILL_CHANNEL]] 도중에 E로 회전 가능. \n 지정한 대상은 [[TRUE_SIGHT]]. \n [[CAMOUFLAGE]], [[INVISIBILITY]]을 해도 모습이 보임."
       ],
         en: [
         "P's [[MS_UP]] effect additionally increases based on bonus attack speed.",
-        "On E, dismounting early from the hook via E [[SKILL_RECAST]] minimizes DPS loss.",
+        "On E, dismounting early from the hook via E [[RECAST_CANCEL]] minimizes DPS loss.",
         "E can still be used to swing while [[SKILL_CHANNEL]]ing R. \n The locked-on target is granted [[TRUE_SIGHT]]. \n They remain visible even if they use [[CAMOUFLAGE]] or [[INVISIBILITY]]."
       ],
         },
@@ -133,12 +134,12 @@ const akshan: ChampData = {
       en: "Passive: Enemy champions who kill Akshan's allies are marked as Scoundrels for 60 seconds. [[ON_TAKEDOWN]] on a Scoundrel [[REVIVE]]s the ally they killed, grants bonus gold, and clears all other Scoundrel marks. \n \n Active: Akshan gains [[CAMOUFLAGE]] and, while moving toward Scoundrels, 80/90/100/110/120 [[MS_UP]] and [[MANA_RESTORE]] equal to 12% of missing mana. [[CAMOUFLAGE]] fades quickly outside of brush or near a wall. \n \n 18/14/10/6/2 second [[COOLDOWN]].",
     },
     E: {
-      ko: "아크샨이 갈고리를 발사해 지형에 걸고 주위를 돌며, 반복해서 가장 가까운 적에게 8/16/24/32/40(+25% [[AD_SCALE]])의 [[DMG_PHYSICAL]](온힛 효과는 25%만 적용)를 입힙니다. \n [[SKILL_RECAST]]로 일찍 뛰어내릴 수 있으며, 챔피언이나 지형과 충돌하면 스윙이 조기 종료됩니다. \n 챔피언 처치에 관여([[ON_TAKEDOWN]])하면 이 스킬의 [[COOLDOWN]]이 0.5초로 감소합니다. \n \n 18/16.5/15/13.5/12초의 [[COOLDOWN]].",
-      en: "Akshan fires a grappling hook into terrain and swings around it, repeatedly dealing 8/16/24/32/40 (+25% [[AD_SCALE]]) [[DMG_PHYSICAL]] (on-hit effects apply at only 25%) to the nearest enemy. \n He can [[SKILL_RECAST]] to jump off early, and colliding with a champion or terrain ends the swing early. \n [[ON_TAKEDOWN]] during the swing reduces this Ability's [[COOLDOWN]] to 0.5 seconds. \n \n 18/16.5/15/13.5/12 second [[COOLDOWN]].",
+      ko: "아크샨이 갈고리를 발사해 지형에 걸고 주위를 돌며, 반복해서 가장 가까운 적에게 8/16/24/32/40(+25% [[AD_SCALE]])의 [[DMG_PHYSICAL]](온힛 효과는 25%만 적용)를 입힙니다. \n [[RECAST_CANCEL]]로 일찍 뛰어내릴 수 있으며, 챔피언이나 지형과 충돌하면 스윙이 조기 종료됩니다. \n 챔피언 처치에 관여([[ON_TAKEDOWN]])하면 이 스킬의 [[COOLDOWN]]이 0.5초로 감소합니다. \n \n 18/16.5/15/13.5/12초의 [[COOLDOWN]].",
+      en: "Akshan fires a grappling hook into terrain and swings around it, repeatedly dealing 8/16/24/32/40 (+25% [[AD_SCALE]]) [[DMG_PHYSICAL]] (on-hit effects apply at only 25%) to the nearest enemy. \n He can [[RECAST_CANCEL]] to jump off early, and colliding with a champion or terrain ends the swing early. \n [[ON_TAKEDOWN]] during the swing reduces this Ability's [[COOLDOWN]] to 0.5 seconds. \n \n 18/16.5/15/13.5/12 second [[COOLDOWN]].",
     },
     R: {
-      ko: "아크샨이 적 챔피언을 조준하여 최대 2.5초 동안 충전하며 최대 5/6/7개의 총알을 저장합니다. \n [[SKILL_RECAST]]하면 저장된 총알을 모두 발사하여, 처음 적중한 챔피언·미니언·건물에게 총알당 최소 25/35/45(+15% [[AD_SCALE]])에서 \n [[TARGET_MISSING_HP_SCALE]]에 비례해 최대 75/105/135(+45% [[AD_SCALE]])까지의 [[DMG_PHYSICAL]]를 입힙니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
-      en: "Akshan locks onto an enemy champion and channels for up to 2.5 seconds, storing up to 5/6/7 bullets. \n [[SKILL_RECAST]] fires all stored bullets at the first enemy champion, minion, or structure hit, each dealing from at least 25/35/45 (+15% [[AD_SCALE]]) \n up to 75/105/135 (+45% [[AD_SCALE]]) [[DMG_PHYSICAL]] based on [[TARGET_MISSING_HP_SCALE]]. \n \n {{ultCooldown}} second [[COOLDOWN]].",
+      ko: "아크샨이 적 챔피언을 조준하여 최대 2.5초 동안 충전하며 최대 5/6/7개의 총알을 저장합니다. \n R [[RECAST_DETONATE]]하면 저장된 총알을 모두 발사하여, 처음 적중한 챔피언·미니언·건물에게 총알당 최소 25/35/45(+15% [[AD_SCALE]])에서 \n [[TARGET_MISSING_HP_SCALE]]에 비례해 최대 75/105/135(+45% [[AD_SCALE]])까지의 [[DMG_PHYSICAL]]를 입힙니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
+      en: "Akshan locks onto an enemy champion and channels for up to 2.5 seconds, storing up to 5/6/7 bullets. \n [[RECAST_DETONATE]] fires all stored bullets at the first enemy champion, minion, or structure hit, each dealing from at least 25/35/45 (+15% [[AD_SCALE]]) \n up to 75/105/135 (+45% [[AD_SCALE]]) [[DMG_PHYSICAL]] based on [[TARGET_MISSING_HP_SCALE]]. \n \n {{ultCooldown}} second [[COOLDOWN]].",
     },
   },
 };

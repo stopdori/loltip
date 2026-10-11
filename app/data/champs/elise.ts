@@ -24,7 +24,7 @@ const elise: ChampData = {
       { label: { ko: "W 액티브", en: "W Active" }, tags: ["AS_UP", "AA_RESET"] },
     ] },
     
-      E: ["E_FLASH", "OVERHEAD_VISION", "UNTARGETABLE", "TOWER_DODGE", "SEPARATOR", "SKILL_RECAST", "SEPARATOR_NEWLINE", "SEPARATOR", "BLINK", "WALL_HOP"],
+      E: ["E_FLASH", "OVERHEAD_VISION", "UNTARGETABLE", "TOWER_DODGE", "SEPARATOR", "SEPARATOR_NEWLINE", "SEPARATOR", "BLINK", "WALL_HOP"],
 
       R: ["TRANSFORM"],
     },
@@ -73,8 +73,8 @@ const elise: ChampData = {
     ] },
 
       E: { phases: [
-      { label: { ko: "E", en: "E" }, tags: ["OVERHEAD_VISION", "UNTARGETABLE", "TOWER_DODGE", "SEPARATOR", "SKILL_RECAST"] },
-      { label: { ko: "E 재시전 (하강)", en: "E Recast (Descent)" }, tags: ["ST_CONDITIONAL", "BLINK", "WALL_HOP"] },
+      { label: { ko: "E", en: "E" }, tags: ["OVERHEAD_VISION", "UNTARGETABLE", "TOWER_DODGE", "SEPARATOR", "RECAST_CANCEL"] },
+      { label: { ko: "E 하강", en: "E Descent" }, tags: ["ST_CONDITIONAL", "BLINK", "WALL_HOP"] },
       { label: { ko: "E 하강 버프", en: "E Descent Buff" }, tags: ["P", "BUFF", "EFFECT_UP"] },
     ] },
     
@@ -107,7 +107,7 @@ const elise: ChampData = {
 
           "W의 [[PASSIVE_BONUS]]는 새끼거미 기본 [[AS_UP]]. \n W는 엘리스와 새끼 거미의 [[AS_UP]].", 
 
-          "E는 엘리스와 새끼 거미가 공중으로 올라감. \n [[OVERHEAD_VISION]]를 획득하고, [[UNTARGETABLE]] 상태로 대기. \n 시간이 지나거나 대상에 [[SKILL_RECAST]]하면 \n [[BLINK]] 하여 대상뒤로 하강.", 
+          "E는 엘리스와 새끼 거미가 공중으로 올라감. \n [[OVERHEAD_VISION]]를 획득하고, [[UNTARGETABLE]] 상태로 대기. \n 시간이 지나거나 대상에 [[RECAST_CANCEL]]하면 \n 대상뒤로 [[BLINK]]하여 하강.", 
           "하강 후 [[BUFF]] 획득. \n [[BUFF]]는 P([[ON_HIT]] [[DMG_MAGIC]], [[HEAL]])의 효과 증가.", 
         ],
 
@@ -122,7 +122,7 @@ const elise: ChampData = {
           "P [[SUMMON]]s spiderlings equal to the [[BUFF_STACK]]s. \n Spider Form has reduced range, but its [[BA]]s always \n apply [[ON_HIT]] ([[DMG_MAGIC]], [[HEAL]]).",
           "Q: Elise and her spiderlings perform a [[TARGETED]] [[DASH]]. \n [[DMG_MAGIC]] based on [[TARGET_MISSING_HP_SCALE]]. \n This attack applies [[ON_HIT]] effects.",
           "W's [[PASSIVE_BONUS]] grants spiderlings base [[AS_UP]]. \n W grants [[AS_UP]] to Elise and her spiderlings.",
-          "E sends Elise and her spiderlings into the air. \n She gains [[OVERHEAD_VISION]] and waits while [[UNTARGETABLE]]. \n When time runs out or on [[SKILL_RECAST]] onto a target, \n she [[BLINK]]s down behind the target.",
+          "E sends Elise and her spiderlings into the air. \n She gains [[OVERHEAD_VISION]] and waits while [[UNTARGETABLE]]. \n When time runs out or on [[RECAST_CANCEL]] onto a target, \n she [[BLINK]]s down behind the target.",
           "After descending, she gains a [[BUFF]]. \n The [[BUFF]] increases the effects of P ([[ON_HIT]] [[DMG_MAGIC]], [[HEAL]]).",
         ]
 
@@ -196,8 +196,8 @@ const elise: ChampData = {
         en: "[[PASSIVE_BONUS]]: Spiderlings gain 5/10/15/20/25% [[AS_UP]]. \n \n Active: Elise and her Spiderlings gain 70/85/100/115/130% [[AS_UP]] for 3 seconds. \n \n 6 second [[COOLDOWN]].",
       },
       E: {
-        ko: "엘리스와 새끼 거미들이 공중으로 올라가 [[OVERHEAD_VISION]]를 얻고 [[UNTARGETABLE]] 상태가 됩니다. \n 잠시 후에 하강해 5초 동안 거미 여왕(P)의 추가 피해량과 회복량이 40/55/70/85/100% 증가합니다. \n 주변에 대상이 있다면 [[SKILL_RECAST]]하여 일찍 하강할 수 있습니다. \n \n 22/21/20/19/18초의 [[COOLDOWN]].",
-        en: "Elise and her Spiderlings ascend into the air, gaining [[OVERHEAD_VISION]] and becoming [[UNTARGETABLE]]. \n After a moment they descend, and for 5 seconds Spider Queen (P)'s bonus damage and healing are increased by 40/55/70/85/100%. \n If a target is nearby, she can [[SKILL_RECAST]] to descend early. \n \n 22/21/20/19/18 second [[COOLDOWN]].",
+        ko: "엘리스와 새끼 거미들이 공중으로 올라가 [[OVERHEAD_VISION]]를 얻고 [[UNTARGETABLE]] 상태가 됩니다. \n 잠시 후에 하강해 5초 동안 거미 여왕(P)의 추가 피해량과 회복량이 40/55/70/85/100% 증가합니다. \n 주변에 대상이 있다면 E [[RECAST_CANCEL]]하여 일찍 하강할 수 있습니다. \n \n 22/21/20/19/18초의 [[COOLDOWN]].",
+        en: "Elise and her Spiderlings ascend into the air, gaining [[OVERHEAD_VISION]] and becoming [[UNTARGETABLE]]. \n After a moment they descend, and for 5 seconds Spider Queen (P)'s bonus damage and healing are increased by 40/55/70/85/100%. \n If a target is nearby, she can E [[RECAST_CANCEL]] to descend early. \n \n 22/21/20/19/18 second [[COOLDOWN]].",
       },
       R: {
         ko: "엘리스가 인간 형태로 [[TRANSFORM]]하여 원거리 챔피언이 되며 인간 형태 스킬을 사용할 수 있고, 새끼 거미들은 휴면 상태로 돌아갑니다. \n \n 3초의 [[COOLDOWN]].",

@@ -105,8 +105,8 @@ const corki: ChampData = {
       en: "Corki fires a gatling gun in front of him for 4 seconds, dealing 80/130/180/230/280 (+240% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] and reducing magic resistance and armor by up to 12/14/16/18/20 ([[AR_MR_SHRED]]). \n \n 12 second [[COOLDOWN]].",
     },
     R: {
-      ko: "코르키가 처음으로 적을 맞히면 폭발하는 [[PROJECTILE]]을 발사하여 주변 적에게 90/170/250(+85% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힙니다. \n 세 번째 미사일은 매번 180/340/500(+170% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힙니다. \n \n 이 스킬은 최대 4회 [[RECHARGE]]됩니다(20초마다). \n 챔피언을 상대로 [[BA]] 적중 시 충전 시간이 2~6초 감소합니다([[CRIT]] 확률 비례). \n \n 2초의 [[COOLDOWN]].",
-      en: "Corki fires a [[PROJECTILE]] that explodes on the first enemy hit, dealing 90/170/250 (+85% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] to nearby enemies. \n Every third missile deals 180/340/500 (+170% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]]. \n \n This skill holds up to 4 [[RECHARGE]] charges (one every 20 seconds). \n Hitting a champion with a [[BA]] reduces the recharge time by 2~6 seconds (based on [[CRIT]] chance). \n \n 2 second [[COOLDOWN]].",
+      ko: "코르키가 처음으로 적을 맞히면 폭발하는 [[PROJECTILE]]을 발사하여 주변 적에게 90/170/250(+85% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힙니다. \n 세 번째 미사일은 매번 180/340/500(+170% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힙니다. \n \n 이 스킬은 최대 4회 [[RECHARGE]]됩니다(20초마다). \n 챔피언을 상대로 [[BA]] 적중 시 충전 시간이 2~6초 감소합니다([[CRIT]] 확률 비례). \n \n 20초의 [[RECHARGE]] [[COOLDOWN]].",
+      en: "Corki fires a [[PROJECTILE]] that explodes on the first enemy hit, dealing 90/170/250 (+85% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] to nearby enemies. \n Every third missile deals 180/340/500 (+170% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]]. \n \n This skill holds up to 4 [[RECHARGE]] charges (one every 20 seconds). \n Hitting a champion with a [[BA]] reduces the recharge time by 2~6 seconds (based on [[CRIT]] chance). \n \n 20 second [[RECHARGE]] [[COOLDOWN]].",
     },
   },
 };

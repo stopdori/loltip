@@ -22,7 +22,7 @@ const anivia: ChampData = {
     P: ["COOLDOWN", "SEPARATOR", "TRANSFORM", "REVIVE", "AR_MR_UP"],
 
     Q: { phases: [
-      { label: { ko: "Q1", en: "Q1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "SLOW", "SEPARATOR", "MARK", "SEPARATOR_NEWLINE", "SEPARATOR", "SKILL_RECAST", "RECAST_TRIGGER"] },
+      { label: { ko: "Q1", en: "Q1" }, tags: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "PIERCE", "SLOW", "SEPARATOR", "MARK", "SEPARATOR_NEWLINE", "SEPARATOR", "RECAST_DETONATE"] },
       { label: { ko: "Q2 폭발", en: "Q2 Detonate"  }, tags: ["DMG_MAGIC", "AOE", "SLOW", "STUN", "SEPARATOR", "MARK"] },
     ] },
 
@@ -31,7 +31,7 @@ const anivia: ChampData = {
     E: ["DMG_MAGIC", "TIMING_CAST", "TARGETED", "PROJECTILE", "SEPARATOR_NEWLINE", "SEPARATOR", "MARK_CONSUME", "DMG_MAGIC", "X2"],
 
     R: { phases: [
-      { label: { ko: "R 장판", en: "R Zone" }, tags: ["DOT", "DMG_MAGIC", "TIMING_CAST", "SKILL_CHANNEL", "CAST_MOVE", "ZONE", "SLOW", "SEPARATOR", "SKILL_RECAST", "RECAST_CANCEL"] },
+      { label: { ko: "R 장판", en: "R Zone" }, tags: ["DOT", "DMG_MAGIC", "TIMING_CAST", "SKILL_CHANNEL", "CAST_MOVE", "ZONE", "SLOW", "SEPARATOR", "RECAST_CANCEL"] },
       { label: { ko: "R 장판 최대 크기", en: "R Zone Max Size"  }, tags: ["DOT", "DMG_MAGIC", "X3", "SEPARATOR", "SLOW", "X1.5", "SEPARATOR", "MARK"] },
     ] },
   },
@@ -46,11 +46,11 @@ const anivia: ChampData = {
           "P는 체력이 0이되면 \n 체력이 가득 차고 얼음 알로 [[TRANSFORM]]. \n 하늘에서 내려오는 빛이 알에 닿으면 \n 다시 애니비아로 [[REVIVE]]([[TRANSFORM]]). \n \n",
 
           "Q1은 얼음 구체 [[PROJECTILE]] 발사. \n 닿으면 [[DMG_MAGIC]], [[SLOW]], [[MARK]].", 
-          "Q2는 [[SKILL_RECAST]]으로 [[DETONATE]] [[RECAST_TRIGGER]]. \n 또는 최대 사거리 도달 시 자동으로 [[DETONATE]]. \n 추가 [[DMG_MAGIC]], [[STUN]], [[MARK]]과 [[SLOW]] [[DURATION_RESET]]. \n \n",
+          "Q2는 [[RECAST_DETONATE]] 또는 최대 사거리 도달 시 자동으로 [[DETONATE]]. \n 추가 [[DMG_MAGIC]], [[STUN]], [[MARK]]과 \n [[SLOW]] [[DURATION_RESET]]. \n \n",
 
           "W([[TERRAIN]])는 가로로 긴 얼음 벽 생성. \n \n",
 
-          "E는 [[PROJECTILE]]를 발사하여 [[DMG_MAGIC]]. \n 얼음 땡 [[MARK]] 대상에게 2배 피해. \n [[MARK]]은 Q, R에서 부여. \n \n",
+          "E는 [[PROJECTILE]]를 발사하여 [[DMG_MAGIC]]. \n 얼음 땡 [[MARK_CONSUME]] 하면 2배 피해. \n [[MARK]]은 Q, R에서 부여. \n \n",
 
           "R은 점점 넓어지는 [[ZONE]] 생성. \n 0.5초마다 [[DMG_MAGIC]], [[SLOW]]. \n 최대로 넓어지면 0.25초마다 \n [[DMG_MAGIC]] 3배, [[SLOW]] 1.5배, [[MARK]] 추가."
 
@@ -59,12 +59,12 @@ const anivia: ChampData = {
         en: [
           "When P's health hits 0, \n it fills back up and [[TRANSFORM]]s into an ice Egg. \n When light descending from the sky touches the Egg, \n she [[REVIVE]]s ([[TRANSFORM]]s) back into Anivia. \n \n",
 
-          "Q fires a [[PROJECTILE]] orb of ice. \n On hit: [[DMG_MAGIC]], [[SLOW]], and [[MARK]].",
-          "[[RECAST_TRIGGER]]s a [[DETONATE]] via Q's [[SKILL_RECAST]]. \n Or automatically [[DETONATE]]s on reaching max range. \n Deals additional [[DMG_MAGIC]] and [[STUN]], plus [[MARK]] and [[DURATION_RESET]]ing the [[SLOW]]. \n \n",
+          "Q1 fires an ice orb [[PROJECTILE]]. \n On hit: [[DMG_MAGIC]], [[SLOW]], and [[MARK]].",
+          "Q2 [[DETONATE]]s via [[RECAST_DETONATE]] or automatically on reaching max range. \n Deals additional [[DMG_MAGIC]], [[STUN]], [[MARK]], and \n [[DURATION_RESET]]s the [[SLOW]]. \n \n",
 
           "W ([[TERRAIN]]) creates a long horizontal wall of ice. \n \n",
 
-          "E fires a [[PROJECTILE]], dealing [[DMG_MAGIC]]. \n Deals double damage to a target with the Frostbite [[MARK]]. \n [[MARK]] is applied by Q or R. \n \n",
+          "E fires a [[PROJECTILE]], dealing [[DMG_MAGIC]]. \n Deals double damage when it [[MARK_CONSUME]]s Frostbite. \n [[MARK]] is applied by Q or R. \n \n",
 
           "R creates a [[ZONE]] that gradually grows larger. \n Deals [[DMG_MAGIC]] and [[SLOW]]s every 0.5 seconds. \n Once fully expanded, every 0.25 seconds \n deals 3x [[DMG_MAGIC]], 1.5x [[SLOW]], and adds [[MARK]].",
         ]

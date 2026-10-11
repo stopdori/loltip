@@ -20,8 +20,8 @@ const ahri: ChampData = {
 
   gimmick: {
     P: { phases: [
-      { label: { ko: "정기", en: "" }, tags: ["ST_CONDITIONAL", "BUFF_STACK", "SEPARATOR", "ON_TAKEDOWN", "BUFF_STACK", "X9"] },
-      { label: { ko: "회복", en: ""  }, tags: ["STACK_CONSUME", "HEAL"] },
+      { label: { ko: "정기", en: "Essence" }, tags: ["ST_CONDITIONAL", "BUFF_STACK", "SEPARATOR", "ON_TAKEDOWN", "BUFF_STACK", "X9"] },
+      { label: { ko: "회복", en: "Heal"  }, tags: ["STACK_CONSUME", "HEAL"] },
     ] },
 
     Q: { phases: [
@@ -30,15 +30,15 @@ const ahri: ChampData = {
     ] },
 
     W: { phases: [
-      { label: { ko: "W 버프", en: "" }, tags: ["BUFF_FORM", "MS_UP"] },
-      { label: { ko: "W 투사체", en: ""  }, tags: ["DMG_MAGIC", "PROJECTILE", "HOMING"] },
+      { label: { ko: "W 버프", en: "W Buff" }, tags: ["BUFF_FORM", "MS_UP"] },
+      { label: { ko: "W 투사체", en: "W Projectile"  }, tags: ["DMG_MAGIC", "PROJECTILE", "HOMING"] },
     ] },
 
     E: ["DMG_MAGIC", "TIMING_CAST", "PROJECTILE", "CHARM", "KNOCKDOWN"],
 
     R: { phases: [
-      { label: { ko: "R 버프", en: "" }, tags: ["BUFF_FORM", "SEPARATOR", "ON_TAKEDOWN", "SKILL_RECAST", "DURATION_EXT"] },
-      { label: { ko: "R", en: ""  }, tags: ["DMG_MAGIC", "PROJECTILE", "HOMING", "DASH", "WALL_HOP"] },
+      { label: { ko: "R 버프", en: "R Buff" }, tags: ["BUFF_FORM", "SEPARATOR", "ON_TAKEDOWN", "SKILL_RECAST", "DURATION_EXT"] },
+      { label: { ko: "R", en: "R"  }, tags: ["DMG_MAGIC", "PROJECTILE", "HOMING", "SEPARATOR", "DASH", "WALL_HOP"] },
     ] },
   },
 
@@ -58,13 +58,11 @@ const ahri: ChampData = {
 
           "R은 [[DASH]]하여 주변에 [[HOMING]] [[PROJECTILE]] 3개를 발사하여 [[DMG_MAGIC]]. \n 동시에 아리에게 15초간 [[BUFF]] 생성. \n [[BUFF]]가 있는동안 2회 [[SKILL_RECAST]] 가능. \n [[ON_TAKEDOWN]] 시 (3초 이내) [[SKILL_RECAST]] +1회 (최대 3회) \n [[DURATION_EXT]] 최대 10초.",
           ],
-        en: [
-          "P's [[BUFF_STACK]] triggers [[HEAL]] when full. \n 1 stack per kill, 18 stacks on kill participation within 3s.",
-          "Must hit with the return Q. \n Going Q deals [[DMG_MAGIC]], return Q deals [[DMG_TRUE]].",
-          "W flies toward targets attacked within the last 3 seconds.",
-          "E's [[CHARM]] is great for stopping [[DASH]]-type moves. \n [[E_FLASH]] is especially effective.",
-          "R allows up to 3 [[DASH]]es. \n Kill participation within 3s grants +1 charge. \n Duration: 15s, resets to 10s on kill participation.",
-          "W and R projectiles require vision of the target to travel.",
+        en: ["P triggers [[HEAL]] at 9 [[BUFF_STACK]]s. \n 1 stack per regular kill. \n On [[ON_TAKEDOWN]] (within 3s), 9 stacks, but with an [[EMPOWERED]] effect. \n \n",
+          "Q fires a returning [[PROJECTILE]]. \n The outgoing Q deals [[PIERCE]] [[DMG_MAGIC]] \n and the returning Q deals [[DMG_TRUE]]. \n \n",
+          "W grants an [[MS_UP]] [[BUFF]] and \n creates 3 [[HOMING]] [[PROJECTILE]]s. \n They linger around her briefly, \n then fire at nearby targets to deal [[DMG_MAGIC]]. \n \n",
+          "E fires a [[PROJECTILE]]. \n On hit, deals [[DMG_MAGIC]] and [[CHARM]]. \n \n",
+          "R [[DASH]]es and fires 3 [[HOMING]] [[PROJECTILE]]s at nearby targets, dealing [[DMG_MAGIC]]. \n At the same time, Ahri gains a [[BUFF]] for 15 seconds. \n While the [[BUFF]] lasts, she can [[SKILL_RECAST]] 2 times. \n On [[ON_TAKEDOWN]] (within 3s), [[SKILL_RECAST]] +1 (max 3) \n and [[DURATION_EXT]] up to 10 seconds."
         ]
       },
 
@@ -76,9 +74,11 @@ const ahri: ChampData = {
         "W는 적중하는 첫번째 [[DMG_MAGIC]]가 제일 쌔고 \n 2~3번째 적중하는 피해는 감소한 [[DMG_MAGIC]]. \n 만약, 각각의 대상에게 1개씩만 날아가면 \n 모두 감소없는 피해로 들어감.",
         "R을 사용하면 R 아이콘에 노란색 테두리로 \n 지속시간 15초가 생김. \n 이 지속시간 동안 [[ON_TAKEDOWN]] 시 R 사용 가능 횟수 +1 \n 동시에 지속시간 다시 10초로 증가 \n 횟수를 다 사용해도 지속시간은 끝나지 않음."
       ],
-        en: [
-          "W's first hit deals full damage; additional hits to the same target deal reduced damage. \n If only 1 orb flies to each target, it deals full damage. \n If no recent target exists, W fires freely (prioritizes champions, at least 1 orb).",
-          "When R is active, a yellow border appears on the R icon showing 15s duration.\nKill participation grants +1 R charge and resets duration to 10s.\nEven if all charges are used, the duration continues.",
+        en: ["Hitting with Q at max range applies both [[DMG_MAGIC]] and [[DMG_TRUE]].",
+          "W and R projectiles require vision of the target to fly. \n Champions Ahri attacked within the last 3 seconds are hit first.",
+          "If W has no target, it fires at nearby enemies. \n However, at least 1 prioritizes champions.",
+          "W's first hit deals the most [[DMG_MAGIC]], \n and the 2nd and 3rd hits deal reduced [[DMG_MAGIC]]. \n If only 1 flies to each target, \n all of them deal full damage.",
+          "Using R shows a yellow border on the R icon \n with a 15-second duration. \n During this duration, [[ON_TAKEDOWN]] grants +1 R use \n and resets the duration back to 10 seconds. \n Even if all uses are spent, the duration does not end."
         ]
         },
     },
@@ -103,8 +103,8 @@ const ahri: ChampData = {
   // (CLAUDE.md "챔피언 skillTooltip 작성 규칙" 참고.)
   skillTooltip: {
     P: {
-      ko: "아리가 미니언 또는 몬스터를 처치할 때마다 [[BUFF_STACK]]을 얻고, 9개가 모이면 소모하여 35~95([[LEVEL_SCALE]])(+20% [[AP_SCALE]])의 [[HEAL]]을 얻습니다. \n 적 챔피언 처치에 관여(피해를 입힌 뒤 3초 이내)하면 대신 75~165([[LEVEL_SCALE]])(+30% [[AP_SCALE]])의 [[HEAL]]을 얻습니다.",
-      en: "Ahri gains a [[BUFF_STACK]] (Essence Fragment) whenever she kills a minion or monster; at 9 stacks, she consumes them to heal for 35~95 ([[LEVEL_SCALE]]) (+20% [[AP_SCALE]]). \n If she gets a champion takedown within 3 seconds of damaging them, she instead heals for 75~165 ([[LEVEL_SCALE]]) (+30% [[AP_SCALE]]).",
+      ko: "아리가 미니언 또는 몬스터를 처치할 때마다 [[BUFF_STACK]]을 얻고, 9개가 모이면 소모하여 35~95([[LEVEL_SCALE]] 비례)(+20% [[AP_SCALE]])의 [[HEAL]]을 얻습니다. \n 적 챔피언 처치에 관여(피해를 입힌 뒤 3초 이내)하면 대신 75~165([[LEVEL_SCALE]] 비례)(+30% [[AP_SCALE]])의 [[HEAL]]을 얻습니다.",
+      en: "Ahri gains a [[BUFF_STACK]] whenever she kills a minion or monster; at 9 stacks, she consumes them to gain 35~95 (based on [[LEVEL_SCALE]]) (+20% [[AP_SCALE]]) [[HEAL]]. \n If she participates in an enemy champion takedown (within 3 seconds of damaging them), she instead gains 75~165 (based on [[LEVEL_SCALE]]) (+30% [[AP_SCALE]]) [[HEAL]].",
     },
     Q: {
       ko: "아리가 구슬을 던진 후 다시 받습니다. \n 던질 때는 35/60/85/110/135(+50% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입히며, \n 돌아올 때는 같은 양의 [[DMG_TRUE]]를 입힙니다. \n \n 7초의 [[COOLDOWN]].",
@@ -120,7 +120,7 @@ const ahri: ChampData = {
     },
     R: {
       ko: "아리가 민첩하게 [[DASH]]하며 근처 적(챔피언 우선)에게 혼령의 정기 3개를 쏘아내 정기 하나당 75/125/175(+35% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입힙니다. \n 이 스킬은 15초 안에 최대 2회까지 [[SKILL_RECAST]] 가능합니다. \n \n 이 기간 동안 패시브 효과로 챔피언의 정기를 흡수하면 [[SKILL_RECAST]] 가능 횟수가 1회 늘고(최대 3회까지 저장) 남은 시간이 최대 10초 늘어납니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
-      en: "Ahri nimbly dashes, firing 3 essence bolts at nearby enemies (prioritizing champions), each dealing 75/125/175 (+35% [[AP_SCALE]]) [[DMG_MAGIC]]. \n This Ability can [[SKILL_RECAST]] up to 2 more times within 15 seconds. \n \n During this window, consuming a champion's essence via the passive grants an additional recast (up to 3 stored) and extends the remaining time by up to 10 seconds. \n \n {{ultCooldown}} second [[COOLDOWN]] (at levels 6/11/16).",
+      en: "Ahri nimbly [[DASH]]es, firing 3 essence bolts at nearby enemies (prioritizing champions), each dealing 75/125/175 (+35% [[AP_SCALE]]) [[DMG_MAGIC]]. \n This skill can [[SKILL_RECAST]] up to 2 times within 15 seconds. \n \n During this window, absorbing a champion's essence via the passive increases the [[SKILL_RECAST]] count by 1 (up to 3 stored) and extends the remaining time by up to 10 seconds. \n \n {{ultCooldown}} second [[COOLDOWN]].",
     },
   },
 };

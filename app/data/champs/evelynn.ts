@@ -108,8 +108,8 @@ const evelynn: ChampData = {
   // 스킬 수치 최근 변경 V25.S1.3). W/R 일부는 DDragon effectBurn과 위키가 일치, 나머지는 위키 본문/템플릿 수치로 채움.
   skillTooltip: {
     P: {
-      ko: "이블린은 [[OUT_OF_COMBAT]] 상태일 때(4초) 악의 장막에 휩싸입니다. \n 악의 장막에 싸이면 낮은 체력(250~590([[LEVEL_SCALE]])(+250% [[AP_SCALE]]) 미만)에서 초당 15~150([[LEVEL_SCALE]])의 체력이 [[HEAL]]되며 \n 6레벨부터는 [[CAMOUFLAGE]] 효과도 제공합니다.",
-      en: "When [[OUT_OF_COMBAT]] (4 seconds), Evelynn is shrouded in Demon Shade. \n While in Demon Shade at low health (below 250~590 ([[LEVEL_SCALE]]) (+250% [[AP_SCALE]])), she [[HEAL]]s 15~150 ([[LEVEL_SCALE]]) health per second, \n and from level 6 it also grants [[CAMOUFLAGE]].",
+      ko: "이블린은 [[OUT_OF_COMBAT]] 상태일 때(4초) 악의 장막에 휩싸입니다. \n 악의 장막에 싸이면 낮은 체력(250~590([[LEVEL_SCALE]] 비례)(+250% [[AP_SCALE]]) 미만)에서 초당 15~150([[LEVEL_SCALE]] 비례)의 체력이 [[HEAL]]되며 \n 6레벨부터는 [[CAMOUFLAGE]] 효과도 제공합니다.",
+      en: "When [[OUT_OF_COMBAT]] (4 seconds), Evelynn is shrouded in Demon Shade. \n While in Demon Shade at low health (below 250~590 (based on [[LEVEL_SCALE]]) (+250% [[AP_SCALE]])), she [[HEAL]]s 15~150 (based on [[LEVEL_SCALE]]) health per second, \n and from level 6 it also grants [[CAMOUFLAGE]].",
     },
     Q: {
       ko: "이블린이 가시를 발사해 처음 적중한 유닛에게 25/30/35/40/45(+25% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입힙니다. \n 그 후 동일 대상에게 가하는 이블린의 다음 세 번의 [[BA]] 또는 스킬이 15/25/35/45/55(+25% [[AP_SCALE]])의 [[DMG_MAGIC]]를 추가로 입힙니다. \n 이블린이 증오의 가시를 최대 3번까지 [[SKILL_RECAST]]할 수 있습니다. \n \n [[SKILL_RECAST]] 시: 이블린이 발사한 가시가 가장 가까운 적을 [[PIERCE]]하고 적중한 모든 적에게 25/30/35/40/45(+25% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입힙니다. \n \n 4초의 [[COOLDOWN]].",

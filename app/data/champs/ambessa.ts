@@ -43,7 +43,7 @@ const ambessa: ChampData = {
 
     W: ["DMG_PHYSICAL", "TIMING_CAST", "AOE", "SHIELD", "SEPARATOR", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "DMG_PHYSICAL", "X1.5"],
 
-    E: ["DMG_PHYSICAL", "AOE", "SLOW", "SEPARATOR", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "SKILL_RECAST"],
+    E: ["DMG_PHYSICAL", "AOE", "SLOW", "SEPARATOR", "BUFF_STACK", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "SKILL_REPEAT"],
 
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["PASSIVE_BONUS", "AR_PEN", "SEPARATOR", "ST_CONDITIONAL", "OMNIVAMP"] },
@@ -121,24 +121,24 @@ const ambessa: ChampData = {
   // R 쿨타임은 {{ultCooldown}}으로 참조.
   skillTooltip: {
     P: {
-      ko: "스킬 시전 중(경직 상태)에 공격 또는 이동 명령을 입력하면, 스킬 시전이 끝난 뒤 [[DASH]]한다. \n 스킬을 시전할 때마다 [[BUFF_STACK]] 1개를 얻으며(최대 3개, 4초 지속) \n 다음 평타 시 [[STACK_CONSUME]]하여 [[BA]]가 [[EMPOWERED]] 된다. \n [[RANGE_UP]] 75, [[AS_UP]] 50%를 얻고 5~30([[LEVEL_SCALE]])(+25% 추가 [[AD_SCALE]])의 추가 [[DMG_PHYSICAL]]를 입히며 40/55/70([[LEVEL_SCALE]])만큼 \n [[ENERGY_RESTORE]] 된다.",
-      en: "Entering an attack or move command while casting a skill causes Ambessa to [[DASH]] once the cast finishes. \n Casting a skill grants 1[[BUFF_STACK]] (max 3, lasts 4 seconds); her next [[BA]] [[STACK_CONSUME]]s them to become [[EMPOWERED]] — gaining [[RANGE_UP]] of 75, [[AS_UP]] of 50%, dealing an additional 5~30([[LEVEL_SCALE]])(+25% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]], and restoring 40/55/70([[LEVEL_SCALE]]) [[ENERGY_RESTORE]].",
+      ko: "스킬 시전 중(경직 상태)에 공격 또는 이동 명령을 입력하면, 스킬 시전이 끝난 뒤 [[DASH]]한다. \n 스킬을 시전할 때마다 [[BUFF_STACK]] 1개를 얻으며(최대 3개, 4초 지속) \n 다음 평타 시 [[STACK_CONSUME]]하여 [[BA]]가 [[EMPOWERED]] 된다. \n [[RANGE_UP]] 75, [[AS_UP]] 50%를 얻고 5~30([[LEVEL_SCALE]] 비례)(+25% 추가 [[AD_SCALE]])의 추가 [[DMG_PHYSICAL]]를 입히며 40/55/70([[LEVEL_SCALE]] 비례)만큼 \n [[ENERGY_RESTORE]] 된다.",
+      en: "Entering an attack or move command while casting a skill (while locked in the cast) causes Ambessa to [[DASH]] after the cast ends. \n Each skill cast grants 1 [[BUFF_STACK]] (max 3, lasts 4 seconds), \n and her next basic attack [[STACK_CONSUME]]s them, making her [[BA]] [[EMPOWERED]]. \n She gains 75 [[RANGE_UP]] and 50% [[AS_UP]], deals an additional 5~30 (based on [[LEVEL_SCALE]]) (+25% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]], and restores 40/55/70 (based on [[LEVEL_SCALE]]) \n [[ENERGY_RESTORE]].",
     },
     Q: {
       ko: "암베사가 전방 반원 범위로 쌍검을 휘둘러 20/30/40/50/60(+30% 추가 [[AD_SCALE]])(+2/2.25/2.5/2.75/3% [[TARGET_MAXHP_SCALE]])의 [[DMG_PHYSICAL]]를 입히며, 범위 가장자리에 맞은 적은 2배의 피해를 입는다. \n 적을 적중시키면 4초 이내에 Q가 Q2(파멸의 일격)로 전환된다. \n \n Q2 - 파멸의 일격: 전방 직선 범위로 쌍검을 내리쳐 25/37.5/50/62.5/75(+45% 추가 [[AD_SCALE]])(+2/2.25/2.5/2.75/3% [[TARGET_MAXHP_SCALE]])의 [[DMG_PHYSICAL]]를 입히며, 가장 먼저 맞은 적은 2배의 피해를 입는다. \n \n 14/13/12/11/10초의 [[COOLDOWN]].",
       en: "Ambessa sweeps her twin drakehounds in a semicircle in front of her, dealing 20/30/40/50/60(+30% bonus [[AD_SCALE]])(+2/2.25/2.5/2.75/3% [[TARGET_MAXHP_SCALE]]) [[DMG_PHYSICAL]]; enemies hit by the edge of the arc take double damage. \n Hitting an enemy transforms Q into Sundering Slam for the next 4 seconds. \n \n Sundering Slam: slams her twin drakehounds down in a line in front of her, dealing 25/37.5/50/62.5/75(+45% bonus [[AD_SCALE]])(+2/2.25/2.5/2.75/3% [[TARGET_MAXHP_SCALE]]) [[DMG_PHYSICAL]]; the first enemy hit takes double damage. \n \n 14/13/12/11/10 second [[COOLDOWN]].",
     },
     W: {
-      ko: "암베사가 [[SHIELD]]를 얻고 0.5초간 버틴 뒤 땅을 내리쳐 주변 적에게 50/75/100/125/150(+50% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힌다. \n 버티는 동안 미니언이 아닌 피해를 막아냈다면 피해량이 75/112.5/150/187.5/225(+75% 추가 [[AD_SCALE]])로 증가한다. \n \n [[SHIELD]]량은 50~320([[LEVEL_SCALE]])(+150% 추가 [[AD_SCALE]]), 1.5초 지속. \n \n 18/17/16/15/14초의 [[COOLDOWN]].",
-      en: "Ambessa gains a [[SHIELD]], braces herself for 0.5 seconds, then slams the ground, dealing 50/75/100/125/150(+50% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] to nearby enemies. \n If she blocked any non-minion damage while bracing, the damage increases to 75/112.5/150/187.5/225(+75% bonus [[AD_SCALE]]). \n \n [[SHIELD]] amount is 50~320([[LEVEL_SCALE]])(+150% bonus [[AD_SCALE]]), lasting 1.5 seconds. \n \n 18/17/16/15/14 second [[COOLDOWN]].",
+      ko: "암베사가 [[SHIELD]]를 얻고 0.5초간 버틴 뒤 땅을 내리쳐 주변 적에게 50/75/100/125/150(+50% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입힌다. \n 버티는 동안 미니언이 아닌 피해를 막아냈다면 피해량이 75/112.5/150/187.5/225(+75% 추가 [[AD_SCALE]])로 증가한다. \n \n [[SHIELD]]량은 50~320([[LEVEL_SCALE]] 비례)(+150% 추가 [[AD_SCALE]]), 1.5초 지속. \n \n 18/17/16/15/14초의 [[COOLDOWN]].",
+      en: "Ambessa gains a [[SHIELD]], braces herself for 0.5 seconds, then slams the ground, dealing 50/75/100/125/150(+50% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] to nearby enemies. \n If she blocked any non-minion damage while bracing, the damage increases to 75/112.5/150/187.5/225(+75% bonus [[AD_SCALE]]). \n \n [[SHIELD]] amount is 50~320(based on [[LEVEL_SCALE]])(+150% bonus [[AD_SCALE]]), lasting 1.5 seconds. \n \n 18/17/16/15/14 second [[COOLDOWN]].",
     },
     E: {
       ko: "암베사가 쌍검을 주변으로 휘둘러 40/60/80/100/120(+50% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입히고 99%만큼 [[SLOW]]시키며, 효과는 1초에 걸쳐 서서히 사라진다. \n E 시전 중 [[DASH]](P)을 발동시키면, [[DASH]]이 끝나는 지점에서 한 번 더 휘둘러 동일한 피해를 추가로 입힌다. \n (합산 시 최대 80/120/160/200/240(+100% 추가 [[AD_SCALE]])). \n \n 13/12/11/10/9초의 [[COOLDOWN]].",
-      en: "Ambessa whips her twin drakehounds around herself, dealing 40/60/80/100/120(+50% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] and [[SLOW]]ing by 99%, decaying over 1 second. \n Triggering her passive [[DASH]] while casting E makes her strike a second time at the end of the dash for the same damage (total up to 80/120/160/200/240(+100% bonus [[AD_SCALE]])). \n \n 13/12/11/10/9 second [[COOLDOWN]].",
+      en: "Ambessa whips her twin drakehounds around herself, dealing 40/60/80/100/120 (+50% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] and [[SLOW]]ing by 99%, decaying over 1 second. \n If she triggers her [[DASH]] (P) while casting E, she strikes once more at the end of the [[DASH]] for the same damage. \n (Total up to 80/120/160/200/240 (+100% bonus [[AD_SCALE]]).) \n \n 13/12/11/10/9 second [[COOLDOWN]].",
     },
     R: {
       ko: "[[PASSIVE_BONUS]]로 10/20/30%의 [[AR_PEN]]을 항상 얻고, 스킬 피해를 입힐 때마다 챔피언 상대로는 15/17.5/20%(+추가 [[LIFESTEAL]]의 50%) [[OMNIVAMP]]. \n (미니언·몬스터 상대로는 25%의 효과) \n \n 사용 시 암베사가 지정한 방향의 직선상에서 가장 먼 적 챔피언에게 [[BLINK]] 하여, 도착과 동시에 0.75초간 [[SUPPRESS]]한다. \n 이후 대상을 바닥에 내리쳐 150/250/350(+80% 추가 [[AD_SCALE]])의 [[DMG_PHYSICAL]]를 입히고 0.4초간 [[STUN]]시킨다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
-      en: "As a [[PASSIVE_BONUS]], Ambessa permanently gains 10/20/30% [[AR_PEN]], and skill damage grants 15/17.5/20% (+50% of bonus [[LIFESTEAL]]) [[OMNIVAMP]] against champions. \n (25% against minions and monsters.) \n \n On cast, Ambessa blinks to the farthest enemy champion along a chosen line, [[SUPPRESS]]ing them for 0.75 seconds on arrival. \n She then slams the target into the ground, dealing 150/250/350(+80% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] and [[STUN]]ning for 0.4 seconds. \n \n {{ultCooldown}} second [[COOLDOWN]].",
+      en: "As a [[PASSIVE_BONUS]], Ambessa permanently gains 10/20/30% [[AR_PEN]], and skill damage grants 15/17.5/20% (+50% of bonus [[LIFESTEAL]]) [[OMNIVAMP]] against champions. \n (25% effectiveness against minions and monsters.) \n \n On cast, Ambessa [[BLINK]]s to the farthest enemy champion along a chosen line, [[SUPPRESS]]ing them for 0.75 seconds on arrival. \n She then slams the target into the ground, dealing 150/250/350 (+80% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] and [[STUN]]ning them for 0.4 seconds. \n \n {{ultCooldown}} second [[COOLDOWN]].",
     },
   },
 
