@@ -52,9 +52,21 @@ export const CHAMP_FORMS: Record<string, ChampForm[]> = {
     } },
   ],
 
+  // ✅ 나르 (2폼 — 분노 최대치에서 메가 나르로 변신). 미니폼 Q/W/E/R은 기존 로컬
+  // 아이콘(/spells/gnar/*.webp, DDragon GnarQ/W/E/R)이 그대로라 skillIcons 불필요.
+  // 메가폼 Q/W/E는 DDragon에 개별 아이콘이 없어(16.20.1 기준 챔피언 JSON에 미니 4개만
+  // 존재) CDragon 예외 사용(docs/data-sources.md). R은 원래 메가 나르 스킬이라
+  // (gnar.bin.json상 GnarR = GnarBig_R, 미니일 땐 Gnar_R_Grey로 회색 처리될 뿐)
+  // 교체하지 않음. P는 두 폼 공통.
+  // 탭 아이콘: 미니 = 미니 Q(DDragon), 메가 = 메가 나르 변신 버프 아이콘(CDragon
+  // gnartransform, DDragon에 없음).
   gnar: [
-    { ko: "미니", en: "Mini" },
-    { ko: "메가", en: "Mega" },
+    { ko: "미니", en: "Mini", icon: "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/spell/GnarQ.png" },
+    { ko: "메가", en: "Mega", icon: "https://raw.communitydragon.org/latest/game/assets/characters/gnar/hud/icons2d/gnartransform.png", skillIcons: {
+      Q: "https://raw.communitydragon.org/latest/game/assets/characters/gnar/hud/icons2d/gnarbig_q.png",
+      W: "https://raw.communitydragon.org/latest/game/assets/characters/gnar/hud/icons2d/gnarbig_w.png",
+      E: "https://raw.communitydragon.org/latest/game/assets/characters/gnar/hud/icons2d/gnarbig_e.png",
+    } },
   ],
 
   kaisa: [

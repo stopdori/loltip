@@ -144,11 +144,14 @@ export type GimmickTagId =
   | "PER_STACK"
   | "PER_HIT"
   | "EFFECT_UP"
+  | "ADDITIONAL"
   // 스킬 타이밍
   | "SKILL_RECAST"
+  | "SKILL_REPEAT"
   | "RECAST_CANCEL"
-  | "RECAST_TRIGGER"
-  | "RECAST_REPOSITION"
+  | "RECAST_DETONATE"
+  | "RECAST_SWAP"
+  | "RECAST_RETURN"
   | "ST_IMPACT"
   | "ST_DELAYED"
   | "ST_CONDITIONAL"
@@ -187,9 +190,11 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ON_TARGET_CD:  { ko: "대상별 쿨타임", en: "Target CD" },
   EMPOWERED:     { ko: "강화",    en: "Empowered" },
   SKILL_RECAST:  { ko: "재시전",  en: "Recast"  },
-  RECAST_CANCEL:     { ko: "해제", en: "Cancel"     },
-  RECAST_TRIGGER:    { ko: "발동", en: "Trigger"   },
-  RECAST_REPOSITION: { ko: "치환", en: "Reposition" },
+  SKILL_REPEAT:  { ko: "재발동",  en: "Repeat"  },
+  RECAST_CANCEL:     { ko: "시전해제", en: "Cancel"     },
+  RECAST_DETONATE:   { ko: "시전격발", en: "Trigger"   },
+  RECAST_SWAP:       { ko: "시전치환", en: "Swap" },
+  RECAST_RETURN:     { ko: "시전복귀", en: "Return" },
   RECHARGE:      { ko: "충전",  en: "Recharge" },
   STACKING:      { ko: "스태킹",  en: "Stacking" },
   PROC:          { ko: "스택발동", en: "Proc" },
@@ -208,6 +213,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   PER_STACK: { ko: "스택당", en: "Per Stack" },
   PER_HIT: { ko: "적중당", en: "Per Hit" },
   EFFECT_UP: { ko: "효과증가", en: "Effect ↑" },
+  ADDITIONAL: { ko: "추가", en: "Bonus" },
 
   // 타이밍
   TIMING_INSTANT:   { ko: "즉발",     en: "Instant"    },
@@ -299,7 +305,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   AD_SCALE: { ko: "공격력", en: "Attack Damage" },
   AP_SCALE: { ko: "주문력", en: "Ability Power" },
   AR_SCALE: { ko: "방어력", en: "Armor" },
-  MR_SCALE: { ko: "마법저항력", en: "Magic Resist" },
+  MR_SCALE: { ko: "마법 저항력", en: "Magic Resist" },
   AR_MR_SCALE: { ko: "방마저", en: "AR+MR" },
   AS_SCALE: { ko: "공격속도", en: "Attack Speed" },
   MS_SCALE: { ko: "이동속도", en: "Move Speed" },
@@ -341,9 +347,11 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   ON_TARGET_CD:     { ko: "대상별 쿨타임. 동일한 스킬이라도 대상마다 쿨타임이 독립적으로 적용됨. \n 한 대상에게 사용해도 다른 대상에게는 바로 사용 가능.", en: "The skill's cooldown applies independently per target. \n Using it on one target does not affect its availability on others." },
   EMPOWERED:        { ko: "조건 충족 시 스킬 또는 공격이 강화됨", en: "Ability or attack becomes empowered when a condition is met" },
   SKILL_RECAST:     { ko: "일정 시간 이내에 스킬 버튼을 다시 누를 수 있음.", en: "The skill button can be pressed again within a set time window." },
+  SKILL_REPEAT:     { ko: "조건이 충족되면 같은 스킬이 추가 비용 없이 자동으로 한 번 더 발동됨.", en: "When a condition is met, the same skill automatically activates once more at no additional cost." },
   RECAST_CANCEL:     { ko: "스킬 버튼을 다시 눌러 진행 중이던 효과를 조기 종료시킨다", en: "Pressing the skill button again cancels the ongoing effect early." },
-  RECAST_TRIGGER:    { ko: "스킬 버튼을 다시 눌러 진행 중이던 효과를 즉시 발동시킨다", en: "Pressing the skill button again immediately triggers the ongoing effect." },
-  RECAST_REPOSITION: { ko: "스킬 버튼을 다시 눌러 위치를 맞바꾸거나 원래 있던 위치로 되돌아간다", en: "Pressing the skill button again swaps positions or returns to the original location." },
+  RECAST_DETONATE:    { ko: "스킬 버튼을 다시 눌러 진행 중이던 효과를 즉시 발동시킨다", en: "Pressing the skill button again immediately triggers the ongoing effect." },
+  RECAST_SWAP: { ko: "스킬 버튼을 다시 눌러 분신 등과 위치를 맞바꾼다", en: "Pressing the skill button again swaps positions with a shadow or similar." },
+  RECAST_RETURN: { ko: "스킬 버튼을 다시 눌러 원래 있던 위치로 되돌아가거나, 투사체를 되돌아오게 한다", en: "Pressing the skill button again returns to the original location, or brings the projectile back." },
   RECHARGE:         { ko: "스킬을 여러 개 충전해두고 사용할 수 있음\n최대 충전이 아니면 쿨타임이 돔.", en: "Multiple charges of the skill can be stored and used\nCooldown applies if not at maximum charges." },
   STACKING:         { ko: "조건을 충족할 때마다 \n 효과가 영구적으로 강화됨", en: "Effects are permanently enhanced \n each time the conditions are met" },
   PROC:             { ko: "상대 또는 자신에게 스택을 쌓고 \n N번째 적중 시 추가 효과가 발동됨", en: "Stacks build up on the target or yourself, \n and an additional effect is triggered on the $N$-th hit." },
@@ -362,6 +370,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   PER_STACK: { ko: "스택당 효과 증가.", en: "Effect increases per stack." },
   PER_HIT: { ko: "적중당 효과 증가.", en: "Effect increases per hit." },
   EFFECT_UP: { ko: "효과가 증가함.", en: "Increases the effect." },
+  ADDITIONAL: { ko: "기본 효과에 더해 추가로 적용.", en: "Applied in addition to the base effect." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
   TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림", en: "Has a cast delay before activating." },
   TIMING_AFTERCAST: { ko: "발동 후 다음 행동까지 시간이 걸림.", en: "Takes time between activation and the next action." },
@@ -450,8 +459,8 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   AD_SCALE: { ko: "공격력에 비례한다", en: "Scales with Attack Damage" },
   AP_SCALE: { ko: "주문력에 비례한다", en: "Scales with Ability Power" },
   AR_SCALE: { ko: "방어력에 비례한다", en: "Scales with Armor" },
-  MR_SCALE: { ko: "마법저항력에 비례한다", en: "Scales with Magic Resist" },
-  AR_MR_SCALE: { ko: "방어력과 마법저항력에 비례한다", en: "Scales with Armor and Magic Resist" },
+  MR_SCALE: { ko: "마법 저항력에 비례한다", en: "Scales with Magic Resist" },
+  AR_MR_SCALE: { ko: "방어력과 마법 저항력에 비례한다", en: "Scales with Armor and Magic Resist" },
   AS_SCALE: { ko: "공격속도에 비례한다", en: "Scales with Attack Speed" },
   MS_SCALE: { ko: "이동속도에 비례한다", en: "Scales with Move Speed" },
   HP_SCALE: { ko: "최대 체력에 비례한다.", en: "Scales with max Health." },

@@ -17,7 +17,7 @@ export type TagId =
   | "DURATION_RESET" // 지속초기화
   | "DURATION_EXT"  // 지속연장
   | "AR_UP"      // 방어력 증가
-  | "MR_UP"      // 마법저항력 증가
+  | "MR_UP"      // 마법 저항력 증가
   | "AR_MR_UP"   // 방마저 증가
 
   /* 2) 스탯 디버프 */
@@ -89,6 +89,7 @@ export type TagId =
   | "REVIVE"        // 부활
   | "DMG_REDUCE"
   | "MAGIC_DR"
+  | "PHYSICAL_DR"
   | "STASIS"
   | "UNSTOPPABLE"
   | "BANISH"
@@ -116,10 +117,13 @@ export type TagId =
 
   /* 7) 회복 / 자원 */
   | "HEAL"
+  | "DRAIN"          // 스킬 피해량 비례 회복(위키 Drain)
   | "HP_REGEN"       // 체력재생
   | "GREY_HEALTH"    // 회색 체력
   | "HP_REGEN_UP"    // 체력재생 증가
   | "SHIELD"
+  | "PHYSICAL_SHIELD" // 물리 피해만 흡수하는 보호막
+  | "MAGIC_SHIELD"    // 마법 피해만 흡수하는 보호막
   | "MAX_HP_UP" // 최대체력 증가
   | "MAX_ENERGY_UP" // 최대기력 증가
   | "HS_POWER"  // 회복/보호막 강화
@@ -247,6 +251,7 @@ INVULNERABLE: { ko: "무적", en: "Invulnerable" },
 REVIVE: { ko: "부활", en: "Revive" },
 DMG_REDUCE: { ko: "피해감소", en: "Damage Reduction" },
 MAGIC_DR: { ko: "마피감소", en: "Magic DR" },
+PHYSICAL_DR: { ko: "물피감소", en: "Physical DR" },
 STASIS: { ko: "경직", en: "Stasis" },
 UNSTOPPABLE: { ko: "저지불가", en: "Unstoppable" },
 BANISH: { ko: "추방", en: "Banish" },
@@ -274,10 +279,13 @@ CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
 
   /* 7) 회복 / 자원 */
 HEAL: { ko: "회복", en: "Heal" },
+DRAIN: { ko: "흡혈", en: "Drain" },
 HP_REGEN: { ko: "체젠", en: "HP Regen" },
 GREY_HEALTH: { ko: "회색체력", en: "Grey Health" },
 HP_REGEN_UP: { ko: "체젠↑", en: "HP Regen↑" },
 SHIELD: { ko: "쉴드", en: "Shield" },
+PHYSICAL_SHIELD: { ko: "물리쉴드", en: "Physical Shield" },
+MAGIC_SHIELD: { ko: "마법쉴드", en: "Magic Shield" },
 MAX_HP_UP: { ko: "최대체력↑", en: "Max HP Increase" },
 MAX_ENERGY_UP: { ko: "최대기력↑", en: "Max Energy Increase" },
 HS_POWER: { ko: "회쉴↑", en: "HS Power" },
@@ -324,8 +332,17 @@ INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
 export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: string }>> = {
   DURATION_RESET: { ko: "지속시간 초기화", en: "Duration Reset" },
   DURATION_EXT: { ko: "지속시간 연장", en: "Duration Extension" },
-  ON_CHAMP_HIT: { ko: "챔피언 적중 시", en: "On Champion Hit" },
+  ON_CHAMP_HIT: { ko: "적 챔피언 적중 시", en: "On Enemy Champion Hit" },
   SKILL_CHANNEL_MOVEMENT: { ko: "이동 채널링", en: "Movement Channel" },
+  MAGIC_DR: { ko: "마법 피해 감소", en: "Magic Damage Reduction" },
+  PHYSICAL_DR: { ko: "물리 피해 감소", en: "Physical Damage Reduction" },
+  DMG_PHYSICAL: { ko: "물리 피해", en: "Physical Damage" },
+  RECAST_CANCEL: { ko: "시전 해제", en: "Cancel" },
+  RECAST_DETONATE: { ko: "시전 격발", en: "Trigger" },
+  MARK_CONSUME: { ko: "표식 소모", en: "Mark Consume" },
+  RECAST_SWAP: { ko: "시전 치환", en: "Swap" },
+  RECAST_RETURN: { ko: "시전 복귀", en: "Return" },
+  HS_POWER: { ko: "회복/보호막 효과 증가", en: "Heal and Shield Power" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
@@ -380,7 +397,7 @@ AR_UP: {
   en: "Increases armor",
 },
 MR_UP: {
-  ko: "마법저항력 증가",
+  ko: "마법 저항력 증가",
   en: "Increases magic resistance",
 },
 AR_MR_UP: {
@@ -652,6 +669,10 @@ MAGIC_DR: {
   ko: "받는 마법 피해가 감소함.",
   en: "Reduces incoming magic damage.",
 },
+PHYSICAL_DR: {
+  ko: "받는 물리 피해가 감소함.",
+  en: "Reduces incoming physical damage.",
+},
 UNSTOPPABLE: {
   ko: "CC 계열을 맞아도 시전자의 스킬이 유효함\n단, 저지불가 상태에서 적중한 CC가\n저지불가 종료 이후에도 남아있다면 CC효과 발동",
   en: "It cannot be blocked by CC\nHowever, if CC hits during an unstoppable state \nand the duration remains after the state ends, \nthe CC takes effect",
@@ -748,6 +769,10 @@ HEAL: {
   ko: "생명력 회복",
   en: "Restores health",
 },
+DRAIN: {
+  ko: "스킬로 가한 피해량의 일정 비율만큼 생명력을 회복함.",
+  en: "Restores health equal to a percentage of the damage dealt by the ability.",
+},
 HP_REGEN: {
   ko: "체력이 지속적으로 재생됨",
   en: "Regenerates health over time",
@@ -763,6 +788,14 @@ HP_REGEN_UP: {
 SHIELD: {
   ko: "보호막",
   en: "Grants a shield",
+},
+PHYSICAL_SHIELD: {
+  ko: "물리 피해만 흡수하는 보호막",
+  en: "Grants a shield that absorbs physical damage only",
+},
+MAGIC_SHIELD: {
+  ko: "마법 피해만 흡수하는 보호막",
+  en: "Grants a shield that absorbs magic damage only",
 },
 MAX_HP_UP: {
   ko: "최대 체력 증가\n(치감 효과에 영향을 받지 않음)",

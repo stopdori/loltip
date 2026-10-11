@@ -62,6 +62,7 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   MAX_ENERGY_UP: { icons: ["/stat-icons/icon-energyregen.png"] },
   LIFESTEAL: { icons: ["/stat-icons/icon-lifesteal.png"] },
   OMNIVAMP: { icons: ["/stat-icons/icon-omnivamp.png"] },
+  DRAIN: { icons: ["/stat-icons/icon-omnivamp.png"] },
   TENACITY: { icons: ["/stat-icons/icon-tenacity.png"] },
   RANGE_UP: { icons: ["/stat-icons/icon-range.png"] },
   CDR: { icons: ["/stat-icons/icon-haste.png"] },

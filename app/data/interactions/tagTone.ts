@@ -22,7 +22,9 @@ export type Tone =
   | "emerald" // 버프 계열(디버프 fuchsia와 대비)
   | "stone" // 벽/특수/리셋
   | "indigo" // 저지불가/시전보장 계열
-  | "white"; // 고정피해
+  | "white" // 고정피해
+  | "magic_dr" // 마법 피해 감소(피해감소 갈색 amber_deep + 마법 피해 sky 혼합)
+  | "physical_dr"; // 물리 피해 감소(피해감소 갈색 amber_deep + 물리 피해 red 혼합)
 
 // ✅ TagId -> Tone 매핑(색상 관리의 "단일 진실 소스")
 export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
@@ -45,7 +47,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 🔶 amber_deep (예전 amber-900/40)
   TENACITY: "amber_deep",
   DMG_REDUCE: "amber_deep",
-  MAGIC_DR: "amber_deep",
+  MAGIC_DR: "magic_dr",
+  PHYSICAL_DR: "physical_dr",
   DODGE: "amber_deep",
   WINDSHIELD: "amber_deep",
   BLOCKED: "amber_deep",
@@ -64,6 +67,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   BERSERK: "red",
   LIFESTEAL: "red",
   OMNIVAMP: "red",
+  DRAIN: "red",
   HP_REGEN: "lime",
   GREY_HEALTH: "zinc",
 
@@ -145,7 +149,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🔴 red (방어력/마법저항력 증가)
   AR_UP: "amber_deep",
-  MR_UP: "amber_deep",
+  MR_UP: "magic_dr", // 마법 피해 감소(MAGIC_DR)와 통일
   AR_MR_UP: "amber_deep",
 
   // 🌹 rose (물리 방깎 / AR)
@@ -157,6 +161,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   HP_REGEN_UP: "lime",
   HS_POWER: "lime",
   SHIELD: "white",
+  PHYSICAL_SHIELD: "rose",
+  MAGIC_SHIELD: "purple",
   MAX_HP_UP: "lime",
   REVIVE: "lime",
   SIZE_UP: "indigo",
@@ -200,9 +206,11 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SKILL_VECTOR:      "indigo",
   SKILL_STEERABLE:   "indigo",
   SKILL_RECAST:  "indigo",
+  SKILL_REPEAT:  "indigo",
   RECAST_CANCEL:     "indigo",
-  RECAST_TRIGGER:    "indigo",
-  RECAST_REPOSITION: "indigo",
+  RECAST_DETONATE:    "indigo",
+  RECAST_SWAP:       "indigo",
+  RECAST_RETURN:     "indigo",
   RECHARGE:      "indigo",
   STACKING:      "indigo",
   EVOLVED:       "red",
@@ -219,6 +227,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   PER_STACK: "indigo",
   PER_HIT: "indigo",
   EFFECT_UP: "indigo",
+  ADDITIONAL: "indigo",
   // 타이밍
   TIMING_INSTANT:   "indigo",
   TIMING_CAST:      "indigo",
@@ -327,9 +336,9 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   TARGET_MISSING_HP_SCALE: "indigo",
   AD_SCALE: "red",
   AP_SCALE: "sky",
-  // AR/MR/AR_MR_SCALE은 원본 스탯 태그 AR_UP/MR_UP/AR_MR_UP(amber_deep)과 짝지음.
+  // AR/MR/AR_MR_SCALE은 원본 스탯 태그 AR_UP/MR_UP/AR_MR_UP과 짝지음(MR은 magic_dr, 나머지는 amber_deep).
   AR_SCALE: "amber_deep",
-  MR_SCALE: "amber_deep",
+  MR_SCALE: "magic_dr",
   AR_MR_SCALE: "amber_deep",
   AS_SCALE: "sky",
   MS_SCALE: "sky",
@@ -384,6 +393,9 @@ export const TONE_CLASS: Record<Tone, string> = {
   stone: "bg-stone-500/20 text-stone-200 ring-stone-400/40",
   indigo: "bg-indigo-500/20 text-indigo-200 ring-indigo-400/40",
   white:  "bg-white/15 text-white ring-white/30",
+  // 두 톤의 Tailwind 색을 섞은 값(magic_dr: amber 3 : sky 7 / physical_dr: amber-900+red-900 반반 등)
+  magic_dr: "bg-[#256c90]/60 text-[#ceeaed] ring-[#71b4b1]/50",
+  physical_dr: "bg-[#7b2916]/60 text-[#fdccb6] ring-[#e96219]/50",
 };
 
 // ✅ note용 텍스트 컬러 (inline)
@@ -411,4 +423,6 @@ export const NOTE_TONE_CLASS: Record<Tone, string> = {
   stone: "text-stone-300",
   indigo: "text-indigo-300",
   white:  "text-white",
+  magic_dr: "text-[#8eadb3]",
+  physical_dr: "text-[#d6623d]",
 };

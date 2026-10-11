@@ -30,12 +30,12 @@ export type CategoryGroup<T extends string> = {
 export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   {
     title: { ko: "1) 스탯", en: "1) Stats" },
-    keys: ["MS_UP", "MS_TO_ENEMY", "MS_POWER", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "HP_REGEN", "GREY_HEALTH", "REVIVE", "HP_REGEN_UP", "SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
+    keys: ["MS_UP", "MS_TO_ENEMY", "MS_POWER", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "DRAIN", "HP_REGEN", "GREY_HEALTH", "REVIVE", "HP_REGEN_UP", "SHIELD", "PHYSICAL_SHIELD", "MAGIC_SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
     subGroups: [
       { title: { ko: "공격", en: "Attack" }, keys: ["AD_UP", "AP_UP", "CRIT"] },
       { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "MS_POWER", "SEPARATOR", "AD_DOWN", "MS_DOWN"] },
       { title: { ko: "크기", en: "Size" }, keys: ["RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP"] },
-      { title: { ko: "체력 / 쉴드", en: "" }, keys: ["MAX_HP_UP", "MAX_ENERGY_UP", "HEAL", "SHIELD", "HP_REGEN", "GREY_HEALTH", "REVIVE"] },
+      { title: { ko: "체력 / 쉴드", en: "" }, keys: ["MAX_HP_UP", "MAX_ENERGY_UP", "HEAL", "DRAIN", "SHIELD", "PHYSICAL_SHIELD", "MAGIC_SHIELD", "HP_REGEN", "GREY_HEALTH", "REVIVE"] },
       { keys: ["HS_POWER", "HP_REGEN_UP", "SEPARATOR", "GW"] },
       { title: { ko: "흡혈 / 자원회복", en: "Vamp / Resource Restore" }, keys: ["LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"] },
       { title: { ko: "방어 / 마저", en: "" }, keys: ["AR_UP", "MR_UP", "AR_MR_UP"] },
@@ -61,13 +61,13 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   },
   {
     title: { ko: "3) 전투 메커니즘", en: "3) Combat Mechanics" },
-    keys: ["AA_RESET", "UNTARGETABLE", "TOWER_DODGE", "DODGE", "EXECUTE", "SHIELD_BREAK", "SHIELD_PIERCE", "BLOCKED", "REFLECT", "WINDSHIELD", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR", "DAMAGE_NULLIFY", "INTERCEPT_PROJECTILE", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA", "TERRAIN", "WALL_COLLISION", "INVULNERABLE", "WALL_HOP", "IGNORE_TERRAIN", "ALLY_TP_OK", "TETHER", "MARK", "GHOSTING", "MOBILITY", "DASH", "BLINK", "LUNGE", "Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "INSEC_KICK"],
+    keys: ["AA_RESET", "UNTARGETABLE", "TOWER_DODGE", "DODGE", "EXECUTE", "SHIELD_BREAK", "SHIELD_PIERCE", "BLOCKED", "REFLECT", "WINDSHIELD", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR", "PHYSICAL_DR", "DAMAGE_NULLIFY", "INTERCEPT_PROJECTILE", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA", "TERRAIN", "WALL_COLLISION", "INVULNERABLE", "WALL_HOP", "IGNORE_TERRAIN", "ALLY_TP_OK", "TETHER", "MARK", "GHOSTING", "MOBILITY", "DASH", "BLINK", "LUNGE", "Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "INSEC_KICK"],
     subGroups: [
       { title: { ko: "투사체", en: "Projectile" }, keys: ["WINDSHIELD", "REFLECT", "SEPARATOR", "INTERCEPT_PROJECTILE", "DAMAGE_NULLIFY"] },
       { title: { ko: "이동 스킬", en: "Mobility" }, keys: ["MOBILITY", "DASH", "BLINK", "LUNGE", "SEPARATOR", "WALL_HOP", "IGNORE_TERRAIN"] },
       { title: { ko: "점멸 연계", en: "Flash Combos" }, keys: ["Q_FLASH", "W_FLASH", "E_FLASH", "R_FLASH", "SEPARATOR", "INSEC_KICK"] },
       { title: { ko: "기타 메커니즘", en: "" }, keys: ["AA_RESET", "GHOSTING", "EXECUTE", "UNTARGETABLE", "TERRAIN", "INVULNERABLE"]}, 
-      { keys: ["TOWER_DODGE", "BLOCKED", "DODGE", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR"]}, 
+      { keys: ["TOWER_DODGE", "BLOCKED", "DODGE", "SPELL_SHIELD", "DMG_REDUCE", "MAGIC_DR", "PHYSICAL_DR"]}, 
       { keys: ["SHIELD_BREAK", "SHIELD_PIERCE"] },      
       { keys: ["ALLY_TP_OK", "TETHER", "MARK", "WALL_COLLISION", "BURN", "BUFF_FORM", "TRANSFORM", "EVOLVED", "THE_COPYPASTA"] },
     ],
@@ -101,11 +101,11 @@ export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
 export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   {
     title: { ko: "1) 스킬 형태", en: "1) Skill Form" },
-    keys: ["SKILL_ACTIVE", "SKILL_TOGGLE", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SKILL_VECTOR", "SKILL_STEERABLE", "SKILL_RECAST", "RECAST_CANCEL", "RECAST_TRIGGER", "RECAST_REPOSITION"],
+    keys: ["SKILL_ACTIVE", "SKILL_TOGGLE", "SKILL_CHANNEL", "SKILL_CHANNEL_MOVEMENT", "SKILL_CHARGED", "SKILL_VECTOR", "SKILL_STEERABLE", "SKILL_RECAST", "SKILL_REPEAT", "RECAST_CANCEL", "RECAST_DETONATE", "RECAST_SWAP", "RECAST_RETURN"],
   },
   {
     title: { ko: "2) 기타 (상태 / 자원)", en: "2) Misc (State / Resource)" },
-    keys: ["BUFF", "BUFF_A", "BUFF_B", "BUFF_C", "DEBUFF", "DEBUFF_A", "DEBUFF_B", "DEBUFF_C", "COOLDOWN", "ACTIVATION_CONDITION", "OUT_OF_COMBAT", "ON_TARGET_CD", "EMPOWERED", "RECHARGE", "STACKING", "PROC", "BUFF_STACK", "BUFF_STACK_A", "BUFF_STACK_B", "BUFF_STACK_C", "DEBUFF_STACK", "DEBUFF_STACK_A", "DEBUFF_STACK_B", "DEBUFF_STACK_C", "STACK_CONSUME", "STACK_CONSUME_A", "STACK_CONSUME_B", "STACK_CONSUME_C", "PER_STACK", "PER_HIT", "EFFECT_UP"],
+    keys: ["BUFF", "BUFF_A", "BUFF_B", "BUFF_C", "DEBUFF", "DEBUFF_A", "DEBUFF_B", "DEBUFF_C", "COOLDOWN", "ACTIVATION_CONDITION", "OUT_OF_COMBAT", "ON_TARGET_CD", "EMPOWERED", "RECHARGE", "STACKING", "PROC", "BUFF_STACK", "BUFF_STACK_A", "BUFF_STACK_B", "BUFF_STACK_C", "DEBUFF_STACK", "DEBUFF_STACK_A", "DEBUFF_STACK_B", "DEBUFF_STACK_C", "STACK_CONSUME", "STACK_CONSUME_A", "STACK_CONSUME_B", "STACK_CONSUME_C", "PER_STACK", "PER_HIT", "EFFECT_UP", "ADDITIONAL"],
   },
   {
     title: { ko: "3) 타이밍", en: "3) Timing" },
