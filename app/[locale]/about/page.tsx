@@ -160,9 +160,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   return (
     <div className="space-y-6">
       <SiteHeader subtitle={locale === "ko" ? "사이트 소개" : "About"} />
+      <main className="space-y-6">
       <div className="mx-auto w-full max-w-[960px] px-4 sm:px-6 py-6 space-y-8">
         {locale === "ko" ? <AboutKo /> : <AboutEn />}
       </div>
+    </main>
     </div>
   );
 }

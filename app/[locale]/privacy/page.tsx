@@ -199,9 +199,11 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
   return (
     <div className="space-y-6">
       <SiteHeader subtitle={locale === "ko" ? "개인정보처리방침" : "Privacy Policy"} />
+      <main className="space-y-6">
       <div className="mx-auto w-full max-w-[960px] px-4 sm:px-6 py-6 space-y-8">
         {locale === "ko" ? <PrivacyKo /> : <PrivacyEn />}
       </div>
+    </main>
     </div>
   );
 }

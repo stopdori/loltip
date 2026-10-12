@@ -67,6 +67,7 @@ export default function ExamClient() {
   return (
     <div className="space-y-10">
       <SiteHeader subtitle={subtitle} />
+      <main className="space-y-10">
 
       {/* 제목 */}
       <div className="text-center space-y-1">
@@ -128,6 +129,7 @@ export default function ExamClient() {
           {lang === "ko" ? "← 챔피언 가이드로 돌아가기" : "← Back to Champion Guide"}
         </a>
       </div>
+    </main>
     </div>
   );
 }

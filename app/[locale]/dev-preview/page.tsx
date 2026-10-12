@@ -92,7 +92,7 @@ export default function DevPreviewPage() {
   if (process.env.NODE_ENV === "production") notFound();
 
   return (
-    <div className="min-h-screen bg-slate-950 px-4 py-10 text-slate-200">
+    <main className="min-h-screen bg-slate-950 px-4 py-10 text-slate-200">
       <div className="mx-auto max-w-5xl">
         <h1 className="mb-1 text-xl font-bold text-yellow-400">
           Dev Preview — MatchupSummaryBox 레이아웃 테스트
@@ -124,6 +124,6 @@ export default function DevPreviewPage() {
           </section>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -28,6 +28,7 @@ export default function QuizClient() {
       <SiteHeader
         subtitle={subtitle}
       />
+      <main className="space-y-10">
 
       {/* Page title */}
       <div className="text-center">
@@ -77,6 +78,7 @@ export default function QuizClient() {
           {lang === "ko" ? "← 챔피언 가이드로 돌아가기" : "← Back to Champion Guide"}
         </a>
       </div>
+    </main>
     </div>
   );
 }

@@ -248,6 +248,7 @@ useEffect(() => {
           onNoticeOpenChange={setNoticeOpen}
         />
       )}
+      <main className="space-y-6 sm:space-y-12">
 
       {/* CHAMP PICK */}
 {!embedMode && <section className="lg:static sticky top-0 z-40 w-full bg-slate-900/95 sm:border-b sm:border-white/10 supports-[backdrop-filter]:backdrop-blur">
@@ -581,6 +582,7 @@ setOpenTarget(null);
 
 
 
+</main>
 </div>
 );
 

@@ -562,6 +562,7 @@ export default function TagsClient() {
   return (
     <div className="space-y-6">
       <SiteHeader subtitle={subtitle} />
+      <main className="space-y-6">
 
       <div className="mx-auto w-full max-w-[960px] px-4 space-y-6">
         <div className="text-center">
@@ -637,6 +638,7 @@ export default function TagsClient() {
           {tab === "gimmick" && renderCategoryList(GIMMICK_CATEGORIES, "gimmick")}
         </div>
       </div>
+    </main>
     </div>
   );
 }

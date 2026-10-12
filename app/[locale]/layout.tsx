@@ -96,7 +96,9 @@ page_path: window.location.pathname,
               <AdSlot side="left" />
             </aside>
 
-            <main>{children}</main>
+            {/* <main>은 각 페이지가 SiteHeader(<header>) 다음 내용을 감싸 직접 렌더링한다 —
+                header가 main 안에 들어가지 않고 형제로 오게 하기 위함 */}
+            <div>{children}</div>
 
             <aside className="sticky top-[220px] hidden xl:block justify-self-end">
               <AdSlot side="right" />

@@ -67,7 +67,9 @@ export default function ResultClient() {
       fallback={
         <div className="space-y-10">
           <SiteHeader subtitle={subtitle} />
+          <main className="space-y-10">
           <p className="text-center text-slate-400 text-sm">{lang === "ko" ? "불러오는 중..." : "Loading..."}</p>
+          </main>
         </div>
       }
     >
@@ -208,7 +210,9 @@ function ResultContent() {
     return (
       <div className="space-y-10">
         <SiteHeader subtitle={subtitle} />
+        <main className="space-y-10">
         <p className="text-center text-slate-400 text-sm">{lang === "ko" ? "불러오는 중..." : "Loading..."}</p>
+        </main>
       </div>
     );
   }
@@ -230,6 +234,7 @@ function ResultContent() {
 
       <SiteHeader subtitle={subtitle} />
 
+      <main className="space-y-10">
       {/* 이 화면엔 보이는 제목 자리가 없어 시각 변화 없는 sr-only h1을 둔다(로고가 h1에서 내려와 h1이 0개가 되는 것 방지) */}
       <h1 className="sr-only">{lang === "ko" ? "롤 능력고사 결과" : "LoL Matchup Exam Result"}</h1>
 
@@ -338,6 +343,7 @@ function ResultContent() {
           )
         )}
       </div>
+      </main>
     </div>
   );
 }
