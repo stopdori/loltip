@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState, type ReactNode, type Ref } from "react";
 import TokenText from "./TokenText";
+import VerdictIcon from "./VerdictIcon";
 import type { MatchupClientResult } from "../data/matchups/_index";
 import { CHAMPIONS } from "../data/champions";
-import { GIMMICK_TAG_LABEL } from "../data/interactions/tags_gimmick";
 import { NOTE_TONE_CLASS, toneOfTag } from "../data/interactions/tagTone";
 
 type Lang = "ko" | "en";
@@ -87,10 +87,11 @@ function verdictOfLine(line: string): Verdict | null {
 // 각 줄을 relative 블록(왼쪽 끝 = 콘텐츠 시작 위치)으로 두고 TipMarker와 같은 MarkerCell에 올리므로,
 // 첫 줄과 이후 줄의 마커가 흰 점·전구와 같은 가운데 세로선에 오고 텍스트는 줄마다 같은 시작 위치를 유지한다.
 // 색상은 문장 속 O/X 태그와 동일한 NOTE_TONE_CLASS(tagTone.ts)를 그대로 따른다.
-function VerdictMarker({ verdict, lang }: { verdict: Verdict; lang: Lang }) {
+// 글자 대신 SVG(VerdictIcon)로 그려 SSR 본문 텍스트에 "O"/"X"가 섞이지 않게 한다.
+function VerdictMarker({ verdict }: { verdict: Verdict }) {
   return (
-    <MarkerCell className={`font-bold ${NOTE_TONE_CLASS[toneOfTag(verdict)]}`}>
-      {GIMMICK_TAG_LABEL[verdict][lang]}
+    <MarkerCell className={NOTE_TONE_CLASS[toneOfTag(verdict)]}>
+      <VerdictIcon verdict={verdict} bold />
     </MarkerCell>
   );
 }
@@ -142,7 +143,7 @@ function SummaryItem({
         const verdict = verdicts[i];
         return (
           <span key={i} className="relative block">
-            {verdict && <VerdictMarker verdict={verdict} lang={lang} />}
+            {verdict && <VerdictMarker verdict={verdict} />}
             {/* 빈 줄(\n \n)도 기존처럼 한 줄 높이를 차지하도록 nbsp로 채운다 */}
             {line.trim() === "" ? " " : <TokenText text={line} lang={lang} />}
           </span>

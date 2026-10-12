@@ -5,7 +5,9 @@ import { TAG_DESC, type TagId } from "../data/interactions/tags";
 import { GIMMICK_TAG_DESC, type GimmickTagId } from "../data/interactions/tags_gimmick";
 import { STAT_ICONS } from "../data/interactions/statIcons";
 import { parseTagTokens } from "../data/interactions/parseTagTokens";
+import { NOTE_TONE_CLASS, toneOfTag } from "../data/interactions/tagTone";
 import TagPill from "./TagPill";
+import VerdictIcon from "./VerdictIcon";
 
 function VideoLinkIcon({ url, lang }: { url: string; lang: "ko" | "en" }) {
   const label = lang === "ko" ? "클립" : "Clip";
@@ -40,6 +42,11 @@ export default function TokenText({
         const clipUrl = seg.raw?.match(/^CLIP:(.+)$/)?.[1]?.trim();
         if (clipUrl) {
           return <VideoLinkIcon key={idx} url={clipUrl} lang={lang} />;
+        }
+
+        // 판정 기호(O/X)는 글자 대신 SVG로 — SSR 본문 텍스트에 "O"/"X"가 섞이지 않게(설명 툴팁도 원래 없음)
+        if (seg.tagId === "EXIST" || seg.tagId === "NOT_EXIST") {
+          return <VerdictIcon key={idx} verdict={seg.tagId} className={NOTE_TONE_CLASS[toneOfTag(seg.tagId)]} />;
         }
 
         if (seg.tagId && seg.tone) {
