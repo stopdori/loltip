@@ -80,7 +80,9 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
   const btnIcon = "w-8 h-8 flex items-center justify-center rounded-xl text-xs font-extrabold text-yellow-400 bg-slate-800/60 ring-1 ring-white/10 hover:bg-slate-800/80";
 
   return (
-    <header className="max-w-6xl mx-auto px-4">
+    // 800px 미만(햄버거 메뉴 폭)에서만 ☰ / KO·EN을 화면 끝에서 8px로 붙인다:
+    // layout 바깥 px-4(16px)에서 -mx-2(-8px), 헤더 자체 패딩 0. 데스크톱 폭은 기존 그대로.
+    <header className="max-w-6xl mx-auto px-4 max-[800px]:-mx-2 max-[800px]:px-0">
       <style>{`
         @keyframes quiz-shimmer {
           0%, 70%, 100% { color: inherit; border-color: rgba(255,255,255,0.1); box-shadow: none; }

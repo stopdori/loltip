@@ -291,7 +291,8 @@ useEffect(() => {
             ChampMiniSearch/ChampSelectButton의 높이·여백이 바뀌면 이 값도 같이 조정 필요. */}
         <div className="h-[60px] sm:h-[88px]" />
         <div className="h-[108px] sm:h-[150px] flex items-center">
-          <CssLabel label="VS" className="text-3xl font-extrabold text-slate-300 px-2" />
+          {/* 두 초상화 사이 기호는 두지 않고, 예전 "VS"(text-3xl 글자 약 40px + px-2 16px)가 차지하던 56px만 빈 칸으로 유지 */}
+          <span aria-hidden="true" className="block w-14" />
         </div>
         {/* ChampSelectButton 하단 spacer(h-4 sm:h-10)와 동일 — 없으면 이 컬럼 전체
             높이가 챔피언 컬럼보다 짧아져서 items-center가 "&"를 더 아래로 밀어버림 */}
