@@ -58,7 +58,7 @@ export default function ChampMatchupList({
         {opponents.map((c) => {
           const name = lang === "ko" ? c.ko : c.en;
           const label =
-            lang === "ko" ? `${name}${waGwa(name)}의 매치업 보기` : `View matchup with ${name}`;
+            lang === "ko" ? `${name}${waGwa(name)}의 상호작용 보기` : `View interactions with ${name}`;
           return (
             <li key={c.id}>
               {/* 최대 170여 개라 프리패치는 끈다(링크 자체는 그대로 크롤 가능). 이미지는 next/image 기본

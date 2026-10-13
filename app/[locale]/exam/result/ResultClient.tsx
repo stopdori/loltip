@@ -236,7 +236,7 @@ function ResultContent() {
 
       <main className="space-y-10">
       {/* 이 화면엔 보이는 제목 자리가 없어 시각 변화 없는 sr-only h1을 둔다(로고가 h1에서 내려와 h1이 0개가 되는 것 방지) */}
-      <h1 className="sr-only">{lang === "ko" ? "롤 능력고사 결과" : "LoL Matchup Exam Result"}</h1>
+      <h1 className="sr-only">{lang === "ko" ? "롤 능력고사 결과" : "LoL Interaction Exam Result"}</h1>
 
       {versionMismatch && (
         <p className="max-w-md mx-auto text-center text-xs text-amber-400/90 bg-amber-400/10 ring-1 ring-amber-400/30 rounded-lg px-3 py-2">

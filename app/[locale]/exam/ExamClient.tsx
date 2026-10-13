@@ -32,7 +32,7 @@ export default function ExamClient() {
     setProgress(loadExamProgress(total));
   }, [total]);
 
-  const title = lang === "ko" ? "롤 능력고사" : "LoL Matchup Exam";
+  const title = lang === "ko" ? "롤 능력고사" : "LoL Interaction Exam";
   const subtitle =
     lang === "ko"
       ? "챔피언 상호작용 지식을 테스트해보세요"

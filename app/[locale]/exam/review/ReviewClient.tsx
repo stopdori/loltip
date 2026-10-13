@@ -67,7 +67,7 @@ export default function ReviewClient() {
       <main className="space-y-8">
 
       {/* 이 화면엔 보이는 제목 자리가 없어 시각 변화 없는 sr-only h1을 둔다(로고가 h1에서 내려와 h1이 0개가 되는 것 방지) */}
-      <h1 className="sr-only">{lang === "ko" ? "롤 능력고사 채점" : "LoL Matchup Exam Review"}</h1>
+      <h1 className="sr-only">{lang === "ko" ? "롤 능력고사 채점" : "LoL Interaction Exam Review"}</h1>
 
       {/* 리모컨 */}
       <div className="max-w-2xl mx-auto space-y-3">
@@ -169,7 +169,7 @@ export default function ReviewClient() {
                 rel="noreferrer"
                 className="text-yellow-400 hover:text-yellow-300 underline underline-offset-2 transition"
               >
-                {lang === "ko" ? "근거 매치업 보기 →" : "See the matchup →"}
+                {lang === "ko" ? "근거 상호작용 보기 →" : "See the interactions →"}
               </a>
               {q.youtube && (
                 <a

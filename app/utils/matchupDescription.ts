@@ -1,7 +1,6 @@
 import { CHAMPIONS } from "@/app/data/champions";
 import type { MatchupSummary } from "@/app/data/matchups/_types";
 import { stripTagTokens } from "@/app/utils/stripTagTokens";
-import { waGwa } from "@/app/utils/koreanParticle";
 
 // 매치업 페이지의 meta description / og:description / twitter:description 문구를 만든다.
 // 예전엔 전 페이지가 "{A}와 {B}의 스킬 상성, CC 판정, 저지불가 상호작용 정리" 한 틀이라
@@ -48,7 +47,7 @@ export function buildMatchupDescription(
   const nameA = nameOf(a);
   const nameB = nameOf(b);
   const head =
-    lang === "ko" ? `${nameA}${waGwa(nameA)} ${nameB} 매치업. ` : `${nameA} vs ${nameB} matchup. `;
+    lang === "ko" ? `${nameA} · ${nameB} 상호작용. ` : `${nameA} · ${nameB} Interactions. `;
 
   // 판정 문장은 작성 규칙상 본인 주어를 생략하므로(예: "Q의 에어본, W의 넉백…"),
   // 문장만 떼면 누구 스킬인지 알 수 없다. 그래서 문장 앞에 판정 주인 이름을 붙인다.
@@ -67,8 +66,8 @@ export function buildMatchupDescription(
   // 판정 내용이 없는 조합(noindex) — 특정 메커니즘 단어를 넣지 않은 중립 문구
   if (units.length === 0) {
     return lang === "ko"
-      ? `${nameA}${waGwa(nameA)} ${nameB}의 매치업 상호작용 정리`
-      : `${nameA} vs ${nameB} matchup interactions`;
+      ? `${nameA} · ${nameB} 상호작용 정리`
+      : `${nameA} · ${nameB} Interactions`;
   }
 
   const max = MAX_LEN[lang];

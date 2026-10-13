@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const description =
     locale === "ko"
       ? "리그 오브 레전드 모든 챔피언의 상성과 공략을 확인하세요."
-      : "Check matchups and interaction guides for every League of Legends champion.";
+      : "Check interaction guides for every League of Legends champion.";
   return {
     title,
     description,

@@ -32,7 +32,7 @@ const TEXT = {
     pointsGap: 0,
   },
   en: {
-    title: "LoL Matchup Exam",
+    title: "LoL Interaction Exam",
     subtitle: "Test your champion interaction knowledge",
     cta: "Take the challenge → loltip.com",
     points: "pts",

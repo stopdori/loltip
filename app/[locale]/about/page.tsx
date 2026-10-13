@@ -60,7 +60,7 @@ function AboutKo() {
         <h2 className={h2Class}>제공하는 내용</h2>
         <ul className={listClass}>
           <li>챔피언별 스킬 정보와 기믹·시야 등 핵심 특성 요약</li>
-          <li>두 챔피언의 매치업 페이지에서 스킬 간 상호작용 판정 정리</li>
+          <li>두 챔피언의 상호작용 페이지에서 스킬 간 판정 정리</li>
           <li>상호작용에 쓰이는 개념을 모아둔 태그 레퍼런스</li>
           <li>배운 내용을 확인해볼 수 있는 상호작용 퀴즈</li>
         </ul>
@@ -74,7 +74,7 @@ function AboutKo() {
           내용은 확인되는 대로 갱신합니다.
         </p>
         <p className={pClass}>
-          잘못된 내용을 발견하셨다면 챔피언·매치업 화면 오른쪽 아래의 &quot;문의 / 제보&quot; 버튼이나 아래 이메일로 알려주세요.
+          잘못된 내용을 발견하셨다면 챔피언·상호작용 화면 오른쪽 아래의 &quot;문의 / 제보&quot; 버튼이나 아래 이메일로 알려주세요.
           영상이나 리플레이 정보를 함께 보내주시면 더 빠르게 확인할 수 있습니다.
         </p>
       </section>
@@ -115,7 +115,7 @@ function AboutEn() {
         <h2 className={h2Class}>What You&apos;ll Find</h2>
         <ul className={listClass}>
           <li>Per-champion skill info with key traits such as gimmicks and vision</li>
-          <li>Matchup pages summarizing ability interactions between two champions</li>
+          <li>Interaction pages summarizing how two champions&apos; abilities interact</li>
           <li>A tag reference that collects the concepts used across interactions</li>
           <li>An interaction quiz to test what you&apos;ve learned</li>
         </ul>
@@ -130,7 +130,7 @@ function AboutEn() {
         </p>
         <p className={pClass}>
           If you spot something incorrect, please let us know via the &quot;Feedback&quot; button at the bottom right of any champion
-          or matchup page, or by email below. Including a video or replay details helps us verify it faster.
+          or interactions page, or by email below. Including a video or replay details helps us verify it faster.
         </p>
       </section>
 

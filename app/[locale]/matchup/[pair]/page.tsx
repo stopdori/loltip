@@ -28,9 +28,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = [a, b].sort().join("-vs-");
   const title = champA && champB
     ? locale === "ko"
-      ? `${champA.ko} vs ${champB.ko} 매치업 - LOLTIP`
-      : `${champA.en} vs ${champB.en} Matchup - LOLTIP`
-    : locale === "ko" ? "매치업 | LOLTIP" : "Matchup | LOLTIP";
+      ? `${champA.ko} · ${champB.ko} 상호작용 - LOLTIP`
+      : `${champA.en} · ${champB.en} Interactions - LOLTIP`
+    : locale === "ko" ? "상호작용 | LOLTIP" : "Interactions | LOLTIP";
 
   const matchup = await getMatchupSummary(a, b);
   const data = matchup?.status === "ok" ? matchup.data : null;
@@ -142,7 +142,7 @@ export default async function Page({ params }: Props) {
       {
         "@type": "ListItem",
         position: 3,
-        name: lang === "ko" ? `${champA.ko} vs ${champB.ko} 매치업` : `${champA.en} vs ${champB.en} Matchup`,
+        name: lang === "ko" ? `${champA.ko} · ${champB.ko} 상호작용` : `${champA.en} · ${champB.en} Interactions`,
         item: `https://loltip.com/${locale}/matchup/${canonical}`,
       },
     ],
@@ -190,8 +190,8 @@ export default async function Page({ params }: Props) {
         summaryHeading={
           <h1 className="mb-3 text-lg sm:text-xl font-bold text-slate-100">
             {lang === "ko"
-              ? `${champA.ko} vs ${champB.ko} 매치업`
-              : `${champA.en} vs ${champB.en} Matchup`}
+              ? `${champA.ko} · ${champB.ko} 상호작용`
+              : `${champA.en} · ${champB.en} Interactions`}
           </h1>
         }
         extraSection={

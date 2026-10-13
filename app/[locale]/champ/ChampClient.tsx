@@ -558,7 +558,7 @@ setOpenTarget(null);
         data-label={
           lang === "ko"
             ? "양쪽 챔피언을 선택하면 \n 상호작용 요약이 표시됨"
-            : "Pick both champions \n to see matchup summary."
+            : "Pick both champions \n to see interaction summary."
         }
       />
     </div>

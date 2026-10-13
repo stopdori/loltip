@@ -19,10 +19,10 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   const title = result
     ? lang === "ko"
       ? `롤 능력고사 결과: ${result.tier.label.ko} (${result.score}점)`
-      : `LoL Matchup Exam Result: ${result.tier.label.en} (${result.score} pts)`
+      : `LoL Interaction Exam Result: ${result.tier.label.en} (${result.score} pts)`
     : lang === "ko"
       ? "롤 능력고사"
-      : "LoL Matchup Exam";
+      : "LoL Interaction Exam";
   const description =
     lang === "ko"
       ? "챔피언 상호작용 지식 테스트 · 나도 도전해보세요"

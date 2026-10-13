@@ -127,15 +127,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const title = locale === "ko"
-    ? `${champ.ko} 챔피언 공략 - 스킬 상성 및 매치업 | LOLTIP`
-    : `${champ.en} Champion Guide – Skills, Mechanics & Matchups | LOLTIP`;
+    ? `${champ.ko} 챔피언 공략 - 스킬 상성 및 상호작용 | LOLTIP`
+    : `${champ.en} Champion Guide – Skills, Mechanics & Interactions | LOLTIP`;
   const description = locale === "ko"
-    ? `${champ.ko} 스킬 상성, CC 상호작용, 매치업 정보를 확인하세요.`
-    : `${champ.en} skill mechanics, CC interactions, and matchup tips for League of Legends. Learn what abilities ${champ.en} can interrupt, block, or counter.`;
+    ? `${champ.ko}의 스킬 효과, CC 판정, 상대 챔피언별 상호작용을 확인하세요.`
+    : `${champ.en} skill effects, CC rules, and interactions with every opponent in League of Legends.`;
   // og/twitter 설명도 로케일에 맞게 — 예전엔 KO 페이지에도 영문이 고정으로 나갔다.
   const socialDescription = locale === "ko"
-    ? `${champ.ko} 챔피언 메커니즘과 매치업 정리.`
-    : `${champ.en} champion mechanics and matchup breakdown.`;
+    ? `${champ.ko} 챔피언 메커니즘과 상호작용 정리.`
+    : `${champ.en} champion mechanics and interactions breakdown.`;
 
 
   return {
