@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import { quizData } from "../data/quiz";
+import CssLabel from "./CssLabel";
 
 type Lang = "ko" | "en";
 
@@ -87,9 +88,12 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
         {/* 헤더 */}
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center">
-            <p className="text-base font-bold text-yellow-400 tracking-wide uppercase mr-1.5">
-              {lang === "ko" ? "판정 퀴즈" : "Ruling Quiz"}
-            </p>
+            {/* 퀴즈는 사람용 기능이라 위젯 글자(제목·버튼·문제)는 모두 CSS 라벨로 그려 구글 본문 텍스트에서 뺀다.
+                실제 페이지 링크인 "퀴즈 목록으로 →"만 텍스트로 둔다. */}
+            <p
+              className="text-base font-bold text-yellow-400 tracking-wide uppercase mr-1.5 css-label"
+              data-label={lang === "ko" ? "판정 퀴즈" : "Ruling Quiz"}
+            />
             <span className="relative z-10 flex flex-row" style={{ gap: 0, lineHeight: 1 }}>
               <button
                 type="button"
@@ -98,7 +102,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
                 className="text-white/60 hover:text-white transition-colors leading-none"
                 style={{ fontSize: "16px" }}
               >
-                ▲
+                <CssLabel label="▲" />
               </button>
               <button
                 type="button"
@@ -107,7 +111,7 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
                 className="text-white/60 hover:text-white transition-colors leading-none"
                 style={{ fontSize: "16px" }}
               >
-                ▼
+                <CssLabel label="▼" />
               </button>
             </span>
           </div>
@@ -123,21 +127,19 @@ export default function QuizWidget({ lang }: { lang: Lang }) {
         <div className="min-h-[4.5rem] sm:min-h-0" style={{ overflow: "hidden" }}>
           {item && (
             <div style={phaseStyle[phase]}>
-              <p className="text-sm text-slate-200 leading-relaxed">
-                {item.question[lang]}
-              </p>
+              <p className="text-sm text-slate-200 leading-relaxed css-label" data-label={item.question[lang]} />
             </div>
           )}
         </div>
 
-        {/* 박스 전체 클릭용 오버레이 링크 (마운트 후 문제가 정해진 뒤에만 존재) */}
+        {/* 박스 전체 클릭용 오버레이 버튼 (마운트 후 문제가 정해진 뒤에만 존재).
+            무작위 문제마다 바뀌는 목적지를 크롤 가능한 <a>로 두지 않도록 버튼 + window.open으로 연다. */}
         {url && item && (
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={() => window.open(url, "_blank", "noopener,noreferrer")}
             aria-label={item.question[lang]}
-            className="absolute inset-0 rounded-2xl"
+            className="absolute inset-0 rounded-2xl cursor-pointer"
           />
         )}
       </div>
