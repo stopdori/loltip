@@ -202,11 +202,14 @@ export default function MatchupSummaryBox({
 
   const my = CHAMPIONS.find((c) => c.id === myChampId);
   const enemy = CHAMPIONS.find((c) => c.id === enemyChampId);
+  // 판정 문장 주어(h3) 표시: 정식 이름 + 첫 번째 별명 하나(별명 검색어가 주어에 걸리도록).
+  // 나머지 별명은 검색 매칭(champSearch)에만 쓴다. KO는 붙여서 "그라가스(글가)", EN은 띄어서 "Aatrox (Boris)".
   const fmt = (champ: typeof my) => {
     if (!champ) return "";
     const name = lang === "ko" ? champ.ko : champ.en;
-    const al = lang === "ko" ? (champ.aliases?.ko ?? []) : (champ.aliases?.en ?? []);
-    return al.length > 0 ? `${name}(${al.join(", ")})` : name;
+    const alias = (lang === "ko" ? champ.aliases?.ko : champ.aliases?.en)?.[0];
+    if (!alias) return name;
+    return lang === "ko" ? `${name}(${alias})` : `${name} (${alias})`;
   };
 
   useEffect(() => {
