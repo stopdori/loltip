@@ -259,7 +259,7 @@ export default function MatchupSummaryBox({
             {/* 내 챔피언 요약 먼저 */}
             {showMy && (
               <div className={groupWrapperClass}>
-                <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(my)}</p>
+                <h3 className="text-sm font-semibold text-sky-300 mb-1">{fmt(my)}</h3>
                 {myItems.length > 0 && (
                   <ul className={listClass}>
                     {myItems.map((rawText, idx) => {
@@ -286,7 +286,7 @@ export default function MatchupSummaryBox({
             {/* 상대 챔피언 요약 다음 */}
             {showEnemy && (
               <div className={groupWrapperClass}>
-                <p className="text-sm font-semibold text-sky-300 mb-1">{fmt(enemy)}</p>
+                <h3 className="text-sm font-semibold text-sky-300 mb-1">{fmt(enemy)}</h3>
                 {enemyItems.length > 0 && (
                   <ul className={listClass}>
                     {enemyItems.map((rawText, idx) => {
@@ -313,7 +313,7 @@ export default function MatchupSummaryBox({
             {/* 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 */}
             {commonItems.length > 0 && (
               <div className={groupWrapperClass}>
-                <p className="text-sm font-semibold text-sky-300 mb-1">{lang === "ko" ? "공통" : "Common"}</p>
+                <h3 className="text-sm font-semibold text-sky-300 mb-1">{lang === "ko" ? "공통" : "Common"}</h3>
                 <ul className={listClass}>
                   {commonItems.map((rawText, idx) => (
                     <SummaryItem key={`common-${idx}`} rawText={rawText} lang={lang} />

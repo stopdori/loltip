@@ -690,7 +690,7 @@ const renderNoteSection = (items: string[], title: string) => {
   if (items.length === 0) return null;
   return (
     <div className="mt-3 rounded-xl bg-slate-800/40 ring-1 ring-white/10 p-3">
-      <div className="text-base font-bold text-yellow-400 mb-2">{title}</div>
+      <h2 className="text-base font-bold text-yellow-400 mb-2">{title}</h2>
       <ul className="space-y-2 text-sm text-slate-200">
         {items.map((n, i) => (
           <li key={i} className="flex gap-2 whitespace-pre-line">
