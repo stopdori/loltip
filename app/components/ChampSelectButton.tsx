@@ -38,6 +38,7 @@ export default function ChampSelectButton({
       onClick={onClick}
       role="button"
       tabIndex={0}
+      aria-label={title}
       className="group relative flex flex-col items-center cursor-pointer"
     >
       {/* 챔피언 이름은 ChampMiniSearch 인풋 안에, 미선택 상태는 검색창의 돋보기
@@ -53,7 +54,7 @@ export default function ChampSelectButton({
       >
         <Image
           src={imgSrc}
-          alt={title}
+          alt=""
           fill
           unoptimized
           priority

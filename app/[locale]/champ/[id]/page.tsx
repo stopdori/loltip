@@ -133,6 +133,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${champ.ko}의 스킬 효과, CC 판정, 상대 챔피언별 상호작용을 확인하세요.`
     : `${champ.en} skill effects, CC rules, and interactions with every opponent in League of Legends.`;
   // og/twitter 설명도 로케일에 맞게 — 예전엔 KO 페이지에도 영문이 고정으로 나갔다.
+  // og/twitter 제목: 로케일별 짧은 형식("{챔피언} 챔피언 공략 | LOLTIP" / "{Champion} Champion Guide | LOLTIP")
+  const socialTitle = locale === "ko" ? `${champ.ko} 챔피언 공략 | LOLTIP` : `${champ.en} Champion Guide | LOLTIP`;
   const socialDescription = locale === "ko"
     ? `${champ.ko} 챔피언 메커니즘과 상호작용 정리.`
     : `${champ.en} champion mechanics and interactions breakdown.`;
@@ -150,13 +152,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: `${champ.en} Champion Guide | LOLTIP`,
+      title: socialTitle,
       description: socialDescription,
       url: `https://loltip.com/${locale}/champ/${champId}`,
       type: "website",
       images: [{ url: "https://loltip.com/og-image.png", width: 1200, height: 630 }],
     },
     twitter: {
+      title: socialTitle,
       description: socialDescription,
     },
   };

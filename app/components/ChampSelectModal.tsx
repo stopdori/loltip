@@ -83,7 +83,7 @@ export default function ChampSelectModal({
                     <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-white/10 bg-slate-950/30">
                       <Image
                         src={`/champs/${c.id}.webp`}
-                        alt={name}
+                        alt=""
                         fill
                         className="object-cover"
                       />

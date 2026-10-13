@@ -13,6 +13,7 @@ import { useChampSpells } from "@/app/lib/useChampSpells";
 import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from "@/app/lib/ddragon";
 import { toneOfTag } from "../data/interactions/tagTone";
 import { STAT_ICONS } from "../data/interactions/statIcons";
+import { CHAMPIONS } from "../data/champions";
 import TokenText from "./TokenText";
 import CssLabel from "./CssLabel";
 import TagPill from "./TagPill";
@@ -142,6 +143,9 @@ function SkillLabelWithTip({
   labelOverride?: string;
 }) {
   const iconSrc = iconOverride ?? (champId ? `/spells/${champId}/${skillKey}.webp` : "");
+  // 스킬 아이콘 대체 텍스트: "아트록스 Q" / "Aatrox Q"
+  const champInfo = champId ? CHAMPIONS.find((c) => c.id === champId) : undefined;
+  const iconAlt = champInfo ? `${lang === "ko" ? champInfo.ko : champInfo.en} ${skillKey}` : skillKey;
   const watermarkText = labelOverride ?? labelText;
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
@@ -438,7 +442,7 @@ function SkillLabelWithTip({
       {iconSrc && (
         <img
           src={iconSrc}
-          alt={skillKey}
+          alt={iconAlt}
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
           onError={(e) => {
@@ -533,7 +537,7 @@ function SkillLabelWithTip({
               {iconSrc && (
                 <img
                   src={iconSrc}
-                  alt={`${champId} ${skillKey}`}
+                  alt={iconAlt}
                   className="w-12 h-12 rounded-md ring-1 ring-white/10"
                   loading="lazy"
                   onError={(e) => {

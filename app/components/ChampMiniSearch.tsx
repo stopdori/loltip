@@ -189,7 +189,7 @@ export default function ChampMiniSearch({
                   <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded overflow-hidden border border-white/10 bg-slate-950/30 shrink-0">
                     <Image
                       src={`/champs/${c.id}.webp`}
-                      alt={name}
+                      alt=""
                       fill
                       className="object-cover"
                     />
