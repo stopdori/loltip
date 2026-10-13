@@ -70,6 +70,7 @@ export type GimmickTagId =
   | "GLOBAL"
   | "SUMMON"
   | "OF_SUMMON"
+  | "OF_ALLY"
   | "DROP"
   | "DETONATE"
   | "ATTACH"
@@ -269,6 +270,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   GLOBAL:  { ko: "맵 전체", en: "Global"          },
   SUMMON:  { ko: "소환",     en: "Summon"  },
   OF_SUMMON: { ko: "소환수의", en: "Summon's" },
+  OF_ALLY: { ko: "아군의", en: "Ally's" },
   DROP:          { ko: "드롭",    en: "Drops"    },
   DETONATE:      { ko: "폭발",    en: "Detonate" },
   ATTACH:        { ko: "부착",    en: "Attach"   },
@@ -420,6 +422,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   GLOBAL:      { ko: "사거리 또는 목표물이 맵 전체", en: "Range or target \n extends across the entire map" },
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
   OF_SUMMON: { ko: "효과가 챔피언이 아니라 소환수에게 적용.", en: "The effects that follow apply to the summoned unit, not the champion." },
+  OF_ALLY: { ko: "뒤에 오는 효과가 챔피언 자신이 아니라 아군에게 적용.", en: "The effects that follow apply to allies, not the champion itself." },
   DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
   DETONATE:      { ko: "대상에게 적중하면 자동으로 폭발하여 범위 피해 등을 입힌다", en: "Automatically detonates on hit, dealing area damage or similar effects." },
   ATTACH:        { ko: "적중한 챔피언 몸에 달라붙어 따라다님. \n 예) 피즈 R, 질리언 Q", en: "Sticks to the champion it hits and follows them. \n e.g. Fizz R, Zilean Q" },

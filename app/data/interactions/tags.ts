@@ -343,6 +343,7 @@ export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: 
   RECAST_SWAP: { ko: "시전 치환", en: "Swap" },
   RECAST_RETURN: { ko: "시전 복귀", en: "Return" },
   HS_POWER: { ko: "회복/보호막 효과 증가", en: "Heal and Shield Power" },
+  UNSTOPPABLE: { ko: "저지 불가", en: "Unstoppable" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
