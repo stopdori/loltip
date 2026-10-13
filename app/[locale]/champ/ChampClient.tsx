@@ -349,10 +349,10 @@ const nextEnemy = openTarget === "enemy" ? c.id : enemyChampId;
 
 // 둘 다 있으면 → matchup
 if (nextMy && nextEnemy) {
-  const pair = [nextMy, nextEnemy].sort().join("-vs-");
+  const pair = [nextMy, nextEnemy].sort().join("-");
   // 좌/우 순서는 URL 쿼리 대신 세션 메모리 힌트로 전달(app/utils/matchupOrderHint.ts)
   saveMatchupOrderHint(nextMy, nextEnemy);
-  router.push(`/matchup/${pair}`);
+  router.push(`/interactions/${pair}`);
   setOpenTarget(null);
   return;
 }

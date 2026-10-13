@@ -57,7 +57,7 @@ function loadCompiled(): Record<string, MatchupSummary> {
 }
 
 export type ChampMatchupEntry = {
-  // 매치업 페이지 canonical 슬러그(알파벳순 "a-vs-b")
+  // 상호작용 페이지 canonical 슬러그(알파벳순 "a-b", /{locale}/interactions/{pair})
   pair: string;
   opponentId: string;
   // 이 로케일에서 그 매치업 페이지가 보여주는 판정 문장 수(두 챔피언 각각 + 공통, 빈 문자열 제외)
@@ -81,7 +81,7 @@ export function listIndexableMatchupsForChamp(
     if (a !== champId && b !== champId) continue;
     if (!isMatchupIndexable(data, a, b, lang)) continue;
     out.push({
-      pair: [a, b].sort().join("-vs-"),
+      pair: [a, b].sort().join("-"),
       opponentId: a === champId ? b : a,
       sentenceCount:
         count(data.highlightsByChamp?.[a]?.[lang]) +

@@ -64,7 +64,7 @@ export default function ChampMatchupList({
               {/* 최대 170여 개라 프리패치는 끈다(링크 자체는 그대로 크롤 가능). 이미지는 next/image 기본
                   lazy 로딩이라 뷰포트 밖 아이콘은 초기 로드에서 빠진다. 40px 고정 크기 래퍼가 자리를 미리 잡는다. */}
               <Link
-                href={`/matchup/${pairByOpponent.get(c.id)}`}
+                href={`/interactions/${pairByOpponent.get(c.id)}`}
                 prefetch={false}
                 title={name}
                 aria-label={label}

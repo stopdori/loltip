@@ -18,8 +18,8 @@ export default function QuizClient() {
   const answerLabel = lang === "ko" ? "정답" : "Answer";
 
   function handleAnswer(champ1: string, champ2: string, highlight: string) {
-    const pair = [champ1, champ2].sort().join("-vs-");
-    const url = `/${locale}/matchup/${pair}#highlight=${highlight}`;
+    const pair = [champ1, champ2].sort().join("-");
+    const url = `/${locale}/interactions/${pair}#highlight=${highlight}`;
     window.open(url, "_blank");
   }
 

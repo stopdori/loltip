@@ -18,14 +18,14 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, pair } = await params;
-  const parts = pair.split("-vs-");
+  const parts = pair.split("-");
   if (parts.length !== 2) return {};
 
   const [a, b] = [parts[0].toLowerCase(), parts[1].toLowerCase()];
   const champA = CHAMPIONS.find((c) => c.id === a);
   const champB = CHAMPIONS.find((c) => c.id === b);
 
-  const canonical = [a, b].sort().join("-vs-");
+  const canonical = [a, b].sort().join("-");
   const title = champA && champB
     ? locale === "ko"
       ? `${champA.ko} · ${champB.ko} 상호작용 - LOLTIP`
@@ -51,12 +51,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: {
-      canonical: `https://loltip.com/${locale}/matchup/${canonical}`,
+      canonical: `https://loltip.com/${locale}/interactions/${canonical}`,
       ...(bothIndexable && {
         languages: {
-          ko: `https://loltip.com/ko/matchup/${canonical}`,
-          en: `https://loltip.com/en/matchup/${canonical}`,
-          "x-default": `https://loltip.com/ko/matchup/${canonical}`,
+          ko: `https://loltip.com/ko/interactions/${canonical}`,
+          en: `https://loltip.com/en/interactions/${canonical}`,
+          "x-default": `https://loltip.com/ko/interactions/${canonical}`,
         },
       }),
     },
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      url: `https://loltip.com/${locale}/matchup/${canonical}`,
+      url: `https://loltip.com/${locale}/interactions/${canonical}`,
       type: "website",
       images: [{ url: "https://loltip.com/og-image.png", width: 1200, height: 630 }],
     },
@@ -80,7 +80,7 @@ export default async function Page({ params }: Props) {
   const lang = locale as Lang;
   // 판정 문장 강조(#highlight= / 예전 ?highlight=)는 MatchupSummaryBox가 마운트 후 URL에서 직접 읽는다.
 
-  const parts = pair.split("-vs-");
+  const parts = pair.split("-");
   if (parts.length !== 2) notFound();
 
   const [a, b] = [parts[0].toLowerCase(), parts[1].toLowerCase()];
@@ -96,11 +96,10 @@ export default async function Page({ params }: Props) {
   // 덮어씌우기 때문 (기존 "존재하지 않는 챔피언 id" 케이스로 실측 확인됨).
   if (a === b) notFound();
 
-  // canonical 주소로 정규화
-  // 순서가 뒤바뀐 URL은 외부/수동 입력 등 드문 경로로만 유입되므로 canonical 경로로만 리다이렉트.
-  const canonical = [a, b].sort().join("-vs-");
+  // canonical 주소로 정규화 — 대문자·역순은 proxy.ts가 먼저 308로 보내므로 여기는 안전망.
+  const canonical = [a, b].sort().join("-");
   if (pair !== canonical) {
-    permanentRedirect(`/${locale}/matchup/${canonical}`);
+    permanentRedirect(`/${locale}/interactions/${canonical}`);
   }
 
   // 서버는 항상 알파벳순(canonical) 순서로만 렌더링한다. 예전에 공유된 ?first= 링크가
@@ -143,7 +142,7 @@ export default async function Page({ params }: Props) {
         "@type": "ListItem",
         position: 3,
         name: lang === "ko" ? `${champA.ko} · ${champB.ko} 상호작용` : `${champA.en} · ${champB.en} Interactions`,
-        item: `https://loltip.com/${locale}/matchup/${canonical}`,
+        item: `https://loltip.com/${locale}/interactions/${canonical}`,
       },
     ],
   };

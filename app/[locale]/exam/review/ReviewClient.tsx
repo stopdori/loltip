@@ -57,8 +57,8 @@ export default function ReviewClient() {
     setCurrent(index);
   }
 
-  const pair = [q.source.champ1, q.source.champ2].sort().join("-vs-");
-  const matchupHref = `/${locale}/matchup/${pair}?highlight=${q.source.highlight}`;
+  const pair = [q.source.champ1, q.source.champ2].sort().join("-");
+  const matchupHref = `/${locale}/interactions/${pair}?highlight=${q.source.highlight}`;
   const difficulties = data.map((item) => item.difficulty);
 
   return (

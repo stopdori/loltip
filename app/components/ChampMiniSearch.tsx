@@ -90,11 +90,11 @@ export default function ChampMiniSearch({
 
     if (nextMy && nextEnemy) {
       // 기존 URL 정규화 규칙과 동일: id 사전식 정렬 후 "-vs-" 결합
-      const pair = [nextMy, nextEnemy].sort().join("-vs-");
+      const pair = [nextMy, nextEnemy].sort().join("-");
       // ChampSelectModal의 onPick과 동일하게: 어느 쪽에서 고르든 왼쪽(my) 챔피언을
       // 세션 메모리 힌트로 남겨서 매치업 페이지가 그 좌우 순서로 뜨도록 함(URL에는 쿼리 없음)
       saveMatchupOrderHint(nextMy, nextEnemy);
-      router.push(`/matchup/${pair}`);
+      router.push(`/interactions/${pair}`);
       return;
     }
     // 한 명만 있을 때의 좌/우 위치는 URL 쿼리 대신 세션 메모리 힌트로 전달(app/utils/champSideHint.ts)
