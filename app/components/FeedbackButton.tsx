@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import CssLabel from "./CssLabel";
 
 type Props = {
   lang: "ko" | "en";
@@ -82,8 +83,9 @@ export default function FeedbackButton({ lang, hidden }: Props) {
         type="button"
         onClick={() => setOpen(true)}
         className="fixed bottom-4 right-4 lg:bottom-5 lg:right-5 z-50 rounded-full bg-yellow-400 px-3 py-2 text-sm font-black text-black shadow-lg shadow-black/30 ring-1 ring-yellow-300 hover:brightness-95 active:scale-[0.98]"
+        aria-label={lang === "ko" ? "문의 / 제보" : "Feedback"}
       >
-        {lang === "ko" ? "문의 / 제보" : "Feedback"}
+        <CssLabel label={lang === "ko" ? "문의 / 제보" : "Feedback"} />
       </button>
 
       {/* 모달 */}

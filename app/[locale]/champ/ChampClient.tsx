@@ -10,6 +10,7 @@ import SkillTagsPanel from "@/app/components/SkillTagsPanel";
 import MatchupSummaryBox from "@/app/components/MatchupSummaryBox";
 import type { MatchupClientResult } from "@/app/data/matchups/_index";
 import UltCooldownBox from "@/app/components/UltCooldownBox";
+import CssLabel from "@/app/components/CssLabel";
 
 import { CHAMPIONS, type Champ } from "@/app/data/champions";
 import type { ChampClientData } from "@/app/data/champClientData";
@@ -232,6 +233,13 @@ useEffect(() => {
 
   const firstUltLabel = lang === "ko" ? "궁 주도권" : "ULT CD Lead";
 
+  // 모바일 탭 버튼 라벨 — 화면엔 CSS 라벨로 그리고(본문 텍스트 제외) aria-label로 이름을 준다
+  const champName = (c: Champ | null) => (c ? (lang === "ko" ? c.ko : c.en) : null);
+  const myTabLabel = champName(myChamp) ?? (lang === "ko" ? "챔피언 선택" : "Select");
+  const enemyTabLabel = champName(enemyChamp) ?? (lang === "ko" ? "챔피언 선택" : "Select");
+  const myIframeTabLabel = champName(myChamp) ?? (lang === "ko" ? "내 챔피언" : "My Champion");
+  const enemyIframeTabLabel = champName(enemyChamp) ?? (lang === "ko" ? "상대 챔피언" : "Enemy Champion");
+
   const myIsSooner = canCompare ? myUltCd! < enemyUltCd! : false;
   const enemyIsSooner = canCompare ? enemyUltCd! < myUltCd! : false;
 
@@ -283,7 +291,7 @@ useEffect(() => {
             ChampMiniSearch/ChampSelectButton의 높이·여백이 바뀌면 이 값도 같이 조정 필요. */}
         <div className="h-[60px] sm:h-[88px]" />
         <div className="h-[108px] sm:h-[150px] flex items-center">
-          <span className="text-3xl font-extrabold text-slate-300 px-2">VS</span>
+          <CssLabel label="VS" className="text-3xl font-extrabold text-slate-300 px-2" />
         </div>
         {/* ChampSelectButton 하단 spacer(h-4 sm:h-10)와 동일 — 없으면 이 컬럼 전체
             높이가 챔피언 컬럼보다 짧아져서 items-center가 "&"를 더 아래로 밀어버림 */}
@@ -405,10 +413,9 @@ setOpenTarget(null);
           ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]"
           : "text-slate-200 border border-white/10"
       }`}
+      aria-label={myTabLabel}
     >
-      {myChamp
-        ? (lang === "ko" ? myChamp.ko : myChamp.en)
-        : (lang === "ko" ? "챔피언 선택" : "Select")}
+      <CssLabel label={myTabLabel} />
     </button>
     <button
       type="button"
@@ -421,10 +428,9 @@ setOpenTarget(null);
           ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]"
           : "text-slate-200 border border-white/10"
       }`}
+      aria-label={enemyTabLabel}
     >
-      {enemyChamp
-        ? (lang === "ko" ? enemyChamp.ko : enemyChamp.en)
-        : (lang === "ko" ? "챔피언 선택" : "Select")}
+      <CssLabel label={enemyTabLabel} />
     </button>
   </div>
 )}
@@ -432,8 +438,8 @@ setOpenTarget(null);
 <>
 {useIframe && (
   <div className="sm:hidden flex gap-1.5 w-full max-w-[430px] mx-auto mb-2">
-    <button onClick={() => setMobileTab("my")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "my" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`}>{myChamp ? (lang === "ko" ? myChamp.ko : myChamp.en) : (lang === "ko" ? "내 챔피언" : "My Champion")}</button>
-    <button onClick={() => setMobileTab("enemy")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "enemy" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`}>{enemyChamp ? (lang === "ko" ? enemyChamp.ko : enemyChamp.en) : (lang === "ko" ? "상대 챔피언" : "Enemy Champion")}</button>
+    <button onClick={() => setMobileTab("my")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "my" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`} aria-label={myIframeTabLabel}><CssLabel label={myIframeTabLabel} /></button>
+    <button onClick={() => setMobileTab("enemy")} className={`flex-1 py-2 rounded-lg text-base font-bold text-center transition bg-slate-800/40 ${mobileTab === "enemy" ? "text-yellow-400 border-2 border-yellow-400 shadow-[0_0_16px_rgba(250,204,21,0.5)]" : "text-slate-200 border border-white/10"}`} aria-label={enemyIframeTabLabel}><CssLabel label={enemyIframeTabLabel} /></button>
   </div>
 )}
 {/* iframe을 담는 section은 iframeViewportReady와 무관하게 항상 렌더링한다(SSR 포함).
@@ -531,12 +537,8 @@ setOpenTarget(null);
 
 {myChamp && enemyChamp && (
   <div className="hidden sm:flex flex-col items-center absolute left-1/2 -translate-x-1/2 top-[88px] pointer-events-none">
-    <div className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black">
-      {firstUltLabel}
-    </div>
-    <div className="mt-1 text-lg font-bold text-emerald-300">
-      {diff != null ? `${diff}s` : "--"}
-    </div>
+    <CssLabel label={firstUltLabel} className="rounded-full bg-yellow-400 px-5 py-1.5 text-sm font-black text-black" />
+    <CssLabel label={diff != null ? `${diff}s` : "--"} className="mt-1 text-lg font-bold text-emerald-300" />
   </div>
 )}
 
@@ -547,14 +549,18 @@ setOpenTarget(null);
 {!bothSelected && !embedMode && (
 <section className="mt-6 sm:mt-12 max-w-[430px] sm:max-w-[960px] mx-auto">
     <div className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-5 py-4 hover:ring-yellow-400/60 transition-all min-h-[120px]">
-      <p className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-4">
-        {lang === "ko" ? "판정 세부사항" : "Interaction Details"}
-      </p>
-      <p className="text-slate-400 text-sm text-center">
-        {lang === "ko"
-          ? "양쪽 챔피언을 선택하면 \n 상호작용 요약이 표시됨"
-          : "Pick both champions \n to see matchup summary."}
-      </p>
+      <p
+        className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-4 css-label"
+        data-label={lang === "ko" ? "판정 세부사항" : "Interaction Details"}
+      />
+      <p
+        className="text-slate-400 text-sm text-center css-label"
+        data-label={
+          lang === "ko"
+            ? "양쪽 챔피언을 선택하면 \n 상호작용 요약이 표시됨"
+            : "Pick both champions \n to see matchup summary."
+        }
+      />
     </div>
 </section>
 )}

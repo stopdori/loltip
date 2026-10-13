@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import { usePathname, useRouter, Link } from "@/i18n/navigation";
 import NoticeButton from "./NoticeButton";
+import CssLabel from "./CssLabel";
 
 type Lang = "ko" | "en";
 
@@ -97,8 +98,10 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
           <button
             onClick={() => setMenuOpen((v) => !v)}
             className={btnBase}
+            aria-label={lang === "ko" ? "메뉴" : "Menu"}
+            aria-expanded={menuOpen}
           >
-            ☰
+            <CssLabel label="☰" />
           </button>
           {menuOpen && (
             <div className="absolute left-0 top-full mt-1 z-50 flex flex-col gap-1 rounded-2xl bg-slate-900 ring-1 ring-white/10 shadow-xl p-2 min-w-[140px]">
@@ -107,7 +110,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
                 aria-label={lang === "ko" ? "홈으로 이동" : "Go to home"}
                 className={btnIcon}
               >
-                LT
+                <CssLabel label="LT" />
               </button>
               <NoticeButton lang={lang} className={`${btnFull} text-slate-200 hover:bg-slate-700/60`} hidden={!!champSearchOpen} onOpenChange={onNoticeOpenChange} />
               <a href={`/${locale}/tags`} className={btnFull}>
@@ -134,7 +137,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
           </Link>
           {/* 로고와 같은 폰트 크기/굵기의 컨테이너 안에 인라인으로 넣어 로고 글자 기준선에 자동 정렬 */}
           <span className="absolute left-full top-0 ml-1.5 text-3xl font-extrabold whitespace-nowrap">
-            <span className="text-xs font-normal text-slate-400">26.19</span>
+            <CssLabel label="26.19" className="text-xs font-normal text-slate-400" />
           </span>
         </div>
 
@@ -145,7 +148,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
             aria-label={lang === "ko" ? "홈으로 이동" : "Go to home"}
             className={btnIcon}
           >
-            LT
+            <CssLabel label="LT" />
           </button>
           <NoticeButton lang={lang} hidden={!!champSearchOpen} onOpenChange={onNoticeOpenChange} />
           <a href={`/${locale}/tags`} className={btnBase}>

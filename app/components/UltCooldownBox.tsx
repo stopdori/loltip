@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import CssLabel from "./CssLabel";
+
 
 const HASTES = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] as const;
 const LEVELS = [6, 11, 16] as const;
@@ -56,9 +58,7 @@ export default function UltCooldownBox({
     <div className="rounded-xl bg-slate-900/30 ring-1 ring-white/10 p-4 space-y-4 min-h-[96px]">
       {/* 궁 레벨 + 쿨타임 */}
       <div className="flex items-start gap-0">
-        <span className="text-sm font-semibold text-slate-200 shrink-0 w-[60px]">
-          {ultLabel}
-        </span>
+        <CssLabel label={ultLabel} className="text-sm font-semibold text-slate-200 shrink-0 w-[60px]" />
 
         <div className="flex-1 flex items-center justify-between gap-3">
           <div className={`w-1/2 ${disabledCls}`}>
@@ -75,6 +75,7 @@ export default function UltCooldownBox({
       }}
       className="w-full accent-yellow-300"
       disabled={!hasData}
+      aria-label={ultLabel}
     />
 
     {/* ✅ 눈금: 가운데(11)만 */}
@@ -91,9 +92,7 @@ export default function UltCooldownBox({
 
 >
 
-      <div className="w-[30px] h-[30px] -translate-x-1/2 rounded-full bg-slate-900 ring-2 ring-yellow-300 flex items-center justify-center text-[16px] font-black text-yellow-200">
-        {level}
-      </div>
+      <CssLabel label={String(level)} className="w-[30px] h-[30px] -translate-x-1/2 rounded-full bg-slate-900 ring-2 ring-yellow-300 flex items-center justify-center text-[16px] font-black text-yellow-200" />
     </div>
   </div>
 </div>
@@ -101,16 +100,14 @@ export default function UltCooldownBox({
 
           <span className="shrink-0 text-sm font-extrabold">
             {!hasData || !base ? (
-              <span className="text-slate-400">--s</span>
+              <CssLabel label="--s" className="text-slate-400" />
             ) : haste === 0 ? (
-              <span className={`${cdClassName} text-xl font-black`}>{cd}s</span>
+              <CssLabel label={`${cd}s`} className={`${cdClassName} text-xl font-black`} />
             ) : (
               <>
-                <span className="text-slate-100 text-[12px] font-semibold">
-                  {base}s
-                </span>
-                <span className="mx-1 text-slate-100">→</span>
-                <span className={`${cdClassName} text-xl font-black`}>{cd}s</span>
+                <CssLabel label={`${base}s`} className="text-slate-100 text-[12px] font-semibold" />
+                <CssLabel label="→" className="mx-1 text-slate-100" />
+                <CssLabel label={`${cd}s`} className={`${cdClassName} text-xl font-black`} />
 
               </>
             )}
@@ -120,9 +117,7 @@ export default function UltCooldownBox({
 
       {/* 스킬가속 */}
       <div className="flex items-start gap-0">
-        <span className="text-sm font-semibold text-slate-200 shrink-0 w-[60px]">
-          {hasteLabel}
-        </span>
+        <CssLabel label={hasteLabel} className="text-sm font-semibold text-slate-200 shrink-0 w-[60px]" />
 
         <div className={`flex-1 ${disabledCls}`}>
           <div className="flex items-center gap-3">
@@ -139,6 +134,7 @@ export default function UltCooldownBox({
     }
     className="w-full accent-sky-400"
     disabled={!hasData}
+    aria-label={hasteLabel}
   />
 
   {/* ✅ 눈금(25/50/75만, 양끝은 숨김) */}
@@ -158,9 +154,7 @@ export default function UltCooldownBox({
     className="pointer-events-none absolute top-2/5 -translate-y-1/2"
     style={{ left: `${(haste / MAX_HASTE) * 100}%` }}
   >
-    <div className="w-[30px] h-[30px] -translate-x-1/2 rounded-full bg-slate-900 ring-2 ring-sky-400 flex items-center justify-center text-[16px] font-black text-sky-300">
-      {haste}
-    </div>
+    <CssLabel label={String(haste)} className="w-[30px] h-[30px] -translate-x-1/2 rounded-full bg-slate-900 ring-2 ring-sky-400 flex items-center justify-center text-[16px] font-black text-sky-300" />
   </div>
 </div>
 

@@ -39,3 +39,10 @@ body {
     -1.5px  1.5px 0 rgba(0,0,0,0.9),
      1.5px  1.5px 0 rgba(0,0,0,0.9);
 }
+
+/* 화면에는 그리되 본문 텍스트(DOM 텍스트 노드)에는 넣지 않는 UI 라벨.
+   글자는 data-label 속성에 두고 ::before로 그린다(app/components/CssLabel.tsx).
+   버튼은 aria-label로 이름을 따로 준다. display:none/visibility/UA 분기는 쓰지 않는다. */
+.css-label::before {
+  content: attr(data-label);
+}

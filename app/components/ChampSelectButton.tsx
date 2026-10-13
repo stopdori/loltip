@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import CssLabel from "./CssLabel";
 import type { Champ } from "../data/champions";
 
 type Props = {
@@ -79,8 +80,9 @@ export default function ChampSelectButton({
               z-10
             "
             title={lang === "ko" ? "초기화" : "Reset"}
+            aria-label={lang === "ko" ? "초기화" : "Reset"}
           >
-            ⟳
+            <CssLabel label="⟳" />
           </button>
         )}
       </div>

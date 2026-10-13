@@ -14,6 +14,7 @@ import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from 
 import { toneOfTag } from "../data/interactions/tagTone";
 import { STAT_ICONS } from "../data/interactions/statIcons";
 import TokenText from "./TokenText";
+import CssLabel from "./CssLabel";
 import TagPill from "./TagPill";
 import TipDebugOverlay from "./TipDebugOverlay";
 import { tipLog } from "@/app/lib/tipDebug";
@@ -448,14 +449,13 @@ function SkillLabelWithTip({
       <span
         className={`pointer-events-none absolute inset-0 flex items-center justify-center font-black ${
           watermarkText.length >= 2 ? "text-lg" : "text-xl"
-        } ${watermarkTone}`}
+        } ${watermarkTone} css-label`}
+        data-label={watermarkText}
         style={{
           textShadow:
             "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000, 1px 0 0 #000",
         }}
-      >
-        {watermarkText}
-      </span>
+      />
     </span>
   );
 
@@ -639,14 +639,13 @@ function FormTabIcon({
         }}
       />
       <span
-        className="pointer-events-none absolute inset-0 flex items-center justify-center text-center px-0.5 text-[12px] leading-[1.05] font-black break-words text-slate-100/90"
+        className="pointer-events-none absolute inset-0 flex items-center justify-center text-center px-0.5 text-[12px] leading-[1.05] font-black break-words text-slate-100/90 css-label"
+        data-label={label}
         style={{
           textShadow:
             "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000, 1px 0 0 #000",
         }}
-      >
-        {label}
-      </span>
+      />
     </span>
   );
 }
@@ -816,7 +815,7 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
-        if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+        if (t === "SEPARATOR") return <CssLabel key={i} label="/" className="text-slate-400 text-xl px-1 self-end leading-none" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -836,6 +835,7 @@ const renderNoteSection = (items: string[], title: string) => {
             size={statIcon?.size}
             lang={lang}
             tagId={t}
+            cssLabel
           />
         );
       };
@@ -848,9 +848,7 @@ const renderNoteSection = (items: string[], title: string) => {
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
               <div key={i} className="space-y-1">
-                <div className="text-xs font-semibold text-slate-400">
-                  {phase.label[lang]}
-                </div>
+                <CssLabel label={phase.label[lang]} className="block text-xs font-semibold text-slate-400" />
                 <div className="flex flex-col gap-y-2">
                   {phase.tags.length > 0 ? (
                     splitIntoLineGroups(phase.tags).map((group, gi) => (
@@ -859,7 +857,7 @@ const renderNoteSection = (items: string[], title: string) => {
                       </div>
                     ))
                   ) : (
-                    <span className="text-sm text-slate-500">-</span>
+                    <CssLabel label="-" className="text-sm text-slate-500" />
                   )}
                 </div>
               </div>
@@ -883,7 +881,7 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
-        if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+        if (t === "SEPARATOR") return <CssLabel key={i} label="/" className="text-slate-400 text-xl px-1 self-end leading-none" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -903,6 +901,7 @@ const renderNoteSection = (items: string[], title: string) => {
             size={statIcon?.size}
             lang={lang}
             tagId={t}
+            cssLabel
           />
         );
       };
@@ -915,9 +914,7 @@ const renderNoteSection = (items: string[], title: string) => {
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
               <div key={i} className="space-y-1">
-                <div className="text-xs font-semibold text-slate-400">
-                  {phase.label[lang]}
-                </div>
+                <CssLabel label={phase.label[lang]} className="block text-xs font-semibold text-slate-400" />
                 <div className="flex flex-col gap-y-2">
                   {phase.tags.length > 0 ? (
                     splitIntoLineGroups(phase.tags).map((group, gi) => (
@@ -926,7 +923,7 @@ const renderNoteSection = (items: string[], title: string) => {
                       </div>
                     ))
                   ) : (
-                    <span className="text-sm text-slate-500">-</span>
+                    <CssLabel label="-" className="text-sm text-slate-500" />
                   )}
                 </div>
               </div>
@@ -950,7 +947,7 @@ const renderNoteSection = (items: string[], title: string) => {
       }>;
 
       const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
-        if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+        if (t === "SEPARATOR") return <CssLabel key={i} label="/" className="text-slate-400 text-xl px-1 self-end leading-none" />;
         const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
         const rLabel = TAG_LABEL[t as TagId];
         const labelData = gLabel ?? rLabel;
@@ -970,6 +967,7 @@ const renderNoteSection = (items: string[], title: string) => {
             size={statIcon?.size}
             lang={lang}
             tagId={t}
+            cssLabel
           />
         );
       };
@@ -982,9 +980,7 @@ const renderNoteSection = (items: string[], title: string) => {
           <div className="flex-1 space-y-2">
             {phases.map((phase, i) => (
               <div key={i} className="space-y-1">
-                <div className="text-xs font-semibold text-slate-400">
-                  {phase.label[lang]}
-                </div>
+                <CssLabel label={phase.label[lang]} className="block text-xs font-semibold text-slate-400" />
                 <div className="flex flex-col gap-y-2">
                   {phase.tags.length > 0 ? (
                     splitIntoLineGroups(phase.tags).map((group, gi) => (
@@ -993,7 +989,7 @@ const renderNoteSection = (items: string[], title: string) => {
                       </div>
                     ))
                   ) : (
-                    <span className="text-sm text-slate-500">-</span>
+                    <CssLabel label="-" className="text-sm text-slate-500" />
                   )}
                 </div>
               </div>
@@ -1022,7 +1018,7 @@ const renderNoteSection = (items: string[], title: string) => {
   const lineGroups = splitIntoLineGroups(tags);
 
   const renderTagPill = (t: TagId | GimmickTagId, i: number) => {
-    if (t === "SEPARATOR") return <span key={i} className="text-slate-400 text-xl px-1 self-end leading-none">/</span>;
+    if (t === "SEPARATOR") return <CssLabel key={i} label="/" className="text-slate-400 text-xl px-1 self-end leading-none" />;
     const gLabel = GIMMICK_TAG_LABEL[t as GimmickTagId];
     const rLabel = TAG_LABEL[t as TagId];
     const labelData = gLabel ?? rLabel;
@@ -1039,6 +1035,7 @@ const renderNoteSection = (items: string[], title: string) => {
         size={statIcon?.size}
         lang={lang}
         tagId={t}
+        cssLabel
       />
     );
   };
@@ -1071,7 +1068,7 @@ const renderNoteSection = (items: string[], title: string) => {
             </div>
           ))
         ) : (
-          <span className="text-sm text-slate-500">-</span>
+          <CssLabel label="-" className="text-sm text-slate-500" />
         )}
       </div>
     </div>
@@ -1127,15 +1124,17 @@ return (
       type="button"
       onClick={() => setMode("skill")}
       className={toggleBtnClass(mode === "skill")}
+      aria-label={lang === "ko" ? "스킬" : "Skills"}
     >
-      {lang === "ko" ? "스킬" : "Skills"}
+      <CssLabel label={lang === "ko" ? "스킬" : "Skills"} />
     </button>
     <button
       type="button"
       onClick={() => setMode("gimmick")}
       className={toggleBtnClass(mode === "gimmick")}
+      aria-label={lang === "ko" ? "기믹" : "Gimmick"}
     >
-      {lang === "ko" ? "기믹" : "Gimmick"}
+      <CssLabel label={lang === "ko" ? "기믹" : "Gimmick"} />
     </button>
     <button
       type="button"
@@ -1145,16 +1144,16 @@ return (
       className={`group relative ${
         VISION_TAB_ENABLED ? toggleBtnClass(mode === "vision") : `${toggleBtnBase} ${toggleBtnDisabled}`
       }`}
+      aria-label={lang === "ko" ? "시야" : "Vision"}
     >
-      {lang === "ko" ? "시야" : "Vision"}
+      <CssLabel label={lang === "ko" ? "시야" : "Vision"} />
       {!VISION_TAB_ENABLED && (
         <span
           className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 hidden -translate-x-1/2
                      whitespace-nowrap rounded-md bg-black/90 px-2 py-1 text-[11px] font-semibold
-                     text-slate-100 ring-1 ring-white/10 shadow-lg group-hover:block"
-        >
-          {lang === "ko" ? "준비중" : "Coming Soon"}
-        </span>
+                     text-slate-100 ring-1 ring-white/10 shadow-lg group-hover:block css-label"
+          data-label={lang === "ko" ? "준비중" : "Coming Soon"}
+        />
       )}
     </button>
   </ToggleGroup>
@@ -1171,15 +1170,16 @@ return (
             type="button"
             onClick={() => setFormIndex(i)}
             className={f.icon ? toggleBtnFormIconClass(formIndex === i) : toggleBtnFormClass(formIndex === i)}
+            aria-label={f[lang]}
           >
-            {f.icon ? <FormTabIcon icon={f.icon} label={f[lang]} color={f.color} /> : f[lang]}
+            {f.icon ? <FormTabIcon icon={f.icon} label={f[lang]} color={f.color} /> : <CssLabel label={f[lang]} />}
           </button>
         ))}
       </>
     ) : (
       <>
-        <div className={`${toggleBtnBase} ${toggleBtnDisabled}`}>{lang === "ko" ? "기본" : "Base"}</div>
-        <div className={`${toggleBtnBase} ${toggleBtnDisabled}`}>{lang === "ko" ? "변환" : "Alt"}</div>
+        <div className={`${toggleBtnBase} ${toggleBtnDisabled} css-label`} data-label={lang === "ko" ? "기본" : "Base"} />
+        <div className={`${toggleBtnBase} ${toggleBtnDisabled} css-label`} data-label={lang === "ko" ? "변환" : "Alt"} />
       </>
     )}
   </ToggleGroup>

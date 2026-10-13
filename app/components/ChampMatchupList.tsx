@@ -4,6 +4,7 @@ import { CHAMPIONS } from "@/app/data/champions";
 import type { ChampMatchupEntry } from "@/app/data/matchups/_index";
 import { filterChampions } from "@/app/utils/champSearch";
 import { waGwa } from "@/app/utils/koreanParticle";
+import CssLabel from "@/app/components/CssLabel";
 
 // 챔프 페이지(/champ/[id]) 하단(ChampClient의 extraSection 슬롯)의 "이 챔피언과 상호작용하는 챔피언들" 목록.
 // 서버 컴포넌트("use client" 없음)라서 <a href="/{locale}/matchup/{pair}">가 항상 SSR HTML에 나간다.
@@ -50,7 +51,7 @@ export default function ChampMatchupList({
         >
           {title}
         </h2>
-        <span className="ml-2 text-xs font-semibold text-slate-400 normal-case">{opponents.length}</span>
+        <CssLabel label={String(opponents.length)} className="ml-2 text-xs font-semibold text-slate-400 normal-case" />
       </div>
 
       <ul className="flex flex-wrap gap-1.5 sm:gap-2">

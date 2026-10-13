@@ -9,6 +9,7 @@ import { parseTagTokens } from "../data/interactions/parseTagTokens";
 import { TAG_LABEL, type TagId } from "../data/interactions/tags";
 import type { GimmickTagId } from "../data/interactions/tags_gimmick";
 import { CHANNEL_INTERRUPTED_BY, MOVEMENT_CHANNEL_INTERRUPTED_BY } from "../data/interactions/ccInteractions";
+import CssLabel from "./CssLabel";
 
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
@@ -32,6 +33,7 @@ export default function TagPill({
   lang = "ko",
   showIconInAnchor = true,
   tagId,
+  cssLabel = false,
 }: {
   text: string;
   tip?: string;
@@ -49,6 +51,9 @@ export default function TagPill({
   showIconInAnchor?: boolean;
   /** 이 pill이 나타내는 태그의 실제 키. SKILL_CHANNEL/SKILL_CHARGED일 때 툴팁에 "방해 가능" 목록을 추가로 보여주고, note 모드일 때 텍스트 색상을 결정하는 데도 쓰인다 */
   tagId?: TagId | GimmickTagId;
+  /** true면 앵커의 글자(라벨·화살표)를 텍스트 노드 대신 CSS 라벨(data-label + ::before)로 그린다 —
+   *  챔피언 페이지 태그필 줄(SkillTagsPanel) 전용. 문장 속 인라인 토큰(TokenText)은 텍스트 그대로 둔다. */
+  cssLabel?: boolean;
 }) {
   const anchorRef = useRef<HTMLSpanElement | null>(null);
   const tipRef = useRef<HTMLSpanElement | null>(null);
@@ -260,10 +265,13 @@ export default function TagPill({
             style={isNote ? { height: "1em", width: "1em" } : { height: size, width: size }}
           />
         ))}
-      {text}
-      {direction && (
-        <span aria-hidden="true" className={isNote ? "ml-[1px]" : undefined}>{direction === "up" ? "↑" : "↓"}</span>
-      )}
+      {cssLabel ? <CssLabel label={text} /> : text}
+      {direction &&
+        (cssLabel ? (
+          <CssLabel label={direction === "up" ? "↑" : "↓"} className={isNote ? "ml-[1px]" : ""} />
+        ) : (
+          <span aria-hidden="true" className={isNote ? "ml-[1px]" : undefined}>{direction === "up" ? "↑" : "↓"}</span>
+        ))}
     </span>
 
       {open && tip && typeof document !== "undefined" && createPortal(

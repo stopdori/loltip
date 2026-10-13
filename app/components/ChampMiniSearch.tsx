@@ -158,15 +158,17 @@ export default function ChampMiniSearch({
       />
 
       {showSelectedName && (
-        <span className="pointer-events-none absolute inset-0 flex items-center justify-center text-xs sm:text-sm font-semibold text-slate-200 truncate px-8">
-          {ownChampName}
-        </span>
+        <span
+          className="pointer-events-none absolute inset-0 flex items-center justify-center text-xs sm:text-sm font-semibold text-slate-200 truncate px-8 css-label"
+          data-label={ownChampName ?? ""}
+        />
       )}
 
       {showPlaceholder && (
-        <span className="pointer-events-none absolute left-8 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-slate-500/70 truncate">
-          {lang === "ko" ? "챔피언" : "Search"}
-        </span>
+        <span
+          className="pointer-events-none absolute left-8 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-slate-500/70 truncate css-label"
+          data-label={lang === "ko" ? "챔피언" : "Search"}
+        />
       )}
 
       {open && (
