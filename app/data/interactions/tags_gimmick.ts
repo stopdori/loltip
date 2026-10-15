@@ -45,6 +45,7 @@ export type GimmickTagId =
   | "LEVEL_SCALE"
   | "SKILL_LEVEL_SCALE"
   | "DISTANCE_SCALE"
+  | "RANGE_SCALE"
   // 스킬 형태
   | "SKILL_ACTIVE"
   | "SKILL_TOGGLE"
@@ -71,6 +72,7 @@ export type GimmickTagId =
   | "SUMMON"
   | "OF_SUMMON"
   | "OF_ALLY"
+  | "OF_TARGET"
   | "DROP"
   | "DETONATE"
   | "ATTACH"
@@ -271,6 +273,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   SUMMON:  { ko: "소환",     en: "Summon"  },
   OF_SUMMON: { ko: "소환수의", en: "Summon's" },
   OF_ALLY: { ko: "아군의", en: "Ally's" },
+  OF_TARGET: { ko: "대상의", en: "Target's" },
   DROP:          { ko: "드롭",    en: "Drops"    },
   DETONATE:      { ko: "폭발",    en: "Detonate" },
   ATTACH:        { ko: "부착",    en: "Attach"   },
@@ -317,6 +320,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   LEVEL_SCALE: { ko: "레벨", en: "Level" },
   SKILL_LEVEL_SCALE: { ko: "스킬 레벨", en: "Skill Level" },
   DISTANCE_SCALE: { ko: "거리", en: "Distance" },
+  RANGE_SCALE: { ko: "사거리", en: "Range" },
   // 시전 행동
   CAST_COMMIT:   { ko: "시전강행",  en: "Cast Commit"  },
   CAST_CANCEL:   { ko: "시전취소",  en: "Cast Cancel"  },
@@ -423,6 +427,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SUMMON:  { ko: "유닛을 소환하는 스킬", en: "Summons a unit to assist in combat" },
   OF_SUMMON: { ko: "효과가 챔피언이 아니라 소환수에게 적용.", en: "The effects that follow apply to the summoned unit, not the champion." },
   OF_ALLY: { ko: "뒤에 오는 효과가 챔피언 자신이 아니라 아군에게 적용.", en: "The effects that follow apply to allies, not the champion itself." },
+  OF_TARGET: { ko: "뒤에 오는 효과가 지정한 대상(자신 또는 아군)에게 적용.", en: "The effects that follow apply to the chosen target (self or an ally)." },
   DROP:          { ko: "바닥에 오브젝트를 생성하여, \n 밟으면 획득하거나 효과가 발동됨", en: "Creates an object on the ground \n that activates or is collected when stepped on" },
   DETONATE:      { ko: "대상에게 적중하면 자동으로 폭발하여 범위 피해 등을 입힌다", en: "Automatically detonates on hit, dealing area damage or similar effects." },
   ATTACH:        { ko: "적중한 챔피언 몸에 달라붙어 따라다님. \n 예) 피즈 R, 질리언 Q", en: "Sticks to the champion it hits and follows them. \n e.g. Fizz R, Zilean Q" },
@@ -472,6 +477,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   LEVEL_SCALE: { ko: "챔피언 레벨에 비례한다", en: "Scales with champion level" },
   SKILL_LEVEL_SCALE: { ko: "스킬 레벨에 비례한다", en: "Scales with skill level" },
   DISTANCE_SCALE: { ko: "이동하거나 날아간 거리에 비례한다", en: "Scales with distance traveled" },
+  RANGE_SCALE: { ko: "스킬 사거리가 조건(충전 시간 등)에 비례해 늘어난다", en: "Ability range scales with a condition (e.g. charge time)" },
   // 시전 행동
   CAST_COMMIT:   { ko: "시전 중 CC에 걸려도 스킬이 끊기지 않고 유지됨.\nCC 효과는 시전 도중에도 정상 작동.", en: "The skill is not interrupted and persists even if hit by CC during the cast.\nCC effects function normally during the casting process." },
   CAST_CANCEL:   { ko: "시전 중 CC에 걸리면 스킬이 취소됨\n쿨타임만 소모됨", en: "The skill is canceled if hit by CC during the cast\nOnly the cooldown is consumed" },

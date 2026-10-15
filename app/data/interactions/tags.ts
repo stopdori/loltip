@@ -1,4 +1,5 @@
 import type { GimmickTagId } from "./tags_gimmick";
+import { SPELL_TAG_LABEL, SPELL_TAG_DESC, type SpellTagId } from "./tags_spell";
 
 export type TagId =
   /* 1) 스탯 버프 */
@@ -157,7 +158,9 @@ export type TagId =
   | "W_FLASH"
   | "E_FLASH"
   | "R_FLASH"
-  | "INSEC_KICK";
+  | "INSEC_KICK"
+  /* 11) 소환사 주문 — tags_spell.ts에서 관리 */
+  | SpellTagId;
   
 
 
@@ -321,6 +324,8 @@ E_FLASH: { ko: "E플", en: "EF" },
 R_FLASH: { ko: "R플", en: "RF" },
 INSEC_KICK: { ko: "인섹킥", en: "InSec Kick" },
 
+  /* 11) 소환사 주문 — tags_spell.ts에서 관리 */
+  ...SPELL_TAG_LABEL,
 }
 
 // 노트/스킬툴팁 인라인 [[TAG]] 렌더링(parseTagTokens.ts) 시 TAG_LABEL/
@@ -344,6 +349,15 @@ export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: 
   RECAST_RETURN: { ko: "시전 복귀", en: "Return" },
   HS_POWER: { ko: "회복/보호막 효과 증가", en: "Heal and Shield Power" },
   UNSTOPPABLE: { ko: "저지 불가", en: "Unstoppable" },
+  AS_SCALE: { ko: "공격 속도", en: "Attack Speed" },
+  MS_SCALE: { ko: "이동 속도", en: "Move Speed" },
+  HP_SCALE: { ko: "최대 체력", en: "Max HP" },
+  MANA_SCALE: { ko: "최대 마나", en: "Max Mana" },
+  CAST_COMMIT: { ko: "시전 강행", en: "Cast Commit" },
+  CAST_CANCEL: { ko: "시전 취소", en: "Cast Cancel" },
+  CAST_MOVE: { ko: "이동 가능", en: "Can Move" },
+  CAST_IMMOBILE: { ko: "이동 불가", en: "Immobile" },
+  CC_BUFFER: { ko: "CC 버퍼", en: "CC Buffer" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
@@ -903,5 +917,7 @@ INSEC_KICK: {
   en: "A play that combines a knockback skill with \nFlash to push a target in the opposite direction\n(named after former pro gamer \nand current streamer Insec)",
 },
 
+  /* 11) 소환사 주문 — tags_spell.ts에서 관리 */
+  ...SPELL_TAG_DESC,
 };
 

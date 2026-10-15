@@ -1,6 +1,7 @@
 // app/data/interactions/tagTone.ts
 import type { TagId } from "./index";
 import type { GimmickTagId } from "./tags_gimmick";
+import { SPELL_TAG_TONE } from "./tags_spell";
 
 // ✅ 스타일 팔레트용 톤(색상 그룹)
 export type Tone =
@@ -298,6 +299,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SUMMON:  "indigo",
   OF_SUMMON: "indigo",
   OF_ALLY: "indigo",
+  OF_TARGET: "indigo",
   DROP:          "indigo",
   DETONATE:      "indigo",
   ATTACH:        "indigo",
@@ -353,6 +355,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   LEVEL_SCALE: "indigo",
   SKILL_LEVEL_SCALE: "indigo",
   DISTANCE_SCALE: "indigo",
+  RANGE_SCALE: "indigo",
   // 시전 행동
   CAST_COMMIT:   "indigo",
   CAST_CANCEL:   "indigo",
@@ -364,6 +367,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   DASH:     "sky",
   BLINK:    "sky",
   LUNGE:    "sky",
+  // 소환사 주문 — tags_spell.ts에서 관리
+  ...SPELL_TAG_TONE,
 } satisfies Partial<Record<TagId | GimmickTagId, Tone>>;
 
 // ✅ tag가 등록 안 되어있으면 default

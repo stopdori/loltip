@@ -24,9 +24,25 @@ export type ChampForm = {
 
 export const CHAMP_FORMS: Record<string, ChampForm[]> = {
 
+  // ✅ 제이스 (2폼 — R로 캐논/해머 전환). 기존 로컬 아이콘(/spells/jayce/*.webp)은
+  // DDragon 기준이라 해머폼 Q/W/E(JayceToTheSkies 등) + 해머폼 R(JayceStanceHtG =
+  // 캐논으로 전환, JayceR_Ranged)로 되어 있음 → 해머폼은 Q/W/E/R 교체 불필요.
+  // 캐논폼 Q/W/E/R은 DDragon에 개별 아이콘이 없어(16.20.1 기준 챔피언 JSON에 해머 4개만
+  // 존재) CDragon 예외 사용(docs/data-sources.md). 매핑은 jayce.bin.json의 mImgIconName
+  // 기준(ShockBlast=Q_Ranged, HyperCharge=W_Ranged, AccelerationGate=E_Ranged,
+  // StanceGtH=R_Melee). P도 폼별 아이콘(JayceP_Ranged/JayceP_Melee)이 따로 있어 둘 다 지정.
+  // 탭 아이콘: 각 폼으로 전환하는 R 아이콘(캐논 = R_Ranged, 해머 = R_Melee).
   jayce: [
-    { ko: "캐논", en: "Ranged" },
-    { ko: "해머", en: "Melee" },
+    { ko: "캐논", en: "Ranged", icon: "https://raw.communitydragon.org/latest/game/assets/characters/jayce/hud/icons2d/jaycer_ranged.png", skillIcons: {
+      P: "https://raw.communitydragon.org/latest/game/assets/characters/jayce/hud/icons2d/jaycep_ranged.png",
+      Q: "https://raw.communitydragon.org/latest/game/assets/characters/jayce/hud/icons2d/jayceq_ranged.png",
+      W: "https://raw.communitydragon.org/latest/game/assets/characters/jayce/hud/icons2d/jaycew_ranged.png",
+      E: "https://raw.communitydragon.org/latest/game/assets/characters/jayce/hud/icons2d/jaycee_ranged.png",
+      R: "https://raw.communitydragon.org/latest/game/assets/characters/jayce/hud/icons2d/jaycer_melee.png",
+    } },
+    { ko: "해머", en: "Melee", icon: "https://raw.communitydragon.org/latest/game/assets/characters/jayce/hud/icons2d/jaycer_melee.png", skillIcons: {
+      P: "https://raw.communitydragon.org/latest/game/assets/characters/jayce/hud/icons2d/jaycep_melee.png",
+    } },
   ],
 
   nidalee: [

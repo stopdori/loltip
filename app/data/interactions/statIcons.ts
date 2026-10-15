@@ -9,6 +9,7 @@
 
 import type { TagId } from "./tags";
 import type { GimmickTagId } from "./tags_gimmick";
+import { SPELL_ICONS } from "./tags_spell";
 
 export type StatIconEntry = {
   /** "/stat-icons/icon-xxx.png" 형식의 정적 파일 경로 배열. 순서대로 텍스트 앞에 나란히 표시된다 */
@@ -101,4 +102,6 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   FORCED_ACTION: { icons: ["/cc-icons/icon-forcedaction.png"] },
   SKILL_CHANNEL: { icons: ["/cc-icons/icon-channel.png"] }, // GimmickTagId
   SKILL_CHANNEL_MOVEMENT: { icons: ["/cc-icons/icon-channel.png"] }, // GimmickTagId
+  // 소환사 주문 공식 아이콘 — tags_spell.ts에서 관리
+  ...SPELL_ICONS,
 };

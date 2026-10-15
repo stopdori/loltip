@@ -12,6 +12,7 @@
 
 import type { TagId } from "./tags";
 import type { GimmickTagId } from "./tags_gimmick";
+import { SPELL_CATEGORY } from "./tags_spell";
 
 export type CategoryGroup<T extends string> = {
   title: { ko: string; en: string };
@@ -80,6 +81,8 @@ export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
       { keys: ["STEALTH", "INVISIBILITY", "CAMOUFLAGE"] },
     ],
   },
+  // 소환사 주문 — tags_spell.ts에서 관리
+  SPELL_CATEGORY,
 ];
 
 // "시야·은신" 탭 전용 독립 정의. TAG_CATEGORIES의 "6) 시야 / 은신"은 카드에
@@ -129,7 +132,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "8) 피해 범위", en: "8) Damage Range" },
-    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "OF_SUMMON", "OF_ALLY", "DROP", "DETONATE", "ATTACH", "X0.5", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
+    keys: ["SINGLE", "PIERCE", "PIERCE_MINION", "PIERCE_ONCE", "AOE", "AURA", "GLOBAL", "SUMMON", "OF_SUMMON", "OF_ALLY", "OF_TARGET", "DROP", "DETONATE", "ATTACH", "X0.5", "X1.5", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9", "X10", "XN", "CLONE", "SWARM", "VOLLEY", "VOLLEY_OVERLAP"],
   },
   {
     title: { ko: "9) 피해 종류", en: "9) Damage Type" },
@@ -137,7 +140,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "10) 능력치 비례", en: "10) Stat Scaling" },
-    keys: ["SELF_MAXHP_SCALE", "SELF_BONUS_HP_SCALE", "SELF_MISSING_HP_SCALE", "TARGET_MAXHP_SCALE", "TARGET_CURRENT_HP_SCALE", "TARGET_MISSING_HP_SCALE", "AD_SCALE", "AP_SCALE", "AR_SCALE", "MR_SCALE", "AR_MR_SCALE", "LEVEL_SCALE", "SKILL_LEVEL_SCALE", "DISTANCE_SCALE", "AS_SCALE", "MS_SCALE", "HP_SCALE", "MANA_SCALE", "ENERGY_SCALE"],
+    keys: ["SELF_MAXHP_SCALE", "SELF_BONUS_HP_SCALE", "SELF_MISSING_HP_SCALE", "TARGET_MAXHP_SCALE", "TARGET_CURRENT_HP_SCALE", "TARGET_MISSING_HP_SCALE", "AD_SCALE", "AP_SCALE", "AR_SCALE", "MR_SCALE", "AR_MR_SCALE", "LEVEL_SCALE", "SKILL_LEVEL_SCALE", "DISTANCE_SCALE", "RANGE_SCALE", "AS_SCALE", "MS_SCALE", "HP_SCALE", "MANA_SCALE", "ENERGY_SCALE"],
   },
   {
     title: { ko: "11) 시전 행동", en: "11) Cast Behavior" },
