@@ -73,6 +73,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   GREY_HEALTH: "zinc",
 
   MS_DOWN: "amber_dark",
+  AS_DOWN: "amber_dark",
 
   // 🔵 sky (이동/회복/자원/저항)
   MS_UP: "sky",

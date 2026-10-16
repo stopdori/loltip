@@ -48,7 +48,7 @@ const ahri: ChampData = {
         ko: [], en: [] },
       note1: {
         ko: [
-          "P는 [[BUFF_STACK]] 9개 쌓이면 [[HEAL]] 발동. \n 일반 대상 처치 시 1개. \n [[ON_TAKEDOWN]] 시 (3초 이내) 9개, 하지만 [[EMPOWERED]]된 효과. \n \n",
+          "P는 [[BUFF_STACK]] 9개 쌓이면 [[HEAL]] 발동. \n 일반 대상 처치 시 1개. \n [[ON_TAKEDOWN]] (3초 이내) 9개, 하지만 [[EMPOWERED]]된 효과. \n \n",
 
           "Q는 되돌아 오는 [[PROJECTILE]]를 발사. \n 발사한 Q는 [[PIERCE]] [[DMG_MAGIC]] \n 되돌아 오는 Q는 [[DMG_TRUE]]. \n \n",
 
@@ -56,7 +56,7 @@ const ahri: ChampData = {
 
           "E는 [[PROJECTILE]]를 발사. \n 적중하면 [[DMG_MAGIC]], [[CHARM]]. \n \n",
 
-          "R은 [[DASH]]하여 주변에 [[HOMING]] [[PROJECTILE]] 3개를 발사하여 [[DMG_MAGIC]]. \n 동시에 아리에게 15초간 [[BUFF]] 생성. \n [[BUFF]]가 있는동안 2회 [[SKILL_RECAST]] 가능. \n [[ON_TAKEDOWN]] 시 (3초 이내) [[SKILL_RECAST]] +1회 (최대 3회) \n [[DURATION_EXT]] 최대 10초.",
+          "R은 [[DASH]]하여 주변에 [[HOMING]] [[PROJECTILE]] 3개를 발사하여 [[DMG_MAGIC]]. \n 동시에 아리에게 15초간 [[BUFF]] 생성. \n [[BUFF]]가 있는동안 2회 [[SKILL_RECAST]] 가능. \n [[ON_TAKEDOWN]] (3초 이내) [[SKILL_RECAST]] +1회 (최대 3회) \n [[DURATION_EXT]] 최대 10초.",
           ],
         en: ["P triggers [[HEAL]] at 9 [[BUFF_STACK]]s. \n 1 stack per regular kill. \n On [[ON_TAKEDOWN]] (within 3s), 9 stacks, but with an [[EMPOWERED]] effect. \n \n",
           "Q fires a returning [[PROJECTILE]]. \n The outgoing Q deals [[PIERCE]] [[DMG_MAGIC]] \n and the returning Q deals [[DMG_TRUE]]. \n \n",
@@ -72,7 +72,7 @@ const ahri: ChampData = {
         "W, R의 투사체는 대상의 시야가 있어야 날아감. \n 3초 이내 아리가 공격한 챔피언이 있다면 우선적으로 적중.", 
         "W는 대상이 없다면 가까운 적에게 발사. \n 하지만 1개 이상은 챔피언 우선.",
         "W는 적중하는 첫번째 [[DMG_MAGIC]]가 제일 쌔고 \n 2~3번째 적중하는 피해는 감소한 [[DMG_MAGIC]]. \n 만약, 각각의 대상에게 1개씩만 날아가면 \n 모두 감소없는 피해로 들어감.",
-        "R을 사용하면 R 아이콘에 노란색 테두리로 \n 지속시간 15초가 생김. \n 이 지속시간 동안 [[ON_TAKEDOWN]] 시 R 사용 가능 횟수 +1 \n 동시에 지속시간 다시 10초로 증가 \n 횟수를 다 사용해도 지속시간은 끝나지 않음."
+        "R을 사용하면 R 아이콘에 노란색 테두리로 \n 지속시간 15초가 생김. \n 이 지속시간 동안 [[ON_TAKEDOWN]] R 사용 가능 횟수 +1 \n 동시에 지속시간 다시 10초로 증가 \n 횟수를 다 사용해도 지속시간은 끝나지 않음."
       ],
         en: ["Hitting with Q at max range applies both [[DMG_MAGIC]] and [[DMG_TRUE]].",
           "W and R projectiles require vision of the target to fly. \n Champions Ahri attacked within the last 3 seconds are hit first.",

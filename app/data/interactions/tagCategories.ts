@@ -31,10 +31,10 @@ export type CategoryGroup<T extends string> = {
 export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   {
     title: { ko: "1) 스탯", en: "1) Stats" },
-    keys: ["MS_UP", "MS_TO_ENEMY", "MS_POWER", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "DRAIN", "HP_REGEN", "GREY_HEALTH", "REVIVE", "HP_REGEN_UP", "SHIELD", "PHYSICAL_SHIELD", "MAGIC_SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
+    keys: ["MS_UP", "MS_TO_ENEMY", "MS_POWER", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "AS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "DRAIN", "HP_REGEN", "GREY_HEALTH", "REVIVE", "HP_REGEN_UP", "SHIELD", "PHYSICAL_SHIELD", "MAGIC_SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
     subGroups: [
       { title: { ko: "공격", en: "Attack" }, keys: ["AD_UP", "AP_UP", "CRIT"] },
-      { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "MS_POWER", "SEPARATOR", "AD_DOWN", "MS_DOWN"] },
+      { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "MS_POWER", "SEPARATOR", "AD_DOWN", "MS_DOWN", "AS_DOWN"] },
       { title: { ko: "크기", en: "Size" }, keys: ["RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP"] },
       { title: { ko: "체력 / 쉴드", en: "" }, keys: ["MAX_HP_UP", "MAX_ENERGY_UP", "HEAL", "DRAIN", "SHIELD", "PHYSICAL_SHIELD", "MAGIC_SHIELD", "HP_REGEN", "GREY_HEALTH", "REVIVE"] },
       { keys: ["HS_POWER", "HP_REGEN_UP", "SEPARATOR", "GW"] },

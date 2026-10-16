@@ -37,6 +37,7 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   ENERGY_SCALE: { icons: ["/stat-icons/icon-energyregen.png"] },
   MS_UP: { icons: ["/stat-icons/icon-ms.png"] },
   MS_DOWN: { icons: ["/stat-icons/icon-ms.png"] },
+  AS_DOWN: { icons: ["/stat-icons/icon-as.png"] },
   MS_TO_ENEMY: { icons: ["/stat-icons/icon-ms.png"] },
   MS_POWER: { icons: ["/stat-icons/icon-ms.png"] },
   AS_UP: { icons: ["/stat-icons/icon-as.png"] },
@@ -66,6 +67,7 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   DRAIN: { icons: ["/stat-icons/icon-omnivamp.png"] },
   TENACITY: { icons: ["/stat-icons/icon-tenacity.png"] },
   RANGE_UP: { icons: ["/stat-icons/icon-range.png"] },
+  RANGE_SCALE: { icons: ["/stat-icons/icon-range.png"] }, // GimmickTagId — RANGE_UP과 같은 아이콘
   CDR: { icons: ["/stat-icons/icon-haste.png"] },
   CDR_RESET: { icons: ["/stat-icons/icon-haste.png"] },
   ON_HIT: { icons: ["/stat-icons/icon-onhit.png"] }, // GimmickTagId

@@ -58,7 +58,7 @@ const aurora: ChampData = {
 
           "Q2는 [[MARK]]의 지속시간이 종료되거나 \n Q [[RECAST_RETURN]]로 사용. \n 오로라에게 돌아오는 [[PIERCE]] [[PROJECTILE]] 발사. \n [[PROJECTILE]]는 [[DMG_MAGIC]], P의 [[DEBUFF_STACK]] 부여. \n (여러 발일 수 있고, 피해가 감소한 중첩도 가능) \n \n",
           
-          "W는 [[DASH]]하여 [[MS_UP]], [[GHOSTING]], [[INVISIBILITY]]. \n 3초 이내 챔피언 [[ON_TAKEDOWN]] 시 [[CDR_RESET]]. \n \n", 
+          "W는 [[DASH]]하여 [[MS_UP]], [[GHOSTING]], [[INVISIBILITY]]. \n 3초 이내 챔피언 [[ON_TAKEDOWN]] [[CDR_RESET]]. \n \n", 
 
           "E는 전방에 [[AOE]] [[DMG_MAGIC]], [[SLOW]], P의 [[DEBUFF_STACK]]. \n 잠시 후 뒤로 [[DASH]]. \n [[CC_BUFFER]]로 일부 CC 무시 가능. \n \n", 
 
@@ -122,7 +122,7 @@ const aurora: ChampData = {
       en: "Aurora fires a [[DMG_MAGIC]] bolt in a chosen direction, dealing 45/70/95/120/145 (+40% [[AP_SCALE]]) damage and applying 1 stack of P's [[DEBUFF_STACK]] plus a 3.5 second [[MARK]] (Curse). \n \n Starting 0.1 seconds later, the Curse can be [[RECAST_RETURN]]ed (auto-casts when the duration ends), pulling spirits from all Cursed targets and firing a [[PIERCE]] projectile back along that path, dealing 45~217.5 (+40~60% [[AP_SCALE]]) [[DMG_MAGIC]] scaling with [[TARGET_MISSING_HP_SCALE]] and applying 1 stack of P's [[DEBUFF_STACK]] to enemies hit (reduced to 40% against minions, 50% against monsters, and 20% on repeat hits to an already-hit target). \n \n 9/8.5/8/7.5/7 second [[COOLDOWN]].",
     },
     W: {
-      ko: "오로라가 지정 방향으로 [[DASH]]하여 정령계로 진입해 1~1.6초([[LEVEL_SCALE]] 비례) 동안 [[INVISIBILITY]] 상태가 되며, 4초간 [[GHOSTING]] 상태로 20~40%([[LEVEL_SCALE]] 비례)의 [[MS_UP]]를 얻는다. \n 최근(3초 이내) 챔피언 [[ON_TAKEDOWN]] 시 [[CDR_RESET]]. \n \n 22/21/20/19/18초의 [[COOLDOWN]].",
+      ko: "오로라가 지정 방향으로 [[DASH]]하여 정령계로 진입해 1~1.6초([[LEVEL_SCALE]] 비례) 동안 [[INVISIBILITY]] 상태가 되며, 4초간 [[GHOSTING]] 상태로 20~40%([[LEVEL_SCALE]] 비례)의 [[MS_UP]]를 얻는다. \n 최근(3초 이내) 챔피언 [[ON_TAKEDOWN]] [[CDR_RESET]]. \n \n 22/21/20/19/18초의 [[COOLDOWN]].",
       en: "Aurora [[DASH]]es in a chosen direction into the Spirit Realm, becoming [[INVISIBILITY]] for 1~1.6 seconds (based on [[LEVEL_SCALE]]) and gaining [[GHOSTING]] with 20~40% (based on [[LEVEL_SCALE]]) [[MS_UP]] for 4 seconds. \n A recent (within 3 seconds) champion [[ON_TAKEDOWN]] triggers [[CDR_RESET]]. \n \n 22/21/20/19/18 second [[COOLDOWN]].",
     },
     E: {

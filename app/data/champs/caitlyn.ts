@@ -5,7 +5,7 @@ const caitlyn: ChampData = {
   skills: {
     P: [],
     Q: [],
-    W: ["W_FLASH", "ROOT"],
+    W: ["W_FLASH", "TRAP", "SEPARATOR", "ROOT"],
     E: ["E_FLASH", "SLOW", "SEPARATOR", "AA_RESET", "SEPARATOR", "DASH", "WALL_HOP"],
     R: ["TRUE_SIGHT"],
   },

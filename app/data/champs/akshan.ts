@@ -65,10 +65,10 @@ const akshan: ChampData = {
 
         "Q는 되돌아 오는 부메랑 [[PROJECTILE]] 발사. \n 적중하면 [[PIERCE]]하고 [[RANGE_UP]]. \n 무한히 반복. \n [[DMG_PHYSICAL]]와 챔피언 적중 시 [[REVEALED]], [[MS_UP]]. \n \n",
 
-        "W의 패시브는 \n 아군 챔피언을 처치한 대상은 악당 [[MARK]] 생성. \n 악당 [[ON_TAKEDOWN]] 시 (3초 이내) \n 추가 골드를 획득하고 악당에게 죽은 아군 [[REVIVE]]. \n 다른 악당 [[MARK]]은 즉시 소멸.", 
+        "W의 패시브는 \n 아군 챔피언을 처치한 대상은 악당 [[MARK]] 생성. \n 악당 [[ON_TAKEDOWN]] (3초 이내) \n 추가 골드를 획득하고 악당에게 죽은 아군 [[REVIVE]]. \n 다른 악당 [[MARK]]은 즉시 소멸.", 
         "W는 [[CAMOUFLAGE]]. \n 수풀 속이나 벽에 붙어야 유지. \n [[CAMOUFLAGE]] 중에는 악당에게 향하는 경로가 생기고 \n 따라가면 [[MS_UP]], [[MANA_RESTORE]]. \n \n", 
 
-        "E는 벽에 갈고리 [[PROJECTILE]]를 발사. \n 적중하면 갈고리를 축으로 왼쪽 또는 오른쪽으로 회전. \n 회전 중에 근처 적에게 굉장히 빠른 속도로 [[PROJECTILE]]를 발사. \n 1개당 [[DMG_PHYSICAL]], [[DEBUFF_STACK]]. \n 적 챔피언과 부딪히거나 재사용, 우클릭 이동 시 [[SKILL_CHANNEL]] 종료. \n 챔피언 [[ON_TAKEDOWN]] 시 0.5초로 [[CDR]]. \n \n",
+        "E는 벽에 갈고리 [[PROJECTILE]]를 발사. \n 적중하면 갈고리를 축으로 왼쪽 또는 오른쪽으로 회전. \n 회전 중에 근처 적에게 굉장히 빠른 속도로 [[PROJECTILE]]를 발사. \n 1개당 [[DMG_PHYSICAL]], [[DEBUFF_STACK]]. \n 적 챔피언과 부딪히거나 재사용, 우클릭 이동 시 [[SKILL_CHANNEL]] 종료. \n 챔피언 [[ON_TAKEDOWN]] 0.5초로 [[CDR]]. \n \n",
 
         "R은 적 하나를 조준하여 [[TRUE_SIGHT]]. \n 아크샨은 조준한 시간에 비례한 [[PROJECTILE]] 개수를 발사. \n [[TARGET_MISSING_HP_SCALE]] 비례 [[DMG_PHYSICAL]]와 [[DEBUFF_STACK]].",
 
@@ -130,11 +130,11 @@ const akshan: ChampData = {
       en: "Akshan throws a boomerang that deals 45/75/105/135/165 (+70% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] both going out and coming back (40/50/60/70/80% damage to minions). Each champion hit extends its range ([[RANGE_UP]]), repeating indefinitely. \n Hitting a champion [[REVEALED]]s them and grants 20% (+5% per 100 [[AP_SCALE]]) [[MS_UP]] for 1 second. \n \n 9/8/7/6/5 second [[COOLDOWN]].",
     },
     W: {
-      ko: "기본 지속 효과: 아군 챔피언을 처치한 적은 60초 동안 악당으로 표시됩니다. 악당 처치에 관여([[ON_TAKEDOWN]])하면 그에게 죽었던 아군을 [[REVIVE]]하고 추가 골드를 얻으며 다른 모든 악당 표시가 사라집니다. \n \n 사용 시: [[CAMOUFLAGE]] 상태가 되어 악당을 향해 이동하는 동안 80/90/100/110/120의 [[MS_UP]]과 최대 마나의 12%에 해당하는 [[MANA_RESTORE]]를 얻습니다. 수풀이나 벽 근처를 벗어나면 [[CAMOUFLAGE]]이 빠르게 사라집니다. \n \n 18/14/10/6/2초의 [[COOLDOWN]].",
+      ko: "기본 지속 효과: 아군 챔피언을 처치한 적은 60초 동안 악당으로 표시됩니다. 악당 [[ON_TAKEDOWN]] 그에게 죽었던 아군을 [[REVIVE]]하고 추가 골드를 얻으며 다른 모든 악당 표시가 사라집니다. \n \n 사용 시: [[CAMOUFLAGE]] 상태가 되어 악당을 향해 이동하는 동안 80/90/100/110/120의 [[MS_UP]]과 최대 마나의 12%에 해당하는 [[MANA_RESTORE]]를 얻습니다. 수풀이나 벽 근처를 벗어나면 [[CAMOUFLAGE]]이 빠르게 사라집니다. \n \n 18/14/10/6/2초의 [[COOLDOWN]].",
       en: "Passive: Enemy champions who kill Akshan's allies are marked as Scoundrels for 60 seconds. [[ON_TAKEDOWN]] on a Scoundrel [[REVIVE]]s the ally they killed, grants bonus gold, and clears all other Scoundrel marks. \n \n Active: Akshan gains [[CAMOUFLAGE]] and, while moving toward Scoundrels, 80/90/100/110/120 [[MS_UP]] and [[MANA_RESTORE]] equal to 12% of missing mana. [[CAMOUFLAGE]] fades quickly outside of brush or near a wall. \n \n 18/14/10/6/2 second [[COOLDOWN]].",
     },
     E: {
-      ko: "아크샨이 갈고리를 발사해 지형에 걸고 주위를 돌며, 반복해서 가장 가까운 적에게 8/16/24/32/40(+25% [[AD_SCALE]])의 [[DMG_PHYSICAL]](온힛 효과는 25%만 적용)를 입힙니다. \n [[RECAST_CANCEL]]로 일찍 뛰어내릴 수 있으며, 챔피언이나 지형과 충돌하면 스윙이 조기 종료됩니다. \n 챔피언 처치에 관여([[ON_TAKEDOWN]])하면 이 스킬의 [[COOLDOWN]]이 0.5초로 감소합니다. \n \n 18/16.5/15/13.5/12초의 [[COOLDOWN]].",
+      ko: "아크샨이 갈고리를 발사해 지형에 걸고 주위를 돌며, 반복해서 가장 가까운 적에게 8/16/24/32/40(+25% [[AD_SCALE]])의 [[DMG_PHYSICAL]](온힛 효과는 25%만 적용)를 입힙니다. \n [[RECAST_CANCEL]]로 일찍 뛰어내릴 수 있으며, 챔피언이나 지형과 충돌하면 스윙이 조기 종료됩니다. \n 챔피언 [[ON_TAKEDOWN]] 이 스킬의 [[COOLDOWN]]이 0.5초로 감소합니다. \n \n 18/16.5/15/13.5/12초의 [[COOLDOWN]].",
       en: "Akshan fires a grappling hook into terrain and swings around it, repeatedly dealing 8/16/24/32/40 (+25% [[AD_SCALE]]) [[DMG_PHYSICAL]] (on-hit effects apply at only 25%) to the nearest enemy. \n He can [[RECAST_CANCEL]] to jump off early, and colliding with a champion or terrain ends the swing early. \n [[ON_TAKEDOWN]] during the swing reduces this Ability's [[COOLDOWN]] to 0.5 seconds. \n \n 18/16.5/15/13.5/12 second [[COOLDOWN]].",
     },
     R: {

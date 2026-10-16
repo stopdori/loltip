@@ -225,7 +225,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ST_IMPACT:      { ko: "즉시발동", en: "Impact" },
   ST_DELAYED:     { ko: "지연발동", en: "Delayed" },
   ST_CONDITIONAL: { ko: "조건발동", en: "Conditional" },
-  ON_TAKEDOWN: { ko: "처치 관여", en: "On Takedown" },
+  ON_TAKEDOWN: { ko: "처치관여", en: "On Takedown" },
   ON_KILL: { ko: "처치 시", en: "On Kill" },
   ON_CHAMP_HIT: { ko: "챔프적중", en: "Champion Hit" },
   // 이진 상태 표시

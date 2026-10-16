@@ -23,6 +23,7 @@ export type TagId =
 
   /* 2) 스탯 디버프 */
   | "MS_DOWN"
+  | "AS_DOWN"       // 자신의 공격속도 감소
   | "AD_DOWN"       // 공격력 감소
   | "AR_SHRED"   // 방깍
   | "MR_SHRED"      // 마깍
@@ -187,6 +188,7 @@ AR_MR_UP: { ko: "방마저↑", en: "AR+MR ↑" },
 
   /* 2) 스탯 디버프 */
 MS_DOWN: { ko: "이속↓", en: "MS ↓" },
+AS_DOWN: { ko: "공속↓", en: "AS ↓" },
 AD_DOWN: { ko: "공격력↓", en: "AD ↓" },
 AR_SHRED: { ko: "방깍", en: "AR Shred" },
 MR_SHRED: { ko: "마깍", en: "MR Shred" },
@@ -358,6 +360,7 @@ export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: 
   CAST_MOVE: { ko: "이동 가능", en: "Can Move" },
   CAST_IMMOBILE: { ko: "이동 불가", en: "Immobile" },
   CC_BUFFER: { ko: "CC 버퍼", en: "CC Buffer" },
+  ON_TAKEDOWN: { ko: "처치 관여 시", en: "On Takedown" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
@@ -424,6 +427,10 @@ AR_MR_UP: {
 MS_DOWN: {
   ko: "자신의 이동속도 감소",
   en: "Decreases own movement speed",
+},
+AS_DOWN: {
+  ko: "자신의 공격속도 감소",
+  en: "Decreases own attack speed",
 },
 AD_DOWN: { ko: "상대 공격력 감소", en: "Reduces attack damage" },
 
