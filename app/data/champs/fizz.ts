@@ -64,7 +64,7 @@ const fizz: ChampData = {
 
           "W의 [[PASSIVE_BONUS]]는 [[ON_HIT]] [[DOT]] [[DMG_MAGIC]].", 
           
-          "W는 다음 [[BA]] [[EMPOWERED]]하여 [[DMG_MAGIC]]. \n [[ON_KILL]] [[MANA_RESTORE]], 1초로 [[CDR]]. \n 처치하지 못하면 [[BUFF]] 생성. \n  [[BUFF]]는 [[ON_HIT]] 시 [[DMG_MAGIC]] 추가. \n \n", 
+          "W는 다음 [[BA]] [[EMPOWERED]]하여 [[DMG_MAGIC]]. \n [[ON_KILL]] [[MANA_RESTORE]], 1초로 [[CDR]]. \n 처치하지 못하면 [[BUFF]] 생성. \n  [[BUFF]]는 [[ON_HIT]] 시 [[DMG_MAGIC]] 추가. \n [[AA_RESET]] 가능. \n \n", 
 
           "E는 [[UNTARGETABLE]] 상태로 [[DASH]]. \n 잠시 후 착지하면서 [[AOE]] [[DMG_MAGIC]]와 [[SLOW]]. \n 우클릭으로 방향을 지정하면 \n 착지 [[AOE]] 이동 가능.", 
           "E [[RECAST_CANCEL]]로 일찍 종료하면 \n 좁은 [[AOE]] [[DMG_MAGIC]]. \n [[SLOW]] 효과 없음. \n \n",
@@ -78,7 +78,7 @@ const fizz: ChampData = {
           "P grants [[GHOSTING]] and \n [[DMG_REDUCE]] against all attacks. (Up to 50%) \n \n",
           "Q is a [[TARGETED]] [[DASH]] \n that passes through the target, dealing [[DMG_MAGIC]]. \n This attack applies [[ON_HIT]] effects. \n \n",
           "W's [[PASSIVE_BONUS]] applies [[ON_HIT]] [[DOT]] [[DMG_MAGIC]].",
-          "W makes the next [[BA]] [[EMPOWERED]], dealing [[DMG_MAGIC]]. \n [[ON_KILL]]: [[MANA_RESTORE]] and [[CDR]] to 1 second. \n If it doesn't kill, grants a [[BUFF]]. \n  The [[BUFF]] adds [[DMG_MAGIC]] [[ON_HIT]]. \n \n",
+          "W makes the next [[BA]] [[EMPOWERED]], dealing [[DMG_MAGIC]]. \n [[ON_KILL]]: [[MANA_RESTORE]] and [[CDR]] to 1 second. \n If it doesn't kill, grants a [[BUFF]]. \n  The [[BUFF]] adds [[DMG_MAGIC]] [[ON_HIT]]. \n Can [[AA_RESET]]. \n \n",
           "E [[DASH]]es while [[UNTARGETABLE]]. \n Shortly after, Fizz lands, dealing [[AOE]] [[DMG_MAGIC]] and [[SLOW]]. \n Right-clicking to set a direction \n moves the landing [[AOE]].",
           "Ending E early with [[RECAST_CANCEL]] \n deals a narrow [[AOE]] [[DMG_MAGIC]]. \n No [[SLOW]] effect. \n \n",
           "R throws a bait ([[PROJECTILE]]) to the target location. \n If it touches an enemy champion before arriving, it [[ATTACH]]es. \n [[SLOW]] based on [[DISTANCE_SCALE]].",

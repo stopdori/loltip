@@ -56,7 +56,7 @@ const caitlyn: ChampData = {
 
           "W는 위치에 [[TRAP]] 설치. \n 적 챔피언이 밟으면 [[ROOT]]과 [[TRUE_SIGHT]]. \n 대상에게 다음 [[BA]] 공격 시 \n 사거리 2배의 헤드샷 발사. \n 일반 헤드샷에 추가 [[DMG_PHYSICAL]]. \n [[RECHARGE]]식 스킬.", 
 
-          "E는 전방에 투망 [[PROJECTILE]]를 발사. \n 동시에 뒤로 [[DASH]]. \n 투망에 맞은 대상에게 다음 [[BA]] 공격 시 \n 사거리 2배의 헤드샷 발사. \n \n",
+          "E는 전방에 투망 [[PROJECTILE]]를 발사. \n 동시에 뒤로 [[DASH]]. \n 투망에 맞은 대상에게 다음 [[BA]] 공격 시 \n 사거리 2배의 헤드샷 발사. \n [[AA_RESET]] 가능. \n \n",
           
           "R은 조준하는 동안 대상에게 [[TRUE_SIGHT]]. \n 조준을 끝마치면 [[PROJECTILE]] 발사. \n 같은 팀이 막아줄 수 있음. \n [[PROJECTILE]]는 [[CRIT]], [[CRIT]]데미지 비례 [[DMG_PHYSICAL]].",
         ],
@@ -65,7 +65,7 @@ const caitlyn: ChampData = {
           "P grants a [[BUFF_STACK]] with each [[BA]].\n 2 stacks in a [[BUSH]]. \n At 5 stacks, the next attack is [[EMPOWERED]] into a Headshot. \n Headshot deals [[DMG_PHYSICAL]] scaling with [[CRIT]]. \n \n",
           "Q fires a [[PIERCE]] [[PROJECTILE]]. \n Reduced damage after the first target. \n No damage reduction against targets caught in W's [[TRAP]]. \n \n",
           "W places a [[TRAP]] at a location. \n When an enemy champion steps on it: [[ROOT]] and [[TRUE_SIGHT]]. \n The next [[BA]] on that target \n fires a Headshot with double range. \n Deals bonus [[DMG_PHYSICAL]] on top of a normal Headshot. \n [[RECHARGE]]-based skill.",
-          "E fires a net [[PROJECTILE]] forward. \n At the same time, [[DASH]]es backward. \n The next [[BA]] on a target hit by the net \n fires a Headshot with double range. \n \n",
+          "E fires a net [[PROJECTILE]] forward. \n At the same time, [[DASH]]es backward. \n The next [[BA]] on a target hit by the net \n fires a Headshot with double range. \n Can [[AA_RESET]]. \n \n",
           "R grants [[TRUE_SIGHT]] of the target while aiming. \n Fires a [[PROJECTILE]] when aiming finishes. \n The target's allies can block it. \n The [[PROJECTILE]] deals [[DMG_PHYSICAL]] scaling with [[CRIT]] chance and [[CRIT]] damage.",
         ]
 

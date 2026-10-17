@@ -63,7 +63,7 @@ const darius: ChampData = {
 
           "Q는 주변 [[AOE]] 도끼를 회전하여 [[DMG_PHYSICAL]]. \n 안쪽 [[AOE]]는 감소된 피해. \n 바깥쪽 [[AOE]]는 온전한 피해와 [[DEBUFF_STACK]]과 [[HEAL]]. \n CC에 걸려도 시전 유지. \n \n",
 
-          "W는 다음 [[BA]]를 [[EMPOWERED]]. \n [[DMG_PHYSICAL]]와 [[DEBUFF_STACK]], [[SLOW]]. \n [[ON_KILL]] [[MANA_RESTORE]]과 [[CDR]] 50%. \n \n",
+          "W는 다음 [[BA]]를 [[EMPOWERED]]. \n [[DMG_PHYSICAL]]와 [[DEBUFF_STACK]], [[SLOW]]. \n [[ON_KILL]] [[MANA_RESTORE]]과 [[CDR]] 50%. \n [[AA_RESET]] 가능. \n \n",
 
           "E의 [[PASSIVE_BONUS]]는 상시 [[AR_PEN]] 획득.", 
           "E는 부채꼴 [[GRAB]]과 [[SLOW]]. \n \n",
@@ -75,7 +75,7 @@ const darius: ChampData = {
         en: [
           "P's bleed ([[DEBUFF]]) stacks when hitting with [[BA]], the edge of [[Q]], [[W]], or [[R]]. \n At 5 stacks, Darius gains an [[AD_UP]] [[BUFF]]. \n While the [[BUFF]] is active, applying even 1 [[DEBUFF]] counts as 5 stacks. \n \n",
           "Q spins the axe in an [[AOE]] around Darius, dealing [[DMG_PHYSICAL]]. \n The inner [[AOE]] deals reduced damage. \n The outer [[AOE]] deals full damage with [[DEBUFF_STACK]] and [[HEAL]]. \n The cast continues even when hit by CC. \n \n",
-          "W makes the next [[BA]] [[EMPOWERED]]. \n [[DMG_PHYSICAL]], [[DEBUFF_STACK]], and [[SLOW]]. \n [[ON_KILL]]: [[MANA_RESTORE]] and 50% [[CDR]]. \n \n",
+          "W makes the next [[BA]] [[EMPOWERED]]. \n [[DMG_PHYSICAL]], [[DEBUFF_STACK]], and [[SLOW]]. \n [[ON_KILL]]: [[MANA_RESTORE]] and 50% [[CDR]]. \n Can [[AA_RESET]]. \n \n",
           "E's [[PASSIVE_BONUS]] grants permanent [[AR_PEN]].",
           "E is a cone-shaped [[GRAB]] with [[SLOW]]. \n \n",
           "R deals [[TARGETED]] [[DMG_TRUE]] to an enemy champion. \n 20% bonus damage per bleed [[DEBUFF_STACK]] on the target. \n [[ON_KILL]]: can be [[SKILL_RECAST]] for 20 seconds.",

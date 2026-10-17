@@ -70,7 +70,7 @@ const ekko: ChampData = {
 
           "W는 처음에 아군만 보이는 [[ZONE]] 생성. \n 이후 에코의 환영 분신이 시간 구체([[NON_PROJECTILE]])를 [[ZONE]]에 투척. \n [[ZONE]] 중앙에 낙하하면 [[AOE]] [[DOT]] [[SLOW]]. \n 이때 에코가 [[ZONE]]에 들어가 있으면 [[DETONATE]]하여 \n [[ZONE]] [[AOE]] [[STUN]]과 [[SHIELD]]. \n \n",
 
-          "E로 [[DASH]]하여 다음 [[BA]]를 [[EMPOWERED]]하여 [[RANGE_UP]]. \n 공격하면 대상에게 [[BLINK]]. \n [[DMG_MAGIC]]와 [[DEBUFF_STACK]] 1개.", 
+          "E로 [[DASH]]하여 다음 [[BA]]를 [[EMPOWERED]]하여 [[RANGE_UP]]. \n 공격하면 대상에게 [[BLINK]]. \n [[DMG_MAGIC]]와 [[DEBUFF_STACK]] 1개. \n [[AA_RESET]] 가능.", 
           "[[CC_BUFFER]]로 일부 CC 무시 가능. \n \n",
 
           "R은 [[COOLDOWN]]이 준비되면, \n 4초 이전의 에코 위치를 보여줌.", 
@@ -84,7 +84,7 @@ const ekko: ChampData = {
           "On reaching max range or \n [[ON_CHAMP_HIT]], the [[PROJECTILE]] turns into a field. \n Enemies inside the field are [[SLOW]]ed. ([[PIERCE]] [[PROJECTILE]]) \n Note that the field counts as the outgoing Q.",
           "It then returns as the device, \n dealing [[DMG_MAGIC]] and 1 [[DEBUFF_STACK]]. \n \n",
           "W first creates a [[ZONE]] visible only to allies. \n Ekko's afterimage then throws a time sphere ([[NON_PROJECTILE]]) into the [[ZONE]]. \n When it lands at the center of the [[ZONE]], [[AOE]] [[DOT]] [[SLOW]]. \n If Ekko is inside the [[ZONE]] at this point, it [[DETONATE]]s, \n applying [[ZONE]] [[AOE]] [[STUN]] and granting a [[SHIELD]]. \n \n",
-          "E [[DASH]]es and makes the next [[BA]] [[EMPOWERED]] with [[RANGE_UP]]. \n Attacking [[BLINK]]s to the target. \n [[DMG_MAGIC]] and 1 [[DEBUFF_STACK]].",
+          "E [[DASH]]es and makes the next [[BA]] [[EMPOWERED]] with [[RANGE_UP]]. \n Attacking [[BLINK]]s to the target. \n [[DMG_MAGIC]] and 1 [[DEBUFF_STACK]]. \n Can [[AA_RESET]].",
           "[[CC_BUFFER]] allows some CC to be ignored. \n \n",
           "When R's [[COOLDOWN]] is ready, \n it shows Ekko's position from 4 seconds ago.",
           "When used, Ekko becomes [[UNTARGETABLE]] \n and quickly returns to his position from 4 seconds ago. \n He also [[HEAL]]s, \n with the amount increased based on [[SELF_MISSING_HP_SCALE]] over those 4 seconds.",

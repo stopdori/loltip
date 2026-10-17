@@ -62,7 +62,7 @@ const fiora: ChampData = {
           "[[INVULNERABLE]] 중에 [[IMMOBILIZING]]를 무효화 했다면 \n [[SLOW]] 대신 [[STUN]].", 
           "단, [[INVULNERABLE]]은 타워 데미지를 막을 수 없음. \n 디테일한 판정은 챔피언별로 하단 박스에 정리. \n \n",
 
-          "E는 [[BUFF]] 획득. \n [[BUFF]]는 [[AS_UP]]와 다음 [[BA]] [[EMPOWERED]]. \n 1타 적중 시 [[SLOW]]와 다시 [[BUFF]] 획득. \n 2타 적중 시 [[CRIT]] 적용. \n [[BUFF]]는 사라짐. \n \n",
+          "E는 [[BUFF]] 획득. \n [[BUFF]]는 [[AS_UP]]와 다음 [[BA]] [[EMPOWERED]]. \n 1타 적중 시 [[SLOW]]와 다시 [[BUFF]] 획득. \n 2타 적중 시 [[CRIT]] 적용. \n [[BUFF]]는 사라짐. \n [[AA_RESET]] 가능. \n \n",
 
           "R의 [[PASSIVE_BONUS]]는 \n 급소 적중 시 [[MS_UP]] 효과를 [[EMPOWERED]].", 
           "R은 대상에게 동서남북 4개의 급소와 주변 [[AOE]] 생성. \n [[AOE]] 내에서 P의 [[MS_UP]] 효과가 항상 발동.", 
@@ -75,7 +75,7 @@ const fiora: ChampData = {
           "W makes Fiora [[INVULNERABLE]] and [[CC_IMMUNE]]. \n Shortly after, she fires a [[PIERCE_MINION]] [[SINGLE]] [[PROJECTILE]] forward. \n [[DMG_MAGIC]], [[SLOW]], and [[CRIPPLE]].",
           "If [[IMMOBILIZING]] was negated while [[INVULNERABLE]], \n applies [[STUN]] instead of [[SLOW]].",
           "However, [[INVULNERABLE]] cannot block tower damage. \n Detailed interactions are listed per champion in the box below. \n \n",
-          "E grants a [[BUFF]]. \n The [[BUFF]] grants [[AS_UP]] and makes the next [[BA]] [[EMPOWERED]]. \n The 1st hit applies [[SLOW]] and grants the [[BUFF]] again. \n The 2nd hit applies [[CRIT]]. \n The [[BUFF]] then disappears. \n \n",
+          "E grants a [[BUFF]]. \n The [[BUFF]] grants [[AS_UP]] and makes the next [[BA]] [[EMPOWERED]]. \n The 1st hit applies [[SLOW]] and grants the [[BUFF]] again. \n The 2nd hit applies [[CRIT]]. \n The [[BUFF]] then disappears. \n Can [[AA_RESET]]. \n \n",
           "R's [[PASSIVE_BONUS]] makes \n the [[MS_UP]] effect from striking a Vital [[EMPOWERED]].",
           "R creates 4 Vitals in the four directions on the target and an [[AOE]] around them. \n Inside the [[AOE]], P's [[MS_UP]] effect is always active.",
           "If all 4 Vitals are struck, \n or at least 1 is struck and the target dies, a [[HEAL]] [[ZONE]] is created.",

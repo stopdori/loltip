@@ -50,7 +50,7 @@ const ashe: ChampData = {
           "P는 [[BA]], W에 [[SLOW]]. \n [[CRIT]] 확률은 추가 [[DMG_PHYSICAL]]%로 전환되어 적용. \n 예) 치명타 확률 25% = 추가 [[DMG_PHYSICAL]] 25% \n [[CRIT]]가 발동하면 실제 데미지는 그대로지만 \n [[SLOW]] 효과는 두 배. \n \n",
 
           "Q의 [[PASSIVE_BONUS]]는 [[BA]] 공격 시 [[BUFF_STACK]] 1개 획득.", 
-          "Q는 [[BUFF_STACK]] 4개 보유 시 [[ACTIVATION_CONDITION]]. \n [[STACK_CONSUME]] 하여 [[AS_UP]]. \n [[BA]]가 연발 사격으로 변하고 \n 첫 공격은 6발, 이후 5발씩 화살([[PROJECTILE]]) 발사. \n 화살당 [[DMG_PHYSICAL]] 추가. \n \n",
+          "Q는 [[BUFF_STACK]] 4개 보유 시 [[ACTIVATION_CONDITION]]. \n [[STACK_CONSUME]] 하여 [[AS_UP]]. \n [[BA]]가 연발 사격으로 변하고 \n 첫 공격은 6발, 이후 5발씩 화살([[PROJECTILE]]) 발사. \n 화살당 [[DMG_PHYSICAL]] 추가. \n [[AA_RESET]] 가능. \n \n",
 
           "W는 여러 발의 화살을 부채꼴로 발사. \n [[DMG_PHYSICAL]]와 P의 [[SLOW]]. \n 화살의 데미지는 한 대상당 한 번. \n \n",
 
@@ -64,7 +64,7 @@ const ashe: ChampData = {
           "P's [[SLOW]] applies on [[BA]] and W. \n [[CRIT]] chance is instead converted into bonus [[DMG_PHYSICAL]]%. \n e.g. 25% crit chance = +25% bonus [[DMG_PHYSICAL]] \n When a hit would have [[CRIT]]ed, the actual damage stays the same, \n but the [[SLOW]] effect is doubled. \n \n",
 
           "Q's [[PASSIVE_BONUS]]: landing a [[BA]] grants 1 [[BUFF_STACK]].",
-          "Q meets its [[ACTIVATION_CONDITION]] while holding 4 [[BUFF_STACK]]s. \n [[STACK_CONSUME]]s them for [[AS_UP]]. \n [[BA]]s turn into a volley of arrows ([[PROJECTILE]]) — \n the first volley fires 6 arrows, then 5 each after. \n Each arrow deals bonus [[DMG_PHYSICAL]]. \n \n",
+          "Q meets its [[ACTIVATION_CONDITION]] while holding 4 [[BUFF_STACK]]s. \n [[STACK_CONSUME]]s them for [[AS_UP]]. \n [[BA]]s turn into a volley of arrows ([[PROJECTILE]]) — \n the first volley fires 6 arrows, then 5 each after. \n Each arrow deals bonus [[DMG_PHYSICAL]]. \n Can [[AA_RESET]]. \n \n",
 
           "W fires multiple arrows in a cone. \n Deals [[DMG_PHYSICAL]] and applies P's [[SLOW]]. \n Each target only takes damage from one arrow. \n \n",
 

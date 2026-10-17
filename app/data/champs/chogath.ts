@@ -46,7 +46,7 @@ const chogath: ChampData = {
 
           "W는 전방에 부채꼴 [[AOE]] [[DMG_MAGIC]]와 [[SILENCE]]. \n \n",
           
-          "E는 [[BUFF_STACK]] 3개를 초가스가 획득. \n [[BA]]를 때리면 [[BUFF]] [[STACK_CONSUME]]해서 \n [[PROJECTILE]]를 추가로 발사. \n 이 [[PROJECTILE]]은 [[PIERCE]]에 [[DMG_MAGIC]], [[SLOW]]. \n \n",
+          "E는 [[BUFF_STACK]] 3개를 초가스가 획득. \n [[BA]]를 때리면 [[BUFF]] [[STACK_CONSUME]]해서 \n [[PROJECTILE]]를 추가로 발사. \n 이 [[PROJECTILE]]은 [[PIERCE]]에 [[DMG_MAGIC]], [[SLOW]]. \n [[AA_RESET]] 가능. \n \n",
 
           "R은 [[TARGETED]] [[DMG_TRUE]]. \n 대상 [[ON_KILL]] [[STACKING]]. \n [[SIZE_UP]], [[MAX_HP_UP]]. \n [[SIZE_UP]] 부작용으로 평타 [[RANGE_UP]]. \n \n [[STACKING]]은 미니언, 정글몹에서는 최대 6. \n 챔피언, 에픽몬스터 대상으로는 무제한 [[STACKING]].",
         ],
@@ -55,7 +55,7 @@ const chogath: ChampData = {
           "P grants [[HEAL]] and [[MANA_RESTORE]] [[ON_KILL]] of an enemy. \n \n",
           "Q deals area [[DMG_MAGIC]] and [[AIRBORNE]]. \n Applies [[SLOW]] when it ends. \n A very slow skill with both [[TIMING_CAST]] and [[ST_DELAYED]]. \n \n",
           "W deals cone-shaped [[AOE]] [[DMG_MAGIC]] and [[SILENCE]] in front. \n \n",
-          "E grants Cho'Gath 3 [[BUFF_STACK]]s. \n Each [[BA]] [[STACK_CONSUME]]s the [[BUFF]] \n to fire an additional [[PROJECTILE]]. \n This [[PROJECTILE]] [[PIERCE]]s, dealing [[DMG_MAGIC]] and [[SLOW]]. \n \n",
+          "E grants Cho'Gath 3 [[BUFF_STACK]]s. \n Each [[BA]] [[STACK_CONSUME]]s the [[BUFF]] \n to fire an additional [[PROJECTILE]]. \n This [[PROJECTILE]] [[PIERCE]]s, dealing [[DMG_MAGIC]] and [[SLOW]]. \n Can [[AA_RESET]]. \n \n",
           "R deals [[TARGETED]] [[DMG_TRUE]]. \n [[STACKING]] [[ON_KILL]] of the target. \n [[SIZE_UP]] and [[MAX_HP_UP]]. \n As a side effect of [[SIZE_UP]], basic attack [[RANGE_UP]]. \n \n [[STACKING]] caps at 6 from minions and jungle monsters. \n Unlimited [[STACKING]] from champions and epic monsters.",
         ]
 
@@ -85,7 +85,7 @@ const chogath: ChampData = {
   skillTooltip: {
     P: {
       ko: "초가스는 적 [[ON_KILL]] \n 체력 18~52를 [[HEAL]]하고 4.72~9.48 [[MANA_RESTORE]]합니다. \n 회복량은 [[LEVEL_SCALE]] 비례로 증가합니다.",
-      en: "[[ON_KILL]] of an enemy, Cho'Gath \n [[HEAL]]s 18~52 health and gains 4.72~9.48 [[MANA_RESTORE]]. \n The amount restored increases with [[LEVEL_SCALE]].",
+      en: "[[ON_KILL]] of an enemy, Cho'Gath \n [[HEAL]]s 18~52 health and gains 4.72~9.48 [[MANA_RESTORE]]. \n The amount restored increases based on [[LEVEL_SCALE]].",
     },
     Q: {
       ko: "초가스가 땅을 파열시켜 1초 동안 적들을 [[AIRBORNE]]시키고 80/135/190/245/300(+100% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입히며 1.5초 동안 60% [[SLOW]]시킵니다. \n \n 6초의 [[COOLDOWN]].",

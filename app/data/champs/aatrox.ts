@@ -61,7 +61,7 @@ const aatrox: ChampData = {
             "W는 [[PROJECTILE]] 발사. \n [[DMG_PHYSICAL]], [[SLOW]], [[TETHER]]을 걸고 \n 대상이 [[AOE]]에 머물면 중앙쪽으로 [[GRAB]], [[DMG_PHYSICAL]]. \n \n",
 
             "E의 [[PASSIVE_BONUS]]는 \n 챔피언 대상 [[OMNIVAMP]].", 
-            "E는 [[DASH]], [[AA_RESET]] 가능.\n 다른 스킬 사용중에 E를 사용할 수 있고 \n E스킬 사용중에 다른스킬도 사용할 수 있음. \n \n",
+            "E는 [[DASH]]. \n 다른 스킬 사용중에 E를 사용할 수 있고 \n [[DASH]] 중에 다른스킬도 사용할 수 있음. \n [[AA_RESET]] 가능. \n \n",
 
             "R은  주변 미니언 [[FEAR]]. \n 10초간 [[MS_UP]], [[AD_UP]]. \n ([[MS_UP]]는 시간이 지나면 점차 사라짐.) \n 처치 관여시 [[DURATION_EXT]] 5초. \n 10초를 넘을 수는 없음.",
 
@@ -71,7 +71,7 @@ const aatrox: ChampData = {
           "Q deals [[AOE]] [[DMG_PHYSICAL]]. \n Can [[SKILL_RECAST]] two more times during its duration. \n Hitting with the [[AOE]] edge for Q1, Q2 / the center for Q3 \n adds increased [[DMG_PHYSICAL]] and [[AIRBORNE]]. \n If the duration ends without using Q2, Q3, Q gets [[CDR]]. \n \n",
           "W fires a [[PROJECTILE]]. \n Applies [[DMG_PHYSICAL]], [[SLOW]], and [[TETHER]], \n and if the target stays within the [[AOE]], they are [[GRAB]]bed toward the center and take [[DMG_PHYSICAL]]. \n \n",
           "E's [[PASSIVE_BONUS]] grants \n [[OMNIVAMP]] against champions.",
-          "E enables [[DASH]] and [[AA_RESET]].\n Can use E while another ability is active, \n and other abilities can be used while E is active. \n \n",
+          "E [[DASH]]es. \n Can use E while using another skill, \n and other skills can be used during the [[DASH]]. \n Can [[AA_RESET]]. \n \n",
           "R [[FEAR]]s nearby minions. \n Grants [[MS_UP]] and [[AD_UP]] for 10 seconds. \n ([[MS_UP]] fades gradually over time.) \n Takedown participation grants a 5-second [[DURATION_EXT]]. \n Cannot exceed 10 seconds."
         ]
       },

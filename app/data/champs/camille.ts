@@ -4,7 +4,7 @@ const camille: ChampData = {
   id: "camille",
   skills: {
     P: ["ST_CONDITIONAL", "SHIELD"],
-    Q: ["AA_RESET", "MS_UP", "SEPARATOR", "SKILL_RECAST"],
+    Q: ["AA_RESET", "MS_UP", "SEPARATOR", "SKILL_RECAST", "AA_RESET"],
     W: ["W_FLASH", "SEPARATOR", "ST_CONDITIONAL", "SLOW", "DRAIN",],
     
     E: { phases: [
@@ -60,8 +60,8 @@ const camille: ChampData = {
         ko: [
           "P는 [[ON_HIT]]으로 상대를 때리면 \n [[SELF_MAXHP_SCALE]] 비례 [[SHIELD]]. \n 표식 색깔에 따라 물리[[SHIELD]], 마법[[SHIELD]] \n \n",
 
-          "Q는 다음 평타를 [[EMPOWERED]] 하고 \n 공격 시 [[DMG_PHYSICAL]]와 [[MS_UP]]. \n Q2로 [[SKILL_RECAST]]하면 같은 효과.", 
-          "바로 [[SKILL_RECAST]] 하지 않고 조금 기다리면 [[EMPOWERED]]. \n (Q 아이콘이 노란 테두리로 바뀜) \n 일반 Q2 효과에 추가 [[DMG_PHYSICAL]]. \n 총 피해량의 일정 %만큼 [[DMG_TRUE]]로 전환 ([[LEVEL_SCALE]] 비례). \n \n",
+          "Q는 다음 평타를 [[EMPOWERED]] 하고 \n 공격 시 [[DMG_PHYSICAL]]와 [[MS_UP]]. \n Q2로 [[SKILL_RECAST]]하면 같은 효과. \n [[AA_RESET]] 가능.", 
+          "바로 [[SKILL_RECAST]] 하지 않고 조금 기다리면 [[EMPOWERED]]. \n (Q 아이콘이 노란 테두리로 바뀜) \n 일반 Q2 효과에 추가 [[DMG_PHYSICAL]]. \n 총 피해량의 일정 %만큼 [[DMG_TRUE]]로 전환 ([[LEVEL_SCALE]] 비례). \n [[AA_RESET]] 가능. \n \n",
 
           "W는 전방 부채꼴의 [[AOE]] [[DMG_PHYSICAL]].", 
           "바깥쪽에 맞히면 [[SLOW]]. \n 챔피언이 맞았다면 피해량의 100%만큼 [[DRAIN]]. \n \n",
@@ -77,8 +77,8 @@ const camille: ChampData = {
 
         en: [
           "P: hitting an enemy with [[ON_HIT]] \n grants a [[SHIELD]] based on [[SELF_MAXHP_SCALE]]. \n A physical [[SHIELD]] or magic [[SHIELD]] depending on the mark color \n \n",
-          "Q makes the next basic attack [[EMPOWERED]], \n dealing [[DMG_PHYSICAL]] and granting [[MS_UP]] on hit. \n [[SKILL_RECAST]]ing as Q2 gives the same effect.",
-          "If you wait a moment instead of [[SKILL_RECAST]]ing immediately, it becomes [[EMPOWERED]]. \n (The Q icon gets a yellow border) \n Adds bonus [[DMG_PHYSICAL]] on top of the normal Q2 effect. \n A percentage of the total damage is converted to [[DMG_TRUE]] (based on [[LEVEL_SCALE]]). \n \n",
+          "Q makes the next basic attack [[EMPOWERED]], \n dealing [[DMG_PHYSICAL]] and granting [[MS_UP]] on hit. \n [[SKILL_RECAST]]ing as Q2 gives the same effect. \n Can [[AA_RESET]].",
+          "If you wait a moment instead of [[SKILL_RECAST]]ing immediately, it becomes [[EMPOWERED]]. \n (The Q icon gets a yellow border) \n Adds bonus [[DMG_PHYSICAL]] on top of the normal Q2 effect. \n A percentage of the total damage is converted to [[DMG_TRUE]] (based on [[LEVEL_SCALE]]). \n Can [[AA_RESET]]. \n \n",
           "W deals cone-shaped [[AOE]] [[DMG_PHYSICAL]] in front.",
           "Hitting with the outer edge applies [[SLOW]]. \n If a champion is hit, Camille [[DRAIN]]s for 100% of the damage. \n \n",
           "E is divided into 4 phases \n 1. Fires a hook [[PROJECTILE]]. \n 2. When the hook reaches a wall, [[DASH]]es to the wall. \n 3. Holds onto the wall \n 4. [[SKILL_RECAST]] E or right-click to [[DASH]] as E2.",

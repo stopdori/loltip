@@ -105,7 +105,7 @@ const elise: ChampData = {
 
           "Q는 엘리스와 새끼 거미가 [[TARGETED]] [[DASH]]. \n [[TARGET_MISSING_HP_SCALE]] 비례 [[DMG_MAGIC]]. \n 이 공격에는 [[ON_HIT]] 효과가 발동.", 
 
-          "W의 [[PASSIVE_BONUS]]는 새끼거미 기본 [[AS_UP]]. \n W는 엘리스와 새끼 거미의 [[AS_UP]].", 
+          "W의 [[PASSIVE_BONUS]]는 새끼거미 기본 [[AS_UP]]. \n W는 엘리스와 새끼 거미의 [[AS_UP]]. \n [[AA_RESET]] 가능.", 
 
           "E는 엘리스와 새끼 거미가 공중으로 올라감. \n [[OVERHEAD_VISION]]를 획득하고, [[UNTARGETABLE]] 상태로 대기. \n 시간이 지나거나 대상에 [[RECAST_CANCEL]]하면 \n 대상뒤로 [[BLINK]]하여 하강.", 
           "하강 후 [[BUFF]] 획득. \n [[BUFF]]는 P([[ON_HIT]] [[DMG_MAGIC]], [[HEAL]])의 효과 증가.", 
@@ -121,7 +121,7 @@ const elise: ChampData = {
           "Spider Form",
           "P [[SUMMON]]s spiderlings equal to the [[BUFF_STACK]]s. \n Spider Form has reduced range, but its [[BA]]s always \n apply [[ON_HIT]] ([[DMG_MAGIC]], [[HEAL]]).",
           "Q: Elise and her spiderlings perform a [[TARGETED]] [[DASH]]. \n [[DMG_MAGIC]] based on [[TARGET_MISSING_HP_SCALE]]. \n This attack applies [[ON_HIT]] effects.",
-          "W's [[PASSIVE_BONUS]] grants spiderlings base [[AS_UP]]. \n W grants [[AS_UP]] to Elise and her spiderlings.",
+          "W's [[PASSIVE_BONUS]] grants spiderlings base [[AS_UP]]. \n W grants [[AS_UP]] to Elise and her spiderlings. \n Can [[AA_RESET]].",
           "E sends Elise and her spiderlings into the air. \n She gains [[OVERHEAD_VISION]] and waits while [[UNTARGETABLE]]. \n When time runs out or on [[RECAST_CANCEL]] onto a target, \n she [[BLINK]]s down behind the target.",
           "After descending, she gains a [[BUFF]]. \n The [[BUFF]] increases the effects of P ([[ON_HIT]] [[DMG_MAGIC]], [[HEAL]]).",
         ]

@@ -46,7 +46,7 @@ const gwen: ChampData = {
 
           "W는 안개를 생성 \n 안개에서 그웬은 [[AR_MR_UP]]. \n 그웬은 안개 밖의 적들에게 [[UNTARGETABLE]] 판정. \n 그웬이 범위를 벗어나거나 [[SKILL_RECAST]] 하면 W가 한번 따라옴. \n \n",
 
-          "E는 [[DASH]]하고 [[BUFF]] 획득. \n 4초동안 [[BA]] [[EMPOWERED]]\n [[ON_HIT]] [[DMG_MAGIC]]와 [[AS_UP]], [[RANGE_UP]]. \n \n",
+          "E는 [[DASH]]하고 [[BUFF]] 획득. \n 4초동안 [[BA]] [[EMPOWERED]]\n [[ON_HIT]] [[DMG_MAGIC]]와 [[AS_UP]], [[RANGE_UP]]. \n [[AA_RESET]] 가능. \n \n",
 
           "R1은 [[PIERCE]] [[PROJECTILE]] 1개 발사. \n [[SKILL_RECAST]]할 수 있고 \n R2는 3개, R3는 5개 발사. \n [[DMG_MAGIC]], [[SLOW]]와 \n P의 [[ON_HIT]] 추가 적용.",
         ],
@@ -55,7 +55,7 @@ const gwen: ChampData = {
           "Q's [[PASSIVE_BONUS]]: \n hitting with [[BA]]s grants [[BUFF_STACK]]s below the health bar (max 4).",
           "Q is a forward [[AOE]] [[DMG_MAGIC]] snipping attack. \n [[STACK_CONSUME]]s [[BUFF_STACK]]s to [[SKILL_REPEAT]] Q that many times. \n The center converts 50% to [[DMG_TRUE]] \n and also applies P's [[ON_HIT]]. \n \n",
           "W creates a mist. \n Inside the mist, Gwen gains [[AR_MR_UP]]. \n Gwen is [[UNTARGETABLE]] to enemies outside the mist. \n If Gwen leaves the area or uses [[SKILL_RECAST]], W follows her once. \n \n",
-          "E [[DASH]]es and grants a [[BUFF]]. \n For 4 seconds, [[BA]]s are [[EMPOWERED]]\n with [[ON_HIT]] [[DMG_MAGIC]], [[AS_UP]], and [[RANGE_UP]]. \n \n",
+          "E [[DASH]]es and grants a [[BUFF]]. \n For 4 seconds, [[BA]]s are [[EMPOWERED]]\n with [[ON_HIT]] [[DMG_MAGIC]], [[AS_UP]], and [[RANGE_UP]]. \n Can [[AA_RESET]]. \n \n",
           "R1 fires 1 [[PIERCE]] [[PROJECTILE]]. \n It can be [[SKILL_RECAST]]; \n R2 fires 3, R3 fires 5. \n [[DMG_MAGIC]], [[SLOW]], and \n P's [[ON_HIT]] also apply."
         ]
 

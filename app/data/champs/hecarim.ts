@@ -8,7 +8,7 @@ const hecarim: ChampData = {
     W: ["AURA", "SEPARATOR", "AR_MR_UP", "SEPARATOR", "ST_CONDITIONAL", "HEAL"],
     E: { phases: [
       { label: { ko: "E 버프스택", en: "E Buff Stack" }, tags: ["BUFF_STACK", "GHOSTING", "SEPARATOR", "PER_STACK", "MS_UP"] },
-      { label: { ko: "E 공격", en: "E Attack" }, tags: ["DASH", "WALL_HOP", "SEPARATOR", "PER_STACK", "RANGE_UP", "KNOCKBACK"] },
+      { label: { ko: "E 공격", en: "E Attack" }, tags: ["AA_RESET", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR", "PER_STACK", "RANGE_UP", "KNOCKBACK"] },
     ] },
     R: ["UNSTOPPABLE", "DASH", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
   },
@@ -31,7 +31,7 @@ const hecarim: ChampData = {
     
     E: { phases: [
       { label: { ko: "E 버프스택", en: "E Buff Stack" }, tags: ["BUFF_STACK", "GHOSTING", "SEPARATOR", "PER_STACK", "MS_UP"] },
-      { label: { ko: "E 공격", en: "E Attack" }, tags: ["DMG_PHYSICAL", "TIMING_AFTERCAST", "SEPARATOR_NEWLINE", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR", "PER_STACK", "RANGE_UP", "KNOCKBACK"] },
+      { label: { ko: "E 공격", en: "E Attack" }, tags: ["DMG_PHYSICAL", "TIMING_AFTERCAST", "AA_RESET", "SEPARATOR_NEWLINE", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR", "PER_STACK", "RANGE_UP", "KNOCKBACK"] },
     ] },
     R: { phases: [
       { label: { ko: "R 충돌", en: "R Collision" }, tags: ["DMG_MAGIC", "UNSTOPPABLE", "DASH", "WALL_HOP", "FEAR"] },
@@ -54,7 +54,7 @@ const hecarim: ChampData = {
 
           "W는 [[AR_MR_UP]] \n [[AURA]] 주변 적 [[DOT]] [[DMG_MAGIC]]. \n [[AURA]] 내에서 헤카림이 받은 피해와 아군이 받은 피해에 따라 \n 헤카림이 [[HEAL]]. \n \n",
 
-          "E는 [[GHOSTING]] 상태가 되고 [[BUFF_STACK]] 획득. \n [[BUFF_STACK]]은 이동 [[DISTANCE_SCALE]]에 비례하여 [[MS_UP]]. (최대 100스택) \n 다음 공격 시 [[STACK_CONSUME]] 하여 [[DMG_PHYSICAL]]와 [[KNOCKBACK]]. \n \n",
+          "E는 [[GHOSTING]] 상태가 되고 [[BUFF_STACK]] 획득. \n [[BUFF_STACK]]은 이동 [[DISTANCE_SCALE]]에 비례하여 [[MS_UP]]. (최대 100스택) \n 다음 공격 시 [[STACK_CONSUME]] 하여 [[DMG_PHYSICAL]]와 [[KNOCKBACK]]. \n [[AA_RESET]] 가능. \n \n",
 
           "R은 [[UNSTOPPABLE]] [[DASH]]. \n 헤카림을 뒤따르는 5개의 유령 [[PROJECTILE]] 발사. \n[[PROJECTILE]]는 [[PIERCE]] [[DMG_MAGIC]]. \n 헤카림의 도착지점에 [[AOE]] [[DMG_MAGIC]] [[FEAR]]. \n 이동거리에 따라 [[FEAR]] 시간 증가.",
         ],
@@ -62,7 +62,7 @@ const hecarim: ChampData = {
         en: ["P grants [[AD_UP]] based on [[MS_SCALE]]. \n \n",
           "Q swings its spear for [[AOE]] [[DMG_PHYSICAL]]. \n On hit, gains a [[BUFF_STACK]]. Max 3. \n [[PER_STACK]], increased [[DMG_PHYSICAL]] and [[CDR]]. \n \n",
           "W grants [[AR_MR_UP]] \n and its [[AURA]] deals [[DOT]] [[DMG_MAGIC]] to nearby enemies. \n Based on the damage Hecarim and his allies take within the [[AURA]], \n Hecarim [[HEAL]]s. \n \n",
-          "E makes Hecarim [[GHOSTING]] and grants [[BUFF_STACK]]s. \n [[BUFF_STACK]]s grant [[MS_UP]] based on travel [[DISTANCE_SCALE]]. (Max 100 stacks) \n The next attack [[STACK_CONSUME]]s them to deal [[DMG_PHYSICAL]] and [[KNOCKBACK]]. \n \n",
+          "E makes Hecarim [[GHOSTING]] and grants [[BUFF_STACK]]s. \n [[BUFF_STACK]]s grant [[MS_UP]] based on travel [[DISTANCE_SCALE]]. (Max 100 stacks) \n The next attack [[STACK_CONSUME]]s them to deal [[DMG_PHYSICAL]] and [[KNOCKBACK]]. \n Can [[AA_RESET]]. \n \n",
           "R is an [[UNSTOPPABLE]] [[DASH]]. \n Fires 5 ghost [[PROJECTILE]]s that follow Hecarim. \n[[PROJECTILE]]s deal [[PIERCE]] [[DMG_MAGIC]]. \n Deals [[AOE]] [[DMG_MAGIC]] and [[FEAR]] at Hecarim's destination. \n [[FEAR]] duration increases with travel distance."
         ]
 

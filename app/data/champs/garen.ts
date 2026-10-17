@@ -50,7 +50,7 @@ const garen: ChampData = {
         ko: [
           "P는 8초동안 피해를 입지 않으면 \n [[LEVEL_SCALE]] 비례, [[SELF_MAXHP_SCALE]] 비례 [[HP_REGEN]]. \n 미니언에게는 영향 없음. \n \n",
 
-          "Q는 사용시 [[SLOW_CLEANSE]], [[MS_UP]]. \n 다음 공격 시 [[DMG_PHYSICAL]]와 [[SILENCE]]. \n \n",
+          "Q는 사용시 [[SLOW_CLEANSE]], [[MS_UP]]. \n 다음 공격 시 [[DMG_PHYSICAL]]와 [[SILENCE]]. \n [[AA_RESET]] 가능. \n \n",
 
           "W의 [[PASSIVE_BONUS]]는 유닛 [[ON_KILL]] [[STACKING]]. \n [[PER_STACK]] [[AR_MR_UP]] 0.2 증가. (최대 30)", 
           "W는 4초간 [[DMG_REDUCE]] \n 0.75초간 [[TENACITY]]과 \n [[SELF_BONUS_HP_SCALE]] 비례 [[SHIELD]]. \n \n",
@@ -61,7 +61,7 @@ const garen: ChampData = {
         ],
 
         en: ["P: if Garen takes no damage for 8 seconds, \n he gains [[HP_REGEN]] based on [[LEVEL_SCALE]] and [[SELF_MAXHP_SCALE]]. \n Minions have no effect on it. \n \n",
-          "Q grants [[SLOW_CLEANSE]] and [[MS_UP]] on use. \n The next attack deals [[DMG_PHYSICAL]] and [[SILENCE]]. \n \n",
+          "Q grants [[SLOW_CLEANSE]] and [[MS_UP]] on use. \n The next attack deals [[DMG_PHYSICAL]] and [[SILENCE]]. \n Can [[AA_RESET]]. \n \n",
           "W's [[PASSIVE_BONUS]] is [[STACKING]] on unit [[ON_KILL]]. \n [[AR_MR_UP]] +0.2 [[PER_STACK]]. (Max 30)",
           "W grants [[DMG_REDUCE]] for 4 seconds, \n plus [[TENACITY]] for 0.75 seconds and \n a [[SHIELD]] based on [[SELF_BONUS_HP_SCALE]]. \n \n",
           "E makes Garen spin, dealing [[AOE]] [[DMG_PHYSICAL]]. \n The nearest target takes 25% increased [[DMG_PHYSICAL]]. \n Targets hit 6 times receive an [[AR_SHRED]] [[DEBUFF]]. (Can apply to multiple targets.) \n \n",

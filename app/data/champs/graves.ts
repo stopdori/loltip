@@ -58,7 +58,7 @@ const graves: ChampData = {
 
           "W는 연막탄([[PROJECTILE]])을 발사. \n 도착하면 [[AOE]] [[DMG_MAGIC]]. \n [[ZONE]] 안에 있으면 [[SLOW]]와 [[NEAR_SIGHT]]. \n \n",
 
-          "E는 [[DASH]]하고 [[BA]] 한발 즉시 장전. \n 그리고 [[AR_MR_UP]] [[BUFF_STACK]] 1개 \n 상대 방향으로 [[DASH]]하면 [[BUFF_STACK]] 2개. (최대 8개) \n 미니언이 아닌 대상을 공격하면 [[DURATION_RESET]]. \n E는 [[AA_RESET]] 가능. \n \n",
+          "E는 [[DASH]]하고 [[BA]] 한발 즉시 장전. \n 그리고 [[AR_MR_UP]] [[BUFF_STACK]] 1개 \n 상대 방향으로 [[DASH]]하면 [[BUFF_STACK]] 2개. (최대 8개) \n 미니언이 아닌 대상을 공격하면 [[DURATION_RESET]]. \n [[AA_RESET]] 가능. \n \n",
 
           "R은 전방에 탄환([[PROJECTILE]]) 발사. \n 탄환에 맞으면 [[DMG_PHYSICAL]]. \n 적중하거나 끝에 다다르면 [[DETONATE]]하여 [[AOE]]피해. \n 두 피해는 중첩되지 않음. \n [[CC_BUFFER]]로 일부 CC 무시 가능.",
         ],
@@ -66,7 +66,7 @@ const graves: ChampData = {
         en: ["Graves's [[BA]] is a 2-shot shotgun. \n Each shot fires 4 [[PROJECTILE]]s at once. \n Only the first pellet deals full damage; each overlapping hit adds 1/3 damage. \n Reloads after both shots are spent. \n \n",
           "Q fires a bullet that deals [[DMG_PHYSICAL]] along its path. \n After a short delay or on [[WALL_COLLISION]], it [[DETONATE]]s and returns. \n Enemies hit by the [[DETONATE]] or the return path take additional [[DMG_PHYSICAL]]. \n \n",
           "W fires a smoke grenade ([[PROJECTILE]]). \n On arrival, it deals [[AOE]] [[DMG_MAGIC]]. \n Enemies inside the [[ZONE]] get [[SLOW]] and [[NEAR_SIGHT]]. \n \n",
-          "E [[DASH]]es and instantly reloads one [[BA]] shot. \n It also grants 1 [[AR_MR_UP]] [[BUFF_STACK]], \n or 2 [[BUFF_STACK]]s when [[DASH]]ing toward an enemy. (Max 8) \n Attacking a non-minion target triggers [[DURATION_RESET]]. \n E can [[AA_RESET]]. \n \n",
+          "E [[DASH]]es and instantly reloads one [[BA]] shot. \n It also grants 1 [[AR_MR_UP]] [[BUFF_STACK]], \n or 2 [[BUFF_STACK]]s when [[DASH]]ing toward an enemy. (Max 8) \n Attacking a non-minion target triggers [[DURATION_RESET]]. \n Can [[AA_RESET]]. \n \n",
           "R fires a shell ([[PROJECTILE]]) forward. \n Enemies hit by the shell take [[DMG_PHYSICAL]]. \n On hit or at max range, it [[DETONATE]]s for [[AOE]] damage. \n The two damage instances do not stack. \n [[CC_BUFFER]] can ignore some CC."
         ]
 

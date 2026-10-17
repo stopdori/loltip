@@ -64,7 +64,7 @@ const briar: ChampData = {
 
           "W는 방향으로 [[DASH]]하고. \n 핏빛 광분 상태 돌입하고 \n 광분동안 [[AS_UP]], [[MS_UP]].", 
           "광분은 브라이어가 [[TAUNT]]되어 \n 적 챔피언을 우선 자동공격. \n [[BA]]가 대상 주변 [[AOE]] [[DMG_PHYSICAL]].", 
-          "W를 [[SKILL_RECAST]] 하면 다음 [[BA]] [[EMPOWERED]]. \n [[EMPOWERED]] [[BA]]는 [[DMG_PHYSICAL]]와 \n [[SELF_MAXHP_SCALE]] 비례 [[DRAIN]].", 
+          "W를 [[SKILL_RECAST]] 하면 다음 [[BA]] [[EMPOWERED]]. \n [[EMPOWERED]] [[BA]]는 [[DMG_PHYSICAL]]와 \n [[SELF_MAXHP_SCALE]] 비례 [[DRAIN]]. \n [[AA_RESET]] 가능.", 
           "광분 상태는 \n Q로 타겟을 바꿀 수 있음. \n E로 광분상태를 빠져나올 수 있음. \n \n",
 
           "E는 누르고 있는 동안 [[SKILL_CHARGED]]. \n [[SKILL_CHARGED]]중에 [[DMG_REDUCE]], \n 처음 1초동안 [[SELF_MAXHP_SCALE]] 비례 [[HEAL]]. \n 충전 시간 비례 [[AOE]] [[DMG_MAGIC]]와 [[SLOW]].", 
@@ -86,7 +86,7 @@ const briar: ChampData = {
 
           "W [[DASH]]es in a direction \n and enters Blood Frenzy; \n during Frenzy, gains [[AS_UP]] and [[MS_UP]].",
           "During Frenzy, Briar is [[TAUNT]]ed \n and auto-attacks, prioritizing enemy champions. \n [[BA]]s deal [[AOE]] [[DMG_PHYSICAL]] around the target.",
-          "[[SKILL_RECAST]]ing W makes the next [[BA]] [[EMPOWERED]]. \n The [[EMPOWERED]] [[BA]] deals [[DMG_PHYSICAL]] and \n [[DRAIN]]s based on [[SELF_MAXHP_SCALE]].",
+          "[[SKILL_RECAST]]ing W makes the next [[BA]] [[EMPOWERED]]. \n The [[EMPOWERED]] [[BA]] deals [[DMG_PHYSICAL]] and \n [[DRAIN]]s based on [[SELF_MAXHP_SCALE]]. \n Can [[AA_RESET]].",
           "During Frenzy, \n Q can switch targets. \n E can exit Frenzy. \n \n",
 
           "E is [[SKILL_CHARGED]] while held. \n While [[SKILL_CHARGED]], gains [[DMG_REDUCE]] \n and [[HEAL]]s based on [[SELF_MAXHP_SCALE]] for the first 1 second. \n Deals [[AOE]] [[DMG_MAGIC]] and [[SLOW]] based on charge time.",
