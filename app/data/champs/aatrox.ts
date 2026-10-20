@@ -123,8 +123,8 @@ const aatrox: ChampData = {
       en: "Passive: Aatrox [[HEAL]]s for 16% (+1.1% per 100 [[SELF_BONUS_HP_SCALE]]) of the damage he deals to champions via [[OMNIVAMP]]. \n \n Active: Aatrox [[DASH]]es. This skill can be used even while winding up his other skills. \n \n 9/8/7/6/5 second [[COOLDOWN]].",
     },
     R: {
-      ko: "아트록스가 진정한 악마의 모습을 드러내 주변 미니언을 3초 동안 [[FEAR]]시키고, [[MS_UP]] 60/80/100%를 얻었다가 10초에 걸쳐 서서히 원래대로 돌아옵니다. \n 지속시간(10초) 동안 [[AD_UP]] 20/30/40%, 자신에게 적용되는 [[HS_POWER]] 50/75/100%. \n \n 챔피언 처치에 관여하면 지속시간이 5초 늘어나고 [[MS_UP]] 효과가 초기화됩니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
-      en: "Aatrox reveals his true demonic form, [[FEAR]]ing nearby minions for 3 seconds and gaining 60/80/100% [[MS_UP]], which decays back to normal over 10 seconds. \n For the duration (10 seconds), he gains 20/30/40% [[AD_UP]] and 50/75/100% [[HS_POWER]] applied to himself. \n \n Participating in a champion takedown extends the duration by 5 seconds and refreshes the [[MS_UP]] effect. \n \n {{ultCooldown}} second [[COOLDOWN]].",
+      ko: "아트록스가 진정한 악마의 모습을 드러내 주변 미니언을 3초 동안 [[FEAR]]시키고, [[MS_UP]] 60/80/100%를 얻었다가 10초에 걸쳐 서서히 원래대로 돌아옵니다. \n 지속시간(10초) 동안 [[AD_UP]] 20/30/40%, 자신에게 적용되는 [[HS_POWER]] 50/75/100%. \n \n 챔피언 [[ON_TAKEDOWN]] 지속시간이 5초 늘어나고 [[MS_UP]] 효과가 초기화됩니다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
+      en: "Aatrox reveals his true demonic form, [[FEAR]]ing nearby minions for 3 seconds and gaining 60/80/100% [[MS_UP]], which decays back to normal over 10 seconds. \n For the duration (10 seconds), he gains 20/30/40% [[AD_UP]] and 50/75/100% [[HS_POWER]] applied to himself. \n \n A champion [[ON_TAKEDOWN]] extends the duration by 5 seconds and refreshes the [[MS_UP]] effect. \n \n {{ultCooldown}} second [[COOLDOWN]].",
     },
   },
 };

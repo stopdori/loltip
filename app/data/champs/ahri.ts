@@ -103,8 +103,8 @@ const ahri: ChampData = {
   // (CLAUDE.md "챔피언 skillTooltip 작성 규칙" 참고.)
   skillTooltip: {
     P: {
-      ko: "아리가 미니언 또는 몬스터를 처치할 때마다 [[BUFF_STACK]]을 얻고, 9개가 모이면 소모하여 35~95([[LEVEL_SCALE]] 비례)(+20% [[AP_SCALE]])의 [[HEAL]]을 얻습니다. \n 적 챔피언 처치에 관여(피해를 입힌 뒤 3초 이내)하면 대신 75~165([[LEVEL_SCALE]] 비례)(+30% [[AP_SCALE]])의 [[HEAL]]을 얻습니다.",
-      en: "Ahri gains a [[BUFF_STACK]] whenever she kills a minion or monster; at 9 stacks, she consumes them to gain 35~95 (based on [[LEVEL_SCALE]]) (+20% [[AP_SCALE]]) [[HEAL]]. \n If she participates in an enemy champion takedown (within 3 seconds of damaging them), she instead gains 75~165 (based on [[LEVEL_SCALE]]) (+30% [[AP_SCALE]]) [[HEAL]].",
+      ko: "아리가 미니언 또는 몬스터를 처치할 때마다 [[BUFF_STACK]]을 얻고, 9개가 모이면 소모하여 35~95([[LEVEL_SCALE]] 비례)(+20% [[AP_SCALE]])의 [[HEAL]]을 얻습니다. \n 3초 안에 적 챔피언 [[ON_TAKEDOWN]] 대신 75~165([[LEVEL_SCALE]] 비례)(+30% [[AP_SCALE]])의 [[HEAL]]을 얻습니다.",
+      en: "Ahri gains a [[BUFF_STACK]] whenever she kills a minion or monster; at 9 stacks, she consumes them to gain 35~95 (based on [[LEVEL_SCALE]]) (+20% [[AP_SCALE]]) [[HEAL]]. \n On an enemy champion [[ON_TAKEDOWN]] within 3 seconds, she instead gains 75~165 (based on [[LEVEL_SCALE]]) (+30% [[AP_SCALE]]) [[HEAL]].",
     },
     Q: {
       ko: "아리가 구슬을 던진 후 다시 받습니다. \n 던질 때는 35/60/85/110/135(+50% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입히며, \n 돌아올 때는 같은 양의 [[DMG_TRUE]]를 입힙니다. \n \n 7초의 [[COOLDOWN]].",

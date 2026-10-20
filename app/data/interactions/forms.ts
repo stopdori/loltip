@@ -85,11 +85,6 @@ export const CHAMP_FORMS: Record<string, ChampForm[]> = {
     } },
   ],
 
-  kaisa: [
-    { ko: "기본", en: "Basic" },
-    { ko: "진화", en: "Evolutions" },
-  ],
-
   // ✅ 케인 (3폼)
   kayn: [
     { ko: "케인", en: "Base" },

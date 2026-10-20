@@ -361,6 +361,11 @@ export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: 
   CAST_IMMOBILE: { ko: "이동 불가", en: "Immobile" },
   CC_BUFFER: { ko: "CC 버퍼", en: "CC Buffer" },
   ON_TAKEDOWN: { ko: "처치 관여 시", en: "On Takedown" },
+  STACK_CONSUME: { ko: "스택 소모", en: "Stack Consume" },
+  STACK_CONSUME_A: { ko: "스택 소모A", en: "Stack Consume A" },
+  STACK_CONSUME_B: { ko: "스택 소모B", en: "Stack Consume B" },
+  STACK_CONSUME_C: { ko: "스택 소모C", en: "Stack Consume C" },
+  IMMOBILIZING: { ko: "이동 불가", en: "Immobilizing" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
