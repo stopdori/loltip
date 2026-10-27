@@ -3,6 +3,10 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // About 페이지 "최종 업데이트" 표기용 빌드 날짜(KST, YYYY-MM-DD) — app/data/siteInfo.ts formatBuildDate
+  env: {
+    BUILD_DATE: new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10),
+  },
   typescript: {
     ignoreBuildErrors: true,
   },

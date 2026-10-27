@@ -8,8 +8,8 @@ import CssLabel from "@/app/components/CssLabel";
 
 // 챔프 페이지(/champ/[id]) 하단(ChampClient의 extraSection 슬롯)의 "이 챔피언과 상호작용하는 챔피언들" 목록.
 // 서버 컴포넌트("use client" 없음)라서 <a href="/{locale}/matchup/{pair}">가 항상 SSR HTML에 나간다.
-// entries는 호출부(page.tsx)가 listIndexableMatchupsForChamp(champId, 현재 로케일)로 만든 것 —
-// 현재 로케일에서 색인 대상인 매치업만 들어 있다(noindex 페이지로 링크 금지). 여기서는 거르지도, 바꾸지도 않고
+// entries는 호출부(page.tsx)가 listLinkableMatchupsForChamp(champId, 현재 로케일)로 만든 것 —
+// 현재 로케일에 판정 문장이 있는 매치업이 들어 있다(색인 기준 미만인 noindex,follow 페이지 포함). 여기서는 거르지도, 바꾸지도 않고
 // 표시 방식(작은 아이콘)과 정렬만 정한다. 링크 대상은 챔프 페이지가 아니라 매치업 페이지다.
 //
 // 아이콘만 보이고 텍스트가 없으므로 alt/title/aria-label에 상대 챔피언 이름을 반드시 넣는다.

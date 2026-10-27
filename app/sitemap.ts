@@ -140,7 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...lastmodOf(lastmod.pages.privacy),
     });
 
-    // 해당 locale 콘텐츠가 실제로 존재하는 매치업 페이지만 포함
+    // 해당 locale에서 색인 대상(판정 문장 MIN_HIGHLIGHTS_FOR_INDEX개 이상)인 매치업 페이지만 포함
     for (const pair of indexablePairsByLocale[locale]) {
       urls.push({
         // 상호작용 페이지 정식 주소는 /{locale}/interactions/{a}-{b}. pair(a-vs-b)는 lastmod 조회용 내부 키로 그대로 둔다.

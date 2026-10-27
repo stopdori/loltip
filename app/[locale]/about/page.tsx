@@ -2,7 +2,7 @@
 
 import type { Metadata } from "next";
 import SiteHeader from "@/app/components/SiteHeader";
-import { CONTACT_EMAIL, OPERATOR_NAME } from "@/app/data/siteInfo";
+import { CONTACT_EMAIL, OPERATOR_NAME, SITE_LAUNCH, formatBuildDate } from "@/app/data/siteInfo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -86,6 +86,8 @@ function AboutKo() {
           <li>
             이메일: <EmailLink />
           </li>
+          <li>사이트 오픈: {SITE_LAUNCH.ko}</li>
+          <li>최종 업데이트: {formatBuildDate("ko")}</li>
         </ul>
       </section>
 
@@ -141,6 +143,8 @@ function AboutEn() {
           <li>
             Email: <EmailLink />
           </li>
+          <li>Launched: {SITE_LAUNCH.en}</li>
+          <li>Last updated: {formatBuildDate("en")}</li>
         </ul>
       </section>
 

@@ -6,7 +6,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import { isMatchupIndexable, type MatchupSummary } from "./_types";
+import { countHighlights, hasMatchupContent, isMatchupIndexable, type MatchupSummary } from "./_types";
 
 export type MatchupLoadResult =
   | { status: "ok"; data: MatchupSummary }
@@ -65,31 +65,48 @@ export type ChampMatchupEntry = {
 };
 
 // 챔프 페이지의 "이 챔피언이 등장하는 매치업" 링크 목록용.
-// 해당 챔피언이 포함된 조합 중 **현재 로케일에서 색인 대상인 것만** 반환한다 — 판정은
-// generateMetadata(noindex)/sitemap과 같은 공용 함수(isMatchupIndexable)를 쓰고, 데이터도
-// 매치업 페이지와 같은 _compiled.json에서 읽으므로 noindex 페이지로 링크가 뻗지 않는다.
+// 해당 챔피언이 포함된 조합 중 **현재 로케일에 판정 문장이 하나라도 있는 것**을 반환한다.
+// 색인 기준(isMatchupIndexable, 문장 MIN_HIGHLIGHTS_FOR_INDEX개 이상)보다 넓다 — 사용자 접근 경로라
+// noindex(follow) 페이지도 링크한다. 판정 문장이 없는 조합은 화면이 비어 있으므로 제외.
 // (KO에만 내용이 있는 쌍은 lang="en"이면 제외된다 — lang은 반드시 현재 로케일로 넘길 것.)
 // 프로덕션에서는 loadCompiled()의 모듈 캐시를 재사용하고, 14,878개를 한 번 훑는 비용(≈1ms)뿐이다.
-export function listIndexableMatchupsForChamp(
+export function listLinkableMatchupsForChamp(
   champId: string,
   lang: "ko" | "en"
 ): ChampMatchupEntry[] {
-  const count = (arr: string[] | undefined) => (arr ?? []).filter((s) => s !== "").length;
   const out: ChampMatchupEntry[] = [];
   for (const data of Object.values(loadCompiled())) {
     const [a, b] = data.champs;
     if (a !== champId && b !== champId) continue;
-    if (!isMatchupIndexable(data, a, b, lang)) continue;
+    if (!hasMatchupContent(data, a, b, lang)) continue;
     out.push({
       pair: [a, b].sort().join("-"),
       opponentId: a === champId ? b : a,
-      sentenceCount:
-        count(data.highlightsByChamp?.[a]?.[lang]) +
-        count(data.highlightsByChamp?.[b]?.[lang]) +
-        count(data.common?.[lang]),
+      sentenceCount: countHighlights(data, a, b, lang),
     });
   }
   return out;
+}
+
+export type TopMatchupEntry = {
+  // 상호작용 페이지 canonical 슬러그(알파벳순 "a-b")
+  pair: string;
+  champs: [string, string];
+  sentenceCount: number;
+};
+
+// 홈(/champ)의 "판정이 많은 상호작용" 목록용 — 현재 로케일에서 색인 대상인 쌍 중
+// 판정 문장 수 상위 limit개. 동점은 pair 알파벳순으로 고정해 렌더링마다 순서가 바뀌지 않게 한다.
+export function listTopIndexableMatchups(lang: "ko" | "en", limit: number): TopMatchupEntry[] {
+  const out: TopMatchupEntry[] = [];
+  for (const data of Object.values(loadCompiled())) {
+    const [a, b] = data.champs;
+    if (!isMatchupIndexable(data, a, b, lang)) continue;
+    const champs = [a, b].sort() as [string, string];
+    out.push({ pair: champs.join("-"), champs, sentenceCount: countHighlights(data, a, b, lang) });
+  }
+  out.sort((x, y) => y.sentenceCount - x.sentenceCount || x.pair.localeCompare(y.pair));
+  return out.slice(0, limit);
 }
 
 export async function getMatchupSummary(
