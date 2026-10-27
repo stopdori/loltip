@@ -18,12 +18,13 @@ export default function HomeIntro({ lang, entries }: { lang: "ko" | "en"; entrie
         aria-labelledby="home-intro-heading"
         className="rounded-2xl bg-slate-800/40 ring-1 ring-white/10 px-4 sm:px-5 py-4"
       >
-        <h2
+        {/* 홈(/champ)의 페이지 주제 제목이라 h1 — 아래 ChampGrid의 "전체 챔피언"은 h2. */}
+        <h1
           id="home-intro-heading"
           className="text-base font-bold text-yellow-400 tracking-wide uppercase mb-2"
         >
-          {lang === "ko" ? "LOLTIP 소개" : "About LOLTIP"}
-        </h2>
+          {lang === "ko" ? "롤 챔피언 스킬 상호작용 · 판정 정리" : "LoL Champion Skill Interactions & Mechanics"}
+        </h1>
         <p className="text-sm leading-relaxed text-slate-300">
           {lang === "ko"
             ? "LOLTIP은 리그 오브 레전드 챔피언 스킬 사이의 상호작용과 판정을 정리한 사이트입니다. 두 챔피언을 고르면 어떤 스킬이 상대 스킬을 끊거나 무시할 수 있는지, 알아두면 좋은 특이한 판정은 무엇인지 확인할 수 있습니다. 판정은 공식 위키와 인게임 영상 클립을 바탕으로 직접 정리합니다."
