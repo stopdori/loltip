@@ -5,7 +5,7 @@ const aurelionsol: ChampData = {
   skills: {
     P: ["STACKING"],
     Q: ["LEVEL_SCALE", "RANGE_UP"],
-    W: ["MS_UP", "GHOSTING", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
+    W: ["MS_UP", "GHOSTING", "AIR_VISION", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "CDR"],
     E: ["SLOW", "KINEMATICS", "SEPARATOR", "ST_CONDITIONAL", "EXECUTE"],
     R: { phases: [
       { label: { ko: "R", en: "R" }, tags: ["R_FLASH", "STUN"] },
@@ -30,7 +30,7 @@ const aurelionsol: ChampData = {
     ] },
 
     W: { phases: [
-      { label: { ko: "W 버프", en: "W Buff" }, tags: ["BUFF_FORM", "MS_UP", "GHOSTING", "SEPARATOR", "UNOBSTRUCTED_VISION"] },
+      { label: { ko: "W 버프", en: "W Buff" }, tags: ["BUFF_FORM", "MS_UP", "GHOSTING", "AIR_VISION"] },
       { label: { ko: "W 비행", en: "W Flight" }, tags: ["SKILL_CHANNEL_MOVEMENT", "TIMING_CAST", "CANCELLABLE", "SEPARATOR", "DASH", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "CDR"] },
       { label: { ko: "W 비행 Q", en: "W Flight Q" }, tags: ["MS_DOWN"] },
     ] },
@@ -59,7 +59,7 @@ const aurelionsol: ChampData = {
           "Q는 [[BEAM]]을 발사. \n 적중 시 [[DMG_MAGIC]], [[MARK]] \n 주변에는 [[AOE]] [[DMG_MAGIC]] 50% 피해. \n 1초당 2의 별가루.", 
           "육각형 [[MARK]]이 다 차면 [[DETONATE]] [[DMG_MAGIC]]. \n \n",
 
-          "W는 지정한 방향으로 비행. \n 스킬을 사용해도 비행 유지. \n Q 사용 시에는 비행 [[MS_DOWN]]. \n Q의 [[COOLDOWN]]과 지속시간이 사라짐.", 
+          "W는 지정한 방향으로 비행. ([[AIR_VISION]]) \n 스킬을 사용해도 비행 유지. \n Q 사용 시에는 비행 [[MS_DOWN]]. \n Q의 [[COOLDOWN]]과 지속시간이 사라짐.", 
           "[[ON_TAKEDOWN]] [[CDR]] 90%. \n \n",
           
           "E는 [[AOE]] [[KINEMATICS]], [[DMG_MAGIC]]. \n 중앙 블랙홀에 조건부 [[EXECUTE]]. \n 블랙홀에 챔피언이 닿으면 초당 별가루 1개. \n E [[AOE]]에서 미니언, 몬스터가 죽으면 마리당 1개. \n 직접 처치하지 않아도 획득. \n E 종료 시 별가루 한번에 획득. \n \n",

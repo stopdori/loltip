@@ -4,7 +4,6 @@ import { SPELL_TAG_LABEL, SPELL_TAG_DESC, type SpellTagId } from "./tags_spell";
 export type TagId =
   /* 1) 스탯 버프 */
   | "MS_UP"
-  | "MS_TO_ENEMY"
   | "MS_POWER"  // 이동속도 증가 효과 강화
   | "AS_UP"          // 공속 증가
   | "AD_UP"          // 공격력 증가
@@ -32,6 +31,7 @@ export type TagId =
   | "MR_PEN"      //마관
   | "AR_MR_PEN"  // 방마관
   | "GW"           // 치감
+  | "UNHEALABLE"   // 회복 불가(위키: cannot be healed)
   | "BURN"         // 부식
 
   /* 3) 군중제어 / CC */
@@ -111,8 +111,8 @@ export type TagId =
   | "HIT_EFFECT_SOUND"
   | "HIT_INDICATOR"
   | "SHIMMER"
-  | "OVERHEAD_VISION"
-  | "UNOBSTRUCTED_VISION"
+  | "AIR_VISION"     // 지형 너머 시야(위키 Unobstructed vision)
+  | "BUSH_SIGHT"     // 수풀 안을 보는 시야
   | "STEALTH"
   | "INVISIBILITY"
   | "CAMOUFLAGE"
@@ -169,7 +169,6 @@ export const TAG_LABEL: Record<TagId, { ko: string; en: string }> = {
 
   /* 1) 스탯 버프 */
 MS_UP: { ko: "이속↑", en: "MS ↑" },
-MS_TO_ENEMY: { ko: "추격이속↑", en: "Approach MS" },
 MS_POWER: { ko: "이속효과↑", en: "MS Power" },
 AS_UP: { ko: "공속↑", en: "AS ↑" },
 AD_UP: { ko: "공격력↑", en: "AD ↑" },
@@ -197,6 +196,7 @@ AR_PEN: { ko: "방관", en: "AR Penet" },
 MR_PEN: { ko: "마관", en: "AR Penet" },
 AR_MR_PEN: { ko: "방마관", en: "AR+MR Penet" },
 GW: { ko: "치감", en: "Grievous Wounds" },
+UNHEALABLE: { ko: "회복불가", en: "Unhealable" },
 BURN: { ko: "부식", en: "Burn" },
 
   /* 3) 군중제어 / CC */
@@ -276,8 +276,8 @@ HIT_EFFECT:            { ko: "적중 이펙트",      en: "Hit Effect"          
 HIT_EFFECT_SOUND:      { ko: "적중 소리+이펙트", en: "Hit Effect+Sound"     },
 HIT_INDICATOR:         { ko: "적중 반응",        en: "Hit Indicator"        },
 SHIMMER: { ko: "아른거림", en: "Shimmer" },
-OVERHEAD_VISION: { ko: "공중 시야", en: "Overhead Vision" },
-UNOBSTRUCTED_VISION: { ko: "너머시야", en: "Unobstructed Vision" },
+AIR_VISION: { ko: "공중시야", en: "Air Vision" },
+BUSH_SIGHT: { ko: "수풀시야", en: "Bush Sight" },
 STEALTH: { ko: "은신", en: "Stealth" },
 INVISIBILITY: { ko: "투명", en: "Invisibility" },
 CAMOUFLAGE: { ko: "위장", en: "Camouflage" },
@@ -341,6 +341,7 @@ export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: 
   DURATION_EXT: { ko: "지속시간 연장", en: "Duration Extension" },
   ON_CHAMP_HIT: { ko: "적 챔피언 적중 시", en: "On Enemy Champion Hit" },
   SKILL_CHANNEL_MOVEMENT: { ko: "이동 채널링", en: "Movement Channel" },
+  DMG_REDUCE: { ko: "피해 감소", en: "Damage Reduction" },
   MAGIC_DR: { ko: "마법 피해 감소", en: "Magic Damage Reduction" },
   PHYSICAL_DR: { ko: "물리 피해 감소", en: "Physical Damage Reduction" },
   DMG_PHYSICAL: { ko: "물리 피해", en: "Physical Damage" },
@@ -366,6 +367,10 @@ export const NOTE_LABEL: Partial<Record<TagId | GimmickTagId, { ko: string; en: 
   STACK_CONSUME_B: { ko: "스택 소모B", en: "Stack Consume B" },
   STACK_CONSUME_C: { ko: "스택 소모C", en: "Stack Consume C" },
   IMMOBILIZING: { ko: "이동 불가", en: "Immobilizing" },
+  AIR_VISION: { ko: "공중 시야", en: "Air Vision" },
+  BUSH_SIGHT: { ko: "수풀 시야", en: "Bush Sight" },
+  UNHEALABLE: { ko: "회복 불가", en: "Unhealable" },
+  TO_ENEMY: { ko: "적 방향을 바라볼 때", en: "While Facing Enemies" },
 };
 
 export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
@@ -374,10 +379,6 @@ export const TAG_DESC: Partial<Record<TagId, { ko: string; en: string }>> = {
 MS_UP: {
   ko: "이동속도 증가",
   en: "Increases movement speed",
-},
-MS_TO_ENEMY: {
-  ko: "적에게 접근할 때 이동속도가 증가하는 효과",
-  en: "Gain movement speed when approaching enemies.",
 },
 MS_POWER: {
   ko: "이동속도 증가 효과가 강화됨.",
@@ -466,6 +467,10 @@ AR_MR_PEN: {
 GW: {
   ko: "치유효과 감소",
   en: "Reduces healing effects",
+},
+UNHEALABLE: {
+  ko: "회복 효과를 받을 수 없음. \n 단, 체력 재생은 그대로 적용됨. \n 예) 킨드레드 R (최소 체력에 도달한 동안)",
+  en: "Cannot be healed. \n Health regeneration still applies. \n e.g. Kindred R (while at the health threshold)",
 },
 
   /* 3) 이동불가 CC 종류 */
@@ -770,13 +775,13 @@ SHIMMER: {
   ko: "[[STEALTH]] 상태에서 피해를 받으면 잠시 실루엣 드러남. \n 트리거당 0.6초간 위치만 노출. \n [[UNTARGETABLE]]에 [[STEALTH]]도 풀리지 않는다.",
   en: "Taking damage while [[STEALTH]] briefly reveals a silhouette. \n Each trigger only exposes the location for 0.6 seconds. \n [[UNTARGETABLE]] does not break [[STEALTH]] either.",
 },
-OVERHEAD_VISION: {
-  ko: "이동 경로를 따라 지형과 수풀에 막히지 않고 시야를 제공한다. \n 단, 일반 시야와 동일해 [[STEALTH]] 상태는 뚫지 못한다.",
-  en: "Grants sight along its travel path, unobstructed by terrain or brush. \n However, it grants only standard sight and does not reveal [[STEALTH]]ed units.",
+AIR_VISION: {
+  ko: "지형(벽)을 뚫고 시야 범위 너머까지 볼 수 있다. \n 단, 수풀 안은 이미 시야가 있지 않으면 보지 못한다. \n [[NEAR_SIGHT]] 상태에서는 이 효과가 완전히 사라진다.",
+  en: "Sight that permeates through terrain, seeing beyond the sight radius. \n However, cannot see into brush unless already having sight inside. \n This effect is entirely negated while [[NEAR_SIGHT]]ed.",
 },
-UNOBSTRUCTED_VISION: {
-  ko: "벽(지형)은 뚫고 볼 수 있지만, 수풀 안은 여전히 보지 못한다. \n [[NEAR_SIGHT]] 상태에서는 이 효과가 완전히 사라진다.",
-  en: "Can see through terrain, but still cannot see into brush. \n This effect is entirely negated while [[NEAR_SIGHT]]ed.",
+BUSH_SIGHT: {
+  ko: "수풀 밖에서도 수풀 안을 볼 수 있다. \n (일반 시야는 수풀 바깥에서 안쪽을 보지 못함)",
+  en: "Can see into brush even from outside it. \n (Standard sight cannot see into brush from the outside)",
 },
 STEALTH: {
   ko: "투명화와 위장으로 나뉨\n절대시야에는 보이고, \n 드러냄 스킬에는 맞고 은신하면 보임",

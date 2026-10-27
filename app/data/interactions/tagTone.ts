@@ -77,7 +77,6 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 🔵 sky (이동/회복/자원/저항)
   MS_UP: "sky",
-  MS_TO_ENEMY: "sky",
   MS_POWER: "sky",
   AS_UP: "sky",
   CDR: "indigo",
@@ -108,8 +107,8 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   HIT_EFFECT_SOUND:      "sky_soft",
   HIT_INDICATOR:         "sky_soft",
   SHIMMER: "sky_soft",
-  OVERHEAD_VISION: "sky_soft",
-  UNOBSTRUCTED_VISION: "sky_soft",
+  AIR_VISION: "sky_soft",
+  BUSH_SIGHT: "sky_soft",
 
   // 🟩 teal (CC/제어)
   STUN: "teal",
@@ -183,6 +182,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
 
   // 💜 fuchsia (치감/그라운드/TP류)
   GW: "fuchsia",
+  UNHEALABLE: "fuchsia",
   BURN: "red",
   ANTI_DASH: "fuchsia",
   GROUNDED: "fuchsia",
@@ -229,6 +229,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   PER_STACK: "indigo",
   PER_HIT: "indigo",
   EFFECT_UP: "indigo",
+  EFFECT_DOWN: "indigo",
   ADDITIONAL: "indigo",
   // 타이밍
   TIMING_INSTANT:   "indigo",
@@ -239,7 +240,9 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   ST_CONDITIONAL: "indigo",
   ON_TAKEDOWN: "indigo",
   ON_KILL: "indigo",
+  ON_DEATH: "indigo",
   ON_CHAMP_HIT: "indigo",
+  TO_ENEMY: "indigo",
   // 이진 상태 표시 — EXIST는 MS_UP과 같은 sky(이동/존재) 재사용.
   // NOT_EXIST는 red(bg-red-900/60, 어두운 검붉은색) 재사용 — "불가능/부재" 느낌.
   EXIST: "sky",
@@ -250,6 +253,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 판정 방식
   TARGETED:       "indigo",
   NON_TARGETED:   "indigo",
+  TARGET_SELF:    "indigo",
   TARGET_ALLY:    "indigo",
   TARGET_ENEMY:   "indigo",
   TARGET_BOTH:    "indigo",

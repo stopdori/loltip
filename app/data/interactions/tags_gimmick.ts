@@ -61,6 +61,7 @@ export type GimmickTagId =
   // 판정 방식
   | "TARGETED"
   | "NON_TARGETED"
+  | "TARGET_SELF"
   | "TARGET_ALLY"
   | "TARGET_ENEMY"
   | "TARGET_BOTH"
@@ -147,6 +148,7 @@ export type GimmickTagId =
   | "PER_STACK"
   | "PER_HIT"
   | "EFFECT_UP"
+  | "EFFECT_DOWN"
   | "ADDITIONAL"
   // 스킬 타이밍
   | "SKILL_RECAST"
@@ -160,7 +162,9 @@ export type GimmickTagId =
   | "ST_CONDITIONAL"
   | "ON_TAKEDOWN"
   | "ON_KILL"
+  | "ON_DEATH"
   | "ON_CHAMP_HIT"
+  | "TO_ENEMY"
   // 이진 상태 표시
   | "EXIST"
   | "NOT_EXIST"
@@ -216,6 +220,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   PER_STACK: { ko: "스택당", en: "Per Stack" },
   PER_HIT: { ko: "적중당", en: "Per Hit" },
   EFFECT_UP: { ko: "효과증가", en: "Effect ↑" },
+  EFFECT_DOWN: { ko: "효과감소", en: "Effect ↓" },
   ADDITIONAL: { ko: "추가", en: "Bonus" },
 
   // 타이밍
@@ -227,7 +232,9 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   ST_CONDITIONAL: { ko: "조건발동", en: "Conditional" },
   ON_TAKEDOWN: { ko: "처치관여", en: "On Takedown" },
   ON_KILL: { ko: "처치 시", en: "On Kill" },
+  ON_DEATH: { ko: "사망 시", en: "On Death" },
   ON_CHAMP_HIT: { ko: "챔프적중", en: "Champion Hit" },
+  TO_ENEMY: { ko: "추격", en: "Chase" },
   // 이진 상태 표시
   EXIST: { ko: "O", en: "O" },
   NOT_EXIST: { ko: "X", en: "X" },
@@ -237,6 +244,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   // 판정 방식
   TARGETED:       { ko: "타겟팅",   en: "Targeted"       },
   NON_TARGETED:   { ko: "논타겟",   en: "Skill Shot"     },
+  TARGET_SELF:    { ko: "자신 대상", en: "Self Target"   },
   TARGET_ALLY:    { ko: "아군 대상", en: "Ally Target"   },
   TARGET_ENEMY:   { ko: "적군 대상", en: "Enemy Target"  },
   TARGET_BOTH:    { ko: "아/적 대상", en: "Both Target"  },
@@ -376,6 +384,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   PER_STACK: { ko: "스택당 효과 증가.", en: "Effect increases per stack." },
   PER_HIT: { ko: "적중당 효과 증가.", en: "Effect increases per hit." },
   EFFECT_UP: { ko: "효과가 증가함.", en: "Increases the effect." },
+  EFFECT_DOWN: { ko: "효과가 감소함.", en: "Reduces the effect." },
   ADDITIONAL: { ko: "기본 효과에 더해 추가로 적용.", en: "Applied in addition to the base effect." },
   TIMING_INSTANT:   { ko: "누르면 즉시 발동", en: "Activates immediately on cast" },
   TIMING_CAST:      { ko: "시전 후 발동까지 시간이 걸림", en: "Has a cast delay before activating." },
@@ -385,7 +394,9 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   ST_CONDITIONAL: { ko: "특정 조건이 충족될 때 발동됨", en: "Activates only when a specific condition is met" },
   ON_TAKEDOWN: { ko: "적 챔피언 처치 또는 어시스트에 관여하면 \n 발동하거나 추가 효과.", en: "Triggers or grants a bonus effect on a champion takedown (kill or assist)" },
   ON_KILL: { ko: "대상을 직접 처치(막타)하면 \n 발동하거나 추가 효과. \n (어시스트는 해당 없음)", en: "Triggers or grants a bonus effect when you kill the target yourself (last hit). \n (Assists don't count)" },
+  ON_DEATH: { ko: "챔피언이 사망하면 \n 발동하거나 추가 효과.", en: "Triggers or grants a bonus effect when the champion dies." },
   ON_CHAMP_HIT: { ko: "적 챔피언에게 적중하면 \n 발동하거나 추가 효과.", en: "Triggers or grants a bonus effect when it hits an enemy champion. \n (Hitting minions or monsters doesn't count)" },
+  TO_ENEMY: { ko: "적 방향을 바라볼 때 활성화되는 효과.", en: "Activates while facing toward enemies." },
   // 이진 상태 표시
   EXIST: { ko: "", en: "" },
   NOT_EXIST: { ko: "", en: "" },
@@ -393,6 +404,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   LOCKED:           { ko: "시전 중 직접 중단할 수 없음\n끝까지 완료되어야 함", en: "Cannot be manually cancelled\nMust complete fully" },
   TARGETED:         { ko: "대상을 직접 지정하여 시전하는 스킬\n단, 무적/타겟불가 상태에는 적중하지 않음", en: "Targets an enemy directly\nDoes not hit invulnerable or untargetable units" },
   NON_TARGETED:     { ko: "방향 또는 위치를 지정하여 시전하는 스킬\n대상이 피할 수 있음", en: "Targets a direction or location\nCan be dodged by the enemy" },
+  TARGET_SELF:      { ko: "자신에게 사용하는 스킬", en: "Ability that targets yourself" },
   TARGET_ALLY:      { ko: "아군에게 사용하는 스킬", en: "Ability that targets allies" },
   TARGET_ENEMY:     { ko: "적군에게 사용하는 스킬", en: "Ability that targets enemies" },
   TARGET_BOTH:      { ko: "아군과 적군 모두에게 사용 가능한 스킬", en: "Ability that can target both allies and enemies" },
@@ -459,7 +471,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   ON_HIT:       { ko: "기본 공격 적중 시 추가 피해가 발생함", en: "Deals bonus damage on basic attack hit" },
   // 능력치 비례 기준
   SELF_MAXHP_SCALE:        { ko: "자신의 최대 체력에 비례", en: "Scales with own max Health" },
-  SELF_BONUS_HP_SCALE:     { ko: "자신의 추가(보너스) 체력에 비례 \n 아이템 / 버프 등으로 늘어난 것만 해당.", en: "Scales with own bonus Health \n Only Health gained from items / buffs counts." },
+  SELF_BONUS_HP_SCALE: { ko: "아이템, 버프 등으로 늘어난 체력에 비례.", en: "Scales with bonus health from items, buffs, etc." },
   SELF_MISSING_HP_SCALE:   { ko: "자신의 잃은 체력에 비례", en: "Scales with own missing Health" },
   TARGET_MAXHP_SCALE:      { ko: "대상의 최대 체력에 비례", en: "Scales with the target's max Health" },
   TARGET_CURRENT_HP_SCALE: { ko: "대상의 현재 남은 체력에 비례", en: "Scales with the target's current remaining Health" },

@@ -139,7 +139,7 @@ export default function SiteHeader({ subtitle, champSearchOpen, onNoticeOpenChan
           </Link>
           {/* 로고와 같은 폰트 크기/굵기의 컨테이너 안에 인라인으로 넣어 로고 글자 기준선에 자동 정렬 */}
           <span className="absolute left-full top-0 ml-1.5 text-3xl font-extrabold whitespace-nowrap">
-            <CssLabel label="26.19" className="text-xs font-normal text-slate-400" />
+            <CssLabel label="26.21" className="text-xs font-normal text-slate-400" />
           </span>
         </div>
 

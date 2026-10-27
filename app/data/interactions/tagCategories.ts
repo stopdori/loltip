@@ -31,13 +31,13 @@ export type CategoryGroup<T extends string> = {
 export const TAG_CATEGORIES: CategoryGroup<TagId>[] = [
   {
     title: { ko: "1) 스탯", en: "1) Stats" },
-    keys: ["MS_UP", "MS_TO_ENEMY", "MS_POWER", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "AS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "HEAL", "DRAIN", "HP_REGEN", "GREY_HEALTH", "REVIVE", "HP_REGEN_UP", "SHIELD", "PHYSICAL_SHIELD", "MAGIC_SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
+    keys: ["MS_UP", "MS_POWER", "AS_UP", "AD_UP", "AP_UP", "AD_DOWN", "MS_DOWN", "AS_DOWN", "RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP", "CRIT", "CDR", "CDR_RESET", "DURATION_RESET", "DURATION_EXT", "AR_UP", "MR_UP", "AR_MR_UP", "AR_SHRED", "MR_SHRED", "AR_MR_SHRED", "AR_PEN", "MR_PEN", "AR_MR_PEN", "GW", "UNHEALABLE", "HEAL", "DRAIN", "HP_REGEN", "GREY_HEALTH", "REVIVE", "HP_REGEN_UP", "SHIELD", "PHYSICAL_SHIELD", "MAGIC_SHIELD", "MAX_HP_UP", "MAX_ENERGY_UP", "HS_POWER", "LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"],
     subGroups: [
       { title: { ko: "공격", en: "Attack" }, keys: ["AD_UP", "AP_UP", "CRIT"] },
-      { keys: ["AS_UP", "MS_UP", "MS_TO_ENEMY", "MS_POWER", "SEPARATOR", "AD_DOWN", "MS_DOWN", "AS_DOWN"] },
+      { keys: ["AS_UP", "MS_UP", "MS_POWER", "SEPARATOR", "AD_DOWN", "MS_DOWN", "AS_DOWN"] },
       { title: { ko: "크기", en: "Size" }, keys: ["RANGE_UP", "SIZE_UP", "SKILL_SIZE_UP"] },
       { title: { ko: "체력 / 쉴드", en: "Health / Shield" }, keys: ["MAX_HP_UP", "MAX_ENERGY_UP", "HEAL", "DRAIN", "SHIELD", "PHYSICAL_SHIELD", "MAGIC_SHIELD", "HP_REGEN", "GREY_HEALTH", "REVIVE"] },
-      { keys: ["HS_POWER", "HP_REGEN_UP", "SEPARATOR", "GW"] },
+      { keys: ["HS_POWER", "HP_REGEN_UP", "SEPARATOR", "GW", "UNHEALABLE"] },
       { title: { ko: "흡혈 / 자원회복", en: "Vamp / Resource Restore" }, keys: ["LIFESTEAL", "OMNIVAMP", "MANA_RESTORE", "ENERGY_RESTORE"] },
       { title: { ko: "방어 / 마저", en: "Armor / MR" }, keys: ["AR_UP", "MR_UP", "AR_MR_UP"] },
       { keys: ["AR_SHRED", "MR_SHRED", "AR_MR_SHRED"] }, 
@@ -93,7 +93,7 @@ export const VISION_STEALTH_CATEGORY: CategoryGroup<TagId> = {
   keys: [
     "VISION", "REVEALED", "TRUE_SIGHT", "BUSH", "POSITION_REVEAL", "POSITION_INDICATOR",
     "POSITION_SOUND", "POSITION_EFFECT", "POSITION_EFFECT_SOUND", "HIT_SOUND",
-    "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "SHIMMER", "OVERHEAD_VISION", "UNOBSTRUCTED_VISION", "STEALTH", "INVISIBILITY",
+    "HIT_EFFECT", "HIT_EFFECT_SOUND", "HIT_INDICATOR", "SHIMMER", "AIR_VISION", "BUSH_SIGHT", "STEALTH", "INVISIBILITY",
     "CAMOUFLAGE",
   ],
 };
@@ -108,11 +108,11 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "2) 기타 (상태 / 자원)", en: "2) Misc (State / Resource)" },
-    keys: ["BUFF", "BUFF_A", "BUFF_B", "BUFF_C", "DEBUFF", "DEBUFF_A", "DEBUFF_B", "DEBUFF_C", "COOLDOWN", "ACTIVATION_CONDITION", "OUT_OF_COMBAT", "ON_TARGET_CD", "EMPOWERED", "RECHARGE", "STACKING", "PROC", "BUFF_STACK", "BUFF_STACK_A", "BUFF_STACK_B", "BUFF_STACK_C", "DEBUFF_STACK", "DEBUFF_STACK_A", "DEBUFF_STACK_B", "DEBUFF_STACK_C", "STACK_CONSUME", "STACK_CONSUME_A", "STACK_CONSUME_B", "STACK_CONSUME_C", "PER_STACK", "PER_HIT", "EFFECT_UP", "ADDITIONAL"],
+    keys: ["BUFF", "BUFF_A", "BUFF_B", "BUFF_C", "DEBUFF", "DEBUFF_A", "DEBUFF_B", "DEBUFF_C", "COOLDOWN", "ACTIVATION_CONDITION", "OUT_OF_COMBAT", "ON_TARGET_CD", "EMPOWERED", "RECHARGE", "STACKING", "PROC", "BUFF_STACK", "BUFF_STACK_A", "BUFF_STACK_B", "BUFF_STACK_C", "DEBUFF_STACK", "DEBUFF_STACK_A", "DEBUFF_STACK_B", "DEBUFF_STACK_C", "STACK_CONSUME", "STACK_CONSUME_A", "STACK_CONSUME_B", "STACK_CONSUME_C", "PER_STACK", "PER_HIT", "EFFECT_UP", "EFFECT_DOWN", "ADDITIONAL"],
   },
   {
     title: { ko: "3) 타이밍", en: "3) Timing" },
-    keys: ["TIMING_INSTANT", "TIMING_CAST", "TIMING_AFTERCAST", "ST_IMPACT", "ST_DELAYED", "ST_CONDITIONAL", "ON_TAKEDOWN", "ON_KILL", "ON_CHAMP_HIT"],
+    keys: ["TIMING_INSTANT", "TIMING_CAST", "TIMING_AFTERCAST", "ST_IMPACT", "ST_DELAYED", "ST_CONDITIONAL", "ON_TAKEDOWN", "ON_KILL", "ON_DEATH", "ON_CHAMP_HIT", "TO_ENEMY"],
   },
   {
     title: { ko: "4) 중단 여부", en: "4) Interruptibility" },
@@ -120,7 +120,7 @@ export const GIMMICK_CATEGORIES: CategoryGroup<GimmickTagId>[] = [
   },
   {
     title: { ko: "5) 판정 방식", en: "5) Targeting" },
-    keys: ["TARGETED", "NON_TARGETED", "TARGET_ALLY", "TARGET_ENEMY", "TARGET_BOTH", "PROJECTILE", "NON_PROJECTILE", "ZONE", "TRAP"],
+    keys: ["TARGETED", "NON_TARGETED", "TARGET_SELF", "TARGET_ALLY", "TARGET_ENEMY", "TARGET_BOTH", "PROJECTILE", "NON_PROJECTILE", "ZONE", "TRAP"],
   },
   {
     title: { ko: "6) 속성 / 상호작용", en: "6) Attributes / Interaction" },

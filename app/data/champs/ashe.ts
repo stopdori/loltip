@@ -6,7 +6,7 @@ const ashe: ChampData = {
     P: ["SLOW"],
     Q: ["AS_UP", "SEPARATOR", "AA_RESET"],
     W: ["W_FLASH"],
-    E: ["GLOBAL", "SEPARATOR", "OVERHEAD_VISION", "REVEALED"],
+    E: ["GLOBAL", "SEPARATOR", "AIR_VISION", "BUSH_SIGHT", "REVEALED"],
     R: ["GLOBAL", "SEPARATOR", "STUN", "SLOW"],
   },
 
@@ -14,7 +14,7 @@ const ashe: ChampData = {
     P: [],
     Q: [],
     W: [],
-    E: ["OVERHEAD_VISION"],
+    E: ["AIR_VISION"],
     R: [],
   },
 
@@ -32,7 +32,7 @@ const ashe: ChampData = {
    
     W: ["DMG_PHYSICAL", "TIMING_CAST", "PROJECTILE", "VOLLEY", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "SLOW"],
 
-    E: ["GLOBAL", "SEPARATOR", "TIMING_CAST", "PROJECTILE", "ZONE", "RECHARGE", "SEPARATOR", "OVERHEAD_VISION"],
+    E: ["GLOBAL", "SEPARATOR", "TIMING_CAST", "PROJECTILE", "ZONE", "RECHARGE", "SEPARATOR_NEWLINE", "SEPARATOR", "AIR_VISION", "BUSH_SIGHT", "REVEALED"],
 
     R: { phases: [
       { label: { ko: "R 투사체", en: "R Projectile" }, tags: ["GLOBAL", "SEPARATOR", "TIMING_CAST", "PROJECTILE", "STUN"] },
@@ -54,7 +54,7 @@ const ashe: ChampData = {
 
           "W는 여러 발의 화살을 부채꼴로 발사. \n [[DMG_PHYSICAL]]와 P의 [[SLOW]]. \n 화살의 데미지는 한 대상당 한 번. \n \n",
 
-          "E는 [[GLOBAL]] 사거리로 [[OVERHEAD_VISION]]을 가진 매를 발사. \n \n",
+          "E는 [[GLOBAL]] 사거리. \n [[AIR_VISION]], [[BUSH_SIGHT]]를 가진 매를 발사. \n \n",
 
           "R은 [[GLOBAL]] 사거리 화살 발사. \n 적중한 대상은 [[STUN]]. \n [[DETONATE]]하여 [[AOE]] [[DMG_MAGIC]], [[SLOW]]. \n 화살이 이동한 거리에 따라 [[STUN]](최대 3초)."
 
@@ -68,7 +68,7 @@ const ashe: ChampData = {
 
           "W fires multiple arrows in a cone. \n Deals [[DMG_PHYSICAL]] and applies P's [[SLOW]]. \n Each target only takes damage from one arrow. \n \n",
 
-          "E fires a hawk with [[GLOBAL]]-range [[OVERHEAD_VISION]]. \n \n",
+          "E has [[GLOBAL]] range. \n Fires a hawk with [[AIR_VISION]] and [[BUSH_SIGHT]]. \n \n",
 
           "R fires an arrow at [[GLOBAL]] range. \n The target hit is [[STUN]]ned. \n It then [[DETONATE]]s for [[AOE]] [[DMG_MAGIC]] and [[SLOW]]. \n [[STUN]] duration scales with the arrow's travel distance (up to 3 seconds).",
         ]
@@ -116,8 +116,8 @@ const ashe: ChampData = {
       en: "Ashe fires 7/8/9/10/11 arrows in a cone, dealing 60/95/130/165/200 (+100% bonus [[AD_SCALE]]) [[DMG_PHYSICAL]] to enemies hit (each target only takes damage from the first arrow that hits them). \n Enemy champions hit are immediately affected by the passive's crit-empowered [[SLOW]] (40~60%). \n \n 18/14.5/11/7.5/4 second [[COOLDOWN]].",
     },
     E: {
-      ko: "애쉬가 100유닛 이동할 때마다 0.5초씩 주변 [[VISION]]를 밝히는 매를 [[GLOBAL]] 사거리로 발사 한다. \n 도착 지점에는 5초간 [[OVERHEAD_VISION]]을 남긴다. \n \n 최대 2회 [[RECHARGE]]되며, 충전당 90/80/70/60/50초가 걸린다.",
-      en: "Ashe fires a hawk with [[GLOBAL]] range that lights up [[VISION]] around itself for 0.5 seconds for every 100 units it travels. \n It leaves [[OVERHEAD_VISION]] at its landing point for 5 seconds. \n \n [[RECHARGE]]s up to 2 charges, each taking 90/80/70/60/50 seconds.",
+      ko: "애쉬가 100유닛 이동할 때마다 0.5초씩 주변 [[VISION]]를 밝히는 매를 [[GLOBAL]] 사거리로 발사 한다. \n 도착 지점에는 5초간 [[AIR_VISION]]을 남긴다. \n \n 최대 2회 [[RECHARGE]]되며, 충전당 90/80/70/60/50초가 걸린다.",
+      en: "Ashe fires a hawk with [[GLOBAL]] range that lights up [[VISION]] around itself for 0.5 seconds for every 100 units it travels. \n It leaves [[AIR_VISION]] at its landing point for 5 seconds. \n \n [[RECHARGE]]s up to 2 charges, each taking 90/80/70/60/50 seconds.",
     },
     R: {
       ko: "애쉬가 [[GLOBAL]] 사거리로 얼음 화살을 발사해 첫 번째로 맞은 챔피언에게 200/400/600(+120% [[AP_SCALE]])의 [[DMG_MAGIC]]를 입히고 [[STUN]]시킨다(이동 거리가 길수록 [[STUN]] 지속시간 증가, 최대 3.5초). \n \n 적중 지점 주변 적에게도 같은 피해를 입히고 서리([[SLOW]])를 적용하며, 적중한 대상 주변에 1초간 [[VISION]]을 밝힌다. \n \n {{ultCooldown}}초의 [[COOLDOWN]].",
