@@ -32,7 +32,9 @@ const champCache = new Map<string, Promise<ChampSpells>>();
 
 export async function getLatestDDragonVersion(): Promise<string> {
   if (versionCache.v) return versionCache.v;
-  const res = await fetch("https://ddragon.leagueoflegends.com/api/versions.json", { next: { revalidate: 86400 } });
+  // 서버 캐시(next.revalidate, 브라우저 fetch는 무시): 버전 목록은 URL이 고정이라 새 패치를 놓치지 않게 1시간,
+  // 챔피언 JSON은 URL에 패치 버전이 들어가 내용이 바뀌지 않으므로 1일(아래 getChampSpells).
+  const res = await fetch("https://ddragon.leagueoflegends.com/api/versions.json", { next: { revalidate: 3600 } });
   const versions: string[] = await res.json();
   versionCache.v = versions[0]; // 최신
   return versionCache.v!;
@@ -49,7 +51,7 @@ export async function getChampSpells(
   const p = (async () => {
     const v = await getLatestDDragonVersion();
     const url = `https://ddragon.leagueoflegends.com/cdn/${v}/data/${locale}/champion/${champId}.json`;
-    // next.revalidate는 서버(챔피언 페이지 SSR)에서만 의미가 있고 브라우저 fetch는 무시한다.
+    // URL에 패치 버전이 포함돼 같은 URL의 내용은 바뀌지 않으므로 서버 캐시 1일(브라우저 fetch는 무시).
     const res = await fetch(url, { next: { revalidate: 86400 } });
     if (!res.ok) throw new Error(`DDragon fetch failed: ${res.status}`);
     const json = await res.json();
