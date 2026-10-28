@@ -340,6 +340,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   SELF_BONUS_HP_SCALE:     "lime",
   SELF_MISSING_HP_SCALE:   "lime",
   TARGET_MAXHP_SCALE:      "indigo",
+  TARGET_BONUS_HP_SCALE:   "indigo",
   TARGET_CURRENT_HP_SCALE: "indigo",
   TARGET_MISSING_HP_SCALE: "indigo",
   AD_SCALE: "red",

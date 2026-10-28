@@ -30,6 +30,7 @@ export type GimmickTagId =
   | "SELF_BONUS_HP_SCALE"
   | "SELF_MISSING_HP_SCALE"
   | "TARGET_MAXHP_SCALE"
+  | "TARGET_BONUS_HP_SCALE"
   | "TARGET_CURRENT_HP_SCALE"
   | "TARGET_MISSING_HP_SCALE"
   | "AD_SCALE"
@@ -313,6 +314,7 @@ export const GIMMICK_TAG_LABEL: Record<GimmickTagId, { ko: string; en: string }>
   SELF_BONUS_HP_SCALE:     { ko: "추가 체력", en: "Bonus HP" },
   SELF_MISSING_HP_SCALE:   { ko: "잃은 체력", en: "Missing HP" },
   TARGET_MAXHP_SCALE:      { ko: "대상의 최대 체력", en: "Target's Max HP" },
+  TARGET_BONUS_HP_SCALE:   { ko: "대상의 추가 체력", en: "Target's Bonus HP" },
   TARGET_CURRENT_HP_SCALE: { ko: "대상의 현재 체력", en: "Target's Current HP" },
   TARGET_MISSING_HP_SCALE: { ko: "대상의 잃은 체력", en: "Target's Missing HP" },
   AD_SCALE: { ko: "공격력", en: "Attack Damage" },
@@ -474,6 +476,7 @@ export const GIMMICK_TAG_DESC: Partial<Record<GimmickTagId, { ko: string; en: st
   SELF_BONUS_HP_SCALE: { ko: "아이템, 버프 등으로 늘어난 체력에 비례.", en: "Scales with bonus health from items, buffs, etc." },
   SELF_MISSING_HP_SCALE:   { ko: "자신의 잃은 체력에 비례", en: "Scales with own missing Health" },
   TARGET_MAXHP_SCALE:      { ko: "대상의 최대 체력에 비례", en: "Scales with the target's max Health" },
+  TARGET_BONUS_HP_SCALE:   { ko: "대상이 아이템, 버프 등으로 늘어난 체력에 비례.", en: "Scales with the target's bonus health from items, buffs, etc." },
   TARGET_CURRENT_HP_SCALE: { ko: "대상의 현재 남은 체력에 비례", en: "Scales with the target's current remaining Health" },
   TARGET_MISSING_HP_SCALE: { ko: "대상이 잃은 체력에 비례", en: "Scales with the target's missing Health" },
   AD_SCALE: { ko: "공격력에 비례한다", en: "Scales with Attack Damage" },
