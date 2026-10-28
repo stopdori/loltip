@@ -10,7 +10,9 @@ import type { GimmickSkillData } from "../data/interactions/types";
 import type { ChampClientData } from "../data/champClientData";
 import { CHAMP_FORMS, hasForms } from "../data/interactions/forms";
 import { useChampSpells } from "@/app/lib/useChampSpells";
-import { stripHtml, resolvePlaceholders, applyTextOverrides, toDdragonId } from "@/app/lib/ddragon";
+import { toDdragonId } from "@/app/lib/ddragon";
+import { buildSkillTipText } from "@/app/lib/skillTipText";
+import type { TokenSegment } from "../data/interactions/parseTagTokens";
 import { toneOfTag } from "../data/interactions/tagTone";
 import { STAT_ICONS } from "../data/interactions/statIcons";
 import { CHAMPIONS } from "../data/champions";
@@ -121,7 +123,8 @@ function SkillLabelWithTip({
   labelOverride,
 }: {
   labelText: string;
-  tip?: string;
+  /** 말풍선 문장. 문자열(원문, [[TAG]] 포함 — champ-embed 경로)이거나 서버가 미리 파싱한 조각(챔피언 페이지). */
+  tip?: string | TokenSegment[];
   champId: string | null;
   skillKey: SkillKey;
   /** undefined면 직접 페이지(실제 vw를 신뢰 가능) → vw 기반 폭 계산.
@@ -187,7 +190,9 @@ function SkillLabelWithTip({
   const measure = () => {
     const a = anchorRef.current?.getBoundingClientRect();
     const t = tipRef.current?.getBoundingClientRect();
-    if (!a || !t) return;
+    // 말풍선은 항상 마운트돼 있고 닫혀 있을 땐 display:none이라 크기가 0 — 그때는 측정하지 않는다
+    // (열기 직후 rAF가 닫힌 뒤에 도는 경우 엉뚱한 pos가 남지 않게).
+    if (!a || !t || t.width === 0) return;
 
     const vw = window.innerWidth;
     const vh = window.innerHeight;
@@ -504,10 +509,11 @@ function SkillLabelWithTip({
     >
       {iconVisual}
 
-      {visible && (
+      {/* 말풍선은 항상 렌더링(SSR HTML에 문장이 들어가게)하고, 호버/고정 전에는 hidden(display:none)으로만
+          숨긴다. 레이어 표식(data-tooltip-layer)은 열려 있을 때만 단다. */}
         <span
-          data-tooltip-layer="skill"
-          className={`${isPinned ? "pointer-events-auto" : "pointer-events-none"} fixed z-[9999]`}
+          data-tooltip-layer={visible ? "skill" : undefined}
+          className={`${visible ? "" : "hidden "}${isPinned ? "pointer-events-auto" : "pointer-events-none"} fixed z-[9999]`}
           style={{
             left: pos?.left ?? 0,
             top: pos?.top ?? 0,
@@ -547,7 +553,7 @@ function SkillLabelWithTip({
               )}
             </div>
 
-            <TokenText text={tip} lang={lang} />
+            {typeof tip === "string" ? <TokenText text={tip} lang={lang} /> : <TokenText segments={tip} lang={lang} />}
           </span>
 
           {(!pos || pos.placement === "above") && (
@@ -558,7 +564,6 @@ function SkillLabelWithTip({
             />
           )}
         </span>
-      )}
     </span>
   );
 }
@@ -690,7 +695,8 @@ export default function SkillTagsPanel({
 
   const champ = champId ? champData : null;
 
-const renderNoteSection = (items: string[], title: string) => {
+// items: 원문 문자열(champ-embed 경로) 또는 서버가 미리 파싱한 줄(챔피언 페이지, champ.noteSegments)
+const renderNoteSection = (items: (string | TokenSegment[])[], title: string) => {
   if (items.length === 0) return null;
   return (
     <div className="mt-3 rounded-xl bg-slate-800/40 ring-1 ring-white/10 p-3">
@@ -699,7 +705,7 @@ const renderNoteSection = (items: string[], title: string) => {
         {items.map((n, i) => (
           <li key={i} className="flex gap-2 whitespace-pre-line">
             <span className="text-slate-300">•</span>
-            <span><TokenText text={n} lang={lang} /></span>
+            <span>{typeof n === "string" ? <TokenText text={n} lang={lang} /> : <TokenText segments={n} lang={lang} />}</span>
           </li>
         ))}
       </ul>
@@ -709,9 +715,14 @@ const renderNoteSection = (items: string[], title: string) => {
 
 
   // ✅ Data Dragon (스킬 설명) 준비
+  // 챔피언 페이지는 서버가 말풍선 문장(tipSegments)을 다 만들어 넘기므로 브라우저 fetch가 필요 없다.
+  // 서버가 못 만든 스킬이 하나라도 있거나(DDragon 실패 등) 원문 데이터만 받는 경로(champ-embed)면 기존처럼 fetch.
   const locale = lang === "ko" ? "ko_KR" : "en_US";
   const ddragonId = champId ? toDdragonId(champId) : null;
-  const ddragon = useChampSpells(ddragonId, locale);
+  const prebuiltTips = champ?.tipSegments?.[formIndex];
+  const needsClientDdragon =
+    !champ?.tipSegments || (["P", "Q", "W", "E", "R"] as const).some((k) => !prebuiltTips?.[k]);
+  const ddragon = useChampSpells(needsClientDdragon ? ddragonId : null, locale);
   const loadingText = locale === "ko_KR" ? "불러오는 중..." : "Loading...";
 
   const label: Record<SkillKey, string> = {
@@ -722,72 +733,16 @@ const renderNoteSection = (items: string[], title: string) => {
     R: "R",
   };
 
-    /**
-     * comboLabel: 흐웨이처럼 폼별로 슬롯이 가리키는 실제 서브스킬이 다른
-     * 챔피언에서, 그 슬롯의 콤보 표기(예: "QE", forms.ts의 skillLabels)를
-     * 넘기면 하드코딩 문장의 헤더를 DDragon 실제 스킬명 대신 그 콤보
-     * 표기로 대체한다 — Q폼에서 E슬롯(QE)에 "Q - Devastating Fire"라는
-     * 엉뚱한 헤더가 붙는 걸 막기 위함. 콤보 표기가 없는 슬롯(P/R처럼
-     * 폼과 무관한 스킬)은 기존처럼 DDragon 실제 이름을 헤더로 쓴다.
-     */
-    const getSpellTip = (k: SkillKey, comboLabel?: string) => {
+    // 말풍선 문장: 서버가 미리 만든 조각(챔피언 페이지 tipSegments)이 있으면 그대로 쓰고,
+    // 없으면 원문 데이터 + DDragon으로 브라우저에서 조립한다(champ-embed 경로, 규칙은 app/lib/skillTipText.ts).
+    const getSpellTip = (k: SkillKey, comboLabel?: string): string | TokenSegment[] | undefined => {
     if (!ddragonId) return undefined;
     if (k !== "P" && k !== "Q" && k !== "W" && k !== "E" && k !== "R") return undefined;
-
-    // 챔피언 파일에 하드코딩된 문장이 있으면 최우선(DDragon 로딩을 기다릴
-    // 필요 없이 즉시 표시). 없으면 아래 기존 DDragon 실시간 로직으로 폴백.
-    // 흐웨이처럼 skillTooltip이 폼별(base/alt/alt2)로 나뉘어 있으면 현재
-    // 선택된 폼 값을 먼저 찾고, 없으면(또는 애초에 폼 구조가 아니면 —
-    // 아펠리오스처럼 플랫하게 쓰는 경우) 플랫 키로 폴백한다(champ.skills
-    // 등 다른 필드에서 이미 쓰는 `source?.[form]?.[k] ?? source?.[k]`와
-    // 동일한 패턴).
-    const hardcoded = hasForms(champId ?? "")
-      ? (champ?.skillTooltip as any)?.[form]?.[k]?.[lang] ?? (champ?.skillTooltip as any)?.[k]?.[lang]
-      : (champ?.skillTooltip as any)?.[k]?.[lang];
-
-    // R 문장 안의 궁극기 쿨타임을 champ.ultCooldown(레벨 6/11/16) 숫자로
-    // 문자 그대로 중복 입력하지 않기 위한 {{ultCooldown}} 플레이스홀더.
-    // ultCooldown 필드가 유일한 원본이고, 문장은 언제 다듬어도 숫자가
-    // 어긋나지 않는다("140/120/100" 형식으로 조립해서 치환).
-    const resolveSkillTooltipPlaceholders = (text: string) => {
-      if (!text.includes("{{")) return text;
-      const uc = champ?.ultCooldown;
-      const ultCooldownStr = uc ? ([6, 11, 16] as const).map((lv) => uc[lv] ?? "?").join("/") : "";
-      return text.replace(/\{\{\s*ultCooldown\s*\}\}/g, ultCooldownStr);
-    };
-
-    // P(패시브)
-    if (k === "P") {
-      const p = ddragon?.passive;
-      if (hardcoded) {
-        const header = comboLabel ?? (p ? `P - ${applyTextOverrides(p.name)}` : "P");
-        return `${header}\n${resolveSkillTooltipPlaceholders(hardcoded)}`;
-      }
-      if (!p) return loadingText;
-
-      const body = stripHtml(resolvePlaceholders(p.description, {}, champ?.placeholderOverrides?.P))
-        .replace(/\s+\n/g, "\n")
-        .replace(/[ \t]{2,}/g, " ")
-        .trim();
-
-      return `P - ${applyTextOverrides(p.name)}\n${body}`;
-    }
-
-    // Q/W/E/R
-    const idx = k === "Q" ? 0 : k === "W" ? 1 : k === "E" ? 2 : 3;
-    const s = ddragon?.spells?.[idx];
-    if (hardcoded) {
-      const header = comboLabel ?? (s ? `${k} - ${applyTextOverrides(s.name)}` : k);
-      return `${header}\n${resolveSkillTooltipPlaceholders(hardcoded)}`;
-    }
-    if (!s) return loadingText;
-
-    const body = stripHtml(resolvePlaceholders(s.tooltip || s.description, s, champ?.placeholderOverrides?.[k]))
-      .replace(/\s+\n/g, "\n")
-      .replace(/[ \t]{2,}/g, " ")
-      .trim();
-
-    return `${k} - ${applyTextOverrides(s.name)}\n${body}`;
+    const prebuilt = prebuiltTips?.[k];
+    if (prebuilt) return prebuilt;
+    return (
+      buildSkillTipText({ k, form, formed: hasForms(champId ?? ""), comboLabel, lang, champ, ddragon }) ?? loadingText
+    );
   };
 
 
@@ -1083,7 +1038,28 @@ const renderNoteSection = (items: string[], title: string) => {
 
 // 노트 콘텐츠 계산
 let noteContent: ReactNode = null;
-if (champ?.notes) {
+const pn = champ?.noteSegments;
+if (pn) {
+  // 챔피언 페이지: 서버가 현재 언어로 미리 파싱한 노트(아래 원문 경로와 같은 섹션 구성)
+  if (pn.flat) {
+    if (mode === "skill") noteContent = renderNoteSection(pn.flat, lang === "ko" ? "노트" : "Notes");
+  } else if (mode === "skill") {
+    const n3 = pn.skill?.note3 ?? [];
+    const n1 = pn.skill?.note1 ?? [];
+    const n2 = pn.skill?.note2 ?? [];
+    if (n3.length > 0 || n1.length > 0 || n2.length > 0) {
+      noteContent = (
+        <>
+          {renderNoteSection(n3, lang === "ko" ? "대충 한타 운용법" : "Rough Teamfight Guide")}
+          {renderNoteSection(n1, lang === "ko" ? "스킬 요약" : "Overview")}
+          {renderNoteSection(n2, lang === "ko" ? "TMI" : "TMI")}
+        </>
+      );
+    }
+  } else if (mode === "gimmick") {
+    noteContent = renderNoteSection(pn.gimmick ?? [], lang === "ko" ? "노트" : "Notes");
+  }
+} else if (champ?.notes) {
   const n = champ.notes;
   if ('ko' in n) {
     if (mode === "skill") {

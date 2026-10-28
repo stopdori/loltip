@@ -7,12 +7,26 @@
 // 화면에 안 나오므로 제외(시야 탭을 켤 때 여기 PICK_KEYS에도 "vision"을 추가할 것).
 import "server-only";
 import { CHAMPS } from "./champs/_index";
-import type { ChampData } from "./interactions/types";
+import type { ChampData, SkillKey } from "./interactions/types";
+import type { TokenSegment } from "./interactions/parseTagTokens";
+
+// 챔피언 페이지용으로 서버가 현재 언어만 미리 파싱한 노트(app/data/champPageClientData.ts).
+// 줄 하나 = TokenSegment[]. flat은 notes가 { ko, en } 한 덩어리인 옛 형식.
+export type PrebuiltNotes = {
+  flat?: TokenSegment[][];
+  skill?: { note3: TokenSegment[][]; note1: TokenSegment[][]; note2: TokenSegment[][] };
+  gimmick?: TokenSegment[][];
+};
 
 export type ChampClientData = Pick<
   ChampData,
   "skills" | "gimmick" | "notes" | "ultCooldown" | "placeholderOverrides" | "skillTooltip"
->;
+> & {
+  /** 챔피언 페이지 전용: 서버가 만든 스킬 말풍선 문장(폼 탭 인덱스별). 있으면 skillTooltip 대신 쓴다. */
+  tipSegments?: Partial<Record<SkillKey, TokenSegment[]>>[];
+  /** 챔피언 페이지 전용: 서버가 만든 노트. 있으면 notes 대신 쓴다. */
+  noteSegments?: PrebuiltNotes;
+};
 
 const PICK_KEYS = ["skills", "gimmick", "notes", "ultCooldown", "placeholderOverrides", "skillTooltip"] as const;
 

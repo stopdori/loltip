@@ -1,4 +1,4 @@
-// SSR(구글이 읽는 hidden div, JSON-LD FAQPage 답변 등)에서 [[TAG]] 토큰이 섞인 문장을
+// 텍스트만 쓰는 곳(현재는 상호작용 페이지 meta description — app/utils/matchupDescription.ts)에서 [[TAG]] 토큰이 섞인 문장을
 // "사람이 읽는 순수 텍스트"로 바꾸는 서버 세이프 공용 헬퍼. (서버 전용 아님 — "use client" 없음)
 // champ/[id]/page.tsx와 matchup/[pair]/page.tsx가 각자 복제해서 쓰던 stripTags를 합친 것이라,
 // 앞으로 SSR 텍스트 처리 규칙은 이 파일 한 곳에서만 바꾼다.

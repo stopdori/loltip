@@ -62,3 +62,27 @@ export function parseTagTokens(text: string, lang: "ko" | "en"): TagTokenSegment
     return { text: part, raw };
   });
 }
+
+/**
+ * TokenText가 그리는 데 필요한 정보만 남긴 조각. 서버에서 미리 만들어 클라이언트 컴포넌트에
+ * 넘기면 원문 [[TAG]] 토큰과 다른 언어 라벨이 RSC 페이로드에 실리지 않는다(챔피언 페이지).
+ * - tagId: 태그로 해석된 조각(text는 이미 현재 언어 라벨)
+ * - clipUrl: [[CLIP:url]] 조각(text는 비움)
+ * - 둘 다 없으면 일반 텍스트(사전에 없는 오타 토큰은 화면과 같게 브라켓 포함 원문 그대로)
+ */
+export type TokenSegment = {
+  text: string;
+  tagId?: TagId | GimmickTagId;
+  clipUrl?: string;
+};
+
+export function toTokenSegments(text: string, lang: "ko" | "en"): TokenSegment[] {
+  return parseTagTokens(text, lang)
+    .filter((seg) => seg.text !== "" || seg.raw)
+    .map((seg): TokenSegment => {
+      const clipUrl = seg.raw?.match(/^CLIP:(.+)$/)?.[1]?.trim();
+      if (clipUrl) return { text: "", clipUrl };
+      if (seg.tagId && seg.tone) return { text: seg.text, tagId: seg.tagId };
+      return { text: seg.text };
+    });
+}

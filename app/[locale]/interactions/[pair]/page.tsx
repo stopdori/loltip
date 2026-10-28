@@ -6,7 +6,6 @@ import { CHAMPIONS } from "@/app/data/champions";
 import MatchupChampClient from "./MatchupChampClient";
 import { getMatchupSummary, toMatchupClientResult } from "@/app/data/matchups/_index";
 import { isMatchupIndexable } from "@/app/data/matchups/_types";
-import { stripTagTokens } from "@/app/utils/stripTagTokens";
 import { buildMatchupDescription } from "@/app/utils/matchupDescription";
 import MatchupChampLinks from "@/app/components/MatchupChampLinks";
 
@@ -112,26 +111,7 @@ export default async function Page({ params }: Props) {
   // 매치업 데이터 로딩
   const matchup = await getMatchupSummary(a, b);
 
-  // 판정 세부사항 수집 (JSON-LD용 — 화면 판정 박스는 MatchupSummaryBox가 SSR로 렌더링)
-  const highlights: { champId: string; champName: string; items: string[] }[] = [];
-  if (matchup?.status === "ok") {
-    for (const champId of [forcedMe, forcedEnemy]) {
-      const items = (matchup.data.highlightsByChamp?.[champId]?.[lang] ?? []).filter((s) => s !== "");
-      if (items.length > 0) {
-        const info = CHAMPIONS.find((c) => c.id === champId);
-        const champName = (lang === "ko" ? info?.ko : info?.en) ?? champId;
-        highlights.push({ champId, champName, items });
-      }
-    }
-
-    // 공통 항목: 좌우 배치와 무관하게 항상 맨 아래 (MatchupSummaryBox.tsx와 동일한 순서)
-    const commonItems = (matchup.data.common?.[lang] ?? []).filter((s) => s !== "");
-    if (commonItems.length > 0) {
-      highlights.push({ champId: "common", champName: lang === "ko" ? "공통" : "Common", items: commonItems });
-    }
-  }
-
-  // JSON-LD BreadcrumbList
+  // JSON-LD BreadcrumbList (판정 문장은 화면 판정 박스 — MatchupSummaryBox가 SSR로 렌더링)
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -147,36 +127,12 @@ export default async function Page({ params }: Props) {
     ],
   };
 
-  // JSON-LD FAQPage (판정 세부사항)
-  const faqEntities = highlights.flatMap(({ champName, items }) =>
-    items.flatMap((text, i) => {
-      const stripped = stripTagTokens(text, lang);
-      if (!stripped) return [];
-      return [{
-        "@type": "Question",
-        name: lang === "ko" ? `${champName} 판정 ${i + 1}번` : `${champName} Interaction ${i + 1}`,
-        acceptedAnswer: { "@type": "Answer", text: stripped },
-      }];
-    })
-  );
-
-  const faqJsonLd =
-    faqEntities.length > 0
-      ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqEntities }
-      : null;
-
   return (
     <Fragment>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
 
       <MatchupChampClient
         key={canonical}

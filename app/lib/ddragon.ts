@@ -32,7 +32,7 @@ const champCache = new Map<string, Promise<ChampSpells>>();
 
 export async function getLatestDDragonVersion(): Promise<string> {
   if (versionCache.v) return versionCache.v;
-  const res = await fetch("https://ddragon.leagueoflegends.com/api/versions.json");
+  const res = await fetch("https://ddragon.leagueoflegends.com/api/versions.json", { next: { revalidate: 86400 } });
   const versions: string[] = await res.json();
   versionCache.v = versions[0]; // 최신
   return versionCache.v!;
@@ -49,7 +49,8 @@ export async function getChampSpells(
   const p = (async () => {
     const v = await getLatestDDragonVersion();
     const url = `https://ddragon.leagueoflegends.com/cdn/${v}/data/${locale}/champion/${champId}.json`;
-    const res = await fetch(url);
+    // next.revalidate는 서버(챔피언 페이지 SSR)에서만 의미가 있고 브라우저 fetch는 무시한다.
+    const res = await fetch(url, { next: { revalidate: 86400 } });
     if (!res.ok) throw new Error(`DDragon fetch failed: ${res.status}`);
     const json = await res.json();
 
@@ -69,6 +70,8 @@ export async function getChampSpells(
   })();
 
   champCache.set(key, p);
+  // 실패한 요청은 캐시에서 지워 다음 호출 때 다시 시도한다(서버 인스턴스에 실패가 영구히 남지 않게).
+  p.catch(() => champCache.delete(key));
   return p;
 }
 
