@@ -49,6 +49,10 @@ function getPinnedSkillTipServerSnapshot() {
   return false;
 }
 
+// 바깥 "탭" 판정 기준 — 이보다 많이 움직였거나 오래 누른 제스처(스크롤 등)는 말풍선을 닫지 않는다.
+const OUTSIDE_TAP_SLOP_PX = 10;
+const OUTSIDE_TAP_MAX_MS = 500;
+
 // "바깥 탭/클릭"인지 판정하는 공용 헬퍼. 태그 알약 말풍선(TagPill)은
 // createPortal로 document.body에 그려지기 때문에 더 이상 스킬 말풍선의
 // anchorRef 자손이 아니다 — data-tooltip-layer 속성이 붙은 말풍선 레이어
@@ -250,54 +254,29 @@ function SkillLabelWithTip({
     else tipLog(`${dbg} unpin skipped, not owner (${reason})`);
   };
 
-  // 고정 순간의 말풍선 가시성으로 닫힘 규칙을 한 번만 정하고 관찰을 시작한다.
+  // 고정 중 스크롤 닫힘 관찰자: 아이콘이 화면(상단 고정 바 아래 영역) 밖으로 완전히 나가면 닫는다.
+  // 예전엔 고정 순간 말풍선이 다 보였으면 말풍선이 조금만 잘려도 닫았는데, 폰에서 스크롤하자마자
+  // 닫혀 버려서 아이콘 기준으로 통일했다. 스크롤 중 위치는 아래 scroll effect가 아이콘에 붙여 따라가게 한다.
   const setupPinCloseObserver = () => {
     pinObserverRef.current?.disconnect();
     pinObserverRef.current = null;
     const anchorEl = anchorRef.current;
-    const tipEl = tipRef.current;
     if (!anchorEl) return;
 
     const headerH = getStickyTopBarHeight();
     const rootMargin = headerH > 0 ? `-${headerH}px 0px 0px 0px` : "0px";
 
-    let fullyVisible = false;
-    if (tipEl) {
-      const r = tipEl.getBoundingClientRect();
-      fullyVisible =
-        r.top >= headerH && r.left >= 0 && r.right <= window.innerWidth && r.bottom <= window.innerHeight;
-    }
-
-    // 전부 보였으면 말풍선을, 처음부터 잘려 있었으면 아이콘을 관찰한다.
-    // fullyVisible 모드는 threshold 1.0이 핵심이지만, 서브픽셀 위치 때문에
-    // 비율이 0.9999 같은 값으로 한 번 내려간 뒤 더 이상 콜백이 안 오는 경우를
-    // 막으려고 1 아래 구간에도 촘촘히 threshold를 두고, 실제 잘림 여부는
-    // rootBounds와의 기하 비교(1px 허용)로 판정한다.
-    const target = fullyVisible && tipEl ? tipEl : anchorEl;
-    const threshold = fullyVisible ? [0, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 1] : 0;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
-        let shouldClose: boolean;
-        if (fullyVisible) {
-          const r = entry.boundingClientRect;
-          const root = entry.rootBounds;
-          shouldClose = root
-            ? r.top < root.top - 1 || r.bottom > root.bottom + 1 || r.left < root.left - 1 || r.right > root.right + 1
-            : entry.intersectionRatio < 1;
-        } else {
-          shouldClose = !entry.isIntersecting;
-        }
-        tipLog(
-          `${dbg} pin-IO ${fullyVisible ? "tip" : "icon"} ratio=${entry.intersectionRatio.toFixed(3)} close=${shouldClose}`
-        );
+        const shouldClose = !entry.isIntersecting;
+        tipLog(`${dbg} pin-IO icon ratio=${entry.intersectionRatio.toFixed(3)} close=${shouldClose}`);
         if (shouldClose) unpinIfMine("intersection");
       },
-      { threshold, rootMargin }
+      { threshold: 0, rootMargin }
     );
-    observer.observe(target);
+    observer.observe(anchorEl);
     pinObserverRef.current = observer;
-    tipLog(`${dbg} pin-IO setup mode=${fullyVisible ? "tip@1.0" : "icon@0"} headerH=${headerH}`);
+    tipLog(`${dbg} pin-IO setup mode=icon@0 headerH=${headerH}`);
   };
 
   // 고정 시작. 호버 상태(open)는 건드리지 않는다 — 터치에선 호버가 없고,
@@ -339,18 +318,43 @@ function SkillLabelWithTip({
     else pin("icon-click-pin");
   };
 
-  // 바깥 판정은 pointerdown(capture) 하나로 통합 — 마우스/터치/펜 공통이고,
-  // 모바일 합성 mouse 이벤트(mousedown)에 의존하지 않는다. 말풍선 층 안쪽이거나
-  // 스킬 아이콘이면 바깥이 아니다. 고정 해제는 "지금 고정 주인이 자기일 때만".
+  // 바깥 판정은 "바깥 탭"일 때만 — pointerdown(capture)에서 시작 지점을 기억하고, pointerup에서
+  // 이동 거리 OUTSIDE_TAP_SLOP_PX 이하·누른 시간 OUTSIDE_TAP_MAX_MS 이하일 때만 닫는다.
+  // 예전엔 pointerdown 즉시 닫아서, 폰에서 말풍선 근처를 짚고 스크롤만 해도 닫혔다.
+  // 스크롤이 시작되면 브라우저가 pointercancel을 보내므로 그때 시작 기록을 버린다.
+  // 안쪽 판정(말풍선 층 안쪽이거나 스킬 아이콘이면 바깥이 아님)은 누른 지점 기준.
+  // 마우스/터치/펜 공통이고, 고정 해제는 "지금 고정 주인이 자기일 때만".
   useEffect(() => {
     if (!open && !isPinned) return;
+    let start: { id: number; x: number; y: number; t: number } | null = null;
     const onPointerDown = (e: PointerEvent) => {
-      if (isInsideTooltipSystem(e.target, anchorRef.current)) return;
-      if (open) onLeave("outside-pointerdown");
-      if (isPinned) unpinIfMine("outside-pointerdown");
+      start = isInsideTooltipSystem(e.target, anchorRef.current)
+        ? null
+        : { id: e.pointerId, x: e.clientX, y: e.clientY, t: e.timeStamp };
+    };
+    const onPointerUp = (e: PointerEvent) => {
+      const s = start;
+      start = null;
+      if (!s || s.id !== e.pointerId) return;
+      const moved = Math.hypot(e.clientX - s.x, e.clientY - s.y);
+      if (moved > OUTSIDE_TAP_SLOP_PX || e.timeStamp - s.t > OUTSIDE_TAP_MAX_MS) {
+        tipLog(`${dbg} outside gesture ignored (moved=${moved.toFixed(0)}px)`);
+        return;
+      }
+      if (open) onLeave("outside-tap");
+      if (isPinned) unpinIfMine("outside-tap");
+    };
+    const onPointerCancel = () => {
+      start = null;
     };
     document.addEventListener("pointerdown", onPointerDown, true);
-    return () => document.removeEventListener("pointerdown", onPointerDown, true);
+    document.addEventListener("pointerup", onPointerUp, true);
+    document.addEventListener("pointercancel", onPointerCancel, true);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown, true);
+      document.removeEventListener("pointerup", onPointerUp, true);
+      document.removeEventListener("pointercancel", onPointerCancel, true);
+    };
   }, [open, isPinned]);
 
   // Esc: 태그 말풍선이 열려 있으면 이번 Esc는 양보(TagPill 자체 리스너가 그것만
@@ -386,9 +390,15 @@ function SkillLabelWithTip({
     };
     window.addEventListener("scroll", schedule, { capture: true, passive: true });
     window.addEventListener("resize", schedule, { passive: true });
+    // 모바일: 주소창이 접히거나 펴지며 보이는 영역만 바뀌는 경우에도 아이콘에 붙어 따라가게 한다.
+    const vv = window.visualViewport;
+    vv?.addEventListener("scroll", schedule, { passive: true });
+    vv?.addEventListener("resize", schedule, { passive: true });
     return () => {
       window.removeEventListener("scroll", schedule, { capture: true });
       window.removeEventListener("resize", schedule);
+      vv?.removeEventListener("scroll", schedule);
+      vv?.removeEventListener("resize", schedule);
       if (rafId != null) cancelAnimationFrame(rafId);
     };
     // measure는 매 렌더 새로 만들어지지만 ref만 읽으므로 최신 값 보장됨.
