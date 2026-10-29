@@ -11,7 +11,7 @@ const belveth: ChampData = {
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["DROP", "SEPARATOR", "PASSIVE_BONUS", "MARK"] },
       { label: { ko: "R 액티브", en: "R Active"  }, tags: ["SLOW", ] },
       { label: { ko: "R 본모습", en: "R True Form"  }, tags: ["BUFF_FORM", "MAX_HP_UP", "AS_UP", "MS_UP", "SEPARATOR_NEWLINE", "SEPARATOR", "Q", "DASH", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "HEAL"] },
-      { label: { ko: "R 공허 빨판상어 소환", en: "Summon Void Remora" }, tags: ["ST_CONDITIONAL", "SUMMON", "SEPARATOR", "ALLY_TP_OK"] },
+      { label: { ko: "R 공허 빨판상어 소환", en: "Summon Void Remora" }, tags: ["ST_CONDITIONAL", "SUMMON", "SEPARATOR", "ALLY_TP"] },
     ] },
   },
 
@@ -39,7 +39,7 @@ const belveth: ChampData = {
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["DROP", "SEPARATOR", "PASSIVE_BONUS", "MARK", "DMG_TRUE"] },
       { label: { ko: "R 액티브", en: "R Active"  }, tags: ["ST_CONDITIONAL", "DMG_TRUE", "TIMING_AFTERCAST", "LOCKED", "AOE", "SLOW", "SEPARATOR", "MOBILITY"] },
       { label: { ko: "R 본모습", en: "R True Form"  }, tags: ["BUFF_FORM", "MAX_HP_UP", "AS_UP", "MS_UP", "SEPARATOR_NEWLINE", "SEPARATOR", "Q", "DASH", "WALL_HOP", "SEPARATOR", "ST_CONDITIONAL", "HEAL"] },
-      { label: { ko: "R 공허 빨판상어 소환", en: "R Summon Void Remora" }, tags: ["ST_CONDITIONAL", "SUMMON", "DMG_PHYSICAL", "SEPARATOR", "ALLY_TP_OK"] },
+      { label: { ko: "R 공허 빨판상어 소환", en: "R Summon Void Remora" }, tags: ["ST_CONDITIONAL", "SUMMON", "DMG_PHYSICAL", "SEPARATOR", "ALLY_TP"] },
     ] },
   },
 

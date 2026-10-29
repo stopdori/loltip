@@ -7,7 +7,7 @@ const teemo: ChampData = {
     Q: ["Q_FLASH", "BLIND"],
     W: ["MS_UP"],
     E: [],
-    R: ["R_FLASH", "SLOW", "ALLY_TP_OK"],
+    R: ["R_FLASH", "SLOW", "ALLY_TP"],
   },
 
   vision: {

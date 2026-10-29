@@ -5,9 +5,9 @@ const shaco: ChampData = {
   skills: {
     P: ["ST_CONDITIONAL"],
     Q: ["Q_FLASH", "INVISIBILITY", "CRIT", "SEPARATOR", "BLINK", "WALL_HOP", "SEPARATOR", "CC_BUFFER"],
-    W: ["W_FLASH", "SUMMON", "ALLY_TP_OK", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
+    W: ["W_FLASH", "SUMMON", "ALLY_TP", "SEPARATOR", "ST_CONDITIONAL", "FEAR"],
     E: ["E_FLASH", "SLOW"],
-    R: ["R_FLASH", "CLONE", "TOWER_DODGE", "BLINK", "SEPARATOR", "ST_CONDITIONAL", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "FEAR", "ALLY_TP_OK"],
+    R: ["R_FLASH", "CLONE", "TOWER_DODGE", "BLINK", "SEPARATOR", "ST_CONDITIONAL", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "FEAR", "ALLY_TP"],
   },
 
   vision: {
@@ -88,7 +88,7 @@ const shaco: ChampData = {
         "W의 상자는 하나만 공격할 때 더 강함.", 
         "E의 [[PROJECTILE]]를 상대 뒤에서 발사했을 때 \n 대상이 [[PROJECTILE]]를 맞기 전에 샤코 방향을 바라보면 \n P의 [[DMG_MAGIC]] 추가 효과 없음.",
         "R의 [[CLONE]]은 컨트롤 우클릭 또는 R [[SKILL_RECAST]]으로 조종가능. \n 최대 조종 범위가 있고 범위를 넘어가면 샤코에게 [[BLINK]].",
-        "R의 [[CLONE]]에는 [[ALLY_TP_OK]] 불가. \n 폭발하고 [[SUMMON]]된 상자에는 [[ALLY_TP_OK]] 가능.",
+        "R의 [[CLONE]]에는 [[ALLY_TP]] 불가. \n 폭발하고 [[SUMMON]]된 상자에는 [[ALLY_TP]] 가능.",
       ],
         en: [
           "Q has two phases: stealth and blink. \n CC applied to Shaco during the stealth phase is still valid, \n but the [[BLINK]] phase triggers and moves him. \n There is no CC resistance during the [[BLINK]] phase. \n If the CC's duration is still remaining after the blink, the CC effect still applies.",
@@ -96,7 +96,7 @@ const shaco: ChampData = {
           "W's box is stronger when it attacks a single target.",
           "If E's [[PROJECTILE]] is fired from behind the target, \n but the target turns to face Shaco before getting hit, \n P's bonus [[DMG_MAGIC]] does not apply.",
           "R's [[CLONE]] can be controlled with Ctrl+right-click or R [[SKILL_RECAST]]. \n There is a max control range, and exceeding it makes the clone [[BLINK]] back to Shaco.",
-          "[[ALLY_TP_OK]] is not possible onto R's [[CLONE]]. \n But the boxes [[SUMMON]]ed after it explodes allow [[ALLY_TP_OK]].",
+          "[[ALLY_TP]] is not possible onto R's [[CLONE]]. \n But the boxes [[SUMMON]]ed after it explodes allow [[ALLY_TP]].",
         ]
         },
     },

@@ -79,7 +79,7 @@ const neeko: ChampData = {
         
         "P로 미니언, 몬스터로 변신했을 때 \n 강타에 맞으면 고정 피해가 들어옴.",
 
-        "P로 [[ALLY_TP_OK]] 가능한 대상으로 변신하고 \n W로 [[CLONE]]을 만들어도 [[ALLY_TP_OK]] 불가.", 
+        "P로 [[ALLY_TP]] 가능한 대상으로 변신하고 \n W로 [[CLONE]]을 만들어도 [[ALLY_TP]] 불가.", 
 
         "P로 변신했을 때 아이템 상호작용. \n \n 변신이 풀리지 않는것 \n 슈렐, 솔라리, 미카엘, 기맹, 요오무, 실체화 장비, 수은, 존야 \n \n 변신이 풀리는 것들 \n 구원, 벨트, 란두인, 히드라류. \n \n 변신에 효과가 보이는것들 \n 가엔, 망자의 갑옷, 얼심, 피바라기, 주문검류. \n \n 착용하면 효과가 유효한것들 \n 웬만한 아이템 효과는 다 발휘됨. \n 치감, 스태틱, 고연포, 강심, 멜모셔스 심지어 징수의 총 까지. \n \n 밴시류는 모습이 보이지 않지만 정상작동.", 
 
@@ -97,7 +97,7 @@ const neeko: ChampData = {
 
           "When disguised as a minion or monster via P, \n taking Smite deals fixed damage.",
 
-          "Even when disguised as a valid [[ALLY_TP_OK]] target via P \n and creating a [[CLONE]] with W, [[ALLY_TP_OK]] is not possible.",
+          "Even when disguised as a valid [[ALLY_TP]] target via P \n and creating a [[CLONE]] with W, [[ALLY_TP]] is not possible.",
 
           "Item interactions while disguised via P. \n \n Disguise does NOT break: \n Shurelya's, Locket, Mikael's, Knight's Vow, Youmuu's, Materialization items, Quicksilver Sash, Zhonya's \n \n Disguise BREAKS: \n Redemption, Rocketbelt, Randuin's, Hydra-type items. \n \n Visual effects visible while disguised: \n Guardian Angel, Dead Man's Plate, Frozen Heart, Bloodthirster, Spellblade-type items. \n \n Most item effects remain active while disguised. \n Grievous Wounds, Statikk, Rapid Firecannon, Heartsteel, Maw of Malmortius, even The Collector. \n \n Banshee's-type items: shield is invisible but functions normally.",
 

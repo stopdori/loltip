@@ -5,7 +5,7 @@ const kalista: ChampData = {
   skills: {
     P: ["DASH", "WALL_HOP"],
     Q: ["Q_FLASH"],
-    W: ["SUMMON", "ALLY_TP_OK"],
+    W: ["SUMMON", "ALLY_TP"],
     E: ["SLOW", "SEPARATOR", "ON_KILL", "MANA_RESTORE", "CDR_RESET"],
     R: { phases: [
       { label: { ko: "R1", en: "R1" }, tags: ["OF_ALLY", "UNTARGETABLE", "TOWER_DODGE", "INVULNERABLE"] },

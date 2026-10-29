@@ -126,7 +126,7 @@ export default function TagGlossaryButton({ lang, className, onOpenChange }: { l
       lang === "ko" ? "특수 기능" : "Special Technique",
       "[[AA_RESET]]  [[UNTARGETABLE]]  [[TOWER_DODGE]]",
       "[[SHIELD_BREAK]]  [[PIERCE]]  [[EXECUTE]]",
-      "[[TERRAIN]]  [[WALL_HOP]]  [[ALLY_TP_OK]]",
+      "[[TERRAIN]]  [[WALL_HOP]]  [[ALLY_TP]]",
 
       null,
       null,

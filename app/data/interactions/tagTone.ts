@@ -186,7 +186,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   BURN: "red",
   ANTI_DASH: "fuchsia",
   GROUNDED: "fuchsia",
-  ALLY_TP_OK: "fuchsia",
+  ALLY_TP: "fuchsia",
   SHIELD_PIERCE: "fuchsia",
 
   // 🪨 stone (벽/특수/리셋)
@@ -338,6 +338,7 @@ export const TAG_TONE: Partial<Record<TagId | GimmickTagId, Tone>> = {
   // 동일한 색을 재사용해서 시각적으로 짝지었다.
   SELF_MAXHP_SCALE:        "lime",
   SELF_BONUS_HP_SCALE:     "lime",
+  SELF_CURRENT_HP_SCALE:   "lime",
   SELF_MISSING_HP_SCALE:   "lime",
   TARGET_MAXHP_SCALE:      "indigo",
   TARGET_BONUS_HP_SCALE:   "indigo",

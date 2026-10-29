@@ -3,11 +3,11 @@ import type { ChampData } from "../interactions/types";
 const yorick: ChampData = {
   id: "yorick",
   skills: {
-    P: ["ALLY_TP_OK"],
+    P: ["ALLY_TP"],
     Q: ["HEAL", "AA_RESET"],
     W: ["W_FLASH", "TERRAIN", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"],
     E: ["E_FLASH", "MS_UP", "SLOW", "AR_SHRED"],
-    R: ["ALLY_TP_OK"],
+    R: ["ALLY_TP"],
   },
 
   vision: {

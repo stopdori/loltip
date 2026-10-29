@@ -89,7 +89,7 @@ const ornn: ChampData = {
         "오른 걸작은 아이템 1000골드 가치만큼 강화. \n 능력치마다 균등하게 분배하여 강화. \n 영향받는 능력치는 공,주,공속,가속,방,마저,체력 \n \n 예) 무한의 대검 \n 공 75, [[CRIT]] 25%, [[CRIT]] 피해량 30% -> \n 공 103, [[CRIT]] 25%, [[CRIT]] 피해량 30%.",
         "[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]], 안됨.",
         "[[R_FLASH]]는 R2 타이밍에 정말 빠르게 R2플 하면 가능.",
-        "Q의 [[TERRAIN]]에 [[ALLY_TP_OK]] 불가.",
+        "Q의 [[TERRAIN]]에 [[ALLY_TP]] 불가.",
         "E의 [[DASH]] 상대팀이 만든 [[TERRAIN]]이면 파괴.",
         "R은 R1, R2 [[PROJECTILE]] 모두 불안정상태 [[MARK]] 부여. \n R2 [[DASH]]은 [[UNSTOPPABLE]]가 아님."
       ],
@@ -98,7 +98,7 @@ const ornn: ChampData = {
         "Ornn's Masterwork upgrades an item by 1000 gold worth of stats. \n The bonus is distributed evenly across all affected stats. \n Affected stats: AD, AP, AS, AH, Armor, MR, Health. \n \n e.g. Infinity Edge \n AD 75, [[CRIT]] 25%, [[CRIT]] Damage 30% -> \n AD 103, [[CRIT]] 25%, [[CRIT]] Damage 30%.",
         "[[Q_FLASH]], [[W_FLASH]], [[E_FLASH]] not possible.",
         "[[R_FLASH]] is possible by recasting R2 extremely quickly at the R2 timing.",
-        "Cannot [[ALLY_TP_OK]] onto Q's [[TERRAIN]].",
+        "Cannot [[ALLY_TP]] onto Q's [[TERRAIN]].",
         "E's [[DASH]] destroys [[TERRAIN]] if it belongs to the enemy team.",
         "Both R1 and R2 [[PROJECTILE]]s apply the Brittle [[MARK]]. \n R2's [[DASH]] is not [[UNSTOPPABLE]]."
       ]

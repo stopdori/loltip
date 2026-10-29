@@ -6,7 +6,7 @@ const jhin: ChampData = {
     P: ["AD_UP", "SEPARATOR", "ST_CONDITIONAL", "MS_UP"],
     Q: ["Q_FLASH"],
     W: ["MARK_CONSUME", "ROOT", "MS_UP"],
-    E: ["E_FLASH", "TRAP", "ALLY_TP_OK", "SEPARATOR", "SLOW", "REVEALED", "MARK"],
+    E: ["E_FLASH", "TRAP", "ALLY_TP", "SEPARATOR", "SLOW", "REVEALED", "MARK"],
     R: { phases: [
       { label: { ko: "R 탄환", en: "R Bullet" }, tags: ["REVEALED", "SLOW"] },
       { label: { ko: "R 4번째 탄환", en: "R 4th Bullet" }, tags: ["CRIT", "REVEALED", "SLOW"] },

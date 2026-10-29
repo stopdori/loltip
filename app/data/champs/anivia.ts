@@ -74,7 +74,7 @@ const anivia: ChampData = {
       note2: {
         ko: [ 
           "P(알) [[REVIVE]] 쿨타임은 240s. \n 애니비아와 알은 [[TRANSFORM]] 판정.", "[[GW]] 묻고 알로변해도 풀피. \n [[GW]] 묻고 애니비아로 [[REVIVE]]해도 풀피.", 
-          "알은 [[ALLY_TP_OK]] 불가.", 
+          "알은 [[ALLY_TP]] 불가.", 
           "알텔 방법은 알이 되기 전 텔을 타고 알로 [[TRANSFORM]] 되었을 때, \n 텔레포트가 유지되는 것.", 
           "W([[TERRAIN]])는 구조물, 지형지물(바위, 나무)에 사용 가능. \n 즉, 겹쳐서 사용할 수 있음.", 
           "E는 설명이 조금 잘못 나와있음. \n 설명에는 냉각의 [[SLOW]]에 걸린 대상에게 \n 2배 데미지 라고 적혀있지만, \n 2배 데미지는 사실 얼음 땡 [[MARK]]이 걸린 대상에게 발동.", 
@@ -85,7 +85,7 @@ const anivia: ChampData = {
         en: [
           "P (Egg) [[REVIVE]] cooldown is 240s. \n Anivia and the Egg count as a [[TRANSFORM]].",
           "[[GW]] on the egg still revives at full HP. \n [[GW]] on Anivia before [[REVIVE]] also revives at full HP.",
-          "The Egg cannot [[ALLY_TP_OK]].",
+          "The Egg cannot [[ALLY_TP]].",
           "The way to TP onto the egg: if Teleport is already channeling before you [[TRANSFORM]] into the Egg, \n the Teleport is maintained.",
           "W ([[TERRAIN]]) can be placed on structures and terrain (rocks, trees). \n In other words, it can overlap with them.",
           "E's tooltip is slightly misleading. \n It says double damage on targets [[SLOW]]ed by chill, \n but the double damage \n actually triggers on targets with the Frostbite [[MARK]].",

@@ -51,11 +51,16 @@ export const STAT_ICONS: Partial<Record<TagId | GimmickTagId, StatIconEntry>> = 
   MR_PEN: { icons: ["/stat-icons/icon-magicshred.png"] },
   AR_MR_PEN: { icons: ["/stat-icons/icon-armorshred.png", "/stat-icons/icon-magicshred.png"] },
   MAX_HP_UP: { icons: ["/stat-icons/icon-hp.png"] },
-  // "체력 비례" gimmick 태그 중 자신 최대/추가 체력 비례 2개만 MAX_HP_UP과
-  // 같은 체력 아이콘을 재사용(GimmickTagId). 나머지 4개(자신 잃은/대상 3종)는
-  // 아이콘 없이 텍스트 pill로만 표시.
+  // "체력 비례" gimmick 태그 8종(자신/대상 × 최대/추가/현재/잃은)은 전부
+  // MAX_HP_UP과 같은 체력 아이콘을 재사용(GimmickTagId).
   SELF_MAXHP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
   SELF_BONUS_HP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
+  SELF_CURRENT_HP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
+  SELF_MISSING_HP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
+  TARGET_MAXHP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
+  TARGET_BONUS_HP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
+  TARGET_CURRENT_HP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
+  TARGET_MISSING_HP_SCALE: { icons: ["/stat-icons/icon-hp.png"] },
   HP_REGEN_UP: { icons: ["/stat-icons/icon-hpregen.png"] },
   HS_POWER: { icons: ["/stat-icons/icon-hpregen.png"] },
   MANA_RESTORE: { icons: ["/stat-icons/icon-manaregen.png"] },

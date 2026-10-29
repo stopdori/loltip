@@ -18,7 +18,7 @@ const reksai: ChampData = {
       P: ["MS_UP", "SEPARATOR", "ST_CONDITIONAL", "HEAL"],
       Q: ["Q_FLASH", "REVEALED"],      // 변신 Q는 Q플 가능
       W: ["TRANSFORM", "SEPARATOR", "AIRBORNE"],
-      E: ["DASH", "WALL_HOP", "SEPARATOR", "ALLY_TP_OK"],
+      E: ["DASH", "WALL_HOP", "SEPARATOR", "ALLY_TP"],
       R: ["R_FLASH", "DASH", "WALL_HOP", "SEPARATOR", "UNTARGETABLE", "TOWER_DODGE", "UNSTOPPABLE"],
     },
   },
@@ -53,7 +53,7 @@ const reksai: ChampData = {
       P: [],
       Q: ["DMG_MAGIC", "PROJECTILE", "AOE", "MARK"],
       W: ["TRANSFORM"],
-      E: ["DASH", "SEPARATOR", "SUMMON", "SEPARATOR", "ALLY_TP_OK"],
+      E: ["DASH", "SEPARATOR", "SUMMON", "SEPARATOR", "ALLY_TP"],
       R: ["DMG_PHYSICAL", "TIMING_CAST", "DASH", "HOMING", "UNTARGETABLE", "TOWER_DODGE", "UNSTOPPABLE"],
 
     },
@@ -91,13 +91,13 @@ const reksai: ChampData = {
         ko: [
         "돌출폼 Q의 [[AOE]] [[DMG_PHYSICAL]]는 \n [[BA]] 공격 대상에게는 [[CRIT]]로 적용 가능.",
         "매복폼 상태에서는 렉사이의 시야가 줄어듦 \n 대신 상대 움직임을 진동으로 감지할 수 있음. \n 상대가 가만히 서있다면 바로 근처에 있어도 모를 수 있음.", 
-        "매복폼 E의 땅굴은 [[ALLY_TP_OK]]. \n 양쪽 출입구중 선택해서 사용 가능.",
+        "매복폼 E의 땅굴은 [[ALLY_TP]]. \n 양쪽 출입구중 선택해서 사용 가능.",
         "R은 상대가 점멸로 피할 수 없음. \n 단, [[UNTARGETABLE]] 또는 협곡에서 사라지는 판정은 피할 수 있음.",
       ],
         en: [
         "Unburrowed Form's Q [[AOE]] [[DMG_PHYSICAL]] \n can [[CRIT]] against [[BA]] targets.",
         "Rek'Sai's vision is reduced while in Burrowed Form, \n but she can detect enemy movement through vibrations instead. \n If the enemy stands still, she may not notice them even up close.",
-        "Burrowed Form's E tunnels are [[ALLY_TP_OK]]. \n Either entrance can be used to exit.",
+        "Burrowed Form's E tunnels are [[ALLY_TP]]. \n Either entrance can be used to exit.",
         "R cannot be dodged with Flash. \n However, [[UNTARGETABLE]] effects or leaving the Rift can still avoid it.",
       ]
         },

@@ -8,7 +8,7 @@ const nidalee: ChampData = {
       // 인간폼
       P: ["ST_CONDITIONAL", "MS_UP"],
       Q: ["MARK"],                
-      W: ["W_FLASH", "MARK", "SEPARATOR", "ALLY_TP_OK"],
+      W: ["W_FLASH", "MARK", "SEPARATOR", "ALLY_TP"],
       E: ["E_FLASH", "HEAL", "AS_UP"],
       R: ["TRANSFORM", "SEPARATOR", "ST_CONDITIONAL", "CDR_RESET"],
     },

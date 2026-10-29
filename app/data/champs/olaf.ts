@@ -73,14 +73,14 @@ const olaf: ChampData = {
         "P의 [[BUFF]], W의 [[SHIELD]]는 체력이 30%일 때 최대.",
         "Q는 최소 투척 거리가 있음. \n 벽에 붙어서 벽으로 던지면 바로 주울 수 있음.",
         "[[Q_FLASH]]은 가능하지만 최대 사거리가 늘어나지는 않음. \n [[Q_FLASH]]을 가까운 거리에 던지면 \n 엉뚱하게 날아갈 수 있음.",
-        "Q [[DROP]]에 [[ALLY_TP_OK]] 불가.",
+        "Q [[DROP]]에 [[ALLY_TP]] 불가.",
         "E의 시전 속도는 공격 속도에 비례"
       ],
         en: [
           "P [[BUFF]] and W [[SHIELD]] are maximized at 30% HP.",
           "Q has a minimum throw distance. \n Throwing it into a wall while standing next to it lets you pick it up immediately.",
           "[[Q_FLASH]] is possible, but does not extend max range. \n Throwing [[Q_FLASH]] at close range \n may cause the axe to fly in an unintended direction.",
-          "[[ALLY_TP_OK]] to Q [[DROP]] is not possible.",
+          "[[ALLY_TP]] to Q [[DROP]] is not possible.",
           "E's cast speed scales with attack speed.",
         ]
         },

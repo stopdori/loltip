@@ -5,8 +5,8 @@ const heimerdinger: ChampData = {
   skills: {
     P: ["ST_CONDITIONAL", "MS_UP"],
     Q: { phases: [
-      { label: { ko: "Q", en: "Q" }, tags: ["ALLY_TP_OK"] },
-      { label: { ko: "강화 Q", en: "Empowered Q" }, tags: ["SLOW", "ALLY_TP_OK"] },
+      { label: { ko: "Q", en: "Q" }, tags: ["ALLY_TP"] },
+      { label: { ko: "강화 Q", en: "Empowered Q" }, tags: ["SLOW", "ALLY_TP"] },
     ] },
     W: [],
     E: ["SLOW", "STUN"],

@@ -65,11 +65,11 @@ const katarina: ChampData = {
       note2: {
         ko: [
         "E는 아군, 적, 단검([[DROP]]), 중립 식생에 사용 가능. \n 와드는 불가능.", 
-        "단검([[DROP]])은 [[ALLY_TP_OK]] 불가.",
+        "단검([[DROP]])은 [[ALLY_TP]] 불가.",
         "R의 [[SKILL_CHANNEL]]은 움직이면 취소."
       ],
         en: ["E can be used on allies, enemies, daggers ([[DROP]]), and neutral plants. \n Not on wards.",
-          "Daggers ([[DROP]]) are not [[ALLY_TP_OK]].",
+          "Daggers ([[DROP]]) are not [[ALLY_TP]].",
           "R's [[SKILL_CHANNEL]] is canceled if Katarina moves."
         ]
         },

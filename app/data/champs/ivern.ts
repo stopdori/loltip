@@ -10,7 +10,7 @@ const ivern: ChampData = {
       { label: { ko: "E 보호막", en: "E Shield" }, tags: ["E_FLASH", "SHIELD"] },
       { label: { ko: "E 폭발 피해", en: "E Burst Damage" }, tags: ["SLOW", "SEPARATOR", "ST_CONDITIONAL", "SHIELD"] },
     ] },
-    R: ["SUMMON", "ALLY_TP_OK", "SEPARATOR", "AIRBORNE"],
+    R: ["SUMMON", "ALLY_TP", "SEPARATOR", "AIRBORNE"],
   },
 
   vision: {

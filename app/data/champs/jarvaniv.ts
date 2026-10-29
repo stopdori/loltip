@@ -13,7 +13,7 @@ const jarvaniv: ChampData = {
 
     E: { phases: [ 
       { label: { ko: "E 패시브", en: "E Passive" }, tags: ["AS_UP"] }, 
-      { label: { ko: "E 깃발", en: "E Flag" }, tags: ["AS_UP", "SEPARATOR", "OF_ALLY", "AS_UP", "SEPARATOR", "ALLY_TP_OK"] }, 
+      { label: { ko: "E 깃발", en: "E Flag" }, tags: ["AS_UP", "SEPARATOR", "OF_ALLY", "AS_UP", "SEPARATOR", "ALLY_TP"] }, 
     ] },
 
     R: ["R_FLASH", "UNSTOPPABLE", "DASH", "WALL_HOP", "SEPARATOR_NEWLINE", "SEPARATOR", "TERRAIN", "SEPARATOR", "ST_CONDITIONAL", "AIRBORNE"], 

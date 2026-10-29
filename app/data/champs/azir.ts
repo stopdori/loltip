@@ -3,7 +3,7 @@ import type { ChampData } from "../interactions/types";
 const azir: ChampData = { 
   id: "azir", 
   skills: { 
-    P: ["COOLDOWN", "SEPARATOR", "ST_CONDITIONAL", "SUMMON", "SEPARATOR", "ALLY_TP_OK"], 
+    P: ["COOLDOWN", "SEPARATOR", "ST_CONDITIONAL", "SUMMON", "SEPARATOR", "ALLY_TP"], 
     Q: ["SLOW"], 
     W: ["SUMMON"], 
     E: ["E_FLASH", "SHIELD", "SEPARATOR", "DASH", "WALL_HOP"], 
@@ -20,7 +20,7 @@ const azir: ChampData = {
 
   gimmick: { 
     P: { phases: [ 
-      { label: { ko: "P 타워 소환", en: "Summon Turret" }, tags: ["COOLDOWN", "SEPARATOR", "ST_CONDITIONAL", "TIMING_CAST", "SUMMON", "SEPARATOR", "ALLY_TP_OK"] },
+      { label: { ko: "P 타워 소환", en: "Summon Turret" }, tags: ["COOLDOWN", "SEPARATOR", "ST_CONDITIONAL", "TIMING_CAST", "SUMMON", "SEPARATOR", "ALLY_TP"] },
       { label: { ko: "P 타워", en: "P Turret" }, tags: ["DMG_MAGIC", "SINGLE"] },
     ] }, 
 
@@ -76,13 +76,13 @@ const azir: ChampData = {
 
       note2: {
       ko: [ 
-      "W, R의 모래 병사는 [[ALLY_TP_OK]] 제외.", 
+      "W, R의 모래 병사는 [[ALLY_TP]] 제외.", 
       "E는 EQ로 사용하면 [[DASH]]을 더 멀리할 수 있음. \n 이 때 방향도 바꿀 수 있음. \n 원리는 도착지점 병사를 Q로 움직여서 더 멀리 [[DASH]]." 
   
     ], 
   
       en: [
-        "W and R soldiers are excluded from [[ALLY_TP_OK]].",
+        "W and R soldiers are excluded from [[ALLY_TP]].",
         "Using E then Q (EQ) lets the [[DASH]] travel farther. \n The direction can also be changed this way. \n The trick is using Q to move the destination soldier further, extending the [[DASH]]."
       ]
       },

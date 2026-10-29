@@ -135,7 +135,7 @@ export type TagId =
   | "ENERGY_RESTORE"
 
   /* 8) 이동 / 위치 / 상호작용 */
-  | "ALLY_TP_OK"
+  | "ALLY_TP"
   | "WALL_HOP"
   | "IGNORE_TERRAIN"
   | "GHOSTING"
@@ -300,7 +300,7 @@ MANA_RESTORE: { ko: "마나회복", en: "Mana Restore" },
 ENERGY_RESTORE: { ko: "기력회복", en: "Energy Restore" },
 
   /* 8) 이동 / 위치 / 상호작용 */
-ALLY_TP_OK: { ko: "텔포대상", en: "TP Target" },
+ALLY_TP: { ko: "텔포대상", en: "TP Target" },
 WALL_HOP: { ko: "벽넘기", en: "Wall Hop" },
 IGNORE_TERRAIN: { ko: "지형 통과", en: "Ignore Terrain" },
 GHOSTING: { ko: "유체화", en: "Ghosting" },
@@ -569,8 +569,8 @@ SLOW: {
   en: "Movement speed reduced (can be cleansed)",
 },
 DROWSY: {
-  ko: "지속시간이 끝나면 [[SLEEP]] 상태로 이어짐. \n 둔화 효과를 동반. \n [[TENACITY]]의 영향을 받지 않고, [[CC_IMMUNE]]으로 저항 가능. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
-  en: "Applies a slow, and leads into Sleep when the duration ends. \n Not affected by Tenacity. Resisted by CC immunity. \n Can be removed by Cleanse effects.",
+  ko: "지속시간이 끝나면 [[SLEEP]] 상태로 이어짐. \n [[SLOW]] 효과를 동반. \n [[TENACITY]]의 영향을 받지 않고, [[CC_IMMUNE]]으로 저항 가능. \n ([[CC_CLEANSE]] 계열로 해제 가능)",
+  en: "Applies a [[SLOW]], and leads into Sleep when the duration ends. \n Not affected by Tenacity. Resisted by CC immunity. \n Can be removed by Cleanse effects.",
 },
 
 NEAR_SIGHT: {
@@ -859,7 +859,7 @@ ENERGY_RESTORE: {
 },
 
   /* 8) 이동 / 위치 / 상호작용 */
-ALLY_TP_OK: {
+ALLY_TP: {
   ko: "아군이 텔을 사용할 수 있음",
   en: "Allies can use Teleport on this target",
 },

@@ -86,14 +86,14 @@ const taliyah: ChampData = {
         "E는 지속[[SLOW]]. \n \n",
         "E의 [[STUN]] 시간은 \n 남은 [[DASH]] 시간에 비례.", "예) [[DASH]] 시간이 1초라 했을 때 \n 0.1초 지난 시점에서 자갈을 밟는다면 \n 0.9초 + 0.75초 = 총 1.65초 [[STUN]]", "0.75초는 기본 [[STUN]] 지속시간. \n 0.9초는 ( 총 [[DASH]]시간 - [[DASH]]한 시간. ) \n \n",
         "R의 [[TERRAIN]]으로 전령 박치기 막을 수 있음",
-        "R의 [[TERRAIN]]은 [[ALLY_TP_OK]] 불가."
+        "R의 [[TERRAIN]]은 [[ALLY_TP]] 불가."
       ],
         en: [
           "Q [[SLOW]] only applies from the Empowered Q cast on Worked Ground.",
           "E applies a lingering [[SLOW]]. \n \n",
           "E's [[STUN]] duration \n scales with the target's remaining [[DASH]] duration.", "e.g., if the [[DASH]] duration is 1 second \n and the pebble is stepped on 0.1 seconds in, \n 0.9s + 0.75s = 1.65s total [[STUN]].", "0.75s is the base [[STUN]] duration. \n 0.9s is (total [[DASH]] duration − elapsed [[DASH]] time). \n \n",
           "R's [[TERRAIN]] can block the Rift Herald's charge.",
-          "R's [[TERRAIN]] does not allow [[ALLY_TP_OK]].",
+          "R's [[TERRAIN]] does not allow [[ALLY_TP]].",
         ]
         },
     },

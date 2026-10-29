@@ -9,7 +9,7 @@ const annie: ChampData = {
     E: ["E_FLASH", "MS_UP", "SHIELD"],
     R: { phases: [
       { label: { ko: "R 패시브", en: "R Passive" }, tags: ["MR_PEN"] },
-      { label: { ko: "R 엑티브", en: "R Active"  }, tags: ["R_FLASH", "SUMMON", "SEPARATOR", "ALLY_TP_OK"] },
+      { label: { ko: "R 엑티브", en: "R Active"  }, tags: ["R_FLASH", "SUMMON", "SEPARATOR", "ALLY_TP"] },
     ] },
   },
 
@@ -34,7 +34,7 @@ const annie: ChampData = {
 
     R: { phases: [
       { label: { ko: "패시브", en: "Passive" }, tags: ["PASSIVE_BONUS", "MR_PEN"] },
-      { label: { ko: "티버 소환", en: "Tibbers Summon" }, tags: ["DMG_MAGIC", "TIMING_CAST", "AOE", "SUMMON", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "STACK_CONSUME", "STUN", "SEPARATOR", "ALLY_TP_OK"] },
+      { label: { ko: "티버 소환", en: "Tibbers Summon" }, tags: ["DMG_MAGIC", "TIMING_CAST", "AOE", "SUMMON", "SEPARATOR_NEWLINE", "SEPARATOR", "ST_CONDITIONAL", "STACK_CONSUME", "STUN", "SEPARATOR", "ALLY_TP"] },
       { label: { ko: "티버", en: "Tibbers"  }, tags: ["DOT", "DMG_MAGIC", "AOE"] },
     ] },
   },

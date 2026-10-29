@@ -5,7 +5,7 @@ const malzahar: ChampData = {
   skills: {
     P: ["DMG_REDUCE", "CC_IMMUNE"],
     Q: ["Q_FLASH", "SILENCE"],
-    W: ["ALLY_TP_OK"],
+    W: ["ALLY_TP"],
     E: ["E_FLASH", "SEPARATOR", "ST_CONDITIONAL", "MANA_RESTORE", "CHAIN"],
     R: ["R_FLASH", "SUPPRESS"],
   },

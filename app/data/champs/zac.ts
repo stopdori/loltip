@@ -3,7 +3,7 @@ import type { ChampData } from "../interactions/types";
 const zac: ChampData = {
   id: "zac",
   skills: {
-    P: ["REVIVE", "ALLY_TP_OK"],
+    P: ["REVIVE", "ALLY_TP"],
     Q: ["SLOW", "TETHER", "GRAB"],
     W: [],
     E: ["AIRBORNE", "WALL_HOP"],

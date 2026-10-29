@@ -105,7 +105,7 @@ const senna: ChampData = {
 
         "세나가 처치한 미니언에서 안개 생성 확률이 낮음. \n 챔피언, 대형 정글, 공성미니언은 반드시 안개 생성.",
         "안개 [[STACKING]]으로 치명타 확률이 총합 100% 초과되면 \n 초과분의 35%만큼 [[LIFESTEAL]]으로 전환. \n 예) 10% 초과 시 3.5% [[LIFESTEAL]].",
-        "P의 [[STACKING]] 안개가 떨어졌을 때 \n 안개에 [[ALLY_TP_OK]] 불가.",
+        "P의 [[STACKING]] 안개가 떨어졌을 때 \n 안개에 [[ALLY_TP]] 불가.",
         "Q의 사거리는 [[BA]] 사거리에 비례하여 증가. \n 시전 속도는 공격 속도에 비례하여 증가.",
         "Q는 [[ON_HIT]] 효과 적용 가능.",
 
@@ -114,7 +114,7 @@ const senna: ChampData = {
         en: [
           "Mist has a low chance to drop from minions Senna kills. \n Champions, large jungle monsters, and siege minions always drop a mist.",
           "When total [[CRIT]] chance from mist [[STACKING]] exceeds 100%, \n 35% of the excess converts to [[LIFESTEAL]]. \n e.g. 10% excess grants 3.5% [[LIFESTEAL]].",
-          "When P's [[STACKING]] mist drops, \n [[ALLY_TP_OK]] is not possible onto it.",
+          "When P's [[STACKING]] mist drops, \n [[ALLY_TP]] is not possible onto it.",
           "Q's range scales with [[BA]] range. \n Its cast speed scales with attack speed.",
           "Q can apply [[ON_HIT]] effects.",
         ]

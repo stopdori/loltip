@@ -75,12 +75,12 @@ const caitlyn: ChampData = {
         ko: [
         "P의 [[BUFF_STACK]]은 5개일 때 \n 다음 [[BA]]가 헤드샷으로 [[EMPOWERED]] 되는데, \n 4스택 일 때 [[BUSH]]에서 공격 시 한 번에 2개가 쌓여 \n 이론상 5, 6스택이 되어 \n 즉시 소모하여 헤드샷으로 발사.", 
         "즉, [[BUSH]]에서는 2/4/헤드샷 패턴.",
-        "W([[TRAP]])는 [[ALLY_TP_OK]] 아님.", 
+        "W([[TRAP]])는 [[ALLY_TP]] 아님.", 
       ],
         en: [
           "At 5 P [[BUFF_STACK]]s, \n the next [[BA]] is [[EMPOWERED]] into a Headshot, \n but attacking from a [[BUSH]] at 4 stacks adds 2 at once, \n so it theoretically becomes 5 or 6 stacks \n and is immediately consumed to fire a Headshot.",
           "In other words, in a [[BUSH]] the pattern is 2/4/Headshot.",
-          "W ([[TRAP]]) is not [[ALLY_TP_OK]].",
+          "W ([[TRAP]]) is not [[ALLY_TP]].",
         ]
         },
     },

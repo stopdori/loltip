@@ -3,7 +3,7 @@ import type { ChampData } from "../interactions/types";
 const naafiri: ChampData = {
   id: "naafiri",
   skills: {
-    P: ["SUMMON", "ALLY_TP_OK"],
+    P: ["SUMMON", "ALLY_TP"],
     Q: ["Q_FLASH", "SKILL_RECAST", "SEPARATOR", "ST_CONDITIONAL", "LIFESTEAL"],
     W: ["W_FLASH", "AD_UP", "MS_UP", "UNTARGETABLE", "TOWER_DODGE"],
     E: ["DASH", "WALL_HOP"],

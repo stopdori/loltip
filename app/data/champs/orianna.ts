@@ -71,12 +71,12 @@ const orianna: ChampData = {
 
       note2: {
         ko: [
-        "구체에 [[ALLY_TP_OK]] 안됨.", 
+        "구체에 [[ALLY_TP]] 안됨.", 
         "오리아나 W, R 스킬은 구체가 이동할 때 선입력 해 놓으면 \n 구체가 도착하자마자 발동하는 성질이 있음. \n 오리녹턴 콤보는 이 성질을 응용한 것.", 
         "오리 녹턴 (말파,바이,조이 등등) 연계 방법. \n 1. 아군이 오리 E 사거리 안에 있을 때 \n 2. 아군이 [[DASH]]하는 순간 오리아나가 E를 주고 R 연타 \n 3. 구체가 아군 몸에 부착될 때 R이 발동. \n 순간적으로 구체 범위가 벗어나도 선입력으로 발동. \n \n 정리하면 \n [[DASH]]하는 아군이 오리아나 E 스킬을 보고 [[DASH]]하는 게 중요. \n 반대로 요네, 나피리는 오리아나가 잘 보고 E를 써야 함.",
       ],
         en: [
-          "[[ALLY_TP_OK]] onto the ball is not possible.",
+          "[[ALLY_TP]] onto the ball is not possible.",
           "Orianna's W and R have a property where, if pre-input while the ball is moving, \n they trigger the instant the ball arrives. \n The Orianna-Nocturne combo is built around this property.",
           "Orianna-Nocturne (Malphite, Vi, Zoe, etc.) combo method. \n 1. While an ally is within Orianna's E range \n 2. The instant the ally [[DASH]]es, Orianna gives E and mashes R \n 3. R triggers when the ball attaches to the ally's body. \n Even if the ball's range is briefly exceeded, the pre-input still triggers it. \n \n In short: \n It's important for the [[DASH]]ing ally to watch for Orianna's E and time their [[DASH]] accordingly. \n Conversely, for Yone and Naafiri, Orianna needs to watch them closely to use E.",
         ]

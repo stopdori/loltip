@@ -15,7 +15,7 @@ const elise: ChampData = {
 
     alt: {
       // 🔨 변신폼 (근접)
-      P: ["MS_UP", "ON_HIT", "HEAL", "SEPARATOR", "ALLY_TP_OK"],
+      P: ["MS_UP", "ON_HIT", "HEAL", "SEPARATOR", "ALLY_TP"],
 
       Q: ["Q_FLASH", "DASH"],      // 변신 Q는 Q플 가능
 
@@ -61,7 +61,7 @@ const elise: ChampData = {
     },
     alt: {
       P: { phases: [
-      { label: { ko: "P 새끼 거미", en: "P Spiderlings" }, tags: ["BUFF", "PER_STACK", "SUMMON", "SEPARATOR", "ALLY_TP_OK"] },
+      { label: { ko: "P 새끼 거미", en: "P Spiderlings" }, tags: ["BUFF", "PER_STACK", "SUMMON", "SEPARATOR", "ALLY_TP"] },
       { label: { ko: "P 온힛", en: "P On-Hit" }, tags: ["ON_HIT", "DMG_MAGIC", "HEAL"] },
     ] },
 

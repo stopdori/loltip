@@ -4,7 +4,7 @@ const illaoi: ChampData = {
   id: "illaoi",
   skills: {
     P: { phases: [
-      { label: { ko: "P 촉수 소환", en: "P Tentacle Summon" }, tags: ["COOLDOWN", "SUMMON", "ALLY_TP_OK"] },
+      { label: { ko: "P 촉수 소환", en: "P Tentacle Summon" }, tags: ["COOLDOWN", "SUMMON", "ALLY_TP"] },
       { label: { ko: "P 촉수 공격", en: "P Tentacle Attack" }, tags: ["HEAL"] },
     ] },
     Q: [],
@@ -23,7 +23,7 @@ const illaoi: ChampData = {
 
   gimmick: {
     P: { phases: [
-      { label: { ko: "P 촉수 소환", en: "P Tentacle Summon" }, tags: ["COOLDOWN", "SUMMON", "ALLY_TP_OK"] },
+      { label: { ko: "P 촉수 소환", en: "P Tentacle Summon" }, tags: ["COOLDOWN", "SUMMON", "ALLY_TP"] },
       { label: { ko: "P 촉수 공격", en: "P Tentacle Attack" }, tags: ["DMG_PHYSICAL", "AOE", "ST_DELAYED", "HEAL"] },
     ] },
 

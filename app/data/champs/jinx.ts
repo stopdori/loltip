@@ -83,12 +83,12 @@ const jinx: ChampData = {
         "[[W_FLASH]], [[E_FLASH]], [[R_FLASH]] 다 안됨", 
         "E의 [[ROOT]]은 [[KNOCKDOWN]]이 있어서. \n 일반적인 [[ROOT]]보다 판정이 좋음.", 
         "E는 발동하거나 시간이 다 되어 [[DETONATE]]할 때 \n [[AOE]] 피해이고 미니언이나 정글도 맞음.",
-        "E([[TRAP]])는 [[ALLY_TP_OK]] 아님."
+        "E([[TRAP]])는 [[ALLY_TP]] 아님."
       ],
         en: ["[[W_FLASH]], [[E_FLASH]], [[R_FLASH]] all not possible",
           "E's [[ROOT]] includes a [[KNOCKDOWN]], \n so it has better detection than a normal [[ROOT]].",
           "When E triggers or [[DETONATE]]s on timeout, \n it deals [[AOE]] damage and also hits minions and jungle monsters.",
-          "E ([[TRAP]]) is not [[ALLY_TP_OK]]."
+          "E ([[TRAP]]) is not [[ALLY_TP]]."
         ]
         },
     },
