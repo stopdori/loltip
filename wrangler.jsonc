@@ -4,6 +4,13 @@
 	"name": "loltip",
 	"compatibility_date": "2026-11-03",
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	// workers.dev 주소·버전별 미리보기 주소로는 사이트가 열리지 않게 한다
+	"workers_dev": false,
+	"preview_urls": false,
+	// Workers Logs
+	"observability": {
+		"enabled": true
+	},
 	"assets": {
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
