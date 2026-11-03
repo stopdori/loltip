@@ -6,6 +6,9 @@ export const routing = defineRouting({
   // proxy.ts가 locale 없는 경로를 무조건 /ko로 308 리다이렉트하기 때문에
   // Accept-Language 기반 자동 감지는 실질적으로 발동하지 않음. 의도를 명시.
   localeDetection: false,
+  // 감지를 안 쓰므로 NEXT_LOCALE 쿠키도 필요 없음(앱 코드에서 읽는 곳 없음).
+  // 페이지 응답에 Set-Cookie가 붙으면 Cloudflare Workers Cache가 캐시를 건너뛰기 때문에 끈다.
+  localeCookie: false,
   // next-intl이 미들웨어 단계에서 자동으로 hreflang Link 헤더를 생성하는데,
   // x-default를 로케일 프리픽스가 없는 bare pathname(예: /champ/aatrox)으로
   // 고정 생성함. 이 프로젝트는 프리픽스 없는 구주소를 410 Gone으로 삭제해뒀기 때문에

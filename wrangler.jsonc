@@ -8,6 +8,13 @@
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
 	},
+	// Workers Cache(wrangler 4.69.0+): 캐시 HIT면 Worker를 실행하지 않고 엣지에서 응답한다.
+	// 응답의 Cache-Control(s-maxage 등)을 따르고, Set-Cookie·private·no-store 응답은 캐시하지 않는다.
+	// 캐시 키에 Worker 버전이 들어가므로(cross_version_cache 기본 false) 재배포하면 새 내용으로 다시 채워진다.
+	// https://developers.cloudflare.com/workers/cache/
+	"cache": {
+		"enabled": true
+	},
 	"services": [
 		{
 			// OpenNext 캐시용 자기 참조 바인딩 — service는 위 name과 같아야 한다
