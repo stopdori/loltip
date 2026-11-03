@@ -15,12 +15,5 @@
 			"binding": "WORKER_SELF_REFERENCE",
 			"service": "loltip"
 		}
-	],
-	"r2_buckets": [
-		// 온디맨드 ISR(상호작용 페이지 등) 캐시 저장소 — 배포 전에 Cloudflare에서 버킷을 먼저 만들어야 한다
-		{
-			"binding": "NEXT_INC_CACHE_R2_BUCKET",
-			"bucket_name": "loltip-opennext-cache"
-		}
 	]
 }

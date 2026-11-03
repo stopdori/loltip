@@ -2,10 +2,9 @@ import { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
 import { CHAMPIONS } from "@/app/data/champions";
-import { isMatchupIndexable, type MatchupSummary } from "@/app/data/matchups/_types";
+import { listIndexableMatchupPairs } from "@/app/data/matchups/_index";
 
 const LOCALES = ["ko", "en"] as const;
-const MATCHUP_DIR = path.join(process.cwd(), "app/data/matchups");
 // 페이지별 마지막 커밋일 매니페스트 (scripts/gen-lastmod.mjs가 로컬 git log로 생성)
 const LASTMOD_PATH = path.join(process.cwd(), "app/data/_lastmod.json");
 
@@ -28,65 +27,10 @@ function lastmodOf(date: string | undefined): { lastModified?: string } {
   return date ? { lastModified: date } : {};
 }
 
-function extractObjectLiteral(src: string): string | null {
-  const trimmed = src.trimEnd();
-  const match = trimmed.match(/=\s*(\{[\s\S]*\})\s*;\s*$/);
-  return match ? match[1] : null;
-}
-
-function parseMatchupFile(filePath: string): MatchupSummary | null {
-  const src = fs.readFileSync(filePath, "utf8");
-  const literal = extractObjectLiteral(src);
-  if (!literal) return null;
-  try {
-    // 매치업 데이터 파일은 저장소 내부 신뢰된 데이터이며, 정적 import 없이
-    // 객체 리터럴만 빠르게 파싱하기 위해 eval을 사용한다.
-    // eslint-disable-next-line no-eval
-    return (0, eval)("(" + literal + ")") as MatchupSummary;
-  } catch {
-    return null;
-  }
-}
-
-function getIndexableMatchupPairs(): Record<(typeof LOCALES)[number], string[]> {
-  const pairsByLocale: Record<(typeof LOCALES)[number], string[]> = {
-    ko: [],
-    en: [],
-  };
-  if (!fs.existsSync(MATCHUP_DIR)) return pairsByLocale;
-
-  for (const folderEntry of fs.readdirSync(MATCHUP_DIR, { withFileTypes: true })) {
-    if (!folderEntry.isDirectory()) continue;
-    const champA = folderEntry.name;
-    const folderPath = path.join(MATCHUP_DIR, champA);
-
-    for (const fileEntry of fs.readdirSync(folderPath, { withFileTypes: true })) {
-      if (!fileEntry.isFile() || !fileEntry.name.endsWith(".ts")) continue;
-
-      const baseName = fileEntry.name.slice(0, -3);
-      if (!baseName.startsWith(`${champA}_`)) continue;
-      const champB = baseName.slice(champA.length + 1);
-
-      const data = parseMatchupFile(path.join(folderPath, fileEntry.name));
-      if (!data) continue;
-
-      const pair = `${champA}-vs-${champB}`;
-      for (const locale of LOCALES) {
-        if (isMatchupIndexable(data, champA, champB, locale)) {
-          pairsByLocale[locale].push(pair);
-        }
-      }
-    }
-  }
-
-  return pairsByLocale;
-}
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://loltip.com";
 
   const urls: MetadataRoute.Sitemap = [];
-  const indexablePairsByLocale = getIndexableMatchupPairs();
   const lastmod = loadLastmod();
 
   for (const locale of LOCALES) {
@@ -140,14 +84,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...lastmodOf(lastmod.pages.privacy),
     });
 
-    // 해당 locale에서 색인 대상(판정 문장 MIN_HIGHLIGHTS_FOR_INDEX개 이상)인 매치업 페이지만 포함
-    for (const pair of indexablePairsByLocale[locale]) {
+    // 해당 locale에서 색인 대상(판정 문장 MIN_HIGHLIGHTS_FOR_INDEX개 이상)인 매치업 페이지만 포함.
+    // interactions/[pair]의 generateStaticParams와 같은 목록이라 여기 있는 페이지는 빌드 때 생성된다.
+    for (const pair of listIndexableMatchupPairs(locale)) {
       urls.push({
-        // 상호작용 페이지 정식 주소는 /{locale}/interactions/{a}-{b}. pair(a-vs-b)는 lastmod 조회용 내부 키로 그대로 둔다.
-        url: `${baseUrl}/${locale}/interactions/${pair.replace("-vs-", "-")}`,
+        url: `${baseUrl}/${locale}/interactions/${pair}`,
         changeFrequency: "weekly",
         priority: locale === "ko" ? 0.7 : 0.6,
-        ...lastmodOf(lastmod.matchups[pair]),
+        // lastmod 매니페스트의 매치업 키는 "a-vs-b" 형식
+        ...lastmodOf(lastmod.matchups[pair.replace("-", "-vs-")]),
       });
     }
   }

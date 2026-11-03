@@ -98,6 +98,18 @@ export function listTopIndexableMatchups(lang: "ko" | "en", limit: number): TopM
   return out.slice(0, limit);
 }
 
+// 현재 로케일에서 색인 대상(isMatchupIndexable)인 쌍의 canonical 슬러그(알파벳순 "a-b") 전체.
+// sitemap.ts(포함할 URL)와 interactions/[pair]의 generateStaticParams(빌드 때 만들 페이지)가 함께 쓴다 —
+// 같은 데이터·같은 기준이라 sitemap에 있는 상호작용 페이지는 모두 빌드 때 생성된다.
+export function listIndexableMatchupPairs(lang: "ko" | "en"): string[] {
+  const out: string[] = [];
+  for (const data of Object.values(loadCompiled())) {
+    const [a, b] = data.champs;
+    if (isMatchupIndexable(data, a, b, lang)) out.push([a, b].sort().join("-"));
+  }
+  return out;
+}
+
 export async function getMatchupSummary(
   a?: string,
   b?: string

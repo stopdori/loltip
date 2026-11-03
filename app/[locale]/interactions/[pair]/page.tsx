@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 import { CHAMPIONS } from "@/app/data/champions";
 import MatchupChampClient from "./MatchupChampClient";
-import { getMatchupSummary, toMatchupClientResult } from "@/app/data/matchups/_index";
+import { getMatchupSummary, listIndexableMatchupPairs, toMatchupClientResult } from "@/app/data/matchups/_index";
 import { isMatchupIndexable } from "@/app/data/matchups/_types";
 import { buildMatchupDescription } from "@/app/utils/matchupDescription";
 import MatchupChampLinks from "@/app/components/MatchupChampLinks";
@@ -16,10 +16,11 @@ type Props = {
   params: Promise<{ locale: string; pair: string }>;
 };
 
-// 조합이 많아(로케일 합쳐 약 3만 개) 빌드 때는 만들지 않고 첫 요청 때 생성·캐시한다(온디맨드 ISR).
-// 빈 배열을 돌려줘야 동적 렌더링이 아니라 캐시 대상이 된다. 잘못된 슬러그는 proxy.ts가 먼저 404 처리.
-export function generateStaticParams() {
-  return [];
+// 조합이 많아(로케일 합쳐 약 3만 개) sitemap에 들어가는 색인 대상 쌍만 빌드 때 만든다(sitemap.ts와 같은 목록).
+// 나머지는 dynamicParams 기본값(true)으로 요청 때 렌더링한다 — Cloudflare 배포는 읽기 전용 정적 에셋 캐시라
+// 요청 때 만든 페이지는 저장되지 않는다. 잘못된 슬러그는 proxy.ts가 먼저 404 처리.
+export function generateStaticParams({ params }: { params: { locale: string } }) {
+  return listIndexableMatchupPairs(params.locale === "en" ? "en" : "ko").map((pair) => ({ pair }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
