@@ -1,11 +1,10 @@
 // app/data/matchups/_index.ts
 //
-// ⚠️ 서버 전용 모듈. fs로 _compiled.json을 읽기 때문에 브라우저(클라이언트 컴포넌트)에서
+// ⚠️ 서버 전용 모듈. _compiled.json(전체 매치업 데이터)을 import하기 때문에 브라우저(클라이언트 컴포넌트)에서
 // 직접 import하면 안 됨 — 클라이언트에서는 /api/matchup을 통해 조회할 것 (MatchupSummaryBox.tsx 참고).
 // import "server-only": 클라이언트 컴포넌트에서 import하면 빌드 에러로 막는다(데이터 노출 방지).
 import "server-only";
-import fs from "node:fs";
-import path from "node:path";
+import compiled from "./_compiled.json";
 import { countHighlights, hasMatchupContent, isMatchupIndexable, type MatchupSummary } from "./_types";
 
 export type MatchupLoadResult =
@@ -37,23 +36,13 @@ export function toMatchupClientResult(result: MatchupLoadResult, lang: MatchupLa
   return { status: "ok", data };
 }
 
-const COMPILED_PATH = path.join(process.cwd(), "app/data/matchups/_compiled.json");
-
-// 서버리스 함수 콜드스타트당 한 번만 읽고, 이후 요청은 모듈 스코프 캐시를 재사용한다.
-// 로컬 개발(dev)에서는 매치업 파일을 저장하는 즉시 반영되도록 캐싱하지 않고 매 요청마다 새로 읽는다.
-const IS_DEV = process.env.NODE_ENV !== "production";
-let cache: Record<string, MatchupSummary> | null = null;
+// 정적 import라 런타임 파일 시스템 없이(Cloudflare Workers 등) 서버 번들에 포함된다.
+// 파일별 동적 import로 바꾸지 말 것 — 빌드 파일 트레이스가 매치업 파일 수만큼 폭증한다(CLAUDE.md 참고).
+// 로컬 개발(dev)에서는 watch:matchup이 _compiled.json을 다시 쓰면 번들러가 모듈을 갱신한다.
+const COMPILED = compiled as unknown as Record<string, MatchupSummary>;
 
 function loadCompiled(): Record<string, MatchupSummary> {
-  if (IS_DEV) {
-    const raw = fs.readFileSync(COMPILED_PATH, "utf8");
-    return JSON.parse(raw) as Record<string, MatchupSummary>;
-  }
-  if (!cache) {
-    const raw = fs.readFileSync(COMPILED_PATH, "utf8");
-    cache = JSON.parse(raw) as Record<string, MatchupSummary>;
-  }
-  return cache;
+  return COMPILED;
 }
 
 export type ChampMatchupEntry = {

@@ -1,0 +1,26 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": ".open-next/worker.js",
+	"name": "loltip",
+	"compatibility_date": "2026-11-03",
+	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"services": [
+		{
+			// OpenNext 캐시용 자기 참조 바인딩 — service는 위 name과 같아야 한다
+			// https://opennext.js.org/cloudflare/caching
+			"binding": "WORKER_SELF_REFERENCE",
+			"service": "loltip"
+		}
+	],
+	"r2_buckets": [
+		// 온디맨드 ISR(상호작용 페이지 등) 캐시 저장소 — 배포 전에 Cloudflare에서 버킷을 먼저 만들어야 한다
+		{
+			"binding": "NEXT_INC_CACHE_R2_BUCKET",
+			"bucket_name": "loltip-opennext-cache"
+		}
+	]
+}

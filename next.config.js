@@ -10,6 +10,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Cloudflare Workers에는 Next 이미지 최적화 서버가 없으므로 원본 이미지를 그대로 쓴다
+  images: {
+    unoptimized: true,
+  },
   // 루트 레이아웃이 [locale]/(embed)로 나뉘어 있어 라우트 밖 404는 app/global-not-found.tsx가 담당
   experimental: {
     globalNotFound: true,

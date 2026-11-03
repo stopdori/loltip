@@ -3,6 +3,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "lint": "eslint",
     "gen:champs": "ts-node scripts/genChampSkills.ts",
     "gen:matchup-json": "node scripts/gen-matchup-json.ts",
@@ -11,7 +13,8 @@
     "gen:interrupt-ref": "node scripts/genInterruptRef.ts"
   },
   "dependencies": {
-    "next": "^16.1.0",
+    "@opennextjs/cloudflare": "^1.20.15",
+    "next": "^16.4.4",
     "next-intl": "^4.8.3",
     "node-fetch": "^3.3.2",
     "react": "^19.2.3",
@@ -26,6 +29,7 @@
     "autoprefixer": "^10.4.23",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "wrangler": "^4.156.2"
   }
 }
