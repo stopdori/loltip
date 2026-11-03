@@ -10,6 +10,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // 루트 레이아웃이 [locale]/(embed)로 나뉘어 있어 라우트 밖 404는 app/global-not-found.tsx가 담당
+  experimental: {
+    globalNotFound: true,
+  },
   outputFileTracingExcludes: {
     "/sitemap": ["./app/data/matchups/**/*"],
   },

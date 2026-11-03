@@ -1,36 +1,25 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { headers } from "next/headers";
 import { routing } from "@/i18n/routing";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import AdSlot from "@/app/components/AdSlot";
 import Script from "next/script";
-import { CONTACT_EMAIL } from "@/app/data/siteInfo";
+import { CONTACT_EMAIL, NAVER_SITE_VERIFICATION } from "@/app/data/siteInfo";
+import "../globals.css";
 
 import type { Metadata } from "next";
 
-const BASE_URL = "https://loltip.com";
 const footerLinkClass = "hover:text-slate-200 underline underline-offset-2";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-  const headersList = await headers();
-  const fullPathname = headersList.get("x-pathname") ?? `/${locale}`;
-  const pathWithoutLocale = fullPathname.replace(new RegExp(`^/${locale}`), "") || "/";
+// hreflang은 색인 대상 페이지마다 자기 generateMetadata에서 직접 내보낸다.
+export const metadata: Metadata = {
+  other: {
+    "naver-site-verification": NAVER_SITE_VERIFICATION,
+  },
+};
 
-  return {
-    alternates: {
-      languages: {
-        ko: `${BASE_URL}/ko${pathWithoutLocale}`,
-        en: `${BASE_URL}/en${pathWithoutLocale}`,
-        "x-default": `${BASE_URL}/ko${pathWithoutLocale}`,
-      },
-    },
-  };
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
@@ -46,6 +35,8 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  setRequestLocale(locale);
+
   const messages = await getMessages();
 
   const websiteJsonLd = {
@@ -57,6 +48,8 @@ export default async function LocaleLayout({
   };
 
   return (
+    <html lang={locale}>
+      <body className="bg-slate-900">
     <NextIntlClientProvider messages={messages}>
 
       <script
@@ -127,5 +120,7 @@ page_path: window.location.pathname,
       </footer>
 
     </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }

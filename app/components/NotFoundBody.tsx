@@ -1,5 +1,6 @@
-// app/not-found.tsx
+// app/components/NotFoundBody.tsx
 //
+// 루트 레이아웃이 [locale]/(embed)로 나뉘어 404 화면 진입점도 여러 곳이라 본문을 여기서 공유한다.
 // Next 기본 404 화면(next/dist/client/components/builtin/not-found)과 같은 마크업·스타일을
 // 그대로 옮기고 <main>으로만 감쌌다. 기본 화면에는 <main>이 없어서, 모든 페이지가
 // <main>을 갖도록 맞추기 위한 것(화면 모양은 기본 404와 동일).
@@ -26,7 +27,7 @@ const styles = {
   h2: { fontSize: 14, fontWeight: 400, lineHeight: "49px", margin: 0 },
 } as const;
 
-export default function NotFound() {
+export default function NotFoundBody() {
   return (
     <main>
       <title>404: This page could not be found.</title>

@@ -1,4 +1,7 @@
 // 사이트 운영자 표기 정보 — About, 개인정보처리방침, 공통 푸터가 함께 참조한다.
+
+// 루트 레이아웃([locale], (embed))과 global-not-found가 공유하는 네이버 사이트 소유 확인 값
+export const NAVER_SITE_VERIFICATION = "95b1edaf2835fefe05209dedac2514ba922b01a7";
 export const OPERATOR_NAME = { ko: "LOLTIP 운영자", en: "LOLTIP Operator" } as const;
 export const CONTACT_EMAIL = "contact@loltip.com";
 // 사이트 오픈 시기 — About 페이지 표기용.
