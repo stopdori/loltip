@@ -5,6 +5,7 @@
     "start": "next start",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "warm": "node scripts/warm-cache.mjs",
     "lint": "eslint",
     "gen:champs": "ts-node scripts/genChampSkills.ts",
     "gen:matchup-json": "node scripts/gen-matchup-json.ts",

@@ -1,5 +1,6 @@
 // 어떤 라우트에도 맞지 않는 주소의 404. 루트 레이아웃이 없는 위치라 <html>을 직접 렌더링한다.
-// 잘못된 챔피언/상호작용 슬러그도 proxy.ts가 여기로 보낸다(ISR 캐시에 쌓이지 않도록 라우트에 닿기 전에 처리).
+// 로케일 주소(/ko/*, /en/*)의 404는 대부분 proxy.ts가 렌더링 없이 직접 응답하므로, 여기에는 proxy를 거치지 않는
+// 주소(점 포함 경로 등)만 온다.
 import "./globals.css";
 import { headers } from "next/headers";
 import type { Metadata } from "next";
