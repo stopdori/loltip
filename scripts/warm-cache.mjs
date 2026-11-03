@@ -2,7 +2,7 @@
 // Workers Cache 키에 Worker 버전이 들어가 배포할 때마다 캐시가 비므로, 배포 직후 한 번 실행한다.
 // 주의: 엣지 캐시는 데이터센터별이라 이 스크립트를 실행한 위치에서 가까운 데이터센터만 채워진다.
 //
-// 사용법: npm run warm [-- <기준 주소>] [--concurrency=4]
+// 사용법: npm run warm [-- <기준 주소>] [--concurrency=8]
 //   기준 주소 기본값은 workers.dev. 도메인 연결 후에는 https://loltip.com 등으로 넘긴다.
 //   sitemap의 <loc>은 항상 https://loltip.com 기준이라, 요청할 때 출처(origin)를 기준 주소로 바꾼다.
 
@@ -13,7 +13,7 @@ const RETRY_DELAY_MS = 3000;
 
 const args = process.argv.slice(2);
 const base = (args.find((a) => !a.startsWith("--")) ?? DEFAULT_BASE).replace(/\/+$/, "");
-const concurrency = Number(args.find((a) => a.startsWith("--concurrency="))?.split("=")[1] ?? 4);
+const concurrency = Number(args.find((a) => a.startsWith("--concurrency="))?.split("=")[1] ?? 8);
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 

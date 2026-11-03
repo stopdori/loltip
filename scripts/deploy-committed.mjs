@@ -47,14 +47,14 @@ try {
   run(`git worktree add --detach "${dir}" ${commit}`, repo);
   run("npm ci --no-audit --no-fund", dir);
 
-  // 커밋된 _compiled.json이 커밋된 매치업 .ts와 맞는지 확인한다 (gen:matchup-json을 빠뜨리고 커밋한 경우를 막음).
+  // 커밋된 매치업 .ts로 _compiled.json을 새로 만든다 (gen:matchup-json을 빠뜨리고 커밋했어도 .ts 기준으로 배포됨).
   run("npm run gen:matchup-json", dir);
   const compiledDiff = spawnSync("git diff --quiet --ignore-cr-at-eol -- app/data/matchups/_compiled.json", {
     cwd: dir,
     shell: true,
   });
   if (compiledDiff.status !== 0) {
-    throw new Error("커밋된 _compiled.json이 커밋된 매치업 .ts와 다르다. 메인 폴더에서 gen:matchup-json 후 다시 커밋할 것.");
+    console.log("⚠ 커밋된 _compiled.json이 커밋된 매치업 .ts와 달라 새로 생성한 것으로 빌드한다 (메인 폴더에서 gen:matchup-json 후 커밋 권장).");
   }
 
   run("npx opennextjs-cloudflare build", dir);
