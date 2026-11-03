@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import QuizClient from "./QuizClient";
+
+// ko/en만 빌드 때 생성. 점(.) 포함 주소(/wp-login.php 등)는 proxy.ts를 건너뛰고 [locale]로 잡히므로 404가 캐시되지 않게 막는다.
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -29,6 +33,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function Page() {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return <QuizClient />;
 }

@@ -1,8 +1,12 @@
 // app/[locale]/privacy/page.tsx
 
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import SiteHeader from "@/app/components/SiteHeader";
 import { CONTACT_EMAIL } from "@/app/data/siteInfo";
+
+// ko/en만 빌드 때 생성. 점(.) 포함 주소(/wp-login.php 등)는 proxy.ts를 건너뛰고 [locale]로 잡히므로 404가 캐시되지 않게 막는다.
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -196,6 +200,7 @@ function PrivacyEn() {
 
 export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div className="space-y-6">
       <SiteHeader subtitle={locale === "ko" ? "개인정보처리방침" : "Privacy Policy"} />

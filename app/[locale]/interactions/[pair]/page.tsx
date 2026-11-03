@@ -1,4 +1,5 @@
 import { notFound, permanentRedirect } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { Fragment } from "react";
 import type { Metadata } from "next";
 
@@ -14,6 +15,12 @@ type Lang = "ko" | "en";
 type Props = {
   params: Promise<{ locale: string; pair: string }>;
 };
+
+// 조합이 많아(로케일 합쳐 약 3만 개) 빌드 때는 만들지 않고 첫 요청 때 생성·캐시한다(온디맨드 ISR).
+// 빈 배열을 돌려줘야 동적 렌더링이 아니라 캐시 대상이 된다. 잘못된 슬러그는 proxy.ts가 먼저 404 처리.
+export function generateStaticParams() {
+  return [];
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, pair } = await params;
@@ -76,6 +83,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Page({ params }: Props) {
   const { locale, pair } = await params;
+  setRequestLocale(locale);
   const lang = locale as Lang;
   // 판정 문장 강조(#highlight= / 예전 ?highlight=)는 MatchupSummaryBox가 마운트 후 URL에서 직접 읽는다.
 

@@ -32,9 +32,11 @@ const champCache = new Map<string, Promise<ChampSpells>>();
 
 export async function getLatestDDragonVersion(): Promise<string> {
   if (versionCache.v) return versionCache.v;
-  // 서버 캐시(next.revalidate, 브라우저 fetch는 무시): 버전 목록은 URL이 고정이라 새 패치를 놓치지 않게 1시간,
-  // 챔피언 JSON은 URL에 패치 버전이 들어가 내용이 바뀌지 않으므로 1일(아래 getChampSpells).
-  const res = await fetch("https://ddragon.leagueoflegends.com/api/versions.json", { next: { revalidate: 3600 } });
+  // 챔피언 페이지를 빌드 때 생성하므로 시간 기반 재검증 없이 force-cache를 쓴다. 다만 force-cache는 빌드 캐시에
+  // 영구히 남아, 고정 URL이면 재배포해도 새 패치를 못 받는다 → 빌드 날짜(BUILD_DATE)를 쿼리로 붙여 날짜별로 새로 받는다.
+  const res = await fetch(`https://ddragon.leagueoflegends.com/api/versions.json?build=${process.env.BUILD_DATE}`, {
+    cache: "force-cache",
+  });
   const versions: string[] = await res.json();
   versionCache.v = versions[0]; // 최신
   return versionCache.v!;
@@ -51,8 +53,8 @@ export async function getChampSpells(
   const p = (async () => {
     const v = await getLatestDDragonVersion();
     const url = `https://ddragon.leagueoflegends.com/cdn/${v}/data/${locale}/champion/${champId}.json`;
-    // URL에 패치 버전이 포함돼 같은 URL의 내용은 바뀌지 않으므로 서버 캐시 1일(브라우저 fetch는 무시).
-    const res = await fetch(url, { next: { revalidate: 86400 } });
+    // URL에 패치 버전이 포함돼 같은 URL의 내용은 바뀌지 않으므로 force-cache.
+    const res = await fetch(url, { cache: "force-cache" });
     if (!res.ok) throw new Error(`DDragon fetch failed: ${res.status}`);
     const json = await res.json();
 

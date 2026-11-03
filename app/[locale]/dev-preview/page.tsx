@@ -7,8 +7,12 @@
 // 다른 작업 내용을 실수로 손상시킬 위험이 있으므로, 스타일/레이아웃 확인은 항상 이 페이지를 쓸 것.
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import MatchupSummaryBox from "@/app/components/MatchupSummaryBox";
 import type { MatchupLoadResult } from "@/app/data/matchups/_index";
+
+// ko/en만 빌드 때 생성. 점(.) 포함 주소(/wp-login.php 등)는 proxy.ts를 건너뛰고 [locale]로 잡히므로 404가 캐시되지 않게 막는다.
+export const dynamicParams = false;
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -87,7 +91,10 @@ const previewResult: MatchupLoadResult = {
   },
 };
 
-export default function DevPreviewPage() {
+export default async function DevPreviewPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   // 로컬 개발(next dev)에서만 연다. 프로덕션 빌드(Vercel 포함)에서는 404.
   if (process.env.NODE_ENV === "production") notFound();
 

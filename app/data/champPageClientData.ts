@@ -26,8 +26,12 @@ const SKILL_KEYS: SkillKey[] = ["P", "Q", "W", "E", "R"];
 const FORM_DATA_KEYS = ["base", "alt", "alt2", "alt3", "alt4"] as const;
 // DDragon이 느리거나 죽어 있어도 페이지 응답을 붙잡지 않는다 — 못 받으면 클라이언트 폴백에 맡긴다.
 const DDRAGON_TIMEOUT_MS = 3000;
+const IS_PRODUCTION_BUILD = process.env.NEXT_PHASE === "phase-production-build";
 
 async function fetchSpells(champId: string, lang: Lang): Promise<ChampSpells | null> {
+  // 빌드 때 생성한 페이지는 다음 배포까지 고정되므로 폴백으로 굳히지 않는다 — 실패는 그대로 던져 빌드를 실패시킨다.
+  if (IS_PRODUCTION_BUILD) return getChampSpells(toDdragonId(champId), lang === "ko" ? "ko_KR" : "en_US");
+
   try {
     return await Promise.race([
       getChampSpells(toDdragonId(champId), lang === "ko" ? "ko_KR" : "en_US"),

@@ -5,6 +5,7 @@ import { getChampPageClientData } from "@/app/data/champPageClientData";
 import { listLinkableMatchupsForChamp } from "@/app/data/matchups/_index";
 import ChampMatchupList from "@/app/components/ChampMatchupList";
 import { notFound, permanentRedirect } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { Fragment } from "react";
 
 import type { Metadata } from "next";
@@ -13,8 +14,12 @@ type Lang = "ko" | "en";
 
 type Props = {
   params: Promise<{ locale: string; id: string }>;
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
+
+// 전체 챔피언 × 로케일(로케일은 [locale] 레이아웃의 generateStaticParams)을 빌드 때 생성한다.
+export function generateStaticParams() {
+  return CHAMPIONS.filter((c) => c.id in CHAMPS).map((c) => ({ id: c.id }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, id } = await params;
@@ -69,7 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Page(props: Props) {
   const params = await props.params;
-  const searchParams = await props.searchParams;
+  setRequestLocale(params.locale);
 
   const lang = (params?.locale ?? "ko") as Lang;
   const id = params?.id;
@@ -91,8 +96,6 @@ export default async function Page(props: Props) {
   // 서버는 항상 기본(왼쪽)으로만 렌더링한다. 예전에 공유된 ?side=enemy 링크가 들어와도
   // 이 파라미터는 더 이상 쓰지 않고 무시한다(에러 없이 왼쪽 표시). 픽커에서 정해진 좌/우 위치는
   // 클라이언트 세션 메모리 힌트로 ChampPageClient가 마운트 시 반영한다(app/utils/champSideHint.ts).
-  // searchParams는 값을 쓰지 않지만, 이 페이지의 렌더링 모드(동적)가 바뀌지 않도록 읽기만 유지한다.
-  void searchParams;
   const forcedMe = champId;
   const forcedEnemy = null;
   const renderKey = champId;

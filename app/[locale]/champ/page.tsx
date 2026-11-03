@@ -1,10 +1,12 @@
-export const dynamic = "force-dynamic";
-
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import ChampClient from "./ChampClient";
 import ChampGrid from "@/app/components/ChampGrid";
 import HomeIntro from "@/app/components/HomeIntro";
 import { listTopIndexableMatchups } from "@/app/data/matchups/_index";
+
+// ko/en만 빌드 때 생성. 점(.) 포함 주소(/wp-login.php 등)는 proxy.ts를 건너뛰고 [locale]로 잡히므로 404가 캐시되지 않게 막는다.
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -36,9 +38,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const lang = locale === "en" ? "en" : "ko";
-  // 소개 문단·"판정이 많은 상호작용" 20개·전체 챔피언 링크 그리드 모두 서버 컴포넌트라 SSR HTML에 항상 포함된다.
-  // 상위 20개는 배포에 포함된 _compiled.json에서 계산한다(프로덕션은 모듈 캐시라 콜드스타트당 1회).
+  // 소개 문단·"판정이 많은 상호작용" 20개·전체 챔피언 링크 그리드 모두 서버 컴포넌트라 정적 HTML에 항상 포함된다.
+  // 상위 20개는 빌드 시점의 _compiled.json에서 계산한다.
   return (
     <ChampClient
       extraSection={
