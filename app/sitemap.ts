@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
 import { CHAMPIONS } from "@/app/data/champions";
+import { isChampIndexable } from "@/app/data/champIndexing";
 import { listIndexableMatchupPairs } from "@/app/data/matchups/_index";
 
 const LOCALES = ["ko", "en"] as const;
@@ -42,8 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...lastmodOf(lastmod.pages.champ),
     });
 
-    // 단일 챔피언 페이지
-    for (const champ of CHAMPIONS) {
+    // 단일 챔피언 페이지 (색인 대상 챔피언만 — champIndexing.ts 참고)
+    for (const champ of CHAMPIONS.filter((c) => isChampIndexable(c.id))) {
       urls.push({
         url: `${baseUrl}/${locale}/champ/${champ.id}`,
         changeFrequency: "weekly",

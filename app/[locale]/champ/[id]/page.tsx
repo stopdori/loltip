@@ -1,6 +1,7 @@
 import ChampPageClient from "./ChampPageClient";
 import { CHAMPIONS } from "@/app/data/champions";
 import { CHAMPS } from "@/app/data/champs/_index";
+import { isChampIndexable } from "@/app/data/champIndexing";
 import { getChampPageClientData } from "@/app/data/champPageClientData";
 import { listLinkableMatchupsForChamp } from "@/app/data/matchups/_index";
 import ChampMatchupList from "@/app/components/ChampMatchupList";
@@ -69,6 +70,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: socialTitle,
       description: socialDescription,
     },
+    // 아직 챔피언 파일 작업이 안 끝난 챔피언(LAST_INDEXED_CHAMP_ID 이후)은 색인 제외
+    ...(!isChampIndexable(champId) && { robots: { index: false, follow: true } }),
   };
 }
 
